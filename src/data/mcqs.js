@@ -11491,6 +11491,6689 @@ Result: E85517
     }
   ]
 },
+
+
+21: {
+  title: 'Representing Sound: Sampling, Bit Rate, MIDI (CS101 Lecture 21)',
+  summary: `**Key Topics Covered:**
+- Sound amplitude: extent of air particle displacement → perceived as loudness
+- Encoding sound: sample amplitude at regular intervals and record numeric values
+- Telephone quality: 8,000 samples per second
+- Process: store amplitude values → transmit over network → receive and reproduce sound
+- Higher quality (CD audio): 44,100 samples per second
+- Each sample: 16 bits (32 bits for stereo)
+- Data rate: 32 bits × 44,100 samples/sec ≈ 1.4 million bits/sec
+- Alternative: MIDI (Musical Instrument Digital Interface)
+  - Used in synthesizers, electronic keyboards
+  - Encodes instructions for producing music, not the music itself
+  - Example: 2 seconds of MIDI can be stored in 3 bytes vs millions of bits for sampled audio
+  - Like storing "sheet music" instead of a recording of a performance
+  - MIDI playback can sound different on different synthesizers
+
+---
+
+**Simple Understanding:**
+
+**What is Sound Amplitude?**
+👉 Measure of how far air particles move when sound passes through.
+👉 Greater amplitude = louder sound.
+
+**How to Encode Sound Digitally:**
+👉 Take regular samples of the sound's amplitude at fixed time intervals.
+👉 Record each amplitude as a number (value).
+👉 Telephone quality: 8,000 samples per second.
+
+**Sound Transmission Process:**
+1. Store amplitude values for each sample.
+2. Transmit these numbers over a network.
+3. At receiving end, use numbers to reconstruct and play sound.
+
+**Sampling Rate and Quality:**
+👉 Higher sampling rate = more accurate representation (but more data).
+👉 Telephone: 8,000 samples/sec (low quality).
+👉 Music CD: 44,100 samples/sec (high fidelity).
+👉 Each CD sample uses 16 bits (mono) or 32 bits (stereo).
+👉 CD data rate: 32 × 44,100 ≈ 1.4 million bits per second.
+
+**Alternative: MIDI (Musical Instrument Digital Interface):**
+👉 Used in electronic keyboards and synthesizers.
+👉 Does NOT store the sound itself – stores instructions/notes.
+👉 Example: 2 seconds of MIDI music can be as small as 3 bytes (vs millions of bits for sampled audio).
+👉 Like storing "sheet music" instead of a recording of a performance.
+👉 Disadvantage: playback sounds different on different synthesizers (depends on instrument sounds).
+
+---
+
+**Important Vocabulary:**
+- Amplitude = measure of loudness (particle displacement)
+- Sample = measure amplitude at a specific time
+- Sampling rate = number of samples per second (Hz)
+- Telephone quality = 8,000 samples/sec
+- CD quality = 44,100 samples/sec
+- Bit rate = bits per second of audio
+- MIDI = Musical Instrument Digital Interface (instruction-based)
+- Synthesizer = electronic instrument that generates sound from instructions
+
+---
+
+**Quick Revision Points:**
+- Amplitude = loudness.
+- Encoding sound = sample amplitude at regular intervals.
+- Higher sample rate = better quality, more data.
+- 8,000 samples/sec = telephone quality.
+- 44,100 samples/sec = CD quality.
+- 32 bits per stereo sample × 44,100 = ~1.4 Mbps.
+- MIDI stores instructions (like sheet music), not sound itself.
+- MIDI is very compact (bytes vs megabits).
+- MIDI playback varies by synthesizer.`,
+
+  questions: [
+    {
+      q: 'What does sound amplitude represent?',
+      options: ['A. Frequency of sound', 'B. Loudness of sound (extent of air particle displacement)', 'C. Duration of sound', 'D. Pitch of sound'],
+      answer: 'B. Loudness of sound (extent of air particle displacement)',
+      diff: 'easy',
+    },
+    {
+      q: 'How is sound encoded digitally?',
+      options: ['A. By recording continuous waveform', 'B. By sampling amplitude at regular intervals', 'C. By storing lyrics only', 'D. By converting to text'],
+      answer: 'B. By sampling amplitude at regular intervals',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the sampling rate for long-distance telephone communication?',
+      options: ['A. 800 samples/sec', 'B. 8,000 samples/sec', 'C. 44,100 samples/sec', 'D. 48,000 samples/sec'],
+      answer: 'B. 8,000 samples/sec',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the sampling rate for CD-quality audio?',
+      options: ['A. 8,000 samples/sec', 'B. 22,050 samples/sec', 'C. 44,100 samples/sec', 'D. 96,000 samples/sec'],
+      answer: 'C. 44,100 samples/sec',
+      diff: 'easy',
+    },
+    {
+      q: 'How many bits are typically used per sample for CD-quality audio (stereo)?',
+      options: ['A. 8 bits', 'B. 16 bits (mono), 32 bits (stereo)', 'C. 24 bits', 'D. 48 bits'],
+      answer: 'B. 16 bits (mono), 32 bits (stereo)',
+      diff: 'medium',
+    },
+    {
+      q: 'Approximately how many bits per second are required for CD-quality stereo audio?',
+      options: ['A. 352,800 bits/sec', 'B. 705,600 bits/sec', 'C. 1.4 million bits/sec', 'D. 2.8 million bits/sec'],
+      answer: 'C. 1.4 million bits/sec',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the process of transmitting sound digitally?',
+      options: ['A. Store amplitude values → transmit → receive → produce sound', 'B. Convert to text → transmit → convert back', 'C. Compress to MIDI → transmit → expand', 'D. None of the above'],
+      answer: 'A. Store amplitude values → transmit → receive → produce sound',
+      diff: 'easy',
+    },
+    {
+      q: 'Higher sampling rates result in:',
+      options: ['A. Lower quality and less data', 'B. Higher quality and more data', 'C. No change in quality', 'D. Lower quality and more data'],
+      answer: 'B. Higher quality and more data',
+      diff: 'easy',
+    },
+    {
+      q: 'MIDI stands for:',
+      options: ['A. Musical Instrument Digital Interface', 'B. Music Input Device Interface', 'C. Musical Integrated Digital Instrument', 'D. Multimedia Instrument Digital Interface'],
+      answer: 'A. Musical Instrument Digital Interface',
+      diff: 'easy',
+    },
+    {
+      q: 'Unlike sampled audio, MIDI encodes:',
+      options: ['A. The actual sound waveform', 'B. Instructions for producing music (like sheet music)', 'C. Compressed audio', 'D. Text descriptions'],
+      answer: 'B. Instructions for producing music (like sheet music)',
+      diff: 'easy',
+    },
+    {
+      q: 'How much storage might 2 seconds of MIDI music require compared to sampled audio?',
+      options: ['A. Same as sampled audio', 'B. Slightly less', 'C. 3 bytes vs millions of bits', 'D. More than sampled audio'],
+      answer: 'C. 3 bytes vs millions of bits',
+      diff: 'medium',
+    },
+    {
+      q: 'A disadvantage of MIDI is that:',
+      options: ['A. It requires too much storage', 'B. Playback can sound different on different synthesizers', 'C. It cannot store any music', 'D. It is not digital'],
+      answer: 'B. Playback can sound different on different synthesizers',
+      diff: 'easy',
+    },
+    {
+      q: 'MIDI is commonly used in:',
+      options: ['A. Telephone systems', 'B. Music synthesizers and electronic keyboards', 'C. Voice recording', 'D. Radio broadcasting'],
+      answer: 'B. Music synthesizers and electronic keyboards',
+      diff: 'easy',
+    },
+    {
+      q: 'What analogy is used to describe MIDI?',
+      options: ['A. Storing a photograph', 'B. Storing sheet music read by a performer', 'C. Storing a video', 'D. Storing a text document'],
+      answer: 'B. Storing sheet music read by a performer',
+      diff: 'easy',
+    },
+    {
+      q: 'For high-fidelity music, the sampling rate is increased because:',
+      options: ['A. Higher frequencies need more samples', 'B. Lower frequencies need more samples', 'C. It saves storage space', 'D. It reduces cost'],
+      answer: 'A. Higher frequencies need more samples',
+      diff: 'medium',
+    },
+    {
+      q: 'Each sample in CD-quality audio represents:',
+      options: ['A. The frequency of sound at that instant', 'B. The amplitude of sound at that instant', 'C. The phase of sound', 'D. The duration of sound'],
+      answer: 'B. The amplitude of sound at that instant',
+      diff: 'medium',
+    }
+  ]
+},
+
+22: {
+  title: 'Binary Notation: Place Values, Powers of 2, and Conversion Algorithm (CS101 Lecture 22)',
+  summary: `**Key Topics Covered:**
+- Binary notation: each position's quantity is twice the quantity of the position to its right
+- Place values (powers of 2): ..., 16, 8, 4, 2, 1 (from left to right)
+- Decimal example: 375 = 3×100 + 7×10 + 5×1
+- Binary uses only digits 0 or 1 at each position
+- Example: 32 in binary = 00100000 (1 in the 32's place)
+- Example: 255 in binary = 11111111 (128+64+32+16+8+4+2+1 = 255)
+- Algorithm for converting positive decimal to binary:
+  1. Divide the number by 2
+  2. Record the remainder (0 or 1)
+  3. Replace the number with the quotient
+  4. Repeat until quotient becomes 0
+  5. Read remainders in reverse order (last remainder is most significant bit)
+- Example: Convert 13 to binary:
+  13 ÷ 2 = 6 remainder 1
+  6 ÷ 2 = 3 remainder 0
+  3 ÷ 2 = 1 remainder 1
+  1 ÷ 2 = 0 remainder 1
+  Read remainders backward: 1101 (binary for 13)
+
+---
+
+**Simple Understanding:**
+
+**Binary Place Values:**
+👉 Each position represents a power of 2 (from right: 2⁰=1, 2¹=2, 2²=4, 2³=8, ...).
+👉 Binary uses only digits 0 or 1.
+👉 Example: 1011 binary = 1×8 + 0×4 + 1×2 + 1×1 = 8+0+2+1 = 11 decimal.
+
+**Converting Decimal to Binary (Algorithm):**
+👉 Step-by-step division by 2, collecting remainders.
+👉 The remainders (0 or 1) are the binary digits from least significant to most significant.
+👉 Read remainders backward to get the binary number.
+
+**Example Conversions:**
+- 32 decimal → binary: put 1 in 32's place: 00100000 or 100000 (depending on bit length)
+- 255 decimal → binary: all 8 bits 1: 11111111 (128+64+32+16+8+4+2+1 = 255)
+- 13 decimal → binary: 1101 (8+4+1 = 13)
+
+---
+
+**Important Vocabulary:**
+- Binary notation = base-2 number system (digits 0 and 1)
+- Place value = value contributed by a digit based on its position
+- Power of 2 = 2ⁿ (e.g., 1, 2, 4, 8, 16, ...)
+- Least significant bit (LSB) = rightmost bit (value 2⁰=1)
+- Most significant bit (MSB) = leftmost bit (highest power)
+- Algorithm = set of steps to perform a task
+
+---
+
+**Quick Revision Points:**
+- Each binary position is twice the position to its right.
+- 8 bits can represent 0–255 (2⁸ = 256 values).
+- Decimal to binary: repeatedly divide by 2, record remainders, read backwards.
+- Binary 11111111 = 255.
+- Binary 1101 = 13.`,
+
+  questions: [
+    {
+      q: 'In binary notation, the quantity associated with each position is:',
+      options: ['A. The same as the position to its right', 'B. Twice the quantity of the position to its right', 'C. Half the quantity of the position to its right', 'D. Ten times the quantity to its right'],
+      answer: 'B. Twice the quantity of the position to its right',
+      diff: 'easy',
+    },
+    {
+      q: 'The binary number 1011 represents which decimal value?',
+      options: ['A. 9', 'B. 10', 'C. 11', 'D. 12'],
+      answer: 'C. 11',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the decimal equivalent of binary 1111?',
+      options: ['A. 8', 'B. 12', 'C. 15', 'D. 16'],
+      answer: 'C. 15',
+      diff: 'easy',
+    },
+    {
+      q: 'Binary 10000 represents decimal:',
+      options: ['A. 8', 'B. 16', 'C. 24', 'D. 32'],
+      answer: 'B. 16',
+      diff: 'easy',
+    },
+    {
+      q: 'How many bits are needed to represent decimal 255?',
+      options: ['A. 4', 'B. 6', 'C. 8', 'D. 10'],
+      answer: 'C. 8',
+      diff: 'easy',
+    },
+    {
+      q: 'Binary 11111111 equals decimal:',
+      options: ['A. 128', 'B. 192', 'C. 255', 'D. 256'],
+      answer: 'C. 255',
+      diff: 'easy',
+    },
+    {
+      q: 'The place value of the rightmost bit in binary is:',
+      options: ['A. 0', 'B. 1', 'C. 2', 'D. 4'],
+      answer: 'B. 1',
+      diff: 'easy',
+    },
+    {
+      q: 'The binary representation of decimal 13 is:',
+      options: ['A. 1010', 'B. 1100', 'C. 1101', 'D. 1110'],
+      answer: 'C. 1101',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the first step in the algorithm to convert a decimal number to binary?',
+      options: ['A. Multiply by 2', 'B. Subtract 1', 'C. Divide the number by 2', 'D. Add the bits'],
+      answer: 'C. Divide the number by 2',
+      diff: 'easy',
+    },
+    {
+      q: 'When converting decimal to binary, the remainders are collected in which order?',
+      options: ['A. Most significant first', 'B. Least significant first (from bottom to top)', 'C. Any order', 'D. Sorted descending'],
+      answer: 'B. Least significant first (from bottom to top)',
+      diff: 'medium',
+    },
+    {
+      q: 'After dividing repeatedly, the remainders are read:',
+      options: ['A. From first to last', 'B. From last to first (reverse order)', 'C. In any order', 'D. Sorted'],
+      answer: 'B. From last to first (reverse order)',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the binary representation of decimal 32?',
+      options: ['A. 100000', 'B. 10000', 'C. 11111', 'D. 1000000'],
+      answer: 'A. 100000',
+      diff: 'easy',
+    },
+    {
+      q: 'Convert decimal 25 to binary:',
+      options: ['A. 11001', 'B. 10011', 'C. 11100', 'D. 11010'],
+      answer: 'A. 11001',
+      diff: 'medium',
+    },
+    {
+      q: 'The decimal number 0 in binary is:',
+      options: ['A. 0', 'B. 1', 'C. 10', 'D. 00'],
+      answer: 'A. 0',
+      diff: 'easy',
+    },
+    {
+      q: 'How many distinct values can 4 bits represent?',
+      options: ['A. 8', 'B. 12', 'C. 16', 'D. 32'],
+      answer: 'C. 16',
+      diff: 'easy',
+    },
+    {
+      q: 'The binary number 1001 is equal to decimal:',
+      options: ['A. 8', 'B. 9', 'C. 10', 'D. 12'],
+      answer: 'B. 9',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is a valid binary digit?',
+      options: ['A. 2', 'B. 3', 'C. 0', 'D. Both A and C'],
+      answer: 'C. 0',
+      diff: 'easy',
+    },
+    {
+      q: 'The algorithm for decimal to binary conversion terminates when:',
+      options: ['A. Remainder is 1', 'B. Quotient becomes 0', 'C. Quotient becomes 1', 'D. Remainder is 0'],
+      answer: 'B. Quotient becomes 0',
+      diff: 'medium',
+    },
+    {
+      q: 'Binary 101010 equals decimal:',
+      options: ['A. 42', 'B. 21', 'C. 84', 'D. 36'],
+      answer: 'A. 42',
+      diff: 'medium',
+    },
+    {
+      q: 'The place value of the 5th bit from the right (2⁴) is:',
+      options: ['A. 8', 'B. 16', 'C. 32', 'D. 64'],
+      answer: 'B. 16',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the decimal value of binary 11101?',
+      options: ['A. 28', 'B. 29', 'C. 30', 'D. 31'],
+      answer: 'B. 29',
+      diff: 'medium',
+    }
+  ]
+},
+
+
+23: {
+  title: 'Binary Addition: Rules, Carry, and Examples (CS101 Lecture 23)',
+  summary: `**Key Topics Covered:**
+- Binary addition rules (4 possibilities):
+  0 + 0 = 0 (carry 0)
+  0 + 1 = 1 (carry 0)
+  1 + 0 = 1 (carry 0)
+  1 + 1 = 0 (carry 1 to next column)
+- Addition is performed from right to left (least significant bit first)
+- When sum is 10 (binary), write 0 and carry 1
+- Multiple examples: single-bit, two-bit, multi-bit addition
+- Carry propagates to left as in decimal addition
+
+---
+
+**Simple Understanding:**
+
+**Binary Addition Basics:**
+👉 Only digits 0 and 1.
+👉 Four possible cases when adding two bits.
+
+**Rules Table:**
+| A | B | Sum | Carry |
+|---|---|-----|-------|
+| 0 | 0 | 0   | 0     |
+| 0 | 1 | 1   | 0     |
+| 1 | 0 | 1   | 0     |
+| 1 | 1 | 0   | 1     |
+
+**How to Add Binary Numbers:**
+1. Start from the rightmost column (least significant bit).
+2. Add the two bits (plus any carry from previous column).
+3. If sum is 0 or 1, write it, carry 0.
+4. If sum is 2 (binary 10), write 0, carry 1.
+5. If sum is 3 (binary 11), write 1, carry 1 (when adding three bits: A+B+carry).
+
+**Example 1:** 1 + 1 = 0 with carry 1.
+**Example 2:** 101 + 011 = 1000.
+**Example 3:** 1101 + 1011 = 11000.
+
+---
+
+**Important Vocabulary:**
+- Binary addition = adding numbers in base-2
+- Carry = extra 1 transferred to next higher column
+- Least significant bit (LSB) = rightmost bit (value 2⁰)
+- Most significant bit (MSB) = leftmost bit
+- Sum = result of addition in current column
+
+---
+
+**Quick Revision Points:**
+- 1+1 = 0, carry 1.
+- Add from right to left.
+- A carry generated in a column is added to the next left column.
+- Binary 10 = decimal 2.
+- Practice: 111 + 001 = 1000.`,
+
+  questions: [
+    {
+      q: 'What is the result of 1 + 1 in binary?',
+      options: ['A. 0 with carry 0', 'B. 0 with carry 1', 'C. 1 with carry 0', 'D. 1 with carry 1'],
+      answer: 'B. 0 with carry 1',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the result of 0 + 1 in binary?',
+      options: ['A. 0 with carry 0', 'B. 1 with carry 0', 'C. 0 with carry 1', 'D. 1 with carry 1'],
+      answer: 'B. 1 with carry 0',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the result of 1 + 0 in binary?',
+      options: ['A. 0 with carry 0', 'B. 1 with carry 0', 'C. 0 with carry 1', 'D. 1 with carry 1'],
+      answer: 'B. 1 with carry 0',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the result of 0 + 0 in binary?',
+      options: ['A. 0 with carry 0', 'B. 1 with carry 0', 'C. 0 with carry 1', 'D. 1 with carry 1'],
+      answer: 'A. 0 with carry 0',
+      diff: 'easy',
+    },
+    {
+      q: 'When adding binary numbers, addition starts from:',
+      options: ['A. Leftmost bit', 'B. Rightmost bit (LSB)', 'C. Any bit', 'D. Middle bit'],
+      answer: 'B. Rightmost bit (LSB)',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the sum of binary 1 and 1 (single bit addition)?',
+      options: ['A. 0', 'B. 1', 'C. 2', 'D. 10'],
+      answer: 'A. 0',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the carry when adding 1 + 1?',
+      options: ['A. 0', 'B. 1', 'C. 2', 'D. No carry'],
+      answer: 'B. 1',
+      diff: 'easy',
+    },
+    {
+      q: 'Add binary 101 + 011. What is the result?',
+      options: ['A. 1000', 'B. 111', 'C. 110', 'D. 1010'],
+      answer: 'A. 1000',
+      diff: 'medium',
+    },
+    {
+      q: 'Add binary 110 + 110. What is the result?',
+      options: ['A. 1100', 'B. 1000', 'C. 1010', 'D. 1110'],
+      answer: 'A. 1100',
+      diff: 'medium',
+    },
+    {
+      q: 'Add binary 111 + 001. What is the result?',
+      options: ['A. 1000', 'B. 1001', 'C. 1010', 'D. 1100'],
+      answer: 'A. 1000',
+      diff: 'medium',
+    },
+    {
+      q: 'Add binary 1010 + 0101. What is the result?',
+      options: ['A. 1111', 'B. 1010', 'C. 1100', 'D. 1001'],
+      answer: 'A. 1111',
+      diff: 'easy',
+    },
+    {
+      q: 'Add binary 1101 + 1011. What is the result?',
+      options: ['A. 11000', 'B. 10000', 'C. 10100', 'D. 11100'],
+      answer: 'A. 11000',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the binary sum of 1111 + 0001?',
+      options: ['A. 10000', 'B. 11110', 'C. 10001', 'D. 11111'],
+      answer: 'A. 10000',
+      diff: 'medium',
+    },
+    {
+      q: 'When adding three bits (A + B + carry-in), what is the result and carry for 1+1+1?',
+      options: ['A. Sum=1, Carry=1', 'B. Sum=0, Carry=1', 'C. Sum=1, Carry=0', 'D. Sum=0, Carry=0'],
+      answer: 'A. Sum=1, Carry=1',
+      diff: 'hard',
+    },
+    {
+      q: 'When adding three bits (A + B + carry-in), what is the result and carry for 1+1+0?',
+      options: ['A. Sum=1, Carry=1', 'B. Sum=0, Carry=1', 'C. Sum=1, Carry=0', 'D. Sum=0, Carry=0'],
+      answer: 'B. Sum=0, Carry=1',
+      diff: 'hard',
+    },
+    {
+      q: 'Binary addition of 10101 and 01010 gives:',
+      options: ['A. 11111', 'B. 10000', 'C. 11000', 'D. 10101'],
+      answer: 'A. 11111',
+      diff: 'medium',
+    },
+    {
+      q: 'What is 1100 + 1100 in binary?',
+      options: ['A. 11000', 'B. 10100', 'C. 10010', 'D. 11100'],
+      answer: 'A. 11000',
+      diff: 'medium',
+    },
+    {
+      q: 'What is the result of adding 1 (binary) to 111 (binary)?',
+      options: ['A. 1000', 'B. 1001', 'C. 1010', 'D. 1100'],
+      answer: 'A. 1000',
+      diff: 'easy',
+    },
+    {
+      q: 'The binary sum of 1010 and 0110 is:',
+      options: ['A. 10000', 'B. 1000', 'C. 10010', 'D. 10001'],
+      answer: 'A. 10000',
+      diff: 'hard',
+    },
+    {
+      q: 'Which of the following statements about binary addition is TRUE?',
+      options: ['A. 1+1 = 2 with carry 0', 'B. 1+1 = 0 with carry 1', 'C. 1+1 = 1 with carry 1', 'D. 1+1 = 0 with carry 0'],
+      answer: 'B. 1+1 = 0 with carry 1',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+24: {
+  title: 'Fraction in Binary: Radix Point and Binary Fractions (CS101 Lecture 24)',
+  summary: `**Key Topics Covered:**
+- Radix point: binary equivalent of decimal point
+- Digits to the left of radix point represent the whole number part
+- Digits to the right represent the fractional part
+- Example: 101.101 binary = 1×4 + 0×2 + 1×1 + 1×½ + 0×¼ + 1×⅛ = 4 + 0 + 1 + 0.5 + 0 + 0.125 = 5.625 decimal
+- Addition of binary fractions: align radix points, then add normally (same as binary addition)
+- Example: 10.011 + 100.11 = 111.001
+
+---
+
+**Simple Understanding:**
+
+**What is Radix Point?**
+👉 In decimal, we use a decimal point (.) to separate whole and fractional parts.
+👉 In binary, the same concept is called a radix point.
+
+**Place Values to the Right of Radix Point:**
+👉 First digit right of radix point = ½ (2⁻¹ = 0.5)
+👉 Second digit = ¼ (2⁻² = 0.25)
+👉 Third digit = ⅛ (2⁻³ = 0.125)
+👉 Fourth digit = 1/16 (2⁻⁴ = 0.0625)
+👉 And so on (each place is half the previous).
+
+**Example: Binary 101.101 to Decimal:**
+- Left of radix: 1×4 + 0×2 + 1×1 = 5
+- Right of radix: 1×0.5 + 0×0.25 + 1×0.125 = 0.5 + 0 + 0.125 = 0.625
+- Total: 5 + 0.625 = 5.625 decimal.
+
+**Adding Binary Fractions:**
+👉 Align the radix points vertically.
+👉 Add from rightmost column to left (same as binary addition rules).
+👉 Example: 10.011 + 100.11
+   10.011
+ + 100.11
+ = 111.001
+
+---
+
+**Important Vocabulary:**
+- Radix point = binary point (separates integer and fractional parts)
+- Whole number part = digits left of radix point
+- Fractional part = digits right of radix point
+- 2⁻¹ = 1/2
+- 2⁻² = 1/4
+- 2⁻³ = 1/8
+- Align = line up radix points before adding
+
+---
+
+**Quick Revision Points:**
+- Binary fractions use powers of 2 with negative exponents.
+- 2⁻¹ = 0.5, 2⁻² = 0.25, 2⁻³ = 0.125, etc.
+- To convert binary fraction to decimal: multiply each bit by its place value and sum.
+- To add binary fractions: align radix points, then add column by column with carry.
+- Example: 0.1 binary = 0.5 decimal; 0.01 = 0.25; 0.001 = 0.125.`,
+
+  questions: [
+    {
+      q: 'What is the binary point called?',
+      options: ['A. Decimal point', 'B. Radix point', 'C. Fraction point', 'D. Binary separator'],
+      answer: 'B. Radix point',
+      diff: 'easy',
+    },
+    {
+      q: 'In binary, the digit immediately to the right of the radix point represents:',
+      options: ['A. 2⁰ = 1', 'B. 2⁻¹ = ½ (0.5)', 'C. 2⁻² = ¼ (0.25)', 'D. 2⁻³ = ⅛ (0.125)'],
+      answer: 'B. 2⁻¹ = ½ (0.5)',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the decimal value of binary 0.1?',
+      options: ['A. 0.25', 'B. 0.5', 'C. 0.125', 'D. 0.75'],
+      answer: 'B. 0.5',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the decimal value of binary 0.01?',
+      options: ['A. 0.5', 'B. 0.125', 'C. 0.25', 'D. 0.375'],
+      answer: 'C. 0.25',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the decimal value of binary 0.001?',
+      options: ['A. 0.5', 'B. 0.25', 'C. 0.125', 'D. 0.0625'],
+      answer: 'C. 0.125',
+      diff: 'easy',
+    },
+    {
+      q: 'Convert binary 101.101 to decimal:',
+      options: ['A. 5.125', 'B. 5.25', 'C. 5.5', 'D. 5.625'],
+      answer: 'D. 5.625',
+      diff: 'medium',
+    },
+    {
+      q: 'Convert binary 11.11 to decimal:',
+      options: ['A. 3.5', 'B. 3.75', 'C. 3.25', 'D. 3.125'],
+      answer: 'B. 3.75',
+      diff: 'medium',
+    },
+    {
+      q: 'Convert binary 0.111 to decimal:',
+      options: ['A. 0.5', 'B. 0.625', 'C. 0.75', 'D. 0.875'],
+      answer: 'D. 0.875',
+      diff: 'medium',
+    },
+    {
+      q: 'What is 0.1 + 0.1 in binary?',
+      options: ['A. 0.1', 'B. 1.0', 'C. 0.01', 'D. 0.11'],
+      answer: 'B. 1.0',
+      diff: 'medium',
+    },
+    {
+      q: 'When adding binary fractions, the first step is:',
+      options: ['A. Convert to decimal', 'B. Align the radix points', 'C. Ignore the fractional part', 'D. Multiply by 2'],
+      answer: 'B. Align the radix points',
+      diff: 'easy',
+    },
+    {
+      q: 'Add binary 10.011 + 100.11. The result is:',
+      options: ['A. 110.101', 'B. 111.001', 'C. 111.101', 'D. 110.001'],
+      answer: 'B. 111.001',
+      diff: 'hard',
+    },
+    {
+      q: 'Add binary 1.1 + 0.1. The result is:',
+      options: ['A. 10.0', 'B. 1.0', 'C. 10.1', 'D. 1.10'],
+      answer: 'A. 10.0',
+      diff: 'easy',
+    },
+    {
+      q: 'The place value of the 4th bit to the right of the radix point is:',
+      options: ['A. 1/4', 'B. 1/8', 'C. 1/16', 'D. 1/32'],
+      answer: 'C. 1/16',
+      diff: 'easy',
+    },
+    {
+      q: 'What is 0.101 binary in decimal?',
+      options: ['A. 0.5', 'B. 0.625', 'C. 0.75', 'D. 0.875'],
+      answer: 'B. 0.625',
+      diff: 'medium',
+    },
+    {
+      q: 'What is 0.011 binary in decimal?',
+      options: ['A. 0.125', 'B. 0.25', 'C. 0.375', 'D. 0.5'],
+      answer: 'C. 0.375',
+      diff: 'medium',
+    },
+    {
+      q: 'Add binary 11.01 + 10.11. The result is:',
+      options: ['A. 110.00', 'B. 110.01', 'C. 101.10', 'D. 100.10'],
+      answer: 'A. 110.00',
+      diff: 'hard',
+    },
+    {
+      q: 'The value of 2⁻⁴ in decimal is:',
+      options: ['A. 0.125', 'B. 0.0625', 'C. 0.03125', 'D. 0.015625'],
+      answer: 'B. 0.0625',
+      diff: 'easy',
+    },
+    {
+      q: 'Binary 10.1 equals decimal:',
+      options: ['A. 2.5', 'B. 2.25', 'C. 2.125', 'D. 2.75'],
+      answer: 'A. 2.5',
+      diff: 'easy',
+    },
+    {
+      q: 'Binary 110.011 equals decimal:',
+      options: ['A. 6.375', 'B. 6.25', 'C. 6.5', 'D. 6.125'],
+      answer: 'A. 6.375',
+      diff: 'medium',
+    },
+    {
+      q: 'The radix point in binary is analogous to which point in decimal?',
+      options: ['A. Decimal point', 'B. Percent sign', 'C. Comma', 'D. Colon'],
+      answer: 'A. Decimal point',
+      diff: 'easy',
+    },
+    {
+      q: 'When adding binary fractions, a carry can propagate from the fractional part into the integer part?',
+      options: ['A. Yes', 'B. No', 'C. Only if the sum is 2', 'D. Only if the sum is 1'],
+      answer: 'A. Yes',
+      diff: 'medium',
+    }
+  ]
+},
+
+25: {
+  title: '2’s Complement Notation: Storing Integers in Binary (CS101 Lecture 25)',
+  summary: `**Key Topics Covered:**
+- Two’s complement: most popular system for representing integers in computers
+- Fixed number of bits (typically 32 bits) – smaller examples used for demonstration
+- Positive integers: from zero upward (0 = 000...0, max positive = 0 followed by all 1’s)
+- Negative integers: from all 1’s downward (minimum negative = 1 followed by all 0’s)
+- Leftmost bit = sign bit (0 for positive, 1 for negative)
+- Conversion trick (positive ↔ negative):
+  1. Start from rightmost bit
+  2. Copy bits until the first 1 is encountered
+  3. After that first 1, complement all remaining bits (0→1, 1→0)
+- Example: 7 in 4-bit two’s complement = 0111 → -7 = 1001
+- Addition works the same as regular binary addition (no special rules)
+- Overflow: when result exceeds the range that can be stored in given bits
+- 4-bit range: -8 to +7 (5+4=9 → overflow, result appears as -7)
+- Modern computers use 32 bits: range ≈ -2.1 billion to +2.1 billion
+- Historical overflow bug: September 19, 1989 – hospital system failed after 32,768 days (16-bit limit)
+
+---
+
+**Simple Understanding:**
+
+**What is Two’s Complement?**
+👉 Standard way computers store negative and positive integers.
+👉 Uses a fixed number of bits (e.g., 4, 16, 32).
+👉 Leftmost bit indicates sign: 0 = positive, 1 = negative.
+
+**Range with 4 bits:**
+- Positive: 0000 (0) to 0111 (+7)
+- Negative: 1111 (-1) down to 1000 (-8)
+- Total values: 2⁴ = 16 numbers (from -8 to +7)
+
+**Conversion Trick (Positive to Negative):**
+Example: +7 = 0111
+1. Start from right: first 1 is at position 0 (rightmost)
+2. Copy that 1
+3. Complement all bits to its left: 0→1, 1→0
+Result: 1001 = -7
+
+**Addition:**
+👉 Just add binary numbers normally (ignore the sign bit; overflow handled automatically).
+👉 Example: 0111 (+7) + 0001 (+1) = 1000 (-8) – overflow occurred.
+
+**Overflow Problem:**
+👉 When result is outside the representable range.
+👉 4-bit: 5 (0101) + 4 (0100) = 9 → overflows to -7 (1001).
+👉 Modern 32-bit range: +2,147,483,647 to -2,147,483,648.
+👉 Famous bug: 16-bit system overflowed after 32,768 days (Jan 1, 1900 + 32,768 = Sep 19, 1989) causing hospital system failure.
+
+---
+
+**Important Vocabulary:**
+- Two’s complement = signed integer representation
+- Sign bit = leftmost bit (0 positive, 1 negative)
+- Fixed number of bits = constant bit-length for all numbers
+- Overflow = result beyond representable range
+- 4-bit range = -8 to +7
+- 16-bit range = -32,768 to +32,767
+- 32-bit range = -2,147,483,648 to +2,147,483,647
+
+---
+
+**Quick Revision Points:**
+- Two’s complement stores both positive and negative integers.
+- Leftmost bit is sign (0 = positive, 1 = negative).
+- Positive numbers: same as ordinary binary.
+- Negative numbers: obtained by complementing after the first 1 from right.
+- Addition uses ordinary binary addition.
+- Overflow can produce wrong sign results.
+- 16-bit overflow caused the 1989 hospital system bug.`,
+
+  questions: [
+    {
+      q: 'What is the most popular system for representing integers in computers today?',
+      options: ['A. Sign-magnitude', 'B. One’s complement', 'C. Two’s complement', 'D. Binary coded decimal'],
+      answer: 'C. Two’s complement',
+      diff: 'easy',
+    },
+    {
+      q: 'In two’s complement, the leftmost bit represents:',
+      options: ['A. The value 128', 'B. The sign (0 positive, 1 negative)', 'C. The most significant value', 'D. The parity'],
+      answer: 'B. The sign (0 positive, 1 negative)',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the range of signed integers that can be stored in 4-bit two’s complement?',
+      options: ['A. -7 to +7', 'B. -8 to +7', 'C. -7 to +8', 'D. -8 to +8'],
+      answer: 'B. -8 to +7',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the 4-bit two’s complement representation of +7?',
+      options: ['A. 0111', 'B. 1000', 'C. 1111', 'D. 1001'],
+      answer: 'A. 0111',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the 4-bit two’s complement representation of -7?',
+      options: ['A. 0111', 'B. 1000', 'C. 1111', 'D. 1001'],
+      answer: 'D. 1001',
+      diff: 'medium',
+    },
+    {
+      q: 'Using the conversion trick, starting from +7 (0111), to get -7 you:',
+      options: ['A. Invert all bits', 'B. Add 1 to the inverted bits', 'C. Copy from right until first 1, then complement remaining', 'D. Subtract 1 and invert'],
+      answer: 'C. Copy from right until first 1, then complement remaining',
+      diff: 'medium',
+    },
+    {
+      q: 'What is the 4-bit two’s complement of -1?',
+      options: ['A. 0001', 'B. 1111', 'C. 1110', 'D. 1001'],
+      answer: 'B. 1111',
+      diff: 'medium',
+    },
+    {
+      q: 'What is the most negative number in 4-bit two’s complement?',
+      options: ['A. 1111 (-1)', 'B. 1000 (-8)', 'C. 1001 (-7)', 'D. 1010 (-6)'],
+      answer: 'B. 1000 (-8)',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the most positive number in 4-bit two’s complement?',
+      options: ['A. 0111 (+7)', 'B. 0110 (+6)', 'C. 1111 (+15)', 'D. 1000 (+8)'],
+      answer: 'A. 0111 (+7)',
+      diff: 'easy',
+    },
+    {
+      q: 'Add 5 (0101) + 4 (0100) in 4-bit two’s complement. The result (as a 4-bit number) is:',
+      options: ['A. 1001 (-7)', 'B. 0111 (+7)', 'C. 1100 (-4)', 'D. 1111 (-1)'],
+      answer: 'A. 1001 (-7)',
+      diff: 'hard',
+    },
+    {
+      q: 'The phenomenon where addition of two positive numbers gives a negative result is called:',
+      options: ['A. Underflow', 'B. Overflow', 'C. Carry-out', 'D. Sign reversal'],
+      answer: 'B. Overflow',
+      diff: 'easy',
+    },
+    {
+      q: 'In 16-bit two’s complement, the maximum positive integer is:',
+      options: ['A. 32,767', 'B. 32,768', 'C. 65,535', 'D. 65,536'],
+      answer: 'A. 32,767',
+      diff: 'medium',
+    },
+    {
+      q: 'In 16-bit two’s complement, the most negative integer is:',
+      options: ['A. -32,767', 'B. -32,768', 'C. -65,535', 'D. -65,536'],
+      answer: 'B. -32,768',
+      diff: 'medium',
+    },
+    {
+      q: 'The famous overflow bug on September 19, 1989 occurred because a system used:',
+      options: ['A. 8-bit two’s complement', 'B. 16-bit two’s complement', 'C. 32-bit two’s complement', 'D. 64-bit two’s complement'],
+      answer: 'B. 16-bit two’s complement',
+      diff: 'hard',
+    },
+    {
+      q: 'How many days after January 1, 1900 caused the 1989 hospital system malfunction?',
+      options: ['A. 16,384', 'B. 32,768', 'C. 65,536', 'D. 10,000'],
+      answer: 'B. 32,768',
+      diff: 'hard',
+    },
+    {
+      q: 'In 32-bit two’s complement, the maximum positive integer is approximately:',
+      options: ['A. 2 million', 'B. 2 billion', 'C. 4 billion', 'D. 2 trillion'],
+      answer: 'B. 2 billion',
+      diff: 'easy',
+    },
+    {
+      q: 'If you have the 4-bit pattern 1100, what decimal value does it represent in two’s complement?',
+      options: ['A. -4', 'B. -3', 'C. 12', 'D. -2'],
+      answer: 'A. -4',
+      diff: 'medium',
+    },
+    {
+      q: 'The two’s complement representation of -5 in 4 bits is:',
+      options: ['A. 1011', 'B. 1010', 'C. 1101', 'D. 1110'],
+      answer: 'A. 1011',
+      diff: 'hard',
+    },
+    {
+      q: 'When adding 0111 (+7) and 0001 (+1) in 4-bit two’s complement, the result is 1000 which represents:',
+      options: ['A. +8', 'B. -8', 'C. 0', 'D. Overflow flag not set'],
+      answer: 'B. -8',
+      diff: 'medium',
+    },
+    {
+      q: 'Which of the following statements about two’s complement addition is true?',
+      options: ['A. Requires special hardware', 'B. Works exactly like ordinary binary addition', 'C. Cannot handle negative numbers', 'D. Only works for positive numbers'],
+      answer: 'B. Works exactly like ordinary binary addition',
+      diff: 'easy',
+    },
+    {
+      q: 'The sign bit is 0 for positive numbers and 1 for negative numbers. In 4-bit, what is -0?',
+      options: ['A. 0000', 'B. 1000', 'C. 1111', 'D. There is no -0 in two’s complement'],
+      answer: 'D. There is no -0 in two’s complement',
+      diff: 'medium',
+    },
+    {
+      q: 'What is the decimal value of 1000 in 4-bit two’s complement?',
+      options: ['A. 8', 'B. -8', 'C. 0', 'D. -0'],
+      answer: 'B. -8',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+26: {
+  title: 'Excess Notation: Alternative Integer Representation (CS101 Lecture 26)',
+  summary: `**Key Topics Covered:**
+- Excess notation: another method for representing integers (positive and negative)
+- Fixed number of bits – bit patterns of the same length
+- First pattern with a 1 in the most significant bit represents zero
+- Following patterns (higher binary value) represent positive numbers
+- Preceding patterns (lower binary value) represent negative numbers
+- Excess notation value = binary value – excess amount
+- Example: Excess 8 notation – 1000 binary (8 decimal) represents 0 (excess of 8)
+- Excess 4 notation – 0100 binary (4 decimal) represents 0 (excess of 4)
+- Comparison: Binary, Excess 4, and Two’s complement for the same bit patterns
+
+---
+
+**Simple Understanding:**
+
+**What is Excess Notation?**
+👉 A way to represent signed integers without a separate sign bit.
+👉 Uses a fixed number of bits; the bit pattern that is exactly halfway (most significant bit 1, others 0) represents zero.
+👉 Patterns with higher binary value are positive; lower are negative.
+
+**Excess 8 Notation (4-bit example):**
+- 4 bits → 16 patterns (0 to 15 binary)
+- Zero represented by 1000 (binary 8)
+- Binary value – 8 = actual integer
+  - 0000 (0) → 0 – 8 = -8
+  - 1000 (8) → 8 – 8 = 0
+  - 1111 (15) → 15 – 8 = +7
+- Range: -8 to +7
+
+**Excess 4 Notation (3-bit example):**
+- 3 bits → 8 patterns (0 to 7 binary)
+- Zero represented by 100 (binary 4)
+- Binary value – 4 = actual integer
+  - 000 (0) → 0 – 4 = -4
+  - 100 (4) → 4 – 4 = 0
+  - 111 (7) → 7 – 4 = +3
+- Range: -4 to +3
+
+**Comparison of Representations (4-bit):**
+| Binary | Excess 8 | Two’s Complement |
+|--------|----------|------------------|
+| 0000   | -8       | 0                |
+| 0001   | -7       | 1                |
+| ...    | ...      | ...              |
+| 0111   | -1       | 7                |
+| 1000   | 0        | -8               |
+| 1001   | 1        | -7               |
+| ...    | ...      | ...              |
+| 1111   | 7        | -1               |
+
+---
+
+**Important Vocabulary:**
+- Excess notation = representation where zero is a predefined binary pattern
+- Excess amount = bias value subtracted from binary to get actual integer
+- Excess 8 = bias of 8 (zero = 1000 binary)
+- Excess 4 = bias of 4 (zero = 100 binary)
+- Fixed number of bits = constant bit-length
+- Bias = constant value added to actual integer to get stored pattern
+
+---
+
+**Quick Revision Points:**
+- Excess notation stores signed integers by shifting the range.
+- Zero is represented by the pattern 100...0 (1 followed by zeros).
+- Actual value = (binary value) – (excess amount).
+- Excess 8 (4 bits): range -8 to +7.
+- Excess 4 (3 bits): range -4 to +3.
+- Unlike two’s complement, bit patterns have different meanings.`,
+
+  questions: [
+    {
+      q: 'In excess notation, zero is represented by which bit pattern?',
+      options: ['A. All zeros', 'B. All ones', 'C. A 1 in the most significant bit followed by zeros', 'D. A 1 in the least significant bit'],
+      answer: 'C. A 1 in the most significant bit followed by zeros',
+      diff: 'easy',
+    },
+    {
+      q: 'In 4-bit excess 8 notation, the pattern 1000 represents:',
+      options: ['A. -8', 'B. 0', 'C. 8', 'D. 1'],
+      answer: 'B. 0',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the range of integers in 4-bit excess 8 notation?',
+      options: ['A. -8 to +7', 'B. -7 to +8', 'C. -8 to +8', 'D. -16 to +15'],
+      answer: 'A. -8 to +7',
+      diff: 'easy',
+    },
+    {
+      q: 'In excess 8 notation, the binary pattern 0000 represents:',
+      options: ['A. -8', 'B. 0', 'C. 8', 'D. -1'],
+      answer: 'A. -8',
+      diff: 'easy',
+    },
+    {
+      q: 'In excess 8 notation, the binary pattern 1111 represents:',
+      options: ['A. -1', 'B. 0', 'C. 7', 'D. 15'],
+      answer: 'C. 7',
+      diff: 'easy',
+    },
+    {
+      q: 'How many bits are used in the excess 4 notation example?',
+      options: ['A. 2 bits', 'B. 3 bits', 'C. 4 bits', 'D. 8 bits'],
+      answer: 'B. 3 bits',
+      diff: 'easy',
+    },
+    {
+      q: 'In 3-bit excess 4 notation, the pattern 100 represents:',
+      options: ['A. -4', 'B. 0', 'C. 4', 'D. -1'],
+      answer: 'B. 0',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the range of 3-bit excess 4 notation?',
+      options: ['A. -3 to +4', 'B. -4 to +3', 'C. -4 to +4', 'D. -8 to +7'],
+      answer: 'B. -4 to +3',
+      diff: 'easy',
+    },
+    {
+      q: 'In 3-bit excess 4 notation, pattern 000 represents:',
+      options: ['A. -4', 'B. 0', 'C. 4', 'D. -3'],
+      answer: 'A. -4',
+      diff: 'easy',
+    },
+    {
+      q: 'In 3-bit excess 4 notation, pattern 111 represents:',
+      options: ['A. -1', 'B. 3', 'C. 7', 'D. -4'],
+      answer: 'B. 3',
+      diff: 'easy',
+    },
+    {
+      q: 'The term "excess 8" means that the actual integer value equals:',
+      options: ['A. Binary pattern + 8', 'B. Binary pattern – 8', 'C. 8 – Binary pattern', 'D. Binary pattern × 8'],
+      answer: 'B. Binary pattern – 8',
+      diff: 'medium',
+    },
+    {
+      q: 'In 4-bit excess 8 notation, what is the binary pattern for -1?',
+      options: ['A. 0111', 'B. 1001', 'C. 1111', 'D. 0001'],
+      answer: 'A. 0111',
+      diff: 'hard',
+    },
+    {
+      q: 'In 4-bit excess 8 notation, what is the binary pattern for +5?',
+      options: ['A. 1101', 'B. 1010', 'C. 0101', 'D. 1001'],
+      answer: 'A. 1101',
+      diff: 'hard',
+    },
+    {
+      q: 'Which of the following is true about excess notation?',
+      options: ['A. It uses a separate sign bit', 'B. It is identical to two’s complement', 'C. It shifts the zero point to the middle of the range', 'D. It cannot represent negative numbers'],
+      answer: 'C. It shifts the zero point to the middle of the range',
+      diff: 'medium',
+    },
+    {
+      q: 'In 4-bit excess 8, the pattern 0101 (binary 5) represents which integer?',
+      options: ['A. -3', 'B. 5', 'C. 13', 'D. 3'],
+      answer: 'A. -3',
+      diff: 'medium',
+    },
+    {
+      q: 'In 3-bit excess 4, the pattern 010 (binary 2) represents:',
+      options: ['A. -2', 'B. 0', 'C. 2', 'D. -1'],
+      answer: 'A. -2',
+      diff: 'medium',
+    },
+    {
+      q: 'The total number of representable integers in n-bit excess notation is:',
+      options: ['A. 2ⁿ', 'B. 2ⁿ – 1', 'C. n²', 'D. 2ⁿ⁺¹'],
+      answer: 'A. 2ⁿ',
+      diff: 'easy',
+    },
+    {
+      q: 'Which representation does NOT have a separate sign bit?',
+      options: ['A. Two’s complement', 'B. Excess notation', 'C. Both A and B', 'D. Neither'],
+      answer: 'C. Both A and B',
+      diff: 'easy',
+    },
+    {
+      q: 'In 4-bit excess 8, the smallest integer representable is:',
+      options: ['A. -8', 'B. -7', 'C. -9', 'D. -16'],
+      answer: 'A. -8',
+      diff: 'easy',
+    },
+    {
+      q: 'In 4-bit excess 8, the largest integer representable is:',
+      options: ['A. 7', 'B. 8', 'C. 15', 'D. 16'],
+      answer: 'A. 7',
+      diff: 'easy',
+    },
+    {
+      q: 'The advantage of excess notation over two’s complement is primarily in:',
+      options: ['A. Simpler addition hardware', 'B. Comparison of floating-point exponents (ease of ordering)', 'C. Larger range', 'D. Simpler subtraction'],
+      answer: 'B. Comparison of floating-point exponents (ease of ordering)',
+      diff: 'hard',
+    }
+  ]
+},
+
+
+26: {
+  title: 'Excess Notation: Alternative Integer Representation (CS101 Lecture 26)',
+  summary: `**Key Topics Covered:**
+- Excess notation: another method for representing signed integers
+- Fixed number of bits – uses all bit patterns of the same length
+- Zero is represented by the first pattern with a 1 in the most significant bit (e.g., 1000 in 4-bit)
+- Higher patterns (larger binary) represent positive numbers
+- Lower patterns (smaller binary) represent negative numbers
+- Actual value = binary value – excess amount
+- Example: 1011 binary (11) in excess 8 = 11 – 8 = 3
+- Excess 16: 10000 binary = 0
+- Excess 8 notation (4-bit): range -8 to +7
+- Excess 4 notation (3-bit): range -4 to +3
+- Comparison of Binary, Excess 4, and Two’s complement for same bit patterns
+
+---
+
+**Simple Understanding:**
+
+**What is Excess Notation?**
+👉 A way to represent both positive and negative integers without a separate sign bit.
+👉 The bit pattern that has a 1 in the leftmost position and zeros elsewhere (e.g., 1000 in 4-bit) represents zero.
+👉 Patterns with higher binary value are positive; lower are negative.
+
+**Excess 8 (4-bit example):**
+- 4 bits → 16 patterns (0 to 15)
+- Zero = 1000 (binary 8)
+- Actual integer = binary value – 8
+  - 0000 (0) → 0 – 8 = -8
+  - 1000 (8) → 8 – 8 = 0
+  - 1111 (15) → 15 – 8 = +7
+- Range: -8 to +7
+
+**Excess 4 (3-bit example):**
+- 3 bits → 8 patterns (0 to 7)
+- Zero = 100 (binary 4)
+- Actual integer = binary value – 4
+  - 000 (0) → 0 – 4 = -4
+  - 100 (4) → 4 – 4 = 0
+  - 111 (7) → 7 – 4 = +3
+- Range: -4 to +3
+
+**Comparison (4-bit patterns):**
+| Binary | Excess 8 | Two’s Complement |
+|--------|----------|------------------|
+| 0000   | -8       | 0                |
+| 0111   | -1       | 7                |
+| 1000   | 0        | -8               |
+| 1111   | 7        | -1               |
+
+---
+
+**Important Vocabulary:**
+- Excess notation = bias representation for integers
+- Excess amount = bias value (e.g., 8 in excess 8)
+- Zero pattern = 100...0 (1 followed by zeros)
+- Bias = constant added to actual value to get stored pattern
+
+---
+
+**Quick Revision Points:**
+- Excess notation shifts zero to the middle of the bit pattern range.
+- Value = (binary value) – (excess amount).
+- Excess 8 (4 bits): -8 to +7.
+- Excess 4 (3 bits): -4 to +3.
+- Used in floating-point exponent representation.`,
+
+  questions: [
+    {
+      q: 'In excess notation, zero is represented by which bit pattern?',
+      options: ['A. All zeros', 'B. All ones', 'C. A 1 in the most significant bit followed by zeros', 'D. A 1 in the least significant bit'],
+      answer: 'C. A 1 in the most significant bit followed by zeros',
+      diff: 'easy',
+    },
+    {
+      q: 'In 4-bit excess 8 notation, the pattern 1000 represents:',
+      options: ['A. -8', 'B. 0', 'C. 8', 'D. 1'],
+      answer: 'B. 0',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the range of integers in 4-bit excess 8 notation?',
+      options: ['A. -8 to +7', 'B. -7 to +8', 'C. -8 to +8', 'D. -16 to +15'],
+      answer: 'A. -8 to +7',
+      diff: 'easy',
+    },
+    {
+      q: 'In excess 8 notation, the binary pattern 0000 represents:',
+      options: ['A. -8', 'B. 0', 'C. 8', 'D. -1'],
+      answer: 'A. -8',
+      diff: 'easy',
+    },
+    {
+      q: 'In excess 8 notation, the binary pattern 1111 represents:',
+      options: ['A. -1', 'B. 0', 'C. 7', 'D. 15'],
+      answer: 'C. 7',
+      diff: 'easy',
+    },
+    {
+      q: 'How many bits are used in the excess 4 notation example?',
+      options: ['A. 2 bits', 'B. 3 bits', 'C. 4 bits', 'D. 8 bits'],
+      answer: 'B. 3 bits',
+      diff: 'easy',
+    },
+    {
+      q: 'In 3-bit excess 4 notation, the pattern 100 represents:',
+      options: ['A. -4', 'B. 0', 'C. 4', 'D. -1'],
+      answer: 'B. 0',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the range of 3-bit excess 4 notation?',
+      options: ['A. -3 to +4', 'B. -4 to +3', 'C. -4 to +4', 'D. -8 to +7'],
+      answer: 'B. -4 to +3',
+      diff: 'easy',
+    },
+    {
+      q: 'In 3-bit excess 4 notation, pattern 000 represents:',
+      options: ['A. -4', 'B. 0', 'C. 4', 'D. -3'],
+      answer: 'A. -4',
+      diff: 'easy',
+    },
+    {
+      q: 'In 3-bit excess 4 notation, pattern 111 represents:',
+      options: ['A. -1', 'B. 3', 'C. 7', 'D. -4'],
+      answer: 'B. 3',
+      diff: 'easy',
+    },
+    {
+      q: 'The term "excess 8" means that the actual integer value equals:',
+      options: ['A. Binary pattern + 8', 'B. Binary pattern – 8', 'C. 8 – Binary pattern', 'D. Binary pattern × 8'],
+      answer: 'B. Binary pattern – 8',
+      diff: 'medium',
+    },
+    {
+      q: 'In 4-bit excess 8 notation, what is the binary pattern for -1?',
+      options: ['A. 0111', 'B. 1001', 'C. 1111', 'D. 0001'],
+      answer: 'A. 0111',
+      diff: 'hard',
+    },
+    {
+      q: 'In 4-bit excess 8 notation, what is the binary pattern for +5?',
+      options: ['A. 1101', 'B. 1010', 'C. 0101', 'D. 1001'],
+      answer: 'A. 1101',
+      diff: 'hard',
+    },
+    {
+      q: 'Which of the following is true about excess notation?',
+      options: ['A. It uses a separate sign bit', 'B. It is identical to two’s complement', 'C. It shifts the zero point to the middle of the range', 'D. It cannot represent negative numbers'],
+      answer: 'C. It shifts the zero point to the middle of the range',
+      diff: 'medium',
+    },
+    {
+      q: 'In 4-bit excess 8, the pattern 0101 (binary 5) represents which integer?',
+      options: ['A. -3', 'B. 5', 'C. 13', 'D. 3'],
+      answer: 'A. -3',
+      diff: 'medium',
+    },
+    {
+      q: 'In 3-bit excess 4, the pattern 010 (binary 2) represents:',
+      options: ['A. -2', 'B. 0', 'C. 2', 'D. -1'],
+      answer: 'A. -2',
+      diff: 'medium',
+    },
+    {
+      q: 'The total number of representable integers in n-bit excess notation is:',
+      options: ['A. 2ⁿ', 'B. 2ⁿ – 1', 'C. n²', 'D. 2ⁿ⁺¹'],
+      answer: 'A. 2ⁿ',
+      diff: 'easy',
+    },
+    {
+      q: 'Which representation does NOT have a separate sign bit?',
+      options: ['A. Two’s complement', 'B. Excess notation', 'C. Both A and B', 'D. Neither'],
+      answer: 'C. Both A and B',
+      diff: 'easy',
+    },
+    {
+      q: 'In 4-bit excess 8, the smallest integer representable is:',
+      options: ['A. -8', 'B. -7', 'C. -9', 'D. -16'],
+      answer: 'A. -8',
+      diff: 'easy',
+    },
+    {
+      q: 'In 4-bit excess 8, the largest integer representable is:',
+      options: ['A. 7', 'B. 8', 'C. 15', 'D. 16'],
+      answer: 'A. 7',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+27: {
+  title: 'Floating Point Notation: Storing Real Numbers (CS101 Lecture 27)',
+  summary: `**Key Topics Covered:**
+- Floating-point notation: storing numbers with fractional parts (based on scientific notation)
+- 8-bit example: sign bit (1 bit) + exponent field (3 bits) + mantissa field (4 bits)
+- Sign bit: 0 = nonnegative, 1 = negative
+- Exponent field: stored in 3-bit excess 4 notation (range -4 to +3)
+- Mantissa field: stores the fractional part, normalized form (starts with 1)
+- Decoding process:
+  1. Extract mantissa, place radix point on left: .mantissa
+  2. Convert exponent field (excess 4) to integer
+  3. Move radix point right (positive exponent) or left (negative exponent)
+  4. Apply sign bit
+- Encoding process (reverse):
+  1. Convert number to binary
+  2. Normalize: write as 1.xxx (leftmost 1 before radix)
+  3. Copy bits after the leftmost 1 into mantissa field
+  4. Exponent = number of bits radix moved (positive if moved right, negative if left)
+  5. Convert exponent to excess 4, place in exponent field
+  6. Set sign bit (0 for positive, 1 for negative)
+- Zero is special case: all bits 0
+
+---
+
+**Simple Understanding:**
+
+**Why Floating-Point?**
+👉 Integers are easy to store, but numbers with fractional parts need to also store the radix point position.
+👉 Floating-point notation solves this (similar to scientific notation).
+
+**8-bit Floating-Point Format (Example):**
+- Bit 7: sign bit (0 = positive, 1 = negative)
+- Bits 6-4: exponent field (3 bits, excess 4 notation)
+- Bits 3-0: mantissa field (4 bits, fractional part)
+
+**Decoding Example: 01101011**
+- Sign = 0 → positive
+- Exponent = 110 binary = 6 decimal. Excess 4 → 6 – 4 = +2
+- Mantissa = 1011 → .1011 (binary fraction)
+- Move radix right by 2 → 10.11 binary = 2.75 decimal (2¾)
+- Result: +2¾
+
+**Decoding Example: 00111100**
+- Sign = 0 → positive
+- Exponent = 011 binary = 3 decimal. Excess 4 → 3 – 4 = -1
+- Mantissa = 1100 → .1100
+- Move radix left by 1 → .01100 binary = 0.375 decimal (3/8)
+
+**Normalized Form:**
+- Mantissa always starts with a 1 (except for zero).
+- Example: 3/8 = .011 binary. Normalized mantissa = 1100 (starting with the leftmost 1).
+- This ensures unique representation.
+
+**Encoding Example: +1⅛**
+- 1⅛ = 1.001 binary
+- Normalize: .1001 (radix moved right 1 → exponent +1)
+- Excess 4 for +1 = 101 binary
+- Mantissa field: 1001 (copy bits after leftmost 1)
+- Sign bit: 0
+- Result: 0 101 1001 = 01011001
+
+**Special Case: Zero**
+- All bits 0 (00000000)
+
+---
+
+**Important Vocabulary:**
+- Floating-point notation = representation for real numbers
+- Sign bit = indicates positive (0) or negative (1)
+- Exponent field = stores exponent using excess notation
+- Mantissa field = stores fractional part (significant digits)
+- Normalized form = mantissa starts with 1
+- Excess 4 = bias of 4 for 3-bit exponent
+
+---
+
+**Quick Revision Points:**
+- 8-bit floating-point: 1 sign + 3 exponent + 4 mantissa.
+- Exponent uses excess 4 (range -4 to +3).
+- Mantissa is normalized (first bit always 1, except zero).
+- Decode: mantissa. → move radix by exponent → apply sign.
+- Encode: normalize, copy mantissa bits, encode exponent in excess 4.
+- Zero is all zeros.`,
+
+  questions: [
+    {
+      q: 'In the 8-bit floating-point example, how many bits are used for the exponent field?',
+      options: ['A. 1', 'B. 3', 'C. 4', 'D. 8'],
+      answer: 'B. 3',
+      diff: 'easy',
+    },
+    {
+      q: 'In the 8-bit floating-point example, how many bits are used for the mantissa field?',
+      options: ['A. 1', 'B. 3', 'C. 4', 'D. 8'],
+      answer: 'C. 4',
+      diff: 'easy',
+    },
+    {
+      q: 'What does a sign bit of 0 indicate in floating-point notation?',
+      options: ['A. The number is negative', 'B. The number is nonnegative', 'C. The exponent is positive', 'D. The mantissa is normalized'],
+      answer: 'B. The number is nonnegative',
+      diff: 'easy',
+    },
+    {
+      q: 'The exponent field in the 8-bit floating-point example uses which notation?',
+      options: ['A. Two’s complement', 'B. Excess 4', 'C. Excess 8', 'D. Sign-magnitude'],
+      answer: 'B. Excess 4',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the decimal value of the bit pattern 01101011 in the 8-bit floating-point format?',
+      options: ['A. 2.5', 'B. 2.75', 'C. 3.25', 'D. 1.375'],
+      answer: 'B. 2.75',
+      diff: 'medium',
+    },
+    {
+      q: 'Decode the floating-point pattern 00111100 (8-bit). What decimal value does it represent?',
+      options: ['A. 0.5', 'B. 0.25', 'C. 0.375', 'D. 0.625'],
+      answer: 'C. 0.375',
+      diff: 'medium',
+    },
+    {
+      q: 'In the 8-bit floating-point format, the exponent field 110 represents what integer (in excess 4)?',
+      options: ['A. -2', 'B. -1', 'C. 1', 'D. 2'],
+      answer: 'D. 2',
+      diff: 'medium',
+    },
+    {
+      q: 'In the 8-bit floating-point format, the exponent field 011 represents what integer?',
+      options: ['A. -2', 'B. -1', 'C. 1', 'D. 2'],
+      answer: 'B. -1',
+      diff: 'medium',
+    },
+    {
+      q: 'What is the range of the 3-bit exponent field in excess 4 notation?',
+      options: ['A. -4 to +3', 'B. -3 to +4', 'C. -8 to +7', 'D. 0 to 7'],
+      answer: 'A. -4 to +3',
+      diff: 'easy',
+    },
+    {
+      q: 'What does "normalized form" mean in floating-point representation?',
+      options: ['A. The mantissa is all zeros', 'B. The mantissa starts with a 1 (for nonzero values)', 'C. The exponent is zero', 'D. The sign bit is zero'],
+      answer: 'B. The mantissa starts with a 1 (for nonzero values)',
+      diff: 'easy',
+    },
+    {
+      q: 'Encode the decimal value 1.125 (1⅛) into the 8-bit floating-point format. The result is:',
+      options: ['A. 01011001', 'B. 00111001', 'C. 01001001', 'D. 01101001'],
+      answer: 'A. 01011001',
+      diff: 'hard',
+    },
+    {
+      q: 'How is the value zero represented in this 8-bit floating-point format?',
+      options: ['A. 10000000', 'B. 01111111', 'C. 00000000', 'D. 11111111'],
+      answer: 'C. 00000000',
+      diff: 'easy',
+    },
+    {
+      q: 'If the mantissa field is 1011 and the exponent indicates move radix right by 2, the binary number is:',
+      options: ['A. 0.1011', 'B. 10.11', 'C. 101.1', 'D. 1011'],
+      answer: 'B. 10.11',
+      diff: 'medium',
+    },
+    {
+      q: 'If the mantissa field is 1100 and the exponent indicates move radix left by 1, the binary number is:',
+      options: ['A. 0.01100', 'B. 0.1100', 'C. 1.100', 'D. 11.00'],
+      answer: 'A. 0.01100',
+      diff: 'medium',
+    },
+    {
+      q: 'Why is normalized form used in floating-point notation?',
+      options: ['A. To increase the range', 'B. To eliminate multiple representations for the same value', 'C. To make addition faster', 'D. To reduce storage space'],
+      answer: 'B. To eliminate multiple representations for the same value',
+      diff: 'medium',
+    },
+    {
+      q: 'What is the binary representation of 3/8?',
+      options: ['A. 0.011', 'B. 0.101', 'C. 0.001', 'D. 0.111'],
+      answer: 'A. 0.011',
+      diff: 'easy',
+    },
+    {
+      q: 'In encoding, when filling the mantissa field, we start copying from:',
+      options: ['A. The rightmost 1 in the binary representation', 'B. The leftmost 1 in the binary representation', 'C. The radix point', 'D. The sign bit'],
+      answer: 'B. The leftmost 1 in the binary representation',
+      diff: 'easy',
+    },
+    {
+      q: 'The pattern 01101011 has sign bit 0, exponent 110, mantissa 1011. What is the exponent value in decimal?',
+      options: ['A. -2', 'B. -1', 'C. 1', 'D. 2'],
+      answer: 'D. 2',
+      diff: 'easy',
+    },
+    {
+      q: 'The pattern 00111100 has exponent 011. What is the exponent value in decimal?',
+      options: ['A. -2', 'B. -1', 'C. 1', 'D. 2'],
+      answer: 'B. -1',
+      diff: 'easy',
+    },
+    {
+      q: 'In the 8-bit floating-point format, what is the maximum positive value (approximately)?',
+      options: ['A. 1.9375', 'B. 7.5', 'C. 15.5', 'D. 3.75'],
+      answer: 'A. 1.9375',
+      diff: 'hard',
+    },
+    {
+      q: 'In the 8-bit floating-point format, what is the smallest positive nonzero value?',
+      options: ['A. 1/16', 'B. 1/32', 'C. 1/64', 'D. 1/128'],
+      answer: 'B. 1/32',
+      diff: 'hard',
+    },
+    {
+      q: 'Which of the following is NOT a field in the 8-bit floating-point format?',
+      options: ['A. Sign bit', 'B. Exponent field', 'C. Mantissa field', 'D. Checksum field'],
+      answer: 'D. Checksum field',
+      diff: 'easy',
+    }
+  ]
+},
+
+28: {
+  title: 'Truncation Errors in Floating Point Notation (CS101 Lecture 28)',
+  summary: `**Key Topics Covered:**
+- Truncation (round-off) error: loss of precision when mantissa field is too small
+- Example: storing 2⅝ (10.101 binary) in 8-bit floating-point (4-bit mantissa) → rightmost 1 lost → becomes 2½ (10.10 binary)
+- Result: 01101010 represents 2½ instead of 2⅝
+- Solutions to reduce truncation errors:
+  1. Use longer mantissa field (modern computers use at least 32 bits)
+  2. Use higher precision formats (still limited)
+  3. Be aware of nonterminating expansions in binary
+- Nonterminating expansions: more values have infinite binary representations than decimal
+  - Example: 1/10 (0.1 decimal) is nonterminating in binary
+  - Problem: storing dollars and cents – a dime cannot be stored exactly
+  - Solution: manipulate data in pennies (integers) instead of dollars (floating-point)
+- Intelligent processing: order of operations matters
+  - Example: 2½ + ⅛ + ⅛
+    - Direct addition: 2½ + ⅛ = 2⅝ → truncation error → 2½ + ⅛ = 2½ again (loss of ⅛)
+    - Better: add ⅛ + ⅛ = ¼ (stores exactly), then add to 2½ = 2¾ (accurate)
+  - Principle: add small quantities together first to become significant before adding to large quantities
+
+---
+
+**Simple Understanding:**
+
+**What is Truncation Error?**
+👉 When a floating-point value cannot be stored exactly because the mantissa field has limited bits.
+👉 The extra bits are "chopped off" (truncated), causing loss of precision.
+👉 Example: 2⅝ = 10.101 binary. With 4-bit mantissa, only 10.10 fits → becomes 2½.
+
+**Why Does This Happen?**
+👉 Mantissa field is too small to store all significant bits.
+👉 Modern computers use 32 or 64 bits to minimize this, but errors still occur.
+
+**Nonterminating Expansions in Binary:**
+👉 Some numbers that terminate in decimal never terminate in binary.
+👉 Example: 1/10 (0.1 decimal) = 0.0001100110011... (repeating) in binary.
+👉 So a dime (0.1 dollar) cannot be stored exactly in floating-point.
+👉 Solution: work in cents (integers) instead of dollars (floating-point).
+
+**Intelligent Processing (Order Matters):**
+👉 Adding small numbers to large numbers can cause truncation of the small number.
+👉 Add small numbers together first so they become a larger value.
+👉 Example:
+   - Bad: 2.5 + 0.125 = 2.625 → truncates to 2.5
+   - Good: 0.125 + 0.125 = 0.25 (exact), then 2.5 + 0.25 = 2.75 (exact)
+
+---
+
+**Important Vocabulary:**
+- Truncation error = round-off error from limited mantissa
+- Mantissa field = bits storing fractional part
+- Nonterminating expansion = infinite binary representation
+- Significant bits = bits that affect value
+- Order of operations = sequence of calculations
+- Precision = number of significant digits
+
+---
+
+**Quick Revision Points:**
+- Floating-point has limited mantissa → truncation errors.
+- 8-bit example: 2⅝ stored as 2½ (loss of ⅛).
+- Use more bits (32/64) to reduce error, but not eliminate.
+- 1/10 decimal has infinite binary expansion → cannot store exactly.
+- Use integers (pennies) for exact currency.
+- Add small numbers together before adding to large numbers.`,
+
+  questions: [
+    {
+      q: 'What is a truncation error in floating-point notation?',
+      options: ['A. An error caused by the exponent field being too small', 'B. Loss of precision when the mantissa field cannot store all bits', 'C. An error in the sign bit', 'D. A hardware malfunction'],
+      answer: 'B. Loss of precision when the mantissa field cannot store all bits',
+      diff: 'easy',
+    },
+    {
+      q: 'In the 8-bit floating-point example, what happens when trying to store 2⅝ (10.101 binary)?',
+      options: ['A. It is stored exactly', 'B. The rightmost 1 is lost, becoming 2½', 'C. The exponent overflows', 'D. The sign bit flips'],
+      answer: 'B. The rightmost 1 is lost, becoming 2½',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the resulting bit pattern when 2⅝ is stored in the 8-bit floating-point system?',
+      options: ['A. 01101011', 'B. 01101010', 'C. 01101101', 'D. 01100101'],
+      answer: 'B. 01101010',
+      diff: 'medium',
+    },
+    {
+      q: 'How do modern computers reduce truncation errors?',
+      options: ['A. By using only integers', 'B. By using longer mantissa fields (32 or 64 bits)', 'C. By eliminating floating-point', 'D. By using octal notation'],
+      answer: 'B. By using longer mantissa fields (32 or 64 bits)',
+      diff: 'easy',
+    },
+    {
+      q: 'What is a nonterminating expansion in binary?',
+      options: ['A. A binary number that ends', 'B. A binary representation that repeats infinitely', 'C. A binary number with all zeros', 'D. A binary number with all ones'],
+      answer: 'B. A binary representation that repeats infinitely',
+      diff: 'easy',
+    },
+    {
+      q: 'Which decimal value has a nonterminating expansion in binary?',
+      options: ['A. 0.5', 'B. 0.25', 'C. 0.1', 'D. 0.75'],
+      answer: 'C. 0.1',
+      diff: 'easy',
+    },
+    {
+      q: 'Why is 0.1 (one tenth) problematic for floating-point storage?',
+      options: ['A. It is too large', 'B. It has a nonterminating binary expansion and cannot be stored exactly', 'C. It is negative', 'D. It has no binary representation'],
+      answer: 'B. It has a nonterminating binary expansion and cannot be stored exactly',
+      diff: 'easy',
+    },
+    {
+      q: 'How can you accurately store currency values like $0.10?',
+      options: ['A. Use floating-point with more bits', 'B. Store values in pennies (integers) instead of dollars', 'C. Use hexadecimal', 'D. Store as fractions'],
+      answer: 'B. Store values in pennies (integers) instead of dollars',
+      diff: 'easy',
+    },
+    {
+      q: 'In the example of adding 2½ + ⅛ + ⅛, what happens if you add 2½ + ⅛ first?',
+      options: ['A. The result is exact 2¾', 'B. The ⅛ is truncated and the result becomes 2½', 'C. The exponent overflows', 'D. The sign flips'],
+      answer: 'B. The ⅛ is truncated and the result becomes 2½',
+      diff: 'medium',
+    },
+    {
+      q: 'What is the correct order to add 2½ + ⅛ + ⅛ to get an accurate result?',
+      options: ['A. Add 2½ + ⅛ first, then add ⅛', 'B. Add ⅛ + ⅛ first to get ¼, then add to 2½', 'C. Add all three at once', 'D. Convert to decimal first'],
+      answer: 'B. Add ⅛ + ⅛ first to get ¼, then add to 2½',
+      diff: 'medium',
+    },
+    {
+      q: 'What is the accurate result after adding ⅛ + ⅛ = ¼, then 2½ + ¼?',
+      options: ['A. 2½', 'B. 2⅝', 'C. 2¾', 'D. 3'],
+      answer: 'C. 2¾',
+      diff: 'easy',
+    },
+    {
+      q: 'What principle helps avoid truncation errors when adding many numbers?',
+      options: ['A. Always add largest numbers first', 'B. Always add smallest numbers together first', 'C. Never use floating-point', 'D. Always use more bits'],
+      answer: 'B. Always add smallest numbers together first',
+      diff: 'medium',
+    },
+    {
+      q: 'Is truncation error completely eliminated by using 32-bit floating-point?',
+      options: ['A. Yes', 'B. No, it is reduced but not eliminated', 'C. Only for integers', 'D. Only for negative numbers'],
+      answer: 'B. No, it is reduced but not eliminated',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following statements about nonterminating expansions is TRUE?',
+      options: ['A. Only decimal has them', 'B. More values have nonterminating expansions in binary than in decimal', 'C. Binary has no nonterminating expansions', 'D. They only occur for fractions greater than 1'],
+      answer: 'B. More values have nonterminating expansions in binary than in decimal',
+      diff: 'medium',
+    },
+    {
+      q: 'The number 1/10 in binary is:',
+      options: ['A. 0.0001100110011... (repeating)', 'B. 0.1 exactly', 'C. 0.0011', 'D. 0.1010'],
+      answer: 'A. 0.0001100110011... (repeating)',
+      diff: 'hard',
+    },
+    {
+      q: 'If you add a very small number to a very large number in floating-point, the small number may:',
+      options: ['A. Be stored exactly', 'B. Be lost due to truncation', 'C. Become negative', 'D. Double in value'],
+      answer: 'B. Be lost due to truncation',
+      diff: 'easy',
+    },
+    {
+      q: 'Why is it better to add many small numbers together first?',
+      options: ['A. Because they become a larger value that won\'t be truncated when added to a large number', 'B. Because it is faster', 'C. Because it uses less memory', 'D. Because it prevents overflow'],
+      answer: 'A. Because they become a larger value that won\'t be truncated when added to a large number',
+      diff: 'medium',
+    },
+    {
+      q: 'In the 8-bit floating-point system, what is the decimal value of 01101010?',
+      options: ['A. 2.5', 'B. 2.625', 'C. 2.75', 'D. 2.125'],
+      answer: 'A. 2.5',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the decimal value of 2⅝ in binary?',
+      options: ['A. 10.101', 'B. 10.011', 'C. 10.110', 'D. 10.001'],
+      answer: 'A. 10.101',
+      diff: 'medium',
+    },
+    {
+      q: 'The loss of the rightmost 1 in the mantissa when storing 2⅝ is an example of:',
+      options: ['A. Overflow', 'B. Underflow', 'C. Truncation error', 'D. Sign error'],
+      answer: 'C. Truncation error',
+      diff: 'easy',
+    }
+  ]
+},
+
+29: {
+  title: 'Data Compression: Generic Techniques (CS101 Lecture 29)',
+  summary: `**Key Topics Covered:**
+- Two categories: lossless (no information loss) vs lossy (some loss, higher compression)
+- Run-length encoding: lossless – replaces repeated sequences with (value, count) codes
+- Frequency-dependent encoding (Huffman codes): variable-length codes – shorter for frequent items, longer for rare items
+- Relative encoding (differential encoding): records differences between consecutive data units (frames in video)
+- Dictionary encoding: references to a dictionary of building blocks
+- Adaptive dictionary encoding (LZW): dictionary grows during encoding/decoding
+- LZW example: starting dictionary {x, y, space}, message "xyx xyx xyx xyx" encodes as 121343434
+
+---
+
+**Simple Understanding:**
+
+**Lossless vs Lossy:**
+- Lossless: no information lost (e.g., run-length, Huffman, LZW). Used for text, programs.
+- Lossy: some information lost, higher compression. Used for images, audio (small errors tolerable).
+
+**Run-Length Encoding:**
+- Replace repeated same values with (value, count).
+- Example: 253 ones, 118 zeros, 87 ones → compressed code.
+
+**Frequency-Dependent (Huffman) Encoding:**
+- Shorter codes for more frequent symbols (e, t, a in English).
+- Longer codes for rare symbols (z, q, x).
+- Saves space compared to fixed-length codes.
+
+**Relative (Differential) Encoding:**
+- Store differences between consecutive data (e.g., video frames).
+- Each frame encoded as change from previous frame.
+
+**Dictionary Encoding:**
+- Use a dictionary of building blocks.
+- Encode message as references to dictionary.
+- Example: word processor has 25,000 words → each word encoded as 15-bit index (vs 48 bits for spelling).
+
+**Adaptive Dictionary Encoding (LZW):**
+- Dictionary starts small (e.g., single characters).
+- As message is processed, new patterns (words) are added to dictionary.
+- Decoding starts with same small dictionary and rebuilds same entries.
+- LZW example: start dictionary {1:x, 2:y, 3:space}, message "xyx xyx xyx xyx" encodes as 121343434.
+
+**LZW Encoding Steps:**
+- Encode "xyx" → 121, then space → 3 → "1213"
+- Add "xyx" as entry 4
+- Next "xyx" → 4, space → 3 → "43", etc. → final "121343434"
+
+**LZW Decoding:**
+- Start same dictionary {1:x, 2:y, 3:space}
+- Decode 1213 → x y x space, add "xyx" as 4
+- Then 4 → xyx, etc.
+
+---
+
+**Important Vocabulary:**
+- Lossless compression = no data lost
+- Lossy compression = some data lost (higher ratio)
+- Run-length encoding = compress repeats
+- Huffman code = frequency-dependent variable-length code
+- Relative encoding = store differences
+- Dictionary encoding = reference building blocks
+- Adaptive dictionary = dictionary grows during processing
+- LZW = Lempel-Ziv-Welsh encoding
+
+---
+
+**Quick Revision Points:**
+- Lossless: run-length, Huffman, LZW.
+- Lossy: higher compression, used for multimedia.
+- Huffman: shorter codes for frequent symbols.
+- Relative encoding: differences (video).
+- Dictionary: word processor word → 15-bit index.
+- LZW: adaptive dictionary, starts small, grows.
+- LZW example: "xyx xyx xyx xyx" → 121343434.`,
+
+  questions: [
+    {
+      q: 'Which type of data compression does not lose any information?',
+      options: ['A. Lossy', 'B. Lossless', 'C. Both', 'D. Neither'],
+      answer: 'B. Lossless',
+      diff: 'easy',
+    },
+    {
+      q: 'Which type typically provides higher compression ratios?',
+      options: ['A. Lossless', 'B. Lossy', 'C. Both same', 'D. Run-length only'],
+      answer: 'B. Lossy',
+      diff: 'easy',
+    },
+    {
+      q: 'Run-length encoding is best suited for data with:',
+      options: ['A. Random values', 'B. Long sequences of the same value', 'C. Short sequences', 'D. Only zeros'],
+      answer: 'B. Long sequences of the same value',
+      diff: 'easy',
+    },
+    {
+      q: 'Run-length encoding is a ________ compression method.',
+      options: ['A. Lossy', 'B. Lossless', 'C. Adaptive', 'D. Frequency-dependent'],
+      answer: 'B. Lossless',
+      diff: 'easy',
+    },
+    {
+      q: 'In frequency-dependent encoding, the length of the bit pattern for a symbol is:',
+      options: ['A. Fixed for all symbols', 'B. Inversely related to the symbol\'s frequency of use', 'C. Directly related to frequency', 'D. Random'],
+      answer: 'B. Inversely related to the symbol\'s frequency of use',
+      diff: 'medium',
+    },
+    {
+      q: 'Huffman codes are a type of:',
+      options: ['A. Run-length encoding', 'B. Frequency-dependent encoding', 'C. Relative encoding', 'D. Dictionary encoding'],
+      answer: 'B. Frequency-dependent encoding',
+      diff: 'easy',
+    },
+    {
+      q: 'In English text, which letters would receive the shortest Huffman codes?',
+      options: ['A. z, q, x', 'B. e, t, a', 'C. All letters same length', 'D. Digits'],
+      answer: 'B. e, t, a',
+      diff: 'easy',
+    },
+    {
+      q: 'Relative encoding (differential encoding) records:',
+      options: ['A. Entire data units', 'B. Differences between consecutive data units', 'C. Only the first unit', 'D. Random samples'],
+      answer: 'B. Differences between consecutive data units',
+      diff: 'easy',
+    },
+    {
+      q: 'Relative encoding is particularly useful for:',
+      options: ['A. Text documents', 'B. Consecutive frames of a motion picture', 'C. Random numbers', 'D. Single images'],
+      answer: 'B. Consecutive frames of a motion picture',
+      diff: 'easy',
+    },
+    {
+      q: 'Dictionary encoding compresses data by:',
+      options: ['A. Deleting repeated words', 'B. Encoding message as references to a dictionary', 'C. Using shorter letters', 'D. Removing vowels'],
+      answer: 'B. Encoding message as references to a dictionary',
+      diff: 'easy',
+    },
+    {
+      q: 'A word processor with 25,000 dictionary entries can encode a word using how many bits?',
+      options: ['A. 8 bits', 'B. 15 bits', 'C. 25 bits', 'D. 48 bits'],
+      answer: 'B. 15 bits',
+      diff: 'medium',
+    },
+    {
+      q: 'In UTF-8, a 6-letter word requires approximately how many bits?',
+      options: ['A. 48 bits', 'B. 15 bits', 'C. 8 bits', 'D. 24 bits'],
+      answer: 'A. 48 bits',
+      diff: 'medium',
+    },
+    {
+      q: 'Adaptive dictionary encoding is also known as:',
+      options: ['A. Static dictionary encoding', 'B. Dynamic dictionary encoding', 'C. Run-length encoding', 'D. Huffman encoding'],
+      answer: 'B. Dynamic dictionary encoding',
+      diff: 'easy',
+    },
+    {
+      q: 'LZW stands for:',
+      options: ['A. Lempel-Ziv-Welsh', 'B. Lossless Zip Wavelet', 'C. Length-Zero Window', 'D. Linear Zoom Wave'],
+      answer: 'A. Lempel-Ziv-Welsh',
+      diff: 'easy',
+    },
+    {
+      q: 'In LZW encoding, the dictionary initially contains:',
+      options: ['A. All possible words', 'B. Basic building blocks (characters, digits, punctuation)', 'C. Nothing', 'D. Huffman codes'],
+      answer: 'B. Basic building blocks (characters, digits, punctuation)',
+      diff: 'medium',
+    },
+    {
+      q: 'In the LZW example, starting dictionary entries 1,2,3 are:',
+      options: ['A. x, y, space', 'B. a, b, c', 'C. 1, 2, 3', 'D. x, y, z'],
+      answer: 'A. x, y, space',
+      diff: 'easy',
+    },
+    {
+      q: 'The message "xyx xyx xyx xyx" encodes to which LZW sequence?',
+      options: ['A. 1213121212', 'B. 121343434', 'C. 123456789', 'D. 11223344'],
+      answer: 'B. 121343434',
+      diff: 'hard',
+    },
+    {
+      q: 'In LZW, when a space is encountered, what does the encoder add to the dictionary?',
+      options: ['A. The space character', 'B. The preceding word (string) that formed a word', 'C. The next character', 'D. Nothing'],
+      answer: 'B. The preceding word (string) that formed a word',
+      diff: 'hard',
+    },
+    {
+      q: 'LZW decoding starts with which dictionary?',
+      options: ['A. The full dictionary that was built during encoding', 'B. The same small initial dictionary as encoding', 'C. An empty dictionary', 'D. A dictionary of common English words'],
+      answer: 'B. The same small initial dictionary as encoding',
+      diff: 'medium',
+    },
+    {
+      q: 'Which of the following is a lossy compression technique?',
+      options: ['A. Run-length encoding', 'B. Huffman coding', 'C. JPEG (for images)', 'D. LZW'],
+      answer: 'C. JPEG (for images)',
+      diff: 'easy',
+    },
+    {
+      q: 'Which is NOT a lossless compression method?',
+      options: ['A. Run-length encoding', 'B. Huffman coding', 'C. LZW', 'D. MP3 (audio)'],
+      answer: 'D. MP3 (audio)',
+      diff: 'easy',
+    },
+    {
+      q: 'Variable-length codes (like Huffman) can be decoded uniquely because:',
+      options: ['A. All codes are same length', 'B. They satisfy prefix property (no code is prefix of another)', 'C. They use a dictionary', 'D. They are run-length encoded'],
+      answer: 'B. They satisfy prefix property (no code is prefix of another)',
+      diff: 'medium',
+    }
+  ]
+},
+
+30: {
+  title: 'Data Compression: Compressing Images (GIF, JPEG, TIFF) (CS101 Lecture 30)',
+  summary: `**Key Topics Covered:**
+- GIF (Graphics Interchange Format): dictionary encoding, limited to 256 colors, palette of 256 RGB entries, each pixel = 1 byte (index into palette)
+- GIF is lossy for arbitrary images (palette colors may not match original)
+- GIF can use LZW adaptive dictionary for additional compression
+- One palette color can be "transparent" (background shows through)
+- GIF suitable for simple animations, not for photography
+- JPEG (Joint Photographic Experts Group): standard for color photographs, default for digital cameras
+- JPEG has lossless mode (rarely used, low compression) and lossy baseline standard (popular)
+- JPEG baseline steps:
+  1. Encode in luminance (brightness) and chrominance (color) components
+  2. Average chrominance over 2×2 pixel squares (preserves brightness, reduces color data 4×)
+  3. Divide image into 8×8 blocks, apply Discrete Cosine Transform (DCT)
+  4. Replace values below threshold with zeros (discard subtle changes)
+  5. Apply run-length, relative, and variable-length encoding
+- JPEG compression ratio: typically 10:1 to 30:1 without noticeable loss
+- TIFF (Tagged Image File Format): standardized format for storing photos with metadata (date, time, camera settings)
+- TIFF often stores uncompressed RGB; includes run-length encoding for fax (text documents with long white strings)
+- TIFF color compression similar to GIF, not widely used for photography
+
+---
+
+**Simple Understanding:**
+
+**GIF (Graphics Interchange Format):**
+👉 Uses a palette (dictionary) of 256 colors. Each pixel = 1 byte (index into palette).
+👉 Lossy if original image has more than 256 colors.
+👉 Can use LZW adaptive dictionary – adds pixel patterns to dictionary.
+👉 Supports transparency (one color shows background).
+👉 Good for simple animations; not good for photos.
+
+**JPEG (Joint Photographic Experts Group):**
+👉 Standard for color photographs (digital cameras).
+👉 Baseline (lossy sequential) mode is most popular; lossless mode available but low compression.
+
+**JPEG Baseline Steps:**
+1. Convert to luminance (brightness) + chrominance (color).
+2. Average chrominance over 2×2 blocks (human eye less sensitive to color changes).
+3. Split into 8×8 blocks, apply Discrete Cosine Transform (DCT) – converts to frequency data.
+4. Discard values below threshold (subtle changes invisible to eye).
+5. Apply run-length, relative, and Huffman encoding.
+
+👉 Compression ratio: 10:1 to 30:1 with little quality loss.
+
+**TIFF (Tagged Image File Format):**
+👉 Stores photos with metadata (date, time, camera settings).
+👉 Often stores uncompressed RGB (no compression).
+👉 Includes run-length encoding for fax/text documents (long white pixel runs).
+👉 Color compression similar to GIF – not popular for photos.
+
+---
+
+**Important Vocabulary:**
+- GIF = Graphics Interchange Format
+- Palette = table of colors (dictionary)
+- Transparent color = background shows through
+- JPEG = Joint Photographic Experts Group
+- Baseline standard = lossy sequential JPEG
+- Luminance = brightness component
+- Chrominance = color components
+- Discrete Cosine Transform (DCT) = converts spatial to frequency data
+- TIFF = Tagged Image File Format
+- Metadata = additional data (date, time, settings)
+
+---
+
+**Quick Revision Points:**
+- GIF: 256 colors, palette, LZW, lossy for photos, transparency.
+- JPEG: lossy baseline, DCT, discards subtle changes, 10-30× compression.
+- Human eye more sensitive to brightness than color.
+- JPEG averages chrominance over 2×2 blocks.
+- TIFF: metadata + uncompressed RGB or run-length for fax.`,
+
+  questions: [
+    {
+      q: 'GIF stands for:',
+      options: ['A. Graphics Interchange Format', 'B. Graphic Image File', 'C. General Image Format', 'D. Global Index Format'],
+      answer: 'A. Graphics Interchange Format',
+      diff: 'easy',
+    },
+    {
+      q: 'How many colors can a GIF palette contain?',
+      options: ['A. 16', 'B. 256', 'C. 65,536', 'D. 16.7 million'],
+      answer: 'B. 256',
+      diff: 'easy',
+    },
+    {
+      q: 'In GIF, each pixel is represented by how many bytes?',
+      options: ['A. 1 byte', 'B. 2 bytes', 'C. 3 bytes', 'D. 4 bytes'],
+      answer: 'A. 1 byte',
+      diff: 'easy',
+    },
+    {
+      q: 'The table that stores RGB color values in a GIF is called the:',
+      options: ['A. Dictionary', 'B. Palette', 'C. LZW table', 'D. Color map'],
+      answer: 'B. Palette',
+      diff: 'easy',
+    },
+    {
+      q: 'GIF is considered lossy for arbitrary images because:',
+      options: ['A. It uses too many colors', 'B. The palette colors may not match the original image', 'C. It discards brightness information', 'D. It uses DCT'],
+      answer: 'B. The palette colors may not match the original image',
+      diff: 'medium',
+    },
+    {
+      q: 'Which compression method can be used with GIF for additional compression?',
+      options: ['A. Huffman coding', 'B. LZW', 'C. Run-length encoding', 'D. DCT'],
+      answer: 'B. LZW',
+      diff: 'easy',
+    },
+    {
+      q: 'One color in a GIF palette is often assigned as ________, allowing background to show through.',
+      options: ['A. transparent', 'B. black', 'C. white', 'D. alpha'],
+      answer: 'A. transparent',
+      diff: 'easy',
+    },
+    {
+      q: 'GIF is suitable for which application?',
+      options: ['A. High-quality photography', 'B. Simple animations', 'C. Medical imaging', 'D. Audio compression'],
+      answer: 'B. Simple animations',
+      diff: 'easy',
+    },
+    {
+      q: 'JPEG stands for:',
+      options: ['A. Joint Photographic Experts Group', 'B. Java Picture Encoding Group', 'C. Joint Picture Encoding Group', 'D. JPEG Photographic Experts Group'],
+      answer: 'A. Joint Photographic Experts Group',
+      diff: 'easy',
+    },
+    {
+      q: 'Which JPEG mode is most popular and lossy?',
+      options: ['A. Lossless mode', 'B. Baseline standard (lossy sequential mode)', 'C. TIFF mode', 'D. GIF mode'],
+      answer: 'B. Baseline standard (lossy sequential mode)',
+      diff: 'easy',
+    },
+    {
+      q: 'In JPEG baseline, the human eye is more sensitive to:',
+      options: ['A. Changes in color', 'B. Changes in brightness', 'C. Changes in transparency', 'D. Changes in pixel size'],
+      answer: 'B. Changes in brightness',
+      diff: 'easy',
+    },
+    {
+      q: 'In JPEG baseline, chrominance (color) values are averaged over what block size?',
+      options: ['A. 1×1 pixel', 'B. 2×2 pixels', 'C. 8×8 pixels', 'D. 16×16 pixels'],
+      answer: 'B. 2×2 pixels',
+      diff: 'medium',
+    },
+    {
+      q: 'After averaging chrominance, the chrominance data size reduces by a factor of:',
+      options: ['A. 2', 'B. 4', 'C. 8', 'D. 16'],
+      answer: 'B. 4',
+      diff: 'medium',
+    },
+    {
+      q: 'In JPEG baseline, images are divided into blocks of what size for DCT?',
+      options: ['A. 2×2', 'B. 4×4', 'C. 8×8', 'D. 16×16'],
+      answer: 'C. 8×8',
+      diff: 'easy',
+    },
+    {
+      q: 'DCT stands for:',
+      options: ['A. Discrete Cosine Transform', 'B. Digital Compression Technique', 'C. Data Coding Transform', 'D. Direct Color Transform'],
+      answer: 'A. Discrete Cosine Transform',
+      diff: 'easy',
+    },
+    {
+      q: 'After DCT, values below a threshold are replaced with zeros because:',
+      options: ['A. They are errors', 'B. They represent changes too subtle for the human eye', 'C. They are too large', 'D. They are redundant'],
+      answer: 'B. They represent changes too subtle for the human eye',
+      diff: 'medium',
+    },
+    {
+      q: 'JPEG baseline typically compresses color images by a factor of:',
+      options: ['A. 2:1 to 5:1', 'B. 10:1 to 30:1', 'C. 100:1 to 200:1', 'D. Only 1:1 (no compression)'],
+      answer: 'B. 10:1 to 30:1',
+      diff: 'easy',
+    },
+    {
+      q: 'TIFF stands for:',
+      options: ['A. Tagged Image File Format', 'B. Text Image File Format', 'C. Technical Image Format', 'D. Tagged Index File Format'],
+      answer: 'A. Tagged Image File Format',
+      diff: 'easy',
+    },
+    {
+      q: 'TIFF is most popular as:',
+      options: ['A. A compression method', 'B. A standardized format for storing photographs with metadata', 'C. An animation format', 'D. A video format'],
+      answer: 'B. A standardized format for storing photographs with metadata',
+      diff: 'easy',
+    },
+    {
+      q: 'For fax applications (text documents), TIFF uses:',
+      options: ['A. DCT', 'B. GIF-like palette', 'C. Run-length encoding', 'D. LZW'],
+      answer: 'C. Run-length encoding',
+      diff: 'medium',
+    },
+    {
+      q: 'Which of the following is NOT a compression system discussed for images?',
+      options: ['A. GIF', 'B. JPEG', 'C. MP3', 'D. TIFF'],
+      answer: 'C. MP3',
+      diff: 'easy',
+    },
+    {
+      q: 'JPEG’s lossless mode is rarely used because:',
+      options: ['A. It is too slow', 'B. It does not produce high levels of compression compared to lossy modes', 'C. It only works for black and white', 'D. It requires a palette'],
+      answer: 'B. It does not produce high levels of compression compared to lossy modes',
+      diff: 'medium',
+    },
+    {
+      q: 'The TIFF format often stores images without compression as:',
+      options: ['A. Grayscale', 'B. Red, green, blue pixel components', 'C. Palette indices', 'D. DCT coefficients'],
+      answer: 'B. Red, green, blue pixel components',
+      diff: 'medium',
+    }
+  ]
+},
+
+
+31: {
+  title: 'Data Compression: Compressing Audio and Videos (MPEG, MP3) (CS101 Lecture 31)',
+  summary: `**Key Topics Covered:**
+- MPEG (Motion Picture Experts Group): standards for encoding/compressing audio and video
+- Video compression: sequence of pictures (frames)
+  - I-frames (intra-coded frames): encoded entirely (similar to JPEG)
+  - Between I-frames: relative encoding (only differences from prior frame)
+- MP3 (MPEG layer 3): best-known audio compression standard
+- Human ear properties exploited by MP3:
+  - Temporal masking: after a loud sound, softer sounds are inaudible for a short period
+  - Frequency masking: a loud sound at one frequency masks softer sounds at nearby frequencies
+- MP3 achieves near CD quality with significant compression
+- Goals of audio/video compression:
+  - Save storage space (e.g., hours of video in 128MB, 400 songs in 1GB)
+  - Enable timely transmission over communication systems (reduce required bandwidth)
+- Transfer rates (bits per second):
+  - Kbps (kilobits per second) = 1,000 bps
+  - Mbps (megabits per second) = 1,000,000 bps
+  - Gbps (gigabits per second) = 1,000,000,000 bps
+- MPEG video: requires ~40 Mbps for successful transmission
+- MP3 audio: requires ≤ 64 Kbps
+
+---
+
+**Simple Understanding:**
+
+**MPEG (Motion Picture Experts Group):**
+👉 Standards for compressing audio and video.
+👉 Video is sequence of pictures (frames).
+
+**Video Compression with I-frames:**
+- I-frames (intra-coded frames) are compressed entirely (similar to JPEG).
+- Frames between I-frames are encoded using relative encoding (store only differences from previous frame).
+- This saves space and bandwidth.
+
+**MP3 (MPEG Layer 3):**
+👉 Audio compression standard.
+👉 Removes details human ear cannot perceive.
+
+**Human Ear Properties:**
+- **Temporal masking:** After a loud sound, softer sounds are inaudible for a short time.
+- **Frequency masking:** A loud sound at one frequency masks softer sounds at nearby frequencies.
+
+**Compression Results:**
+- 128 MB storage ≈ 1 hour of video (MPEG)
+- 1 GB storage ≈ 400 songs (MP3)
+
+**Transfer Rates:**
+- Kbps = kilobits per second (thousands)
+- Mbps = megabits per second (millions)
+- Gbps = gigabits per second (billions)
+- MPEG video: ~40 Mbps needed
+- MP3 audio: ≤ 64 Kbps needed
+
+---
+
+**Important Vocabulary:**
+- MPEG = Motion Picture Experts Group
+- I-frame = intra-coded frame (compressed fully)
+- Temporal masking = hearing suppression after loud sound
+- Frequency masking = one frequency masks nearby frequencies
+- Transfer rate = bits per second (bps)
+- Kbps = kilobits/sec (10³ bps)
+- Mbps = megabits/sec (10⁶ bps)
+- Gbps = gigabits/sec (10⁹ bps)
+
+---
+
+**Quick Revision Points:**
+- MPEG = audio/video compression standards.
+- Video: I-frames fully compressed; others relative.
+- MP3 = MPEG layer 3 audio compression.
+- MP3 uses temporal and frequency masking of human ear.
+- MP3: near CD quality, ≤64 Kbps.
+- MPEG video: ~40 Mbps for transmission.
+- 128MB = 1 hour video; 1GB = 400 songs.`,
+
+  questions: [
+    {
+      q: 'MPEG stands for:',
+      options: ['A. Motion Picture Experts Group', 'B. Moving Picture Encoding Group', 'C. Multimedia Picture Experts Group', 'D. Motion Pixel Encoding Group'],
+      answer: 'A. Motion Picture Experts Group',
+      diff: 'easy',
+    },
+    {
+      q: 'In MPEG video compression, frames that are compressed entirely are called:',
+      options: ['A. P-frames', 'B. B-frames', 'C. I-frames', 'D. D-frames'],
+      answer: 'C. I-frames',
+      diff: 'easy',
+    },
+    {
+      q: 'Frames between I-frames are compressed using which technique?',
+      options: ['A. Huffman coding', 'B. Relative encoding (differences from prior frame)', 'C. Run-length encoding', 'D. Palette compression'],
+      answer: 'B. Relative encoding (differences from prior frame)',
+      diff: 'medium',
+    },
+    {
+      q: 'I-frames are compressed using techniques similar to:',
+      options: ['A. GIF', 'B. JPEG', 'C. TIFF', 'D. LZW'],
+      answer: 'B. JPEG',
+      diff: 'easy',
+    },
+    {
+      q: 'MP3 stands for:',
+      options: ['A. MPEG layer 3', 'B. Motion Picture layer 3', 'C. Music Protocol 3', 'D. Multimedia Player 3'],
+      answer: 'A. MPEG layer 3',
+      diff: 'easy',
+    },
+    {
+      q: 'The phenomenon where the human ear cannot detect softer sounds immediately after a loud sound is called:',
+      options: ['A. Frequency masking', 'B. Temporal masking', 'C. Loudness masking', 'D. Sound masking'],
+      answer: 'B. Temporal masking',
+      diff: 'easy',
+    },
+    {
+      q: 'The phenomenon where a loud sound at one frequency masks softer sounds at nearby frequencies is called:',
+      options: ['A. Temporal masking', 'B. Frequency masking', 'C. Proximity masking', 'D. Band masking'],
+      answer: 'B. Frequency masking',
+      diff: 'easy',
+    },
+    {
+      q: 'MP3 compression achieves near _____ quality while reducing file size significantly.',
+      options: ['A. CD', 'B. DVD', 'C. Blu-ray', 'D. Vinyl'],
+      answer: 'A. CD',
+      diff: 'easy',
+    },
+    {
+      q: 'Approximately how much video can be stored in 128 MB using MPEG compression?',
+      options: ['A. 10 minutes', 'B. 30 minutes', 'C. 1 hour', 'D. 2 hours'],
+      answer: 'C. 1 hour',
+      diff: 'easy',
+    },
+    {
+      q: 'Approximately how many MP3 songs can be stored in 1 GB?',
+      options: ['A. 100', 'B. 200', 'C. 400', 'D. 800'],
+      answer: 'C. 400',
+      diff: 'easy',
+    },
+    {
+      q: 'Kbps stands for:',
+      options: ['A. Kilobits per second', 'B. Kilobytes per second', 'C. Kilo-bits per sample', 'D. Kilo-baud per second'],
+      answer: 'A. Kilobits per second',
+      diff: 'easy',
+    },
+    {
+      q: '1 Mbps equals how many bps?',
+      options: ['A. 1,000', 'B. 10,000', 'C. 100,000', 'D. 1,000,000'],
+      answer: 'D. 1,000,000',
+      diff: 'easy',
+    },
+    {
+      q: 'MPEG video typically requires a transfer rate of approximately:',
+      options: ['A. 4 Mbps', 'B. 40 Mbps', 'C. 400 Mbps', 'D. 4 Gbps'],
+      answer: 'B. 40 Mbps',
+      diff: 'medium',
+    },
+    {
+      q: 'MP3 audio typically requires a transfer rate of no more than:',
+      options: ['A. 64 Kbps', 'B. 128 Kbps', 'C. 256 Kbps', 'D. 512 Kbps'],
+      answer: 'A. 64 Kbps',
+      diff: 'medium',
+    },
+    {
+      q: 'Which of the following is a goal of audio/video compression?',
+      options: ['A. Save storage space', 'B. Enable timely transmission over communication systems', 'C. Both A and B', 'D. Increase file size'],
+      answer: 'C. Both A and B',
+      diff: 'easy',
+    },
+    {
+      q: 'MP3 is part of which organization’s standards?',
+      options: ['A. ISO (via MPEG)', 'B. IEEE', 'C. ANSI', 'D. W3C'],
+      answer: 'A. ISO (via MPEG)',
+      diff: 'easy',
+    },
+    {
+      q: 'What does "I" in I-frame stand for?',
+      options: ['A. Intra-coded', 'B. Inter-coded', 'C. Image', 'D. Independent'],
+      answer: 'A. Intra-coded',
+      diff: 'medium',
+    },
+    {
+      q: 'The compression technique that stores only differences between consecutive frames is also known as:',
+      options: ['A. Lossless coding', 'B. Relative encoding', 'C. Dictionary encoding', 'D. Run-length encoding'],
+      answer: 'B. Relative encoding',
+      diff: 'easy',
+    },
+    {
+      q: '1 Gbps equals how many bps?',
+      options: ['A. 1 million', 'B. 10 million', 'C. 100 million', 'D. 1 billion'],
+      answer: 'D. 1 billion',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is NOT a masking property of the human ear used by MP3?',
+      options: ['A. Temporal masking', 'B. Frequency masking', 'C. Spatial masking', 'D. Both A and B are used, C is not'],
+      answer: 'C. Spatial masking',
+      diff: 'medium',
+    },
+    {
+      q: 'The primary reason for compressing audio and video for transmission is:',
+      options: ['A. To reduce quality', 'B. To allow timely playback over limited bandwidth', 'C. To increase file size', 'D. To make decoding harder'],
+      answer: 'B. To allow timely playback over limited bandwidth',
+      diff: 'easy',
+    }
+  ]
+},
+32: {
+  title: 'Data Manipulation: CPU Basic (Arithmetic/Logic Unit, Control Unit, Registers, Bus) (CS101 Lecture 32)',
+  summary: `**Key Topics Covered:**
+- CPU (Central Processing Unit) consists of three parts:
+  1. Arithmetic/Logic Unit (ALU): performs operations on data (addition, subtraction, etc.)
+  2. Control Unit: coordinates machine activities
+  3. Register Unit: contains data storage cells (registers) for temporary storage
+- General-purpose registers: temporary holding places for data being manipulated, hold inputs to ALU and store results
+- Special-purpose registers: not covered in detail
+- Bus: collection of wires connecting CPU and main memory for transferring bit patterns
+- CPU reads data from memory: supplies address + read signal
+- CPU writes data to memory: supplies address + data + write signal
+- Addition process (5 steps):
+  1. Transfer data from memory to registers
+  2. Load values into ALU inputs
+  3. Perform addition
+  4. Store result in a register
+  5. Write result back to memory
+
+---
+
+**Simple Understanding:**
+
+**CPU Components:**
+👉 **Arithmetic/Logic Unit (ALU):** Does math (+, -, ×, ÷) and logic operations (AND, OR, NOT).
+👉 **Control Unit:** Directs traffic – tells other parts what to do.
+👉 **Register Unit:** Small, super-fast storage inside CPU (registers).
+
+**Registers:**
+👉 General-purpose registers: hold data temporarily while CPU works on it.
+👉 Data from memory must go into registers before ALU can operate on it.
+👉 Results from ALU go into registers before being stored back to memory.
+
+**Bus:**
+👉 Set of wires connecting CPU and main memory.
+👉 Carries addresses, data, and control signals.
+
+**Reading from Memory (Load):**
+👉 CPU sends address of memory cell + "read" signal.
+👉 Memory sends back data via bus to CPU (into register).
+
+**Writing to Memory (Store):**
+👉 CPU sends address + data + "write" signal.
+👉 Memory stores data at that address.
+
+**Example: Adding Two Numbers (Step-by-Step):**
+1. Load first number from memory into register A.
+2. Load second number from memory into register B.
+3. ALU adds register A + register B → result in register C.
+4. (Optional) Store result back to memory.
+
+---
+
+**Important Vocabulary:**
+- CPU = Central Processing Unit
+- ALU = Arithmetic/Logic Unit
+- Control Unit = coordinates CPU operations
+- Register = fast on-CPU storage cell
+- Bus = communication wires between CPU and memory
+- Load = read data from memory into register
+- Store = write data from register to memory
+- General-purpose register = can hold any data
+
+---
+
+**Quick Revision Points:**
+- CPU has three parts: ALU, Control Unit, Register Unit.
+- ALU performs arithmetic and logic.
+- Registers are temporary storage inside CPU.
+- Bus connects CPU to memory.
+- To add two numbers: load into registers → ALU adds → store result.
+- Control unit orchestrates all steps.`,
+
+  questions: [
+    {
+      q: 'Which part of the CPU performs arithmetic operations like addition and subtraction?',
+      options: ['A. Control Unit', 'B. Arithmetic/Logic Unit (ALU)', 'C. Register Unit', 'D. Bus'],
+      answer: 'B. Arithmetic/Logic Unit (ALU)',
+      diff: 'easy',
+    },
+    {
+      q: 'Which part of the CPU coordinates the machine’s activities?',
+      options: ['A. Arithmetic/Logic Unit', 'B. Control Unit', 'C. Register Unit', 'D. Cache'],
+      answer: 'B. Control Unit',
+      diff: 'easy',
+    },
+    {
+      q: 'Registers are located in which part of the CPU?',
+      options: ['A. Arithmetic/Logic Unit', 'B. Control Unit', 'C. Register Unit', 'D. Bus'],
+      answer: 'C. Register Unit',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the purpose of general-purpose registers?',
+      options: ['A. Permanent storage of programs', 'B. Temporary holding places for data being manipulated', 'C. Communication with memory', 'D. Power management'],
+      answer: 'B. Temporary holding places for data being manipulated',
+      diff: 'easy',
+    },
+    {
+      q: 'What connects the CPU to main memory?',
+      options: ['A. Registers', 'B. ALU', 'C. Control Unit', 'D. Bus'],
+      answer: 'D. Bus',
+      diff: 'easy',
+    },
+    {
+      q: 'To read data from memory, the CPU supplies:',
+      options: ['A. Only the data', 'B. Only the address', 'C. The address and a read signal', 'D. The data and a write signal'],
+      answer: 'C. The address and a read signal',
+      diff: 'medium',
+    },
+    {
+      q: 'To write data to memory, the CPU supplies:',
+      options: ['A. Only the address', 'B. Only the data', 'C. The address, data, and a write signal', 'D. Only a write signal'],
+      answer: 'C. The address, data, and a write signal',
+      diff: 'medium',
+    },
+    {
+      q: 'Before the ALU can add two values, where must those values be located?',
+      options: ['A. In main memory', 'B. In registers', 'C. On the bus', 'D. In the control unit'],
+      answer: 'B. In registers',
+      diff: 'easy',
+    },
+    {
+      q: 'After the ALU performs an addition, where is the result placed?',
+      options: ['A. Directly into main memory', 'B. Into a register', 'C. Into the control unit', 'D. Into the bus'],
+      answer: 'B. Into a register',
+      diff: 'easy',
+    },
+    {
+      q: 'How many steps are involved in adding two values stored in main memory (as per the lecture)?',
+      options: ['A. 3', 'B. 4', 'C. 5', 'D. 6'],
+      answer: 'C. 5',
+      diff: 'medium',
+    },
+    {
+      q: 'Which of the following is NOT a part of the CPU?',
+      options: ['A. Arithmetic/Logic Unit', 'B. Control Unit', 'C. Main Memory', 'D. Register Unit'],
+      answer: 'C. Main Memory',
+      diff: 'easy',
+    },
+    {
+      q: 'The ALU can perform which types of operations?',
+      options: ['A. Only arithmetic', 'B. Only logic', 'C. Arithmetic and logic', 'D. Only addition'],
+      answer: 'C. Arithmetic and logic',
+      diff: 'easy',
+    },
+    {
+      q: 'Registers are similar to main memory cells but:',
+      options: ['A. Larger in capacity', 'B. Located inside the CPU and faster', 'C. Slower', 'D. Used only for permanent storage'],
+      answer: 'B. Located inside the CPU and faster',
+      diff: 'easy',
+    },
+    {
+      q: 'The process of transferring data from memory to a register is called:',
+      options: ['A. Store', 'B. Load', 'C. Fetch', 'D. Execute'],
+      answer: 'B. Load',
+      diff: 'easy',
+    },
+    {
+      q: 'The process of transferring data from a register to memory is called:',
+      options: ['A. Load', 'B. Store', 'C. Read', 'D. Write'],
+      answer: 'B. Store',
+      diff: 'easy',
+    },
+    {
+      q: 'What does a "read signal" tell the memory circuitry?',
+      options: ['A. To store data', 'B. To retrieve data from the indicated cell', 'C. To clear the cell', 'D. To power down'],
+      answer: 'B. To retrieve data from the indicated cell',
+      diff: 'medium',
+    },
+    {
+      q: 'Which CPU component is responsible for deciding which register holds the result of an ALU operation?',
+      options: ['A. Arithmetic/Logic Unit', 'B. Control Unit', 'C. Register Unit', 'D. Bus'],
+      answer: 'B. Control Unit',
+      diff: 'medium',
+    },
+    {
+      q: 'The bus typically carries which types of information?',
+      options: ['A. Addresses only', 'B. Data only', 'C. Control signals only', 'D. Addresses, data, and control signals'],
+      answer: 'D. Addresses, data, and control signals',
+      diff: 'medium',
+    },
+    {
+      q: 'If you want to add two numbers stored in memory, the first step is to:',
+      options: ['A. Send the result to memory', 'B. Transfer data from memory to registers', 'C. Activate the ALU', 'D. Clear the registers'],
+      answer: 'B. Transfer data from memory to registers',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+33: {
+  title: 'Data Manipulation: Stored Program Concept (CS101 Lecture 33)',
+  summary: `**Key Topics Covered:**
+- Early computers: steps built into control unit (hardwired) → not flexible
+- Flexibility improvement: pegboard arrangement (rewire CPU by plugging jumper wires)
+- Breakthrough (credited to John von Neumann): program can be encoded and stored in main memory like data
+- Stored-program concept: control unit extracts program from memory, decodes and executes instructions
+- Changing program = changing memory contents, not rewiring CPU
+- This is now the standard approach (seems obvious today)
+- Originally, people thought programs and data were different entities (programs in CPU, data in memory)
+- Example of "not seeing the forest for the trees"
+
+---
+
+**Simple Understanding:**
+
+**Early Computers (Before Stored Program):**
+👉 Steps to execute were built (hardwired) into the control unit.
+👉 To change the program, you had to rewiring the CPU (like old telephone switchboards with pegs).
+
+**The Breakthrough (von Neumann):**
+👉 Realization: a program is just a set of instructions – can be encoded as bits, just like data.
+👉 Store the program in main memory alongside data.
+👉 Control unit fetches instructions from memory, decodes them, and executes them.
+
+**Stored-Program Concept:**
+👉 To change what the computer does, just change the contents of memory (load a different program).
+👉 No need to rewire hardware.
+
+**Why It Was Revolutionary:**
+👉 Before this, people thought programs belonged in the CPU, data in memory.
+👉 They were "not seeing the forest for the trees" – stuck in old thinking.
+
+**Today:**
+👉 All computers use stored-program concept (it seems obvious now, but it was a major insight).
+
+---
+
+**Important Vocabulary:**
+- Hardwired = fixed circuitry that cannot change
+- Pegboard arrangement = pluggable wires to reprogram (early method)
+- Stored-program concept = program stored in main memory
+- Control unit = fetches and decodes instructions from memory
+- John von Neumann = mathematician credited with the concept
+- Fetch = retrieve instruction from memory
+- Decode = interpret instruction
+- Execute = carry out instruction
+
+---
+
+**Quick Revision Points:**
+- Early computers: hardwired programs → inflexible.
+- Pegboard allowed rewiring but still cumbersome.
+- Stored-program concept: program = data, stored in memory.
+- Control unit fetches/decodes/executes from memory.
+- Changing program = changing memory contents.
+- Now universal; seemed obvious only after discovery.`,
+
+  questions: [
+    {
+      q: 'In early computers, the steps executed by the CPU were:',
+      options: ['A. Stored in memory', 'B. Built into the control unit (hardwired)', 'C. Loaded from disk', 'D. Written by the user each time'],
+      answer: 'B. Built into the control unit (hardwired)',
+      diff: 'easy',
+    },
+    {
+      q: 'How could early computers achieve flexibility before the stored-program concept?',
+      options: ['A. By loading new software', 'B. By rewiring the CPU using a pegboard arrangement', 'C. By adding more memory', 'D. By changing the power supply'],
+      answer: 'B. By rewiring the CPU using a pegboard arrangement',
+      diff: 'easy',
+    },
+    {
+      q: 'Who is credited with the stored-program concept?',
+      options: ['A. Charles Babbage', 'B. Alan Turing', 'C. John von Neumann', 'D. Steve Jobs'],
+      answer: 'C. John von Neumann',
+      diff: 'easy',
+    },
+    {
+      q: 'The stored-program concept states that:',
+      options: ['A. Programs must be hardwired', 'B. Programs and data are stored in separate hardware', 'C. Programs can be encoded and stored in main memory like data', 'D. Only data can be stored in memory'],
+      answer: 'C. Programs can be encoded and stored in main memory like data',
+      diff: 'easy',
+    },
+    {
+      q: 'In the stored-program concept, the control unit:',
+      options: ['A. Is hardwired permanently', 'B. Extracts program from memory, decodes instructions, and executes them', 'C. Stores the program in registers', 'D. Rewires itself automatically'],
+      answer: 'B. Extracts program from memory, decodes instructions, and executes them',
+      diff: 'medium',
+    },
+    {
+      q: 'What is the main advantage of the stored-program concept?',
+      options: ['A. It makes computers slower', 'B. It allows changing the program by changing memory contents instead of rewiring', 'C. It eliminates the need for memory', 'D. It makes programs run exactly once'],
+      answer: 'B. It allows changing the program by changing memory contents instead of rewiring',
+      diff: 'easy',
+    },
+    {
+      q: 'Before the stored-program concept, people thought that programs and data were:',
+      options: ['A. The same thing', 'B. Different entities (programs in CPU, data in memory)', 'C. Both stored in registers', 'D. Both stored on disk'],
+      answer: 'B. Different entities (programs in CPU, data in memory)',
+      diff: 'medium',
+    },
+    {
+      q: 'The phrase "not seeing the forest for the trees" in the lecture refers to:',
+      options: ['A. Being unable to see the big picture due to focusing on details', 'B. A programming error', 'C. A hardware failure', 'D. A type of algorithm'],
+      answer: 'A. Being unable to see the big picture due to focusing on details',
+      diff: 'medium',
+    },
+    {
+      q: 'Today, all computers use the stored-program concept. This means:',
+      options: ['A. Programs are stored in the CPU', 'B. Programs are stored in main memory along with data', 'C. Programs are stored on external drives only', 'D. Programs cannot be changed'],
+      answer: 'B. Programs are stored in main memory along with data',
+      diff: 'easy',
+    },
+    {
+      q: 'What did the control unit do in the stored-program concept?',
+      options: ['A. It rewires the CPU', 'B. It fetches instructions from memory and executes them', 'C. It stores data permanently', 'D. It performs only addition'],
+      answer: 'B. It fetches instructions from memory and executes them',
+      diff: 'easy',
+    },
+    {
+      q: 'The pegboard arrangement was similar to:',
+      options: ['A. Modern keyboards', 'B. Old telephone switchboards', 'C. USB drives', 'D. Hard disks'],
+      answer: 'B. Old telephone switchboards',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following best describes the evolution of computer flexibility?',
+      options: ['A. Hardwired → pegboard → stored program', 'B. Stored program → hardwired → pegboard', 'C. Pegboard → stored program → hardwired', 'D. No evolution'],
+      answer: 'A. Hardwired → pegboard → stored program',
+      diff: 'easy',
+    },
+    {
+      q: 'The stored-program concept made it possible to:',
+      options: ['A. Use computers only for math', 'B. Change a computer\'s function by loading a different program into memory', 'C. Eliminate the need for a control unit', 'D. Store programs on paper'],
+      answer: 'B. Change a computer\'s function by loading a different program into memory',
+      diff: 'easy',
+    },
+    {
+      q: 'According to the lecture, the stored-program concept is:',
+      options: ['A. Rarely used today', 'B. A breakthrough that is now standard', 'C. Only used in supercomputers', 'D. Outdated'],
+      answer: 'B. A breakthrough that is now standard',
+      diff: 'easy',
+    },
+    {
+      q: 'Why was the stored-program concept not obvious originally?',
+      options: ['A. It was too expensive', 'B. People were stuck in the mindset that programs and data are different', 'C. It was technically impossible', 'D. No one had enough memory'],
+      answer: 'B. People were stuck in the mindset that programs and data are different',
+      diff: 'medium',
+    },
+    {
+      q: 'The idea that a program can be encoded and stored in memory is called:',
+      options: ['A. Hardwired control', 'B. Stored-program concept', 'C. Von Neumann bottleneck', 'D. Memory mapping'],
+      answer: 'B. Stored-program concept',
+      diff: 'easy',
+    },
+    {
+      q: 'In the stored-program concept, the control unit must be able to:',
+      options: ['A. Store data permanently', 'B. Fetch, decode, and execute instructions from memory', 'C. Rewire itself', 'D. Convert programs to data'],
+      answer: 'B. Fetch, decode, and execute instructions from memory',
+      diff: 'medium',
+    },
+    {
+      q: 'The pegboard arrangement allowed flexibility by:',
+      options: ['A. Loading software', 'B. Plugging jumper wires to change connections', 'C. Adding more registers', 'D. Increasing clock speed'],
+      answer: 'B. Plugging jumper wires to change connections',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+34: {
+  title: 'Data Manipulation: CPU Architecture Philosophies (RISC vs CISC) (CS101 Lecture 34)',
+  summary: `**Key Topics Covered:**
+- Machine language: collection of instructions and encoding system recognized by CPU
+- Machine instruction: instruction expressed in machine language
+- CPU must decode and execute machine instructions
+- RISC (Reduced Instruction Set Computer): minimal set of instructions – efficient, fast, less expensive
+- CISC (Complex Instruction Set Computer): large number of complex instructions – more convenient but technically redundant
+- RISC vs CISC trade-off: RISC is efficient but may require multiple instructions for complex tasks; CISC has powerful rich instructions
+- Examples:
+  - CISC: Intel processors (PCs, now also Apple Macs)
+  - RISC: PowerPC (Apple/IBM/Motorola, used in older Macs), ARM (Advanced RISC Machine)
+- ARM: RISC architecture designed for low power consumption
+- ARM processors found in: game controllers, digital TVs, navigation systems, smartphones, cellular phones, consumer electronics
+- Intel/AMD dominate desktop/laptop computers (CISC)
+- ARM dominates mobile/embedded devices (RISC, low power)
+
+---
+
+**Simple Understanding:**
+
+**Machine Language:**
+👉 The set of instructions a CPU understands.
+👉 Each instruction is encoded as a bit pattern.
+
+**RISC (Reduced Instruction Set Computer):**
+👉 Minimal set of simple instructions.
+👉 Advantages: efficient, fast, cheaper to manufacture.
+👉 Each operation is simple; complex tasks need multiple instructions.
+
+**CISC (Complex Instruction Set Computer):**
+👉 Large set of complex instructions.
+👉 Advantages: powerful instructions, can do in one instruction what RISC needs several for.
+👉 More convenient for programmers/compilers.
+
+**Historical Context:**
+- 1990s-2000s: CISC (Intel) vs RISC (PowerPC) competed in desktops.
+- Apple Macs used PowerPC (RISC) but switched to Intel (CISC).
+- Intel/AMD CISC now dominate desktops and laptops.
+
+**ARM (Advanced RISC Machine):**
+👉 RISC designed specifically for low power consumption.
+👉 Used in smartphones, tablets, game controllers, TVs, navigation, automotive.
+👉 Vendors: Qualcomm, Texas Instruments, etc.
+
+---
+
+**Important Vocabulary:**
+- Machine language = CPU's native instruction set
+- Machine instruction = single command in machine language
+- RISC = Reduced Instruction Set Computer
+- CISC = Complex Instruction Set Computer
+- ARM = Advanced RISC Machine (low-power RISC)
+- PowerPC = RISC architecture (older Apple Macs)
+- Intel = CISC architecture (PCs, modern Macs)
+- AMD = Advanced Micro Devices (CISC, compatible with Intel)
+
+---
+
+**Quick Revision Points:**
+- Machine language = instructions CPU executes.
+- RISC: few simple instructions → fast, cheap, efficient.
+- CISC: many complex instructions → powerful but higher power.
+- Intel/AMD = CISC (desktops/laptops).
+- PowerPC = RISC (older Macs).
+- ARM = RISC (low power) → smartphones, embedded devices.`,
+
+  questions: [
+    {
+      q: 'The collection of instructions that a CPU recognizes is called:',
+      options: ['A. Assembly language', 'B. Machine language', 'C. High-level language', 'D. Bytecode'],
+      answer: 'B. Machine language',
+      diff: 'easy',
+    },
+    {
+      q: 'RISC stands for:',
+      options: ['A. Reduced Instruction Set Computer', 'B. Regular Instruction Set Computer', 'C. Rapid Instruction Set Computer', 'D. Reduced Integration System Computer'],
+      answer: 'A. Reduced Instruction Set Computer',
+      diff: 'easy',
+    },
+    {
+      q: 'CISC stands for:',
+      options: ['A. Complex Instruction Set Computer', 'B. Compact Instruction Set Computer', 'C. Core Instruction Set Computer', 'D. Central Instruction Set Computer'],
+      answer: 'A. Complex Instruction Set Computer',
+      diff: 'easy',
+    },
+    {
+      q: 'Which architecture uses a minimal set of machine instructions?',
+      options: ['A. CISC', 'B. RISC', 'C. Both equally', 'D. Neither'],
+      answer: 'B. RISC',
+      diff: 'easy',
+    },
+    {
+      q: 'Which architecture is known for being efficient, fast, and less expensive to manufacture?',
+      options: ['A. CISC', 'B. RISC', 'C. Both', 'D. Neither'],
+      answer: 'B. RISC',
+      diff: 'easy',
+    },
+    {
+      q: 'Which architecture uses a large number of complex instructions?',
+      options: ['A. CISC', 'B. RISC', 'C. Both', 'D. Neither'],
+      answer: 'A. CISC',
+      diff: 'easy',
+    },
+    {
+      q: 'Intel processors used in PCs are examples of which architecture?',
+      options: ['A. RISC', 'B. CISC', 'C. ARM', 'D. PowerPC'],
+      answer: 'B. CISC',
+      diff: 'easy',
+    },
+    {
+      q: 'PowerPC processors (used in older Apple Macs) are examples of which architecture?',
+      options: ['A. CISC', 'B. RISC', 'C. ARM', 'D. x86'],
+      answer: 'B. RISC',
+      diff: 'easy',
+    },
+    {
+      q: 'Which company designed the PowerPC processor in alliance with Apple and IBM?',
+      options: ['A. Intel', 'B. AMD', 'C. Motorola', 'D. ARM'],
+      answer: 'C. Motorola',
+      diff: 'medium',
+    },
+    {
+      q: 'Today, Apple Mac computers use processors from which company?',
+      options: ['A. PowerPC', 'B. ARM', 'C. Intel (CISC)', 'D. AMD (RISC)'],
+      answer: 'C. Intel (CISC)',
+      diff: 'easy',
+    },
+    {
+      q: 'Which architecture is specifically designed for low power consumption?',
+      options: ['A. Intel CISC', 'B. AMD CISC', 'C. ARM RISC', 'D. PowerPC RISC'],
+      answer: 'C. ARM RISC',
+      diff: 'easy',
+    },
+    {
+      q: 'ARM originally stood for:',
+      options: ['A. Advanced RISC Machine', 'B. Advanced Reduced Machine', 'C. Acorn RISC Machine (originally), now Advanced RISC Machine', 'D. Automated RISC Module'],
+      answer: 'C. Acorn RISC Machine (originally), now Advanced RISC Machine',
+      diff: 'hard',
+    },
+    {
+      q: 'ARM processors are commonly found in which devices?',
+      options: ['A. Desktop computers', 'B. Smartphones and embedded devices', 'C. Mainframes', 'D. Supercomputers'],
+      answer: 'B. Smartphones and embedded devices',
+      diff: 'easy',
+    },
+    {
+      q: 'Which company is a major manufacturer of ARM-based processors?',
+      options: ['A. Intel', 'B. AMD', 'C. Qualcomm', 'D. IBM'],
+      answer: 'C. Qualcomm',
+      diff: 'medium',
+    },
+    {
+      q: 'The argument in favor of CISC architecture is that:',
+      options: ['A. It is cheaper', 'B. It can better cope with ever-increasing software complexity and provides powerful instructions', 'C. It uses less power', 'D. It has fewer instructions'],
+      answer: 'B. It can better cope with ever-increasing software complexity and provides powerful instructions',
+      diff: 'medium',
+    },
+    {
+      q: 'The argument in favor of RISC architecture is that:',
+      options: ['A. It has more instructions', 'B. It is efficient, fast, and less expensive', 'C. It is easier to program', 'D. It uses more power'],
+      answer: 'B. It is efficient, fast, and less expensive',
+      diff: 'medium',
+    },
+    {
+      q: 'Which architecture now dominates desktop and laptop computers?',
+      options: ['A. ARM RISC', 'B. PowerPC RISC', 'C. Intel/AMD CISC', 'D. SPARC RISC'],
+      answer: 'C. Intel/AMD CISC',
+      diff: 'easy',
+    },
+    {
+      q: 'Which architecture dominates mobile and embedded devices due to low power?',
+      options: ['A. Intel CISC', 'B. AMD CISC', 'C. ARM RISC', 'D. PowerPC RISC'],
+      answer: 'C. ARM RISC',
+      diff: 'easy',
+    },
+    {
+      q: 'A machine instruction is:',
+      options: ['A. An instruction expressed in machine language', 'B. A high-level language statement', 'C. An assembly language directive', 'D. A comment in code'],
+      answer: 'A. An instruction expressed in machine language',
+      diff: 'easy',
+    },
+    {
+      q: 'The theoretical capabilities of a CPU:',
+      options: ['A. Increase with every additional instruction', 'B. Do not increase beyond a certain point (additional features add convenience, not fundamental capability)', 'C. Are unlimited', 'D. Depend only on clock speed'],
+      answer: 'B. Do not increase beyond a certain point (additional features add convenience, not fundamental capability)',
+      diff: 'medium',
+    },
+    {
+      q: 'Which of the following is a RISC architecture?',
+      options: ['A. Intel x86', 'B. AMD64', 'C. ARM', 'D. Both A and B'],
+      answer: 'C. ARM',
+      diff: 'easy',
+    }
+  ]
+},
+
+35: {
+  title: 'Data Manipulation: Machine Instruction Categories (Data Transfer, Arithmetic/Logic, Control) (CS101 Lecture 35)',
+  summary: `**Key Topics Covered:**
+- Three categories of machine instructions (RISC or CISC):
+  1. Data Transfer Group
+  2. Arithmetic/Logic Group
+  3. Control Group
+- Data Transfer Group: instructions that move (copy) data from one location to another
+  - Actually copying, not moving (original data remains)
+  - LOAD instruction: transfer data from memory to a register
+  - STORE instruction: transfer data from a register to memory
+  - I/O instructions: communicate with devices (printers, keyboards, displays, disk drives) – sometimes considered separate category
+- Arithmetic/Logic Group: instructions that request activities within the ALU
+  - Basic arithmetic (add, subtract) and logic operations (AND, OR, NOT)
+- Control Group: instructions that direct program execution (not data manipulation)
+  - Examples: branching, jumping, conditional execution
+
+---
+
+**Simple Understanding:**
+
+**Three Categories of Machine Instructions:**
+👉 Every CPU (whether RISC or CISC) has instructions in these three groups.
+
+**1. Data Transfer Instructions:**
+👉 Copy data from one place to another (memory to register, register to memory, register to register).
+👉 The original data is NOT erased – it's a copy.
+👉 **LOAD:** copy data from memory into a register.
+👉 **STORE:** copy data from a register into memory.
+👉 **I/O Instructions:** communicate with external devices (keyboard, screen, printer, disk). Sometimes considered a fourth category.
+
+**2. Arithmetic/Logic Instructions:**
+👉 Tell the ALU to perform operations.
+👉 Arithmetic: addition, subtraction, multiplication, division.
+👉 Logic: AND, OR, NOT, XOR.
+
+**3. Control Instructions:**
+👉 Direct the flow of the program.
+👉 Examples: jump, branch, call, return.
+👉 Change which instruction executes next (not data manipulation).
+
+---
+
+**Important Vocabulary:**
+- Data transfer = copying data between locations
+- LOAD = memory → register
+- STORE = register → memory
+- I/O instructions = communication with peripherals
+- Arithmetic/logic = ALU operations (add, AND, etc.)
+- Control instructions = change program flow (branch, jump)
+
+---
+
+**Quick Revision Points:**
+- All CPU instructions fall into 3 categories.
+- Data transfer: LOAD, STORE, I/O.
+- Arithmetic/logic: ADD, AND, OR, etc.
+- Control: branch, jump, call.
+- LOAD and STORE move data between memory and registers.
+- I/O instructions handle external devices.`,
+
+  questions: [
+    {
+      q: 'How many categories of machine instructions are discussed in this module?',
+      options: ['A. 2', 'B. 3', 'C. 4', 'D. 5'],
+      answer: 'B. 3',
+      diff: 'easy',
+    },
+    {
+      q: 'Which group of instructions requests movement of data from one location to another?',
+      options: ['A. Arithmetic/Logic Group', 'B. Control Group', 'C. Data Transfer Group', 'D. I/O Group'],
+      answer: 'C. Data Transfer Group',
+      diff: 'easy',
+    },
+    {
+      q: 'In data transfer instructions, the original data is typically:',
+      options: ['A. Erased', 'B. Copied (not erased)', 'C. Destroyed', 'D. Converted to zero'],
+      answer: 'B. Copied (not erased)',
+      diff: 'easy',
+    },
+    {
+      q: 'A request to fill a general-purpose register with the contents of a memory cell is called:',
+      options: ['A. STORE', 'B. LOAD', 'C. MOVE', 'D. COPY'],
+      answer: 'B. LOAD',
+      diff: 'easy',
+    },
+    {
+      q: 'A request to transfer the contents of a register to a memory cell is called:',
+      options: ['A. LOAD', 'B. STORE', 'C. SAVE', 'D. WRITE'],
+      answer: 'B. STORE',
+      diff: 'easy',
+    },
+    {
+      q: 'Instructions for communicating with printers, keyboards, and disk drives are called:',
+      options: ['A. Arithmetic instructions', 'B. Control instructions', 'C. I/O instructions', 'D. LOAD instructions'],
+      answer: 'C. I/O instructions',
+      diff: 'easy',
+    },
+    {
+      q: 'I/O instructions are sometimes considered:',
+      options: ['A. Part of arithmetic group', 'B. Part of control group', 'C. A separate category on their own', 'D. Not needed'],
+      answer: 'C. A separate category on their own',
+      diff: 'easy',
+    },
+    {
+      q: 'Which group of instructions tells the control unit to request activity within the ALU?',
+      options: ['A. Data Transfer Group', 'B. Arithmetic/Logic Group', 'C. Control Group', 'D. I/O Group'],
+      answer: 'B. Arithmetic/Logic Group',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is an example of an arithmetic/logic instruction?',
+      options: ['A. LOAD', 'B. STORE', 'C. ADD', 'D. JUMP'],
+      answer: 'C. ADD',
+      diff: 'easy',
+    },
+    {
+      q: 'Which group of instructions directs the execution of the program rather than manipulation of data?',
+      options: ['A. Data Transfer Group', 'B. Arithmetic/Logic Group', 'C. Control Group', 'D. I/O Group'],
+      answer: 'C. Control Group',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is an example of a control instruction?',
+      options: ['A. ADD', 'B. AND', 'C. JUMP', 'D. LOAD'],
+      answer: 'C. JUMP',
+      diff: 'easy',
+    },
+    {
+      q: 'The ALU can perform which types of operations?',
+      options: ['A. Only arithmetic', 'B. Only logic', 'C. Both arithmetic and logic', 'D. Only data transfer'],
+      answer: 'C. Both arithmetic and logic',
+      diff: 'easy',
+    },
+    {
+      q: 'LOAD and STORE instructions belong to which category?',
+      options: ['A. Arithmetic/Logic', 'B. Control', 'C. Data Transfer', 'D. I/O only'],
+      answer: 'C. Data Transfer',
+      diff: 'easy',
+    },
+    {
+      q: 'Which category includes branch instructions?',
+      options: ['A. Data Transfer', 'B. Arithmetic/Logic', 'C. Control', 'D. I/O'],
+      answer: 'C. Control',
+      diff: 'easy',
+    },
+    {
+      q: 'The term "transfer" in data transfer is actually a misnomer because:',
+      options: ['A. Data is always erased', 'B. The process is more like copying', 'C. It never happens', 'D. It only works for integers'],
+      answer: 'B. The process is more like copying',
+      diff: 'medium',
+    },
+    {
+      q: 'I/O instructions handle communication with:',
+      options: ['A. Only memory', 'B. Only the CPU', 'C. External devices (printers, keyboards, displays, disk drives)', 'D. Only the ALU'],
+      answer: 'C. External devices (printers, keyboards, displays, disk drives)',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is NOT a machine instruction category mentioned?',
+      options: ['A. Data Transfer', 'B. Arithmetic/Logic', 'C. Control', 'D. Cache Management'],
+      answer: 'D. Cache Management',
+      diff: 'easy',
+    },
+    {
+      q: 'A conditional jump instruction belongs to which group?',
+      options: ['A. Data Transfer', 'B. Arithmetic/Logic', 'C. Control', 'D. I/O'],
+      answer: 'C. Control',
+      diff: 'easy',
+    },
+    {
+      q: 'The instruction that copies data from memory into a register is called:',
+      options: ['A. STORE', 'B. LOAD', 'C. PUSH', 'D. POP'],
+      answer: 'B. LOAD',
+      diff: 'easy',
+    },
+    {
+      q: 'The instruction that copies data from a register into memory is called:',
+      options: ['A. LOAD', 'B. FETCH', 'C. STORE', 'D. WRITE'],
+      answer: 'C. STORE',
+      diff: 'easy',
+    },
+    {
+      q: 'Which group is responsible for basic arithmetic operations like addition and subtraction?',
+      options: ['A. Data Transfer', 'B. Arithmetic/Logic', 'C. Control', 'D. I/O'],
+      answer: 'B. Arithmetic/Logic',
+      diff: 'easy',
+    }
+  ]
+},
+
+36: {
+  title: 'Data Manipulation: Program Execution (Fetch-Decode-Execute Cycle) (CS101 Lecture 36)',
+  summary: `**Key Topics Covered:**
+- Program execution: machine instructions fetched from main memory to CPU
+- Each instruction is decoded and obeyed (executed)
+- Instructions executed in sequential order unless a JUMP changes the flow
+- CPU and main memory connected via bus
+- Special-purpose registers:
+  - Instruction Register (IR): holds the instruction currently being executed
+  - Program Counter (PC): contains the address of the next instruction to be executed
+- Machine Cycle (Fetch-Decode-Execute Cycle):
+  1. Fetch: CPU retrieves instruction from memory at address in PC
+  2. Increment PC to point to next instruction
+  3. Decode: CPU interprets the instruction
+  4. Execute: CPU performs the instruction
+- Cycle repeats until program ends or JUMP changes PC
+
+---
+
+**Simple Understanding:**
+
+**How a Program Runs:**
+👉 Instructions are stored in main memory.
+👉 CPU fetches them one by one, decodes, and executes.
+👉 Normally, instructions are executed in order (the order they are stored in memory).
+
+**Jump Instructions:**
+👉 Can change the order (like going to a different part of the program).
+👉 The Program Counter (PC) is updated to a new address.
+
+**Special Registers:**
+- **Instruction Register (IR):** Holds the current instruction being executed.
+- **Program Counter (PC):** Holds the memory address of the next instruction to fetch.
+
+**Machine Cycle (Fetch-Decode-Execute):**
+1. **Fetch:** CPU reads the instruction from memory at the address in PC.
+2. **Increment PC:** PC is increased to point to the next instruction (unless a JUMP will change it later).
+3. **Decode:** Control unit interprets the instruction.
+4. **Execute:** CPU performs the operation (ALU, data transfer, etc.).
+
+**Repeat** for the next instruction.
+
+---
+
+**Important Vocabulary:**
+- Fetch = retrieve instruction from memory
+- Decode = interpret instruction
+- Execute = carry out instruction
+- Instruction Register (IR) = holds current instruction
+- Program Counter (PC) = holds address of next instruction
+- Machine cycle = fetch-decode-execute cycle
+- Bus = communication wires between CPU and memory
+
+---
+
+**Quick Revision Points:**
+- Instructions fetched from memory to CPU.
+- Normally sequential; JUMP changes order.
+- PC points to next instruction address.
+- IR holds instruction being executed.
+- Machine cycle: fetch → increment PC → decode → execute.
+- Cycle repeats for each instruction.`,
+
+  questions: [
+    {
+      q: 'Where are machine instructions stored for execution?',
+      options: ['A. In the CPU registers', 'B. In main memory', 'C. In the ALU', 'D. In the control unit'],
+      answer: 'B. In main memory',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the first step in executing a machine instruction?',
+      options: ['A. Decode', 'B. Execute', 'C. Fetch', 'D. Store'],
+      answer: 'C. Fetch',
+      diff: 'easy',
+    },
+    {
+      q: 'The instruction currently being executed is held in the:',
+      options: ['A. Program Counter', 'B. Instruction Register', 'C. Accumulator', 'D. Memory Address Register'],
+      answer: 'B. Instruction Register',
+      diff: 'easy',
+    },
+    {
+      q: 'The address of the next instruction to be executed is held in the:',
+      options: ['A. Instruction Register', 'B. Program Counter', 'C. Memory Data Register', 'D. ALU'],
+      answer: 'B. Program Counter',
+      diff: 'easy',
+    },
+    {
+      q: 'During the machine cycle, what happens immediately after fetching an instruction?',
+      options: ['A. Execute', 'B. Decode', 'C. Increment Program Counter', 'D. Store result'],
+      answer: 'B. Decode',
+      diff: 'medium',
+    },
+    {
+      q: 'The normal order of instruction execution is:',
+      options: ['A. Random', 'B. As stored in memory sequentially', 'C. Reverse order', 'D. Determined by data values'],
+      answer: 'B. As stored in memory sequentially',
+      diff: 'easy',
+    },
+    {
+      q: 'Which instruction can change the normal sequential execution order?',
+      options: ['A. LOAD', 'B. ADD', 'C. JUMP', 'D. STORE'],
+      answer: 'C. JUMP',
+      diff: 'easy',
+    },
+    {
+      q: 'The machine cycle is also known as:',
+      options: ['A. Fetch-Decode-Execute cycle', 'B. Load-Store cycle', 'C. Read-Write cycle', 'D. Jump-Branch cycle'],
+      answer: 'A. Fetch-Decode-Execute cycle',
+      diff: 'easy',
+    },
+    {
+      q: 'What does the control unit do during the decode step?',
+      options: ['A. Fetches data from memory', 'B. Interprets the instruction', 'C. Performs arithmetic', 'D. Stores the result'],
+      answer: 'B. Interprets the instruction',
+      diff: 'medium',
+    },
+    {
+      q: 'The CPU and main memory are connected by a set of wires called:',
+      options: ['A. Register', 'B. Bus', 'C. Cable', 'D. Channel'],
+      answer: 'B. Bus',
+      diff: 'easy',
+    },
+    {
+      q: 'After fetching an instruction, the Program Counter is typically:',
+      options: ['A. Reset to zero', 'B. Incremented to the next address', 'C. Decremented', 'D. Loaded with the instruction'],
+      answer: 'B. Incremented to the next address',
+      diff: 'medium',
+    },
+    {
+      q: 'The instruction register (IR) is a type of:',
+      options: ['A. General-purpose register', 'B. Special-purpose register', 'C. Memory cell', 'D. ALU component'],
+      answer: 'B. Special-purpose register',
+      diff: 'easy',
+    },
+    {
+      q: 'The program counter (PC) is a type of:',
+      options: ['A. General-purpose register', 'B. Special-purpose register', 'C. Memory cell', 'D. ALU component'],
+      answer: 'B. Special-purpose register',
+      diff: 'easy',
+    },
+    {
+      q: 'What happens to the PC when a JUMP instruction is executed?',
+      options: ['A. It is incremented by 1', 'B. It is set to the target address of the jump', 'C. It is cleared to zero', 'D. It is unchanged'],
+      answer: 'B. It is set to the target address of the jump',
+      diff: 'medium',
+    },
+    {
+      q: 'The sequence of fetch, decode, and execute is called the:',
+      options: ['A. Machine cycle', 'B. Bus cycle', 'C. Clock cycle', 'D. Instruction pipeline'],
+      answer: 'A. Machine cycle',
+      diff: 'easy',
+    },
+    {
+      q: 'Which step involves the actual performance of the operation (e.g., ADD, LOAD)?',
+      options: ['A. Fetch', 'B. Decode', 'C. Execute', 'D. Store'],
+      answer: 'C. Execute',
+      diff: 'easy',
+    },
+    {
+      q: 'The control unit is responsible for:',
+      options: ['A. Performing arithmetic', 'B. Fetching and decoding instructions', 'C. Storing data', 'D. Input/output'],
+      answer: 'B. Fetching and decoding instructions',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+37: {
+  title: 'Data Manipulation: Program Execution Example (Adding Two Numbers) (CS101 Lecture 37)',
+  summary: `**Key Topics Covered:**
+- Example program: read two numbers from memory, add them, store result
+- Machine instructions are 16 bits (2 bytes) per instruction
+- Instructions stored sequentially in memory
+- Fetch step: CPU extracts instruction from memory (at address in PC) into Instruction Register (IR)
+- PC is incremented by 2 (since each instruction occupies 2 bytes)
+- Decode step: CPU analyzes instruction to determine operation
+- Execute step: CPU performs the operation (LOAD, ADD, STORE, HALT)
+- Example instructions:
+  - 156C: load register 5 with contents of memory address 6C
+  - 166D: load register 6 with contents of memory address 6D
+  - 5056: add register 5 and register 6, result in register 0
+  - 306E: store register 0 contents to memory address 6E
+  - C000: halt instruction (stop execution)
+- Machine cycle repeats until HALT
+
+---
+
+**Simple Understanding:**
+
+**The Program Goal:**
+👉 Add two numbers stored in memory.
+👉 Store the result back to memory.
+
+**Memory Layout (Figure 46):**
+- Addresses A0 and A1: instruction 156C (LOAD R5, [6C])
+- Addresses A2 and A3: instruction 166D (LOAD R6, [6D])
+- Addresses A4 and A5: instruction 5056 (ADD R0, R5, R6)
+- Addresses A6 and A7: instruction 306E (STORE R0, [6E])
+- Addresses A8 and A9: instruction C000 (HALT)
+
+**Machine Cycle Steps (for first instruction):**
+1. **Fetch:** CPU reads 2 bytes from address A0 (and A1) into IR. PC increments from A0 to A2.
+2. **Decode:** CPU interprets 156C as "load register 5 from memory address 6C".
+3. **Execute:** CPU copies data from memory cell 6C into register 5.
+
+**Second instruction (166D):**
+- Fetch from A2→A4, IR=166D, Decode as load register 6 from address 6D, Execute.
+
+**Third instruction (5056):**
+- Fetch from A4→A6, IR=5056, Decode as add R5 and R6, store result in R0, Execute.
+
+**Fourth instruction (306E):**
+- Fetch from A6→A8, IR=306E, Decode as store R0 to address 6E, Execute.
+
+**Fifth instruction (C000):**
+- Fetch from A8→AA, IR=C000, Decode as halt, Execute halts the machine.
+
+---
+
+**Important Vocabulary:**
+- Machine instruction = 16-bit command
+- Fetch = read instruction from memory into IR
+- Decode = interpret instruction
+- Execute = perform instruction
+- Program Counter (PC) = address of next instruction
+- Instruction Register (IR) = current instruction
+- LOAD = copy from memory to register
+- STORE = copy from register to memory
+- ADD = arithmetic addition
+- HALT = stop program execution
+
+---
+
+**Quick Revision Points:**
+- Each instruction is 16 bits (2 bytes).
+- PC increments by 2 after each fetch.
+- First instruction 156C: LOAD R5 from address 6C.
+- Second instruction 166D: LOAD R6 from address 6D.
+- Third instruction 5056: ADD R5+R6 → R0.
+- Fourth instruction 306E: STORE R0 to address 6E.
+- Fifth instruction C000: HALT.
+- Machine cycle repeats until HALT.`,
+
+  questions: [
+    {
+      q: 'In the example program, how many bytes does each machine instruction occupy?',
+      options: ['A. 1 byte', 'B. 2 bytes (16 bits)', 'C. 4 bytes', 'D. 8 bytes'],
+      answer: 'B. 2 bytes (16 bits)',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the first instruction at memory address A0?',
+      options: ['A. 166D', 'B. 156C', 'C. 5056', 'D. 306E'],
+      answer: 'B. 156C',
+      diff: 'easy',
+    },
+    {
+      q: 'What does instruction 156C do?',
+      options: ['A. Store register 0 to memory', 'B. Load register 5 with contents of memory address 6C', 'C. Add registers 5 and 6', 'D. Halt the machine'],
+      answer: 'B. Load register 5 with contents of memory address 6C',
+      diff: 'medium',
+    },
+    {
+      q: 'What does instruction 166D do?',
+      options: ['A. Load register 6 with contents of memory address 6D', 'B. Load register 5 with contents of 6D', 'C. Store register 6 to 6D', 'D. Add registers'],
+      answer: 'A. Load register 6 with contents of memory address 6D',
+      diff: 'medium',
+    },
+    {
+      q: 'What does instruction 5056 do?',
+      options: ['A. Load register 0', 'B. Store register 0', 'C. Add register 5 and register 6, result in register 0', 'D. Halt'],
+      answer: 'C. Add register 5 and register 6, result in register 0',
+      diff: 'medium',
+    },
+    {
+      q: 'What does instruction 306E do?',
+      options: ['A. Load register 0 from address 6E', 'B. Store register 0 to memory address 6E', 'C. Add register 0 and 6', 'D. Halt'],
+      answer: 'B. Store register 0 to memory address 6E',
+      diff: 'medium',
+    },
+    {
+      q: 'What does instruction C000 do?',
+      options: ['A. Load', 'B. Store', 'C. Add', 'D. Halt'],
+      answer: 'D. Halt',
+      diff: 'easy',
+    },
+    {
+      q: 'After fetching the instruction at address A0, the Program Counter (PC) is updated to:',
+      options: ['A. A0', 'B. A1', 'C. A2', 'D. A4'],
+      answer: 'C. A2',
+      diff: 'medium',
+    },
+    {
+      q: 'After fetching the instruction at address A2, the PC becomes:',
+      options: ['A. A2', 'B. A3', 'C. A4', 'D. A6'],
+      answer: 'C. A4',
+      diff: 'medium',
+    },
+    {
+      q: 'The third instruction is fetched from which address?',
+      options: ['A. A0', 'B. A2', 'C. A4', 'D. A6'],
+      answer: 'C. A4',
+      diff: 'easy',
+    },
+    {
+      q: 'The second instruction (166D) is stored at which memory addresses?',
+      options: ['A. A0 and A1', 'B. A2 and A3', 'C. A4 and A5', 'D. A6 and A7'],
+      answer: 'B. A2 and A3',
+      diff: 'hard',
+    },
+    {
+      q: 'During the fetch step of the first machine cycle, the instruction placed in the Instruction Register is:',
+      options: ['A. 156C', 'B. 166D', 'C. 5056', 'D. 306E'],
+      answer: 'A. 156C',
+      diff: 'easy',
+    },
+    {
+      q: 'The instruction that performs the actual addition is:',
+      options: ['A. 156C', 'B. 166D', 'C. 5056', 'D. 306E'],
+      answer: 'C. 5056',
+      diff: 'easy',
+    },
+    {
+      q: 'After executing the ADD instruction (5056), where is the result stored?',
+      options: ['A. Register 5', 'B. Register 6', 'C. Register 0', 'D. Memory address 6E'],
+      answer: 'C. Register 0',
+      diff: 'medium',
+    },
+    {
+      q: 'The STORE instruction (306E) stores the contents of which register to memory?',
+      options: ['A. Register 5', 'B. Register 6', 'C. Register 0', 'D. Program Counter'],
+      answer: 'C. Register 0',
+      diff: 'medium',
+    },
+    {
+      q: 'How many machine cycles are executed before the HALT instruction?',
+      options: ['A. 3', 'B. 4', 'C. 5', 'D. 6'],
+      answer: 'C. 5',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the final value of the Program Counter after the HALT instruction is fetched?',
+      options: ['A. A0', 'B. A2', 'C. A8', 'D. AA'],
+      answer: 'D. AA',
+      diff: 'hard',
+    },
+    {
+      q: 'The ADD instruction uses which two registers as inputs?',
+      options: ['A. R0 and R5', 'B. R5 and R6', 'C. R6 and R0', 'D. R0 and R6'],
+      answer: 'B. R5 and R6',
+      diff: 'easy',
+    },
+    {
+      q: 'The LOAD instructions transfer data from:',
+      options: ['A. Registers to memory', 'B. Memory to registers', 'C. Register to register', 'D. ALU to memory'],
+      answer: 'B. Memory to registers',
+      diff: 'easy',
+    },
+    {
+      q: 'The STORE instruction transfers data from:',
+      options: ['A. Memory to register', 'B. Register to memory', 'C. Register to register', 'D. ALU to register'],
+      answer: 'B. Register to memory',
+      diff: 'easy',
+    },
+    {
+      q: 'The machine cycle for each instruction consists of which steps?',
+      options: ['A. Fetch, Decode, Execute', 'B. Load, Add, Store', 'C. Read, Write, Halt', 'D. Input, Output, Process'],
+      answer: 'A. Fetch, Decode, Execute',
+      diff: 'easy',
+    },
+    {
+      q: 'The HALT instruction is stored at which memory addresses?',
+      options: ['A. A0 and A1', 'B. A2 and A3', 'C. A4 and A5', 'D. A8 and A9'],
+      answer: 'D. A8 and A9',
+      diff: 'hard',
+    }
+  ]
+},
+
+38: {
+  title: 'Data Manipulation: Logic Operators (AND, OR, XOR, Masking) (CS101 Lecture 38)',
+  summary: `**Key Topics Covered:**
+- Bitwise operations: apply basic operations (AND, OR, XOR) to individual bits of two strings
+- AND operation: result bit = 1 only if both input bits are 1
+- OR operation: result bit = 1 if at least one input bit is 1
+- XOR operation: result bit = 1 if input bits are different
+- Masking: using one operand (mask) to select which bits of the other operand affect the result
+- AND masking: places 0s in masked positions, copies the other operand elsewhere
+- Example: 10011010 AND 11001001 = 10001000
+- Mask 00001111 AND (any byte) → result has upper 4 bits = 0, lower 4 bits = copy of lower bits of second operand
+- Applications:
+  - Filtering colors in RGB images (e.g., mask off red component, keep blue/green)
+  - Testing if a specific bit is 1 (AND with a mask having 1 only at that bit)
+  - Clearing a specific bit to 0 (AND with mask having 0 at that bit, 1 elsewhere)
+- OR operation: duplicate a part of string while putting 1s in non-duplicated part
+- XOR operation: invert bits (invert all bits of an RGB image produces negative colors)
+
+---
+
+**Simple Understanding:**
+
+**Bitwise Operations:**
+👉 Work on each column (bit position) independently.
+👉 Two operands (bit strings) → one result string.
+
+**AND:**
+- 0 AND 0 = 0
+- 0 AND 1 = 0
+- 1 AND 0 = 0
+- 1 AND 1 = 1
+- Result bit is 1 only if both are 1.
+
+**OR:**
+- 0 OR 0 = 0
+- 0 OR 1 = 1
+- 1 OR 0 = 1
+- 1 OR 1 = 1
+- Result bit is 1 if at least one is 1.
+
+**XOR:**
+- 0 XOR 0 = 0
+- 0 XOR 1 = 1
+- 1 XOR 0 = 1
+- 1 XOR 1 = 0
+- Result bit is 1 if inputs are different.
+
+**Masking with AND:**
+👉 A mask selects which bits to keep/copy.
+- Example: mask = 00001111 → AND with any byte gives:
+  - Upper 4 bits become 0.
+  - Lower 4 bits = copy of lower bits of second operand.
+- Testing a bit: mask = 00100000 (only third bit 1). AND with bit map → result non-zero if that bit was 1.
+- Clearing a bit to 0: mask = 11011111 (0 at third bit, 1 elsewhere). AND with bit map → third bit becomes 0, others unchanged.
+
+**OR Masking:**
+👉 Places 1s in masked positions, copies other operand elsewhere.
+
+**XOR for Inversion:**
+👉 XOR with all 1s (e.g., 11111111) inverts all bits.
+- Used to create negative (inverted) colors in images.
+
+---
+
+**Important Vocabulary:**
+- Bitwise = operation on individual bits
+- Mask = operand that selects which bits are affected
+- Masking = using a mask to isolate or modify bits
+- Clear a bit = set bit to 0 (using AND with 0 at that position)
+- Test a bit = check if bit is 1 (using AND with 1 at that position)
+- Invert = flip all bits (0→1, 1→0) using XOR with all 1s
+
+---
+
+**Quick Revision Points:**
+- AND: result 1 only if both inputs 1.
+- OR: result 1 if at least one input 1.
+- XOR: result 1 if inputs differ.
+- AND mask with 0s clears bits; 1s copy other operand.
+- Used to test, clear, or filter bits.
+- OR mask with 1s sets bits; 0s copy.
+- XOR with all 1s inverts all bits.`,
+
+  questions: [
+    {
+      q: 'What is the result of ANDing 10011010 and 11001001?',
+      options: ['A. 11011011', 'B. 10001000', 'C. 00000000', 'D. 11111111'],
+      answer: 'B. 10001000',
+      diff: 'easy',
+    },
+    {
+      q: 'The bitwise AND operation produces a 1 only when:',
+      options: ['A. At least one input is 1', 'B. Both inputs are 1', 'C. Inputs are different', 'D. Both inputs are 0'],
+      answer: 'B. Both inputs are 1',
+      diff: 'easy',
+    },
+    {
+      q: 'The bitwise OR operation produces a 1 when:',
+      options: ['A. Both inputs are 1', 'B. At least one input is 1', 'C. Inputs are different', 'D. Both inputs are 0'],
+      answer: 'B. At least one input is 1',
+      diff: 'easy',
+    },
+    {
+      q: 'The bitwise XOR operation produces a 1 when:',
+      options: ['A. Both inputs are 1', 'B. Both inputs are 0', 'C. Inputs are different', 'D. Inputs are the same'],
+      answer: 'C. Inputs are different',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the result of 1010 AND 1100?',
+      options: ['A. 1110', 'B. 1010', 'C. 1000', 'D. 1100'],
+      answer: 'C. 1000',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the result of 1010 OR 1100?',
+      options: ['A. 1110', 'B. 1010', 'C. 1000', 'D. 1100'],
+      answer: 'A. 1110',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the result of 1010 XOR 1100?',
+      options: ['A. 1110', 'B. 0110', 'C. 1000', 'D. 1100'],
+      answer: 'B. 0110',
+      diff: 'easy',
+    },
+    {
+      q: 'The process of using one operand to determine which part of another operand affects the result is called:',
+      options: ['A. Bit shifting', 'B. Masking', 'C. Inverting', 'D. Rotating'],
+      answer: 'B. Masking',
+      diff: 'easy',
+    },
+    {
+      q: 'In AND masking, the mask that places 0s in the upper 4 bits and copies the lower 4 bits would be:',
+      options: ['A. 11110000', 'B. 00001111', 'C. 10101010', 'D. 01010101'],
+      answer: 'B. 00001111',
+      diff: 'medium',
+    },
+    {
+      q: 'To test whether the third bit from the left (bit position 2 in 8 bits) is 1, you would AND with the mask:',
+      options: ['A. 00100000', 'B. 00000100', 'C. 10000000', 'D. 00000001'],
+      answer: 'A. 00100000',
+      diff: 'medium',
+    },
+    {
+      q: 'To clear (set to 0) the third bit from the left without changing other bits, you would AND with the mask:',
+      options: ['A. 00100000', 'B. 11011111', 'C. 11101111', 'D. 00010000'],
+      answer: 'B. 11011111',
+      diff: 'hard',
+    },
+    {
+      q: 'Which operation can be used to invert all bits of a byte?',
+      options: ['A. AND with 11111111', 'B. OR with 11111111', 'C. XOR with 11111111', 'D. AND with 00000000'],
+      answer: 'C. XOR with 11111111',
+      diff: 'medium',
+    },
+    {
+      q: 'If you XOR a bit with 1, the result is:',
+      options: ['A. The same bit', 'B. The complement (inverse) of the bit', 'C. Always 0', 'D. Always 1'],
+      answer: 'B. The complement (inverse) of the bit',
+      diff: 'easy',
+    },
+    {
+      q: 'If you AND a bit with 0, the result is:',
+      options: ['A. The same bit', 'B. 0', 'C. 1', 'D. Complement of the bit'],
+      answer: 'B. 0',
+      diff: 'easy',
+    },
+    {
+      q: 'If you OR a bit with 1, the result is:',
+      options: ['A. The same bit', 'B. 0', 'C. 1', 'D. Complement of the bit'],
+      answer: 'C. 1',
+      diff: 'easy',
+    },
+    {
+      q: 'In an RGB image, AND masking can be used to:',
+      options: ['A. Invert colors', 'B. Filter out certain color components', 'C. Increase brightness', 'D. Rotate the image'],
+      answer: 'B. Filter out certain color components',
+      diff: 'easy',
+    },
+    {
+      q: 'A bit string where each bit represents the presence of an object (e.g., cards in a hand) is called a:',
+      options: ['A. Bit mask', 'B. Bit map', 'C. Byte array', 'D. Word field'],
+      answer: 'B. Bit map',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the result of 1100 AND 1010?',
+      options: ['A. 1110', 'B. 1100', 'C. 1000', 'D. 1010'],
+      answer: 'C. 1000',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the result of 1100 OR 1010?',
+      options: ['A. 1110', 'B. 1100', 'C. 1010', 'D. 1000'],
+      answer: 'A. 1110',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the result of 1100 XOR 1010?',
+      options: ['A. 1110', 'B. 0110', 'C. 1000', 'D. 1100'],
+      answer: 'B. 0110',
+      diff: 'easy',
+    },
+    {
+      q: 'To set a specific bit to 1 without changing others, you would OR with a mask that has:',
+      options: ['A. 0 at that bit position', 'B. 1 at that bit position, 0 elsewhere', 'C. 1 at all positions', 'D. 0 at all positions'],
+      answer: 'B. 1 at that bit position, 0 elsewhere',
+      diff: 'medium',
+    },
+    {
+      q: 'To keep a specific bit unchanged while setting others to 1, you would OR with a mask that has:',
+      options: ['A. 0 at that bit, 1 elsewhere', 'B. 1 at that bit, 0 elsewhere', 'C. 0 everywhere', 'D. 1 everywhere'],
+      answer: 'A. 0 at that bit, 1 elsewhere',
+      diff: 'hard',
+    },
+    {
+      q: 'Which operation is commonly used to create a negative (inverted) image?',
+      options: ['A. AND with white', 'B. OR with black', 'C. XOR with all 1s', 'D. AND with all 0s'],
+      answer: 'C. XOR with all 1s',
+      diff: 'easy',
+    }
+  ]
+},
+39: {
+  title: 'Data Manipulation: Rotation and Shift Operations (CS101 Lecture 39)',
+  summary: `**Key Topics Covered:**
+- Rotation and shift operations: move bits within a register
+- Used for alignment problems
+- Classified by direction (right or left) and whether circular
+- Circular shift (rotation): bits that fall off one end reappear at the other end
+  - Right circular shift: rightmost bit moves to leftmost position
+  - After 8 shifts (byte), original pattern returns
+- Logical shift: bits that fall off are discarded, hole filled with 0
+  - Logical left shift: multiply by 2 (binary)
+  - Logical right shift: divide by 2 (binary)
+- Arithmetic shift: preserves sign bit (for two’s complement numbers)
+  - Right arithmetic shift: sign bit is copied into the hole (keeps sign)
+  - Left arithmetic shift: may cause overflow if sign changes
+
+---
+
+**Simple Understanding:**
+
+**Why Shift and Rotate?**
+👉 Move bits within a register to solve alignment problems.
+
+**Direction:**
+- Right shift: bits move to the right (lower significance)
+- Left shift: bits move to the left (higher significance)
+
+**Circular Shift (Rotation):**
+👉 Bits that fall off one end are placed into the hole at the other end.
+- Right circular shift: rightmost bit becomes new leftmost bit.
+- Left circular shift: leftmost bit becomes new rightmost bit.
+- Rotating a byte 8 times returns to original pattern.
+
+**Logical Shift:**
+👉 Bits that fall off are discarded; hole filled with 0.
+- Logical left shift: multiply by 2 (0 added at right).
+- Logical right shift: divide by 2 (0 added at left).
+- Example: 00001010 (10 decimal) logical left shift → 00010100 (20 decimal).
+
+**Arithmetic Shift (for signed numbers):**
+👉 Preserves the sign bit (leftmost bit) during right shifts.
+- Right arithmetic shift: sign bit is copied into the hole (keeps negative numbers negative).
+- Left arithmetic shift: may cause overflow if sign changes.
+
+---
+
+**Important Vocabulary:**
+- Rotation = circular shift (bits wrap around)
+- Logical shift = shift with zero fill
+- Arithmetic shift = shift that preserves sign bit
+- Circular shift = rotation
+- Left shift = multiply by 2 (logical)
+- Right shift = divide by 2 (logical)
+
+---
+
+**Quick Revision Points:**
+- Rotation: bits recycle; left shift moves bits left, rightmost fills with dropped bit.
+- Logical shift: fill with 0, discard overflow.
+- Left logical shift = multiply by 2.
+- Right logical shift = divide by 2 (unsigned).
+- Arithmetic right shift = preserve sign bit (copy original sign).
+- Used in multiplication, division, bit alignment.`,
+
+  questions: [
+    {
+      q: 'What happens to the bit that falls off during a circular shift (rotation)?',
+      options: ['A. It is discarded', 'B. It is placed into the hole at the other end', 'C. It becomes the new sign bit', 'D. It is stored in memory'],
+      answer: 'B. It is placed into the hole at the other end',
+      diff: 'easy',
+    },
+    {
+      q: 'After how many right circular shifts does an 8-bit pattern return to its original state?',
+      options: ['A. 4', 'B. 6', 'C. 8', 'D. 16'],
+      answer: 'C. 8',
+      diff: 'easy',
+    },
+    {
+      q: 'In a logical shift, the hole created is filled with:',
+      options: ['A. 1', 'B. 0', 'C. The sign bit', 'D. The bit that fell off'],
+      answer: 'B. 0',
+      diff: 'easy',
+    },
+    {
+      q: 'A logical left shift of a binary number is equivalent to:',
+      options: ['A. Multiplication by 2', 'B. Division by 2', 'C. Multiplication by 10', 'D. Division by 10'],
+      answer: 'A. Multiplication by 2',
+      diff: 'easy',
+    },
+    {
+      q: 'A logical right shift of a binary number is equivalent to:',
+      options: ['A. Multiplication by 2', 'B. Division by 2', 'C. Multiplication by 10', 'D. Division by 10'],
+      answer: 'B. Division by 2',
+      diff: 'easy',
+    },
+    {
+      q: 'Which type of shift preserves the sign bit (for signed numbers) during right shifts?',
+      options: ['A. Logical shift', 'B. Circular shift', 'C. Arithmetic shift', 'D. Rotate'],
+      answer: 'C. Arithmetic shift',
+      diff: 'easy',
+    },
+    {
+      q: 'In an arithmetic right shift, the new bit added at the left (sign position) is:',
+      options: ['A. Always 0', 'B. Always 1', 'C. A copy of the original sign bit', 'D. The bit that fell off the right'],
+      answer: 'C. A copy of the original sign bit',
+      diff: 'medium',
+    },
+    {
+      q: 'What is the result of a logical left shift on the byte 00001010 (decimal 10)?',
+      options: ['A. 00000101 (5)', 'B. 00010100 (20)', 'C. 01010000 (80)', 'D. 10100000 (160)'],
+      answer: 'B. 00010100 (20)',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the result of a logical right shift on the byte 00001010 (decimal 10)?',
+      options: ['A. 00000101 (5)', 'B. 00010100 (20)', 'C. 01010000 (80)', 'D. 10100000 (160)'],
+      answer: 'A. 00000101 (5)',
+      diff: 'easy',
+    },
+    {
+      q: 'A circular (rotation) right shift on the byte 10000001 would produce:',
+      options: ['A. 01000000', 'B. 11000000', 'C. 11000001', 'D. 01000001'],
+      answer: 'B. 11000000',
+      diff: 'hard',
+    },
+    {
+      q: 'Which operation is useful for aligning bits in a register?',
+      options: ['A. Only AND', 'B. Only OR', 'C. Shift and rotate', 'D. Only XOR'],
+      answer: 'C. Shift and rotate',
+      diff: 'easy',
+    },
+    {
+      q: 'If you perform a logical left shift twice on the byte 00000011 (decimal 3), the result is:',
+      options: ['A. 00000110 (6)', 'B. 00001100 (12)', 'C. 00011000 (24)', 'D. 00110000 (48)'],
+      answer: 'B. 00001100 (12)',
+      diff: 'easy',
+    },
+    {
+      q: 'If you perform a logical right shift twice on the byte 00101100 (decimal 44), the result is:',
+      options: ['A. 00001011 (11)', 'B. 00010110 (22)', 'C. 00000101 (5)', 'D. 01011000 (88)'],
+      answer: 'A. 00001011 (11)',
+      diff: 'medium',
+    },
+    {
+      q: 'Which shift operation would cause a negative number to become positive if the sign bit is shifted out?',
+      options: ['A. Arithmetic right shift', 'B. Logical left shift', 'C. Arithmetic left shift (may overflow)', 'D. Circular right shift'],
+      answer: 'C. Arithmetic left shift (may overflow)',
+      diff: 'hard',
+    },
+    {
+      q: 'A circular left shift on the byte 10000001 would produce:',
+      options: ['A. 00000011', 'B. 00000110', 'C. 00000111', 'D. 00000001'],
+      answer: 'A. 00000011',
+      diff: 'hard',
+    },
+    {
+      q: 'The primary difference between a logical shift and an arithmetic shift is:',
+      options: ['A. Direction of shift', 'B. How the new bit is filled (0 vs sign copy)', 'C. Number of bits shifted', 'D. Use of carry flag'],
+      answer: 'B. How the new bit is filled (0 vs sign copy)',
+      diff: 'medium',
+    },
+    {
+      q: 'Shifting a binary number left by 1 bit and adding a 0 at the right is called:',
+      options: ['A. Logical left shift', 'B. Circular left shift', 'C. Arithmetic left shift', 'D. Rotate left'],
+      answer: 'A. Logical left shift',
+      diff: 'easy',
+    },
+    {
+      q: 'If you rotate a byte 4 times to the right, what is the effect?',
+      options: ['A. The byte is multiplied by 16', 'B. The byte is divided by 16', 'C. The bits are rearranged (circular shift)', 'D. The byte becomes zero'],
+      answer: 'C. The bits are rearranged (circular shift)',
+      diff: 'easy',
+    },
+    {
+      q: 'In a logical right shift, the leftmost bit is always filled with:',
+      options: ['A. 1', 'B. 0', 'C. The original sign bit', 'D. The bit that was shifted out'],
+      answer: 'B. 0',
+      diff: 'easy',
+    },
+    {
+      q: 'Which shift is commonly used for fast multiplication by powers of two?',
+      options: ['A. Logical left shift', 'B. Logical right shift', 'C. Arithmetic right shift', 'D. Circular shift'],
+      answer: 'A. Logical left shift',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+
+
+40: {
+  title: 'Data Manipulation: Arithmetic Operators (Addition, Subtraction, Multiplication, Division) (CS101 Lecture 40)',
+  summary: `**Key Topics Covered:**
+- Subtraction simulated by addition and negation (two’s complement)
+  - Example: 7 – 5 = 7 + (-5)
+  - Using two’s complement representation of -5, then add
+- Multiplication is repetitive addition
+  - Example: 8 × 3 = 8 + 8 + 8
+- Division achieved through subtraction (repetitive subtraction)
+- Some small CPUs designed with only ADD (or ADD and SUBTRACT) to perform all arithmetic
+- Two’s complement storage: arithmetic is straightforward
+- Floating-point notation: need to handle mantissa, exponent, and sign bit separately
+  - Addition of floating-point numbers requires aligning exponents, etc. (not same as integer addition)
+
+---
+
+**Simple Understanding:**
+
+**Subtraction using Addition:**
+👉 In two’s complement, subtraction is performed by adding the negative.
+👉 7 – 5 = 7 + (-5).
+👉 The CPU does not need a separate subtract circuit; it negates and adds.
+
+**Multiplication as Repetitive Addition:**
+👉 8 × 3 means add 8 three times: 8 + 8 + 8 = 24.
+👉 Simple CPUs multiply by repeated addition (slow for large numbers).
+
+**Division as Repetitive Subtraction:**
+👉 20 ÷ 4 = subtract 4 repeatedly until zero: 20 – 4 – 4 – 4 – 4 – 4 = 0 (5 subtractions) → quotient 5.
+👉 Also can be done by repeated subtraction.
+
+**Small CPUs:**
+👉 Some CPUs have only the ADD instruction (or ADD and SUBTRACT). All other operations (multiply, divide) are synthesized using software or microcode.
+
+**Integer vs Floating-Point:**
+- Two’s complement integers: addition/subtraction are straightforward with hardware.
+- Floating-point numbers: require separate handling of sign, exponent, mantissa.
+  - Adding two floats requires aligning exponents, then adding mantissas, then normalizing.
+  - So floating-point addition is more complex than integer addition.
+
+---
+
+**Important Vocabulary:**
+- Subtraction by addition = add the two’s complement negative
+- Repetitive addition = multiplication by repeated adding
+- Repetitive subtraction = division by repeated subtracting
+- Two’s complement = signed integer representation
+- Floating-point = real number representation (sign, exponent, mantissa)
+
+---
+
+**Quick Revision Points:**
+- CPU can simulate subtraction using addition of negative.
+- Multiplication = repeated addition.
+- Division = repeated subtraction.
+- Some minimal CPUs have only ADD (or ADD and SUBTRACT).
+- Two’s complement arithmetic is direct.
+- Floating-point arithmetic requires special handling (exponent alignment).`,
+
+  questions: [
+    {
+      q: 'How can subtraction be performed using addition?',
+      options: ['A. By adding the two numbers directly', 'B. By adding the two’s complement negative of the subtrahend', 'C. By subtracting and then adding', 'D. By using a separate subtract circuit'],
+      answer: 'B. By adding the two’s complement negative of the subtrahend',
+      diff: 'easy',
+    },
+    {
+      q: 'In two’s complement, 7 – 5 is equivalent to:',
+      options: ['A. 7 + 5', 'B. 7 + (-5)', 'C. 7 + 5 + 1', 'D. 7 – 5 + 1'],
+      answer: 'B. 7 + (-5)',
+      diff: 'easy',
+    },
+    {
+      q: 'How does a CPU perform multiplication if it lacks a multiply instruction?',
+      options: ['A. Using repeated addition', 'B. Using repeated subtraction', 'C. Using bit shifts only', 'D. Using XOR operations'],
+      answer: 'A. Using repeated addition',
+      diff: 'easy',
+    },
+    {
+      q: 'How does a CPU perform division if it lacks a divide instruction?',
+      options: ['A. Using repeated addition', 'B. Using repeated subtraction', 'C. Using multiplication', 'D. Using logical shifts only'],
+      answer: 'B. Using repeated subtraction',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the result of 8 × 3 using repetitive addition?',
+      options: ['A. 8 + 3 = 11', 'B. 8 + 8 + 8 = 24', 'C. 8 × 3 = 24 but not by addition', 'D. 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3 = 24'],
+      answer: 'B. 8 + 8 + 8 = 24',
+      diff: 'easy',
+    },
+    {
+      q: 'Some small CPUs are designed with only which instruction to do all arithmetic?',
+      options: ['A. Only ADD (or ADD and SUBTRACT)', 'B. Only MULTIPLY', 'C. Only DIVIDE', 'D. Only XOR'],
+      answer: 'A. Only ADD (or ADD and SUBTRACT)',
+      diff: 'easy',
+    },
+    {
+      q: 'In two’s complement representation, subtraction is straightforward:',
+      options: ['A. True, because it uses addition of negatives', 'B. False, it requires special hardware', 'C. Only for positive numbers', 'D. Only for floating point'],
+      answer: 'A. True, because it uses addition of negatives',
+      diff: 'easy',
+    },
+    {
+      q: 'In floating-point notation, addition requires:',
+      options: ['A. Simple integer addition', 'B. Handling mantissa, exponent, and sign separately', 'C. Only adding the mantissas', 'D. Only adding the exponents'],
+      answer: 'B. Handling mantissa, exponent, and sign separately',
+      diff: 'medium',
+    },
+    {
+      q: 'Which representation makes arithmetic operations more complex than two’s complement?',
+      options: ['A. Signed magnitude', 'B. One’s complement', 'C. Floating-point', 'D. Excess notation'],
+      answer: 'C. Floating-point',
+      diff: 'easy',
+    },
+    {
+      q: 'To subtract 5 from 7 in two’s complement, you would:',
+      options: ['A. Compute 7 + 5', 'B. Compute 7 + (-5)', 'C. Compute 7 – 5 directly', 'D. Compute 5 – 7 and negate'],
+      answer: 'B. Compute 7 + (-5)',
+      diff: 'easy',
+    },
+    {
+      q: 'Why is multiplication implemented as repeated addition in simple CPUs?',
+      options: ['A. It is faster', 'B. It saves hardware (no multiply circuit)', 'C. It uses less memory', 'D. It is more accurate'],
+      answer: 'B. It saves hardware (no multiply circuit)',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the result of 9 ÷ 3 using repeated subtraction?',
+      options: ['A. 9 – 3 = 6 (1), 6 – 3 = 3 (2), 3 – 3 = 0 (3) → quotient 3', 'B. 9 – 3 – 3 = 3 → quotient 2', 'C. 9 + 3 = 12', 'D. 9 × 3 = 27'],
+      answer: 'A. 9 – 3 = 6 (1), 6 – 3 = 3 (2), 3 – 3 = 0 (3) → quotient 3',
+      diff: 'medium',
+    },
+    {
+      q: 'In floating-point addition, before adding mantissas, you must:',
+      options: ['A. Align the exponents', 'B. Multiply the mantissas', 'C. Invert the signs', 'D. Set the result to zero'],
+      answer: 'A. Align the exponents',
+      diff: 'medium',
+    },
+    {
+      q: 'The binary addition of 7 and -5 in two’s complement (using 4 bits) is:',
+      options: ['A. 0111 + 1011 = 0010 (2 decimal)', 'B. 0111 + 1011 = 1010 (-6)', 'C. 0111 + 0101 = 1100 (-4)', 'D. 0111 + 1010 = 0001 (1)'],
+      answer: 'A. 0111 + 1011 = 0010 (2 decimal)',
+      diff: 'hard',
+    },
+    {
+      q: 'Which of the following arithmetic operations can be simulated by addition alone?',
+      options: ['A. Subtraction', 'B. Multiplication (repeated addition)', 'C. Division (repeated subtraction using addition of negatives)', 'D. All of the above'],
+      answer: 'D. All of the above',
+      diff: 'medium',
+    },
+    {
+      q: 'What is the decimal result of 7 – 5 using two’s complement addition (4-bit)?',
+      options: ['A. 2', 'B. 12', 'C. -2', 'D. 10'],
+      answer: 'A. 2',
+      diff: 'easy',
+    },
+    {
+      q: 'A CPU that only has an ADD instruction can still perform multiplication by:',
+      options: ['A. Shifting and adding', 'B. Repeated addition in a loop', 'C. Using a lookup table', 'D. All of the above'],
+      answer: 'D. All of the above',
+      diff: 'medium',
+    },
+    {
+      q: 'The main difference between integer addition and floating-point addition is that floating-point addition requires:',
+      options: ['A. Only one cycle', 'B. No special handling', 'C. Exponent alignment and post-normalization', 'D. Only integer mantissa'],
+      answer: 'C. Exponent alignment and post-normalization',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the result of 8 × 3 using repeated addition?',
+      options: ['A. 8 + 8 + 8 = 24', 'B. 8 × 3 = 24 directly', 'C. 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3 = 24', 'D. Both A and C'],
+      answer: 'D. Both A and C',
+      diff: 'easy',
+    },
+    {
+      q: 'Two’s complement representation makes subtraction hardware:',
+      options: ['A. More complex', 'B. Simple (use the same adder as addition)', 'C. Impossible', 'D. Require separate subtractor'],
+      answer: 'B. Simple (use the same adder as addition)',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+41: {
+  title: 'Data Manipulation: Role of Controller (USB, FireWire, Device Communication) (CS101 Lecture 41)',
+  summary: `**Key Topics Covered:**
+- Controller: intermediary apparatus for communication between computer and other devices
+- Can be permanently mounted on motherboard or plug into a slot (circuit board)
+- Connects via cables to peripheral devices or ports on back of computer
+- Controllers may be small computers with own memory and simple CPU (running a program)
+- Translates messages/data between computer's internal format and peripheral device format
+- Originally, each controller designed for specific device type (purchased together)
+- Modern standards: USB (Universal Serial Bus) and FireWire – single controller handles multiple device types
+- USB devices: mice, printers, scanners, mass storage, digital cameras, smartphones
+- Controller attaches to same bus as CPU and main memory (can monitor signals and inject signals)
+- CPU communicates with controller using instructions similar to LOAD/STORE (to/from registers)
+
+---
+
+**Simple Understanding:**
+
+**What is a Controller?**
+👉 A hardware interface that manages communication between the CPU and peripheral devices.
+👉 Can be on the motherboard or a plug-in card.
+
+**How it Works:**
+👉 Connects to devices via cables or ports (e.g., USB port on back of computer).
+👉 Translates data between computer's internal format and device's format.
+👉 May have its own processor and memory (runs its own program).
+
+**Old Way:**
+👉 Each device type had its own dedicated controller.
+👉 Buying a new device often meant buying a new controller card.
+
+**Modern Standards (USB, FireWire):**
+👉 One controller can handle many different devices.
+👉 USB (Universal Serial Bus): mice, printers, scanners, storage, cameras, phones, etc.
+👉 FireWire: similar (used for video, external drives).
+
+**Bus Connection:**
+👉 Controller connects to the same bus as CPU and main memory.
+👉 Can monitor signals (eavesdrop) and inject its own signals.
+
+**CPU Communication with Controller:**
+👉 Similar to LOAD and STORE instructions.
+- Store: CPU writes a bit pattern (command/data) from a register to the controller.
+- Load: CPU reads a bit pattern from controller into a register.
+
+---
+
+**Important Vocabulary:**
+- Controller = intermediary hardware for device communication
+- Motherboard = main circuit board of computer
+- Port = connector on computer for external devices
+- USB = Universal Serial Bus (standard for many devices)
+- FireWire = another high-speed serial bus standard (IEEE 1394)
+- Bus = communication pathway (wires) connecting CPU, memory, and controllers
+- Peripheral device = external hardware (printer, mouse, etc.)
+
+---
+
+**Quick Revision Points:**
+- Controller bridges CPU and peripheral devices.
+- Translates data and commands.
+- Older: one controller per device type.
+- Modern: USB controller handles many device types.
+- Controllers attach to system bus.
+- CPU uses LOAD/STORE-like instructions to communicate with controllers.`,
+
+  questions: [
+    {
+      q: 'What is the role of a controller in a computer system?',
+      options: ['A. To perform arithmetic operations', 'B. To manage communication between the computer and peripheral devices', 'C. To store data permanently', 'D. To execute user programs'],
+      answer: 'B. To manage communication between the computer and peripheral devices',
+      diff: 'easy',
+    },
+    {
+      q: 'A controller can be:',
+      options: ['A. Permanently mounted on the motherboard', 'B. A circuit board that plugs into a slot', 'C. A small computer with its own memory and CPU', 'D. All of the above'],
+      answer: 'D. All of the above',
+      diff: 'easy',
+    },
+    {
+      q: 'What does a controller translate between?',
+      options: ['A. Different programming languages', 'B. Different file formats', 'C. Computer\'s internal format and peripheral device format', 'D. Different operating systems'],
+      answer: 'C. Computer\'s internal format and peripheral device format',
+      diff: 'easy',
+    },
+    {
+      q: 'Originally, when purchasing a new peripheral device, you often needed:',
+      options: ['A. A new CPU', 'B. A new controller as well', 'C. More memory', 'D. A new monitor'],
+      answer: 'B. A new controller as well',
+      diff: 'easy',
+    },
+    {
+      q: 'USB stands for:',
+      options: ['A. Universal Serial Bus', 'B. Unified System Bus', 'C. Universal Synchronous Bus', 'D. Unique Serial Buffer'],
+      answer: 'A. Universal Serial Bus',
+      diff: 'easy',
+    },
+    {
+      q: 'FireWire is:',
+      options: ['A. Another name for USB', 'B. A standard similar to USB for high-speed communication', 'C. A type of CPU', 'D. A memory controller'],
+      answer: 'B. A standard similar to USB for high-speed communication',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following can communicate with a USB controller?',
+      options: ['A. Mice and printers', 'B. Scanners and mass storage devices', 'C. Digital cameras and smartphones', 'D. All of the above'],
+      answer: 'D. All of the above',
+      diff: 'easy',
+    },
+    {
+      q: 'The controller is attached to the same _____ that connects the CPU and main memory.',
+      options: ['A. Power supply', 'B. Bus', 'C. Clock', 'D. Heat sink'],
+      answer: 'B. Bus',
+      diff: 'easy',
+    },
+    {
+      q: 'How does the CPU send a bit pattern to a controller?',
+      options: ['A. Using a JUMP instruction', 'B. Using a LOAD instruction', 'C. Using an instruction similar to STORE', 'D. Using a HALT instruction'],
+      answer: 'C. Using an instruction similar to STORE',
+      diff: 'medium',
+    },
+    {
+      q: 'How does the CPU receive a bit pattern from a controller?',
+      options: ['A. Using an instruction similar to LOAD', 'B. Using an instruction similar to STORE', 'C. Using an ADD instruction', 'D. Using a HALT instruction'],
+      answer: 'A. Using an instruction similar to LOAD',
+      diff: 'medium',
+    },
+    {
+      q: 'A controller may itself be a small computer with its own:',
+      options: ['A. Memory circuitry and simple CPU', 'B. Hard disk', 'C. Display screen', 'D. Keyboard'],
+      answer: 'A. Memory circuitry and simple CPU',
+      diff: 'easy',
+    },
+    {
+      q: 'Which modern standard allows a single controller to handle a variety of devices?',
+      options: ['A. ISA', 'B. PCI', 'C. USB', 'D. AGP'],
+      answer: 'C. USB',
+      diff: 'easy',
+    },
+    {
+      q: 'The connector on the back of a computer where external devices can be attached is called a:',
+      options: ['A. Slot', 'B. Port', 'C. Socket', 'D. Bus'],
+      answer: 'B. Port',
+      diff: 'easy',
+    },
+    {
+      q: 'By connecting to the system bus, controllers can:',
+      options: ['A. Monitor signals between CPU and memory', 'B. Inject their own signals', 'C. Both A and B', 'D. Only store data'],
+      answer: 'C. Both A and B',
+      diff: 'medium',
+    },
+    {
+      q: 'Which of the following is NOT a typical USB device?',
+      options: ['A. Mouse', 'B. Printer', 'C. CPU', 'D. Digital camera'],
+      answer: 'C. CPU',
+      diff: 'easy',
+    },
+    {
+      q: 'The advantage of standards like USB is that:',
+      options: ['A. They require separate controllers for each device', 'B. They allow many different devices to share a single controller', 'C. They only work with printers', 'D. They are obsolete'],
+      answer: 'B. They allow many different devices to share a single controller',
+      diff: 'easy',
+    },
+    {
+      q: 'FireWire is also known as:',
+      options: ['A. USB 3.0', 'B. IEEE 1394', 'C. Thunderbolt', 'D. Ethernet'],
+      answer: 'B. IEEE 1394',
+      diff: 'hard',
+    },
+    {
+      q: 'To send data to a controller, the CPU first constructs the data in:',
+      options: ['A. Main memory', 'B. A general-purpose register', 'C. The ALU', 'D. The control unit'],
+      answer: 'B. A general-purpose register',
+      diff: 'medium',
+    },
+    {
+      q: 'The controller translates messages to be compatible with the:',
+      options: ['A. CPU only', 'B. Memory only', 'C. Peripheral device', 'D. Power supply'],
+      answer: 'C. Peripheral device',
+      diff: 'easy',
+    },
+    {
+      q: 'A modern computer motherboard typically has multiple:',
+      options: ['A. USB controllers', 'B. FireWire controllers', 'C. Both A and B', 'D. Only one controller total'],
+      answer: 'C. Both A and B',
+      diff: 'easy',
+    },
+    {
+      q: 'The ability for a controller to monitor bus signals allows it to:',
+      options: ['A. Act as a spyware', 'B. Respond to CPU commands without interrupting', 'C. Replace the CPU', 'D. Store more data'],
+      answer: 'B. Respond to CPU commands without interrupting',
+      diff: 'hard',
+    }
+  ]
+},
+
+
+42: {
+  title: 'Data Manipulation: Direct Memory Access (DMA) and Handshaking (CS101 Lecture 42)',
+  summary: `**Key Topics Covered:**
+- Direct Memory Access (DMA): controller's ability to access main memory independently
+- DMA occurs during nanoseconds when CPU is not using the bus
+- Benefits: improves performance by allowing CPU to continue other tasks while controller handles I/O
+- Example: CPU requests disk controller to read a sector and place data in specified memory area; controller uses DMA to transfer data directly to memory
+- Concurrent activities: CPU executes program while controller manages data transfer
+- Prevents CPU wasting time on slow data transfers
+- Detrimental effect: complicates bus communication (CPU ↔ memory, CPU ↔ controllers, controllers ↔ memory)
+- Coordination of bus activity is a major design issue
+- Von Neumann bottleneck: central bus becomes impediment as CPU and controllers compete for access
+- Handshaking: protocols for coordinating communication (implied but not detailed)
+
+---
+
+**Simple Understanding:**
+
+**What is Direct Memory Access (DMA)?**
+👉 Controllers can access main memory directly, bypassing the CPU.
+👉 Happens when CPU is not using the bus (in idle nanoseconds).
+
+**How DMA Works:**
+1. CPU sends a request to a controller (e.g., disk controller) to read data.
+2. Controller reads data from the device.
+3. Controller uses DMA to write data directly into main memory.
+4. CPU continues executing other tasks simultaneously.
+
+**Benefits:**
+👉 CPU is not blocked waiting for slow I/O.
+👉 Parallel activity improves overall system performance.
+
+**Challenges:**
+👉 Bus becomes crowded: CPU ↔ memory, CPU ↔ controllers, controllers ↔ memory all share the same bus.
+👉 Coordination is complex.
+
+**Von Neumann Bottleneck:**
+👉 The central bus is a single shared resource.
+👉 When many devices compete, the bus becomes the limiting factor (bottleneck).
+👉 Named after the von Neumann architecture (CPU fetches instructions from memory over a central bus).
+
+**Handshaking:**
+👉 Protocols to coordinate communication between devices.
+👉 Ensures data is sent/received correctly and both sides are ready.
+
+---
+
+**Important Vocabulary:**
+- DMA = Direct Memory Access
+- Controller = hardware managing I/O device
+- Bus = communication pathway
+- Von Neumann bottleneck = bus becoming performance limit
+- Handshaking = coordination protocol for data transfer
+- Concurrent = happening at the same time
+
+---
+
+**Quick Revision Points:**
+- DMA allows controllers to access memory directly.
+- CPU can do other work while controller transfers data.
+- Improves performance (parallelism).
+- Bus contention causes von Neumann bottleneck.
+- Handshaking coordinates communication.`,
+
+  questions: [
+    {
+      q: 'What does DMA stand for?',
+      options: ['A. Direct Memory Access', 'B. Dynamic Memory Allocation', 'C. Digital Media Adapter', 'D. Direct Module Access'],
+      answer: 'A. Direct Memory Access',
+      diff: 'easy',
+    },
+    {
+      q: 'Direct Memory Access allows a controller to:',
+      options: ['A. Access the CPU directly', 'B. Access main memory independently', 'C. Access the hard disk directly', 'D. Access the monitor directly'],
+      answer: 'B. Access main memory independently',
+      diff: 'easy',
+    },
+    {
+      q: 'When does DMA typically occur?',
+      options: ['A. When CPU is using the bus intensively', 'B. During nanoseconds when CPU is not using the bus', 'C. Only at system startup', 'D. When the computer is off'],
+      answer: 'B. During nanoseconds when CPU is not using the bus',
+      diff: 'medium',
+    },
+    {
+      q: 'What is a major benefit of DMA?',
+      options: ['A. It slows down the CPU', 'B. It allows the CPU to continue other tasks while I/O happens', 'C. It eliminates the need for memory', 'D. It reduces power consumption'],
+      answer: 'B. It allows the CPU to continue other tasks while I/O happens',
+      diff: 'easy',
+    },
+    {
+      q: 'In the disk example, what does the controller do using DMA?',
+      options: ['A. Reads data from CPU', 'B. Writes data directly to main memory', 'C. Sends data to the printer', 'D. Executes user programs'],
+      answer: 'B. Writes data directly to main memory',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the von Neumann bottleneck?',
+      options: ['A. Limited CPU speed', 'B. Limited memory capacity', 'C. The central bus becoming an impediment as CPU and controllers compete for access', 'D. Power supply limitation'],
+      answer: 'C. The central bus becoming an impediment as CPU and controllers compete for access',
+      diff: 'medium',
+    },
+    {
+      q: 'The von Neumann bottleneck is a consequence of:',
+      options: ['A. Multiple CPUs', 'B. The underlying von Neumann architecture with a central bus', 'C. DMA itself', 'D. Handshaking protocols'],
+      answer: 'B. The underlying von Neumann architecture with a central bus',
+      diff: 'medium',
+    },
+    {
+      q: 'Which of the following is a detrimental effect of DMA?',
+      options: ['A. It slows down disk access', 'B. It complicates communication over the bus', 'C. It uses more power', 'D. It requires more memory'],
+      answer: 'B. It complicates communication over the bus',
+      diff: 'easy',
+    },
+    {
+      q: 'What does handshaking refer to in this context?',
+      options: ['A. Shaking hands with the computer', 'B. Protocols to coordinate communication between devices', 'C. A type of DMA', 'D. A bus standard'],
+      answer: 'B. Protocols to coordinate communication between devices',
+      diff: 'easy',
+    },
+    {
+      q: 'During a DMA transfer, the CPU can:',
+      options: ['A. Only execute I/O instructions', 'B. Continue executing other tasks', 'C. Be turned off', 'D. Only idle'],
+      answer: 'B. Continue executing other tasks',
+      diff: 'easy',
+    },
+    {
+      q: 'The central bus handles communication between:',
+      options: ['A. CPU and memory only', 'B. CPU and controllers only', 'C. Controllers and memory only', 'D. All of the above (CPU↔memory, CPU↔controllers, controllers↔memory)'],
+      answer: 'D. All of the above (CPU↔memory, CPU↔controllers, controllers↔memory)',
+      diff: 'easy',
+    },
+    {
+      q: 'Which term describes the situation when the bus becomes the performance limit?',
+      options: ['A. Bus contention', 'B. Von Neumann bottleneck', 'C. DMA conflict', 'D. Handshake deadlock'],
+      answer: 'B. Von Neumann bottleneck',
+      diff: 'easy',
+    },
+    {
+      q: 'DMA is particularly useful for:',
+      options: ['A. Fast CPU operations', 'B. Slow I/O devices (disks, networks) where CPU would otherwise wait', 'C. Cache memory', 'D. Register transfers'],
+      answer: 'B. Slow I/O devices (disks, networks) where CPU would otherwise wait',
+      diff: 'easy',
+    },
+    {
+      q: 'How does the CPU initiate a DMA transfer?',
+      options: ['A. By executing a HALT instruction', 'B. By sending a request to the controller (as bit patterns)', 'C. By directly moving each byte', 'D. By turning off interrupts'],
+      answer: 'B. By sending a request to the controller (as bit patterns)',
+      diff: 'medium',
+    },
+    {
+      q: 'The main design issue with DMA is:',
+      options: ['A. Power consumption', 'B. Coordination of bus activity between CPU and controllers', 'C. Software compatibility', 'D. Device drivers'],
+      answer: 'B. Coordination of bus activity between CPU and controllers',
+      diff: 'medium',
+    },
+    {
+      q: 'Which of the following statements about DMA is TRUE?',
+      options: ['A. DMA requires the CPU to copy every byte', 'B. DMA transfers data without CPU involvement for each byte', 'C. DMA only works with memory-mapped I/O', 'D. DMA is slower than programmed I/O'],
+      answer: 'B. DMA transfers data without CPU involvement for each byte',
+      diff: 'easy',
+    },
+    {
+      q: 'Handshaking ensures that:',
+      options: ['A. Data is sent as fast as possible', 'B. Both sending and receiving devices are ready', 'C. DMA is disabled', 'D. The bus is free'],
+      answer: 'B. Both sending and receiving devices are ready',
+      diff: 'easy',
+    },
+    {
+      q: 'The phrase "von Neumann bottleneck" refers to:',
+      options: ['A. Memory size', 'B. The speed difference between CPU and memory', 'C. The shared bus limiting throughput', 'D. The cost of processors'],
+      answer: 'C. The shared bus limiting throughput',
+      diff: 'medium',
+    },
+    {
+      q: 'What happens if many devices compete for the bus?',
+      options: ['A. Performance improves', 'B. The bus becomes a bottleneck', 'C. DMA stops working', 'D. The CPU speeds up'],
+      answer: 'B. The bus becomes a bottleneck',
+      diff: 'easy',
+    },
+    {
+      q: 'DMA is most beneficial when transferring:',
+      options: ['A. Single bytes', 'B. Large blocks of data', 'C. Only control signals', 'D. Interrupts'],
+      answer: 'B. Large blocks of data',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+43: {
+  title: 'Data Manipulation: Communication Media and Communication Rates (Parallel vs Serial, USB, Ethernet, Modem, DSL) (CS101 Lecture 43)',
+  summary: `**Key Topics Covered:**
+- Two types of communication paths: parallel and serial
+- Parallel communication: multiple bits transferred simultaneously on separate lines (fast, but complex architecture)
+- Serial communication: bits transferred one after another on a single line (simpler, slower)
+- Data transfer rate measured in bits per second (bps)
+  - Kbps = kilobits per second (thousands)
+  - Mbps = megabits per second (millions)
+  - Gbps = gigabits per second (billions)
+- 8 Kbps = 1 KB per second
+- USB and FireWire: high-speed serial for short distances (several hundred Mbps)
+- Ethernet: for slightly longer distances
+- Traditional voice lines: used modems (modulator-demodulator) to convert bit patterns to audible tones
+- DSL (Digital Subscriber Line): faster long-distance communication over phone lines
+- Cable modems: use coaxial cables
+- Fiber optics: high-speed for HDTV and computer networks
+
+---
+
+**Simple Understanding:**
+
+**Parallel Communication:**
+👉 Multiple wires; each wire carries one bit.
+👉 Several bits transferred at the same time.
+👉 Faster than serial.
+👉 More complex (many wires, more interference).
+
+**Serial Communication:**
+👉 Single wire; bits sent one after another.
+👉 Simpler, cheaper, less interference.
+👉 Slower than parallel for same clock speed.
+👉 Examples: USB, FireWire, Ethernet.
+
+**Data Transfer Rates:**
+- bps = bits per second
+- Kbps = 1,000 bps (kilobits)
+- Mbps = 1,000,000 bps (megabits)
+- Gbps = 1,000,000,000 bps (gigabits)
+- 8 Kbps = 1 KBps (kilobyte per second)
+
+**Communication Technologies:**
+- **USB/FireWire:** high-speed serial (short distance, several hundred Mbps)
+- **Ethernet:** slightly longer distances (LAN)
+- **Modem (Modulator-Demodulator):** converts digital bits to analog tones for phone lines (traditional)
+- **DSL (Digital Subscriber Line):** faster digital over phone lines
+- **Cable modem:** uses coaxial cable TV lines
+- **Fiber optics:** glass fibers, very high speed, used for HDTV and networks
+
+---
+
+**Important Vocabulary:**
+- Parallel communication = multiple bits simultaneously
+- Serial communication = one bit at a time
+- bps = bits per second
+- Kbps = kilobits per second (10³ bps)
+- Mbps = megabits per second (10⁶ bps)
+- Gbps = gigabits per second (10⁹ bps)
+- Modem = modulator-demodulator (analog/digital conversion)
+- DSL = Digital Subscriber Line
+- Ethernet = LAN communication standard
+- Fiber optics = light-based high-speed transmission
+
+---
+
+**Quick Revision Points:**
+- Parallel: faster, complex; Serial: simpler, slower.
+- USB and FireWire are serial but high-speed.
+- Modems used for traditional phone lines.
+- DSL and cable modems offer faster long-distance.
+- Fiber optics is fastest.
+- Transfer rates: bps, Kbps, Mbps, Gbps.`,
+
+  questions: [
+    {
+      q: 'Which communication method transfers multiple bits simultaneously on separate lines?',
+      options: ['A. Serial communication', 'B. Parallel communication', 'C. Half-duplex', 'D. Simplex'],
+      answer: 'B. Parallel communication',
+      diff: 'easy',
+    },
+    {
+      q: 'Which communication method transfers bits one after another on a single line?',
+      options: ['A. Parallel communication', 'B. Serial communication', 'C. Full-duplex', 'D. Broadband'],
+      answer: 'B. Serial communication',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the main advantage of parallel communication over serial?',
+      options: ['A. Simpler wiring', 'B. Faster data transfer (for same clock)', 'C. Longer distance', 'D. Lower cost'],
+      answer: 'B. Faster data transfer (for same clock)',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the main disadvantage of parallel communication?',
+      options: ['A. It is slower', 'B. It requires more complex architecture and many wires', 'C. It cannot be used for long distances', 'D. It is less reliable'],
+      answer: 'B. It requires more complex architecture and many wires',
+      diff: 'easy',
+    },
+    {
+      q: 'USB and FireWire are examples of which type of communication?',
+      options: ['A. Parallel', 'B. Serial', 'C. Optical', 'D. Wireless'],
+      answer: 'B. Serial',
+      diff: 'easy',
+    },
+    {
+      q: 'What does bps stand for?',
+      options: ['A. Bytes per second', 'B. Bits per second', 'C. Blocks per second', 'D. Baud per second'],
+      answer: 'B. Bits per second',
+      diff: 'easy',
+    },
+    {
+      q: '1 Kbps equals how many bits per second?',
+      options: ['A. 1,000', 'B. 1,024', 'C. 100', 'D. 10,000'],
+      answer: 'A. 1,000',
+      diff: 'easy',
+    },
+    {
+      q: '1 Mbps equals how many bits per second?',
+      options: ['A. 10,000', 'B. 100,000', 'C. 1,000,000', 'D. 10,000,000'],
+      answer: 'C. 1,000,000',
+      diff: 'easy',
+    },
+    {
+      q: '1 Gbps equals how many bits per second?',
+      options: ['A. 1 million', 'B. 10 million', 'C. 100 million', 'D. 1 billion'],
+      answer: 'D. 1 billion',
+      diff: 'easy',
+    },
+    {
+      q: '8 Kbps is equal to how many KB per second?',
+      options: ['A. 1 KBps', 'B. 8 KBps', 'C. 0.5 KBps', 'D. 16 KBps'],
+      answer: 'A. 1 KBps',
+      diff: 'medium',
+    },
+    {
+      q: 'Which device converts digital bit patterns to audible tones for transmission over traditional phone lines?',
+      options: ['A. Router', 'B. Modem (modulator-demodulator)', 'C. Switch', 'D. Hub'],
+      answer: 'B. Modem (modulator-demodulator)',
+      diff: 'easy',
+    },
+    {
+      q: 'DSL stands for:',
+      options: ['A. Digital Subscriber Line', 'B. Direct Serial Link', 'C. Dual Synchronous Line', 'D. Data Service Layer'],
+      answer: 'A. Digital Subscriber Line',
+      diff: 'easy',
+    },
+    {
+      q: 'Which technology provides faster long-distance communication over phone lines than traditional modems?',
+      options: ['A. USB', 'B. FireWire', 'C. DSL', 'D. Parallel port'],
+      answer: 'C. DSL',
+      diff: 'easy',
+    },
+    {
+      q: 'Cable modems typically use which type of cabling?',
+      options: ['A. Twisted pair', 'B. Coaxial cable', 'C. Fiber optics', 'D. HDMI'],
+      answer: 'B. Coaxial cable',
+      diff: 'easy',
+    },
+    {
+      q: 'Which medium offers the highest data transfer rates?',
+      options: ['A. Traditional phone lines', 'B. Coaxial cable', 'C. Fiber optics', 'D. USB 2.0'],
+      answer: 'C. Fiber optics',
+      diff: 'easy',
+    },
+    {
+      q: 'Ethernet is commonly used for:',
+      options: ['A. Short-distance serial (USB)', 'B. Slightly longer distances (local area networks)', 'C. Long-distance telephone', 'D. Satellite communication'],
+      answer: 'B. Slightly longer distances (local area networks)',
+      diff: 'easy',
+    },
+    {
+      q: 'USB and FireWire typically provide data transfer rates of:',
+      options: ['A. A few Kbps', 'B. Several hundred Mbps', 'C. Several Gbps only', 'D. Less than 10 Mbps'],
+      answer: 'B. Several hundred Mbps',
+      diff: 'medium',
+    },
+    {
+      q: 'A modem is necessary when connecting a computer to:',
+      options: ['A. Ethernet network', 'B. Traditional analog telephone line', 'C. USB port', 'D. Fiber optic cable'],
+      answer: 'B. Traditional analog telephone line',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is a serial communication standard?',
+      options: ['A. Parallel port', 'B. USB', 'C. IDE cable', 'D. PCI bus'],
+      answer: 'B. USB',
+      diff: 'easy',
+    },
+    {
+      q: 'Why is parallel communication less common for long distances?',
+      options: ['A. It is too fast', 'B. Interference and skew between wires become problematic', 'C. It uses less power', 'D. It is cheaper'],
+      answer: 'B. Interference and skew between wires become problematic',
+      diff: 'medium',
+    },
+    {
+      q: 'Which of the following is NOT a serial communication technology?',
+      options: ['A. USB', 'B. FireWire', 'C. RS-232', 'D. Parallel port'],
+      answer: 'D. Parallel port',
+      diff: 'easy',
+    },
+    {
+      q: 'Fiber optics use which medium to transmit data?',
+      options: ['A. Electricity', 'B. Light', 'C. Radio waves', 'D. Sound'],
+      answer: 'B. Light',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+44: {
+  title: 'Data Manipulation: Pipelining (Overlapping Fetch and Execute for Higher Throughput) (CS101 Lecture 44)',
+  summary: `**Key Topics Covered:**
+- Speed of light limit: light travels ~1 foot per nanosecond
+- Fetching an instruction from memory 1 foot away takes at least 2 nanoseconds (request + return)
+- Increasing execution speed ultimately becomes a miniaturization problem
+- Goal: improve throughput (total work per unit time), not just instruction execution speed
+- Pipelining: technique to allow steps of the machine cycle to overlap
+  - While one instruction is being executed, the next instruction can be fetched
+  - Multiple instructions in "the pipe" at different stages
+- Throughput increases even though each instruction's fetch+execute time remains same
+- JUMP instructions disrupt pipelining (prefetched instructions are wasted)
+- Modern designs can fetch and execute multiple instructions simultaneously (superscalar, out-of-order execution)
+
+---
+
+**Simple Understanding:**
+
+**Physical Limit:**
+👉 Electrical signals travel at speed of light (≈1 foot per nanosecond).
+👉 To fetch an instruction from memory 1 foot away:
+   - Send request (1 ns) + receive instruction (1 ns) = 2 ns minimum.
+
+**Not Just Speed:**
+👉 Making each instruction faster is limited by physics.
+👉 Alternative: increase throughput – do more work per second.
+
+**Pipelining:**
+👉 Overlap fetch and execute.
+   - While current instruction executes, fetch next instruction.
+👉 Like an assembly line: multiple instructions at different stages.
+👉 Total throughput increases (instructions completed per second) even though individual instruction latency unchanged.
+
+**Pipeline Hazard:**
+👉 JUMP instructions break the pipeline.
+👉 Prefetched instructions (already in pipe) are not needed after a jump.
+👉 Those instructions are discarded; pipeline must restart.
+
+**Modern CPUs:**
+👉 Fetch multiple instructions at once.
+👉 Execute multiple instructions simultaneously (if they don't depend on each other).
+
+---
+
+**Important Vocabulary:**
+- Throughput = amount of work per unit time
+- Latency = time for one instruction to complete
+- Pipelining = overlapping instruction phases
+- Fetch = retrieve instruction from memory
+- Execute = perform instruction
+- Pipeline hazard = situation that disrupts pipeline (e.g., jump)
+- Superscalar = execute multiple instructions per cycle
+- Nanosecond = billionth of a second
+
+---
+
+**Quick Revision Points:**
+- Light speed: ~1 foot per nanosecond.
+- 2 ns minimum for fetch from 1 foot away (round trip).
+- Pipelining overlaps fetch and execute.
+- Increases throughput, not individual instruction speed.
+- JUMP instructions cause pipeline waste.
+- Modern CPUs can execute multiple instructions simultaneously.`,
+
+  questions: [
+    {
+      q: 'Approximately how far does light travel in one nanosecond?',
+      options: ['A. 1 foot', 'B. 1 meter', 'C. 1 mile', 'D. 1 kilometer'],
+      answer: 'A. 1 foot',
+      diff: 'easy',
+    },
+    {
+      q: 'Why does fetching an instruction from memory 1 foot away take at least 2 nanoseconds?',
+      options: ['A. The CPU needs time to decode', 'B. Request (1 ns) + return (1 ns) = round trip', 'C. Memory is slow', 'D. The bus is busy'],
+      answer: 'B. Request (1 ns) + return (1 ns) = round trip',
+      diff: 'medium',
+    },
+    {
+      q: 'What is the real goal in improving computer performance?',
+      options: ['A. Increase clock speed indefinitely', 'B. Improve throughput (total work per unit time)', 'C. Reduce chip size to zero', 'D. Increase memory capacity'],
+      answer: 'B. Improve throughput (total work per unit time)',
+      diff: 'easy',
+    },
+    {
+      q: 'What is pipelining?',
+      options: ['A. Executing one instruction at a time', 'B. Overlapping the steps of the machine cycle (e.g., fetching next instruction while executing current)', 'C. Increasing clock frequency', 'D. Adding more memory'],
+      answer: 'B. Overlapping the steps of the machine cycle (e.g., fetching next instruction while executing current)',
+      diff: 'easy',
+    },
+    {
+      q: 'How does pipelining affect the time to execute a single instruction?',
+      options: ['A. It reduces it significantly', 'B. It increases it', 'C. It keeps the individual instruction latency the same', 'D. It makes it unpredictable'],
+      answer: 'C. It keeps the individual instruction latency the same',
+      diff: 'medium',
+    },
+    {
+      q: 'How does pipelining affect overall throughput?',
+      options: ['A. It decreases throughput', 'B. It increases throughput', 'C. It has no effect', 'D. It only affects power consumption'],
+      answer: 'B. It increases throughput',
+      diff: 'easy',
+    },
+    {
+      q: 'What happens to the pipeline when a JUMP instruction is encountered?',
+      options: ['A. The pipeline continues normally', 'B. The prefetched instructions are not needed (pipeline waste)', 'C. The CPU speeds up', 'D. Memory is bypassed'],
+      answer: 'B. The prefetched instructions are not needed (pipeline waste)',
+      diff: 'easy',
+    },
+    {
+      q: 'Why does a JUMP instruction disrupt pipelining?',
+      options: ['A. It requires more time to execute', 'B. The instructions already fetched (after the jump) are from the wrong address', 'C. It uses the ALU', 'D. It causes a memory fault'],
+      answer: 'B. The instructions already fetched (after the jump) are from the wrong address',
+      diff: 'medium',
+    },
+    {
+      q: 'Modern machine designs can:',
+      options: ['A. Only execute one instruction at a time', 'B. Fetch several instructions at once and execute multiple simultaneously', 'C. Eliminate pipelines', 'D. Only use parallel communication'],
+      answer: 'B. Fetch several instructions at once and execute multiple simultaneously',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the speed of light in terms of feet per nanosecond?',
+      options: ['A. 0.5 foot per nanosecond', 'B. 1 foot per nanosecond', 'C. 2 feet per nanosecond', 'D. 10 feet per nanosecond'],
+      answer: 'B. 1 foot per nanosecond',
+      diff: 'easy',
+    },
+    {
+      q: 'Fetching an instruction from memory 2 feet away would take at least:',
+      options: ['A. 2 ns', 'B. 4 ns', 'C. 1 ns', 'D. 8 ns'],
+      answer: 'B. 4 ns',
+      diff: 'medium',
+    },
+    {
+      q: 'Throughput refers to:',
+      options: ['A. Speed of a single instruction', 'B. Total amount of work in a given time', 'C. Memory bandwidth', 'D. Clock frequency'],
+      answer: 'B. Total amount of work in a given time',
+      diff: 'easy',
+    },
+    {
+      q: 'Pipelining is analogous to:',
+      options: ['A. A single worker doing all tasks', 'B. An assembly line where different stages work on different items simultaneously', 'C. A traffic jam', 'D. A single-lane road'],
+      answer: 'B. An assembly line where different stages work on different items simultaneously',
+      diff: 'easy',
+    },
+    {
+      q: 'The time to fetch an instruction from memory is limited by:',
+      options: ['A. CPU clock speed', 'B. The speed of light', 'C. Memory capacity', 'D. Bus width'],
+      answer: 'B. The speed of light',
+      diff: 'easy',
+    },
+    {
+      q: 'A nanosecond is:',
+      options: ['A. One millionth of a second', 'B. One billionth of a second', 'C. One trillionth of a second', 'D. One thousandth of a second'],
+      answer: 'B. One billionth of a second',
+      diff: 'easy',
+    },
+    {
+      q: 'If a CPU and memory are 0.5 feet apart, the minimum fetch time (round trip) is:',
+      options: ['A. 0.5 ns', 'B. 1 ns', 'C. 1.5 ns', 'D. 2 ns'],
+      answer: 'B. 1 ns',
+      diff: 'hard',
+    },
+    {
+      q: 'Which of the following is a limitation of pipelining?',
+      options: ['A. It requires more memory', 'B. Branch (jump) instructions can cause pipeline stalls', 'C. It reduces throughput', 'D. It increases power consumption too much'],
+      answer: 'B. Branch (jump) instructions can cause pipeline stalls',
+      diff: 'easy',
+    },
+    {
+      q: 'The technique of executing more than one instruction at a time (beyond simple pipelining) is called:',
+      options: ['A. Superscalar', 'B. Serial execution', 'C. Parallel communication', 'D. DMA'],
+      answer: 'A. Superscalar',
+      diff: 'medium',
+    },
+    {
+      q: 'What happens to the instructions that were fetched after a JUMP but before the JUMP is executed?',
+      options: ['A. They are still executed', 'B. They are discarded (flushed)', 'C. They are saved for later', 'D. They are executed in reverse order'],
+      answer: 'B. They are discarded (flushed)',
+      diff: 'medium',
+    },
+    {
+      q: 'The primary benefit of pipelining is:',
+      options: ['A. Faster execution of each instruction', 'B. Higher throughput (more instructions per second)', 'C. Lower power consumption', 'D. Less memory usage'],
+      answer: 'B. Higher throughput (more instructions per second)',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+
+45: {
+  title: 'Operating Systems: History (Batch Processing, Interactive Processing, Job Queue) (CS101 Lecture 45)',
+  summary: `**Key Topics Covered:**
+- Early computers (1940s-1950s): large, inflexible, inefficient
+- Each job required extensive setup (mount tapes, load cards, set switches)
+- Users reserved machine time blocks; machine fully under user's control
+- Introduction of computer operator: users submit jobs; operator runs them
+- Batch processing: jobs collected in a batch, executed without user interaction
+- Job queue: jobs wait in mass storage for execution
+- FIFO (first-in, first-out) queue; but priorities can override
+- Job Control Language (JCL): instructions encoded with job for operator
+- Drawback of batch: no user interaction during job execution
+- Need for interaction: reservation systems, word processing, computer games
+- Interactive processing: program can dialogue with user via remote terminals
+
+---
+
+**Simple Understanding:**
+
+**Early Computing (1940s-1950s):**
+👉 Computers occupied entire rooms.
+👉 Running a program (job) required: mounting tapes, loading punched cards, setting switches.
+👉 Users signed up for time blocks; machine fully under user's control during that time.
+👉 Inefficient and inflexible.
+
+**Birth of Operating Systems:**
+👉 To simplify program setup and transition between jobs.
+👉 Computer operator hired to run the machine.
+👉 Users submit jobs (program + data + instructions) to operator.
+👉 Operator loads jobs into mass storage; operating system executes them one by one.
+
+**Batch Processing:**
+👉 Jobs collected in a batch; executed without user interaction.
+👉 Jobs wait in a job queue (mass storage).
+👉 FIFO (first-in, first-out) order; but priorities can bump lower-priority jobs.
+👉 Job Control Language (JCL): instructions for the operator (printed, then followed).
+
+**Drawback of Batch:**
+👉 User has no interaction with the job once submitted.
+👉 OK for payroll (all decisions pre-set).
+👉 Not OK for: reservation systems (real-time updates), word processing (dynamic editing), computer games (interaction needed).
+
+**Interactive Processing:**
+👉 Program can carry on dialogue with user via remote terminals.
+👉 Allows dynamic interaction during execution.
+👉 Required for modern applications.
+
+---
+
+**Important Vocabulary:**
+- Job = program to be executed
+- Batch processing = jobs executed without user interaction
+- Job queue = collection of waiting jobs
+- FIFO = first-in, first-out
+- Priority = higher importance job can bypass lower
+- JCL = Job Control Language (instructions for operator)
+- Interactive processing = user interacts with program during execution
+- Remote terminal = device for user to communicate with computer
+
+---
+
+**Quick Revision Points:**
+- Early computers: manual setup, user time blocks.
+- OS started to automate job transitions.
+- Batch processing: jobs run in sequence, no user interaction.
+- Job queue: FIFO + priorities.
+- JCL: encoded setup instructions.
+- Batch not suitable for interactive apps.
+- Interactive processing: real-time dialogue via terminals.`,
+
+  questions: [
+    {
+      q: 'In early computers (1940s-1950s), how did users share machine time?',
+      options: ['A. Through operating system time-sharing', 'B. By signing up for blocks of time', 'C. By using batch processing', 'D. By remote terminals'],
+      answer: 'B. By signing up for blocks of time',
+      diff: 'easy',
+    },
+    {
+      q: 'What was the role of a computer operator in early batch systems?',
+      options: ['A. To write programs for users', 'B. To operate the machine and run submitted jobs', 'C. To design hardware', 'D. To manage the network'],
+      answer: 'B. To operate the machine and run submitted jobs',
+      diff: 'easy',
+    },
+    {
+      q: 'What is batch processing?',
+      options: ['A. Executing jobs one at a time with user interaction', 'B. Collecting jobs and executing them without user interaction', 'C. Running multiple jobs simultaneously', 'D. Processing data in real time'],
+      answer: 'B. Collecting jobs and executing them without user interaction',
+      diff: 'easy',
+    },
+    {
+      q: 'What is a job queue?',
+      options: ['A. A list of completed jobs', 'B. A storage organization where jobs wait for execution', 'C. A type of printer', 'D. A programming language'],
+      answer: 'B. A storage organization where jobs wait for execution',
+      diff: 'easy',
+    },
+    {
+      q: 'What does FIFO stand for?',
+      options: ['A. First-in, First-out', 'B. Fast Input Fast Output', 'C. File Input File Output', 'D. First Idle First Out'],
+      answer: 'A. First-in, First-out',
+      diff: 'easy',
+    },
+    {
+      q: 'In a FIFO queue, objects are removed:',
+      options: ['A. In the order they arrived', 'B. In reverse order of arrival', 'C. Randomly', 'D. Based on priority only'],
+      answer: 'A. In the order they arrived',
+      diff: 'easy',
+    },
+    {
+      q: 'Can a higher priority job jump ahead in the job queue?',
+      options: ['A. No, FIFO is strictly followed', 'B. Yes, most operating systems allow priorities', 'C. Only for system jobs', 'D. Only for interactive jobs'],
+      answer: 'B. Yes, most operating systems allow priorities',
+      diff: 'easy',
+    },
+    {
+      q: 'What is Job Control Language (JCL)?',
+      options: ['A. A programming language for applications', 'B. A set of instructions explaining job preparation steps', 'C. A type of terminal', 'D. A memory management scheme'],
+      answer: 'B. A set of instructions explaining job preparation steps',
+      diff: 'medium',
+    },
+    {
+      q: 'What is a major drawback of batch processing?',
+      options: ['A. It is too fast', 'B. Users cannot interact with their jobs during execution', 'C. It requires expensive hardware', 'D. It cannot handle large jobs'],
+      answer: 'B. Users cannot interact with their jobs during execution',
+      diff: 'easy',
+    },
+    {
+      q: 'Which type of application is batch processing suitable for?',
+      options: ['A. Computer games', 'B. Payroll processing (all decisions pre-set)', 'C. Word processing', 'D. Reservation systems'],
+      answer: 'B. Payroll processing (all decisions pre-set)',
+      diff: 'easy',
+    },
+    {
+      q: 'Which application is NOT suitable for batch processing?',
+      options: ['A. Monthly salary calculation', 'B. Real-time reservation system', 'C. End-of-month report generation', 'D. Large data backup'],
+      answer: 'B. Real-time reservation system',
+      diff: 'easy',
+    },
+    {
+      q: 'What is interactive processing?',
+      options: ['A. Programs run without user input', 'B. Programs carry on a dialogue with the user during execution', 'C. Batch execution of jobs', 'D. Offline processing'],
+      answer: 'B. Programs carry on a dialogue with the user during execution',
+      diff: 'easy',
+    },
+    {
+      q: 'Interactive processing typically uses:',
+      options: ['A. No user interaction', 'B. Remote terminals for real-time dialogue', 'C. Punch cards only', 'D. Batch queues'],
+      answer: 'B. Remote terminals for real-time dialogue',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following requires interactive processing?',
+      options: ['A. Payroll', 'B. Computer games', 'C. Monthly billing', 'D. Year-end tax calculation'],
+      answer: 'B. Computer games',
+      diff: 'easy',
+    },
+    {
+      q: 'What was the main reason for hiring a computer operator?',
+      options: ['A. To write operating systems', 'B. To separate users from equipment and streamline job transitions', 'C. To repair hardware', 'D. To design new computers'],
+      answer: 'B. To separate users from equipment and streamline job transitions',
+      diff: 'medium',
+    },
+    {
+      q: 'In early batch systems, where were jobs stored before execution?',
+      options: ['A. In CPU registers', 'B. In mass storage (disk/tape)', 'C. In main memory only', 'D. On paper'],
+      answer: 'B. In mass storage (disk/tape)',
+      diff: 'easy',
+    },
+    {
+      q: 'Job Control Language instructions were typically:',
+      options: ['A. Compiled into machine code', 'B. Printed for the operator to read and follow', 'C. Executed directly by the CPU', 'D. Ignored by the OS'],
+      answer: 'B. Printed for the operator to read and follow',
+      diff: 'medium',
+    },
+    {
+      q: 'The transition from batch to interactive processing was driven by:',
+      options: ['A. Need for faster CPUs', 'B. Need for user interaction in applications', 'C. Cost reduction', 'D. More memory'],
+      answer: 'B. Need for user interaction in applications',
+      diff: 'easy',
+    },
+    {
+      q: 'What does "FIFO" ensure in a job queue?',
+      options: ['A. Fairness in order of submission', 'B. Priority for short jobs', 'C. Interactive response', 'D. Background execution'],
+      answer: 'A. Fairness in order of submission',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is an example of interactive processing?',
+      options: ['A. Running a payroll program overnight', 'B. Editing a document in Microsoft Word', 'C. Printing a batch of reports', 'D. Processing a stack of punch cards'],
+      answer: 'B. Editing a document in Microsoft Word',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+46: {
+  title: 'Operating Systems: Basic Concepts (I) – Real-Time Processing, Time Sharing, Multiprogramming, Multitasking (CS101 Lecture 46)',
+  summary: `**Key Topics Covered:**
+- Coordination with user: interactive processing must respond with sufficiently fast time
+- Examples: printing records of all VU students (large batch) vs word processing (typing characters, needs quick response)
+- Execution of tasks under deadlines
+- Real-time processing: computer performs tasks according to deadlines in external real-world environment
+  - Examples: cruise missile, radar system
+- Interactive vs real-time: if only one user, real-time easier to implement
+- In 1960s-70s, computers expensive, each machine had to serve multiple users at remote terminals
+- Time sharing: OS designed to service multiple users simultaneously (each gets small time slice)
+- Multiprogramming: one way to implement time sharing – small time intervals, each job executes for a short interval
+  - Early systems could service 30 users simultaneously
+- Multitasking: one user executing several tasks simultaneously
+- Today: multiprogramming used in both single-user and multi-user systems
+
+---
+
+**Simple Understanding:**
+
+**Coordination with User:**
+👉 Interactive processing requires fast response to feel immediate.
+👉 Example: word processing – typing a character must appear instantly.
+👉 Batch job (printing all student records) does not need instant response.
+
+**Real-Time Processing:**
+👉 System must meet strict deadlines from external environment.
+👉 Examples: cruise missile guidance, radar tracking.
+👉 Failure to meet deadline could cause disaster.
+
+**Time Sharing:**
+👉 Single computer serves many users at remote terminals.
+👉 CPU rapidly switches between users (each gets a short time slice).
+👉 Each user feels they have dedicated machine.
+
+**Multiprogramming:**
+👉 Technique to implement time sharing.
+👉 Multiple jobs (programs) loaded in memory, CPU switches between them.
+👉 Early systems: 30 users simultaneously.
+
+**Multitasking:**
+👉 One user running several programs at same time.
+👉 Example: web browser + word processor + music player all at once.
+👉 Same time-slicing technique but for a single user.
+
+---
+
+**Important Vocabulary:**
+- Real-time processing = meeting external deadlines
+- Time sharing = multiple users sharing CPU via time slices
+- Multiprogramming = multiple programs loaded, CPU switches
+- Multitasking = one user running multiple tasks concurrently
+- Deadline = time by which task must complete
+- Interactive response = immediate feedback to user input
+
+---
+
+**Quick Revision Points:**
+- Interactive needs fast response (word processing).
+- Real-time has strict deadlines (missile, radar).
+- 1960s-70s computers expensive → multiple users per machine.
+- Time sharing → each user gets small time slice.
+- Multiprogramming = time sharing implementation.
+- Multitasking = single user, multiple concurrent tasks.`,
+
+  questions: [
+    {
+      q: 'What is required for successful interactive processing?',
+      options: ['A. Very fast CPU only', 'B. Sufficiently fast response time to user', 'C. Large memory', 'D. Batch operation'],
+      answer: 'B. Sufficiently fast response time to user',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following requires faster response time?',
+      options: ['A. Printing records of all VU students', 'B. Word processing (typing characters)', 'C. Monthly report generation', 'D. Nightly backup'],
+      answer: 'B. Word processing (typing characters)',
+      diff: 'easy',
+    },
+    {
+      q: 'What is real-time processing?',
+      options: ['A. Processing that runs as fast as possible', 'B. Processing that must meet deadlines in the external environment', 'C. Processing with no user interaction', 'D. Processing that runs only at night'],
+      answer: 'B. Processing that must meet deadlines in the external environment',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is an example of real-time processing?',
+      options: ['A. Word processor', 'B. Cruise missile guidance system', 'C. Email client', 'D. Web browser'],
+      answer: 'B. Cruise missile guidance system',
+      diff: 'easy',
+    },
+    {
+      q: 'Why was real-time processing relatively easier when serving only one user?',
+      options: ['A. No need for time sharing', 'B. The CPU was faster', 'C. Memory was cheaper', 'D. Deadlines were longer'],
+      answer: 'A. No need for time sharing',
+      diff: 'medium',
+    },
+    {
+      q: 'Why did computers in the 1960s and 1970s need to serve multiple users simultaneously?',
+      options: ['A. Users demanded it', 'B. Computers were very expensive', 'C. Software required it', 'D. Networks were slow'],
+      answer: 'B. Computers were very expensive',
+      diff: 'easy',
+    },
+    {
+      q: 'What is time sharing?',
+      options: ['A. One user running multiple programs', 'B. Multiple users sharing CPU by small time intervals', 'C. Sharing memory between programs', 'D. Sharing disk space'],
+      answer: 'B. Multiple users sharing CPU by small time intervals',
+      diff: 'easy',
+    },
+    {
+      q: 'What is multiprogramming?',
+      options: ['A. Running one program at a time', 'B. Multiple programs loaded in memory, CPU switches between them', 'C. Programming multiple computers', 'D. Writing code in multiple languages'],
+      answer: 'B. Multiple programs loaded in memory, CPU switches between them',
+      diff: 'easy',
+    },
+    {
+      q: 'How many users could early time-sharing systems typically service simultaneously?',
+      options: ['A. 2-3', 'B. 10', 'C. 30', 'D. 100'],
+      answer: 'C. 30',
+      diff: 'easy',
+    },
+    {
+      q: 'What is multitasking?',
+      options: ['A. Multiple users sharing CPU', 'B. One user executing several tasks simultaneously', 'C. Multiple CPUs in one computer', 'D. Running batch jobs'],
+      answer: 'B. One user executing several tasks simultaneously',
+      diff: 'easy',
+    },
+    {
+      q: 'Which technique allows a single user to run a web browser, word processor, and music player at the same time?',
+      options: ['A. Real-time processing', 'B. Batch processing', 'C. Multitasking', 'D. Time sharing'],
+      answer: 'C. Multitasking',
+      diff: 'easy',
+    },
+    {
+      q: 'Today, multiprogramming is used in:',
+      options: ['A. Only multi-user systems', 'B. Only single-user systems', 'C. Both single-user and multi-user systems', 'D. Only real-time systems'],
+      answer: 'C. Both single-user and multi-user systems',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the key difference between time sharing and multitasking?',
+      options: ['A. Time sharing is for multiple users; multitasking is for one user with multiple tasks', 'B. No difference', 'C. Multitasking is faster', 'D. Time sharing requires more memory'],
+      answer: 'A. Time sharing is for multiple users; multitasking is for one user with multiple tasks',
+      diff: 'medium',
+    },
+    {
+      q: 'Which system must meet strict external deadlines?',
+      options: ['A. Time sharing', 'B. Batch processing', 'C. Real-time processing', 'D. Multitasking'],
+      answer: 'C. Real-time processing',
+      diff: 'easy',
+    },
+    {
+      q: 'In time sharing, each user gets:',
+      options: ['A. Dedicated CPU', 'B. A small time slice of CPU', 'C. A full second of CPU', 'D. No CPU time'],
+      answer: 'B. A small time slice of CPU',
+      diff: 'easy',
+    },
+    {
+      q: 'Multiprogramming is a technique for implementing:',
+      options: ['A. Batch processing', 'B. Real-time processing', 'C. Time sharing', 'D. Single-user systems only'],
+      answer: 'C. Time sharing',
+      diff: 'medium',
+    },
+    {
+      q: 'Which of the following requires the fastest response time?',
+      options: ['A. Printing student records', 'B. Radar tracking', 'C. Monthly payroll', 'D. Backup operation'],
+      answer: 'B. Radar tracking',
+      diff: 'easy',
+    },
+    {
+      q: 'The main challenge of real-time processing is:',
+      options: ['A. Maximizing throughput', 'B. Meeting deadlines', 'C. Minimizing memory usage', 'D. Supporting many users'],
+      answer: 'B. Meeting deadlines',
+      diff: 'easy',
+    },
+    {
+      q: 'Multitasking is also known as:',
+      options: ['A. Time sharing', 'B. Multiprogramming (in the context of a single user)', 'C. Batch processing', 'D. Real-time processing'],
+      answer: 'B. Multiprogramming (in the context of a single user)',
+      diff: 'medium',
+    }
+  ]
+},
+
+
+47: {
+  title: 'Operating Systems: Basic Concepts (II) – Evolution, System Administrator, Multiprocessor OS, Embedded Systems (CS101 Lecture 47)',
+  summary: `**Key Topics Covered:**
+- Multiuser, time-sharing OS: large central computer connected to workstations
+- Users communicate directly from outside computer room; operator role fades
+- Today: computer operator essentially gone; user assumes operation responsibilities
+- System administrator: manages computer system (installs software/hardware, enforces regulations, resolves problems) – not hands-on operation
+- OS evolution: from simple batch executors to complex time-sharing, file management, direct user response
+- Multiprocessor machines: OS provides time-sharing/multitasking by assigning tasks to different processors
+- Load balancing: dynamically allocating tasks to use all processors efficiently
+- Scaling: breaking tasks into subtasks compatible with number of processors
+- Embedded systems: dedicated devices (medical devices, vehicle electronics, home appliances, cell phones, hand-held computers)
+- Embedded OS constraints: conserve battery, meet real-time deadlines, operate continuously with little oversight
+- Examples: VxWorks (Mars rovers Spirit and Opportunity), Windows CE/Pocket PC, Palm OS
+
+---
+
+**Simple Understanding:**
+
+**From Operator to User:**
+👉 In early time-sharing, large central computer connected to workstations.
+👉 Users directly interacted from outside computer room.
+👉 Computer operator's role decreased.
+
+**Today:**
+👉 Personal computer user is their own operator.
+👉 Large installations run unattended.
+👉 System administrator manages (installations, accounts, space limits, problem resolution) – not hands-on operation.
+
+**OS Evolution:**
+👉 Started as simple job sequencers.
+👉 Now: complex systems for time-sharing, file management, direct user response.
+
+**Multiprocessor OS:**
+👉 Multiple CPUs in one machine.
+👉 OS assigns tasks to different processors.
+👉 Challenges:
+   - Load balancing: distribute tasks efficiently across all CPUs.
+   - Scaling: break tasks into subtasks matching processor count.
+
+**Embedded Systems:**
+👉 Dedicated devices (not general-purpose computers).
+👉 Examples: medical devices, car electronics, appliances, phones, hand-helds.
+👉 Embedded OS requirements:
+   - Conserve battery power.
+   - Meet real-time deadlines.
+   - Operate continuously with little human oversight.
+
+**Examples:**
+- VxWorks: used in Mars rovers Spirit and Opportunity.
+- Windows CE (Pocket PC): Microsoft.
+- Palm OS: PalmSource for handheld devices.
+
+---
+
+**Important Vocabulary:**
+- System administrator = manages computer system (not hands-on operation)
+- Multiprocessor = multiple CPUs in one machine
+- Load balancing = distributing tasks across processors for efficiency
+- Scaling = breaking tasks into processor-compatible subtasks
+- Embedded system = dedicated-purpose computer device
+- VxWorks = real-time OS for Mars rovers
+- Windows CE = embedded OS from Microsoft
+- Palm OS = OS for Palm handhelds
+
+---
+
+**Quick Revision Points:**
+- Time-sharing eliminated need for computer operator.
+- User became operator (PC) or system administrator managed (large systems).
+- OS evolved from batch to interactive, multitasking, multiprocessing.
+- Multiprocessor OS needs load balancing and scaling.
+- Embedded systems run dedicated devices with constraints (power, real-time, unattended).
+- Examples: VxWorks (Mars rovers), Windows CE, Palm OS.`,
+
+  questions: [
+    {
+      q: 'In multiuser time-sharing systems, how did users interact with the computer?',
+      options: ['A. Through a computer operator', 'B. Directly from workstations outside the computer room', 'C. Only by submitting punch cards', 'D. Through batch processing'],
+      answer: 'B. Directly from workstations outside the computer room',
+      diff: 'easy',
+    },
+    {
+      q: 'What happened to the role of computer operator as time-sharing developed?',
+      options: ['A. It became more important', 'B. It began to fade', 'C. It was eliminated completely overnight', 'D. It merged with programming'],
+      answer: 'B. It began to fade',
+      diff: 'easy',
+    },
+    {
+      q: 'Who assumes the responsibilities of computer operation in personal computers today?',
+      options: ['A. A system administrator', 'B. The computer user', 'C. A remote operator', 'D. The hardware manufacturer'],
+      answer: 'B. The computer user',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the role of a system administrator in large computer installations?',
+      options: ['A. To operate the machine hands-on', 'B. To manage the system (install software/hardware, enforce regulations, resolve problems)', 'C. To write all programs', 'D. To replace computer operators'],
+      answer: 'B. To manage the system (install software/hardware, enforce regulations, resolve problems)',
+      diff: 'easy',
+    },
+    {
+      q: 'How have operating systems evolved?',
+      options: ['A. From complex to simple', 'B. From simple batch executors to complex time-sharing, file management, and direct user response', 'C. They have not changed', 'D. They only run on mainframes'],
+      answer: 'B. From simple batch executors to complex time-sharing, file management, and direct user response',
+      diff: 'easy',
+    },
+    {
+      q: 'What is load balancing in multiprocessor operating systems?',
+      options: ['A. Distributing tasks equally in time', 'B. Dynamically allocating tasks to use all processors efficiently', 'C. Balancing power consumption', 'D. Balancing memory usage'],
+      answer: 'B. Dynamically allocating tasks to use all processors efficiently',
+      diff: 'medium',
+    },
+    {
+      q: 'What is scaling in the context of multiprocessor OS?',
+      options: ['A. Breaking tasks into subtasks compatible with the number of processors', 'B. Increasing processor speed', 'C. Adding more memory', 'D. Reducing task size'],
+      answer: 'A. Breaking tasks into subtasks compatible with the number of processors',
+      diff: 'medium',
+    },
+    {
+      q: 'What are embedded systems?',
+      options: ['A. General-purpose computers', 'B. Devices dedicated to specific tasks (medical devices, vehicle electronics, home appliances, cell phones)', 'C. Only supercomputers', 'D. Only gaming consoles'],
+      answer: 'B. Devices dedicated to specific tasks (medical devices, vehicle electronics, home appliances, cell phones)',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is a constraint of embedded operating systems?',
+      options: ['A. High power consumption', 'B. Conserving battery power', 'C. Requiring constant human oversight', 'D. Large physical size'],
+      answer: 'B. Conserving battery power',
+      diff: 'easy',
+    },
+    {
+      q: 'Which embedded OS was used in the Mars Exploration Rovers Spirit and Opportunity?',
+      options: ['A. Windows CE', 'B. Palm OS', 'C. VxWorks', 'D. Linux'],
+      answer: 'C. VxWorks',
+      diff: 'easy',
+    },
+    {
+      q: 'Windows CE is also known as:',
+      options: ['A. Windows XP', 'B. Pocket PC', 'C. Windows 10', 'D. Windows Server'],
+      answer: 'B. Pocket PC',
+      diff: 'easy',
+    },
+    {
+      q: 'Which company developed Palm OS?',
+      options: ['A. Microsoft', 'B. Apple', 'C. PalmSource, Inc.', 'D. Google'],
+      answer: 'C. PalmSource, Inc.',
+      diff: 'easy',
+    },
+    {
+      q: 'What is a key requirement for real-time embedded systems?',
+      options: ['A. Maximizing throughput', 'B. Meeting demanding real-time deadlines', 'C. Supporting many users', 'D. Running general-purpose software'],
+      answer: 'B. Meeting demanding real-time deadlines',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is an example of an embedded system?',
+      options: ['A. Desktop PC', 'B. Mars rover', 'C. Mainframe computer', 'D. Laptop'],
+      answer: 'B. Mars rover',
+      diff: 'easy',
+    },
+    {
+      q: 'Multiprocessor machines have multiple:',
+      options: ['A. Users', 'B. CPUs', 'C. Operating systems', 'D. Monitors'],
+      answer: 'B. CPUs',
+      diff: 'easy',
+    },
+    {
+      q: 'In multiprocessor OS, different tasks can be assigned to:',
+      options: ['A. Different memory banks', 'B. Different processors', 'C. Different users', 'D. Different printers'],
+      answer: 'B. Different processors',
+      diff: 'easy',
+    },
+    {
+      q: 'The main difference between a computer operator and a system administrator is:',
+      options: ['A. Operator is hands-on; administrator manages the system at a higher level', 'B. Operator manages; administrator operates', 'C. No difference', 'D. Operator is for PCs, administrator for mainframes'],
+      answer: 'A. Operator is hands-on; administrator manages the system at a higher level',
+      diff: 'medium',
+    },
+    {
+      q: 'VxWorks was developed by:',
+      options: ['A. Microsoft', 'B. PalmSource', 'C. Wind River Systems', 'D. Apple'],
+      answer: 'C. Wind River Systems',
+      diff: 'hard',
+    },
+    {
+      q: 'Which of the following is NOT an embedded system example?',
+      options: ['A. Smartphone', 'B. Car navigation system', 'C. General-purpose desktop computer', 'D. Medical device'],
+      answer: 'C. General-purpose desktop computer',
+      diff: 'easy',
+    },
+    {
+      q: 'The evolution of operating systems continues toward:',
+      options: ['A. Simpler batch processing', 'B. Multiprocessor support and embedded systems', 'C. Eliminating all user interaction', 'D. Returning to punch cards'],
+      answer: 'B. Multiprocessor support and embedded systems',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+48: {
+  title: 'Operating Systems: Software Classification (Application vs System Software, Utility Software) (CS101 Lecture 48)',
+  summary: `**Key Topics Covered:**
+- Two broad categories of software: application software and system software
+- Application software: programs for tasks particular to the machine’s utilization
+  - Examples: spreadsheets, database systems, desktop publishing, accounting systems, program development software, games
+- System software: performs tasks common to all computer systems
+  - Provides infrastructure that application software requires
+  - Analogy: nation’s infrastructure (government, roads, utilities) for citizens
+- Two categories within system software:
+  1. Operating system (core)
+  2. Utility software (extends/customizes OS capabilities)
+- Utility software examples:
+  - Formatting disks, copying files from disk to CD
+  - Data compression/decompression
+  - Multimedia playback
+  - Network communication
+- Implementing activities as utilities allows easier customization to particular installations
+- Common for companies/individuals to modify or add to utility software
+
+---
+
+**Simple Understanding:**
+
+**Two Types of Software:**
+👉 **Application software:** does specific user tasks (spreadsheets, games, accounting). Differs by user need.
+👉 **System software:** common tasks for all computers; provides infrastructure.
+
+**Analogy:**
+👉 System software = nation’s infrastructure (government, roads, utilities).
+👉 Application software = citizens’ individual lifestyles using that infrastructure.
+
+**System Software Components:**
+1. **Operating system:** core software managing hardware and resources.
+2. **Utility software:** extra tools extending OS capabilities.
+
+**Utility Software Examples:**
+- Format a disk.
+- Copy files to CD.
+- Compress/decompress data.
+- Play multimedia (video/audio).
+- Handle network communication.
+
+**Benefits:**
+👉 Utilities can be customized, modified, or added without changing the OS core.
+👉 Companies/individuals often modify utilities to fit their needs.
+
+---
+
+**Important Vocabulary:**
+- Application software = user-specific tasks
+- System software = common infrastructure
+- Utility software = OS extension/customization tools
+- Infrastructure = foundational systems (like roads, utilities)
+- Customize = modify to meet specific needs
+
+---
+
+**Quick Revision Points:**
+- Application software: spreadsheets, games, accounting, etc.
+- System software: OS + utilities.
+- Utilities: disk formatting, file copying, compression, multimedia, networking.
+- Utilities allow customization without changing OS.
+- Users can modify or add utilities.`,
+
+  questions: [
+    {
+      q: 'Software is divided into which two broad categories?',
+      options: ['A. System software and utility software', 'B. Application software and system software', 'C. Operating system and utility software', 'D. Productivity software and entertainment software'],
+      answer: 'B. Application software and system software',
+      diff: 'easy',
+    },
+    {
+      q: 'Which type of software performs tasks particular to the machine’s utilization?',
+      options: ['A. System software', 'B. Application software', 'C. Utility software', 'D. Operating system'],
+      answer: 'B. Application software',
+      diff: 'easy',
+    },
+    {
+      q: 'Which type of software performs tasks common to all computer systems?',
+      options: ['A. Application software', 'B. System software', 'C. Spreadsheet software', 'D. Game software'],
+      answer: 'B. System software',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is an example of application software?',
+      options: ['A. Operating system', 'B. Disk formatter', 'C. Spreadsheet', 'D. Network driver'],
+      answer: 'C. Spreadsheet',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is an example of system software?',
+      options: ['A. Computer game', 'B. Accounting system', 'C. Utility software', 'D. Desktop publishing'],
+      answer: 'C. Utility software',
+      diff: 'easy',
+    },
+    {
+      q: 'The analogy used for system software is:',
+      options: ['A. A nation\'s infrastructure (government, roads, utilities)', 'B. A car engine', 'C. A library', 'D. A school curriculum'],
+      answer: 'A. A nation\'s infrastructure (government, roads, utilities)',
+      diff: 'easy',
+    },
+    {
+      q: 'What are the two categories within system software?',
+      options: ['A. Operating system and utility software', 'B. Application and operating system', 'C. Compilers and interpreters', 'D. Drivers and libraries'],
+      answer: 'A. Operating system and utility software',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is typically NOT implemented within the OS but as a utility program?',
+      options: ['A. Process scheduling', 'B. Memory management', 'C. Formatting a magnetic disk', 'D. Interrupt handling'],
+      answer: 'C. Formatting a magnetic disk',
+      diff: 'medium',
+    },
+    {
+      q: 'Utility software allows system software to be:',
+      options: ['A. Faster', 'B. More secure', 'C. Customized to specific installation needs', 'D. Smaller'],
+      answer: 'C. Customized to specific installation needs',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is a common utility software function?',
+      options: ['A. Running a spreadsheet', 'B. Compressing data', 'C. Playing a game', 'D. Writing a document'],
+      answer: 'B. Compressing data',
+      diff: 'easy',
+    },
+    {
+      q: 'Copying a file from a magnetic disk to a CD is typically done by:',
+      options: ['A. Application software', 'B. Utility software', 'C. Only the operating system', 'D. Hardware directly'],
+      answer: 'B. Utility software',
+      diff: 'easy',
+    },
+    {
+      q: 'Why are certain activities implemented as utility software rather than inside the OS?',
+      options: ['A. To make the OS smaller', 'B. To allow easier customization', 'C. To improve performance', 'D. To reduce cost'],
+      answer: 'B. To allow easier customization',
+      diff: 'medium',
+    },
+    {
+      q: 'Which of the following is NOT an example of utility software?',
+      options: ['A. Disk formatter', 'B. File compressor', 'C. Web browser (general purpose)', 'D. Network communication software'],
+      answer: 'C. Web browser (general purpose)',
+      diff: 'easy',
+    },
+    {
+      q: 'Application software is different from system software because:',
+      options: ['A. It is more important', 'B. It performs user-specific tasks, while system software provides common infrastructure', 'C. It is written in assembly language', 'D. It cannot be modified'],
+      answer: 'B. It performs user-specific tasks, while system software provides common infrastructure',
+      diff: 'easy',
+    },
+    {
+      q: 'Can companies or individuals modify the utility software provided with an OS?',
+      options: ['A. No, it is forbidden', 'B. Yes, it is common to modify or add to utility software', 'C. Only with a license', 'D. Only the OS vendor can modify'],
+      answer: 'B. Yes, it is common to modify or add to utility software',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is an example of system software?',
+      options: ['A. Microsoft Word', 'B. Adobe Photoshop', 'C. Linux operating system', 'D. Minecraft'],
+      answer: 'C. Linux operating system',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is an example of application software?',
+      options: ['A. Windows 11', 'B. macOS', 'C. Microsoft Excel', 'D. Disk defragmenter'],
+      answer: 'C. Microsoft Excel',
+      diff: 'easy',
+    },
+    {
+      q: 'Utility software is considered part of:',
+      options: ['A. Application software', 'B. System software', 'C. Neither', 'D. Both'],
+      answer: 'B. System software',
+      diff: 'easy',
+    },
+    {
+      q: 'The ability to play multimedia presentations is often provided by:',
+      options: ['A. Application software only', 'B. Utility software', 'C. Only the operating system', 'D. Hardware only'],
+      answer: 'B. Utility software',
+      diff: 'easy',
+    },
+    {
+      q: 'Software that handles network communication is typically:',
+      options: ['A. Application software', 'B. Utility software (part of system software)', 'C. Only user-written', 'D. None of the above'],
+      answer: 'B. Utility software (part of system software)',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+49: {
+  title: 'Operating Systems: Components (I) – User Interface, Shells, GUI, Window Manager (CS101 Lecture 49)',
+  summary: `**Key Topics Covered:**
+- Operating system components: user interface (communication with users)
+- Older user interfaces: shells (textual messages via keyboard and monitor)
+- Modern systems: Graphical User Interface (GUI, pronounced "GOO-ee")
+  - Objects (files, programs) represented as icons
+  - Input devices: mouse, stylus, touch screens
+  - 3D interfaces, tactile devices, surround sound audio – research topics
+- Distinction between user interface and internal OS parts
+- UNIX: multiple shell options (Bourne, C, Korn) plus X11 (GUI)
+- MS-DOS: command shell (cmd.exe) – still available in Windows as utility
+- Apple macOS: Terminal utility shell (UNIX ancestry)
+- Window manager: allocates screen space (windows), tracks applications per window
+  - Handles display requests and mouse clicks
+  - Defines "style" of GUI
+  - Linux examples: KDE, Gnome
+
+---
+
+**Simple Understanding:**
+
+**User Interface:**
+👉 Part of OS that communicates with users.
+
+**Shell (Textual):**
+👉 Older style – type commands, text output.
+👉 Examples: UNIX Bourne shell, C shell, Korn shell, MS-DOS cmd.exe.
+
+**GUI (Graphical User Interface):**
+👉 Icons represent files/programs.
+👉 Input: mouse, stylus, touch screen.
+👉 Research: 3D, tactile, surround sound.
+
+**UNIX Shells:**
+👉 Bourne, C, Korn, plus X11 (GUI).
+
+**Windows:**
+👉 Early versions: GUI loaded from MS-DOS shell.
+👉 cmd.exe still available as utility.
+
+**macOS:**
+👉 Terminal utility (UNIX shell).
+
+**Window Manager:**
+👉 Allocates windows on screen.
+👉 Tracks which app owns which window.
+👉 Handles display and mouse input.
+👉 Defines GUI style.
+👉 Linux: KDE, Gnome.
+
+---
+
+**Important Vocabulary:**
+- Shell = text-based user interface
+- GUI = Graphical User Interface
+- Icon = pictorial representation of object
+- Window = block of screen space for an application
+- Window manager = component managing windows
+- X11 = GUI for UNIX
+- KDE, Gnome = Linux window managers
+- cmd.exe = Windows command shell
+
+---
+
+**Quick Revision Points:**
+- Shells: text, older; GUI: graphical, modern.
+- UNIX has multiple shells (Bourne, C, Korn) and X11 GUI.
+- Windows GUI originally on top of MS-DOS shell.
+- macOS Terminal is a UNIX shell.
+- Window manager allocates windows, handles input, defines style.`,
+
+  questions: [
+    {
+      q: 'The portion of an operating system that handles communication with users is called the:',
+      options: ['A. Kernel', 'B. User interface', 'C. File system', 'D. Device driver'],
+      answer: 'B. User interface',
+      diff: 'easy',
+    },
+    {
+      q: 'Older text-based user interfaces are often called:',
+      options: ['A. GUIs', 'B. Shells', 'C. Kernels', 'D. Utilities'],
+      answer: 'B. Shells',
+      diff: 'easy',
+    },
+    {
+      q: 'What does GUI stand for?',
+      options: ['A. General User Interface', 'B. Graphical User Interface', 'C. Graphic Utility Interface', 'D. General Utility Interface'],
+      answer: 'B. Graphical User Interface',
+      diff: 'easy',
+    },
+    {
+      q: 'In a GUI, files and programs are represented pictorially as:',
+      options: ['A. Shells', 'B. Windows', 'C. Icons', 'D. Pointers'],
+      answer: 'C. Icons',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is a common input device for GUIs?',
+      options: ['A. Mouse', 'B. Stylus', 'C. Touch screen', 'D. All of the above'],
+      answer: 'D. All of the above',
+      diff: 'easy',
+    },
+    {
+      q: 'Which shells are available in UNIX?',
+      options: ['A. Bourne, C, Korn', 'B. Windows, macOS, Linux', 'C. KDE, Gnome', 'D. cmd.exe, Terminal'],
+      answer: 'A. Bourne, C, Korn',
+      diff: 'medium',
+    },
+    {
+      q: 'What is X11?',
+      options: ['A. A version of Windows', 'B. A GUI for UNIX', 'C. A shell for macOS', 'D. A Linux kernel'],
+      answer: 'B. A GUI for UNIX',
+      diff: 'medium',
+    },
+    {
+      q: 'The earliest versions of Microsoft Windows were:',
+      options: ['A. Standalone operating systems', 'B. GUI applications loaded from MS-DOS shell', 'C. Based on UNIX', 'D. Command-line only'],
+      answer: 'B. GUI applications loaded from MS-DOS shell',
+      diff: 'easy',
+    },
+    {
+      q: 'What is cmd.exe?',
+      options: ['A. Windows command shell', 'B. Linux window manager', 'C. macOS terminal', 'D. UNIX GUI'],
+      answer: 'A. Windows command shell',
+      diff: 'easy',
+    },
+    {
+      q: 'What does the Terminal utility in macOS provide?',
+      options: ['A. GUI interface', 'B. UNIX shell access', 'C. File manager', 'D. Web browser'],
+      answer: 'B. UNIX shell access',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the role of a window manager?',
+      options: ['A. To manage files and folders', 'B. To allocate screen space (windows) and track application associations', 'C. To compile programs', 'D. To control hardware'],
+      answer: 'B. To allocate screen space (windows) and track application associations',
+      diff: 'easy',
+    },
+    {
+      q: 'When an application wants to display something, it notifies the:',
+      options: ['A. Kernel', 'B. File system', 'C. Window manager', 'D. Device driver'],
+      answer: 'C. Window manager',
+      diff: 'easy',
+    },
+    {
+      q: 'When a mouse button is clicked, which component determines the location and notifies the appropriate application?',
+      options: ['A. Shell', 'B. Window manager', 'C. Kernel', 'D. Compiler'],
+      answer: 'B. Window manager',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following are popular window managers in Linux?',
+      options: ['A. Bourne and C', 'B. KDE and Gnome', 'C. cmd.exe and Terminal', 'D. X11 and X Window'],
+      answer: 'B. KDE and Gnome',
+      diff: 'easy',
+    },
+    {
+      q: 'The window manager is responsible for the:',
+      options: ['A. Speed of the CPU', 'B. "Style" of the GUI', 'C. File compression', 'D. Network communication'],
+      answer: 'B. "Style" of the GUI',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is a research area in user interfaces?',
+      options: ['A. Text-based shells', 'B. 3D projection systems', 'C. Command-line interfaces', 'D. Batch processing'],
+      answer: 'B. 3D projection systems',
+      diff: 'easy',
+    },
+    {
+      q: 'UNIX users can select among different shells including:',
+      options: ['A. DOS and Windows', 'B. Bourne, C, and Korn', 'C. KDE and Gnome', 'D. cmd and PowerShell'],
+      answer: 'B. Bourne, C, and Korn',
+      diff: 'easy',
+    },
+    {
+      q: 'MS-DOS used which type of user interface?',
+      options: ['A. GUI only', 'B. Command shell', 'C. Touch interface', 'D. Voice interface'],
+      answer: 'B. Command shell',
+      diff: 'easy',
+    },
+    {
+      q: 'The window manager keeps track of which application is associated with each:',
+      options: ['A. Icon', 'B. Window', 'C. File', 'D. Folder'],
+      answer: 'B. Window',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is NOT an example of a window manager?',
+      options: ['A. KDE', 'B. Gnome', 'C. Bourne shell', 'D. X11 (serves similar role but is more complex)'],
+      answer: 'C. Bourne shell',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+50: {
+  title: 'Operating Systems: Components (II) – Kernel, File Manager, Device Drivers, Memory Manager, Virtual Memory (CS101 Lecture 50)',
+  summary: `**Key Topics Covered:**
+- Internal part of OS = kernel (basic functions)
+- File manager: coordinates mass storage use
+  - Maintains records of files (location, access permissions, free space)
+  - Records stored on the storage medium itself
+  - Directories/folders: group files; subdirectories create hierarchy
+  - Path: chain of directories (e.g., animals/prehistoric/dinosaurs)
+  - Windows uses backslashes (\\), Unix uses slashes (/)
+  - Opening a file: request access; file manager approves/gives info
+- Device drivers: communicate with controllers/peripherals
+  - Each driver designed for specific device type
+  - Translates generic requests to device-specific steps
+  - Allows OS to be independent of device details
+- Memory manager: coordinates main memory use
+  - Single-task: simple (fixed location)
+  - Multitasking: allocate space, enforce boundaries, track free areas
+  - Paging: illusion of more memory by swapping pages between RAM and disk
+  - Virtual memory: large fictional memory space created by paging
+- Scheduler: determines which activities to consider for execution
+- Dispatcher: controls allocation of time to activities
+
+---
+
+**Simple Understanding:**
+
+**Kernel:**
+👉 Core of operating system (internal part).
+
+**File Manager:**
+👉 Manages files on disks.
+👉 Keeps track: file locations, permissions, free space.
+👉 Records stored on the disk itself.
+👉 Directories (folders) group files; subdirectories create hierarchy.
+👉 Path: directory/subdirectory/.../filename.
+👉 Windows path uses backslashes (\\), Unix/Linux uses slashes (/).
+👉 To use a file, program asks file manager to "open" it.
+
+**Device Drivers:**
+👉 Software for specific hardware (printer, disk, monitor).
+👉 Translates generic commands into device-specific steps.
+👉 Other software doesn't need to know hardware details.
+
+**Memory Manager:**
+👉 Allocates main memory to programs/data.
+👉 Single-task: simple.
+👉 Multitasking: complex – assign spaces, protect boundaries, track free memory.
+👉 Paging: when memory is full, swap pages (blocks of data) to disk.
+👉 Virtual memory: illusion of larger RAM using disk space.
+
+**Scheduler & Dispatcher:**
+👉 Scheduler: decides which tasks to run.
+👉 Dispatcher: allocates CPU time to tasks.
+
+---
+
+**Important Vocabulary:**
+- Kernel = core of OS
+- File manager = coordinates mass storage
+- Directory/folder = group of files
+- Subdirectory = directory inside another directory
+- Path = chain of directory names to a file
+- Device driver = software for specific hardware
+- Memory manager = allocates main memory
+- Paging = swapping pages between RAM and disk
+- Virtual memory = illusion of larger RAM
+- Scheduler = selects tasks to run
+- Dispatcher = allocates CPU time
+
+---
+
+**Quick Revision Points:**
+- Kernel contains file manager, device drivers, memory manager, scheduler, dispatcher.
+- File manager tracks files, directories, permissions, free space.
+- Paths: Unix (/) vs Windows (\\)
+- Device drivers hide hardware details.
+- Memory manager handles allocation, protection, paging.
+- Virtual memory uses disk to extend apparent RAM.
+- Scheduler selects tasks; dispatcher gives CPU time.`,
+
+  questions: [
+    {
+      q: 'The internal part of an operating system is called the:',
+      options: ['A. Shell', 'B. Kernel', 'C. GUI', 'D. Utility'],
+      answer: 'B. Kernel',
+      diff: 'easy',
+    },
+    {
+      q: 'Which component of the kernel coordinates the use of mass storage?',
+      options: ['A. Memory manager', 'B. File manager', 'C. Device driver', 'D. Scheduler'],
+      answer: 'B. File manager',
+      diff: 'easy',
+    },
+    {
+      q: 'Where are the records of files (locations, permissions, free space) kept?',
+      options: ['A. In the kernel only', 'B. On the individual storage medium', 'C. In main memory only', 'D. In the CPU cache'],
+      answer: 'B. On the individual storage medium',
+      diff: 'medium',
+    },
+    {
+      q: 'A group of files bundled together is called a:',
+      options: ['A. Path', 'B. Directory (folder)', 'C. Page', 'D. Kernel'],
+      answer: 'B. Directory (folder)',
+      diff: 'easy',
+    },
+    {
+      q: 'A directory within another directory is called a:',
+      options: ['A. Root directory', 'B. Subdirectory', 'C. Virtual directory', 'D. Parent directory'],
+      answer: 'B. Subdirectory',
+      diff: 'easy',
+    },
+    {
+      q: 'What is a directory path?',
+      options: ['A. The location of a file on disk', 'B. A chain of directories leading to a file', 'C. The name of a directory', 'D. The size of a directory'],
+      answer: 'B. A chain of directories leading to a file',
+      diff: 'easy',
+    },
+    {
+      q: 'In Unix/Linux, directories in a path are separated by:',
+      options: ['A. Backslash (\\)', 'B. Slash (/)', 'C. Colon (:)', 'D. Semicolon (;)'],
+      answer: 'B. Slash (/)',
+      diff: 'easy',
+    },
+    {
+      q: 'In Windows, directories in a path are separated by:',
+      options: ['A. Slash (/)', 'B. Backslash (\\)', 'C. Colon (:)', 'D. Period (.)'],
+      answer: 'B. Backslash (\\)',
+      diff: 'easy',
+    },
+    {
+      q: 'What does the file manager do when a program requests to open a file?',
+      options: ['A. Immediately reads the file', 'B. Approves or denies access and provides information to find/manipulate the file', 'C. Deletes the file', 'D. Copies the file to a new location'],
+      answer: 'B. Approves or denies access and provides information to find/manipulate the file',
+      diff: 'medium',
+    },
+    {
+      q: 'Device drivers translate generic requests into:',
+      options: ['A. High-level language code', 'B. Technical steps required by the specific device', 'C. Kernel calls', 'D. User interface commands'],
+      answer: 'B. Technical steps required by the specific device',
+      diff: 'easy',
+    },
+    {
+      q: 'Why are device drivers useful?',
+      options: ['A. They make the OS slower', 'B. They allow other software to be independent of specific device details', 'C. They replace the kernel', 'D. They manage memory'],
+      answer: 'B. They allow other software to be independent of specific device details',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the role of the memory manager?',
+      options: ['A. To manage mass storage', 'B. To coordinate the use of main memory', 'C. To handle device drivers', 'D. To schedule tasks'],
+      answer: 'B. To coordinate the use of main memory',
+      diff: 'easy',
+    },
+    {
+      q: 'In multitasking environments, the memory manager must:',
+      options: ['A. Only place programs at fixed locations', 'B. Assign memory space, enforce boundaries, and track free areas', 'C. Ignore memory protection', 'D. Never use virtual memory'],
+      answer: 'B. Assign memory space, enforce boundaries, and track free areas',
+      diff: 'medium',
+    },
+    {
+      q: 'What is paging?',
+      options: ['A. Storing files in directories', 'B. Swapping pages of data between main memory and mass storage', 'C. Creating directories', 'D. Loading device drivers'],
+      answer: 'B. Swapping pages of data between main memory and mass storage',
+      diff: 'easy',
+    },
+    {
+      q: 'What is virtual memory?',
+      options: ['A. Memory that does not exist', 'B. An illusion of larger main memory created by paging', 'C. A type of ROM', 'D. Cache memory'],
+      answer: 'B. An illusion of larger main memory created by paging',
+      diff: 'easy',
+    },
+    {
+      q: 'Which component determines which activities are to be considered for execution?',
+      options: ['A. Dispatcher', 'B. Scheduler', 'C. Memory manager', 'D. Device driver'],
+      answer: 'B. Scheduler',
+      diff: 'easy',
+    },
+    {
+      q: 'Which component controls the allocation of time to activities?',
+      options: ['A. Scheduler', 'B. Dispatcher', 'C. File manager', 'D. Kernel'],
+      answer: 'B. Dispatcher',
+      diff: 'easy',
+    },
+    {
+      q: 'The kernel includes which of the following?',
+      options: ['A. File manager, device drivers, memory manager', 'B. Only the GUI', 'C. Only shells', 'D. Only utility programs'],
+      answer: 'A. File manager, device drivers, memory manager',
+      diff: 'easy',
+    },
+    {
+      q: 'The technique that allows a computer with 4GB RAM to act as if it has 8GB is called:',
+      options: ['A. Paging/Virtual memory', 'B. Caching', 'C. Multi-tasking', 'D. Directory mapping'],
+      answer: 'A. Paging/Virtual memory',
+      diff: 'easy',
+    },
+    {
+      q: 'Which Windows utility can display the current collection of folders?',
+      options: ['A. Command Prompt', 'B. Windows Explorer', 'C. Task Manager', 'D. Registry Editor'],
+      answer: 'B. Windows Explorer',
+      diff: 'easy',
+    },
+    {
+      q: 'The unit of data swapped between RAM and disk in paging is called a:',
+      options: ['A. Page', 'B. Block', 'C. Sector', 'D. Cluster'],
+      answer: 'A. Page',
+      diff: 'easy',
+    }
+  ]
+},
+
+51: {
+  title: 'Operating Systems: Process of Booting (Bootstrapping, Boot Loader, ROM) (CS101 Lecture 51)',
+  summary: `**Key Topics Covered:**
+- Booting (bootstrapping): procedure that starts the operating system when computer is turned on
+- Transfers OS from mass storage (permanent) to main memory (volatile, empty at power-on)
+- CPU program counter starts at a predetermined address (expects to find beginning of program)
+- Main memory is volatile (loses data when powered off)
+- Solution: small portion of memory at the startup address is nonvolatile – Read-Only Memory (ROM)
+- ROM: contents can be read but not altered (or altered only with special procedures)
+- Modern PCs use flash memory technology for ROM (can be updated via firmware updates)
+- Boot loader: program permanently stored in ROM, executed first when machine turns on
+- Boot loader copies OS from predetermined location (mass storage, network, flash) into volatile main memory
+- After copying, boot loader jumps to that memory area – OS takes over
+- Entire process = booting the computer
+- Why not store full OS in ROM? Not efficient (cost, size, updates); mass storage more practical
+- Firmware update: updating boot loader or OS stored in ROM
+
+---
+
+**Simple Understanding:**
+
+**The Boot Problem:**
+👉 CPU starts executing at a fixed address when powered on.
+👉 But main memory is volatile (empty at power-on).
+👉 Need a program there, but memory is empty.
+
+**Solution – ROM:**
+👉 Small nonvolatile memory at that fixed address.
+👉 ROM (Read-Only Memory) retains data when power off.
+👉 Contains the boot loader program.
+
+**Boot Loader:**
+👉 Small program in ROM.
+👉 First thing CPU executes at power-on.
+👉 Copies operating system from mass storage (disk, SSD, network, flash) into main memory.
+👉 Then jumps to OS code.
+
+**Result:**
+👉 Operating system starts running.
+👉 Computer is booted.
+
+**Why Not Full OS in ROM?**
+👉 OS is large; ROM is expensive and limited.
+👉 OS updates frequently; ROM difficult to update.
+👉 Mass storage is more practical.
+→ Embedded systems (smartphones) sometimes store OS in flash.
+
+**Firmware Update:**
+👉 Updating software stored in ROM (boot loader or OS).
+
+---
+
+**Important Vocabulary:**
+- Booting = starting the computer (bootstrapping)
+- Boot loader = program that loads the OS
+- ROM = Read-Only Memory (nonvolatile)
+- Volatile memory = loses data when power off (RAM)
+- Nonvolatile memory = retains data when power off (ROM, flash, disk)
+- Program counter (PC) = holds address of next instruction
+- Firmware = software stored in ROM
+- Firmware update = modifying ROM contents
+
+---
+
+**Quick Revision Points:**
+- CPU starts at fixed address; memory initially empty.
+- ROM at that address holds boot loader.
+- Boot loader copies OS from disk to RAM.
+- Boot loader jumps to OS → computer ready.
+- ROM is nonvolatile; RAM is volatile.
+- Full OS not in ROM because of size and update issues.`,
+
+  questions: [
+    {
+      q: 'What is the process of starting a computer called?',
+      options: ['A. Loading', 'B. Booting (bootstrapping)', 'C. Executing', 'D. Formatting'],
+      answer: 'B. Booting (bootstrapping)',
+      diff: 'easy',
+    },
+    {
+      q: 'Why is a special procedure needed to start the operating system?',
+      options: ['A. CPU is too slow', 'B. Main memory is volatile (empty at power-on)', 'C. Mass storage is too small', 'D. The OS is too large'],
+      answer: 'B. Main memory is volatile (empty at power-on)',
+      diff: 'easy',
+    },
+    {
+      q: 'Where does the CPU expect to find the beginning of a program when turned on?',
+      options: ['A. In mass storage', 'B. At a predetermined address in memory', 'C. In a register', 'D. On the network'],
+      answer: 'B. At a predetermined address in memory',
+      diff: 'easy',
+    },
+    {
+      q: 'What type of memory is used at the startup address to hold the initial program?',
+      options: ['A. Volatile RAM', 'B. Nonvolatile ROM', 'C. Cache memory', 'D. Virtual memory'],
+      answer: 'B. Nonvolatile ROM',
+      diff: 'easy',
+    },
+    {
+      q: 'What does ROM stand for?',
+      options: ['A. Random Output Memory', 'B. Read-Only Memory', 'C. Run-On Memory', 'D. Rapid Operation Memory'],
+      answer: 'B. Read-Only Memory',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the program permanently stored in ROM called?',
+      options: ['A. Operating system', 'B. Boot loader', 'C. Device driver', 'D. File manager'],
+      answer: 'B. Boot loader',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the first action of the boot loader?',
+      options: ['A. Turn off the computer', 'B. Transfer the operating system from mass storage to main memory', 'C. Run a virus scan', 'D. Display the desktop'],
+      answer: 'B. Transfer the operating system from mass storage to main memory',
+      diff: 'easy',
+    },
+    {
+      q: 'After the boot loader copies the OS into main memory, what does it do?',
+      options: ['A. Restart the computer', 'B. Execute a jump instruction to the OS area', 'C. Delete itself', 'D. Power off the CPU'],
+      answer: 'B. Execute a jump instruction to the OS area',
+      diff: 'medium',
+    },
+    {
+      q: 'Why is main memory referred to as volatile?',
+      options: ['A. It is fast', 'B. It loses its contents when power is turned off', 'C. It can be written many times', 'D. It is cheap'],
+      answer: 'B. It loses its contents when power is turned off',
+      diff: 'easy',
+    },
+    {
+      q: 'Why is ROM considered nonvolatile?',
+      options: ['A. It retains data when power is off', 'B. It is faster than RAM', 'C. It can be written easily', 'D. It is larger than RAM'],
+      answer: 'A. It retains data when power is off',
+      diff: 'easy',
+    },
+    {
+      q: 'In modern PCs, ROM is often implemented using which technology?',
+      options: ['A. Magnetic tape', 'B. Flash memory', 'C. Punch cards', 'D. Paper tape'],
+      answer: 'B. Flash memory',
+      diff: 'easy',
+    },
+    {
+      q: 'Why is the entire operating system not stored in ROM?',
+      options: ['A. ROM is too slow', 'B. ROM is volatile', 'C. ROM is expensive and not efficient for large OS; updates would be difficult', 'D. ROM cannot hold data'],
+      answer: 'C. ROM is expensive and not efficient for large OS; updates would be difficult',
+      diff: 'medium',
+    },
+    {
+      q: 'What is a firmware update?',
+      options: ['A. Updating the RAM', 'B. Updating software stored in ROM (boot loader or OS)', 'C. Replacing the CPU', 'D. Adding more memory'],
+      answer: 'B. Updating software stored in ROM (boot loader or OS)',
+      diff: 'easy',
+    },
+    {
+      q: 'In embedded systems like smartphones, the operating system is often stored in:',
+      options: ['A. Magnetic disk', 'B. Special flash (nonvolatile) memory', 'C. Punch cards', 'D. Paper tape'],
+      answer: 'B. Special flash (nonvolatile) memory',
+      diff: 'easy',
+    },
+    {
+      q: 'What happens to the contents of main memory when the computer is turned off?',
+      options: ['A. They are saved to disk', 'B. They are lost', 'C. They are transferred to ROM', 'D. They remain unchanged'],
+      answer: 'B. They are lost',
+      diff: 'easy',
+    },
+    {
+      q: 'The program counter (PC) initially contains:',
+      options: ['A. The address of the boot loader in ROM', 'B. Zero', 'C. The address of the OS', 'D. The address of the first user program'],
+      answer: 'A. The address of the boot loader in ROM',
+      diff: 'medium',
+    },
+    {
+      q: 'The process of booting a computer is also known as:',
+      options: ['A. Bootstrapping', 'B. Updating firmware', 'C. Formatting', 'D. Paging'],
+      answer: 'A. Bootstrapping',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following can be used as a source to load the OS during booting?',
+      options: ['A. Hard disk', 'B. Network', 'C. Flash memory', 'D. All of the above'],
+      answer: 'D. All of the above',
+      diff: 'easy',
+    },
+    {
+      q: 'In a typical desktop computer, the operating system is stored permanently in:',
+      options: ['A. ROM', 'B. RAM', 'C. Mass storage (disk/SSD)', 'D. CPU cache'],
+      answer: 'C. Mass storage (disk/SSD)',
+      diff: 'easy',
+    },
+    {
+      q: 'What does the boot loader do after loading the OS?',
+      options: ['A. It remains in control', 'B. It transfers control to the OS via a jump', 'C. It shuts down', 'D. It erases itself'],
+      answer: 'B. It transfers control to the OS via a jump',
+      diff: 'easy',
+    },
+    {
+      q: 'Why might a computer need to boot from a network?',
+      options: ['A. It has no local disk', 'B. For diskless workstations', 'C. For centralized OS management', 'D. All of the above'],
+      answer: 'D. All of the above',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+
+52: {
+  title: 'Operating Systems: Process and its Administration (Program vs Process, Process State) (CS101 Lecture 52)',
+  summary: `**Key Topics Covered:**
+- OS coordinates execution of application software, utility software, and itself
+- Distinction between program and process (fundamental OS concept)
+- Program: static set of instructions (like a music sheet)
+- Process: dynamic activity of executing a program under OS control
+- Process state: current status of the activity
+  - Value of Program Counter (next instruction)
+  - Values in other CPU registers
+  - Values in associated memory cells
+- Process state is a snapshot of the machine at a particular time
+
+---
+
+**Simple Understanding:**
+
+**Program vs Process:**
+- Program: static code stored on disk (passive).
+- Process: program in execution (active).
+
+**Analogy:**
+- Program = music sheet (notes written).
+- Process = musician playing the sheet (dynamic activity).
+
+**Process State:**
+The current status of a process includes:
+- Program Counter (which instruction to execute next).
+- CPU registers (temporary data).
+- Memory cells (variables, data).
+
+**Snapshot:**
+👉 A process state is like a photograph of the machine at an instant.
+
+---
+
+**Important Vocabulary:**
+- Process = executing program (dynamic)
+- Program = stored instructions (static)
+- Process state = current status (PC, registers, memory)
+- Program Counter = address of next instruction
+- Snapshot = state at a specific time
+
+---
+
+**Quick Revision Points:**
+- Program is static; process is dynamic.
+- A process is a program in execution.
+- Process state includes PC, registers, memory.
+- OS coordinates multiple processes.`,
+
+  questions: [
+    {
+      q: 'What is the distinction between a program and a process?',
+      options: ['A. Program is dynamic, process is static', 'B. Program is static, process is dynamic (activity of executing)', 'C. They are the same', 'D. Program runs on hardware, process runs on software'],
+      answer: 'B. Program is static, process is dynamic (activity of executing)',
+      diff: 'easy',
+    },
+    {
+      q: 'A program stored on disk is considered:',
+      options: ['A. A process', 'B. Static (inactive)', 'C. A process state', 'D. A snapshot'],
+      answer: 'B. Static (inactive)',
+      diff: 'easy',
+    },
+    {
+      q: 'The activity of executing a program under the control of the operating system is called a:',
+      options: ['A. Program', 'B. Process', 'C. Thread', 'D. Job'],
+      answer: 'B. Process',
+      diff: 'easy',
+    },
+    {
+      q: 'Which analogy is used to explain the difference between a program and a process?',
+      options: ['A. Car and driver', 'B. Music sheet and musician playing it', 'C. Recipe and cooked food', 'D. Blueprint and building'],
+      answer: 'B. Music sheet and musician playing it',
+      diff: 'easy',
+    },
+    {
+      q: 'What is included in the process state?',
+      options: ['A. Value of Program Counter', 'B. Values in CPU registers', 'C. Values in associated memory cells', 'D. All of the above'],
+      answer: 'D. All of the above',
+      diff: 'easy',
+    },
+    {
+      q: 'The process state is essentially a:',
+      options: ['A. Future prediction', 'B. Snapshot of the machine at a particular time', 'C. List of all programs', 'D. Compilation unit'],
+      answer: 'B. Snapshot of the machine at a particular time',
+      diff: 'easy',
+    },
+    {
+      q: 'Which component of the process state tells which instruction to execute next?',
+      options: ['A. CPU registers', 'B. Memory cells', 'C. Program Counter', 'D. Accumulator'],
+      answer: 'C. Program Counter',
+      diff: 'easy',
+    },
+    {
+      q: 'A program is ________ while a process is ________.',
+      options: ['A. dynamic, static', 'B. static, dynamic', 'C. active, passive', 'D. executed, stored'],
+      answer: 'B. static, dynamic',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is part of a process state?',
+      options: ['A. The program code on disk', 'B. Values in CPU registers', 'C. The file name', 'D. The compiler version'],
+      answer: 'B. Values in CPU registers',
+      diff: 'easy',
+    },
+    {
+      q: 'The operating system coordinates the execution of:',
+      options: ['A. Application software only', 'B. Utility software only', 'C. OS itself', 'D. All of the above'],
+      answer: 'D. All of the above',
+      diff: 'easy',
+    },
+    {
+      q: 'A single program can be associated with how many processes at a time?',
+      options: ['A. Only one', 'B. Multiple (if run multiple times)', 'C. None', 'D. Exactly one per user'],
+      answer: 'B. Multiple (if run multiple times)',
+      diff: 'medium',
+    },
+    {
+      q: 'The music sheet analogy: the sheet music represents the ________, and the musician playing it represents the ________.',
+      options: ['A. process, program', 'B. program, process', 'C. state, process', 'D. code, data'],
+      answer: 'B. program, process',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is static?',
+      options: ['A. Process', 'B. Program on disk', 'C. Process state', 'D. Running instance'],
+      answer: 'B. Program on disk',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is dynamic?',
+      options: ['A. Stored executable file', 'B. Process', 'C. Source code', 'D. Library'],
+      answer: 'B. Process',
+      diff: 'easy',
+    },
+    {
+      q: 'The values in associated memory cells are part of the:',
+      options: ['A. Program', 'B. Process state', 'C. Compiler', 'D. Loader'],
+      answer: 'B. Process state',
+      diff: 'easy',
+    },
+    {
+      q: 'When the OS switches from one process to another, it must save the ________ of the current process.',
+      options: ['A. Program code', 'B. Process state', 'C. Disk files', 'D. User interface'],
+      answer: 'B. Process state',
+      diff: 'medium',
+    },
+    {
+      q: 'The concept of process is fundamental to modern operating systems because it:',
+      options: ['A. Allows multiple programs to share the CPU', 'B. Distinguishes static code from dynamic execution', 'C. Enables multitasking', 'D. All of the above'],
+      answer: 'D. All of the above',
+      diff: 'easy',
+    },
+    {
+      q: 'What does the Program Counter (PC) store?',
+      options: ['A. The result of last calculation', 'B. The address of the next instruction to execute', 'C. The total number of instructions', 'D. The current process ID'],
+      answer: 'B. The address of the next instruction to execute',
+      diff: 'easy',
+    },
+    {
+      q: 'A snapshot of the machine at a particular time is called the:',
+      options: ['A. Program image', 'B. Process state', 'C. Core dump', 'D. Context switch'],
+      answer: 'B. Process state',
+      diff: 'easy',
+    },
+    {
+      q: 'The process state does NOT include:',
+      options: ['A. Program Counter', 'B. CPU registers', 'C. The entire program source code', 'D. Values in memory cells'],
+      answer: 'C. The entire program source code',
+      diff: 'medium',
+    }
+  ]
+},
+
+53: {
+  title: 'Operating Systems: Process and its Administration – Scheduler, Dispatcher, Process Table, Time Slices, Interrupts (CS101 Lecture 53)',
+  summary: `**Key Topics Covered:**
+- Scheduler and dispatcher (in kernel) coordinate process execution
+- Scheduler: maintains records of processes, adds new ones, removes completed ones
+- Process table: block in main memory with entry for each process
+  - Entry includes: memory area, priority, ready/waiting state
+  - Ready: process can continue; Waiting: delayed (I/O, keyboard, message)
+- Dispatcher: oversees execution via multiprogramming (time slices)
+- Time slice: short time segment (milliseconds/microseconds) for each process
+- Process switch (context switch): changing from one process to another
+- Timer circuit generates interrupt at end of time slice
+- Interrupt: signal that preempts current process, transfers control to dispatcher
+- Interrupt handler: program (part of dispatcher) that responds to interrupt
+- CPU reacts: completes current cycle, saves process state, executes handler
+- Dispatcher selects highest priority ready process, restarts timer, starts time slice
+- Key to multiprogramming: ability to save and restore process state (PC, registers, memory)
+- Modern CPUs have hardware support for saving/restoring state on interrupt
+
+---
+
+**Simple Understanding:**
+
+**Scheduler:**
+👉 Keeps track of all processes (running programs).
+👉 Adds new processes to the pool, removes finished ones.
+👉 Maintains the process table (info about each process).
+
+**Process Table Entry:**
+- Memory area assigned to the process.
+- Priority (higher priority gets CPU first).
+- Status: ready (can run) or waiting (waiting for I/O, key press, etc.).
+
+**Dispatcher:**
+👉 Gives each process a time slice to run.
+👉 Uses multiprogramming to switch between processes quickly.
+
+**Time Slice:**
+👉 Short time (ms or µs) each process gets to run.
+👉 After time slice ends, timer generates an interrupt.
+
+**Interrupt:**
+👉 Signal that stops current process.
+👉 CPU saves the process's state (program counter, registers, memory).
+👉 CPU jumps to interrupt handler (part of dispatcher).
+👉 Dispatcher picks the next ready process (highest priority) and restarts timer.
+
+**Process Switch (Context Switch):**
+👉 Changing from one process to another.
+👉 Requires saving and restoring process state.
+
+**Why Need Interrupts?**
+👉 Ensures fair sharing of CPU.
+👉 Prevents any single process from hogging the CPU.
+
+---
+
+**Important Vocabulary:**
+- Scheduler = manages process table, adds/removes processes
+- Dispatcher = allocates CPU time (time slices)
+- Process table = data structure with process info
+- Ready = process can run
+- Waiting = process blocked (I/O, etc.)
+- Time slice = maximum CPU time per process
+- Process switch = context switch
+- Interrupt = signal preempting current process
+- Interrupt handler = code that responds to interrupt
+- Save state = store PC, registers, memory for later resume
+
+---
+
+**Quick Revision Points:**
+- Scheduler maintains process table (memory, priority, status).
+- Dispatcher uses time slices and interrupts.
+- Timer triggers interrupt at end of time slice.
+- CPU saves process state, runs interrupt handler.
+- Dispatcher selects next ready process (highest priority).
+- Context switch = changing processes.
+- Modern CPUs have hardware support for saving/restoring state.`,
+
+  questions: [
+    {
+      q: 'Which OS components coordinate process execution?',
+      options: ['A. File manager and device driver', 'B. Scheduler and dispatcher', 'C. Memory manager and boot loader', 'D. GUI and shell'],
+      answer: 'B. Scheduler and dispatcher',
+      diff: 'easy',
+    },
+    {
+      q: 'What does the scheduler maintain in main memory to track processes?',
+      options: ['A. Process queue', 'B. Process table', 'C. Memory map', 'D. File table'],
+      answer: 'B. Process table',
+      diff: 'easy',
+    },
+    {
+      q: 'Which information is typically stored in a process table entry?',
+      options: ['A. Assigned memory area', 'B. Priority', 'C. Ready/waiting status', 'D. All of the above'],
+      answer: 'D. All of the above',
+      diff: 'easy',
+    },
+    {
+      q: 'A process is "ready" if:',
+      options: ['A. It is waiting for I/O', 'B. It can continue execution', 'C. It is finished', 'D. It is being created'],
+      answer: 'B. It can continue execution',
+      diff: 'easy',
+    },
+    {
+      q: 'A process is "waiting" if:',
+      options: ['A. It is currently running', 'B. Its progress is delayed (I/O, key press, message)', 'C. It has the highest priority', 'D. It is newly created'],
+      answer: 'B. Its progress is delayed (I/O, key press, message)',
+      diff: 'easy',
+    },
+    {
+      q: 'What does the dispatcher do in a time-sharing/multitasking system?',
+      options: ['A. Saves files', 'B. Allocates time slices to processes', 'C. Manages memory', 'D. Handles device drivers'],
+      answer: 'B. Allocates time slices to processes',
+      diff: 'easy',
+    },
+    {
+      q: 'What is a time slice?',
+      options: ['A. The time to boot the computer', 'B. A short time segment (ms/µs) allocated to a process', 'C. The time to complete a process', 'D. The time between interrupts'],
+      answer: 'B. A short time segment (ms/µs) allocated to a process',
+      diff: 'easy',
+    },
+    {
+      q: 'What happens when a time slice ends?',
+      options: ['A. The computer shuts down', 'B. A timer circuit generates an interrupt signal', 'C. The process is deleted', 'D. The scheduler stops'],
+      answer: 'B. A timer circuit generates an interrupt signal',
+      diff: 'medium',
+    },
+    {
+      q: 'What is an interrupt?',
+      options: ['A. A signal that preempts the current process and transfers control to the dispatcher', 'B. A hardware failure', 'C. A user command', 'D. A memory error'],
+      answer: 'A. A signal that preempts the current process and transfers control to the dispatcher',
+      diff: 'easy',
+    },
+    {
+      q: 'What does the interrupt handler do?',
+      options: ['A. It terminates the process', 'B. It describes how the dispatcher should respond to the interrupt', 'C. It increases the time slice', 'D. It saves the file system'],
+      answer: 'B. It describes how the dispatcher should respond to the interrupt',
+      diff: 'medium',
+    },
+    {
+      q: 'When an interrupt occurs, the CPU first:',
+      options: ['A. Shuts down', 'B. Completes its current machine cycle, saves its position in the current process', 'C. Restarts the computer', 'D. Clears all registers'],
+      answer: 'B. Completes its current machine cycle, saves its position in the current process',
+      diff: 'medium',
+    },
+    {
+      q: 'The procedure of changing from one process to another is called:',
+      options: ['A. Process switch (context switch)', 'B. Priority inversion', 'C. Time sharing', 'D. Multiprogramming'],
+      answer: 'A. Process switch (context switch)',
+      diff: 'easy',
+    },
+    {
+      q: 'Why is the ability to save and restore process state critical for multiprogramming?',
+      options: ['A. To reduce memory usage', 'B. To allow processes to be stopped and later restarted', 'C. To increase CPU speed', 'D. To simplify device drivers'],
+      answer: 'B. To allow processes to be stopped and later restarted',
+      diff: 'easy',
+    },
+    {
+      q: 'What does the process state include?',
+      options: ['A. Program counter', 'B. CPU registers', 'C. Pertinent memory cells', 'D. All of the above'],
+      answer: 'D. All of the above',
+      diff: 'easy',
+    },
+    {
+      q: 'After an interrupt, how does the dispatcher select the next process?',
+      options: ['A. Randomly', 'B. The one with the highest priority among ready processes', 'C. The longest waiting process', 'D. The largest memory size'],
+      answer: 'B. The one with the highest priority among ready processes',
+      diff: 'easy',
+    },
+    {
+      q: 'The dispatcher restarts the timer circuit after:',
+      options: ['A. Selecting a process', 'B. Saving the process table', 'C. Loading the OS', 'D. Shutting down'],
+      answer: 'A. Selecting a process',
+      diff: 'medium',
+    },
+    {
+      q: 'Modern CPUs often include machine-language instructions to:',
+      options: ['A. Disable interrupts', 'B. Reload a previously saved process state', 'C. Increase clock speed', 'D. Delete processes'],
+      answer: 'B. Reload a previously saved process state',
+      diff: 'medium',
+    },
+    {
+      q: 'Multiprogramming divides time into short segments called:',
+      options: ['A. Process blocks', 'B. Time slices', 'C. Interrupt handlers', 'D. Context units'],
+      answer: 'B. Time slices',
+      diff: 'easy',
+    },
+    {
+      q: 'Who adds a new process to the pool of current processes?',
+      options: ['A. Dispatcher', 'B. Interrupt handler', 'C. Scheduler', 'D. Memory manager'],
+      answer: 'C. Scheduler',
+      diff: 'easy',
+    },
+    {
+      q: 'The interrupt handler is part of which OS component?',
+      options: ['A. Scheduler', 'B. Dispatcher', 'C. File manager', 'D. Device driver'],
+      answer: 'B. Dispatcher',
+      diff: 'medium',
+    },
+    {
+      q: 'What happens to the process state when an interrupt occurs?',
+      options: ['A. It is lost', 'B. It is saved so the process can be resumed later', 'C. It is transferred to another process', 'D. It is deleted'],
+      answer: 'B. It is saved so the process can be resumed later',
+      diff: 'easy',
+    },
+    {
+      q: 'The concept of preemptive multitasking relies on:',
+      options: ['A. Processes voluntarily yielding CPU', 'B. Timer interrupts to force process switches', 'C. No interrupts', 'D. Single process at a time'],
+      answer: 'B. Timer interrupts to force process switches',
+      diff: 'easy',
+    },
+    {
+      q: 'If a process is waiting for a key press, its status is:',
+      options: ['A. Ready', 'B. Waiting', 'C. Running', 'D. Terminated'],
+      answer: 'B. Waiting',
+      diff: 'easy',
+    }
+  ]
+},
+
   },
 
   // ─────────────────────────────────────────
