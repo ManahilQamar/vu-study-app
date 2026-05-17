@@ -7666,6 +7666,2271 @@ Stopping distance: x = v₀²/(2μg).
 },
 
 
+11: {
+  "title": "Rotational Kinematics (PHY101 Lecture 11)",
+  "summary": "**Key Topics Covered:**\n- Rotational position and angular displacement\n- Radian measure\n- Angular speed (ω)\n- Angular acceleration (α)\n- Relationship between linear and rotational motion\n- Centripetal (radial) acceleration\n- Tangential acceleration\n- Uniform circular motion\n- Cross product of vectors\n\n---\n\n**Simple Understanding:**\n\n**Rotation and Revolution:**\n👉 In rotation, distance from a fixed center remains constant (radius).\n\n👉 Position is described by angle φ (phi), not x and y.\n\n---\n\n**Arc Length and Radian:**\n👉 Arc length (s) = radius (r) × angular displacement (φ)\n\n👉 `s = r φ`\n\n👉 One full revolution = 2π radians = 360°\n\n👉 1 radian ≈ 57.3°\n\n---\n\n**Angular Speed (ω):**\n👉 ω = rate of change of angle = dφ/dt\n\n👉 Unit: radians per second (rad/s)\n\n👉 Example: Clock second hand ω = 2π/60 = 0.105 rad/s\n\n---\n\n**Angular Acceleration (α):**\n👉 α = rate of change of angular speed = dω/dt\n\n👉 Unit: rad/s²\n\n👉 Also α = d²φ/dt²\n\n---\n\n**Relation between Linear and Rotational Motion:**\n👉 Linear speed v = r ω\n\n👉 Tangential acceleration aₜ = r α\n\n👉 Centripetal acceleration a_c = v²/r = r ω²\n\n---\n\n**Rotational Kinematics Equations (similar to linear):**\n👉 ω = ω₀ + α t\n\n👉 φ = φ₀ + ω₀ t + ½ α t²\n\n👉 ω² = ω₀² + 2α (φ – φ₀)\n\n---\n\n**Centripetal Acceleration:**\n👉 In uniform circular motion, speed is constant but direction changes.\n\n👉 Acceleration is toward center → centripetal.\n\n👉 a_c = v²/r (always inward)\n\n---\n\n**Total Acceleration:**\n👉 If speed also changes, there is tangential acceleration aₜ.\n\n👉 Total acceleration a = √(a_c² + aₜ²)\n\n---\n\n**Cross Product (Vector Product):**\n👉 A × B = |A||B| sinθ ˆn (perpendicular to both A and B)\n\n👉 ˆi × ˆj = ˆk,  ˆj × ˆk = ˆi,  ˆk × ˆi = ˆj\n\n👉 A × B = – (B × A)\n\n👉 For parallel vectors, cross product = 0\n\n---\n\n**Important Vocabulary:**\n- Angular displacement (φ) = change in angle\n- Radian = angle when arc length = radius\n- Angular speed (ω) = how fast angle changes\n- Angular acceleration (α) = how fast ω changes\n- Centripetal = toward center\n- Tangential = along the circle edge\n- Cross product = vector multiplication giving perpendicular vector\n\n---\n\n**Quick Revision Points:**\n- s = r φ (arc length formula)\n- 1 rev = 2π rad = 360°\n- v = r ω (linear speed from angular speed)\n- aₜ = r α (tangential acceleration)\n- a_c = v²/r = r ω² (centripetal acceleration)\n- Rotational equations match linear equations with: x→φ, v→ω, a→α\n- In uniform circular motion, only centripetal acceleration exists\n- Total acceleration = vector sum of a_c and aₜ\n- Cross product gives direction perpendicular to plane",
+  "questions": [
+    {
+      "q": "In rotational motion, the distance from the center to the object is called:",
+      "options": ["A. Arc length", "B. Radius", "C. Diameter", "D. Circumference"],
+      "answer": "B. Radius",
+      "diff": "easy"
+    },
+    {
+      "q": "The formula for arc length (s) in terms of radius (r) and angular displacement (φ) is:",
+      "options": ["A. s = r / φ", "B. s = φ / r", "C. s = r φ", "D. s = r + φ"],
+      "answer": "C. s = r φ",
+      "diff": "easy"
+    },
+    {
+      "q": "One complete revolution is equal to how many radians?",
+      "options": ["A. 1 radian", "B. 57.3 radians", "C. 2π radians", "D. 360 radians"],
+      "answer": "C. 2π radians",
+      "diff": "easy"
+    },
+    {
+      "q": "One radian is approximately equal to:",
+      "options": ["A. 360°", "B. 180°", "C. 57.3°", "D. 90°"],
+      "answer": "C. 57.3°",
+      "diff": "easy"
+    },
+    {
+      "q": "Angular speed (ω) is defined as the rate of change of:",
+      "options": ["A. Linear speed", "B. Angular displacement", "C. Arc length", "D. Time"],
+      "answer": "B. Angular displacement",
+      "diff": "easy"
+    },
+    {
+      "q": "The unit of angular speed is:",
+      "options": ["A. m/s", "B. m/s²", "C. rad/s", "D. rad/s²"],
+      "answer": "C. rad/s",
+      "diff": "easy"
+    },
+    {
+      "q": "The second hand of a clock completes one revolution in 60 seconds. Its angular speed is:",
+      "options": ["A. 2π rad/s", "B. π/30 rad/s", "C. 2π/60 rad/s", "D. Both B and C"],
+      "answer": "D. Both B and C",
+      "diff": "medium"
+    },
+    {
+      "q": "Angular acceleration (α) is defined as:",
+      "options": ["A. Rate of change of linear velocity", "B. Rate of change of angular velocity", "C. Rate of change of angle", "D. Rate of change of radius"],
+      "answer": "B. Rate of change of angular velocity",
+      "diff": "easy"
+    },
+    {
+      "q": "The relationship between linear speed (v) and angular speed (ω) is:",
+      "options": ["A. v = ω / r", "B. v = r ω", "C. v = r / ω", "D. v = ω² r"],
+      "answer": "B. v = r ω",
+      "diff": "easy"
+    },
+    {
+      "q": "Tangential acceleration (aₜ) is related to angular acceleration (α) by:",
+      "options": ["A. aₜ = α / r", "B. aₜ = r α", "C. aₜ = r / α", "D. aₜ = r α²"],
+      "answer": "B. aₜ = r α",
+      "diff": "medium"
+    },
+    {
+      "q": "Centripetal acceleration always points:",
+      "options": ["A. Away from the center", "B. Tangent to the circle", "C. Toward the center", "D. In the direction of motion"],
+      "answer": "C. Toward the center",
+      "diff": "easy"
+    },
+    {
+      "q": "The formula for centripetal acceleration is:",
+      "options": ["A. a_c = v r", "B. a_c = v² / r", "C. a_c = r / v²", "D. a_c = v / r"],
+      "answer": "B. a_c = v² / r",
+      "diff": "easy"
+    },
+    {
+      "q": "In uniform circular motion, which of the following is constant?",
+      "options": ["A. Velocity", "B. Speed", "C. Acceleration direction", "D. Angular acceleration"],
+      "answer": "B. Speed",
+      "diff": "medium"
+    },
+    {
+      "q": "If a wheel starts from rest and has angular acceleration α, after time t its angular speed is:",
+      "options": ["A. ω = α t²", "B. ω = ½ α t²", "C. ω = α t", "D. ω = α / t"],
+      "answer": "C. ω = α t",
+      "diff": "medium"
+    },
+    {
+      "q": "The rotational kinematic equation corresponding to v² = v₀² + 2a(x – x₀) is:",
+      "options": ["A. ω² = ω₀² + 2α (φ – φ₀)", "B. ω = ω₀ + α t", "C. φ = φ₀ + ω₀ t + ½ α t²", "D. ω = ω₀ + 2α φ"],
+      "answer": "A. ω² = ω₀² + 2α (φ – φ₀)",
+      "diff": "medium"
+    },
+    {
+      "q": "If an object rotates with constant angular speed, its angular acceleration is:",
+      "options": ["A. Positive", "B. Negative", "C. Zero", "D. Variable"],
+      "answer": "C. Zero",
+      "diff": "easy"
+    },
+    {
+      "q": "The cross product A × B is perpendicular to:",
+      "options": ["A. Only A", "B. Only B", "C. Both A and B", "D. Neither A nor B"],
+      "answer": "C. Both A and B",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following is true about cross product?",
+      "options": ["A. A × B = B × A", "B. A × B = – (B × A)", "C. A × A = 1", "D. A × B is a scalar"],
+      "answer": "B. A × B = – (B × A)",
+      "diff": "medium"
+    },
+    {
+      "q": "The magnitude of cross product A × B is equal to:",
+      "options": ["A. |A||B| cosθ", "B. |A||B| sinθ", "C. |A||B| tanθ", "D. |A|/|B| sinθ"],
+      "answer": "B. |A||B| sinθ",
+      "diff": "medium"
+    },
+    {
+      "q": "The cross product ˆi × ˆj equals:",
+      "options": ["A. ˆi", "B. ˆj", "C. ˆk", "D. 0"],
+      "answer": "C. ˆk",
+      "diff": "easy"
+    }
+  ]
+},
+
+
+12:{
+  "title": "Physics of Many Particles (PHY101 Lecture 12)",
+  "summary": "**Key Topics Covered:**\n- Center of mass definition and calculation\n- Center of mass for two or more particles\n- Velocity and acceleration of center of mass\n- External and internal forces\n- Rotational kinetic energy\n- Moment of inertia (I)\n- Torque (τ)\n- Combined translational and rotational motion\n- Rolling without slipping\n- Conservation of energy in rolling motion\n\n---\n\n**Simple Understanding:**\n\n**Center of Mass (CM):**\n👉 The point where the entire mass of a system appears to be concentrated.\n\n👉 It is the average position of all the mass in a system.\n\n👉 For two masses: `r_cm = (m1 r1 + m2 r2) / (m1 + m2)`\n\n👉 If masses are equal, CM is exactly in the middle.\n\n👉 If one mass is heavier, CM is closer to the heavier mass.\n\n---\n\n**Center of Mass for Many Particles:**\n👉 `r_cm = (1/M) Σ m_n r_n` where M = total mass\n\n👉 In 2D: `x_cm = (Σ m_i x_i)/M`, `y_cm = (Σ m_i y_i)/M`\n\n---\n\n**Velocity and Acceleration of CM:**\n👉 `v_cm = (1/M) Σ m_i v_i`\n\n👉 `a_cm = (1/M) Σ m_i a_i`\n\n👉 Newton's second law for CM: `Σ F_ext = M a_cm`\n\n👉 Internal forces cancel out (action-reaction pairs).\n\n---\n\n**Moment of Inertia (I):**\n👉 Rotational equivalent of mass.\n\n👉 For point masses: `I = Σ m_i r_i²` (r = distance from rotation axis)\n\n👉 For continuous bodies: `I = ∫ r² dm`\n\n---\n\n**Common Moments of Inertia:**\n👉 Hoop about cylinder axis: `I = MR²`\n\n👉 Solid disk/cylinder about axis: `I = ½ MR²`\n\n👉 Solid sphere about diameter: `I = ⅖ MR²`\n\n👉 Rectangular plate (sides a,b) about center: `I = 1/12 M(a² + b²)`\n\n---\n\n**Rotational Kinetic Energy:**\n👉 `K_rot = ½ I ω²`\n\n👉 Total KE for rolling object: `K = ½ M v_cm² + ½ I ω²`\n\n---\n\n**Torque (τ):**\n👉 Turning effect of force.\n\n👉 `τ = r × F`  (vector)\n\n👉 Magnitude: `τ = r F sinθ`\n\n👉 Unit: Newton-meter (Nm)\n\n---\n\n**Newton's Second Law for Rotation:**\n👉 `Σ τ_ext = I α`  (α = angular acceleration)\n\n---\n\n**Rolling Without Slipping:**\n👉 Condition: `v_cm = R ω`\n\n👉 Bottom point is instantaneously at rest.\n\n👉 Top point moves at `2 v_cm`.\n\n---\n\n**Energy Conservation in Rolling:**\n👉 `Mgh = ½ M v_cm² + ½ I ω²`\n\n---\n\n**Important Vocabulary:**\n- Center of mass = average mass position\n- Moment of inertia = resistance to angular acceleration\n- Torque = rotational force\n- Rigid body = non-deformable object\n- Rolling without slipping = no sliding at contact point\n- Translational motion = straight line motion\n- Rotational motion = spinning motion\n\n---\n\n**Quick Revision Points:**\n- CM can be outside the body (e.g., donut, ring)\n- `Σ F_ext = M a_cm` applies to any system\n- Moment of inertia depends on mass distribution, not just total mass\n- Hollow objects have larger I than solid objects of same mass\n- Torque = force × lever arm (perpendicular distance)\n- Rotational KE = ½ I ω²\n- For rolling without slipping: `v_cm = Rω`\n- Total KE of rolling object = translational KE + rotational KE\n- Work-energy theorem also applies to rotation: `W = ∫ τ dφ`",
+  "questions": [
+    {
+      "q": "The center of mass of a system is defined as:",
+      "options": ["A. The geometric center of the object", "B. The point where all mass is concentrated", "C. The heaviest point in the object", "D. The point where no forces act"],
+      "answer": "B. The point where all mass is concentrated",
+      "diff": "easy"
+    },
+    {
+      "q": "For two equal masses m placed at x = 2 m and x = 6 m, the center of mass is at:",
+      "options": ["A. 2 m", "B. 4 m", "C. 6 m", "D. 8 m"],
+      "answer": "B. 4 m",
+      "diff": "easy"
+    },
+    {
+      "q": "If one mass is much heavier than the other, the center of mass is:",
+      "options": ["A. Exactly midway", "B. Closer to the lighter mass", "C. Closer to the heavier mass", "D. Outside both masses"],
+      "answer": "C. Closer to the heavier mass",
+      "diff": "easy"
+    },
+    {
+      "q": "The velocity of the center of mass is given by:",
+      "options": ["A. v_cm = Σ m_i v_i", "B. v_cm = (1/M) Σ m_i v_i", "C. v_cm = Σ v_i", "D. v_cm = (1/M) Σ v_i"],
+      "answer": "B. v_cm = (1/M) Σ m_i v_i",
+      "diff": "medium"
+    },
+    {
+      "q": "Internal forces cancel out when calculating acceleration of center of mass because:",
+      "options": ["A. They are zero", "B. They are equal and opposite", "C. They are very small", "D. They act on different objects"],
+      "answer": "B. They are equal and opposite",
+      "diff": "medium"
+    },
+    {
+      "q": "Newton's second law for the center of mass states:",
+      "options": ["A. Σ F_int = M a_cm", "B. Σ F_ext = M a_cm", "C. Σ F_ext = 0", "D. Σ F_int = 0"],
+      "answer": "B. Σ F_ext = M a_cm",
+      "diff": "easy"
+    },
+    {
+      "q": "The moment of inertia of a point mass m at distance r from axis is:",
+      "options": ["A. m r", "B. m r²", "C. m / r", "D. m / r²"],
+      "answer": "B. m r²",
+      "diff": "easy"
+    },
+    {
+      "q": "The moment of inertia of a hoop (all mass on rim) about its central axis is:",
+      "options": ["A. ½ MR²", "B. MR²", "C. ⅖ MR²", "D. ⅓ MR²"],
+      "answer": "B. MR²",
+      "diff": "medium"
+    },
+    {
+      "q": "The moment of inertia of a solid disk about its central axis is:",
+      "options": ["A. MR²", "B. ½ MR²", "C. ⅖ MR²", "D. ⅓ MR²"],
+      "answer": "B. ½ MR²",
+      "diff": "medium"
+    },
+    {
+      "q": "Rotational kinetic energy is given by:",
+      "options": ["A. ½ M v²", "B. ½ I ω", "C. ½ I ω²", "D. I ω²"],
+      "answer": "C. ½ I ω²",
+      "diff": "easy"
+    },
+    {
+      "q": "Torque is defined as:",
+      "options": ["A. r ⋅ F", "B. r × F", "C. F × r", "D. r / F"],
+      "answer": "B. r × F",
+      "diff": "easy"
+    },
+    {
+      "q": "The magnitude of torque when force F is applied at angle θ to position vector r is:",
+      "options": ["A. r F cosθ", "B. r F sinθ", "C. r F tanθ", "D. r / F sinθ"],
+      "answer": "B. r F sinθ",
+      "diff": "medium"
+    },
+    {
+      "q": "Newton's second law for rotation is:",
+      "options": ["A. Σ F = m a", "B. Σ τ = I α", "C. Σ τ = I ω", "D. Σ F = I α"],
+      "answer": "B. Σ τ = I α",
+      "diff": "easy"
+    },
+    {
+      "q": "For a rigid body rolling without slipping, the condition is:",
+      "options": ["A. v_cm = ω / R", "B. v_cm = R ω", "C. v_cm = R / ω", "D. v_cm = ω"],
+      "answer": "B. v_cm = R ω",
+      "diff": "easy"
+    },
+    {
+      "q": "When a rigid body rolls without slipping, the point in contact with the ground has speed:",
+      "options": ["A. v_cm", "B. 2 v_cm", "C. 0", "D. v_cm/2"],
+      "answer": "C. 0",
+      "diff": "medium"
+    },
+    {
+      "q": "The total kinetic energy of a rolling object is:",
+      "options": ["A. ½ M v_cm²", "B. ½ I ω²", "C. ½ M v_cm² + ½ I ω²", "D. Mgh"],
+      "answer": "C. ½ M v_cm² + ½ I ω²",
+      "diff": "easy"
+    },
+    {
+      "q": "A solid sphere and a hollow sphere of same mass and radius roll down an incline. Which reaches the bottom first?",
+      "options": ["A. Solid sphere", "B. Hollow sphere", "C. Both together", "D. Depends on height"],
+      "answer": "A. Solid sphere",
+      "diff": "hard"
+    },
+    {
+      "q": "The work done by a constant torque τ during angular displacement Δφ is:",
+      "options": ["A. τ / Δφ", "B. τ Δφ", "C. ½ τ Δφ²", "D. τ Δφ²"],
+      "answer": "B. τ Δφ",
+      "diff": "medium"
+    },
+    {
+      "q": "Moment of inertia depends on:",
+      "options": ["A. Total mass only", "B. Mass distribution about axis", "C. Shape only", "D. Both B and mass distribution"],
+      "answer": "D. Both B and mass distribution",
+      "diff": "easy"
+    },
+    {
+      "q": "For a given total mass, which has the largest moment of inertia about its central axis?",
+      "options": ["A. Solid sphere", "B. Solid disk", "C. Hoop", "D. All equal"],
+      "answer": "C. Hoop",
+      "diff": "medium"
+    }
+  ]
+},
+  13: {
+  "title": "Physics of Many Particles (PHY101 Lecture 13)",
+  "summary": "**Key Topics Covered:**\n- Center of mass definition and calculation\n- Center of mass for two or more particles\n- Velocity and acceleration of center of mass\n- External and internal forces\n- Rotational kinetic energy\n- Moment of inertia (I)\n- Torque (τ)\n- Combined translational and rotational motion\n- Rolling without slipping\n- Conservation of energy in rolling motion\n\n---\n\n**Simple Understanding:**\n\n**Center of Mass (CM):**\n👉 The point where the entire mass of a system appears to be concentrated.\n\n👉 It is the average position of all the mass in a system.\n\n👉 For two masses: `r_cm = (m1 r1 + m2 r2) / (m1 + m2)`\n\n👉 If masses are equal, CM is exactly in the middle.\n\n👉 If one mass is heavier, CM is closer to the heavier mass.\n\n---\n\n**Center of Mass for Many Particles:**\n👉 `r_cm = (1/M) Σ m_n r_n` where M = total mass\n\n👉 In 2D: `x_cm = (Σ m_i x_i)/M`, `y_cm = (Σ m_i y_i)/M`\n\n---\n\n**Velocity and Acceleration of CM:**\n👉 `v_cm = (1/M) Σ m_i v_i`\n\n👉 `a_cm = (1/M) Σ m_i a_i`\n\n👉 Newton's second law for CM: `Σ F_ext = M a_cm`\n\n👉 Internal forces cancel out (action-reaction pairs).\n\n---\n\n**Moment of Inertia (I):**\n👉 Rotational equivalent of mass.\n\n👉 For point masses: `I = Σ m_i r_i²` (r = distance from rotation axis)\n\n👉 For continuous bodies: `I = ∫ r² dm`\n\n---\n\n**Common Moments of Inertia:**\n👉 Hoop about cylinder axis: `I = MR²`\n\n👉 Solid disk/cylinder about axis: `I = ½ MR²`\n\n👉 Solid sphere about diameter: `I = ⅖ MR²`\n\n👉 Rectangular plate (sides a,b) about center: `I = 1/12 M(a² + b²)`\n\n---\n\n**Rotational Kinetic Energy:**\n👉 `K_rot = ½ I ω²`\n\n👉 Total KE for rolling object: `K = ½ M v_cm² + ½ I ω²`\n\n---\n\n**Torque (τ):**\n👉 Turning effect of force.\n\n👉 `τ = r × F`  (vector)\n\n👉 Magnitude: `τ = r F sinθ`\n\n👉 Unit: Newton-meter (Nm)\n\n---\n\n**Newton's Second Law for Rotation:**\n👉 `Σ τ_ext = I α`  (α = angular acceleration)\n\n---\n\n**Rolling Without Slipping:**\n👉 Condition: `v_cm = R ω`\n\n👉 Bottom point is instantaneously at rest.\n\n👉 Top point moves at `2 v_cm`.\n\n---\n\n**Energy Conservation in Rolling:**\n👉 `Mgh = ½ M v_cm² + ½ I ω²`\n\n---\n\n**Important Vocabulary:**\n- Center of mass = average mass position\n- Moment of inertia = resistance to angular acceleration\n- Torque = rotational force\n- Rigid body = non-deformable object\n- Rolling without slipping = no sliding at contact point\n- Translational motion = straight line motion\n- Rotational motion = spinning motion\n\n---\n\n**Quick Revision Points:**\n- CM can be outside the body (e.g., donut, ring)\n- `Σ F_ext = M a_cm` applies to any system\n- Moment of inertia depends on mass distribution, not just total mass\n- Hollow objects have larger I than solid objects of same mass\n- Torque = force × lever arm (perpendicular distance)\n- Rotational KE = ½ I ω²\n- For rolling without slipping: `v_cm = Rω`\n- Total KE of rolling object = translational KE + rotational KE\n- Work-energy theorem also applies to rotation: `W = ∫ τ dφ`",
+  "questions": [
+    {
+      "q": "The center of mass of a system is defined as:",
+      "options": ["A. The geometric center of the object", "B. The point where all mass is concentrated", "C. The heaviest point in the object", "D. The point where no forces act"],
+      "answer": "B. The point where all mass is concentrated",
+      "diff": "easy"
+    },
+    {
+      "q": "For two equal masses m placed at x = 2 m and x = 6 m, the center of mass is at:",
+      "options": ["A. 2 m", "B. 4 m", "C. 6 m", "D. 8 m"],
+      "answer": "B. 4 m",
+      "diff": "easy"
+    },
+    {
+      "q": "If one mass is much heavier than the other, the center of mass is:",
+      "options": ["A. Exactly midway", "B. Closer to the lighter mass", "C. Closer to the heavier mass", "D. Outside both masses"],
+      "answer": "C. Closer to the heavier mass",
+      "diff": "easy"
+    },
+    {
+      "q": "The velocity of the center of mass is given by:",
+      "options": ["A. v_cm = Σ m_i v_i", "B. v_cm = (1/M) Σ m_i v_i", "C. v_cm = Σ v_i", "D. v_cm = (1/M) Σ v_i"],
+      "answer": "B. v_cm = (1/M) Σ m_i v_i",
+      "diff": "medium"
+    },
+    {
+      "q": "Internal forces cancel out when calculating acceleration of center of mass because:",
+      "options": ["A. They are zero", "B. They are equal and opposite", "C. They are very small", "D. They act on different objects"],
+      "answer": "B. They are equal and opposite",
+      "diff": "medium"
+    },
+    {
+      "q": "Newton's second law for the center of mass states:",
+      "options": ["A. Σ F_int = M a_cm", "B. Σ F_ext = M a_cm", "C. Σ F_ext = 0", "D. Σ F_int = 0"],
+      "answer": "B. Σ F_ext = M a_cm",
+      "diff": "easy"
+    },
+    {
+      "q": "The moment of inertia of a point mass m at distance r from axis is:",
+      "options": ["A. m r", "B. m r²", "C. m / r", "D. m / r²"],
+      "answer": "B. m r²",
+      "diff": "easy"
+    },
+    {
+      "q": "The moment of inertia of a hoop (all mass on rim) about its central axis is:",
+      "options": ["A. ½ MR²", "B. MR²", "C. ⅖ MR²", "D. ⅓ MR²"],
+      "answer": "B. MR²",
+      "diff": "medium"
+    },
+    {
+      "q": "The moment of inertia of a solid disk about its central axis is:",
+      "options": ["A. MR²", "B. ½ MR²", "C. ⅖ MR²", "D. ⅓ MR²"],
+      "answer": "B. ½ MR²",
+      "diff": "medium"
+    },
+    {
+      "q": "Rotational kinetic energy is given by:",
+      "options": ["A. ½ M v²", "B. ½ I ω", "C. ½ I ω²", "D. I ω²"],
+      "answer": "C. ½ I ω²",
+      "diff": "easy"
+    },
+    {
+      "q": "Torque is defined as:",
+      "options": ["A. r ⋅ F", "B. r × F", "C. F × r", "D. r / F"],
+      "answer": "B. r × F",
+      "diff": "easy"
+    },
+    {
+      "q": "The magnitude of torque when force F is applied at angle θ to position vector r is:",
+      "options": ["A. r F cosθ", "B. r F sinθ", "C. r F tanθ", "D. r / F sinθ"],
+      "answer": "B. r F sinθ",
+      "diff": "medium"
+    },
+    {
+      "q": "Newton's second law for rotation is:",
+      "options": ["A. Σ F = m a", "B. Σ τ = I α", "C. Σ τ = I ω", "D. Σ F = I α"],
+      "answer": "B. Σ τ = I α",
+      "diff": "easy"
+    },
+    {
+      "q": "For a rigid body rolling without slipping, the condition is:",
+      "options": ["A. v_cm = ω / R", "B. v_cm = R ω", "C. v_cm = R / ω", "D. v_cm = ω"],
+      "answer": "B. v_cm = R ω",
+      "diff": "easy"
+    },
+    {
+      "q": "When a rigid body rolls without slipping, the point in contact with the ground has speed:",
+      "options": ["A. v_cm", "B. 2 v_cm", "C. 0", "D. v_cm/2"],
+      "answer": "C. 0",
+      "diff": "medium"
+    },
+    {
+      "q": "The total kinetic energy of a rolling object is:",
+      "options": ["A. ½ M v_cm²", "B. ½ I ω²", "C. ½ M v_cm² + ½ I ω²", "D. Mgh"],
+      "answer": "C. ½ M v_cm² + ½ I ω²",
+      "diff": "easy"
+    },
+    {
+      "q": "A solid sphere and a hollow sphere of same mass and radius roll down an incline. Which reaches the bottom first?",
+      "options": ["A. Solid sphere", "B. Hollow sphere", "C. Both together", "D. Depends on height"],
+      "answer": "A. Solid sphere",
+      "diff": "hard"
+    },
+    {
+      "q": "The work done by a constant torque τ during angular displacement Δφ is:",
+      "options": ["A. τ / Δφ", "B. τ Δφ", "C. ½ τ Δφ²", "D. τ Δφ²"],
+      "answer": "B. τ Δφ",
+      "diff": "medium"
+    },
+    {
+      "q": "Moment of inertia depends on:",
+      "options": ["A. Total mass only", "B. Mass distribution about axis", "C. Shape only", "D. Both B and mass distribution"],
+      "answer": "D. Both B and mass distribution",
+      "diff": "easy"
+    },
+    {
+      "q": "For a given total mass, which has the largest moment of inertia about its central axis?",
+      "options": ["A. Solid sphere", "B. Solid disk", "C. Hoop", "D. All equal"],
+      "answer": "C. Hoop",
+      "diff": "medium"
+    }
+  ]
+},
+
+
+14: {
+  title: "Equilibrium of Rigid Bodies (PHY101 Lecture 14)",
+  summary: `**Key Topics Covered:**
+- Conditions for equilibrium (linear and angular momentum constant)
+- Net external force = 0
+- Net external torque = 0
+- Center of mass (CM) and center of gravity (CG)
+- Translational and rotational equilibrium
+- Lever, rod, beam, ladder problems
+- False balance and unknown mass problems
+- Torque about any point in equilibrium
+- Stable, unstable, neutral equilibrium
+- Difference between CM and CG
+
+---
+
+**Simple Understanding:**
+
+**What is Equilibrium?**
+👉 A body is in equilibrium if its linear momentum and angular momentum are constant.
+
+👉 For static equilibrium: linear momentum = 0 and angular momentum = 0.
+
+👉 Two main conditions:
+  1. Net external force = 0 (ΣF = 0)
+  2. Net external torque = 0 (Στ = 0)
+
+---
+
+**Translational Equilibrium:**
+👉 ΣF_x = 0 and ΣF_y = 0
+👉 Forces in all directions cancel out.
+
+---
+
+**Rotational Equilibrium:**
+👉 Στ = 0 about any point
+👉 Clockwise torques = Counterclockwise torques
+
+---
+
+**Torque Calculation:**
+👉 τ = r × F  → magnitude = r F sinθ
+👉 Choice of origin does not matter in equilibrium (torque same about any point)
+
+---
+
+**Center of Mass (CM):**
+👉 Average position of mass distribution.
+👉 r_cm = (Σ m_i r_i) / M
+👉 Path of CM is a parabola even if body rotates.
+
+---
+
+**Center of Gravity (CG):**
+👉 Average location of weight.
+👉 If g is constant over the body, CG coincides with CM.
+👉 If g varies, CG and CM are different.
+
+---
+
+**Types of Equilibrium:**
+👉 **Stable:** Returns to original position after small displacement (e.g., ball in a bowl)
+👉 **Unstable:** Moves away from original position (e.g., ball on top of a hill)
+👉 **Neutral:** Stays in new position (e.g., ball on flat floor)
+
+---
+
+**Practical Examples:**
+
+1. **Lever:** Small force can lift heavy load if lever arm is long.  
+   F_person × R = mg × r  ⇒ F_person = mg × (r/R)
+
+2. **False balance (unequal pans but equal arms):**  
+   True weight = (x + y)/2, where x and y are measured weights.
+
+3. **Raising wheel over obstacle:**  
+   Minimum force F = (mg × √(2rh - h²)) / (r - h)
+
+4. **Rod with weight moving along:** Tension and hinge forces depend on position x.
+
+5. **Leaning ladder / rod against wall:** Minimum angle without slipping given by friction coefficients.
+
+---
+
+**Important Vocabulary:**
+- Equilibrium = no net force and no net torque
+- Translational equilibrium = ΣF = 0
+- Rotational equilibrium = Στ = 0
+- Center of mass = average mass point
+- Center of gravity = average weight point
+- Torque = rotational force
+- Fulcrum = pivot point
+- Lever arm = perpendicular distance from pivot to force line
+
+---
+
+**Quick Revision Points:**
+- ΣF_ext = 0  and Στ_ext = 0 for equilibrium
+- Internal forces cancel out
+- Torque about any point is same in translational equilibrium
+- CG = CM when g is uniform
+- Lever: small force can balance large weight
+- False balance: true weight = average of two readings
+- Stable equilibrium: returns after tilt
+- Unstable: falls away
+- Neutral: stays where moved`,
+  questions: [
+    {
+      q: "For a rigid body to be in mechanical equilibrium, which of the following must be true?",
+      options: ["A. Net external force = 0 only", "B. Net external torque = 0 only", "C. Both net external force = 0 and net external torque = 0", "D. Net external force > 0"],
+      answer: "C. Both net external force = 0 and net external torque = 0",
+      diff: "easy"
+    },
+    {
+      q: "If the net external force on a body is zero, the body:",
+      options: ["A. Must be at rest", "B. Must move with constant velocity", "C. May be at rest or moving with constant velocity", "D. Must accelerate"],
+      answer: "C. May be at rest or moving with constant velocity",
+      diff: "medium"
+    },
+    {
+      q: "The condition Στ = 0 must hold about:",
+      options: ["A. Only the center of mass", "B. Only the center of gravity", "C. Any point", "D. Only the pivot point"],
+      answer: "C. Any point",
+      diff: "medium"
+    },
+    {
+      q: "In a lever system, a small force can lift a heavy load because:",
+      options: ["A. Torque depends on force and lever arm", "B. Friction helps", "C. Mass is reduced", "D. Gravity is weaker"],
+      answer: "A. Torque depends on force and lever arm",
+      diff: "easy"
+    },
+    {
+      q: "A lever has a fulcrum. If the load arm is shorter than the effort arm, the mechanical advantage is:",
+      options: ["A. Less than 1", "B. Equal to 1", "C. Greater than 1", "D. Zero"],
+      answer: "C. Greater than 1",
+      diff: "easy"
+    },
+    {
+      q: "In a false balance with equal arms but unequal pan weights, the true weight is:",
+      options: ["A. √(xy)", "B. (x+y)/2", "C. (x-y)/2", "D. x+y"],
+      answer: "B. (x+y)/2",
+      diff: "medium"
+    },
+    {
+      q: "If a body is in translational equilibrium, the sum of all external forces is:",
+      options: ["A. Maximum", "B. Minimum", "C. Zero", "D. Constant non-zero"],
+      answer: "C. Zero",
+      diff: "easy"
+    },
+    {
+      q: "The center of mass of a system:",
+      options: ["A. Always lies inside the body", "B. Can lie outside the body", "C. Is the geometric center", "D. Is the point with maximum mass"],
+      answer: "B. Can lie outside the body",
+      diff: "easy"
+    },
+    {
+      q: "When gravitational acceleration g is constant over a body, the center of gravity:",
+      options: ["A. Is different from center of mass", "B. Coincides with center of mass", "C. Lies below center of mass", "D. Lies above center of mass"],
+      answer: "B. Coincides with center of mass",
+      diff: "easy"
+    },
+    {
+      q: "A ball placed at the bottom of a bowl is an example of:",
+      options: ["A. Unstable equilibrium", "B. Neutral equilibrium", "C. Stable equilibrium", "D. Dynamic equilibrium"],
+      answer: "C. Stable equilibrium",
+      diff: "easy"
+    },
+    {
+      q: "A ball balanced on top of a hill is an example of:",
+      options: ["A. Stable equilibrium", "B. Unstable equilibrium", "C. Neutral equilibrium", "D. Static equilibrium"],
+      answer: "B. Unstable equilibrium",
+      diff: "easy"
+    },
+    {
+      q: "A ball on a flat horizontal surface is in:",
+      options: ["A. Stable equilibrium", "B. Unstable equilibrium", "C. Neutral equilibrium", "D. No equilibrium"],
+      answer: "C. Neutral equilibrium",
+      diff: "easy"
+    },
+    {
+      q: "The torque due to gravity about the center of mass of a body is:",
+      options: ["A. Maximum", "B. Minimum", "C. Zero", "D. Depends on orientation"],
+      answer: "C. Zero",
+      diff: "medium"
+    },
+    {
+      q: "To raise a wheel over an obstacle, the minimum force is applied:",
+      options: ["A. Vertically upward", "B. Horizontally at the axle", "C. At the top of wheel", "D. At the bottom"],
+      answer: "B. Horizontally at the axle",
+      diff: "hard"
+    },
+    {
+      q: "The path of the center of mass of a rotating object thrown in air is:",
+      options: ["A. A straight line", "B. A circle", "C. A parabola", "D. An ellipse"],
+      answer: "C. A parabola",
+      diff: "easy"
+    },
+    {
+      q: "A ladder leaning against a wall is in equilibrium. The wall exerts a force that is:",
+      options: ["A. Vertical only", "B. Horizontal only", "C. Both horizontal and vertical", "D. Zero"],
+      answer: "B. Horizontal only (assuming smooth wall)",
+      diff: "medium"
+    },
+    {
+      q: "If a body is in rotational equilibrium, the sum of clockwise torques equals:",
+      options: ["A. Zero", "B. Sum of counterclockwise torques", "C. Net force", "D. Mass times acceleration"],
+      answer: "B. Sum of counterclockwise torques",
+      diff: "easy"
+    },
+    {
+      q: "The condition ΣF_ext = 0 is necessary for:",
+      options: ["A. Only translational equilibrium", "B. Only rotational equilibrium", "C. Both translational and rotational equilibrium", "D. Neither"],
+      answer: "A. Only translational equilibrium",
+      diff: "medium"
+    },
+    {
+      q: "A person carries a heavy weight and leans forward to keep balance. This is because:",
+      options: ["A. To increase weight", "B. To keep center of gravity over feet", "C. To reduce friction", "D. To increase torque"],
+      answer: "B. To keep center of gravity over feet",
+      diff: "easy"
+    },
+    {
+      q: "For a uniform rod, the center of mass is located at:",
+      options: ["A. One end", "B. The geometric center", "C. Depends on weight", "D. At the heavier side"],
+      answer: "B. The geometric center",
+      diff: "easy"
+    }
+  ]
+},
+
+
+
+15: {
+  title: "Oscillations (PHY101 Lecture 15)",
+  summary: `**Key Topics Covered:**
+- Oscillation and vibration
+- Period (T), frequency (f), amplitude (A)
+- Restoring force and Hooke's Law
+- Simple Harmonic Motion (SHM)
+- Equation of motion for mass-spring system
+- Angular frequency (ω)
+- Energy in SHM (kinetic, potential, total)
+- Springs in series and parallel
+- Torsional oscillator
+
+---
+
+**Simple Understanding:**
+
+**What is Oscillation?**
+👉 Back-and-forth movement around a central point.
+👉 Examples: pendulum, guitar string, mass on a spring, floating object.
+
+---
+
+**Key Terms:**
+👉 **Period (T):** Time for one complete cycle (seconds)
+👉 **Frequency (f):** Number of cycles per second (Hertz, Hz)
+👉 **Amplitude (A or x_m):** Maximum displacement from equilibrium
+👉 **Relationship:** f = 1/T,  T = 1/f
+
+---
+
+**Restoring Force:**
+👉 Force always directed toward equilibrium position.
+👉 For a spring: Hooke's Law → F = –kx
+   (k = spring constant, x = displacement)
+👉 Negative sign means force opposes displacement.
+
+---
+
+**Simple Harmonic Motion (SHM):**
+👉 Motion where restoring force is proportional to displacement (F ∝ –x)
+👉 Equation: d²x/dt² + (k/m)x = 0
+👉 Solution: x = x_m cos(ωt + φ)
+   - x_m = amplitude
+   - ω = angular frequency = √(k/m)
+   - φ = phase constant (shifts the wave)
+
+---
+
+**Period and Frequency for Spring:**
+👉 T = 2π √(m/k)
+👉 f = (1/(2π)) √(k/m)
+
+---
+
+**Energy in SHM:**
+👉 Potential energy: U = ½ k x²
+👉 Kinetic energy: K = ½ m v²
+👉 Total energy: E = ½ k x_m² (constant)
+👉 Energy changes between U and K but total stays same.
+
+---
+
+**Springs in Series:**
+👉 1/k_eff = 1/k₁ + 1/k₂
+👉 k_eff is smaller than each individual spring.
+👉 T = 2π √(m/k_eff)
+
+**Springs in Parallel:**
+👉 k_eff = k₁ + k₂
+👉 k_eff is larger than each spring.
+👉 T = 2π √(m/k_eff)
+
+---
+
+**Torsional Oscillator:**
+👉 Twisting wire or shaft.
+👉 Torque τ = –κθ (κ = torsional constant, θ = angle)
+👉 Angular frequency ω = √(κ/I) (I = moment of inertia)
+
+---
+
+**Important Vocabulary:**
+- Oscillation = repeated back-and-forth motion
+- Period = time for one cycle
+- Frequency = cycles per second
+- Amplitude = maximum displacement
+- Restoring force = force that pulls back to equilibrium
+- Hooke's Law = F = –kx
+- Simple Harmonic Motion = SHM
+- Angular frequency = ω = 2πf
+- Phase = position in the cycle
+- Torsional = twisting motion
+
+---
+
+**Quick Revision Points:**
+- T = 1/f,  f = 1/T
+- For spring: T = 2π√(m/k), independent of amplitude
+- F = –kx (Hooke's Law)
+- SHM equation: a = –ω²x
+- Energy conserved: E = ½k x_m²
+- Series springs: 1/k_eff = sum of reciprocals
+- Parallel springs: k_eff = sum
+- Torsional: ω = √(κ/I)
+- Phase φ shifts the wave left/right
+- Maximum speed at x=0, zero speed at x = ±x_m`,
+  questions: [
+    {
+      q: "The time taken to complete one full cycle of oscillation is called:",
+      options: ["A. Frequency", "B. Period", "C. Amplitude", "D. Wavelength"],
+      answer: "B. Period",
+      diff: "easy"
+    },
+    {
+      q: "The number of cycles per second is measured in:",
+      options: ["A. Seconds", "B. Hertz", "C. Radians", "D. Meters"],
+      answer: "B. Hertz",
+      diff: "easy"
+    },
+    {
+      q: "The maximum displacement from equilibrium position is called:",
+      options: ["A. Period", "B. Frequency", "C. Amplitude", "D. Phase"],
+      answer: "C. Amplitude",
+      diff: "easy"
+    },
+    {
+      q: "Hooke's Law for an ideal spring states that the restoring force F is:",
+      options: ["A. F = kx", "B. F = –kx", "C. F = k/x", "D. F = –k/x"],
+      answer: "B. F = –kx",
+      diff: "easy"
+    },
+    {
+      q: "In simple harmonic motion, the acceleration is proportional to displacement and directed:",
+      options: ["A. Away from equilibrium", "B. Toward equilibrium", "C. Tangentially", "D. Randomly"],
+      answer: "B. Toward equilibrium",
+      diff: "easy"
+    },
+    {
+      q: "The angular frequency ω for a mass-spring system is given by:",
+      options: ["A. ω = √(m/k)", "B. ω = √(k/m)", "C. ω = k/m", "D. ω = m/k"],
+      answer: "B. ω = √(k/m)",
+      diff: "medium"
+    },
+    {
+      q: "The period of a mass-spring system is independent of:",
+      options: ["A. Mass", "B. Spring constant", "C. Amplitude", "D. Both A and B"],
+      answer: "C. Amplitude",
+      diff: "medium"
+    },
+    {
+      q: "If the mass attached to a spring is doubled, the period becomes:",
+      options: ["A. Half", "B. Same", "C. √2 times", "D. Double"],
+      answer: "C. √2 times",
+      diff: "medium"
+    },
+    {
+      q: "The total mechanical energy in SHM is:",
+      options: ["A. ½ k x²", "B. ½ m v²", "C. ½ k x_m²", "D. ½ m v_max²"],
+      answer: "C. ½ k x_m²",
+      diff: "medium"
+    },
+    {
+      q: "At the equilibrium position (x=0) in SHM, the kinetic energy is:",
+      options: ["A. Zero", "B. Maximum", "C. Half of total", "D. Equal to potential energy"],
+      answer: "B. Maximum",
+      diff: "easy"
+    },
+    {
+      q: "At the maximum displacement (x = ±x_m) in SHM, the speed is:",
+      options: ["A. Maximum", "B. Zero", "C. Half of maximum", "D. Constant"],
+      answer: "B. Zero",
+      diff: "easy"
+    },
+    {
+      q: "Two springs with constants k₁ and k₂ connected end to end (series) have effective spring constant:",
+      options: ["A. k₁ + k₂", "B. (k₁ k₂)/(k₁ + k₂)", "C. (k₁ + k₂)/(k₁ k₂)", "D. √(k₁ k₂)"],
+      answer: "B. (k₁ k₂)/(k₁ + k₂)",
+      diff: "medium"
+    },
+    {
+      q: "Two springs connected side by side (parallel) have effective spring constant:",
+      options: ["A. k₁ + k₂", "B. (k₁ k₂)/(k₁ + k₂)", "C. (k₁ + k₂)/2", "D. √(k₁ k₂)"],
+      answer: "A. k₁ + k₂",
+      diff: "medium"
+    },
+    {
+      q: "For springs in series, the period of oscillation compared to using only one spring (with same mass) is:",
+      options: ["A. Smaller", "B. Larger", "C. Same", "D. Zero"],
+      answer: "B. Larger",
+      diff: "hard"
+    },
+    {
+      q: "In a torsional oscillator, the restoring torque is proportional to:",
+      options: ["A. Angular velocity", "B. Angular displacement", "C. Moment of inertia", "D. Angular acceleration"],
+      answer: "B. Angular displacement",
+      diff: "medium"
+    },
+    {
+      q: "The angular frequency of a torsional oscillator is given by:",
+      options: ["A. ω = √(κ I)", "B. ω = √(κ/I)", "C. ω = √(I/κ)", "D. ω = κ/I"],
+      answer: "B. ω = √(κ/I)",
+      diff: "hard"
+    },
+    {
+      q: "The phase constant φ in x = x_m cos(ωt + φ) determines:",
+      options: ["A. Amplitude", "B. Frequency", "C. Initial position of the oscillator", "D. Total energy"],
+      answer: "C. Initial position of the oscillator",
+      diff: "medium"
+    },
+    {
+      q: "A pendulum is an example of SHM only for:",
+      options: ["A. Large angles", "B. Small angles", "C. Any angle", "D. No angle"],
+      answer: "B. Small angles",
+      diff: "easy"
+    },
+    {
+      q: "If the spring constant k is increased four times, the frequency becomes:",
+      options: ["A. Half", "B. Same", "C. Double", "D. Four times"],
+      answer: "C. Double",
+      diff: "medium"
+    },
+    {
+      q: "The SI unit of angular frequency ω is:",
+      options: ["A. Hertz", "B. Radian per second", "C. Second", "D. Meter per second"],
+      answer: "B. Radian per second",
+      diff: "easy"
+    }
+  ]
+},
+
+
+17: {
+  title: "Physics of Materials (PHY101 Lecture 17)",
+  summary: `**Key Topics Covered:**
+- States of matter: solids, liquids, gases, plasma
+- Elasticity and plasticity
+- Stress and strain (longitudinal, volume, shearing)
+- Hooke's Law and moduli of elasticity (Young, Bulk, Shear)
+- Poisson's ratio
+- Work done in stretching a wire
+- Stress-strain curve (elastic limit, ultimate strength)
+- Fluid statics: pressure, density, hydrostatic equilibrium
+- Pascal's principle and hydraulic lever/brakes
+- Measuring pressure: gauge pressure, manometer, mercury barometer
+- Archimedes' principle and buoyancy
+
+---
+
+**Simple Understanding:**
+
+**States of Matter:**
+👉 **Solid:** Fixed shape and volume, strong intermolecular forces.
+👉 **Liquid:** No fixed shape, takes container shape, particles can flow.
+👉 **Gas:** No fixed shape or volume, large spaces between particles.
+👉 **Plasma:** Highly charged particles, very high kinetic energy (e.g., Sun).
+
+---
+
+**Elasticity vs Plasticity:**
+👉 **Elastic:** Regains original shape after force removed (e.g., steel, quartz).
+👉 **Plastic:** Permanently deformed, no tendency to return (e.g., dough, plastic).
+
+---
+
+**Stress and Strain:**
+👉 **Stress** = Force / Area (units: N/m² or Pascal)
+👉 **Strain** = Change in dimension / Original dimension (no units)
+
+**Types of Stress:**
+- **Longitudinal (tensile/compressive):** along length
+- **Volume stress:** uniform pressure from all sides
+- **Shearing stress:** tangential force on a face
+
+**Types of Strain:**
+- Linear strain = Δl / l
+- Volume strain = ΔV / V
+- Shearing strain = θ (angular deformation in radians)
+
+---
+
+**Hooke's Law:**
+👉 Stress ∝ Strain  ⇒  Stress = E × Strain
+👉 E = modulus of elasticity (stiffness measure)
+
+**Three Moduli:**
+1. **Young's modulus (Y):** for linear strain  ⇒  Y = (F/A) / (Δl/l)
+2. **Bulk modulus (B):** for volume strain  ⇒  B = – ΔP / (ΔV/V)
+   - 1/B = compressibility
+3. **Shear modulus (η):** for shearing strain  ⇒  η = (F/A) / θ
+
+---
+
+**Poisson's Ratio (σ):**
+👉 σ = (lateral strain) / (longitudinal strain) = (Δr/r) / (Δl/l)
+👉 Value between 0 and 0.5.
+
+---
+
+**Work Done in Stretching a Wire:**
+👉 Work = ½ × load × extension
+👉 Energy per unit volume = ½ × stress × strain
+
+---
+
+**Stress-Strain Curve:**
+- **Proportional limit:** end of linear (Hooke's law) region
+- **Elastic limit:** max stress without permanent deformation
+- **Ultimate strength:** max stress before breaking
+- **Brittle:** breaks soon after elastic limit
+- **Ductile:** stretches (necking) before breaking
+
+---
+
+**Fluid Statics (Fluids at Rest):**
+👉 Fluid = substance that flows (liquids and gases).
+👉 Fluids only sustain normal forces (pressure), not tangential.
+👉 **Pressure** p = F/A (scalar, Pa = N/m²)
+👉 **Density** ρ = m/V (kg/m³)
+
+**Hydrostatic Equilibrium:**
+👉 dp/dy = –ρg  (pressure decreases with height)
+👉 For constant density: p₂ – p₁ = –ρg(y₂ – y₁)
+👉 At depth h below surface: p = p₀ + ρgh
+
+---
+
+**Pascal's Principle:**
+👉 Pressure applied to an enclosed fluid is transmitted undiminished to every point.
+👉 Hydraulic lever: Fᵢ/Aᵢ = Fₒ/Aₒ  ⇒  Fₒ = Fᵢ × (Aₒ/Aᵢ)
+👉 Work input = Work output  ⇒  Fᵢ dᵢ = Fₒ dₒ
+
+---
+
+**Measuring Pressure:**
+👉 **Gauge pressure** = actual pressure – atmospheric pressure
+👉 **Manometer:** p – p₀ = ρgh
+👉 **Mercury barometer:** p = ρgh  (1 atm = 760 mm Hg = 1.013×10⁵ Pa)
+👉 1 torr = 1 mm Hg = 133.3 Pa
+
+---
+
+**Archimedes' Principle:**
+👉 Buoyant force = weight of displaced fluid.
+👉 Apparent weight = true weight – upthrust
+👉 For a body of density ρ in fluid of density ρ':
+   - ρ' < ρ → sinks
+   - ρ' = ρ → hangs anywhere
+   - ρ' > ρ → floats (partially submerged)
+
+---
+
+**Important Vocabulary:**
+- Elasticity = ability to regain shape
+- Plasticity = permanent deformation
+- Stress = force per area
+- Strain = relative deformation
+- Young's modulus = stiffness for stretching
+- Bulk modulus = resistance to volume change
+- Shear modulus = resistance to sliding
+- Poisson's ratio = lateral contraction ratio
+- Hydrostatic = fluid at rest
+- Buoyancy = upward force from fluid
+
+---
+
+**Quick Revision Points:**
+- Stress = F/A, Strain = ΔL/L
+- Hooke's Law: Stress = E × Strain
+- Y = (F L) / (A ΔL)
+- B = –ΔP / (ΔV/V)
+- η = (F/A) / θ
+- Work per volume = ½ × stress × strain
+- Pressure in fluid: p = p₀ + ρgh
+- Pascal: pressure applied is transmitted equally
+- Hydraulic lever multiplies force (Aₒ/Aᵢ)
+- Archimedes: buoyant force = weight of displaced fluid`,
+  questions: [
+    {
+      q: "The property by which a body tends to regain its original shape after removal of force is called:",
+      options: ["A. Plasticity", "B. Elasticity", "C. Viscosity", "D. Ductility"],
+      answer: "B. Elasticity",
+      diff: "easy"
+    },
+    {
+      q: "Stress is defined as:",
+      options: ["A. Force × Area", "B. Force / Area", "C. Area / Force", "D. Change in length / Original length"],
+      answer: "B. Force / Area",
+      diff: "easy"
+    },
+    {
+      q: "Strain has units of:",
+      options: ["A. N/m²", "B. Pascal", "C. No units (dimensionless)", "D. kg/m³"],
+      answer: "C. No units (dimensionless)",
+      diff: "easy"
+    },
+    {
+      q: "Hooke's law states that within elastic limit:",
+      options: ["A. Stress is proportional to strain", "B. Stress is proportional to force", "C. Strain is proportional to area", "D. Stress equals strain"],
+      answer: "A. Stress is proportional to strain",
+      diff: "easy"
+    },
+    {
+      q: "Young's modulus Y is given by:",
+      options: ["A. (F/A) / (ΔL/L)", "B. (ΔL/L) / (F/A)", "C. F × L / A", "D. (F × A) / ΔL"],
+      answer: "A. (F/A) / (ΔL/L)",
+      diff: "medium"
+    },
+    {
+      q: "The bulk modulus B is defined for:",
+      options: ["A. Linear strain", "B. Shearing strain", "C. Volume strain", "D. Tensile strain"],
+      answer: "C. Volume strain",
+      diff: "medium"
+    },
+    {
+      q: "The reciprocal of bulk modulus is called:",
+      options: ["A. Young's modulus", "B. Shear modulus", "C. Compressibility", "D. Poisson's ratio"],
+      answer: "C. Compressibility",
+      diff: "medium"
+    },
+    {
+      q: "Poisson's ratio σ is the ratio of:",
+      options: ["A. Lateral strain to longitudinal strain", "B. Longitudinal strain to lateral strain", "C. Stress to strain", "D. Volume strain to linear strain"],
+      answer: "A. Lateral strain to longitudinal strain",
+      diff: "medium"
+    },
+    {
+      q: "The value of Poisson's ratio lies between:",
+      options: ["A. 0 and 1", "B. -1 and 0", "C. 0 and 0.5", "D. 0.5 and 1"],
+      answer: "C. 0 and 0.5",
+      diff: "hard"
+    },
+    {
+      q: "Work done per unit volume in stretching a wire is equal to:",
+      options: ["A. Stress × Strain", "B. ½ × Stress × Strain", "C. 2 × Stress × Strain", "D. Stress / Strain"],
+      answer: "B. ½ × Stress × Strain",
+      diff: "medium"
+    },
+    {
+      q: "The point on stress-strain curve beyond which permanent deformation occurs is called:",
+      options: ["A. Proportional limit", "B. Elastic limit", "C. Ultimate strength", "D. Breaking point"],
+      answer: "B. Elastic limit",
+      diff: "easy"
+    },
+    {
+      q: "Fluids (liquids and gases) possess which modulus of elasticity?",
+      options: ["A. Young's modulus", "B. Shear modulus", "C. Bulk modulus", "D. Both A and B"],
+      answer: "C. Bulk modulus",
+      diff: "medium"
+    },
+    {
+      q: "Pressure at a depth h in a fluid of density ρ (atmospheric pressure p₀) is:",
+      options: ["A. p = p₀ + ρgh", "B. p = p₀ – ρgh", "C. p = ρgh", "D. p = p₀/g + ρh"],
+      answer: "A. p = p₀ + ρgh",
+      diff: "easy"
+    },
+    {
+      q: "The hydrostatic equation dp/dy = –ρg shows that pressure:",
+      options: ["A. Increases with height", "B. Decreases with height", "C. Is constant with height", "D. Depends on container shape"],
+      answer: "B. Decreases with height",
+      diff: "easy"
+    },
+    {
+      q: "Pascal's principle states that pressure applied to an enclosed fluid is:",
+      options: ["A. Reduced at different points", "B. Amplified at the bottom", "C. Transmitted undiminished throughout", "D. Only transmitted horizontally"],
+      answer: "C. Transmitted undiminished throughout",
+      diff: "easy"
+    },
+    {
+      q: "In a hydraulic lift, if the output piston area is 10 times the input piston area, the output force is:",
+      options: ["A. 10 times input force", "B. 1/10 input force", "C. Equal to input force", "D. 100 times input force"],
+      answer: "A. 10 times input force",
+      diff: "medium"
+    },
+    {
+      q: "Gauge pressure is defined as:",
+      options: ["A. Absolute pressure", "B. Absolute pressure minus atmospheric pressure", "C. Atmospheric pressure minus absolute pressure", "D. Pressure at depth h"],
+      answer: "B. Absolute pressure minus atmospheric pressure",
+      diff: "easy"
+    },
+    {
+      q: "Standard atmospheric pressure (1 atm) in Pascals is approximately:",
+      options: ["A. 1.013 × 10³ Pa", "B. 1.013 × 10⁴ Pa", "C. 1.013 × 10⁵ Pa", "D. 1.013 × 10⁶ Pa"],
+      answer: "C. 1.013 × 10⁵ Pa",
+      diff: "easy"
+    },
+    {
+      q: "Archimedes' principle states that buoyant force equals:",
+      options: ["A. Weight of the body", "B. Weight of displaced fluid", "C. Volume of displaced fluid", "D. Density of fluid × volume of body"],
+      answer: "B. Weight of displaced fluid",
+      diff: "easy"
+    },
+    {
+      q: "A body will float in a liquid if its density is:",
+      options: ["A. Greater than liquid density", "B. Equal to liquid density", "C. Less than liquid density", "D. Zero"],
+      answer: "C. Less than liquid density",
+      diff: "easy"
+    }
+  ]
+},
+
+
+18: {
+  title: "Physics of Fluids (PHY101 Lecture 18)",
+  summary: `**Key Topics Covered:**
+- Surface tension and its measurement
+- Surface tension in terms of energy
+- Soap bubble formation and excess pressure
+- Laminar vs turbulent flow
+- Equation of continuity
+- Bernoulli's equation and applications
+- Dynamic lift (airplanes, atomizer, Venturi meter, Pitot tube)
+- Rotational vs irrotational flow
+- Superfluids
+
+---
+
+**Simple Understanding:**
+
+**What are Fluids?**
+👉 Substances that flow and take shape of container (liquids and gases).
+👉 No fixed shape, easily deform under force.
+👉 Characterized by viscosity (resistance to flow).
+
+---
+
+**Surface Tension:**
+👉 Force acting on liquid surface due to cohesive forces between molecules.
+👉 Molecules at surface are pulled inward → creates "skin" or tension.
+👉 Definition: γ = F/L (N/m)
+👉 Also: γ = ΔU/ΔA (energy per unit area change)
+
+**Measurement:**
+👉 For a sliding wire: γ = (T + w) / (2L)
+   (T = pulling force, w = weight of wire, L = length)
+
+**Excess Pressure in Bubble:**
+👉 Soap bubble (two surfaces): p – p₀ = 4γ/r
+👉 Liquid drop (one surface): p – p₀ = 2γ/r
+👉 Pressure difference inversely proportional to radius.
+
+---
+
+**Types of Fluid Flow:**
+👉 **Laminar:** smooth, parallel layers, no mixing.
+👉 **Turbulent:** chaotic, irregular, mixing occurs.
+
+---
+
+**Equation of Continuity:**
+👉 Conservation of mass for incompressible fluid.
+👉 A₁v₁ = A₂v₂  (Area × velocity = constant)
+👉 Narrower pipe → higher velocity.
+
+---
+
+**Bernoulli's Equation:**
+👉 For steady, non-viscous, incompressible flow:
+👉 p + ½ρv² + ρgy = constant
+👉 Sum of pressure energy, kinetic energy per volume, and potential energy per volume is constant.
+👉 Where speed is high, pressure is low.
+
+---
+
+**Applications of Bernoulli:**
+1. **Airplane wing (dynamic lift):** Air moves faster over curved top → lower pressure above → net upward lift.
+2. **Atomizer:** Fast air over tube lowers pressure, pulls liquid up.
+3. **Venturi meter:** Measures flow rate using pressure difference in constriction.
+4. **Pitot tube:** Measures fluid velocity using manometer: v = √(2ghρ'/ρ)
+
+---
+
+**Rotational vs Irrotational Flow:**
+👉 Irrotational: fluid element does not rotate about its center of mass.
+👉 Rotational: element rotates (e.g., spinning ball creates circulation).
+
+**Spinning Ball (Magnus effect):**
+👉 Rotation + steady flow → faster flow on one side → lower pressure → dynamic lift.
+
+---
+
+**Superfluids:**
+👉 Liquid helium at very low temperatures (near absolute zero).
+👉 Zero viscosity, flows without friction.
+👉 Can climb walls of container (quantum effect).
+
+---
+
+**Important Vocabulary:**
+- Surface tension = cohesive force on liquid surface
+- Viscosity = resistance to flow
+- Laminar = smooth layered flow
+- Turbulent = chaotic flow
+- Continuity equation = A₁v₁ = A₂v₂
+- Bernoulli's principle = pressure decreases when speed increases
+- Dynamic lift = upward force from pressure difference
+- Venturi effect = pressure drop in constriction
+- Superfluid = zero viscosity fluid
+
+---
+
+**Quick Revision Points:**
+- γ = F/L (N/m)
+- Excess pressure: bubble (4γ/r), drop (2γ/r)
+- Continuity: A₁v₁ = A₂v₂
+- Bernoulli: p + ½ρv² + ρgy = constant
+- High speed → low pressure
+- Airplane lift: faster air above wing → lower pressure
+- Venturi meter: measures flow rate
+- Pitot tube: measures velocity
+- Superfluid has zero viscosity`,
+  questions: [
+    {
+      q: "Surface tension is caused by:",
+      options: ["A. Adhesive forces between liquid and container", "B. Cohesive forces between liquid molecules", "C. Gravitational forces", "D. Viscous forces"],
+      answer: "B. Cohesive forces between liquid molecules",
+      diff: "easy"
+    },
+    {
+      q: "The SI unit of surface tension is:",
+      options: ["A. N/m²", "B. N/m", "C. J/m", "D. kg/m³"],
+      answer: "B. N/m",
+      diff: "easy"
+    },
+    {
+      q: "The excess pressure inside a soap bubble (with two surfaces) of radius r is:",
+      options: ["A. 2γ/r", "B. 4γ/r", "C. γ/r", "D. 8γ/r"],
+      answer: "B. 4γ/r",
+      diff: "medium"
+    },
+    {
+      q: "For a liquid drop (single surface), the excess pressure is:",
+      options: ["A. 2γ/r", "B. 4γ/r", "C. γ/r", "D. 8γ/r"],
+      answer: "A. 2γ/r",
+      diff: "medium"
+    },
+    {
+      q: "Smooth, orderly flow of fluid in parallel layers is called:",
+      options: ["A. Turbulent flow", "B. Laminar flow", "C. Rotational flow", "D. Compressible flow"],
+      answer: "B. Laminar flow",
+      diff: "easy"
+    },
+    {
+      q: "The equation of continuity for an incompressible fluid is:",
+      options: ["A. A₁v₁ = A₂v₂", "B. A₁/v₁ = A₂/v₂", "C. p₁v₁ = p₂v₂", "D. v₁A₂ = v₂A₁"],
+      answer: "A. A₁v₁ = A₂v₂",
+      diff: "easy"
+    },
+    {
+      q: "According to the equation of continuity, if the cross-sectional area of a pipe decreases, the fluid velocity:",
+      options: ["A. Decreases", "B. Increases", "C. Remains same", "D. Becomes zero"],
+      answer: "B. Increases",
+      diff: "easy"
+    },
+    {
+      q: "Bernoulli's equation is based on the principle of:",
+      options: ["A. Conservation of mass", "B. Conservation of energy", "C. Conservation of momentum", "D. Conservation of angular momentum"],
+      answer: "B. Conservation of energy",
+      diff: "easy"
+    },
+    {
+      q: "Bernoulli's equation states that for a steady, non-viscous, incompressible flow:",
+      options: ["A. p + ½ρv + ρgy = constant", "B. p + ½ρv² + ρgy = constant", "C. p + ρv² + ρgy = constant", "D. p + ½ρv² + gy = constant"],
+      answer: "B. p + ½ρv² + ρgy = constant",
+      diff: "medium"
+    },
+    {
+      q: "Where the speed of a fluid is high, the pressure is:",
+      options: ["A. High", "B. Low", "C. Zero", "D. Unchanged"],
+      answer: "B. Low",
+      diff: "easy"
+    },
+    {
+      q: "The lift on an airplane wing is due to:",
+      options: ["A. Higher pressure above the wing", "B. Lower pressure above the wing", "C. Higher pressure below the wing", "D. Both B and C"],
+      answer: "D. Both B and C",
+      diff: "medium"
+    },
+    {
+      q: "A Venturi meter is used to measure:",
+      options: ["A. Pressure", "B. Temperature", "C. Flow rate of fluid", "D. Density"],
+      answer: "C. Flow rate of fluid",
+      diff: "easy"
+    },
+    {
+      q: "A Pitot tube is used to measure:",
+      options: ["A. Fluid velocity", "B. Fluid temperature", "C. Fluid density", "D. Surface tension"],
+      answer: "A. Fluid velocity",
+      diff: "easy"
+    },
+    {
+      q: "The Magnus effect (curving of a spinning ball) is explained by:",
+      options: ["A. Equation of continuity", "B. Bernoulli's principle", "C. Pascal's law", "D. Archimedes' principle"],
+      answer: "B. Bernoulli's principle",
+      diff: "medium"
+    },
+    {
+      q: "A fluid with zero viscosity at very low temperatures is called:",
+      options: ["A. Ideal fluid", "B. Newtonian fluid", "C. Superfluid", "D. Compressible fluid"],
+      answer: "C. Superfluid",
+      diff: "easy"
+    },
+    {
+      q: "Surface tension in terms of energy is defined as:",
+      options: ["A. γ = ΔU/ΔA", "B. γ = ΔU × ΔA", "C. γ = ΔA/ΔU", "D. γ = ΔU × A"],
+      answer: "A. γ = ΔU/ΔA",
+      diff: "medium"
+    },
+    {
+      q: "For a given surface tension, a smaller soap bubble has:",
+      options: ["A. Lower excess pressure", "B. Higher excess pressure", "C. Same excess pressure", "D. Zero excess pressure"],
+      answer: "B. Higher excess pressure",
+      diff: "medium"
+    },
+    {
+      q: "In a Venturi meter, the pressure is lowest at the:",
+      options: ["A. Inlet", "B. Throat (narrowest part)", "C. Outlet", "D. Everywhere same"],
+      answer: "B. Throat (narrowest part)",
+      diff: "easy"
+    },
+    {
+      q: "Water flows from a wider pipe to a narrower pipe. The pressure in the narrower pipe is:",
+      options: ["A. Higher", "B. Lower", "C. Same", "D. Zero"],
+      answer: "B. Lower",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is NOT an assumption for Bernoulli's equation?",
+      options: ["A. Steady flow", "B. Non-viscous fluid", "C. Incompressible fluid", "D. Turbulent flow"],
+      answer: "D. Turbulent flow",
+      diff: "medium"
+    }
+  ]
+},
+
+
+19: {
+  title: "Physics of Sound (PHY101 Lecture 19)",
+  summary: `**Key Topics Covered:**
+- Nature of waves and sound waves
+- Sound generation (loudspeaker, vibrations)
+- Intensity of sound and decibel scale
+- Wave equation: wavelength, frequency, wave number, angular frequency
+- Waves in guitar strings (nodes, tension, frequency)
+- Fourier analysis and complex waveforms
+- Doppler effect (5 cases: observer moving, source moving, both moving)
+- Applications: ultrasound, sonar
+
+---
+
+**Simple Understanding:**
+
+**What are Waves?**
+👉 Disturbances that transfer energy without transferring matter.
+👉 Sound waves need a medium (air, water, solid) – cannot travel in vacuum.
+👉 Produced by vibrations (e.g., vocal cords, loudspeaker diaphragm).
+
+---
+
+**Sound in a Tube:**
+👉 Moving piston compresses layers of air → compressions (high pressure) and rarefactions (low pressure).
+👉 Energy transfers from one layer to next.
+
+---
+
+**Loudspeaker:**
+👉 Electrical signal → amplifier → coil in magnetic field → diaphragm vibrates.
+👉 Amplitude controls loudness, frequency controls pitch.
+👉 Human hearing: ~20 Hz to 20 kHz (above 15 kHz becomes inaudible for many).
+
+---
+
+**Intensity and Decibels:**
+👉 Sound intensity = power/area (W/m²)
+👉 Threshold of hearing I₀ = 10⁻¹² W/m²
+👉 Relative intensity (dB): β = 10 log₁₀(I/I₀)
+👉 Logarithmic scale handles large range.
+
+---
+
+**Wave Equation:**
+👉 y(x,t) = yₘ sin(2π/λ (x – vt))
+👉 Wavelength λ = distance between peaks.
+👉 Period T = time for one cycle, frequency ν = 1/T
+👉 Speed v = λν
+👉 Wave number k = 2π/λ, angular frequency ω = 2πν
+
+---
+
+**Guitar Strings:**
+👉 Nodes at both ends (points with no motion).
+👉 Fundamental frequency (lowest) + overtones (higher frequencies).
+👉 Frequency ν ∝ √(Tension / mass per unit length)
+👉 Thicker string → lower frequency.
+👉 Tuning changes tension → changes frequency.
+
+---
+
+**Fourier Analysis:**
+👉 Any periodic wave can be represented as sum of sine and cosine waves (different frequencies, amplitudes).
+👉 Fundamental frequency + overtones = complex waveform (music).
+👉 Pure tone = single frequency (boring).
+👉 Fourier transform analyzes sound in real time (tuning software).
+
+---
+
+**Doppler Effect:**
+👉 Change in observed frequency due to relative motion between source and observer.
+👉 Moving toward → higher frequency (pitch up).
+👉 Moving away → lower frequency (pitch down).
+
+**Five Cases:**
+1. Observer toward stationary source: ν' = ν (1 + vₒ/v)
+2. Observer away from stationary source: ν' = ν (1 – vₒ/v)
+3. Source toward stationary observer: ν' = ν [v/(v – vₛ)]
+4. Source away from stationary observer: ν' = ν [v/(v + vₛ)]
+5. Both moving: ν' = ν (v ± vₒ)/(v ∓ vₛ)  (upper signs = toward each other)
+
+---
+
+**Applications:**
+👉 Ultrasound (medical imaging, blood flow measurement using Doppler).
+👉 Sonar (underwater submarine detection, speed measurement).
+👉 Radar speed guns (electromagnetic waves, similar principle).
+
+---
+
+**Important Vocabulary:**
+- Compression = high pressure region
+- Rarefaction = low pressure region
+- Amplitude = maximum displacement (loudness)
+- Frequency = pitch (Hz)
+- Wavelength = distance between peaks
+- Decibel (dB) = logarithmic sound intensity unit
+- Fundamental = lowest frequency of vibration
+- Overtone = higher frequency harmonic
+- Fourier analysis = breaking wave into sine/cosine components
+- Doppler shift = frequency change due to motion
+
+---
+
+**Quick Revision Points:**
+- Sound needs a medium; cannot travel in vacuum.
+- v = λν,  T = 1/ν
+- β = 10 log₁₀(I/I₀) dB
+- Guitar ν ∝ √(T/μ)
+- Fourier: any wave = sum of sine/cosine waves
+- Doppler: toward → higher ν, away → lower ν
+- ν' = ν (v ± vₒ)/(v ∓ vₛ)`,
+  questions: [
+    {
+      q: "Sound waves are which type of waves?",
+      options: ["A. Electromagnetic waves", "B. Transverse waves", "C. Longitudinal mechanical waves", "D. Matter waves"],
+      answer: "C. Longitudinal mechanical waves",
+      diff: "easy"
+    },
+    {
+      q: "Sound cannot travel in vacuum because:",
+      options: ["A. Vacuum has no medium", "B. Sound is electromagnetic", "C. Vacuum is too cold", "D. Sound needs light"],
+      answer: "A. Vacuum has no medium",
+      diff: "easy"
+    },
+    {
+      q: "The threshold of hearing I₀ is approximately:",
+      options: ["A. 10⁻¹⁰ W/m²", "B. 10⁻¹² W/m²", "C. 10⁻⁶ W/m²", "D. 1 W/m²"],
+      answer: "B. 10⁻¹² W/m²",
+      diff: "easy"
+    },
+    {
+      q: "The sound intensity level in decibels is given by:",
+      options: ["A. β = 10 log₁₀(I/I₀)", "B. β = 20 log₁₀(I/I₀)", "C. β = 10 ln(I/I₀)", "D. β = log₁₀(I/I₀)"],
+      answer: "A. β = 10 log₁₀(I/I₀)",
+      diff: "medium"
+    },
+    {
+      q: "A sound of 10⁻⁶ W/m² has intensity level (in dB) relative to 10⁻¹² W/m²:",
+      options: ["A. 30 dB", "B. 60 dB", "C. 90 dB", "D. 120 dB"],
+      answer: "B. 60 dB",
+      diff: "medium"
+    },
+    {
+      q: "The speed of sound in air at room temperature is approximately:",
+      options: ["A. 340 m/s", "B. 3×10⁸ m/s", "C. 1500 m/s", "D. 100 m/s"],
+      answer: "A. 340 m/s",
+      diff: "easy"
+    },
+    {
+      q: "The relation between speed v, frequency ν and wavelength λ is:",
+      options: ["A. v = λ/ν", "B. v = ν/λ", "C. v = λν", "D. v = λ+ν"],
+      answer: "C. v = λν",
+      diff: "easy"
+    },
+    {
+      q: "In a guitar string, the frequency of vibration is proportional to:",
+      options: ["A. √(Tension/μ)", "B. √(μ/Tension)", "C. Tension/μ", "D. μ/Tension"],
+      answer: "A. √(Tension/μ)",
+      diff: "medium"
+    },
+    {
+      q: "Thicker guitar strings (more mass per unit length) produce:",
+      options: ["A. Higher frequency", "B. Lower frequency", "C. Same frequency", "D. No sound"],
+      answer: "B. Lower frequency",
+      diff: "easy"
+    },
+    {
+      q: "Nodes on a vibrating string are points where:",
+      options: ["A. Amplitude is maximum", "B. Amplitude is zero", "C. Frequency is maximum", "D. Tension is zero"],
+      answer: "B. Amplitude is zero",
+      diff: "easy"
+    },
+    {
+      q: "Fourier analysis states that any periodic wave can be represented as sum of:",
+      options: ["A. Only sine waves", "B. Only cosine waves", "C. Sine and cosine waves", "D. Exponential waves"],
+      answer: "C. Sine and cosine waves",
+      diff: "easy"
+    },
+    {
+      q: "The Doppler effect refers to change in:",
+      options: ["A. Amplitude due to motion", "B. Frequency due to relative motion", "C. Wavelength at rest", "D. Speed of sound"],
+      answer: "B. Frequency due to relative motion",
+      diff: "easy"
+    },
+    {
+      q: "If an observer moves toward a stationary sound source, the observed frequency:",
+      options: ["A. Increases", "B. Decreases", "C. Remains same", "D. Becomes zero"],
+      answer: "A. Increases",
+      diff: "easy"
+    },
+    {
+      q: "If a source of sound moves away from a stationary observer, the observed frequency:",
+      options: ["A. Increases", "B. Decreases", "C. Remains same", "D. Doubles"],
+      answer: "B. Decreases",
+      diff: "easy"
+    },
+    {
+      q: "When both source and observer move toward each other, the observed frequency ν' is:",
+      options: ["A. ν' = ν (v+vₒ)/(v+vₛ)", "B. ν' = ν (v+vₒ)/(v–vₛ)", "C. ν' = ν (v–vₒ)/(v+vₛ)", "D. ν' = ν (v–vₒ)/(v–vₛ)"],
+      answer: "B. ν' = ν (v+vₒ)/(v–vₛ)",
+      diff: "hard"
+    },
+    {
+      q: "A police car siren has frequency 500 Hz. If it moves toward you at 30 m/s (speed of sound 340 m/s), the heard frequency is approximately:",
+      options: ["A. 500 Hz", "B. 548 Hz", "C. 458 Hz", "D. 600 Hz"],
+      answer: "B. 548 Hz",
+      diff: "hard"
+    },
+    {
+      q: "The lowest frequency produced by a vibrating string is called:",
+      options: ["A. Overtone", "B. Harmonic", "C. Fundamental frequency", "D. Beat frequency"],
+      answer: "C. Fundamental frequency",
+      diff: "easy"
+    },
+    {
+      q: "Ultrasound waves have frequency:",
+      options: ["A. Below 20 Hz", "B. Between 20 Hz and 20 kHz", "C. Above 20 kHz", "D. Exactly 1 MHz"],
+      answer: "C. Above 20 kHz",
+      diff: "easy"
+    },
+    {
+      q: "SONAR stands for:",
+      options: ["A. Sound Navigation and Ranging", "B. Sonic Noise and Radar", "C. Sound Oscillation and Radiation", "D. Sonic Ranging"],
+      answer: "A. Sound Navigation and Ranging",
+      diff: "easy"
+    },
+    {
+      q: "The wave number k is defined as:",
+      options: ["A. k = λ/2π", "B. k = 2π/λ", "C. k = 2πν", "D. k = v/λ"],
+      answer: "B. k = 2π/λ",
+      diff: "medium"
+    }
+  ]
+},
+
+
+20: {
+  title: "Wave Motion (PHY101 Lecture 20)",
+  summary: `**Key Topics Covered:**
+- Constructive and destructive interference
+- Longitudinal vs transverse waves
+- Amplitude and power (energy ∝ amplitude²)
+- Plane waves and spherical waves
+- Phase, phase constant, superposition principle
+- Stationary waves (nodes and antinodes)
+- Beats (beat frequency)
+- Speed of sound (v = √(B/ρ))
+- Pulse propagation, phase velocity
+- Dispersion and shock waves (Mach number)
+
+---
+
+**Simple Understanding:**
+
+**Interference:**
+👉 **Constructive:** crest meets crest → waves add up → amplitude increases.
+   Condition: phase difference = 0, 2π, 4π, ...
+👉 **Destructive:** crest meets trough → waves cancel → amplitude decreases.
+   Condition: phase difference = π, 3π, 5π, ...
+
+---
+
+**Longitudinal Waves:**
+👉 Particle vibration parallel to wave direction (e.g., sound, spring, earthquake P-waves).
+👉 Consists of compressions (high pressure) and rarefactions (low pressure).
+
+**Transverse Waves:**
+👉 Particle vibration perpendicular to wave direction (e.g., light, water ripples, earthquake S-waves).
+👉 Consists of crests (peaks) and troughs (valleys).
+👉 Can be polarized (longitudinal cannot).
+
+---
+
+**Amplitude and Power:**
+👉 Energy (power) ∝ (amplitude)²
+👉 For a harmonic oscillator, total energy = ½ k xₘ² ∝ amplitude squared.
+
+---
+
+**Plane Waves:**
+👉 Infinite planar wavefronts, propagate in one direction.
+👉 Intensity constant if no absorption.
+
+**Spherical Waves:**
+👉 From a point source, wavefronts are spheres.
+👉 Power P = 4πr² I  ⇒  I ∝ 1/r² (inverse square law).
+
+---
+
+**Phase and Superposition:**
+👉 Phase = argument of sine/cosine: (kx – ωt – φ).
+👉 φ = phase constant (shifts wave).
+👉 Superposition principle: total displacement = y₁ + y₂ (linear systems).
+
+---
+
+**Stationary Waves (Standing Waves):**
+👉 Two identical waves traveling in opposite directions interfere.
+👉 y(x,t) = [2yₘ sin(kx)] cos(ωt)
+👉 Nodes: points with zero amplitude (kx = 0, π, 2π,...)
+👉 Antinodes: points with maximum amplitude (kx = π/2, 3π/2,...)
+
+---
+
+**Beats:**
+👉 Two waves with slightly different frequencies (ω₁ ≈ ω₂) produce beats.
+👉 Beat frequency = |ω₁ – ω₂| / (2π)  = |f₁ – f₂|
+👉 Amplitude modulates at beat frequency.
+
+---
+
+**Speed of Sound:**
+👉 v = √(B/ρ)  (B = bulk modulus, ρ = density)
+👉 Faster in liquids than gases, fastest in solids.
+
+---
+
+**Pulse Propagation:**
+👉 A pulse maintains shape if phase velocity is independent of frequency.
+👉 Phase velocity v = dx/dt = constant for non-dispersive medium.
+
+**Dispersion:**
+👉 If speed depends on frequency → dispersive medium → pulse spreads.
+
+**Shock Waves:**
+👉 Source moves faster than sound (supersonic, Mach number > 1).
+👉 Creates shock front (sonic boom).
+👉 Mach number = v_object / v_sound.
+
+---
+
+**Important Vocabulary:**
+- Constructive interference = waves add
+- Destructive interference = waves cancel
+- Longitudinal = parallel vibration
+- Transverse = perpendicular vibration
+- Node = zero displacement point
+- Antinode = maximum displacement point
+- Beats = periodic amplitude variation
+- Dispersion = frequency-dependent speed
+- Shock wave = supersonic pressure front
+- Mach number = speed ratio to sound
+
+---
+
+**Quick Revision Points:**
+- Constructive: Δφ = 0, 2π,...; Destructive: Δφ = π, 3π,...
+- Energy ∝ amplitude²
+- Spherical waves: I ∝ 1/r²
+- Standing wave: nodes at sin(kx)=0, antinodes at sin(kx)=±1
+- Beat frequency = |f₁ – f₂|
+- v_sound = √(B/ρ) (gas/liquid) or √(Y/ρ) (solid rod)
+- Phase velocity = v = λf
+- Dispersion causes pulse spreading
+- Shock wave when v_object > v_sound`,
+  questions: [
+    {
+      q: "When two waves meet in phase (crest to crest), the interference is called:",
+      options: ["A. Destructive", "B. Constructive", "C. Stationary", "D. Dispersive"],
+      answer: "B. Constructive",
+      diff: "easy"
+    },
+    {
+      q: "The condition for destructive interference is a phase difference of:",
+      options: ["A. 0", "B. π", "C. 2π", "D. 0, 2π, 4π,..."],
+      answer: "B. π",
+      diff: "easy"
+    },
+    {
+      q: "In longitudinal waves, the particle vibration is:",
+      options: ["A. Perpendicular to wave direction", "B. Parallel to wave direction", "C. Circular", "D. Random"],
+      answer: "B. Parallel to wave direction",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is an example of transverse waves?",
+      options: ["A. Sound waves in air", "B. Light waves", "C. Spring waves (compression)", "D. Earthquake P-waves"],
+      answer: "B. Light waves",
+      diff: "easy"
+    },
+    {
+      q: "The energy carried by a wave is proportional to the square of its:",
+      options: ["A. Frequency", "B. Wavelength", "C. Amplitude", "D. Speed"],
+      answer: "C. Amplitude",
+      diff: "easy"
+    },
+    {
+      q: "For spherical waves emitted from a point source, the intensity I varies with distance r as:",
+      options: ["A. I ∝ 1/r", "B. I ∝ 1/r²", "C. I ∝ 1/r³", "D. I ∝ constant"],
+      answer: "B. I ∝ 1/r²",
+      diff: "medium"
+    },
+    {
+      q: "A plane wave has wavefronts that are:",
+      options: ["A. Spheres", "B. Cylinders", "C. Planes", "D. Irregular"],
+      answer: "C. Planes",
+      diff: "easy"
+    },
+    {
+      q: "The phase constant φ in y = yₘ sin(kx – ωt – φ) determines:",
+      options: ["A. Amplitude", "B. Frequency", "C. Wave speed", "D. Initial position of wave"],
+      answer: "D. Initial position of wave",
+      diff: "medium"
+    },
+    {
+      q: "The superposition principle states that the total displacement is the:",
+      options: ["A. Product of individual displacements", "B. Sum of individual displacements", "C. Difference of displacements", "D. Ratio of displacements"],
+      answer: "B. Sum of individual displacements",
+      diff: "easy"
+    },
+    {
+      q: "In a stationary wave, nodes are points where the amplitude is:",
+      options: ["A. Maximum", "B. Minimum (zero)", "C. Half of maximum", "D. Double"],
+      answer: "B. Minimum (zero)",
+      diff: "easy"
+    },
+    {
+      q: "The distance between two consecutive nodes in a standing wave is:",
+      options: ["A. λ", "B. λ/2", "C. λ/4", "D. 2λ"],
+      answer: "B. λ/2",
+      diff: "medium"
+    },
+    {
+      q: "Beat frequency is equal to:",
+      options: ["A. |f₁ + f₂|", "B. |f₁ – f₂|", "C. (f₁ + f₂)/2", "D. √(f₁ f₂)"],
+      answer: "B. |f₁ – f₂|",
+      diff: "easy"
+    },
+    {
+      q: "When two tuning forks of frequencies 256 Hz and 260 Hz are sounded together, the beat frequency is:",
+      options: ["A. 516 Hz", "B. 258 Hz", "C. 4 Hz", "D. 2 Hz"],
+      answer: "C. 4 Hz",
+      diff: "medium"
+    },
+    {
+      q: "The speed of sound in a fluid (gas or liquid) is given by:",
+      options: ["A. v = √(Y/ρ)", "B. v = √(B/ρ)", "C. v = √(ρ/B)", "D. v = √(Bρ)"],
+      answer: "B. v = √(B/ρ)",
+      diff: "medium"
+    },
+    {
+      q: "In which medium does sound travel fastest?",
+      options: ["A. Air", "B. Water", "C. Steel", "D. Vacuum"],
+      answer: "C. Steel",
+      diff: "easy"
+    },
+    {
+      q: "If a medium is dispersive, then:",
+      options: ["A. Wave speed is independent of frequency", "B. Wave speed depends on frequency", "C. Amplitude decays", "D. Waves cannot propagate"],
+      answer: "B. Wave speed depends on frequency",
+      diff: "medium"
+    },
+    {
+      q: "The phase velocity of a wave is defined as:",
+      options: ["A. Speed of energy transfer", "B. Speed of a constant phase point", "C. Group velocity", "D. Speed of particles"],
+      answer: "B. Speed of a constant phase point",
+      diff: "medium"
+    },
+    {
+      q: "A shock wave is produced when the source speed is:",
+      options: ["A. Less than sound speed", "B. Equal to sound speed", "C. Greater than sound speed", "D. Zero"],
+      answer: "C. Greater than sound speed",
+      diff: "easy"
+    },
+    {
+      q: "Mach number is defined as the ratio of:",
+      options: ["A. Object speed to sound speed", "B. Sound speed to object speed", "C. Frequency to wavelength", "D. Amplitude to wavelength"],
+      answer: "A. Object speed to sound speed",
+      diff: "easy"
+    },
+    {
+      q: "Two waves y₁ = A sin(kx – ωt) and y₂ = A sin(kx – ωt + π) superpose. The resultant amplitude is:",
+      options: ["A. 2A", "B. A", "C. 0", "D. A/√2"],
+      answer: "C. 0",
+      diff: "medium"
+    }
+  ]
+},
+
+
+21: {
+  title: "Gravity (PHY101 Lecture 21)",
+  summary: `**Key Topics Covered:**
+- Newton's Law of Universal Gravitation
+- Gravitational constant G (Cavendish experiment)
+- Mass, volume, density of Earth
+- Gravitational potential energy
+- Escape velocity
+- Satellite motion (orbital speed, period, geostationary orbit)
+- Kepler's Laws (ellipses, equal areas, period squared ∝ radius cubed)
+- Sling shot effect (gravity assist)
+- Variation of g with height and depth
+
+---
+
+**Simple Understanding:**
+
+**Newton's Law of Gravitation:**
+👉 Every mass attracts every other mass with force:
+   F = G m₁ m₂ / r²
+👉 Direction: along line joining the masses, attractive.
+👉 G = 6.67 × 10⁻¹¹ N·m²/kg² (very small, measured by Cavendish).
+
+---
+
+**Gravitational Potential Energy:**
+👉 U = –GMm / r   (zero at infinity, negative means bound)
+👉 Work done to bring mass from infinity to point r is stored as U.
+👉 Near Earth surface (h << Rₑ): ΔU = mgh
+
+---
+
+**Escape Velocity:**
+👉 Minimum speed to escape Earth's gravity forever.
+👉 vₑ = √(2GM/R) ≈ 11.2 km/s for Earth.
+👉 For black hole: vₑ > c → Schwarzschild radius R = 2GM/c².
+
+---
+
+**Satellite Motion (Circular Orbit):**
+👉 Centripetal force = gravity: mv²/r = GMm/r²
+👉 Orbital speed: v = √(GM/r)
+👉 Period: T = 2π√(r³/GM)
+👉 For geostationary: T = 24 h, r ≈ 42,000 km (height ≈ 36,000 km).
+
+---
+
+**Kepler's Laws:**
+1. **Law of Orbits:** Planets move in ellipses, Sun at one focus.
+2. **Law of Areas:** Line from Sun to planet sweeps equal areas in equal times.
+   (⇒ angular momentum conserved, because gravity is central force)
+3. **Law of Periods:** T² ∝ r³  (for circular orbits: T² = (4π²/GM) r³)
+
+---
+
+**Sling Shot Effect (Gravity Assist):**
+👉 Spacecraft gains speed by passing near a moving planet.
+👉 Elastic collision in planet's frame: relative speed unchanged.
+👉 Final speed can be larger than initial (up to 2V + vᵢ).
+
+---
+
+**Variation of g:**
+👉 On surface: g = GM/R² ≈ 9.8 m/s²
+👉 At height h: g(h) = GM/(R+h)² ≈ g(1 – 2h/R) for h<<R
+👉 At depth d below surface: g(d) = g (1 – d/R)  (linear decrease)
+👉 At center of Earth: g = 0
+
+---
+
+**Important Vocabulary:**
+- Gravitational constant G = universal constant
+- Escape velocity = speed to break free
+- Geostationary = same rotation as Earth
+- Kepler's laws = planetary motion rules
+- Central force = force directed toward center
+- Schwarzschild radius = black hole event horizon
+- Gravity assist = sling shot maneuver
+
+---
+
+**Quick Revision Points:**
+- F = G m₁ m₂ / r²
+- U = –GMm/r
+- vₑ = √(2GM/R)
+- Satellite v = √(GM/r), T = 2π√(r³/GM)
+- Kepler III: T² ∝ r³
+- Inside Earth: g ∝ r (linearly decreasing to zero at center)
+- Outside Earth: g ∝ 1/r²
+- Geostationary radius: ~42,000 km from Earth center`,
+  questions: [
+    {
+      q: "Newton's law of universal gravitation states that the force between two masses is:",
+      options: ["A. F = G m₁ m₂ r²", "B. F = G m₁ m₂ / r²", "C. F = G m₁ m₂ / r", "D. F = G (m₁ + m₂)/r²"],
+      answer: "B. F = G m₁ m₂ / r²",
+      diff: "easy"
+    },
+    {
+      q: "The gravitational constant G was first measured by:",
+      options: ["A. Newton", "B. Cavendish", "C. Galileo", "D. Kepler"],
+      answer: "B. Cavendish",
+      diff: "easy"
+    },
+    {
+      q: "The value of gravitational constant G is approximately:",
+      options: ["A. 6.67 × 10⁻¹¹ N·m²/kg²", "B. 9.8 N·m²/kg²", "C. 3 × 10⁸ N·m²/kg²", "D. 6.67 × 10¹¹ N·m²/kg²"],
+      answer: "A. 6.67 × 10⁻¹¹ N·m²/kg²",
+      diff: "easy"
+    },
+    {
+      q: "Gravitational potential energy at distance r from a mass M is given by:",
+      options: ["A. U = +GMm/r", "B. U = –GMm/r", "C. U = GMm/r²", "D. U = –GMm/r²"],
+      answer: "B. U = –GMm/r",
+      diff: "medium"
+    },
+    {
+      q: "Escape velocity from Earth's surface is approximately:",
+      options: ["A. 7.9 km/s", "B. 11.2 km/s", "C. 3.0 × 10⁵ km/s", "D. 9.8 km/s"],
+      answer: "B. 11.2 km/s",
+      diff: "easy"
+    },
+    {
+      q: "The Schwarzschild radius of a black hole is defined as the radius where:",
+      options: ["A. Escape velocity = speed of light", "B. Gravity becomes zero", "C. Time stops", "D. Density is zero"],
+      answer: "A. Escape velocity = speed of light",
+      diff: "medium"
+    },
+    {
+      q: "The orbital speed of a satellite in circular orbit of radius r around Earth is:",
+      options: ["A. v = √(GM/r)", "B. v = √(2GM/r)", "C. v = GM/r", "D. v = √(r/GM)"],
+      answer: "A. v = √(GM/r)",
+      diff: "medium"
+    },
+    {
+      q: "The period of a satellite in circular orbit is proportional to:",
+      options: ["A. r³/²", "B. r²", "C. r", "D. √r"],
+      answer: "A. r³/²",
+      diff: "medium"
+    },
+    {
+      q: "Kepler's second law (equal areas in equal times) is a consequence of:",
+      options: ["A. Conservation of energy", "B. Conservation of angular momentum", "C. Conservation of linear momentum", "D. Newton's third law"],
+      answer: "B. Conservation of angular momentum",
+      diff: "medium"
+    },
+    {
+      q: "According to Kepler's third law, T² ∝ r³. For Earth, T=1 year, r=1 AU. For a planet at 4 AU, the period is:",
+      options: ["A. 2 years", "B. 4 years", "C. 8 years", "D. 16 years"],
+      answer: "C. 8 years",
+      diff: "hard"
+    },
+    {
+      q: "A geostationary satellite has an orbital period of:",
+      options: ["A. 12 hours", "B. 24 hours", "C. 1 hour", "D. 1 month"],
+      answer: "B. 24 hours",
+      diff: "easy"
+    },
+    {
+      q: "The acceleration due to gravity g at a depth d below Earth's surface (compared to surface value) is:",
+      options: ["A. g(d) = g(1 – d/R)", "B. g(d) = g(1 – 2d/R)", "C. g(d) = g/(1+d/R)", "D. g(d) = g(1 + d/R)"],
+      answer: "A. g(d) = g(1 – d/R)",
+      diff: "medium"
+    },
+    {
+      q: "At the center of the Earth, the value of g is:",
+      options: ["A. 9.8 m/s²", "B. 0", "C. 4.9 m/s²", "D. Infinity"],
+      answer: "B. 0",
+      diff: "easy"
+    },
+    {
+      q: "If a satellite is orbiting close to Earth's surface (h << R), its orbital speed is approximately:",
+      options: ["A. 11.2 km/s", "B. 7.9 km/s", "C. 3 km/s", "D. 1 km/s"],
+      answer: "B. 7.9 km/s",
+      diff: "medium"
+    },
+    {
+      q: "The slingshot effect (gravity assist) uses which type of collision to increase spacecraft speed?",
+      options: ["A. Inelastic", "B. Elastic", "C. Superelastic", "D. Completely inelastic"],
+      answer: "B. Elastic",
+      diff: "medium"
+    },
+    {
+      q: "A uniform spherical shell exerts gravitational force on a particle inside it:",
+      options: ["A. Toward the center", "B. Away from center", "C. Zero", "D. Depends on position"],
+      answer: "C. Zero",
+      diff: "easy"
+    },
+    {
+      q: "If the radius of Earth shrinks by half but mass remains same, g on surface becomes:",
+      options: ["A. Half", "B. Same", "C. 4 times", "D. 2 times"],
+      answer: "C. 4 times",
+      diff: "medium"
+    },
+    {
+      q: "The total mechanical energy of a satellite in circular orbit is:",
+      options: ["A. Positive", "B. Zero", "C. Negative", "D. Infinite"],
+      answer: "C. Negative",
+      diff: "easy"
+    },
+    {
+      q: "Kepler's first law states that planets move in:",
+      options: ["A. Circles with Sun at center", "B. Ellipses with Sun at one focus", "C. Parabolas", "D. Hyperbolas"],
+      answer: "B. Ellipses with Sun at one focus",
+      diff: "easy"
+    },
+    {
+      q: "If the distance between two masses is doubled, the gravitational force becomes:",
+      options: ["A. Double", "B. Half", "C. One-fourth", "D. Four times"],
+      answer: "C. One-fourth",
+      diff: "easy"
+    }
+  ]
+},
+
+22: {
+  title: "Electrostatics I (PHY101 Lecture 22)",
+  summary: `**Key Topics Covered:**
+- Electric charge: positive and negative, attraction/repulsion
+- Conductors, insulators, semiconductors
+- Coulomb's Law
+- Quantization of charge (Millikan oil drop experiment)
+- Conservation of charge
+- Electric field (concept, definition, field lines)
+- Electric field due to point charge
+- Electric dipole and dipole moment
+- Dipole in uniform electric field (torque, potential energy)
+- Applications: photocopier, inkjet printer, lightning
+
+---
+
+**Simple Understanding:**
+
+**Electric Charge:**
+👉 Two types: positive (+) and negative (–)
+👉 Like charges repel, opposite charges attract.
+👉 Charge is quantized: q = n e, where e = 1.6 × 10⁻¹⁹ C.
+
+---
+
+**Conductors, Insulators, Semiconductors:**
+👉 **Conductors:** Many free electrons (metals, salt water).
+👉 **Insulators:** Electrons tightly bound (plastic, wood, pure water).
+👉 **Semiconductors:** Few free electrons (silicon, germanium) – used in transistors.
+
+---
+
+**Coulomb's Law:**
+👉 Force between two point charges:
+   F = (1/4πε₀) × (q₁ q₂ / r²)
+👉 ε₀ = 8.85 × 10⁻¹² C²/N·m² (permittivity of free space)
+👉 k = 1/(4πε₀) = 9 × 10⁹ N·m²/C²
+
+---
+
+**Electric Field (E):**
+👉 Region around charge where force is felt.
+👉 Definition: E = F / q₀  (test charge, unit: N/C)
+👉 Field lines: start on + charge, end on – charge.
+👉 For point charge: E = (1/4πε₀) × (q / r²)
+
+---
+
+**Millikan Oil Drop Experiment:**
+👉 Measured charge of electron.
+👉 Balanced droplet: mg = eE  ⇒  e = mg/E
+👉 Charge always multiple of e ⇒ charge is quantized.
+
+---
+
+**Electric Dipole:**
+👉 Two equal and opposite charges separated by distance d.
+👉 Dipole moment: p = q d (vector from – to +)
+👉 On axis (far away): E ≈ (1/4πε₀) × (2p / r³)
+
+**Dipole in Uniform E-field:**
+👉 Net force = 0, but torque τ = p × E (magnitude pE sinθ)
+👉 Potential energy: U = –p·E = –pE cosθ
+👉 Minimum energy when dipole aligns with field (θ = 0).
+
+---
+
+**Applications of Electrostatics:**
+- Photocopier: charged drum attracts toner.
+- Inkjet printer: charged ink droplets deflected by electric field.
+- Lightning: charge separation in clouds → discharge.
+- Lightning rod: provides safe path to ground.
+
+---
+
+**Important Vocabulary:**
+- Quantization = charge in multiples of e
+- Coulomb = SI unit of charge
+- Permittivity = ε₀ (how medium affects electric field)
+- Field line = visual representation of E
+- Dipole moment = measure of dipole strength
+- Test charge = infinitesimally small charge used to measure E
+
+---
+
+**Quick Revision Points:**
+- F = k q₁q₂ / r²,  k = 9×10⁹ N·m²/C²
+- Charge quantized: q = ne, e = 1.6×10⁻¹⁹ C
+- Conductors allow charge flow, insulators do not.
+- Electric field E = F/q = kq/r² (point charge)
+- Field lines from + to –, density ∝ field strength.
+- Dipole moment p = qd, torque τ = pE sinθ
+- Dipole potential energy U = –pE cosθ
+- Millikan found smallest charge = e.`,
+  questions: [
+    {
+      q: "Like charges _____ each other, and opposite charges _____ each other.",
+      options: ["A. attract, attract", "B. repel, repel", "C. attract, repel", "D. repel, attract"],
+      answer: "D. repel, attract",
+      diff: "easy"
+    },
+    {
+      q: "The charge of an electron is approximately:",
+      options: ["A. 1.6 × 10⁻¹⁹ C", "B. 9.1 × 10⁻³¹ C", "C. 1.6 × 10⁹ C", "D. 6.67 × 10⁻¹¹ C"],
+      answer: "A. 1.6 × 10⁻¹⁹ C",
+      diff: "easy"
+    },
+    {
+      q: "Coulomb's law states that the force between two point charges is proportional to:",
+      options: ["A. Product of charges / r", "B. Product of charges / r²", "C. Sum of charges / r²", "D. Product of charges × r²"],
+      answer: "B. Product of charges / r²",
+      diff: "easy"
+    },
+    {
+      q: "The SI unit of electric charge is:",
+      options: ["A. Volt", "B. Ampere", "C. Coulomb", "D. Ohm"],
+      answer: "C. Coulomb",
+      diff: "easy"
+    },
+    {
+      q: "The constant k in Coulomb's law (1/4πε₀) is approximately:",
+      options: ["A. 9 × 10⁹ N·m²/C²", "B. 6.67 × 10⁻¹¹ N·m²/kg²", "C. 8.85 × 10⁻¹² N·m²/C²", "D. 3 × 10⁸ m/s"],
+      answer: "A. 9 × 10⁹ N·m²/C²",
+      diff: "easy"
+    },
+    {
+      q: "Materials that allow electrons to flow easily are called:",
+      options: ["A. Insulators", "B. Semiconductors", "C. Conductors", "D. Dielectrics"],
+      answer: "C. Conductors",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is a good conductor of electricity?",
+      options: ["A. Plastic", "B. Wood", "C. Copper", "D. Glass"],
+      answer: "C. Copper",
+      diff: "easy"
+    },
+    {
+      q: "Electric field is defined as:",
+      options: ["A. Force per unit charge", "B. Force per unit mass", "C. Potential per unit charge", "D. Charge per unit area"],
+      answer: "A. Force per unit charge",
+      diff: "easy"
+    },
+    {
+      q: "The unit of electric field is:",
+      options: ["A. N/C", "B. J/C", "C. N·m/C", "D. C/N"],
+      answer: "A. N/C",
+      diff: "easy"
+    },
+    {
+      q: "Electric field lines originate from _____ charges and terminate on _____ charges.",
+      options: ["A. negative, positive", "B. positive, positive", "C. negative, negative", "D. positive, negative"],
+      answer: "D. positive, negative",
+      diff: "easy"
+    },
+    {
+      q: "The Millikan oil drop experiment measured:",
+      options: ["A. Mass of electron", "B. Charge of electron", "C. Speed of light", "D. Gravitational constant"],
+      answer: "B. Charge of electron",
+      diff: "easy"
+    },
+    {
+      q: "Charge quantization means that charge exists in multiples of:",
+      options: ["A. 1 C", "B. Electron charge e", "C. Proton mass", "D. 1.6 × 10⁻¹⁹ kg"],
+      answer: "B. Electron charge e",
+      diff: "medium"
+    },
+    {
+      q: "An electric dipole consists of:",
+      options: ["A. Two like charges", "B. Two unlike charges separated by a distance", "C. A single charge", "D. No charges"],
+      answer: "B. Two unlike charges separated by a distance",
+      diff: "easy"
+    },
+    {
+      q: "The dipole moment p is defined as:",
+      options: ["A. q/r", "B. qd", "C. q²d", "D. q/d"],
+      answer: "B. qd",
+      diff: "medium"
+    },
+    {
+      q: "When an electric dipole is placed in a uniform electric field, the net force on it is:",
+      options: ["A. Maximum", "B. Minimum", "C. Zero", "D. Dependent on angle"],
+      answer: "C. Zero",
+      diff: "medium"
+    },
+    {
+      q: "The torque on an electric dipole in a uniform electric field is given by:",
+      options: ["A. τ = pE", "B. τ = pE sinθ", "C. τ = pE cosθ", "D. τ = p/E"],
+      answer: "B. τ = pE sinθ",
+      diff: "medium"
+    },
+    {
+      q: "The potential energy of a dipole in an electric field is minimum when:",
+      options: ["A. Dipole is perpendicular to field", "B. Dipole is antiparallel to field", "C. Dipole is parallel to field", "D. Dipole moment is zero"],
+      answer: "C. Dipole is parallel to field",
+      diff: "medium"
+    },
+    {
+      q: "A semiconductor like silicon has conductivity:",
+      options: ["A. Between conductor and insulator", "B. Higher than conductor", "C. Lower than insulator", "D. Zero"],
+      answer: "A. Between conductor and insulator",
+      diff: "easy"
+    },
+    {
+      q: "Lightning rods protect buildings by:",
+      options: ["A. Absorbing all lightning", "B. Providing a path for charge to ground", "C. Repelling lightning", "D. Stopping charge buildup"],
+      answer: "B. Providing a path for charge to ground",
+      diff: "easy"
+    },
+    {
+      q: "The electric field due to a point charge at distance r varies as:",
+      options: ["A. 1/r", "B. 1/r²", "C. 1/r³", "D. Constant"],
+      answer: "B. 1/r²",
+      diff: "easy"
+    }
+  ]
+},
+
   },
 
   // ─────────────────────────────────────────
