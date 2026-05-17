@@ -8954,6 +8954,2543 @@ CS is used in hospitals, banks, telecom, Pak Army, freelancing, and almost all p
   ]
 },
 
+
+8: {
+  title: 'Advanced Search Operators: intitle, inurl, intext, AROUND, and Complex Queries (CS101 Lecture 8)',
+  summary: `**Key Topics Covered:**
+- intitle: – search for term in page title (e.g., intitle:"iPhone vs. android")
+- allintitle: – search for any of the words in page title (e.g., allintitle:iphone vs. android)
+- inurl: – search for term in URL (e.g., inurl:2018 "virtual university")
+- allinurl: – search for any of the terms in URL
+- intext: – search for exact phrase in page body (e.g., intext:"virtual university admissions 2018")
+- allintext: – search for any of the terms in page body
+- Proximity search (AROUND(N)) – find words within N words of each other (e.g., education AROUND(3) "virtual university")
+- Complex query example: site:youtube.com -inurl:https – finds non-secure (non-HTTPS) pages on YouTube
+
+---
+
+**Simple Understanding:**
+
+**intitle: Operator**
+👉 Finds pages where the search term appears in the page title (the text in browser tab).
+👉 Example: intitle:"iPhone vs. android" – pages with that exact phrase in title.
+👉 Use quotes for exact phrase.
+
+**allintitle: Operator**
+👉 Finds pages where any of the words appear in the page title.
+👉 Example: allintitle:iphone vs. android – pages with "iphone" OR "android" in title.
+👉 No quotes needed; each word is separate.
+
+**inurl: Operator**
+👉 Finds pages where the search term appears in the URL (web address).
+👉 Example: inurl:2018 "virtual university" – pages with "2018" in URL AND phrase anywhere on page.
+
+**allinurl: Operator**
+👉 Finds pages where any of the terms appear in the URL.
+👉 Example: allinurl:virtual university admissions – pages with any of these words in URL.
+
+**intext: Operator**
+👉 Finds pages where the exact phrase appears in the body of the page.
+👉 Example: intext:"virtual university admissions 2018" – exact phrase in page content.
+
+**allintext: Operator**
+👉 Finds pages where any of the terms appear in the page body.
+👉 Example: allintext:virtual university admissions 2018 – pages containing any of these words.
+
+**Proximity Search – AROUND(N)**
+👉 Finds pages where two words/phrases appear within N words of each other.
+👉 Example: education AROUND(3) "virtual university" – "education" within 3 words of "virtual university".
+👉 Use uppercase AROUND.
+
+**Complex Query Example:**
+👉 site:youtube.com -inurl:https
+👉 This finds pages on YouTube that are NOT secure (do not have "https" in URL).
+👉 Because https indicates a secure connection.
+
+---
+
+**Important Vocabulary:**
+- Title = the text shown on browser tab for a webpage
+- URL = web address (Uniform Resource Locator)
+- Body = the main content area of a webpage
+- Proximity search = finding words near each other
+- AROUND(N) = operator to specify maximum word distance
+- HTTPS = secure version of HTTP (encrypted connection)
+
+---
+
+**Quick Revision Points:**
+- intitle:"phrase" – exact phrase in title.
+- allintitle:word1 word2 – any word in title.
+- inurl:term – term in URL.
+- intext:"phrase" – exact phrase in body.
+- allintext:words – any word in body.
+- AROUND(3) – within 3 words.
+- site:youtube.com -inurl:https – non-secure YouTube pages.`,
+
+  questions: [
+    {
+      q: 'Which operator finds pages where the search term appears in the page title?',
+      options: ['A. intext:', 'B. inurl:', 'C. intitle:', 'D. allintext:'],
+      answer: 'C. intitle:',
+      diff: 'easy',
+    },
+    {
+      q: 'To find pages with the exact phrase "iPhone vs. android" in the title, you would type:',
+      options: ['A. intitle:iPhone vs. android', 'B. intitle:"iPhone vs. android"', 'C. allintitle:"iPhone vs. android"', 'D. intext:"iPhone vs. android"'],
+      answer: 'B. intitle:"iPhone vs. android"',
+      diff: 'easy',
+    },
+    {
+      q: 'What does "allintitle:iphone vs. android" do?',
+      options: ['A. Finds pages with the exact phrase "iphone vs. android" in title', 'B. Finds pages with either "iphone" OR "android" in title', 'C. Finds pages with both words in URL', 'D. Finds pages with the phrase in body'],
+      answer: 'B. Finds pages with either "iphone" OR "android" in title',
+      diff: 'medium',
+    },
+    {
+      q: 'The "inurl:" operator searches for terms in:',
+      options: ['A. Page title', 'B. Page body', 'C. Web address (URL)', 'D. Image alt text'],
+      answer: 'C. Web address (URL)',
+      diff: 'easy',
+    },
+    {
+      q: 'The query "inurl:2018 virtual university" will find pages that:',
+      options: ['A. Have "2018" in URL and "virtual university" anywhere', 'B. Have "2018" in title', 'C. Have both terms in URL', 'D. Have "2018" in body only'],
+      answer: 'A. Have "2018" in URL and "virtual university" anywhere',
+      diff: 'medium',
+    },
+    {
+      q: 'Which operator is used to search within the body of a webpage?',
+      options: ['A. intitle:', 'B. inurl:', 'C. intext:', 'D. allinurl:'],
+      answer: 'C. intext:',
+      diff: 'easy',
+    },
+    {
+      q: 'To find pages with the exact phrase "virtual university admissions 2018" in the page content, use:',
+      options: ['A. intext:virtual university admissions 2018', 'B. intext:"virtual university admissions 2018"', 'C. allintext:"virtual university admissions 2018"', 'D. intitle:"virtual university admissions 2018"'],
+      answer: 'B. intext:"virtual university admissions 2018"',
+      diff: 'easy',
+    },
+    {
+      q: 'The "allintext:" operator finds pages where:',
+      options: ['A. The exact phrase appears in body', 'B. Any of the words appear in body', 'C. Words appear in title', 'D. Words appear in URL'],
+      answer: 'B. Any of the words appear in body',
+      diff: 'medium',
+    },
+    {
+      q: 'What does the AROUND(3) operator do?',
+      options: ['A. Finds pages with exactly 3 words', 'B. Finds words within 3 words of each other', 'C. Finds pages with 3 letters', 'D. Finds pages with 3 dots'],
+      answer: 'B. Finds words within 3 words of each other',
+      diff: 'easy',
+    },
+    {
+      q: 'The query "education AROUND(3) virtual university" will find pages where:',
+      options: ['A. Education and virtual university are within 3 words of each other', 'B. Education appears exactly 3 times', 'C. Virtual university appears 3 times', 'D. There are 3 words between them exactly'],
+      answer: 'A. Education and virtual university are within 3 words of each other',
+      diff: 'medium',
+    },
+    {
+      q: 'What does the complex query "site:youtube.com -inurl:https" do?',
+      options: ['A. Finds secure pages on YouTube', 'B. Finds non-secure (non-HTTPS) pages on YouTube', 'C. Finds all YouTube pages', 'D. Finds pages with https in title'],
+      answer: 'B. Finds non-secure (non-HTTPS) pages on YouTube',
+      diff: 'hard',
+    },
+    {
+      q: 'The "inurl:" operator is case-sensitive?',
+      options: ['A. Yes, always', 'B. No, Google is generally case-insensitive', 'C. Only for uppercase', 'D. Only for special characters'],
+      answer: 'B. No, Google is generally case-insensitive',
+      diff: 'medium',
+    },
+    {
+      q: 'Which operator would you use to find pages where "COVID" appears in the URL?',
+      options: ['A. intitle:COVID', 'B. intext:COVID', 'C. inurl:COVID', 'D. allintext:COVID'],
+      answer: 'C. inurl:COVID',
+      diff: 'easy',
+    },
+    {
+      q: 'The "allinurl:" operator is similar to "allintitle:" but searches in:',
+      options: ['A. Page body', 'B. Page title', 'C. URL', 'D. Image names'],
+      answer: 'C. URL',
+      diff: 'easy',
+    },
+    {
+      q: 'Proximity search is useful when:',
+      options: ['A. You want pages with two words far apart', 'B. You want pages where two words are near each other', 'C. You want exact phrase match', 'D. You want to exclude words'],
+      answer: 'B. You want pages where two words are near each other',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is NOT a search operator mentioned in this module?',
+      options: ['A. intitle:', 'B. inurl:', 'C. intext:', 'D. incache:'],
+      answer: 'D. incache:',
+      diff: 'easy',
+    },
+    {
+      q: 'What does "https" indicate in a URL?',
+      options: ['A. The page is secure (encrypted)', 'B. The page is fast', 'C. The page is from a government site', 'D. The page is cached'],
+      answer: 'A. The page is secure (encrypted)',
+      diff: 'easy',
+    },
+    {
+      q: 'The AROUND operator must be written in:',
+      options: ['A. Lowercase (around)', 'B. Uppercase (AROUND)', 'C. Any case', 'D. With quotes'],
+      answer: 'B. Uppercase (AROUND)',
+      diff: 'medium',
+    },
+    {
+      q: 'The query "allintext:virtual university lahore" will find pages that contain:',
+      options: ['A. The exact phrase "virtual university lahore" in body', 'B. Any of the words "virtual", "university", "lahore" in body', 'C. All words in title', 'D. The words in URL'],
+      answer: 'B. Any of the words "virtual", "university", "lahore" in body',
+      diff: 'medium',
+    }
+  ]
+},
+
+9: {
+  title: 'What We Should Not Search on Internet: Privacy, Security, and Safety (CS101 Lecture 9)',
+  summary: `**Key Topics Covered:**
+- Three main reasons to avoid certain searches:
+  1. Google Ads – ads based on search history and location
+  2. Security Agencies – sensitive searches may attract surveillance
+  3. Cybersecurity threats – viruses from free music/download sites
+- Avoid searching to prevent unwanted ads: email, medical issues, name, location, favorite things
+- Dangerous searches that may alert law enforcement: pressure cooker bomb story, attacks, suicide bomb, killers, poisons, murder, hacking, how to make virus, etc.
+- Avoid political and religious searches that may attract attention
+- Avoid free music searches – risk of viruses
+- Avoid unpleasant results: smokers lungs, skin conditions (may cause distress)
+
+---
+
+**Simple Understanding:**
+
+**Why Should We Avoid Certain Searches?**
+
+**1. Google Ads:**
+👉 Google shows ads based on your search queries, history, and location.
+👉 Searching personal things (email, medical issues, your name, location, favorite things) leads to targeted ads.
+
+**2. Security Agencies:**
+👉 Law enforcement agencies monitor certain sensitive terms.
+👉 Repeated searches of dangerous terms may trigger alerts.
+👉 Example: "Pressure cooker bomb story" – someone searched it and security agencies visited their location.
+
+**3. Cybersecurity Threats:**
+👉 Searching "free music" often leads to virus-infected websites.
+👉 Hackers use these to harm your computer.
+
+**What NOT to Search (To Avoid Ads):**
+- Your email address
+- Medical issues and drugs
+- Your own name
+- Your location
+- Your favorite things
+
+**Dangerous Searches (Avoid):**
+- Pressure cooker bomb story
+- Attacks, suicide bomb
+- Killers, underworld
+- Terrifying insects
+- Killing animals
+- Poisons, murder
+- Medical symptoms
+- How to make computer virus
+- Hacking
+- About religion
+- About politics
+
+**Unpleasant Results (Avoid for Mental Wellbeing):**
+- Smokers lungs
+- Skin conditions
+
+---
+
+**Important Vocabulary:**
+- Targeted ads = advertisements shown based on user's search history
+- Surveillance = monitoring of online activity by authorities
+- Cybersecurity threat = risk of virus, malware, or hacking
+- Sensitive search = query that may attract legal or security attention
+- Unpleasant results = graphic or disturbing images/content
+
+---
+
+**Quick Revision Points:**
+- Don't search personal info (email, name, location) – leads to ads.
+- Don't search dangerous terms (bomb, murder, hacking) – may alert authorities.
+- Don't search "free music" – risk of viruses.
+- Avoid medical symptom searches – leads to ads and misinformation.
+- Avoid graphic searches (smokers lungs) – may cause distress.`,
+
+  questions: [
+    {
+      q: 'What is one reason to avoid certain searches on Google?',
+      options: ['A. Google shows ads based on your searches', 'B. Google deletes your history', 'C. Google charges money for searches', 'D. Google slows down your computer'],
+      answer: 'A. Google shows ads based on your searches',
+      diff: 'easy',
+    },
+    {
+      q: 'Searching "free music" is dangerous because:',
+      options: ['A. It is illegal everywhere', 'B. It may lead to virus-infected websites', 'C. Google bans you', 'D. It costs money'],
+      answer: 'B. It may lead to virus-infected websites',
+      diff: 'easy',
+    },
+    {
+      q: 'Which search term famously caused security agencies to visit the searcher\'s location?',
+      options: ['A. Free music', 'B. Pressure cooker bomb story', 'C. Smokers lungs', 'D. Your email'],
+      answer: 'B. Pressure cooker bomb story',
+      diff: 'medium',
+    },
+    {
+      q: 'Why should you avoid searching your own email address?',
+      options: ['A. It will be deleted', 'B. It leads to targeted ads', 'C. It crashes Google', 'D. It is illegal'],
+      answer: 'B. It leads to targeted ads',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is a dangerous search that may alert law enforcement?',
+      options: ['A. Weather Lahore', 'B. How to make computer virus', 'C. Virtual University', 'D. Flip a coin'],
+      answer: 'B. How to make computer virus',
+      diff: 'easy',
+    },
+    {
+      q: 'Searching medical symptoms can lead to:',
+      options: ['A. Accurate diagnosis', 'B. Unnecessary ads and misinformation', 'C. Free treatment', 'D. Doctor appointment'],
+      answer: 'B. Unnecessary ads and misinformation',
+      diff: 'easy',
+    },
+    {
+      q: 'What type of results might you get from searching "smokers lungs"?',
+      options: ['A. Happy images', 'B. Unpleasant/graphic images', 'C. No results', 'D. Educational videos only'],
+      answer: 'B. Unpleasant/graphic images',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following should you avoid searching to prevent cybersecurity threats?',
+      options: ['A. Free music', 'B. University admissions', 'C. News updates', 'D. Weather forecast'],
+      answer: 'A. Free music',
+      diff: 'easy',
+    },
+    {
+      q: 'Why does Google show ads based on your searches?',
+      options: ['A. To annoy you', 'B. To personalize advertising and make money', 'C. To delete your data', 'D. To improve search speed'],
+      answer: 'B. To personalize advertising and make money',
+      diff: 'medium',
+    },
+    {
+      q: 'Searching your location can lead to:',
+      options: ['A. Better search results', 'B. Location-based targeted ads', 'C. No effect', 'D. Faster internet'],
+      answer: 'B. Location-based targeted ads',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is NOT mentioned as something to avoid searching?',
+      options: ['A. Poisons', 'B. Murder', 'C. Healthy recipes', 'D. Hacking'],
+      answer: 'C. Healthy recipes',
+      diff: 'easy',
+    },
+    {
+      q: 'Law enforcement agencies may monitor searches related to:',
+      options: ['A. Educational topics', 'B. Terrorism and violence', 'C. Sports news', 'D. Weather forecasts'],
+      answer: 'B. Terrorism and violence',
+      diff: 'easy',
+    },
+    {
+      q: 'What is a "targeted ad"?',
+      options: ['A. An ad shown to everyone', 'B. An ad based on your search history and interests', 'C. An ad with a target shape', 'D. An ad that cannot be closed'],
+      answer: 'B. An ad based on your search history and interests',
+      diff: 'easy',
+    },
+    {
+      q: 'Searching "how to hack" may attract attention from:',
+      options: ['A. Google support', 'B. Security agencies', 'C. Advertisers', 'D. Virus makers'],
+      answer: 'B. Security agencies',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following searches is considered safe?',
+      options: ['A. Free music download', 'B. Virtual University courses', 'C. Pressure cooker bomb', 'D. How to make virus'],
+      answer: 'B. Virtual University courses',
+      diff: 'easy',
+    },
+    {
+      q: 'Searching "killing animals" is dangerous because:',
+      options: ['A. It shows animal pictures', 'B. It may alert authorities', 'C. It is a common search', 'D. It gives pet care tips'],
+      answer: 'B. It may alert authorities',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+10: {
+  title: 'Roots of Computing: From Abacus to ENIAC and Beyond (CS101 Lecture 10)',
+  summary: `**Key Topics Covered:**
+- Abacus: early computing device (ancient China, Greece, Rome) – beads on rods
+- Technology of Gears: Blaise Pascal, Gottfried Leibniz, Charles Babbage
+  - Data represented through gear positioning
+  - Babbage envisioned printing results to avoid errors
+- Punch Cards: Herman Hollerith (1890 U.S. census) – led to IBM
+  - Punched cards used until 1970s
+- Electromechanical machines: George Stibitz (Bell Labs, 1940), Mark I (Harvard, 1944 by Howard Aiken & IBM) – used mechanical relays
+- Vacuum tubes: enabled totally electronic computers
+- ENIAC (Electronic Numerical Integrator and Calculator):
+  - Developed by John Mauchly and J. Presper Eckert (University of Pennsylvania)
+  - Specifications: 1800 sq ft, 20,000 vacuum tubes, 1500 relays, 10,000 capacitors, 70,000 registers, 200 kW electricity, 30 tons, cost $487,000 (~62.5 million PKR)
+- Rapid advancement:
+  - Transistor → Integrated Circuits → Size reduction
+  - Processing power doubling every 2 years (Moore's Law)
+  - Desktop computer by Steve Jobs & Steve Wozniak (1976)
+  - IBM PC (1981)
+  - Web, Smartphones
+
+---
+
+**Simple Understanding:**
+
+**Abacus:**
+👉 One of the earliest computing devices.
+👉 Originated in ancient China; used in Greek and Roman civilizations.
+👉 Simple machine: beads strung on rods in a rectangular frame.
+
+**Technology of Gears (Pascal, Leibniz, Babbage):**
+👉 Blaise Pascal (France, 1623-1662), Gottfried Leibniz (Germany, 1646-1716), Charles Babbage (England, 1792-1871).
+👉 Machines represented data through gear positions.
+👉 Babbage envisioned printing results to avoid transcription errors.
+
+**Punch Cards:**
+👉 Herman Hollerith used punched cards for 1890 U.S. census.
+👉 This work led to the creation of IBM.
+👉 Punched cards were used until the 1970s.
+
+**From Mechanical to Electronic:**
+👉 19th-century technology couldn't build complex gear machines cost-effectively.
+👉 Early 1900s electronics advances overcame this.
+👉 George Stibitz (Bell Labs, 1940) and Mark I (Harvard, 1944) used electromechanical relays.
+👉 Vacuum tubes enabled fully electronic computers.
+
+**ENIAC (1946):**
+👉 First general-purpose electronic computer.
+👉 Developed by John Mauchly and J. Presper Eckert.
+👉 Massive: 1800 sq ft, 20,000 vacuum tubes, 1500 relays, 30 tons, $487,000.
+
+**Rapid Advancement:**
+👉 Transistor replaced vacuum tubes.
+👉 Integrated circuits (chips) further reduced size.
+👉 Processing power doubled every ~2 years (Moore's Law).
+👉 1976: Apple desktop by Steve Jobs & Steve Wozniak.
+👉 1981: IBM PC launched.
+👉 Then: World Wide Web, Smartphones.
+
+---
+
+**Important Vocabulary:**
+- Abacus = ancient counting device with beads on rods
+- Gear = toothed wheel that transmits motion
+- Punch card = paper card with holes representing data
+- Electromechanical = combining electrical and mechanical parts
+- Vacuum tube = electronic component controlling electron flow
+- ENIAC = Electronic Numerical Integrator and Calculator
+- Transistor = solid-state amplifier/switch (replaced vacuum tubes)
+- Integrated circuit = many transistors on a single chip
+- Moore's Law = processing power doubles every ~2 years
+
+---
+
+**Quick Revision Points:**
+- Abacus: earliest computing device (ancient China).
+- Pascal, Leibniz, Babbage used gears for calculation.
+- Babbage designed Analytical Engine (printed output).
+- Hollerith: punch cards for census → IBM.
+- Stibitz (1940) and Mark I (1944) used electromechanical relays.
+- Vacuum tubes led to ENIAC (1946).
+- ENIAC: 20,000 tubes, 30 tons, $487,000.
+- Transistor → IC → size reduction → faster processors.
+- Apple desktop (1976), IBM PC (1981), then Web & smartphones.`,
+
+  questions: [
+    {
+      q: 'Which was one of the earliest computing devices?',
+      options: ['A. ENIAC', 'B. Abacus', 'C. Mark I', 'D. IBM PC'],
+      answer: 'B. Abacus',
+      diff: 'easy',
+    },
+    {
+      q: 'The abacus likely originated in ancient:',
+      options: ['A. Egypt', 'B. Greece', 'C. China', 'D. India'],
+      answer: 'C. China',
+      diff: 'easy',
+    },
+    {
+      q: 'Who among the following experimented with gear technology for computing?',
+      options: ['A. Herman Hollerith', 'B. Blaise Pascal', 'C. Steve Jobs', 'D. John Mauchly'],
+      answer: 'B. Blaise Pascal',
+      diff: 'easy',
+    },
+    {
+      q: 'Which inventor envisioned machines that would print results to avoid transcription errors?',
+      options: ['A. Gottfried Leibniz', 'B. Charles Babbage', 'C. George Stibitz', 'D. Howard Aiken'],
+      answer: 'B. Charles Babbage',
+      diff: 'medium',
+    },
+    {
+      q: 'Who applied punch cards to speed up the 1890 U.S. census?',
+      options: ['A. Charles Babbage', 'B. Blaise Pascal', 'C. Herman Hollerith', 'D. John Mauchly'],
+      answer: 'C. Herman Hollerith',
+      diff: 'easy',
+    },
+    {
+      q: 'The work of Herman Hollerith led to the creation of which company?',
+      options: ['A. Microsoft', 'B. Apple', 'C. IBM', 'D. Intel'],
+      answer: 'C. IBM',
+      diff: 'easy',
+    },
+    {
+      q: 'Punched cards were commonly used until which decade?',
+      options: ['A. 1940s', 'B. 1950s', 'C. 1960s', 'D. 1970s'],
+      answer: 'D. 1970s',
+      diff: 'medium',
+    },
+    {
+      q: 'The Mark I computer was completed in 1944 at which university?',
+      options: ['A. University of Pennsylvania', 'B. Harvard University', 'C. Cambridge University', 'D. Bell Laboratories'],
+      answer: 'B. Harvard University',
+      diff: 'medium',
+    },
+    {
+      q: 'Who developed the electromechanical machine at Bell Laboratories in 1940?',
+      options: ['A. Howard Aiken', 'B. George Stibitz', 'C. John Mauchly', 'D. Steve Wozniak'],
+      answer: 'B. George Stibitz',
+      diff: 'hard',
+    },
+    {
+      q: 'ENIAC stands for:',
+      options: ['A. Electronic Numerical Integrator and Calculator', 'B. Electrical Numerical Input and Computer', 'C. Electronic Natural Intelligence Computer', 'D. Electrical Neutral Integrated Circuit'],
+      answer: 'A. Electronic Numerical Integrator and Calculator',
+      diff: 'easy',
+    },
+    {
+      q: 'ENIAC was developed at which institution?',
+      options: ['A. Harvard University', 'B. Bell Laboratories', 'C. University of Pennsylvania', 'D. IBM'],
+      answer: 'C. University of Pennsylvania',
+      diff: 'easy',
+    },
+    {
+      q: 'Approximately how many vacuum tubes did ENIAC contain?',
+      options: ['A. 2,000', 'B. 20,000', 'C. 200,000', 'D. 2 million'],
+      answer: 'B. 20,000',
+      diff: 'easy',
+    },
+    {
+      q: 'The weight of ENIAC was approximately:',
+      options: ['A. 3 tons', 'B. 10 tons', 'C. 30 tons', 'D. 100 tons'],
+      answer: 'C. 30 tons',
+      diff: 'easy',
+    },
+    {
+      q: 'The cost of ENIAC was approximately:',
+      options: ['A. $48,700', 'B. $487,000', 'C. $4,870,000', 'D. $48,700,000'],
+      answer: 'B. $487,000',
+      diff: 'easy',
+    },
+    {
+      q: 'Who invented the desktop computer in 1976?',
+      options: ['A. Bill Gates and Paul Allen', 'B. Steve Jobs and Steve Wozniak', 'C. IBM engineers', 'D. John Mauchly'],
+      answer: 'B. Steve Jobs and Steve Wozniak',
+      diff: 'easy',
+    },
+    {
+      q: 'In which year did IBM launch its personal computer (PC)?',
+      options: ['A. 1976', 'B. 1978', 'C. 1981', 'D. 1984'],
+      answer: 'C. 1981',
+      diff: 'easy',
+    },
+    {
+      q: 'Which technology replaced vacuum tubes and made computers smaller and faster?',
+      options: ['A. Gears', 'B. Relays', 'C. Transistors', 'D. Punch cards'],
+      answer: 'C. Transistors',
+      diff: 'easy',
+    },
+    {
+      q: "What does Moore's Law describe?",
+      options: ['A. Processing power doubles every 2 years', 'B. Computer size doubles every year', 'C. Vacuum tubes are replaced by transistors', 'D. Punch cards became obsolete'],
+      answer: 'A. Processing power doubles every 2 years',
+      diff: 'medium',
+    },
+    {
+      q: 'The integration of many transistors onto a single chip is called:',
+      options: ['A. Transistor array', 'B. Integrated circuit', 'C. Vacuum tube cluster', 'D. Gear mechanism'],
+      answer: 'B. Integrated circuit',
+      diff: 'easy',
+    },
+    {
+      q: 'Charles Babbage is often called the father of computers because:',
+      options: ['A. He built ENIAC', 'B. He designed the Analytical Engine', 'C. He invented the transistor', 'D. He created IBM'],
+      answer: 'B. He designed the Analytical Engine',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following came after ENIAC in the timeline of computing?',
+      options: ['A. Abacus', 'B. Punch cards', 'C. Transistor', 'D. Pascal\'s gear machine'],
+      answer: 'C. Transistor',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+11: {
+  title: 'Bits: The Basic Unit of Storage in Computers (CS101 Lecture 11)',
+  summary: `**Key Topics Covered:**
+- Bit = Binary Digit (0 or 1) – basic unit of storage
+- Information is coded as patterns of 0s and 1s
+- One bit can hold only one value (0 or 1)
+- Bits can represent: numbers, text, audio, video, images
+- Electric charge represents 0 or 1 in a chip
+- Bit units: 1 Byte = 8 bits, 1 Kilobyte (KB) = 1024 bytes, 1 Megabyte (MB) = 1024 KB, etc.
+- Patterns using bits: 
+  - 1 bit → 2 patterns (0,1)
+  - 2 bits → 4 patterns (00,01,10,11)
+  - n bits → 2ⁿ patterns
+- ASCII codes: character representation (e.g., 'A' = 65 decimal)
+- Decimal to binary conversion using place values (powers of 2)
+
+---
+
+**Simple Understanding:**
+
+**What is a Bit?**
+👉 Bit = Binary digit – the smallest unit of data in a computer.
+👉 Can only be 0 or 1 (two states: off/on, false/true).
+👉 Short for "Binary Digit".
+
+**What Bits Represent:**
+👉 Numbers (integers, decimals)
+👉 Text (letters, symbols via ASCII/Unicode)
+👉 Audio, video, images (encoded as bits)
+
+**Physical Representation:**
+👉 In a computer chip, electric charge represents 0 or 1.
+
+**Bit Units (Memory Sizes):**
+- 1 Byte = 8 bits
+- 1 Kilobyte (KB) = 1024 bytes
+- 1 Megabyte (MB) = 1024 KB
+- 1 Gigabyte (GB) = 1024 MB
+- 1 Terabyte (TB) = 1024 GB
+
+**Patterns Using Bits:**
+- 1 bit → 2 patterns (0, 1)
+- 2 bits → 4 patterns (00, 01, 10, 11)
+- 3 bits → 8 patterns
+- n bits → 2ⁿ patterns
+
+**ASCII Code:**
+- American Standard Code for Information Interchange
+- Each character gets a unique number (0-127)
+- Example: 'A' = 65 decimal
+- Bit pattern for 65: 01000001
+
+**Decimal to Binary (Simple Method):**
+- Use powers of 2: 128, 64, 32, 16, 8, 4, 2, 1
+- Place 1 in position for the value needed, else 0
+- Example: 2 decimal → 00000010 (second bit from right)
+- 8 decimal → 00001000
+- 65 decimal → 64 + 1 → 01000001
+
+---
+
+**Important Vocabulary:**
+- Bit = Binary Digit (0 or 1)
+- Byte = 8 bits
+- Binary = base-2 number system (uses only 0 and 1)
+- ASCII = standard for representing text as numbers
+- Decimal = base-10 number system (0-9)
+
+---
+
+**Quick Revision Points:**
+- Bit is the smallest storage unit.
+- 1 bit = 0 or 1.
+- n bits can represent 2ⁿ patterns.
+- 1 byte = 8 bits.
+- ASCII code for 'A' is 65 (binary 01000001).
+- Memory units: KB (1024 bytes), MB (1024 KB), GB (1024 MB), TB (1024 GB).
+- Convert decimal to binary by adding powers of 2.`,
+
+  questions: [
+    {
+      q: 'What does "bit" stand for?',
+      options: ['A. Binary Integer', 'B. Binary Digit', 'C. Basic Information Token', 'D. Byte Internal Transfer'],
+      answer: 'B. Binary Digit',
+      diff: 'easy',
+    },
+    {
+      q: 'How many values can one bit store?',
+      options: ['A. 1', 'B. 2', 'C. 4', 'D. 8'],
+      answer: 'B. 2',
+      diff: 'easy',
+    },
+    {
+      q: 'One byte consists of how many bits?',
+      options: ['A. 2', 'B. 4', 'C. 8', 'D. 16'],
+      answer: 'C. 8',
+      diff: 'easy',
+    },
+    {
+      q: 'How many different patterns can be represented with 2 bits?',
+      options: ['A. 2', 'B. 4', 'C. 8', 'D. 16'],
+      answer: 'B. 4',
+      diff: 'easy',
+    },
+    {
+      q: 'How many patterns can n bits represent?',
+      options: ['A. n²', 'B. 2ⁿ', 'C. n+2', 'D. 2n'],
+      answer: 'B. 2ⁿ',
+      diff: 'medium',
+    },
+    {
+      q: 'Which of the following is the correct binary representation of the decimal number 2?',
+      options: ['A. 00000001', 'B. 00000010', 'C. 00000100', 'D. 00001000'],
+      answer: 'B. 00000010',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the binary representation of the decimal number 8?',
+      options: ['A. 00000001', 'B. 00000010', 'C. 00000100', 'D. 00001000'],
+      answer: 'D. 00001000',
+      diff: 'easy',
+    },
+    {
+      q: 'The ASCII code for the character "A" is:',
+      options: ['A. 65', 'B. 97', 'C. 41', 'D. 32'],
+      answer: 'A. 65',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the binary pattern for decimal 65 (using 8 bits)?',
+      options: ['A. 01000001', 'B. 10000010', 'C. 00100001', 'D. 01100001'],
+      answer: 'A. 01000001',
+      diff: 'medium',
+    },
+    {
+      q: 'One Kilobyte (KB) is equal to how many bytes?',
+      options: ['A. 1000', 'B. 1024', 'C. 1048', 'D. 512'],
+      answer: 'B. 1024',
+      diff: 'easy',
+    },
+    {
+      q: 'One Megabyte (MB) is equal to how many kilobytes?',
+      options: ['A. 100', 'B. 1000', 'C. 1024', 'D. 2048'],
+      answer: 'C. 1024',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is the largest storage unit?',
+      options: ['A. Megabyte', 'B. Gigabyte', 'C. Terabyte', 'D. Kilobyte'],
+      answer: 'C. Terabyte',
+      diff: 'easy',
+    },
+    {
+      q: 'What does ASCII stand for?',
+      options: ['A. American Standard Code for Information Interchange', 'B. Advanced System for Character Input', 'C. Automatic Symbol Coding for Internet', 'D. Alphanumeric Standard for Computer Integration'],
+      answer: 'A. American Standard Code for Information Interchange',
+      diff: 'easy',
+    },
+    {
+      q: 'How many bits are required to represent 8 different patterns?',
+      options: ['A. 2', 'B. 3', 'C. 4', 'D. 8'],
+      answer: 'B. 3',
+      diff: 'medium',
+    },
+    {
+      q: 'Which of the following binary numbers represents decimal 4?',
+      options: ['A. 00000001', 'B. 00000010', 'C. 00000100', 'D. 00001000'],
+      answer: 'C. 00000100',
+      diff: 'easy',
+    },
+    {
+      q: 'A group of 8 bits is called a:',
+      options: ['A. Nibble', 'B. Word', 'C. Byte', 'D. Kilobyte'],
+      answer: 'C. Byte',
+      diff: 'easy',
+    },
+    {
+      q: 'Which base system is used for binary numbers?',
+      options: ['A. Base 2', 'B. Base 8', 'C. Base 10', 'D. Base 16'],
+      answer: 'A. Base 2',
+      diff: 'easy',
+    },
+    {
+      q: 'If you have 4 bits, how many different patterns can you represent?',
+      options: ['A. 4', 'B. 8', 'C. 16', 'D. 32'],
+      answer: 'C. 16',
+      diff: 'easy',
+    },
+    {
+      q: 'The binary number 00000110 represents decimal:',
+      options: ['A. 4', 'B. 5', 'C. 6', 'D. 7'],
+      answer: 'C. 6',
+      diff: 'medium',
+    },
+    {
+      q: 'What is the decimal equivalent of binary 00001010?',
+      options: ['A. 8', 'B. 9', 'C. 10', 'D. 12'],
+      answer: 'C. 10',
+      diff: 'medium',
+    },
+    {
+      q: 'Which of the following correctly represents 1 GB in bytes?',
+      options: ['A. 1024 bytes', 'B. 1024 KB', 'C. 1024 MB', 'D. Both B and C'],
+      answer: 'D. Both B and C',
+      diff: 'medium',
+    }
+  ]
+},
+
+12: {
+  title: 'Boolean Operations: AND, OR, XOR, NOT (CS101 Lecture 12)',
+  summary: `**Key Topics Covered:**
+- Boolean operations: manipulate true/false values (1=true, 0=false)
+- Named after mathematician George Boole (1815–1864)
+- AND operation: output 1 only when both inputs are 1
+- OR operation: output 1 when at least one input is 1
+- XOR (Exclusive OR): output 1 when inputs are different
+- NOT operation: takes one input, inverts it (0→1, 1→0)
+- Truth tables for each operation
+- Example: applying Boolean operations to bit patterns
+
+---
+
+**Simple Understanding:**
+
+**Boolean Operations Basics:**
+👉 Bit 0 = false, Bit 1 = true.
+👉 Operations that manipulate true/false values are called Boolean operations.
+👉 Named after George Boole (mathematician and logic pioneer).
+
+**AND Operation:**
+👉 Output = 1 only when BOTH inputs are 1.
+👉 Otherwise output = 0.
+👉 Truth table:
+   | A | B | A AND B |
+   | 0 | 0 |    0    |
+   | 0 | 1 |    0    |
+   | 1 | 0 |    0    |
+   | 1 | 1 |    1    |
+
+**OR Operation:**
+👉 Output = 1 when AT LEAST ONE input is 1.
+👉 Output = 0 only when both inputs are 0.
+👉 Truth table:
+   | A | B | A OR B |
+   | 0 | 0 |   0    |
+   | 0 | 1 |   1    |
+   | 1 | 0 |   1    |
+   | 1 | 1 |   1    |
+
+**XOR (Exclusive OR) Operation:**
+👉 Output = 1 when inputs are DIFFERENT.
+👉 Output = 0 when inputs are the same.
+👉 Truth table:
+   | A | B | A XOR B |
+   | 0 | 0 |    0    |
+   | 0 | 1 |    1    |
+   | 1 | 0 |    1    |
+   | 1 | 1 |    0    |
+
+**NOT Operation:**
+👉 Takes only ONE input.
+👉 Output = opposite of input (inverts).
+👉 Truth table:
+   | A | NOT A |
+   | 0 |   1   |
+   | 1 |   0   |
+
+**Example (Bit Patterns):**
+If A = 1010, B = 1100:
+- A AND B = 1000
+- A OR B = 1110
+- A XOR B = 0110
+- NOT A = 0101 (if 4 bits)
+
+---
+
+**Important Vocabulary:**
+- Boolean operation = operation on true/false values
+- Truth table = table showing all input-output combinations
+- AND = operation that outputs 1 only if both inputs are 1
+- OR = operation that outputs 1 if at least one input is 1
+- XOR = exclusive OR; outputs 1 when inputs differ
+- NOT = operation that inverts a single input
+- George Boole = mathematician who pioneered Boolean logic
+
+---
+
+**Quick Revision Points:**
+- AND: both must be 1 → output 1.
+- OR: at least one 1 → output 1.
+- XOR: inputs different → output 1.
+- NOT: flips 0→1, 1→0.
+- Boolean operations are fundamental to computer circuits.
+- Truth tables summarize Boolean operations.`,
+
+  questions: [
+    {
+      q: 'Boolean operations manipulate values of:',
+      options: ['A. Numbers', 'B. True/False (1/0)', 'C. Letters', 'D. Decimal digits'],
+      answer: 'B. True/False (1/0)',
+      diff: 'easy',
+    },
+    {
+      q: 'Who is the mathematician after whom Boolean operations are named?',
+      options: ['A. Gottfried Leibniz', 'B. George Boole', 'C. Charles Babbage', 'D. Blaise Pascal'],
+      answer: 'B. George Boole',
+      diff: 'easy',
+    },
+    {
+      q: 'The AND operation outputs 1 only when:',
+      options: ['A. At least one input is 1', 'B. Both inputs are 1', 'C. Both inputs are 0', 'D. Inputs are different'],
+      answer: 'B. Both inputs are 1',
+      diff: 'easy',
+    },
+    {
+      q: 'The OR operation outputs 0 only when:',
+      options: ['A. Both inputs are 0', 'B. Both inputs are 1', 'C. At least one input is 1', 'D. Inputs are different'],
+      answer: 'A. Both inputs are 0',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the output of 1 AND 0?',
+      options: ['A. 0', 'B. 1', 'C. 2', 'D. Depends'],
+      answer: 'A. 0',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the output of 1 OR 0?',
+      options: ['A. 0', 'B. 1', 'C. 2', 'D. Depends'],
+      answer: 'B. 1',
+      diff: 'easy',
+    },
+    {
+      q: 'The XOR operation outputs 1 when:',
+      options: ['A. Both inputs are 1', 'B. Both inputs are 0', 'C. Inputs are different', 'D. Inputs are the same'],
+      answer: 'C. Inputs are different',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the output of 1 XOR 1?',
+      options: ['A. 0', 'B. 1', 'C. 2', 'D. Error'],
+      answer: 'A. 0',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the output of 0 XOR 1?',
+      options: ['A. 0', 'B. 1', 'C. 2', 'D. Error'],
+      answer: 'B. 1',
+      diff: 'easy',
+    },
+    {
+      q: 'The NOT operation (on a single input) produces:',
+      options: ['A. Same as input', 'B. Opposite of input', 'C. Always 0', 'D. Always 1'],
+      answer: 'B. Opposite of input',
+      diff: 'easy',
+    },
+    {
+      q: 'What is NOT 0?',
+      options: ['A. 0', 'B. 1', 'C. 2', 'D. Undefined'],
+      answer: 'B. 1',
+      diff: 'easy',
+    },
+    {
+      q: 'What is NOT 1?',
+      options: ['A. 0', 'B. 1', 'C. 2', 'D. Undefined'],
+      answer: 'A. 0',
+      diff: 'easy',
+    },
+    {
+      q: 'Given A=1010 and B=1100, what is A AND B?',
+      options: ['A. 1010', 'B. 1100', 'C. 1000', 'D. 1110'],
+      answer: 'C. 1000',
+      diff: 'medium',
+    },
+    {
+      q: 'Given A=1010 and B=1100, what is A OR B?',
+      options: ['A. 1010', 'B. 1100', 'C. 1000', 'D. 1110'],
+      answer: 'D. 1110',
+      diff: 'medium',
+    },
+    {
+      q: 'Given A=1010 and B=1100, what is A XOR B?',
+      options: ['A. 0110', 'B. 1010', 'C. 1100', 'D. 1110'],
+      answer: 'A. 0110',
+      diff: 'medium',
+    },
+    {
+      q: 'Given A=1010 (4 bits), what is NOT A?',
+      options: ['A. 1010', 'B. 0101', 'C. 1101', 'D. 0010'],
+      answer: 'B. 0101',
+      diff: 'medium',
+    },
+    {
+      q: 'Which Boolean operation is also known as "exclusive or"?',
+      options: ['A. AND', 'B. OR', 'C. XOR', 'D. NOT'],
+      answer: 'C. XOR',
+      diff: 'easy',
+    },
+    {
+      q: 'A truth table shows:',
+      options: ['A. Memory sizes', 'B. All input-output combinations of a Boolean operation', 'C. Binary to decimal conversion', 'D. ASCII codes'],
+      answer: 'B. All input-output combinations of a Boolean operation',
+      diff: 'easy',
+    },
+    {
+      q: 'How many inputs does the NOT operation take?',
+      options: ['A. 1', 'B. 2', 'C. 3', 'D. Any number'],
+      answer: 'A. 1',
+      diff: 'easy',
+    },
+    {
+      q: 'How many rows are in a truth table for a Boolean operation with 2 inputs?',
+      options: ['A. 2', 'B. 4', 'C. 8', 'D. 16'],
+      answer: 'B. 4',
+      diff: 'easy',
+    },
+    {
+      q: 'If A=1 and B=1, then A XOR B equals:',
+      options: ['A. 0', 'B. 1', 'C. 2', 'D. -1'],
+      answer: 'A. 0',
+      diff: 'easy',
+    },
+    {
+      q: 'Which operation produces output 1 only when both inputs are 1?',
+      options: ['A. AND', 'B. OR', 'C. XOR', 'D. NOT'],
+      answer: 'A. AND',
+      diff: 'easy',
+    },
+    {
+      q: 'Which operation produces output 1 when at least one input is 1?',
+      options: ['A. AND', 'B. OR', 'C. XOR', 'D. NOT'],
+      answer: 'B. OR',
+      diff: 'easy',
+    }
+  ]
+},
+
+13: {
+  title: 'Hexadecimal Notation: Shorthand for Binary (CS101 Lecture 13)',
+  summary: `**Key Topics Covered:**
+- Why hexadecimal notation? Long bit strings (streams) are hard for humans to read and error-prone.
+- Hexadecimal (hex) simplifies representation by using one symbol for each group of 4 bits.
+- Bit patterns in computers tend to have lengths in multiples of 4.
+- Hexadecimal symbols: 0-9, A-F (A=10, B=11, C=12, D=13, E=14, F=15)
+- Conversion: group bits into 4-bit nibbles from right, then replace each nibble with its hex symbol.
+- Example: 1110 1000 0101 0101 0001 0111 = E 8 5 5 1 7 = E85517
+
+---
+
+**Simple Understanding:**
+
+**What is Hexadecimal?**
+👉 A base-16 number system (0-9, A-F).
+👉 Each hexadecimal digit represents exactly 4 bits (a nibble).
+👉 Example: 0 = 0000, 1 = 0001, ..., 9 = 1001, A = 1010, B = 1011, C = 1100, D = 1101, E = 1110, F = 1111.
+
+**Why Use Hexadecimal?**
+👉 Long binary strings (e.g., 101101010011) are hard to read and write.
+👉 Humans make mistakes when copying long binary patterns.
+👉 Computers internally use binary, but for human convenience, we use hex.
+👉 Hexadecimal is a shorthand – it compresses 4 bits into 1 character.
+
+**How to Convert Binary to Hexadecimal:**
+1. Group the binary digits into sets of 4 bits, starting from the right.
+2. If the leftmost group has fewer than 4 bits, pad with leading zeros.
+3. Replace each 4-bit group with its hexadecimal symbol.
+
+**Example:**
+Binary: 111010000101010100010111
+Group: 1110 1000 0101 0101 0001 0111
+Hex:    E    8    5    5    1    7
+Result: E85517
+
+---
+
+**Hexadecimal Table:**
+| Binary | Hex |
+|--------|-----|
+| 0000   | 0   |
+| 0001   | 1   |
+| 0010   | 2   |
+| 0011   | 3   |
+| 0100   | 4   |
+| 0101   | 5   |
+| 0110   | 6   |
+| 0111   | 7   |
+| 1000   | 8   |
+| 1001   | 9   |
+| 1010   | A   |
+| 1011   | B   |
+| 1100   | C   |
+| 1101   | D   |
+| 1110   | E   |
+| 1111   | F   |
+
+---
+
+**Important Vocabulary:**
+- Hexadecimal = base-16 number system (0-9, A-F)
+- Nibble = group of 4 bits
+- Stream = long string of bits
+- Shorthand notation = shortened way of writing
+
+---
+
+**Quick Revision Points:**
+- Hex is used because binary strings are hard for humans.
+- One hex digit = 4 bits.
+- Hex digits: 0-9, A(10), B(11), C(12), D(13), E(14), F(15).
+- To convert binary to hex: group from right into 4-bit nibbles, then replace each with hex symbol.
+- Example: 1110 = E, 1000 = 8, etc.`,
+
+  questions: [
+    {
+      q: 'Why do we use hexadecimal notation in computing?',
+      options: ['A. Computers understand hex directly', 'B. Binary strings are hard for humans to read and error-prone', 'C. Hex uses less storage than binary', 'D. Hex is faster for computers'],
+      answer: 'B. Binary strings are hard for humans to read and error-prone',
+      diff: 'easy',
+    },
+    {
+      q: 'One hexadecimal digit represents how many bits?',
+      options: ['A. 2', 'B. 4', 'C. 8', 'D. 16'],
+      answer: 'B. 4',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is a valid hexadecimal digit?',
+      options: ['A. G', 'B. H', 'C. F', 'D. J'],
+      answer: 'C. F',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the hexadecimal symbol for binary 1110?',
+      options: ['A. D', 'B. E', 'C. F', 'D. 14'],
+      answer: 'B. E',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the hexadecimal symbol for binary 1010?',
+      options: ['A. A', 'B. B', 'C. C', 'D. D'],
+      answer: 'A. A',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the binary equivalent of hexadecimal F?',
+      options: ['A. 1111', 'B. 0000', 'C. 1010', 'D. 1100'],
+      answer: 'A. 1111',
+      diff: 'easy',
+    },
+    {
+      q: 'Convert binary 0001 to hexadecimal:',
+      options: ['A. 0', 'B. 1', 'C. 2', 'D. 3'],
+      answer: 'B. 1',
+      diff: 'easy',
+    },
+    {
+      q: 'Convert binary 1011 to hexadecimal:',
+      options: ['A. A', 'B. B', 'C. C', 'D. D'],
+      answer: 'B. B',
+      diff: 'easy',
+    },
+    {
+      q: 'The bit pattern 111010000101010100010111 in hexadecimal is:',
+      options: ['A. E85517', 'B. F85517', 'C. E75517', 'D. E85417'],
+      answer: 'A. E85517',
+      diff: 'hard',
+    },
+    {
+      q: 'A group of 4 bits is called a:',
+      options: ['A. Byte', 'B. Nibble', 'C. Word', 'D. Stream'],
+      answer: 'B. Nibble',
+      diff: 'easy',
+    },
+    {
+      q: 'Hexadecimal digit C represents the decimal value:',
+      options: ['A. 10', 'B. 11', 'C. 12', 'D. 13'],
+      answer: 'C. 12',
+      diff: 'easy',
+    },
+    {
+      q: 'Hexadecimal digit D represents the decimal value:',
+      options: ['A. 12', 'B. 13', 'C. 14', 'D. 15'],
+      answer: 'B. 13',
+      diff: 'easy',
+    },
+    {
+      q: 'Hexadecimal digit E represents the decimal value:',
+      options: ['A. 13', 'B. 14', 'C. 15', 'D. 16'],
+      answer: 'B. 14',
+      diff: 'easy',
+    },
+    {
+      q: 'Hexadecimal digit F represents the decimal value:',
+      options: ['A. 14', 'B. 15', 'C. 16', 'D. 17'],
+      answer: 'B. 15',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the hexadecimal representation of binary 11111111?',
+      options: ['A. FF', 'B. AA', 'C. 00', 'D. 11'],
+      answer: 'A. FF',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the binary representation of hexadecimal 3A?',
+      options: ['A. 00111010', 'B. 00111011', 'C. 00111100', 'D. 00110101'],
+      answer: 'A. 00111010',
+      diff: 'medium',
+    },
+    {
+      q: 'When converting binary to hex, you group bits starting from:',
+      options: ['A. Left', 'B. Right', 'C. Middle', 'D. Anywhere'],
+      answer: 'B. Right',
+      diff: 'medium',
+    },
+    {
+      q: 'A long string of bits is often called a:',
+      options: ['A. Byte', 'B. Nibble', 'C. Stream', 'D. File'],
+      answer: 'C. Stream',
+      diff: 'easy',
+    },
+    {
+      q: 'Hexadecimal is a base-____ number system:',
+      options: ['A. 2', 'B. 8', 'C. 10', 'D. 16'],
+      answer: 'D. 16',
+      diff: 'easy',
+    },
+    {
+      q: 'The hex digit A equals binary:',
+      options: ['A. 1000', 'B. 1010', 'C. 1100', 'D. 1110'],
+      answer: 'B. 1010',
+      diff: 'easy',
+    }
+  ]
+},
+
+14: {
+  title: 'Storing a Bit: Main Memory, RAM, DRAM, SDRAM (CS101 Lecture 14)',
+  summary: `**Key Topics Covered:**
+- Main memory: large collection of circuits (flip-flops) each storing one bit
+- Flip-flop: basic circuit that can hold a single bit (0 or 1)
+- Main memory organization: manageable unit cells of 8 bits (1 byte)
+- Household devices: few hundred cells; large computers: billions of cells
+- Byte size organization: most significant bits on left, least significant on right
+- Memory address: unique name for each cell to identify it
+- RAM (Random Access Memory): cells can be accessed in any order
+- DRAM (Dynamic RAM): stores bits as tiny electric charge; needs refreshing many times per second
+- SDRAM (Synchronous DRAM): uses additional techniques to decrease retrieval time
+
+---
+
+**Simple Understanding:**
+
+**How is a Bit Stored?**
+👉 Computer uses circuits called flip-flops to store a single bit (0 or 1).
+👉 A large collection of such circuits forms the main memory.
+
+**Main Memory Organization:**
+👉 Memory is organized into cells – manageable units.
+👉 Typically, 8 bits (1 byte) per cell.
+👉 Small devices (microwave, TV) may have a few hundred cells.
+👉 Large computers may have billions of cells.
+
+**Byte Organization:**
+👉 Bits within a byte are ordered: most significant bit (MSB) on the left, least significant bit (LSB) on the right.
+👉 This is just a human convention – computer has no left or right.
+
+**Memory Address:**
+👉 Each cell has a unique "name" called its address.
+👉 Addresses allow the computer to find and access specific cells.
+
+**RAM (Random Access Memory):**
+👉 Memory that can be accessed in any order (random access).
+👉 Not sequential like a tape; you can jump to any address.
+
+**DRAM (Dynamic RAM):**
+👉 Stores bits as tiny electric charge in capacitors.
+👉 Charge leaks over time, so it must be refreshed many times per second.
+
+**SDRAM (Synchronous DRAM):**
+👉 A faster type of DRAM.
+👉 Uses synchronization techniques to reduce retrieval time.
+
+---
+
+**Important Vocabulary:**
+- Flip-flop = circuit that stores one bit
+- Main memory = collection of storage cells in a computer
+- Cell = smallest addressable unit (usually 1 byte = 8 bits)
+- Memory address = unique identifier for a memory cell
+- RAM = Random Access Memory (any order access)
+- DRAM = Dynamic RAM (needs refreshing)
+- SDRAM = Synchronous DRAM (faster than DRAM)
+- MSB = Most Significant Bit
+- LSB = Least Significant Bit
+
+---
+
+**Quick Revision Points:**
+- Flip-flops store individual bits.
+- Main memory is made of millions/billions of flip-flops.
+- Common cell size: 1 byte (8 bits).
+- Each cell has a unique address.
+- RAM allows random (non-sequential) access.
+- DRAM requires constant refreshing.
+- SDRAM is faster synchronous DRAM.`,
+
+  questions: [
+    {
+      q: 'What basic circuit is used to store a single bit in main memory?',
+      options: ['A. Transistor', 'B. Flip-flop', 'C. Capacitor', 'D. Resistor'],
+      answer: 'B. Flip-flop',
+      diff: 'easy',
+    },
+    {
+      q: 'A typical manageable unit (cell) in main memory consists of how many bits?',
+      options: ['A. 2', 'B. 4', 'C. 8', 'D. 16'],
+      answer: 'C. 8',
+      diff: 'easy',
+    },
+    {
+      q: 'Household devices typically have how many memory cells?',
+      options: ['A. Billions', 'B. Millions', 'C. Few hundred', 'D. Thousands'],
+      answer: 'C. Few hundred',
+      diff: 'easy',
+    },
+    {
+      q: 'Large computers may have how many memory cells?',
+      options: ['A. Few hundred', 'B. Thousands', 'C. Millions', 'D. Billions'],
+      answer: 'D. Billions',
+      diff: 'easy',
+    },
+    {
+      q: 'In byte organization, the most significant bit is usually placed on the:',
+      options: ['A. Left', 'B. Right', 'C. Top', 'D. Bottom'],
+      answer: 'A. Left',
+      diff: 'easy',
+    },
+    {
+      q: 'What is a memory address?',
+      options: ['A. The value stored in a cell', 'B. The unique name/location of a cell', 'C. The size of memory', 'D. The type of memory'],
+      answer: 'B. The unique name/location of a cell',
+      diff: 'easy',
+    },
+    {
+      q: 'What does RAM stand for?',
+      options: ['A. Readily Available Memory', 'B. Random Access Memory', 'C. Rapid Access Module', 'D. Read Access Memory'],
+      answer: 'B. Random Access Memory',
+      diff: 'easy',
+    },
+    {
+      q: 'Why is main memory called "random access"?',
+      options: ['A. It picks random addresses', 'B. Cells can be accessed in any order', 'C. It uses random numbers', 'D. It is unpredictable'],
+      answer: 'B. Cells can be accessed in any order',
+      diff: 'easy',
+    },
+    {
+      q: 'DRAM stores bits as:',
+      options: ['A. Magnetic fields', 'B. Electric charge', 'C. Light pulses', 'D. Mechanical switches'],
+      answer: 'B. Electric charge',
+      diff: 'easy',
+    },
+    {
+      q: 'Why does DRAM need to be refreshed constantly?',
+      options: ['A. It loses power', 'B. Electric charge leaks over time', 'C. It gets too hot', 'D. It is too slow'],
+      answer: 'B. Electric charge leaks over time',
+      diff: 'medium',
+    },
+    {
+      q: 'What does SDRAM stand for?',
+      options: ['A. Static DRAM', 'B. Synchronous DRAM', 'C. Serial DRAM', 'D. Single DRAM'],
+      answer: 'B. Synchronous DRAM',
+      diff: 'easy',
+    },
+    {
+      q: 'SDRAM is faster than traditional DRAM because it:',
+      options: ['A. Uses less electricity', 'B. Applies additional techniques to decrease retrieval time', 'C. Has larger cells', 'D. Never needs refreshing'],
+      answer: 'B. Applies additional techniques to decrease retrieval time',
+      diff: 'medium',
+    },
+    {
+      q: 'A flip-flop can store how many bits?',
+      options: ['A. 1', 'B. 2', 'C. 4', 'D. 8'],
+      answer: 'A. 1',
+      diff: 'easy',
+    },
+    {
+      q: 'The least significant bit (LSB) in a byte is usually placed on the:',
+      options: ['A. Left', 'B. Right', 'C. Top', 'D. Bottom'],
+      answer: 'B. Right',
+      diff: 'easy',
+    },
+    {
+      q: 'Memory addresses are used to:',
+      options: ['A. Store data', 'B. Identify individual cells', 'C. Calculate size', 'D. Speed up processing'],
+      answer: 'B. Identify individual cells',
+      diff: 'easy',
+    },
+    {
+      q: 'Which type of memory must be refreshed many times per second?',
+      options: ['A. SRAM', 'B. DRAM', 'C. ROM', 'D. Cache'],
+      answer: 'B. DRAM',
+      diff: 'easy',
+    },
+    {
+      q: 'The "D" in DRAM stands for:',
+      options: ['A. Digital', 'B. Dynamic', 'C. Direct', 'D. Dual'],
+      answer: 'B. Dynamic',
+      diff: 'easy',
+    },
+    {
+      q: 'The "S" in SDRAM stands for:',
+      options: ['A. Static', 'B. Synchronous', 'C. Serial', 'D. Single'],
+      answer: 'B. Synchronous',
+      diff: 'easy',
+    },
+    {
+      q: 'One byte equals how many bits?',
+      options: ['A. 4', 'B. 8', 'C. 16', 'D. 32'],
+      answer: 'B. 8',
+      diff: 'easy',
+    },
+    {
+      q: 'Main memory in a computer is made up of a large collection of:',
+      options: ['A. Transistors only', 'B. Flip-flops or similar circuits', 'C. Resistors', 'D. Capacitors only'],
+      answer: 'B. Flip-flops or similar circuits',
+      diff: 'easy',
+    }
+  ]
+},
+15: {
+  title: 'Magnetic Systems: Mass Storage, Disk Operation, Seek Time, Access Time (CS101 Lecture 15)',
+  summary: `**Key Topics Covered:**
+- Mass storage (secondary storage): less volatile, larger capacity, lower cost than main memory
+- Examples: magnetic disks, CDs, DVDs, magnetic tapes, flash drives, SSDs
+- How magnetic disks work: thin spinning disk with magnetic coating
+- Read/Write heads placed above/below the disk
+- Tracks: circles traversed by each head
+- Sectors: equal divisions of tracks (512 bytes to few KB each)
+- Outer tracks contain more data (longer circumference)
+- Zoned-bit recording: adjacent tracks form zones; all tracks in a zone have equal sectors (typical 10 zones)
+- Seek time: time to move heads from one track to another
+- Rotation delay (latency): average time for desired data to rotate under head
+- Access time = seek time + rotation delay
+- Transfer rate: rate at which data is read from or written to disk
+
+---
+
+**Simple Understanding:**
+
+**Why Mass Storage?**
+👉 Main memory is volatile (loses data when power off) and limited in size.
+👉 Mass storage (secondary storage) solves these problems:
+   - Less volatile (retains data)
+   - Large storage capacity
+   - Low cost per byte
+   - Removable media for archiving
+
+**Magnetic Disk Basics:**
+👉 Thin, spinning disk coated with magnetic material.
+👉 Data stored as magnetic patterns.
+👉 Read/Write heads float just above/below the spinning disk.
+
+**Tracks and Sectors:**
+👉 Head moves along a circle – called a track.
+👉 Each track is divided into sectors (like pizza slices).
+👉 Typical sector size: 512 bytes to a few KB.
+👉 Outer tracks are longer, so they contain more sectors (more data).
+
+**Zoned-Bit Recording:**
+👉 Adjacent tracks are grouped into zones.
+👉 All tracks within a zone have the same number of sectors.
+👉 Typical disk: about 10 zones.
+
+**Performance Metrics:**
+- **Seek time:** time to move heads to the desired track.
+- **Rotation delay (latency):** average time for the disk to spin the desired data under the head (usually half a full rotation).
+- **Access time = Seek time + Rotation delay.**
+- **Transfer rate:** speed of data transfer once head is positioned.
+
+---
+
+**Important Vocabulary:**
+- Mass storage = secondary storage (non-volatile, large capacity)
+- Volatility = loss of data when power is off
+- Magnetic disk = storage medium using magnetic coating
+- Track = circular path on a disk surface
+- Sector = subdivision of a track (smallest addressable unit)
+- Zoned-bit recording = grouping tracks into zones with equal sectors
+- Seek time = head movement time
+- Rotation delay = waiting for data to spin under head
+- Access time = seek time + rotation delay
+- Transfer rate = data speed
+
+---
+
+**Quick Revision Points:**
+- Mass storage is non-volatile, large, cheap, often removable.
+- Magnetic disks use spinning platters with magnetic coating.
+- Tracks are concentric circles; sectors are track divisions.
+- Outer tracks hold more data than inner tracks.
+- Zoned-bit recording gives equal sectors per zone.
+- Seek time + rotation delay = access time.
+- Transfer rate measures data speed.`,
+
+  questions: [
+    {
+      q: 'What is an advantage of mass storage over main memory?',
+      options: ['A. Faster access', 'B. Less volatile and larger capacity', 'C. Smaller size', 'D. Cheaper per bit but volatile'],
+      answer: 'B. Less volatile and larger capacity',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is an example of mass storage?',
+      options: ['A. RAM', 'B. Cache', 'C. Magnetic disk', 'D. Register'],
+      answer: 'C. Magnetic disk',
+      diff: 'easy',
+    },
+    {
+      q: 'A magnetic disk stores data using:',
+      options: ['A. Electric charge', 'B. Magnetic coating', 'C. Optical pits', 'D. Flip-flops'],
+      answer: 'B. Magnetic coating',
+      diff: 'easy',
+    },
+    {
+      q: 'What is a track on a magnetic disk?',
+      options: ['A. A sector', 'B. A circle traversed by a read/write head', 'C. The center of the disk', 'D. A zone'],
+      answer: 'B. A circle traversed by a read/write head',
+      diff: 'easy',
+    },
+    {
+      q: 'Tracks are divided into smaller units called:',
+      options: ['A. Clusters', 'B. Blocks', 'C. Sectors', 'D. Zones'],
+      answer: 'C. Sectors',
+      diff: 'easy',
+    },
+    {
+      q: 'Typical sector size is:',
+      options: ['A. 512 bytes to a few KB', 'B. 8 bytes', 'C. 1 MB', 'D. 1 GB'],
+      answer: 'A. 512 bytes to a few KB',
+      diff: 'easy',
+    },
+    {
+      q: 'Why do outer tracks contain more data than inner tracks?',
+      options: ['A. They are longer in circumference', 'B. They spin faster', 'C. They use stronger magnetism', 'D. They have more heads'],
+      answer: 'A. They are longer in circumference',
+      diff: 'medium',
+    },
+    {
+      q: 'What is zoned-bit recording?',
+      options: ['A. Recording data in zones without sectors', 'B. Grouping adjacent tracks into zones with equal sectors', 'C. Recording bits in zones of the head', 'D. A type of memory chip'],
+      answer: 'B. Grouping adjacent tracks into zones with equal sectors',
+      diff: 'medium',
+    },
+    {
+      q: 'Approximately how many zones does a typical disk have?',
+      options: ['A. 2', 'B. 5', 'C. 10', 'D. 20'],
+      answer: 'C. 10',
+      diff: 'medium',
+    },
+    {
+      q: 'Seek time is defined as:',
+      options: ['A. Time to rotate the disk', 'B. Time to move heads from one track to another', 'C. Time to transfer data', 'D. Time to power on'],
+      answer: 'B. Time to move heads from one track to another',
+      diff: 'easy',
+    },
+    {
+      q: 'Rotation delay (latency) is the time:',
+      options: ['A. To move heads', 'B. For desired data to rotate under the head', 'C. To format the disk', 'D. To power off'],
+      answer: 'B. For desired data to rotate under the head',
+      diff: 'easy',
+    },
+    {
+      q: 'Access time equals:',
+      options: ['A. Seek time + transfer time', 'B. Rotation delay + transfer time', 'C. Seek time + rotation delay', 'D. Seek time × rotation delay'],
+      answer: 'C. Seek time + rotation delay',
+      diff: 'easy',
+    },
+    {
+      q: 'Transfer rate measures:',
+      options: ['A. Speed of head movement', 'B. Speed of disk rotation', 'C. Rate of data transfer to/from disk', 'D. Time to find a track'],
+      answer: 'C. Rate of data transfer to/from disk',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is NOT a mass storage device?',
+      options: ['A. Hard disk', 'B. SSD', 'C. RAM', 'D. Flash drive'],
+      answer: 'C. RAM',
+      diff: 'easy',
+    },
+    {
+      q: 'Read/Write heads on a magnetic disk are positioned:',
+      options: ['A. In contact with the disk', 'B. Above or below the disk (not touching)', 'C. Inside the disk platter', 'D. On the edge'],
+      answer: 'B. Above or below the disk (not touching)',
+      diff: 'easy',
+    },
+    {
+      q: 'Why are outer tracks able to store more data?',
+      options: ['A. They have more sectors per track', 'B. They have larger bits', 'C. They spin slower', 'D. They use more power'],
+      answer: 'A. They have more sectors per track',
+      diff: 'medium',
+    },
+    {
+      q: 'Average rotation delay is typically:',
+      options: ['A. Half the time for one full rotation', 'B. Equal to seek time', 'C. Zero', 'D. Full rotation time'],
+      answer: 'A. Half the time for one full rotation',
+      diff: 'medium',
+    }
+  ]
+},
+
+16: {
+  title: 'Optical Systems: CD, DVD, Blu-ray Discs (CS101 Lecture 16)',
+  summary: `**Key Topics Covered:**
+- Optical mass storage: CD, DVD, Blu-ray Disc (BD)
+- Compact Disc (CD): 12 cm diameter, reflective material, single-track spiral from inside to outside
+- Data stored as variations in reflective surface (pits and lands)
+- Laser reads irregularities on reflective surface
+- CD sectors: 2 KB data or 1/75 second audio
+- Initially for audio: CD-DA (Compact Disc Digital Audio)
+- Single track means sectors not individually accessible → slower random access than magnetic disks
+- Optical systems best for long continuous data streams (e.g., music, video)
+- DVD (Digital Versatile Disk): multiple semi-transparent layers, GB capacity (CD: 600-700 MB)
+- Blu-ray Disc (BD): uses blue-violet laser (finer precision), 5× capacity of DVD
+
+---
+
+**Simple Understanding:**
+
+**What are Optical Systems?**
+👉 Mass storage using lasers and reflective surfaces.
+👉 Examples: CDs, DVDs, Blu-ray Discs.
+
+**Compact Disc (CD):**
+👉 12 cm diameter (standard).
+👉 Made of reflective material (aluminum).
+👉 Data stored as pits (bumps) and lands (flat areas) on a spiral track.
+👉 Spiral runs from inside to outside (single continuous track).
+👉 Laser beam detects irregularities as the disc spins.
+👉 Sector capacity: 2 KB data or 1/75 second of audio.
+👉 Originally for audio: CD-DA (Compact Disc Digital Audio).
+👉 Still used for computer data storage.
+
+**CD Performance:**
+👉 Single track means sectors are not individually addressable.
+👉 To find a specific sector, the laser must scan along the spiral.
+👉 Magnetic disks (with multiple concentric tracks) have faster random access.
+👉 Optical disks are best for long continuous streams (music, movies).
+
+**DVD (Digital Versatile Disk):**
+👉 Same physical size as CD (12 cm).
+👉 Multiple semi-transparent layers (2 or more).
+👉 Laser can focus on different layers.
+👉 Capacity: gigabytes (CD is 600-700 MB).
+
+**Blu-ray Disc (BD):**
+👉 Uses blue-violet laser (shorter wavelength than red laser used in CDs/DVDs).
+👉 Finer precision allows more data per area.
+👉 Capacity: about 5 times that of DVD.
+
+---
+
+**Important Vocabulary:**
+- Optical system = storage using lasers and reflective surfaces
+- CD = Compact Disc
+- DVD = Digital Versatile Disk
+- BD = Blu-ray Disc
+- Pit = microscopic bump on disc surface
+- Land = flat area between pits
+- Spiral track = single continuous track from center to edge
+- Laser = focused light beam for reading data
+- Reflective surface = mirror-like layer on disc
+- Semi-transparent layer = partially see-through layer (used in DVDs)
+
+---
+
+**Quick Revision Points:**
+- CDs use a single spiral track (not concentric circles like magnetic disks).
+- Data is read by a laser detecting pits and lands.
+- CD capacity: 600-700 MB; DVD: several GB; Blu-ray: 5× DVD.
+- Blu-ray uses blue-violet laser (shorter wavelength, finer focus).
+- Optical disks have slower random access than magnetic disks.
+- Optical disks are good for continuous data (audio, video).`,
+
+  questions: [
+    {
+      q: 'Which of the following is an optical storage system?',
+      options: ['A. Hard disk', 'B. Magnetic tape', 'C. Compact Disc (CD)', 'D. Flash drive'],
+      answer: 'C. Compact Disc (CD)',
+      diff: 'easy',
+    },
+    {
+      q: 'The standard diameter of a compact disc (CD) is:',
+      options: ['A. 8 cm', 'B. 10 cm', 'C. 12 cm', 'D. 15 cm'],
+      answer: 'C. 12 cm',
+      diff: 'easy',
+    },
+    {
+      q: 'On a CD, data is stored on a:',
+      options: ['A. Single-track spiral', 'B. Multiple concentric tracks', 'C. Series of holes', 'D. Magnetic coating'],
+      answer: 'A. Single-track spiral',
+      diff: 'easy',
+    },
+    {
+      q: 'What does a CD laser detect to read data?',
+      options: ['A. Magnetic fields', 'B. Electric charges', 'C. Pits and lands (irregularities)', 'D. Heat patterns'],
+      answer: 'C. Pits and lands (irregularities)',
+      diff: 'easy',
+    },
+    {
+      q: 'A typical CD sector can store how much computer data?',
+      options: ['A. 512 bytes', 'B. 1 KB', 'C. 2 KB', 'D. 4 KB'],
+      answer: 'C. 2 KB',
+      diff: 'medium',
+    },
+    {
+      q: 'The original audio format for CDs is called:',
+      options: ['A. CD-ROM', 'B. CD-R', 'C. CD-DA', 'D. CD-RW'],
+      answer: 'C. CD-DA',
+      diff: 'medium',
+    },
+    {
+      q: 'Why is data retrieval slower on optical disks than on magnetic disks?',
+      options: ['A. Optical disks spin slower', 'B. Optical disks use a single spiral track (sectors not individually addressable)', 'C. Lasers are slower than magnetic heads', 'D. Optical disks have less capacity'],
+      answer: 'B. Optical disks use a single spiral track (sectors not individually addressable)',
+      diff: 'medium',
+    },
+    {
+      q: 'Optical disks are best suited for:',
+      options: ['A. Random access to small files', 'B. Long continuous streams of data (audio/video)', 'C. Frequent writing and rewriting', 'D. Very large databases'],
+      answer: 'B. Long continuous streams of data (audio/video)',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the approximate storage capacity of a standard CD?',
+      options: ['A. 100-200 MB', 'B. 600-700 MB', 'C. 1-2 GB', 'D. 10-20 GB'],
+      answer: 'B. 600-700 MB',
+      diff: 'easy',
+    },
+    {
+      q: 'DVD stands for:',
+      options: ['A. Digital Video Disc', 'B. Digital Versatile Disk', 'C. Data Variable Disc', 'D. Double Volume Disc'],
+      answer: 'B. Digital Versatile Disk',
+      diff: 'easy',
+    },
+    {
+      q: 'DVDs achieve higher capacity than CDs by using:',
+      options: ['A. Larger diameter', 'B. Multiple semi-transparent layers', 'C. Faster spinning', 'D. Stronger laser'],
+      answer: 'B. Multiple semi-transparent layers',
+      diff: 'medium',
+    },
+    {
+      q: 'Blu-ray Discs use a laser with which color spectrum?',
+      options: ['A. Red', 'B. Blue-violet', 'C. Green', 'D. Infrared'],
+      answer: 'B. Blue-violet',
+      diff: 'easy',
+    },
+    {
+      q: 'Blu-ray Discs have approximately how many times the capacity of DVDs?',
+      options: ['A. 2×', 'B. 3×', 'C. 5×', 'D. 10×'],
+      answer: 'C. 5×',
+      diff: 'easy',
+    },
+    {
+      q: 'The spiral track on a CD runs from:',
+      options: ['A. Outside to inside', 'B. Inside to outside', 'C. Top to bottom', 'D. Bottom to top'],
+      answer: 'B. Inside to outside',
+      diff: 'medium',
+    },
+    {
+      q: 'Which optical format offers the highest storage capacity?',
+      options: ['A. CD', 'B. DVD', 'C. Blu-ray', 'D. All have same capacity'],
+      answer: 'C. Blu-ray',
+      diff: 'easy',
+    },
+    {
+      q: 'The reflective material on a CD is typically:',
+      options: ['A. Plastic', 'B. Glass', 'C. Aluminum', 'D. Copper'],
+      answer: 'C. Aluminum',
+      diff: 'medium',
+    },
+    {
+      q: 'What is the main advantage of using a blue-violet laser in Blu-ray?',
+      options: ['A. Lower cost', 'B. Finer precision, more data per area', 'C. Faster spin rate', 'D. Compatibility with CDs'],
+      answer: 'B. Finer precision, more data per area',
+      diff: 'medium',
+    }
+  ]
+},
+
+17: {
+  title: 'Flash Drives: Solid State Storage, SSDs, SD Cards (CS101 Lecture 17)',
+  summary: `**Key Topics Covered:**
+- Issues with magnetic and optical systems: physical motion (moving heads, aiming lasers) takes time vs. electronic circuitry
+- Flash drive technology: electronic signals trap electrons in silicon dioxide chambers
+- No moving parts → faster access
+- Chambers retain data for years without power
+- Repeated erasing gradually damages chambers (limited write cycles)
+- Not suitable as main memory (due to wear)
+- Suitable for cameras, smartphones, portable devices where writes are controlled
+- Less reliable than optical disks for long-term storage
+- SSD (Solid State Disk): larger flash device to replace magnetic disks; quiet, low access time, but more expensive
+- SD (Secure Digital Memory Cards): up to few GB; SDHC up to 32 GB; SDXC exceeds TB
+- Compact sizes: standard, mini, micro; used in car navigation, cameras
+
+---
+
+**Simple Understanding:**
+
+**Problems with Magnetic & Optical Storage:**
+👉 They require physical motion: moving read/write heads (magnetic) or aiming laser beams (optical).
+👉 Physical motion is slow compared to electronic circuits.
+
+**Flash Drive Technology:**
+👉 Stores bits using electronic signals – no moving parts.
+👉 Electrons are trapped in tiny chambers of silicon dioxide.
+👉 Chambers hold data for years without power.
+👉 Repeated erasing slowly damages the chambers (limited lifespan).
+👉 Not suitable for main memory because of write limits.
+👉 Ideal for cameras, smartphones, portable devices (where writes are controlled).
+👉 Less reliable than optical disks for very long-term storage.
+
+**SSD (Solid State Disk):**
+👉 Larger flash memory device designed to replace magnetic hard disks.
+👉 Quiet operation (no spinning platters).
+👉 Very low access time.
+👉 More expensive than magnetic disks.
+
+**SD Cards (Secure Digital Memory Cards):**
+👉 Provide up to a few GB (standard), SDHC up to 32 GB, SDXC can exceed 1 TB.
+👉 Available in standard, mini, and micro sizes.
+👉 Compact physical size – used in car navigation, cameras, phones.
+
+---
+
+**Important Vocabulary:**
+- Flash drive = storage using trapped electrons in silicon dioxide
+- Silicon dioxide = insulating material used in flash memory chips
+- SSD = Solid State Disk (large flash storage)
+- SD = Secure Digital memory card
+- SDHC = SD High Capacity (up to 32 GB)
+- SDXC = SD eXtended Capacity (over 32 GB, up to TB)
+- Write cycle = one program/erase operation
+- Wear = gradual damage from repeated writes
+
+---
+
+**Quick Revision Points:**
+- Magnetic/optical systems have moving parts → slower.
+- Flash drives use electronic signals → faster, no moving parts.
+- Electrons trapped in silicon dioxide chambers store bits.
+- Data retention for years without power.
+- Limited write cycles – not ideal for main memory.
+- SSDs replace hard disks: fast, quiet, costly.
+- SD cards: small, used in portable devices.
+- SDHC: up to 32 GB; SDXC: over 32 GB to TB.`,
+
+  questions: [
+    {
+      q: 'What is a major disadvantage of magnetic and optical storage systems?',
+      options: ['A. They are too fast', 'B. They require physical motion (moving parts)', 'C. They are electronic', 'D. They have no moving parts'],
+      answer: 'B. They require physical motion (moving parts)',
+      diff: 'easy',
+    },
+    {
+      q: 'Flash drives store bits by:',
+      options: ['A. Spinning magnetic disks', 'B. Trapping electrons in silicon dioxide chambers', 'C. Burning pits on a reflective surface', 'D. Charging capacitors'],
+      answer: 'B. Trapping electrons in silicon dioxide chambers',
+      diff: 'easy',
+    },
+    {
+      q: 'How long can flash memory retain data without external power?',
+      options: ['A. Minutes', 'B. Hours', 'C. Days', 'D. Years'],
+      answer: 'D. Years',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the main limitation of flash memory regarding write cycles?',
+      options: ['A. It is too fast', 'B. Repeated erasing slowly damages the chambers', 'C. It loses data immediately', 'D. It cannot be erased'],
+      answer: 'B. Repeated erasing slowly damages the chambers',
+      diff: 'easy',
+    },
+    {
+      q: 'Why is flash memory not suitable as main memory (RAM)?',
+      options: ['A. It is too fast', 'B. It has limited write cycles and slower than DRAM', 'C. It is too large', 'D. It requires physical motion'],
+      answer: 'B. It has limited write cycles and slower than DRAM',
+      diff: 'medium',
+    },
+    {
+      q: 'Flash drives are ideal for:',
+      options: ['A. Main memory', 'B. Cameras, smartphones, portable devices', 'C. Long-term archival', 'D. All of the above'],
+      answer: 'B. Cameras, smartphones, portable devices',
+      diff: 'easy',
+    },
+    {
+      q: 'SSD stands for:',
+      options: ['A. Solid State Disk', 'B. Serial Storage Device', 'C. Secure System Drive', 'D. Single Sided Disk'],
+      answer: 'A. Solid State Disk',
+      diff: 'easy',
+    },
+    {
+      q: 'SSDs are designed to replace:',
+      options: ['A. Optical disks', 'B. Magnetic hard disks', 'C. RAM', 'D. Flash drives'],
+      answer: 'B. Magnetic hard disks',
+      diff: 'easy',
+    },
+    {
+      q: 'What is an advantage of SSDs over magnetic disks?',
+      options: ['A. Lower cost', 'B. Quiet operation and low access time', 'C. Higher power consumption', 'D. Larger physical size'],
+      answer: 'B. Quiet operation and low access time',
+      diff: 'easy',
+    },
+    {
+      q: 'What is a disadvantage of SSDs compared to magnetic disks?',
+      options: ['A. They are slower', 'B. They are more expensive per GB', 'C. They are noisier', 'D. They have moving parts'],
+      answer: 'B. They are more expensive per GB',
+      diff: 'easy',
+    },
+    {
+      q: 'SD card stands for:',
+      options: ['A. Solid Disk', 'B. Serial Data', 'C. Secure Digital', 'D. System Drive'],
+      answer: 'C. Secure Digital',
+      diff: 'easy',
+    },
+    {
+      q: 'SDHC cards can provide up to:',
+      options: ['A. 2 GB', 'B. 8 GB', 'C. 16 GB', 'D. 32 GB'],
+      answer: 'D. 32 GB',
+      diff: 'medium',
+    },
+    {
+      q: 'SDXC cards can exceed storage of:',
+      options: ['A. 32 GB', 'B. 64 GB', 'C. 128 GB', 'D. 1 TB'],
+      answer: 'D. 1 TB',
+      diff: 'medium',
+    },
+    {
+      q: 'Which of the following is NOT a size variant of SD cards?',
+      options: ['A. Standard', 'B. Mini', 'C. Micro', 'D. Nano'],
+      answer: 'D. Nano',
+      diff: 'easy',
+    },
+    {
+      q: 'SD cards are commonly used in:',
+      options: ['A. Desktop computers only', 'B. Car navigation, cameras, phones', 'C. Mainframe computers', 'D. Supercomputers'],
+      answer: 'B. Car navigation, cameras, phones',
+      diff: 'easy',
+    },
+    {
+      q: 'Compared to optical disks, flash drives are generally ________ for long-term storage?',
+      options: ['A. More reliable', 'B. Less reliable', 'C. Equally reliable', 'D. Not comparable'],
+      answer: 'B. Less reliable',
+      diff: 'medium',
+    },
+    {
+      q: 'The chambers in flash memory that trap electrons are made of:',
+      options: ['A. Copper', 'B. Silicon dioxide', 'C. Aluminum', 'D. Plastic'],
+      answer: 'B. Silicon dioxide',
+      diff: 'medium',
+    },
+    {
+      q: 'Which type of flash storage is designed to replace magnetic hard disks in computers?',
+      options: ['A. USB flash drive', 'B. SD card', 'C. SSD', 'D. Memory stick'],
+      answer: 'C. SSD',
+      diff: 'easy',
+    },
+    {
+      q: 'A major advantage of flash memory over magnetic disks is:',
+      options: ['A. No physical motion (electronic)', 'B. Lower cost per GB', 'C. Infinite write cycles', 'D. Larger capacity'],
+      answer: 'A. No physical motion (electronic)',
+      diff: 'easy',
+    }
+  ]
+},
+
+
+18: {
+  title: 'Representing Text: ASCII, Unicode, UTF-8 (CS101 Lecture 18)',
+  summary: `**Key Topics Covered:**
+- Text stored as codes: each character represented by a unique bit pattern
+- Typically 8 bits per character (1 byte)
+- Example: "Virtual University" (18 characters) = 144 bits / 18 bytes
+- 1940s-1950s: many coding systems; ANSI standard
+- ASCII (American Standard Code for Information Interchange):
+  - 7 bits for information + 1 most significant bit = 0
+  - 2⁷ = 128 possible characters
+  - Includes uppercase, lowercase, punctuation, digits 0-9, line feed, carriage return, tabs
+- ASCII example: "Hello" uses codes H=72, e=101, l=108, l=108, o=111
+- Limitations of ASCII: only 128 characters (no non-English symbols)
+- ISO extensions added support for Western European languages
+- Limitations of extensions: 256 still insufficient for many languages, and mixed-language documents are problematic
+- Unicode: international standard, 21-bit unique patterns, compatible with ASCII, supports thousands of characters (Chinese, Hebrew, Japanese, etc.)
+- UTF-8: uses 24-32 bits, up to 2²⁴ = 16,777,216 unique symbols
+- Text file: file consisting of long strings of ASCII or Unicode encoded characters
+
+---
+
+**Simple Understanding:**
+
+**How Text is Stored:**
+👉 Each character (letter, digit, punctuation) is stored as a unique bit pattern.
+👉 Usually 1 byte (8 bits) per character in older systems.
+👉 Example: "Virtual University" has 18 letters → 18 bytes (144 bits).
+
+**ASCII (American Standard Code for Information Interchange):**
+👉 Developed by ANSI (American National Standards Institute).
+👉 Uses 7 bits for the code + 1 extra bit always 0.
+👉 Total: 2⁷ = 128 possible characters.
+👉 Includes: A-Z, a-z, 0-9, punctuation, enter (line feed), carriage return, tab.
+
+**ASCII Example:**
+👉 'H' = 72 (binary 01001000)
+👉 'e' = 101 (binary 01100101)
+👉 'l' = 108
+👉 'l' = 108
+👉 'o' = 111
+
+**Problems with ASCII:**
+👉 Only 128 characters – no room for accented letters (é, ñ, ü) or non-Latin scripts (Arabic, Urdu, Chinese).
+👉 ISO extensions increased to 256 characters, but still not enough for all languages.
+👉 Mixed-language documents impossible with one extension.
+
+**Unicode:**
+👉 A single universal standard supported by all major hardware/software.
+👉 Uses 21-bit unique patterns (over 2 million possible characters).
+👉 Compatible with ASCII (same codes for first 128 characters).
+👉 Supports Chinese, Hebrew, Japanese, Arabic, Urdu, etc.
+
+**UTF-8 (Unicode Transformation Format – 8 bit):**
+👉 Variable-length encoding (24 to 32 bits).
+👉 Can represent up to 2²⁴ = 16,777,216 symbols (practically unlimited).
+👉 Most common encoding on the web.
+
+**Text File:**
+👉 A file containing long strings of text encoded in ASCII, Unicode, or UTF-8.
+
+---
+
+**Important Vocabulary:**
+- ASCII = American Standard Code for Information Interchange
+- ANSI = American National Standards Institute
+- Bit pattern = sequence of bits representing a character
+- Unicode = universal character encoding standard
+- UTF-8 = 8-bit Unicode Transformation Format
+- ISO = International Organization for Standardization
+- Text file = file containing human-readable characters
+
+---
+
+**Quick Revision Points:**
+- Old systems: 1 byte per character (ASCII).
+- ASCII: 7 bits → 128 characters (English letters, digits, symbols).
+- ASCII could not represent other languages.
+- Unicode: 21 bits → over 2 million characters, universal.
+- UTF-8: 24-32 bits variable-length, common on the web.
+- Text files contain ASCII/Unicode/UTF-8 encoded text.`,
+
+  questions: [
+    {
+      q: 'How many bits are typically used to represent a character in ASCII?',
+      options: ['A. 4', 'B. 7', 'C. 8 (including parity)', 'D. 16'],
+      answer: 'C. 8 (including parity)',
+      diff: 'easy',
+    },
+    {
+      q: 'ASCII stands for:',
+      options: ['A. American Standard Code for Information Interchange', 'B. Advanced Symbolic Code for Information Transfer', 'C. American Symbolic Character Identification', 'D. Automatic Standard Code for Internet'],
+      answer: 'A. American Standard Code for Information Interchange',
+      diff: 'easy',
+    },
+    {
+      q: 'How many different characters can ASCII represent (with 7-bit code)?',
+      options: ['A. 64', 'B. 128', 'C. 256', 'D. 512'],
+      answer: 'B. 128',
+      diff: 'easy',
+    },
+    {
+      q: 'Which organization developed ASCII?',
+      options: ['A. ISO', 'B. ANSI', 'C. IEEE', 'D. W3C'],
+      answer: 'B. ANSI',
+      diff: 'medium',
+    },
+    {
+      q: 'ASCII includes all of the following EXCEPT:',
+      options: ['A. Uppercase letters', 'B. Lowercase letters', 'C. Arabic script', 'D. Digits 0-9'],
+      answer: 'C. Arabic script',
+      diff: 'easy',
+    },
+    {
+      q: 'The ASCII code for uppercase "H" is:',
+      options: ['A. 68', 'B. 70', 'C. 72', 'D. 74'],
+      answer: 'C. 72',
+      diff: 'medium',
+    },
+    {
+      q: 'What is the main limitation of ASCII?',
+      options: ['A. It uses too many bits', 'B. It can only represent 128 characters (English only)', 'C. It is too fast', 'D. It is not compatible with computers'],
+      answer: 'B. It can only represent 128 characters (English only)',
+      diff: 'easy',
+    },
+    {
+      q: 'ISO extended ASCII to how many characters?',
+      options: ['A. 128', 'B. 256', 'C. 512', 'D. 1024'],
+      answer: 'B. 256',
+      diff: 'medium',
+    },
+    {
+      q: 'What problem remained even with ISO extensions to ASCII?',
+      options: ['A. 256 characters still insufficient for all languages', 'B. Too many characters cause confusion', 'C. It was too slow', 'D. It was not compatible with English'],
+      answer: 'A. 256 characters still insufficient for all languages',
+      diff: 'easy',
+    },
+    {
+      q: 'Unicode uses how many bits per character pattern?',
+      options: ['A. 7', 'B. 8', 'C. 16', 'D. 21'],
+      answer: 'D. 21',
+      diff: 'medium',
+    },
+    {
+      q: 'Unicode is compatible with which earlier standard?',
+      options: ['A. EBCDIC', 'B. ASCII', 'C. Baudot', 'D. Morse'],
+      answer: 'B. ASCII',
+      diff: 'easy',
+    },
+    {
+      q: 'What is UTF-8?',
+      options: ['A. A 7-bit encoding', 'B. A 8-bit fixed encoding', 'C. A variable-length encoding (24-32 bits)', 'D. A 16-bit fixed encoding'],
+      answer: 'C. A variable-length encoding (24-32 bits)',
+      diff: 'medium',
+    },
+    {
+      q: 'How many unique symbols can UTF-8 potentially represent?',
+      options: ['A. 128', 'B. 256', 'C. 65,536', 'D. 16,777,216'],
+      answer: 'D. 16,777,216',
+      diff: 'hard',
+    },
+    {
+      q: 'The string "Hello" requires how many bytes in ASCII?',
+      options: ['A. 2', 'B. 4', 'C. 5', 'D. 10'],
+      answer: 'C. 5',
+      diff: 'easy',
+    },
+    {
+      q: 'A text file is a file that contains:',
+      options: ['A. Only binary data', 'B. Encoded text (ASCII, Unicode, UTF-8)', 'C. Images', 'D. Audio'],
+      answer: 'B. Encoded text (ASCII, Unicode, UTF-8)',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following can Unicode represent?',
+      options: ['A. English', 'B. Chinese', 'C. Hebrew', 'D. All of the above'],
+      answer: 'D. All of the above',
+      diff: 'easy',
+    },
+    {
+      q: 'The extra bit in 8-bit ASCII is always set to:',
+      options: ['A. 0', 'B. 1', 'C. Depends on the character', 'D. Used for error checking'],
+      answer: 'A. 0',
+      diff: 'medium',
+    },
+    {
+      q: 'Which encoding is most widely used on the World Wide Web today?',
+      options: ['A. ASCII', 'B. ISO-8859-1', 'C. UTF-8', 'D. EBCDIC'],
+      answer: 'C. UTF-8',
+      diff: 'easy',
+    },
+    {
+      q: 'The "Virtual University" string (18 characters) in ASCII requires how many bytes?',
+      options: ['A. 9', 'B. 12', 'C. 18', 'D. 24'],
+      answer: 'C. 18',
+      diff: 'easy',
+    },
+    {
+      q: 'What is the main advantage of Unicode over ASCII?',
+      options: ['A. Faster processing', 'B. Supports virtually all writing systems worldwide', 'C. Uses less storage', 'D. Simpler design'],
+      answer: 'B. Supports virtually all writing systems worldwide',
+      diff: 'easy',
+    }
+  ]
+},
+
+19: {
+  title: 'Representing Numeric Values: Binary Notation, Bits, and Ranges (CS101 Lecture 19)',
+  summary: `**Key Topics Covered:**
+- Storing numbers as Unicode is inefficient: e.g., '12' requires 16 bits, but 16 bits can store 0-65,535
+- Binary notation: uses only digits 0 and 1 (base 2)
+- With n bits, you can represent 2ⁿ distinct numeric values
+- Examples:
+  - 3 bits → 2³ = 8 values (0 to 7)
+  - 4 bits → 2⁴ = 16 values (0 to 15)
+  - 16 bits → 2¹⁶ = 65,536 values (0 to 65,535)
+- Binary notation variations:
+  - Two's complement: for storing whole numbers (positive and negative integers)
+  - Floating point notation: for fractional numbers (decimals)
+
+---
+
+**Simple Understanding:**
+
+**Problem with Storing Numbers as Text (Unicode):**
+👉 Storing "12" as Unicode uses 2 characters × 8-16 bits each = 16-32 bits.
+👉 But 16 bits can store any number from 0 to 65,535 directly.
+👉 Using text for numbers is inefficient.
+
+**Binary Notation:**
+👉 Numbers written using only digits 0 and 1.
+👉 Base-2 number system (computers use binary internally).
+
+**How Many Values with n Bits?**
+👉 1 bit → 2 values (0, 1)
+👉 2 bits → 4 values (00, 01, 10, 11)
+👉 3 bits → 8 values (0 to 7)
+👉 4 bits → 16 values (0 to 15)
+👉 n bits → 2ⁿ values (range 0 to 2ⁿ – 1)
+
+**Example:**
+- 16 bits → 2¹⁶ = 65,536 values (0 to 65,535)
+
+**Binary Notation Variations:**
+- **Two's complement:** method for storing negative whole numbers.
+- **Floating point:** method for storing numbers with decimal points (fractions).
+
+---
+
+**Important Vocabulary:**
+- Binary notation = base-2 number system (digits 0 and 1)
+- n bits = can represent 2ⁿ distinct values
+- Two's complement = representation for signed integers
+- Floating point = representation for real numbers (fractions)
+- Unicode text storage = storing numbers as characters (inefficient)
+
+---
+
+**Quick Revision Points:**
+- Storing numbers as text wastes space.
+- Binary notation uses only 0 and 1.
+- With n bits, you can store 2ⁿ different numbers.
+- 3 bits → 8 values (0–7); 4 bits → 16 values (0–15).
+- 16 bits → 65,536 values (0–65,535).
+- Two's complement = for signed integers.
+- Floating point = for decimals.`,
+
+  questions: [
+    {
+      q: 'What is a disadvantage of storing numeric values as Unicode text?',
+      options: ['A. It uses too few bits', 'B. It is inefficient (wastes storage)', 'C. It cannot store negative numbers', 'D. It is not compatible with computers'],
+      answer: 'B. It is inefficient (wastes storage)',
+      diff: 'easy',
+    },
+    {
+      q: 'Binary notation uses only which digits?',
+      options: ['A. 0-1', 'B. 0-2', 'C. 0-9', 'D. 0-7'],
+      answer: 'A. 0-1',
+      diff: 'easy',
+    },
+    {
+      q: 'How many distinct values can be represented with n bits?',
+      options: ['A. n²', 'B. 2n', 'C. 2ⁿ', 'D. n+2'],
+      answer: 'C. 2ⁿ',
+      diff: 'easy',
+    },
+    {
+      q: 'How many values can 3 bits represent?',
+      options: ['A. 3', 'B. 6', 'C. 8', 'D. 9'],
+      answer: 'C. 8',
+      diff: 'easy',
+    },
+    {
+      q: 'The range of values for 3 bits (unsigned) is:',
+      options: ['A. 0 to 3', 'B. 0 to 7', 'C. 1 to 8', 'D. 0 to 15'],
+      answer: 'B. 0 to 7',
+      diff: 'easy',
+    },
+    {
+      q: 'How many values can 4 bits represent?',
+      options: ['A. 4', 'B. 8', 'C. 16', 'D. 32'],
+      answer: 'C. 16',
+      diff: 'easy',
+    },
+    {
+      q: 'The range of values for 4 bits (unsigned) is:',
+      options: ['A. 0 to 8', 'B. 0 to 15', 'C. 0 to 16', 'D. 1 to 16'],
+      answer: 'B. 0 to 15',
+      diff: 'easy',
+    },
+    {
+      q: 'How many values can 16 bits represent?',
+      options: ['A. 1,024', 'B. 4,096', 'C. 16,384', 'D. 65,536'],
+      answer: 'D. 65,536',
+      diff: 'easy',
+    },
+    {
+      q: 'The maximum unsigned integer value for 16 bits is:',
+      options: ['A. 32,767', 'B. 32,768', 'C. 65,535', 'D. 65,536'],
+      answer: 'C. 65,535',
+      diff: 'medium',
+    },
+    {
+      q: 'Binary notation is a base-____ system:',
+      options: ['A. 2', 'B. 8', 'C. 10', 'D. 16'],
+      answer: 'A. 2',
+      diff: 'easy',
+    },
+    {
+      q: 'Which representation is used for storing whole numbers (positive and negative) in binary?',
+      options: ['A. Floating point', 'B. Two\'s complement', 'C. ASCII', 'D. Unicode'],
+      answer: 'B. Two\'s complement',
+      diff: 'easy',
+    },
+    {
+      q: 'Which representation is used for storing fractional numbers (decimals) in binary?',
+      options: ['A. Two\'s complement', 'B. Floating point', 'C. ASCII', 'D. BCD'],
+      answer: 'B. Floating point',
+      diff: 'easy',
+    },
+    {
+      q: 'How many bits are needed to represent values from 0 to 255?',
+      options: ['A. 4', 'B. 6', 'C. 8', 'D. 10'],
+      answer: 'C. 8',
+      diff: 'medium',
+    },
+    {
+      q: 'If you have 5 bits, how many values can you represent?',
+      options: ['A. 10', 'B. 16', 'C. 32', 'D. 64'],
+      answer: 'C. 32',
+      diff: 'easy',
+    },
+    {
+      q: 'The binary number system is also called:',
+      options: ['A. Base-2', 'B. Base-8', 'C. Base-10', 'D. Base-16'],
+      answer: 'A. Base-2',
+      diff: 'easy',
+    },
+    {
+      q: 'Which is NOT a binary notation variation mentioned in the module?',
+      options: ['A. Two\'s complement', 'B. Floating point', 'C. Hexadecimal', 'D. Both A and B are mentioned, C is not'],
+      answer: 'C. Hexadecimal',
+      diff: 'easy',
+    },
+    {
+      q: 'Storing the number "99" as Unicode (2 characters) uses approximately how many bits?',
+      options: ['A. 7', 'B. 8', 'C. 16', 'D. 32'],
+      answer: 'C. 16',
+      diff: 'medium',
+    },
+    {
+      q: 'The same 16 bits could store a numeric value up to:',
+      options: ['A. 255', 'B. 1,023', 'C. 32,767', 'D. 65,535'],
+      answer: 'D. 65,535',
+      diff: 'medium',
+    }
+  ]
+},
+20: {
+  title: 'Representing Images: Pixels, Bitmaps, RGB, Chrominance, Scaling, Fonts (CS101 Lecture 20)',
+  summary: `**Key Topics Covered:**
+- Pixel (Picture Element): collection of dots forming an image
+- Bitmap: encoding of each pixel's appearance
+- Black and white images: 1 bit per pixel (0=black, 1=white) – used in facsimile
+- Grayscale images: 8 bits per pixel (256 shades of gray)
+- Color images (RGB): 3 bytes per pixel (1 byte each for Red, Green, Blue)
+- Brightness-Chrominance encoding: brightness component (luminance) + two color components (blue chrominance, red chrominance)
+- Image scaling: enlarging requires more pixels (digital zoom)
+- Geometric structures: use lines/curves and analytical geometry (display based on geometry, not pixel reproduction)
+- Scalable fonts: TrueType (Microsoft/Apple), PostScript (Adobe), used in CAD
+
+---
+
+**Simple Understanding:**
+
+**Pixel:**
+👉 Short for "Picture Element".
+👉 Images are made of tiny dots called pixels.
+👉 Each pixel's appearance is encoded into a bitmap.
+👉 Used by display devices, printers, etc.
+
+**Black & White Images:**
+👉 Simplest encoding: 1 bit per pixel.
+👉 Example: 0 = black, 1 = white.
+👉 Used in facsimile (fax machines).
+
+**Grayscale Images:**
+👉 Use 8 bits per pixel (instead of 1 bit).
+👉 Can represent 256 shades of gray (from pure black to pure white).
+
+**Color Images (RGB):**
+👉 Uses three bytes per pixel.
+👉 One byte for Red, one for Green, one for Blue.
+👉 Total colors: 256 × 256 × 256 ≈ 16.7 million colors.
+
+**Brightness-Chrominance Encoding:**
+👉 Used in some image/video formats.
+👉 Brightness component = luminance (sum of red+green+blue).
+👉 Two color components: blue chrominance and red chrominance (differences from luminance).
+
+**Image Scaling:**
+👉 Enlarging an image requires adding more pixels.
+👉 Digital zoom is a form of scaling.
+
+**Geometric Structures for Scaling:**
+👉 Instead of pixel reproduction, use mathematical description.
+👉 Collections of lines and curves (analytical geometry).
+👉 Better quality when scaling up.
+
+**Scalable Fonts:**
+👉 Fonts defined by geometric shapes (not pixels).
+👉 TrueType: developed by Microsoft and Apple.
+👉 PostScript: developed by Adobe.
+👉 Also used in Computer Aided Design (CAD).
+
+---
+
+**Important Vocabulary:**
+- Pixel = Picture Element (smallest dot in an image)
+- Bitmap = mapping of pixel values to image
+- Grayscale = shades of gray (no color)
+- RGB = Red, Green, Blue color model
+- Luminance = brightness component (sum of R+G+B)
+- Chrominance = color component (difference from luminance)
+- Scaling = changing image size
+- Digital zoom = enlarging by adding pixels (lower quality)
+- Geometric structure = image defined by math (lines, curves)
+- Scalable font = font that resizes smoothly without pixelation
+
+---
+
+**Quick Revision Points:**
+- 1 bit per pixel → black & white (fax).
+- 8 bits per pixel → 256 grayscale shades.
+- 24 bits per pixel (3 bytes) → true color (RGB).
+- Brightness-chrominance separates light from color.
+- Scaling up by pixels = digital zoom (lower quality).
+- Geometry-based scaling uses math (lines/curves) – better quality.
+- TrueType and PostScript are scalable font technologies.`,
+
+  questions: [
+    {
+      q: 'What does "pixel" stand for?',
+      options: ['A. Picture Element', 'B. Pixel Element', 'C. Picture Link', 'D. Pixie Element'],
+      answer: 'A. Picture Element',
+      diff: 'easy',
+    },
+    {
+      q: 'How many bits are used per pixel in a black and white image?',
+      options: ['A. 1', 'B. 2', 'C. 4', 'D. 8'],
+      answer: 'A. 1',
+      diff: 'easy',
+    },
+    {
+      q: 'In a black and white bitmap, 0 typically represents:',
+      options: ['A. White', 'B. Black', 'C. Gray', 'D. Red'],
+      answer: 'B. Black',
+      diff: 'easy',
+    },
+    {
+      q: 'How many shades of gray can be represented with 8 bits per pixel?',
+      options: ['A. 16', 'B. 64', 'C. 128', 'D. 256'],
+      answer: 'D. 256',
+      diff: 'easy',
+    },
+    {
+      q: 'The RGB color model uses how many bytes per pixel?',
+      options: ['A. 1', 'B. 2', 'C. 3', 'D. 4'],
+      answer: 'C. 3',
+      diff: 'easy',
+    },
+    {
+      q: 'In RGB, one byte is used for each of:',
+      options: ['A. Red, Yellow, Blue', 'B. Red, Green, Blue', 'C. Red, Green, Black', 'D. Red, Blue, Yellow'],
+      answer: 'B. Red, Green, Blue',
+      diff: 'easy',
+    },
+    {
+      q: 'Approximately how many colors can RGB represent (with 24 bits)?',
+      options: ['A. 65,536', 'B. 1.6 million', 'C. 16.7 million', 'D. 4.2 billion'],
+      answer: 'C. 16.7 million',
+      diff: 'medium',
+    },
+    {
+      q: 'The brightness component in brightness-chrominance encoding is called:',
+      options: ['A. Luminance', 'B. Chrominance', 'C. RGB', 'D. Grayscale'],
+      answer: 'A. Luminance',
+      diff: 'easy',
+    },
+    {
+      q: 'In brightness-chrominance, the two color components are:',
+      options: ['A. Red and Green', 'B. Blue and Red chrominance', 'C. Yellow and Cyan', 'D. Magenta and Cyan'],
+      answer: 'B. Blue and Red chrominance',
+      diff: 'medium',
+    },
+    {
+      q: 'What is "digital zoom"?',
+      options: ['A. Optical magnification', 'B. Enlarging an image by adding more pixels', 'C. Reducing image size', 'D. Rotating the image'],
+      answer: 'B. Enlarging an image by adding more pixels',
+      diff: 'easy',
+    },
+    {
+      q: 'Geometric structures for image scaling use:',
+      options: ['A. Pixels only', 'B. Lines and curves (analytical geometry)', 'C. Random dots', 'D. Grayscale values'],
+      answer: 'B. Lines and curves (analytical geometry)',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following is a scalable font technology?',
+      options: ['A. Bitmap', 'B. TrueType', 'C. JPEG', 'D. GIF'],
+      answer: 'B. TrueType',
+      diff: 'easy',
+    },
+    {
+      q: 'TrueType fonts were developed by:',
+      options: ['A. Microsoft only', 'B. Apple only', 'C. Microsoft and Apple', 'D. Adobe'],
+      answer: 'C. Microsoft and Apple',
+      diff: 'medium',
+    },
+    {
+      q: 'PostScript fonts were developed by:',
+      options: ['A. Microsoft', 'B. Apple', 'C. Adobe', 'D. Google'],
+      answer: 'C. Adobe',
+      diff: 'easy',
+    },
+    {
+      q: 'Scalable fonts are also popular in:',
+      options: ['A. Spreadsheets', 'B. Computer Aided Design (CAD)', 'C. Email clients', 'D. Web browsers only'],
+      answer: 'B. Computer Aided Design (CAD)',
+      diff: 'medium',
+    },
+   
+    {
+      q: '1-bit per pixel can represent how many distinct colors (or shades)?',
+      options: ['A. 1', 'B. 2', 'C. 8', 'D. 256'],
+      answer: 'B. 2',
+      diff: 'easy',
+    },
+    {
+      q: '8-bit grayscale provides how many intensity levels?',
+      options: ['A. 8', 'B. 64', 'C. 128', 'D. 256'],
+      answer: 'D. 256',
+      diff: 'easy',
+    },
+    {
+      q: 'Which encoding method separates brightness from color information?',
+      options: ['A. RGB', 'B. Brightness-chrominance', 'C. Grayscale', 'D. Monochrome'],
+      answer: 'B. Brightness-chrominance',
+      diff: 'easy',
+    },
+    {
+      q: 'TrueType and PostScript are examples of:',
+      options: ['A. Raster fonts', 'B. Scalable fonts', 'C. Bitmap fonts', 'D. Pixel fonts'],
+      answer: 'B. Scalable fonts',
+      diff: 'easy',
+    }
+  ]
+},
   },
 
   // ─────────────────────────────────────────
