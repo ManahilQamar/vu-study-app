@@ -15,7 +15,7 @@ function getProgress(subId) {
   return { done, total: sub.total };
 }
 
-export default function Home({ setPage }) {
+export default function Home({ setPage, toggleDark, dark }) {
   const totalDone = subjects.reduce((a, s) => a + getProgress(s.id).done, 0);
   const totalLec  = subjects.reduce((a, s) => a + s.total, 0);
 
@@ -26,7 +26,11 @@ export default function Home({ setPage }) {
           <span className="topbar-logo">VU Study</span>
           <span className="topbar-pill">Pakistan</span>
         </div>
-        <span className="topbar-info">Virtual University MCQ Practice</span>
+        <div style={{ display:'flex', alignItems:'center', gap:8 }}>
+          <button className="dark-toggle" onClick={toggleDark} title={dark ? 'Light Mode' : 'Dark Mode'}>
+            {dark ? '☀️' : '🌙'}
+          </button>
+        </div>
       </header>
 
       <main className="page">
@@ -38,7 +42,7 @@ export default function Home({ setPage }) {
           </p>
         </div>
 
-        {/* Stats row + Past Papers button in same row */}
+        {/* Stats row + Past Papers button */}
         <div className="stats-papers-row">
           <div className="stats-row-inner">
             <div className="stat-box">
@@ -54,8 +58,6 @@ export default function Home({ setPage }) {
               <div className="stat-lbl">Lectures</div>
             </div>
           </div>
-
-          {/* Small Past Papers button */}
           <button className="papers-btn-sm" onClick={() => setPage('papers')}>
             <span>📄</span>
             <span>Past Papers</span>

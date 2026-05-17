@@ -3,11 +3,9 @@ import subjects from '../data/subjects';
 import mcqs from '../data/mcqs';
 
 /* ─── constants ─── */
-const MAX_LIVES  = 5;
-const PASS_PCT   = 70;
-const LABELS     = ['A', 'B', 'C', 'D'];
+const PASS_PCT = 70;
+const LABELS   = ['A', 'B', 'C', 'D'];
 
-// ✅ Backend URL — Vercel par deploy hua hai
 const API_BASE = 'https://vu-game-backend.vercel.app';
 
 /* ─── helpers ─── */
@@ -36,7 +34,7 @@ async function fetchAIExplanation(question, subjectId) {
   return data.explanation;
 }
 
-/* ─── Web Audio sound generator ─── */
+/* ─── Sound ─── */
 function useSound() {
   const ctx = useRef(null);
   const getCtx = () => {
@@ -76,7 +74,7 @@ function useSound() {
   return { playCorrect, playWrong };
 }
 
-/* ─── Spark particle component ─── */
+/* ─── Spark particles ─── */
 function Sparks({ active }) {
   if (!active) return null;
   const particles = Array.from({ length: 22 }, (_, i) => {
@@ -88,9 +86,7 @@ function Sparks({ active }) {
     const delay  = Math.random() * 0.08;
     const dur    = 0.55 + Math.random() * 0.3;
     const rad    = (angle * Math.PI) / 180;
-    const tx     = Math.cos(rad) * dist;
-    const ty     = Math.sin(rad) * dist;
-    return { size, color, delay, dur, tx, ty, i };
+    return { size, color, delay, dur, tx: Math.cos(rad)*dist, ty: Math.sin(rad)*dist, i };
   });
   return (
     <div style={{ position:'fixed', inset:0, pointerEvents:'none', zIndex:999 }}>
@@ -104,163 +100,84 @@ function Sparks({ active }) {
           }} />
         ))}
       </div>
-      <style>{`
-        @keyframes spark {
-          0%   { transform: translate(0,0) scale(1); opacity: 1; }
-          100% { transform: translate(var(--tx), var(--ty)) scale(0); opacity: 0; }
-        }
-      `}</style>
+      <style>{`@keyframes spark{0%{transform:translate(0,0) scale(1);opacity:1}100%{transform:translate(var(--tx),var(--ty)) scale(0);opacity:0}}`}</style>
     </div>
   );
 }
 
-/* ─── Explanation Modal — AI powered ─── */
+/* ─── Explanation Modal ─── */
 function ExplainModal({ question, onClose, subColor, subjectId }) {
   const [aiText,  setAiText]  = useState('');
   const [loading, setLoading] = useState(true);
   const [error,   setError]   = useState('');
 
   const load = useCallback(() => {
-    setLoading(true);
-    setError('');
-    setAiText('');
+    setLoading(true); setError(''); setAiText('');
     fetchAIExplanation(question, subjectId)
       .then(text => setAiText(text))
-      .catch(() => setError('Explanation load nahi ho saki. Dobara try karein.'))
+      .catch(() => setError('Could not load explanation. Please try again.'))
       .finally(() => setLoading(false));
   }, [question, subjectId]);
 
   React.useEffect(() => { load(); }, [load]);
 
   return (
-    <div
-      onClick={e => { if (e.target === e.currentTarget) onClose(); }}
-      style={{
-        position:'fixed', inset:0, zIndex:1000,
-        background:'rgba(0,0,0,0.45)', backdropFilter:'blur(3px)',
-        display:'flex', alignItems:'flex-end', justifyContent:'center',
-        animation:'fadeIn 0.18s ease',
-      }}
-    >
+    <div onClick={e => { if (e.target === e.currentTarget) onClose(); }} style={{
+      position:'fixed', inset:0, zIndex:1000,
+      background:'rgba(0,0,0,0.45)', backdropFilter:'blur(3px)',
+      display:'flex', alignItems:'flex-end', justifyContent:'center',
+      animation:'fadeIn 0.18s ease',
+    }}>
       <div style={{
-        background:'#fff', borderRadius:'20px 20px 0 0',
-        width:'100%', maxWidth:'680px',
-        padding:'20px 20px 36px',
-        maxHeight:'80vh', overflowY:'auto',
-        animation:'slideUp 0.22s ease',
+        background:'var(--modal-bg)', borderRadius:'20px 20px 0 0',
+        width:'100%', maxWidth:'680px', padding:'20px 20px 36px',
+        maxHeight:'80vh', overflowY:'auto', animation:'slideUp 0.22s ease',
       }}>
-        <div style={{ width:40, height:4, background:'#e5e7eb', borderRadius:2, margin:'0 auto 18px' }} />
-
+        <div style={{ width:40, height:4, background:'var(--border)', borderRadius:2, margin:'0 auto 18px' }} />
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:14 }}>
           <div style={{ display:'flex', alignItems:'center', gap:10 }}>
-            <div style={{
-              width:34, height:34, borderRadius:'50%',
-              background: subColor + '22',
-              display:'flex', alignItems:'center', justifyContent:'center', fontSize:16,
-            }}>💡</div>
-            <div style={{ fontSize:15, fontWeight:700, color:'#111827' }}>AI Explanation</div>
+            <div style={{ width:34, height:34, borderRadius:'50%', background:subColor+'22', display:'flex', alignItems:'center', justifyContent:'center', fontSize:16 }}>💡</div>
+            <div style={{ fontSize:15, fontWeight:700, color:'var(--text-primary)' }}>AI Explanation</div>
           </div>
-          <button onClick={onClose} style={{
-            background:'none', border:'none', fontSize:20,
-            color:'#9ca3af', cursor:'pointer', lineHeight:1, padding:'2px 6px',
-          }}>✕</button>
+          <button onClick={onClose} style={{ background:'none', border:'none', fontSize:20, color:'var(--text-muted)', cursor:'pointer' }}>✕</button>
         </div>
-
-        <div style={{
-          background:'#f9fafb', border:'1px solid #e5e7eb',
-          borderRadius:10, padding:'12px 14px', marginBottom:14,
-          fontSize:13.5, fontWeight:500, color:'#374151', lineHeight:1.6,
-        }}>
+        <div style={{ background:'var(--card-bg)', border:'1px solid var(--border)', borderRadius:10, padding:'12px 14px', marginBottom:14, fontSize:13.5, color:'var(--text-secondary)', lineHeight:1.6 }}>
           {question.q}
         </div>
-
         <div style={{ marginBottom:14 }}>
-          <div style={{ fontSize:11, fontWeight:700, letterSpacing:'0.6px', textTransform:'uppercase', color:'#9ca3af', marginBottom:6 }}>
-            Correct Answer
-          </div>
-          <div style={{
-            background:'#f0fdf4', border:'1px solid #86efac',
-            borderRadius:10, padding:'10px 14px',
-            fontSize:14, fontWeight:600, color:'#14532d',
-            display:'flex', alignItems:'center', gap:8,
-          }}>
-            <span>✓</span>
-            {question.answer.replace(/^[ABCD]\.\s*/, '')}
+          <div style={{ fontSize:11, fontWeight:700, letterSpacing:'0.6px', textTransform:'uppercase', color:'var(--text-muted)', marginBottom:6 }}>Correct Answer</div>
+          <div style={{ background:'#f0fdf4', border:'1px solid #86efac', borderRadius:10, padding:'10px 14px', fontSize:14, fontWeight:600, color:'#14532d', display:'flex', alignItems:'center', gap:8 }}>
+            <span>✓</span>{question.answer.replace(/^[ABCD]\.\s*/, '')}
           </div>
         </div>
-
         <div style={{ marginBottom:22 }}>
-          <div style={{ fontSize:11, fontWeight:700, letterSpacing:'0.6px', textTransform:'uppercase', color:'#9ca3af', marginBottom:8 }}>
-            Explanation
-          </div>
-
+          <div style={{ fontSize:11, fontWeight:700, letterSpacing:'0.6px', textTransform:'uppercase', color:'var(--text-muted)', marginBottom:8 }}>Explanation</div>
           {loading && (
-            <div style={{
-              background:'#eff6ff', border:'1px solid #bfdbfe',
-              borderRadius:10, padding:'18px 16px',
-              display:'flex', alignItems:'center', gap:12,
-              fontSize:14, color:'#2563eb',
-            }}>
-              <div style={{
-                width:20, height:20, borderRadius:'50%',
-                border:'2.5px solid #bfdbfe', borderTopColor:'#2563eb',
-                animation:'spin 0.7s linear infinite', flexShrink:0,
-              }} />
-              AI samjha raha hai... please wait
+            <div style={{ background:'#eff6ff', border:'1px solid #bfdbfe', borderRadius:10, padding:'18px 16px', display:'flex', alignItems:'center', gap:12, fontSize:14, color:'#2563eb' }}>
+              <div style={{ width:20, height:20, borderRadius:'50%', border:'2.5px solid #bfdbfe', borderTopColor:'#2563eb', animation:'spin 0.7s linear infinite', flexShrink:0 }} />
+              AI is explaining...
             </div>
           )}
-
           {error && !loading && (
-            <div style={{
-              background:'#fef2f2', border:'1px solid #fecaca',
-              borderRadius:10, padding:'14px 16px',
-              fontSize:13.5, color:'#dc2626', lineHeight:1.6,
-            }}>
+            <div style={{ background:'#fef2f2', border:'1px solid #fecaca', borderRadius:10, padding:'14px 16px', fontSize:13.5, color:'#dc2626' }}>
               ⚠ {error}
-              <button onClick={load} style={{
-                display:'block', marginTop:8, fontSize:13,
-                color:'#2563eb', background:'none', border:'none',
-                cursor:'pointer', padding:0, textDecoration:'underline',
-              }}>
-                Dobara try karo
-              </button>
+              <button onClick={load} style={{ display:'block', marginTop:8, fontSize:13, color:'#2563eb', background:'none', border:'none', cursor:'pointer', textDecoration:'underline' }}>Try again</button>
             </div>
           )}
-
           {aiText && !loading && (
-            <div style={{
-              background:'#eff6ff', border:'1px solid #bfdbfe',
-              borderRadius:10, padding:'14px 16px',
-              fontSize:14, color:'#1e40af', lineHeight:1.8,
-            }}>
-              {aiText.split('\n').map((line, i) =>
-                line.trim() ? <p key={i} style={{ margin:'0 0 8px' }}>{line}</p> : null
-              )}
+            <div style={{ background:'#eff6ff', border:'1px solid #bfdbfe', borderRadius:10, padding:'14px 16px', fontSize:14, color:'#1e40af', lineHeight:1.8 }}>
+              {aiText.split('\n').map((line, i) => line.trim() ? <p key={i} style={{ margin:'0 0 8px' }}>{line}</p> : null)}
             </div>
           )}
         </div>
-
-        <button onClick={onClose} style={{
-          width:'100%', background:'#111827', color:'#fff',
-          border:'none', borderRadius:12, padding:'13px',
-          fontSize:15, fontWeight:600, cursor:'pointer', fontFamily:'inherit',
-        }}>
+        <button onClick={onClose} style={{ width:'100%', background:'var(--text-primary)', color:'#fff', border:'none', borderRadius:12, padding:'13px', fontSize:15, fontWeight:600, cursor:'pointer' }}>
           Got it ✓
         </button>
       </div>
-
       <style>{`
-        @keyframes slideUp {
-          from { transform: translateY(100%); opacity: 0; }
-          to   { transform: translateY(0);    opacity: 1; }
-        }
-        @keyframes fadeIn {
-          from { opacity: 0; }
-          to   { opacity: 1; }
-        }
-        @keyframes spin {
-          to { transform: rotate(360deg); }
-        }
+        @keyframes slideUp { from{transform:translateY(100%);opacity:0} to{transform:translateY(0);opacity:1} }
+        @keyframes fadeIn  { from{opacity:0} to{opacity:1} }
+        @keyframes spin    { to{transform:rotate(360deg)} }
       `}</style>
     </div>
   );
@@ -274,7 +191,6 @@ export default function Quiz({ subject, lectureIndex, setPage }) {
   const total       = questions.length;
 
   const [curQ,        setCurQ]        = useState(0);
-  const [lives,       setLives]       = useState(MAX_LIVES);
   const [score,       setScore]       = useState(0);
   const [selected,    setSelected]    = useState(null);
   const [answered,    setAnswered]    = useState(false);
@@ -285,9 +201,9 @@ export default function Quiz({ subject, lectureIndex, setPage }) {
 
   const { playCorrect, playWrong } = useSound();
 
-  const finishQuiz = useCallback((finalScore, finalLives) => {
-    const pct     = (finalScore / total) * 100;
-    const passed  = pct >= PASS_PCT;
+  const finishQuiz = useCallback((finalScore) => {
+    const pct    = (finalScore / total) * 100;
+    const passed = pct >= PASS_PCT;
     const bestKey = 'vu_best_' + subject + '_' + lectureIndex;
     const prev    = parseInt(localStorage.getItem(bestKey) || '0');
     if (finalScore > prev) localStorage.setItem(bestKey, String(finalScore));
@@ -316,22 +232,19 @@ export default function Quiz({ subject, lectureIndex, setPage }) {
       setTimeout(() => setShowSparks(false), 900);
     } else {
       playWrong();
-      setLives(l => l - 1);
     }
   };
 
   const handleNext = () => {
     const isRight  = questions[curQ].options[selected] === questions[curQ].answer;
-    const newLives = isRight ? lives : lives - 1;
     const newScore = isRight ? score + 1 : score;
     const nextQ    = curQ + 1;
-    if (nextQ >= total || newLives <= 0) {
+
+    if (nextQ >= total) {
       setScore(newScore);
-      setLives(newLives);
-      finishQuiz(newScore, newLives);
+      finishQuiz(newScore);
     } else {
       setScore(newScore);
-      setLives(newLives);
       setCurQ(nextQ);
       setSelected(null);
       setAnswered(false);
@@ -340,8 +253,7 @@ export default function Quiz({ subject, lectureIndex, setPage }) {
   };
 
   const retry = () => {
-    setCurQ(0); setLives(MAX_LIVES); setScore(0);
-    setSelected(null); setAnswered(false);
+    setCurQ(0); setScore(0); setSelected(null); setAnswered(false);
     setFinished(false); setUnlockNext(false);
     setShowSparks(false); setShowExplain(false);
   };
@@ -360,7 +272,7 @@ export default function Quiz({ subject, lectureIndex, setPage }) {
             <div className="empty-title">No MCQs Yet</div>
             <div className="empty-desc">Upload a handout to auto-generate MCQs for this lecture.</div>
             <button className="btn-ghost" onClick={() => setPage('upload-' + subject + '-' + lectureIndex)}>
-              Upload Handout &amp; Generate MCQs
+              Upload Handout & Generate MCQs
             </button>
           </div>
         </main>
@@ -383,22 +295,16 @@ export default function Quiz({ subject, lectureIndex, setPage }) {
           <div className="result-wrap">
             <div className="result-card">
               <span className="result-emoji">{emoji}</span>
-              <div className="result-heading">
-                {pct >= 90 ? 'Excellent!' : passed ? 'Good Work!' : 'Keep Trying!'}
-              </div>
+              <div className="result-heading">{pct >= 90 ? 'Excellent!' : passed ? 'Good Work!' : 'Keep Trying!'}</div>
               <div className="result-sub">{sub.id} — Lecture {lectureIndex + 1}</div>
               <div className="result-stats">
                 <div className="rs"><div className="rs-num">{score}</div><div className="rs-lbl">Correct</div></div>
+                <div className="rs"><div className="rs-num">{total - score}</div><div className="rs-lbl">Wrong</div></div>
                 <div className="rs"><div className="rs-num">{pct}%</div><div className="rs-lbl">Score</div></div>
-                <div className="rs"><div className="rs-num">{lives < 0 ? 0 : lives}</div><div className="rs-lbl">Lives left</div></div>
               </div>
               {passed
-                ? <div className="result-banner rb-pass">
-                    ✓ {unlockNext ? `Lecture ${lectureIndex + 2} is now unlocked!` : 'Great job! Keep it up.'}
-                  </div>
-                : <div className="result-banner rb-fail">
-                    ⚠ You need 70% to advance. Review the lecture and try again.
-                  </div>
+                ? <div className="result-banner rb-pass">✓ {unlockNext ? `Lecture ${lectureIndex + 2} is now unlocked!` : 'Great job! Keep it up.'}</div>
+                : <div className="result-banner rb-fail">⚠ You need 70% to advance. Review the lecture and try again.</div>
               }
             </div>
             <div className="result-actions">
@@ -447,6 +353,7 @@ export default function Quiz({ subject, lectureIndex, setPage }) {
       </header>
 
       <main className="page">
+        {/* Progress bar */}
         <div className="quiz-header">
           <div className="qh-top">
             <span className="qh-title">{lectureData.title || 'Lecture ' + (lectureIndex + 1)}</span>
@@ -456,15 +363,11 @@ export default function Quiz({ subject, lectureIndex, setPage }) {
             <div className="qh-fill" style={{ width: prog + '%', background: sub.color }} />
           </div>
           <div className="qh-meta">
-            <div className="hearts">
-              {Array.from({ length: MAX_LIVES }).map((_, i) => (
-                <span key={i} className={`heart${i >= lives ? ' dead' : ''}`}>♥</span>
-              ))}
-            </div>
             <span className="qh-score">Score: <strong>{score}</strong></span>
           </div>
         </div>
 
+        {/* Question */}
         <div className="q-card">
           <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:12 }}>
             <span className={`diff-chip chip-${diff}`}>
@@ -474,13 +377,10 @@ export default function Quiz({ subject, lectureIndex, setPage }) {
               onClick={() => setShowExplain(true)}
               style={{
                 display:'flex', alignItems:'center', gap:5,
-                fontSize:12, fontWeight:600, color:'#6b7280',
-                background:'#f3f4f6', border:'1px solid #e5e7eb',
-                borderRadius:20, padding:'4px 12px', cursor:'pointer',
-                fontFamily:'inherit', transition:'all 0.15s',
+                fontSize:12, fontWeight:600, color:'var(--text-muted)',
+                background:'var(--card-bg)', border:'1px solid var(--border)',
+                borderRadius:20, padding:'4px 12px', cursor:'pointer', fontFamily:'inherit',
               }}
-              onMouseEnter={e => { e.currentTarget.style.background='#eff6ff'; e.currentTarget.style.color='#2563eb'; e.currentTarget.style.borderColor='#bfdbfe'; }}
-              onMouseLeave={e => { e.currentTarget.style.background='#f3f4f6'; e.currentTarget.style.color='#6b7280'; e.currentTarget.style.borderColor='#e5e7eb'; }}
             >
               💡 Explain
             </button>
@@ -488,6 +388,7 @@ export default function Quiz({ subject, lectureIndex, setPage }) {
           <div className="q-text">{q.q}</div>
         </div>
 
+        {/* Options */}
         <div className="opts">
           {options.map((opt, i) => (
             <button
@@ -502,21 +403,19 @@ export default function Quiz({ subject, lectureIndex, setPage }) {
           ))}
         </div>
 
+        {/* Feedback + Next */}
         {answered && (
           <>
             <div className={`feedback ${isRight ? 'fb-correct' : 'fb-wrong'}`}>
               <span className="fb-icon">{isRight ? '✓' : '✗'}</span>
               <div className="fb-text">
                 {isRight
-                  ? <><strong>Correct!</strong> Well done, keep it up.</>
+                  ? <><strong>Correct!</strong> Well done.</>
                   : <><strong>Incorrect.</strong> Correct answer: {q.answer.replace(/^[ABCD]\.\s*/,'')}</>
                 }
               </div>
             </div>
-            <button
-              className={`btn-next${isLast ? ' btn-finish' : ''}`}
-              onClick={handleNext}
-            >
+            <button className={`btn-next${isLast ? ' btn-finish' : ''}`} onClick={handleNext}>
               {isLast ? 'Finish Quiz ✓' : 'Next Question →'}
             </button>
           </>

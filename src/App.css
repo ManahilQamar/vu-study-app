@@ -751,3 +751,157 @@ input, textarea { font-family: inherit; }
   .papers-btn-sm span:first-child { font-size: 16px; }
   .paper-card { padding: 14px; }
 }
+
+/* ================================================
+   DARK MODE — Add this at the TOP of your App.css
+   (before everything else)
+   ================================================ */
+
+/* Light mode (default) */
+:root {
+  --bg:           #f9fafb;
+  --card-bg:      #ffffff;
+  --modal-bg:     #ffffff;
+  --border:       #e5e7eb;
+  --text-primary: #111827;
+  --text-secondary:#374151;
+  --text-muted:   #9ca3af;
+  --topbar-bg:    #ffffff;
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+  --bg:           #0f172a;
+  --card-bg:      #1e293b;
+  --modal-bg:     #1e293b;
+  --border:       #334155;
+  --text-primary: #f1f5f9;
+  --text-secondary:#cbd5e1;
+  --text-muted:   #64748b;
+  --topbar-bg:    #1e293b;
+}
+
+/* Apply variables to base elements */
+body {
+  background: var(--bg) !important;
+  color: var(--text-primary) !important;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.shell { background: var(--bg); }
+
+.topbar {
+  background: var(--topbar-bg) !important;
+  border-bottom-color: var(--border) !important;
+}
+
+.topbar-logo   { color: var(--text-primary) !important; }
+.topbar-info   { color: var(--text-muted) !important; }
+.topbar-back   { color: var(--text-secondary) !important; border-color: var(--border) !important; }
+.topbar-back:hover { background: var(--card-bg) !important; }
+
+/* Cards */
+.subj-card, .stat-box, .lec-tile, .q-card,
+.quiz-header, .result-card, .upload-card,
+.empty-card, .sum-card, .chat-card, .paper-card,
+.subject-banner {
+  background: var(--card-bg) !important;
+  border-color: var(--border) !important;
+}
+
+.subj-name, .home-heading, .q-text, .result-heading,
+.banner-name, .upload-title, .empty-title,
+.sum-title, .chat-title, .lec-num, .qh-title,
+.rs-num, .stat-num {
+  color: var(--text-primary) !important;
+}
+
+.subj-desc, .home-sub, .result-sub, .banner-full,
+.upload-desc, .empty-desc, .sum-sub, .rs-lbl,
+.stat-lbl, .qh-count, .prog-label, .lec-name,
+.subj-count, .topbar-info {
+  color: var(--text-secondary) !important;
+}
+
+.qh-score { color: var(--text-muted) !important; }
+.qh-score strong { color: var(--text-primary) !important; }
+
+/* Options */
+.opt {
+  background: var(--card-bg) !important;
+  border-color: var(--border) !important;
+  color: var(--text-primary) !important;
+}
+.opt:hover:not(:disabled):not(.opt-correct):not(.opt-wrong) {
+  border-color: #2563eb !important;
+  background: #1e3a8a22 !important;
+  color: #60a5fa !important;
+}
+.opt-badge {
+  background: var(--bg) !important;
+  border-color: var(--border) !important;
+  color: var(--text-muted) !important;
+}
+
+/* Progress track */
+.qh-track  { background: var(--border) !important; }
+.prog-track { background: var(--border) !important; }
+.pbar      { background: var(--border) !important; }
+
+/* Buttons */
+.btn-ghost {
+  background: var(--card-bg) !important;
+  border-color: var(--border) !important;
+  color: var(--text-secondary) !important;
+}
+.btn-ghost:hover { background: var(--bg) !important; }
+
+.result-stats .rs { background: var(--bg) !important; border-color: var(--border) !important; }
+
+/* Upload textarea */
+.upload-ta {
+  background: var(--bg) !important;
+  border-color: var(--border) !important;
+  color: var(--text-primary) !important;
+}
+.upload-ta:focus { border-color: #2563eb !important; background: var(--card-bg) !important; }
+
+/* Summary body */
+.sum-body {
+  background: var(--bg) !important;
+  border-color: var(--border) !important;
+}
+.sum-body div { color: var(--text-secondary) !important; }
+.sum-body strong { color: var(--text-primary) !important; }
+
+/* Chat */
+.chat-messages { background: transparent !important; }
+.msg-ai-content {
+  background: var(--bg) !important;
+  border-color: var(--border) !important;
+  color: var(--text-secondary) !important;
+}
+.chat-input {
+  background: var(--card-bg) !important;
+  border-color: var(--border) !important;
+  color: var(--text-primary) !important;
+}
+.chat-empty { color: var(--text-muted) !important; }
+
+/* Dark mode toggle button */
+.dark-toggle {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  font-size: 17px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+.dark-toggle:hover { background: var(--bg); }
