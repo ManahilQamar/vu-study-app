@@ -24226,12 +24226,10 @@ CPUs have two privilege levels:
 
 **Analogy:**
 👉 Like an interoffice memo: head contains date/subject, body contains the meat.
-
 **Example (Figure 68):**
-👉 `<title>` inside head: "Documentation page" (for documentation, not displayed).
-👉 `<h1>` inside body: "My Web Page" (level-one heading, displayed prominently).
-👉 `<p>` inside body: "Click here for another page." (paragraph text).
-
+👉 &lt;title&gt; inside head: "Documentation page" (for documentation, not displayed).
+👉 &lt;h1&gt; inside body: "My Web Page" (level-one heading, displayed prominently).
+👉 &lt;p&gt; inside body: "Click here for another page." (paragraph text).
 **Note:**
 👉 The example page is not fully functional – clicking "here" does nothing (no hyperlink yet).
 
