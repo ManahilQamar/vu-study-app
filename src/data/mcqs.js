@@ -25042,6 +25042,3666 @@ CPUs have two privilege levels:
 },
 
 
+78: {
+  title: "Networking and the Internet: Layered Approach to Internet Software (II)",
+  summary: `**Key Topics Covered:**
+- Tracing a message through the Internet layers
+- Application layer: uses transport layer, provides addresses (mnemonic to IP via DNS)
+- Transport layer: accepts messages, divides into small segments (packets), adds sequence numbers
+- Network layer: routes packets individually (different paths possible)
+- Link layer: physical transmission
+- Analogy: long message blocks routers like a train blocks a crossing
+
+---
+
+**Simple Understanding:**
+
+**Application Layer:**
+👉 Uses transport layer to send/receive messages (like using a shipping company).
+👉 Provides address compatible with Internet infrastructure.
+👉 May use DNS (name servers) to translate mnemonic addresses to IP addresses.
+
+**Transport Layer:**
+👉 Accepts messages from application layer.
+👉 Formats messages for transmission.
+👉 Divides long messages into small segments (packets) – prevents blocking routers.
+👉 Adds **sequence numbers** to allow reassembly at destination.
+👉 Hands packets to network layer.
+
+**Why Segmentation?**
+👉 Long messages block other messages at routers (like cars waiting for a long train at crossing).
+👉 Small packets can interweave at routers.
+
+**Network Layer:**
+👉 Treats packets as individual, unrelated messages until they reach destination transport layer.
+👉 Packets from same message may take **different paths** through the Internet.
+
+---
+
+**Important Vocabulary:**
+- DNS = Domain Name System (translates names to IPs)
+- IP address = Internet Protocol address
+- Segmentation = dividing long message into packets
+- Packet = small unit of data transmitted over network
+- Sequence number = label to reorder packets at destination
+- Router = device that forwards packets between networks
+- Interweave = packets from different sources mix
+
+---
+
+**Quick Revision Points:**
+- Application layer provides addresses (with DNS help).
+- Transport layer segments long messages into packets + adds sequence numbers.
+- Segmentation prevents blocking at routers.
+- Packets may take different routes.
+- Sequence numbers enable correct reassembly.`,
+  questions: [
+    {
+      q: "The application layer uses which layer to send and receive messages?",
+      options: ["A. Network layer", "B. Transport layer", "C. Link layer", "D. Physical layer"],
+      answer: "B. Transport layer",
+      diff: "easy"
+    },
+    {
+      q: "The application layer provides an address compatible with the Internet infrastructure. To translate mnemonic addresses to IP addresses, it uses:",
+      options: ["A. Routers", "B. Name servers (DNS)", "C. Link layer", "D. Network layer"],
+      answer: "B. Name servers (DNS)",
+      diff: "easy"
+    },
+    {
+      q: "One important task of the transport layer is to:",
+      options: ["A. Route packets", "B. Divide long messages into small segments", "C. Transmit bits", "D. Display web pages"],
+      answer: "B. Divide long messages into small segments",
+      diff: "easy"
+    },
+    {
+      q: "The small segments produced by the transport layer are called:",
+      options: ["A. Frames", "B. Packets", "C. Datagrams", "D. Cells"],
+      answer: "B. Packets",
+      diff: "easy"
+    },
+    {
+      q: "Why is segmentation necessary?",
+      options: ["A. To increase speed", "B. To prevent a long message from obstructing other messages at routers", "C. To reduce address size", "D. To encrypt data"],
+      answer: "B. To prevent a long message from obstructing other messages at routers",
+      diff: "easy"
+    },
+    {
+      q: "The analogy used for a long message blocking routers is:",
+      options: ["A. Cars waiting for a long train at a crossing", "B. A traffic jam on a highway", "C. A plane waiting for landing clearance", "D. A ship in a canal"],
+      answer: "A. Cars waiting for a long train at a crossing",
+      diff: "easy"
+    },
+    {
+      q: "The transport layer adds _______ to the small segments so they can be reassembled at the destination.",
+      options: ["A. Timestamps", "B. Sequence numbers", "C. Checksums", "D. Encryption keys"],
+      answer: "B. Sequence numbers",
+      diff: "easy"
+    },
+    {
+      q: "After the transport layer creates packets, it hands them to which layer?",
+      options: ["A. Application layer", "B. Network layer", "C. Link layer", "D. Physical layer"],
+      answer: "B. Network layer",
+      diff: "easy"
+    },
+    {
+      q: "From the network layer onward, packets are treated as:",
+      options: ["A. Part of a single message", "B. Individual, unrelated messages", "C. Encrypted blocks", "D. Error-checked frames"],
+      answer: "B. Individual, unrelated messages",
+      diff: "medium"
+    },
+    {
+      q: "Is it possible for packets related to a common message to follow different paths through the Internet?",
+      options: ["A. Yes", "B. No", "C. Only if the network is busy", "D. Only if the message is very short"],
+      answer: "A. Yes",
+      diff: "easy"
+    },
+    {
+      q: "The layer responsible for routing packets (determining which path to forward) is the:",
+      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
+      answer: "C. Network layer",
+      diff: "easy"
+    },
+    {
+      q: "The analogy comparing the application layer to using a shipping company suggests that the application layer:",
+      options: ["A. Does not need to know all details of lower layers", "B. Must know every detail", "C. Replaces the transport layer", "D. Is the lowest layer"],
+      answer: "A. Does not need to know all details of lower layers",
+      diff: "medium"
+    },
+    {
+      q: "The figure mentioned in the module (Figure 75) is used to:",
+      options: ["A. Show a message traveling through the layers", "B. Display HTML tags", "C. Illustrate a network topology", "D. Show a URL structure"],
+      answer: "A. Show a message traveling through the layers",
+      diff: "easy"
+    },
+    {
+      q: "At the destination, which layer reassembles the packets using sequence numbers?",
+      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
+      answer: "B. Transport layer",
+      diff: "easy"
+    },
+    {
+      q: "The text states that small packets can _______ at routers where numerous messages cross paths.",
+      options: ["A. Collide", "B. Interweave", "C. Be lost", "D. Be delayed forever"],
+      answer: "B. Interweave",
+      diff: "medium"
+    },
+    {
+      q: "The mnemonic addresses used by humans are translated into IP addresses by:",
+      options: ["A. The browser", "B. Name servers (DNS)", "C. The network layer", "D. The link layer"],
+      answer: "B. Name servers (DNS)",
+      diff: "easy"
+    },
+    {
+      q: "Which layer's responsibility is to ensure messages are properly formatted for transmission?",
+      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
+      answer: "B. Transport layer",
+      diff: "easy"
+    },
+    {
+      q: "The transport layer's addition of sequence numbers is important for:",
+      options: ["A. Encryption", "B. Reassembly of packets in correct order", "C. Routing", "D. Physical transmission"],
+      answer: "B. Reassembly of packets in correct order",
+      diff: "easy"
+    },
+    {
+      q: "According to the text, long messages can obstruct the flow at:",
+      options: ["A. The application layer", "B. The transport layer", "C. Internet routers", "D. The user's computer"],
+      answer: "C. Internet routers",
+      diff: "easy"
+    },
+    {
+      q: "The final destination of a message after traveling up through the layers is the:",
+      options: ["A. Link layer", "B. Network layer", "C. Transport layer", "D. Application layer"],
+      answer: "D. Application layer",
+      diff: "easy"
+    }
+  ]
+},
+
+79: {
+  title: "Networking and the Internet: Layered Approach to Internet Software (III)",
+  summary: `**Key Topics Covered:**
+- Network layer job: deciding packet direction using forwarding table
+- Link layer: handles actual transmission (CSMA/CD for Ethernet, CSMA/CA for WiFi)
+- Packet hopping: each packet moves machine to machine
+- Only link and network layers on routers (minimal delay)
+- Transport layer: extracts segments, reassembles message using sequence numbers, hands to application layer
+- Port numbers: identify which application unit should receive the message
+- Common port numbers: HTTP (80), SMTP (25)
+
+---
+
+**Simple Understanding:**
+
+**Network Layer Job:**
+👉 Decides which direction to send packet at each step.
+👉 Maintains router's forwarding table.
+👉 Determines direction to forward packets.
+
+**Link Layer Job:**
+👉 Responsible for receiving and transmitting packets.
+👉 Handles communication details of specific network:
+   - Ethernet → CSMA/CD
+   - WiFi → CSMA/CA
+
+---
+
+**Packet Journey:**
+👉 At origin: network layer receives packet from transport layer → consults forwarding table → hands to link layer for transmission.
+👉 At each hop: link layer receives → hands to network layer → checks destination → returns to link layer → forwarded.
+👉 Only link and network layers involved at intermediate stops (routers).
+👉 Modern router forward time: millionths of a second.
+
+---
+
+**At Final Destination:**
+👉 Network layer recognizes journey complete → hands to transport layer (not forwarded).
+👉 Transport layer extracts message segments → reconstructs original message using sequence numbers.
+👉 Then hands to appropriate application layer unit.
+
+---
+
+**Port Numbers:**
+👉 Transport layer assigns unique port numbers to application units.
+👉 Port number appended to message address.
+👉 At destination, transport layer hands message to application at designated port.
+
+**Well-Known Ports:**
+👉 HTTP (web): port 80
+👉 SMTP (email): port 25
+👉 Users rarely need to know them; browsers assume default ports.
+
+---
+
+**Summary of Layers:**
+
+| Layer | Role |
+|-------|------|
+| Application | Messages from application's point of view |
+| Transport | Segments/reassembles messages, uses port numbers |
+| Network | Directs segments through Internet (routing) |
+| Link | Actual transmission between machines |
+
+👉 Response time measured in milliseconds – transactions appear instantaneous.
+
+---
+
+**Important Vocabulary:**
+- Forwarding table = router's map for packet direction
+- Hop = one step from one machine to next
+- Router = device that forwards packets between networks
+- Port number = identifier for application process (e.g., 80 for HTTP)
+- CSMA/CD = Ethernet's collision detection
+- CSMA/CA = WiFi's collision avoidance
+
+---
+
+**Quick Revision Points:**
+- Network layer uses forwarding table; link layer handles transmission.
+- Routers only have link and network layers.
+- Each hop: link → network → link.
+- At destination: network → transport → application.
+- Port numbers distinguish applications.
+- HTTP uses port 80; SMTP uses port 25.
+- Internet response time in milliseconds.`,
+  questions: [
+    {
+      q: "The network layer's job is to decide:",
+      options: ["A. How to display the message", "B. In which direction a packet should be sent at each step", "C. How to compress the packet", "D. How to encrypt the packet"],
+      answer: "B. In which direction a packet should be sent at each step",
+      diff: "easy"
+    },
+    {
+      q: "The combination of which two layers constitutes the software on Internet routers?",
+      options: ["A. Application and transport", "B. Transport and network", "C. Network and link", "D. Link and physical"],
+      answer: "C. Network and link",
+      diff: "medium"
+    },
+    {
+      q: "Which layer is responsible for maintaining the router's forwarding table?",
+      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
+      answer: "C. Network layer",
+      diff: "easy"
+    },
+    {
+      q: "The link layer at a router is in charge of:",
+      options: ["A. Making routing decisions", "B. Receiving and transmitting packets", "C. Reassembling messages", "D. Assigning port numbers"],
+      answer: "B. Receiving and transmitting packets",
+      diff: "easy"
+    },
+    {
+      q: "For an Ethernet network, the link layer applies which protocol?",
+      options: ["A. CSMA/CA", "B. CSMA/CD", "C. TCP", "D. UDP"],
+      answer: "B. CSMA/CD",
+      diff: "easy"
+    },
+    {
+      q: "For a WiFi network, the link layer applies which protocol?",
+      options: ["A. CSMA/CD", "B. CSMA/CA", "C. HTTP", "D. SMTP"],
+      answer: "B. CSMA/CA",
+      diff: "easy"
+    },
+    {
+      q: "At each hop, after the link layer receives a packet, it hands it to the network layer which then:",
+      options: ["A. Destroys the packet", "B. Compares destination to forwarding table and returns to link layer", "C. Sends directly to application", "D. Encrypts the packet"],
+      answer: "B. Compares destination to forwarding table and returns to link layer",
+      diff: "medium"
+    },
+    {
+      q: "Which layers are present on routers (involved at intermediate stops)?",
+      options: ["A. Only application and transport", "B. Only transport and network", "C. Only network and link", "D. All four layers"],
+      answer: "C. Only network and link",
+      diff: "easy"
+    },
+    {
+      q: "The time required for a modern router to forward a packet is measured in:",
+      options: ["A. Nanoseconds", "B. Millionths of a second", "C. Seconds", "D. Milliseconds"],
+      answer: "B. Millionths of a second",
+      diff: "medium"
+    },
+    {
+      q: "At the final destination, which layer recognizes that the packet's journey is complete?",
+      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
+      answer: "C. Network layer",
+      diff: "easy"
+    },
+    {
+      q: "At the final destination, the network layer hands the packet to:",
+      options: ["A. Link layer (to forward again)", "B. Transport layer", "C. Application layer directly", "D. The router"],
+      answer: "B. Transport layer",
+      diff: "easy"
+    },
+    {
+      q: "The transport layer reconstructs the original message using:",
+      options: ["A. IP addresses", "B. Sequence numbers", "C. Port numbers", "D. MAC addresses"],
+      answer: "B. Sequence numbers",
+      diff: "easy"
+    },
+    {
+      q: "Once the message is assembled, the transport layer hands it to:",
+      options: ["A. The network layer", "B. The link layer", "C. The appropriate unit within the application layer", "D. Another router"],
+      answer: "C. The appropriate unit within the application layer",
+      diff: "easy"
+    },
+    {
+      q: "Which layer assigns unique port numbers to application units?",
+      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
+      answer: "B. Transport layer",
+      diff: "medium"
+    },
+    {
+      q: "The well-known port number for HTTP (web) is:",
+      options: ["A. 21", "B. 25", "C. 80", "D. 443"],
+      answer: "C. 80",
+      diff: "easy"
+    },
+    {
+      q: "The well-known port number for SMTP (email) is:",
+      options: ["A. 21", "B. 25", "C. 80", "D. 110"],
+      answer: "B. 25",
+      diff: "easy"
+    },
+    {
+      q: "When a browser is asked to retrieve a document with URL http://www.zoo.org/animals/frog.html, it assumes it should contact the HTTP server on port:",
+      options: ["A. 21", "B. 25", "C. 80", "D. 443"],
+      answer: "C. 80",
+      diff: "easy"
+    },
+    {
+      q: "Users rarely need to be concerned with port numbers because:",
+      options: ["A. Port numbers are not used", "B. Common applications have universally accepted port numbers", "C. The operating system hides them", "D. They are irrelevant"],
+      answer: "B. Common applications have universally accepted port numbers",
+      diff: "easy"
+    },
+    {
+      q: "The response time of the Internet is measured in:",
+      options: ["A. Nanoseconds", "B. Microseconds", "C. Milliseconds", "D. Seconds"],
+      answer: "C. Milliseconds",
+      diff: "easy"
+    },
+    {
+      q: "Which layer deals with messages from the application's point of view?",
+      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
+      answer: "A. Application layer",
+      diff: "easy"
+    }
+  ]
+},
+
+
+80: {
+  title: "Networking and the Internet: TCP/IP Protocol Suite",
+  summary: `**Key Topics Covered:**
+- OSI reference model (7 layers) vs Internet hierarchy (4 layers)
+- TCP/IP protocol suite (collection of protocols)
+- TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) as transport layer versions
+- TCP: connection-oriented (establishes connection, more reliable, less efficient)
+- UDP: connectionless (no connection, more efficient, less reliable)
+- Analogy: different shipping companies with same basic service but different characteristics
+
+---
+
+**Simple Understanding:**
+
+**OSI Reference Model:**
+👉 7-layer hierarchy produced by International Organization for Standardization (ISO).
+👉 Carries authority of international organization.
+👉 Established after the Internet's 4-layer hierarchy was already the de facto standard.
+👉 Not the model used by Internet (4-layer model remains).
+
+**TCP/IP Protocol Suite:**
+👉 Collection of protocol standards used by Internet to implement 4-layer hierarchy.
+👉 Named after only two protocols (TCP and IP) – somewhat misleading.
+👉 TCP and UDP are both transport layer versions.
+
+---
+
+**Transport Layer Options:**
+
+| Protocol | Full Name | Characteristics |
+|----------|-----------|-----------------|
+| TCP | Transmission Control Protocol | Connection-oriented, more reliable, less efficient |
+| UDP | User Datagram Protocol | Connectionless, more efficient, less reliable |
+
+**TCP (Connection-Oriented):**
+👉 Before sending message, TCP sends its own message to destination transport layer (telling it a message is about to be sent).
+👉 Waits for acknowledgment before sending application layer's message.
+👉 **Establishes a connection** first.
+
+**UDP (Connectionless):**
+👉 Does not establish connection prior to sending.
+👉 Simply sends the message.
+👉 More efficient but less reliable.
+
+---
+
+**Analogy:**
+👉 Like choosing different shipping companies – same basic service, different characteristics.
+👉 Application layer chooses TCP or UDP based on required quality of service.
+
+---
+
+**Important Vocabulary:**
+- OSI = Open System Interconnection (7-layer model)
+- ISO = International Organization for Standardization
+- De facto standard = standard that became common through practice, not official
+- TCP/IP = Transmission Control Protocol/Internet Protocol suite
+- TCP = connection-oriented transport protocol
+- UDP = connectionless transport protocol
+- Connection-oriented = establish connection before data transfer
+- Connectionless = send data without prior setup
+
+---
+
+**Quick Revision Points:**
+- OSI has 7 layers; Internet has 4 layers.
+- Internet uses 4-layer hierarchy (de facto standard).
+- TCP/IP protocol suite implements the 4 layers.
+- TCP: reliable, connection-oriented, less efficient.
+- UDP: faster, connectionless, less reliable.
+- Application chooses TCP or UDP based on needs.`,
+  questions: [
+    {
+      q: "The OSI reference model has how many layers?",
+      options: ["A. 4", "B. 5", "C. 6", "D. 7"],
+      answer: "D. 7",
+      diff: "easy"
+    },
+    {
+      q: "The OSI reference model was produced by which organization?",
+      options: ["A. IEEE", "B. IETF", "C. International Organization for Standardization (ISO)", "D. ANSI"],
+      answer: "C. International Organization for Standardization (ISO)",
+      diff: "easy"
+    },
+    {
+      q: "The Internet's communication hierarchy uses how many layers?",
+      options: ["A. 4", "B. 5", "C. 6", "D. 7"],
+      answer: "A. 4",
+      diff: "easy"
+    },
+    {
+      q: "The OSI model was established after the Internet's 4-layer hierarchy had already become the:",
+      options: ["A. Official standard", "B. De facto standard", "C. Obsolete model", "D. Hardware standard"],
+      answer: "B. De facto standard",
+      diff: "medium"
+    },
+    {
+      q: "TCP/IP refers to:",
+      options: ["A. A single protocol", "B. A collection of protocol standards", "C. Only the transport layer", "D. Only the network layer"],
+      answer: "B. A collection of protocol standards",
+      diff: "easy"
+    },
+    {
+      q: "TCP stands for:",
+      options: ["A. Transmission Control Protocol", "B. Transfer Control Protocol", "C. Transport Communication Protocol", "D. Terminal Control Protocol"],
+      answer: "A. Transmission Control Protocol",
+      diff: "easy"
+    },
+    {
+      q: "UDP stands for:",
+      options: ["A. User Datagram Protocol", "B. Universal Data Protocol", "C. Uniform Delivery Protocol", "D. Unreliable Data Protocol"],
+      answer: "A. User Datagram Protocol",
+      diff: "easy"
+    },
+    {
+      q: "Which transport layer protocol establishes a connection before sending a message?",
+      options: ["A. UDP", "B. TCP", "C. IP", "D. HTTP"],
+      answer: "B. TCP",
+      diff: "easy"
+    },
+    {
+      q: "Which transport layer protocol is connectionless (does not establish a connection prior to sending)?",
+      options: ["A. TCP", "B. UDP", "C. IP", "D. SMTP"],
+      answer: "B. UDP",
+      diff: "easy"
+    },
+    {
+      q: "TCP is considered more _______ than UDP.",
+      options: ["A. Efficient", "B. Reliable", "C. Fast", "D. Simple"],
+      answer: "B. Reliable",
+      diff: "easy"
+    },
+    {
+      q: "UDP is considered more _______ than TCP.",
+      options: ["A. Reliable", "B. Complex", "C. Efficient", "D. Connection-oriented"],
+      answer: "C. Efficient",
+      diff: "easy"
+    },
+    {
+      q: "Before sending a message, TCP sends its own message to the destination and waits for:",
+      options: ["A. A reply message", "B. An acknowledgment", "C. A timeout", "D. A connection close"],
+      answer: "B. An acknowledgment",
+      diff: "medium"
+    },
+    {
+      q: "The choice between TCP and UDP is made by which layer?",
+      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
+      answer: "A. Application layer",
+      diff: "medium"
+    },
+    {
+      q: "The analogy for choosing TCP vs UDP is compared to:",
+      options: ["A. Choosing between different airlines", "B. Choosing between different shipping companies with same basic service", "C. Choosing between different cars", "D. Choosing between different computers"],
+      answer: "B. Choosing between different shipping companies with same basic service",
+      diff: "medium"
+    },
+    {
+      q: "The TCP/IP protocol suite is named after TCP and IP, which is described as:",
+      options: ["A. Accurate", "B. Complete", "C. Misleading (since there are many protocols)", "D. Irrelevant"],
+      answer: "C. Misleading (since there are many protocols)",
+      diff: "easy"
+    },
+    {
+      q: "Which protocol is more suitable for applications where speed is critical and occasional data loss is acceptable?",
+      options: ["A. TCP", "B. UDP", "C. IP", "D. HTTP"],
+      answer: "B. UDP",
+      diff: "medium"
+    },
+    {
+      q: "Which protocol is more suitable for applications requiring guaranteed delivery (e.g., file transfer, web browsing)?",
+      options: ["A. TCP", "B. UDP", "C. ICMP", "D. ARP"],
+      answer: "A. TCP",
+      diff: "easy"
+    },
+    {
+      q: "TCP is described as 'less efficient' because:",
+      options: ["A. It uses more bandwidth", "B. It has overhead for connection establishment and acknowledgments", "C. It is slower on all networks", "D. It cannot handle large data"],
+      answer: "B. It has overhead for connection establishment and acknowledgments",
+      diff: "medium"
+    },
+    {
+      q: "UDP is described as 'less reliable' because:",
+      options: ["A. It does not guarantee delivery", "B. It always loses packets", "C. It cannot be used for video", "D. It is slower than TCP"],
+      answer: "A. It does not guarantee delivery",
+      diff: "easy"
+    },
+    {
+      q: "The fact that the TCP/IP protocol suite provides multiple transport layer options allows applications to:",
+      options: ["A. Only use one transport protocol", "B. Choose based on required quality of service", "C. Ignore the transport layer", "D. Use both simultaneously"],
+      answer: "B. Choose based on required quality of service",
+      diff: "easy"
+    }
+  ]
+},
+
+81: {
+  title: "Networking and the Internet: Security (Forms of Attacks)",
+  summary: `**Key Topics Covered:**
+- Malware (malicious software) and network attacks
+- Virus: inserts into programs, executes with host
+- Worm: autonomous, replicates across network
+- Trojan horse: disguised as desirable program
+- Spyware: collects information (keylogging, sniffing)
+- Phishing: explicitly asking for information (email scams)
+- Denial of Service (DoS): overload computer with messages
+
+---
+
+**Simple Understanding:**
+
+**Malware (Malicious Software):**
+👉 Software designed to attack computer systems via network.
+👉 Can be transferred to and executed on target, or attack remotely.
+
+---
+
+**1. Virus:**
+👉 Inserts itself into existing programs (host programs).
+👉 When host runs, virus runs too.
+👉 Some just replicate to other programs; others cause damage (erase files, corrupt OS).
+
+---
+
+**2. Worm:**
+👉 Autonomous program that transfers itself across network.
+👉 Copies itself to other computers.
+👉 Can cause explosion of copies, degrading performance and overloading networks.
+
+---
+
+**3. Trojan Horse:**
+👉 Disguised as desirable program (game, utility).
+👉 Victim willingly imports it.
+👉 Performs harmful activities (immediately or dormant until triggered).
+👉 Often arrives as email attachment from unknown sources – NEVER open.
+
+---
+
+**4. Spyware (Sniffing Software):**
+👉 Collects information about activities on infected computer.
+👉 Reports back to attacker.
+👉 Can record keystrokes (keylogging) to steal passwords, credit card numbers.
+👉 Some used for customer profiling (questionable ethics).
+
+---
+
+**5. Phishing:**
+👉 Technique of obtaining information by explicitly asking for it (play on "fishing").
+👉 Perpetrator sends fake emails posing as legitimate institutions (banks, government).
+👉 Asks for information for "legitimate" purposes – actually for hostile use.
+
+---
+
+**6. Denial of Service (DoS):**
+👉 Attack from remote computers.
+👉 Overloads target computer with messages.
+👉 Can cripple large commercial web servers.
+
+---
+
+**Important Vocabulary:**
+- Malware = malicious software
+- Virus = self-replicating code that attaches to programs
+- Worm = autonomous, network-replicating program
+- Trojan horse = disguised malicious program
+- Spyware = information-collecting software
+- Phishing = fraudulent request for information
+- Denial of Service (DoS) = overloading attack
+- Keylogging = recording keystrokes
+
+---
+
+**Quick Revision Points:**
+- Virus needs host program; worm is autonomous.
+- Trojan horse tricks user into installing.
+- Spyware secretly monitors activity.
+- Phishing asks for info directly (email scams).
+- DoS floods target with messages.`,
+  questions: [
+    {
+      q: "Malicious software is collectively called:",
+      options: ["A. Firmware", "B. Malware", "C. Freeware", "D. Shareware"],
+      answer: "B. Malware",
+      diff: "easy"
+    },
+    {
+      q: "A virus infects a computer by:",
+      options: ["A. Copying itself autonomously through the network", "B. Inserting itself into programs that already reside in the machine", "C. Disguising as a desirable program", "D. Overloading with messages"],
+      answer: "B. Inserting itself into programs that already reside in the machine",
+      diff: "easy"
+    },
+    {
+      q: "When the 'host' program is executed, the virus:",
+      options: ["A. Remains dormant", "B. Is also executed", "C. Deletes itself", "D. Spreads only to other computers"],
+      answer: "B. Is also executed",
+      diff: "easy"
+    },
+    {
+      q: "A worm is defined as:",
+      options: ["A. A program that inserts into existing programs", "B. An autonomous program that transfers itself through a network", "C. A disguised desirable program", "D. Software that collects information"],
+      answer: "B. An autonomous program that transfers itself through a network",
+      diff: "easy"
+    },
+    {
+      q: "A characteristic consequence of a worm is:",
+      options: ["A. It only affects one computer", "B. An explosion of replicated copies that can overload a network", "C. It asks for information directly", "D. It records keystrokes"],
+      answer: "B. An explosion of replicated copies that can overload a network",
+      diff: "easy"
+    },
+    {
+      q: "A Trojan horse enters a computer system disguised as:",
+      options: ["A. A system update", "B. A desirable program such as a game or utility", "C. An antivirus", "D. A network driver"],
+      answer: "B. A desirable program such as a game or utility",
+      diff: "easy"
+    },
+    {
+      q: "Trojan horses often arrive as:",
+      options: ["A. System files", "B. Attachments to enticing email messages", "C. Operating system updates", "D. Hardware drivers"],
+      answer: "B. Attachments to enticing email messages",
+      diff: "easy"
+    },
+    {
+      q: "Email attachments from unknown sources should:",
+      options: ["A. Be opened immediately", "B. Be saved and scanned", "C. Never be opened", "D. Be forwarded to friends"],
+      answer: "C. Never be opened",
+      diff: "easy"
+    },
+    {
+      q: "Spyware is also sometimes called:",
+      options: ["A. Trojan horse", "B. Worm", "C. Sniffing software", "D. Phishing software"],
+      answer: "C. Sniffing software",
+      diff: "easy"
+    },
+    {
+      q: "Spyware collects information about activities and:",
+      options: ["A. Deletes it", "B. Reports it back to the instigator", "C. Encrypts it", "D. Displays it on screen"],
+      answer: "B. Reports it back to the instigator",
+      diff: "easy"
+    },
+    {
+      q: "Recording symbol sequences typed at the keyboard (to steal passwords) is a function of:",
+      options: ["A. Worm", "B. Virus", "C. Trojan horse", "D. Spyware (keylogging)"],
+      answer: "D. Spyware (keylogging)",
+      diff: "easy"
+    },
+    {
+      q: "Phishing is a technique of obtaining information by:",
+      options: ["A. Secretly sniffing network traffic", "B. Explicitly asking for it", "C. Infecting programs", "D. Overloading servers"],
+      answer: "B. Explicitly asking for it",
+      diff: "easy"
+    },
+    {
+      q: "The term 'phishing' is a play on the word:",
+      options: ["A. Fishing", "B. Phishing", "C. Fission", "D. Phasing"],
+      answer: "A. Fishing",
+      diff: "easy"
+    },
+    {
+      q: "Phishing is often carried out via:",
+      options: ["A. Telephone calls", "B. Email", "C. Direct mail", "D. Social media only"],
+      answer: "B. Email",
+      diff: "easy"
+    },
+    {
+      q: "In a phishing attack, the perpetrator poses as:",
+      options: ["A. A friend", "B. A financial institution, government bureau, or law enforcement", "C. A software vendor", "D. An internet service provider"],
+      answer: "B. A financial institution, government bureau, or law enforcement",
+      diff: "easy"
+    },
+    {
+      q: "A Denial of Service (DoS) attack involves:",
+      options: ["A. Infecting a computer with a virus", "B. Overloading a computer with messages", "C. Disguising as a legitimate program", "D. Recording keystrokes"],
+      answer: "B. Overloading a computer with messages",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is NOT a type of malware mentioned?",
+      options: ["A. Virus", "B. Worm", "C. Firewall", "D. Trojan horse"],
+      answer: "C. Firewall",
+      diff: "easy"
+    },
+    {
+      q: "A Trojan horse may lie dormant until triggered by:",
+      options: ["A. A system reboot", "B. A specific event like a preselected date", "C. An antivirus scan", "D. A network disconnect"],
+      answer: "B. A specific event like a preselected date",
+      diff: "medium"
+    },
+    {
+      q: "Unlike a virus, a worm is characterized as:",
+      options: ["A. Needing a host program", "B. Autonomous (self-replicating across network)", "C. Only affecting files", "D. Always harmless"],
+      answer: "B. Autonomous (self-replicating across network)",
+      diff: "easy"
+    },
+    {
+      q: "DoS attacks have been launched against:",
+      options: ["A. Only home computers", "B. Large commercial web servers", "C. Only government networks", "D. Mobile phones"],
+      answer: "B. Large commercial web servers",
+      diff: "easy"
+    }
+  ]
+},
+
+
+82: {
+  title: "Networking and the Internet: Protection and Cures",
+  summary: `**Key Topics Covered:**
+- Firewalls (network gateway and individual computer)
+- Spoofing (masquerading as another party)
+- Spam filters (firewalls for email, training-based)
+- Proxy servers (intermediary between client and server)
+- Auditing software (detect traffic anomalies)
+
+---
+
+**Simple Understanding:**
+
+**Firewall:**
+👉 Program that filters traffic passing through a network point.
+👉 Installed at gateway of intranet to filter incoming/outgoing messages.
+👉 Can block outgoing messages to certain addresses, or incoming from known trouble sources.
+👉 Helps stop Denial of Service (DoS) attacks by blocking attacking computers.
+
+**Spoofing:**
+👉 Masquerading as a party other than oneself.
+👉 Example: incoming message with origin address inside the region (pretending to be insider).
+👉 Firewalls block such messages.
+
+---
+
+**Individual Computer Firewalls:**
+👉 Protect single machines.
+👉 Block incoming traffic to applications that are not in use (e.g., if not running web server, block HTTP).
+👉 Prevents intruders from exploiting "holes" left by non-existent servers (e.g., clandestine server for spyware).
+
+---
+
+**Spam Filters:**
+👉 Firewalls designed to block unwanted email.
+👉 Use sophisticated techniques (probability theory, artificial intelligence).
+👉 Some learn via training: user identifies spam until filter can decide on its own.
+
+---
+
+**Proxy Server:**
+👉 Software unit acting as intermediary between client and server.
+👉 Shields client from adverse actions of server.
+👉 Client connects to proxy, proxy connects to actual server – actual server never knows true client.
+👉 Hides internal network structure.
+👉 Can filter all messages (e.g., check files for viruses).
+
+**Advantages:**
+1. Actual server unaware of actual client's existence (no info about internal network).
+2. Proxy can filter messages (e.g., block infected files).
+
+---
+
+**Auditing Software:**
+👉 Network auditing software detects sudden increase in message traffic at various points.
+👉 Helps system administrator identify potential attacks.
+
+---
+
+**Important Vocabulary:**
+- Firewall = traffic filtering program
+- Spoofing = pretending to be someone else
+- Spam filter = email firewall
+- Proxy server = intermediary
+- Auditing software = traffic monitoring tool
+- Gateway = entry point to network
+- Intranet = private internal network
+
+---
+
+**Quick Revision Points:**
+- Firewalls block malicious traffic at gateways or on individual computers.
+- Spoofing is masquerading; firewalls can detect it by checking origin addresses.
+- Spam filters learn via training.
+- Proxy servers hide internal network structure and can filter content.
+- Auditing software detects abnormal traffic patterns.`,
+  questions: [
+    {
+      q: "A program that filters traffic passing through a point in the network is called a:",
+      options: ["A. Proxy server", "B. Firewall", "C. Spam filter", "D. Auditing software"],
+      answer: "B. Firewall",
+      diff: "easy"
+    },
+    {
+      q: "A firewall installed at an organization's intranet gateway can block:",
+      options: ["A. Only incoming messages", "B. Only outgoing messages", "C. Both incoming and outgoing messages based on rules", "D. Only encrypted messages"],
+      answer: "C. Both incoming and outgoing messages based on rules",
+      diff: "easy"
+    },
+    {
+      q: "Blocking incoming messages from origins known to be sources of trouble is a tool for terminating:",
+      options: ["A. Virus attacks", "B. Denial of Service (DoS) attacks", "C. Phishing attacks", "D. Trojan horses"],
+      answer: "B. Denial of Service (DoS) attacks",
+      diff: "easy"
+    },
+    {
+      q: "A firewall at a gateway that blocks incoming messages with origin addresses inside the region is preventing:",
+      options: ["A. Spam", "B. Spoofing", "C. Keylogging", "D. Worms"],
+      answer: "B. Spoofing",
+      diff: "easy"
+    },
+    {
+      q: "Spoofing refers to:",
+      options: ["A. Collecting keystrokes", "B. Masquerading as a party other than oneself", "C. Overloading a server", "D. Replicating autonomously"],
+      answer: "B. Masquerading as a party other than oneself",
+      diff: "easy"
+    },
+    {
+      q: "If a computer is not being used as a web server, a firewall should block incoming traffic to:",
+      options: ["A. All ports", "B. Port 80 (HTTP)", "C. Port 25 (SMTP)", "D. All of the above"],
+      answer: "B. Port 80 (HTTP)",
+      diff: "medium"
+    },
+    {
+      q: "A clandestine server on an infected computer could be used by malicious clients to:",
+      options: ["A. Install a firewall", "B. Retrieve information gathered by spyware", "C. Update the operating system", "D. Encrypt files"],
+      answer: "B. Retrieve information gathered by spyware",
+      diff: "medium"
+    },
+    {
+      q: "Firewalls designed specifically to block unwanted email are called:",
+      options: ["A. Proxy servers", "B. Spam filters", "C. Auditing software", "D. Antivirus"],
+      answer: "B. Spam filters",
+      diff: "easy"
+    },
+    {
+      q: "Many spam filters learn to distinguish between desirable email and spam through:",
+      options: ["A. Manual programming", "B. A training process where the user identifies spam", "C. Random guessing", "D. Hardware acceleration"],
+      answer: "B. A training process where the user identifies spam",
+      diff: "easy"
+    },
+    {
+      q: "Spam filters are examples of how fields like probability theory and artificial intelligence contribute to:",
+      options: ["A. Hardware design", "B. Developments in other fields", "C. Operating systems", "D. Database management"],
+      answer: "B. Developments in other fields",
+      diff: "easy"
+    },
+    {
+      q: "A software unit that acts as an intermediary between a client and a server is called a:",
+      options: ["A. Firewall", "B. Spam filter", "C. Proxy server", "D. Router"],
+      answer: "C. Proxy server",
+      diff: "easy"
+    },
+    {
+      q: "The goal of a proxy server is to:",
+      options: ["A. Speed up connections", "B. Shield the client from adverse actions of the server", "C. Store web pages", "D. Encrypt traffic"],
+      answer: "B. Shield the client from adverse actions of the server",
+      diff: "easy"
+    },
+    {
+      q: "Without a proxy server, a client communicates directly with a server, allowing the server to:",
+      options: ["A. Provide better service", "B. Learn about the client and internal network structure", "C. Never see the client", "D. Only see the proxy"],
+      answer: "B. Learn about the client and internal network structure",
+      diff: "medium"
+    },
+    {
+      q: "When a proxy server contacts the actual server on behalf of a client, the actual server:",
+      options: ["A. Knows the true client's identity", "B. Has no way of knowing the proxy is not the true client", "C. Blocks the connection", "D. Reports the client to authorities"],
+      answer: "B. Has no way of knowing the proxy is not the true client",
+      diff: "medium"
+    },
+    {
+      q: "One advantage of using a proxy server is that:",
+      options: ["A. It increases network speed", "B. The actual server cannot learn about the intranet's internal features", "C. It automatically encrypts all data", "D. It eliminates the need for firewalls"],
+      answer: "B. The actual server cannot learn about the intranet's internal features",
+      diff: "easy"
+    },
+    {
+      q: "Another advantage of a proxy server is that it can:",
+      options: ["A. Replace the operating system", "B. Filter messages (e.g., check incoming files for viruses)", "C. Disable all security", "D. Forward all traffic without inspection"],
+      answer: "B. Filter messages (e.g., check incoming files for viruses)",
+      diff: "easy"
+    },
+    {
+      q: "An FTP proxy server could check incoming files for known viruses and block infected files. This is an example of:",
+      options: ["A. Spoofing", "B. Filtering at the proxy", "C. A DoS attack", "D. Spam filtering"],
+      answer: "B. Filtering at the proxy",
+      diff: "easy"
+    },
+    {
+      q: "Which tool can a system administrator use to detect a sudden increase in message traffic at various network points?",
+      options: ["A. Firewall", "B. Proxy server", "C. Auditing software", "D. Spam filter"],
+      answer: "C. Auditing software",
+      diff: "easy"
+    },
+    {
+      q: "A firewall that blocks incoming messages with origin addresses inside the protected region is preventing which type of attack?",
+      options: ["A. Spoofing", "B. Phishing", "C. Worm propagation", "D. DoS"],
+      answer: "A. Spoofing",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is NOT a prevention/cure tool mentioned in the module?",
+      options: ["A. Firewall", "B. Proxy server", "C. Spam filter", "D. Antivirus software"],
+      answer: "D. Antivirus software",
+      diff: "easy"
+    }
+  ]
+},
+
+
+83: {
+  title: "Networking and the Internet: Encryption",
+  summary: `**Key Topics Covered:**
+- Encryption for protecting data in transit
+- HTTPS (secure HTTP) and SSL (Secure Sockets Layer)
+- Public-key encryption (public key and private key)
+- Certificate authorities (trusted key distributors)
+
+---
+
+**Simple Understanding:**
+
+**Why Encryption?**
+👉 Passwords can be compromised; little value when data travels over networks.
+👉 Encryption keeps data confidential even if intercepted.
+👉 Many traditional applications have "secure versions" (e.g., HTTPS).
+
+---
+
+**HTTPS and SSL:**
+👉 HTTPS = secure version of HTTP.
+👉 Used by financial institutions for secure Internet access.
+👉 Backbone: **Secure Sockets Layer (SSL)** (developed by Netscape).
+👉 Browser indicates SSL with tiny padlock icon (locked/unlocked).
+
+---
+
+**Public-Key Encryption (Counterintuitive):**
+👉 Knowing how messages are encrypted does NOT allow decryption.
+👉 Uses two keys:
+
+| Key | Purpose |
+|-----|---------|
+| Public key | Encrypts messages (distributed widely) |
+| Private key | Decrypts messages (kept secret at destination) |
+
+**How it works:**
+👉 Bob creates key pair. Distributes public key to Alice and Carol.
+👉 Alice encrypts message with public key → sends to Bob.
+👉 Only Bob (with private key) can decrypt.
+👉 Carol (who also has public key) cannot decrypt Alice's message even if intercepted.
+
+---
+
+**Problem: Key Association (Spoofing)**
+👉 Need to ensure public key actually belongs to intended party (e.g., bank, not impostor).
+👉 Impostor could give fake public key → you encrypt to impostor instead of real bank.
+👉 Solution: **Certificate Authorities (CAs)** – trusted Internet sites that maintain accurate lists of parties and their public keys.
+👉 CAs provide reliable public-key information.
+
+---
+
+**Important Vocabulary:**
+- Encryption = encoding data to prevent unauthorized access
+- HTTPS = HTTP Secure
+- SSL = Secure Sockets Layer
+- Public-key encryption = two-key system (public/private)
+- Public key = encryption key (shared)
+- Private key = decryption key (secret)
+- Certificate authority = trusted source for public keys
+- Spoofing = impersonation
+
+---
+
+**Quick Revision Points:**
+- Encryption protects data in transit.
+- HTTPS uses SSL; padlock icon indicates security.
+- Public-key encryption: encrypt with public, decrypt with private.
+- Knowing public key does not allow decryption.
+- Certificate authorities prevent spoofing of public keys.`,
+  questions: [
+    {
+      q: "The secure version of HTTP is called:",
+      options: ["A. SHTTP", "B. HTTPS", "C. HTTP-S", "D. SSL"],
+      answer: "B. HTTPS",
+      diff: "easy"
+    },
+    {
+      q: "HTTPS stands for:",
+      options: ["A. Hypertext Transfer Protocol Secure", "B. Hypertext Transfer Secure Protocol", "C. High Transfer Protocol Secure", "D. Hypertext Transmission Protocol Secure"],
+      answer: "A. Hypertext Transfer Protocol Secure",
+      diff: "easy"
+    },
+    {
+      q: "The backbone of HTTPS is the protocol system known as:",
+      options: ["A. TLS", "B. SSL (Secure Sockets Layer)", "C. SSH", "D. IPsec"],
+      answer: "B. SSL (Secure Sockets Layer)",
+      diff: "easy"
+    },
+    {
+      q: "SSL was originally developed by:",
+      options: ["A. Microsoft", "B. Netscape", "C. Sun Microsystems", "D. IBM"],
+      answer: "B. Netscape",
+      diff: "medium"
+    },
+    {
+      q: "Most browsers indicate the use of SSL by displaying:",
+      options: ["A. A green address bar", "B. A tiny padlock icon", "C. A red warning", "D. A lock emoji"],
+      answer: "B. A tiny padlock icon",
+      diff: "easy"
+    },
+    {
+      q: "In public-key encryption, knowledge of how messages are encrypted:",
+      options: ["A. Automatically allows decryption", "B. Does NOT allow decryption", "C. Is required for decryption", "D. Is irrelevant"],
+      answer: "B. Does NOT allow decryption",
+      diff: "easy"
+    },
+    {
+      q: "A public-key encryption system uses how many keys?",
+      options: ["A. One", "B. Two", "C. Three", "D. Four"],
+      answer: "B. Two",
+      diff: "easy"
+    },
+    {
+      q: "The key used to encrypt messages in public-key encryption is called the:",
+      options: ["A. Private key", "B. Secret key", "C. Public key", "D. Shared key"],
+      answer: "C. Public key",
+      diff: "easy"
+    },
+    {
+      q: "The key required to decrypt messages in public-key encryption is called the:",
+      options: ["A. Public key", "B. Private key", "C. Session key", "D. Master key"],
+      answer: "B. Private key",
+      diff: "easy"
+    },
+    {
+      q: "In public-key encryption, the private key is:",
+      options: ["A. Distributed to everyone", "B. Held in confidence at the destination", "C. Shared with the sender", "D. Publicly available"],
+      answer: "B. Held in confidence at the destination",
+      diff: "easy"
+    },
+    {
+      q: "If Bob gives his public key to Alice and Carol, then Carol intercepts a message from Alice to Bob. Can Carol decrypt it?",
+      options: ["A. Yes, because she has the public key", "B. No, because she does not have the private key", "C. Yes, if she knows Alice", "D. No, because the message is corrupted"],
+      answer: "B. No, because she does not have the private key",
+      diff: "medium"
+    },
+    {
+      q: "One subtle problem with public-key systems is:",
+      options: ["A. They are too slow", "B. Ensuring the public key actually belongs to the intended party (preventing spoofing)", "C. They require too much memory", "D. They cannot encrypt large files"],
+      answer: "B. Ensuring the public key actually belongs to the intended party (preventing spoofing)",
+      diff: "easy"
+    },
+    {
+      q: "An imposter presenting itself as a bank and giving you its public key is an example of:",
+      options: ["A. Phishing", "B. Spoofing", "C. Denial of service", "D. Worm"],
+      answer: "B. Spoofing",
+      diff: "easy"
+    },
+    {
+      q: "Trusted Internet sites that maintain accurate lists of parties and their public keys are called:",
+      options: ["A. DNS servers", "B. Certificate authorities", "C. Proxy servers", "D. Firewalls"],
+      answer: "B. Certificate authorities",
+      diff: "easy"
+    },
+    {
+      q: "Certificate authorities act as servers to provide:",
+      options: ["A. Private keys to clients", "B. Reliable public-key information", "C. Encryption algorithms", "D. Firewall rules"],
+      answer: "B. Reliable public-key information",
+      diff: "easy"
+    },
+    {
+      q: "If an impostor gives you a fake public key pretending to be your bank, what is the risk?",
+      options: ["A. Your messages will be unreadable by anyone", "B. The impostor can decrypt your messages", "C. Your bank will receive the messages anyway", "D. The messages will be lost"],
+      answer: "B. The impostor can decrypt your messages",
+      diff: "easy"
+    },
+    {
+      q: "The padlock icon in a browser (locked position) typically indicates:",
+      options: ["A. The website is verified", "B. SSL/HTTPS is being used", "C. The computer is secure", "D. No encryption is used"],
+      answer: "B. SSL/HTTPS is being used",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is a secure version of a traditional Internet application?",
+      options: ["A. FTP", "B. HTTP", "C. HTTPS", "D. SMTP"],
+      answer: "C. HTTPS",
+      diff: "easy"
+    },
+    {
+      q: "In public-key encryption, the public key is typically:",
+      options: ["A. Kept secret", "B. Distributed to those who might send messages to a particular destination", "C. Used for decryption", "D. Never used"],
+      answer: "B. Distributed to those who might send messages to a particular destination",
+      diff: "easy"
+    },
+    {
+      q: "The property that knowing how messages are encrypted does not allow decryption is described as:",
+      options: ["A. Symmetric encryption", "B. Counterintuitive", "C. Obvious", "D. Weak encryption"],
+      answer: "B. Counterintuitive",
+      diff: "easy"
+    }
+  ]
+},
+
+
+84: {
+  title: "Networking and the Internet: Legal Approaches to Network Security",
+  summary: `**Key Topics Covered:**
+- Legal remedies for network security
+- US Computer Fraud and Abuse Act (1984, revised)
+- US Electronic Communication Privacy Act (ECPA)
+- Pakistan CyberSecurity Law (2016)
+- Punishments for cybercrimes (hacking, phishing, malware, identity theft, etc.)
+
+---
+
+**Simple Understanding:**
+
+**Legal Approaches:**
+👉 Making an action illegal is one way to enhance security.
+👉 But laws don't completely stop the action.
+👉 Problem: What's illegal in one country may be legal in another (international law challenge).
+
+---
+
+**US – Computer Fraud and Abuse Act (1984):**
+👉 Passed in 1984, revised many times.
+👉 Covers:
+   - Worms and viruses
+   - Theft of information
+   - Anything of value
+
+---
+
+**US – Electronic Communication Privacy Act (ECPA):**
+👉 Addresses employers' and ISPs' rights to look into communications.
+👉 Illegal for ISP to make private information available.
+👉 Employers can access information (especially when employer's equipment is used).
+
+---
+
+**Pakistan – CyberSecurity Law (2016):**
+👉 National Assembly passed new cybercrime law in 2016.
+👉 Punishment: 10 years for first offenders, 20 years for repeat offenders.
+👉 Covers:
+   - Hacking
+   - Phishing
+   - Malware
+   - Hacking tools
+   - Identity theft/fraud
+   - Electronic theft
+
+---
+
+**Important Vocabulary:**
+- Computer Fraud and Abuse Act = US federal law against computer crimes
+- ECPA = Electronic Communication Privacy Act
+- Cybercrime = illegal activities using computers/networks
+- Hacking = unauthorized access to computer systems
+- Phishing = fraudulent requests for information
+- Malware = malicious software
+- Identity theft = stealing someone's personal information
+- Electronic theft = stealing digital property
+
+---
+
+**Quick Revision Points:**
+- Laws are a tool but not perfect (international differences).
+- US Computer Fraud and Abuse Act (1984) covers worms, viruses, theft.
+- ECPA governs ISP/employer access to communications.
+- Pakistan's 2016 cybercrime law: up to 20 years for repeat offenders.
+- Covered crimes: hacking, phishing, malware, hacking tools, identity theft, electronic theft.`,
+  questions: [
+    {
+      q: "Which US law addressing computer crimes was passed in 1984 and revised many times?",
+      options: ["A. Electronic Communication Privacy Act", "B. Computer Fraud and Abuse Act", "C. CyberSecurity Law", "D. Digital Millennium Copyright Act"],
+      answer: "B. Computer Fraud and Abuse Act",
+      diff: "easy"
+    },
+    {
+      q: "The US Computer Fraud and Abuse Act covers all of the following EXCEPT:",
+      options: ["A. Worms and viruses", "B. Theft of information", "C. Anything of value", "D. Privacy of communications between employers and employees"],
+      answer: "D. Privacy of communications between employers and employees",
+      diff: "medium"
+    },
+    {
+      q: "Which US law addresses the rights of employers and ISPs to look into communications?",
+      options: ["A. Computer Fraud and Abuse Act", "B. Electronic Communication Privacy Act (ECPA)", "C. Cybersecurity Information Sharing Act", "D. Patriot Act"],
+      answer: "B. Electronic Communication Privacy Act (ECPA)",
+      diff: "easy"
+    },
+    {
+      q: "Under ECPA, it is illegal for an ISP to:",
+      options: ["A. Monitor network traffic", "B. Make private information available", "C. Block spam", "D. Encrypt user data"],
+      answer: "B. Make private information available",
+      diff: "medium"
+    },
+    {
+      q: "According to the module, employers can access information especially when:",
+      options: ["A. The employee is on vacation", "B. The equipment of the employer is used", "C. The employee gives written consent", "D. A court order is obtained"],
+      answer: "B. The equipment of the employer is used",
+      diff: "easy"
+    },
+    {
+      q: "Pakistan's National Assembly passed a new cybercrime law in which year?",
+      options: ["A. 2010", "B. 2012", "C. 2014", "D. 2016"],
+      answer: "D. 2016",
+      diff: "easy"
+    },
+    {
+      q: "Under Pakistan's CyberSecurity Law, the punishment for first offenders is:",
+      options: ["A. 5 years", "B. 10 years", "C. 15 years", "D. 20 years"],
+      answer: "B. 10 years",
+      diff: "easy"
+    },
+    {
+      q: "Under Pakistan's CyberSecurity Law, the punishment for repeat offenders is:",
+      options: ["A. 10 years", "B. 15 years", "C. 20 years", "D. Life imprisonment"],
+      answer: "C. 20 years",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is covered under Pakistan's CyberSecurity Law?",
+      options: ["A. Hacking", "B. Phishing", "C. Malware", "D. All of the above"],
+      answer: "D. All of the above",
+      diff: "easy"
+    },
+    {
+      q: "Making an action illegal:",
+      options: ["A. Completely stops the action", "B. Does not necessarily stop the action", "C. Is the only solution", "D. Has no effect at all"],
+      answer: "B. Does not necessarily stop the action",
+      diff: "easy"
+    },
+    {
+      q: "One issue with international law regarding cybercrime is that:",
+      options: ["A. All countries have the same laws", "B. An action illegal in one country may be legal in another", "C. There are no international laws", "D. Only the US has cyber laws"],
+      answer: "B. An action illegal in one country may be legal in another",
+      diff: "easy"
+    },
+    {
+      q: "The US Computer Fraud and Abuse Act was passed in which year?",
+      options: ["A. 1984", "B. 1996", "C. 2001", "D. 2010"],
+      answer: "A. 1984",
+      diff: "easy"
+    },
+    {
+      q: "The module mentions that Pakistan's CyberSecurity Law covers hacking tools. This means:",
+      options: ["A. Only using tools is illegal", "B. Possessing or distributing hacking tools may be illegal", "C. Only selling tools is illegal", "D. Tools are not covered"],
+      answer: "B. Possessing or distributing hacking tools may be illegal",
+      diff: "medium"
+    },
+    {
+      q: "Identity theft/fraud is covered under:",
+      options: ["A. Only US law", "B. Only Pakistan law", "C. Both US and Pakistan laws", "D. Neither"],
+      answer: "C. Both US and Pakistan laws",
+      diff: "easy"
+    },
+    {
+      q: "The Electronic Communication Privacy Act (ECPA) primarily deals with:",
+      options: ["A. Computer viruses", "B. Privacy of electronic communications", "C. Encryption standards", "D. Firewall requirements"],
+      answer: "B. Privacy of electronic communications",
+      diff: "easy"
+    },
+    {
+      q: "According to the module, the US Computer Fraud and Abuse Act has been:",
+      options: ["A. Repealed", "B. Revised many times", "C. Never changed", "D. Only applied to government computers"],
+      answer: "B. Revised many times",
+      diff: "easy"
+    },
+    {
+      q: "Pakistan's cybercrime law covers electronic theft. This would include:",
+      options: ["A. Stealing physical computers", "B. Stealing digital property (e.g., data, software)", "C. Only stealing money", "D. Only stealing passwords"],
+      answer: "B. Stealing digital property (e.g., data, software)",
+      diff: "medium"
+    },
+    {
+      q: "The source URL provided in the module (thehill.com) is about:",
+      options: ["A. US cyber law details", "B. Judges struggling with cyber crime punishment", "C. Pakistan's law text", "D. International treaty"],
+      answer: "B. Judges struggling with cyber crime punishment",
+      diff: "hard"
+    },
+    {
+      q: "One limitation of legal approaches to network security mentioned is:",
+      options: ["A. Laws are too harsh", "B. International differences in what is legal", "C. Laws are always enforced", "D. No country has cyber laws"],
+      answer: "B. International differences in what is legal",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is NOT explicitly listed as covered by Pakistan's CyberSecurity Law in the module?",
+      options: ["A. Hacking", "B. Phishing", "C. Denial of Service", "D. Electronic theft"],
+      answer: "C. Denial of Service",
+      diff: "medium"
+    }
+  ]
+},
+
+85: {
+  title: "Algorithm: an Informal Review",
+  summary: `**Key Topics Covered:**
+- Definition of algorithm (set of steps for performing a task)
+- Simple algorithm examples: making tea, converting kilometers to meters
+- Machine cycle (fetch, decode, execute)
+- Algorithm execution and human cognition
+
+---
+
+**Simple Understanding:**
+
+**What is an Algorithm?**
+👉 A set of steps that define how a task is performed.
+👉 Algorithms are everywhere – from making tea to computer operations.
+
+---
+
+**Example 1: Making a Cup of Tea**
+1. Put water in kettle
+2. Boil water
+3. Put tea in water
+4. Add milk
+5. Stir
+6. Add sugar
+7. Put tea in cup
+8. Fetch cup
+
+---
+
+**Example 2: Convert Kilometers to Meters**
+1. Take input of kilometers
+2. Multiply the input with 1000
+3. Display the result
+
+---
+
+**Machine Cycle (Computer's Algorithm):**
+👉 As long as the halt instruction has not been executed, continue:
+   a. **Fetch** an instruction
+   b. **Decode** the instruction
+   c. **Execute** the instruction
+
+---
+
+**Algorithm Execution and the Human Mind:**
+👉 Many researchers believe that every activity of the human mind (imagination, creativity, decision making) is the result of algorithm execution.
+
+---
+
+**Important Vocabulary:**
+- Algorithm = step-by-step procedure
+- Machine cycle = fetch-decode-execute
+- Fetch = retrieve instruction from memory
+- Decode = interpret instruction
+- Execute = perform instruction
+
+---
+
+**Quick Revision Points:**
+- An algorithm is a set of steps.
+- Examples: tea recipe, unit conversion.
+- Computer's machine cycle: fetch → decode → execute.
+- Some believe human thinking follows algorithms.`,
+  questions: [
+    {
+      q: "An algorithm is defined as:",
+      options: ["A. A computer program", "B. A set of steps that define how a task is performed", "C. A type of data structure", "D. A hardware component"],
+      answer: "B. A set of steps that define how a task is performed",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is an example of an algorithm?",
+      options: ["A. Making a cup of tea", "B. Converting kilometers to meters", "C. The machine cycle", "D. All of the above"],
+      answer: "D. All of the above",
+      diff: "easy"
+    },
+    {
+      q: "In the tea-making algorithm, what is the first step?",
+      options: ["A. Boil water", "B. Put tea in water", "C. Put water in kettle", "D. Fetch cup"],
+      answer: "C. Put water in kettle",
+      diff: "easy"
+    },
+    {
+      q: "In the kilometer to meter conversion algorithm, what operation is performed?",
+      options: ["A. Divide by 1000", "B. Multiply by 1000", "C. Add 1000", "D. Subtract 1000"],
+      answer: "B. Multiply by 1000",
+      diff: "easy"
+    },
+    {
+      q: "The three steps of the machine cycle are:",
+      options: ["A. Read, Write, Execute", "B. Fetch, Decode, Execute", "C. Input, Process, Output", "D. Start, Run, Stop"],
+      answer: "B. Fetch, Decode, Execute",
+      diff: "easy"
+    },
+    {
+      q: "The machine cycle continues as long as which instruction has not been executed?",
+      options: ["A. Fetch", "B. Decode", "C. Halt", "D. Jump"],
+      answer: "C. Halt",
+      diff: "easy"
+    },
+    {
+      q: "In the machine cycle, what happens during the 'decode' step?",
+      options: ["A. The instruction is retrieved from memory", "B. The instruction is interpreted", "C. The instruction is performed", "D. The result is stored"],
+      answer: "B. The instruction is interpreted",
+      diff: "medium"
+    },
+    {
+      q: "Many researchers believe that activities of the human mind such as imagination and creativity are:",
+      options: ["A. Not algorithmic", "B. The result of algorithm execution", "C. Random processes", "D. Beyond understanding"],
+      answer: "B. The result of algorithm execution",
+      diff: "easy"
+    },
+    {
+      q: "Which step in the tea-making algorithm comes after 'Add Milk'?",
+      options: ["A. Add Sugar", "B. Stir", "C. Put tea in cup", "D. Boil water"],
+      answer: "B. Stir",
+      diff: "easy"
+    },
+    {
+      q: "The algorithm for converting kilometers to meters includes which of these steps?",
+      options: ["A. Take input of kilometers", "B. Display the result", "C. Multiply by 1000", "D. All of the above"],
+      answer: "D. All of the above",
+      diff: "easy"
+    },
+    {
+      q: "In the machine cycle, the 'execute' step means:",
+      options: ["A. Fetch the next instruction", "B. Perform the decoded instruction", "C. Halt the processor", "D. Store the result"],
+      answer: "B. Perform the decoded instruction",
+      diff: "easy"
+    },
+    {
+      q: "The final step in the tea-making algorithm (as listed) is:",
+      options: ["A. Put tea in cup", "B. Add Sugar", "C. Fetch cup", "D. Stir"],
+      answer: "C. Fetch cup",
+      diff: "easy"
+    },
+    {
+      q: "An algorithm must be:",
+      options: ["A. Ambiguous", "B. Well-defined and step-by-step", "C. Random", "D. Unpredictable"],
+      answer: "B. Well-defined and step-by-step",
+      diff: "easy"
+    },
+    {
+      q: "The machine cycle is an example of:",
+      options: ["A. A hardware component", "B. An algorithm executed by the CPU", "C. A programming language", "D. A network protocol"],
+      answer: "B. An algorithm executed by the CPU",
+      diff: "easy"
+    },
+    {
+      q: "According to the module, which of the following human activities is suggested to result from algorithm execution?",
+      options: ["A. Decision making", "B. Imagination", "C. Creativity", "D. All of the above"],
+      answer: "D. All of the above",
+      diff: "easy"
+    },
+    {
+      q: "What is the purpose of the 'Fetch' step in the machine cycle?",
+      options: ["A. To execute the instruction", "B. To retrieve an instruction from memory", "C. To decode the instruction", "D. To halt the processor"],
+      answer: "B. To retrieve an instruction from memory",
+      diff: "easy"
+    },
+    {
+      q: "How many steps are listed in the tea-making algorithm?",
+      options: ["A. 5", "B. 6", "C. 7", "D. 8"],
+      answer: "D. 8",
+      diff: "easy"
+    },
+    {
+      q: "The conversion from kilometers to meters uses what conversion factor?",
+      options: ["A. 100", "B. 1000", "C. 10000", "D. 10"],
+      answer: "B. 1000",
+      diff: "easy"
+    },
+    {
+      q: "After boiling water in the tea algorithm, the next step is:",
+      options: ["A. Add Milk", "B. Put Tea in water", "C. Stir", "D. Add Sugar"],
+      answer: "B. Put Tea in water",
+      diff: "easy"
+    },
+    {
+      q: "The module suggests that algorithm execution may underlie:",
+      options: ["A. Only computer operations", "B. Only mathematical calculations", "C. Human mind activities including creativity", "D. Only simple tasks"],
+      answer: "C. Human mind activities including creativity",
+      diff: "easy"
+    }
+  ]
+},
+
+
+86: {
+  title: "Algorithm: Formal Definition of Algorithm",
+  summary: `**Key Topics Covered:**
+- Formal definition of algorithm
+- Ordered set vs sequence (parallel processing)
+- Executable (effective) steps
+- Unambiguous steps
+- Terminating process
+
+---
+
+**Simple Understanding:**
+
+**Formal Definition:**
+👉 An algorithm is an ordered set of unambiguous, executable steps that defines a terminating process.
+
+**Key Characteristics:**
+
+1. **Ordered Set (not necessarily a sequence):**
+   - Steps have a well-established structure in terms of execution order.
+   - Does NOT mean a simple linear sequence (e.g., parallel processing allowed).
+   - Example: Flip-flops producing output individually; together they have meaning.
+
+2. **Executable (Effective):**
+   - Each step must be possible to perform.
+   - Computer scientists use "effective" to mean executable.
+
+3. **Unambiguous:**
+   - The information in the state of the process must be sufficient to determine uniquely and completely the actions required by each step.
+   - No confusion or multiple interpretations.
+
+4. **Terminating Process:**
+   - The execution of an algorithm must lead to an end (not infinite loop).
+
+---
+
+**Important Vocabulary:**
+- Ordered set = steps with defined execution order
+- Sequence = linear order (one after another)
+- Parallel processing = steps that can execute simultaneously
+- Executable = possible to perform (effective)
+- Unambiguous = clear, no multiple interpretations
+- Terminating = ends after finite steps
+
+---
+
+**Quick Revision Points:**
+- Algorithm = ordered, unambiguous, executable, terminating.
+- Order does not require strict sequence; parallel allowed.
+- Unambiguous means deterministic.
+- Must terminate (no infinite loops).`,
+  questions: [
+    {
+      q: "According to the formal definition, an algorithm is an ordered set of:",
+      options: ["A. Ambiguous, non-executable steps", "B. Unambiguous, executable steps that define a terminating process", "C. Random steps", "D. Sequential steps only"],
+      answer: "B. Unambiguous, executable steps that define a terminating process",
+      diff: "easy"
+    },
+    {
+      q: "The formal definition of algorithm includes which of the following?",
+      options: ["A. Ordered set", "B. Unambiguous steps", "C. Terminating process", "D. All of the above"],
+      answer: "D. All of the above",
+      diff: "easy"
+    },
+    {
+      q: "The term 'ordered set' in the context of algorithms means:",
+      options: ["A. Steps must be executed in a strict linear sequence", "B. Steps have a well-established structure in terms of execution order, but not necessarily a single sequence", "C. Order is irrelevant", "D. Only parallel execution is allowed"],
+      answer: "B. Steps have a well-established structure in terms of execution order, but not necessarily a single sequence",
+      diff: "medium"
+    },
+    {
+      q: "The module mentions flip-flops as an example to illustrate:",
+      options: ["A. Sequential execution", "B. That order does not mean a simple sequence (parallel processing)", "C. Unambiguous steps", "D. Termination"],
+      answer: "B. That order does not mean a simple sequence (parallel processing)",
+      diff: "medium"
+    },
+    {
+      q: "Computer scientists use the term 'effective' to mean:",
+      options: ["A. Efficient", "B. Executable", "C. Fast", "D. Optimal"],
+      answer: "B. Executable",
+      diff: "easy"
+    },
+    {
+      q: "An algorithm step is considered 'executable' if:",
+      options: ["A. It is written in a programming language", "B. It is possible to perform", "C. It is simple", "D. It uses loops"],
+      answer: "B. It is possible to perform",
+      diff: "easy"
+    },
+    {
+      q: "The requirement that steps be 'unambiguous' means:",
+      options: ["A. Steps can be interpreted in multiple ways", "B. The information in the state must uniquely and completely determine each step's actions", "C. Steps are written in plain English", "D. Steps are short"],
+      answer: "B. The information in the state must uniquely and completely determine each step's actions",
+      diff: "medium"
+    },
+    {
+      q: "A terminating process means that the algorithm:",
+      options: ["A. May run forever", "B. Must lead to an end", "C. Can be paused", "D. Never stops"],
+      answer: "B. Must lead to an end",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is NOT a characteristic of an algorithm according to the formal definition?",
+      options: ["A. Ordered set", "B. Unambiguous", "C. Non-terminating", "D. Executable"],
+      answer: "C. Non-terminating",
+      diff: "easy"
+    },
+    {
+      q: "The phrase 'ordered set' is used instead of 'sequence' to allow for:",
+      options: ["A. Only sequential execution", "B. Parallel processing", "C. Random order", "D. No order"],
+      answer: "B. Parallel processing",
+      diff: "easy"
+    },
+    {
+      q: "An algorithm that never stops violates which property?",
+      options: ["A. Executable", "B. Unambiguous", "C. Terminating", "D. Ordered"],
+      answer: "C. Terminating",
+      diff: "easy"
+    },
+    {
+      q: "If an algorithm step can be interpreted in two different ways, it fails the property of:",
+      options: ["A. Executability", "B. Unambiguousness", "C. Termination", "D. Order"],
+      answer: "B. Unambiguousness",
+      diff: "easy"
+    },
+    {
+      q: "The example of flip-flops producing output individually but together having meaning illustrates:",
+      options: ["A. Sequential execution", "B. That order does not imply a single sequence (parallel execution possible)", "C. Termination condition", "D. Unambiguous steps"],
+      answer: "B. That order does not imply a single sequence (parallel execution possible)",
+      diff: "medium"
+    },
+    {
+      q: "Which term is used by computer scientists as a synonym for 'executable'?",
+      options: ["A. Efficient", "B. Effective", "C. Elegant", "D. Exact"],
+      answer: "B. Effective",
+      diff: "easy"
+    },
+    {
+      q: "The formal definition requires that each step be 'unambiguous'. This ensures:",
+      options: ["A. The algorithm is fast", "B. The algorithm produces deterministic results", "C. The algorithm uses less memory", "D. The algorithm is easy to write"],
+      answer: "B. The algorithm produces deterministic results",
+      diff: "medium"
+    },
+    {
+      q: "An algorithm that has parallel branches but still ends after finite time satisfies which properties?",
+      options: ["A. Only terminating", "B. Ordered and terminating", "C. Only executable", "D. None"],
+      answer: "B. Ordered and terminating",
+      diff: "hard"
+    },
+    {
+      q: "The word 'ordered' in the definition emphasizes that:",
+      options: ["A. Steps are randomly arranged", "B. There is a structure to execution order", "C. Order does not matter", "D. Steps must be in ascending order"],
+      answer: "B. There is a structure to execution order",
+      diff: "easy"
+    },
+    {
+      q: "A recipe for baking a cake is an example of an algorithm if it:",
+      options: ["A. Has ambiguous steps", "B. Never ends", "C. Has ordered, unambiguous, executable steps and terminates", "D. Has no steps"],
+      answer: "C. Has ordered, unambiguous, executable steps and terminates",
+      diff: "easy"
+    },
+    {
+      q: "Which property ensures that an algorithm does not have infinite loops?",
+      options: ["A. Executable", "B. Unambiguous", "C. Terminating", "D. Ordered"],
+      answer: "C. Terminating",
+      diff: "easy"
+    },
+    {
+      q: "The formal definition of algorithm requires that the process be:",
+      options: ["A. Possibly infinite", "B. Terminating", "C. Non-deterministic", "D. Random"],
+      answer: "B. Terminating",
+      diff: "easy"
+    }
+  ]
+},
+
+87: {
+  title: "Abstract Nature of Algorithms",
+  summary: `**Key Topics Covered:**
+- Distinction between algorithm and its representation
+- Analogy: story vs book (abstract vs physical)
+- Same algorithm can have multiple representations (formula, instructions, circuit)
+- Level of detail in representation (meteorologist vs layperson)
+- Distinction between program, algorithm, and process
+
+---
+
+**Simple Understanding:**
+
+**Algorithm vs Representation:**
+👉 Algorithm is abstract/conceptual; representation is physical.
+👉 Analogy: Story vs Book – story remains same even if book translated or republished.
+👉 A single algorithm can be represented in many ways.
+
+**Example: Celsius to Fahrenheit conversion:**
+👉 Representation 1: Formula \( F = \frac{9}{5}C + 32 \)
+👉 Representation 2: "Multiply Celsius by 9/5, then add 32"
+👉 Representation 3: Electronic circuit (hardware)
+👉 Underlying algorithm is the same.
+
+---
+
+**Level of Detail Problem:**
+👉 Meteorologists: "Convert Celsius to Fahrenheit" suffices (shared knowledge).
+👉 Layperson: Needs more detailed steps (otherwise ambiguous).
+👉 Problem is not the algorithm, but insufficient detail in representation.
+
+---
+
+**Program vs Algorithm vs Process:**
+| Concept | Definition |
+|---------|------------|
+| **Program** | Formal representation of an algorithm (for computer) |
+| **Algorithm** | Abstract step-by-step procedure |
+| **Process** | Activity of executing an algorithm/program |
+
+👉 Program represents an algorithm.
+👉 Process executes an algorithm.
+
+---
+
+**Important Vocabulary:**
+- Abstract = conceptual, not physical
+- Representation = physical form (text, diagram, circuit)
+- Level of detail = amount of specificity in representation
+- Program = computer-executable representation
+- Process = running instance of a program
+
+---
+
+**Quick Revision Points:**
+- Algorithm is abstract; representation is physical.
+- Same algorithm: multiple representations (formula, English, circuit).
+- Insufficient detail ≠ ambiguous algorithm (just poor representation).
+- Program = algorithm representation.
+- Process = execution of algorithm.`,
+  questions: [
+    {
+      q: "The distinction between an algorithm and its representation is analogous to the distinction between:",
+      options: ["A. A car and its engine", "B. A story and a book", "C. A computer and its memory", "D. A recipe and cooking"],
+      answer: "B. A story and a book",
+      diff: "easy"
+    },
+    {
+      q: "If a book is translated into another language, what changes?",
+      options: ["A. The story itself", "B. Only the representation of the story", "C. Both story and representation", "D. Neither"],
+      answer: "B. Only the representation of the story",
+      diff: "easy"
+    },
+    {
+      q: "A single algorithm can be represented in:",
+      options: ["A. Only one way", "B. Many ways", "C. Only as a formula", "D. Only as computer code"],
+      answer: "B. Many ways",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is a representation of the Celsius-to-Fahrenheit conversion algorithm?",
+      options: ["A. F = (9/5)C + 32", "B. Multiply Celsius by 9/5 and add 32", "C. An electronic circuit", "D. All of the above"],
+      answer: "D. All of the above",
+      diff: "easy"
+    },
+    {
+      q: "The underlying algorithm for converting Celsius to Fahrenheit is:",
+      options: ["A. Different for each representation", "B. The same regardless of representation", "C. Only valid as a formula", "D. Only valid as English instructions"],
+      answer: "B. The same regardless of representation",
+      diff: "easy"
+    },
+    {
+      q: "Among meteorologists, the instruction 'Convert the Celsius reading to its Fahrenheit equivalent' is considered:",
+      options: ["A. Insufficient", "B. Sufficient (due to shared knowledge)", "C. Ambiguous", "D. Incorrect"],
+      answer: "B. Sufficient (due to shared knowledge)",
+      diff: "easy"
+    },
+    {
+      q: "A layperson might find the instruction 'Convert the Celsius reading to its Fahrenheit equivalent' ambiguous because:",
+      options: ["A. The algorithm itself is ambiguous", "B. The representation lacks sufficient detail", "C. Conversion is impossible", "D. There is no such conversion"],
+      answer: "B. The representation lacks sufficient detail",
+      diff: "medium"
+    },
+    {
+      q: "The problem with insufficient detail is with the:",
+      options: ["A. Underlying algorithm", "B. Representation of the algorithm", "C. Computer hardware", "D. User's intelligence"],
+      answer: "B. Representation of the algorithm",
+      diff: "medium"
+    },
+    {
+      q: "A program is defined as:",
+      options: ["A. An abstract algorithm", "B. A representation of an algorithm (often for computer application)", "C. The execution of an algorithm", "D. A hardware component"],
+      answer: "B. A representation of an algorithm (often for computer application)",
+      diff: "easy"
+    },
+    {
+      q: "A process is defined as:",
+      options: ["A. The representation of an algorithm", "B. The activity of executing a program (or algorithm)", "C. An abstract step-by-step procedure", "D. A computer file"],
+      answer: "B. The activity of executing a program (or algorithm)",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is abstract/conceptual?",
+      options: ["A. A program", "B. A process", "C. An algorithm", "D. A source code file"],
+      answer: "C. An algorithm",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is a physical representation?",
+      options: ["A. An algorithm", "B. A story idea", "C. A book", "D. A mathematical concept"],
+      answer: "C. A book",
+      diff: "easy"
+    },
+    {
+      q: "Within the computing community, the term 'program' usually refers to:",
+      options: ["A. An abstract idea", "B. A formal representation designed for computer application", "C. The execution of code", "D. The CPU"],
+      answer: "B. A formal representation designed for computer application",
+      diff: "easy"
+    },
+    {
+      q: "A process is the activity of executing a(n):",
+      options: ["A. Algorithm", "B. Program", "C. Either A or B (since program represents algorithm)", "D. None of the above"],
+      answer: "C. Either A or B (since program represents algorithm)",
+      diff: "medium"
+    },
+    {
+      q: "The relationship between program, algorithm, and process can be summarized as:",
+      options: ["A. All are the same", "B. Program represents algorithm; process executes algorithm", "C. Algorithm represents program; process is representation", "D. Process represents algorithm; program executes"],
+      answer: "B. Program represents algorithm; process executes algorithm",
+      diff: "hard"
+    },
+    {
+      q: "An algorithm can be represented in electronic circuit form. This means:",
+      options: ["A. Circuits cannot represent algorithms", "B. Hardware can also implement algorithms", "C. Algorithms are only software", "D. Circuits are not algorithms"],
+      answer: "B. Hardware can also implement algorithms",
+      diff: "easy"
+    },
+    {
+      q: "If a weather app uses the formula (C×9/5+32) to display Fahrenheit, the algorithm is:",
+      options: ["A. Different from the formula", "B. The same abstract process regardless of coding language", "C. Only valid in that app", "D. Not an algorithm"],
+      answer: "B. The same abstract process regardless of coding language",
+      diff: "easy"
+    },
+    {
+      q: "The phrase 'level of detail' in algorithm representation refers to:",
+      options: ["A. The number of steps", "B. How specific the instructions are", "C. The length of the algorithm", "D. The complexity of the output"],
+      answer: "B. How specific the instructions are",
+      diff: "easy"
+    },
+    {
+      q: "A program that never terminates (infinite loop) is still a representation of:",
+      options: ["A. A terminating algorithm", "B. A non-terminating 'algorithm' (less formal sense)", "C. No algorithm", "D. A process only"],
+      answer: "B. A non-terminating 'algorithm' (less formal sense)",
+      diff: "hard"
+    },
+    {
+      q: "Which entity is the activity of executing an algorithm?",
+      options: ["A. Program", "B. Algorithm", "C. Process", "D. Representation"],
+      answer: "C. Process",
+      diff: "easy"
+    }
+  ]
+},
+
+
+88: {
+  title: "Algorithm: Representation (Primitives)",
+  summary: `**Key Topics Covered:**
+- Representing algorithms using language (natural language, pictures)
+- Problems: ambiguous terminology, level of detail
+- Primitives (well-defined building blocks)
+- Programming language = primitives + combination rules
+- Syntax vs semantics
+- Machine language vs higher-level primitives
+
+---
+
+**Simple Understanding:**
+
+**Representing Algorithms:**
+👉 Requires some form of language.
+👉 Natural language (English, Spanish, etc.) or pictures (e.g., origami folding diagrams – Figure 78).
+👉 Problem: Misunderstandings due to ambiguous terminology.
+   Example: "Visiting grandchildren can be nerve-racking" (two meanings).
+👉 Problem: Level of detail – origami student vs novice reader.
+
+---
+
+**Primitives:**
+👉 Well-defined building blocks for algorithm representation.
+👉 Assigning precise definitions removes ambiguity.
+👉 Establishes uniform level of detail.
+
+**Programming Language:**
+👉 Collection of primitives + rules for combining them.
+
+**Syntax vs Semantics:**
+| Term | Meaning |
+|------|---------|
+| Syntax | Symbolic representation (form) |
+| Semantics | Meaning of the primitive |
+👉 Example: "air" – syntax = three symbols (a,i,r); semantics = gaseous substance.
+
+---
+
+**Machine Language vs Higher-Level Primitives:**
+👉 Machine instructions are primitives (lowest level).
+👉 Expressing algorithms in machine language is tedious.
+👉 Higher-level primitives (abstract tools) built from lower-level machine instructions.
+👉 Result: high-level programming languages (more conceptual, less tedious).
+
+---
+
+**Important Vocabulary:**
+- Primitive = basic building block
+- Programming language = primitives + combination rules
+- Syntax = form/structure
+- Semantics = meaning
+- Machine language = CPU instruction set
+- High-level language = abstracted primitives (e.g., Python, Java)
+
+---
+
+**Quick Revision Points:**
+- Natural language for algorithms is ambiguous.
+- Primitives provide precise, unambiguous building blocks.
+- Programming language = primitives + rules.
+- Syntax = form; semantics = meaning.
+- Higher-level primitives make programming less tedious.`,
+  questions: [
+    {
+      q: "Representation of algorithms requires some form of:",
+      options: ["A. Computer only", "B. Language", "C. Hardware", "D. Mathematics"],
+      answer: "B. Language",
+      diff: "easy"
+    },
+    {
+      q: "The sentence 'Visiting grandchildren can be nerve-racking' is ambiguous because:",
+      options: ["A. It is too long", "B. Terminology has more than one meaning", "C. It has no verbs", "D. It is a question"],
+      answer: "B. Terminology has more than one meaning",
+      diff: "easy"
+    },
+    {
+      q: "Figure 78 in the module describes an algorithm for:",
+      options: ["A. Baking a cake", "B. Folding a bird from a square piece of paper", "C. Converting temperatures", "D. Sorting numbers"],
+      answer: "B. Folding a bird from a square piece of paper",
+      diff: "easy"
+    },
+    {
+      q: "A well-defined building block from which algorithm representations are constructed is called a:",
+      options: ["A. Program", "B. Primitive", "C. Process", "D. Syntax"],
+      answer: "B. Primitive",
+      diff: "easy"
+    },
+    {
+      q: "Assigning precise definitions to primitives removes problems of:",
+      options: ["A. Performance", "B. Ambiguity and establishes uniform level of detail", "C. Memory usage", "D. Speed"],
+      answer: "B. Ambiguity and establishes uniform level of detail",
+      diff: "easy"
+    },
+    {
+      q: "A collection of primitives along with rules for combining them constitutes a:",
+      options: ["A. Processor", "B. Programming language", "C. Compiler", "D. Operating system"],
+      answer: "B. Programming language",
+      diff: "easy"
+    },
+    {
+      q: "The symbolic representation of a primitive is called its:",
+      options: ["A. Semantics", "B. Syntax", "C. Context", "D. Meaning"],
+      answer: "B. Syntax",
+      diff: "easy"
+    },
+    {
+      q: "The meaning of a primitive is called its:",
+      options: ["A. Syntax", "B. Semantics", "C. Form", "D. Structure"],
+      answer: "B. Semantics",
+      diff: "easy"
+    },
+    {
+      q: "In the example given, the syntax of 'air' consists of three symbols (a,i,r), while its semantics is:",
+      options: ["A. A programming language", "B. A gaseous substance that surrounds the world", "C. A type of bird", "D. A mathematical formula"],
+      answer: "B. A gaseous substance that surrounds the world",
+      diff: "easy"
+    },
+    {
+      q: "The lowest-level primitives for computer execution are:",
+      options: ["A. High-level language statements", "B. Individual machine instructions", "C. English sentences", "D. Flowcharts"],
+      answer: "B. Individual machine instructions",
+      diff: "easy"
+    },
+    {
+      q: "Expressing algorithms at the machine instruction level is:",
+      options: ["A. Easy and fast", "B. Tedious", "C. Impossible", "D. The only way"],
+      answer: "B. Tedious",
+      diff: "easy"
+    },
+    {
+      q: "Higher-level primitives are constructed from:",
+      options: ["A. Natural language", "B. Lower-level primitives (machine instructions)", "C. Pictures", "D. Sound"],
+      answer: "B. Lower-level primitives (machine instructions)",
+      diff: "medium"
+    },
+    {
+      q: "The result of using higher-level primitives is:",
+      options: ["A. Machine language programs", "B. Formal programming languages that are more conceptual", "C. Slower execution", "D. No programs"],
+      answer: "B. Formal programming languages that are more conceptual",
+      diff: "medium"
+    },
+    {
+      q: "Which of the following is an example of a primitive in origami (as per Figure 79 mentioned but not shown)?",
+      options: ["A. Paper size", "B. Specific fold types (e.g., mountain fold, valley fold)", "C. Scissors", "D. Ruler"],
+      answer: "B. Specific fold types (e.g., mountain fold, valley fold)",
+      diff: "medium"
+    },
+    {
+      q: "A student of origami would likely have little difficulty following Figure 78 because:",
+      options: ["A. They have better eyesight", "B. They understand the primitives and level of detail", "C. The figure is in color", "D. They ignore the instructions"],
+      answer: "B. They understand the primitives and level of detail",
+      diff: "easy"
+    },
+    {
+      q: "Communication problems with natural language for algorithm representation arise due to:",
+      options: ["A. Precise definitions", "B. Ambiguous terminology and level of detail", "C. Too many primitives", "D. Lack of grammar"],
+      answer: "B. Ambiguous terminology and level of detail",
+      diff: "easy"
+    },
+    {
+      q: "Computer science solves representation problems by establishing:",
+      options: ["A. Natural language", "B. A well-defined set of primitives", "C. Only machine code", "D. No rules"],
+      answer: "B. A well-defined set of primitives",
+      diff: "easy"
+    },
+    {
+      q: "The combination of primitives to represent complex ideas requires:",
+      options: ["A. No rules", "B. A collection of rules", "C. Random assembly", "D. Natural language only"],
+      answer: "B. A collection of rules",
+      diff: "easy"
+    },
+    {
+      q: "An algorithm expressed in terms of higher-level primitives is eventually:",
+      options: ["A. Executed directly by the CPU", "B. Translated into lower-level machine instructions", "C. Discarded", "D. Stored as a picture"],
+      answer: "B. Translated into lower-level machine instructions",
+      diff: "medium"
+    },
+    {
+      q: "Which of the following best describes the relationship between high-level languages and machine language?",
+      options: ["A. They are identical", "B. High-level languages are abstract tools built from machine language primitives", "C. Machine language is built from high-level languages", "D. They are unrelated"],
+      answer: "B. High-level languages are abstract tools built from machine language primitives",
+      diff: "hard"
+    }
+  ]
+},
+
+
+89:{
+  title: "Pseudocode and Algorithm Development",
+
+  summary: `**Key Topics Covered:**
+- Pseudocode as informal algorithm notation
+- Assignment statements
+- Conditional structures (if-else)
+- Syntax and semantic structures
+- Importance of indentation and consistency
+
+---
+
+**Simple Understanding:**
+
+**Pseudocode:**
+👉 Pseudocode is an informal way to express algorithms during development.
+👉 It is not a real programming language but resembles languages like Pascal, Java, and C.
+
+**Assignment Statements:**
+👉 Used to store a value in a variable.
+👉 Format:
+   name = expression
+
+👉 Example:
+   RemainingFunds = CheckingBalance + SavingsBalance
+
+**Conditional Structures (if-else):**
+👉 Used for decision making.
+👉 Structure:
+
+if condition:
+    activity
+else:
+    alternative activity
+
+👉 Colons and indentation help define the structure clearly.
+
+---
+
+**Important Vocabulary:**
+- Pseudocode = informal algorithm notation
+- Assignment = storing value to a name
+- Conditional = if-else selection
+- Syntax = structure/form
+- Semantic = meaning
+- Indentation = spaces/tabs to show block structure
+
+---
+
+**Quick Revision Points:**
+- Pseudocode is informal, for algorithm development.
+- Assignment: name = expression.
+- if-else: condition → colon → indented activity.
+- Uniform syntax for recurring structures.`,
+
+  questions: [
+    {
+      q: "Pseudocode is defined as:",
+      options: [
+        "A. A formal programming language",
+        "B. A notational system for informal expression during algorithm development",
+        "C. Machine code",
+        "D. A type of flowchart"
+      ],
+      answer: "B. A notational system for informal expression during algorithm development",
+      diff: "easy"
+    },
+
+    {
+      q: "One way to obtain a pseudocode is to:",
+      options: [
+        "A. Write in English only",
+        "B. Loosen the rules of a formal programming language",
+        "C. Use only numbers",
+        "D. Avoid any structure"
+      ],
+      answer: "B. Loosen the rules of a formal programming language",
+      diff: "easy"
+    },
+
+    {
+      q: "Popular pseudocode variants have been based on languages such as:",
+      options: [
+        "A. Only Python",
+        "B. Algol, Pascal, Java, C",
+        "C. Only machine language",
+        "D. Only HTML"
+      ],
+      answer: "B. Algol, Pascal, Java, C",
+      diff: "easy"
+    },
+
+    {
+      q: "An essential property of a pseudocode is:",
+      options: [
+        "A. It must be executable",
+        "B. It must have a consistent, concise notation for representing recurring semantic structures",
+        "C. It must be compiled",
+        "D. It must use only English words"
+      ],
+      answer: "B. It must have a consistent, concise notation for representing recurring semantic structures",
+      diff: "medium"
+    },
+
+    {
+      q: "The assignment statement in pseudocode follows the format:",
+      options: [
+        "A. expression = name",
+        "B. name = expression",
+        "C. name : expression",
+        "D. name ← expression"
+      ],
+      answer: "B. name = expression",
+      diff: "easy"
+    },
+
+    {
+      q: "The pseudocode statement 'RemainingFunds = CheckingBalance + SavingsBalance' does what?",
+      options: [
+        "A. Compares two values",
+        "B. Assigns the sum to RemainingFunds",
+        "C. Prints the sum",
+        "D. Deletes the variables"
+      ],
+      answer: "B. Assigns the sum to RemainingFunds",
+      diff: "easy"
+    },
+
+    {
+      q: "The if-else structure in pseudocode uses which keywords?",
+      options: [
+        "A. then and else",
+        "B. if and else",
+        "C. when and otherwise",
+        "D. condition and alternative"
+      ],
+      answer: "B. if and else",
+      diff: "easy"
+    },
+
+    {
+      q: "In the pseudocode if-else structure, after the condition and after 'else' there is a:",
+      options: [
+        "A. Semicolon",
+        "B. Colon",
+        "C. Comma",
+        "D. Period"
+      ],
+      answer: "B. Colon",
+      diff: "easy"
+    },
+
+    {
+      q: "The activities in an if-else structure are indicated by:",
+      options: [
+        "A. Parentheses",
+        "B. Indentation",
+        "C. Brackets",
+        "D. Quotation marks"
+      ],
+      answer: "B. Indentation",
+      diff: "easy"
+    },
+
+    {
+      q: "Given the condition 'year is leap year', the pseudocode for dividing total by 366 or 365 would be:",
+      options: [
+        "A. if (year is leap year): daily total = total/366 else: daily total = total/365",
+        "B. if year is leap year then daily total = total/366 else daily total = total/365",
+        "C. Both A and B are acceptable as pseudocode",
+        "D. Neither is acceptable"
+      ],
+      answer: "A. if (year is leap year): daily total = total/366 else: daily total = total/365",
+      diff: "medium"
+    },
+
+    {
+      q: "Pseudocode is primarily used for:",
+      options: [
+        "A. Direct execution by computer",
+        "B. Communicating algorithm ideas to humans during development",
+        "C. Compiling into machine code",
+        "D. Hardware design"
+      ],
+      answer: "B. Communicating algorithm ideas to humans during development",
+      diff: "easy"
+    },
+
+    {
+      q: "Which of the following is a recurring semantic structure mentioned in the module?",
+      options: [
+        "A. Loops",
+        "B. Saving a computed value (assignment)",
+        "C. Recursion",
+        "D. Pointers"
+      ],
+      answer: "B. Saving a computed value (assignment)",
+      diff: "easy"
+    },
+
+    {
+      q: "Another recurring semantic structure mentioned is:",
+      options: [
+        "A. Iteration",
+        "B. Selection (if-else)",
+        "C. Function call",
+        "D. Array access"
+      ],
+      answer: "B. Selection (if-else)",
+      diff: "easy"
+    },
+
+    {
+      q: "The pseudocode assignment structure is similar to which language's assignment?",
+      options: [
+        "A. Python",
+        "B. HTML",
+        "C. CSS",
+        "D. SQL"
+      ],
+      answer: "A. Python",
+      diff: "easy"
+    },
+
+    {
+      q: "If an activity consists of multiple steps in pseudocode, they will be:",
+      options: [
+        "A. On the same line",
+        "B. Similarly indented",
+        "C. In separate files",
+        "D. Ignored"
+      ],
+      answer: "B. Similarly indented",
+      diff: "easy"
+    },
+
+    {
+      q: "The module states that pseudocode must have a consistent notation for representing recurring semantic structures. This is important because:",
+      options: [
+        "A. It makes the pseudocode executable",
+        "B. It reduces ambiguity and improves clarity",
+        "C. It compiles faster",
+        "D. It uses less memory"
+      ],
+      answer: "B. It reduces ambiguity and improves clarity",
+      diff: "medium"
+    },
+
+    {
+      q: "Which of the following is NOT a characteristic of pseudocode as described?",
+      options: [
+        "A. Informal",
+        "B. Used during algorithm development",
+        "C. Must be syntactically perfect for compilation",
+        "D. Can borrow from multiple programming languages"
+      ],
+      answer: "C. Must be syntactically perfect for compilation",
+      diff: "easy"
+    },
+
+    {
+      q: "The module mentions that pseudocode variants exist because:",
+      options: [
+        "A. There is only one programming language",
+        "B. There are many programming languages",
+        "C. Pseudocode is standardized",
+        "D. Pseudocode is never used"
+      ],
+      answer: "B. There are many programming languages",
+      diff: "easy"
+    },
+
+    {
+      q: "In the if-else pseudocode example, what is the purpose of the colon after condition and else?",
+      options: [
+        "A. To end the statement",
+        "B. To delineate the boundaries of substructures",
+        "C. To indicate a comment",
+        "D. To separate multiple conditions"
+      ],
+      answer: "B. To delineate the boundaries of substructures",
+      diff: "medium"
+    },
+
+    {
+      q: "According to the module, pseudocode reminiscent of Java and C has proliferated because:",
+      options: [
+        "A. Java and C are the fastest languages",
+        "B. Most programmers have at least a reading knowledge of these languages",
+        "C. They are the only languages available",
+        "D. They are easy to compile"
+      ],
+      answer: "B. Most programmers have at least a reading knowledge of these languages",
+      diff: "easy"
+    }
+  ]
+},
+
+
+90:{
+  title: "While Loop and Iteration",
+
+  summary: `**Key Topics Covered:**
+- While loop structure
+- Conditional repetition
+- Iteration process
+- Loop body and conditions
+- Infinite loops
+
+---
+
+**Simple Understanding:**
+
+**While Loop:**
+👉 A while loop repeats an activity as long as a condition remains true.
+
+👉 General structure:
+
+while (Condition):
+    Activity
+
+👉 Example:
+
+while (tickets remain to be sold):
+    Sell a ticket
+
+**How It Works:**
+1. Check the condition.
+2. If condition is true → perform activity.
+3. Go back and check condition again.
+4. When condition becomes false → exit loop.
+
+**Important Concept:**
+👉 If the condition is false initially, the loop body will never execute.
+👉 If the condition never becomes false, an infinite loop occurs.
+
+---
+
+**Important Vocabulary:**
+- While loop = conditional repetition structure
+- Iteration = repeated execution
+- Condition = Boolean expression (true/false)
+- Loop body = activity to repeat
+- Exit condition = when loop terminates
+
+---
+
+**Quick Revision Points:**
+- While loop repeats while condition is true.
+- Check condition before each iteration.
+- When condition false, loop ends.
+- Pseudocode: while (Condition): Activity (indented).`,
+
+  questions: [
+    {
+      q: "The repeated execution of a statement as long as a condition remains true is called:",
+      options: [
+        "A. Selection",
+        "B. Iteration (while loop)",
+        "C. Assignment",
+        "D. Function call"
+      ],
+      answer: "B. Iteration (while loop)",
+      diff: "easy"
+    },
+
+    {
+      q: "In pseudocode, the while structure follows which pattern?",
+      options: [
+        "A. if (Condition): Activity",
+        "B. while (Condition): Activity",
+        "C. repeat (Condition): Activity",
+        "D. for (Condition): Activity"
+      ],
+      answer: "B. while (Condition): Activity",
+      diff: "easy"
+    },
+
+    {
+      q: "The informal statement 'As long as there are tickets to sell, continue selling tickets' is an example of:",
+      options: [
+        "A. Selection",
+        "B. Conditional assignment",
+        "C. Iteration (while loop)",
+        "D. Sequential execution"
+      ],
+      answer: "C. Iteration (while loop)",
+      diff: "easy"
+    },
+
+    {
+      q: "In a while loop, the condition is checked:",
+      options: [
+        "A. After the activity",
+        "B. Before each iteration",
+        "C. Only once at the beginning",
+        "D. Only at the end"
+      ],
+      answer: "B. Before each iteration",
+      diff: "easy"
+    },
+
+    {
+      q: "If the condition in a while loop is false initially, the activity will be executed:",
+      options: [
+        "A. Once",
+        "B. Zero times",
+        "C. Indefinitely",
+        "D. At least once"
+      ],
+      answer: "B. Zero times",
+      diff: "medium"
+    },
+
+    {
+      q: "When the condition in a while loop becomes false, the program will:",
+      options: [
+        "A. Exit the loop and continue with next instruction",
+        "B. Repeat the loop again",
+        "C. Terminate the program",
+        "D. Execute the activity one more time"
+      ],
+      answer: "A. Exit the loop and continue with next instruction",
+      diff: "easy"
+    },
+
+    {
+      q: "The while structure in pseudocode is a form of:",
+      options: [
+        "A. Sequence",
+        "B. Selection",
+        "C. Repetition (iteration)",
+        "D. Recursion"
+      ],
+      answer: "C. Repetition (iteration)",
+      diff: "easy"
+    },
+
+    {
+      q: "Which of the following correctly represents a while loop in pseudocode?",
+      options: [
+        "A. while (tickets remain): Sell a ticket",
+        "B. if (tickets remain): Sell a ticket",
+        "C. for (tickets remain): Sell a ticket",
+        "D. repeat (tickets remain): Sell a ticket"
+      ],
+      answer: "A. while (tickets remain): Sell a ticket",
+      diff: "easy"
+    },
+
+    {
+      q: "In the pseudocode while structure, what follows the condition?",
+      options: [
+        "A. A semicolon",
+        "B. A colon",
+        "C. A comma",
+        "D. A period"
+      ],
+      answer: "B. A colon",
+      diff: "easy"
+    },
+
+    {
+      q: "The activity in a while loop is typically indented to indicate:",
+      options: [
+        "A. It is a comment",
+        "B. It is part of the loop body",
+        "C. It is optional",
+        "D. It is a separate function"
+      ],
+      answer: "B. It is part of the loop body",
+      diff: "easy"
+    },
+
+    {
+      q: "An infinite loop occurs when:",
+      options: [
+        "A. The condition is initially false",
+        "B. The condition never becomes false",
+        "C. The loop body is empty",
+        "D. The loop runs exactly 10 times"
+      ],
+      answer: "B. The condition never becomes false",
+      diff: "easy"
+    },
+
+    {
+      q: "If 'tickets remain to be sold' is initially true and each iteration sells one ticket until no tickets remain, this is an example of:",
+      options: [
+        "A. An infinite loop",
+        "B. A finite while loop",
+        "C. A selection structure",
+        "D. A recursive function"
+      ],
+      answer: "B. A finite while loop",
+      diff: "easy"
+    },
+
+    {
+      q: "The while structure is also known as:",
+      options: [
+        "A. Conditional execution",
+        "B. Repetitive execution or looping",
+        "C. Sequential execution",
+        "D. Parallel execution"
+      ],
+      answer: "B. Repetitive execution or looping",
+      diff: "easy"
+    },
+
+    {
+      q: "In the while loop, after performing the activity, the next step is to:",
+      options: [
+        "A. Continue to the next instruction",
+        "B. Return to check the condition again",
+        "C. Terminate the program",
+        "D. Wait for user input"
+      ],
+      answer: "B. Return to check the condition again",
+      diff: "easy"
+    },
+
+    {
+      q: "The condition in a while loop must evaluate to:",
+      options: [
+        "A. A number",
+        "B. True or false (Boolean)",
+        "C. A string",
+        "D. An integer"
+      ],
+      answer: "B. True or false (Boolean)",
+      diff: "easy"
+    },
+
+    {
+      q: "Which of the following is NOT a typical use of a while loop?",
+      options: [
+        "A. Processing items until a condition is met",
+        "B. Repeating a fixed number of times without a counter",
+        "C. Performing an activity exactly once",
+        "D. Reading data until end-of-file"
+      ],
+      answer: "C. Performing an activity exactly once",
+      diff: "medium"
+    },
+
+    {
+      q: "The pseudocode while structure is similar to which construct in programming languages?",
+      options: [
+        "A. if-then-else",
+        "B. for loop",
+        "C. while loop",
+        "D. do-while loop"
+      ],
+      answer: "C. while loop",
+      diff: "easy"
+    },
+
+    {
+      q: "The statement 'While there are tickets to sell, keep selling tickets' is equivalent to:",
+      options: [
+        "A. Sell a ticket while tickets remain",
+        "B. if tickets remain then sell a ticket",
+        "C. Sell a ticket once",
+        "D. Never sell tickets"
+      ],
+      answer: "A. Sell a ticket while tickets remain",
+      diff: "easy"
+    },
+
+    {
+      q: "If the activity inside a while loop does not change the condition, the result is:",
+      options: [
+        "A. A loop that runs once",
+        "B. An infinite loop",
+        "C. A loop that never runs",
+        "D. A syntax error"
+      ],
+      answer: "B. An infinite loop",
+      diff: "easy"
+    },
+
+    {
+      q: "In the module example, the pseudocode 'while (tickets remain to be sold): Sell a ticket' will:",
+      options: [
+        "A. Sell tickets until none remain, then stop",
+        "B. Sell only one ticket",
+        "C. Sell tickets forever",
+        "D. Never sell tickets"
+      ],
+      answer: "A. Sell tickets until none remain, then stop",
+      diff: "easy"
+    }
+  ]
+},
+91: {
+  title: "Algorithm: Discovery (The Art of Problem Solving)",
+  summary: `**Key Topics Covered:**
+- Problem-solving techniques (pertinent to many fields)
+- Algorithm discovery as problem solving
+- Polya's four phases (1945)
+- Adapted phases for program development
+- Example: Determining ages of three children
+- Understanding evolves during problem solving
+
+---
+
+**Simple Understanding:**
+
+**Problem Solving and Algorithms:**
+👉 Close association between algorithm discovery and problem solving.
+👉 Goal: reduce problem solving to an algorithm? → **Impossible**.
+👉 Problem solving is an artistic skill, not a precise science.
+
+---
+
+**Polya's Problem-Solving Phases (1945):**
+1. **Understand the problem**
+2. **Devise a plan** for solving the problem
+3. **Carry out the plan**
+4. **Evaluate** the solution (accuracy + potential for other problems)
+
+---
+
+**Adapted for Program Development:**
+1. Understand the problem
+2. Get an idea of how an algorithmic function might solve it
+3. Formulate algorithm and represent as program
+4. Evaluate program for accuracy and as tool for other problems
+
+---
+
+**Example: Three Children's Ages**
+👉 Product of ages = 36
+👉 Sum clues insufficient (needed third clue)
+👉 Possible triples with product 36: (1,1,36),(1,2,18),(1,3,12),(1,4,9),(1,6,6),(2,2,9),(2,3,6),(3,3,4)
+👉 Sums: (1,6,6)=13, (2,2,9)=13 (both sum to 13) – other sums unique.
+👉 Since sum not enough, triple must be one of these two.
+👉 Third clue: "oldest child plays piano" → implies there is an **oldest** (not twins).
+👉 (1,6,6) has oldest? Actually 6 and 6 are twins, no unique oldest; (2,2,9) has oldest 9.
+👉 Thus ages: 2, 2, and 9.
+
+---
+
+**Key Insight:**
+👉 Understanding may not be complete until after implementing plan (Phase 3).
+👉 Irregularities in problem-solving process make systematic approaches difficult.
+
+---
+
+**Important Vocabulary:**
+- Problem solving = finding solutions to complex tasks
+- Algorithm discovery = creating step-by-step procedures
+- Phase = stage in a process
+- Triple = set of three numbers
+- Product = result of multiplication
+- Sum = result of addition
+
+---
+
+**Quick Revision Points:**
+- Problem solving cannot be reduced to an algorithm (impossible).
+- Polya's phases: Understand, Plan, Execute, Evaluate.
+- For programming: understand, idea, formulate program, evaluate.
+- Example: ages of children – product 36, sum ambiguous, oldest child clue.
+- Solution: (2,2,9).`,
+  questions: [
+    {
+      q: "The process of algorithm discovery is closely associated with:",
+      options: ["A. Hardware design", "B. General problem solving", "C. Data entry", "D. Network administration"],
+      answer: "B. General problem solving",
+      diff: "easy"
+    },
+    {
+      q: "Reducing problem solving to an algorithm has been shown to be:",
+      options: ["A. Easy", "B. Impossible", "C. Done by Polya", "D. The goal of computer science"],
+      answer: "B. Impossible",
+      diff: "easy"
+    },
+    {
+      q: "The ability to solve problems is described as more of a(n):",
+      options: ["A. Precise science", "B. Mathematical formula", "C. Artistic skill", "D. Hardware component"],
+      answer: "C. Artistic skill",
+      diff: "easy"
+    },
+    {
+      q: "Who presented the loosely defined problem-solving phases in 1945?",
+      options: ["A. Alan Turing", "B. G. Polya", "C. Edsger Dijkstra", "D. Donald Knuth"],
+      answer: "B. G. Polya",
+      diff: "medium"
+    },
+    {
+      q: "Which is NOT one of Polya's four phases?",
+      options: ["A. Understand the problem", "B. Devise a plan", "C. Write the code", "D. Evaluate the solution"],
+      answer: "C. Write the code",
+      diff: "easy"
+    },
+    {
+      q: "In Polya's phases, the third step is:",
+      options: ["A. Understand the problem", "B. Devise a plan", "C. Carry out the plan", "D. Evaluate the solution"],
+      answer: "C. Carry out the plan",
+      diff: "easy"
+    },
+    {
+      q: "Translated to program development, Phase 3 is:",
+      options: ["A. Understand the problem", "B. Get an idea of how an algorithmic function might solve it", "C. Formulate the algorithm and represent it as a program", "D. Evaluate the program"],
+      answer: "C. Formulate the algorithm and represent it as a program",
+      diff: "medium"
+    },
+    {
+      q: "In the children's ages problem, the first clue is that the product of ages is:",
+      options: ["A. 13", "B. 36", "C. 12", "D. 18"],
+      answer: "B. 36",
+      diff: "easy"
+    },
+    {
+      q: "What is the product of the ages (2,2,9)?",
+      options: ["A. 13", "B. 36", "C. 18", "D. 24"],
+      answer: "B. 36",
+      diff: "easy"
+    },
+    {
+      q: "After the second clue (sum), A still needed another clue because:",
+      options: ["A. The sum was too large", "B. The sum appeared for more than one triple", "C. A forgot the sum", "D. The sum was negative"],
+      answer: "B. The sum appeared for more than one triple",
+      diff: "medium"
+    },
+    {
+      q: "Which two triples have the same sum?",
+      options: ["A. (1,6,6) and (2,2,9)", "B. (1,2,18) and (3,3,4)", "C. (1,3,12) and (2,3,6)", "D. (1,1,36) and (1,4,9)"],
+      answer: "A. (1,6,6) and (2,2,9)",
+      diff: "medium"
+    },
+    {
+      q: "The sum of both (1,6,6) and (2,2,9) is:",
+      options: ["A. 12", "B. 13", "C. 14", "D. 15"],
+      answer: "B. 13",
+      diff: "easy"
+    },
+    {
+      q: "The third clue 'the oldest child plays the piano' implies:",
+      options: ["A. Only one child is oldest (not twins)", "B. All children are same age", "C. The youngest plays piano", "D. There are no oldest"],
+      answer: "A. Only one child is oldest (not twins)",
+      diff: "easy"
+    },
+    {
+      q: "Why does (1,6,6) get ruled out by the third clue?",
+      options: ["A. Ages sum to wrong number", "B. There is no unique oldest (twins of 6)", "C. Product is not 36", "D. Oldest cannot play piano"],
+      answer: "B. There is no unique oldest (twins of 6)",
+      diff: "easy"
+    },
+    {
+      q: "The final ages of the three children are:",
+      options: ["A. 1,6,6", "B. 2,2,9", "C. 3,3,4", "D. 2,3,6"],
+      answer: "B. 2,2,9",
+      diff: "easy"
+    },
+    {
+      q: "In the problem-solving example, understanding of the problem was completed:",
+      options: ["A. Before Phase 1", "B. During Phase 1 only", "C. Not until attempting to implement the plan (Phase 3)", "D. Never"],
+      answer: "C. Not until attempting to implement the plan (Phase 3)",
+      diff: "medium"
+    },
+    {
+      q: "The children's ages problem demonstrates that:",
+      options: ["A. Problem solving is purely sequential", "B. Understanding may evolve during implementation", "C. Algorithms always work", "D. Mathematics is useless"],
+      answer: "B. Understanding may evolve during implementation",
+      diff: "easy"
+    },
+    {
+      q: "According to the module, developing systematic approaches to problem solving is difficult due to:",
+      options: ["A. Lack of computers", "B. Irregularities in the problem-solving process", "C. Insufficient math knowledge", "D. Too many algorithms"],
+      answer: "B. Irregularities in the problem-solving process",
+      diff: "easy"
+    },
+    {
+      q: "The fourth phase of Polya's model is:",
+      options: ["A. Understand the problem", "B. Devise a plan", "C. Carry out the plan", "D. Evaluate the solution for accuracy and potential"],
+      answer: "D. Evaluate the solution for accuracy and potential",
+      diff: "easy"
+    },
+    {
+      q: "The example problem is often used to illustrate:",
+      options: ["A. Simple arithmetic", "B. The need for creativity and iterative understanding in problem solving", "C. Programming syntax", "D. Hardware limitations"],
+      answer: "B. The need for creativity and iterative understanding in problem solving",
+      diff: "easy"
+    }
+  ]
+},
+
+
+
+92: {
+  title: "Algorithm: Discovery (The Art of Problem Solving)",
+  summary: `**Key Topics Covered:**
+- Problem-solving techniques (pertinent to many fields)
+- Algorithm discovery as problem solving
+- Polya's four phases (1945)
+- Adapted phases for program development
+- Example: Determining ages of three children
+- Understanding evolves during problem solving
+
+---
+
+**Simple Understanding:**
+
+**Problem Solving and Algorithms:**
+👉 Close association between algorithm discovery and problem solving.
+👉 Goal: reduce problem solving to an algorithm? → **Impossible**.
+👉 Problem solving is an artistic skill, not a precise science.
+
+---
+
+**Polya's Problem-Solving Phases (1945):**
+1. **Understand the problem**
+2. **Devise a plan** for solving the problem
+3. **Carry out the plan**
+4. **Evaluate** the solution (accuracy + potential for other problems)
+
+---
+
+**Adapted for Program Development:**
+1. Understand the problem
+2. Get an idea of how an algorithmic function might solve it
+3. Formulate algorithm and represent as program
+4. Evaluate program for accuracy and as tool for other problems
+
+---
+
+**Example: Three Children's Ages**
+👉 Product of ages = 36
+👉 Sum clues insufficient (needed third clue)
+👉 Possible triples with product 36: (1,1,36),(1,2,18),(1,3,12),(1,4,9),(1,6,6),(2,2,9),(2,3,6),(3,3,4)
+👉 Sums: (1,6,6)=13, (2,2,9)=13 (both sum to 13) – other sums unique.
+👉 Since sum not enough, triple must be one of these two.
+👉 Third clue: "oldest child plays piano" → implies there is an **oldest** (not twins).
+👉 (1,6,6) has twins of 6, no unique oldest; (2,2,9) has oldest 9.
+👉 Thus ages: 2, 2, and 9.
+
+---
+
+**Key Insight:**
+👉 Understanding may not be complete until after implementing plan (Phase 3).
+👉 Irregularities in problem-solving process make systematic approaches difficult.
+
+---
+
+**Important Vocabulary:**
+- Problem solving = finding solutions to complex tasks
+- Algorithm discovery = creating step-by-step procedures
+- Phase = stage in a process
+- Triple = set of three numbers
+- Product = result of multiplication
+- Sum = result of addition
+
+---
+
+**Quick Revision Points:**
+- Problem solving cannot be reduced to an algorithm (impossible).
+- Polya's phases: Understand, Plan, Execute, Evaluate.
+- For programming: understand, idea, formulate program, evaluate.
+- Example: ages of children – product 36, sum ambiguous, oldest child clue.
+- Solution: (2,2,9).`,
+  questions: [
+    {
+      q: "The process of algorithm discovery is closely associated with:",
+      options: ["A. Hardware design", "B. General problem solving", "C. Data entry", "D. Network administration"],
+      answer: "B. General problem solving",
+      diff: "easy"
+    },
+    {
+      q: "Reducing problem solving to an algorithm has been shown to be:",
+      options: ["A. Easy", "B. Impossible", "C. Done by Polya", "D. The goal of computer science"],
+      answer: "B. Impossible",
+      diff: "easy"
+    },
+    {
+      q: "The ability to solve problems is described as more of a(n):",
+      options: ["A. Precise science", "B. Mathematical formula", "C. Artistic skill", "D. Hardware component"],
+      answer: "C. Artistic skill",
+      diff: "easy"
+    },
+    {
+      q: "Who presented the loosely defined problem-solving phases in 1945?",
+      options: ["A. Alan Turing", "B. G. Polya", "C. Edsger Dijkstra", "D. Donald Knuth"],
+      answer: "B. G. Polya",
+      diff: "medium"
+    },
+    {
+      q: "Which is NOT one of Polya's four phases?",
+      options: ["A. Understand the problem", "B. Devise a plan", "C. Write the code", "D. Evaluate the solution"],
+      answer: "C. Write the code",
+      diff: "easy"
+    },
+    {
+      q: "In Polya's phases, the third step is:",
+      options: ["A. Understand the problem", "B. Devise a plan", "C. Carry out the plan", "D. Evaluate the solution"],
+      answer: "C. Carry out the plan",
+      diff: "easy"
+    },
+    {
+      q: "Translated to program development, Phase 3 is:",
+      options: ["A. Understand the problem", "B. Get an idea of how an algorithmic function might solve it", "C. Formulate the algorithm and represent it as a program", "D. Evaluate the program"],
+      answer: "C. Formulate the algorithm and represent it as a program",
+      diff: "medium"
+    },
+    {
+      q: "In the children's ages problem, the first clue is that the product of ages is:",
+      options: ["A. 13", "B. 36", "C. 12", "D. 18"],
+      answer: "B. 36",
+      diff: "easy"
+    },
+    {
+      q: "What is the product of the ages (2,2,9)?",
+      options: ["A. 13", "B. 36", "C. 18", "D. 24"],
+      answer: "B. 36",
+      diff: "easy"
+    },
+    {
+      q: "After the second clue (sum), A still needed another clue because:",
+      options: ["A. The sum was too large", "B. The sum appeared for more than one triple", "C. A forgot the sum", "D. The sum was negative"],
+      answer: "B. The sum appeared for more than one triple",
+      diff: "medium"
+    },
+    {
+      q: "Which two triples have the same sum?",
+      options: ["A. (1,6,6) and (2,2,9)", "B. (1,2,18) and (3,3,4)", "C. (1,3,12) and (2,3,6)", "D. (1,1,36) and (1,4,9)"],
+      answer: "A. (1,6,6) and (2,2,9)",
+      diff: "medium"
+    },
+    {
+      q: "The sum of both (1,6,6) and (2,2,9) is:",
+      options: ["A. 12", "B. 13", "C. 14", "D. 15"],
+      answer: "B. 13",
+      diff: "easy"
+    },
+    {
+      q: "The third clue 'the oldest child plays the piano' implies:",
+      options: ["A. Only one child is oldest (not twins)", "B. All children are same age", "C. The youngest plays piano", "D. There are no oldest"],
+      answer: "A. Only one child is oldest (not twins)",
+      diff: "easy"
+    },
+    {
+      q: "Why does (1,6,6) get ruled out by the third clue?",
+      options: ["A. Ages sum to wrong number", "B. There is no unique oldest (twins of 6)", "C. Product is not 36", "D. Oldest cannot play piano"],
+      answer: "B. There is no unique oldest (twins of 6)",
+      diff: "easy"
+    },
+    {
+      q: "The final ages of the three children are:",
+      options: ["A. 1,6,6", "B. 2,2,9", "C. 3,3,4", "D. 2,3,6"],
+      answer: "B. 2,2,9",
+      diff: "easy"
+    },
+    {
+      q: "In the problem-solving example, understanding of the problem was completed:",
+      options: ["A. Before Phase 1", "B. During Phase 1 only", "C. Not until attempting to implement the plan (Phase 3)", "D. Never"],
+      answer: "C. Not until attempting to implement the plan (Phase 3)",
+      diff: "medium"
+    },
+    {
+      q: "The children's ages problem demonstrates that:",
+      options: ["A. Problem solving is purely sequential", "B. Understanding may evolve during implementation", "C. Algorithms always work", "D. Mathematics is useless"],
+      answer: "B. Understanding may evolve during implementation",
+      diff: "easy"
+    },
+    {
+      q: "According to the module, developing systematic approaches to problem solving is difficult due to:",
+      options: ["A. Lack of computers", "B. Irregularities in the problem-solving process", "C. Insufficient math knowledge", "D. Too many algorithms"],
+      answer: "B. Irregularities in the problem-solving process",
+      diff: "easy"
+    },
+    {
+      q: "The fourth phase of Polya's model is:",
+      options: ["A. Understand the problem", "B. Devise a plan", "C. Carry out the plan", "D. Evaluate the solution for accuracy and potential"],
+      answer: "D. Evaluate the solution for accuracy and potential",
+      diff: "easy"
+    },
+    {
+      q: "The example problem is often used to illustrate:",
+      options: ["A. Simple arithmetic", "B. The need for creativity and iterative understanding in problem solving", "C. Programming syntax", "D. Hardware limitations"],
+      answer: "B. The need for creativity and iterative understanding in problem solving",
+      diff: "easy"
+    }
+  ]
+},
+
+93: {
+  title: "Algorithm: Getting your Foot in the Door",
+  summary: `**Key Topics Covered:**
+- Problem-solving approach: "get your foot in the door"
+- Identifying a small, certain piece of information to start
+- Extending from initial insight to complete solution
+- Example: race predictions (A, B, C, D)
+- Logical deduction using constraints (only one true prediction, winner's prediction true)
+
+---
+
+**Simple Understanding:**
+
+**Core Strategy: "Get Your Foot in the Door"**
+👉 Start by finding one small piece of information that you know for certain.
+👉 Use that as a starting point (foot in the door).
+👉 Then extend and build upon that knowledge to reach the full solution.
+
+---
+
+**Example Problem:**
+👉 Four people: A, B, C, D ran a race.
+👉 Predictions:
+   - A predicted: B would win.
+   - B predicted: D would be last.
+   - C predicted: A would be third.
+   - D predicted: A's prediction would be correct.
+👉 Only ONE prediction was true, and that true prediction was made by the winner.
+
+---
+
+**Step-by-Step Solution:**
+
+1. **A and D predictions are equivalent:**
+   - A says "B wins"
+   - D says "A's prediction is correct" → same as saying "B wins"
+   - Since only ONE prediction is true, both A and D cannot be true.
+   - Therefore A and D are both false.
+
+2. **Winner must have made true prediction:**
+   - A and D false → not winners.
+   - B's prediction false (only one true, and winner's true, so B's false).
+   - Only remaining winner: C.
+
+3. **C's prediction true:**
+   - C predicted "A would be third" → A is third.
+
+4. **Order possibilities:**
+   - Winner C first, A third → positions: C ? A ?
+   - D cannot be last (B predicted D last → false, so D not last) → D must be second.
+   - B's prediction false means D is NOT last → last must be B.
+   - Thus order: C (1st), D (2nd), A (3rd), B (4th) → CDAB.
+
+5. **Verify:**
+   - A: false (B didn't win)
+   - B: false (D was not last; last is B)
+   - C: true (A third)
+   - D: false (A's prediction false)
+   - Only one true (C's), and winner C's true. Correct.
+
+---
+
+**Key Insight:**
+👉 Finding that A and D are both false (since equivalent and only one true) gave the "foot in the door."
+👉 From there, deduced winner, then order.
+
+---
+
+**Important Vocabulary:**
+- "Get your foot in the door" = find a small certain fact to start
+- Prediction = statement about future outcome
+- Equivalent = logically same meaning
+- Deduction = reasoning from known facts
+- Constraint = condition that limits possibilities
+
+---
+
+**Quick Revision Points:**
+- Start with a certain fact (foot in door).
+- Use logical elimination.
+- Equivalent predictions can't both be true if only one true.
+- Winner's prediction must be true.
+- Extend step by step to full solution.`,
+  questions: [
+    {
+      q: "The phrase 'get your foot in the door' in problem solving means:",
+      options: ["A. Solve the entire problem at once", "B. Find a small piece of certain information to start", "C. Guess randomly", "D. Avoid solving the problem"],
+      answer: "B. Find a small piece of certain information to start",
+      diff: "easy"
+    },
+    {
+      q: "In the race problem, how many predictions were true in total?",
+      options: ["A. 0", "B. 1", "C. 2", "D. 3"],
+      answer: "B. 1",
+      diff: "easy"
+    },
+    {
+      q: "Who made the only true prediction?",
+      options: ["A. The winner", "B. The loser", "C. A random person", "D. The last place finisher"],
+      answer: "A. The winner",
+      diff: "easy"
+    },
+    {
+      q: "Predictions of A and D were equivalent because:",
+      options: ["A. They both said B would win", "B. They both said C would win", "C. D said A's prediction would be correct", "D. Both A and C are correct"],
+      answer: "C. D said A's prediction would be correct",
+      diff: "medium"
+    },
+    {
+      q: "Since only one prediction was true, what can we conclude about A and D?",
+      options: ["A. Both are true", "B. Both are false", "C. One is true, one is false", "D. Cannot determine"],
+      answer: "B. Both are false",
+      diff: "medium"
+    },
+    {
+      q: "If A's prediction was false, what does that mean?",
+      options: ["A. B did not win", "B. B won", "C. C won", "D. D won"],
+      answer: "A. B did not win",
+      diff: "easy"
+    },
+    {
+      q: "Who was the winner of the race?",
+      options: ["A. A", "B. B", "C. C", "D. D"],
+      answer: "C. C",
+      diff: "easy"
+    },
+    {
+      q: "What position did A finish?",
+      options: ["A. First", "B. Second", "C. Third", "D. Fourth"],
+      answer: "C. Third",
+      diff: "easy"
+    },
+    {
+      q: "C's prediction was that A would be third. Since C won, this prediction was:",
+      options: ["A. False", "B. True", "C. Irrelevant", "D. Not considered"],
+      answer: "B. True",
+      diff: "easy"
+    },
+    {
+      q: "B predicted that D would be last. Since B's prediction was false, D was:",
+      options: ["A. Last", "B. Not last", "C. First", "D. Second"],
+      answer: "B. Not last",
+      diff: "easy"
+    },
+    {
+      q: "Who finished last?",
+      options: ["A. A", "B. B", "C. C", "D. D"],
+      answer: "B. B",
+      diff: "medium"
+    },
+    {
+      q: "What was the final finishing order from first to last?",
+      options: ["A. CDAB", "B. CADB", "C. DABC", "D. CBAD"],
+      answer: "A. CDAB",
+      diff: "medium"
+    },
+    {
+      q: "Which of the following is a step in the 'foot in the door' strategy?",
+      options: ["A. Start with a guess", "B. Find a small certain fact", "C. Solve everything at once", "D. Ignore constraints"],
+      answer: "B. Find a small certain fact",
+      diff: "easy"
+    },
+    {
+      q: "In the race problem, why were A and D immediately known to be false?",
+      options: ["A. They both predicted the same thing", "B. Their predictions were contradictory", "C. Only one prediction could be true, and equivalent statements force both false", "D. The winner said so"],
+      answer: "C. Only one prediction could be true, and equivalent statements force both false",
+      diff: "hard"
+    },
+    {
+      q: "If C's prediction was true, what fact does that give us?",
+      options: ["A. A finished third", "B. B finished first", "C. D finished second", "D. C finished last"],
+      answer: "A. A finished third",
+      diff: "easy"
+    },
+    {
+      q: "What was the initial 'foot in the door' in the race problem?",
+      options: ["A. Knowing C won", "B. Knowing A and D are both false", "C. Knowing B's prediction false", "D. Knowing the order"],
+      answer: "B. Knowing A and D are both false",
+      diff: "medium"
+    },
+    {
+      q: "After determining that A and D are false, which person became the only possible winner?",
+      options: ["A. A", "B. B", "C. C", "D. D"],
+      answer: "C. C",
+      diff: "easy"
+    },
+    {
+      q: "If B had been the winner, would that be consistent with only one true prediction?",
+      options: ["A. Yes", "B. No, because A's prediction would then be true as well", "C. Yes, if D also true", "D. No, because C would also be true"],
+      answer: "B. No, because A's prediction would then be true as well",
+      diff: "hard"
+    },
+    {
+      q: "The phrase 'get your foot in the door' is an example of a:",
+      options: ["A. Programming language", "B. Problem-solving heuristic", "C. Hardware component", "D. Data structure"],
+      answer: "B. Problem-solving heuristic",
+      diff: "easy"
+    },
+    {
+      q: "According to the module, extending from the initial small fact leads to:",
+      options: ["A. More confusion", "B. The complete solution", "C. Dead end", "D. Random guess"],
+      answer: "B. The complete solution",
+      diff: "easy"
+    }
+  ]
+},
+
+94: {
+  title: "Algorithm: Algorithm Discovery Strategies (I)",
+  summary: `**Key Topics Covered:**
+- General problem-solving approaches (Polya and others)
+- Working the problem backward
+- Looking for a related/easier/solved problem
+- Applying solution to current problem
+- Example: alphabetizing lists (special case vs general algorithm)
+
+---
+
+**Simple Understanding:**
+
+**Getting a Foot in the Door – Strategies:**
+👉 Several general approaches to start solving a problem.
+
+---
+
+**Strategy 1: Work Backward**
+👉 Start with the desired output and try to back up to the given input.
+👉 Example: Origami bird folding – people unfold a completed bird to see how it's constructed.
+
+---
+
+**Strategy 2: Look for a Related Problem**
+👉 Find a problem that is easier to solve or has been solved before.
+👉 Apply its solution to the current problem.
+
+**In Program Development:**
+👉 Goal is not to solve a single instance, but to find a **general algorithm** for all instances.
+👉 Example: Alphabetizing names – need algorithm that sorts any list, not just one specific list.
+
+**Special Cases vs General Solution:**
+👉 Specific instructions (like swapping David and Alice) solve one list but are not general.
+👉 However, solving special cases can help discover general principles ("get foot in door").
+👉 Technique: **solve a collection of related problems** to find the general algorithm.
+
+---
+
+**Important Vocabulary:**
+- Work backward = start from goal and reverse steps
+- Related problem = similar problem already solved
+- Special case = single instance of a problem
+- General algorithm = works for all instances
+- General-purpose = applicable to many situations
+
+---
+
+**Quick Revision Points:**
+- Work backward from output to input.
+- Find a related, easier problem.
+- Solving special cases can lead to general algorithm.
+- Program development = find general solution, not instance-specific.`,
+  questions: [
+    {
+      q: "One general problem-solving approach is to try:",
+      options: ["A. Working the problem forward only", "B. Working the problem backward", "C. Guessing randomly", "D. Ignoring the problem"],
+      answer: "B. Working the problem backward",
+      diff: "easy"
+    },
+    {
+      q: "Working backward means:",
+      options: ["A. Start with input and go to output", "B. Start with desired output and back up to input", "C. Reverse the order of steps arbitrarily", "D. Only consider the last step"],
+      answer: "B. Start with desired output and back up to input",
+      diff: "easy"
+    },
+    {
+      q: "The example of people unfolding a completed bird to see how it is constructed illustrates:",
+      options: ["A. Working forward", "B. Working backward", "C. Random trial", "D. Divide and conquer"],
+      answer: "B. Working backward",
+      diff: "easy"
+    },
+    {
+      q: "Another general problem-solving approach is to look for:",
+      options: ["A. A completely unrelated problem", "B. A related problem that is easier or already solved", "C. The hardest problem possible", "D. No problem at all"],
+      answer: "B. A related problem that is easier or already solved",
+      diff: "easy"
+    },
+    {
+      q: "In program development, the goal is typically:",
+      options: ["A. Solve a single instance of a problem", "B. Find a general algorithm for all instances", "C. Write code that works only once", "D. Avoid solving the problem"],
+      answer: "B. Find a general algorithm for all instances",
+      diff: "easy"
+    },
+    {
+      q: "The set of instructions that correctly sorts the list (David, Alice, Carol, Bob) is:",
+      options: ["A. A general-purpose sorting algorithm", "B. A solution for that specific list only", "C. Useless for any purpose", "D. The best sorting algorithm"],
+      answer: "B. A solution for that specific list only",
+      diff: "easy"
+    },
+    {
+      q: "Why are the specific sorting instructions NOT a general-purpose algorithm?",
+      options: ["A. They are too long", "B. They only work for that particular list", "C. They are written in English", "D. They use names"],
+      answer: "B. They only work for that particular list",
+      diff: "easy"
+    },
+    {
+      q: "What technique involves solving a collection of related problems to discover a general algorithm?",
+      options: ["A. Working backward", "B. Solving special cases", "C. Random guessing", "D. Copying from others"],
+      answer: "B. Solving special cases",
+      diff: "medium"
+    },
+    {
+      q: "The phrase 'get your foot in the door' in this context refers to:",
+      options: ["A. Solving the entire problem at once", "B. Using special cases to discover general principles", "C. Avoiding the problem", "D. Working only on hard problems"],
+      answer: "B. Using special cases to discover general principles",
+      diff: "medium"
+    },
+    {
+      q: "According to the module, program development is not about solving a particular instance but:",
+      options: ["A. Finding a general algorithm for all instances", "B. Solving each instance separately", "C. Only writing code for one case", "D. Avoiding algorithms"],
+      answer: "A. Finding a general algorithm for all instances",
+      diff: "easy"
+    },
+    {
+      q: "Which strategy is typical of people trying to discover the bird-folding algorithm?",
+      options: ["A. Working forward from paper", "B. Unfolding a completed bird (working backward)", "C. Random folding", "D. Using scissors"],
+      answer: "B. Unfolding a completed bird (working backward)",
+      diff: "easy"
+    },
+    {
+      q: "The technique of looking for a related problem is particularly valuable in:",
+      options: ["A. Hardware design", "B. Program development", "C. Network administration", "D. Database management"],
+      answer: "B. Program development",
+      diff: "easy"
+    },
+    {
+      q: "If we need an algorithm to sort any list of names, what should we develop?",
+      options: ["A. Instructions for one list", "B. A general-purpose sorting algorithm", "C. A specific list", "D. Random instructions"],
+      answer: "B. A general-purpose sorting algorithm",
+      diff: "easy"
+    },
+    {
+      q: "The example of alphabetizing names shows that solving a specific instance can help:",
+      options: ["A. Only for that instance", "B. Get a foot in the door to find general principles", "C. Never be useful", "D. Replace the need for algorithms"],
+      answer: "B. Get a foot in the door to find general principles",
+      diff: "medium"
+    },
+    {
+      q: "Which of the following is NOT a problem-solving strategy mentioned?",
+      options: ["A. Work backward", "B. Look for a related problem", "C. Solve a collection of related problems", "D. Always start from the hardest part"],
+      answer: "D. Always start from the hardest part",
+      diff: "easy"
+    },
+    {
+      q: "The approach of starting with the output and backing up to input is called:",
+      options: ["A. Forward chaining", "B. Backward chaining (working backward)", "C. Lateral thinking", "D. Random search"],
+      answer: "B. Backward chaining (working backward)",
+      diff: "easy"
+    },
+    {
+      q: "Polya and others proposed several general approaches for:",
+      options: ["A. Writing code", "B. Getting a foot in the door (problem solving)", "C. Designing hardware", "D. Testing software"],
+      answer: "B. Getting a foot in the door (problem solving)",
+      diff: "easy"
+    },
+    {
+      q: "When developing a program, solving a particular instance is:",
+      options: ["A. Totally worthless", "B. A possible first step to discover general principles", "C. The final goal", "D. Never done"],
+      answer: "B. A possible first step to discover general principles",
+      diff: "easy"
+    },
+    {
+      q: "The strategy of looking for a related problem that has been solved before allows us to:",
+      options: ["A. Reinvent the wheel", "B. Apply its solution to the current problem", "C. Ignore the current problem", "D. Create a new problem"],
+      answer: "B. Apply its solution to the current problem",
+      diff: "easy"
+    },
+    {
+      q: "What is the main takeaway from the alphabetizing example?",
+      options: ["A. Sorting is easy", "B. General algorithms require solving many instances, not just one", "C. Names are hard to sort", "D. Only use specific lists"],
+      answer: "B. General algorithms require solving many instances, not just one",
+      diff: "easy"
+    }
+  ]
+},
+
+95: {
+  title: "Algorithm: Algorithm Discovery Strategies (II)",
+  summary: `**Key Topics Covered:**
+- Stepwise refinement (top-down methodology)
+- Breaking problems into smaller subproblems
+- Top-down methodology (general → specific)
+- Bottom-up methodology (specific → general)
+- Complementarity of top-down and bottom-up approaches
+
+---
+
+**Simple Understanding:**
+
+**Stepwise Refinement (Top-Down):**
+👉 Do not try to conquer the entire task at once.
+👉 First view the problem as several subproblems.
+👉 Break original problem into easier steps.
+👉 Decompose steps into smaller steps → continue until each subproblem is easy to solve.
+👉 Progresses from **general to specific**.
+
+**Top-Down Methodology:**
+👉 Start with the big picture, break down into details.
+👉 Stepwise refinement is a top-down approach.
+
+**Bottom-Up Methodology:**
+👉 Start with specific details, build up to general solution.
+👉 Progresses from **specific to general**.
+
+**Complementary Approaches:**
+👉 In creative problem solving, top-down and bottom-up complement each other.
+👉 Decomposition in stepwise refinement is often guided by intuition working in bottom-up mode.
+
+---
+
+**Important Vocabulary:**
+- Stepwise refinement = breaking problem into smaller steps iteratively
+- Top-down = general to specific
+- Bottom-up = specific to general
+- Decomposition = breaking into parts
+- Subproblem = smaller part of larger problem
+
+---
+
+**Quick Revision Points:**
+- Stepwise refinement: don't do everything at once.
+- Break into subproblems → decompose further.
+- Top-down: general → specific.
+- Bottom-up: specific → general.
+- Both approaches work together in practice.`,
+  questions: [
+    {
+      q: "Stepwise refinement is essentially the technique of:",
+      options: ["A. Solving the entire problem at once", "B. Breaking a problem into smaller subproblems", "C. Ignoring details", "D. Working only from specific to general"],
+      answer: "B. Breaking a problem into smaller subproblems",
+      diff: "easy"
+    },
+    {
+      q: "Stepwise refinement proposes that one first view the problem in terms of:",
+      options: ["A. One large task", "B. Several subproblems", "C. Random steps", "D. The final output"],
+      answer: "B. Several subproblems",
+      diff: "easy"
+    },
+    {
+      q: "In stepwise refinement, the steps should be decomposed until:",
+      options: ["A. They become larger", "B. The problem becomes unsolvable", "C. The entire problem is reduced to easily solved subproblems", "D. No further decomposition is possible regardless of difficulty"],
+      answer: "C. The entire problem is reduced to easily solved subproblems",
+      diff: "medium"
+    },
+    {
+      q: "Stepwise refinement is considered a __________ methodology.",
+      options: ["A. Bottom-up", "B. Top-down", "C. Middle-out", "D. Random"],
+      answer: "B. Top-down",
+      diff: "easy"
+    },
+    {
+      q: "A top-down methodology progresses from:",
+      options: ["A. General to specific", "B. Specific to general", "C. Simple to complex", "D. Complex to simple"],
+      answer: "A. General to specific",
+      diff: "easy"
+    },
+    {
+      q: "A bottom-up methodology progresses from:",
+      options: ["A. General to specific", "B. Specific to general", "C. Large to small", "D. Abstract to concrete"],
+      answer: "B. Specific to general",
+      diff: "easy"
+    },
+    {
+      q: "In creative problem solving, top-down and bottom-up approaches:",
+      options: ["A. Cannot be used together", "B. Often complement each other", "C. Are identical", "D. Are always conflicting"],
+      answer: "B. Often complement each other",
+      diff: "easy"
+    },
+    {
+      q: "The decomposition of a problem in stepwise refinement is often guided by:",
+      options: ["A. Random choice", "B. The problem solver's intuition (which may work bottom-up)", "C. A fixed formula", "D. The computer's processor"],
+      answer: "B. The problem solver's intuition (which may work bottom-up)",
+      diff: "medium"
+    },
+    {
+      q: "Which methodology starts with the big picture and breaks down into details?",
+      options: ["A. Bottom-up", "B. Top-down", "C. Left-right", "D. Circular"],
+      answer: "B. Top-down",
+      diff: "easy"
+    },
+    {
+      q: "Which methodology starts with specific details and builds up to a general solution?",
+      options: ["A. Top-down", "B. Bottom-up", "C. Stepwise refinement", "D. Divide and conquer"],
+      answer: "B. Bottom-up",
+      diff: "easy"
+    },
+    {
+      q: "Stepwise refinement is also known as:",
+      options: ["A. Bottom-up design", "B. Top-down design", "C. Lateral thinking", "D. Random refinement"],
+      answer: "B. Top-down design",
+      diff: "easy"
+    },
+    {
+      q: "The idea of stepwise refinement is to:",
+      options: ["A. Conquer the entire task at once", "B. Avoid dealing with subproblems", "C. Not try to conquer an entire task at once", "D. Only work on the hardest part"],
+      answer: "C. Not try to conquer an entire task at once",
+      diff: "easy"
+    },
+    {
+      q: "In stepwise refinement, each step is:",
+      options: ["A. Harder than the original", "B. Easier to solve than the original problem", "C. Unrelated to the original", "D. Always the same size"],
+      answer: "B. Easier to solve than the original problem",
+      diff: "easy"
+    },
+    {
+      q: "The process of breaking a problem into smaller parts is called:",
+      options: ["A. Composition", "B. Decomposition", "C. Aggregation", "D. Compilation"],
+      answer: "B. Decomposition",
+      diff: "easy"
+    },
+    {
+      q: "According to the module, top-down and bottom-up approaches:",
+      options: ["A. Are mutually exclusive", "B. Contrast in theory but complement in practice", "C. Are the same thing", "D. Only top-down works"],
+      answer: "B. Contrast in theory but complement in practice",
+      diff: "medium"
+    },
+    {
+      q: "A problem solver might use top-down decomposition while their intuition works:",
+      options: ["A. Randomly", "B. Bottom-up", "C. Only horizontally", "D. Not at all"],
+      answer: "B. Bottom-up",
+      diff: "medium"
+    },
+    {
+      q: "Which of the following is an example of top-down methodology?",
+      options: ["A. Starting with code details and building a program", "B. Starting with a high-level plan and refining steps", "C. Solving random subproblems", "D. Using only intuition"],
+      answer: "B. Starting with a high-level plan and refining steps",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is an example of bottom-up methodology?",
+      options: ["A. Starting with a general idea and breaking down", "B. Starting with small components and combining them", "C. Only working on the final output", "D. Avoiding details"],
+      answer: "B. Starting with small components and combining them",
+      diff: "easy"
+    },
+    {
+      q: "Stepwise refinement helps in algorithm discovery by:",
+      options: ["A. Making the problem harder", "B. Simplifying through decomposition", "C. Adding more steps", "D. Avoiding subproblems"],
+      answer: "B. Simplifying through decomposition",
+      diff: "easy"
+    },
+    {
+      q: "The phrase 'top-down methodology' suggests that we start from:",
+      options: ["A. The bottom (details)", "B. The top (general view)", "C. The middle", "D. Any random point"],
+      answer: "B. The top (general view)",
+      diff: "easy"
+    }
+  ]
+},
+
   },
 
   // ─────────────────────────────────────────
