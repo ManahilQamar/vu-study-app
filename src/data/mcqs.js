@@ -19998,6 +19998,7 @@ The current status of a process includes:
   ]
 },
 
+
 53: {
   title: 'Operating Systems: Process and its Administration – Scheduler, Dispatcher, Process Table, Time Slices, Interrupts (CS101 Lecture 53)',
   summary: `**Key Topics Covered:**
@@ -20219,6 +20220,1420 @@ The current status of a process includes:
     }
   ]
 },
+
+54: {
+  title: "Operating Systems: Handling Competition between Processes",
+  summary: `**Key Topics Covered:**
+- Resource allocation by operating system components
+- File manager, memory manager, scheduler, dispatcher roles
+- Competition for resources
+- Deadlock scenario (circular wait)
+
+---
+
+**Simple Understanding:**
+
+**Resource Allocation in OS:**
+👉 Operating system allocates resources (peripheral devices, internal features) to processes.
+👉 Different managers handle different resources:
+
+| Manager | Allocates |
+|---------|-----------|
+| File manager | Access to files, mass storage space for new files |
+| Memory manager | Memory space |
+| Scheduler | Space in process table |
+| Dispatcher | Time slices (CPU time) |
+
+---
+
+**Why Resource Allocation is Tricky:**
+👉 At first glance, it seems simple – just give resources to processes.
+👉 But there are subtle problems that can cause system malfunctions.
+👉 A computer only follows instructions; it does not think for itself.
+👉 To build a reliable OS, we must design algorithms that handle every possible situation.
+
+---
+
+**Common Resource Allocation Issues:**
+
+1. **Two processes demand the same resource at the same time**
+   - Only one can get it; the other must wait.
+
+2. **Deadlock (Circular Wait)**
+   - Process A holds Resource 1 and waits for Resource 2.
+   - Process B holds Resource 2 and waits for Resource 1.
+   - Neither can proceed → system freezes.
+
+👉 **Figure 57** (mentioned but not shown) illustrates this deadlock situation.
+
+---
+
+**Important Vocabulary:**
+- Resource = anything a process needs (memory, files, CPU time, devices)
+- File manager = allocates file access and storage space
+- Memory manager = allocates RAM to processes
+- Scheduler = allocates space in process table
+- Dispatcher = allocates CPU time slices
+- Deadlock = circular waiting where no process can proceed
+- Competition = multiple processes needing the same resource
+
+---
+
+**Quick Revision Points:**
+- Resource allocation is a key OS task.
+- Different managers allocate different resources.
+- Competition can lead to deadlock.
+- Deadlock example: A holds R1 waits for R2; B holds R2 waits for R1.
+- Reliable OS needs algorithms to prevent/handle deadlocks.
+- Machine follows instructions – OS designer must anticipate all scenarios.`,
+  questions: [
+    {
+      q: "Which component allocates access to files and mass storage space?",
+      options: ["A. Memory manager", "B. File manager", "C. Scheduler", "D. Dispatcher"],
+      answer: "B. File manager",
+      diff: "easy"
+    },
+    {
+      q: "Which component allocates memory space to processes?",
+      options: ["A. File manager", "B. Memory manager", "C. Scheduler", "D. Dispatcher"],
+      answer: "B. Memory manager",
+      diff: "easy"
+    },
+    {
+      q: "Which component allocates space in the process table?",
+      options: ["A. File manager", "B. Memory manager", "C. Scheduler", "D. Dispatcher"],
+      answer: "C. Scheduler",
+      diff: "easy"
+    },
+    {
+      q: "Which component allocates time slices (CPU time) to processes?",
+      options: ["A. File manager", "B. Memory manager", "C. Scheduler", "D. Dispatcher"],
+      answer: "D. Dispatcher",
+      diff: "easy"
+    },
+    {
+      q: "A situation where Process A holds Resource 1 and waits for Resource 2, while Process B holds Resource 2 and waits for Resource 1 is called:",
+      options: ["A. Starvation", "B. Deadlock", "C. Race condition", "D. Thrashing"],
+      answer: "B. Deadlock",
+      diff: "easy"
+    },
+    {
+      q: "The problem of two processes demanding the same resource at the same time is an example of:",
+      options: ["A. Deadlock", "B. Competition for resources", "C. Thrashing", "D. Fragmentation"],
+      answer: "B. Competition for resources",
+      diff: "easy"
+    },
+    {
+      q: "In the deadlock example described, Process A holds _____ and waits for _____.",
+      options: ["A. Resource 1, Resource 1", "B. Resource 2, Resource 1", "C. Resource 1, Resource 2", "D. Resource 2, Resource 2"],
+      answer: "C. Resource 1, Resource 2",
+      diff: "medium"
+    },
+    {
+      q: "In the deadlock example, Process B holds _____ and waits for _____.",
+      options: ["A. Resource 1, Resource 1", "B. Resource 2, Resource 1", "C. Resource 1, Resource 2", "D. Resource 2, Resource 2"],
+      answer: "B. Resource 2, Resource 1",
+      diff: "medium"
+    },
+    {
+      q: "Why is resource allocation more complex than it first appears?",
+      options: ["A. Because resources are unlimited", "B. Because of subtle issues like deadlock", "C. Because processes never compete", "D. Because the OS thinks for itself"],
+      answer: "B. Because of subtle issues like deadlock",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is NOT a resource allocated by the OS?",
+      options: ["A. Memory space", "B. Process table space", "C. CPU time", "D. User passwords"],
+      answer: "D. User passwords",
+      diff: "easy"
+    },
+    {
+      q: "The operating system must cover every possible contingency because:",
+      options: ["A. The machine thinks for itself", "B. The machine merely follows instructions", "C. Resources are infinite", "D. Processes never compete"],
+      answer: "B. The machine merely follows instructions",
+      diff: "medium"
+    },
+    {
+      q: "Deadlock occurs when processes are in a state of:",
+      options: ["A. Circular waiting", "B. Sequential execution", "C. Parallel execution", "D. No waiting"],
+      answer: "A. Circular waiting",
+      diff: "easy"
+    },
+    {
+      q: "The allocation of mass storage space for the construction of new files is done by the:",
+      options: ["A. Memory manager", "B. File manager", "C. Scheduler", "D. Dispatcher"],
+      answer: "B. File manager",
+      diff: "medium"
+    },
+    {
+      q: "In a deadlock situation, the processes involved:",
+      options: ["A. Continue to run normally", "B. Terminate immediately", "C. Cannot proceed because each is waiting for the other", "D. Are given more resources"],
+      answer: "C. Cannot proceed because each is waiting for the other",
+      diff: "easy"
+    },
+    {
+      q: "The term 'resource' in OS context includes:",
+      options: ["A. Only CPU", "B. Only memory", "C. Peripheral devices and internal features", "D. Only files"],
+      answer: "C. Peripheral devices and internal features",
+      diff: "easy"
+    },
+    {
+      q: "To build a reliable operating system, we must:",
+      options: ["A. Ignore rare contingencies", "B. Design algorithms that cover every possible contingency", "C. Let the machine decide", "D. Use only one resource"],
+      answer: "B. Design algorithms that cover every possible contingency",
+      diff: "easy"
+    },
+    {
+      q: "The dispatcher allocates:",
+      options: ["A. Memory space", "B. Process table space", "C. Time slices", "D. File access"],
+      answer: "C. Time slices",
+      diff: "easy"
+    },
+    {
+      q: "The scheduler allocates:",
+      options: ["A. Memory space", "B. Space in the process table", "C. Time slices", "D. File access"],
+      answer: "B. Space in the process table",
+      diff: "easy"
+    },
+    {
+      q: "If Process A is using the printer and waiting for the scanner, while Process B is using the scanner and waiting for the printer, this is an example of:",
+      options: ["A. Deadlock", "B. Successful resource sharing", "C. Priority inversion", "D. Thrashing"],
+      answer: "A. Deadlock",
+      diff: "easy"
+    },
+    {
+      q: "The text suggests that solutions to resource competition problems will be discussed:",
+      options: ["A. In previous modules", "B. In next modules", "C. Never", "D. In this module only"],
+      answer: "B. In next modules",
+      diff: "easy"
+    }
+  ]
+},
+55: {
+  title: "Operating Systems: Semaphores",
+  summary: `**Key Topics Covered:**
+- Controlling access to shared resources (e.g., printer)
+- Flag-based access control and its problem
+- Interrupt disable/enable solution
+- Test-and-set instruction
+- Semaphore definition
+- Critical region and mutual exclusion
+
+---
+
+**Simple Understanding:**
+
+**The Problem: Sharing a Printer**
+👉 Multiple processes may need to use a single printer.
+👉 Only one process can use the printer at a time; simultaneous access would produce worthless results.
+👉 OS must track whether printer is allocated.
+
+**Flag (Binary) Approach:**
+👉 Use a flag in memory: clear (0) = printer available, set (1) = printer allocated.
+👉 Process requests printer → OS checks flag.
+   - If clear: grant request, set flag.
+   - If set: make process wait.
+👉 When process finishes: either give to waiting process or clear flag.
+
+---
+
+**The Problem with Simple Flags:**
+👉 Testing and setting the flag requires several machine instructions.
+👉 Possible interruption after testing (flag clear) but before setting.
+👉 Example scenario:
+   1. Process A tests flag → clear (printer available).
+   2. Process A interrupted before setting flag.
+   3. Process B runs, tests flag → still clear (because A didn't set it yet).
+   4. OS grants printer to Process B.
+   5. Process A resumes, sets flag, also gets printer.
+   6. **Two processes using same printer → conflict!**
+
+---
+
+**Solution 1: Disable Interrupts**
+👉 Use **interrupt disable** instruction at start of flag-testing routine.
+👉 Use **interrupt enable** instruction at end.
+👉 No interrupts can occur during the critical testing+setting sequence.
+👉 Problem: Disabling interrupts for long periods affects system responsiveness.
+
+---
+
+**Solution 2: Test-and-Set Instruction**
+👉 A single machine instruction that:
+   - Retrieves the value of a flag
+   - Notes the value received
+   - Sets the flag to 1
+👉 All within one instruction → CPU cannot be interrupted in between.
+👉 Guarantees atomic (uninterruptible) test-and-set.
+
+---
+
+**Semaphore Definition:**
+👉 A properly implemented flag (using test-and-set or interrupt disable) is called a **semaphore**.
+👉 Named after railroad signals that control access to track sections.
+
+---
+
+**Critical Region and Mutual Exclusion:**
+👉 **Critical region:** A sequence of instructions that should be executed by only one process at a time.
+👉 **Mutual exclusion:** The requirement that only one process executes a critical region at any moment.
+👉 Guard critical region with a semaphore:
+   - Enter: test-and-set semaphore (wait if set, else set and enter)
+   - Exit: clear semaphore
+
+---
+
+**Important Vocabulary:**
+- Flag = bit in memory (set/clear, 1/0)
+- Interrupt disable/enable = CPU instructions to block/unblock interrupts
+- Test-and-set = atomic instruction that tests and sets a flag
+- Semaphore = synchronization tool (from railroad signals)
+- Critical region = code segment requiring mutual exclusion
+- Mutual exclusion = only one process at a time in critical region
+
+---
+
+**Quick Revision Points:**
+- Simple flags fail because test and set can be interrupted.
+- Need atomic (uninterruptible) test-and-set.
+- Interrupt disable/enable works but may degrade performance.
+- Test-and-set instruction is hardware-supported solution.
+- Semaphore guards critical regions.
+- Mutual exclusion prevents race conditions.
+- Entry: test-and-set (wait if set); Exit: clear.`,
+  questions: [
+    {
+      q: "A simple flag approach for printer allocation fails because:",
+      options: ["A. Flags are too slow", "B. Testing and setting the flag can be interrupted", "C. Flags use too much memory", "D. Processes never request the printer"],
+      answer: "B. Testing and setting the flag can be interrupted",
+      diff: "easy"
+    },
+    {
+      q: "In a simple flag system, a clear flag (0) means:",
+      options: ["A. Printer is in use", "B. Printer is available", "C. Printer is broken", "D. Printer is waiting"],
+      answer: "B. Printer is available",
+      diff: "easy"
+    },
+    {
+      q: "In a simple flag system, a set flag (1) means:",
+      options: ["A. Printer is available", "B. Printer is currently allocated", "C. Printer is off", "D. No process is using printer"],
+      answer: "B. Printer is currently allocated",
+      diff: "easy"
+    },
+    {
+      q: "The problem described where two processes both get printer access occurs because:",
+      options: ["A. The printer is too fast", "B. The OS is buggy", "C. One process tested the flag clear, was interrupted, then another process also tested it clear before first set it", "D. The flag is in the wrong memory location"],
+      answer: "C. One process tested the flag clear, was interrupted, then another process also tested it clear before first set it",
+      diff: "medium"
+    },
+    {
+      q: "One solution to the flag problem is to use interrupt disable/enable instructions. This ensures:",
+      options: ["A. All interrupts are permanently disabled", "B. The test-and-set routine cannot be interrupted", "C. The printer works faster", "D. Only one process exists"],
+      answer: "B. The test-and-set routine cannot be interrupted",
+      diff: "medium"
+    },
+    {
+      q: "The test-and-set instruction is advantageous because:",
+      options: ["A. It uses less memory", "B. It is a single machine instruction that cannot be interrupted", "C. It runs faster than interrupts", "D. It works without a CPU"],
+      answer: "B. It is a single machine instruction that cannot be interrupted",
+      diff: "medium"
+    },
+    {
+      q: "A properly implemented flag used for synchronization is called a:",
+      options: ["A. Mutex", "B. Semaphore", "C. Monitor", "D. Pipe"],
+      answer: "B. Semaphore",
+      diff: "easy"
+    },
+    {
+      q: "The term 'semaphore' comes from:",
+      options: ["A. Computer memory", "B. Railroad signals", "C. Ship flags", "D. Traffic lights"],
+      answer: "B. Railroad signals",
+      diff: "easy"
+    },
+    {
+      q: "A sequence of instructions that should be executed by only one process at a time is called a:",
+      options: ["A. Critical region", "B. Semaphore region", "C. Mutual region", "D. Exclusive region"],
+      answer: "A. Critical region",
+      diff: "easy"
+    },
+    {
+      q: "The requirement that only one process at a time executes a critical region is called:",
+      options: ["A. Critical exclusion", "B. Mutual exclusion", "C. Semaphore exclusion", "D. Process exclusion"],
+      answer: "B. Mutual exclusion",
+      diff: "easy"
+    },
+    {
+      q: "To enter a critical region guarded by a semaphore, a process must:",
+      options: ["A. Find semaphore set, then set it", "B. Find semaphore clear, then set it", "C. Clear the semaphore", "D. Ignore the semaphore"],
+      answer: "B. Find semaphore clear, then set it",
+      diff: "medium"
+    },
+    {
+      q: "Upon exiting a critical region, the process must:",
+      options: ["A. Set the semaphore", "B. Clear the semaphore", "C. Disable interrupts", "D. Terminate"],
+      answer: "B. Clear the semaphore",
+      diff: "easy"
+    },
+    {
+      q: "If a semaphore is found in its set state, a process trying to enter the critical region should:",
+      options: ["A. Enter anyway", "B. Wait until the semaphore is cleared", "C. Set the semaphore again", "D. Terminate"],
+      answer: "B. Wait until the semaphore is cleared",
+      diff: "easy"
+    },
+    {
+      q: "Disabling interrupts for the entire flag-testing routine can cause:",
+      options: ["A. Increased system responsiveness", "B. Decreased system responsiveness (interrupts blocked too long)", "C. Printer damage", "D. Memory leaks"],
+      answer: "B. Decreased system responsiveness (interrupts blocked too long)",
+      diff: "medium"
+    },
+    {
+      q: "The test-and-set instruction retrieves the flag value, notes it, and then:",
+      options: ["A. Clears the flag", "B. Sets the flag", "C. Leaves it unchanged", "D. Toggles the flag"],
+      answer: "B. Sets the flag",
+      diff: "medium"
+    },
+    {
+      q: "The main advantage of test-and-set over interrupt disable/enable is:",
+      options: ["A. It is simpler to code", "B. It does not block all interrupts for potentially long periods", "C. It uses less power", "D. It works on all CPUs"],
+      answer: "B. It does not block all interrupts for potentially long periods",
+      diff: "hard"
+    },
+    {
+      q: "In the problematic scenario, Process A was interrupted after it had:",
+      options: ["A. Set the flag", "B. Found the flag clear but before setting it", "C. Finished using the printer", "D. Cleared the flag"],
+      answer: "B. Found the flag clear but before setting it",
+      diff: "medium"
+    },
+    {
+      q: "The CPU recognizes interrupts:",
+      options: ["A. In the middle of an instruction", "B. Between instructions", "C. Only when interrupts are enabled", "D. Both B and C"],
+      answer: "D. Both B and C",
+      diff: "hard"
+    },
+    {
+      q: "A semaphore that can only be 0 or 1 is specifically called a:",
+      options: ["A. Counting semaphore", "B. Binary semaphore", "C. Mutex semaphore", "D. Lock semaphore"],
+      answer: "B. Binary semaphore",
+      diff: "medium"
+    },
+    {
+      q: "The purpose of using a semaphore for printer access is to achieve:",
+      options: ["A. Faster printing", "B. Mutual exclusion", "C. Higher memory usage", "D. Multiple processes printing simultaneously"],
+      answer: "B. Mutual exclusion",
+      diff: "easy"
+    }
+  ]
+},
+
+56: {
+  title: "Operating Systems: Deadlock",
+  summary: `**Key Topics Covered:**
+- Definition of deadlock
+- Three conditions for deadlock (non-sharable resources, partial allocation, no forcible retrieval)
+- Deadlock detection and correction (killing processes)
+- Deadlock avoidance (request all resources at once, spooling)
+
+---
+
+**Simple Understanding:**
+
+**What is Deadlock?**
+👉 Two or more processes blocked forever, each waiting for a resource held by another.
+👉 Example: Process A has printer, waits for CD player. Process B has CD player, waits for printer. Neither can proceed.
+
+👉 Another example: Process table full. Each process needs to create another process (fork) to complete. No space left → deadlock.
+
+---
+
+**Three Conditions for Deadlock (ALL must be present):**
+1. **Non-sharable resources** – Resources cannot be used by multiple processes at once.
+2. **Partial allocation** – Processes request resources gradually (get some, then ask for more later).
+3. **No forcible retrieval** – Once a resource is allocated, it cannot be taken away forcibly.
+
+👉 **Key insight:** If any one condition is removed, deadlock cannot occur.
+
+---
+
+**Deadlock Detection and Correction (Attack condition #3):**
+👉 Assume deadlock is rare.
+👉 Detect when it happens, then correct by forcibly retrieving resources.
+👉 Example: Full process table → kill (terminate) some processes to free space.
+👉 This breaks deadlock; remaining processes continue.
+
+---
+
+**Deadlock Avoidance (Attack conditions #1 or #2):**
+
+**Attack condition #2 (partial allocation):**
+👉 Require each process to request ALL its resources at once (not gradually).
+
+**Attack condition #1 (non-sharable resources):**
+👉 Convert non-sharable resources into sharable ones.
+👉 **Spooling** (Simultaneous Peripheral Operation On-Line):
+   - OS pretends to give printer access to multiple processes.
+   - Actually stores print data to disk (mass storage).
+   - Later, when printer is free, OS transfers data from disk to printer.
+   - Creates illusion of multiple printers – resource appears sharable.
+
+---
+
+**Important Vocabulary:**
+- Deadlock = circular waiting for resources
+- Non-sharable resource = cannot be used by multiple processes simultaneously
+- Partial allocation = request resources in stages
+- Forcible retrieval = taking a resource away without process cooperation
+- Forking = creating a new process (UNIX term)
+- Killing = forcibly terminating a process
+- Spooling = holding output data temporarily to share a non-sharable device
+
+---
+
+**Quick Revision Points:**
+- Deadlock requires all three conditions.
+- Remove any one condition → deadlock impossible.
+- Detection + correction: let deadlock happen, then fix (e.g., kill processes).
+- Avoidance: request all resources at once OR use spooling.
+- Spooling makes printer appear sharable by storing data to disk.`,
+  questions: [
+    {
+      q: "Deadlock is a condition in which:",
+      options: ["A. One process runs faster than others", "B. Two or more processes are blocked, each waiting for a resource held by another", "C. The CPU overheats", "D. Memory is full"],
+      answer: "B. Two or more processes are blocked, each waiting for a resource held by another",
+      diff: "easy"
+    },
+    {
+      q: "How many conditions must be satisfied for deadlock to occur?",
+      options: ["A. 1", "B. 2", "C. 3", "D. 4"],
+      answer: "C. 3",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is NOT one of the three deadlock conditions?",
+      options: ["A. Competition for non-sharable resources", "B. Resources requested on a partial basis", "C. Resources can be forcibly retrieved", "D. Once allocated, resources cannot be forcibly retrieved"],
+      answer: "C. Resources can be forcibly retrieved",
+      diff: "medium"
+    },
+    {
+      q: "The condition 'resources are requested on a partial basis' means:",
+      options: ["A. Processes request all resources at once", "B. Processes request some resources, then later request more", "C. Resources are shared", "D. Resources are never released"],
+      answer: "B. Processes request some resources, then later request more",
+      diff: "easy"
+    },
+    {
+      q: "If any one of the three deadlock conditions is removed:",
+      options: ["A. Deadlock becomes more likely", "B. Deadlock cannot occur", "C. Deadlock occurs randomly", "D. Nothing changes"],
+      answer: "B. Deadlock cannot occur",
+      diff: "easy"
+    },
+    {
+      q: "A classic example of deadlock is:",
+      options: ["A. Process A has printer, waits for CD; Process B has CD, waits for printer", "B. Two processes sharing a printer", "C. One process using CPU and memory", "D. A single process waiting for user input"],
+      answer: "A. Process A has printer, waits for CD; Process B has CD, waits for printer",
+      diff: "easy"
+    },
+    {
+      q: "The UNIX term for creating a new process is called:",
+      options: ["A. Spawning", "B. Forking", "C. Cloning", "D. Duplicating"],
+      answer: "B. Forking",
+      diff: "easy"
+    },
+    {
+      q: "If the process table is full and each process needs to create another process to complete, this can lead to:",
+      options: ["A. Faster execution", "B. Deadlock", "C. More memory available", "D. Printer sharing"],
+      answer: "B. Deadlock",
+      diff: "easy"
+    },
+    {
+      q: "Deadlock detection and correction schemes attack which condition?",
+      options: ["A. First condition (non-sharable resources)", "B. Second condition (partial allocation)", "C. Third condition (no forcible retrieval)", "D. None of the above"],
+      answer: "C. Third condition (no forcible retrieval)",
+      diff: "medium"
+    },
+    {
+      q: "In deadlock detection and correction, when deadlock occurs, the OS:",
+      options: ["A. Ignores it", "B. Forcibly retrieves some resources (e.g., kills processes)", "C. Reboots the system", "D. Waits forever"],
+      answer: "B. Forcibly retrieves some resources (e.g., kills processes)",
+      diff: "easy"
+    },
+    {
+      q: "The technical term for terminating a process is:",
+      options: ["A. Stopping", "B. Killing", "C. Ending", "D. Halting"],
+      answer: "B. Killing",
+      diff: "easy"
+    },
+    {
+      q: "Deadlock avoidance schemes attack which conditions?",
+      options: ["A. First and second", "B. Second and third", "C. First and third", "D. Only third"],
+      answer: "A. First and second",
+      diff: "medium"
+    },
+    {
+      q: "One deadlock avoidance technique attacks the second condition by:",
+      options: ["A. Making resources sharable", "B. Requiring each process to request all its resources at once", "C. Forcibly retrieving resources", "D. Killing processes"],
+      answer: "B. Requiring each process to request all its resources at once",
+      diff: "medium"
+    },
+    {
+      q: "Spooling is a technique that attacks which deadlock condition?",
+      options: ["A. Third condition", "B. Second condition", "C. First condition (converts non-sharable to sharable)", "D. None"],
+      answer: "C. First condition (converts non-sharable to sharable)",
+      diff: "medium"
+    },
+    {
+      q: "In spooling, when a process requests a printer, the OS:",
+      options: ["A. Gives direct access to printer", "B. Denies the request", "C. Stores the output in mass storage instead of sending to printer", "D. Shuts down the printer"],
+      answer: "C. Stores the output in mass storage instead of sending to printer",
+      diff: "medium"
+    },
+    {
+      q: "Spooling creates the illusion of:",
+      options: ["A. Multiple CPUs", "B. More than one printer", "C. Faster printing", "D. Less memory usage"],
+      answer: "B. More than one printer",
+      diff: "easy"
+    },
+    {
+      q: "The term 'spooling' stands for:",
+      options: ["A. Simultaneous Peripheral Operation On-Line", "B. Single Printer Output Operation", "C. Spooled Print Output", "D. Serial Processing of Output"],
+      answer: "A. Simultaneous Peripheral Operation On-Line",
+      diff: "hard"
+    },
+    {
+      q: "If a deadlock occurs due to a full process table, one correction method is:",
+      options: ["A. Add more memory", "B. Kill some processes to free space", "C. Reboot the system", "D. Ignore it"],
+      answer: "B. Kill some processes to free space",
+      diff: "easy"
+    },
+    {
+      q: "Which approach considers deadlock so rare that no effort is made to avoid it?",
+      options: ["A. Deadlock avoidance", "B. Deadlock detection and correction", "C. Spooling", "D. Request all resources at once"],
+      answer: "B. Deadlock detection and correction",
+      diff: "easy"
+    },
+    {
+      q: "The three deadlock conditions were isolated to show that:",
+      options: ["A. Deadlock is unavoidable", "B. Removing any one condition prevents deadlock", "C. Deadlock is a myth", "D. Deadlock only occurs in printers"],
+      answer: "B. Removing any one condition prevents deadlock",
+      diff: "easy"
+    }
+  ]
+},
+
+57: {
+  title: "Operating Systems: Security Attacks from outside",
+  summary: `**Key Topics Covered:**
+- User accounts and login procedure
+- Super user / administrator privileges
+- Auditing software for detecting attacks
+- Sniffing software and login simulation attacks
+- User carelessness as security weakness
+- Security policies
+
+---
+
+**Simple Understanding:**
+
+**User Accounts:**
+👉 Operating systems protect resources from unauthorized access.
+👉 Create **accounts** for authorized users – each account has:
+   - User's name
+   - Password
+   - Privileges (what the user is allowed to do)
+👉 **Login procedure:** User establishes initial contact with OS.
+
+---
+
+**Super User (Administrator):**
+👉 Person who creates and manages accounts.
+👉 Gains highly privileged access by identifying as administrator (name + password).
+👉 Can:
+   - Alter OS settings
+   - Modify critical software
+   - Adjust privileges of other users
+   - Perform maintenance activities denied to normal users
+👉 From this "lofty perch," can also monitor activity to detect destructive behavior.
+
+---
+
+**Auditing Software:**
+👉 Utilities that record and analyze activities in the computer system.
+👉 Helps detect:
+   - **Flood of failed login attempts** → someone trying to guess passwords (unauthorized access attempt)
+   - **Unusual account behavior** (e.g., word processor user suddenly accessing technical software) → possible account takeover
+
+---
+
+**Sniffing Software:**
+👉 Malicious program that records activities and reports to an intruder.
+👉 Classic example: **fake login program**
+   - Simulates real OS login screen.
+   - Tricks authorized users into entering their name and password.
+   - User thinks they are talking to OS, but actually giving credentials to impostor.
+
+---
+
+**User Carelessness – Major Security Obstacle:**
+👉 Users choose **easy-to-guess passwords** (names, dates).
+👉 Users **share passwords** with friends.
+👉 Users **fail to change passwords** regularly.
+👉 Users transfer storage devices between machines (risk of data exposure).
+👉 Users import **unapproved software** that may subvert security.
+
+---
+
+**Solution:**
+👉 Institutions adopt and enforce **security policies** cataloging user requirements and responsibilities.
+
+---
+
+**Important Vocabulary:**
+- Account = record with name, password, privileges
+- Login procedure = initial contact with OS
+- Super user / administrator = highly privileged user
+- Auditing software = records/analyzes system activity
+- Sniffing software = records activities for intruder
+- Fake login program = impersonates OS login to steal credentials
+- Security policy = rules for user behavior
+
+---
+
+**Quick Revision Points:**
+- OS protects resources via user accounts.
+- Administrator has special privileges.
+- Auditing software detects abnormal activity.
+- Sniffing software (e.g., fake login) steals credentials.
+- User carelessness (weak passwords, sharing) is a major risk.
+- Security policies enforce good practices.`,
+  questions: [
+    {
+      q: "The record within the operating system containing user name, password, and privileges is called a(n):",
+      options: ["A. File", "B. Account", "C. Directory", "D. Process"],
+      answer: "B. Account",
+      diff: "easy"
+    },
+    {
+      q: "The sequence of transactions in which a user establishes initial contact with the OS is called the:",
+      options: ["A. Boot procedure", "B. Login procedure", "C. Installation procedure", "D. Shutdown procedure"],
+      answer: "B. Login procedure",
+      diff: "easy"
+    },
+    {
+      q: "The person who establishes user accounts and has highly privileged access is called the:",
+      options: ["A. Normal user", "B. Guest", "C. Super user or administrator", "D. Operator"],
+      answer: "C. Super user or administrator",
+      diff: "easy"
+    },
+    {
+      q: "The administrator can perform all of the following EXCEPT:",
+      options: ["A. Alter OS settings", "B. Modify critical software", "C. Adjust user privileges", "D. Access other users' private files without any record"],
+      answer: "D. Access other users' private files without any record",
+      diff: "medium"
+    },
+    {
+      q: "Software that records and analyzes activities in the computer system to detect destructive behavior is called:",
+      options: ["A. Sniffing software", "B. Auditing software", "C. Malware", "D. Antivirus software"],
+      answer: "B. Auditing software",
+      diff: "easy"
+    },
+    {
+      q: "A flood of login attempts using incorrect passwords may indicate:",
+      options: ["A. A busy system", "B. An unauthorized user trying to gain access", "C. A hardware failure", "D. Normal user behavior"],
+      answer: "B. An unauthorized user trying to gain access",
+      diff: "easy"
+    },
+    {
+      q: "If a user who normally uses only word processing suddenly starts accessing highly technical software, auditing software might detect this as:",
+      options: ["A. Normal behavior", "B. Possible account takeover by an unauthorized user", "C. A system crash", "D. A printer error"],
+      answer: "B. Possible account takeover by an unauthorized user",
+      diff: "medium"
+    },
+    {
+      q: "Software that records activities and later reports them to an intruder is called:",
+      options: ["A. Auditing software", "B. Sniffing software", "C. Encryption software", "D. Compression software"],
+      answer: "B. Sniffing software",
+      diff: "easy"
+    },
+    {
+      q: "An old example of sniffing software is a program that:",
+      options: ["A. Encrypts files", "B. Simulates the OS login procedure to steal passwords", "C. Backs up data", "D. Defragments the hard drive"],
+      answer: "B. Simulates the OS login procedure to steal passwords",
+      diff: "easy"
+    },
+    {
+      q: "One major obstacle to computer security is:",
+      options: ["A. Strong encryption", "B. Carelessness of users", "C. Fast processors", "D. Large memory"],
+      answer: "B. Carelessness of users",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is an example of user carelessness?",
+      options: ["A. Changing passwords regularly", "B. Choosing easy-to-guess passwords", "C. Using approved software only", "D. Keeping passwords secret"],
+      answer: "B. Choosing easy-to-guess passwords",
+      diff: "easy"
+    },
+    {
+      q: "Users often share passwords with friends, which is considered:",
+      options: ["A. Good practice", "B. A security risk", "C. Required by the OS", "D. Safe if the friend is trusted"],
+      answer: "B. A security risk",
+      diff: "easy"
+    },
+    {
+      q: "Importing unapproved software into a system can:",
+      options: ["A. Improve security", "B. Subvert the system's security", "C. Only affect performance", "D. Be harmless"],
+      answer: "B. Subvert the system's security",
+      diff: "medium"
+    },
+    {
+      q: "Most institutions with large computer installations respond to user carelessness by:",
+      options: ["A. Ignoring it", "B. Adopting and enforcing security policies", "C. Disconnecting from the network", "D. Giving everyone administrator rights"],
+      answer: "B. Adopting and enforcing security policies",
+      diff: "easy"
+    },
+    {
+      q: "The fake login program tricks users into:",
+      options: ["A. Installing updates", "B. Supplying their name and password to an impostor", "C. Restarting the computer", "D. Deleting files"],
+      answer: "B. Supplying their name and password to an impostor",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is NOT a typical administrator privilege?",
+      options: ["A. Altering OS settings", "B. Modifying critical software", "C. Browsing the web as a normal user", "D. Adjusting user privileges"],
+      answer: "C. Browsing the web as a normal user",
+      diff: "medium"
+    },
+    {
+      q: "Auditing software may expose unusual account behavior that indicates:",
+      options: ["A. The user is working overtime", "B. An unauthorized user may have gained access", "C. The printer is out of paper", "D. The system needs a reboot"],
+      answer: "B. An unauthorized user may have gained access",
+      diff: "easy"
+    },
+    {
+      q: "One reason users fail to maintain security is that they:",
+      options: ["A. Change passwords too often", "B. Fail to change passwords on a timely basis", "C. Use strong passwords", "D. Encrypt all data"],
+      answer: "B. Fail to change passwords on a timely basis",
+      diff: "easy"
+    },
+    {
+      q: "Transferring offline mass storage devices back and forth between machines can lead to:",
+      options: ["A. Faster performance", "B. Potential degradation and security risks", "C. Automatic encryption", "D. No effect"],
+      answer: "B. Potential degradation and security risks",
+      diff: "medium"
+    },
+    {
+      q: "The 'lofty perch' of the administrator refers to their ability to:",
+      options: ["A. Use the computer faster", "B. Monitor activity and perform maintenance denied to normal users", "C. Play games", "D. Access the internet"],
+      answer: "B. Monitor activity and perform maintenance denied to normal users",
+      diff: "easy"
+    }
+  ]
+},
+
+58: {
+  title: "Operating Systems: Security Attacks from inside",
+  summary: `**Key Topics Covered:**
+- Intruder gaining access to system (admin vs user account)
+- Memory protection via limit registers
+- Privileged mode vs non-privileged mode
+- Privileged instructions
+- CPU privilege level switching
+- Consequences of security flaws
+
+---
+
+**Simple Understanding:**
+
+**After Gaining Access:**
+👉 Intruder (or malicious authorized user) explores system for information or to insert destructive software.
+👉 If intruder gets administrator access → full control (admin password closely guarded).
+👉 If only general user access → need to trick OS to exceed privileges.
+
+**Common Tricks:**
+👉 Trick memory manager to access memory outside allotted area.
+👉 Trick file manager to retrieve restricted files.
+
+---
+
+**Hardware Protection – Memory Limits:**
+👉 CPUs for multiprogramming have special-purpose registers storing upper and lower memory limits for each process.
+👉 CPU compares each memory reference to these registers.
+👉 If reference outside limits → CPU transfers control back to OS via interrupt.
+
+---
+
+**The Problem:**
+👉 Without further protection, a process could simply change the limit registers to access more memory.
+
+---
+
+**Privilege Levels (Modes):**
+CPUs have two privilege levels:
+
+| Mode | Description |
+|------|-------------|
+| **Privileged mode** | Can execute ALL machine language instructions |
+| **Non-privileged mode** | Limited instruction set |
+
+👉 **Privileged instructions** – only available in privileged mode.
+   Examples: changing memory limit registers, changing privilege mode.
+👉 Attempt to execute privileged instruction in non-privileged mode causes **interrupt**.
+👉 Interrupt converts CPU to privileged mode and transfers control to OS.
+
+---
+
+**Boot and Process Execution:**
+👉 CPU starts in privileged mode (OS boots).
+👉 When OS gives a process a time slice, it switches CPU to **non-privileged mode**.
+👉 If process tries privileged instruction → interrupt → OS regains control.
+
+---
+
+**Why Privilege Control is Critical:**
+👉 A single flaw can open disaster:
+   - Alter timer → extend time slice → dominate machine.
+   - Directly access peripherals → read files without file manager supervision.
+   - Access memory outside area → read/alter other processes' data.
+
+---
+
+**Important Vocabulary:**
+- Intruder = unauthorized person inside system
+- Memory limit registers = hardware bounds for process memory
+- Privileged mode = full instruction access
+- Non-privileged mode = restricted instruction access
+- Privileged instructions = only in privileged mode (e.g., change limits, change mode)
+- Interrupt = triggered by attempted privilege violation
+
+---
+
+**Quick Revision Points:**
+- Intruder with admin account = full control.
+- With user account, must trick OS.
+- Hardware limit registers prevent out-of-bounds memory access.
+- But process could change registers unless protected.
+- Privilege modes (privileged/non-privileged) solve this.
+- OS runs in privileged mode; user processes run in non-privileged mode.
+- Attempted privileged instruction → interrupt → OS takes over.
+- Security flaws can lead to system takeover.`,
+  questions: [
+    {
+      q: "If an intruder gains access to the administrator's account, they:",
+      options: ["A. Have limited privileges", "B. Have full control of the system", "C. Cannot do anything", "D. Only read files"],
+      answer: "B. Have full control of the system",
+      diff: "easy"
+    },
+    {
+      q: "The administrator's password is closely guarded because:",
+      options: ["A. It is hard to remember", "B. It gives full system control to anyone who knows it", "C. It changes every day", "D. It is stored in plain text"],
+      answer: "B. It gives full system control to anyone who knows it",
+      diff: "easy"
+    },
+    {
+      q: "If an intruder has only general user account access, they must:",
+      options: ["A. Give up", "B. Trick the OS into granting more privileges", "C. Reboot the system", "D. Format the hard drive"],
+      answer: "B. Trick the OS into granting more privileges",
+      diff: "easy"
+    },
+    {
+      q: "CPUs designed for multiprogramming systems contain special-purpose registers that store:",
+      options: ["A. Process ID", "B. Upper and lower limits of a process's memory area", "C. CPU temperature", "D. Disk space"],
+      answer: "B. Upper and lower limits of a process's memory area",
+      diff: "medium"
+    },
+    {
+      q: "If a process tries to access memory outside its allotted area, the CPU:",
+      options: ["A. Ignores the request", "B. Transfers control back to the OS via interrupt", "C. Crashes the system", "D. Automatically expands the memory"],
+      answer: "B. Transfers control back to the OS via interrupt",
+      diff: "medium"
+    },
+    {
+      q: "Without further protection, a process could change its own memory limit registers because:",
+      options: ["A. Registers are not protected", "B. The CPU allows any process to change them", "C. There is no hardware restriction preventing it", "D. All of the above"],
+      answer: "D. All of the above",
+      diff: "hard"
+    },
+    {
+      q: "To protect against unauthorized changes to limit registers, CPUs have:",
+      options: ["A. More registers", "B. Two privilege levels (privileged and non-privileged mode)", "C. Faster clock speeds", "D. Larger caches"],
+      answer: "B. Two privilege levels (privileged and non-privileged mode)",
+      diff: "medium"
+    },
+    {
+      q: "In privileged mode, the CPU can:",
+      options: ["A. Execute only a limited set of instructions", "B. Execute all instructions in its machine language", "C. Only execute arithmetic instructions", "D. Only access memory"],
+      answer: "B. Execute all instructions in its machine language",
+      diff: "easy"
+    },
+    {
+      q: "In non-privileged mode, the CPU:",
+      options: ["A. Can execute all instructions", "B. Has a limited set of acceptable instructions", "C. Cannot execute any instructions", "D. Runs twice as fast"],
+      answer: "B. Has a limited set of acceptable instructions",
+      diff: "easy"
+    },
+    {
+      q: "Instructions that are available only in privileged mode are called:",
+      options: ["A. Normal instructions", "B. Privileged instructions", "C. User instructions", "D. Fast instructions"],
+      answer: "B. Privileged instructions",
+      diff: "easy"
+    },
+    {
+      q: "Examples of privileged instructions include:",
+      options: ["A. Add two numbers", "B. Change memory limit registers and change privilege mode", "C. Branch instructions", "D. Load from memory"],
+      answer: "B. Change memory limit registers and change privilege mode",
+      diff: "medium"
+    },
+    {
+      q: "If a process in non-privileged mode attempts to execute a privileged instruction, the CPU:",
+      options: ["A. Executes it anyway", "B. Ignores it", "C. Causes an interrupt", "D. Shuts down"],
+      answer: "C. Causes an interrupt",
+      diff: "easy"
+    },
+    {
+      q: "When a privileged instruction violation occurs, the interrupt:",
+      options: ["A. Restarts the process", "B. Converts CPU to privileged mode and transfers control to OS", "C. Deletes the process", "D. Reboots the system"],
+      answer: "B. Converts CPU to privileged mode and transfers control to OS",
+      diff: "medium"
+    },
+    {
+      q: "When first turned on, the CPU is in:",
+      options: ["A. Non-privileged mode", "B. Privileged mode", "C. Sleep mode", "D. Low power mode"],
+      answer: "B. Privileged mode",
+      diff: "easy"
+    },
+    {
+      q: "When the OS allows a process to start a time slice, it switches the CPU to:",
+      options: ["A. Privileged mode", "B. Non-privileged mode", "C. Turbo mode", "D. Idle mode"],
+      answer: "B. Non-privileged mode",
+      diff: "easy"
+    },
+    {
+      q: "If a process is allowed to alter the timer that controls multiprogramming, it can:",
+      options: ["A. Speed up the system", "B. Extend its time slice and dominate the machine", "C. Improve security", "D. Reduce power consumption"],
+      answer: "B. Extend its time slice and dominate the machine",
+      diff: "medium"
+    },
+    {
+      q: "If a process is allowed to directly access peripheral devices, it can:",
+      options: ["A. Print faster", "B. Read files without file manager supervision", "C. Use the network", "D. Improve performance"],
+      answer: "B. Read files without file manager supervision",
+      diff: "medium"
+    },
+    {
+      q: "If a process can access memory outside its allotted area, it can:",
+      options: ["A. Only read its own data", "B. Read and alter data of other processes", "C. Only cause a crash", "D. Improve memory usage"],
+      answer: "B. Read and alter data of other processes",
+      diff: "easy"
+    },
+    {
+      q: "A single flaw in privilege level control can:",
+      options: ["A. Be easily fixed", "B. Open the door to disaster", "C. Have no effect", "D. Improve system performance"],
+      answer: "B. Open the door to disaster",
+      diff: "easy"
+    },
+    {
+      q: "Maintaining security is described as:",
+      options: ["A. Unimportant", "B. An important task of the administrator and a goal in OS design", "C. Only hardware responsibility", "D. Only user responsibility"],
+      answer: "B. An important task of the administrator and a goal in OS design",
+      diff: "easy"
+    }
+  ]
+},
+
+
+59: {
+  title: "Networking and the Internet: Network Classification",
+  summary: `**Key Topics Covered:**
+- Network classification by size: PAN, LAN, MAN, WAN
+- Network classification by openness: open vs closed (proprietary)
+- Network classification by topology: bus, star
+- Ethernet, TCP/IP protocol suite
+- Access point (AP) in wireless star networks
+
+---
+
+**Simple Understanding:**
+
+**Classification by Size:**
+👉 **PAN (Personal Area Network):** Short range (< few meters). Example: wireless headset to smartphone, wireless mouse to PC.
+👉 **LAN (Local Area Network):** Single building or building complex. Example: university campus, manufacturing plant.
+👉 **MAN (Metropolitan Area Network):** Intermediate size, spanning a local community.
+👉 **WAN (Wide Area Network):** Long distance – neighboring cities or opposite sides of world.
+
+---
+
+**Classification by Openness:**
+👉 **Open network:** Designs in public domain, freely circulated. Example: Internet (TCP/IP protocol suite – no fees or licenses).
+👉 **Closed (Proprietary) network:** Owned by entity (individual or corporation). Example: Novell Inc. proprietary systems – requires license fees.
+
+---
+
+**Classification by Topology (Pattern of Connections):**
+👉 **Bus topology:** All machines connected to a common communication line called a "bus" (Figure 59a).
+   - Popularized in 1990s via **Ethernet** standards.
+   - Ethernet remains one of the most popular networking systems today.
+
+👉 **Star topology:** One machine (central focal point) connects to all others (Figure 59b).
+   - Roots in 1970s with large central computer serving many terminals.
+   - Today popular in wireless networks: central machine called **access point (AP)** coordinates communication.
+
+---
+
+**Important Vocabulary:**
+- PAN = Personal Area Network
+- LAN = Local Area Network
+- MAN = Metropolitan Area Network
+- WAN = Wide Area Network
+- Open network = public domain standards
+- Closed/proprietary network = owned, requires licenses
+- Topology = pattern of machine connections
+- Bus topology = common communication line
+- Star topology = central focal point (AP)
+- Ethernet = popular bus-based standard
+- TCP/IP = open protocol suite for Internet
+- Access point (AP) = central machine in wireless star
+
+---
+
+**Quick Revision Points:**
+- PAN: very short range (meters)
+- LAN: single building/campus
+- MAN: community-sized
+- WAN: cities/worldwide
+- Internet is open (TCP/IP free to use)
+- Proprietary networks require fees/licenses
+- Bus: all devices share one line (Ethernet)
+- Star: central device connects all others
+- Wireless star uses access point (AP)`,
+  questions: [
+    {
+      q: "A network used for short-range communication, typically less than a few meters, is called a:",
+      options: ["A. LAN", "B. MAN", "C. WAN", "D. PAN"],
+      answer: "D. PAN",
+      diff: "easy"
+    },
+    {
+      q: "A LAN (Local Area Network) normally consists of computers in:",
+      options: ["A. Different countries", "B. A single building or building complex", "C. A local community", "D. A smartphone and headset"],
+      answer: "B. A single building or building complex",
+      diff: "easy"
+    },
+    {
+      q: "A network spanning a local community is called a:",
+      options: ["A. PAN", "B. LAN", "C. MAN", "D. WAN"],
+      answer: "C. MAN",
+      diff: "easy"
+    },
+    {
+      q: "A WAN (Wide Area Network) links machines over:",
+      options: ["A. A few meters", "B. A single building", "C. A local community", "D. Great distances (neighboring cities or opposite sides of world)"],
+      answer: "D. Great distances (neighboring cities or opposite sides of world)",
+      diff: "easy"
+    },
+    {
+      q: "A network whose internal operation is based on designs in the public domain is called a(n):",
+      options: ["A. Closed network", "B. Proprietary network", "C. Open network", "D. Private network"],
+      answer: "C. Open network",
+      diff: "easy"
+    },
+    {
+      q: "A network whose innovations are owned and controlled by a particular entity is called a:",
+      options: ["A. Open network", "B. Closed or proprietary network", "C. Public network", "D. Free network"],
+      answer: "B. Closed or proprietary network",
+      diff: "easy"
+    },
+    {
+      q: "The Internet is an example of:",
+      options: ["A. A proprietary network", "B. A closed network", "C. An open system", "D. A PAN"],
+      answer: "C. An open system",
+      diff: "easy"
+    },
+    {
+      q: "Communication throughout the Internet is governed by the open collection of standards known as:",
+      options: ["A. Ethernet", "B. TCP/IP protocol suite", "C. Novell NetWare", "D. Wi-Fi"],
+      answer: "B. TCP/IP protocol suite",
+      diff: "easy"
+    },
+    {
+      q: "Anyone is free to use TCP/IP standards:",
+      options: ["A. Only after paying a license fee", "B. Only after signing an agreement", "C. Without paying fees or signing license agreements", "D. Only for non-commercial use"],
+      answer: "C. Without paying fees or signing license agreements",
+      diff: "easy"
+    },
+    {
+      q: "A company like Novell Inc. that develops proprietary systems can draw income by:",
+      options: ["A. Giving away their products for free", "B. Selling or leasing their products", "C. Open sourcing all code", "D. Donating to charities"],
+      answer: "B. Selling or leasing their products",
+      diff: "easy"
+    },
+    {
+      q: "The pattern in which machines are connected in a network is called the network's:",
+      options: ["A. Protocol", "B. Topology", "C. Architecture", "D. Medium"],
+      answer: "B. Topology",
+      diff: "easy"
+    },
+    {
+      q: "In a bus topology, all machines are connected to:",
+      options: ["A. A central server", "B. A common communication line called a bus", "C. Each other in a ring", "D. A wireless access point"],
+      answer: "B. A common communication line called a bus",
+      diff: "easy"
+    },
+    {
+      q: "In a star topology, one machine serves as:",
+      options: ["A. A bus", "B. A central focal point to which all others are connected", "C. A terminal", "D. A repeater"],
+      answer: "B. A central focal point to which all others are connected",
+      diff: "easy"
+    },
+    {
+      q: "The bus topology was popularized in the 1990s under a set of standards known as:",
+      options: ["A. TCP/IP", "B. Novell", "C. Ethernet", "D. Wi-Fi"],
+      answer: "C. Ethernet",
+      diff: "easy"
+    },
+    {
+      q: "Ethernet networks remain one of the most popular networking systems today and are based on which topology?",
+      options: ["A. Star", "B. Ring", "C. Bus", "D. Mesh"],
+      answer: "C. Bus",
+      diff: "medium"
+    },
+    {
+      q: "The star topology evolved from the paradigm of:",
+      options: ["A. Peer-to-peer computing", "B. A large central computer serving many users", "C. Wireless communication", "D. The Internet"],
+      answer: "B. A large central computer serving many users",
+      diff: "medium"
+    },
+    {
+      q: "In wireless networks, the central machine in a star topology is called the:",
+      options: ["A. Router", "B. Switch", "C. Access point (AP)", "D. Hub"],
+      answer: "C. Access point (AP)",
+      diff: "easy"
+    },
+    {
+      q: "Which network type would most likely connect computers in a single university campus?",
+      options: ["A. PAN", "B. LAN", "C. MAN", "D. WAN"],
+      answer: "B. LAN",
+      diff: "easy"
+    },
+    {
+      q: "A wireless mouse connected to a PC is an example of a:",
+      options: ["A. LAN", "B. MAN", "C. PAN", "D. WAN"],
+      answer: "C. PAN",
+      diff: "easy"
+    },
+    {
+      q: "Proprietary networks restrict applications by:",
+      options: ["A. Open standards", "B. License fees and contract conditions", "C. Free access", "D. Public domain"],
+      answer: "B. License fees and contract conditions",
+      diff: "easy"
+    }
+  ]
+},
+
+
+60: {
+  title: "Networking and the Internet: Protocols",
+  summary: `**Key Topics Covered:**
+- Protocols: rules for network activities
+- CSMA/CD (Carrier Sense Multiple Access with Collision Detection) for Ethernet bus networks
+- CSMA/CA (Collision Avoidance) for wireless networks
+- Hidden terminal problem
+- Request/acknowledge mechanism in WiFi
+
+---
+
+**Simple Understanding:**
+
+**What are Protocols?**
+👉 Rules that govern network activities.
+👉 Allow products from different vendors to be compatible.
+👉 Without protocols: chaos (all machines transmit at once, no coordination).
+
+---
+
+**CSMA/CD (Ethernet Bus Networks):**
+👉 Stands for: Carrier Sense, Multiple Access with Collision Detection.
+👉 How it works:
+   - Each message broadcast to all machines on bus.
+   - Machine keeps only messages addressed to itself.
+   - To transmit: wait until bus is silent, then start transmitting while monitoring.
+   - If two transmit at same time → both detect clash → pause for random time → retry.
+👉 Analogy: People in conversation – if two start talking, both stop and try again later.
+
+---
+
+**Why CSMA/CD doesn't work for wireless star networks:**
+👉 Machine may not detect collision because:
+   - Its own signal drowns out others.
+   - Hidden terminal problem: signals blocked by objects/distance, but both can reach AP.
+
+---
+
+**Hidden Terminal Problem:**
+👉 Two machines can both communicate with central AP but cannot hear each other.
+👉 They might transmit simultaneously → collide at AP without knowing.
+
+---
+
+**CSMA/CA (Collision Avoidance) for Wireless:**
+👉 Instead of detecting collisions, try to avoid them.
+👉 Basic difference from CSMA/CD:
+   - When channel is silent, machine does NOT start immediately.
+   - Waits a short period – only transmits if channel remained silent.
+   - If busy, waits random time before retry.
+   - After waiting, can claim silent channel without hesitation.
+👉 This avoids collisions between "newcomers" and waiting machines.
+
+---
+
+**Solving Hidden Terminal Problem (WiFi):**
+👉 Machine sends short "request" message to AP.
+👉 Waits for AP to acknowledge.
+   - If AP busy (hidden terminal transmitting) → ignores request → machine waits.
+   - If AP acknowledges → machine knows it's safe to transmit.
+👉 All machines hear AP's acknowledgments → know if AP is busy.
+
+---
+
+**Important Vocabulary:**
+- Protocol = set of rules for network communication
+- CSMA/CD = Collision Detection (Ethernet)
+- CSMA/CA = Collision Avoidance (wireless)
+- Hidden terminal = stations can't hear each other but both reach AP
+- Access Point (AP) = central wireless hub
+- Collision = two transmissions overlapping
+- Broadcast = send to all machines
+
+---
+
+**Quick Revision Points:**
+- Protocols ensure reliable network function.
+- Ethernet bus uses CSMA/CD (detect collisions, retry).
+- Wireless star uses CSMA/CA (avoid collisions, wait before transmit).
+- Hidden terminal problem: can't hear each other.
+- WiFi solution: request → ACK from AP → then transmit.`,
+  questions: [
+    {
+      q: "Rules that govern how activities are conducted on a network are called:",
+      options: ["A. Topologies", "B. Protocols", "C. Standards", "D. Algorithms"],
+      answer: "B. Protocols",
+      diff: "easy"
+    },
+    {
+      q: "The protocol used in Ethernet bus networks is:",
+      options: ["A. CSMA/CA", "B. TCP/IP", "C. CSMA/CD", "D. HTTP"],
+      answer: "C. CSMA/CD",
+      diff: "easy"
+    },
+    {
+      q: "CSMA/CD stands for:",
+      options: ["A. Carrier Sense, Multiple Access with Collision Detection", "B. Carrier Sense, Multiple Access with Collision Avoidance", "C. Carrier Signal Multiple Access with Collision Detection", "D. Clear Signal Multiple Access with Collision Detection"],
+      answer: "A. Carrier Sense, Multiple Access with Collision Detection",
+      diff: "medium"
+    },
+    {
+      q: "In CSMA/CD, if two machines transmit at the same time:",
+      options: ["A. Both continue transmitting", "B. Both detect the clash and pause for random time before retrying", "C. One wins automatically", "D. The network crashes"],
+      answer: "B. Both detect the clash and pause for random time before retrying",
+      diff: "easy"
+    },
+    {
+      q: "The CSMA/CD protocol is similar to:",
+      options: ["A. A single person talking", "B. A small group of people in conversation where two start talking, both stop", "C. A lecture hall", "D. A telephone call"],
+      answer: "B. A small group of people in conversation where two start talking, both stop",
+      diff: "easy"
+    },
+    {
+      q: "CSMA/CD is not compatible with wireless star networks because:",
+      options: ["A. Wireless is slower", "B. A machine may be unable to detect collisions", "C. Wireless uses different cables", "D. There is no bus"],
+      answer: "B. A machine may be unable to detect collisions",
+      diff: "medium"
+    },
+    {
+      q: "One reason a machine may not detect a collision in wireless is:",
+      options: ["A. The network is too fast", "B. Its own signal drowns out others", "C. No collisions occur in wireless", "D. The AP prevents collisions"],
+      answer: "B. Its own signal drowns out others",
+      diff: "medium"
+    },
+    {
+      q: "The condition where signals from different machines are blocked from each other even though they can both communicate with the central AP is called:",
+      options: ["A. Hidden terminal problem", "B. Collision detection", "C. Broadcast storm", "D. Packet loss"],
+      answer: "A. Hidden terminal problem",
+      diff: "easy"
+    },
+    {
+      q: "Wireless networks use a policy of trying to _____ collisions rather than detecting them.",
+      options: ["A. Detect", "B. Avoid", "C. Ignore", "D. Create"],
+      answer: "B. Avoid",
+      diff: "easy"
+    },
+    {
+      q: "The protocol used for collision avoidance in wireless networks is:",
+      options: ["A. CSMA/CD", "B. CSMA/CA", "C. TCP", "D. UDP"],
+      answer: "B. CSMA/CA",
+      diff: "easy"
+    },
+    {
+      q: "CSMA/CA stands for:",
+      options: ["A. Carrier Sense, Multiple Access with Collision Avoidance", "B. Carrier Sense, Multiple Access with Collision Detection", "C. Clear Signal Multiple Access with Collision Avoidance", "D. Carrier Sense Multiple Access with Collision Adjustment"],
+      answer: "A. Carrier Sense, Multiple Access with Collision Avoidance",
+      diff: "medium"
+    },
+    {
+      q: "In CSMA/CA, when a machine first needs to transmit and finds the channel silent, it:",
+      options: ["A. Transmits immediately", "B. Waits a short period, then transmits only if channel remained silent", "C. Sends a request to the AP first", "D. Assumes collision and waits randomly"],
+      answer: "B. Waits a short period, then transmits only if channel remained silent",
+      diff: "hard"
+    },
+    {
+      q: "In CSMA/CA, once a machine has waited and claims a silent channel, it:",
+      options: ["A. Still must wait again", "B. Can transmit without hesitation", "C. Must send a request", "D. Must detect collisions"],
+      answer: "B. Can transmit without hesitation",
+      diff: "medium"
+    },
+    {
+      q: "The hidden terminal problem is not solved by basic CSMA/CA because:",
+      options: ["A. CSMA/CA cannot distinguish between silent and busy channels", "B. The protocol requires each station to hear all others", "C. Wireless is too slow", "D. AP is not used"],
+      answer: "B. The protocol requires each station to hear all others",
+      diff: "hard"
+    },
+    {
+      q: "To solve the hidden terminal problem, some WiFi networks require each machine to:",
+      options: ["A. Transmit at full power", "B. Send a short request message to the AP and wait for acknowledgment", "C. Use CSMA/CD instead", "D. Connect via cable"],
+      answer: "B. Send a short request message to the AP and wait for acknowledgment",
+      diff: "medium"
+    },
+    {
+      q: "If the AP is busy due to a hidden terminal, it will:",
+      options: ["A. Acknowledge the request", "B. Ignore the request", "C. Forward the request", "D. Crash"],
+      answer: "B. Ignore the request",
+      diff: "easy"
+    },
+    {
+      q: "All machines in a WiFi network can hear:",
+      options: ["A. All other machines' transmissions directly", "B. Acknowledgments sent from the AP", "C. Only their own transmissions", "D. Nothing"],
+      answer: "B. Acknowledgments sent from the AP",
+      diff: "medium"
+    },
+    {
+      q: "The development of protocol standards is important because it:",
+      options: ["A. Makes networks slower", "B. Allows products from different vendors to be compatible", "C. Increases costs", "D. Limits innovation"],
+      answer: "B. Allows products from different vendors to be compatible",
+      diff: "easy"
+    },
+    {
+      q: "In a bus network based on Ethernet, each message is:",
+      options: ["A. Sent only to the destination", "B. Broadcast to all machines on the bus", "C. Encrypted", "D. Sent via the AP"],
+      answer: "B. Broadcast to all machines on the bus",
+      diff: "easy"
+    },
+    {
+      q: "A machine on an Ethernet bus keeps which messages?",
+      options: ["A. All messages", "B. Only those addressed to itself", "C. Only broadcast messages", "D. None"],
+      answer: "B. Only those addressed to itself",
+      diff: "easy"
+    }
+  ]
+},
+
+
+
 
   },
 
