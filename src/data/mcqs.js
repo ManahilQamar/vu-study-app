@@ -21632,7 +21632,3414 @@ CPUs have two privilege levels:
   ]
 },
 
+61: {
+  title: "Networking and the Internet: Methods of Process Communication",
+  summary: `**Key Topics Covered:**
+- Inter-process communication (IPC)
+- Client/server model (print server, file server)
+- Peer-to-peer (P2P) model
+- Swarm distribution
+- Distinction between P2P model and P2P network (terminology clarification)
 
+---
+
+**Simple Understanding:**
+
+**Inter-Process Communication (IPC):**
+👉 Processes on different computers (or same computer via multitasking) must coordinate.
+👉 Two main models: Client/Server and Peer-to-Peer (P2P).
+
+---
+
+**Client/Server Model:**
+👉 **Client:** Makes requests of other processes.
+👉 **Server:** Satisfies requests made by clients.
+👉 Server must execute continuously to be ready for clients.
+
+**Early Examples:**
+- **Print server:** One high-quality printer attached to network, other machines (clients) send print requests.
+- **File server:** One machine with mass storage (disk) containing all records; other machines request access to files.
+
+---
+
+**Peer-to-Peer (P2P) Model:**
+👉 Processes provide service to AND receive service from each other.
+👉 Processes execute on temporary basis (not continuously running like servers).
+
+**Examples:**
+- Instant messaging (written conversation over Internet)
+- Competitive interactive games
+
+**File Distribution (Swarm):**
+👉 One peer receives a file from another, then provides it to other peers.
+👉 Collection of peers = **swarm**.
+👉 Distributes service task over many peers (more efficient than central server).
+
+---
+
+**Legal Note:**
+👉 Lack of central server makes copyright enforcement difficult, but not impossible.
+👉 Individuals have faced significant liabilities for copyright infringement.
+
+---
+
+**Terminology Clarification:**
+👉 "Peer-to-peer network" is misuse of terminology.
+👉 P2P is a **communication model** (property of process communication), not a property of the network.
+👉 A process can use P2P model for one communication and client/server for another over the same network.
+👉 Better to say: communicating by means of the peer-to-peer model.
+
+---
+
+**Important Vocabulary:**
+- Inter-process communication (IPC) = communication between processes
+- Client = process that makes requests
+- Server = process that satisfies requests
+- Print server = server for printing
+- File server = server for file storage/access
+- Peer-to-peer (P2P) = processes serve each other
+- Swarm = collection of peers sharing files
+
+---
+
+**Quick Revision Points:**
+- Client/server: server provides service, clients request.
+- Server must run continuously; clients run temporarily.
+- P2P: processes are both clients and servers.
+- P2P is temporary, decentralized.
+- Swarm distributes files efficiently.
+- P2P model ≠ P2P network (terminology correction).`,
+  questions: [
+    {
+      q: "Communication between processes is called:",
+      options: ["A. Inter-process communication", "B. Intra-process communication", "C. Network communication", "D. System communication"],
+      answer: "A. Inter-process communication",
+      diff: "easy"
+    },
+    {
+      q: "In the client/server model, a process that makes requests of other processes is called a:",
+      options: ["A. Server", "B. Client", "C. Peer", "D. Host"],
+      answer: "B. Client",
+      diff: "easy"
+    },
+    {
+      q: "In the client/server model, a process that satisfies requests made by clients is called a:",
+      options: ["A. Client", "B. Peer", "C. Server", "D. Node"],
+      answer: "C. Server",
+      diff: "easy"
+    },
+    {
+      q: "An early application of the client/server model was a single high-quality printer attached to a network. The printer played the role of a:",
+      options: ["A. Client", "B. Print server", "C. File server", "D. Peer"],
+      answer: "B. Print server",
+      diff: "easy"
+    },
+    {
+      q: "In the print server example, the other machines on the network that sent print requests played the role of:",
+      options: ["A. Servers", "B. Clients", "C. Peers", "D. Swarms"],
+      answer: "B. Clients",
+      diff: "easy"
+    },
+    {
+      q: "A machine equipped with a high-capacity mass storage system containing an organization's records, providing access to other machines, is called a:",
+      options: ["A. Print server", "B. File server", "C. Client", "D. Peer"],
+      answer: "B. File server",
+      diff: "easy"
+    },
+    {
+      q: "In the client/server model, the server must:",
+      options: ["A. Execute only when requested", "B. Execute continuously to be prepared to serve clients", "C. Execute only at night", "D. Never execute"],
+      answer: "B. Execute continuously to be prepared to serve clients",
+      diff: "medium"
+    },
+    {
+      q: "The peer-to-peer (P2P) model involves processes that:",
+      options: ["A. Only provide service", "B. Only receive service", "C. Provide service to and receive service from each other", "D. Do not communicate"],
+      answer: "C. Provide service to and receive service from each other",
+      diff: "easy"
+    },
+    {
+      q: "In the peer-to-peer model, processes typically execute:",
+      options: ["A. Continuously", "B. On a temporary basis", "C. Only as servers", "D. Only as clients"],
+      answer: "B. On a temporary basis",
+      diff: "medium"
+    },
+    {
+      q: "Examples of peer-to-peer applications include:",
+      options: ["A. Print server", "B. File server", "C. Instant messaging and competitive interactive games", "D. Centralized database"],
+      answer: "C. Instant messaging and competitive interactive games",
+      diff: "easy"
+    },
+    {
+      q: "In P2P file distribution, a collection of participating peers is sometimes called a:",
+      options: ["A. Cluster", "B. Swarm", "C. Network", "D. Group"],
+      answer: "B. Swarm",
+      diff: "easy"
+    },
+    {
+      q: "The swarm approach to file distribution is in contrast to the client/server model because it:",
+      options: ["A. Uses a central distribution center", "B. Distributes the service task over many peers", "C. Requires a single server", "D. Is slower"],
+      answer: "B. Distributes the service task over many peers",
+      diff: "medium"
+    },
+    {
+      q: "One reason the P2P model is replacing the client/server model for file sharing is:",
+      options: ["A. It is more centralized", "B. It leads to a more efficient system due to lack of centralized base", "C. It is easier to control", "D. It requires less software"],
+      answer: "B. It leads to a more efficient system due to lack of centralized base",
+      diff: "medium"
+    },
+    {
+      q: "The lack of a central server in P2P file distribution makes copyright enforcement:",
+      options: ["A. Easier", "B. More difficult, but not impossible", "C. Impossible", "D. Automatic"],
+      answer: "B. More difficult, but not impossible",
+      diff: "easy"
+    },
+    {
+      q: "The term 'peer-to-peer network' is considered:",
+      options: ["A. Accurate technical terminology", "B. A misuse of terminology", "C. The only correct term", "D. A hardware standard"],
+      answer: "B. A misuse of terminology",
+      diff: "medium"
+    },
+    {
+      q: "Peer-to-peer refers to a property of:",
+      options: ["A. The network", "B. Process communication", "C. The physical cables", "D. The router"],
+      answer: "B. Process communication",
+      diff: "medium"
+    },
+    {
+      q: "A process might use the P2P model for one communication and the client/server model for another communication:",
+      options: ["A. Only on different networks", "B. Over the same network", "C. Never", "D. Only on the Internet"],
+      answer: "B. Over the same network",
+      diff: "hard"
+    },
+    {
+      q: "It would be more accurate to speak of:",
+      options: ["A. Peer-to-peer network", "B. Communicating by means of the peer-to-peer model", "C. Peer-to-peer hardware", "D. P2P cabling"],
+      answer: "B. Communicating by means of the peer-to-peer model",
+      diff: "easy"
+    },
+    {
+      q: "In a file distribution swarm, one peer receives a file from another and then:",
+      options: ["A. Deletes it", "B. Provides it to other peers", "C. Keeps it secret", "D. Sends it only to the server"],
+      answer: "B. Provides it to other peers",
+      diff: "easy"
+    },
+    {
+      q: "Which model requires a process to execute continuously to be ready to serve?",
+      options: ["A. Peer-to-peer model", "B. Client/server model (the server)", "C. Swarm model", "D. Both A and B"],
+      answer: "B. Client/server model (the server)",
+      diff: "easy"
+    }
+  ]
+},
+
+
+61: {
+  title: "Networking and the Internet: Methods of Process Communication",
+  summary: `**Key Topics Covered:**
+- Inter-process communication (IPC)
+- Client/server model (print server, file server)
+- Peer-to-peer (P2P) model
+- Swarm distribution
+- Distinction between P2P model and P2P network (terminology clarification)
+
+---
+
+**Simple Understanding:**
+
+**Inter-Process Communication (IPC):**
+👉 Processes on different computers (or same computer via multitasking) must coordinate.
+👉 Two main models: Client/Server and Peer-to-Peer (P2P).
+
+---
+
+**Client/Server Model:**
+👉 **Client:** Makes requests of other processes.
+👉 **Server:** Satisfies requests made by clients.
+👉 Server must execute continuously to be ready for clients.
+
+**Early Examples:**
+- **Print server:** One high-quality printer attached to network, other machines (clients) send print requests.
+- **File server:** One machine with mass storage (disk) containing all records; other machines request access to files.
+
+---
+
+**Peer-to-Peer (P2P) Model:**
+👉 Processes provide service to AND receive service from each other.
+👉 Processes execute on temporary basis (not continuously running like servers).
+
+**Examples:**
+- Instant messaging (written conversation over Internet)
+- Competitive interactive games
+
+**File Distribution (Swarm):**
+👉 One peer receives a file from another, then provides it to other peers.
+👉 Collection of peers = **swarm**.
+👉 Distributes service task over many peers (more efficient than central server).
+
+---
+
+**Legal Note:**
+👉 Lack of central server makes copyright enforcement difficult, but not impossible.
+👉 Individuals have faced significant liabilities for copyright infringement.
+
+---
+
+**Terminology Clarification:**
+👉 "Peer-to-peer network" is misuse of terminology.
+👉 P2P is a **communication model** (property of process communication), not a property of the network.
+👉 A process can use P2P model for one communication and client/server for another over the same network.
+👉 Better to say: communicating by means of the peer-to-peer model.
+
+---
+
+**Important Vocabulary:**
+- Inter-process communication (IPC) = communication between processes
+- Client = process that makes requests
+- Server = process that satisfies requests
+- Print server = server for printing
+- File server = server for file storage/access
+- Peer-to-peer (P2P) = processes serve each other
+- Swarm = collection of peers sharing files
+
+---
+
+**Quick Revision Points:**
+- Client/server: server provides service, clients request.
+- Server must run continuously; clients run temporarily.
+- P2P: processes are both clients and servers.
+- P2P is temporary, decentralized.
+- Swarm distributes files efficiently.
+- P2P model ≠ P2P network (termination correction).`,
+  questions: [
+    {
+      q: "Communication between processes is called:",
+      options: ["A. Inter-process communication", "B. Intra-process communication", "C. Network communication", "D. System communication"],
+      answer: "A. Inter-process communication",
+      diff: "easy"
+    },
+    {
+      q: "In the client/server model, a process that makes requests of other processes is called a:",
+      options: ["A. Server", "B. Client", "C. Peer", "D. Host"],
+      answer: "B. Client",
+      diff: "easy"
+    },
+    {
+      q: "In the client/server model, a process that satisfies requests made by clients is called a:",
+      options: ["A. Client", "B. Peer", "C. Server", "D. Node"],
+      answer: "C. Server",
+      diff: "easy"
+    },
+    {
+      q: "An early application of the client/server model was a single high-quality printer attached to a network. The printer played the role of a:",
+      options: ["A. Client", "B. Print server", "C. File server", "D. Peer"],
+      answer: "B. Print server",
+      diff: "easy"
+    },
+    {
+      q: "In the print server example, the other machines on the network that sent print requests played the role of:",
+      options: ["A. Servers", "B. Clients", "C. Peers", "D. Swarms"],
+      answer: "B. Clients",
+      diff: "easy"
+    },
+    {
+      q: "A machine equipped with a high-capacity mass storage system containing an organization's records, providing access to other machines, is called a:",
+      options: ["A. Print server", "B. File server", "C. Client", "D. Peer"],
+      answer: "B. File server",
+      diff: "easy"
+    },
+    {
+      q: "In the client/server model, the server must:",
+      options: ["A. Execute only when requested", "B. Execute continuously to be prepared to serve clients", "C. Execute only at night", "D. Never execute"],
+      answer: "B. Execute continuously to be prepared to serve clients",
+      diff: "medium"
+    },
+    {
+      q: "The peer-to-peer (P2P) model involves processes that:",
+      options: ["A. Only provide service", "B. Only receive service", "C. Provide service to and receive service from each other", "D. Do not communicate"],
+      answer: "C. Provide service to and receive service from each other",
+      diff: "easy"
+    },
+    {
+      q: "In the peer-to-peer model, processes typically execute:",
+      options: ["A. Continuously", "B. On a temporary basis", "C. Only as servers", "D. Only as clients"],
+      answer: "B. On a temporary basis",
+      diff: "medium"
+    },
+    {
+      q: "Examples of peer-to-peer applications include:",
+      options: ["A. Print server", "B. File server", "C. Instant messaging and competitive interactive games", "D. Centralized database"],
+      answer: "C. Instant messaging and competitive interactive games",
+      diff: "easy"
+    },
+    {
+      q: "In P2P file distribution, a collection of participating peers is sometimes called a:",
+      options: ["A. Cluster", "B. Swarm", "C. Network", "D. Group"],
+      answer: "B. Swarm",
+      diff: "easy"
+    },
+    {
+      q: "The swarm approach to file distribution is in contrast to the client/server model because it:",
+      options: ["A. Uses a central distribution center", "B. Distributes the service task over many peers", "C. Requires a single server", "D. Is slower"],
+      answer: "B. Distributes the service task over many peers",
+      diff: "medium"
+    },
+    {
+      q: "One reason the P2P model is replacing the client/server model for file sharing is:",
+      options: ["A. It is more centralized", "B. It leads to a more efficient system due to lack of centralized base", "C. It is easier to control", "D. It requires less software"],
+      answer: "B. It leads to a more efficient system due to lack of centralized base",
+      diff: "medium"
+    },
+    {
+      q: "The lack of a central server in P2P file distribution makes copyright enforcement:",
+      options: ["A. Easier", "B. More difficult, but not impossible", "C. Impossible", "D. Automatic"],
+      answer: "B. More difficult, but not impossible",
+      diff: "easy"
+    },
+    {
+      q: "The term 'peer-to-peer network' is considered:",
+      options: ["A. Accurate technical terminology", "B. A misuse of terminology", "C. The only correct term", "D. A hardware standard"],
+      answer: "B. A misuse of terminology",
+      diff: "medium"
+    },
+    {
+      q: "Peer-to-peer refers to a property of:",
+      options: ["A. The network", "B. Process communication", "C. The physical cables", "D. The router"],
+      answer: "B. Process communication",
+      diff: "medium"
+    },
+    {
+      q: "A process might use the P2P model for one communication and the client/server model for another communication:",
+      options: ["A. Only on different networks", "B. Over the same network", "C. Never", "D. Only on the Internet"],
+      answer: "B. Over the same network",
+      diff: "hard"
+    },
+    {
+      q: "It would be more accurate to speak of:",
+      options: ["A. Peer-to-peer network", "B. Communicating by means of the peer-to-peer model", "C. Peer-to-peer hardware", "D. P2P cabling"],
+      answer: "B. Communicating by means of the peer-to-peer model",
+      diff: "easy"
+    },
+    {
+      q: "In a file distribution swarm, one peer receives a file from another and then:",
+      options: ["A. Deletes it", "B. Provides it to other peers", "C. Keeps it secret", "D. Sends it only to the server"],
+      answer: "B. Provides it to other peers",
+      diff: "easy"
+    },
+    {
+      q: "Which model requires a process to execute continuously to be ready to serve?",
+      options: ["A. Peer-to-peer model", "B. Client/server model (the server)", "C. Swarm model", "D. Both A and B"],
+      answer: "B. Client/server model (the server)",
+      diff: "easy"
+    }
+  ]
+},
+
+
+62: {
+  title: "Networking and the Internet: Distributed Systems",
+  summary: `**Key Topics Covered:**
+- Distributed systems definition and infrastructure
+- Cluster computing (high-availability, load-balancing)
+- Grid computing (Condor, BOINC, volunteer computing)
+- Cloud computing (Elastic Compute Cloud, Google Drive/Apps)
+- Privacy and security concerns
+
+---
+
+**Simple Understanding:**
+
+**What are Distributed Systems?**
+👉 Software systems consisting of units executing as processes on different computers.
+👉 Examples: global information retrieval, accounting/inventory systems, computer games, network infrastructure.
+👉 Early systems built from scratch; today common infrastructure (communication, security) can be reused.
+
+---
+
+**Types of Distributed Systems:**
+
+**1. Cluster Computing:**
+👉 Many independent computers work closely together to provide computation/service comparable to a much larger machine.
+👉 Benefits:
+   - Lower cost than supercomputer
+   - Higher reliability, lower maintenance
+   - **High-availability:** at least one member can answer even if others fail
+   - **Load-balancing:** workload shifts automatically from busy to idle members
+
+**2. Grid Computing:**
+👉 More loosely coupled than clusters, but work together on large tasks.
+👉 Specialized software distributes data and algorithms.
+👉 Examples:
+   - University of Wisconsin's Condor
+   - Berkeley's BOINC (Open Infrastructure for Network Computing)
+👉 Often installed on PCs used for other purposes – volunteer computing power when idle.
+👉 Enabled millions of home PCs to work on complex math/science problems.
+
+**3. Cloud Computing:**
+👉 Latest trend – huge pools of shared computers on network allocated to clients as needed.
+👉 Analogy: electrical grids eliminated need for individual generators.
+👉 Internet allows entities to entrust data/computations to "the Cloud" (enormous resources already on network).
+👉 Examples:
+   - Amazon Elastic Compute Cloud (rent virtual computers by the hour)
+   - Google Drive, Google Apps (collaborate without knowing hardware location)
+👉 Provides reliability and scalability guarantees.
+
+---
+
+**Concerns:**
+👉 Privacy and security – may not know who owns/operates computers we use.
+
+---
+
+**Important Vocabulary:**
+- Distributed system = software units on different computers
+- Cluster computing = tightly coupled independent computers
+- High-availability = system remains operational despite failures
+- Load-balancing = distributing workload evenly
+- Grid computing = loosely coupled, volunteer computing
+- BOINC = Berkeley Open Infrastructure for Network Computing
+- Cloud computing = shared pool of resources on demand
+- Scalability = ability to handle growing workload
+
+---
+
+**Quick Revision Points:**
+- Distributed systems: processes on different computers.
+- Cluster: tight coupling, high-availability, load-balancing.
+- Grid: loose coupling, volunteer computing (Condor, BOINC).
+- Cloud: on-demand resources, rent by hour (Amazon, Google).
+- Cloud raises privacy/security concerns.`,
+  questions: [
+    {
+      q: "A software system consisting of units that execute as processes on different computers is called a:",
+      options: ["A. Centralized system", "B. Distributed system", "C. Standalone system", "D. Batch system"],
+      answer: "B. Distributed system",
+      diff: "easy"
+    },
+    {
+      q: "Early distributed systems were developed:",
+      options: ["A. Using prefabricated components", "B. Independently from scratch", "C. Only by cloud providers", "D. Without any infrastructure"],
+      answer: "B. Independently from scratch",
+      diff: "easy"
+    },
+    {
+      q: "Today, research reveals that distributed systems share common infrastructure including:",
+      options: ["A. Only storage", "B. Communication and security systems", "C. Only processing", "D. Only networking"],
+      answer: "B. Communication and security systems",
+      diff: "easy"
+    },
+    {
+      q: "A distributed system in which many independent computers work closely together to provide computation comparable to a much larger machine is called:",
+      options: ["A. Grid computing", "B. Cloud computing", "C. Cluster computing", "D. Edge computing"],
+      answer: "C. Cluster computing",
+      diff: "easy"
+    },
+    {
+      q: "Cluster computing can provide lower cost than a supercomputer, plus:",
+      options: ["A. Lower reliability", "B. Higher reliability and lower maintenance costs", "C. Higher maintenance costs", "D. Lower availability"],
+      answer: "B. Higher reliability and lower maintenance costs",
+      diff: "easy"
+    },
+    {
+      q: "The property that at least one member of a cluster can answer a request even if others break down is called:",
+      options: ["A. Load-balancing", "B. High-availability", "C. Scalability", "D. Fault tolerance"],
+      answer: "B. High-availability",
+      diff: "medium"
+    },
+    {
+      q: "The ability to shift workload automatically from busy cluster members to idle ones is called:",
+      options: ["A. High-availability", "B. Load-balancing", "C. Grid computing", "D. Virtualization"],
+      answer: "B. Load-balancing",
+      diff: "easy"
+    },
+    {
+      q: "Grid computing refers to distributed systems that are:",
+      options: ["A. More tightly coupled than clusters", "B. More loosely coupled than clusters", "C. Exactly the same as clusters", "D. Only used for databases"],
+      answer: "B. More loosely coupled than clusters",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is an example of grid computing software?",
+      options: ["A. Amazon EC2", "B. University of Wisconsin's Condor", "C. Google Drive", "D. Windows OS"],
+      answer: "B. University of Wisconsin's Condor",
+      diff: "medium"
+    },
+    {
+      q: "BOINC stands for:",
+      options: ["A. Berkeley Open Infrastructure for Network Computing", "B. Basic Online Internet Computing", "C. Binary Object Internet Network Computing", "D. Berkeley Online Interactive Computing"],
+      answer: "A. Berkeley Open Infrastructure for Network Computing",
+      diff: "hard"
+    },
+    {
+      q: "Grid computing often uses computers that are normally used for other purposes, which is called:",
+      options: ["A. Dedicated computing", "B. Volunteer computing", "C. Paid computing", "D. Centralized computing"],
+      answer: "B. Volunteer computing",
+      diff: "easy"
+    },
+    {
+      q: "The latest trend in distributed systems, where huge pools of shared computers on the network can be allocated to clients as needed, is called:",
+      options: ["A. Cluster computing", "B. Grid computing", "C. Cloud computing", "D. Mainframe computing"],
+      answer: "C. Cloud computing",
+      diff: "easy"
+    },
+    {
+      q: "The analogy used for cloud computing is:",
+      options: ["A. Telephone networks", "B. Metropolitan electrical grids", "C. Water supply systems", "D. Road networks"],
+      answer: "B. Metropolitan electrical grids",
+      diff: "medium"
+    },
+    {
+      q: "Amazon's Elastic Compute Cloud allows clients to:",
+      options: ["A. Buy physical servers", "B. Rent virtual computers by the hour", "C. Lease network cables", "D. Purchase software licenses"],
+      answer: "B. Rent virtual computers by the hour",
+      diff: "easy"
+    },
+    {
+      q: "Google Drive and Google Apps allow users to collaborate without knowing:",
+      options: ["A. Their passwords", "B. How many computers work on the problem or where data is stored", "C. The cost", "D. The internet speed"],
+      answer: "B. How many computers work on the problem or where data is stored",
+      diff: "medium"
+    },
+    {
+      q: "Cloud computing services provide reasonable guarantees of:",
+      options: ["A. Only reliability", "B. Only scalability", "C. Reliability and scalability", "D. Only privacy"],
+      answer: "C. Reliability and scalability",
+      diff: "easy"
+    },
+    {
+      q: "A major concern raised by cloud computing is:",
+      options: ["A. High cost", "B. Privacy and security", "C. Slow speed", "D. Lack of internet"],
+      answer: "B. Privacy and security",
+      diff: "easy"
+    },
+    {
+      q: "The cloud refers to:",
+      options: ["A. Weather forecasting systems", "B. Enormous computing resources already available on the network", "C. A type of storage device", "D. A programming language"],
+      answer: "B. Enormous computing resources already available on the network",
+      diff: "easy"
+    },
+    {
+      q: "In cloud computing, we may no longer know:",
+      options: ["A. How to use the computer", "B. Who owns and operates the computers we use", "C. The operating system", "D. The price"],
+      answer: "B. Who owns and operates the computers we use",
+      diff: "easy"
+    },
+    {
+      q: "Which type of distributed system is most tightly coupled?",
+      options: ["A. Cloud computing", "B. Grid computing", "C. Cluster computing", "D. Peer-to-peer computing"],
+      answer: "C. Cluster computing",
+      diff: "medium"
+    }
+  ]
+},
+
+63: {
+  title: "Networking and the Internet: Distributed Systems",
+  summary: `**Key Topics Covered:**
+- Distributed systems definition and infrastructure
+- Cluster computing (high-availability, load-balancing)
+- Grid computing (Condor, BOINC, volunteer computing)
+- Cloud computing (Elastic Compute Cloud, Google Drive/Apps)
+- Privacy and security concerns
+
+---
+
+**Simple Understanding:**
+
+**What are Distributed Systems?**
+👉 Software systems consisting of units executing as processes on different computers.
+👉 Examples: global information retrieval, accounting/inventory systems, computer games, network infrastructure.
+👉 Early systems built from scratch; today common infrastructure (communication, security) can be reused.
+
+---
+
+**Types of Distributed Systems:**
+
+**1. Cluster Computing:**
+👉 Many independent computers work closely together to provide computation/service comparable to a much larger machine.
+👉 Benefits:
+   - Lower cost than supercomputer
+   - Higher reliability, lower maintenance
+   - **High-availability:** at least one member can answer even if others fail
+   - **Load-balancing:** workload shifts automatically from busy to idle members
+
+**2. Grid Computing:**
+👉 More loosely coupled than clusters, but work together on large tasks.
+👉 Specialized software distributes data and algorithms.
+👉 Examples:
+   - University of Wisconsin's Condor
+   - Berkeley's BOINC (Open Infrastructure for Network Computing)
+👉 Often installed on PCs used for other purposes – volunteer computing power when idle.
+👉 Enabled millions of home PCs to work on complex math/science problems.
+
+**3. Cloud Computing:**
+👉 Latest trend – huge pools of shared computers on network allocated to clients as needed.
+👉 Analogy: electrical grids eliminated need for individual generators.
+👉 Internet allows entities to entrust data/computations to "the Cloud" (enormous resources already on network).
+👉 Examples:
+   - Amazon Elastic Compute Cloud (rent virtual computers by the hour)
+   - Google Drive, Google Apps (collaborate without knowing hardware location)
+👉 Provides reliability and scalability guarantees.
+
+---
+
+**Concerns:**
+👉 Privacy and security – may not know who owns/operates computers we use.
+
+---
+
+**Important Vocabulary:**
+- Distributed system = software units on different computers
+- Cluster computing = tightly coupled independent computers
+- High-availability = system remains operational despite failures
+- Load-balancing = distributing workload evenly
+- Grid computing = loosely coupled, volunteer computing
+- BOINC = Berkeley Open Infrastructure for Network Computing
+- Cloud computing = shared pool of resources on demand
+- Scalability = ability to handle growing workload
+
+---
+
+**Quick Revision Points:**
+- Distributed systems: processes on different computers.
+- Cluster: tight coupling, high-availability, load-balancing.
+- Grid: loose coupling, volunteer computing (Condor, BOINC).
+- Cloud: on-demand resources, rent by hour (Amazon, Google).
+- Cloud raises privacy/security concerns.`,
+  questions: [
+    {
+      q: "A software system consisting of units that execute as processes on different computers is called a:",
+      options: ["A. Centralized system", "B. Distributed system", "C. Standalone system", "D. Batch system"],
+      answer: "B. Distributed system",
+      diff: "easy"
+    },
+    {
+      q: "Early distributed systems were developed:",
+      options: ["A. Using prefabricated components", "B. Independently from scratch", "C. Only by cloud providers", "D. Without any infrastructure"],
+      answer: "B. Independently from scratch",
+      diff: "easy"
+    },
+    {
+      q: "Today, research reveals that distributed systems share common infrastructure including:",
+      options: ["A. Only storage", "B. Communication and security systems", "C. Only processing", "D. Only networking"],
+      answer: "B. Communication and security systems",
+      diff: "easy"
+    },
+    {
+      q: "A distributed system in which many independent computers work closely together to provide computation comparable to a much larger machine is called:",
+      options: ["A. Grid computing", "B. Cloud computing", "C. Cluster computing", "D. Edge computing"],
+      answer: "C. Cluster computing",
+      diff: "easy"
+    },
+    {
+      q: "Cluster computing can provide lower cost than a supercomputer, plus:",
+      options: ["A. Lower reliability", "B. Higher reliability and lower maintenance costs", "C. Higher maintenance costs", "D. Lower availability"],
+      answer: "B. Higher reliability and lower maintenance costs",
+      diff: "easy"
+    },
+    {
+      q: "The property that at least one member of a cluster can answer a request even if others break down is called:",
+      options: ["A. Load-balancing", "B. High-availability", "C. Scalability", "D. Fault tolerance"],
+      answer: "B. High-availability",
+      diff: "medium"
+    },
+    {
+      q: "The ability to shift workload automatically from busy cluster members to idle ones is called:",
+      options: ["A. High-availability", "B. Load-balancing", "C. Grid computing", "D. Virtualization"],
+      answer: "B. Load-balancing",
+      diff: "easy"
+    },
+    {
+      q: "Grid computing refers to distributed systems that are:",
+      options: ["A. More tightly coupled than clusters", "B. More loosely coupled than clusters", "C. Exactly the same as clusters", "D. Only used for databases"],
+      answer: "B. More loosely coupled than clusters",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is an example of grid computing software?",
+      options: ["A. Amazon EC2", "B. University of Wisconsin's Condor", "C. Google Drive", "D. Windows OS"],
+      answer: "B. University of Wisconsin's Condor",
+      diff: "medium"
+    },
+    {
+      q: "BOINC stands for:",
+      options: ["A. Berkeley Open Infrastructure for Network Computing", "B. Basic Online Internet Computing", "C. Binary Object Internet Network Computing", "D. Berkeley Online Interactive Computing"],
+      answer: "A. Berkeley Open Infrastructure for Network Computing",
+      diff: "hard"
+    },
+    {
+      q: "Grid computing often uses computers that are normally used for other purposes, which is called:",
+      options: ["A. Dedicated computing", "B. Volunteer computing", "C. Paid computing", "D. Centralized computing"],
+      answer: "B. Volunteer computing",
+      diff: "easy"
+    },
+    {
+      q: "The latest trend in distributed systems, where huge pools of shared computers on the network can be allocated to clients as needed, is called:",
+      options: ["A. Cluster computing", "B. Grid computing", "C. Cloud computing", "D. Mainframe computing"],
+      answer: "C. Cloud computing",
+      diff: "easy"
+    },
+    {
+      q: "The analogy used for cloud computing is:",
+      options: ["A. Telephone networks", "B. Metropolitan electrical grids", "C. Water supply systems", "D. Road networks"],
+      answer: "B. Metropolitan electrical grids",
+      diff: "medium"
+    },
+    {
+      q: "Amazon's Elastic Compute Cloud allows clients to:",
+      options: ["A. Buy physical servers", "B. Rent virtual computers by the hour", "C. Lease network cables", "D. Purchase software licenses"],
+      answer: "B. Rent virtual computers by the hour",
+      diff: "easy"
+    },
+    {
+      q: "Google Drive and Google Apps allow users to collaborate without knowing:",
+      options: ["A. Their passwords", "B. How many computers work on the problem or where data is stored", "C. The cost", "D. The internet speed"],
+      answer: "B. How many computers work on the problem or where data is stored",
+      diff: "medium"
+    },
+    {
+      q: "Cloud computing services provide reasonable guarantees of:",
+      options: ["A. Only reliability", "B. Only scalability", "C. Reliability and scalability", "D. Only privacy"],
+      answer: "C. Reliability and scalability",
+      diff: "easy"
+    },
+    {
+      q: "A major concern raised by cloud computing is:",
+      options: ["A. High cost", "B. Privacy and security", "C. Slow speed", "D. Lack of internet"],
+      answer: "B. Privacy and security",
+      diff: "easy"
+    },
+    {
+      q: "The cloud refers to:",
+      options: ["A. Weather forecasting systems", "B. Enormous computing resources already available on the network", "C. A type of storage device", "D. A programming language"],
+      answer: "B. Enormous computing resources already available on the network",
+      diff: "easy"
+    },
+    {
+      q: "In cloud computing, we may no longer know:",
+      options: ["A. How to use the computer", "B. Who owns and operates the computers we use", "C. The operating system", "D. The price"],
+      answer: "B. Who owns and operates the computers we use",
+      diff: "easy"
+    },
+    {
+      q: "Which type of distributed system is most tightly coupled?",
+      options: ["A. Cloud computing", "B. Grid computing", "C. Cluster computing", "D. Peer-to-peer computing"],
+      answer: "C. Cluster computing",
+      diff: "medium"
+    }
+  ]
+},
+
+64: {
+  title: "Networking and the Internet: Internet Architecture",
+  summary: `**Key Topics Covered:**
+- Internet as collection of connected networks
+- ISP (Internet Service Provider) hierarchy
+- Tier-1 ISPs (backbone, international WANs)
+- Tier-2 ISPs (regional)
+- Tier-3 / Access ISPs (intranets, provide access to homes/businesses)
+- End systems / hosts (laptops, phones, appliances)
+- WiFi and hotspots
+- Cellular networks and cells
+
+---
+
+**Simple Understanding:**
+
+**Internet Structure:**
+👉 The Internet is a collection of connected networks operated by ISPs.
+👉 ISPs can be classified in a hierarchy based on their role.
+
+---
+
+**Tier-1 ISPs (Top Level):**
+👉 Very high-speed, high-capacity, international WANs.
+👉 Form the backbone of the Internet.
+👉 Operated by large communications companies (e.g., former telephone companies).
+
+**Tier-2 ISPs:**
+👉 More regional in scope, less potent than tier-1.
+👉 Connect to tier-1 ISPs.
+👉 Also operated by communications companies.
+
+**Tier-3 / Access ISPs:**
+👉 Provide access to the core Internet for individuals and businesses.
+👉 Essentially independent internets (intranets) operated by single authority.
+👉 Examples: cable companies, telephone companies, universities, corporations.
+
+---
+
+**End Systems (Hosts):**
+👉 Devices that individual users connect to access ISPs.
+👉 Examples: laptops, PCs, telephones, video cameras, automobiles, home appliances.
+👉 Any device that benefits from communication is a potential end system.
+
+---
+
+**Connection Technologies:**
+
+**WiFi (Wireless Fidelity):**
+👉 Connect AP (Access Point) to an access ISP.
+👉 Provides Internet access to end systems within AP's broadcast range.
+👉 Area within range = **hot spot** (especially when publicly available or free).
+👉 Hot spots found in homes, hotels, offices, parks, even entire cities.
+
+**Cellular Networks:**
+👉 Similar technology used by cellular telephone industry.
+👉 Hot spots are called **cells**.
+👉 "Routers" generating cells coordinate to provide continuous service as end system moves from cell to cell.
+
+---
+
+**Important Vocabulary:**
+- ISP = Internet Service Provider
+- Tier-1 ISP = backbone, international
+- Tier-2 ISP = regional
+- Access ISP (tier-3) = provides access to homes/businesses
+- End system / host = user device
+- WiFi = wireless technology
+- Access Point (AP) = WiFi hub
+- Hot spot = area with WiFi access
+- Cell = cellular network's coverage area
+
+---
+
+**Quick Revision Points:**
+- Internet hierarchy: Tier-1 (backbone) → Tier-2 (regional) → Tier-3 (access) → end systems.
+- Access ISPs include cable, telephone companies, universities.
+- End systems: any communicating device.
+- WiFi: AP connected to access ISP creates hot spot.
+- Cellular: cells provide seamless handoff as device moves.`,
+  questions: [
+    {
+      q: "The Internet is a collection of:",
+      options: ["A. End systems only", "B. Connected networks", "C. Hot spots", "D. Cellular towers"],
+      answer: "B. Connected networks",
+      diff: "easy"
+    },
+    {
+      q: "Networks constructed and maintained by organizations called Internet Service Providers are referred to as:",
+      options: ["A. End systems", "B. ISPs", "C. Hosts", "D. Access points"],
+      answer: "B. ISPs",
+      diff: "easy"
+    },
+    {
+      q: "Which tier of ISPs consists of very high-speed, high-capacity, international WANs that form the backbone of the Internet?",
+      options: ["A. Tier-3", "B. Tier-2", "C. Tier-1", "D. Access ISP"],
+      answer: "C. Tier-1",
+      diff: "easy"
+    },
+    {
+      q: "Tier-1 ISPs are typically operated by:",
+      options: ["A. Small businesses", "B. Large communications companies", "C. Individual users", "D. Non-profit organizations"],
+      answer: "B. Large communications companies",
+      diff: "easy"
+    },
+    {
+      q: "Tier-2 ISPs tend to be more _____ in scope than tier-1 ISPs.",
+      options: ["A. International", "B. Global", "C. Regional", "D. Local"],
+      answer: "C. Regional",
+      diff: "easy"
+    },
+    {
+      q: "An independent internet operated by a single authority that supplies Internet access to homes and businesses is called a(n):",
+      options: ["A. Tier-1 ISP", "B. Tier-2 ISP", "C. Access ISP (tier-3)", "D. Backbone"],
+      answer: "C. Access ISP (tier-3)",
+      diff: "medium"
+    },
+    {
+      q: "Access ISPs are sometimes called:",
+      options: ["A. Backbone providers", "B. Intranets", "C. Tier-1 networks", "D. End systems"],
+      answer: "B. Intranets",
+      diff: "medium"
+    },
+    {
+      q: "Examples of access ISPs include:",
+      options: ["A. Cable and telephone companies", "B. Tier-1 backbone providers", "C. International WANs", "D. Satellite providers only"],
+      answer: "A. Cable and telephone companies",
+      diff: "easy"
+    },
+    {
+      q: "The devices that individual users connect to access ISPs are known as:",
+      options: ["A. Routers", "B. End systems or hosts", "C. Access points", "D. Cells"],
+      answer: "B. End systems or hosts",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following can be an end system?",
+      options: ["A. Laptop", "B. Smartphone", "C. Home appliance", "D. All of the above"],
+      answer: "D. All of the above",
+      diff: "easy"
+    },
+    {
+      q: "The fastest growing technology for end systems to connect to larger networks is:",
+      options: ["A. Ethernet cables", "B. Fiber optics", "C. Wireless connections (WiFi)", "D. Dial-up"],
+      answer: "C. Wireless connections (WiFi)",
+      diff: "easy"
+    },
+    {
+      q: "In WiFi, the device that connects to an access ISP and provides Internet access within broadcast range is called:",
+      options: ["A. End system", "B. Host", "C. Access Point (AP)", "D. Cell"],
+      answer: "C. Access Point (AP)",
+      diff: "easy"
+    },
+    {
+      q: "The area within an AP's range, especially when publicly available or free, is called a:",
+      options: ["A. Cell", "B. Hot spot", "C. Tier", "D. Backbone"],
+      answer: "B. Hot spot",
+      diff: "easy"
+    },
+    {
+      q: "Hot spots can be found in:",
+      options: ["A. Homes and offices", "B. Hotels and parks", "C. Entire cities", "D. All of the above"],
+      answer: "D. All of the above",
+      diff: "easy"
+    },
+    {
+      q: "In cellular telephone networks, hot spots are known as:",
+      options: ["A. Access points", "B. Cells", "C. Tiers", "D. End systems"],
+      answer: "B. Cells",
+      diff: "easy"
+    },
+    {
+      q: "In cellular networks, the 'routers' generating cells are coordinated to provide:",
+      options: ["A. Continuous service as an end system moves from one cell to another", "B. Only stationary service", "C. No handoff", "D. Wired connections"],
+      answer: "A. Continuous service as an end system moves from one cell to another",
+      diff: "medium"
+    },
+    {
+      q: "The hierarchy of ISPs from highest to lowest is:",
+      options: ["A. Tier-1 → Tier-2 → Tier-3 (access)", "B. Tier-3 → Tier-2 → Tier-1", "C. Access → Tier-1 → Tier-2", "D. Tier-2 → Tier-1 → Access"],
+      answer: "A. Tier-1 → Tier-2 → Tier-3 (access)",
+      diff: "easy"
+    },
+    {
+      q: "The core of the Internet is formed by:",
+      options: ["A. Access ISPs and end systems", "B. Tier-1 and tier-2 ISPs", "C. Hot spots only", "D. Cellular networks"],
+      answer: "B. Tier-1 and tier-2 ISPs",
+      diff: "medium"
+    },
+    {
+      q: "Access to the core Internet is usually provided by:",
+      options: ["A. Tier-1 ISPs", "B. Tier-2 ISPs", "C. Access (tier-3) ISPs", "D. End systems"],
+      answer: "C. Access (tier-3) ISPs",
+      diff: "medium"
+    },
+    {
+      q: "Which statement best describes the Internet?",
+      options: ["A. A single large network", "B. A hierarchical collection of connected networks operated by ISPs", "C. Only wireless networks", "D. Only wired networks"],
+      answer: "B. A hierarchical collection of connected networks operated by ISPs",
+      diff: "easy"
+    }
+  ]
+},
+
+
+65: {
+  title: "Networking and the Internet: Internet Addressing",
+  summary: `**Key Topics Covered:**
+- IP addresses (32-bit, moving to 128-bit)
+- Dotted decimal notation
+- ICANN and registrars
+- Domain names and top-level domains (TLDs)
+- Subdomains
+- Domain Name System (DNS)
+- Name servers and DNS lookup
+- Virtual domains (domains hosted by ISPs)
+
+---
+
+**Simple Understanding:**
+
+**IP Addresses:**
+👉 Every computer on the Internet needs a unique address = IP address.
+👉 Originally: 32 bits (e.g., 192.207.177.133).
+👉 Currently converting to 128-bit addresses (more addresses available).
+👉 ICANN (nonprofit) awards blocks of IP addresses to ISPs.
+👉 ISPs allocate addresses within their blocks to machines.
+
+---
+
+**Dotted Decimal Notation:**
+👉 IP addresses written as bytes separated by periods.
+👉 Each byte expressed as integer (0-255) in base 10.
+👉 Example: 192.207.177.133 represents 4 bytes.
+
+---
+
+**Domain Names (Mnemonic Addressing):**
+👉 IP addresses are hard for humans; domain names are easier.
+👉 **Domain:** a "region" of Internet operated by a single authority (university, company, etc.)
+👉 Domain name must be unique, registered with ICANN via registrars.
+
+---
+
+**Top-Level Domains (TLDs):**
+👉 Suffix after last dot indicates classification.
+👉 Examples:
+   - .edu → educational
+   - .com → commercial
+   - .gov → U.S. government
+   - .org → nonprofit
+   - .museum, .info, .net
+👉 Country-code TLDs: .au (Australia), .ca (Canada), etc.
+
+---
+
+**Subdomains:**
+👉 Domain names extended to the left, separated by periods.
+👉 Example: eagle.mu.edu (eagle is host in mu.edu domain).
+👉 Multiple extensions: overthruster.propulsion.yoyodyne.com
+
+---
+
+**Domain Name System (DNS):**
+👉 Humans use domain names, but Internet uses IP addresses.
+👉 Need conversion: domain name → IP address.
+👉 **Name servers:** servers that perform address translation.
+👉 Collection of name servers = **Domain Name System (DNS)**.
+👉 Process = **DNS lookup**.
+
+---
+
+**Domain Hosting Options:**
+👉 Large organizations: maintain own name server and network.
+👉 Small organizations/individuals: contract with ISP.
+👉 ISP hosts the domain name in its name server (virtual domain).
+👉 Multiple registered domains can reside within one ISP.
+
+---
+
+**Important Vocabulary:**
+- IP address = unique numerical identifier
+- ICANN = Internet Corporation for Assigned Names and Numbers
+- Dotted decimal = IP address format with periods
+- Domain = region of Internet under single authority
+- TLD = top-level domain (.com, .edu, etc.)
+- Subdomain = extension to the left of domain name
+- DNS = Domain Name System
+- Name server = server providing DNS lookup
+- Registrar = company that registers domain names
+
+---
+
+**Quick Revision Points:**
+- IP addresses unique, 32-bit → moving to 128-bit.
+- Dotted decimal: e.g., 192.207.177.133.
+- ICANN awards IP blocks to ISPs.
+- Domain names: mnemonic, easier for humans.
+- TLDs: .com, .edu, .gov, .org, country codes.
+- DNS converts domain names to IP addresses.
+- Name servers perform DNS lookup.
+- Small domains can be hosted by ISP name server.`,
+  questions: [
+    {
+      q: "What does IP stand for in IP address?",
+      options: ["A. Internet Protocol", "B. Internal Program", "C. International Packet", "D. Interface Protocol"],
+      answer: "A. Internet Protocol",
+      diff: "easy"
+    },
+    {
+      q: "Originally, each IP address was a pattern of how many bits?",
+      options: ["A. 16 bits", "B. 32 bits", "C. 64 bits", "D. 128 bits"],
+      answer: "B. 32 bits",
+      diff: "easy"
+    },
+    {
+      q: "The Internet is currently converting to IP addresses of how many bits?",
+      options: ["A. 32 bits", "B. 64 bits", "C. 128 bits", "D. 256 bits"],
+      answer: "C. 128 bits",
+      diff: "easy"
+    },
+    {
+      q: "The organization that awards blocks of IP addresses to ISPs is called:",
+      options: ["A. ICANN", "B. IETF", "C. IEEE", "D. W3C"],
+      answer: "A. ICANN",
+      diff: "easy"
+    },
+    {
+      q: "ICANN stands for:",
+      options: ["A. Internet Corporation for Assigned Names and Numbers", "B. International Computer Association of Network Names", "C. Internet Control and Address Naming Network", "D. International Committee for Assigned Network Numbers"],
+      answer: "A. Internet Corporation for Assigned Names and Numbers",
+      diff: "medium"
+    },
+    {
+      q: "IP addresses are traditionally written in:",
+      options: ["A. Binary notation", "B. Hexadecimal notation", "C. Dotted decimal notation", "D. Octal notation"],
+      answer: "C. Dotted decimal notation",
+      diff: "easy"
+    },
+    {
+      q: "In dotted decimal notation, bytes are separated by:",
+      options: ["A. Commas", "B. Periods (dots)", "C. Colons", "D. Spaces"],
+      answer: "B. Periods (dots)",
+      diff: "easy"
+    },
+    {
+      q: "A 32-bit IP address expressed in dotted decimal might look like:",
+      options: ["A. 192.207.177.133", "B. 192-207-177-133", "C. 192:207:177:133", "D. 192 207 177 133"],
+      answer: "A. 192.207.177.133",
+      diff: "easy"
+    },
+    {
+      q: "A mnemonic name that identifies a machine on the Internet is called a:",
+      options: ["A. IP address", "B. Domain name", "C. Subnet mask", "D. Gateway address"],
+      answer: "B. Domain name",
+      diff: "easy"
+    },
+    {
+      q: "The suffix .edu is an example of a:",
+      options: ["A. Subdomain", "B. Top-level domain (TLD)", "C. Host name", "D. IP address class"],
+      answer: "B. Top-level domain (TLD)",
+      diff: "easy"
+    },
+    {
+      q: "The TLD .com is intended for:",
+      options: ["A. Educational institutions", "B. Commercial institutions", "C. Government institutions", "D. Nonprofit organizations"],
+      answer: "B. Commercial institutions",
+      diff: "easy"
+    },
+    {
+      q: "The TLD .gov is for:",
+      options: ["A. Commercial institutions", "B. Educational institutions", "C. U.S. government institutions", "D. Nonprofit organizations"],
+      answer: "C. U.S. government institutions",
+      diff: "easy"
+    },
+    {
+      q: "Country-code TLDs are two-letter suffixes such as:",
+      options: ["A. .com", "B. .edu", "C. .au for Australia", "D. .org"],
+      answer: "C. .au for Australia",
+      diff: "easy"
+    },
+    {
+      q: "In the domain name eagle.mu.edu, 'eagle' is a:",
+      options: ["A. TLD", "B. Subdomain", "C. Host name", "D. Domain name"],
+      answer: "C. Host name",
+      diff: "medium"
+    },
+    {
+      q: "The system that converts domain names to IP addresses is called:",
+      options: ["A. DHCP", "B. DNS (Domain Name System)", "C. HTTP", "D. FTP"],
+      answer: "B. DNS (Domain Name System)",
+      diff: "easy"
+    },
+    {
+      q: "Servers that provide address translation services are called:",
+      options: ["A. Web servers", "B. Mail servers", "C. Name servers", "D. File servers"],
+      answer: "C. Name servers",
+      diff: "easy"
+    },
+    {
+      q: "The process of using DNS to perform a translation is called a:",
+      options: ["A. DNS query", "B. DNS lookup", "C. DNS forward", "D. DNS resolve"],
+      answer: "B. DNS lookup",
+      diff: "medium"
+    },
+    {
+      q: "Companies that handle domain registration under ICANN are called:",
+      options: ["A. Registrars", "B. ISPs", "C. Hosts", "D. Name servers"],
+      answer: "A. Registrars",
+      diff: "easy"
+    },
+    {
+      q: "When a small organization contracts with an ISP to host a domain name, this is often called a:",
+      options: ["A. Physical domain", "B. Virtual domain", "C. Subdomain", "D. Top-level domain"],
+      answer: "B. Virtual domain",
+      diff: "hard"
+    },
+    {
+      q: "Multiple registered domains can reside within a single ISP's name server, each often occupying:",
+      options: ["A. An entire computer", "B. A small portion of a single computer", "C. A separate network", "D. A separate country"],
+      answer: "B. A small portion of a single computer",
+      diff: "medium"
+    }
+  ]
+},
+
+
+66: {
+  title: "Networking and the Internet: Internet Applications",
+  summary: `**Key Topics Covered:**
+- Traditional Internet applications (NNTP, FTP, Telnet, SSH)
+- HTTP and web-based applications
+- Electronic mail (email)
+- VoIP (Voice over Internet Protocol)
+- Internet multimedia streaming (Netflix, YouTube)
+
+---
+
+**Simple Understanding:**
+
+**Traditional Internet Applications:**
+👉 Early Internet had separate, simple programs following specific protocols.
+👉 **NNTP (Network News Transfer Protocol):** newsreader applications.
+👉 **FTP (File Transfer Protocol):** listing and copying files across network.
+👉 **Telnet / SSH (Secure Shell):** accessing another computer remotely.
+👉 Today, many are handled by webpages via HTTP.
+
+---
+
+**Electronic Mail (Email):**
+👉 One of the oldest and most enduring Internet uses.
+👉 Exchanging messages between end users over network.
+
+**Other messaging systems:**
+- Instant messaging (IM)
+- Browser-based online chatting
+- Twitter tweets
+- Facebook wall
+
+---
+
+**VoIP (Voice over Internet Protocol):**
+👉 Uses Internet infrastructure for voice communication (like traditional telephone).
+👉 Simplest form: two processes transferring audio data via P2P model.
+👉 Challenges:
+   - Initiating/receiving calls
+   - Linking with traditional telephone systems
+   - Emergency services (911)
+👉 Governments may tax or ban VoIP (threat to traditional telephone companies).
+
+---
+
+**Internet Multimedia Streaming:**
+👉 Transporting audio/video in real-time.
+👉 Examples: Netflix, YouTube.
+👉 Netflix streamed 4+ billion hours in first 3 months of 2013.
+👉 Combined, these two services consume >50% of Internet bandwidth (2014).
+
+---
+
+**Important Vocabulary:**
+- NNTP = Network News Transfer Protocol
+- FTP = File Transfer Protocol
+- Telnet = remote access protocol
+- SSH = Secure Shell (secure remote access)
+- HTTP = Hyper Text Transfer Protocol (web)
+- Email = electronic mail
+- VoIP = Voice over Internet Protocol
+- Streaming = real-time audio/video transport
+
+---
+
+**Quick Revision Points:**
+- Early apps: NNTP, FTP, Telnet, SSH (separate programs).
+- Now many via HTTP/web browsers.
+- Email is oldest enduring Internet application.
+- VoIP: Internet-based voice calls, faces regulatory challenges.
+- Streaming (Netflix, YouTube) dominates Internet bandwidth.`,
+  questions: [
+    {
+      q: "Which protocol was used by newsreader applications in the early Internet?",
+      options: ["A. FTP", "B. NNTP", "C. Telnet", "D. HTTP"],
+      answer: "B. NNTP",
+      diff: "easy"
+    },
+    {
+      q: "FTP stands for:",
+      options: ["A. File Transfer Protocol", "B. Fast Transfer Protocol", "C. File Transmission Program", "D. Folder Transfer Protocol"],
+      answer: "A. File Transfer Protocol",
+      diff: "easy"
+    },
+    {
+      q: "Which protocol is used for accessing another computer from a great distance?",
+      options: ["A. FTP", "B. HTTP", "C. Telnet (or later SSH)", "D. NNTP"],
+      answer: "C. Telnet (or later SSH)",
+      diff: "easy"
+    },
+    {
+      q: "SSH stands for:",
+      options: ["A. Secure Shell", "B. Simple Shell", "C. Safe Host", "D. System SHell"],
+      answer: "A. Secure Shell",
+      diff: "easy"
+    },
+    {
+      q: "Today, many traditional network applications are handled by webpages via which powerful protocol?",
+      options: ["A. FTP", "B. NNTP", "C. HTTP", "D. Telnet"],
+      answer: "C. HTTP",
+      diff: "easy"
+    },
+    {
+      q: "One of the oldest and most enduring uses of the Internet is:",
+      options: ["A. VoIP", "B. Streaming", "C. Electronic mail (email)", "D. Instant messaging"],
+      answer: "C. Electronic mail (email)",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is NOT mentioned as a messaging system?",
+      options: ["A. Instant messaging (IM)", "B. Twitter tweets", "C. Facebook wall", "D. FTP"],
+      answer: "D. FTP",
+      diff: "easy"
+    },
+    {
+      q: "VoIP stands for:",
+      options: ["A. Voice over Internet Protocol", "B. Video over Internet Protocol", "C. Virtual Private Internet Protocol", "D. Voice on IP"],
+      answer: "A. Voice over Internet Protocol",
+      diff: "easy"
+    },
+    {
+      q: "In its simplest form, VoIP uses which model for transferring audio data?",
+      options: ["A. Client/server model", "B. Peer-to-peer (P2P) model", "C. Master/slave model", "D. Centralized model"],
+      answer: "B. Peer-to-peer (P2P) model",
+      diff: "medium"
+    },
+    {
+      q: "Which of the following is a challenge for VoIP implementation?",
+      options: ["A. Initiating and receiving calls", "B. Linking with traditional telephone systems", "C. Emergency services like 911", "D. All of the above"],
+      answer: "D. All of the above",
+      diff: "easy"
+    },
+    {
+      q: "Why do some governments view VoIP as a threat?",
+      options: ["A. It uses too much bandwidth", "B. It competes with traditional telephone companies owned by the government", "C. It is insecure", "D. It cannot be monitored"],
+      answer: "B. It competes with traditional telephone companies owned by the government",
+      diff: "medium"
+    },
+    {
+      q: "In 2013, Netflix streamed how many hours of programming in the first three months?",
+      options: ["A. 1 billion hours", "B. 2 billion hours", "C. 3 billion hours", "D. More than 4 billion hours"],
+      answer: "D. More than 4 billion hours",
+      diff: "hard"
+    },
+    {
+      q: "Which two services were predicted to consume more than half of Internet bandwidth in 2014?",
+      options: ["A. Netflix and Hulu", "B. YouTube and Amazon Prime", "C. Netflix and YouTube", "D. Facebook and Twitter"],
+      answer: "C. Netflix and YouTube",
+      diff: "medium"
+    },
+    {
+      q: "Real-time transport of audio and video across the Internet is called:",
+      options: ["A. Downloading", "B. Streaming", "C. Buffering", "D. Compressing"],
+      answer: "B. Streaming",
+      diff: "easy"
+    },
+    {
+      q: "Which protocol is used for listing and copying files across a network?",
+      options: ["A. HTTP", "B. NNTP", "C. FTP", "D. Telnet"],
+      answer: "C. FTP",
+      diff: "easy"
+    },
+    {
+      q: "The secure replacement for Telnet is:",
+      options: ["A. FTP", "B. SSH", "C. HTTP", "D. NNTP"],
+      answer: "B. SSH",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is a traditional Internet application protocol?",
+      options: ["A. HTTP", "B. FTP", "C. Both A and B", "D. Neither A nor B"],
+      answer: "C. Both A and B",
+      diff: "easy"
+    },
+    {
+      q: "NNTP is used for:",
+      options: ["A. File transfer", "B. Newsreader applications", "C. Voice calls", "D. Streaming video"],
+      answer: "B. Newsreader applications",
+      diff: "easy"
+    },
+    {
+      q: "According to the text, governments that own telephone companies have either heavily taxed VoIP or:",
+      options: ["A. Promoted it", "B. Outlawed it completely", "C. Ignored it", "D. Bought it"],
+      answer: "B. Outlawed it completely",
+      diff: "easy"
+    },
+    {
+      q: "The protocol that powers the web and handles many applications via browsers is:",
+      options: ["A. FTP", "B. NNTP", "C. HTTP", "D. Telnet"],
+      answer: "C. HTTP",
+      diff: "easy"
+    }
+  ]
+},
+
+67: {
+  title: "Networking and the Internet: Internet Applications: Email",
+  summary: `**Key Topics Covered:**
+- Messaging applications (instant messaging, browser chat, Twitter, Facebook)
+- Electronic mail (email) – oldest enduring application
+- SMTP (Simple Mail Transfer Protocol)
+- Email flow scenario
+- MIME (Multipurpose Internet Mail Extensions)
+- POP3 (Post Office Protocol Version 3)
+- IMAP (Internet Mail Access Protocol)
+
+---
+
+**Simple Understanding:**
+
+**Messaging Applications:**
+👉 Instant Messaging (IM)
+👉 Browser-based chatting
+👉 Twitter tweets
+👉 Facebook wall
+👉 **Electronic mail (email)** – one of the oldest and most enduring Internet uses.
+
+---
+
+**Email Protocol: SMTP**
+👉 Simple Mail Transfer Protocol (SMTP) is the standard protocol for sending email.
+👉 Used to transfer email messages between mail servers.
+
+---
+
+**Email Scenario (Figure 66):**
+👉 mafzal@cust.edu.pk wants to send email to hmaurer@iicm.tugraz.at.
+👉 Steps:
+   1. Sender's email client uses SMTP to send message to sender's mail server.
+   2. Sender's mail server uses SMTP to relay message to receiver's mail server.
+   3. Receiver's mail server stores message.
+   4. Receiver's email client retrieves message (using POP3 or IMAP).
+
+---
+
+**Other Protocols:**
+
+**MIME (Multipurpose Internet Mail Extensions):**
+👉 SMTP handles only text (ASCII) messages.
+👉 MIME converts non-ASCII data (images, audio, attachments) into SMTP-compatible form.
+
+**POP3 (Post Office Protocol Version 3):**
+👉 Allows user to download email from server to local machine.
+👉 Messages are typically stored on local machine.
+
+**IMAP (Internet Mail Access Protocol):**
+👉 More advanced than POP3.
+👉 Messages remain stored on the mail server.
+👉 User can maintain folders and manage messages on server.
+👉 Accessible from multiple devices.
+
+---
+
+**Important Vocabulary:**
+- SMTP = Simple Mail Transfer Protocol (sending email)
+- MIME = Multipurpose Internet Mail Extensions (handles attachments)
+- POP3 = Post Office Protocol v3 (download to local machine)
+- IMAP = Internet Mail Access Protocol (manage on server)
+- ASCII = text format (plain text)
+- Mail server = computer that handles email delivery/storage
+
+---
+
+**Quick Revision Points:**
+- Email uses SMTP for sending.
+- MIME converts non-ASCII to SMTP-compatible.
+- POP3 downloads email to local machine.
+- IMAP stores email on server (access from anywhere).
+- Email flow: client → sender's server → receiver's server → receiver's client.`,
+  questions: [
+    {
+      q: "Which of the following is one of the oldest and most enduring uses of the Internet?",
+      options: ["A. Instant messaging", "B. Twitter", "C. Electronic mail (email)", "D. Facebook wall"],
+      answer: "C. Electronic mail (email)",
+      diff: "easy"
+    },
+    {
+      q: "The standard protocol used for sending email messages is:",
+      options: ["A. POP3", "B. IMAP", "C. SMTP", "D. MIME"],
+      answer: "C. SMTP",
+      diff: "easy"
+    },
+    {
+      q: "SMTP stands for:",
+      options: ["A. Simple Mail Transfer Protocol", "B. Standard Mail Transfer Protocol", "C. Simple Message Transfer Protocol", "D. Secure Mail Transfer Protocol"],
+      answer: "A. Simple Mail Transfer Protocol",
+      diff: "easy"
+    },
+    {
+      q: "SMTP handles messages in which format by default?",
+      options: ["A. Binary", "B. HTML", "C. ASCII text", "D. Unicode"],
+      answer: "C. ASCII text",
+      diff: "medium"
+    },
+    {
+      q: "Which protocol is used to convert non-ASCII data (like images or attachments) into SMTP-compatible form?",
+      options: ["A. POP3", "B. IMAP", "C. MIME", "D. SMTP"],
+      answer: "C. MIME",
+      diff: "easy"
+    },
+    {
+      q: "MIME stands for:",
+      options: ["A. Multipurpose Internet Mail Extensions", "B. Multimedia Internet Mail Exchange", "C. Message Internet Mail Encoder", "D. Multipurpose Interchange Mail Extensions"],
+      answer: "A. Multipurpose Internet Mail Extensions",
+      diff: "medium"
+    },
+    {
+      q: "Which protocol allows a user to download email from the server to the local machine and typically stores messages locally?",
+      options: ["A. SMTP", "B. MIME", "C. POP3", "D. IMAP"],
+      answer: "C. POP3",
+      diff: "easy"
+    },
+    {
+      q: "POP3 stands for:",
+      options: ["A. Post Office Protocol Version 3", "B. Point of Presence Protocol 3", "C. Post Office Program 3", "D. Protocol for Offline Post 3"],
+      answer: "A. Post Office Protocol Version 3",
+      diff: "medium"
+    },
+    {
+      q: "Which protocol stores email messages on the mail server and allows users to maintain folders and access from multiple devices?",
+      options: ["A. POP3", "B. IMAP", "C. SMTP", "D. MIME"],
+      answer: "B. IMAP",
+      diff: "easy"
+    },
+    {
+      q: "IMAP stands for:",
+      options: ["A. Internet Mail Access Protocol", "B. Interactive Mail Access Protocol", "C. Internet Message Access Protocol", "D. Integrated Mail Application Protocol"],
+      answer: "A. Internet Mail Access Protocol",
+      diff: "medium"
+    },
+    {
+      q: "In the email scenario, mafzal@cust.edu.pk wants to send email to hmaurer@iicm.tugraz.at. The message is first sent to which server using SMTP?",
+      options: ["A. Receiver's mail server", "B. Sender's mail server", "C. Receiver's client computer", "D. Sender's client computer"],
+      answer: "B. Sender's mail server",
+      diff: "easy"
+    },
+    {
+      q: "After the sender's mail server receives the email via SMTP, what does it do?",
+      options: ["A. Stores it locally forever", "B. Relays it to the receiver's mail server using SMTP", "C. Directly sends to receiver's computer", "D. Deletes it"],
+      answer: "B. Relays it to the receiver's mail server using SMTP",
+      diff: "medium"
+    },
+    {
+      q: "Which protocol would a user typically use to retrieve email from a server and delete it from the server (store locally)?",
+      options: ["A. SMTP", "B. IMAP", "C. POP3", "D. MIME"],
+      answer: "C. POP3",
+      diff: "easy"
+    },
+    {
+      q: "Which protocol is best suited for users who access their email from multiple devices (phone, laptop, tablet)?",
+      options: ["A. POP3", "B. IMAP", "C. SMTP", "D. MIME"],
+      answer: "B. IMAP",
+      diff: "easy"
+    },
+    {
+      q: "Twitter tweets and Facebook wall are examples of:",
+      options: ["A. Traditional email", "B. Messaging applications", "C. File transfer protocols", "D. Streaming services"],
+      answer: "B. Messaging applications",
+      diff: "easy"
+    },
+    {
+      q: "Which protocol is used only for sending email, not for receiving?",
+      options: ["A. POP3", "B. IMAP", "C. SMTP", "D. Both A and B"],
+      answer: "C. SMTP",
+      diff: "easy"
+    },
+    {
+      q: "Non-ASCII data includes which of the following?",
+      options: ["A. Plain text", "B. Images and attachments", "C. Simple English sentences", "D. ASCII characters only"],
+      answer: "B. Images and attachments",
+      diff: "easy"
+    },
+    {
+      q: "The email flow described in the text is illustrated in:",
+      options: ["A. Figure 65", "B. Figure 66", "C. Figure 67", "D. Figure 64"],
+      answer: "B. Figure 66",
+      diff: "easy"
+    },
+    {
+      q: "POP3 helps to store messages on which machine?",
+      options: ["A. Mail server", "B. Local machine", "C. Both A and B", "D. Neither"],
+      answer: "B. Local machine",
+      diff: "easy"
+    },
+    {
+      q: "IMAP helps to store messages on which machine?",
+      options: ["A. Mail server", "B. Local machine", "C. Both A and B", "D. Neither"],
+      answer: "A. Mail server",
+      diff: "easy"
+    }
+  ]
+},
+68: {
+  title: "Networking and the Internet: VoIP",
+  summary: `**Key Topics Covered:**
+- VoIP (Voice over Internet Protocol) definition
+- Simple P2P audio transfer
+- Challenges (call setup, linking to telephone systems, emergency services)
+- Government responses (taxation, outlawing)
+- Four forms of VoIP: soft phones (Skype), analog telephone adapters, embedded VoIP phones, wireless VoIP (4G)
+
+---
+
+**Simple Understanding:**
+
+**What is VoIP?**
+👉 Voice over Internet Protocol – using Internet infrastructure for voice calls (like traditional telephone).
+👉 Simplest form: two processes on different machines transferring audio via P2P model.
+
+**Challenges:**
+- Initiating and receiving calls
+- Linking with traditional telephone systems
+- Emergency 911 communication
+- Governments (owning traditional phone companies) view VoIP as threat → tax heavily or outlaw completely.
+
+---
+
+**Four Forms of VoIP:**
+
+**1. VoIP Soft Phones (e.g., Skype):**
+👉 P2P software on PCs with speaker and microphone.
+👉 Skype also provides links to traditional phone system.
+👉 **Drawback:** proprietary system – operational structure not publicly known.
+👉 Users must trust software without third-party verification.
+👉 Your PC resources may support other Skype communications without your awareness (controversial).
+
+**2. Analog Telephone Adapters:**
+👉 Devices that connect traditional telephone to access ISP phone service.
+👉 Often bundled with Internet service and/or digital TV.
+
+**3. Embedded VoIP Phones:**
+👉 Devices replacing traditional telephone with handset connected directly to TCP/IP network.
+👉 Common in large organizations replacing copper wire phone systems with VoIP over Ethernet (cost reduction, enhanced features).
+
+**4. Wireless VoIP (4G Smartphones):**
+👉 Earlier generations: wireless phones used company's protocols, gateways converted to TCP/IP.
+👉 **4G phone network:** IP-based network throughout.
+👉 4G telephone = broadband-connected host computer on global Internet.
+
+---
+
+**Important Vocabulary:**
+- VoIP = Voice over Internet Protocol
+- P2P = Peer-to-peer
+- Soft phone = software-based VoIP on PC
+- Proprietary system = closed, not publicly known
+- Analog telephone adapter = connects traditional phone to VoIP
+- Embedded VoIP phone = dedicated VoIP handset
+- 4G = fourth generation cellular (IP-based)
+
+---
+
+**Quick Revision Points:**
+- VoIP uses Internet for voice calls.
+- Simple P2P is easy; challenges include emergency services and linking to phone networks.
+- Governments may tax or ban VoIP.
+- Skype: popular soft phone but proprietary (trust required).
+- Analog adapters: use traditional phone with ISP service.
+- Embedded phones: replace internal copper systems.
+- 4G phones are native IP devices (no gateway conversion).`,
+  questions: [
+    {
+      q: "VoIP stands for:",
+      options: ["A. Voice over Internet Protocol", "B. Video over Internet Protocol", "C. Virtual Private Internet Protocol", "D. Voice on IP"],
+      answer: "A. Voice over Internet Protocol",
+      diff: "easy"
+    },
+    {
+      q: "In its simplest form, VoIP uses which model for transferring audio data?",
+      options: ["A. Client/server model", "B. Peer-to-peer (P2P) model", "C. Master/slave model", "D. Centralized model"],
+      answer: "B. Peer-to-peer (P2P) model",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is a challenge for VoIP implementation?",
+      options: ["A. Initiating and receiving calls", "B. Linking with traditional telephone systems", "C. Emergency 911 communication", "D. All of the above"],
+      answer: "D. All of the above",
+      diff: "easy"
+    },
+    {
+      q: "Why do some governments view VoIP as a threat?",
+      options: ["A. It uses too much bandwidth", "B. It competes with traditional telephone companies often owned by the government", "C. It is insecure", "D. It cannot be monitored"],
+      answer: "B. It competes with traditional telephone companies often owned by the government",
+      diff: "medium"
+    },
+    {
+      q: "An example of a VoIP soft phone system is:",
+      options: ["A. Analog telephone adapter", "B. Embedded VoIP phone", "C. Skype", "D. 4G smartphone"],
+      answer: "C. Skype",
+      diff: "easy"
+    },
+    {
+      q: "One drawback of Skype is that it is a:",
+      options: ["A. Free system", "B. Open source system", "C. Proprietary system", "D. Hardware-based system"],
+      answer: "C. Proprietary system",
+      diff: "easy"
+    },
+    {
+      q: "Because Skype is proprietary, users must:",
+      options: ["A. Pay high fees", "B. Trust its integrity without third-party verification", "C. Use special hardware", "D. Avoid using it"],
+      answer: "B. Trust its integrity without third-party verification",
+      diff: "medium"
+    },
+    {
+      q: "A feature of Skype that has generated resistance is that:",
+      options: ["A. It is too expensive", "B. It requires a microphone", "C. A user's PC resources may be used to support other Skype communications without awareness", "D. It does not work on Windows"],
+      answer: "C. A user's PC resources may be used to support other Skype communications without awareness",
+      diff: "medium"
+    },
+    {
+      q: "Which form of VoIP uses a device to connect a traditional telephone to an access ISP's phone service?",
+      options: ["A. VoIP soft phone", "B. Analog telephone adapter", "C. Embedded VoIP phone", "D. Wireless VoIP"],
+      answer: "B. Analog telephone adapter",
+      diff: "easy"
+    },
+    {
+      q: "Analog telephone adapters are often bundled with:",
+      options: ["A. Traditional Internet service and/or digital TV", "B. Only emergency services", "C. Only telephone lines", "D. Only cable TV"],
+      answer: "A. Traditional Internet service and/or digital TV",
+      diff: "easy"
+    },
+    {
+      q: "Which type of VoIP replaces traditional telephone with a handset connected directly to a TCP/IP network?",
+      options: ["A. VoIP soft phone", "B. Analog telephone adapter", "C. Embedded VoIP phone", "D. 4G smartphone"],
+      answer: "C. Embedded VoIP phone",
+      diff: "easy"
+    },
+    {
+      q: "Large organizations are replacing traditional internal copper wire telephone systems with VoIP over Ethernet to:",
+      options: ["A. Reduce costs and enhance features", "B. Increase costs", "C. Reduce reliability", "D. Simplify wiring only"],
+      answer: "A. Reduce costs and enhance features",
+      diff: "easy"
+    },
+    {
+      q: "Earlier generation wireless phones obtained Internet access via:",
+      options: ["A. Direct TCP/IP connection", "B. Gateways between the company's network and the Internet", "C. P2P only", "D. Embedded VoIP"],
+      answer: "B. Gateways between the company's network and the Internet",
+      diff: "medium"
+    },
+    {
+      q: "Which generation of phone network is IP-based throughout?",
+      options: ["A. 3G", "B. 4G", "C. 2G", "D. 1G"],
+      answer: "B. 4G",
+      diff: "easy"
+    },
+    {
+      q: "A 4G telephone is essentially:",
+      options: ["A. A traditional phone", "B. Just another broadband-connected host computer on the global Internet", "C. An analog adapter", "D. A proprietary system"],
+      answer: "B. Just another broadband-connected host computer on the global Internet",
+      diff: "medium"
+    },
+    {
+      q: "Which government action against VoIP is mentioned?",
+      options: ["A. Promoting it", "B. Taxing it heavily or outlawing it completely", "C. Subsidizing it", "D. Ignoring it"],
+      answer: "B. Taxing it heavily or outlawing it completely",
+      diff: "easy"
+    },
+    {
+      q: "The simplest form of VoIP presents:",
+      options: ["A. No significant problems", "B. Many technical problems", "C. Only security problems", "D. Only legal problems"],
+      answer: "A. No significant problems",
+      diff: "easy"
+    },
+    {
+      q: "Which VoIP form uses software on a PC with only a speaker and microphone?",
+      options: ["A. Embedded VoIP phone", "B. Analog telephone adapter", "C. VoIP soft phone", "D. Wireless VoIP"],
+      answer: "C. VoIP soft phone",
+      diff: "easy"
+    },
+    {
+      q: "Skype provides its clients with:",
+      options: ["A. Only P2P calls", "B. Links to the traditional telephone communication system", "C. Only emergency services", "D. Only video calls"],
+      answer: "B. Links to the traditional telephone communication system",
+      diff: "easy"
+    },
+    {
+      q: "The term 'soft phone' refers to:",
+      options: ["A. A physical handset", "B. Software-based VoIP on a PC", "C. An analog adapter", "D. A 4G smartphone"],
+      answer: "B. Software-based VoIP on a PC",
+      diff: "easy"
+    }
+  ]
+},
+
+69: {
+  title: "Networking and the Internet: Internet Multimedia Streaming",
+  summary: `**Key Topics Covered:**
+- Streaming definition (real-time audio/video)
+- N-unicast and its drawback (server burden)
+- P2P model for streaming distribution
+- Multicast (routers copy messages)
+- On-demand streaming (start, pause, rewind)
+- Content Delivery Networks (CDNs)
+- Anycast (connect to closest server)
+- Embedded devices (TVs, game consoles, smartphones)
+
+---
+
+**Simple Understanding:**
+
+**What is Streaming?**
+👉 Transporting audio and video in real-time over the Internet.
+👉 Example: Netflix streamed 4+ billion hours (Q1 2013).
+👉 Netflix + YouTube > 50% of Internet bandwidth (2014).
+
+---
+
+**N-unicast:**
+👉 Unicast = one sender → one receiver.
+👉 N-unicast = single server sending individual messages to each client.
+👉 **Drawback:** Heavy burden on server and its Internet neighbors (must forward many copies).
+
+---
+
+**Alternatives to N-unicast:**
+
+**1. P2P Model:**
+👉 Similar to file sharing.
+👉 Once a peer receives data, it distributes to waiting peers.
+👉 Transfers distribution burden from source to peers.
+
+**2. Multicast:**
+👉 Server transmits single message to special "multicast address".
+👉 Internet routers recognize address, produce and forward copies to destinations.
+👉 Requires routers to have extra functionality (implemented in small networks, not yet global Internet).
+
+---
+
+**On-Demand Streaming:**
+👉 User expects to start, pause, rewind at will.
+👉 Different from Internet radio (everyone hears same stream).
+👉 N-unicast and multicast are little help here.
+👉 Each on-demand stream = unicast from media server to user.
+
+---
+
+**Content Delivery Networks (CDNs):**
+👉 To scale to millions of simultaneous users, replicate content to many servers.
+👉 Groups of servers strategically distributed around Internet.
+👉 Specialize in streaming copies to nearby end users.
+👉 CDN machines may reside inside access ISP networks for high-speed streaming.
+
+**Anycast:**
+👉 Networking technology that enables end user to automatically connect to closest server in a group.
+👉 Makes CDNs practical.
+
+---
+
+**Embedded Devices:**
+👉 Streaming is not just for PCs.
+👉 TVs, DVD/Blu-ray players, smartphones, game consoles connect directly to TCP/IP network.
+
+---
+
+**Important Vocabulary:**
+- Streaming = real-time audio/video transport
+- Unicast = one sender to one receiver
+- N-unicast = single server sending to many clients individually
+- Multicast = one message, routers copy to multiple destinations
+- On-demand = user controls playback (start, pause, rewind)
+- CDN = Content Delivery Network (distributed servers)
+- Anycast = automatic connection to closest server
+
+---
+
+**Quick Revision Points:**
+- Streaming dominates Internet traffic.
+- N-unicast puts heavy load on server.
+- P2P and multicast reduce server burden.
+- Multicast requires router support (not global yet).
+- On-demand streaming needs unicast per user.
+- CDNs replicate content for scalability.
+- Anycast directs user to nearest CDN server.
+- Embedded devices (TVs, phones, consoles) stream too.`,
+  questions: [
+    {
+      q: "The real-time transport of audio and video across the Internet is called:",
+      options: ["A. Unicast", "B. Multicast", "C. Streaming", "D. Anycast"],
+      answer: "C. Streaming",
+      diff: "easy"
+    },
+    {
+      q: "In the first three months of 2013, Netflix streamed how many hours of programming?",
+      options: ["A. 1 billion hours", "B. 2 billion hours", "C. 3 billion hours", "D. More than 4 billion hours"],
+      answer: "D. More than 4 billion hours",
+      diff: "easy"
+    },
+    {
+      q: "Netflix and YouTube combined were predicted to consume more than half of Internet bandwidth in which year?",
+      options: ["A. 2012", "B. 2013", "C. 2014", "D. 2015"],
+      answer: "C. 2014",
+      diff: "easy"
+    },
+    {
+      q: "Unicast refers to:",
+      options: ["A. One sender sending to multiple receivers", "B. One sender sending to one receiver", "C. Multiple senders to one receiver", "D. Broadcast to all"],
+      answer: "B. One sender sending to one receiver",
+      diff: "easy"
+    },
+    {
+      q: "N-unicast refers to:",
+      options: ["A. Single server sending individual messages to each of many clients", "B. Multiple servers sending to one client", "C. One message to many via routers", "D. Peer-to-peer distribution"],
+      answer: "A. Single server sending individual messages to each of many clients",
+      diff: "medium"
+    },
+    {
+      q: "The major drawback of N-unicast is:",
+      options: ["A. Poor video quality", "B. Substantial burden on the server and its Internet neighbors", "C. Incompatibility with browsers", "D. High cost for users"],
+      answer: "B. Substantial burden on the server and its Internet neighbors",
+      diff: "easy"
+    },
+    {
+      q: "One alternative to N-unicast applies the P2P model so that:",
+      options: ["A. The server does all the work", "B. Once a peer receives data, it distributes to waiting peers", "C. Routers copy messages", "D. Only unicast is used"],
+      answer: "B. Once a peer receives data, it distributes to waiting peers",
+      diff: "easy"
+    },
+    {
+      q: "Multicast transfers the distribution problem to:",
+      options: ["A. The end users", "B. The content provider", "C. The Internet routers", "D. The access ISPs"],
+      answer: "C. The Internet routers",
+      diff: "easy"
+    },
+    {
+      q: "In multicast, a server transmits a message to multiple clients using:",
+      options: ["A. Multiple unicast streams", "B. A single address (routers copy and forward)", "C. P2P distribution", "D. CDN servers"],
+      answer: "B. A single address (routers copy and forward)",
+      diff: "medium"
+    },
+    {
+      q: "Multicast support has been implemented in small networks but:",
+      options: ["A. Is fully deployed globally", "B. Has yet to expand to the global Internet", "C. Is obsolete", "D. Only works for audio"],
+      answer: "B. Has yet to expand to the global Internet",
+      diff: "easy"
+    },
+    {
+      q: "On-demand streaming allows users to:",
+      options: ["A. Only listen to live radio", "B. Start, pause, or rewind content at their own pace", "C. Only watch scheduled programs", "D. Only download files completely"],
+      answer: "B. Start, pause, or rewind content at their own pace",
+      diff: "easy"
+    },
+    {
+      q: "For on-demand streaming, N-unicast and multicast are:",
+      options: ["A. Very helpful", "B. Of little help", "C. The only solutions", "D. Free"],
+      answer: "B. Of little help",
+      diff: "easy"
+    },
+    {
+      q: "Each on-demand stream is effectively:",
+      options: ["A. A multicast from media server to many", "B. A unicast from media server to an end user", "C. A broadcast", "D. A P2P distribution"],
+      answer: "B. A unicast from media server to an end user",
+      diff: "medium"
+    },
+    {
+      q: "To scale to millions of simultaneous users, large-scale streaming services use:",
+      options: ["A. A single powerful server", "B. Content Delivery Networks (CDNs)", "C. Only N-unicast", "D. Only multicast"],
+      answer: "B. Content Delivery Networks (CDNs)",
+      diff: "easy"
+    },
+    {
+      q: "CDN stands for:",
+      options: ["A. Content Delivery Network", "B. Central Data Network", "C. Client Distribution Network", "D. Code Division Network"],
+      answer: "A. Content Delivery Network",
+      diff: "easy"
+    },
+    {
+      q: "CDN machines may reside in an access ISP network to:",
+      options: ["A. Increase server load", "B. Stream content at high speed from a nearby server", "C. Reduce video quality", "D. Increase latency"],
+      answer: "B. Stream content at high speed from a nearby server",
+      diff: "easy"
+    },
+    {
+      q: "Anycast enables an end user to:",
+      options: ["A. Connect to the farthest server", "B. Connect to multiple servers simultaneously", "C. Automatically connect to the closest server in a defined group", "D. Avoid using CDNs"],
+      answer: "C. Automatically connect to the closest server in a defined group",
+      diff: "medium"
+    },
+    {
+      q: "Which technology helps to make CDNs practical?",
+      options: ["A. Unicast", "B. N-unicast", "C. Anycast", "D. Broadcast"],
+      answer: "C. Anycast",
+      diff: "medium"
+    },
+    {
+      q: "Which of the following devices can stream Internet multimedia?",
+      options: ["A. Televisions", "B. Smartphones", "C. Game consoles", "D. All of the above"],
+      answer: "D. All of the above",
+      diff: "easy"
+    },
+    {
+      q: "Multicast requires that Internet routers:",
+      options: ["A. Have less memory", "B. Recognize multicast addresses and forward copies", "C. Only forward unicast traffic", "D. Be replaced"],
+      answer: "B. Recognize multicast addresses and forward copies",
+      diff: "easy"
+    }
+  ]
+},
+
+70: {
+  title: "Networking and the Internet: World Wide Web",
+  summary: `**Key Topics Covered:**
+- Origins of the World Wide Web (Tim Berners-Lee)
+- Hypertext concept (linked documents)
+- First software released (December 1990)
+- Key components: hypertext document format, HTTP protocol, server process
+- Growth to support multimedia
+- Dominant application by mid-1990s
+
+---
+
+**Simple Understanding:**
+
+**Origin of the Web:**
+👉 Tim Berners-Lee realized combining Internet technology with hypertext (linked documents).
+👉 First software for implementing the Web released in **December 1990**.
+
+**Early Prototype Features:**
+👉 Did not yet support multimedia data.
+👉 Included three key components:
+
+| Component | Purpose |
+|-----------|---------|
+| Hypertext document format | Embed hyperlinks to other documents |
+| Protocol (HTTP) | Transfer hypertext across network |
+| Server process | Supply hypertext pages upon request |
+
+---
+
+**Growth:**
+👉 Quickly grew to support images, audio, and video.
+👉 By **mid-1990s**, became the dominant application powering Internet growth.
+
+---
+
+**Important Vocabulary:**
+- World Wide Web (WWW) = system of interlinked hypertext documents
+- Tim Berners-Lee = inventor of the Web
+- Hypertext = text with links to other documents
+- Hyperlink = reference that navigates to another document
+- HTTP = Hypertext Transfer Protocol
+- Server process = program that serves web pages
+- Prototype = early working model
+
+---
+
+**Quick Revision Points:**
+- Tim Berners-Lee invented the Web (1990).
+- Combined Internet + hypertext.
+- Three key components: hypertext format, HTTP, server.
+- Early version had no multimedia.
+- By mid-1990s, Web dominated Internet growth.`,
+  questions: [
+    {
+      q: "Who is credited with originating the World Wide Web?",
+      options: ["A. Bill Gates", "B. Steve Jobs", "C. Tim Berners-Lee", "D. Vint Cerf"],
+      answer: "C. Tim Berners-Lee",
+      diff: "easy"
+    },
+    {
+      q: "Tim Berners-Lee combined Internet technology with which concept?",
+      options: ["A. Multimedia", "B. Hypertext (linked documents)", "C. Cloud computing", "D. Artificial intelligence"],
+      answer: "B. Hypertext (linked documents)",
+      diff: "easy"
+    },
+    {
+      q: "The first software for implementing the Web was released in:",
+      options: ["A. December 1989", "B. December 1990", "C. January 1991", "D. December 1995"],
+      answer: "B. December 1990",
+      diff: "easy"
+    },
+    {
+      q: "The early Web prototype did NOT yet support:",
+      options: ["A. Hypertext", "B. Hyperlinks", "C. Multimedia data", "D. Server processes"],
+      answer: "C. Multimedia data",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following was a key component of the early Web?",
+      options: ["A. Cloud storage", "B. Hypertext document format", "C. Blockchain", "D. Quantum encryption"],
+      answer: "B. Hypertext document format",
+      diff: "easy"
+    },
+    {
+      q: "The protocol for transferring hypertext across the network is called:",
+      options: ["A. FTP", "B. SMTP", "C. HTTP", "D. TCP"],
+      answer: "C. HTTP",
+      diff: "easy"
+    },
+    {
+      q: "HTTP stands for:",
+      options: ["A. Hypertext Transfer Protocol", "B. High Transfer Text Protocol", "C. Hyper Transfer Text Protocol", "D. Hypertext Transmission Protocol"],
+      answer: "A. Hypertext Transfer Protocol",
+      diff: "easy"
+    },
+    {
+      q: "The server process in the early Web supplied:",
+      options: ["A. Email messages", "B. Hypertext pages upon request", "C. File transfers", "D. Streaming video"],
+      answer: "B. Hypertext pages upon request",
+      diff: "easy"
+    },
+    {
+      q: "The Web quickly grew to support all of the following EXCEPT:",
+      options: ["A. Images", "B. Audio", "C. Video", "D. Only text forever"],
+      answer: "D. Only text forever",
+      diff: "easy"
+    },
+    {
+      q: "By which period had the Web become the dominant application powering Internet growth?",
+      options: ["A. Early 1980s", "B. Late 1980s", "C. Mid-1990s", "D. Early 2000s"],
+      answer: "C. Mid-1990s",
+      diff: "easy"
+    },
+    {
+      q: "Hypertext is defined as:",
+      options: ["A. Text that is encrypted", "B. Text with links to other documents", "C. Text that contains images", "D. Text that is compressed"],
+      answer: "B. Text with links to other documents",
+      diff: "easy"
+    },
+    {
+      q: "A hyperlink allows a user to:",
+      options: ["A. Download files", "B. Navigate to another document", "C. Send email", "D. Encrypt data"],
+      answer: "B. Navigate to another document",
+      diff: "easy"
+    },
+    {
+      q: "The early Web prototype did NOT include:",
+      options: ["A. Hypertext format", "B. Transfer protocol", "C. Server process", "D. Multimedia support"],
+      answer: "D. Multimedia support",
+      diff: "easy"
+    },
+    {
+      q: "Tim Berners-Lee released his first Web software while working at:",
+      options: ["A. MIT", "B. CERN", "C. Stanford", "D. Microsoft"],
+      answer: "B. CERN",
+      diff: "hard"
+    },
+    {
+      q: "The Web's document format embeds which feature to link to other documents?",
+      options: ["A. Hyperlinks", "B. Macros", "C. Scripts", "D. Plugins"],
+      answer: "A. Hyperlinks",
+      diff: "easy"
+    },
+    {
+      q: "Which component of the Web is responsible for supplying pages upon request?",
+      options: ["A. Browser", "B. Server process", "C. Router", "D. Firewall"],
+      answer: "B. Server process",
+      diff: "easy"
+    },
+    {
+      q: "The early Web prototype was released in which month?",
+      options: ["A. January", "B. June", "C. September", "D. December"],
+      answer: "D. December",
+      diff: "easy"
+    },
+    {
+      q: "The combination of Internet technology with hypertext led to the creation of:",
+      options: ["A. Email", "B. FTP", "C. World Wide Web", "D. Telnet"],
+      answer: "C. World Wide Web",
+      diff: "easy"
+    },
+    {
+      q: "By the mid-1990s, the Web had become the _______ application on the Internet.",
+      options: ["A. smallest", "B. dominant", "C. least used", "D. experimental"],
+      answer: "B. dominant",
+      diff: "easy"
+    },
+    {
+      q: "The Web's protocol (HTTP) is used to transfer:",
+      options: ["A. Hypertext across the network", "B. Email messages", "C. Files via FTP", "D. Voice over IP"],
+      answer: "A. Hypertext across the network",
+      diff: "easy"
+    }
+  ]
+},
+71: {
+  title: "Networking and the Internet: Web Implementations",
+  summary: `**Key Topics Covered:**
+- Browsers (client-side: Firefox, Safari, Internet Explorer)
+- Webservers (server-side: provide access to documents)
+- HTTP (Hypertext Transfer Protocol)
+- URL (Uniform Resource Locator) structure
+- Home page and shortened URLs
+
+---
+
+**Simple Understanding:**
+
+**Two Categories of Web Software:**
+👉 **Browser:** resides on user's computer, obtains and presents materials.
+   - Examples: Firefox, Safari, Internet Explorer.
+👉 **Webserver:** resides on computer with hypertext documents, provides access to documents upon request.
+
+**Protocol:**
+👉 Hypertext Transfer Protocol (HTTP) – transfers hypertext documents between browsers and webservers.
+
+---
+
+**URL (Uniform Resource Locator):**
+👉 Unique address for each document on the Web.
+👉 Contains information for browser to contact server and request document.
+
+**URL Structure (Figure 67):**
+👉 Four segments:
+
+| Segment | Example |
+|----------|---------|
+| Protocol | http:// |
+| Mnemonic address (server machine) | eagle.mu.edu |
+| Directory path | /authors/Shakespeare/ |
+| Document name | Julius_Caesar.html |
+
+👉 Full example: http://eagle.mu.edu/authors/Shakespeare/Julius_Caesar.html
+
+---
+
+**Shortened URLs:**
+👉 May not contain all segments (e.g., no directory path).
+👉 Sometimes only protocol + mnemonic address.
+👉 Webserver returns predetermined document = **home page** (describes available information).
+👉 Example: http://www.google.com → Google home page.
+
+**Browser Assumptions:**
+👉 Many browsers assume HTTP protocol if not specified.
+👉 Typing "www.google.com" works (assumes http://).
+
+---
+
+**Important Vocabulary:**
+- Browser = client software to view web pages
+- Webserver = server software that serves web pages
+- HTTP = Hypertext Transfer Protocol
+- URL = Uniform Resource Locator (web address)
+- Home page = default page at a website
+- Protocol = rules for communication
+- Mnemonic address = domain name (e.g., eagle.mu.edu)
+
+---
+
+**Quick Revision Points:**
+- Browsers (Firefox, Safari, IE) request pages.
+- Webservers serve pages upon request.
+- HTTP is the protocol between them.
+- URL has: protocol, server address, path, document name.
+- Short URL may lack path → returns home page.
+- Browsers often add http:// automatically.`,
+  questions: [
+    {
+      q: "Software that resides on the user's computer to obtain and present web materials is called a:",
+      options: ["A. Webserver", "B. Browser", "C. Protocol", "D. URL"],
+      answer: "B. Browser",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is an example of a web browser?",
+      options: ["A. Firefox", "B. Apache", "C. IIS", "D. Nginx"],
+      answer: "A. Firefox",
+      diff: "easy"
+    },
+    {
+      q: "The software that resides on a computer and provides access to hypertext documents is called a:",
+      options: ["A. Browser", "B. Webserver", "C. URL", "D. HTTP"],
+      answer: "B. Webserver",
+      diff: "easy"
+    },
+    {
+      q: "The protocol used to transfer hypertext documents between browsers and webservers is:",
+      options: ["A. FTP", "B. SMTP", "C. HTTP", "D. POP3"],
+      answer: "C. HTTP",
+      diff: "easy"
+    },
+    {
+      q: "HTTP stands for:",
+      options: ["A. Hypertext Transfer Protocol", "B. High Transfer Text Protocol", "C. Hyper Transfer Text Protocol", "D. Hypertext Transmission Protocol"],
+      answer: "A. Hypertext Transfer Protocol",
+      diff: "easy"
+    },
+    {
+      q: "A unique address given to each document on the Web is called a:",
+      options: ["A. IP address", "B. MAC address", "C. URL", "D. Domain name"],
+      answer: "C. URL",
+      diff: "easy"
+    },
+    {
+      q: "URL stands for:",
+      options: ["A. Uniform Resource Locator", "B. Universal Reference Link", "C. Uniform Retrieval Location", "D. Universal Resource Link"],
+      answer: "A. Uniform Resource Locator",
+      diff: "easy"
+    },
+    {
+      q: "In a typical URL, the first segment specifies:",
+      options: ["A. Directory path", "B. Document name", "C. Protocol", "D. Server address"],
+      answer: "C. Protocol",
+      diff: "easy"
+    },
+    {
+      q: "In the URL http://eagle.mu.edu/authors/Shakespeare/Julius_Caesar.html, what is the server address?",
+      options: ["A. http://", "B. eagle.mu.edu", "C. /authors/Shakespeare/", "D. Julius_Caesar.html"],
+      answer: "B. eagle.mu.edu",
+      diff: "easy"
+    },
+    {
+      q: "In the same URL, what is the document name?",
+      options: ["A. http://", "B. eagle.mu.edu", "C. /authors/Shakespeare/", "D. Julius_Caesar.html"],
+      answer: "D. Julius_Caesar.html",
+      diff: "easy"
+    },
+    {
+      q: "A shortened URL that lacks a directory path typically returns a predetermined document called a:",
+      options: ["A. Home page", "B. Error page", "C. Search page", "D. Login page"],
+      answer: "A. Home page",
+      diff: "easy"
+    },
+    {
+      q: "Typing 'www.google.com' into a browser works because browsers assume which protocol?",
+      options: ["A. FTP", "B. HTTP", "C. HTTPS", "D. SMTP"],
+      answer: "B. HTTP",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is NOT a web browser?",
+      options: ["A. Safari", "B. Internet Explorer", "C. Apache", "D. Firefox"],
+      answer: "C. Apache",
+      diff: "easy"
+    },
+    {
+      q: "The machine address part of a URL is typically a:",
+      options: ["A. IP address only", "B. Mnemonic address (domain name)", "C. MAC address", "D. Port number"],
+      answer: "B. Mnemonic address (domain name)",
+      diff: "medium"
+    },
+    {
+      q: "A URL that consists of only a protocol and mnemonic address returns:",
+      options: ["A. An error", "B. A directory listing", "C. The home page", "D. A blank page"],
+      answer: "C. The home page",
+      diff: "easy"
+    },
+    {
+      q: "The purpose of a browser is to:",
+      options: ["A. Store web pages", "B. Serve web pages", "C. Obtain and present web materials", "D. Encrypt web traffic"],
+      answer: "C. Obtain and present web materials",
+      diff: "easy"
+    },
+    {
+      q: "The purpose of a webserver is to:",
+      options: ["A. Display web pages to users", "B. Provide access to documents under its control", "C. Cache web content", "D. Block malicious sites"],
+      answer: "B. Provide access to documents under its control",
+      diff: "easy"
+    },
+    {
+      q: "In a URL, the directory path helps the server:",
+      options: ["A. Choose a protocol", "B. Find the document", "C. Determine the port", "D. Encrypt the request"],
+      answer: "B. Find the document",
+      diff: "easy"
+    },
+    {
+      q: "The home page of a website typically:",
+      options: ["A. Is the only page", "B. Describes the information available at that website", "C. Cannot contain hyperlinks", "D. Requires a password"],
+      answer: "B. Describes the information available at that website",
+      diff: "easy"
+    },
+    {
+      q: "Which segment of the URL is optional and may be omitted if the document is in the root directory?",
+      options: ["A. Protocol", "B. Server address", "C. Directory path", "D. Document name"],
+      answer: "C. Directory path",
+      diff: "medium"
+    }
+  ]
+},
+
+72: {
+  title: "Networking and the Internet: HTML",
+  summary: `**Key Topics Covered:**
+- Hypertext document vs plain text file
+- Tags (special symbols describing display, multimedia, links)
+- HTML (Hypertext Markup Language)
+- HTML tags as typesetting directions
+- Browser as typesetter
+
+---
+
+**Simple Understanding:**
+
+**Hypertext Document:**
+👉 Similar to text file (encoded in ASCII/Unicode).
+👉 Contains special symbols called **tags**.
+
+**Tags:**
+👉 Describe:
+   - How document should appear on screen
+   - What multimedia resources (images, etc.) accompany document
+   - Which items are linked to other documents
+
+**HTML (Hypertext Markup Language):**
+👉 The system of tags used in hypertext documents.
+👉 Webpage author uses HTML to describe information needed by browser.
+
+**Analogy:**
+👉 Plain typed text + typesetting directions (red pen) → final printed page.
+👉 Plain text + HTML tags → browser reads tags → web page displayed.
+👉 Browser plays role of **typesetter**.
+
+---
+
+**Important Vocabulary:**
+- Hypertext = text with links to other documents
+- Tag = special symbol that describes formatting/link
+- HTML = Hypertext Markup Language
+- ASCII/Unicode = character encoding systems
+- Typesetter = person/program that formats text
+- Browser = software that interprets HTML
+
+---
+
+**Quick Revision Points:**
+- HTML tags are like red pen markings for typesetter.
+- Tags control appearance, multimedia, and hyperlinks.
+- Browser interprets HTML to display the page.
+- HTML is the language of the Web.`,
+  questions: [
+    {
+      q: "A traditional hypertext document is similar to a text file but also contains:",
+      options: ["A. Images only", "B. Special symbols called tags", "C. Only audio", "D. Binary data"],
+      answer: "B. Special symbols called tags",
+      diff: "easy"
+    },
+    {
+      q: "The system of tags used in hypertext documents is called:",
+      options: ["A. HTTP", "B. URL", "C. HTML", "D. FTP"],
+      answer: "C. HTML",
+      diff: "easy"
+    },
+    {
+      q: "HTML stands for:",
+      options: ["A. Hypertext Markup Language", "B. Hypertext Media Language", "C. High Transfer Markup Language", "D. Hyper Transfer Markup Language"],
+      answer: "A. Hypertext Markup Language",
+      diff: "easy"
+    },
+    {
+      q: "HTML tags describe all of the following EXCEPT:",
+      options: ["A. How the document should appear", "B. Which items are linked to other documents", "C. The user's password", "D. What multimedia resources accompany the document"],
+      answer: "C. The user's password",
+      diff: "easy"
+    },
+    {
+      q: "The analogy used in the text compares HTML tags to:",
+      options: ["A. A computer keyboard", "B. Typesetting directions written with a red pen", "C. A printer", "D. A scanner"],
+      answer: "B. Typesetting directions written with a red pen",
+      diff: "easy"
+    },
+    {
+      q: "In the typesetting analogy, what plays the role of the typesetter?",
+      options: ["A. The webserver", "B. The browser", "C. The HTML tag", "D. The URL"],
+      answer: "B. The browser",
+      diff: "easy"
+    },
+    {
+      q: "Plain text files encode characters using systems like:",
+      options: ["A. HTML only", "B. ASCII or Unicode", "C. JPEG", "D. MP3"],
+      answer: "B. ASCII or Unicode",
+      diff: "easy"
+    },
+    {
+      q: "HTML tags are used to describe how a document should appear on a:",
+      options: ["A. Printer only", "B. Display screen", "C. Audio speaker", "D. Hard drive"],
+      answer: "B. Display screen",
+      diff: "easy"
+    },
+    {
+      q: "Who uses HTML to describe a webpage?",
+      options: ["A. The browser", "B. The webserver", "C. The author of the webpage", "D. The router"],
+      answer: "C. The author of the webpage",
+      diff: "easy"
+    },
+    {
+      q: "Which component reads HTML tags to present the page?",
+      options: ["A. The webserver", "B. The browser", "C. The operating system", "D. The network card"],
+      answer: "B. The browser",
+      diff: "easy"
+    },
+    {
+      q: "The purpose of HTML tags is to provide information that a browser needs to:",
+      options: ["A. Store the file", "B. Present the page and find related documents", "C. Encrypt the data", "D. Compress the file"],
+      answer: "B. Present the page and find related documents",
+      diff: "medium"
+    },
+    {
+      q: "Hypertext documents are encoded character by character using:",
+      options: ["A. HTML only", "B. ASCII or Unicode plus embedded tags", "C. Binary only", "D. XML only"],
+      answer: "B. ASCII or Unicode plus embedded tags",
+      diff: "medium"
+    },
+    {
+      q: "The red pen in the analogy represents:",
+      options: ["A. The browser", "B. The webserver", "C. HTML tags", "D. The user"],
+      answer: "C. HTML tags",
+      diff: "easy"
+    },
+    {
+      q: "Multimedia resources that accompany an HTML document can include:",
+      options: ["A. Images", "B. Audio", "C. Video", "D. All of the above"],
+      answer: "D. All of the above",
+      diff: "easy"
+    },
+    {
+      q: "What does the 'ML' in HTML stand for?",
+      options: ["A. Markup Language", "B. Media Language", "C. Machine Language", "D. Meta Language"],
+      answer: "A. Markup Language",
+      diff: "easy"
+    },
+    {
+      q: "A browser interprets HTML tags to determine:",
+      options: ["A. The user's identity", "B. How to display text and images", "C. The speed of the network", "D. The operating system"],
+      answer: "B. How to display text and images",
+      diff: "easy"
+    },
+    {
+      q: "The distinction between a plain text file and a hypertext document is that hypertext contains:",
+      options: ["A. More characters", "B. Binary data", "C. Tags", "D. Encryption"],
+      answer: "C. Tags",
+      diff: "easy"
+    },
+    {
+      q: "Typesetting directions added to plain typed text tell the typesetter:",
+      options: ["A. How to print the material", "B. How to scan the material", "C. How to email the material", "D. How to delete the material"],
+      answer: "A. How to print the material",
+      diff: "easy"
+    },
+    {
+      q: "In the Web context, the 'typesetter' is the:",
+      options: ["A. Webserver", "B. HTML tag", "C. Browser", "D. Author"],
+      answer: "C. Browser",
+      diff: "easy"
+    },
+    {
+      q: "The text mentions that the early Web prototype did NOT yet support:",
+      options: ["A. Hypertext", "B. Links", "C. Multimedia data", "D. Servers"],
+      answer: "C. Multimedia data",
+      diff: "easy"
+    }
+  ]
+},
+73: {
+  title: "Networking and the Internet: HTML (Source and Structure)",
+  summary: `**Key Topics Covered:**
+- HTML source version of a webpage
+- Tags delineated by < and >
+- HTML document sections: head and body
+- Title tag (documentation, not displayed)
+- Body content (displayed on screen)
+- Heading tags (<h1>, etc.)
+- Paragraph tag (<p>)
+
+---
+
+**Simple Understanding:**
+
+**HTML Source Document:**
+👉 The HTML-encoded version of a webpage is called the **source** version.
+👉 Tags are delineated by symbols `<` and `>`.
+
+**Two Main Sections:**
+
+| Section | Tags | Purpose |
+|---------|------|---------|
+| Head | &lt;head&gt; &lt;/head&gt; | Preliminary information (title, metadata) – not displayed on screen |
+| Body | &lt;body&gt; &lt;/body&gt; | Main content that appears on computer screen |
+
+**Analogy:**
+👉 Like an interoffice memo: head contains date/subject, body contains the meat.
+
+**Example (Figure 68):**
+👉 `<title>` inside head: "Documentation page" (for documentation, not displayed).
+👉 `<h1>` inside body: "My Web Page" (level-one heading, displayed prominently).
+👉 `<p>` inside body: "Click here for another page." (paragraph text).
+
+**Note:**
+👉 The example page is not fully functional – clicking "here" does nothing (no hyperlink yet).
+
+---
+
+**Important Vocabulary:**
+- Source version = HTML code of a webpage
+- Tag = markup instruction inside < >
+- Head = section for document info (not displayed)
+- Body = section for visible content
+- Title = text in head (appears in browser tab, not page)
+- Heading (h1) = prominent text
+- Paragraph (p) = normal text block
+
+---
+
+**Quick Revision Points:**
+- HTML source uses < > for tags.
+- Head vs body: head is metadata, body is display content.
+- Title tag is in head, shown in browser tab.
+- h1 is largest heading.
+- p is paragraph.
+- The simple page in Figure 68 has no working link.`,
+  questions: [
+    {
+      q: "The HTML-encoded version of a webpage is called the:",
+      options: ["A. Compiled version", "B. Source version", "C. Binary version", "D. Executable version"],
+      answer: "B. Source version",
+      diff: "easy"
+    },
+    {
+      q: "In HTML, tags are delineated by which symbols?",
+      options: ["A. [ and ]", "B. { and }", "C. ( and )", "D. < and >"],
+      answer: "D. < and >",
+      diff: "easy"
+    },
+    {
+      q: "The two main sections of an HTML document are the head and the:",
+      options: ["A. Footer", "B. Body", "C. Title", "D. Meta"],
+      answer: "B. Body",
+      diff: "easy"
+    },
+    {
+      q: "The head section of an HTML document is surrounded by which tags?",
+      options: ["A. <header> and </header>", "B. <head> and </head>", "C. <top> and </top>", "D. <title> and </title>"],
+      answer: "B. <head> and </head>",
+      diff: "easy"
+    },
+    {
+      q: "The body section of an HTML document is surrounded by which tags?",
+      options: ["A. <main> and </main>", "B. <content> and </content>", "C. <body> and </body>", "D. <display> and </display>"],
+      answer: "C. <body> and </body>",
+      diff: "easy"
+    },
+    {
+      q: "The head of a webpage typically contains:",
+      options: ["A. The main content to display", "B. Preliminary information like the title", "C. Images", "D. Hyperlinks"],
+      answer: "B. Preliminary information like the title",
+      diff: "easy"
+    },
+    {
+      q: "The body of a webpage contains:",
+      options: ["A. The document title", "B. Metadata", "C. The material to be presented on screen", "D. The author's name only"],
+      answer: "C. The material to be presented on screen",
+      diff: "easy"
+    },
+    {
+      q: "The analogy given for head and body is:",
+      options: ["A. A book cover and pages", "B. Head and body of an interoffice memo", "C. A tree trunk and branches", "D. A car engine and wheels"],
+      answer: "B. Head and body of an interoffice memo",
+      diff: "easy"
+    },
+    {
+      q: "The title tag (<title>) is located in which section of an HTML document?",
+      options: ["A. Body", "B. Head", "C. Footer", "D. Paragraph"],
+      answer: "B. Head",
+      diff: "easy"
+    },
+    {
+      q: "The text inside the title tag is:",
+      options: ["A. Displayed prominently on the screen", "B. For documentation purposes, not part of the displayed page", "C. Displayed as a heading", "D. Displayed as a paragraph"],
+      answer: "B. For documentation purposes, not part of the displayed page",
+      diff: "medium"
+    },
+    {
+      q: "A level-one heading in HTML is created using which tags?",
+      options: ["A. <heading> and </heading>", "B. <h0> and </h0>", "C. <h1> and </h1>", "D. <title> and </title>"],
+      answer: "C. <h1> and </h1>",
+      diff: "easy"
+    },
+    {
+      q: "A paragraph in HTML is created using which tags?",
+      options: ["A. <para> and </para>", "B. <p> and </p>", "C. <text> and </text>", "D. <line> and </line>"],
+      answer: "B. <p> and </p>",
+      diff: "easy"
+    },
+    {
+      q: "In the example webpage (Figure 68a), the text 'My Web Page' is inside which tags?",
+      options: ["A. <title>", "B. <p>", "C. <h1>", "D. <body>"],
+      answer: "C. <h1>",
+      diff: "easy"
+    },
+    {
+      q: "In the example webpage, the text 'Click here for another page.' is inside which tags?",
+      options: ["A. <h1>", "B. <title>", "C. <p>", "D. <heading>"],
+      answer: "C. <p>",
+      diff: "easy"
+    },
+    {
+      q: "The example webpage in Figure 68 is described as not fully functional because:",
+      options: ["A. The tags are incorrect", "B. Nothing happens when clicking 'here'", "C. It has no body", "D. It has no title"],
+      answer: "B. Nothing happens when clicking 'here'",
+      diff: "easy"
+    },
+    {
+      q: "What is missing from the example webpage to make 'here' clickable?",
+      options: ["A. A paragraph tag", "B. A heading tag", "C. A hyperlink (anchor) tag", "D. A title tag"],
+      answer: "C. A hyperlink (anchor) tag",
+      diff: "medium"
+    },
+    {
+      q: "The beginning of an HTML document is typically indicated by which tag?",
+      options: ["A. <html>", "B. <start>", "C. <document>", "D. <web>"],
+      answer: "A. <html>",
+      diff: "easy"
+    },
+    {
+      q: "The end of an HTML document is indicated by:",
+      options: ["A. <end>", "B. </html>", "C. <finish>", "D. </document>"],
+      answer: "B. </html>",
+      diff: "easy"
+    },
+    {
+      q: "A level-one heading (<h1>) is typically displayed:",
+      options: ["A. Smaller than normal text", "B. Prominently (largest heading)", "C. Invisible", "D. As a link"],
+      answer: "B. Prominently (largest heading)",
+      diff: "easy"
+    },
+    {
+      q: "Which tag is used to define the main content area that the browser displays?",
+      options: ["A. <head>", "B. <title>", "C. <body>", "D. <html>"],
+      answer: "C. <body>",
+      diff: "easy"
+    }
+  ]
+},
+
+74: {
+  title: "Networking and the Internet: More on HTML",
+  summary: `**Key Topics Covered:**
+- W3Schools as a resource for HTML learning
+- Comprehensive list of HTML tags and usage
+- Interactive "Try it Yourself" feature (code on left, output on right)
+- Example: <b> tag (bold text)
+
+---
+
+**Simple Understanding:**
+
+**Learning HTML:**
+👉 W3Schools website provides detailed information about all HTML tags.
+👉 URL: https://www.w3schools.com/tags/default.asp
+
+**Navigating W3Schools:**
+👉 Left panel: list of all HTML tags.
+👉 Click on any tag (e.g., <b>) to see its description and usage.
+
+**Interactive Example:**
+👉 Click green button "Try it Yourself".
+👉 Screen splits into two:
+   - **Left side:** HTML code
+   - **Right side:** Output (how the code appears in browser)
+
+---
+
+**Important Vocabulary:**
+- W3Schools = online web development tutorial website
+- Tag = HTML markup element
+- <b> tag = bold text
+- Try it Yourself = interactive code editor
+- Code vs Output = source vs rendered view
+
+---
+
+**Quick Revision Points:**
+- W3Schools is a free resource for learning HTML.
+- All HTML tags are listed with examples.
+- "Try it Yourself" lets you edit and see output instantly.
+- <b> tag makes text bold.`,
+  questions: [
+    {
+      q: "Which website is recommended in the module for learning HTML tags?",
+      options: ["A. Codecademy", "B. W3Schools", "C. MDN Web Docs", "D. Stack Overflow"],
+      answer: "B. W3Schools",
+      diff: "easy"
+    },
+    {
+      q: "The URL provided for HTML tag reference is:",
+      options: ["A. https://www.html.com/tags", "B. https://www.w3schools.com/tags/default.asp", "C. https://www.tutorialspoint.com/html", "D. https://www.w3.org/html"],
+      answer: "B. https://www.w3schools.com/tags/default.asp",
+      diff: "easy"
+    },
+    {
+      q: "On the W3Schools HTML tag reference page, the list of tags appears on which panel?",
+      options: ["A. Right panel", "B. Top panel", "C. Left panel", "D. Bottom panel"],
+      answer: "C. Left panel",
+      diff: "easy"
+    },
+    {
+      q: "To see an interactive example of an HTML tag on W3Schools, you click the button labeled:",
+      options: ["A. Run", "B. Execute", "C. Try it Yourself", "D. Demo"],
+      answer: "C. Try it Yourself",
+      diff: "easy"
+    },
+    {
+      q: "When you click 'Try it Yourself' for the <b> tag, the page shows:",
+      options: ["A. Only code", "B. Only output", "C. Code on the left, output on the right", "D. Code on the right, output on the left"],
+      answer: "C. Code on the left, output on the right",
+      diff: "easy"
+    },
+    {
+      q: "The <b> tag is used to make text:",
+      options: ["A. Italic", "B. Bold", "C. Underlined", "D. Strikethrough"],
+      answer: "B. Bold",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is NOT a feature of the W3Schools 'Try it Yourself' tool?",
+      options: ["A. Edit code", "B. See live output", "C. Download the output as a file", "D. Run HTML code"],
+      answer: "C. Download the output as a file",
+      diff: "medium"
+    },
+    {
+      q: "W3Schools provides information about all HTML tags and how they can be used. This statement is:",
+      options: ["A. True", "B. False", "C. Partially true", "D. Not mentioned"],
+      answer: "A. True",
+      diff: "easy"
+    },
+    {
+      q: "The module suggests that if you are interested in developing HTML pages, you should consult:",
+      options: ["A. A textbook only", "B. W3Schools", "C. Microsoft Word", "D. Email"],
+      answer: "B. W3Schools",
+      diff: "easy"
+    },
+    {
+      q: "In Figure 71, the code and output are shown side by side. The code is on which side?",
+      options: ["A. Left", "B. Right", "C. Top", "D. Bottom"],
+      answer: "A. Left",
+      diff: "easy"
+    },
+    {
+      q: "The example tag used in the module to demonstrate 'Try it Yourself' is:",
+      options: ["A. <p>", "B. <h1>", "C. <b>", "D. <a>"],
+      answer: "C. <b>",
+      diff: "easy"
+    },
+    {
+      q: "The output in 'Try it Yourself' shows the result of HTML code as rendered by a:",
+      options: ["A. Compiler", "B. Browser", "C. Text editor", "D. Server"],
+      answer: "B. Browser",
+      diff: "easy"
+    },
+    {
+      q: "The W3Schools website is primarily a resource for learning:",
+      options: ["A. Operating systems", "B. Networking hardware", "C. Web development (HTML, CSS, etc.)", "D. Database management"],
+      answer: "C. Web development (HTML, CSS, etc.)",
+      diff: "easy"
+    },
+    {
+      q: "The module number for 'More on HTML' is:",
+      options: ["A. 72", "B. 73", "C. 74", "D. 75"],
+      answer: "C. 74",
+      diff: "easy"
+    },
+    {
+      q: "The 'Try it Yourself' feature allows users to:",
+      options: ["A. Only view code", "B. Only view output", "C. Edit, run, and see output instantly", "D. Download HTML files only"],
+      answer: "C. Edit, run, and see output instantly",
+      diff: "easy"
+    },
+    {
+      q: "On the left panel of W3Schools tag reference, you can find a list of:",
+      options: ["A. CSS properties", "B. JavaScript functions", "C. HTML tags", "D. Server settings"],
+      answer: "C. HTML tags",
+      diff: "easy"
+    },
+    {
+      q: "Clicking on a tag name on the left panel of W3Schools takes you to:",
+      options: ["A. A blank page", "B. A page describing that tag's usage", "C. A forum discussion", "D. A video tutorial"],
+      answer: "B. A page describing that tag's usage",
+      diff: "easy"
+    },
+    {
+      q: "The <b> tag is an example of a tag that affects text:",
+      options: ["A. Color", "B. Size", "C. Style (bold)", "D. Alignment"],
+      answer: "C. Style (bold)",
+      diff: "easy"
+    },
+    {
+      q: "W3Schools is a:",
+      options: ["A. Search engine", "B. Web development tutorial website", "C. Social media platform", "D. Email service"],
+      answer: "B. Web development tutorial website",
+      diff: "easy"
+    },
+    {
+      q: "The module encourages students to use W3Schools for:",
+      options: ["A. Creating email accounts", "B. Learning HTML tags and their usage", "C. Downloading software", "D. Buying web hosting"],
+      answer: "B. Learning HTML tags and their usage",
+      diff: "easy"
+    }
+  ]
+},
+75: {
+  title: "Networking and the Internet: XML",
+  summary: `**Key Topics Covered:**
+- HTML as notation for document appearance
+- Encoding non-textual material (e.g., sheet music) as text files
+- Custom tag system for music (staff, measure, notes, etc.)
+- XML (eXtensible Markup Language) – standardized style for designing markup languages
+- Relationship between XML, HTML, and XHTML
+
+---
+
+**Simple Understanding:**
+
+**Encoding Non-Textual Material:**
+👉 HTML encodes text + appearance as text files.
+👉 Similarly, sheet music can be encoded as text using custom tags.
+👉 Example: Beethoven's Fifth Symphony first two bars encoded with tags like:
+   - &lt;staff clef="treble"&gt; to start a staff
+   - &lt;time&gt; 2/4 &lt;/time&gt; for time signature
+   - &lt;measure&gt; and &lt;/measure&gt; for measures
+   - &lt;notes&gt; egh G &lt;/notes&gt; for notes
+
+**XML (eXtensible Markup Language):**
+👉 A standardized style for designing notational systems to represent data as text files.
+👉 Based on SGML (Standard Generalized Markup Language), but simplified.
+
+**Markup Languages:**
+👉 Notational systems developed using XML standards.
+👉 Examples: MathML (mathematics), SMIL (multimedia presentations), MusicXML.
+👉 HTML is a markup language for webpages (but original HTML pre-dates XML).
+
+**XHTML:**
+👉 Version of HTML that strictly conforms to XML standards.
+
+---
+
+**Important Vocabulary:**
+- XML = eXtensible Markup Language
+- Markup language = notational system using tags
+- Tag = delimiter (&lt; &gt;) with name
+- SGML = Standard Generalized Markup Language (predecessor)
+- XHTML = XML-compliant version of HTML
+- Attribute = extra info inside tag (e.g., clef="treble")
+- Encoding = converting data into text representation
+
+---
+
+**Quick Revision Points:**
+- Any data can be encoded as text using custom tags.
+- XML provides rules for creating markup languages.
+- Tags use &lt; &gt; and closing with &lt;/ &gt;.
+- Attributes give additional information.
+- HTML is one example of a markup language.
+- Original HTML is not fully XML-compliant; XHTML is.`,
+  
+  questions: [
+    {
+      q: "HTML is essentially a notational system for encoding:",
+      options: [
+        "A. Images only",
+        "B. Text document with appearance",
+        "C. Audio files",
+        "D. Video streams"
+      ],
+      answer: "B. Text document with appearance",
+      diff: "easy"
+    },
+    {
+      q: "The example given for encoding non-textual material as text is:",
+      options: [
+        "A. Mathematical equations",
+        "B. Sheet music",
+        "C. Photographs",
+        "D. 3D models"
+      ],
+      answer: "B. Sheet music",
+      diff: "easy"
+    },
+    {
+  q: "In the sheet music encoding example, the tag for starting a staff with treble clef is:",
+  options: [
+    "A. <staff>",
+    'B. <clef="treble">',
+    'C. <staff clef="treble">',
+    "D. <staff clef=treble>"
+  ],
+  answer: 'C. <staff clef="treble">',
+  diff: "medium"
+},
+    {
+      q: "Which tag is used to indicate the end of a staff in the example?",
+      options: [
+        "A. </staff>",
+        "B. <end staff>",
+        "C. <staff/>",
+        "D. </staff ;>"
+      ],
+      answer: "A. </staff>",
+      diff: "easy"
+    },
+    {
+      q: "XML stands for:",
+      options: [
+        "A. eXtensible Markup Language",
+        "B. Extra Markup Language",
+        "C. Extended Machine Language",
+        "D. External Markup Language"
+      ],
+      answer: "A. eXtensible Markup Language",
+      diff: "easy"
+    }
+  ]
+},
+
+76: {
+  title: "Networking and the Internet: Client Side and Server Side",
+  summary: `**Key Topics Covered:**
+- Browser fetching and displaying webpages (client role)
+- URL, webserver, HTML interpretation
+- Client-side vs server-side activities
+- Examples: travel agent (customized webpage), search engine, webmail
+- Technologies: JavaScript, Java applets, Flash
+
+---
+
+**Simple Understanding:**
+
+**Basic Webpage Retrieval:**
+👉 Browser (client) uses URL to contact webserver.
+👉 Server sends HTML text document.
+👉 Browser interprets HTML tags and displays page.
+👉 Clicking a hyperlink repeats the process.
+
+---
+
+**Client-Side vs Server-Side Activities:**
+👉 **Client-side:** Performed by browser (e.g., user input, animation).
+👉 **Server-side:** Performed by webserver (e.g., building custom pages, accessing mail server).
+
+**Examples:**
+
+1. **Travel agent website:**
+   - Client-side: User selects destinations and travel dates.
+   - Server-side: Server builds customized webpage with relevant information.
+
+2. **Search engine:**
+   - Client-side: User enters search topic.
+   - Server-side: Server constructs webpage with search results.
+
+3. **Webmail:**
+   - Server-side: Webserver fetches mail from mail server, builds webpage.
+   - Client-side: Browser displays mail and allows user to compose messages.
+   - Server-side: Webserver forwards composed messages to mail server.
+
+---
+
+**Technologies for Client/Server Activities:**
+
+| Technology | Type | Description |
+|------------|------|-------------|
+| JavaScript | Client-side | Programs embedded in HTML, executed by browser |
+| Java applets | Client-side | Program units transferred to browser, executed |
+| Flash | Client-side | Extensive multimedia presentations |
+
+---
+
+**Important Vocabulary:**
+- Client-side = activity performed by browser
+- Server-side = activity performed by webserver
+- Customized webpage = dynamically built for specific user
+- Webmail = email accessed via browser
+- JavaScript = scripting language for client-side
+- Applet = small Java program run in browser
+- Flash = multimedia platform (client-side)
+
+---
+
+**Quick Revision Points:**
+- Browser fetches and displays; server sends HTML.
+- Client-side: user input, animation, forms.
+- Server-side: custom page generation, database access.
+- Webmail: server acts as intermediary to mail server.
+- JavaScript, Java applets, Flash enable client-side interactivity.`,
+  questions: [
+    {
+      q: "In basic webpage retrieval, the browser plays the role of a:",
+      options: ["A. Server", "B. Client", "C. Router", "D. Database"],
+      answer: "B. Client",
+      diff: "easy"
+    },
+    {
+      q: "The server responds to a browser's request by sending:",
+      options: ["A. An image file", "B. A text document (HTML)", "C. A compiled program", "D. A video stream"],
+      answer: "B. A text document (HTML)",
+      diff: "easy"
+    },
+    {
+      q: "Activities performed by a browser are called:",
+      options: ["A. Server-side", "B. Client-side", "C. Network-side", "D. Host-side"],
+      answer: "B. Client-side",
+      diff: "easy"
+    },
+    {
+      q: "Activities performed by a webserver are called:",
+      options: ["A. Client-side", "B. Server-side", "C. User-side", "D. Database-side"],
+      answer: "B. Server-side",
+      diff: "easy"
+    },
+    {
+      q: "In the travel agent example, a customer specifying destinations and dates is a:",
+      options: ["A. Server-side activity", "B. Client-side activity", "C. Network activity", "D. Database activity"],
+      answer: "B. Client-side activity",
+      diff: "easy"
+    },
+    {
+      q: "In the travel agent example, the server constructing a customized webpage is a:",
+      options: ["A. Client-side activity", "B. Server-side activity", "C. Browser activity", "D. User activity"],
+      answer: "B. Server-side activity",
+      diff: "easy"
+    },
+    {
+      q: "When using a search engine, entering a topic of interest is a:",
+      options: ["A. Server-side activity", "B. Client-side activity", "C. Network activity", "D. Indexing activity"],
+      answer: "B. Client-side activity",
+      diff: "easy"
+    },
+    {
+      q: "The search engine constructing a webpage of results is a:",
+      options: ["A. Client-side activity", "B. Server-side activity", "C. Browser activity", "D. User activity"],
+      answer: "B. Server-side activity",
+      diff: "easy"
+    },
+    {
+      q: "In webmail, the webserver acts as an intermediary between the client and:",
+      options: ["A. The database", "B. The mail server", "C. The file server", "D. The print server"],
+      answer: "B. The mail server",
+      diff: "easy"
+    },
+    {
+      q: "In webmail, building webpages containing mail information is a:",
+      options: ["A. Client-side activity", "B. Server-side activity", "C. User activity", "D. Browser plugin activity"],
+      answer: "B. Server-side activity",
+      diff: "easy"
+    },
+    {
+      q: "Composing email messages in a browser is a:",
+      options: ["A. Server-side activity", "B. Client-side activity", "C. Mail server activity", "D. Network activity"],
+      answer: "B. Client-side activity",
+      diff: "easy"
+    },
+    {
+      q: "Which technology is an early and still popular means of controlling client-side activities?",
+      options: ["A. Java applets", "B. Flash", "C. JavaScript", "D. PHP"],
+      answer: "C. JavaScript",
+      diff: "easy"
+    },
+    {
+      q: "JavaScript was developed by:",
+      options: ["A. Sun Microsystems", "B. Microsoft", "C. Netscape Communications, Inc.", "D. Macromedia"],
+      answer: "C. Netscape Communications, Inc.",
+      diff: "medium"
+    },
+    {
+      q: "Program units called applets are written in which language?",
+      options: ["A. JavaScript", "B. Java", "C. C++", "D. Python"],
+      answer: "B. Java",
+      diff: "easy"
+    },
+    {
+      q: "Applets are transferred to the browser as requested within the:",
+      options: ["A. HTTP header", "B. URL", "C. HTML source document", "D. Server log"],
+      answer: "C. HTML source document",
+      diff: "medium"
+    },
+    {
+      q: "The technology Flash was developed by:",
+      options: ["A. Adobe", "B. Macromedia", "C. Sun Microsystems", "D. Netscape"],
+      answer: "B. Macromedia",
+      diff: "medium"
+    },
+    {
+      q: "Flash is used for implementing:",
+      options: ["A. Simple text formatting", "B. Extensive multimedia client-side presentations", "C. Server-side databases", "D. Email protocols"],
+      answer: "B. Extensive multimedia client-side presentations",
+      diff: "easy"
+    },
+    {
+      q: "The Java applet approach was developed by:",
+      options: ["A. Netscape", "B. Microsoft", "C. Sun Microsystems", "D. Macromedia"],
+      answer: "C. Sun Microsystems",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is NOT a client-side technology mentioned?",
+      options: ["A. JavaScript", "B. Java applets", "C. Flash", "D. PHP"],
+      answer: "D. PHP",
+      diff: "easy"
+    },
+    {
+      q: "In basic webpage retrieval, after receiving the HTML document, the browser:",
+      options: ["A. Sends it back to the server", "B. Interprets HTML tags and displays the page", "C. Compiles it into machine code", "D. Encrypts it"],
+      answer: "B. Interprets HTML tags and displays the page",
+      diff: "easy"
+    }
+  ]
+},
+
+
+77: {
+  title: "Networking and the Internet: Layered Approach to Internet Software (I)",
+  summary: `**Key Topics Covered:**
+- Message-passing infrastructure of the Internet
+- Analogy: sending a gift by shipping (user, shipping company, airline)
+- Three-level hierarchy in analogy
+- Four layers of Internet software: Application, Transport, Network, Link
+- Message flow: origin → down through layers → transmit → receive → up through layers
+
+---
+
+**Simple Understanding:**
+
+**Main Task of Networking Software:**
+👉 Provide infrastructure to transfer messages between machines.
+
+**Package-Shipping Analogy (Figure 73):**
+👉 You wrap gift, write address, give to shipping company (e.g., USPS).
+👉 Shipping company puts package in container, delivers to airline.
+👉 Airline flies container to destination city (maybe with stops).
+👉 At destination, airline gives container to shipping company.
+👉 Shipping company removes package and delivers to friend.
+
+**Three-Level Hierarchy in Analogy:**
+1. **User level** (you and your friend)
+2. **Shipping company**
+3. **Airline**
+
+👉 Each level uses next lower level as an **abstract tool** (no need to know details).
+👉 Each level has representatives at origin and destination (reverse roles).
+
+---
+
+**Internet Software Layers (4 layers):**
+
+| Layer | Role |
+|-------|------|
+| Application | Where message originates/delivered (e.g., browser, email) |
+| Transport | Prepares message for transmission |
+| Network | Routes message across networks |
+| Link | Actually transmits bits over physical medium |
+
+👉 Message flow: **Application → Transport → Network → Link** (at origin)
+👉 Then transmitted
+👉 At destination: **Link → Network → Transport → Application** (delivered)
+
+---
+
+**Important Vocabulary:**
+- Application layer = topmost, user-facing protocols
+- Transport layer = end-to-end communication management
+- Network layer = routing and addressing (IP)
+- Link layer = physical transmission (Ethernet, WiFi)
+- Hierarchy = layered structure
+- Abstract tool = using lower layer without knowing details
+- Counterpart = matching layer at destination
+
+---
+
+**Quick Revision Points:**
+- Internet software uses layered approach.
+- Analogy: user, shipping company, airline (3 levels).
+- Internet has 4 layers: Application, Transport, Network, Link.
+- Messages go down layers at origin, up layers at destination.
+- Each layer provides services to layer above.`,
+  questions: [
+    {
+      q: "A principal task of networking software is to:",
+      options: ["A. Provide web browsing", "B. Provide infrastructure for transferring messages", "C. Manage user accounts", "D. Encrypt all data"],
+      answer: "B. Provide infrastructure for transferring messages",
+      diff: "easy"
+    },
+    {
+      q: "The analogy used to explain layered Internet software is:",
+      options: ["A. Sending a letter", "B. Sending a gift in a package", "C. Making a phone call", "D. Driving a car"],
+      answer: "B. Sending a gift in a package",
+      diff: "easy"
+    },
+    {
+      q: "In the shipping analogy, how many levels are in the hierarchy?",
+      options: ["A. Two", "B. Three", "C. Four", "D. Five"],
+      answer: "B. Three",
+      diff: "easy"
+    },
+    {
+      q: "In the shipping analogy, the three levels are:",
+      options: ["A. User, shipping company, airline", "B. Sender, post office, truck", "C. Sender, receiver, carrier", "D. Application, transport, network"],
+      answer: "A. User, shipping company, airline",
+      diff: "easy"
+    },
+    {
+      q: "In the analogy, which level uses the next lower level as an abstract tool?",
+      options: ["A. Only the user", "B. Only the shipping company", "C. Each level", "D. Only the airline"],
+      answer: "C. Each level",
+      diff: "medium"
+    },
+    {
+      q: "Internet software has how many layers?",
+      options: ["A. Two", "B. Three", "C. Four", "D. Five"],
+      answer: "C. Four",
+      diff: "easy"
+    },
+    {
+      q: "The four layers of Internet software are called:",
+      options: ["A. Application, Transport, Network, Link", "B. User, Kernel, Driver, Hardware", "C. HTTP, TCP, IP, Ethernet", "D. Presentation, Session, Transport, Network"],
+      answer: "A. Application, Transport, Network, Link",
+      diff: "easy"
+    },
+    {
+      q: "A message typically originates in which layer?",
+      options: ["A. Link layer", "B. Network layer", "C. Transport layer", "D. Application layer"],
+      answer: "D. Application layer",
+      diff: "easy"
+    },
+    {
+      q: "After origination, the message is passed down through which sequence of layers?",
+      options: ["A. Link → Network → Transport → Application", "B. Application → Transport → Network → Link", "C. Transport → Application → Network → Link", "D. Network → Transport → Link → Application"],
+      answer: "B. Application → Transport → Network → Link",
+      diff: "medium"
+    },
+    {
+      q: "The actual transmission over physical medium occurs at which layer?",
+      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
+      answer: "D. Link layer",
+      diff: "easy"
+    },
+    {
+      q: "At the destination, the message is received by which layer first?",
+      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
+      answer: "D. Link layer",
+      diff: "medium"
+    },
+    {
+      q: "At the destination, after the link layer, the message passes up through:",
+      options: ["A. Application → Transport → Network", "B. Network → Transport → Application", "C. Transport → Network → Application", "D. Link → Application → Transport"],
+      answer: "B. Network → Transport → Application",
+      diff: "hard"
+    },
+    {
+      q: "In the shipping analogy, what does the user represent in the Internet software context?",
+      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
+      answer: "A. Application layer",
+      diff: "hard"
+    },
+    {
+      q: "In the analogy, the shipping company roughly corresponds to which layers?",
+      options: ["A. Application only", "B. Transport and Network", "C. Link only", "D. All layers"],
+      answer: "B. Transport and Network",
+      diff: "hard"
+    },
+    {
+      q: "In the analogy, the airline roughly corresponds to which layer?",
+      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
+      answer: "D. Link layer",
+      diff: "hard"
+    },
+    {
+      q: "Each level in the Internet software hierarchy has representatives at:",
+      options: ["A. Only the origin", "B. Only the destination", "C. Both origin and destination", "D. Neither"],
+      answer: "C. Both origin and destination",
+      diff: "easy"
+    },
+    {
+      q: "The representatives at the destination tend to do the _______ of their counterparts at the origin.",
+      options: ["A. Same actions", "B. Reverse", "C. Nothing", "D. Encryption"],
+      answer: "B. Reverse",
+      diff: "easy"
+    },
+    {
+      q: "The software at each layer uses the next lower layer as a(n):",
+      options: ["A. End user", "B. Abstract tool", "C. Data source", "D. Error handler"],
+      answer: "B. Abstract tool",
+      diff: "easy"
+    },
+    {
+      q: "According to the text, the Internet software hierarchy consists of collections of:",
+      options: ["A. People and businesses", "B. Software routines", "C. Hardware devices", "D. Protocols only"],
+      answer: "B. Software routines",
+      diff: "easy"
+    },
+    {
+      q: "The purpose of the layered approach is to:",
+      options: ["A. Increase complexity", "B. Provide abstraction and modularity", "C. Slow down communication", "D. Require more memory"],
+      answer: "B. Provide abstraction and modularity",
+      diff: "easy"
+    }
+  ]
+},
 
 
   },
