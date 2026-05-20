@@ -7660,7 +7660,1737 @@ These are fundamental rules that sets follow, similar to logical equivalences.
   ]
 },
 
+15: {
+  title: "Relations and Functions (MTH202 Lecture 15)",
+  summary: `**Key Topics Covered:**
+- Definition of a function (two properties)
+- Arrow diagrams of functions vs non-functions
+- Domain, codomain, range
+- Image and inverse image of a set
+- Number of functions from A to B (|B|^|A|)
+- Well-defined functions
+- Binary operations as functions
 
+---
+
+**Simple Understanding:**
+
+**What is a Function?**
+👉 A relation from set X to set Y where:
+   1. Every element of X is related to some element of Y.
+   2. No element of X is related to two different elements of Y (unique image).
+👉 Notation: f: X → Y means f is a function from X to Y.
+👉 Domain = X, codomain = Y.
+👉 f(x) = image of x, range = set of all images.
+
+---
+
+**Arrow Diagram of a Function:**
+👉 Every element of X has exactly one arrow coming out.
+👉 Two elements of X can point to the same element of Y (not a problem).
+
+**Non-functions:**
+- Some element of X has no arrow → not a function.
+- Some element of X has two arrows to different Y → not a function.
+
+---
+
+**Range:**
+👉 Set of all y ∈ Y such that y = f(x) for some x ∈ X.
+👉 Range ⊆ codomain.
+
+---
+
+**Image of a Set:**
+👉 f(A) = { f(x) | x ∈ A } for A ⊆ X.
+
+**Inverse Image of a Set:**
+👉 f⁻¹(C) = { x ∈ X | f(x) ∈ C } for C ⊆ Y.
+
+---
+
+**Number of Functions:**
+👉 If |A| = m, |B| = n, then number of functions from A to B = nᵐ.
+👉 Number of binary relations = 2ᵐⁿ.
+👉 Fraction of relations that are functions = nᵐ / 2ᵐⁿ.
+
+---
+
+**Well-Defined Function:**
+👉 A function is well-defined if whenever x₁ = x₂, then f(x₁) = f(x₂).
+👉 Counterexample: f(n) = ±n not well-defined (one input gives two outputs).
+
+---
+
+**Binary Operation:**
+👉 A function * : A × A → A (takes two elements of A to a third element of A).
+👉 Examples: +, × on N; ∪, ∩ on power set; AND, OR on {0,1}.
+
+---
+
+**Important Vocabulary:**
+- Function = relation with unique image per input
+- Domain = set of inputs
+- Codomain = set of possible outputs
+- Range = actual outputs
+- Image = f(A)
+- Inverse image = f⁻¹(C)
+- Well-defined = consistent mapping
+- Binary operation = two-input function on a set
+
+---
+
+**Quick Revision Points:**
+- A function must: (1) cover domain, (2) be single-valued.
+- Arrow diagram: one arrow from each x, no splitting.
+- Number of functions: nᵐ.
+- Binary operation: maps A×A → A.`,
+  questions: [
+    {
+      q: "A function f from X to Y must satisfy:",
+      options: ["A. Every element of X has at most one image", "B. Every element of X has exactly one image", "C. Every element of Y has exactly one pre-image", "D. No two elements of X have the same image"],
+      answer: "B. Every element of X has exactly one image",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following relations from X={2,4,5} to Y={1,2,4,6} is a function?",
+      options: ["A. {(2,4),(4,1)}", "B. {(2,4),(4,1),(4,2),(5,6)}", "C. {(2,4),(4,1),(5,6)}", "D. {(2,4),(5,6)}"],
+      answer: "C. {(2,4),(4,1),(5,6)}",
+      diff: "easy"
+    },
+    {
+      q: "If f: X→Y, the range of f is:",
+      options: ["A. The set of all y in Y such that y = f(x) for some x in X", "B. The set of all x in X", "C. The set Y itself", "D. The set of all ordered pairs in f"],
+      answer: "A. The set of all y in Y such that y = f(x) for some x in X",
+      diff: "easy"
+    },
+    {
+      q: "The vertical line test is used to determine if a graph represents:",
+      options: ["A. A relation", "B. A function", "C. A one-to-one function", "D. An onto function"],
+      answer: "B. A function",
+      diff: "easy"
+    },
+    {
+      q: "The graph of x = y² in the Cartesian plane:",
+      options: ["A. Represents a function", "B. Does not represent a function (fails vertical line test)", "C. Represents a one-to-one function", "D. Has no vertical line crossing it"],
+      answer: "B. Does not represent a function (fails vertical line test)",
+      diff: "easy"
+    },
+    {
+      q: "Number of functions from a set with 3 elements to a set with 4 elements is:",
+      options: ["A. 7", "B. 12", "C. 64", "D. 81"],
+      answer: "C. 64",
+      diff: "easy"
+    },
+    {
+      q: "If |A|=m and |B|=n, the number of binary relations from A to B is:",
+      options: ["A. m+n", "B. m×n", "C. 2^(m×n)", "D. n^m"],
+      answer: "C. 2^(m×n)",
+      diff: "medium"
+    },
+    {
+      q: "The fraction of binary relations from A to B that are functions is:",
+      options: ["A. n^m / 2^(mn)", "B. 2^(mn) / n^m", "C. m^n / 2^(mn)", "D. 2^(mn) / m^n"],
+      answer: "A. n^m / 2^(mn)",
+      diff: "hard"
+    },
+    {
+      q: "Which of the following is NOT a well-defined function from Z to R?",
+      options: ["A. f(n)=n²", "B. f(n)=√n", "C. f(n)=|n|", "D. f(n)=2n+1"],
+      answer: "B. f(n)=√n (not defined for negative integers in R)",
+      diff: "medium"
+    },
+    {
+      q: "A function is well-defined if:",
+      options: ["A. It is one-to-one", "B. Every input has a unique output", "C. The range equals the codomain", "D. It is onto"],
+      answer: "B. Every input has a unique output",
+      diff: "easy"
+    },
+    {
+      q: "Let X={a,b}, Y={u,v}. How many functions are there from X to Y?",
+      options: ["A. 2", "B. 4", "C. 8", "D. 16"],
+      answer: "B. 4",
+      diff: "easy"
+    },
+    {
+      q: "The image of a set A ⊆ X under f is:",
+      options: ["A. {x∈X | f(x)∈A}", "B. {y∈Y | y=f(x) for some x∈A}", "C. The pre-image of A", "D. The domain of f restricted to A"],
+      answer: "B. {y∈Y | y=f(x) for some x∈A}",
+      diff: "easy"
+    },
+    {
+      q: "If f: X→Y and C ⊆ Y, the inverse image f⁻¹(C) is:",
+      options: ["A. {y∈Y | y=f(x) for some x∈C}", "B. {x∈X | f(x)∈C}", "C. The range of f", "D. The complement of C"],
+      answer: "B. {x∈X | f(x)∈C}",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following is a binary operation on the set of natural numbers N?",
+      options: ["A. Subtraction (-)", "B. Division (÷)", "C. Multiplication (×)", "D. Both A and B"],
+      answer: "C. Multiplication (×)",
+      diff: "easy"
+    },
+    {
+      q: "A binary operation on a set A is a function from:",
+      options: ["A. A to A", "B. A×A to A", "C. A to A×A", "D. A×A to A×A"],
+      answer: "B. A×A to A",
+      diff: "easy"
+    },
+    {
+      q: "The logical connective AND is a binary operation on the set {0,1}. Its truth table gives:",
+      options: ["A. 1·1=1, else 0", "B. 1+1=1, else 0", "C. 1·1=0, else 1", "D. 1+1=0, else 1"],
+      answer: "A. 1·1=1, else 0",
+      diff: "easy"
+    },
+    {
+      q: "If f(x)=x² and A={-2,0,3}, then f(A) is:",
+      options: ["A. {4,0,9}", "B. {-2,0,3}", "C. {4,9}", "D. {0,3}"],
+      answer: "A. {4,0,9}",
+      diff: "easy"
+    },
+    {
+      q: "If f is defined by the arrow diagram with X={1,2,3,4} and Y={a,b,c,d}, and f(1)=a, f(2)=a, f(3)=b, f(4)=c, then f⁻¹({a,b}) is:",
+      options: ["A. {1,2,3}", "B. {1,2}", "C. {3}", "D. {4}"],
+      answer: "A. {1,2,3}",
+      diff: "medium"
+    },
+    {
+      q: "Which of the following is a binary operation on the power set P(A) of a set A?",
+      options: ["A. Union ∪", "B. Intersection ∩", "C. Symmetric difference Δ", "D. All of the above"],
+      answer: "D. All of the above",
+      diff: "easy"
+    },
+    {
+      q: "If f: R→R is given by f(x)=x²+1, the range of f is:",
+      options: ["A. R", "B. R⁺", "C. [1,∞)", "D. (1,∞)"],
+      answer: "C. [1,∞)",
+      diff: "medium"
+    }
+  ]
+},
+
+
+16: {
+  title: "Injective, Surjective, and Bijective Functions (MTH202 Lecture 16)",
+  summary: `**Key Topics Covered:**
+- Injective (one-to-one) function: distinct inputs map to distinct outputs
+- Equivalent condition: f(x₁)=f(x₂) ⇒ x₁=x₂
+- Surjective (onto) function: every element of codomain is an image of some domain element
+- Bijective function: both injective and surjective (one-to-one correspondence)
+- Identity function: i_X(x)=x (always bijective)
+- Constant function: maps all elements to same value
+- Horizontal line test for graphs
+- Counting one-to-one functions
+
+---
+
+**Simple Understanding:**
+
+**Injective (One-to-One):**
+👉 Different inputs produce different outputs.
+👉 Condition: If x₁ ≠ x₂ then f(x₁) ≠ f(x₂).
+👉 Equivalent: If f(x₁) = f(x₂) then x₁ = x₂.
+👉 Graph: any horizontal line crosses at most once.
+
+**Examples:**
+- f(x)=4x-1 on R is injective.
+- g(n)=n² on Z is NOT injective (2 and -2 map to 4).
+
+---
+
+**Surjective (Onto):**
+👉 Every element of codomain is hit.
+👉 Condition: ∀ y∈Y, ∃ x∈X such that f(x)=y.
+👉 Equivalent: Codomain = Range.
+
+**Examples:**
+- f(x)=4x-1 from R to R is onto.
+- h(n)=4n-1 from Z to Z is NOT onto (no integer n gives 0).
+
+---
+
+**Bijective (One-to-One Correspondence):**
+👉 Both injective and surjective.
+👉 Example: f(x)=x³ on R is bijective.
+👉 Graph: every horizontal line crosses exactly once.
+
+---
+
+**Counting Functions:**
+- From A (size m) to B (size n): total functions = nᵐ.
+- One-to-one functions require m ≤ n. Count = n·(n-1)·…·(n-m+1).
+- From 3-element set to 4-element set: 4×3×2 = 24 one-to-one functions.
+
+---
+
+**Identity Function:**
+👉 i_X: X→X, i_X(x)=x.
+👉 Always bijective.
+
+**Constant Function:**
+👉 f(x)=c for all x∈X.
+👉 One-to-one only if |X|=1.
+👉 Onto only if |Y|=1.
+
+---
+
+**Important Vocabulary:**
+- Injective = one-to-one = monomorphism
+- Surjective = onto = epimorphism
+- Bijective = one-to-one correspondence
+- Horizontal line test: injective (≤1), surjective (≥1), bijective (=1)
+- Identity function = sends each element to itself
+- Constant function = sends all to same element
+
+---
+
+**Quick Revision Points:**
+- Injective: f(a)=f(b) ⇒ a=b.
+- Surjective: ∀y ∃x f(x)=y.
+- Bijective = injective + surjective.
+- Identity function is bijective.
+- Constant function is injective only if domain has one element.
+- Graph test: horizontal lines determine injectivity/surjectivity.`,
+  questions: [
+    {
+      q: "A function f: X→Y is injective if:",
+      options: ["A. For all x∈X, there exists y∈Y with f(x)=y", "B. For all y∈Y, there exists x∈X with f(x)=y", "C. If x₁≠x₂ then f(x₁)≠f(x₂)", "D. If f(x₁)=f(x₂) then x₁≠x₂"],
+      answer: "C. If x₁≠x₂ then f(x₁)≠f(x₂)",
+      diff: "easy"
+    },
+    {
+      q: "An equivalent condition for injectivity is:",
+      options: ["A. f(x₁)=f(x₂) ⇒ x₁=x₂", "B. x₁=x₂ ⇒ f(x₁)=f(x₂)", "C. f is onto", "D. The domain and codomain have the same size"],
+      answer: "A. f(x₁)=f(x₂) ⇒ x₁=x₂",
+      diff: "easy"
+    },
+    {
+      q: "A function f: X→Y is surjective if:",
+      options: ["A. Every element of X has a unique image", "B. Every element of Y is the image of at least one element of X", "C. f is one-to-one", "D. The range is a subset of the codomain"],
+      answer: "B. Every element of Y is the image of at least one element of X",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following functions from R to R is injective?",
+      options: ["A. f(x)=x²", "B. f(x)=|x|", "C. f(x)=2x+3", "D. f(x)=x³-x"],
+      answer: "C. f(x)=2x+3",
+      diff: "medium"
+    },
+    {
+      q: "Which of the following functions from Z to Z is surjective?",
+      options: ["A. f(n)=n²", "B. f(n)=n+1", "C. f(n)=2n", "D. f(n)=|n|"],
+      answer: "B. f(n)=n+1",
+      diff: "medium"
+    },
+    {
+      q: "A function that is both injective and surjective is called:",
+      options: ["A. Constant function", "B. Identity function", "C. Bijective function", "D. One-to-one correspondence"],
+      answer: "C. Bijective function",
+      diff: "easy"
+    },
+    {
+      q: "The identity function i_X: X→X is:",
+      options: ["A. Injective only", "B. Surjective only", "C. Bijective", "D. Neither injective nor surjective"],
+      answer: "C. Bijective",
+      diff: "easy"
+    },
+    {
+      q: "A constant function f: X→Y is one-to-one if and only if:",
+      options: ["A. |X|=1", "B. |Y|=1", "C. X is empty", "D. Y is empty"],
+      answer: "A. |X|=1",
+      diff: "medium"
+    },
+    {
+      q: "A constant function f: X→Y is onto if and only if:",
+      options: ["A. |X|=1", "B. |Y|=1", "C. X is empty", "D. Y is empty"],
+      answer: "B. |Y|=1",
+      diff: "medium"
+    },
+    {
+      q: "The horizontal line test for a graph determines if a function is:",
+      options: ["A. Injective", "B. Surjective", "C. Both injective and surjective", "D. All of the above depending on the test"],
+      answer: "D. All of the above depending on the test",
+      diff: "medium"
+    },
+    {
+      q: "If a horizontal line intersects the graph at more than one point, the function is NOT:",
+      options: ["A. Surjective", "B. Injective", "C. Bijective", "D. Both B and C"],
+      answer: "D. Both B and C",
+      diff: "easy"
+    },
+    {
+      q: "How many one-to-one functions are there from a set with 3 elements to a set with 5 elements?",
+      options: ["A. 15", "B. 60", "C. 125", "D. 243"],
+      answer: "B. 60 (5×4×3)",
+      diff: "hard"
+    },
+    {
+      q: "How many one-to-one functions exist from a set with 4 elements to a set with 2 elements?",
+      options: ["A. 0", "B. 8", "C. 12", "D. 16"],
+      answer: "A. 0 (cannot have injection when domain larger than codomain)",
+      diff: "medium"
+    },
+    {
+      q: "Which of the following is a bijective function from R to R?",
+      options: ["A. f(x)=x²", "B. f(x)=e^x", "C. f(x)=x³", "D. f(x)=sin x"],
+      answer: "C. f(x)=x³",
+      diff: "easy"
+    },
+    {
+      q: "If f: R→R is given by f(x)=2x+1, which statement is true?",
+      options: ["A. f is injective but not surjective", "B. f is surjective but not injective", "C. f is bijective", "D. f is neither injective nor surjective"],
+      answer: "C. f is bijective",
+      diff: "medium"
+    },
+    {
+      q: "Which of the following functions from Z to Z is NOT surjective?",
+      options: ["A. f(n)=n+5", "B. f(n)=3n", "C. f(n)=n-2", "D. f(n)= -n"],
+      answer: "B. f(n)=3n (odd multiples only, not all integers)",
+      diff: "hard"
+    },
+    {
+      q: "Let f: X→Y be a bijection. Then the sets X and Y:",
+      options: ["A. Have the same number of elements", "B. Have different numbers of elements", "C. Must be infinite", "D. Must be equal"],
+      answer: "A. Have the same number of elements",
+      diff: "easy"
+    },
+    {
+      q: "If f: X→Y is injective and |X|=|Y| and both are finite, then f is also:",
+      options: ["A. Surjective", "B. Bijective", "C. Constant", "D. A and B"],
+      answer: "D. A and B",
+      diff: "medium"
+    },
+    {
+      q: "The function f: N→N defined by f(n)=n+1 is:",
+      options: ["A. Injective but not surjective", "B. Surjective but not injective", "C. Bijective", "D. Neither"],
+      answer: "A. Injective but not surjective (1 has no preimage)",
+      diff: "medium"
+    },
+    {
+      q: "The function g: Z→Z defined by g(n)=n-3 is:",
+      options: ["A. Injective only", "B. Surjective only", "C. Bijective", "D. Constant"],
+      answer: "C. Bijective",
+      diff: "easy"
+    }
+  ]
+},
+
+
+
+17: {
+  title: "Equality, Inverse, and Composition of Functions (MTH202 Lecture 17)",
+  summary: `**Key Topics Covered:**
+- Equality of functions (f = g iff f(x)=g(x) for all x)
+- Inverse of a function (bijection required for inverse function)
+- Invertible functions (bijective functions have inverses)
+- Finding inverse function from formula
+- Composition of functions (g∘f)
+- Composition with identity function
+- Composition of a function with its inverse yields identity
+- Functions as inverses of each other (gof = i_X and fog = i_Y)
+
+---
+
+**Simple Understanding:**
+
+**Equality of Functions:**
+👉 f = g if and only if f(x) = g(x) for every x in the domain.
+👉 Example: f(x)=|x| and g(x)=√(x²) are equal on R.
+
+---
+
+**Inverse of a Function:**
+👉 For a bijective function f: X→Y, the inverse function f⁻¹: Y→X satisfies:
+   f⁻¹(y) = x ⇔ f(x) = y
+👉 f sends x to y; f⁻¹ sends y back to x.
+👉 Only bijective (one-to-one and onto) functions have inverses.
+👉 If f is not bijective, its inverse relation is not a function.
+
+---
+
+**Finding Inverse from Formula:**
+👉 Given y = f(x), solve for x in terms of y.
+👉 Then f⁻¹(y) = that expression.
+👉 Example: f(x)=4x-1 → solve y=4x-1 → x=(y+1)/4 → f⁻¹(y)=(y+1)/4
+
+---
+
+**Composition of Functions:**
+👉 (g∘f)(x) = g(f(x)) (apply f first, then g).
+👉 Requires range(f) ⊆ domain(g).
+👉 Composition is NOT commutative: gof ≠ fog in general.
+
+**Example:**
+👉 f(n)=n+1, g(n)=n² → (gof)(n)=(n+1)², (fog)(n)=n²+1 → not equal.
+
+---
+
+**Composition with Identity:**
+👉 f∘i_X = f and i_Y∘f = f for any f: X→Y.
+👉 Identity function does not change the function.
+
+---
+
+**Function and Its Inverse:**
+👉 If f: X→Y is bijective, then:
+   f⁻¹∘f = i_X  and  f∘f⁻¹ = i_Y
+👉 Two functions f and g are inverses iff gof = i_X and fog = i_Y.
+
+---
+
+**Important Vocabulary:**
+- Equality of functions = same output for every input
+- Inverse function = f⁻¹ sends images back to pre-images
+- Invertible = has an inverse (must be bijective)
+- Composition = applying one function after another
+- Identity function = i(x)=x
+- Commutative = order matters (composition not commutative)
+
+---
+
+**Quick Revision Points:**
+- f = g iff f(x)=g(x) ∀x.
+- Only bijective functions have inverses.
+- f⁻¹(y) = x ⇔ f(x)=y.
+- (g∘f)(x) = g(f(x)).
+- f∘i = f, i∘f = f.
+- f⁻¹∘f = i, f∘f⁻¹ = i.
+- Composition not commutative.`,
+  questions: [
+    {
+      q: "Two functions f and g from X to Y are equal if and only if:",
+      options: ["A. f(x)=g(x) for some x in X", "B. f(x)=g(x) for all x in X", "C. f and g have the same domain", "D. f and g have the same codomain"],
+      answer: "B. f(x)=g(x) for all x in X",
+      diff: "easy"
+    },
+    {
+      q: "For a function to have an inverse function, it must be:",
+      options: ["A. Injective only", "B. Surjective only", "C. Bijective", "D. Constant"],
+      answer: "C. Bijective",
+      diff: "easy"
+    },
+    {
+      q: "If f: X→Y is bijective, then f⁻¹: Y→X satisfies:",
+      options: ["A. f⁻¹(y) = x ⇔ f(x)=y", "B. f⁻¹(x)=y ⇔ f(y)=x", "C. f⁻¹ = f", "D. f⁻¹ is not a function"],
+      answer: "A. f⁻¹(y) = x ⇔ f(x)=y",
+      diff: "easy"
+    },
+    {
+      q: "Given f(x)=4x-1, the inverse function f⁻¹(y) is:",
+      options: ["A. 4y+1", "B. (y+1)/4", "C. (y-1)/4", "D. 4(y+1)"],
+      answer: "B. (y+1)/4",
+      diff: "medium"
+    },
+    {
+      q: "If f(x)= (x+1)/(x-1) for x≠1, then f⁻¹(y) is:",
+      options: ["A. (y+1)/(y-1)", "B. (y-1)/(y+1)", "C. (1+y)/(1-y)", "D. (1-y)/(1+y)"],
+      answer: "A. (y+1)/(y-1)",
+      diff: "hard"
+    },
+    {
+      q: "The composition (g∘f)(x) is defined as:",
+      options: ["A. f(g(x))", "B. g(f(x))", "C. f(x) · g(x)", "D. f(x) + g(x)"],
+      answer: "B. g(f(x))",
+      diff: "easy"
+    },
+    {
+      q: "If f(n)=n+1 and g(n)=n², then (g∘f)(n) equals:",
+      options: ["A. n²+1", "B. (n+1)²", "C. n²+n+1", "D. n²+2n+1"],
+      answer: "B. (n+1)²",
+      diff: "easy"
+    },
+    {
+      q: "For the same f and g, (f∘g)(n) equals:",
+      options: ["A. n²+1", "B. (n+1)²", "C. n²+n+1", "D. n²+2n+1"],
+      answer: "A. n²+1",
+      diff: "easy"
+    },
+    {
+      q: "Composition of functions is:",
+      options: ["A. Commutative", "B. Not commutative in general", "C. Always commutative", "D. Associative only"],
+      answer: "B. Not commutative in general",
+      diff: "easy"
+    },
+    {
+      q: "If i_X is the identity function on X and f: X→Y, then f∘i_X equals:",
+      options: ["A. i_Y", "B. f", "C. i_X", "D. undefined"],
+      answer: "B. f",
+      diff: "easy"
+    },
+    {
+      q: "If f: X→Y is bijective, then f⁻¹∘f equals:",
+      options: ["A. i_X", "B. i_Y", "C. f", "D. f⁻¹"],
+      answer: "A. i_X",
+      diff: "easy"
+    },
+    {
+      q: "If f: X→Y is bijective, then f∘f⁻¹ equals:",
+      options: ["A. i_X", "B. i_Y", "C. f", "D. f⁻¹"],
+      answer: "B. i_Y",
+      diff: "easy"
+    },
+    {
+      q: "Two functions f and g are inverses of each other iff:",
+      options: ["A. f=g", "B. f∘g = i and g∘f = i", "C. f and g are both injective", "D. f and g are both surjective"],
+      answer: "B. f∘g = i and g∘f = i",
+      diff: "medium"
+    },
+    {
+      q: "Let f(x)=3x+2 and g(x)=(x-2)/3. Then (g∘f)(x) equals:",
+      options: ["A. x", "B. 3x+2", "C. (3x+2-2)/3 = x", "D. Both A and C"],
+      answer: "D. Both A and C",
+      diff: "medium"
+    },
+    {
+      q: "The inverse of a constant function f(x)=c (c constant) exists only if:",
+      options: ["A. Domain and codomain are singletons", "B. f is bijective", "C. f is onto", "D. f is one-to-one"],
+      answer: "A. Domain and codomain are singletons",
+      diff: "hard"
+    },
+    {
+      q: "If f: R→R, f(x)=x³+5, then f⁻¹(y) is:",
+      options: ["A. y³+5", "B. ∛(y-5)", "C. ∛(y+5)", "D. y-5"],
+      answer: "B. ∛(y-5)",
+      diff: "medium"
+    },
+    {
+      q: "The composition of a function with its inverse gives:",
+      options: ["A. A constant function", "B. The identity function", "C. The original function", "D. The inverse function"],
+      answer: "B. The identity function",
+      diff: "easy"
+    },
+    {
+      q: "Let f: Z→Z, f(n)=n+3. Then f⁻¹(n) is:",
+      options: ["A. n-3", "B. n+3", "C. 3-n", "D. -n-3"],
+      answer: "A. n-3",
+      diff: "easy"
+    },
+    {
+      q: "If f and g are both bijective, then (g∘f)⁻¹ equals:",
+      options: ["A. f⁻¹∘g⁻¹", "B. g⁻¹∘f⁻¹", "C. f∘g", "D. g∘f"],
+      answer: "A. f⁻¹∘g⁻¹",
+      diff: "hard"
+    },
+    {
+      q: "The inverse of the identity function i_X is:",
+      options: ["A. i_X", "B. A constant function", "C. Not defined", "D. A different bijection"],
+      answer: "A. i_X",
+      diff: "easy"
+    }
+  ]
+},
+
+
+18: {
+  title: "Properties of Function Composition, Real-Valued Functions, and Countability (MTH202 Lecture 18)",
+  summary: `**Key Topics Covered:**
+- Composition of injective functions is injective
+- Composition of surjective functions is surjective
+- Composition of functions is associative
+- Inverse of composition: (g∘f)⁻¹ = f⁻¹∘g⁻¹
+- Real-valued functions (sum, difference, product, quotient, scalar multiplication)
+- Characteristic functions and their properties
+- Finite vs infinite sets
+- Countable sets (countably infinite, uncountable)
+- Image and inverse image of sets
+- Important set function properties
+
+---
+
+**Simple Understanding:**
+
+**Composition Properties:**
+👉 If f and g are both injective (one-to-one), then g∘f is injective.
+👉 If f and g are both surjective (onto), then g∘f is surjective.
+👉 If f and g are bijective, then g∘f is bijective and (g∘f)⁻¹ = f⁻¹∘g⁻¹.
+👉 Composition is associative: (h∘g)∘f = h∘(g∘f).
+
+---
+
+**Operations on Real-Valued Functions (same domain X):**
+👉 Sum: (f+g)(x) = f(x)+g(x)
+👉 Difference: (f-g)(x) = f(x)-g(x)
+👉 Product: (f·g)(x) = f(x)·g(x)
+👉 Quotient: (f/g)(x) = f(x)/g(x), where g(x)≠0
+👉 Scalar multiplication: (c·f)(x) = c·f(x)
+
+**Note:** Sum/difference of injective/onto functions may not preserve properties (counterexamples given).
+
+---
+
+**Characteristic Function χ_A: S → {0,1}**
+👉 χ_A(x)=1 if x∈A, 0 otherwise.
+👉 Properties:
+   - χ_{A∩B} = χ_A · χ_B
+   - χ_{A∪B} = χ_A + χ_B - χ_A·χ_B
+   - χ_{A^c} = 1 - χ_A
+
+---
+
+**Countability:**
+👉 Finite set = empty or in one-to-one correspondence with {1,2,…,n}
+👉 Infinite set = not finite.
+👉 Countably infinite = same cardinality as Z⁺ (positive integers).
+👉 Countable = finite or countably infinite.
+👉 Uncountable = not countable.
+👉 Example: Z (all integers) is countable (bijection with Z⁺).
+👉 Even integers 2Z are countable (h(n)=2n bijection from Z).
+
+---
+
+**Image and Inverse Image:**
+👉 f(A) = { f(x) | x∈A } for A⊆X.
+👉 f⁻¹(C) = { x∈X | f(x)∈C } for C⊆Y.
+👉 Properties:
+   - f(A∪B) = f(A)∪f(B)
+   - f(A∩B) ⊆ f(A)∩f(B)
+   - f⁻¹(C∪D) = f⁻¹(C)∪f⁻¹(D)
+   - f⁻¹(C∩D) = f⁻¹(C)∩f⁻¹(D)
+   - f⁻¹(C-D) = f⁻¹(C)-f⁻¹(D)
+
+---
+
+**Important Vocabulary:**
+- Injective = one-to-one
+- Surjective = onto
+- Bijective = one-to-one correspondence
+- Associative = grouping doesn't matter
+- Real-valued function = outputs real numbers
+- Characteristic function = indicator of a subset
+- Countable = can be listed (finite or countably infinite)
+- Uncountable = too many to list (e.g., real numbers)
+
+---
+
+**Quick Revision Points:**
+- (g∘f)⁻¹ = f⁻¹∘g⁻¹ for bijections.
+- f+g may not be injective even if f,g are.
+- f+g may not be onto even if f,g are.
+- Scalar multiple (c≠0) preserves injectivity and surjectivity.
+- Characteristic functions encode sets algebraically.
+- Z and 2Z are countably infinite.
+- Image/inverse image preserve unions but intersections may shrink.`,
+  questions: [
+    {
+      "q": "If f and g are both injective functions, then g∘f is:",
+      "options": ["A. Injective", "B. Surjective", "C. Bijective", "D. Neither injective nor surjective"],
+      "answer": "A. Injective",
+      "diff": "easy"
+    },
+    {
+      "q": "If f and g are both surjective functions, then g∘f is:",
+      "options": ["A. Injective", "B. Surjective", "C. Bijective", "D. Neither injective nor surjective"],
+      "answer": "B. Surjective",
+      "diff": "easy"
+    },
+    {
+      "q": "If f: X→Y and g: Y→Z are both bijective, then (g∘f)⁻¹ equals:",
+      "options": ["A. f∘g", "B. g⁻¹∘f⁻¹", "C. f⁻¹∘g⁻¹", "D. (f∘g)⁻¹"],
+      "answer": "C. f⁻¹∘g⁻¹",
+      "diff": "medium"
+    },
+    {
+      "q": "The composition of functions is:",
+      "options": ["A. Commutative", "B. Associative", "C. Both commutative and associative", "D. Neither commutative nor associative"],
+      "answer": "B. Associative",
+      "diff": "easy"
+    },
+    {
+      "q": "Let f(x)=x and g(x)=-x from R to R. Which of the following is true about f+g?",
+      "options": ["A. f+g is injective", "B. f+g is surjective", "C. f+g is bijective", "D. f+g is constant (zero)"],
+      "answer": "D. f+g is constant (zero)",
+      "diff": "easy"
+    },
+    {
+      "q": "If f and g are both onto (surjective) from R to R, then f+g is:",
+      "options": ["A. Always onto", "B. Always not onto", "C. May not be onto (counterexample exists)", "D. Always bijective"],
+      "answer": "C. May not be onto (counterexample exists)",
+      "diff": "medium"
+    },
+    {
+      "q": "If f is one-to-one and c≠0, then c·f is:",
+      "options": ["A. One-to-one", "B. Not one-to-one", "C. Onto", "D. Constant"],
+      "answer": "A. One-to-one",
+      "diff": "easy"
+    },
+    {
+      "q": "If f is onto and c≠0, then c·f is:",
+      "options": ["A. Onto", "B. Not onto", "C. One-to-one", "D. Constant"],
+      "answer": "A. Onto",
+      "diff": "easy"
+    },
+    {
+      "q": "The characteristic function χ_A: S→{0,1} for A⊆S is defined by χ_A(x)=1 if x∈A, else 0. Then χ_{A∩B} equals:",
+      "options": ["A. χ_A + χ_B", "B. χ_A · χ_B", "C. χ_A + χ_B - χ_A·χ_B", "D. 1 - χ_A"],
+      "answer": "B. χ_A · χ_B",
+      "diff": "medium"
+    },
+    {
+      "q": "For characteristic functions, χ_{A∪B} equals:",
+      "options": ["A. χ_A + χ_B", "B. χ_A · χ_B", "C. χ_A + χ_B - χ_A·χ_B", "D. 1 - χ_A·χ_B"],
+      "answer": "C. χ_A + χ_B - χ_A·χ_B",
+      "diff": "medium"
+    },
+    {
+      "q": "The complement of a set A (i.e., A^c) satisfies χ_{A^c} =",
+      "options": ["A. 1 + χ_A", "B. 1 - χ_A", "C. χ_A - 1", "D. -χ_A"],
+      "answer": "B. 1 - χ_A",
+      "diff": "easy"
+    },
+    {
+      "q": "A set is countably infinite if it has the same cardinality as:",
+      "options": ["A. The set of real numbers R", "B. The set of positive integers Z⁺", "C. The empty set", "D. The set of all subsets of N"],
+      "answer": "B. The set of positive integers Z⁺",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following sets is countable?",
+      "options": ["A. The set of all integers Z", "B. The set of all even integers 2Z", "C. The set of positive integers Z⁺", "D. All of the above"],
+      "answer": "D. All of the above",
+      "diff": "easy"
+    },
+    {
+      "q": "The set of real numbers R is:",
+      "options": ["A. Finite", "B. Countably infinite", "C. Uncountable", "D. Empty"],
+      "answer": "C. Uncountable",
+      "diff": "easy"
+    },
+    {
+      "q": "For any function f: X→Y and subsets A,B⊆X, which of the following is always true?",
+      "options": ["A. f(A∩B) = f(A)∩f(B)", "B. f(A∩B) ⊆ f(A)∩f(B)", "C. f(A∩B) ⊇ f(A)∩f(B)", "D. f(A∩B) = f(A)∪f(B)"],
+      "answer": "B. f(A∩B) ⊆ f(A)∩f(B)",
+      "diff": "medium"
+    },
+    {
+      "q": "For any function f: X→Y and subsets C,D⊆Y, which is true?",
+      "options": ["A. f⁻¹(C∩D) = f⁻¹(C)∩f⁻¹(D)", "B. f⁻¹(C∩D) ⊆ f⁻¹(C)∩f⁻¹(D)", "C. f⁻¹(C∩D) ⊇ f⁻¹(C)∩f⁻¹(D)", "D. None"],
+      "answer": "A. f⁻¹(C∩D) = f⁻¹(C)∩f⁻¹(D)",
+      "diff": "medium"
+    },
+    {
+      "q": "If f: X→Y is a function and A⊆X, then f⁻¹(f(A)) is:",
+      "options": ["A. Always equal to A", "B. Always a superset of A", "C. Always a subset of A", "D. Equal to A if f is injective"],
+      "answer": "D. Equal to A if f is injective",
+      "diff": "hard"
+    },
+    {
+      "q": "The set of all integers Z is countably infinite because there exists a bijection from:",
+      "options": ["A. Z to R", "B. Z⁺ to Z", "C. Z to {0,1}", "D. Z to 2Z"],
+      "answer": "B. Z⁺ to Z",
+      "diff": "easy"
+    },
+    {
+      "q": "Which operation on real-valued functions is NOT always defined for all real numbers?",
+      "options": ["A. Sum", "B. Difference", "C. Product", "D. Quotient"],
+      "answer": "D. Quotient (requires denominator non-zero)",
+      "diff": "easy"
+    },
+    {
+      "q": "If f: X→Y and A⊆X, then f(A) is called the:",
+      "options": ["A. Inverse image of A", "B. Image of A under f", "C. Domain of f restricted to A", "D. Codomain of f"],
+      "answer": "B. Image of A under f",
+      "diff": "easy"
+    }
+  ]
+},
+
+19: {
+  title: "Sequences (MTH202 Lecture 19)",
+
+  summary: `**Key Topics Covered:**
+- Definition of a sequence (function from integers to elements)
+- Explicit (general) formula for a sequence
+- Finding terms of a sequence
+- Arithmetic sequences (AP) – constant difference
+- Geometric sequences (GP) – constant ratio
+- General term formulas for AP and GP
+- Sequences in computer programming (arrays)
+
+---
+
+**Simple Understanding:**
+
+**What is a Sequence?**
+👉 A sequence is a list of elements written in a row.
+👉 Example: 1, 2, 3, 4, 5, … (ellipsis “…” means “and so forth”)
+👉 Formal definition: A sequence is a function whose domain is a set of integers.
+
+**Notation:**
+👉 Terms are written as a₁, a₂, a₃, … where aₙ is the image of integer n.
+
+---
+
+**Explicit Formula:**
+👉 A rule that shows how aₙ depends on n.
+👉 Example:
+aₙ = n/(n+1)
+
+gives:
+a₁ = 1/2
+a₂ = 2/3
+a₃ = 3/4
+
+**Alternating Sequence:**
+👉 Terms alternate in sign.
+👉 Example:
+1, -1, 1, -1, …
+
+👉 Formula:
+aₙ = (-1)ⁿ
+or
+aₙ = (-1)ⁿ⁺¹
+
+---
+
+**Arithmetic Sequence (AP):**
+👉 Each term = previous term + constant difference.
+
+👉 Example:
+5, 9, 13, 17, …
+
+👉 Common difference:
+d = 4
+
+👉 Formula:
+aₙ = a + (n-1)d
+
+---
+
+**Geometric Sequence (GP):**
+👉 Each term = previous term × constant ratio.
+
+👉 Example:
+1, 2, 4, 8, 16, …
+
+👉 Common ratio:
+r = 2
+
+👉 Formula:
+aₙ = a·rⁿ⁻¹
+
+---
+
+**Sequences in Programming:**
+👉 Finite sequences are stored as arrays.
+
+👉 Example:
+name[0], name[1], …, name[k-1]
+
+---
+
+**Important Vocabulary:**
+- Sequence = ordered list
+- Explicit formula = direct rule for nth term
+- Arithmetic sequence = constant difference
+- Geometric sequence = constant ratio
+- Common difference (d) = difference between consecutive terms
+- Common ratio (r) = ratio between consecutive terms
+- Array = fixed-size sequence in programming
+- Ellipsis (…) = “and so forth”
+
+---
+
+**Quick Revision Points:**
+- Sequence: function from integers to values.
+- Arithmetic: aₙ = a + (n-1)d.
+- Geometric: aₙ = a·rⁿ⁻¹.
+- Alternating signs: use (-1)ⁿ or similar.
+- Arrays store sequences in memory.`,
+
+  questions: [
+    {
+      q: "A sequence is formally defined as:",
+      options: [
+        "A. A set of numbers",
+        "B. A function whose domain is a set of integers",
+        "C. A list with no order",
+        "D. A random collection of elements"
+      ],
+      answer: "B. A function whose domain is a set of integers",
+      diff: "easy"
+    },
+
+    {
+      q: "The symbol '...' in a sequence is called:",
+      options: [
+        "A. Asterisk",
+        "B. Ellipsis",
+        "C. Apostrophe",
+        "D. Hyphen"
+      ],
+      answer: "B. Ellipsis",
+      diff: "easy"
+    },
+
+    {
+      q: "For the sequence defined by aₙ = n/(n+1) for n≥1, the third term a₃ is:",
+      options: [
+        "A. 1/3",
+        "B. 2/3",
+        "C. 3/4",
+        "D. 4/5"
+      ],
+      answer: "C. 3/4",
+      diff: "easy"
+    },
+
+    {
+      q: "Which of the following sequences is arithmetic?",
+      options: [
+        "A. 1, 2, 4, 8, …",
+        "B. 2, 4, 6, 8, …",
+        "C. 1, 4, 9, 16, …",
+        "D. 1, 1/2, 1/4, 1/8, …"
+      ],
+      answer: "B. 2, 4, 6, 8, …",
+      diff: "easy"
+    },
+
+    {
+      q: "The common difference of the arithmetic sequence 5, 9, 13, 17, … is:",
+      options: [
+        "A. 2",
+        "B. 3",
+        "C. 4",
+        "D. 5"
+      ],
+      answer: "C. 4",
+      diff: "easy"
+    },
+
+    {
+      q: "The general term of an arithmetic sequence with first term a and common difference d is:",
+      options: [
+        "A. aₙ = a + nd",
+        "B. aₙ = a + (n-1)d",
+        "C. aₙ = arⁿ⁻¹",
+        "D. aₙ = a + dⁿ"
+      ],
+      answer: "B. aₙ = a + (n-1)d",
+      diff: "easy"
+    },
+
+    {
+      q: "Find the 20th term of the arithmetic sequence 3, 9, 15, 21, …",
+      options: [
+        "A. 117",
+        "B. 120",
+        "C. 123",
+        "D. 114"
+      ],
+      answer: "A. 117",
+      diff: "medium"
+    },
+
+    {
+      q: "Which term of the arithmetic sequence 4, 1, -2, … is -77?",
+      options: [
+        "A. 26th",
+        "B. 27th",
+        "C. 28th",
+        "D. 29th"
+      ],
+      answer: "C. 28th",
+      diff: "medium"
+    },
+
+    {
+      q: "If the 3rd term of an AP is 7 and the 8th term is 17, the common difference is:",
+      options: [
+        "A. 1",
+        "B. 2",
+        "C. 3",
+        "D. 4"
+      ],
+      answer: "B. 2",
+      diff: "medium"
+    },
+
+    {
+      q: "A geometric sequence is defined by:",
+      options: [
+        "A. Each term is the sum of previous term and a constant",
+        "B. Each term is the product of previous term and a constant",
+        "C. Each term is the square of previous term",
+        "D. Each term is the reciprocal of previous term"
+      ],
+      answer: "B. Each term is the product of previous term and a constant",
+      diff: "easy"
+    },
+
+    {
+      q: "The common ratio of the GP 3, -3/2, 3/4, -3/8, … is:",
+      options: [
+        "A. 2",
+        "B. -2",
+        "C. 1/2",
+        "D. -1/2"
+      ],
+      answer: "D. -1/2",
+      diff: "medium"
+    },
+
+    {
+      q: "The general term of a geometric sequence with first term a and common ratio r is:",
+      options: [
+        "A. aₙ = a + (n-1)r",
+        "B. aₙ = a·rⁿ",
+        "C. aₙ = a·rⁿ⁻¹",
+        "D. aₙ = a·(n-1)r"
+      ],
+      answer: "C. aₙ = a·rⁿ⁻¹",
+      diff: "easy"
+    },
+
+    {
+      q: "Find the 8th term of the GP 4, 12, 36, 108, …",
+      options: [
+        "A. 8748",
+        "B. 2916",
+        "C. 26244",
+        "D. 972"
+      ],
+      answer: "A. 8748",
+      diff: "medium"
+    },
+
+    {
+      q: "Which term of the GP with first term 4 and common ratio 1/2 equals 1/8?",
+      options: [
+        "A. 4th",
+        "B. 5th",
+        "C. 6th",
+        "D. 7th"
+      ],
+      answer: "C. 6th",
+      diff: "hard"
+    },
+
+    {
+      q: "A geometric sequence with positive terms has second term 9 and fourth term 1. The first term is:",
+      options: [
+        "A. 3",
+        "B. 9",
+        "C. 27",
+        "D. 81"
+      ],
+      answer: "C. 27",
+      diff: "hard"
+    },
+
+    {
+      q: "The sequence 1, -1, 1, -1, … is called:",
+      options: [
+        "A. Arithmetic sequence",
+        "B. Geometric sequence",
+        "C. Alternating sequence",
+        "D. Both B and C"
+      ],
+      answer: "D. Both B and C",
+      diff: "easy"
+    },
+
+    {
+      q: "In computer programming, a finite sequence is often stored as a(n):",
+      options: [
+        "A. Array",
+        "B. Variable",
+        "C. Constant",
+        "D. Function"
+      ],
+      answer: "A. Array",
+      diff: "easy"
+    },
+
+    {
+      q: "If an array has k elements, the index of the last element is:",
+      options: [
+        "A. k",
+        "B. k-1",
+        "C. k+1",
+        "D. 0"
+      ],
+      answer: "B. k-1",
+      diff: "easy"
+    },
+
+    {
+      q: "For the sequence defined by bⱼ = 1 + 2ʲ for j ≥ 0, the term b₃ is:",
+      options: [
+        "A. 5",
+        "B. 7",
+        "C. 9",
+        "D. 11"
+      ],
+      answer: "C. 9",
+      diff: "easy"
+    },
+
+    {
+      q: "The sequence 0, 1, -2, 3, -4, 5, … can be described by the formula:",
+      options: [
+        "A. aₙ = (-1)ⁿ n",
+        "B. aₙ = (-1)ⁿ⁺¹ n",
+        "C. aₙ = (-1)ⁿ (n-1)",
+        "D. aₙ = (-1)ⁿ⁺¹ (n-1)"
+      ],
+      answer: "B. aₙ = (-1)ⁿ⁺¹ n",
+      diff: "medium"
+    }
+  ]
+},
+
+
+20: {
+  title: "Series and Summations (MTH202 Lecture 20)",
+
+  summary: `**Key Topics Covered:**
+- Series (sum of terms of a sequence)
+- Summation (sigma) notation (Σ)
+- Computing summations with given terms
+- Expanded form to summation notation
+- Change of variable in summations
+- Properties of summations
+- Arithmetic series
+- Geometric series
+- Infinite geometric series
+- Important summation formulas
+
+---
+
+**Simple Understanding:**
+
+**What is a Series?**
+👉 The sum of the terms of a sequence.
+
+👉 Example:
+a₁ + a₂ + a₃ + …
+
+---
+
+**Summation (Sigma) Notation:**
+👉 Σ (capital Greek sigma) indicates a sum.
+
+👉 General form:
+Σₖ₌ₘⁿ aₖ
+
+👉 Meaning:
+aₘ + aₘ₊₁ + … + aₙ
+
+👉 k = index
+👉 m = lower limit
+👉 n = upper limit
+
+---
+
+**Computing Summations:**
+👉 Replace k with each integer from m to n and add the values.
+
+---
+
+**Properties of Summations:**
+1. Σ(aₖ + bₖ) = Σaₖ + Σbₖ
+2. Σ(c·aₖ) = c·Σaₖ
+3. Σ c = c(n-m+1)
+
+---
+
+**Arithmetic Series:**
+👉 Sum of arithmetic sequence.
+
+👉 Formula:
+Sₙ = n/2 [2a + (n-1)d]
+
+👉 Also:
+Sₙ = n(a + aₙ)/2
+
+👉 Sum of first n natural numbers:
+n(n+1)/2
+
+---
+
+**Geometric Series:**
+👉 Sum of geometric sequence.
+
+👉 Formula:
+Sₙ = a(1-rⁿ)/(1-r), r ≠ 1
+
+---
+
+**Infinite Geometric Series:**
+👉 If |r| < 1
+
+👉 Formula:
+S = a/(1-r)
+
+---
+
+**Important Summation Formulas:**
+👉 Σₖ₌₁ⁿ k = n(n+1)/2
+
+👉 Σₖ₌₁ⁿ k² = n(n+1)(2n+1)/6
+
+👉 Σₖ₌₁ⁿ k³ = [n(n+1)/2]²
+
+---
+
+**Important Vocabulary:**
+- Series = sum of sequence terms
+- Sigma notation = Σ
+- Index of summation = dummy variable
+- Arithmetic series = constant difference
+- Geometric series = constant ratio
+- Infinite series = infinitely many terms
+- Convergent = approaches finite limit
+- Divergent = grows without bound
+
+---
+
+**Quick Revision Points:**
+- Σ₍ᵢ₌ₘ₎ⁿ aᵢ = aₘ + … + aₙ
+- Arithmetic: Sₙ = n/2 (2a + (n-1)d)
+- Geometric: Sₙ = a(1-rⁿ)/(1-r)
+- Infinite GP: S = a/(1-r), |r|<1
+- Summation is linear.`,
+
+  questions: [
+    {
+      q: "The sum of the terms of a sequence is called a:",
+      options: [
+        "A. Product",
+        "B. Series",
+        "C. Difference",
+        "D. Ratio"
+      ],
+      answer: "B. Series",
+      diff: "easy"
+    },
+
+    {
+      q: "The symbol Σ is the Greek letter:",
+      options: [
+        "A. Alpha",
+        "B. Beta",
+        "C. Gamma",
+        "D. Sigma"
+      ],
+      answer: "D. Sigma",
+      diff: "easy"
+    },
+
+    {
+      q: "For the sequence a₀=2, a₁=3, a₂=-2, a₃=1, a₄=0, compute Σᵢ₌₀⁴ aᵢ:",
+      options: [
+        "A. 2",
+        "B. 3",
+        "C. 4",
+        "D. 5"
+      ],
+      answer: "C. 4",
+      diff: "easy"
+    },
+
+    {
+      q: "Using the same sequence, compute Σⱼ₌₀² a₂ⱼ:",
+      options: [
+        "A. 0",
+        "B. 2",
+        "C. 4",
+        "D. 6"
+      ],
+      answer: "A. 0",
+      diff: "medium"
+    },
+
+    {
+      q: "The expanded form of Σₖ₌₁³ (2k-1) is:",
+      options: [
+        "A. 1+3+5",
+        "B. 1+2+3",
+        "C. 2+4+6",
+        "D. 1+3+9"
+      ],
+      answer: "A. 1+3+5",
+      diff: "easy"
+    },
+
+    {
+      q: "Which of the following represents the sum 1+3+5+…+(2n-1)?",
+      options: [
+        "A. Σₖ₌₁ⁿ 2k",
+        "B. Σₖ₌₁ⁿ (2k-1)",
+        "C. Σₖ₌₀ⁿ (2k+1)",
+        "D. Both B and C"
+      ],
+      answer: "D. Both B and C",
+      diff: "medium"
+    },
+
+    {
+      q: "The index of summation is also called a:",
+      options: [
+        "A. Constant",
+        "B. Dummy variable",
+        "C. Parameter",
+        "D. Limit"
+      ],
+      answer: "B. Dummy variable",
+      diff: "easy"
+    },
+
+    {
+      q: "Which property states that Σ c = c(n-m+1)?",
+      options: [
+        "A. Linearity",
+        "B. Sum of constants",
+        "C. Product rule",
+        "D. Change of variable"
+      ],
+      answer: "B. Sum of constants",
+      diff: "easy"
+    },
+
+    {
+      q: "The sum of the first n natural numbers is:",
+      options: [
+        "A. n(n+1)/2",
+        "B. n(n+1)(2n+1)/6",
+        "C. [n(n+1)/2]²",
+        "D. n²"
+      ],
+      answer: "A. n(n+1)/2",
+      diff: "easy"
+    },
+
+    {
+      q: "The sum of the first n terms of an arithmetic series is:",
+      options: [
+        "A. n/2 [2a + (n-1)d]",
+        "B. n[2a + (n-1)d]",
+        "C. n/2 [a + (n-1)d]",
+        "D. a + (n-1)d"
+      ],
+      answer: "A. n/2 [2a + (n-1)d]",
+      diff: "easy"
+    },
+
+    {
+      q: "Find the sum of the arithmetic series 3, 9, 15, 21, … up to 20 terms:",
+      options: [
+        "A. 600",
+        "B. 1170",
+        "C. 1200",
+        "D. 1260"
+      ],
+      answer: "C. 1200",
+      diff: "medium"
+    },
+
+    {
+      q: "The sum of the first n terms of a geometric series is:",
+      options: [
+        "A. a(1-rⁿ)/(1-r)",
+        "B. a(rⁿ-1)/(r-1)",
+        "C. Both A and B",
+        "D. a/(1-r)"
+      ],
+      answer: "C. Both A and B",
+      diff: "easy"
+    },
+
+    {
+      q: "For an infinite geometric series with |r|<1, the sum is:",
+      options: [
+        "A. a/(1-r)",
+        "B. a(1-rⁿ)/(1-r)",
+        "C. a/(r-1)",
+        "D. Divergent"
+      ],
+      answer: "A. a/(1-r)",
+      diff: "easy"
+    },
+
+    {
+      q: "The sum of the infinite geometric series 9/4 + 3/2 + 1 + 2/3 + … is:",
+      options: [
+        "A. 27/4",
+        "B. 9/4",
+        "C. 3",
+        "D. Divergent"
+      ],
+      answer: "A. 27/4",
+      diff: "medium"
+    },
+
+    {
+      q: "The repeating decimal 0.818181… as a fraction is:",
+      options: [
+        "A. 9/11",
+        "B. 81/100",
+        "C. 81/99",
+        "D. Both A and C"
+      ],
+      answer: "D. Both A and C",
+      diff: "hard"
+    },
+
+    {
+      q: "Which summation formula is correct for Σ k² from k=1 to n?",
+      options: [
+        "A. n(n+1)/2",
+        "B. n(n+1)(2n+1)/6",
+        "C. [n(n+1)/2]²",
+        "D. n(n+1)(2n+1)/12"
+      ],
+      answer: "B. n(n+1)(2n+1)/6",
+      diff: "easy"
+    },
+
+    {
+      q: "If Σ(24k² - 22k + 3) is simplified, the sum of the constant term 3 over n terms is:",
+      options: [
+        "A. 3",
+        "B. 3n",
+        "C. 3(n+1)",
+        "D. 3n/2"
+      ],
+      answer: "B. 3n",
+      diff: "easy"
+    },
+
+    {
+      q: "Which of the following statements is TRUE about summations?",
+      options: [
+        "A. Σ(aₖ + bₖ) = Σaₖ + Σbₖ",
+        "B. Σ(caₖ) = cΣaₖ",
+        "C. Both A and B",
+        "D. Σ(aₖbₖ) = Σaₖ · Σbₖ"
+      ],
+      answer: "C. Both A and B",
+      diff: "easy"
+    },
+
+    {
+      q: "Changing the index from k to j where j = k + 1 transforms Σₖ₌₁ⁿ aₖ into:",
+      options: [
+        "A. Σⱼ₌₂ⁿ⁺¹ aⱼ₋₁",
+        "B. Σⱼ₌₀ⁿ⁻¹ aⱼ₊₁",
+        "C. Both A and B",
+        "D. Σⱼ₌₁ⁿ aⱼ"
+      ],
+      answer: "C. Both A and B",
+      diff: "hard"
+    }
+  ]
+},
+
+21: {
+  title: "Recursion and Recurrence Relations (MTH202 Lecture 21)",
+  summary: `**Key Topics Covered:**
+- Recursion definition (base and recursion parts)
+- Recursively defined functions (factorial, sum of first n integers)
+- Fibonacci sequence
+- Recurrence relations and initial conditions
+- Tower of Hanoi puzzle (minimum moves formula)
+- Examples and applications of recursion
+
+---
+
+**Simple Understanding:**
+
+**What is Recursion?**
+👉 Defining an object in terms of smaller versions of itself.
+👉 A recursive definition has two parts:
+   - **BASE:** Initial simple definition that cannot be expressed in smaller terms.
+   - **RECURSION:** Definition expressed in terms of smaller versions.
+
+**Example – Odd positive integers:**
+👉 Base: 1 is odd.
+👉 Recursion: If k is odd, then k+2 is odd.
+
+---
+
+**Recursively Defined Functions:**
+👉 Function refers to itself (calls itself).
+👉 Base values: arguments for which function does not refer to itself.
+👉 Each recursive call moves argument closer to base value.
+
+**Example:**
+👉 f(0) = 3
+👉 f(n+1) = 2·f(n) + 3
+👉 Then f(1)=9, f(2)=21, f(3)=45, f(4)=93.
+
+---
+
+**Factorial Function:**
+👉 n! = n·(n-1)·…·1, with 0! = 1.
+👉 Recursive definition: F(0)=1, F(n)=n·F(n-1).
+
+**Sum of First n Integers:**
+👉 S(0)=0, S(n)=n + S(n-1).
+
+---
+
+**Fibonacci Sequence:**
+👉 F₀=1, F₁=1
+👉 Fₖ = Fₖ₋₁ + Fₖ₋₂ for k ≥ 2
+👉 Sequence: 1, 1, 2, 3, 5, 8, 13, …
+
+---
+
+**Recurrence Relation:**
+👉 Formula relating each term aₖ to previous terms (aₖ₋₁, aₖ₋₂, …).
+👉 Initial conditions specify first few terms.
+
+---
+
+**Tower of Hanoi:**
+👉 Minimum moves to transfer n disks: m₁=1, mₖ = 2·mₖ₋₁ + 1.
+👉 Solution: mₙ = 2ⁿ – 1.
+👉 For 64 disks → about 584.5 billion years.
+
+---
+
+**Important Vocabulary:**
+- Recursion = defining in terms of smaller self
+- Base case = stopping condition
+- Recursive step = self-reference with smaller argument
+- Recurrence relation = equation for sequence terms
+- Initial conditions = starting values
+- Tower of Hanoi = classic recursion puzzle
+
+---
+
+**Quick Revision Points:**
+- Recursion: base + recursive part.
+- Factorial: F(n)=n·F(n-1), F(0)=1.
+- Sum of naturals: S(n)=n+S(n-1), S(0)=0.
+- Fibonacci: Fₖ = Fₖ₋₁ + Fₖ₋₂.
+- Tower of Hanoi: moves = 2ⁿ – 1.
+- Recursive functions must approach base case.`,
+  questions: [
+    {
+      "q": "A recursive definition consists of which two parts?",
+      "options": ["A. Base and Recursion", "B. Start and End", "C. Loop and Condition", "D. Input and Output"],
+      "answer": "A. Base and Recursion",
+      "diff": "easy"
+    },
+    {
+      "q": "In the recursive definition of odd positive integers, the base is:",
+      "options": ["A. 0 is odd", "B. 1 is odd", "C. 2 is odd", "D. 3 is odd"],
+      "answer": "B. 1 is odd",
+      "diff": "easy"
+    },
+    {
+      "q": "If f(0)=3 and f(n+1)=2f(n)+3, then f(1) equals:",
+      "options": ["A. 3", "B. 6", "C. 9", "D. 12"],
+      "answer": "C. 9",
+      "diff": "easy"
+    },
+    {
+      "q": "For the same function, f(3) equals:",
+      "options": ["A. 21", "B. 45", "C. 93", "D. 189"],
+      "answer": "B. 45",
+      "diff": "medium"
+    },
+    {
+      "q": "The recursive definition of factorial function is:",
+      "options": ["A. F(0)=0, F(n)=n·F(n-1)", "B. F(0)=1, F(n)=n·F(n-1)", "C. F(1)=1, F(n)=n·F(n-1)", "D. F(0)=1, F(n)=(n-1)·F(n-1)"],
+      "answer": "B. F(0)=1, F(n)=n·F(n-1)",
+      "diff": "easy"
+    },
+    {
+      "q": "Using the factorial definition, 5! equals:",
+      "options": ["A. 60", "B. 120", "C. 24", "D. 720"],
+      "answer": "B. 120",
+      "diff": "easy"
+    },
+    {
+      "q": "A recursive definition for the sum of the first n positive integers S(n) is:",
+      "options": ["A. S(0)=0, S(n)=n+S(n-1)", "B. S(1)=1, S(n)=n+S(n-1)", "C. S(0)=1, S(n)=n+S(n-1)", "D. S(0)=0, S(n)=S(n-1)+S(n-2)"],
+      "answer": "A. S(0)=0, S(n)=n+S(n-1)",
+      "diff": "easy"
+    },
+    {
+      "q": "The function Q(a,b) defined as Q(a,b)=0 if a<b, else Q(a,b)=Q(a-b,b)+1 computes:",
+      "options": ["A. Product of a and b", "B. Remainder when a divided by b", "C. Quotient when a divided by b", "D. Sum of a and b"],
+      "answer": "C. Quotient when a divided by b",
+      "diff": "medium"
+    },
+    {
+      "q": "For the Fibonacci sequence defined by F₀=1, F₁=1, Fₖ=Fₖ₋₁+Fₖ₋₂, the value of F₄ is:",
+      "options": ["A. 3", "B. 5", "C. 8", "D. 13"],
+      "answer": "B. 5",
+      "diff": "easy"
+    },
+    {
+      "q": "A recurrence relation for a sequence a₀, a₁, a₂, … is a formula that expresses aₖ in terms of:",
+      "options": ["A. Only aₖ", "B. Later terms like aₖ₊₁", "C. Previous terms (aₖ₋₁, aₖ₋₂, …)", "D. None of the above"],
+      "answer": "C. Previous terms (aₖ₋₁, aₖ₋₂, …)",
+      "diff": "easy"
+    },
+    {
+      "q": "The sequence defined by b₁=2, bₖ=bₖ₋₁+2·k for k≥2. Then b₄ equals:",
+      "options": ["A. 12", "B. 14", "C. 20", "D. 30"],
+      "answer": "C. 20",
+      "diff": "medium"
+    },
+    {
+      "q": "The sequence t₀=-1, t₁=1, tₖ=tₖ₋₁+2·tₖ₋₂ for k≥2. Then t₄ equals:",
+      "options": ["A. 1", "B. -1", "C. 3", "D. -3"],
+      "answer": "B. -1",
+      "diff": "medium"
+    },
+    {
+      "q": "The Tower of Hanoi minimum moves mₙ satisfies m₁=1, mₖ=2·mₖ₋₁+1. Then m₃ equals:",
+      "options": ["A. 3", "B. 7", "C. 15", "D. 31"],
+      "answer": "B. 7",
+      "diff": "easy"
+    },
+    {
+      "q": "The closed-form formula for Tower of Hanoi moves is:",
+      "options": ["A. mₙ = 2ⁿ", "B. mₙ = 2ⁿ – 1", "C. mₙ = 2ⁿ⁻¹", "D. mₙ = 2ⁿ + 1"],
+      "answer": "B. mₙ = 2ⁿ – 1",
+      "diff": "easy"
+    },
+    {
+      "q": "For which of the following is recursion commonly used?",
+      "options": ["A. Math functions", "B. Data structure definitions", "C. Language definitions", "D. All of the above"],
+      "answer": "D. All of the above",
+      "diff": "easy"
+    },
+    {
+      "q": "A recursively defined function must ensure that each recursive call:",
+      "options": ["A. Uses larger arguments", "B. Uses arguments closer to a base value", "C. Never terminates", "D. Is optional"],
+      "answer": "B. Uses arguments closer to a base value",
+      "diff": "easy"
+    },
+    {
+      "q": "The base case in a recursive definition is:",
+      "options": ["A. The part that calls itself", "B. The part that does not refer to itself", "C. The part with the largest argument", "D. The part that never executes"],
+      "answer": "B. The part that does not refer to itself",
+      "diff": "easy"
+    },
+    {
+      "q": "If a sequence satisfies dₖ = 3dₖ₋₁ – 2dₖ₋₂ with d₀=0, d₁=1, then d₂ equals:",
+      "options": ["A. 1", "B. 2", "C. 3", "D. 4"],
+      "answer": "C. 3 (d₂ = 3·1 – 2·0 = 3)",
+      "diff": "medium"
+    },
+    {
+      "q": "The Fibonacci numbers grow approximately like:",
+      "options": ["A. Linear", "B. Quadratic", "C. Exponential", "D. Logarithmic"],
+      "answer": "C. Exponential",
+      "diff": "easy"
+    },
+    {
+      "q": "In the Q(a,b) function, if a < b, the value returned is:",
+      "options": ["A. a", "B. b", "C. 0", "D. 1"],
+      "answer": "C. 0",
+      "diff": "easy"
+    }
+  ]
+},
 
 
   },
