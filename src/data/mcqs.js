@@ -3617,6 +3617,202 @@ These are proved using geometry (areas of triangle, sector) and the Squeeze Theo
     }
   ]
 },
+16: {
+  title: "MTH101: Practice Questions (Lectures 16-18) – Techniques of Differentiation, Derivatives of Trigonometric Functions, Chain Rule",
+  summary: `**Key Topics Covered:**
+- Quotient rule for differentiation
+- Product rule for differentiation
+- Derivatives of trigonometric functions (sin, cos, tan, cot, sec, csc)
+- Chain rule for composite functions
+- Practice problems with step-by-step solutions
+
+---
+
+**Simple Understanding:**
+
+**Quotient Rule:**
+👉 d/dx (f/g) = (g·f' – f·g') / g²
+👉 Used when function is a ratio.
+
+**Product Rule:**
+👉 d/dx (f·g) = f·g' + g·f'
+👉 Used when function is product of two functions.
+
+**Derivatives of Trigonometric Functions (in radians):**
+👉 d/dx sin x = cos x
+👉 d/dx cos x = -sin x
+👉 d/dx tan x = sec² x
+👉 d/dx cot x = -csc² x
+👉 d/dx sec x = sec x tan x
+👉 d/dx csc x = -csc x cot x
+
+**Chain Rule:**
+👉 d/dx [f(g(x))] = f'(g(x)) · g'(x)
+👉 Used for composite functions (function inside a function).
+
+---
+
+**Example Problems:**
+
+1. **Differentiate g(t) = (t+4)/(t-2):** Apply quotient rule → g'(t) = -6/(t-2)².
+
+2. **Evaluate d/dx[ (√x+1)(1+√x) ] at x=9:** Use product rule → result 17/6.
+
+3. **Differentiate h(x) = (2x+1)(√x + x):** Product rule → h'(x) = (2x+1)(1/(2√x)+1) + √x·2.
+
+4. **Differentiate g(x) = (5x⁻³+3x⁻⁴):** Power rule → g'(x) = -15x⁻⁴ - 12x⁻⁵.
+
+5. **Differentiate f(x) = (x³+1)/(4x²+1):** Quotient rule → f'(x) = (4x⁴+3x²+8x)/(4x²+1)².
+
+6. **Find dy/dx for y = x³ cot x – 3/x³:** Derivative = 3x² cot x – x³ csc² x + 9/x⁴.
+
+7. **Chain rule examples:**
+   - y = √(5x³ – 3x² + x) → dy/dx = (15x²–6x+1)/(2√(5x³–3x²+x))
+   - y = tan x + cos x → dy/dx = (sec²x – sin x)/(2√x)
+   - y = 3 sin²(5x) + 4 cos²(5x) → dy/dx = –10 sin(10x)
+   - y = sec(4x) → dy/dx = 4 sec(4x) tan(4x) / (2√sec(4x)) = 2 sec(4x) tan(4x) / √sec(4x)
+   - y = tan(t²/3) → dy/dt = (2t/3) sec²(t²/3)
+
+---
+
+**Important Vocabulary:**
+- Quotient rule = derivative of ratio
+- Product rule = derivative of product
+- Chain rule = derivative of composition
+- Trigonometric derivatives = standard formulas
+- Composite function = function inside another function
+
+---
+
+**Quick Revision Points:**
+- Quotient: (f/g)' = (g f' – f g')/g².
+- Product: (f·g)' = f·g' + g·f'.
+- Chain: (f(g(x)))' = f'(g(x))·g'(x).
+- Memorize trig derivatives.
+- Practice chain rule with inner/outer functions.`,
+  questions: [
+    {
+      "q": "Differentiate g(t) = (t+4)/(t-2). What is g'(t)?",
+      "options": ["A. -6/(t-2)²", "B. 6/(t-2)²", "C. -8/(t-2)²", "D. 8/(t-2)²"],
+      "answer": "A. -6/(t-2)²",
+      "diff": "medium"
+    },
+    {
+      "q": "Evaluate d/dx[(√x+1)(1+√x)] at x=9:",
+      "options": ["A. 17/6", "B. 17/3", "C. 34/6", "D. 34/3"],
+      "answer": "A. 17/6",
+      "diff": "medium"
+    },
+    {
+      "q": "If h(x) = (2x+1)(√x + x), find h'(x):",
+      "options": ["A. (2x+1)(1/(2√x)+1) + 2√x", "B. (2x+1)(1/(2√x)+1) + 2x", "C. (2x+1)(1/(2√x)) + 2√x", "D. (2x+1)(1/(2√x)+1) + 2√x"],
+      "answer": "D. (2x+1)(1/(2√x)+1) + 2√x",
+      "diff": "medium"
+    },
+    {
+      "q": "Differentiate g(x) = 5x⁻³ + 3x⁻⁴:",
+      "options": ["A. -15x⁻⁴ - 12x⁻⁵", "B. 15x⁻⁴ + 12x⁻⁵", "C. -15x⁻⁴ + 12x⁻⁵", "D. 15x⁻⁴ - 12x⁻⁵"],
+      "answer": "A. -15x⁻⁴ - 12x⁻⁵",
+      "diff": "easy"
+    },
+    {
+      "q": "Find derivative of f(x) = (x³+1)/(4x²+1):",
+      "options": ["A. (4x⁴+3x²+8x)/(4x²+1)²", "B. (4x⁴-3x²+8x)/(4x²+1)²", "C. (4x⁴+3x²-8x)/(4x²+1)²", "D. (4x⁴+3x²+8x)/(4x²+1)"],
+      "answer": "A. (4x⁴+3x²+8x)/(4x²+1)²",
+      "diff": "hard"
+    },
+    {
+      "q": "If y = x³ cot x – 3/x³, find dy/dx:",
+      "options": ["A. 3x² cot x – x³ csc² x + 9/x⁴", "B. 3x² cot x + x³ csc² x + 9/x⁴", "C. 3x² tan x – x³ sec² x + 9/x⁴", "D. 3x² cot x – x³ csc² x – 9/x⁴"],
+      "answer": "A. 3x² cot x – x³ csc² x + 9/x⁴",
+      "diff": "medium"
+    },
+    {
+      "q": "Find dy/dx at x=π for y = x⁴ sin x:",
+      "options": ["A. π⁴", "B. -π⁴", "C. 0", "D. 4π³"],
+      "answer": "B. -π⁴",
+      "diff": "medium"
+    },
+    {
+      "q": "Derivative of f(t) = (2 – 8t + t²)/sin t is:",
+      "options": ["A. [(2t-8) sin t – (t²-8t+2) cos t]/sin² t", "B. [(2t-8) sin t + (t²-8t+2) cos t]/sin² t", "C. [(2t-8) cos t – (t²-8t+2) sin t]/sin² t", "D. None of the above"],
+      "answer": "A. [(2t-8) sin t – (t²-8t+2) cos t]/sin² t",
+      "diff": "hard"
+    },
+    {
+      "q": "If y = (5x²+3x+3) sin x, find dy/dx:",
+      "options": ["A. (5x²+3x+3) cos x + sin x (10x+3)", "B. (5x²+3x+3) cos x – sin x (10x+3)", "C. (5x²+3x+3) sin x + cos x (10x+3)", "D. (5x²+3x+3) sin x – cos x (10x+3)"],
+      "answer": "A. (5x²+3x+3) cos x + sin x (10x+3)",
+      "diff": "easy"
+    },
+    {
+      "q": "Differentiate y = √(5x³ – 3x² + x) using chain rule:",
+      "options": ["A. (15x² – 6x + 1)/(2√(5x³–3x²+x))", "B. (15x² – 6x + 1)/√(5x³–3x²+x)", "C. (15x² – 6x + 1)/(2(5x³–3x²+x))", "D. (15x² – 6x + 1)/(2√(5x³–3x²))"],
+      "answer": "A. (15x² – 6x + 1)/(2√(5x³–3x²+x))",
+      "diff": "medium"
+    },
+    {
+      "q": "Differentiate y = tan x + cos x:",
+      "options": ["A. (sec²x – sin x)/(2√x)", "B. (sec²x + sin x)/(2√x)", "C. (sec²x – cos x)/(2√x)", "D. (tan²x – sin x)/(2√x)"],
+      "answer": "A. (sec²x – sin x)/(2√x)",
+      "diff": "medium"
+    },
+    {
+      "q": "Find dy/dx for y = 3 sin²(5x) + 4 cos²(5x):",
+      "options": ["A. –10 sin(10x)", "B. 10 sin(10x)", "C. –20 sin(10x)", "D. 20 sin(10x)"],
+      "answer": "A. –10 sin(10x)",
+      "diff": "hard"
+    },
+    {
+      "q": "Derivative of y = sec(4x) using chain rule:",
+      "options": ["A. 2 sec(4x) tan(4x)/√sec(4x)", "B. 4 sec(4x) tan(4x)/√sec(4x)", "C. 2 sec(4x) tan(4x)", "D. 4 sec(4x) tan(4x)"],
+      "answer": "A. 2 sec(4x) tan(4x)/√sec(4x)",
+      "diff": "hard"
+    },
+    {
+      "q": "Find dy/dt for y = tan(t²/3):",
+      "options": ["A. (2t/3) sec²(t²/3)", "B. (t/3) sec²(t²/3)", "C. (2t/3) csc²(t²/3)", "D. (2t/3) sec²(t)"],
+      "answer": "A. (2t/3) sec²(t²/3)",
+      "diff": "medium"
+    },
+    {
+      "q": "What is the derivative of f(x) = cot x?",
+      "options": ["A. –csc² x", "B. sec² x", "C. –sec² x", "D. csc² x"],
+      "answer": "A. –csc² x",
+      "diff": "easy"
+    },
+    {
+      "q": "Derivative of f(x) = sec x is:",
+      "options": ["A. sec x tan x", "B. –csc x cot x", "C. sec² x", "D. –sec x tan x"],
+      "answer": "A. sec x tan x",
+      "diff": "easy"
+    },
+    {
+      "q": "Which rule is used to differentiate y = (x²+1)/(x³-1)?",
+      "options": ["A. Product rule", "B. Quotient rule", "C. Chain rule", "D. Power rule"],
+      "answer": "B. Quotient rule",
+      "diff": "easy"
+    },
+    {
+      "q": "If y = sin(3x²), find dy/dx:",
+      "options": ["A. 6x cos(3x²)", "B. 3x² cos(3x²)", "C. cos(3x²)", "D. 6x sin(3x²)"],
+      "answer": "A. 6x cos(3x²)",
+      "diff": "easy"
+    },
+    {
+      "q": "The chain rule states that d/dx [f(g(x))] =:",
+      "options": ["A. f'(x) · g'(x)", "B. f'(g(x)) · g'(x)", "C. f(g'(x)) · g(x)", "D. f'(g(x)) · g(x)"],
+      "answer": "B. f'(g(x)) · g'(x)",
+      "diff": "easy"
+    },
+    {
+      "q": "Find f'(t) if f(t) = 5t sin t:",
+      "options": ["A. 5t cos t + 5 sin t", "B. 5t cos t – 5 sin t", "C. 5 cos t + 5t sin t", "D. 5 cos t – 5t sin t"],
+      "answer": "A. 5t cos t + 5 sin t",
+      "diff": "easy"
+    }
+  ]
+},
 
 
 17: {
@@ -5573,7 +5769,199 @@ Use laws of logic step by step to show a statement is always true (≡ t).
     }
   ]
 },
+5: {
+  title: "Arguments and Validity (MTH202 Lecture 5)",
+  summary: `**Key Topics Covered:**
+- Argument (premises and conclusion)
+- Valid and invalid arguments
+- Truth table method to test validity
+- Critical rows (premises true, conclusion false → invalid)
+- Modus ponens (p→q, p ∴ q) is valid
+- Example of invalid form (p→q, q ∴ p)
 
+---
+
+**Simple Understanding:**
+
+**Argument:**
+👉 A list of statements called **premises** followed by a **conclusion**.
+👉 Notation: P₁, P₂, …, Pₙ ∴ C
+
+**Valid Argument:**
+👉 Conclusion is true whenever all premises are true.
+👉 Equivalent: (P₁ ∧ P₂ ∧ … ∧ Pₙ) → C is a tautology.
+
+**Invalid Argument:**
+👉 There exists at least one case where all premises are true but conclusion is false.
+👉 Such a case is called a **critical row** in the truth table.
+
+---
+
+**Truth Table Method:**
+1. List all possible truth values for variables.
+2. Compute truth values of premises and conclusion.
+3. Look for any row where all premises are true but conclusion is false.
+   - If found → argument invalid.
+   - If no such row → argument valid.
+
+---
+
+**Example of Valid Argument (Modus Ponens):**
+👉 p → q, p ∴ q
+👉 Truth table shows no row with p→q true, p true, q false → valid.
+
+**Example of Invalid Argument:**
+👉 p → q, q ∴ p
+👉 Critical row: p false, q true → premises true, conclusion false → invalid.
+
+---
+
+**Exercise:**
+👉 Test p ∨ q, p → ~q, p → r ∴ r
+👉 Find critical rows where premises true but r false → invalid.
+
+---
+
+**Important Vocabulary:**
+- Argument = premises + conclusion
+- Valid = conclusion follows necessarily
+- Invalid = counterexample exists
+- Premise = assumption/hypothesis
+- Conclusion = statement to be proved
+- Critical row = all premises true, conclusion false
+- Tautology = always true
+
+---
+
+**Quick Revision Points:**
+- Valid argument: premises ⇒ conclusion.
+- Invalid if at least one critical row exists.
+- Truth tables systematically check validity.
+- Modus ponens: p→q, p ∴ q (valid).
+- Fallacy of converse: p→q, q ∴ p (invalid).`,
+  questions: [
+    {
+      "q": "An argument consists of:",
+      "options": ["A. Only a conclusion", "B. Premises followed by a conclusion", "C. Only premises", "D. A single statement"],
+      "answer": "B. Premises followed by a conclusion",
+      "diff": "easy"
+    },
+    {
+      "q": "An argument is valid if:",
+      "options": ["A. Conclusion is true", "B. All premises are true", "C. Conclusion is true whenever all premises are true", "D. Premises are false"],
+      "answer": "C. Conclusion is true whenever all premises are true",
+      "diff": "easy"
+    },
+    {
+      "q": "An argument is invalid if:",
+      "options": ["A. Conclusion is false", "B. All premises are true and conclusion is false", "C. Premises are false", "D. Conclusion is true"],
+      "answer": "B. All premises are true and conclusion is false",
+      "diff": "easy"
+    },
+    {
+      "q": "The argument form p→q, p ∴ q is known as:",
+      "options": ["A. Modus tollens", "B. Modus ponens", "C. Hypothetical syllogism", "D. Disjunctive syllogism"],
+      "answer": "B. Modus ponens",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following argument forms is invalid?",
+      "options": ["A. p→q, p ∴ q", "B. p→q, ~q ∴ ~p", "C. p→q, q ∴ p", "D. p∨q, ~p ∴ q"],
+      "answer": "C. p→q, q ∴ p",
+      "diff": "medium"
+    },
+    {
+      "q": "A row in a truth table where all premises are true and conclusion is false is called a:",
+      "options": ["A. Tautology", "B. Critical row", "C. Contradiction", "D. Contingency"],
+      "answer": "B. Critical row",
+      "diff": "easy"
+    },
+    {
+      "q": "If a truth table has at least one critical row, the argument is:",
+      "options": ["A. Valid", "B. Invalid", "C. Sound", "D. Unsound"],
+      "answer": "B. Invalid",
+      "diff": "easy"
+    },
+    {
+      "q": "The argument p∨q, p→~q, p→r ∴ r: Using truth table, is it valid?",
+      "options": ["A. Yes", "B. No", "C. Cannot determine", "D. Depends on r"],
+      "answer": "B. No (the lecture shows invalid due to critical rows)",
+      "diff": "hard"
+    },
+    {
+      "q": "A valid argument means that the conjunction of premises implies the conclusion is a:",
+      "options": ["A. Contradiction", "B. Contingency", "C. Tautology", "D. None"],
+      "answer": "C. Tautology",
+      "diff": "medium"
+    },
+    {
+      "q": "Which of the following is a valid argument form?",
+      "options": ["A. p→q, q ∴ p", "B. p→q, ~p ∴ ~q", "C. p→q, q→r ∴ p→r", "D. p∨q, p ∴ ~q"],
+      "answer": "C. p→q, q→r ∴ p→r",
+      "diff": "medium"
+    },
+    {
+      "q": "In truth table validation, we look for:",
+      "options": ["A. Rows where conclusion is true", "B. Rows where premises are false", "C. Rows where premises are true and conclusion false", "D. Rows where all are true"],
+      "answer": "C. Rows where premises are true and conclusion false",
+      "diff": "easy"
+    },
+    {
+      "q": "The argument 'If it rains, then the ground is wet. It rains. Therefore, the ground is wet.' is:",
+      "options": ["A. Invalid", "B. Valid", "C. Sound", "D. Unsound"],
+      "answer": "B. Valid",
+      "diff": "easy"
+    },
+    {
+      "q": "The argument 'If it rains, then the ground is wet. The ground is wet. Therefore, it rains.' is:",
+      "options": ["A. Valid", "B. Invalid", "C. Sound", "D. None"],
+      "answer": "B. Invalid",
+      "diff": "easy"
+    },
+    {
+      "q": "For the argument p→q, q ∴ p, the critical row occurs when:",
+      "options": ["A. p=T, q=T", "B. p=T, q=F", "C. p=F, q=T", "D. p=F, q=F"],
+      "answer": "C. p=F, q=T",
+      "diff": "medium"
+    },
+    {
+      "q": "An argument is valid if and only if:",
+      "options": ["A. Its conclusion is always true", "B. Its premises are always true", "C. There is no row where premises are true and conclusion false", "D. Its conclusion is a tautology"],
+      "answer": "C. There is no row where premises are true and conclusion false",
+      "diff": "easy"
+    },
+    {
+      "q": "The symbol '∴' is read as:",
+      "options": ["A. And", "B. Or", "C. Therefore", "D. If and only if"],
+      "answer": "C. Therefore",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following is a valid argument?",
+      "options": ["A. p∨q, p ∴ ~q", "B. p∧q, p ∴ q", "C. p→q, ~p ∴ ~q", "D. p→q, q∧r ∴ p"],
+      "answer": "B. p∧q, p ∴ q",
+      "diff": "medium"
+    },
+    {
+      "q": "The truth table method for an argument with n variables has how many rows?",
+      "options": ["A. n", "B. 2n", "C. 2ⁿ", "D. n²"],
+      "answer": "C. 2ⁿ",
+      "diff": "easy"
+    },
+    {
+      "q": "If an argument is valid, its corresponding conditional (premises → conclusion) is a:",
+      "options": ["A. Contradiction", "B. Tautology", "C. Contingency", "D. None"],
+      "answer": "B. Tautology",
+      "diff": "easy"
+    },
+    {
+      "q": "The argument 'p, p→q, q→r ∴ r' is:",
+      "options": ["A. Invalid", "B. Valid", "C. Unsound", "D. None"],
+      "answer": "B. Valid (modus ponens repeatedly)",
+      "diff": "medium"
+    }
+  ]
+},
 
 //lecture 6// 
 6: {
@@ -6686,6 +7074,217 @@ These are fundamental rules that sets follow, similar to logical equivalences.
 
 
 ///lecture 10 // 
+
+
+
+10: {
+  title: "Applications of Venn Diagrams (MTH202 Lecture 10)",
+  summary: `**Key Topics Covered:**
+- Shading Venn diagrams for set configurations (printer, modem, scanner)
+- Solving word problems using Venn diagrams (typists with typewriters)
+- Solving simultaneous equations from Venn diagram data
+- Using Venn diagrams to test validity of logical arguments (syllogisms)
+- Partition of a set (disjoint subsets covering the set)
+- Power set (set of all subsets) and its cardinality (2ⁿ)
+
+---
+
+**Simple Understanding:**
+
+**Venn Diagram Shading Examples:**
+👉 Let P = printer users, M = modem users, S = scanner users.
+   - (i) modem and printer but no scanner → M∩P∩Sᶜ
+   - (ii) scanner but no printer and no modem → S∩Pᶜ∩Mᶜ
+   - (iii) scanner or printer but no modem → (S∪P)∩Mᶜ
+   - (iv) no modem and no printer → Mᶜ∩Pᶜ
+
+---
+
+**Typists Problem:**
+👉 5 use all three (M, E, W); 9 use E and W; 7 use M and W; 6 use M and E; no one uses M only.
+👉 Venn diagram with regions: M only = 0, M∩E only = 1, M∩W only = 2, E∩W only = 4, all three = 5.
+👉 Also, number of E users = number of W users. Let x = E only, y = W only.
+   - x – y = 1, x + y = 9 → x=5, y=4.
+   - E users = 1+5+4+5 = 15, W only = 4.
+
+---
+
+**Software Packages Problem:**
+👉 100 students, 28 used none. Given: A only=8, B only=26, C only=7, all three=10, A∩B=13.
+👉 From Venn: A∩B includes those who also use C? Actually A∩B total = 13 includes the 10 who use all three, so A∩B only = 3.
+👉 Regions: A∩C only = x, B∩C only = y (unknowns).
+👉 Total A users = 8+3+10+x; Total B users = 26+3+10+y.
+👉 Given: B users = 2 × A users → equation. Also total students: sum all regions = 100 → x+y=18.
+👉 Solve: x=5, y=13. C users = x+y+10+7 = 35.
+
+---
+
+**Using Venn Diagrams for Arguments:**
+👉 Represent premises as set inclusions/disjointness.
+👉 Valid if conclusion must be true given premises; invalid if counterexample possible.
+
+**Example valid:**
+- All humans are mortal (humans ⊆ mortals)
+- Zeus is not mortal → Zeus outside mortals → Zeus outside humans ∴ Zeus not human.
+
+**Example invalid:**
+- All humans are mortal (humans ⊆ mortals)
+- Farhan is mortal → Farhan inside mortals, could be inside or outside humans → conclusion "Farhan is human" not forced.
+
+---
+
+**Partition of a Set:**
+👉 A collection of non-empty, pairwise disjoint subsets whose union is the original set.
+
+**Power Set:**
+👉 The set of all subsets of A, denoted P(A).
+👉 If |A| = n, then |P(A)| = 2ⁿ.
+👉 Example: A={1,2} → P(A)={∅,{1},{2},{1,2}}.
+
+---
+
+**Important Vocabulary:**
+- Venn diagram = graphical representation of sets
+- Shading = marking regions that satisfy a condition
+- Disjoint = no common elements
+- Partition = division into disjoint covering subsets
+- Power set = set of all subsets
+- Syllogism = logical argument with two premises and a conclusion
+- Valid = conclusion necessarily follows from premises
+- Invalid = premises true but conclusion false possible
+
+---
+
+**Quick Revision Points:**
+- Venn diagrams help visualize set operations and logical relationships.
+- In word problems, fill known regions first, then use unknowns for ambiguous regions.
+- Use total counts and given relationships to form equations.
+- In arguments, validity means conclusion is true whenever premises are true.
+- A partition requires subsets to be non-empty, mutually disjoint, and cover the set.
+- Power set size doubles with each added element (2ⁿ).`,
+  questions: [
+    {
+      "q": "In a Venn diagram with sets P (printer), M (modem), S (scanner), which region represents 'modem and printer but no scanner'?",
+      "options": ["A. M ∩ P ∩ S", "B. M ∩ P ∩ Sᶜ", "C. (M ∩ P) ∪ S", "D. M ∪ P ∪ Sᶜ"],
+      "answer": "B. M ∩ P ∩ Sᶜ",
+      "diff": "easy"
+    },
+    {
+      "q": "In the typists problem, if no one uses M only, and M∩E=6, M∩W=7, E∩W=9, all three=5, then the number of typists using only E and only W are found to be 5 and 4 respectively. How many use electronic typewriters in total?",
+      "options": ["A. 14", "B. 15", "C. 16", "D. 17"],
+      "answer": "B. 15",
+      "diff": "medium"
+    },
+    {
+      "q": "In the software packages problem, if total students = 100, 28 use none, A only=8, B only=26, C only=7, all three=10, A∩B=13, and twice as many use B as A, what is the number of students using only A and C (x)?",
+      "options": ["A. 5", "B. 13", "C. 10", "D. 7"],
+      "answer": "A. 5",
+      "diff": "hard"
+    },
+    {
+      "q": "From the same software problem, how many students used package C?",
+      "options": ["A. 25", "B. 30", "C. 35", "D. 40"],
+      "answer": "C. 35",
+      "diff": "medium"
+    },
+    {
+      "q": "Using a Venn diagram to test the argument: 'All humans are mortal. Zeus is not mortal. Therefore, Zeus is not a human.' This argument is:",
+      "options": ["A. Valid", "B. Invalid", "C. Sound", "D. Unsound"],
+      "answer": "A. Valid",
+      "diff": "easy"
+    },
+    {
+      "q": "The argument: 'All humans are mortal. Farhan is mortal. Therefore, Farhan is a human.' Using a Venn diagram, this argument is:",
+      "options": ["A. Valid", "B. Invalid", "C. Sound", "D. Unsound"],
+      "answer": "B. Invalid",
+      "diff": "easy"
+    },
+    {
+      "q": "The argument: 'No polynomial functions have horizontal asymptote. This function has a horizontal asymptote. Therefore, this function is not polynomial.' Using disjoint disks, this argument is:",
+      "options": ["A. Valid", "B. Invalid", "C. Cannot be determined", "D. Valid only for some functions"],
+      "answer": "A. Valid",
+      "diff": "medium"
+    },
+    {
+      "q": "An argument that can have true premises and a false conclusion is called:",
+      "options": ["A. Valid", "B. Invalid", "C. Sound", "D. Tautology"],
+      "answer": "B. Invalid",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following represents a partition of the set A = {1,2,3}?",
+      "options": ["A. {{1},{2,3}}", "B. {{1,2},{2,3}}", "C. {{1},{2},{3},{1,2}}", "D. {∅,{1,2,3}}"],
+      "answer": "A. {{1},{2,3}}",
+      "diff": "easy"
+    },
+    {
+      "q": "The power set of the empty set P(∅) is:",
+      "options": ["A. ∅", "B. {∅}", "C. {{∅}}", "D. {∅,{∅}}"],
+      "answer": "B. {∅}",
+      "diff": "easy"
+    },
+    {
+      "q": "If a set has 4 elements, then its power set has how many elements?",
+      "options": ["A. 4", "B. 8", "C. 16", "D. 32"],
+      "answer": "C. 16",
+      "diff": "easy"
+    },
+    {
+      "q": "In the typists problem, the number of typists using word processors only is:",
+      "options": ["A. 4", "B. 5", "C. 6", "D. 7"],
+      "answer": "A. 4",
+      "diff": "medium"
+    },
+    {
+      "q": "Which of the following is NOT a valid partition of the set of integers?",
+      "options": ["A. Even integers and odd integers", "B. Positive integers, negative integers, and zero", "C. Multiples of 2, multiples of 3", "D. Integers divisible by 2 and integers not divisible by 2"],
+      "answer": "C. Multiples of 2, multiples of 3 (they are not disjoint)",
+      "diff": "medium"
+    },
+    {
+      "q": "If P(P(∅)) is computed, the number of elements is:",
+      "options": ["A. 1", "B. 2", "C. 4", "D. 8"],
+      "answer": "B. 2",
+      "diff": "medium"
+    },
+    {
+      "q": "The power set of {a,b} contains which element?",
+      "options": ["A. {a,b}", "B. {a}", "C. {b}", "D. All of the above"],
+      "answer": "D. All of the above",
+      "diff": "easy"
+    },
+    {
+      "q": "In a Venn diagram, two sets are disjoint. The region representing their intersection is:",
+      "options": ["A. Empty", "B. The union", "C. The complement", "D. The whole diagram"],
+      "answer": "A. Empty",
+      "diff": "easy"
+    },
+    {
+      "q": "The argument: 'All dogs are carnivorous. Jack is not a dog. Therefore, Jack is not carnivorous.' Which diagram shows this argument can have true premises and false conclusion?",
+      "options": ["A. Jack outside dogs but inside carnivorous", "B. Jack inside dogs", "C. Jack outside carnivorous", "D. Jack inside both"],
+      "answer": "A. Jack outside dogs but inside carnivorous",
+      "diff": "medium"
+    },
+    {
+      "q": "In the software packages problem, the number of students who used at least one package is:",
+      "options": ["A. 72", "B. 70", "C. 68", "D. 65"],
+      "answer": "A. 72 (100-28=72)",
+      "diff": "easy"
+    },
+    {
+      "q": "If a set A has cardinality n, the cardinality of its power set P(A) is:",
+      "options": ["A. n", "B. 2n", "C. n²", "D. 2ⁿ"],
+      "answer": "D. 2ⁿ",
+      "diff": "easy"
+    },
+    {
+      "q": "The Venn diagram technique for testing argument validity works by:",
+      "options": ["A. Checking if the conclusion region is entirely contained in the premise regions", "B. Checking if the premise regions overlap", "C. Checking if the conclusion can be false while premises true", "D. Both A and C"],
+      "answer": "D. Both A and C",
+      "diff": "hard"
+    }
+  ]
+},
 11: {
   title: "Ordered Pairs, Cartesian Products, and Relations (MTH202 Lecture 11)",
   summary: `**Key Topics Covered:**
@@ -9387,6 +9986,213 @@ S = a/(1-r)
       "q": "In the Q(a,b) function, if a < b, the value returned is:",
       "options": ["A. a", "B. b", "C. 0", "D. 1"],
       "answer": "C. 0",
+      "diff": "easy"
+    }
+  ]
+},
+
+22: {
+  title: "Relative Extrema (PHY101 Lecture 22)",
+  summary: `**Key Topics Covered:**
+- Relative maxima and minima (local peaks and valleys)
+- Critical points (f'(x)=0 or f'(x) undefined)
+- First Derivative Test (sign change of f')
+- Second Derivative Test (value of f'')
+- Graphs of polynomials (increasing/decreasing, concavity)
+- Graphs of rational functions (vertical/horizontal asymptotes)
+
+---
+
+**Simple Understanding:**
+
+**Relative Maxima and Minima:**
+👉 **Relative maximum:** f(x₀) ≥ f(x) for all x in some open interval around x₀ (local peak).
+👉 **Relative minimum:** f(x₀) ≤ f(x) for all x in some open interval around x₀ (local valley).
+
+---
+
+**Critical Points:**
+👉 Points where f'(x) = 0 (stationary points) or f'(x) does not exist (corners, cusps).
+👉 Relative extrema can only occur at critical points (Theorem 4.3.4).
+
+---
+
+**First Derivative Test:**
+👉 If f' changes from + to – at c → relative maximum at c.
+👉 If f' changes from – to + at c → relative minimum at c.
+👉 If f' does not change sign → no extremum (e.g., inflection point).
+
+**Example:** f(x)=3x^(5/3)-15x^(2/3) → f'(x)=5x^(2/3)-10x^(-1/3)=5x^(-1/3)(x-2)
+   - Critical points: x=0 (f' undefined), x=2 (f'=0)
+   - Number line test: f' changes from + to – at x=0 → max; from – to + at x=2 → min.
+
+---
+
+**Second Derivative Test:**
+👉 If f'(c)=0 and f''(c)<0 → relative maximum.
+👉 If f'(c)=0 and f''(c)>0 → relative minimum.
+👉 If f''(c)=0 → test inconclusive (use first derivative test).
+
+**Example:** f(x)=x⁴-2x² → f'(x)=4x³-4x=4x(x-1)(x+1), f''(x)=12x²-4
+   - x=0: f''(0)=-4<0 → max.
+   - x=±1: f''(±1)=8>0 → minima.
+
+---
+
+**Graphs of Polynomials:**
+👉 Use f' to find increasing/decreasing intervals and extrema.
+👉 Use f'' to find concavity (concave up f''>0, concave down f''<0) and inflection points.
+👉 Example: f(x)=x³-3x+2 → f'=3x²-3=3(x-1)(x+1) → inc on (-∞,-1)∪(1,∞), dec on (-1,1); f''=6x → inflection at x=0.
+
+---
+
+**Graphs of Rational Functions:**
+👉 Vertical asymptotes where denominator = 0 (function undefined).
+👉 Horizontal asymptotes: compare degrees of numerator and denominator.
+👉 Example: f(x)=(x²+x-2)/(x²-1) → vertical asymptote at x=±1? Actually denominator zero at x=±1; horizontal asymptote y=1 (same degree).
+
+---
+
+**Important Vocabulary:**
+- Relative maximum = local peak
+- Relative minimum = local valley
+- Critical point = f'(c)=0 or DNE
+- Stationary point = f'(c)=0
+- First derivative test = uses sign change of f'
+- Second derivative test = uses f''(c)
+- Concave up = f''>0 (cup shape)
+- Concave down = f''<0 (frown shape)
+- Inflection point = change in concavity
+- Asymptote = line graph approaches
+
+---
+
+**Quick Revision Points:**
+- Extrema occur at critical points.
+- First derivative test: sign change tells max/min.
+- Second derivative test: f''<0 → max, f''>0 → min.
+- f''=0 → inconclusive.
+- Polynomial graphs: use f' and f''.
+- Rational graphs: vertical asymptotes at zeros of denominator, horizontal asymptotes from leading terms.`,
+  questions: [
+    {
+      "q": "A function has a relative maximum at x₀ if f(x₀) ≥ f(x) for all x in:",
+      "options": ["A. The entire domain", "B. Some open interval containing x₀", "C. The entire real line", "D. Only at x₀"],
+      "answer": "B. Some open interval containing x₀",
+      "diff": "easy"
+    },
+    {
+      "q": "Critical points are points where:",
+      "options": ["A. f'(x) = 0 only", "B. f'(x) does not exist only", "C. f'(x) = 0 or f'(x) DNE", "D. f(x) = 0"],
+      "answer": "C. f'(x) = 0 or f'(x) DNE",
+      "diff": "easy"
+    },
+    {
+      "q": "According to the First Derivative Test, if f' changes from positive to negative at c, then f has a:",
+      "options": ["A. Relative minimum", "B. Relative maximum", "C. Inflection point", "D. No extremum"],
+      "answer": "B. Relative maximum",
+      "diff": "easy"
+    },
+    {
+      "q": "If f'(c) = 0 and f''(c) > 0, then f has a:",
+      "options": ["A. Relative maximum", "B. Relative minimum", "C. Inflection point", "D. None"],
+      "answer": "B. Relative minimum",
+      "diff": "easy"
+    },
+    {
+      "q": "If f'(c) = 0 and f''(c) < 0, then f has a:",
+      "options": ["A. Relative maximum", "B. Relative minimum", "C. Inflection point", "D. None"],
+      "answer": "A. Relative maximum",
+      "diff": "easy"
+    },
+    {
+      "q": "The function f(x)=x³ has a critical point at x=0. What does the Second Derivative Test tell us?",
+      "options": ["A. Relative maximum", "B. Relative minimum", "C. Inconclusive (f''(0)=0)", "D. No critical point"],
+      "answer": "C. Inconclusive (f''(0)=0)",
+      "diff": "medium"
+    },
+    {
+      "q": "For f(x)=3x^(5/3)-15x^(2/3), the critical points are x=0 and x=2. Using the First Derivative Test, which is correct?",
+      "options": ["A. Max at 0, min at 2", "B. Min at 0, max at 2", "C. Both maxima", "D. Both minima"],
+      "answer": "A. Max at 0, min at 2",
+      "diff": "hard"
+    },
+    {
+      "q": "For f(x)=x⁴-2x², the point x=0 is a:",
+      "options": ["A. Relative maximum", "B. Relative minimum", "C. Inflection point", "D. None"],
+      "answer": "A. Relative maximum",
+      "diff": "medium"
+    },
+    {
+      "q": "For the same function, x=1 is a:",
+      "options": ["A. Relative maximum", "B. Relative minimum", "C. Inflection point", "D. None"],
+      "answer": "B. Relative minimum",
+      "diff": "medium"
+    },
+    {
+      "q": "The function f(x)=x³-3x+2 has critical points at x=±1. Which is true?",
+      "options": ["A. Max at -1, min at 1", "B. Min at -1, max at 1", "C. Both maxima", "D. Both minima"],
+      "answer": "A. Max at -1, min at 1",
+      "diff": "medium"
+    },
+    {
+      "q": "Vertical asymptotes of a rational function occur where:",
+      "options": ["A. Numerator = 0", "B. Denominator = 0", "C. Numerator and denominator both zero", "D. The function is differentiable"],
+      "answer": "B. Denominator = 0",
+      "diff": "easy"
+    },
+    {
+      "q": "The horizontal asymptote of f(x)= (x²+2)/(x²-1) is:",
+      "options": ["A. y=0", "B. y=1", "C. y=2", "D. No asymptote"],
+      "answer": "B. y=1",
+      "diff": "medium"
+    },
+    {
+      "q": "A point where the graph changes concavity is called a(n):",
+      "options": ["A. Critical point", "B. Inflection point", "C. Relative extremum", "D. Asymptote"],
+      "answer": "B. Inflection point",
+      "diff": "easy"
+    },
+    {
+      "q": "If f''(x) > 0 on an interval, the graph is:",
+      "options": ["A. Concave up", "B. Concave down", "C. Increasing", "D. Decreasing"],
+      "answer": "A. Concave up",
+      "diff": "easy"
+    },
+    {
+      "q": "If f''(x) < 0 on an interval, the graph is:",
+      "options": ["A. Concave up", "B. Concave down", "C. Increasing", "D. Decreasing"],
+      "answer": "B. Concave down",
+      "diff": "easy"
+    },
+    {
+      "q": "For f(x)=x³-3x+2, the inflection point is at x =",
+      "options": ["A. 0", "B. 1", "C. -1", "D. 2"],
+      "answer": "A. 0",
+      "diff": "easy"
+    },
+    {
+      "q": "The function f(x)=|x| has a critical point at x=0. Which test applies?",
+      "options": ["A. First derivative test works", "B. Second derivative test works", "C. Neither (derivative DNE)", "D. Both work"],
+      "answer": "C. Neither (derivative DNE)",
+      "diff": "easy"
+    },
+    {
+      "q": "If f'(c)=0 and f'(x) does not change sign at c, then c is a:",
+      "options": ["A. Relative maximum", "B. Relative minimum", "C. Point of inflection (or no extremum)", "D. Vertical asymptote"],
+      "answer": "C. Point of inflection (or no extremum)",
+      "diff": "medium"
+    },
+    {
+      "q": "Which of the following is true about relative extrema?",
+      "options": ["A. They always occur at critical points", "B. They never occur at critical points", "C. They occur only where f'(x)=0", "D. They occur only where f'(x) DNE"],
+      "answer": "A. They always occur at critical points",
+      "diff": "easy"
+    },
+    {
+      "q": "The graph of f(x)=1/(x-2) has a vertical asymptote at:",
+      "options": ["A. x=0", "B. x=2", "C. x=-2", "D. y=0"],
+      "answer": "B. x=2",
       "diff": "easy"
     }
   ]
@@ -35907,7 +36713,715 @@ while (tickets remain to be sold):
 },
 
 
+12: {
+  title: "Major Political Developments in 1945-46 (Pak301 Lecture 12)",
+  summary: `**Key Topics Covered:**
+- Political situation in 1945 (Simla Conference)
+- Elections of 1945-46 (Central and Provincial)
+- Cabinet Mission (March-May 1946)
+- Recommendations of Cabinet Mission
+- Muslim League and Congress reactions
+- Interim Government formation
+- Direct Action Day (August 16, 1946)
+- Constituent Assembly and ML boycott
 
+---
+
+**Simple Understanding:**
+
+**Political Situation in 1945:**
+👉 British offered political changes after WWII.
+👉 Simla Conference (June-July 1945) – Jinnah (ML) vs Azad (Congress).
+👉 Congress claimed sole representative of all Indians.
+👉 ML claimed sole representative of Muslims.
+👉 Differences increased.
+
+---
+
+**Elections 1945-46:**
+👉 Central Legislature (Dec 1945): ML won all 30 Muslim seats; Congress 57 general seats.
+👉 Provincial Elections (Feb 1946):
+   - Punjab: 79/86 Muslim seats (Unionist government under Khizr Hayat Tiwana)
+   - Bengal: 113/119 Muslim seats (coalition)
+   - Sindh: 28/35 Muslim seats (ML ministry)
+   - NWFP: 17/38 Muslim seats (Khudai Khidmatgar government)
+
+---
+
+**Cabinet Mission (March 1946):**
+👉 British mission to find constitutional settlement.
+👉 Jinnah emphasized Two Nation Theory.
+👉 Congress wanted strong center; ML wanted weak center with Muslim autonomy.
+
+**Recommendations (May 1946):**
+1. Indian Union with British India + princely states.
+2. Center to handle foreign affairs, defense, communication, taxation.
+3. Remaining subjects to provinces.
+4. Legislature and executive from provinces and states.
+5. No legislation on communal affairs without majority of both communities.
+6. Provinces divided into three groups:
+   - Group A: Hindu-majority (UP, CP, Madras, Bombay, Bihar, Orissa)
+   - Group B: Muslim-majority NW (Punjab, NWFP, Balochistan, Sindh)
+   - Group C: Bengal and Assam
+7. After 10 years, a province could ask to review relationship with Union (option to separate).
+8. Constituent Assembly elected by provincial assemblies (separate electorate).
+9. Interim Government to be set up.
+
+---
+
+**Reactions:**
+👉 **ML:** Accepted plan (basis for Pakistan in grouping and right to review).
+👉 **Congress:** Critical of groupings and review right; agreed to contest CA but not bound by plan.
+
+---
+
+**Interim Government:**
+👉 Congress joined (Sept 2, 1946) under Nehru; ML stayed away.
+👉 ML joined on Oct 25, 1946 (Liaquat Ali Khan, Abdur Rab Nishtar, etc.).
+👉 Many problems due to Hindu-Muslim differences.
+
+---
+
+**Direct Action Day (Aug 16, 1946):**
+👉 ML called for direct action to achieve Pakistan.
+👉 Led to communal riots.
+
+---
+
+**Constituent Assembly:**
+👉 Elected July 1946. ML won all Muslim seats except 5; Congress all general seats except 9.
+👉 First session Dec 9, 1946 – ML boycotted because Congress wanted united India constitution.
+👉 ML demanded two constituent assemblies.
+
+---
+
+**Important Vocabulary:**
+- Simla Conference = 1945 meeting between British and Indian leaders
+- Muslim League = political party representing Muslims
+- Congress = Indian National Congress
+- Two Nation Theory = Hindus and Muslims are two separate nations
+- Cabinet Mission = British mission to propose constitutional plan
+- Grouping = provinces divided into three groups
+- Direct Action Day = ML's call for action to achieve Pakistan
+- Constituent Assembly = body to frame constitution
+- Interim Government = temporary government before independence
+
+---
+
+**Quick Revision Points:**
+- Simla Conference failed due to Congress claim of sole representation.
+- Elections 1945-46: ML won most Muslim seats.
+- Cabinet Mission proposed three-group plan with option to separate after 10 years.
+- ML accepted; Congress accepted but refused to be bound.
+- Direct Action Day led to communal violence.
+- ML boycotted Constituent Assembly first session.
+- Interim Government faced Hindu-Muslim differences.`,
+  questions: [
+    {
+      q: "Who represented the Muslim League at the Simla Conference (June-July 1945)?",
+      options: ["A. Maulana Abul Kalam Azad", "B. Quaid-e-Azam Muhammad Ali Jinnah", "C. Liaquat Ali Khan", "D. Sardar Abdur Rab Nishtar"],
+      answer: "B. Quaid-e-Azam Muhammad Ali Jinnah",
+      diff: "easy"
+    },
+    {
+      q: "Who claimed that the Congress was the sole representative of all peoples living in India at the Simla Conference?",
+      options: ["A. Jinnah", "B. Lord Wavell", "C. Maulana Azad", "D. Nehru"],
+      answer: "C. Maulana Azad",
+      diff: "easy"
+    },
+    {
+      q: "In the Central Legislature elections of December 1945, how many Muslim seats did the Muslim League win?",
+      options: ["A. 57", "B. 30", "C. 79", "D. 113"],
+      answer: "B. 30",
+      diff: "easy"
+    },
+    {
+      q: "In the provincial elections of February 1946, how many Muslim seats did the Muslim League win in Punjab?",
+      options: ["A. 79 out of 86", "B. 113 out of 119", "C. 28 out of 35", "D. 17 out of 38"],
+      answer: "A. 79 out of 86",
+      diff: "easy"
+    },
+    {
+      q: "Which party formed the government in NWFP after the 1946 provincial elections?",
+      options: ["A. Muslim League", "B. Congress", "C. Khudai Khidmatgar (Dr. Khan)", "D. Unionist Party"],
+      answer: "C. Khudai Khidmatgar (Dr. Khan)",
+      diff: "medium"
+    },
+    {
+      q: "Who led the Unionist Party government in Punjab after the 1946 elections?",
+      options: ["A. Sir Sikandar Hayat Khan", "B. Khizr Hayat Tiwana", "C. Sir Khawaja Nazimuddin", "D. Iftikhar Hussain Khan Mamdot"],
+      answer: "B. Khizr Hayat Tiwana",
+      diff: "medium"
+    },
+    {
+      q: "The Cabinet Mission arrived in India in which month?",
+      options: ["A. December 1945", "B. February 1946", "C. March 1946", "D. August 1946"],
+      answer: "C. March 1946",
+      diff: "easy"
+    },
+    {
+      q: "Which of the following was NOT a member of the Cabinet Mission?",
+      options: ["A. Sir Pethick Lawrence", "B. Stafford Cripps", "C. A. V. Alexander", "D. Lord Mountbatten"],
+      answer: "D. Lord Mountbatten",
+      diff: "easy"
+    },
+    {
+      q: "According to the Cabinet Mission Plan, how many groups were provinces divided into?",
+      options: ["A. Two", "B. Three", "C. Four", "D. Five"],
+      answer: "B. Three",
+      diff: "easy"
+    },
+    {
+      q: "Group B (Muslim majority NW) consisted of which provinces?",
+      options: ["A. Punjab, NWFP, Balochistan, Sindh", "B. Bengal and Assam", "C. UP, CP, Madras, Bombay, Bihar, Orissa", "D. Only Punjab and Sindh"],
+      answer: "A. Punjab, NWFP, Balochistan, Sindh",
+      diff: "medium"
+    },
+    {
+      q: "What option was available to a province after ten years under the Cabinet Mission Plan?",
+      options: ["A. To merge with another province", "B. To ask for review of relationship with the Union", "C. To change its group", "D. To demand separate electorate"],
+      answer: "B. To ask for review of relationship with the Union",
+      diff: "medium"
+    },
+    {
+      q: "Why did the Muslim League accept the Cabinet Mission Plan?",
+      options: ["A. It granted immediate Pakistan", "B. It provided basis for Pakistan through compulsory grouping and right to review", "C. It gave Muslim League control of center", "D. It accepted Two Nation Theory fully"],
+      answer: "B. It provided basis for Pakistan through compulsory grouping and right to review",
+      diff: "hard"
+    },
+    {
+      q: "What was the Congress's reaction to the Cabinet Mission Plan?",
+      options: ["A. Fully accepted it", "B. Rejected it completely", "C. Critical of groupings and review right, agreed to contest elections but not bound by plan", "D. Demanded immediate independence"],
+      answer: "C. Critical of groupings and review right, agreed to contest elections but not bound by plan",
+      diff: "medium"
+    },
+    {
+      q: "When was the Interim Government formed under Nehru?",
+      options: ["A. August 16, 1946", "B. September 2, 1946", "C. October 25, 1946", "D. December 9, 1946"],
+      answer: "B. September 2, 1946",
+      diff: "medium"
+    },
+    {
+      q: "When did the Muslim League join the Interim Government?",
+      options: ["A. September 2, 1946", "B. October 25, 1946", "C. August 16, 1946", "D. December 9, 1946"],
+      answer: "B. October 25, 1946",
+      diff: "medium"
+    },
+    {
+      q: "Who was the Muslim League representative that became Finance Minister in the Interim Government?",
+      options: ["A. I. I. Chundrigar", "B. Sardar Abdur Rab Nishtar", "C. Liaquat Ali Khan", "D. Raja Gazanfar Ali"],
+      answer: "C. Liaquat Ali Khan",
+      diff: "hard"
+    },
+    {
+      q: "Direct Action Day was observed on:",
+      options: ["A. August 16, 1946", "B. September 2, 1946", "C. October 25, 1946", "D. December 9, 1946"],
+      answer: "A. August 16, 1946",
+      diff: "easy"
+    },
+    {
+      q: "The first session of the Constituent Assembly was held on:",
+      options: ["A. August 16, 1946", "B. September 2, 1946", "C. October 25, 1946", "D. December 9, 1946"],
+      answer: "D. December 9, 1946",
+      diff: "medium"
+    },
+    {
+      q: "Why did the Muslim League boycott the first session of the Constituent Assembly?",
+      options: ["A. They wanted more seats", "B. The Congress wanted to frame constitution for united India", "C. They were not invited", "D. They wanted separate electorate"],
+      answer: "B. The Congress wanted to frame constitution for united India",
+      diff: "easy"
+    },
+    {
+      q: "At the Delhi Convention on April 19, 1946, the newly elected Muslim members pledged to:",
+      options: ["A. Accept the Cabinet Mission Plan", "B. Join the Interim Government", "C. Shatter the Hindu dream of united India", "D. Support the Congress"],
+      answer: "C. Shatter the Hindu dream of united India",
+      diff: "hard"
+    }
+  ]
+},
+
+
+13: {
+  title: "Towards Independence, 1947 (Pak301 Lecture 13)",
+  summary: `**Key Topics Covered:**
+- Direct Action Day (August 16, 1946) and aftermath
+- Muslim League's first use of civil disobedience
+- Punjab political crisis and resignation of Khizr Hayat Tiwana
+- Announcement of February 20, 1947 (Attlee Declaration)
+- Mountbatten as Viceroy
+- 3rd June Plan (partition plan)
+- Indian Independence Act July 1947
+- Partition process for provinces (Punjab, Bengal, Sindh, NWFP, Balochistan, Sylhet)
+- Governor General issue (Jinnah vs Mountbatten)
+- Transfer of power and independence ceremonies
+
+---
+
+**Simple Understanding:**
+
+**Direct Action Day (August 16, 1946):**
+👉 ML launched Direct Action to protest British injustice.
+👉 Hindu attacks led to massive casualties (Calcutta massacre).
+👉 Convinced Lord Wavell to seek ML-Congress settlement.
+👉 ML (95% seats) refused to join Legislative Assembly.
+👉 After negotiations, ML joined Interim Government on October 25, 1946.
+
+---
+
+**Punjab Crisis:**
+👉 ML won 79/86 Muslim seats but Khizr Hayat Tiwana formed Unionist government with Hindu-Sikh support.
+👉 ML protested against conspiracy to ignore people's will (Feb 1947).
+👉 Muslim women played outstanding role in struggle.
+👉 Khizr government resigned; Governor's rule imposed on March 2, 1947.
+
+**Assam:**
+👉 Maulana Bhashani led movement against ejection of Muslim peasants.
+
+---
+
+**Attlee Declaration (February 20, 1947):**
+👉 British PM announced transfer of power by June 1948.
+👉 If no constitution framed, power may be given to provincial governments.
+👉 Mountbatten appointed as new Viceroy.
+
+---
+
+**Mountbatten as Viceroy:**
+👉 Arrived March 22, 1947.
+👉 Objective: wind up British rule.
+👉 Visited England for consultations.
+
+---
+
+**3rd June Plan (Partition Plan):**
+- British will not impose constitution; Constituent Assembly to frame it.
+- Areas not accepting constitution can opt for separate CA.
+- Punjab & Bengal Assemblies to meet in two parts to decide partition.
+- Sindh Assembly to decide joining either side.
+- Referendum in NWFP.
+- Appropriate method for Balochistan.
+- Boundary Commission for Punjab and Bengal.
+- Princely states to decide based on geographical contiguity.
+
+---
+
+**Indian Independence Act (July 1947):**
+- Two independent dominion states on August 15, 1947.
+- Legislatures have full law-making powers.
+- Government of India Act 1935 as interim constitution (subject to changes).
+- Governor Generals can amend constitution until March 31, 1948.
+- British arrangements with princely states end.
+- British King no longer title of King of India.
+
+---
+
+**Partition Process Results:**
+- **Punjab:** Muslim members favored Pakistan; non-Muslims voted for partition.
+- **Bengal:** Muslims favored Pakistan; non-Muslims favored partition.
+- **Sindh:** Assembly voted to join Pakistan.
+- **NWFP:** Referendum decided for Pakistan; Dr. Khan's govt boycotted.
+- **Balochistan:** Shahi Jirga and Quetta Municipal Committee opted for Pakistan.
+- **Sylhet:** Referendum to join East Bengal (Pakistan).
+
+---
+
+**Governor General Issue:**
+👉 Mountbatten wanted joint GG of India and Pakistan.
+👉 ML decided to appoint Jinnah as first Governor General of Pakistan.
+
+---
+
+**Transfer of Power:**
+- First Constituent Assembly meeting: August 11, 1947.
+- Independence ceremonies: August 14, 1947.
+- Radio announcement at midnight August 14-15.
+- Oath taking for GG and PM: August 15, 1947.
+- Boundaries announced August 17, 1947 (controversial decisions like Gurdaspur).
+
+---
+
+**Important Vocabulary:**
+- Direct Action Day = ML protest against British policy
+- Calcutta massacre = communal violence following Direct Action
+- Attlee Declaration = British PM's announcement to transfer power
+- 3rd June Plan = partition plan for India
+- Indian Independence Act 1947 = legal basis for partition
+- Boundary Commission = body to demarcate borders
+- Referendum = direct vote on an issue
+- Governor General = British monarch's representative in dominion
+- Shahi Jirga = tribal council in Balochistan
+
+---
+
+**Quick Revision Points:**
+- Direct Action Day led to Calcutta massacre and ML joining Interim Government.
+- Khizr Hayat Tiwana resigned; Governor's rule in Punjab (March 2, 1947).
+- Attlee declared power transfer by June 1948.
+- Mountbatten appointed to wind up British rule.
+- 3rd June Plan outlined partition mechanism.
+- Indian Independence Act created two dominions on August 15, 1947.
+- Jinnah became first Governor General of Pakistan (not Mountbatten).`,
+  questions: [
+    {
+      q: "Direct Action Day was observed by the Muslim League on:",
+      options: ["A. August 16, 1946", "B. September 2, 1946", "C. October 25, 1946", "D. February 20, 1947"],
+      answer: "A. August 16, 1946",
+      diff: "easy"
+    },
+    {
+      q: "The Calcutta massacre convinced Lord Wavell to:",
+      options: ["A. Support the Congress", "B. Bridge the ML-Congress to some settlement", "C. Declare independence", "D. Leave India immediately"],
+      answer: "B. Bridge the ML-Congress to some settlement",
+      diff: "easy"
+    },
+    {
+      q: "What percentage of Muslim seats did the Muslim League win in Punjab according to the lecture?",
+      options: ["A. 79 out of 86", "B. 113 out of 119", "C. 28 out of 35", "D. 17 out of 38"],
+      answer: "A. 79 out of 86",
+      diff: "easy"
+    },
+    {
+      q: "Who formed the government in Punjab despite ML's majority?",
+      options: ["A. Muslim League", "B. Congress", "C. Khizr Hayat Tiwana (Unionist)", "D. Akali Dal"],
+      answer: "C. Khizr Hayat Tiwana (Unionist)",
+      diff: "easy"
+    },
+    {
+      q: "Governor's rule was imposed in Punjab on:",
+      options: ["A. February 20, 1947", "B. March 2, 1947", "C. August 16, 1946", "D. October 25, 1946"],
+      answer: "B. March 2, 1947",
+      diff: "medium"
+    },
+    {
+      q: "Who led the movement against ejection of Muslim peasants in Assam?",
+      options: ["A. Maulana Abul Kalam Azad", "B. Maulana Bhashani", "C. Huseyn Shaheed Suhrawardy", "D. Khawaja Nazimuddin"],
+      answer: "B. Maulana Bhashani",
+      diff: "medium"
+    },
+    {
+      q: "Prime Minister Attlee declared that power would be transferred by:",
+      options: ["A. August 1947", "B. June 1948", "C. December 1947", "D. March 1948"],
+      answer: "B. June 1948",
+      diff: "easy"
+    },
+    {
+      q: "Who was appointed as the new Viceroy after Attlee's declaration?",
+      options: ["A. Lord Wavell", "B. Lord Mountbatten", "C. Lord Linlithgow", "D. Sir Stafford Cripps"],
+      answer: "B. Lord Mountbatten",
+      diff: "easy"
+    },
+    {
+      q: "Mountbatten arrived in Delhi on:",
+      options: ["A. February 20, 1947", "B. March 22, 1947", "C. June 3, 1947", "D. July 18, 1947"],
+      answer: "B. March 22, 1947",
+      diff: "medium"
+    },
+    {
+      q: "The 3rd June Plan is also known as the:",
+      options: ["A. Cabinet Mission Plan", "B. Partition Plan", "C. Simla Agreement", "D. Mountbatten Plan"],
+      answer: "B. Partition Plan",
+      diff: "easy"
+    },
+    {
+      q: "Under the 3rd June Plan, which two provinces were to be partitioned?",
+      options: ["A. Sindh and Balochistan", "B. Punjab and Bengal", "C. NWFP and Assam", "D. Bombay and Madras"],
+      answer: "B. Punjab and Bengal",
+      diff: "easy"
+    },
+    {
+      q: "How was the decision of NWFP to be determined under the 3rd June Plan?",
+      options: ["A. Assembly vote", "B. Referendum", "C. Governor's decision", "D. Boundary Commission"],
+      answer: "B. Referendum",
+      diff: "easy"
+    },
+    {
+      q: "The Indian Independence Act was promulgated in:",
+      options: ["A. March 1947", "B. June 1947", "C. July 1947", "D. August 1947"],
+      answer: "C. July 1947",
+      diff: "easy"
+    },
+    {
+      q: "According to the Indian Independence Act, the two independent dominions were to be established on:",
+      options: ["A. August 14, 1947", "B. August 15, 1947", "C. August 16, 1947", "D. August 17, 1947"],
+      answer: "B. August 15, 1947",
+      diff: "easy"
+    },
+    {
+      q: "Which province's assembly voted to join Pakistan directly?",
+      options: ["A. Punjab", "B. Bengal", "C. Sindh", "D. NWFP"],
+      answer: "C. Sindh",
+      diff: "easy"
+    },
+    {
+      q: "Who boycotted the referendum in NWFP after realizing they would lose?",
+      options: ["A. Muslim League", "B. Congress", "C. Dr. Khan's government (Khudai Khidmatgar)", "D. Unionist Party"],
+      answer: "C. Dr. Khan's government (Khudai Khidmatgar)",
+      diff: "medium"
+    },
+    {
+      q: "Which body opted for Pakistan in Balochistan?",
+      options: ["A. Provincial Assembly", "B. Shahi Jirga and Quetta Municipal Committee", "C. Referendum", "D. Boundary Commission"],
+      answer: "B. Shahi Jirga and Quetta Municipal Committee",
+      diff: "hard"
+    },
+    {
+      q: "Who was appointed as the first Governor General of Pakistan?",
+      options: ["A. Lord Mountbatten", "B. Quaid-e-Azam Muhammad Ali Jinnah", "C. Liaquat Ali Khan", "D. Sir Khawaja Nazimuddin"],
+      answer: "B. Quaid-e-Azam Muhammad Ali Jinnah",
+      diff: "easy"
+    },
+    {
+      q: "The first meeting of Pakistan's Constituent Assembly was held on:",
+      options: ["A. August 11, 1947", "B. August 14, 1947", "C. August 15, 1947", "D. August 17, 1947"],
+      answer: "A. August 11, 1947",
+      diff: "medium"
+    },
+    {
+      q: "The Boundaries Commission award was announced on:",
+      options: ["A. August 14, 1947", "B. August 15, 1947", "C. August 17, 1947", "D. August 18, 1947"],
+      answer: "C. August 17, 1947",
+      diff: "hard"
+    }
+  ]
+},
+
+14: {
+  title: "Constitutional Development in British India (Pak301 Lecture 14)",
+  summary: `**Key Topics Covered:**
+- End of East India Company Rule (1858)
+- Indian Councils Act 1861
+- Indian Councils Act 1892
+- Government of India Act 1909 (Minto-Morley Reforms)
+- Government of India Act 1919 (Montagu-Chelmsford Reforms)
+- Government of India Act 1935
+- Diarchy system, separate electorate, federal system
+
+---
+
+**Simple Understanding:**
+
+**End of East India Company Rule:**
+👉 August 2, 1858: British Parliament took over all rights of East India Company.
+👉 Created post of Secretary of State for India (in British cabinet).
+👉 November 1, 1858: Queen Victoria's proclamation – British Crown assumed control.
+👉 Lord Canning became first Viceroy (direct representative of Crown).
+
+---
+
+**Indian Councils Act 1861:**
+👉 First legislation by British government in India.
+👉 Governor General could assign special tasks to Executive Council members.
+👉 Council membership raised from 6 to 12 (half non-officials, nominated for 2 years).
+👉 Limited legislative powers.
+👉 Indian representation by nomination only.
+
+---
+
+**Indian Councils Act 1892:**
+👉 Increased size of Legislative Council.
+👉 Central: 10 to 16 members; Provincial: increased (Madras & Bombay 8→12, Bengal 12→20).
+👉 Limited powers: questions could be asked.
+👉 Nominal elections through special interests (appointments by GG and British government).
+
+---
+
+**Government of India Act 1909 (Minto-Morley Reforms):**
+👉 Expanded Legislative Councils:
+   - Central: up to 60 members (official majority remained)
+   - Provincial: up to 50 in major provinces (non-official majority)
+👉 Powers increased: budget discussion, resolutions, questions.
+👉 Executive Councils formed for Bombay, Madras, Bengal.
+👉 **Separate Electorate accepted for minorities** (first time).
+👉 Elections through University Senate, District Boards, Municipal Committees, Zamindars, Chambers of Commerce.
+
+---
+
+**Government of India Act 1919 (Montagu-Chelmsford Reforms):**
+👉 Background: WWI, Khilafat Movement, Lucknow Pact (1916).
+👉 Introduced **bicameral legislature at Centre**:
+   - Council of State (60 members, 34 elected)
+   - Legislative Assembly (145 members, 105 elected)
+👉 Direct elections with limited franchise.
+👉 Separate Electorate for minorities.
+👉 Limited law-making powers (no control over defense, foreign policy, budget).
+👉 GG remained powerful (could restore grants).
+👉 **Diarchy system in provinces**:
+   - Reserved subjects (judiciary, land revenue, finance, police, etc.) – administered by Governor.
+   - Transferred subjects (local government, education, public health) – administered by Indian ministers.
+👉 Provincial Legislative Councils membership increased (70% elected).
+
+---
+
+**Government of India Act 1935 (Most Comprehensive):**
+👉 Most important and lengthiest act. Formulated after Simon Commission, Round Table Conferences, White paper (1933).
+👉 Provided **Federal System** (Centre + 11 Governor Provinces + 6 Chief Commissioner Provinces + princely states).
+👉 Three lists of subjects:
+   - Federal list (defense, external affairs, coinage, communication)
+   - Provincial list (education, police, local self-government, justice, agriculture)
+   - Concurrent list (criminal law, civil marriage, divorce, bankruptcy, factories)
+👉 **Bicameral Central Legislature**:
+   - Council of State (260 members: 156 from British provinces, 104 from states)
+   - Federal Assembly (375 members: 250 from British provinces, 125 from states)
+   - Separate electorate; indirect elections for Council of State.
+👉 **Powerful GG** with discretionary, emergency, ordinance powers.
+👉 **Provincial Governments**:
+   - Diarchy abolished; responsible government formed.
+   - Bicameral in 6 provinces, unicameral in 5.
+   - Franchise extended (land revenue Rs.5, property Rs.60, primary education).
+👉 **Federal Court and High Courts** established.
+👉 **Burma separated from India; Sindh separated from Bombay**.
+👉 Federal part not introduced; provincial part implemented in 1937 (provincial autonomy).
+👉 Elected governments formed in provinces.
+👉 Strong centre maintained; no control over defense; legislature could not amend act.
+
+---
+
+**Important Vocabulary:**
+- Viceroy = Crown's representative in India
+- Secretary of State for India = British cabinet minister for Indian affairs
+- Legislative Council = law-making body
+- Separate Electorate = Muslims voted for Muslim candidates only
+- Diarchy = dual system of government (reserved + transferred subjects)
+- Bicameral = two houses of legislature
+- Federal System = division of powers between centre and provinces
+- Concurrent List = subjects on which both centre and provinces could legislate
+- Provincial Autonomy = provinces could govern themselves in certain matters
+- Franchise = right to vote
+
+---
+
+**Quick Revision Points:**
+- 1858: Crown took over from East India Company.
+- 1861 Act: first British legislation, nominated Indian representation.
+- 1892 Act: increased council size, nominal elections.
+- 1909 Act: separate electorate for Muslims (Minto-Morley Reforms).
+- 1919 Act: bicameral centre, diarchy in provinces (Montagu-Chelmsford).
+- 1935 Act: federal system, provincial autonomy, separate electorate, powerful GG.
+- Sindh separated from Bombay; Burma separated from India.
+- Federal part of 1935 Act never implemented; provincial part implemented in 1937.`,
+  questions: [
+    {
+      q: "When did the British Parliament pass the law to take over all rights of the East India Company?",
+      options: ["A. November 1, 1858", "B. August 2, 1858", "C. August 2, 1857", "D. November 1, 1857"],
+      answer: "B. August 2, 1858",
+      diff: "easy"
+    },
+    {
+      q: "Who was the first Viceroy of India?",
+      options: ["A. Lord Mountbatten", "B. Lord Canning", "C. Lord Wavell", "D. Lord Linlithgow"],
+      answer: "B. Lord Canning",
+      diff: "easy"
+    },
+    {
+      q: "The Indian Councils Act of 1861 increased the membership of the Governor General's Council from 6 to:",
+      options: ["A. 10", "B. 12", "C. 16", "D. 20"],
+      answer: "B. 12",
+      diff: "easy"
+    },
+    {
+      q: "Which act first allowed Indians to be nominated to legislative councils?",
+      options: ["A. Indian Councils Act 1861", "B. Indian Councils Act 1892", "C. Government of India Act 1909", "D. Government of India Act 1919"],
+      answer: "A. Indian Councils Act 1861",
+      diff: "medium"
+    },
+    {
+      q: "The Indian Councils Act of 1892 increased the Central Legislative Council membership from 10 to:",
+      options: ["A. 12", "B. 14", "C. 16", "D. 20"],
+      answer: "C. 16",
+      diff: "medium"
+    },
+    {
+      q: "Which act introduced the system of Separate Electorate for Muslims?",
+      options: ["A. Indian Councils Act 1892", "B. Government of India Act 1909", "C. Government of India Act 1919", "D. Government of India Act 1935"],
+      answer: "B. Government of India Act 1909",
+      diff: "easy"
+    },
+    {
+      q: "The Government of India Act 1909 is also known as:",
+      options: ["A. Montagu-Chelmsford Reforms", "B. Minto-Morley Reforms", "C. Simon Commission", "D. Cabinet Mission Plan"],
+      answer: "B. Minto-Morley Reforms",
+      diff: "easy"
+    },
+    {
+      q: "Under the Government of India Act 1909, the Central Legislative Council could have up to how many additional members?",
+      options: ["A. 50", "B. 60", "C. 70", "D. 80"],
+      answer: "B. 60",
+      diff: "medium"
+    },
+    {
+      q: "The Lucknow Pact (1916) was signed between:",
+      options: ["A. Congress and British", "B. Muslim League and Congress", "C. Muslim League and British", "D. Hindus and Sikhs"],
+      answer: "B. Muslim League and Congress",
+      diff: "easy"
+    },
+    {
+      q: "The Government of India Act 1919 introduced which system in the provinces?",
+      options: ["A. Federal system", "B. Diarchy", "C. Separate Electorate", "D. Bicameral legislature"],
+      answer: "B. Diarchy",
+      diff: "easy"
+    },
+    {
+      q: "Under the Diarchy system, which subjects were transferred to Indian ministers?",
+      options: ["A. Judiciary and police", "B. Local government and education", "C. Defense and finance", "D. Land revenue and press"],
+      answer: "B. Local government and education",
+      diff: "medium"
+    },
+    {
+      q: "The Government of India Act 1919 created which two houses at the centre?",
+      options: ["A. Council of State and Legislative Assembly", "B. House of Commons and House of Lords", "C. Senate and National Assembly", "D. Federal Assembly and Council of States"],
+      answer: "A. Council of State and Legislative Assembly",
+      diff: "easy"
+    },
+    {
+      q: "Which act is considered the most comprehensive legislation by the British in India?",
+      options: ["A. Government of India Act 1909", "B. Government of India Act 1919", "C. Government of India Act 1935", "D. Indian Councils Act 1892"],
+      answer: "C. Government of India Act 1935",
+      diff: "easy"
+    },
+    {
+      q: "Under the Government of India Act 1935, the Federal Assembly (lower house) had how many members?",
+      options: ["A. 260", "B. 375", "C. 145", "D. 60"],
+      answer: "B. 375",
+      diff: "hard"
+    },
+    {
+      q: "Which province was separated from Bombay under the Government of India Act 1935?",
+      options: ["A. Sindh", "B. Balochistan", "C. NWFP", "D. Punjab"],
+      answer: "A. Sindh",
+      diff: "easy"
+    },
+    {
+      q: "Which province was separated from India under the Government of India Act 1935?",
+      options: ["A. Ceylon", "B. Burma", "C. Nepal", "D. Bhutan"],
+      answer: "B. Burma",
+      diff: "easy"
+    },
+    {
+      q: "The Government of India Act 1935 provided for how many Governor Provinces?",
+      options: ["A. 9", "B. 10", "C. 11", "D. 12"],
+      answer: "C. 11",
+      diff: "hard"
+    },
+    {
+      q: "Which part of the Government of India Act 1935 was actually implemented?",
+      options: ["A. Federal part", "B. Provincial part", "C. Both federal and provincial", "D. Neither"],
+      answer: "B. Provincial part",
+      diff: "medium"
+    },
+    {
+      q: "The Government of India Act 1935 established which court?",
+      options: ["A. Supreme Court", "B. Federal Court", "C. High Court", "D. District Court"],
+      answer: "B. Federal Court",
+      diff: "easy"
+    },
+    {
+      q: "The principle of separate electorate for Muslims was retained in which of the following acts?",
+      options: ["A. Only 1909 Act", "B. 1909, 1919, and 1935 Acts", "C. Only 1919 Act", "D. Only 1935 Act"],
+      answer: "B. 1909, 1919, and 1935 Acts",
+      diff: "medium"
+    }
+  ]
+},
   
   },
 
@@ -38712,6 +40226,1606 @@ Correct inference:
 
 
 //lecture 13 ///
+
+
+13: {
+  title: "Fact vs Opinion and Time Sequences (Lecture 13)",
+  summary: `**Key Topics Covered:**
+- Distinguishing facts from opinions
+- What is a fact (provable through objective evidence)
+- What is an opinion (expresses beliefs, feelings, judgments)
+- Value-words as signals of opinion (good, bad, best, worst, etc.)
+- Facts can be untrue; opinions can be masked as facts
+- Mixture of fact and opinion in real texts
+- Time sequences: simultaneous, subsequent, and prior events
+- Time relaters (adjectives and adverbials) for chronological order
+
+---
+
+**Simple Understanding:**
+
+**Fact vs Opinion:**
+👉 **Fact:** A statement that can be proved true through objective evidence (physical proof, witness testimony).
+   Example: "The neem tree is 25 feet tall" – can be measured.
+👉 **Opinion:** A statement that cannot be objectively proved true or false; expresses beliefs, feelings, judgments.
+   Example: "The building is the most beautiful in Lahore" – beauty is subjective.
+
+**Value-Words:**
+👉 Words like good, bad, best, worst, beautiful, terrible signal an opinion.
+👉 These are subjective, not objective.
+
+**Important Distinctions:**
+- A statement of fact may turn out to be false (new evidence).
+- Opinions can be presented as facts (e.g., "The economy is in the worst shape").
+- Much of what we read/hear is a mixture of fact and opinion.
+
+---
+
+**Time Sequences in Texts:**
+👉 Events occur before, during, or after other events.
+👉 Time relaters help order information chronologically, logically, or causally.
+
+**Simultaneous (during):**
+👉 at present, at this point, now, today, meanwhile, at the same time
+
+**Subsequent (after):**
+👉 afterwards, after that, eventually, since then, soon, next, later, following
+
+**Prior (before):**
+👉 earlier, previously, before, formerly
+
+---
+
+**Sample Analysis:**
+👉 "More than 5000 years ago, a need to count was recognized… first fingers, then pebbles… Since that time, the abacus was invented… During the 17th and 18th centuries… It was not until the early 1800s… not too long after, Charles Babbage designed…"
+
+---
+
+**Important Vocabulary:**
+- Fact = provable statement
+- Opinion = subjective judgment
+- Value-word = signals opinion (good, best, etc.)
+- Objective = based on observable reality
+- Subjective = based on personal interpretation
+- Time relater = word/phrase indicating time sequence
+- Simultaneous = happening at the same time
+- Subsequent = happening after
+- Prior = happening before
+
+---
+
+**Quick Revision Points:**
+- Facts can be verified; opinions cannot.
+- Value-words (good, bad, best) indicate opinion.
+- Facts may be false if evidence disproves them.
+- Opinions can be masked as facts using phrases like "in fact".
+- Time relaters organize chronological order.
+- Recognizing time sequences is crucial for understanding historical, scientific, and procedural texts.`,
+  questions: [
+    {
+      "q": "A statement that can be proved true through objective evidence is called a:",
+      "options": ["A. Fact", "B. Opinion", "C. Value-word", "D. Judgment"],
+      "answer": "A. Fact",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following is an opinion?",
+      "options": ["A. The neem tree is 25 feet tall.", "B. Pakistan won the 1992 World Cup.", "C. The Alhamra Arts Council building is the most beautiful building in Lahore.", "D. The Lahore Museum is the oldest museum in Pakistan."],
+      "answer": "C. The Alhamra Arts Council building is the most beautiful building in Lahore.",
+      "diff": "easy"
+    },
+    {
+      "q": "Words like 'good', 'bad', 'best', 'worst' are called:",
+      "options": ["A. Facts", "B. Time relaters", "C. Value-words", "D. Objective terms"],
+      "answer": "C. Value-words",
+      "diff": "easy"
+    },
+    {
+      "q": "Which statement is a fact?",
+      "options": ["A. My brother is very handsome.", "B. Mohammad Ali Bogra was the worst Prime Minister.", "C. Ostriches do not hide their heads in the sand.", "D. The Pakistan cricket team is the best in the world."],
+      "answer": "C. Ostriches do not hide their heads in the sand.",
+      "diff": "easy"
+    },
+    {
+      "q": "A statement of fact may be found to be untrue if:",
+      "options": ["A. It is an opinion", "B. New evidence disproves it", "C. It contains value-words", "D. It is subjective"],
+      "answer": "B. New evidence disproves it",
+      "diff": "easy"
+    },
+    {
+      "q": "Which phrase often masks an opinion as a fact?",
+      "options": ["A. 'It is raining outside'", "B. 'In point of fact'", "C. 'The tree is 25 feet tall'", "D. 'The museum opened in 1864'"],
+      "answer": "B. 'In point of fact'",
+      "diff": "medium"
+    },
+    {
+      "q": "The statement 'It is bad weather' is considered:",
+      "options": ["A. A fact", "B. An objective observation", "C. A subjective interpretation", "D. A verifiable truth"],
+      "answer": "C. A subjective interpretation",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following is a time relater indicating simultaneous action?",
+      "options": ["A. Afterwards", "B. Meanwhile", "C. Later", "D. Eventually"],
+      "answer": "B. Meanwhile",
+      "diff": "easy"
+    },
+    {
+      "q": "Which time relater indicates subsequent (after) action?",
+      "options": ["A. At present", "B. At the same time", "C. Since then", "D. Now"],
+      "answer": "C. Since then",
+      "diff": "easy"
+    },
+    {
+      "q": "In the sentence 'It was not until the early 1800s that the first calculating machine appeared', the time relater is:",
+      "options": ["A. Not until", "B. Since then", "C. During", "D. After that"],
+      "answer": "A. Not until",
+      "diff": "medium"
+    },
+    {
+      "q": "Read the following: 'She is one of the most interesting figures in Egyptian history.' This statement is:",
+      "options": ["A. Fact", "B. Opinion", "C. Verifiable", "D. Objective"],
+      "answer": "B. Opinion",
+      "diff": "easy"
+    },
+    {
+      "q": "The phrase 'According to historical records' before a statement usually signals:",
+      "options": ["A. Opinion", "B. A fact (or claimed fact)", "C. A value-word", "D. A time relater"],
+      "answer": "B. A fact (or claimed fact)",
+      "diff": "easy"
+    },
+    {
+      "q": "In the paragraph about computers, 'But since then, computers have evolved tremendously.' The words 'since then' indicate:",
+      "options": ["A. Simultaneous time", "B. Prior time", "C. Subsequent time", "D. No time reference"],
+      "answer": "C. Subsequent time",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following is a value-word?",
+      "options": ["A. Yesterday", "B. Beautiful", "C. Meanwhile", "D. Subsequently"],
+      "answer": "B. Beautiful",
+      "diff": "easy"
+    },
+    {
+      "q": "An advertisement claims a car 'is the most economical on the road.' This is most likely:",
+      "options": ["A. A fact", "B. An opinion (economical is debatable)", "C. A historical record", "D. A scientific law"],
+      "answer": "B. An opinion (economical is debatable)",
+      "diff": "easy"
+    },
+    {
+      "q": "The phrase 'the truth of the matter is' often introduces:",
+      "options": ["A. An objective fact", "B. A masked opinion", "C. A time relater", "D. A simultaneous event"],
+      "answer": "B. A masked opinion",
+      "diff": "medium"
+    },
+    {
+      "q": "Which sentence is a mixture of fact and opinion?",
+      "options": ["A. 'Edgar Allan Poe was born in 1809.'", "B. 'Edgar Allan Poe is the greatest writer of horror stories.'", "C. 'Edgar Allan Poe wrote 'The Raven'.'", "D. 'Poe had to leave the University of Virginia because he couldn't pay his debts.'"],
+      "answer": "B. 'Edgar Allan Poe is the greatest writer of horror stories.'",
+      "diff": "easy"
+    },
+    {
+      "q": "Time relaters help to order information in which way?",
+      "options": ["A. Alphabetically", "B. Chronologically, logically, or causally", "C. Randomly", "D. By importance"],
+      "answer": "B. Chronologically, logically, or causally",
+      "diff": "easy"
+    },
+    {
+      "q": "In the sentence 'During the 17th and 18th centuries many easy ways of calculating were devised,' the time relater is:",
+      "options": ["A. During", "B. Were devised", "C. Many easy ways", "D. Calculating"],
+      "answer": "A. During",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following is NOT a time relater?",
+      "options": ["A. Afterwards", "B. Eventually", "C. Beautiful", "D. Meanwhile"],
+      "answer": "C. Beautiful",
+      "diff": "easy"
+    }
+  ]
+},
+
+14: {
+  title: "Character Description and Using Examples in Writing (ENG 101 Lesson 14)",
+  summary: `**Key Topics Covered:**
+- Analyzing character through descriptive language and details
+- How word choice reveals personality (e.g., "trenchant", "apothecary kind of way")
+- Examples from Dickens (Great Expectations, Hard Times) and Wodehouse (Thank You, Jeeves)
+- Using specific, vivid details to make characters come alive
+- Markers for giving examples (e.g., for example, such as, namely, for instance)
+- Implicit vs explicit exemplification
+
+---
+
+**Simple Understanding:**
+
+**Character Description Through Language:**
+👉 Writers reveal character traits through carefully chosen words and actions.
+👉 Example: Mrs. Gargery cutting bread – “trenchant” (sharp/forceful), “apothecary kind of way” (suggests clinical, unfeeling), “slapping dexterity” (rough efficiency). Shows she is practical, harsh, not tender.
+
+👉 Jeeves dialogue: formal, respectful, precise – “I can conceive that after what occurred…”, “the contingency need scarcely arise”. Shows intelligence, restraint, loyalty.
+
+👉 Thomas Gradgrind: “man of realities… facts and calculations… two and two are four”. Repetition of “sir”, rejection of “nonsensical belief”. Shows rigid, utilitarian, emotionless.
+
+**Writing Vivid Characters:**
+👉 Use specific physical details: “leathery white face”, “enormous gumboots”, “peppered with a white-and-black bristle”.
+👉 Use actions and mannerisms: “tut over his machine as if it were some moody woman”.
+👉 Use contrast: “tall, silent, dark man, very gentle”.
+
+---
+
+**Markers for Examples (Exemplification):**
+👉 Explicit markers: such as, for example, for instance, namely, like, illustrated by, as an example, that is, etc.
+👉 Examples from text:
+   - “such as: addition, subtraction, division…”
+   - “namely: Is one number less than another?…”
+   - “for example, they can solve certain arithmetic problems…”
+   - “for instance, can be done quite easily”
+
+**Placement:** Markers can be before or after the example, sometimes set off by commas.
+
+**Implicit Examples:** Not all texts use explicit markers; sometimes examples are given without signals.
+
+---
+
+**Important Vocabulary:**
+- Trenchant = sharp, incisive, forceful
+- Apothecary = pharmacist (clinical, detached)
+- Dexterity = skill, nimbleness
+- Peremptorily = abruptly, commandingly
+- Suppositious = hypothetical, assumed
+- Contingency = possible future event
+- Exemplification = giving examples
+- Explicit = clearly stated
+- Implicit = implied, not directly stated
+
+---
+
+**Quick Revision Points:**
+- Character description: choose specific verbs, nouns, adjectives.
+- Actions reveal personality (how someone does something).
+- Physical details create vivid mental images.
+- Example markers: such as, for example, for instance, namely, like.
+- Use examples to clarify abstract concepts.
+- Examples can be lists, phrases, or full sentences.`,
+  questions: [
+    {
+      "q": "In the passage from Great Expectations, the word 'trenchant' used to describe Mrs. Gargery's way of cutting bread suggests:",
+      "options": ["A. Gentle and careful", "B. Sharp and forceful", "C. Slow and lazy", "D. Kind and loving"],
+      "answer": "B. Sharp and forceful",
+      "diff": "easy"
+    },
+    {
+      "q": "The phrase 'in an apothecary kind of way' implies that Mrs. Gargery's butter-spreading is:",
+      "options": ["A. Artistic and creative", "B. Clinical and detached", "C. Enthusiastic and joyful", "D. Hasty and careless"],
+      "answer": "B. Clinical and detached",
+      "diff": "medium"
+    },
+    {
+      "q": "In the dialogue from 'Thank You, Jeeves', Jeeves' use of words like 'conceive' and 'contingency' indicates he is:",
+      "options": ["A. Uneducated and simple", "B. Formal and intelligent", "C. Angry and aggressive", "D. Sad and depressed"],
+      "answer": "B. Formal and intelligent",
+      "diff": "easy"
+    },
+    {
+      "q": "Thomas Gradgrind is described as 'a man of realities... a man of facts and calculations'. This characterization suggests he is:",
+      "options": ["A. Imaginative and creative", "B. Rigid and utilitarian", "C. Emotional and sympathetic", "D. Humorous and light-hearted"],
+      "answer": "B. Rigid and utilitarian",
+      "diff": "easy"
+    },
+    {
+      "q": "The repetition of 'sir' in the description of Thomas Gradgrind emphasizes his:",
+      "options": ["A. Politeness", "B. Authoritative and dismissive tone", "C. Friendliness", "D. Uncertainty"],
+      "answer": "B. Authoritative and dismissive tone",
+      "diff": "medium"
+    },
+    {
+      "q": "Which of the following is an example of a vivid physical detail used to describe a character?",
+      "options": ["A. 'He was a tall man'", "B. 'leathery white face under black hair'", "C. 'He was nice'", "D. 'She was kind'"],
+      "answer": "B. 'leathery white face under black hair'",
+      "diff": "easy"
+    },
+    {
+      "q": "The phrase 'tut over his machine as if it were some moody woman' reveals the farmer is:",
+      "options": ["A. Indifferent to his machine", "B. Treating the machine with gentle concern", "C. Angry at the machine", "D. Scared of the machine"],
+      "answer": "B. Treating the machine with gentle concern",
+      "diff": "medium"
+    },
+    {
+      "q": "Which word is an explicit marker for giving an example?",
+      "options": ["A. However", "B. Therefore", "C. For instance", "D. Meanwhile"],
+      "answer": "C. For instance",
+      "diff": "easy"
+    },
+    {
+      "q": "In the sentence 'Computers have circuits for performing arithmetic operations such as addition, subtraction, division...', the marker 'such as' introduces:",
+      "options": ["A. A conclusion", "B. An example", "C. A contrast", "D. A cause"],
+      "answer": "B. An example",
+      "diff": "easy"
+    },
+    {
+      "q": "The word 'namely' is typically used to introduce:",
+      "options": ["A. A list of specific examples", "B. A contradictory statement", "C. A time sequence", "D. A rhetorical question"],
+      "answer": "A. A list of specific examples",
+      "diff": "easy"
+    },
+    {
+      "q": "Which sentence uses an example marker correctly?",
+      "options": ["A. 'Computers are fast, for example they can solve problems quickly.'", "B. 'Computers are fast; for example, they can solve problems quickly.'", "C. 'Computers are fast, namely they can solve problems quickly.'", "D. 'Computers are fast such as they can solve problems quickly.'"],
+      "answer": "B. 'Computers are fast; for example, they can solve problems quickly.'",
+      "diff": "medium"
+    },
+    {
+      "q": "Explicit exemplification means:",
+      "options": ["A. Examples are given without any markers", "B. Examples are introduced by words like 'for example' or 'such as'", "C. Examples are hidden", "D. Examples are not needed"],
+      "answer": "B. Examples are introduced by words like 'for example' or 'such as'",
+      "diff": "easy"
+    },
+    {
+      "q": "Implicit exemplification occurs when:",
+      "options": ["A. The writer uses 'for instance'", "B. The writer provides an example without using a marker", "C. No examples are given", "D. The reader must guess the example"],
+      "answer": "B. The writer provides an example without using a marker",
+      "diff": "medium"
+    },
+    {
+      "q": "In the description 'He was a tiny fellow, with a leathery white face under black hair', the phrase 'leathery white face' suggests:",
+      "options": ["A. Youth and health", "B. Aged, weathered skin", "C. Smooth, soft skin", "D. Pale and sickly"],
+      "answer": "B. Aged, weathered skin",
+      "diff": "easy"
+    },
+    {
+      "q": "The phrase 'peppered with a white-and-black bristle' creates an image of:",
+      "options": ["A. Clean-shaven face", "B. Unshaven, stubbly face", "C. Long beard", "D. Smooth skin"],
+      "answer": "B. Unshaven, stubbly face",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following is NOT a typical marker for giving examples?",
+      "options": ["A. Like", "B. Such as", "C. Because", "D. For instance"],
+      "answer": "C. Because",
+      "diff": "easy"
+    },
+    {
+      "q": "When describing a character, using 'slapping dexterity' instead of 'skill' adds:",
+      "options": ["A. A sense of violence or roughness", "B. A sense of elegance", "C. A sense of boredom", "D. A sense of happiness"],
+      "answer": "A. A sense of violence or roughness",
+      "diff": "medium"
+    },
+    {
+      "q": "The passage from Hard Times repeatedly uses the phrase 'a man of' to emphasize Gradgrind's:",
+      "options": ["A. Uncertainty", "B. Fixed identity and obsession with facts", "C. Kindness", "D. Humor"],
+      "answer": "B. Fixed identity and obsession with facts",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following sentences uses 'that is' as an example marker?",
+      "options": ["A. 'He arrived late, that is, after the meeting had started.'", "B. 'That is a good idea.'", "C. 'He said that is the way to do it.'", "D. 'That is why I left.'"],
+      "answer": "A. 'He arrived late, that is, after the meeting had started.'",
+      "diff": "hard"
+    },
+    {
+      "q": "The purpose of using vivid descriptive details in character writing is to:",
+      "options": ["A. Make the character seem flat", "B. Make the character come alive in the reader's mind", "C. Confuse the reader", "D. Lengthen the text"],
+      "answer": "B. Make the character come alive in the reader's mind",
+      "diff": "easy"
+    }
+  ]
+},
+
+
+15: {
+  title: "Interpreting Data, Comparative and Superlative Forms, Microcomputers (ENG 101 Lesson 15)",
+  summary: `**Key Topics Covered:**
+- True/false questions based on tables and graphs (death rates, language speakers)
+- Geography of Japan: islands, seas, distances, directions, cities
+- Comparative and superlative forms of adjectives and adverbs (rules and exceptions)
+- Microcomputers vs minicomputers: history, price, performance, applications
+- Understanding non-equivalence markers (not as…as, greater than, less than, etc.)
+
+---
+
+**Simple Understanding:**
+
+**Interpreting Tables and Graphs:**
+👉 Carefully read headings and axes to understand what is being measured.
+👉 Examples: death rates (heart disease, cancer, tuberculosis), language speakers (millions of native speakers).
+👉 Use data to evaluate true/false statements.
+
+**Japan Geography:**
+👉 Four major islands: Honshu (largest), Hokkaido (northernmost), Kyushu (southernmost), Shikoku.
+👉 Surrounding seas: Sea of Japan (west), Pacific Ocean (east/southeast), East China Sea, Sea of Okhotsk.
+👉 Nearest country: Russia (Sakhalin), also South Korea, North Korea, China.
+
+---
+
+**Comparative and Superlative Forms:**
+
+**Rule 1 – One syllable: add -er and -est**
+👉 new → newer → newest; big → bigger → biggest; soon → sooner → soonest
+
+**Rule 2 – Three or more syllables: use more and most**
+👉 interesting → more interesting → most interesting; easily → more easily → most easily
+
+**Rule 3 – Two-syllable ending in -y, -ly, -ow, -le, -er: usually -er/-est**
+👉 happy → happier → happiest; early → earlier → earliest; narrow → narrower → narrowest; gentle → gentler → gentlest; clever → cleverer → cleverest
+👉 Exception: two-syllable adverbs ending in -ly use more/most (quickly → more quickly → most quickly)
+
+**Rule 4 – Some two-syllable adjectives allow both forms**
+👉 common (commoner/commonest or more common/most common); polite, quiet, handsome
+
+**Rule 5 – Irregular forms**
+👉 good/well → better → best; bad/badly → worse → worst; many/much → more → most; little → less → least; far → further/farther → furthest/farthest
+
+---
+
+**Equivalence and Non-Equivalence Markers:**
+👉 Equivalence: as…as, the same…as, similar to, like, equal to, compare to/with
+👉 Non-equivalence: not as…as, greater than, less than, fewer than, more…than, unlike, not equal to
+
+---
+
+**Microcomputers vs Minicomputers:**
+👉 Microcomputers (micros) use a microprocessor on a single chip; minicomputers (minis) are larger.
+👉 Price: microprocessors now as cheap as $10; complete micro system $500–$10,000.
+👉 Word lengths: micros 4-,8-,16-bit; minis up to 32-bit.
+👉 Micros are slower, simpler instruction sets, less software, but much cheaper.
+👉 Applications: industrial robots, automobile engine control, TV games, personal computers, education.
+👉 Prediction: performance increase ten-fold by 1990, prices could decrease similarly.
+
+---
+
+**Important Vocabulary:**
+- Comparative = compares two items (e.g., faster)
+- Superlative = compares three or more (e.g., fastest)
+- Syllable = unit of pronunciation
+- Irregular = does not follow standard pattern
+- Equivalence = equal or similar
+- Non-equivalence = not equal or different
+- Microprocessor = CPU on a single chip
+- Minicomputer = smaller than mainframe, larger than micro
+- Word length = bits processed at once
+- Peripheral equipment = input/output devices
+
+---
+
+**Quick Revision Points:**
+- For data interpretation, verify each statement against the table/graph.
+- Japan's four main islands: Hokkaido (north), Honshu, Shikoku, Kyushu (south).
+- Comparative: add -er or use more; superlative: add -est or use most.
+- Irregular forms must be memorized.
+- Microcomputers are cheaper, slower, less powerful than minis but rapidly improving.`,
+  questions: [
+    {
+      "q": "According to the lesson, which of the following is TRUE about the annual death rate since 1900?",
+      "options": ["A. It has more than doubled.", "B. It has been reduced by slightly less than half.", "C. It has remained exactly the same.", "D. It has increased for all diseases."],
+      "answer": "B. It has been reduced by slightly less than half.",
+      "diff": "medium"
+    },
+    {
+      "q": "Which disease has consistently been the major cause of death according to the table?",
+      "options": ["A. Tuberculosis", "B. Pneumonia", "C. Heart disease", "D. Cancer"],
+      "answer": "C. Heart disease",
+      "diff": "easy"
+    },
+    {
+      "q": "The northernmost island of Japan is:",
+      "options": ["A. Honshu", "B. Shikoku", "C. Kyushu", "D. Hokkaido"],
+      "answer": "D. Hokkaido",
+      "diff": "easy"
+    },
+    {
+      "q": "Which sea lies to the west of Japan?",
+      "options": ["A. Pacific Ocean", "B. Sea of Japan", "C. East China Sea", "D. Sea of Okhotsk"],
+      "answer": "B. Sea of Japan",
+      "diff": "easy"
+    },
+    {
+      "q": "Approximately how many native speakers of English are there in the world (based on the graph)?",
+      "options": ["A. 100 million", "B. 200 million", "C. 300 million", "D. 400 million"],
+      "answer": "C. 300 million",
+      "diff": "medium"
+    },
+    {
+      "q": "Which language ranks fifth in total number of speakers?",
+      "options": ["A. Arabic", "B. Portuguese", "C. Japanese", "D. Russian"],
+      "answer": "D. Russian",
+      "diff": "hard"
+    },
+    {
+      "q": "The comparative form of 'big' is:",
+      "options": ["A. More big", "B. Bigger", "C. Bigest", "D. Most big"],
+      "answer": "B. Bigger",
+      "diff": "easy"
+    },
+    {
+      "q": "The superlative form of 'interesting' is:",
+      "options": ["A. Interestingest", "B. Most interesting", "C. More interesting", "D. Interester"],
+      "answer": "B. Most interesting",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following is an irregular comparative form?",
+      "options": ["A. Newer", "B. Happier", "C. Better", "D. More careful"],
+      "answer": "C. Better",
+      "diff": "easy"
+    },
+    {
+      "q": "The comparative of 'bad' is:",
+      "options": ["A. Badder", "B. Worse", "C. Worst", "D. More bad"],
+      "answer": "B. Worse",
+      "diff": "easy"
+    },
+    {
+      "q": "For two-syllable adverbs ending in -ly, the comparative is formed with:",
+      "options": ["A. -er", "B. -est", "C. more/most", "D. -ier"],
+      "answer": "C. more/most",
+      "diff": "medium"
+    },
+    {
+      "q": "According to the microcomputer passage, the central processor of a micro is called a:",
+      "options": ["A. Minicomputer", "B. Microprocessor", "C. Mainframe", "D. Peripheral"],
+      "answer": "B. Microprocessor",
+      "diff": "easy"
+    },
+    {
+      "q": "What is the approximate price range for a complete microcomputer system?",
+      "options": ["A. $10–$100", "B. $100–$500", "C. $500–$10,000", "D. $10,000–$100,000"],
+      "answer": "C. $500–$10,000",
+      "diff": "medium"
+    },
+    {
+      "q": "Compared to minicomputers, microcomputers typically have:",
+      "options": ["A. More flexible instruction sets", "B. Faster processing speeds", "C. Simpler instruction sets and slower speeds", "D. Larger word lengths"],
+      "answer": "C. Simpler instruction sets and slower speeds",
+      "diff": "medium"
+    },
+    {
+      "q": "Which of the following is an example of a microcomputer application mentioned?",
+      "options": ["A. Space shuttle program", "B. Automobile emission control", "C. Industrial robots", "D. All of the above"],
+      "answer": "D. All of the above",
+      "diff": "easy"
+    },
+    {
+      "q": "The passage predicts that by 1990, the performance of microprocessors could increase by:",
+      "options": ["A. Two times", "B. Five times", "C. Ten times", "D. Fifty times"],
+      "answer": "C. Ten times",
+      "diff": "hard"
+    },
+    {
+      "q": "What does the abbreviation 'n.a.' in tables typically stand for?",
+      "options": ["A. Not Available", "B. Not Applicable", "C. No Answer", "D. New Addition"],
+      "answer": "B. Not Applicable",
+      "diff": "easy"
+    },
+    {
+      "q": "The superlative form of 'far' can be:",
+      "options": ["A. Farer", "B. Farest", "C. Farthest or furthest", "D. Most far"],
+      "answer": "C. Farthest or furthest",
+      "diff": "easy"
+    },
+    {
+      "q": "Which marker is used to show equivalence (similarity)?",
+      "options": ["A. Greater than", "B. Less than", "C. The same as", "D. Not as much as"],
+      "answer": "C. The same as",
+      "diff": "easy"
+    },
+    {
+      "q": "The phrase 'not as … as' is used to indicate:",
+      "options": ["A. Equality", "B. Non-equivalence", "C. Superlative", "D. Comparative"],
+      "answer": "B. Non-equivalence",
+      "diff": "easy"
+    }
+  ]
+},
+
+
+16: {
+  title: "Cloze Exercises and Reading Comprehension (ENG 101 Lesson 17)",
+  summary: `**Key Topics Covered:**
+- Cloze passages: filling missing words in context
+- Education and examination system (negative effects)
+- Global warming (greenhouse effect, ozone depletion)
+- Personal narrative (grandmother taking grandchildren to circus, elephant sits on car)
+- Overpopulation and future population growth
+- Robot design (desired capabilities and limitations)
+- Film review (Oliver Twist by Charles Dickens)
+
+---
+
+**Simple Understanding:**
+
+**Cloze Exercises:**
+👉 Passages with missing words (blanks) that must be filled using context clues.
+👉 Tests vocabulary, grammar, logical flow, and understanding of text.
+
+---
+
+**Passage 1 – Education and Examinations:**
+👉 Argues that examination system does NOT encourage thinking for oneself.
+👉 Students learn only prescribed syllabus; reading is narrowed, not widened.
+👉 Teachers judged by exam results, forced to coach students for exams.
+👉 Successful candidates are best trained under stress, not necessarily best educated.
+
+**Key vocabulary:** prescribed, syllabus, motivate, narrow, deprive, reduce, despise.
+
+---
+
+**Passage 2 – Global Warming:**
+👉 Existed since Earth's creation; initially beneficial (ended ice ages).
+👉 Now problematic due to runaway greenhouse effect and ozone depletion.
+👉 Normally: Sun's energy reaches Earth, reflects back into space.
+👉 Greenhouse gases trap energy → atmosphere heats up.
+
+**Key vocabulary:** phenomenon, beneficial, runway effect, ozone depletion, reflected, trapped.
+
+---
+
+**Passage 3 – Letter about Circus Visit (Grandmother):**
+👉 Grandmother takes grandchildren Mark and Michelle to circus.
+👉 Borrows Susan's bright red Mini car.
+👉 Children loved zoo and circus; Mark liked wild animals; Michelle wants to be acrobat.
+👉 Announcement: owner of red Mini (PUR 727V) to manager's office.
+👉 Elephant trained to sit on red boxes sat on the car!
+👉 Car squashed but drivable; circus will pay for damage.
+👉 On way home, police stopped them about an accident; officer's face was priceless.
+👉 Grandmother asks family not to forget to water plants.
+
+---
+
+**Passage 4 – Overpopulation:**
+👉 World's exploding population causing growing pains.
+👉 UN study: by year ____ five billion persons will be added to 6.5 billion today.
+👉 More troubling than number of inhabitants are estimates of where they will be concentrated.
+
+---
+
+**Passage 5 – Robot:**
+👉 Ideal robot could wax floor, wash dishes, iron clothes, entertain, learn.
+👉 Self-ambulatory robot would save time.
+👉 Designer would want intellectual robot: reason, understand, help with math problems, proofread.
+👉 Intellectual quality is key.
+
+---
+
+**Passage 6 – Oliver (Film):**
+👉 Orphan boy escapes workhouse, goes to London.
+👉 Meets villain Bill Sykes, girlfriend Nancy, pickpocket Artful Dodger, beggar Fagin.
+👉 Eventually, Bill Sykes killed, Oliver lives happily with wealthy uncle Mr. Brownlow.
+👉 Moving story about boy's search for happiness.
+
+---
+
+**Important Vocabulary:**
+- Cloze = fill-in-the-blank exercise
+- Syllabus = course outline
+- Deprive = take away
+- Despise = hate
+- Runaway effect = uncontrolled feedback
+- Ozone depletion = thinning of ozone layer
+- Self-ambulatory = able to walk on its own
+- Orphan = child without parents
+- Workhouse = place for poor people to live and work
+
+---
+
+**Quick Revision Points:**
+- Use context to guess missing words in cloze passages.
+- Education passage criticizes exam system.
+- Global warming: greenhouse gases trap heat.
+- Circus letter: humorous anecdote about elephant sitting on car.
+- Overpopulation: billions more people expected.
+- Ideal robot should be intellectual, not just do chores.
+- Oliver Twist is a classic orphan story.`,
+  questions: [
+    {
+      "q": "In the passage about education, the examination system is described as:",
+      "options": ["A. Encouraging students to think for themselves", "B. Narrowing students' reading and study", "C. Expanding knowledge widely", "D. Motivating students to read extensively"],
+      "answer": "B. Narrowing students' reading and study",
+      "diff": "easy"
+    },
+    {
+      "q": "According to the education passage, teachers are judged by:",
+      "options": ["A. Their teaching methods", "B. Examination results", "C. Student evaluations", "D. Their freedom in the classroom"],
+      "answer": "B. Examination results",
+      "diff": "easy"
+    },
+    {
+      "q": "The most successful candidates in examinations are described as:",
+      "options": ["A. The best educated", "B. The most knowledgeable", "C. The best trained in working under stress", "D. The most creative thinkers"],
+      "answer": "C. The best trained in working under stress",
+      "diff": "medium"
+    },
+    {
+      "q": "Initially, global warming was beneficial because it:",
+      "options": ["A. Created new deserts", "B. Brought Earth out of ice ages", "C. Increased rainfall", "D. Reduced carbon dioxide"],
+      "answer": "B. Brought Earth out of ice ages",
+      "diff": "easy"
+    },
+    {
+      "q": "The 'runway effect' and ozone depletion are both:",
+      "options": ["A. Solutions to global warming", "B. Natural weather patterns", "C. Causes of global warming problems", "D. Results of volcanic eruptions"],
+      "answer": "C. Causes of global warming problems",
+      "diff": "medium"
+    },
+    {
+      "q": "In the greenhouse effect, energy from the Sun is normally:",
+      "options": ["A. Absorbed permanently by the Earth", "B. Reflected back into space", "C. Used to create ozone", "D. Stored in clouds"],
+      "answer": "B. Reflected back into space",
+      "diff": "easy"
+    },
+    {
+      "q": "Greenhouse gases trap energy and cause the atmosphere to:",
+      "options": ["A. Cool down", "B. Heat up", "C. Remain constant", "D. Disappear"],
+      "answer": "B. Heat up",
+      "diff": "easy"
+    },
+    {
+      "q": "In the grandmother's letter, she borrowed Susan's car which was a:",
+      "options": ["A. Blue sedan", "B. Bright red Mini", "C. Black SUV", "D. Green station wagon"],
+      "answer": "B. Bright red Mini",
+      "diff": "easy"
+    },
+    {
+      "q": "The children's reactions to the circus were:",
+      "options": ["A. Disappointed and bored", "B. Excited and loved everything", "C. Scared of the animals", "D. Indifferent"],
+      "answer": "B. Excited and loved everything",
+      "diff": "easy"
+    },
+    {
+      "q": "Why was the manager upset about the red Mini?",
+      "options": ["A. It was parked illegally", "B. An elephant had sat on it", "C. It had been stolen", "D. The lights were left on"],
+      "answer": "B. An elephant had sat on it",
+      "diff": "easy"
+    },
+    {
+      "q": "The elephant was trained to sit on:",
+      "options": ["A. Yellow boxes", "B. Blue mats", "C. Red boxes", "D. Green carpets"],
+      "answer": "C. Red boxes",
+      "diff": "easy"
+    },
+    {
+      "q": "After the elephant incident, the grandmother was stopped by police because:",
+      "options": ["A. She was speeding", "B. There had been a serious accident nearby", "C. The car was on fire", "D. She had no license"],
+      "answer": "B. There had been a serious accident nearby",
+      "diff": "medium"
+    },
+    {
+      "q": "The grandmother asked her family to remember to:",
+      "options": ["A. Feed the cat", "B. Water her plants", "C. Pay the bills", "D. Clean the house"],
+      "answer": "B. Water her plants",
+      "diff": "easy"
+    },
+    {
+      "q": "According to the overpopulation passage, the new UN study predicts that by a certain year, how many billion persons will be added to the world population?",
+      "options": ["A. Two billion", "B. Three billion", "C. Five billion", "D. Ten billion"],
+      "answer": "C. Five billion",
+      "diff": "hard"
+    },
+    {
+      "q": "The passage says that more troubling than the number of inhabitants are estimates of:",
+      "options": ["A. Their ages", "B. Where they will be concentrated", "C. Their incomes", "D. Their education levels"],
+      "answer": "B. Where they will be concentrated",
+      "diff": "medium"
+    },
+    {
+      "q": "In the robot passage, the writer says an ideal robot would need to be more than just a household helper; it would need to be:",
+      "options": ["A. Strong", "B. Fast", "C. Intellectual", "D. Cheap"],
+      "answer": "C. Intellectual",
+      "diff": "easy"
+    },
+    {
+      "q": "The writer wants her robot to be able to help with math problems and proofread English essays, showing that she values:",
+      "options": ["A. Physical strength", "B. Speed", "C. Mental activity and reasoning", "D. Appearance"],
+      "answer": "C. Mental activity and reasoning",
+      "diff": "easy"
+    },
+    {
+      "q": "In the film Oliver, the orphan boy meets all the following characters EXCEPT:",
+      "options": ["A. Bill Sykes", "B. Fagin", "C. Artful Dodger", "D. Mr. Brownlow from the start"],
+      "answer": "D. Mr. Brownlow from the start (he meets him later)",
+      "diff": "medium"
+    },
+    {
+      "q": "At the end of Oliver, Bill Sykes is killed and Oliver lives happily with:",
+      "options": ["A. Fagin", "B. Nancy", "C. His wealthy uncle Mr. Brownlow", "D. The Artful Dodger"],
+      "answer": "C. His wealthy uncle Mr. Brownlow",
+      "diff": "easy"
+    },
+    {
+      "q": "The overall tone of the grandmother's letter about the circus is:",
+      "options": ["A. Sad and tragic", "B. Humorous and light-hearted", "C. Angry and bitter", "D. Formal and academic"],
+      "answer": "B. Humorous and light-hearted",
+      "diff": "easy"
+    }
+  ]
+},
+
+
+
+
+17: {
+  title: "Cloze Passages and Reading Comprehension (ENG 101 Lesson 17)",
+  summary: `**Key Topics Covered:**
+- Cloze exercises: filling missing words in context
+- Passage 1: Education and examination system (negative effects)
+- Passage 2: Global warming (greenhouse effect, ozone depletion)
+- Passage 3: Letter about circus visit (elephant sits on car)
+- Passage 4: Overpopulation and UN predictions
+- Passage 5: Ideal robot design (intellectual qualities)
+- Passage 6: Film Oliver (orphan boy's story)
+
+---
+
+**Simple Understanding:**
+
+**Cloze Exercises:**
+👉 Passages with missing words (blanks) that must be filled using context clues.
+👉 Tests vocabulary, grammar, logical flow, and understanding of text.
+
+---
+
+**Passage 1 – Education and Examinations:**
+👉 Argues that examination system does NOT encourage thinking for oneself.
+👉 Students learn only prescribed syllabus; reading is narrowed, not widened.
+👉 Teachers judged by exam results, forced to coach students for exams.
+👉 Successful candidates are best trained under stress, not necessarily best educated.
+
+**Key vocabulary:** prescribed, syllabus, motivate, narrow, deprive, reduce, despise.
+
+---
+
+**Passage 2 – Global Warming:**
+👉 Existed since Earth's creation; initially beneficial (ended ice ages).
+👉 Now problematic due to runaway greenhouse effect and ozone depletion.
+👉 Normally: Sun's energy reaches Earth, reflects back into space.
+👉 Greenhouse gases trap energy → atmosphere heats up.
+
+**Key vocabulary:** phenomenon, beneficial, runway effect, ozone depletion, reflected, trapped.
+
+---
+
+**Passage 3 – Letter about Circus Visit (Grandmother):**
+👉 Grandmother takes grandchildren Mark and Michelle to circus.
+👉 Borrows Susan's bright red Mini car.
+👉 Children loved zoo and circus; Mark liked wild animals; Michelle wants to be acrobat.
+👉 Announcement: owner of red Mini (PUR 727V) to manager's office.
+👉 Elephant trained to sit on red boxes sat on the car!
+👉 Car squashed but drivable; circus will pay for damage.
+👉 On way home, police stopped them about an accident; officer's face was priceless.
+👉 Grandmother asks family not to forget to water plants.
+
+---
+
+**Passage 4 – Overpopulation:**
+👉 World's exploding population causing growing pains.
+👉 UN study: by year ____ five billion persons will be added to 6.5 billion today.
+👉 More troubling than number of inhabitants are estimates of where they will be concentrated.
+
+---
+
+**Passage 5 – Robot:**
+👉 Ideal robot could wax floor, wash dishes, iron clothes, entertain, learn.
+👉 Self-ambulatory robot would save time.
+👉 Designer would want intellectual robot: reason, understand, help with math problems, proofread.
+👉 Intellectual quality is key.
+
+---
+
+**Passage 6 – Oliver (Film):**
+👉 Orphan boy escapes workhouse, goes to London.
+👉 Meets villain Bill Sykes, girlfriend Nancy, pickpocket Artful Dodger, beggar Fagin.
+👉 Eventually, Bill Sykes killed, Oliver lives happily with wealthy uncle Mr. Brownlow.
+👉 Moving story about boy's search for happiness.
+
+---
+
+**Important Vocabulary:**
+- Cloze = fill-in-the-blank exercise
+- Syllabus = course outline
+- Deprive = take away
+- Despise = hate
+- Runaway effect = uncontrolled feedback
+- Ozone depletion = thinning of ozone layer
+- Self-ambulatory = able to walk on its own
+- Orphan = child without parents
+- Workhouse = place for poor people to live and work
+
+---
+
+**Quick Revision Points:**
+- Use context to guess missing words in cloze passages.
+- Education passage criticizes exam system.
+- Global warming: greenhouse gases trap heat.
+- Circus letter: humorous anecdote about elephant sitting on car.
+- Overpopulation: billions more people expected.
+- Ideal robot should be intellectual, not just do chores.
+- Oliver Twist is a classic orphan story.`,
+  questions: [
+    {
+      "q": "In the passage about education, the examination system is described as:",
+      "options": ["A. Encouraging students to think for themselves", "B. Narrowing students' reading and study", "C. Expanding knowledge widely", "D. Motivating students to read extensively"],
+      "answer": "B. Narrowing students' reading and study",
+      "diff": "easy"
+    },
+    {
+      "q": "According to the education passage, teachers are judged by:",
+      "options": ["A. Their teaching methods", "B. Examination results", "C. Student evaluations", "D. Their freedom in the classroom"],
+      "answer": "B. Examination results",
+      "diff": "easy"
+    },
+    {
+      "q": "The most successful candidates in examinations are described as:",
+      "options": ["A. The best educated", "B. The most knowledgeable", "C. The best trained in working under stress", "D. The most creative thinkers"],
+      "answer": "C. The best trained in working under stress",
+      "diff": "medium"
+    },
+    {
+      "q": "Initially, global warming was beneficial because it:",
+      "options": ["A. Created new deserts", "B. Brought Earth out of ice ages", "C. Increased rainfall", "D. Reduced carbon dioxide"],
+      "answer": "B. Brought Earth out of ice ages",
+      "diff": "easy"
+    },
+    {
+      "q": "The 'runway effect' and ozone depletion are both:",
+      "options": ["A. Solutions to global warming", "B. Natural weather patterns", "C. Causes of global warming problems", "D. Results of volcanic eruptions"],
+      "answer": "C. Causes of global warming problems",
+      "diff": "medium"
+    },
+    {
+      "q": "In the greenhouse effect, energy from the Sun is normally:",
+      "options": ["A. Absorbed permanently by the Earth", "B. Reflected back into space", "C. Used to create ozone", "D. Stored in clouds"],
+      "answer": "B. Reflected back into space",
+      "diff": "easy"
+    },
+    {
+      "q": "Greenhouse gases trap energy and cause the atmosphere to:",
+      "options": ["A. Cool down", "B. Heat up", "C. Remain constant", "D. Disappear"],
+      "answer": "B. Heat up",
+      "diff": "easy"
+    },
+    {
+      "q": "In the grandmother's letter, she borrowed Susan's car which was a:",
+      "options": ["A. Blue sedan", "B. Bright red Mini", "C. Black SUV", "D. Green station wagon"],
+      "answer": "B. Bright red Mini",
+      "diff": "easy"
+    },
+    {
+      "q": "The children's reactions to the circus were:",
+      "options": ["A. Disappointed and bored", "B. Excited and loved everything", "C. Scared of the animals", "D. Indifferent"],
+      "answer": "B. Excited and loved everything",
+      "diff": "easy"
+    },
+    {
+      "q": "Why was the manager upset about the red Mini?",
+      "options": ["A. It was parked illegally", "B. An elephant had sat on it", "C. It had been stolen", "D. The lights were left on"],
+      "answer": "B. An elephant had sat on it",
+      "diff": "easy"
+    },
+    {
+      "q": "The elephant was trained to sit on:",
+      "options": ["A. Yellow boxes", "B. Blue mats", "C. Red boxes", "D. Green carpets"],
+      "answer": "C. Red boxes",
+      "diff": "easy"
+    },
+    {
+      "q": "After the elephant incident, the grandmother was stopped by police because:",
+      "options": ["A. She was speeding", "B. There had been a serious accident nearby", "C. The car was on fire", "D. She had no license"],
+      "answer": "B. There had been a serious accident nearby",
+      "diff": "medium"
+    },
+    {
+      "q": "The grandmother asked her family to remember to:",
+      "options": ["A. Feed the cat", "B. Water her plants", "C. Pay the bills", "D. Clean the house"],
+      "answer": "B. Water her plants",
+      "diff": "easy"
+    },
+    {
+      "q": "According to the overpopulation passage, the new UN study predicts that by a certain year, how many billion persons will be added to the world population?",
+      "options": ["A. Two billion", "B. Three billion", "C. Five billion", "D. Ten billion"],
+      "answer": "C. Five billion",
+      "diff": "hard"
+    },
+    {
+      "q": "The passage says that more troubling than the number of inhabitants are estimates of:",
+      "options": ["A. Their ages", "B. Where they will be concentrated", "C. Their incomes", "D. Their education levels"],
+      "answer": "B. Where they will be concentrated",
+      "diff": "medium"
+    },
+    {
+      "q": "In the robot passage, the writer says an ideal robot would need to be more than just a household helper; it would need to be:",
+      "options": ["A. Strong", "B. Fast", "C. Intellectual", "D. Cheap"],
+      "answer": "C. Intellectual",
+      "diff": "easy"
+    },
+    {
+      "q": "The writer wants her robot to be able to help with math problems and proofread English essays, showing that she values:",
+      "options": ["A. Physical strength", "B. Speed", "C. Mental activity and reasoning", "D. Appearance"],
+      "answer": "C. Mental activity and reasoning",
+      "diff": "easy"
+    },
+    {
+      "q": "In the film Oliver, the orphan boy meets all the following characters EXCEPT:",
+      "options": ["A. Bill Sykes", "B. Fagin", "C. Artful Dodger", "D. Mr. Brownlow from the start"],
+      "answer": "D. Mr. Brownlow from the start (he meets him later)",
+      "diff": "medium"
+    },
+    {
+      "q": "At the end of Oliver, Bill Sykes is killed and Oliver lives happily with:",
+      "options": ["A. Fagin", "B. Nancy", "C. His wealthy uncle Mr. Brownlow", "D. The Artful Dodger"],
+      "answer": "C. His wealthy uncle Mr. Brownlow",
+      "diff": "easy"
+    },
+    {
+      "q": "The overall tone of the grandmother's letter about the circus is:",
+      "options": ["A. Sad and tragic", "B. Humorous and light-hearted", "C. Angry and bitter", "D. Formal and academic"],
+      "answer": "B. Humorous and light-hearted",
+      "diff": "easy"
+    }
+  ]
+},
+
+
+
+
+
+18: {
+  title: "Primary and Secondary Memory (ENG 101 Lesson 18)",
+  summary: `**Key Topics Covered:**
+- Primary memory (internal storage, real storage, RAM)
+- Secondary memory (sequential vs random-access devices)
+- Memory units: K (1024 bytes), byte (8 bits)
+- Random access and speed as requirements for processing
+- Magnetic tape (sequential, low cost, slow access)
+- Magnetic disk (random-access, faster, more expensive)
+- Virtual storage (using disks to extend primary memory)
+- Dedicated function in mini and micro applications
+- Addresses and contents of memory compartments
+
+---
+
+**Simple Understanding:**
+
+**Primary Memory:**
+👉 Also called internal storage, real storage, primary memory.
+👉 Measured in K (kilobytes): 1K = 1024 bytes, 1 byte = 8 bits.
+👉 Stores programs and data temporarily for immediate CPU processing.
+👉 Requires random access (any location equally quick) and high speed.
+👉 Uses addresses (fixed locations like house addresses).
+👉 Contents = information stored in memory compartments.
+
+**Secondary Memory:**
+👉 Developed because primary memory is costly and used transiently.
+👉 Two categories:
+   - **Sequential devices** (e.g., magnetic tape): low cost, but access time long (must pass over preceding data).
+   - **Random-access devices** (e.g., magnetic disk): faster access, bypass irrelevant data, more expensive.
+
+**Virtual Storage:**
+👉 Disks hooked up as extension of internal storage to increase capacity.
+👉 Example: 256K real storage may appear as 512K virtual storage.
+
+**Mini and Micro Applications:**
+👉 Often perform dedicated functions (same task all the time).
+
+---
+
+**Important Vocabulary:**
+- Primary memory = internal storage, real storage
+- Secondary memory = external storage devices
+- K (kilobyte) = 1024 bytes
+- Byte = 8 bits
+- Random access = equally quick access to any location
+- Sequential access = fixed order access only
+- Address = unique identifier for memory location
+- Contents = data stored at an address
+- Virtual storage = simulated extra memory using disks
+
+---
+
+**Quick Revision Points:**
+- Primary memory is fast, expensive, temporary.
+- Secondary memory is slower, cheaper, permanent.
+- Magnetic tape: sequential, cheap, slow retrieval.
+- Magnetic disk: random-access, faster, moderate cost.
+- Virtual storage uses disks to fake more primary memory.
+- Random access and speed are crucial for processing.`,
+  questions: [
+    {
+      "q": "The term 'memory' in computers usually refers to:",
+      "options": ["A. External storage only", "B. Internal storage locations", "C. Magnetic tape", "D. Virtual memory only"],
+      "answer": "B. Internal storage locations",
+      "diff": "easy"
+    },
+    {
+      "q": "One kilobyte (1K) is equal to:",
+      "options": ["A. 1000 bytes", "B. 1024 bytes", "C. 8 bits", "D. 1024 bits"],
+      "answer": "B. 1024 bytes",
+      "diff": "easy"
+    },
+    {
+      "q": "One byte consists of how many bits?",
+      "options": ["A. 4", "B. 8", "C. 16", "D. 32"],
+      "answer": "B. 8",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following is NOT a requirement for primary memory to facilitate processing?",
+      "options": ["A. Random access", "B. Speed", "C. Low cost per bit", "D. Immediate availability to CPU"],
+      "answer": "C. Low cost per bit",
+      "diff": "medium"
+    },
+    {
+      "q": "Random access means that:",
+      "options": ["A. Memory locations are accessed in fixed order", "B. Any part of memory can be accessed equally quickly", "C. Only sequential devices are used", "D. Information is stored permanently"],
+      "answer": "B. Any part of memory can be accessed equally quickly",
+      "diff": "easy"
+    },
+    {
+      "q": "The addresses in primary memory are compared to:",
+      "options": ["A. Car license plates", "B. House addresses", "C. Telephone numbers", "D. Book page numbers"],
+      "answer": "B. House addresses",
+      "diff": "easy"
+    },
+    {
+      "q": "Most primary memory is used transiently, meaning:",
+      "options": ["A. It is permanent", "B. It is only temporary while a program is executing", "C. It is never changed", "D. It stores data for years"],
+      "answer": "B. It is only temporary while a program is executing",
+      "diff": "medium"
+    },
+    {
+      "q": "Which of the following is an example of a sequential secondary storage device?",
+      "options": ["A. Magnetic disk", "B. Magnetic tape", "C. RAM", "D. ROM"],
+      "answer": "B. Magnetic tape",
+      "diff": "easy"
+    },
+    {
+      "q": "Which statement about magnetic tape is true?",
+      "options": ["A. It is random-access", "B. It is low cost but access time is long", "C. It is faster than magnetic disk", "D. It is used as primary memory"],
+      "answer": "B. It is low cost but access time is long",
+      "diff": "easy"
+    },
+    {
+      "q": "Magnetic disk is an example of:",
+      "options": ["A. Sequential device", "B. Random-access device", "C. Primary memory", "D. Read-only memory"],
+      "answer": "B. Random-access device",
+      "diff": "easy"
+    },
+    {
+      "q": "Compared to magnetic tape, magnetic disk is:",
+      "options": ["A. Slower and cheaper", "B. Faster and more expensive", "C. Slower and more expensive", "D. Faster and cheaper"],
+      "answer": "B. Faster and more expensive",
+      "diff": "easy"
+    },
+    {
+      "q": "Virtual storage is achieved by:",
+      "options": ["A. Adding more RAM chips", "B. Using disks as an extension of internal storage", "C. Compressing data", "D. Using faster processors"],
+      "answer": "B. Using disks as an extension of internal storage",
+      "diff": "medium"
+    },
+    {
+      "q": "If a computer has 256K bytes of real storage, virtual storage could make it appear to have:",
+      "options": ["A. 128K", "B. 256K", "C. 512K", "D. 1024K"],
+      "answer": "C. 512K",
+      "diff": "hard"
+    },
+    {
+      "q": "Minicomputers and microcomputers often perform:",
+      "options": ["A. General-purpose tasks", "B. Dedicated functions", "C. Only arithmetic operations", "D. Virtual memory management"],
+      "answer": "B. Dedicated functions",
+      "diff": "medium"
+    },
+    {
+      "q": "The main idea of the text is best expressed by:",
+      "options": ["A. Primary memory is more important than secondary memory.", "B. Secondary memory devices are unimportant in a computer system.", "C. There are two types of memory: primary and secondary.", "D. Virtual storage is the best memory technology."],
+      "answer": "C. There are two types of memory: primary and secondary.",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following is stated (S) in the text?",
+      "options": ["A. Minicomputers and microcomputers have similar memory capacity.", "B. Primary memory is more expensive than secondary memory.", "C. Information stored on magnetic disk can be retrieved faster than from tape.", "D. Disks and tapes can be stored in a library."],
+      "answer": "C. Information stored on magnetic disk can be retrieved faster than from tape.",
+      "diff": "medium"
+    },
+    {
+      "q": "In paragraph 4, the writer uses the example of magnetic disk to illustrate:",
+      "options": ["A. Sequential access devices", "B. Random-access devices", "C. Virtual storage", "D. Primary memory"],
+      "answer": "B. Random-access devices",
+      "diff": "easy"
+    },
+    {
+      "q": "The synonym for 'erases' in the context of memory (paragraph 2) is:",
+      "options": ["A. Reads", "B. Wipes out", "C. Accesses", "D. Stores"],
+      "answer": "B. Wipes out",
+      "diff": "easy"
+    },
+    {
+      "q": "The antonym for 'go through' (as in sequential access) is likely:",
+      "options": ["A. Bypass", "B. Pass over", "C. Access slowly", "D. Read sequentially"],
+      "answer": "A. Bypass",
+      "diff": "medium"
+    },
+    {
+      "q": "The phrase 'the contents of the memory' (paragraph 2) refers to:",
+      "options": ["A. The addresses of storage locations", "B. The information stored in memory compartments", "C. The size of memory in K", "D. The type of memory used"],
+      "answer": "B. The information stored in memory compartments",
+      "diff": "easy"
+    }
+  ]
+},
+
+
+19: {
+  title: "Types of Computer Memory (ENG 101 Lesson 19)",
+  summary: `**Key Topics Covered:**
+- Core memory (magnetic cores/ferrite rings)
+- Semiconductor memory (chips, integrated circuits)
+- Bubble memory (magnetic bubbles on thin film)
+- Evolution of memory: core → semiconductor → bubble
+- Storage capacity: early 80,000 bits; modern millions of bits
+- Characteristics of each memory type (size, composition, capacity)
+- Definitions: term, group, distinguishing characteristics
+
+---
+
+**Simple Understanding:**
+
+**Core Memory:**
+👉 First type of computer memory developed.
+👉 Uses small ferrite rings (cores) arranged in a grid of vertical and horizontal wires.
+👉 Each core can be magnetized (1) or unmagnetized (0) – one bit per core.
+👉 Early computers had capacity around 80,000 bits (10K bytes).
+👉 Dominated the market until semiconductor memory.
+
+**Semiconductor Memory (Chips):**
+👉 Developed after core memory, before bubble memory.
+👉 Uses integrated circuits on a non-metallic element (silicon).
+👉 Revolutionized the computer field – made minicomputers and microcomputers possible.
+👉 Much smaller size, higher capacity (millions of bits).
+👉 Transistors and chips are related but not identical; a chip contains many circuits.
+
+**Bubble Memory:**
+👉 Latest development (at time of writing).
+👉 Uses thin film over a memory board; produces magnetic bubbles.
+👉 Each bubble represents one bit (presence/absence).
+👉 Non-volatile (retains data without power), very small size.
+👉 Still a lot to learn about this process; many advantages.
+
+**Definitions:**
+👉 A definition includes: term (what is being defined), group (category it belongs to), distinguishing characteristics (what makes it unique).
+👉 Example: "A core is a ferrite ring which is capable of being either magnetized or demagnetized."
+
+---
+
+**Important Vocabulary:**
+- Core memory = magnetic ring memory
+- Ferrite = magnetic ceramic material
+- Semiconductor = material with conductivity between conductor and insulator
+- Chip = integrated circuit on silicon
+- Bubble memory = magnetic bubble memory
+- Non-volatile = retains data when power off
+- Bit = binary digit (0 or 1)
+- Integrated circuit = electronic circuit on a chip
+- Transistor = semiconductor switch
+
+---
+
+**Quick Revision Points:**
+- Core memory was first (ferrite rings on wire grid).
+- Semiconductor memory (chips) replaced core memory.
+- Bubble memory is newer, smaller, non-volatile.
+- Early memory: 80,000 bits; modern: millions of bits.
+- Chips made minicomputers and microcomputers possible.
+- Definitions have three parts: term, group, characteristics.`,
+  questions: [
+    {
+      "q": "The first type of computer memory developed was:",
+      "options": ["A. Semiconductor memory", "B. Bubble memory", "C. Core memory", "D. Virtual memory"],
+      "answer": "C. Core memory",
+      "diff": "easy"
+    },
+    {
+      "q": "Core memory uses small rings made of:",
+      "options": ["A. Silicon", "B. Copper", "C. Ferrite", "D. Plastic"],
+      "answer": "C. Ferrite",
+      "diff": "easy"
+    },
+    {
+      "q": "In core memory, a core could be either magnetized or unmagnetized, representing:",
+      "options": ["A. 0 or 1 (one bit)", "B. One byte", "C. One word", "D. One address"],
+      "answer": "A. 0 or 1 (one bit)",
+      "diff": "easy"
+    },
+    {
+      "q": "Early core memory computers typically had a capacity of about:",
+      "options": ["A. 8,000 bits", "B. 80,000 bits", "C. 800,000 bits", "D. 8 million bits"],
+      "answer": "B. 80,000 bits",
+      "diff": "medium"
+    },
+    {
+      "q": "Which memory type revolutionized the computer field and made minicomputers and microcomputers possible?",
+      "options": ["A. Core memory", "B. Bubble memory", "C. Semiconductor memory (chips)", "D. Magnetic tape"],
+      "answer": "C. Semiconductor memory (chips)",
+      "diff": "easy"
+    },
+    {
+      "q": "Semiconductor memory is built on a non-metallic element called:",
+      "options": ["A. Copper", "B. Aluminum", "C. Silicon", "D. Iron"],
+      "answer": "C. Silicon",
+      "diff": "easy"
+    },
+    {
+      "q": "The development of chips allowed:",
+      "options": ["A. Only mainframe computers", "B. Minicomputers and microcomputers", "C. Only supercomputers", "D. Only analog computers"],
+      "answer": "B. Minicomputers and microcomputers",
+      "diff": "easy"
+    },
+    {
+      "q": "Bubble memory is described as the:",
+      "options": ["A. Oldest type of memory", "B. Most expensive type", "C. Latest development in computer memory", "D. Slowest type"],
+      "answer": "C. Latest development in computer memory",
+      "diff": "easy"
+    },
+    {
+      "q": "In bubble memory, each magnetic bubble represents:",
+      "options": ["A. One byte", "B. One bit", "C. One word", "D. One address"],
+      "answer": "B. One bit",
+      "diff": "medium"
+    },
+    {
+      "q": "Which memory type uses a thin film over a memory board to produce magnetic bubbles?",
+      "options": ["A. Core memory", "B. Semiconductor memory", "C. Bubble memory", "D. Optical memory"],
+      "answer": "C. Bubble memory",
+      "diff": "easy"
+    },
+    {
+      "q": "An advantage of bubble memory mentioned in the text is:",
+      "options": ["A. Very low cost", "B. Extremely fast access", "C. Many advantages including small size and non-volatility", "D. Easy to manufacture"],
+      "answer": "C. Many advantages including small size and non-volatility",
+      "diff": "medium"
+    },
+    {
+      "q": "True or False: Minicomputers, microcomputers, and mainframes all have the same kind of memory.",
+      "options": ["A. True", "B. False (they use different memory types)", "C. True only for mainframes", "D. False only for microcomputers"],
+      "answer": "B. False (they use different memory types)",
+      "diff": "easy"
+    },
+    {
+      "q": "The statement 'A transistor and a chip are the same kind of device' is:",
+      "options": ["A. True", "B. False (a chip contains many transistors and other circuits)", "C. True only for early chips", "D. False because transistors are larger"],
+      "answer": "B. False (a chip contains many transistors and other circuits)",
+      "diff": "medium"
+    },
+    {
+      "q": "Which of the following best expresses the main idea of the text?",
+      "options": ["A. Core memory was the first type of computer memory developed.", "B. There are at least three different kinds of memory used in computers.", "C. Bubble memory is the latest development in computer memory.", "D. Semiconductor memory is the most important."],
+      "answer": "B. There are at least three different kinds of memory used in computers.",
+      "diff": "easy"
+    },
+    {
+      "q": "According to the text, early computer memories had:",
+      "options": ["A. More storage capacity than newer ones", "B. Less storage capacity than newer ones", "C. The same capacity as newer ones", "D. No storage capacity"],
+      "answer": "B. Less storage capacity than newer ones",
+      "diff": "easy"
+    },
+    {
+      "q": "The text mentions that core memory dominated the market until:",
+      "options": ["A. The invention of bubble memory", "B. The development of semiconductor memory", "C. The invention of magnetic tape", "D. The 1980s"],
+      "answer": "B. The development of semiconductor memory",
+      "diff": "medium"
+    },
+    {
+      "q": "In a definition, the part that tells what category the term belongs to is called the:",
+      "options": ["A. Term", "B. Group", "C. Characteristics", "D. Example"],
+      "answer": "B. Group",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following is a correct definition format?",
+      "options": ["A. Term + characteristics + group", "B. Group + term + characteristics", "C. Term + group + distinguishing characteristics", "D. Characteristics + term + group"],
+      "answer": "C. Term + group + distinguishing characteristics",
+      "diff": "easy"
+    },
+    {
+      "q": "In the definition 'An abacus is a bead frame in which the beads are moved from left to right', the group is:",
+      "options": ["A. Abacus", "B. Bead frame", "C. Beads moved from left to right", "D. Frame"],
+      "answer": "B. Bead frame",
+      "diff": "medium"
+    },
+    {
+      "q": "The text suggests that there is still a lot to learn about which memory process?",
+      "options": ["A. Core memory", "B. Semiconductor memory", "C. Bubble memory", "D. Virtual memory"],
+      "answer": "C. Bubble memory",
+      "diff": "easy"
+    }
+  ]
+},
+
+20: {
+  title: "Steps in Problem Solving (ENG 101 Lesson 20)",
+  summary: `**Key Topics Covered:**
+- Problem solving steps (define, algorithm, program, keypunch, test, add data)
+- Role of the programmer vs computer (computer follows instructions, does not think)
+- Algorithm: sequence of instructions to solve a problem
+- Flowchart/block diagram: diagrammatic representation of algorithm
+- Coding sheets: special forms for writing programs
+- Testing programs: finding bugs (errors)
+- Computer components: CPU (control unit, arithmetic-logic unit), memory (primary, secondary), input/output devices
+
+---
+
+**Simple Understanding:**
+
+**Problem Solving Steps:**
+👉 Step 1: Define the problem clearly – understand what needs to be solved.
+👉 Step 2: Formulate an algorithm – a straightforward sequence of instructions.
+   - Algorithm can be described by a flowchart (block diagram).
+   - Flowchart uses arrows to show relationships, repetition, alternative routes.
+👉 Step 3: Translate algorithm into a computer program using a programming language.
+   - Program written on coding sheets (special format).
+👉 Step 4: Keypunch the program or enter it at a terminal with visual display unit.
+👉 Step 5: Test the program – find bugs (errors). Printout shows if it works.
+   - Using a terminal, can store program in memory and get printout.
+👉 Step 6: Add data and run the job completely. Computer performs calculations.
+
+**Key Concepts:**
+👉 Computer is a robot – doesn't think, does what it is told.
+👉 Programmer solves problems; computer executes instructions.
+👉 Bugs = errors in the program.
+
+**Computer Components (from diagram):**
+👉 Four basic components: input, processor, memory, output.
+👉 CPU has control unit (directs signals) and arithmetic-logic unit (does operations, decision-making).
+👉 Primary memory (internal) – core, chip, bubble memory.
+👉 Secondary memory (peripheral storage).
+👉 Input devices: card reader, tape drive, disk drive, terminal.
+👉 Output devices: printer, terminal.
+
+---
+
+**Important Vocabulary:**
+- Algorithm = step-by-step procedure
+- Flowchart = block diagram of algorithm
+- Coding sheets = forms for writing programs
+- Keypunch = machine to punch cards
+- Bugs = program errors
+- Printout = printed output from computer
+- CPU = Central Processing Unit
+- Control unit = directs signals and commands
+- Arithmetic-logic unit = performs calculations and decisions
+- Primary memory = internal storage
+- Secondary memory = peripheral storage
+
+---
+
+**Quick Revision Points:**
+- Programmer solves problems; computer follows instructions.
+- Six steps: define, algorithm, program, keypunch, test, run.
+- Algorithm is the most important part (time-consuming).
+- Flowchart shows sequence with arrows.
+- Test program before adding data.
+- Computer does not think; it is a robot.`,
+  questions: [
+    {
+      "q": "Who actually solves problems when using a computer?",
+      "options": ["A. The computer", "B. The programmer", "C. The operator", "D. The CPU"],
+      "answer": "B. The programmer",
+      "diff": "easy"
+    },
+    {
+      "q": "What is the first step in problem solving according to the text?",
+      "options": ["A. Formulate an algorithm", "B. Write the program", "C. Define the problem clearly", "D. Test the program"],
+      "answer": "C. Define the problem clearly",
+      "diff": "easy"
+    },
+    {
+      "q": "An algorithm is defined as:",
+      "options": ["A. A computer program", "B. A sequence of steps or instructions used to solve a problem", "C. A type of computer memory", "D. A debugging tool"],
+      "answer": "B. A sequence of steps or instructions used to solve a problem",
+      "diff": "easy"
+    },
+    {
+      "q": "Which step is described as 'the most important part of problem solving and is usually time-consuming'?",
+      "options": ["A. Defining the problem", "B. Constructing an algorithm", "C. Translating to a program", "D. Testing the program"],
+      "answer": "B. Constructing an algorithm",
+      "diff": "easy"
+    },
+    {
+      "q": "A flowchart is also called a:",
+      "options": ["A. Coding sheet", "B. Block diagram", "C. Printout", "D. Program listing"],
+      "answer": "B. Block diagram",
+      "diff": "easy"
+    },
+    {
+      "q": "The relationship between events in a flowchart is shown by means of:",
+      "options": ["A. Numbers", "B. Connecting arrows", "C. Colored boxes", "D. Brackets"],
+      "answer": "B. Connecting arrows",
+      "diff": "easy"
+    },
+    {
+      "q": "A block diagram can show if a process has to be repeated or if there are alternative routes. This indicates:",
+      "options": ["A. Input and output", "B. Loops and decisions", "C. Only sequential flow", "D. Only data storage"],
+      "answer": "B. Loops and decisions",
+      "diff": "medium"
+    },
+    {
+      "q": "Programs are usually written on:",
+      "options": ["A. Blank paper", "B. Coding sheets", "C. Punch cards", "D. Magnetic tape"],
+      "answer": "B. Coding sheets",
+      "diff": "easy"
+    },
+    {
+      "q": "The process of transferring the program to the computer memory using cards is called:",
+      "options": ["A. Keypunching", "B. Compiling", "C. Loading", "D. Debugging"],
+      "answer": "A. Keypunching",
+      "diff": "medium"
+    },
+    {
+      "q": "What does the text call errors in a program?",
+      "options": ["A. Glitches", "B. Bugs", "C. Viruses", "D. Crashes"],
+      "answer": "B. Bugs",
+      "diff": "easy"
+    },
+    {
+      "q": "What is a printout?",
+      "options": ["A. The computer's memory contents", "B. Printed output showing if the program works or has errors", "C. The algorithm written on paper", "D. The coding sheet after keypunching"],
+      "answer": "B. Printed output showing if the program works or has errors",
+      "diff": "easy"
+    },
+    {
+      "q": "Why is it a good idea to test the program before adding the data?",
+      "options": ["A. To save time", "B. To find and fix errors before processing real data", "C. To make the computer faster", "D. To reduce memory usage"],
+      "answer": "B. To find and fix errors before processing real data",
+      "diff": "easy"
+    },
+    {
+      "q": "According to the text, a computer is called a robot because:",
+      "options": ["A. It can think like a human", "B. It does what it is told without thinking", "C. It has moving parts", "D. It can solve problems on its own"],
+      "answer": "B. It does what it is told without thinking",
+      "diff": "easy"
+    },
+    {
+      "q": "Which statement best expresses the main idea of the text?",
+      "options": ["A. Constructing an algorithm is the basic step in solving a problem.", "B. Solving problems becomes easier if certain steps are followed.", "C. The computer does what the programmer tells it to do.", "D. Programmers are more important than computers."],
+      "answer": "B. Solving problems becomes easier if certain steps are followed.",
+      "diff": "medium"
+    },
+    {
+      "q": "True or False: A computer is capable of thinking and solving problems on its own.",
+      "options": ["A. True", "B. False (it follows instructions given by the programmer)", "C. Only supercomputers can think", "D. It depends on the programming language"],
+      "answer": "B. False (it follows instructions given by the programmer)",
+      "diff": "easy"
+    },
+    {
+      "q": "What does CPU stand for?",
+      "options": ["A. Central Processing Unit", "B. Computer Peripheral Unit", "C. Control Program Utility", "D. Central Program User"],
+      "answer": "A. Central Processing Unit",
+      "diff": "easy"
+    },
+    {
+      "q": "Which part of the CPU directs and controls signals and commands?",
+      "options": ["A. Arithmetic-logic unit", "B. Control unit", "C. Memory unit", "D. Input unit"],
+      "answer": "B. Control unit",
+      "diff": "easy"
+    },
+    {
+      "q": "Which part of the CPU performs arithmetic operations and decision-making?",
+      "options": ["A. Control unit", "B. Arithmetic-logic unit", "C. Memory register", "D. Cache"],
+      "answer": "B. Arithmetic-logic unit",
+      "diff": "easy"
+    },
+    {
+      "q": "Primary memory is also called:",
+      "options": ["A. Secondary memory", "B. Internal memory", "C. External storage", "D. Virtual memory"],
+      "answer": "B. Internal memory",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following is an example of an input device mentioned in the text?",
+      "options": ["A. Printer", "B. Terminal", "C. CPU", "D. Primary memory"],
+      "answer": "B. Terminal",
+      "diff": "easy"
+    }
+  ]
+},
 
   },
   
