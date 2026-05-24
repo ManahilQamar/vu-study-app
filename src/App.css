@@ -905,3 +905,259 @@ body {
   flex-shrink: 0;
 }
 .dark-toggle:hover { background: var(--bg); }
+
+
+/* ══════════════════════════════════════════
+   SEMESTER ACCORDION
+══════════════════════════════════════════ */
+.sem-block {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: box-shadow 0.15s;
+}
+.sem-block:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+
+.sem-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 12px;
+  text-align: left;
+  transition: background 0.15s;
+}
+.sem-header:hover { background: var(--bg); }
+.sem-header-open  { background: var(--bg); }
+
+.sem-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+.sem-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: 0.2px;
+}
+.sem-title    { font-size: 14px; font-weight: 600; color: var(--text-primary); }
+.sem-subtitle { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+.sem-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.sem-pct-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.sem-pct-track {
+  width: 60px;
+  height: 5px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.sem-pct-fill {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+.sem-pct-lbl  { font-size: 11px; color: var(--text-muted); font-weight: 500; min-width: 28px; }
+.sem-chevron  { font-size: 11px; color: var(--text-muted); }
+
+.sem-subjects {
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+}
+.sem-subj-card {
+  border-radius: 0 !important;
+  border: none !important;
+  border-bottom: none !important;
+  background: var(--card-bg) !important;
+}
+.sem-subj-card:last-child { border-bottom: none !important; }
+.sem-subj-card:hover { background: var(--bg) !important; transform: none !important; box-shadow: none !important; }
+
+/* ══════════════════════════════════════════
+   MATH TYPER
+══════════════════════════════════════════ */
+.mt-panel {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.mt-tabs {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--border);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 0 4px;
+}
+.mt-tabs::-webkit-scrollbar { display: none; }
+
+.mt-tab {
+  padding: 10px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+.mt-tab:hover { color: var(--text-primary); }
+.mt-tab-active {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+}
+
+.mt-symbols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 12px;
+}
+
+.mt-sym-btn {
+  min-width: 38px;
+  height: 38px;
+  padding: 0 10px;
+  border-radius: 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.12s;
+  font-family: 'Times New Roman', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mt-sym-btn:hover {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+  transform: scale(1.08);
+}
+.mt-sym-btn:active { transform: scale(0.96); }
+
+/* Editor area */
+.mt-editor {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.mt-editor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.mt-editor-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.mt-action-btn {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+.mt-action-btn:hover { background: var(--border); }
+.mt-clear-btn { color: #dc2626; }
+.mt-clear-btn:hover { background: #fef2f2; border-color: #fca5a5; }
+
+.mt-textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 16px;
+  font-size: 16px;
+  font-family: 'Times New Roman', Georgia, serif;
+  line-height: 1.8;
+  color: var(--text-primary);
+  background: var(--card-bg);
+  border: none;
+  outline: none;
+  resize: vertical;
+}
+.mt-textarea::placeholder { color: var(--text-muted); font-family: inherit; font-size: 14px; }
+
+.mt-preview {
+  border-top: 1px solid var(--border);
+  padding: 12px 16px;
+  background: var(--bg);
+}
+.mt-preview-label { font-size: 11px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.mt-preview-text  { font-size: 15px; font-family: 'Times New Roman', serif; color: var(--text-primary); white-space: pre-wrap; line-height: 1.8; }
+
+.mt-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border-top: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.mt-tip {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 13px;
+  color: #1e40af;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .sem-badge    { width: 38px; height: 38px; font-size: 10px; }
+  .sem-title    { font-size: 13px; }
+  .sem-pct-track{ width: 44px; }
+  .mt-sym-btn   { min-width: 34px; height: 34px; font-size: 14px; }
+  .mt-textarea  { min-height: 160px; font-size: 15px; }
+}
