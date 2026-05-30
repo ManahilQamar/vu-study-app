@@ -10196,14 +10196,14 @@ S = a/(1-r)
       "diff": "easy"
     }
   ]
-},
-
-
+}
   },
-
+  
   // ─────────────────────────────────────────
   //  PHY101
   // ─────────────────────────────────────────
+
+
   PHY101: {
     1: {
       title: 'Introduction to Physics',
@@ -33805,7 +33805,7 @@ while (tickets remain to be sold):
   // ─────────────────────────────────────────
   //  PAK101
   // ─────────────────────────────────────────
-  PAK101: {
+  PAK301: {
      1: {
   title: 'Muslim Identity, Two-Nation Theory, and Role of Jinnah & Allama Iqbal (PAK101 Lecture 1)',
   summary: `**Key Topics Covered:**
