@@ -72,12 +72,7 @@ const practice = {
       ],
     },
 
-    // ─────────────────────────────────────────────────────────────────
-//  PHY101 — Lecture 23 Numerical Practice Problems
-//  ADD this inside PHY101: { ... } in practice.js, as:
-//  23: { problems: [...] }
-// ─────────────────────────────────────────────────────────────────
-
+   
     23: {
       problems: [
         {
@@ -133,10 +128,181 @@ const practice = {
       ],
     },
 
-    
+24:{
+     problems: [
+      {
+        q: 'Two point charges q₁ = 2 μC and q₂ = 5 μC are placed 0.2 m apart in air. Calculate the magnitude of the electrostatic force between them. (k = 9 × 10⁹ N·m²/C²)',
+        hint: 'Coulomb\'s Law: F = k q₁q₂ / r². μC ko C mein convert karo (1 μC = 10⁻⁶ C).',
+        answer: 'F = (9×10⁹)(2×10⁻⁶)(5×10⁻⁶) / (0.2)² = (90×10⁻³) / 0.04 = 2.25 N'
+      },
+      {
+        q: 'What is the electric potential at the midpoint of the two charges q₁ = 2 μC and q₂ = 5 μC separated by 0.2 m? (k = 9 × 10⁹)',
+        hint: 'Midpoint par distance dono charges se 0.1 m hai. V = V₁ + V₂ (Scalar addition).',
+        answer: 'V = k(2×10⁻⁶)/0.1 + k(5×10⁻⁶)/0.1 = (9×10⁹)(7×10⁻⁶)/0.1 = 63×10³/0.1 = 6.3×10⁵ V'
+      },
+      {
+        q: 'An electric field does 15 J of work in moving a charge of 5 μC from point A to point B. If the potential at A is 100 V, what is the potential at B?',
+        hint: 'W = q(V_A - V_B). Is equation se V_B ki value nikaalo.',
+        answer: '15 = (5×10⁻⁶)(100 - V_B) => 100 - V_B = 15/(5×10⁻⁶) = 3×10⁶ => V_B = 100 - 3,000,000 = -2,999,900 V ≈ -3.0×10⁶ V'
+      },
+      {
+        q: 'Calculate the kinetic energy (in eV and Joules) of an electron accelerated from rest through a potential difference of 200 V. (e = 1.6×10⁻¹⁹ C)',
+        hint: 'KE = qV. Electron ka charge "e" hai. 1 eV = 1.6×10⁻¹⁹ J.',
+        answer: 'KE (in eV) = 200 eV. KE (in J) = 200 × 1.6×10⁻¹⁹ = 3.2×10⁻¹⁷ J'
+      },
+      {
+        q: 'An electric dipole has charges ±4 μC separated by 2 cm. Calculate the potential at a point on the axial line at a distance of 10 cm from the center of the dipole. (k = 9×10⁹)',
+        hint: 'Dipole moment p = qd. Axial potential V = kp/r². d = 0.02 m, r = 0.10 m.',
+        answer: 'p = (4×10⁻⁶)(0.02) = 8×10⁻⁸ C·m. V = (9×10⁹)(8×10⁻⁸)/(0.1)² = 720 / 0.01 = 72,000 V'
+      },
+      {
+        q: 'A uniformly charged ring of radius R = 0.05 m has a total charge Q = 3×10⁻⁸ C. Find the electric potential at a point on its axis, 0.12 m from the center. (k = 9×10⁹)',
+        hint: 'Use V = kQ / √(R² + z²). z = 0.12 m.',
+        answer: 'V = (9×10⁹)(3×10⁻⁸) / √(0.05² + 0.12²) = 270 / √(0.0025 + 0.0144) = 270 / √0.0169 = 270 / 0.13 = 2076.9 V ≈ 2.08×10³ V'
+      },
+      {
+        q: 'A uniformly charged disk of radius 0.1 m has surface charge density σ = 3×10⁻⁶ C/m². Find the potential at a point on the axis at z = 0.04 m from the disk. (ε₀ = 8.85×10⁻¹²)',
+        hint: 'Use V = σ/(2ε₀) * (√(R²+z²) - z).',
+        answer: 'V = (3×10⁻⁶)/(2×8.85×10⁻¹²) * (√(0.01+0.0016) - 0.04) = 1.695×10⁵ * (√0.0116 - 0.04) = 1.695×10⁵ * (0.1077 - 0.04) = 1.695×10⁵ * 0.0677 ≈ 11,476 V'
+      },
+      {
+        q: 'Two conducting spheres of radii 0.02 m and 0.08 m are connected by a wire. The total charge on the system is 10 μC. Find the charge on each sphere.',
+        hint: 'Same potential: q₁/R₁ = q₂/R₂. Also q₁ + q₂ = 10 μC.',
+        answer: 'q₁/0.02 = q₂/0.08 => q₂ = 4q₁. q₁ + 4q₁ = 10 μC => 5q₁ = 10 μC => q₁ = 2 μC, q₂ = 8 μC'
+      },
+      {
+        q: 'Three point charges q₁ = 1 μC, q₂ = -2 μC, and q₃ = 3 μC are placed at the corners of an equilateral triangle of side 0.1 m. Find the total electrostatic potential energy of the system. (k = 9×10⁹)',
+        hint: 'U = U₁₂ + U₁₃ + U₂₃. Sab distances 0.1 m hain.',
+        answer: 'U₁₂ = k(1e-6)(-2e-6)/0.1 = -0.18 J. U₁₃ = k(1e-6)(3e-6)/0.1 = 0.27 J. U₂₃ = k(-2e-6)(3e-6)/0.1 = -0.54 J. Total = -0.18 + 0.27 - 0.54 = -0.45 J'
+      },
+      {
+        q: 'In a uniform electric field, the potential at point A is 80 V and at point B is 20 V. The distance between A and B along the field is 0.3 m. What is the magnitude of the electric field?',
+        hint: 'E = ΔV / d. (Positive magnitude)',
+        answer: 'E = (80 - 20) / 0.3 = 60 / 0.3 = 200 V/m (or N/C)'
+      }
+    ]
   },
 
+25:{
+     problems: [
+      {
+        q: 'A parallel plate capacitor has plates of area 0.04 m² separated by 0.002 m. Calculate its capacitance in air. (ε₀ = 8.85×10⁻¹² F/m)',
+        hint: 'Use C = ε₀ A / d.',
+        answer: 'C = (8.85×10⁻¹² × 0.04) / 0.002 = 3.54×10⁻¹⁰ / 0.002 = 1.77×10⁻¹⁰ F = 177 pF'
+      },
+      {
+        q: 'A 5 μF capacitor is charged to 50 V. How much charge is stored on it?',
+        hint: 'Use Q = CV.',
+        answer: 'Q = 5×10⁻⁶ × 50 = 2.5×10⁻⁴ C = 250 μC'
+      },
+      {
+        q: 'A 10 μF capacitor is charged to 100 V. How much energy is stored in it?',
+        hint: 'Use U = ½ CV².',
+        answer: 'U = ½ × 10×10⁻⁶ × (100)² = 0.5 × 10×10⁻⁶ × 10000 = 0.05 J'
+      },
+      {
+        q: 'Three capacitors of 1 μF, 2 μF, and 3 μF are connected in parallel. Find the equivalent capacitance.',
+        hint: 'Parallel: C_eq = C₁ + C₂ + C₃.',
+        answer: 'C_eq = 1 + 2 + 3 = 6 μF'
+      },
+      {
+        q: 'Three capacitors of 1 μF, 2 μF, and 3 μF are connected in series. Find the equivalent capacitance.',
+        hint: 'Series: 1/C_eq = 1/C₁ + 1/C₂ + 1/C₃.',
+        answer: '1/C_eq = 1/1 + 1/2 + 1/3 = 1 + 0.5 + 0.333 = 1.833 → C_eq = 0.545 μF'
+      },
+      {
+        q: 'Two capacitors of 4 μF and 6 μF are connected in series to a 12 V battery. Find (a) the equivalent capacitance, (b) the charge on each capacitor, (c) the voltage across each capacitor.',
+        hint: 'Series: 1/C_eq = 1/C₁ + 1/C₂; Q = C_eq V; V₁ = Q/C₁, V₂ = Q/C₂.',
+        answer: '1/C_eq = 1/4 + 1/6 = 5/12 → C_eq = 2.4 μF. Q = 2.4×10⁻⁶ × 12 = 28.8 μC. V₁ = 28.8/4 = 7.2 V, V₂ = 28.8/6 = 4.8 V.'
+      },
+      {
+        q: 'A parallel plate capacitor with air between plates has capacitance 100 pF. If a dielectric of constant 5 is inserted between the plates, what is the new capacitance?',
+        hint: 'C = εᵣ C₀.',
+        answer: 'C = 5 × 100 = 500 pF'
+      },
+      {
+        q: 'A capacitor has plates of area 0.1 m² separated by 0.001 m with a dielectric of constant 4 between them. Find the capacitance. (ε₀ = 8.85×10⁻¹² F/m)',
+        hint: 'C = εᵣ ε₀ A / d.',
+        answer: 'C = 4 × 8.85×10⁻¹² × 0.1 / 0.001 = 3.54×10⁻⁹ F = 3.54 nF'
+      },
+      {
+        q: 'A current of 3 A flows through a wire for 2 minutes. How much charge flows through the wire?',
+        hint: 'Q = I × t (time in seconds).',
+        answer: 'Q = 3 × (2 × 60) = 3 × 120 = 360 C'
+      },
+      {
+        q: 'A wire has 5×10²⁸ free electrons per cubic meter. The wire has cross-sectional area 2×10⁻⁶ m² and carries a current of 1 A. Calculate the drift velocity of electrons. (e = 1.6×10⁻¹⁹ C)',
+        hint: 'v_d = I / (n A e).',
+        answer: 'v_d = 1 / (5×10²⁸ × 2×10⁻⁶ × 1.6×10⁻¹⁹) = 1 / (16×10³) = 6.25×10⁻⁵ m/s = 0.0625 mm/s'
+      }
+    ]
+},
 
-};
+26:{
+      problems: [
+      {
+        q: 'A current of 5 A flows through a wire for 3 minutes. How much charge flows through the wire?',
+        hint: 'Q = I × t (time in seconds).',
+        answer: 'Q = 5 × (3 × 60) = 5 × 180 = 900 C'
+      },
+      {
+        q: 'A resistor of 20 Ω is connected across a 12 V battery. Calculate the current flowing through it.',
+        hint: 'Use Ohm\'s Law: I = V/R.',
+        answer: 'I = 12/20 = 0.6 A'
+      },
+      {
+        q: 'Two resistors of 3 Ω and 6 Ω are connected in series to a 9 V battery. Find (a) equivalent resistance, (b) current, (c) voltage across each resistor.',
+        hint: 'Series: R_eq = R₁ + R₂; I = V/R_eq; V₁ = IR₁, V₂ = IR₂.',
+        answer: 'R_eq = 3 + 6 = 9 Ω. I = 9/9 = 1 A. V₁ = 1×3 = 3 V, V₂ = 1×6 = 6 V.'
+      },
+      {
+        q: 'Two resistors of 3 Ω and 6 Ω are connected in parallel to a 9 V battery. Find (a) equivalent resistance, (b) total current, (c) current through each resistor.',
+        hint: 'Parallel: 1/R_eq = 1/R₁ + 1/R₂; I_total = V/R_eq; I₁ = V/R₁, I₂ = V/R₂.',
+        answer: '1/R_eq = 1/3 + 1/6 = 1/2 → R_eq = 2 Ω. I_total = 9/2 = 4.5 A. I₁ = 9/3 = 3 A, I₂ = 9/6 = 1.5 A.'
+      },
+      {
+        q: 'A 100 Ω resistor dissipates power at 25 W. Calculate (a) the current through it, (b) the voltage across it.',
+        hint: 'P = I²R → I = √(P/R); V = IR.',
+        answer: 'I = √(25/100) = √0.25 = 0.5 A. V = 0.5 × 100 = 50 V.'
+      },
+      {
+        q: 'A battery of EMF 12 V and internal resistance 1 Ω is connected to a 5 Ω external resistor. Calculate (a) the current, (b) the terminal voltage.',
+        hint: 'I = ε/(R+r); V_terminal = ε - Ir = IR.',
+        answer: 'I = 12/(5+1) = 2 A. V_terminal = 12 - 2×1 = 10 V (or 2×5 = 10 V).'
+      },
+      {
+        q: 'An RC circuit has R = 2 kΩ and C = 10 μF. Calculate the time constant.',
+        hint: 'τ = RC. R in ohms, C in farads.',
+        answer: 'τ = 2000 × 10×10⁻⁶ = 0.02 s = 20 ms'
+      },
+      {
+        q: 'A capacitor is charged to 100 V and then discharged through a 10 kΩ resistor. If the time constant is 0.5 s, find the capacitance.',
+        hint: 'τ = RC → C = τ/R.',
+        answer: 'C = 0.5 / 10000 = 5×10⁻⁵ F = 50 μF'
+      },
+      {
+        q: 'A wire has 8.5×10²⁸ free electrons per cubic meter. The wire has cross-sectional area 1×10⁻⁶ m² and carries a current of 2 A. Calculate the drift velocity. (e = 1.6×10⁻¹⁹ C)',
+        hint: 'v_d = I/(n A e).',
+        answer: 'v_d = 2 / (8.5×10²⁸ × 1×10⁻⁶ × 1.6×10⁻¹⁹) = 2 / (1.36×10⁴) = 1.47×10⁻⁴ m/s = 0.147 mm/s'
+      },
+      {
+        q: 'Three resistors of 2 Ω, 3 Ω, and 6 Ω are connected in parallel. Find the equivalent resistance.',
+        hint: '1/R_eq = 1/R₁ + 1/R₂ + 1/R₃.',
+        answer: '1/R_eq = 1/2 + 1/3 + 1/6 = 3/6 + 2/6 + 1/6 = 6/6 = 1 → R_eq = 1 Ω'
+      }
+    ]
+},
+
+
+
+
+
+},
+
+
+
+}
+    
+
  
 export default practice;

@@ -15130,6 +15130,933 @@ U(r) = kq₁q₂/r — yeh distance ke **inverse** mein hai (gravitational PE ja
         },
       ],
     },
+ 24: {
+    title: 'Electric Potential',
+    subtitle: 'Voltage, Potential Energy, and Charge Distributions',
+    
+    summary: `**Yeh Lecture Kya Cover Karti Hai:**
+- Electric Charges aur unke beech force (Attraction/Repulsion)
+- Work done against electric force aur Potential Energy ka concept
+- Electric Potential (Voltage) aur uski calculation (Point charges, Dipoles, Rings, Disks)
+- Electron Volt (eV) aur atomic/nuclear physics mein iska istemal
+- Conservative forces aur equipotential surfaces
+- Conductors mein potential aur surface charge density ka distribution
+- Numerical problem-solving techniques
+
+---
+
+**Asaan Zaban Mein Samjho:**
+
+**1. Charges aur Forces (Basic):**
+Do charges ek doosre par force lagate hain. Agar dono same sign (+/+ ya -/-) hain, to wo **repel** (dhakka dete) hain. Agar opposite signs (+/-) hain, to wo **attract** (khenchte) hain. Is force ke khilaf kaam karna hi potential energy ki buniyad hai.
+
+**2. Work aur Potential Energy:**
+Jab hum ek charge ko doosre charge ke paas laate hain (ya door karte hain), to humein force lagana padta hai. Is "work" ki wajah se system mein energy store ho jati hai, jise **Electric Potential Energy** kehte hain.
+- *Spring ka Example:* Spring ko dabao, to usme potential energy store hoti hai.
+- *Charges ka Example:* Do positive charges ko paas lao, to repulsion ke khilaf kaam karna padta hai, isliye unki potential energy badh jati hai (U = kq₁q₂/r, agar r kam hoga to U zyada).
+
+**3. Electric Potential (Voltage) Kya Hai?**
+Potential energy per unit charge ko **Electric Potential (V)** kehte hain.
+Formula: V = U / q
+- Unit: Volt (V) = Joule/Coulomb (J/C)
+- **Scalar quantity** hai (direction nahi hoti), isliye multiple charges ka potential simple addition (sum) se nikal jata hai, field (jo vector hai) ki tarah mushkil nahi hai.
+
+**4. Point Charge ka Potential:**
+Agar ek point charge 'q' hai, to usse distance 'r' par potential:
+V = kq / r
+Yahan infinity par V = 0 assume karte hain.
+
+**5. Electron Volt (eV):**
+Atomic level par energy napanay ke liye eV use hota hai.
+- 1 eV = 1.6 × 10⁻¹⁹ J (Yani ek electron jab 1 Volt ke potential difference se guzarta hai to itni energy gain/lose karta hai).
+- *Examples:* Hydrogen ionization energy = 13.6 eV. Nuclear binding energies = MeV (Million eV).
+
+**6. Charge ki Movement (Direction):**
+- **Positive Charge:** High potential (V) se Low potential (V) ki taraf move karta hai (jaise ball neeche girta hai).
+- **Negative Charge:** Low potential (V) se High potential (V) ki taraf move karta hai (ultaa).
+
+**7. Work Done by Electric Field:**
+Agar charge 'q' point A se B tak move kare, to work done:
+W_ab = -q(V_B - V_A) = q(V_A - V_B)
+- Agar W positive hai, to field ne kaam kiya (kinetic energy badhi).
+- Agar W negative hai, to external agent ne kaam kiya (potential energy badhi).
+
+**8. Conservative Forces:**
+Electric force **conservative** hai. Iska matlab hai kaam path par depend nahi karta, sirf starting aur ending point par depend karta hai. Isi wajah se hum potential energy define kar sakte hain. (Friction non-conservative hai).
+
+**9. Multi-Charge System ki Potential Energy:**
+Agar 3 charges hain (q₁, q₂, q₃), to total U:
+U = kq₁q₂/r₁₂ + kq₁q₃/r₁₃ + k₂q₃/r₂₃
+Yaani har pair ka U alag nikal kar add karo.
+
+**10. Electric Dipole:**
+Do equal aur opposite charges (+q aur -q) jin ke beech distance 'd' ho.
+- Dipole Moment: p = q * d (Direction: -q se +q ki taraf).
+- Potential at point P (distance r, angle θ with axis):
+  V = k p cosθ / r²
+- *Special Cases:*
+  - Axis par (θ=0°): V = kp/r² (Maximum)
+  - Perpendicular bisector (θ=90°): V = 0 (kyunki dono charges ke potentials cancel ho jate hain)
+
+**11. Ring of Charge ka Potential:**
+Radius R, total charge Q. Axis par z distance par:
+V = kQ / √(R² + z²)
+- Center par (z=0): V = kQ/R
+- Door (z >> R): V ≈ kQ/z (point charge jaisa)
+
+**12. Disk of Charge ka Potential:**
+Surface density σ, radius R. Axis par z distance par:
+V = σ/(2ε₀) * ( √(R² + z²) - z )
+- *Limit:* Agar z << R (bilkul surface ke paas), to V ≈ σR/(2ε₀) (constant, infinite sheet jaisa behave karega).
+
+**13. Uniform Electric Field aur Potential:**
+Uniform field E mein, do points ke beech distance 'd' ho to:
+ΔV = E * d
+Equipotential surfaces field lines ke perpendicular hoti hain. Equipotential par charge move kare to Work = 0.
+
+**14. Conductors aur Potential:**
+- Conductor ke **andar** Electric Field (E) = 0 hota hai.
+- Conductor ki poori surface **Equipotential** hoti hai (V constant).
+- Saara charge surface par rehta hai (andar nahi).
+- **Sharp points** (chhoti radius) par surface charge density (σ) zyada hoti hai, isliye wahan Electric Field zyada strong hota hai (corona discharge hota hai).
+- *Rule:* Do conductors ko wire se joro to unka V equal ho jata hai. Is case mein q₁/q₂ = R₁/R₂ aur σ₁/σ₂ = R₂/R₁.
+
+---
+
+**Yaad Rakhne Wali Important Baatein (Quick Revision):**
+- V = U/q (Potential = PE per charge)
+- U = kq₁q₂/r (PE of two charges)
+- Positive charge: High V → Low V (Downhill)
+- Negative charge: Low V → High V (Uphill)
+- Electric force = Conservative (path independent)
+- Equipotential surface: V constant, E perpendicular, W=0 on it.
+- Inside conductor: E=0, V constant (but not necessarily zero).
+- Dipole axis: V = kp/r², Perpendicular: V = 0.
+- Ring: V = kQ/√(R²+z²)
+- Disk: V = σ/(2ε₀)(√(R²+z²) - z)
+- 1 eV = 1.6 × 10⁻¹⁹ J`,
+
+    // ============================================================
+    // MCQs (Tricky & Confusing Options - VU Paper Level)
+    // ============================================================
+    questions: [
+      {
+        q: 'Two positive charges are brought closer to each other. What happens to the electrostatic force and the potential energy of the system?',
+        options: [
+          'A. Force becomes attractive; Potential energy decreases.',
+          'B. Force remains repulsive but decreases; Potential energy decreases.',
+          'C. Force remains repulsive and increases; Potential energy increases.',
+          'D. Force becomes zero; Potential energy becomes infinite.'
+        ],
+        answer: 'C. Force remains repulsive and increases; Potential energy increases.',
+        diff: 'medium'
+      },
+      {
+        q: 'A charge of +2 μC is brought from infinity to a point in an electric field. The work done by the external agent is 10 J. What is the electric potential at that point?',
+        options: [
+          'A. 5 × 10⁶ V',
+          'B. 2 × 10⁶ V',
+          'C. 5 × 10⁵ V',
+          'D. 20 V'
+        ],
+        answer: 'A. 5 × 10⁶ V',
+        diff: 'easy'
+      },
+      {
+        q: 'Which of the following statements about equipotential surfaces is INCORRECT?',
+        options: [
+          'A. The electric field is always perpendicular to equipotential surfaces.',
+          'B. Moving a charge along an equipotential surface requires no work.',
+          'C. Two different equipotential surfaces can intersect each other.',
+          'D. The surface of a charged conductor is an equipotential surface.'
+        ],
+        answer: 'C. Two different equipotential surfaces can intersect each other.',
+        diff: 'medium'
+      },
+      {
+        q: 'A charge of 3 C moves from point X (V = 40 V) to point Y (V = 20 V). What is the work done by the electric field?',
+        options: [
+          'A. -60 J',
+          'B. +60 J',
+          'C. -20 J',
+          'D. +20 J'
+        ],
+        answer: 'B. +60 J',
+        diff: 'hard'
+      },
+      {
+        q: 'An electron is accelerated from rest through a potential difference of 50 V. What is its kinetic energy in Joules? (e = 1.6 × 10⁻¹⁹ C)',
+        options: [
+          'A. 8.0 × 10⁻¹⁸ J',
+          'B. 3.2 × 10⁻¹⁸ J',
+          'C. 50 J',
+          'D. 8.0 × 10⁻²¹ J'
+        ],
+        answer: 'A. 8.0 × 10⁻¹⁸ J',
+        diff: 'easy'
+      },
+      {
+        q: 'A dipole consists of charges +q and -q separated by distance d. What is the electric potential at a point on the perpendicular bisector of the dipole?',
+        options: [
+          'A. kq/d',
+          'B. kp/r²',
+          'C. Zero',
+          'D. 2kq/r'
+        ],
+        answer: 'C. Zero',
+        diff: 'medium'
+      },
+      {
+        q: 'A uniformly charged ring has radius R and total charge Q. What is the electric potential at its center?',
+        options: [
+          'A. Zero',
+          'B. kQ/R',
+          'C. kQ/R²',
+          'D. Infinite'
+        ],
+        answer: 'B. kQ/R',
+        diff: 'medium'
+      },
+      {
+        q: 'In a region of uniform electric field, the potential difference between two points separated by 0.2 m is 100 V. What is the magnitude of the electric field?',
+        options: [
+          'A. 20 N/C',
+          'B. 500 N/C',
+          'C. 50 N/C',
+          'D. 2000 N/C'
+        ],
+        answer: 'B. 500 N/C',
+        diff: 'easy'
+      },
+      {
+        q: 'Inside a solid charged conductor in electrostatic equilibrium, which of the following is true?',
+        options: [
+          'A. Electric field is zero, and potential is zero everywhere.',
+          'B. Electric field is zero, but potential is constant and may be non-zero.',
+          'C. Electric field is non-zero, but potential is zero.',
+          'D. Both electric field and potential vary with distance from the center.'
+        ],
+        answer: 'B. Electric field is zero, but potential is constant and may be non-zero.',
+        diff: 'hard'
+      },
+      {
+        q: 'Two conducting spheres of radii R₁ = 1 cm and R₂ = 4 cm are connected by a conducting wire. If total charge Q is given to the system, which sphere has a larger surface charge density?',
+        options: [
+          'A. The larger sphere (R₂)',
+          'B. The smaller sphere (R₁)',
+          'C. Both have equal surface charge density',
+          'D. Surface charge density is zero on both'
+        ],
+        answer: 'B. The smaller sphere (R₁)',
+        diff: 'hard'
+      },
+      {
+        q: 'In a system of three point charges, the total electrostatic potential energy is equal to:',
+        options: [
+          'A. The product of the potentials of all three charges.',
+          'B. The algebraic sum of the potentials of each charge.',
+          'C. The sum of the potential energies of all possible pairs of charges.',
+          'D. The average of the potential energies of each charge.'
+        ],
+        answer: 'C. The sum of the potential energies of all possible pairs of charges.',
+        diff: 'medium'
+      },
+      {
+        q: 'Which of the following forces is a conservative force, allowing the definition of potential energy?',
+        options: [
+          'A. Frictional force',
+          'B. Air resistance',
+          'C. Electrostatic force between charges',
+          'D. Viscous drag force'
+        ],
+        answer: 'C. Electrostatic force between charges',
+        diff: 'easy'
+      },
+      {
+        q: 'The ionization energy of hydrogen is 13.6 eV. What is this energy in Joules?',
+        options: [
+          'A. 2.18 × 10⁻¹⁸ J',
+          'B. 1.36 × 10⁻¹⁹ J',
+          'C. 8.5 × 10¹⁹ J',
+          'D. 2.18 × 10⁻²⁰ J'
+        ],
+        answer: 'A. 2.18 × 10⁻¹⁸ J',
+        diff: 'easy'
+      },
+      {
+        q: 'A proton and an alpha particle are accelerated through the same potential difference. Which one will have a higher final speed? (Assume they start from rest, mass of alpha ≈ 4 × mass of proton)',
+        options: [
+          'A. Proton, because it has less mass.',
+          'B. Alpha particle, because it has more charge.',
+          'C. Both will have the same speed because potential difference is the same.',
+          'D. Proton, because it has less charge.'
+        ],
+        answer: 'A. Proton, because it has less mass.',
+        diff: 'hard'
+      },
+      {
+        q: 'A charge is moved from point A to point B along an equipotential surface. What is the work done by the electric force?',
+        options: [
+          'A. Positive work, because potential energy increases.',
+          'B. Negative work, because potential energy decreases.',
+          'C. Zero work, because potential difference is zero.',
+          'D. Depends on the path taken between A and B.'
+        ],
+        answer: 'C. Zero work, because potential difference is zero.',
+        diff: 'medium'
+      },
+      {
+        q: 'The electric potential at a distance r from a point charge q is V. If the distance is doubled, what happens to the electric field strength?',
+        options: [
+          'A. It becomes V/2',
+          'B. It becomes V/4',
+          'C. It becomes 2V',
+          'D. It becomes 4V'
+        ],
+        answer: 'B. It becomes V/4',
+        diff: 'medium'
+      },
+      {
+        q: 'A charge q is placed at the center of a spherical conducting shell. What is the electric potential at the surface of the shell?',
+        options: [
+          'A. kq/R (where R is shell radius)',
+          'B. Zero',
+          'C. kq/R²',
+          'D. Depends on the shell material'
+        ],
+        answer: 'A. kq/R (where R is shell radius)',
+        diff: 'hard'
+      },
+      {
+        q: 'Two charges q₁ and q₂ are separated by distance r. If both charges are doubled and distance is halved, the potential energy becomes:',
+        options: [
+          'A. 4 times the original',
+          'B. 8 times the original',
+          'C. 16 times the original',
+          'D. 2 times the original'
+        ],
+        answer: 'B. 8 times the original',
+        diff: 'hard'
+      },
+      {
+        q: 'A positive charge moves from a point of lower potential to higher potential. What happens to its potential energy?',
+        options: [
+          'A. It decreases',
+          'B. It increases',
+          'C. It remains constant',
+          'D. It becomes zero'
+        ],
+        answer: 'B. It increases',
+        diff: 'medium'
+      },
+      {
+        q: 'What is the electric potential at the center of a uniformly charged solid sphere (non-conducting) of radius R and total charge Q?',
+        options: [
+          'A. kQ/R',
+          'B. 3kQ/2R',
+          'C. kQ/2R',
+          'D. Zero'
+        ],
+        answer: 'B. 3kQ/2R',
+        diff: 'hard'
+      }
+    ],
+  },
+ 25: {
+    title: 'Capacitors and Current',
+    summary: `**Yeh Lecture Kya Cover Karti Hai:**
+- Capacitor kya hai aur kaise kaam karta hai
+- Capacitance ki definition aur formula (C = Q/V)
+- Parallel plate capacitor ka formula (C = ε₀A/d)
+- Capacitors in series aur parallel combinations
+- Capacitor mein energy storage (U = ½ CV²)
+- Energy density in electric field (u = ½ ε₀E²)
+- Dielectrics aur unka effect on capacitance
+- Electric current aur drift velocity
+- Conservation of current (Kirchhoff's Junction Rule)
+- Coulomb's Law with dielectrics
+
+---
+
+**Asaan Zaban Mein Samjho:**
+
+**1. Capacitor Kya Hai?**
+Capacitor do conducting plates par mushtamil hai jin ke darmiyan potential difference hota hai. Jab battery connect hoti hai, to ek plate positive aur doosri negative charge accumulate karti hai. Yeh charge electric field create karta hai aur energy store hoti hai.
+- **Analogy:** Capacitor ek water tank ki tarah hai. Battery pump hai jo water (charge) tank mein bharti hai, aur jab zaroorat ho to water release (discharge) kiya ja sakta hai.
+
+**2. Capacitance (C):**
+Capacitance "charge stored per unit potential difference" hai.
+Formula: C = Q/V
+- Unit: Farad (F) = Coulomb/Volt
+- 1 Farad bahut bara unit hai, isliye microfarad (μF), nanofarad (nF), picofarad (pF) use hote hain.
+- Capacitance sirf capacitor ki geometry (area, distance) aur dielectric par depend karti hai, charge ya voltage par nahi.
+
+**3. Parallel Plate Capacitor:**
+Do parallel plates, area A, separation d:
+C = ε₀ A / d
+- ε₀ = 8.85 × 10⁻¹² C²/N·m² (permittivity of free space)
+- Area (A) barhane se capacitance badhti hai
+- Distance (d) barhane se capacitance ghatti hai
+
+**4. Capacitors in Series and Parallel:**
+- **Parallel:** Voltage same, charges add hotay hain:
+  C_eq = C₁ + C₂ + C₃ + ...
+  (Capacitance increases, jaise plates ka area barh gaya)
+
+- **Series:** Charge same, voltages add hoti hain:
+  1/C_eq = 1/C₁ + 1/C₂ + 1/C₃ + ...
+  (Capacitance decreases, jaise distance barh gaya)
+
+**5. Energy Stored in Capacitor:**
+Jab capacitor charge hota hai to usme energy store hoti hai:
+U = ½ QV = ½ CV² = Q²/(2C)
+- Energy voltage ke square ke proportional hai.
+- Yeh energy electric field mein store hoti hai, plates ke darmiyan volume mein.
+
+**6. Energy Density (Energy per unit volume):**
+u = U/(Ad) = ½ ε₀ E²
+- Energy density electric field (E) ke square ke proportional hai.
+- Iska matlab: jahan bhi electric field hai, wahan energy available hai.
+
+**7. Dielectrics (Insulating Materials):**
+Dielectric capacitor ke beech daalne se:
+- Electric field kam ho jata hai: E = E₀/εᵣ
+- Potential difference kam ho jati hai: V = V₀/εᵣ
+- Capacitance badh jaati hai: C = εᵣ C₀
+- εᵣ = dielectric constant (relative permittivity), always > 1
+- Examples: Air (εᵣ = 1.0003), Water (εᵣ ≈ 80), Glass (εᵣ ≈ 5-10)
+
+**8. Coulomb's Law with Dielectrics:**
+Medium mein force vacuum ki nisbat kam ho jati hai:
+F_medium = F_vacuum / εᵣ
+F = (1/4πε₀εᵣ) × (q₁q₂/r²)
+
+**9. Electric Current:**
+Current = rate of flow of charge: I = dQ/dt
+- Unit: Ampere (A) = Coulomb/second
+- Direction: Positive charges ki movement ki direction (conventional current)
+- Wires mein electrons opposite direction mein move karte hain
+
+**10. Drift Velocity:**
+Electrons random motion karte hain, lekin electric field lagane par unki average speed (drift velocity) v_d hoti hai.
+- Drift velocity bahut slow hoti hai (typically mm/s)
+- Current: I = n A e v_d
+  - n = number of charges per unit volume
+  - A = cross-sectional area
+  - e = electron charge (1.6×10⁻¹⁹ C)
+
+**11. Conservation of Current:**
+Current conserved hai: agar current split hota hai to total current before split = total current after split.
+- Kirchhoff's Junction Rule: ΣI_in = ΣI_out
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- C = Q/V (Capacitance definition)
+- C = ε₀A/d (Parallel plate capacitor)
+- Series: 1/C_eq = Σ1/C_i (Capacitance decreases)
+- Parallel: C_eq = ΣC_i (Capacitance increases)
+- U = ½ CV² (Energy stored)
+- u = ½ ε₀E² (Energy density)
+- Dielectric: C = εᵣC₀, E = E₀/εᵣ
+- Coulomb's law with dielectric: F = F₀/εᵣ
+- I = dQ/dt (Current)
+- I = nAev_d (Current and drift velocity)
+- Current conserved: ΣI_in = ΣI_out`,
+
+    questions: [
+      {
+        q: 'The capacitance of a parallel plate capacitor depends on:',
+        options: [
+          'A. The charge stored on the plates',
+          'B. The potential difference between the plates',
+          'C. The area of the plates and the distance between them',
+          'D. Both charge and potential difference'
+        ],
+        answer: 'C. The area of the plates and the distance between them',
+        diff: 'easy'
+      },
+      {
+        q: 'A parallel plate capacitor has plate area A and separation d. If the plate area is doubled and separation is halved, the new capacitance becomes:',
+        options: [
+          'A. 4 times the original',
+          'B. 2 times the original',
+          'C. 1/4 times the original',
+          'D. Same as original'
+        ],
+        answer: 'A. 4 times the original',
+        diff: 'medium'
+      },
+      {
+        q: 'Two capacitors C₁ = 2 μF and C₂ = 3 μF are connected in parallel. The equivalent capacitance is:',
+        options: [
+          'A. 1.2 μF',
+          'B. 5 μF',
+          'C. 6 μF',
+          'D. 0.833 μF'
+        ],
+        answer: 'B. 5 μF',
+        diff: 'easy'
+      },
+      {
+        q: 'Two capacitors C₁ = 2 μF and C₂ = 3 μF are connected in series. The equivalent capacitance is:',
+        options: [
+          'A. 5 μF',
+          'B. 1.2 μF',
+          'C. 6 μF',
+          'D. 0.833 μF'
+        ],
+        answer: 'B. 1.2 μF',
+        diff: 'easy'
+      },
+      {
+        q: 'The energy stored in a capacitor of capacitance C charged to voltage V is:',
+        options: [
+          'A. CV',
+          'B. ½ CV²',
+          'C. CV²',
+          'D. ½ C²V'
+        ],
+        answer: 'B. ½ CV²',
+        diff: 'easy'
+      },
+      {
+        q: 'When a dielectric material is inserted between the plates of a charged capacitor (with battery disconnected), what happens to the voltage across the capacitor?',
+        options: [
+          'A. It increases',
+          'B. It decreases',
+          'C. It remains constant',
+          'D. It becomes zero'
+        ],
+        answer: 'B. It decreases',
+        diff: 'hard'
+      },
+      {
+        q: 'When a dielectric material is inserted between the plates of a capacitor while the battery remains connected, what happens to the charge on the capacitor?',
+        options: [
+          'A. It decreases',
+          'B. It increases',
+          'C. It remains constant',
+          'D. It becomes zero'
+        ],
+        answer: 'B. It increases',
+        diff: 'hard'
+      },
+      {
+        q: 'The drift velocity of electrons in a conductor is typically:',
+        options: [
+          'A. Close to the speed of light',
+          'B. About 10⁵ m/s',
+          'C. About 1 m/s',
+          'D. Very small, of order mm/s'
+        ],
+        answer: 'D. Very small, of order mm/s',
+        diff: 'medium'
+      },
+      {
+        q: 'A current of 2 A flows through a wire. How many electrons pass through a cross-section per second? (e = 1.6×10⁻¹⁹ C)',
+        options: [
+          'A. 1.25×10¹⁹',
+          'B. 3.2×10⁻¹⁹',
+          'C. 1.6×10⁻¹⁹',
+          'D. 2×10¹⁹'
+        ],
+        answer: 'A. 1.25×10¹⁹',
+        diff: 'easy'
+      },
+      {
+        q: 'Which of the following statements about a capacitor is FALSE?',
+        options: [
+          'A. Capacitance depends on the geometry of the plates and the dielectric material.',
+          'B. The charge on a capacitor is directly proportional to the voltage across it.',
+          'C. The energy stored in a capacitor is proportional to the square of the voltage.',
+          'D. When a dielectric is inserted, the capacitance decreases.'
+        ],
+        answer: 'D. When a dielectric is inserted, the capacitance decreases.',
+        diff: 'medium'
+      },
+      {
+        q: 'In a series combination of capacitors, the charge on each capacitor is:',
+        options: [
+          'A. Different for each capacitor',
+          'B. The same for all capacitors',
+          'C. Proportional to the capacitance',
+          'D. Inversely proportional to the capacitance'
+        ],
+        answer: 'B. The same for all capacitors',
+        diff: 'medium'
+      },
+      {
+        q: 'In a parallel combination of capacitors, the voltage across each capacitor is:',
+        options: [
+          'A. Different for each capacitor',
+          'B. The same for all capacitors',
+          'C. Proportional to the capacitance',
+          'D. Inversely proportional to the capacitance'
+        ],
+        answer: 'B. The same for all capacitors',
+        diff: 'medium'
+      },
+      {
+        q: 'The energy density in an electric field of magnitude E is:',
+        options: [
+          'A. ½ ε₀ E²',
+          'B. ε₀ E²',
+          'C. ½ ε₀ E',
+          'D. E²/(2ε₀)'
+        ],
+        answer: 'A. ½ ε₀ E²',
+        diff: 'easy'
+      },
+      {
+        q: 'Coulomb\'s law in a dielectric medium is modified by dividing the force by:',
+        options: [
+          'A. ε₀',
+          'B. εᵣ (dielectric constant)',
+          'C. ε₀εᵣ',
+          'D. 4πε₀'
+        ],
+        answer: 'B. εᵣ (dielectric constant)',
+        diff: 'medium'
+      },
+      {
+        q: 'Kirchhoff\'s Junction Rule is based on the conservation of:',
+        options: [
+          'A. Energy',
+          'B. Charge',
+          'C. Momentum',
+          'D. Angular momentum'
+        ],
+        answer: 'B. Charge',
+        diff: 'medium'
+      }
+    ]
+  },
+
+   26: {
+    title: 'Currents and Circuits',
+    summary: `**Yeh Lecture Kya Cover Karti Hai:**
+- Electric current aur uski definition (I = dQ/dt)
+- Ohm's Law aur resistance (R = V/I)
+- Resistors in series aur parallel combinations
+- Electromotive Force (EMF) aur uski sources
+- Kirchhoff's Voltage Law (KVL) aur uski applications
+- Kirchhoff's Current Law (KCL) aur uski applications
+- RC circuits (charging aur discharging)
+- Power in electric circuits (P = IV = I²R = V²/R)
+- Drift velocity aur current density
+- Conservation of charge aur energy in circuits
+
+---
+
+**Asaan Zaban Mein Samjho:**
+
+**1. Electric Current Kya Hai?**
+Electric current charge ka flow hai. Agar kisi conductor mein se charge flow ho raha hai, to current hai.
+Formula: I = dQ/dt (rate of flow of charge)
+- Unit: Ampere (A) = Coulomb/second
+- Conventional current: Positive charges ki direction (high potential se low potential)
+- Actual current: Electrons opposite direction mein move karte hain
+
+**2. Resistance aur Ohm's Law:**
+Resistance current ka opposition hai. Agar voltage V lagayein to current I flow karega:
+R = V/I
+- Ohm's Law tab apply hoti hai jab resistance constant ho (V aur I ke graph mein linear relationship)
+- Temperature change se resistance change ho sakti hai
+- Excessive voltage se wire jal sakti hai aur Ohm's Law fail ho jati hai
+
+**3. Resistors in Series:**
+Series mein same current flows through all resistors.
+- V = V₁ + V₂ = IR₁ + IR₂
+- R_eq = R₁ + R₂ + R₃ + ...
+- Equivalent resistance humesha individual resistors se badi hoti hai
+
+**4. Resistors in Parallel:**
+Parallel mein same voltage across all resistors.
+- I = I₁ + I₂ = V/R₁ + V/R₂
+- 1/R_eq = 1/R₁ + 1/R₂ + 1/R₃ + ...
+- Equivalent resistance humesha smallest resistor se chhoti hoti hai
+
+**5. Capacitors vs Resistors Comparison:**
+| | Series | Parallel |
+|---|---|---|
+| Resistors | R_eq = R₁ + R₂ | 1/R_eq = 1/R₁ + 1/R₂ |
+| Capacitors | 1/C_eq = 1/C₁ + 1/C₂ | C_eq = C₁ + C₂ |
+
+Yeh opposite behavior hai. Parallel mein resistors resistance kam karte hain (zyada raaste), jabke parallel mein capacitors capacitance barhate hain (zyada area).
+
+**6. Electromotive Force (EMF):**
+EMF actually force nahi hai, energy per unit charge hai.
+- Definition: Energy provided per unit charge to move it around a closed circuit
+- ε = dW/dq (1 Volt = 1 Joule/Coulomb)
+- Sources of EMF:
+  - Chemical reactions (batteries)
+  - Magnetism (generators)
+  - Light (solar panels - photovoltaic effect)
+  - Heat (thermoelectric effect)
+
+**7. Kirchhoff's Voltage Law (KVL):**
+Sum of all potential differences around a closed loop = 0.
+- Based on conservation of energy
+- Electric field conservative hai, isliye loop ke around total work = 0
+- Simple circuit: ε - iR = 0 → ε = iR (Ohm's Law)
+
+**8. Kirchhoff's Current Law (KCL):**
+Sum of currents entering a junction = sum of currents leaving.
+- Based on conservation of charge
+- Charge accumulate nahi hoti ya disappear nahi hoti
+
+**9. RC Circuits:**
+RC circuit mein resistor aur capacitor dono hain.
+
+**Charging (Battery connected):**
+- ε - q/C - iR = 0
+- Current exponentially decays: i = i₀ e^(-t/RC)
+- Charge increases: q = Q₀ (1 - e^(-t/RC))
+
+**Discharging (Battery removed):**
+- q/C + iR = 0
+- Current: i = i₀ e^(-t/RC)
+- Charge decreases: q = Q₀ e^(-t/RC)
+
+**Time Constant (τ = RC):**
+- Time to reach 63% of final value during charging
+- Time to drop to 37% of initial value during discharging
+- Larger C (bigger tank) or larger R (narrower pipe) → longer time constant
+
+**10. Power in Circuits:**
+Power = rate of doing work = dW/dt
+- P = VI = I²R = V²/R
+- 1 Watt = 1 Joule/second
+- Home appliances: kilowatts (kW)
+
+**11. Drift Velocity:**
+Electrons random motion karte hain, lekin electric field lagane par average speed (drift velocity) hoti hai.
+- v_d = I/(n A e)
+- v_d bahut slow hoti hai (mm/s)
+- j = n e v_d (current density)
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- I = dQ/dt (Current)
+- R = V/I (Resistance)
+- Series: R_eq = ΣR_i (Resistance increases)
+- Parallel: 1/R_eq = Σ1/R_i (Resistance decreases)
+- EMF: Energy per unit charge, not a force
+- KVL: ΣV = 0 around closed loop (Energy conservation)
+- KCL: ΣI_in = ΣI_out (Charge conservation)
+- RC time constant: τ = RC
+- Charging: Q(t) = Q₀(1 - e^(-t/RC)), I(t) = I₀ e^(-t/RC)
+- Discharging: Q(t) = Q₀ e^(-t/RC), I(t) = I₀ e^(-t/RC)
+- Power: P = VI = I²R = V²/R
+- Drift velocity: v_d = I/(n A e)
+- Current density: j = n e v_d`,
+
+    questions: [
+      {
+        q: 'Electric current is defined as:',
+        options: [
+          'A. The total charge in a conductor',
+          'B. The rate of flow of charge through a conductor',
+          'C. The potential difference across a conductor',
+          'D. The resistance of a conductor'
+        ],
+        answer: 'B. The rate of flow of charge through a conductor',
+        diff: 'easy'
+      },
+      {
+        q: 'Ohm\'s law states that:',
+        options: [
+          'A. V = IR only when temperature is constant',
+          'B. R = V/I always',
+          'C. I = V/R for all materials at all temperatures',
+          'D. V is independent of I'
+        ],
+        answer: 'A. V = IR only when temperature is constant',
+        diff: 'medium'
+      },
+      {
+        q: 'Two resistors of 4 Ω and 6 Ω are connected in series. The equivalent resistance is:',
+        options: [
+          'A. 2.4 Ω',
+          'B. 10 Ω',
+          'C. 24 Ω',
+          'D. 0.4 Ω'
+        ],
+        answer: 'B. 10 Ω',
+        diff: 'easy'
+      },
+      {
+        q: 'Two resistors of 4 Ω and 6 Ω are connected in parallel. The equivalent resistance is:',
+        options: [
+          'A. 10 Ω',
+          'B. 2.4 Ω',
+          'C. 24 Ω',
+          'D. 0.4 Ω'
+        ],
+        answer: 'B. 2.4 Ω',
+        diff: 'easy'
+      },
+      {
+        q: 'When resistors are connected in parallel, the equivalent resistance is:',
+        options: [
+          'A. Greater than the largest resistor',
+          'B. Less than the smallest resistor',
+          'C. Equal to the sum of all resistors',
+          'D. Equal to the average of all resistors'
+        ],
+        answer: 'B. Less than the smallest resistor',
+        diff: 'medium'
+      },
+      {
+        q: 'Electromotive Force (EMF) is actually:',
+        options: [
+          'A. A force that pushes electrons',
+          'B. Energy per unit charge provided by a source',
+          'C. The resistance of a battery',
+          'D. The current flowing through a circuit'
+        ],
+        answer: 'B. Energy per unit charge provided by a source',
+        diff: 'medium'
+      },
+      {
+        q: 'Kirchhoff\'s Voltage Law (KVL) is based on the conservation of:',
+        options: [
+          'A. Charge',
+          'B. Energy',
+          'C. Momentum',
+          'D. Angular momentum'
+        ],
+        answer: 'B. Energy',
+        diff: 'medium'
+      },
+      {
+        q: 'Kirchhoff\'s Current Law (KCL) is based on the conservation of:',
+        options: [
+          'A. Charge',
+          'B. Energy',
+          'C. Momentum',
+          'D. Angular momentum'
+        ],
+        answer: 'A. Charge',
+        diff: 'medium'
+      },
+      {
+        q: 'In an RC circuit, the time constant τ is equal to:',
+        options: [
+          'A. R/C',
+          'B. RC',
+          'C. C/R',
+          'D. 1/(RC)'
+        ],
+        answer: 'B. RC',
+        diff: 'easy'
+      },
+      {
+        q: 'During charging of a capacitor through a resistor, the current:',
+        options: [
+          'A. Increases exponentially',
+          'B. Decreases exponentially',
+          'C. Remains constant',
+          'D. First increases then decreases'
+        ],
+        answer: 'B. Decreases exponentially',
+        diff: 'medium'
+      },
+      {
+        q: 'The power dissipated in a resistor of resistance R carrying current I is:',
+        options: [
+          'A. IR',
+          'B. I²R',
+          'C. V²R',
+          'D. I/R'
+        ],
+        answer: 'B. I²R',
+        diff: 'easy'
+      },
+      {
+        q: 'Drift velocity of electrons in a conductor is typically:',
+        options: [
+          'A. Close to the speed of light',
+          'B. About 10⁵ m/s',
+          'C. About 1 m/s',
+          'D. Very small, of order mm/s'
+        ],
+        answer: 'D. Very small, of order mm/s',
+        diff: 'easy'
+      },
+      {
+        q: 'Current density j is related to drift velocity by:',
+        options: [
+          'A. j = n e / v_d',
+          'B. j = n e v_d',
+          'C. j = v_d / (n e)',
+          'D. j = n v_d / e'
+        ],
+        answer: 'B. j = n e v_d',
+        diff: 'medium'
+      },
+      {
+        q: 'In a series circuit, the current through each resistor is:',
+        options: [
+          'A. Different for each resistor',
+          'B. The same through all resistors',
+          'C. Proportional to the resistance',
+          'D. Inversely proportional to the resistance'
+        ],
+        answer: 'B. The same through all resistors',
+        diff: 'easy'
+      },
+      {
+        q: 'In a parallel circuit, the voltage across each resistor is:',
+        options: [
+          'A. Different for each resistor',
+          'B. The same across all resistors',
+          'C. Proportional to the resistance',
+          'D. Inversely proportional to the resistance'
+        ],
+        answer: 'B. The same across all resistors',
+        diff: 'easy'
+      },
+      {
+        q: 'When a capacitor is fully charged in an RC circuit, the current becomes:',
+        options: [
+          'A. Maximum',
+          'B. Zero',
+          'C. Half of initial',
+          'D. Equal to EMF/R'
+        ],
+        answer: 'B. Zero',
+        diff: 'medium'
+      },
+      {
+        q: 'A source of EMF with internal resistance r is connected to an external resistance R. The current is:',
+        options: [
+          'A. ε/R',
+          'B. ε/r',
+          'C. ε/(R+r)',
+          'D. εR/r'
+        ],
+        answer: 'C. ε/(R+r)',
+        diff: 'medium'
+      },
+      {
+        q: 'Which of the following is NOT a source of electromotive force (EMF)?',
+        options: [
+          'A. Chemical battery',
+          'B. Solar panel',
+          'C. Resistor',
+          'D. Thermocouple'
+        ],
+        answer: 'C. Resistor',
+        diff: 'easy'
+      }
+    ],
+  },
+
+
+
 
 
 
@@ -24799,192 +25726,89 @@ N-unicast (1 sender, many individual unicasts, burdens server) → P2P redistrib
     ],
   },
 
-  70: {
-    title: 'Networking and the Internet: World Wide Web',
-    summary: `**Key Topics Covered:**
-- The origin of the World Wide Web
-- Tim Berners-Lee and the concept of hypertext
-- The three key original components of the Web
-- Growth of the Web through the 1990s
-
-**Important Concepts:**
-
-**Origins:**
-The World Wide Web originated in the work of **Tim Berners-Lee**, who realized the POTENTIAL of combining INTERNET technology with the concept of LINKED DOCUMENTS, called **hypertext**.
-
-**The First Web Software:**
-Released in **December 1990**. This early prototype did NOT yet support multimedia data, but it already included the THREE key components we now recognize as the World Wide Web:
-1. A **hypertext document format** for embedding **hyperlinks** to other documents.
-2. A **protocol** for transferring hypertext across the network (this protocol is HTTP, formally introduced as a concept in the previous module).
-3. A **server process** that supplied hypertext pages upon request.
-
-**Growth:**
-From this humble beginning, the Web quickly grew to support images, audio, and video. By the MID-1990s, it had become the DOMINANT application powering the growth of the Internet.
-
-**Key Facts to Remember:**
-- Tim Berners-Lee = the originator/creator credited with the Web's origin.
-- "Hypertext" = the core concept: linked documents.
-- First Web software release date: December 1990.
-- The 3 original components: (1) hypertext document format + hyperlinks, (2) a transfer protocol, (3) a server process supplying pages on request.
-- The Web became the DOMINANT Internet application by the MID-1990s (a fairly rapid rise from a 1990 prototype with no multimedia support).
-
-**Quick Revision Points:**
-Tim Berners-Lee (1990) → combined Internet tech + hypertext (linked documents) → 3 original components: hypertext format/hyperlinks + transfer protocol + server process → grew to support multimedia → became THE dominant Internet application by mid-1990s.`,
-    questions: [
-      {
-        q: 'The World Wide Web is credited as originating in the work of which individual?',
-        options: ['A. John Mauchly', 'B. Tim Berners-Lee', 'C. Howard Aiken', 'D. Herman Hollerith'],
-        answer: 'B. Tim Berners-Lee',
-        diff: 'easy',
-      },
-      {
-        q: 'The core concept that Tim Berners-Lee combined with Internet technology to create the Web is known as:',
-        options: ['A. Multicast', 'B. Hypertext (linked documents)', 'C. Cloud computing', 'D. Cluster computing'],
-        answer: 'B. Hypertext (linked documents)',
-        diff: 'easy',
-      },
-      {
-        q: 'In what month and year was the first software for implementing the Web released?',
-        options: ['A. December 1990', 'B. January 1995', 'C. December 1985', 'D. June 1990'],
-        answer: 'A. December 1990',
-        diff: 'medium',
-      },
-      {
-        q: 'Did the EARLY prototype of the Web, as released in 1990, support multimedia data?',
-        options: ['A. Yes, it supported full video and audio from the very start', 'B. No, it did not yet support multimedia data', 'C. It supported only audio, not images or video', 'D. It supported only images, not audio or video'],
-        answer: 'B. No, it did not yet support multimedia data',
-        diff: 'medium',
-      },
-      {
-        q: 'Which of the following is NOT one of the three key original components of the World Wide Web identified in this module?',
-        options: ['A. A hypertext document format for embedding hyperlinks', 'B. A protocol for transferring hypertext across the network', 'C. A server process that supplied hypertext pages upon request', 'D. A built-in video compression codec'],
-        answer: 'D. A built-in video compression codec',
-        diff: 'medium',
-      },
-      {
-        q: 'By approximately what time period had the Web grown to become the dominant application powering Internet growth, according to this module?',
-        options: ['A. By the late 1980s', 'B. By the mid-1990s', 'C. Not until the 2010s', 'D. Immediately upon its December 1990 release'],
-        answer: 'B. By the mid-1990s',
-        diff: 'medium',
-      },
-      {
-        q: 'A "hyperlink," in the context of the Web\'s original hypertext document format, allows a document to:',
-        options: ['A. Automatically encrypt itself for security', 'B. Embed a reference/link to another document', 'C. Convert itself into an IP address', 'D. Be transmitted only through POP3'],
-        answer: 'B. Embed a reference/link to another document',
-        diff: 'easy',
-      },
-      {
-        q: 'Which component of the original Web design was responsible for SUPPLYING hypertext pages upon request from a client?',
-        options: ['A. The hypertext document format itself', 'B. The transfer protocol alone', 'C. The server process', 'D. The DNS lookup system'],
-        answer: 'C. The server process',
-        diff: 'medium',
-      },
-      {
-        q: 'Why is it significant that the Web\'s 1990 prototype already included a document format, a transfer protocol, AND a server process, even without multimedia support?',
-        options: ['A. Because these three elements together already formed the essential architecture that we still recognize as the World Wide Web today', 'B. Because none of these three elements are still used in the modern Web', 'C. Because multimedia was actually the most important of the four components', 'D. Because the prototype was a complete failure and had to be entirely redesigned'],
-        answer: 'A. Because these three elements together already formed the essential architecture that we still recognize as the World Wide Web today',
-        diff: 'hard',
-      },
-      {
-        q: 'How does the World Wide Web, as described in this module, relate to the broader concept of "the Internet" covered in earlier modules?',
-        options: ['A. The Web IS the Internet — they are exactly the same thing with no distinction', 'B. The Web is a specific application (built on hypertext, HTTP, and servers) that runs on top of the underlying Internet infrastructure, and became its dominant application by the mid-1990s', 'C. The Web predates the Internet and the Internet was built on top of it', 'D. The Web has no relationship to the Internet at all'],
-        answer: 'B. The Web is a specific application (built on hypertext, HTTP, and servers) that runs on top of the underlying Internet infrastructure, and became its dominant application by the mid-1990s',
-        diff: 'hard',
-      },
-    ],
-  },
-71: {
+ 71: {
     title: 'Networking and the Internet: Web Implementations (URL & Browsers)',
     summary: `**Yeh module kya cover karta hai:**
-- Browser aur webserver ka kaam
-- HTTP protocol
-- URL ki structure (4 parts)
-- Home page concept
+Browser aur webserver ka role, HTTP protocol, URL ki 4-part structure, home page concept.
 
 **Browser vs Webserver:**
-- **Browser** — user ke computer par hota hai. User jo document maange, wo server se le kar screen par dikhata hai. Examples: Firefox, Safari, Internet Explorer.
-- **Webserver** — woh computer jis par hypertext documents store hotay hain. Client (browser) ki request par document provide karta hai.
-- Dono ke darmiyan communication **HTTP (Hypertext Transfer Protocol)** se hoti hai.
+Browser user ke computer par hota hai — user jo maange server se lekar screen par dikhata hai. (Firefox, Safari, Internet Explorer). Webserver us computer par hota hai jis par hypertext documents stored hain — client ki request par document provide karta hai. Dono ke darmiyan HTTP (Hypertext Transfer Protocol) se communication hoti hai.
 
-**URL (Uniform Resource Locator):**
-Har web document ka ek unique address hota hai — URL. Isme **4 parts** hain:
-1. **Protocol** — e.g., http
-2. **Mnemonic address** — server machine ka naam, e.g., eagle.mu.edu
-3. **Directory path** — document kahan hai server ke file system mein
-4. **Document name** — actual file, e.g., Julius_Caesar.html
+**URL — 4 Parts (IMPORTANT):**
+1. Protocol (e.g., http)
+2. Mnemonic address of host machine (e.g., eagle.mu.edu)
+3. Directory path (e.g., /authors/Shakespeare/)
+4. Document name (e.g., Julius_Caesar.html)
 
 Example: http://eagle.mu.edu/authors/Shakespeare/Julius_Caesar.html
 
-**Home Page:**
-Agar URL mein sirf protocol + machine address ho (koi directory/file nahi), to server ek default "home page" return karta hai. Jaise http://www.google.com → Google ki home page.
-
-**Browser trick:**
-Bahut se browsers HTTP automatically assume kar lete hain — aap sirf www.google.com type karo, browser khud http:// laga leta hai.
+**Home Page:** Agar URL mein sirf protocol + machine address ho, server default "home page" return karta hai. Jaise http://www.google.com → Google home page.
 
 **Yaad rakho:**
-- HTTP = Hypertext Transfer Protocol (browser aur server ke darmiyan)
-- URL mein 4 parts hote hain
-- Koi directory path na ho to home page milti hai`,
+- HTTP = Hypertext Transfer Protocol
+- URL = Uniform Resource Locator (4 parts)
+- Directory path na ho to home page milti hai
+- Bahut se browsers HTTP automatically assume karte hain`,
     questions: [
       {
-        q: 'A browser resides on which machine?',
-        options: ['A. The webserver', 'B. The user\'s computer', 'C. The ISP\'s router', 'D. The DNS name server'],
-        answer: 'B. The user\'s computer',
+        q: 'What does URL stand for?',
+        options: ['A. Universal Routing Language', 'B. Unified Resource Link', 'C. Uniform Resource Locator', 'D. Universal Retrieval Location'],
+        answer: 'C. Uniform Resource Locator',
         diff: 'easy',
       },
       {
-        q: 'In the URL http://eagle.mu.edu/authors/Shakespeare/Julius_Caesar.html, which part is the "directory path"?',
-        options: ['A. http', 'B. eagle.mu.edu', 'C. /authors/Shakespeare/', 'D. Julius_Caesar.html'],
-        answer: 'C. /authors/Shakespeare/',
+        q: 'In the URL http://eagle.mu.edu/authors/Shakespeare/Julius_Caesar.html, which part is "eagle.mu.edu"?',
+        options: ['A. Directory path', 'B. Protocol', 'C. Document name', 'D. Mnemonic address of the host machine'],
+        answer: 'D. Mnemonic address of the host machine',
         diff: 'medium',
       },
       {
-        q: 'What protocol transfers hypertext documents between browsers and webservers?',
-        options: ['A. SMTP', 'B. FTP', 'C. HTTP', 'D. DNS'],
-        answer: 'C. HTTP',
+        q: 'A user visits http://www.google.com and gets Google\'s main page. No filename is in this URL. What did the server return?',
+        options: ['A. An error 404 page', 'B. A random cached page', 'C. A default home page', 'D. The server\'s IP address only'],
+        answer: 'C. A default home page',
+        diff: 'medium',
+      },
+      {
+        q: 'Which protocol transfers hypertext documents between browsers and webservers?',
+        options: ['A. HTTP', 'B. SMTP', 'C. DNS', 'D. FTP'],
+        answer: 'A. HTTP',
         diff: 'easy',
       },
       {
-        q: 'When a URL contains only a protocol and a mnemonic machine address with NO directory path or filename, what does the server typically return?',
-        options: ['A. An error message', 'B. A home page', 'C. The server\'s IP address only', 'D. A cached version of the last visited page'],
-        answer: 'B. A home page',
-        diff: 'medium',
-      },
-      {
-        q: 'How many segments make up a "typical" URL as described in this module?',
-        options: ['A. Two', 'B. Three', 'C. Four', 'D. Five'],
+        q: 'How many segments does a "typical" URL have according to this module?',
+        options: ['A. Two', 'B. Five', 'C. Four', 'D. Three'],
         answer: 'C. Four',
         diff: 'medium',
       },
       {
-        q: 'Which of the following is the webserver\'s primary task?',
-        options: ['A. Translate mnemonic addresses to IP addresses', 'B. Provide access to hypertext documents upon client request', 'C. Assign IP addresses to browsers', 'D. Block unauthorized network traffic'],
-        answer: 'B. Provide access to hypertext documents upon client request',
-        diff: 'easy',
-      },
-      {
-        q: 'A user types "www.google.com" without "http://" and their browser still loads the page. Why?',
-        options: ['A. DNS automatically adds the protocol', 'B. Many browsers assume HTTP if no protocol is specified', 'C. Google\'s server forces a redirect', 'D. HTTP is embedded inside the URL by the router'],
-        answer: 'B. Many browsers assume HTTP if no protocol is specified',
+        q: 'In the URL http://eagle.mu.edu/authors/Shakespeare/Julius_Caesar.html, which part is /authors/Shakespeare/?',
+        options: ['A. Protocol', 'B. Document name', 'C. Directory path', 'D. Host address'],
+        answer: 'C. Directory path',
         diff: 'medium',
       },
       {
-        q: 'In a URL, "Julius_Caesar.html" represents which segment?',
-        options: ['A. Protocol', 'B. Directory path', 'C. Document name', 'D. Mnemonic address'],
-        answer: 'C. Document name',
+        q: 'A user types "www.google.com" without "http://" and it still loads. Why?',
+        options: ['A. Google forces a redirect using DNS', 'B. Many browsers assume HTTP if no protocol is given', 'C. Routers add the protocol automatically', 'D. HTTP is embedded inside every IP address'],
+        answer: 'B. Many browsers assume HTTP if no protocol is given',
+        diff: 'medium',
+      },
+      {
+        q: 'Where does a browser reside?',
+        options: ['A. On the user\'s own computer', 'B. On the DNS name server', 'C. Inside a router', 'D. On the webserver machine'],
+        answer: 'A. On the user\'s own computer',
         diff: 'easy',
       },
       {
-        q: 'What does URL stand for?',
-        options: ['A. Universal Resource Link', 'B. Uniform Resource Locator', 'C. Unified Routing Language', 'D. Universal Retrieval Location'],
-        answer: 'B. Uniform Resource Locator',
+        q: 'The webserver\'s primary task is to:',
+        options: ['A. Assign IP addresses to clients', 'B. Provide access to hypertext documents when clients request them', 'C. Filter spam from incoming messages', 'D. Encrypt all network traffic'],
+        answer: 'B. Provide access to hypertext documents when clients request them',
         diff: 'easy',
       },
       {
-        q: 'Which part of the URL tells the browser WHICH SERVER to contact?',
-        options: ['A. Document name', 'B. Protocol', 'C. Mnemonic address of the host machine', 'D. Directory path'],
-        answer: 'C. Mnemonic address of the host machine',
-        diff: 'hard',
+        q: 'In "http://eagle.mu.edu/authors/Shakespeare/Julius_Caesar.html", what is "Julius_Caesar.html"?',
+        options: ['A. The directory path', 'B. The mnemonic address', 'C. The protocol', 'D. The document name'],
+        answer: 'D. The document name',
+        diff: 'easy',
       },
     ],
   },
@@ -24992,88 +25816,81 @@ Bahut se browsers HTTP automatically assume kar lete hain — aap sirf www.googl
   72: {
     title: 'Networking and the Internet: HTML (Introduction)',
     summary: `**Yeh module kya cover karta hai:**
-- Hypertext document kya hota hai
-- Tags ka concept
-- HTML ki definition
+Hypertext document kya hota hai, tags ka concept, HTML ki definition.
 
 **Hypertext Document:**
-Ek normal text file ki tarah hota hai — text character by character ASCII ya Unicode mein encode hota hai. **Farq yeh hai** ke hypertext document mein special symbols hote hain jinhein **tags** kehte hain. Yeh tags batate hain:
-- Document screen par kaisa dikhna chahiye
-- Kaunse multimedia (images etc.) add honge
-- Kaunse items doosray documents se linked hain
+Normal text file ki tarah — text ASCII ya Unicode mein encode hota hai. Farq: hypertext mein special symbols hote hain jinhein tags kehte hain. Tags batate hain: document screen par kaisa dikhe, kaunse multimedia add honge, kaunse items link hain.
 
-**HTML (Hypertext Markup Language):**
-Tags ka yeh poora system HTML kehlatata hai. Browser HTML tags read karta hai aur samajhta hai ke page kaise present karna hai — bilkul waise jaise ek typesetter red pen se directions lete hai aur text format karta hai.
+**HTML = Hypertext Markup Language**
+Tags ka yeh system HTML kehlatata hai. Browser HTML tags read karta hai — bilkul jaise ek typesetter red pen se directions lete hai.
 
-**Analogy:**
-- Plain typed text + red pen markings = typesetter ko directions
-- HTML text + HTML tags = browser ko directions
+**Tags delineated hote hain < aur > se.**
 
 **Yaad rakho:**
-- Tags delineated hote hain **< aur >** symbols se
 - HTML = Hypertext Markup Language
-- Browser = typesetter ka role play karta hai
-- Tags determine karte hain: appearance + multimedia + links`,
+- Tags = < aur > symbols se
+- Browser = typesetter ka role
+- 3 kaam: appearance + multimedia + links`,
     questions: [
       {
-        q: 'What makes a hypertext document different from a plain text file?',
-        options: ['A. It uses binary encoding instead of ASCII', 'B. It contains special symbols called tags', 'C. It cannot contain images', 'D. It is stored in ROM only'],
-        answer: 'B. It contains special symbols called tags',
+        q: 'HTML stands for:',
+        options: ['A. High Transfer Markup Logic', 'B. Hyper Text Management Language', 'C. Hypertext Markup Language', 'D. Hyper Transfer Media Language'],
+        answer: 'C. Hypertext Markup Language',
         diff: 'easy',
       },
       {
-        q: 'What does HTML stand for?',
-        options: ['A. Hyper Text Management Language', 'B. Hypertext Markup Language', 'C. High Transfer Markup Logic', 'D. Hyper Transfer Media Language'],
-        answer: 'B. Hypertext Markup Language',
+        q: 'Tags in an HTML document are delineated (surrounded) by which symbols?',
+        options: ['A. < and >', 'B. [ and ]', 'C. ( and )', 'D. { and }'],
+        answer: 'A. < and >',
         diff: 'easy',
       },
       {
-        q: 'In the analogy used in this module, a browser plays a role equivalent to:',
-        options: ['A. An author writing a story', 'B. A typesetter following red-pen formatting directions on a text', 'C. A printer printing blank pages', 'D. A router forwarding packets'],
-        answer: 'B. A typesetter following red-pen formatting directions on a text',
+        q: 'According to this module, a browser reading HTML tags plays a role equivalent to:',
+        options: ['A. An author writing the story', 'B. A printer producing blank pages', 'C. A typesetter following red-pen formatting directions', 'D. A router forwarding packets'],
+        answer: 'C. A typesetter following red-pen formatting directions',
         diff: 'medium',
       },
       {
-        q: 'HTML tags describe which THREE things about a document?',
-        options: ['A. Font size, file size, and server address', 'B. How it should appear, what multimedia to include, and which items link to other documents', 'C. The IP address, port number, and URL', 'D. File name, creation date, and author'],
-        answer: 'B. How it should appear, what multimedia to include, and which items link to other documents',
-        diff: 'medium',
-      },
-      {
-        q: 'HTML tags are delineated (marked) by which symbols?',
-        options: ['A. { and }', 'B. [ and ]', 'C. < and >', 'D. ( and )'],
-        answer: 'C. < and >',
-        diff: 'easy',
-      },
-      {
-        q: 'A hypertext document\'s text is encoded using which character systems?',
-        options: ['A. Binary only', 'B. ASCII or Unicode', 'C. Hexadecimal exclusively', 'D. Base64 compression'],
+        q: 'A hypertext document\'s text is encoded using which system(s)?',
+        options: ['A. Only hexadecimal', 'B. ASCII or Unicode', 'C. Base64 only', 'D. Binary exclusively'],
         answer: 'B. ASCII or Unicode',
         diff: 'medium',
       },
       {
-        q: 'According to this module, the process of an author describing a webpage\'s information in HTML is analogous to:',
-        options: ['A. A router updating its forwarding table', 'B. Adding typesetting directions to a plain typed text using a red pen', 'C. A DNS server performing a lookup', 'D. An OS scheduler updating the process table'],
-        answer: 'B. Adding typesetting directions to a plain typed text using a red pen',
-        diff: 'hard',
+        q: 'What makes a hypertext document DIFFERENT from a plain text file?',
+        options: ['A. It uses binary encoding', 'B. It cannot contain any text at all', 'C. It stores images directly inside it', 'D. It contains special symbols called tags'],
+        answer: 'D. It contains special symbols called tags',
+        diff: 'easy',
       },
       {
-        q: 'Which of the following does HTML NOT do directly?',
-        options: ['A. Describe how a page should appear on screen', 'B. Indicate which multimedia resources accompany the document', 'C. Physically transmit the document over the network', 'D. Specify links to other documents'],
-        answer: 'C. Physically transmit the document over the network',
-        diff: 'hard',
-      },
-      {
-        q: 'A hypertext document is considered "similar to a text file" because:',
-        options: ['A. It has no tags at all', 'B. Its underlying text is still encoded character by character', 'C. It cannot store images', 'D. It uses binary instead of text'],
-        answer: 'B. Its underlying text is still encoded character by character',
+        q: 'Tags in HTML describe which THREE things about a document?',
+        options: ['A. IP address, port, and URL', 'B. File size, creation date, and author', 'C. Font size, file format, and server name', 'D. How it should appear, what multimedia it includes, and what items link to other documents'],
+        answer: 'D. How it should appear, what multimedia it includes, and what items link to other documents',
         diff: 'medium',
       },
       {
-        q: 'Which statement is TRUE about tags in HTML?',
-        options: ['A. They replace the document content entirely', 'B. They tell the browser how to present the content and what is linked', 'C. They are only used for image placement', 'D. Tags are written in binary form'],
-        answer: 'B. They tell the browser how to present the content and what is linked',
+        q: 'HTML does NOT directly perform which of the following?',
+        options: ['A. Describe how a page appears on screen', 'B. Indicate which items link to other documents', 'C. Physically transmit the document across the network', 'D. Specify multimedia resources for the document'],
+        answer: 'A. Describe how a page appears on screen',
+        diff: 'hard',
+      },
+      {
+        q: 'A hypertext document is "similar to a text file" because:',
+        options: ['A. It has no tags', 'B. It cannot store images', 'C. Its underlying text is still encoded character by character', 'D. It is written in binary'],
+        answer: 'C. Its underlying text is still encoded character by character',
+        diff: 'medium',
+      },
+      {
+        q: 'Which statement about HTML tags is TRUE?',
+        options: ['A. Tags replace document content entirely', 'B. Tags are written in binary form', 'C. Tags are only used for image placement', 'D. Tags tell the browser how to present content and what is linked'],
+        answer: 'D. Tags tell the browser how to present content and what is linked',
         diff: 'easy',
+      },
+      {
+        q: 'The "author adding red-pen marks to typed text" analogy represents:',
+        options: ['A. A server sending HTML to a browser', 'B. A DNS server doing a lookup', 'C. A router updating its forwarding table', 'D. An HTML author adding tags so a browser knows how to display the page'],
+        answer: 'D. An HTML author adding tags so a browser knows how to display the page',
+        diff: 'hard',
       },
     ],
   },
@@ -25081,101 +25898,90 @@ Tags ka yeh poora system HTML kehlatata hai. Browser HTML tags read karta hai au
   73: {
     title: 'Networking and the Internet: HTML Structure (head, body, anchor, img)',
     summary: `**Yeh module kya cover karta hai:**
-- HTML document ki 2 main sections: head aur body
-- Heading tag (h1), paragraph tag (p)
-- Anchor tag aur hyperlinks banana
-- Image tag (img) se image dikhana
+HTML ki 2 main sections, heading/paragraph tags, anchor tags se hyperlinks, img tag se images.
 
 **HTML Document Structure:**
-- **<html> ... </html>** — poora document
-- **<head> ... </head>** — preliminary info (jaise title) — screen par display NAHI hota
-- **<body> ... </body>** — woh content jo browser screen par dikhata hai
+- html tag → poora document
+- head tag → preliminary info, screen par NAHI dikhai deta (jaise title)
+- body tag → woh content jo browser screen par dikhata hai
 
 **Important Tags:**
-- **<title>** — head ke andar, documentation ke liye sirf, screen par nahi
-- **<h1>** — level-one heading (prominently displayed)
-- **<p>** — paragraph text
+- title → head ke andar, sirf documentation, screen par nahi
+- h1 → level-one heading (prominently displayed)
+- p → paragraph text
+- Closing tag mein slash: /h1, /p, /body
 
-**Closing Tags:**
-Ending tag mein slash hota hai, e.g., </h1>, </p>
+**Hyperlink — Anchor Tag:**
+a href="URL" text /a → hyperlink banana
+href = hypertext reference. Browser linked text highlight karta hai (colored). Click = linked page open.
 
-**Hyperlink banana (Anchor Tag):**
-- **<a href="URL">text</a>** — anchor tag
-- href = hypertext reference (URL follow karta hai)
-- Browser mein "here" word highlight hota hai (colored) — click karo to linked page khulti hai
-- Isi tarah se webpages ek doosre se link hote hain
-
-**Image dikhana (img tag):**
-- **<img src="URL">** — image tag
-- src = source (image ka URL)
-- Browser yeh tag dekh kar image ko HTTP server se request karta hai
-- Image tag jahan hoga, image wahan display hogi (body start mein = top, body end mein = bottom)
+**Image — img tag:**
+img src="URL" → image dikhana. src = source (image ka URL). Browser HTTP server se image request karta hai. Tag ki position = image ki position (body start = top, body end = bottom).
 
 **Yaad rakho:**
-- Head = screen par nahi dikhta (just info)
-- Body = screen par dikhai deta hai
+- head = screen par nahi (info only)
+- body = screen par dikhta hai
 - Anchor tag = hyperlinks (href attribute)
-- img tag = images (src attribute)
-- "Incomplete" page wo hota hai jisme link exist kare but anchor tag na ho`,
+- img tag = images (src attribute)`,
     questions: [
       {
-        q: 'Which section of an HTML document contains content that is NOT displayed on the computer screen?',
-        options: ['A. The body', 'B. The head', 'C. The h1 tag', 'D. The anchor tag'],
-        answer: 'B. The head',
+        q: 'The <title> tag in HTML is placed inside which section?',
+        options: ['A. Inside the <head> tag', 'B. After the </html> tag', 'C. Inside the <p> tag', 'D. Inside the <body> tag'],
+        answer: 'A. Inside the <head> tag',
         diff: 'easy',
       },
       {
-        q: 'In HTML, which tag creates a hyperlink to another document?',
-        options: ['A. <img>', 'B. <p>', 'C. <a href="URL">', 'D. <h1>'],
-        answer: 'C. <a href="URL">',
+        q: 'Which HTML section contains content that is DISPLAYED on the computer screen?',
+        options: ['A. The <head> section', 'B. The <title> section', 'C. The <body> section', 'D. The <html> outer tag only'],
+        answer: 'A. The <head> section',
         diff: 'easy',
       },
       {
-        q: 'What does "href" stand for in an anchor tag?',
-        options: ['A. Hypertext resource file', 'B. Hypertext reference', 'C. HTML redirect function', 'D. Host request format'],
-        answer: 'B. Hypertext reference',
+        q: 'What does "href" mean inside an anchor tag?',
+        options: ['A. Hypertext redirect function', 'B. HTML redirect file', 'C. Host request format', 'D. Hypertext reference'],
+        answer: 'D. Hypertext reference',
         diff: 'medium',
       },
       {
-        q: 'A webpage contains the word "here" as a clickable link but nothing happens when clicked. According to this module, the most likely reason is:',
-        options: ['A. The server is down', 'B. The word "here" was never surrounded by anchor tags with an href parameter', 'C. HTTP is not installed on the browser', 'D. The img tag is missing'],
-        answer: 'B. The word "here" was never surrounded by anchor tags with an href parameter',
+        q: 'A webpage shows the word "here" but clicking it does nothing. According to this module, most likely reason is:',
+        options: ['A. HTTP is not installed', 'B. The img tag is missing', 'C. The word was never surrounded by anchor tags with an href parameter', 'D. The server is down'],
+        answer: 'C. The word was never surrounded by anchor tags with an href parameter',
         diff: 'hard',
       },
       {
-        q: 'In HTML, where would you place an <img> tag to display an image at the TOP of the webpage?',
-        options: ['A. Inside the <head> tag', 'B. After the </body> tag', 'C. Immediately after the <body> tag', 'D. Inside the <title> tag'],
-        answer: 'C. Immediately after the <body> tag',
+        q: 'To display an image at the BOTTOM of a webpage, where should the <img> tag be placed?',
+        options: ['A. Inside the <head> tag', 'B. Inside the <title> tag', 'C. Immediately after the <body> tag', 'D. Just before the </body> closing tag'],
+        answer: 'D. Just before the </body> closing tag',
         diff: 'medium',
       },
       {
         q: 'The "src" attribute inside an <img> tag represents:',
-        options: ['A. Script', 'B. Source — the URL where the image file is located', 'C. Style color', 'D. Server request command'],
-        answer: 'B. Source — the URL where the image file is located',
+        options: ['A. Source — the URL where the image file is located', 'B. Script command', 'C. Server request command', 'D. Style color of the image'],
+        answer: 'A. Source — the URL where the image file is located',
         diff: 'medium',
       },
       {
-        q: 'Which HTML tag creates a "level-one heading" that is displayed prominently on screen?',
-        options: ['A. <p>', 'B. <title>', 'C. <h1>', 'D. <href>'],
-        answer: 'C. <h1>',
+        q: 'Which HTML tag creates a level-one heading displayed prominently on screen?',
+        options: ['A. <h1>', 'B. <title>', 'C. <p>', 'D. <href>'],
+        answer: 'A. <h1>',
         diff: 'easy',
       },
       {
-        q: 'How does a browser display a word that has been properly surrounded with anchor tags?',
-        options: ['A. In bold black text with no other change', 'B. Highlighted in a color, indicating it is a clickable link to another page', 'C. Hidden from the user entirely', 'D. Converted to an image automatically'],
-        answer: 'B. Highlighted in a color, indicating it is a clickable link to another page',
+        q: 'How does a browser visually indicate that a word has a working hyperlink?',
+        options: ['A. It displays the word in bold black only', 'B. It hides the word from the user', 'C. It highlights the word in a color showing it is clickable', 'D. It converts the word to an image'],
+        answer: 'C. It highlights the word in a color showing it is clickable',
         diff: 'medium',
       },
       {
-        q: 'An HTML document consists of how many main sections?',
-        options: ['A. One (body only)', 'B. Two (head and body)', 'C. Three (head, body, and footer)', 'D. Four (html, head, body, title)'],
-        answer: 'B. Two (head and body)',
+        q: 'An HTML document\'s TWO main structural sections are:',
+        options: ['A. Title and footer', 'B. Head and body', 'C. Open and close', 'D. Script and style'],
+        answer: 'B. Head and body',
         diff: 'easy',
       },
       {
-        q: 'When a browser encounters an <img> tag, what does it do?',
-        options: ['A. It draws a blank box and moves on', 'B. It sends a message to the HTTP server at the specified source URL to retrieve and display the image', 'C. It converts the image into text', 'D. It stores the image in ROM'],
-        answer: 'B. It sends a message to the HTTP server at the specified source URL to retrieve and display the image',
+        q: 'When a browser encounters <img src="http://Images.com/OurPic.jpg">, what does it do?',
+        options: ['A. Draws a blank box and skips', 'B. Converts the image to text', 'C. Stores the image in ROM', 'D. Sends a message to the HTTP server at Images.com requesting that image'],
+        answer: 'D. Sends a message to the HTTP server at Images.com requesting that image',
         diff: 'hard',
       },
     ],
@@ -25184,90 +25990,85 @@ Ending tag mein slash hota hai, e.g., </h1>, </p>
   74: {
     title: 'Networking and the Internet: More on HTML (W3Schools)',
     summary: `**Yeh module kya cover karta hai:**
-- HTML seekhne ke liye W3Schools resource
-- <b> tag ka example
-- "Try it Yourself" feature
+W3Schools resource, b tag example, Try it Yourself feature.
 
 **W3Schools:**
-HTML aur web technologies sikhne ki ek free online resource hai: https://www.w3schools.com/tags/default.asp
+Free online HTML reference: https://www.w3schools.com/tags/default.asp
+- Left panel: saare HTML tags ki list
+- Right panel: definition, usage, examples
+- "Try it Yourself" button: left = code, right = live output
 
-Wahan se aap:
-- HTML ke saare tags ki list dekh sakte ho (left panel mein)
-- Har tag ki definition aur usage dekh sakte ho
-- **"Try it Yourself"** button click kar ke live code run kar sakte ho — left side par code, right side par output
-
-**<b> Tag:**
-- Bold text banata hai without any extra importance
-- Example: "This is normal text - **and this is bold text**"
-- HTML mein: '<p>This is normal text - <b>and this is bold text</b>.</p>'
+**b Tag:**
+Bold text banata hai without extra importance.
+Example: This is normal text - and this is bold text.
 
 **Key Point:**
-Is module ka main idea yeh hai ke students ko HTML ke aur tags explore karne chahiye — course ke andar saare tags cover karna possible nahi, lekin W3Schools se self-study ho sakti hai.
+Course ke andar saare HTML tags cover nahi ho sakte — W3Schools se self-study kar sakte ho.
 
 **Yaad rakho:**
-- W3Schools = HTML reference website
-- <b> tag = bold text
-- "Try it Yourself" = live coding feature`,
+- W3Schools = HTML reference site
+- b tag = bold text (no extra importance)
+- Try it Yourself = live code run karo`,
     questions: [
       {
-        q: 'According to this module, where can students find detailed information about all HTML tags?',
-        options: ['A. ICANN website', 'B. W3Schools (www.w3schools.com)', 'C. SMTP server documentation', 'D. The operating system\'s help files'],
-        answer: 'B. W3Schools (www.w3schools.com)',
+        q: 'According to this module, students can find detailed HTML tag information at:',
+        options: ['A. www.w3schools.com', 'B. www.icann.org', 'C. images.google.com', 'D. www.myfooddata.com'],
+        answer: 'A. www.w3schools.com',
         diff: 'easy',
       },
       {
-        q: 'What does the HTML <b> tag do?',
-        options: ['A. Creates a hyperlink', 'B. Specifies bold text without any extra importance', 'C. Inserts an image', 'D. Creates a paragraph'],
-        answer: 'B. Specifies bold text without any extra importance',
+        q: 'The HTML <b> tag does which of the following?',
+        options: ['A. Creates a background color', 'B. Inserts an image', 'C. Makes text bold without any extra semantic importance', 'D. Creates a clickable hyperlink'],
+        answer: 'C. Makes text bold without any extra semantic importance',
         diff: 'easy',
       },
       {
-        q: 'On W3Schools, what does the "Try it Yourself" button allow a student to do?',
-        options: ['A. Register for a free HTML course certificate', 'B. Run HTML code live and see the output side by side with the code', 'C. Download the entire HTML standard', 'D. Chat with a web developer'],
-        answer: 'B. Run HTML code live and see the output side by side with the code',
+        q: 'On W3Schools, the "Try it Yourself" feature shows:',
+        options: ['A. The code on the left and live output on the right', 'B. Only the rendered output, no code', 'C. A downloadable PDF of the tag reference', 'D. A chat with a web developer'],
+        answer: 'A. The code on the left and live output on the right',
         diff: 'medium',
       },
       {
-        q: 'In the W3Schools interface, where is the HTML code shown when using "Try it Yourself"?',
-        options: ['A. Only on the right side', 'B. On the left side, with output on the right', 'C. In a pop-up window above', 'D. Only in a downloadable file'],
-        answer: 'B. On the left side, with output on the right',
+        q: 'Why does this module point students to W3Schools rather than covering all HTML tags directly?',
+        options: ['A. HTML tags are not part of this course at all', 'B. W3Schools only works for advanced programmers', 'C. HTML tags change every week', 'D. Too many HTML tags exist to cover fully in this course, so self-study via W3Schools is recommended'],
+        answer: 'D. Too many HTML tags exist to cover fully in this course, so self-study via W3Schools is recommended',
         diff: 'medium',
       },
       {
-        q: 'Which HTML tag listed on W3Schools is used as the example in this module?',
-        options: ['A. <p>', 'B. <a>', 'C. <b>', 'D. <img>'],
-        answer: 'C. <b>',
+        q: 'On the W3Schools page, the list of all HTML tags appears in which panel?',
+        options: ['A. Top panel', 'B. Pop-up window', 'C. Footer section', 'D. Left panel'],
+        answer: 'D. Left panel',
         diff: 'easy',
       },
       {
-        q: 'Why does this module point students to W3Schools rather than teaching all HTML tags directly?',
-        options: ['A. Because HTML is not part of this course at all', 'B. Because there are too many HTML tags to cover entirely within the course, but they can be explored independently', 'C. Because W3Schools only works for advanced students', 'D. Because HTML tags change every week'],
-        answer: 'B. Because there are too many HTML tags to cover entirely within the course, but they can be explored independently',
-        diff: 'medium',
-      },
-      {
-        q: 'The URL given in this module for HTML tag reference is:',
-        options: ['A. https://www.html.org/tags', 'B. https://www.w3schools.com/tags/default.asp', 'C. https://www.myfooddata.com', 'D. https://images.google.com'],
+        q: 'The W3Schools URL given in this module for HTML tag reference is:',
+        options: ['A. https://www.w3schools.com/html/reference', 'B. https://www.w3schools.com/tags/default.asp', 'C. https://html.org/tags/default', 'D. https://www.w3.org/HTML/tags'],
         answer: 'B. https://www.w3schools.com/tags/default.asp',
         diff: 'hard',
       },
       {
-        q: 'According to the <b> tag definition shown on W3Schools, <b> specifies bold text:',
-        options: ['A. With extra semantic importance', 'B. Without any extra importance', 'C. For headings only', 'D. Only inside anchor tags'],
+        q: 'According to W3Schools, the <b> tag specifies bold text:',
+        options: ['A. With full semantic importance', 'B. Without any extra importance', 'C. Only inside heading tags', 'D. Only inside anchor tags'],
         answer: 'B. Without any extra importance',
         diff: 'medium',
       },
       {
-        q: 'Which panel on the W3Schools page shows a list of all HTML tags, as described in this module?',
-        options: ['A. Top panel', 'B. Left panel', 'C. Right panel', 'D. Footer'],
-        answer: 'B. Left panel',
+        q: 'The main lesson of Module 74 is that HTML knowledge beyond the course can be extended by:',
+        options: ['A. Memorizing all tags from the textbook', 'B. Asking the webserver for a tag list', 'C. Using W3Schools for independent exploration', 'D. Installing a special browser plugin'],
+        answer: 'C. Using W3Schools for independent exploration',
         diff: 'easy',
       },
       {
-        q: 'The main lesson of this module is that HTML knowledge can be extended by:',
-        options: ['A. Memorizing all tags from the textbook', 'B. Using online resources like W3Schools for self-exploration beyond what the course covers', 'C. Only using what the browser supports by default', 'D. Relying on the operating system to generate HTML'],
-        answer: 'B. Using online resources like W3Schools for self-exploration beyond what the course covers',
+        q: 'What happens when you click the green "Try it Yourself" button on W3Schools?',
+        options: ['A. It registers you for a free certificate course', 'B. It opens a live editor where you can run and view HTML code', 'C. It downloads an HTML file to your computer', 'D. It opens a chat window with a developer'],
+        answer: 'B. It opens a live editor where you can run and view HTML code',
         diff: 'medium',
+      },
+      {
+        q: 'Which HTML tag is used as the demonstration example in Module 74?',
+        options: ['A. <p>', 'B. <a>', 'C. <img>', 'D. <b>'],
+        answer: 'D. <b>',
+        diff: 'easy',
       },
     ],
   },
@@ -25275,92 +26076,86 @@ Is module ka main idea yeh hai ke students ko HTML ke aur tags explore karne cha
   75: {
     title: 'Networking and the Internet: XML',
     summary: `**Yeh module kya cover karta hai:**
-- HTML ek notation system kyun hai
-- XML ki zaroorat aur definition
-- Semantic Web vs Syntactic Web
+HTML as notation system, XML ki definition aur origin, Semantic Web vs Syntactic Web.
 
-**HTML as a Notation System:**
-HTML essentially ek notational system hai jisse text document — saath mein uski appearance — ek simple text file mein encode ho sakti hai. Isi tarah se non-textual cheezein bhi encode ho sakti hain — example: sheet music ko HTML-jaisi tag system se represent kar sakte hain.
+**XML = eXtensible Markup Language**
+Markup language banane ka ek standardized style — har application ke liye alag language banana zaroori nahi. XML ek simplified derivative hai SGML (Standard Generalized Markup Language) ka.
 
-**XML (eXtensible Markup Language):**
-- XML ek **standardized style** hai markup language banane ke liye — har application ke liye alag alag markup language banana zaroori nahi
-- XML ek simplified derivative hai **SGML (Standard Generalized Markup Language)** ka
-- HTML itself XML standard par based ek markup language hai (although original HTML XML se pehle thi, isliye XHTML banaya gaya jo rigorously XML follow karta hai)
-- XML se mathematics, multimedia presentations, aur music ke liye markup languages bani hain
+**HTML aur XML ka relation:**
+HTML, XML standard par based ek markup language hai. Original HTML XML se pehle thi, isliye XHTML banaya gaya jo rigorously XML follow karta hai.
 
-**Semantic vs Syntactic Web:**
-- Current Web = **Syntactic Web** — sirf words match hote hain (appearance-based tags)
-- XML allows **Semantic tags** — e.g., '<ingredient>' tag — jo meaning batata hai
+**Syntactic vs Semantic Web:**
+- Current Web = Syntactic — sirf words/text match hota hai (appearance-based)
+- XML se Semantic tags possible hain — jaise ingredient tag — meaning batata hai
 - Semantic tags se search engines MUCH better kaam kar sakte hain
-- Example: Agar "spinach" ingredient ke roop mein tag ho, search engine woh recipes dhundh sakta hai jo spinach NAHI use karti — sirf word "spinach" text mein hona kaafi nahi
-- Is approach se ek **World Wide Semantic Web** ban sakta hai jahan meaning (semantics) matter kare, na sirf appearance
+- Example: agar "spinach" ingredient ke taur par tag ho, search engine wo recipes dhundh sakta hai jo spinach CONTAIN na karti
+- Is se ek "World Wide Semantic Web" ban sakta hai
 
 **Yaad rakho:**
 - XML = eXtensible Markup Language
 - SGML = XML ka parent standard
-- HTML = XML par based (strictly: XHTML)
-- Current Web = Syntactic (word matching)
-- Future goal = Semantic Web (meaning-based)`,
+- Current Web = Syntactic (word matching only)
+- Goal = Semantic Web (meaning-based)`,
     questions: [
       {
-        q: 'What does XML stand for?',
-        options: ['A. Extended Markup Logic', 'B. eXtensible Markup Language', 'C. External Media Language', 'D. Executable Markup Layer'],
-        answer: 'B. eXtensible Markup Language',
+        q: 'XML stands for:',
+        options: ['A. eXtensible Markup Language', 'B. Executable Markup Layer', 'C. External Media Language', 'D. Extended Markup Logic'],
+        answer: 'A. eXtensible Markup Language',
         diff: 'easy',
       },
       {
-        q: 'XML is described in this module as a simplified derivative of which older standard?',
-        options: ['A. HTML', 'B. HTTP', 'C. SGML (Standard Generalized Markup Language)', 'D. SMTP'],
-        answer: 'C. SGML (Standard Generalized Markup Language)',
+        q: 'XML is a simplified derivative of which older standard?',
+        options: ['A. HTTP', 'B. SGML (Standard Generalized Markup Language)', 'C. HTML', 'D. SMTP'],
+        answer: 'B. SGML (Standard Generalized Markup Language)',
         diff: 'hard',
       },
       {
-        q: 'The CURRENT World Wide Web is classified as a "Syntactic Web" rather than a "Semantic Web." What does this mean?',
-        options: ['A. It uses XML instead of HTML', 'B. It only matches words/text appearance rather than understanding meaning', 'C. It fully understands the content and context of all documents', 'D. It uses binary encoding for all pages'],
-        answer: 'B. It only matches words/text appearance rather than understanding meaning',
+        q: 'The current World Wide Web is classified as a "Syntactic Web" because:',
+        options: ['A. It marks documents by their meaning', 'B. All its pages use XML tags only', 'C. It understands full context of all documents', 'D. It only matches words/text appearance, not meaning'],
+        answer: 'D. It only matches words/text appearance, not meaning',
         diff: 'medium',
       },
       {
-        q: 'In the recipe example, why would semantic tags like <ingredient> allow better search results than the current syntactic approach?',
-        options: ['A. They make pages load faster', 'B. A search engine could identify recipes that contain or do NOT contain specific ingredients as meaning — not just as text occurrences', 'C. They reduce file size', 'D. They replace HTTP entirely'],
-        answer: 'B. A search engine could identify recipes that contain or do NOT contain specific ingredients as meaning — not just as text occurrences',
+        q: 'Why was XHTML created?',
+        options: ['A. To replace HTTP with a faster protocol', 'B. To provide a version of HTML for mobile phones only', 'C. To be the version of HTML that rigorously adheres to the XML standard', 'D. To store multimedia files on web servers'],
+        answer: 'C. To be the version of HTML that rigorously adheres to the XML standard',
         diff: 'hard',
       },
       {
-        q: 'Why does this module mention XHTML?',
-        options: ['A. It is a video format standard', 'B. It is the version of HTML that rigorously adheres to XML, because the original HTML predated XML', 'C. It replaced HTTP', 'D. It is used exclusively for mobile browsers'],
-        answer: 'B. It is the version of HTML that rigorously adheres to XML, because the original HTML predated XML',
-        diff: 'hard',
-      },
-      {
-        q: 'XML provides a good example of how standards are designed to have wide-ranging applications. This means XML:',
-        options: ['A. Works only for music notation', 'B. Develops a standard FOR markup languages in general, not one markup language for each application', 'C. Replaces all existing markup languages immediately', 'D. Requires SGML to function'],
-        answer: 'B. Develops a standard FOR markup languages in general, not one markup language for each application',
+        q: 'In the recipe example, using semantic tag ingredient allows a search engine to:',
+        options: ['A. Make web pages load faster', 'B. Store recipes in a database automatically', 'C. Reduce file size of recipe pages', 'D. Find recipes that do NOT contain a specific ingredient by meaning, not just by word matching'],
+        answer: 'D. Find recipes that do NOT contain a specific ingredient by meaning, not just by word matching',
         diff: 'medium',
       },
       {
-        q: 'Markup languages developed following the XML standard possess uniformity that allows them to:',
-        options: ['A. Replace DNS', 'B. Be combined to obtain complex markup languages for documents mixing text, music, and math', 'C. Run only on Linux servers', 'D. Eliminate the need for hyperlinks'],
-        answer: 'B. Be combined to obtain complex markup languages for documents mixing text, music, and math',
+        q: 'XML provides a standard FOR markup languages in general. This means:',
+        options: ['A. Only one markup language can exist based on XML', 'B. Developers must pay a license fee to use XML', 'C. XML directly replaces all existing protocols', 'D. Different markup languages for math, music, multimedia can all follow one standard and combine easily'],
+        answer: 'D. Different markup languages for math, music, multimedia can all follow one standard and combine easily',
         diff: 'medium',
       },
       {
-        q: 'In the sheet music example, which XML-like symbols are used to delineate tags, just as in HTML?',
-        options: ['A. [ and ]', 'B. < and >', 'C. { and }', 'D. # and @'],
-        answer: 'B. < and >',
+        q: 'What symbol pair does the XML-based music notation example use to delineate tags, just as HTML does?',
+        options: ['A. [ and ]', 'B. { and }', 'C. < and >', 'D. # and @'],
+        answer: 'C. < and >',
         diff: 'easy',
       },
       {
-        q: 'The World Wide Semantic Web, as described in this module, differs from today\'s Syntactic Web by:',
-        options: ['A. Using faster servers', 'B. Marking documents according to their MEANING rather than just their appearance', 'C. Removing all images from web pages', 'D. Using binary instead of text for storage'],
-        answer: 'B. Marking documents according to their MEANING rather than just their appearance',
+        q: 'The World Wide Semantic Web differs from today\'s Syntactic Web by:',
+        options: ['A. Using faster servers for all requests', 'B. Removing images from web pages', 'C. Marking documents by MEANING rather than appearance', 'D. Replacing HTTP with a new protocol'],
+        answer: 'C. Marking documents by MEANING rather than appearance',
         diff: 'medium',
       },
       {
-        q: 'HTML is related to XML in which way?',
-        options: ['A. HTML is completely unrelated to XML', 'B. HTML is a markup language based on the XML standard', 'C. XML was invented after XHTML and follows it', 'D. XML is a subset of HTML'],
+        q: 'HTML\'s relationship to XML is that:',
+        options: ['A. HTML is completely unrelated to XML', 'B. HTML is a markup language based on the XML standard', 'C. XML is a subset of HTML', 'D. XML was invented after XHTML and follows it'],
         answer: 'B. HTML is a markup language based on the XML standard',
         diff: 'medium',
+      },
+      {
+        q: 'Using semantic tags like ingredient rather than just formatting tags like p improves search because:',
+        options: ['A. Pages become physically smaller', 'B. Images load faster', 'C. Search engines can understand WHAT the data represents, not just the words present', 'D. It reduces the number of HTTP requests'],
+        answer: 'C. Search engines can understand WHAT the data represents, not just the words present',
+        diff: 'hard',
       },
     ],
   },
@@ -25368,103 +26163,96 @@ HTML essentially ek notational system hai jisse text document — saath mein usk
   76: {
     title: 'Networking and the Internet: Client Side and Server Side',
     summary: `**Yeh module kya cover karta hai:**
-- Client-side vs server-side activities
-- Examples: travel agent, search engine, web mail
-- Technologies: JavaScript, Java Applets, Flash (client-side); CGI, JSP, ASP, PHP (server-side)
-- Security/ethical concerns
+Client-side vs server-side activities, technologies, security concerns.
 
-**Client-Side vs Server-Side:**
-Jab ek webpage sirf static text dikhaye — tab browser sirf HTML fetch aur display karta hai. Lekin animations, order forms, ya customized pages ke liye:
-- **Client-side activity** — browser (client) ke upar perform hoti hai
-- **Server-side activity** — webserver ke upar perform hoti hai
+**Client-Side:** Browser (client) ke computer par perform hoti hai.
+**Server-Side:** Webserver ke computer par perform hoti hai.
 
 **Examples:**
-- **Travel agent website** — customer destinations/dates select karta hai (client-side) → info server par jati hai → server customized page banata hai (server-side) → user ko wapas bhejta hai
-- **Search engine** — user query type karta hai (client-side) → server search result page banata hai (server-side)
-- **Web mail** — webserver mail server se info lata hai (server-side) aur browser mein pages banata hai; user message type karta hai (client-side) → webserver mail server ko bhejta hai (server-side)
+- Travel agent: customer query enter karna = client-side; customized page banana = server-side
+- Search engine: query type karna = client-side; results page banana = server-side
+- Web mail: emails display karna = server-side; message likhna = client-side
 
 **Client-Side Technologies:**
-- **JavaScript** (Netscape ne banaya) — HTML source mein embedded programs, browser execute karta hai
-- **Java Applets** (Sun Microsystems) — separate program units browser ko transfer ho kar execute hoti hain
-- **Flash** (Macromedia) — extensive multimedia client-side presentations
+- JavaScript (Netscape) — HTML mein embedded
+- Java Applets (Sun Microsystems)
+- Flash (Macromedia)
 
 **Server-Side Technologies:**
-- **CGI (Common Gateway Interface)** — early standard, clients server par stored programs execute kara sakte hain
-- **Servlets** (Sun) — CGI ka variation
-- **JSP (JavaServer Pages)** — Sun, webpage templates server par
-- **ASP (Active Server Pages)** — Microsoft ka approach
-- **PHP** (originally "Personal Home Page," ab "PHP Hypertext Preprocessor") — open source, server-side functionality
+- CGI (Common Gateway Interface) — earliest standard
+- Servlets (Sun)
+- JSP = JavaServer Pages (Sun)
+- ASP = Active Server Pages (Microsoft)
+- PHP = originally Personal Home Page, ab PHP Hypertext Preprocessor (open source)
 
-**Security/Ethical Concerns:**
-- Webserver programs clients ko transfer kare → client blindly execute kare = security risk (server malicious ho sakta hai)
-- Client programs server ko execute kara sake → server blindly execute kare = security breach
-- Dono sides ke liye ethical aur security questions arise hote hain
+**Security:**
+Client blindly execute kare server programs = malicious server ka risk. Server blindly execute kare client programs = security breach server side.
 
 **Yaad rakho:**
-- JavaScript = client-side, Netscape
+- JavaScript = client-side, Netscape banaya
 - PHP = open source, server-side
-- CGI = earliest server-side standard
-- JSP = Sun (Java-based), ASP = Microsoft`,
+- CGI = earliest server-side
+- JSP = Sun, ASP = Microsoft`,
     questions: [
       {
-        q: 'When a user fills in a form on a travel agency website and submits it, constructing a customized response page is a:',
-        options: ['A. Client-side activity', 'B. Server-side activity', 'C. DNS lookup', 'D. P2P activity'],
-        answer: 'B. Server-side activity',
+        q: 'When a search engine constructs a customized results page after receiving your query, this is a:',
+        options: ['A. Server-side activity', 'B. P2P communication', 'C. DNS lookup activity', 'D. Client-side activity'],
+        answer: 'A. Server-side activity',
         diff: 'easy',
       },
       {
         q: 'JavaScript was developed by which company?',
-        options: ['A. Microsoft', 'B. Sun Microsystems', 'C. Netscape Communications', 'D. Macromedia'],
-        answer: 'C. Netscape Communications',
+        options: ['A. Sun Microsystems', 'B. Netscape Communications', 'C. Microsoft', 'D. Macromedia'],
+        answer: 'B. Netscape Communications',
         diff: 'medium',
       },
       {
-        q: 'Which technology is specifically described as an "open source" server-side system?',
-        options: ['A. JSP', 'B. ASP', 'C. CGI', 'D. PHP'],
-        answer: 'D. PHP',
-        diff: 'medium',
-      },
-      {
-        q: 'PHP originally stood for:',
-        options: ['A. PHP Hypertext Preprocessor', 'B. Personal Home Page', 'C. Public Hypertext Protocol', 'D. Python Hypertext Page'],
-        answer: 'B. Personal Home Page',
+        q: 'PHP was originally an abbreviation for:',
+        options: ['A. PHP Hypertext Preprocessor', 'B. Public Hypertext Protocol', 'C. Personal Home Page', 'D. Python Hypertext Page'],
+        answer: 'C. Personal Home Page',
         diff: 'hard',
       },
       {
-        q: 'Java Applets, developed by Sun Microsystems, work by:',
-        options: ['A. Running entirely on the server without any browser involvement', 'B. Being transferred to the browser and then executed there as requested in the HTML source', 'C. Replacing the browser entirely', 'D. Running inside the router'],
-        answer: 'B. Being transferred to the browser and then executed there as requested in the HTML source',
+        q: 'Which server-side technology is described as "open source" in this module?',
+        options: ['A. CGI', 'B. JSP', 'C. PHP', 'D. ASP'],
+        answer: 'C. PHP',
         diff: 'medium',
       },
       {
-        q: 'CGI (Common Gateway Interface) was an early means of allowing clients to:',
-        options: ['A. Upload images directly into HTML', 'B. Request the execution of programs stored at a server', 'C. Browse pages without an internet connection', 'D. Access router forwarding tables'],
-        answer: 'B. Request the execution of programs stored at a server',
-        diff: 'medium',
-      },
-      {
-        q: 'What is the security risk if a client blindly executes any program sent by a webserver?',
-        options: ['A. None; this is completely safe', 'B. The client opens itself to malicious activities by the server', 'C. Only server-side data is at risk', 'D. The browser becomes slower'],
-        answer: 'B. The client opens itself to malicious activities by the server',
-        diff: 'medium',
-      },
-      {
-        q: 'Microsoft\'s approach to server-side webpage template construction is called:',
-        options: ['A. JSP', 'B. PHP', 'C. ASP (Active Server Pages)', 'D. CGI'],
-        answer: 'C. ASP (Active Server Pages)',
-        diff: 'medium',
-      },
-      {
-        q: 'A user typing a search query into Google is an example of which type of activity?',
-        options: ['A. Server-side', 'B. Client-side', 'C. DNS resolution', 'D. A router forwarding event'],
-        answer: 'B. Client-side',
+        q: 'A user typing their travel destination into a travel agency website is performing a:',
+        options: ['A. Client-side activity', 'B. Server-side activity', 'C. DNS resolution', 'D. Link-layer transmission'],
+        answer: 'A. Client-side activity',
         diff: 'easy',
       },
       {
-        q: 'In web mail, when the webserver builds a page containing emails retrieved from a mail server and sends it to the user\'s browser, this is a:',
-        options: ['A. Client-side activity', 'B. Server-side activity', 'C. P2P activity', 'D. Link-layer activity'],
-        answer: 'B. Server-side activity',
+        q: 'CGI (Common Gateway Interface) was the earliest means of allowing clients to:',
+        options: ['A. Upload images directly into HTML without a server', 'B. Request execution of programs stored at a server', 'C. Browse pages without an internet connection', 'D. Establish encrypted connections automatically'],
+        answer: 'B. Request execution of programs stored at a server',
+        diff: 'medium',
+      },
+      {
+        q: 'Microsoft\'s server-side webpage template system is called:',
+        options: ['A. PHP', 'B. CGI', 'C. JSP', 'D. ASP (Active Server Pages)'],
+        answer: 'D. ASP (Active Server Pages)',
+        diff: 'medium',
+      },
+      {
+        q: 'What security risk arises when a client blindly executes any program sent by a webserver?',
+        options: ['A. The browser becomes too slow', 'B. DNS lookups fail', 'C. Only server-side data is at risk', 'D. The client opens itself to malicious activities by the server'],
+        answer: 'D. The client opens itself to malicious activities by the server',
+        diff: 'medium',
+      },
+      {
+        q: 'In web mail, the webserver building email pages from a mail server and sending them to the browser is:',
+        options: ['A. A client-side activity', 'B. A P2P activity', 'C. A DNS lookup event', 'D. A server-side activity'],
+        answer: 'D. A server-side activity',
         diff: 'hard',
+      },
+      {
+        q: 'Java Applets work by:',
+        options: ['A. Running entirely on the server without browser involvement', 'B. Being transferred to the browser and executed there as requested in the HTML source', 'C. Replacing the browser entirely', 'D. Being stored in the router permanently'],
+        answer: 'B. Being transferred to the browser and executed there as requested in the HTML source',
+        diff: 'medium',
       },
     ],
   },
@@ -25472,96 +26260,93 @@ Jab ek webpage sirf static text dikhaye — tab browser sirf HTML fetch aur disp
   77: {
     title: 'Networking and the Internet: Layered Approach to Internet Software (I)',
     summary: `**Yeh module kya cover karta hai:**
-- Package shipping analogy
-- Internet software ke 4 layers
-- Message ka journey (top se neeche)
+Package shipping analogy, Internet software ke 4 layers, message ka journey.
 
-**Package Shipping Analogy:**
-Gift bhejne ki tarah sochein:
-1. Aap (user) — gift wrap karo, address likho
-2. Shipping company — container mein rakhti hai, airline ko deti hai
-3. Airline — container aircraft mein rakh kar destination tak bhejti hai
-Har level neeche wale ko "abstract tool" ki tarah use karta hai (aapko airline ki details nahi jaanni).
+**Package Shipping Analogy (3 levels):**
+1. Aap — gift wrap, address likho
+2. Shipping company — container mein rakh, airline ko do
+3. Airline — destination tak bhejo
 
-**Internet Software ke 4 Layers:**
-Internet communication bhi isi 3-level hierarchy ki tarah hai — lekin **4 layers** hoti hain:
-1. **Application Layer** — message prepare karta hai, destination address provide karta hai
-2. **Transport Layer** — message ko packets mein todata hai (segmentation), sequence numbers add karta hai
-3. **Network Layer** — har packet ko intermediate address assign karta hai, forwarding table use karta hai
-4. **Link Layer** — actual physical transmission handle karta hai
+Har level neeche wale ko "abstract tool" ki tarah use karta hai.
 
-**Message Flow (Origin se Destination tak):**
-- Application layer → Transport layer → Network layer → Link layer → (physical network) → destination par ulta order
+**Internet Software ke 4 Layers (upar se neeche):**
+1. Application Layer — message prepare, destination address
+2. Transport Layer — message ko packets mein todna, sequence numbers
+3. Network Layer — har packet ko direction dena (forwarding table)
+4. Link Layer — actual physical transmission
 
-**Intermediate Stops (Routers):**
-Intermediate routers par sirf **Network Layer aur Link Layer** hoti hain — Application aur Transport nahi. Yeh isliye ke router sirf packet forward karta hai, full message reassemble nahi karta.
+**Message Flow:**
+Origin: Application → Transport → Network → Link → physical network
+Destination: Link → Network → Transport → Application (reverse)
+
+**Intermediate Routers:** Sirf Network + Link layer hoti hain — Transport aur Application nahi.
 
 **Yaad rakho:**
-- 4 layers: Application, Transport, Network, Link (upar se neeche)
-- Transport layer = message ko packets mein todata hai
-- Network layer = direction decide karta hai (forwarding table)
-- Link layer = actual transmission
-- Routers par sirf Network + Link layer hoti hain`,
+- 4 layers: Application, Transport, Network, Link
+- Transport = packets mein todna (segmentation)
+- Network = direction decide (forwarding table)
+- Link = actual transmission (Ethernet ya WiFi)
+- Routers par sirf Network + Link layer`,
     questions: [
       {
-        q: 'How many software layers does the Internet use for communication, as described in this module?',
-        options: ['A. Two', 'B. Three', 'C. Four', 'D. Seven'],
-        answer: 'C. Four',
+        q: 'The Internet uses how many software layers for communication?',
+        options: ['A. Four', 'B. Three', 'C. Seven', 'D. Two'],
+        answer: 'A. Four',
         diff: 'easy',
       },
       {
-        q: 'In the package-shipping analogy, which layer corresponds to "you" wrapping and addressing the gift?',
-        options: ['A. Link layer', 'B. Network layer', 'C. Application layer', 'D. Transport layer'],
-        answer: 'C. Application layer',
-        diff: 'medium',
-      },
-      {
-        q: 'Which layer is responsible for dividing a long message into small segments (packets)?',
+        q: 'Which layer is responsible for dividing a message into small packets?',
         options: ['A. Application layer', 'B. Link layer', 'C. Network layer', 'D. Transport layer'],
         answer: 'D. Transport layer',
         diff: 'medium',
       },
       {
+        q: 'In the 4-layer Internet model, the LOWEST layer (closest to physical transmission) is:',
+        options: ['A. Link layer', 'B. Application layer', 'C. Network layer', 'D. Transport layer'],
+        answer: 'A. Link layer',
+        diff: 'medium',
+      },
+      {
         q: 'Why does the transport layer divide messages into small packets instead of sending them whole?',
-        options: ['A. To reduce the number of IP addresses used', 'B. Because a single long message would obstruct other messages at routers, while small packets can interweave', 'C. To avoid using DNS', 'D. Because the link layer cannot handle any data at all'],
-        answer: 'B. Because a single long message would obstruct other messages at routers, while small packets can interweave',
+        options: ['A. To reduce the number of IP addresses used', 'B. To avoid using DNS lookups', 'C. Because link layer cannot handle any data', 'D. A long message blocks other messages at routers; small packets can interweave'],
+        answer: 'D. A long message blocks other messages at routers; small packets can interweave',
         diff: 'hard',
       },
       {
-        q: 'Which layers are present at INTERMEDIATE ROUTERS (not at origin or destination)?',
-        options: ['A. Application and Transport only', 'B. All four layers', 'C. Network and Link layers only', 'D. Transport and Network only'],
+        q: 'Which layers are present at INTERMEDIATE ROUTERS only?',
+        options: ['A. Application and Transport', 'B. All four layers', 'C. Network and Link layers only', 'D. Transport and Network only'],
         answer: 'C. Network and Link layers only',
         diff: 'hard',
       },
       {
-        q: 'The network layer\'s primary job at each step of a packet\'s journey is:',
-        options: ['A. To reassemble the final message', 'B. To divide the message into packets', 'C. To decide which direction to forward the packet using the forwarding table', 'D. To physically transmit bits on the wire'],
-        answer: 'C. To decide which direction to forward the packet using the forwarding table',
+        q: 'The network layer\'s job at each intermediate stop is:',
+        options: ['A. Reassemble the full message', 'B. Decide the direction to forward the packet using the forwarding table', 'C. Divide the message into packets', 'D. Physically transmit bits on the wire'],
+        answer: 'B. Decide the direction to forward the packet using the forwarding table',
         diff: 'medium',
       },
       {
-        q: 'Which layer handles the actual physical transmission of packets from one machine to the next?',
-        options: ['A. Application layer', 'B. Transport layer', 'C. Network layer', 'D. Link layer'],
-        answer: 'D. Link layer',
-        diff: 'easy',
+        q: 'In the package-shipping analogy, the "you" (sender) corresponds to which Internet layer?',
+        options: ['A. Link layer', 'B. Network layer', 'C. Application layer', 'D. Transport layer'],
+        answer: 'C. Application layer',
+        diff: 'medium',
       },
       {
         q: 'A message "typically originates" in which layer?',
-        options: ['A. Link layer', 'B. Network layer', 'C. Application layer', 'D. Transport layer'],
-        answer: 'C. Application layer',
+        options: ['A. Application layer', 'B. Transport layer', 'C. Link layer', 'D. Network layer'],
+        answer: 'A. Application layer',
         diff: 'easy',
       },
       {
-        q: 'The shipping-company analogy (module 77) maps to a THREE-level hierarchy. The Internet has FOUR layers. Which layer does NOT have a direct equivalent in the shipping analogy?',
-        options: ['A. Application layer', 'B. Transport layer', 'C. Link layer', 'D. The analogy is extended — each shipping role maps to a different layer depending on context'],
-        answer: 'D. The analogy is extended — each shipping role maps to a different layer depending on context',
-        diff: 'hard',
+        q: 'At the destination, which layer collects all arriving packets and reassembles the original message?',
+        options: ['A. Link layer', 'B. Network layer', 'C. Application layer', 'D. Transport layer'],
+        answer: 'D. Transport layer',
+        diff: 'medium',
       },
       {
-        q: 'At the DESTINATION, what does the transport layer do with the received packets?',
-        options: ['A. Forward them to the next router', 'B. Collect and reassemble them into the original message using sequence numbers', 'C. Assign new IP addresses', 'D. Convert them back to HTTP format only'],
-        answer: 'B. Collect and reassemble them into the original message using sequence numbers',
-        diff: 'medium',
+        q: 'The layer that handles actual physical transmission (e.g., applying CSMA/CD on Ethernet) is:',
+        options: ['A. Application layer', 'B. Transport layer', 'C. Network layer', 'D. Link layer'],
+        answer: 'A. Link layer',
+        diff: 'easy',
       },
     ],
   },
@@ -25569,205 +26354,177 @@ Intermediate routers par sirf **Network Layer aur Link Layer** hoti hain — App
   78: {
     title: 'Networking and the Internet: Layered Approach to Internet Software (II)',
     summary: `**Yeh module kya cover karta hai:**
-- Application layer ka kaam detail mein
-- Transport layer — packets, sequence numbers
-- Network layer — forwarding, routing
-- Message ka complete journey trace karna
+Har layer ka detailed role — application, transport, network, link.
 
 **Application Layer:**
-- Message prepare karta hai aur destination address provide karta hai
-- DNS name servers use kar ke mnemonic address ko IP address mein convert karta hai (jaise shipping company ko compatible address chahiye)
-- Transport layer ko message hand over karta hai
+Message prepare karta hai aur destination address deta hai. DNS name servers se mnemonic address → IP address convert karta hai (shipping analogy: compatible address provide karna). Transport layer ko message hand over.
 
-**Transport Layer (detail):**
-- Application layer se messages accept karta hai
-- Messages ko small segments mein divide karta hai (taake routers block na hon)
-- Har segment ko **sequence number** deta hai — taake destination par sahi order mein reassemble ho sake
-- In segments ko **packets** kehte hain (network layer ko hand over hotay hain)
-- Destination par: packets receive karta hai → sequence numbers se reassemble karta hai → application layer ko deta hai
+**Transport Layer:**
+Messages → segments (packets mein todna). Sequence numbers deta hai reassembly ke liye. Network layer ko packets hand over. Destination par: packets receive karo → reassemble karo → application layer ko do.
 
 **Network Layer:**
-- Packets ko individual, unrelated messages ki tarah treat karta hai (transport layer se packets mile)
-- Har packet different path le sakta hai Internet se guzarte hue
-- Intermediate stops par: forwarding table se direction decide karta hai
-- Final destination par: realize karta hai ke packet pahunch gaya, transport layer ko deta hai
+Packets ko individual unrelated messages treat karta hai. Ek message ke packets DIFFERENT paths le sakte hain. Intermediate stops par: forwarding table se direction. Final destination par: packet pahuncha, transport layer ko do.
 
 **Link Layer:**
-- Actual communication details handle karta hai (specific network ke liye — Ethernet ya WiFi)
-- Ethernet network par: CSMA/CD apply karta hai
-- WiFi network par: CSMA/CA apply karta hai
+Specific network ki communication details handle karta hai:
+- Ethernet → CSMA/CD apply karta hai
+- WiFi → CSMA/CA apply karta hai
 
-**Summary of all 4 layers:**
-| Layer | Kya karta hai |
-|---|---|
-| Application | Message banata hai, address deta hai |
-| Transport | Packets mein toadta hai, reassemble karta hai |
-| Network | Packets ko direction deta hai (forwarding) |
-| Link | Actual transmission (Ethernet/WiFi) |
+**4 Layers Summary:**
+Application → Transport (packets/sequence) → Network (direction/forwarding) → Link (physical)
 
 **Yaad rakho:**
-- Packets = transport layer ke segments jinhein network layer treat karta hai
-- Packet ka path alag ho sakta hai original message ke baaki packets se
+- Packets = transport layer ke segments
+- Same message ke packets alag paths le sakte hain
 - Link layer hi actual wire/wireless transmission karta hai`,
     questions: [
       {
-        q: 'The application layer converts a mnemonic destination address into an IP address using:',
-        options: ['A. The forwarding table inside the router', 'B. DNS name servers within the Internet', 'C. The link layer\'s CSMA/CD protocol', 'D. The transport layer\'s sequence numbers'],
-        answer: 'B. DNS name servers within the Internet',
+        q: 'The application layer converts a mnemonic address to an IP address using:',
+        options: ['A. Router forwarding tables', 'B. The link layer CSMA/CD protocol', 'C. DNS name servers', 'D. Transport layer sequence numbers'],
+        answer: 'C. DNS name servers',
         diff: 'medium',
       },
       {
-        q: 'Once the transport layer adds sequence numbers to segments and hands them to the network layer, how does the network layer treat each packet?',
-        options: ['A. As part of one related group that must travel together', 'B. As individual, unrelated messages until they reach the transport layer at the final destination', 'C. As a single merged super-packet', 'D. Only in the order the transport layer assigned'],
-        answer: 'B. As individual, unrelated messages until they reach the transport layer at the final destination',
+        q: 'Once the transport layer hands packets to the network layer, how does the network layer treat each packet?',
+        options: ['A. As part of one group that must travel together', 'B. As a single merged super-packet', 'C. Only in the order the transport layer assigned', 'D. As individual, unrelated messages until reaching the transport layer at the final destination'],
+        answer: 'D. As individual, unrelated messages until reaching the transport layer at the final destination',
         diff: 'hard',
       },
       {
-        q: 'Is it possible for packets belonging to the SAME original message to travel different paths through the Internet?',
-        options: ['A. No, all packets must follow the same path', 'B. Yes, it is quite possible', 'C. Only if the sender requests it explicitly', 'D. Only for video streaming, not email'],
-        answer: 'B. Yes, it is quite possible',
+        q: 'Can packets from the SAME original message travel DIFFERENT paths through the Internet?',
+        options: ['A. Yes, it is quite possible', 'B. No, all packets must follow the same path', 'C. Only if the sender requests it', 'D. Only for video streaming, not email'],
+        answer: 'A. Yes, it is quite possible',
         diff: 'medium',
       },
       {
-        q: 'If the network an end machine is connected to is Ethernet, which protocol does the link layer apply?',
+        q: 'If a machine is connected to an Ethernet network, which protocol does the link layer apply?',
         options: ['A. CSMA/CA', 'B. CSMA/CD', 'C. HTTP', 'D. SMTP'],
         answer: 'B. CSMA/CD',
         diff: 'medium',
       },
       {
-        q: 'At the final destination, which layer is the first to recognize that a packet has arrived at its intended end point?',
-        options: ['A. Application layer', 'B. Transport layer', 'C. Network layer', 'D. Link layer'],
-        answer: 'C. Network layer',
+        q: 'At the FINAL DESTINATION, which layer is the FIRST to recognize the packet has arrived at its end point?',
+        options: ['A. Application layer', 'B. Transport layer', 'C. Link layer', 'D. Network layer'],
+        answer: 'A. Network layer',
         diff: 'hard',
       },
       {
         q: 'Why does the transport layer add sequence numbers to packets?',
-        options: ['A. To assign IP addresses to each packet', 'B. So that packets can be correctly reassembled into the original message at the destination', 'C. To tell routers which path to take', 'D. To increase the packet\'s hop count'],
-        answer: 'B. So that packets can be correctly reassembled into the original message at the destination',
+        options: ['A. To assign IP addresses to each packet', 'B. To tell routers which path to take', 'C. So packets can be correctly reassembled at the destination', 'D. To increase the hop count'],
+        answer: 'C. So packets can be correctly reassembled at the destination',
         diff: 'medium',
       },
       {
-        q: 'The application layer\'s responsibility regarding addressing is analogous to:',
-        options: ['A. A router updating its forwarding table', 'B. Providing an address compatible with the Internet infrastructure (like writing an address compatible with a shipping company\'s requirements)', 'C. Adding a hop count to each packet', 'D. Applying CSMA/CA to avoid collisions'],
-        answer: 'B. Providing an address compatible with the Internet infrastructure (like writing an address compatible with a shipping company\'s requirements)',
+        q: 'The application layer must provide an address compatible with the Internet infrastructure. This is analogous to:',
+        options: ['A. A router updating its forwarding table', 'B. Applying CSMA/CA to avoid collisions', 'C. Writing an address compatible with the shipping company requirements so they can deliver it', 'D. Adding a hop count value to each packet'],
+        answer: 'C. Writing an address compatible with the shipping company requirements so they can deliver it',
         diff: 'medium',
       },
       {
-        q: 'Which layer ultimately delivers the reassembled message to the correct "unit" within the application layer?',
-        options: ['A. Network layer', 'B. Link layer', 'C. Transport layer', 'D. The router\'s network layer'],
+        q: 'If a machine is connected to a WiFi network, which protocol does the link layer apply?',
+        options: ['A. CSMA/CD', 'B. SMTP', 'C. TCP', 'D. CSMA/CA'],
+        answer: 'D. CSMA/CA',
+        diff: 'medium',
+      },
+      {
+        q: 'Which layer ultimately delivers the reassembled message to the correct application unit at the destination?',
+        options: ['A. Network layer', 'B. Link layer', 'C. Transport layer', 'D. The router network layer'],
         answer: 'C. Transport layer',
         diff: 'medium',
       },
       {
-        q: 'The Internet\'s response time is measured in milliseconds despite all four layers being involved in every transmission. Why does the module highlight this as "somewhat amazing"?',
-        options: ['A. Because it proves routers are not needed', 'B. Because the complex multi-layer process with multiple stops happens so fast that many transactions appear instantaneous', 'C. Because milliseconds is actually very slow for modern computers', 'D. Because the link layer is the only layer that actually runs'],
-        answer: 'B. Because the complex multi-layer process with multiple stops happens so fast that many transactions appear instantaneous',
+        q: 'Despite 4 layers and multiple router stops, Internet response time is measured in milliseconds. The module calls this:',
+        options: ['A. Normal and expected for simple systems', 'B. A sign that routers are not actually needed', 'C. Somewhat amazing given all the activity involved', 'D. Proof that the link layer is the only layer that runs'],
+        answer: 'C. Somewhat amazing given all the activity involved',
         diff: 'hard',
-      },
-      {
-        q: 'A WiFi link layer applies which protocol instead of CSMA/CD?',
-        options: ['A. HTTP', 'B. SMTP', 'C. CSMA/CA', 'D. TCP'],
-        answer: 'C. CSMA/CA',
-        diff: 'easy',
       },
     ],
   },
 
   79: {
-    title: 'Networking and the Internet: Layered Approach to Internet Software (III) — Port Numbers',
+    title: 'Networking and the Internet: Layered Approach — Port Numbers',
     summary: `**Yeh module kya cover karta hai:**
-- Network layer ki detail (forwarding vs routing)
-- Hop count
-- Port numbers
+Network layer detail (forwarding vs routing), hop count, port numbers.
 
-**Network Layer — 2 Main Tasks:**
-1. **Forwarding** — packets ko Internet ke through relay karna
-2. **Routing** — forwarding table ko update karna (changing conditions reflect karna)
-   - Example: Router malfunction ho gaya → traffic us direction mein nahi bhejna
-   - Network congested ho gaya → blockage se door rasta lenaa
+**Network Layer — 2 Tasks:**
+1. Forwarding — packets ko relay karna (direction dena)
+2. Routing — forwarding table update karna (changing conditions pe)
 
 **Hop Count (Time to Live):**
-- Har packet ke saath ek value attach hoti hai: **hop count** (ya "time to live")
-- Yeh ek limit hai — kitni baar is packet ko forward kiya ja sakta hai
-- Har baar network layer packet forward kare, hop count **1 se minus** hota hai
-- Jab hop count 0 ho jaye → packet automatically discard ho jata hai
-- **Kyun?** — Taake packets Internet mein endlessly circle karte na rahein
-- Initial hop count = **64** (sufficient hai aaj ke Internet ke liye bhi)
+Har packet ke saath value attach hoti hai = hop count. Har forward par 1 minus hota hai. Zero hone par packet discard. Default initial value = 64. Packets endless circle karne se bachata hai.
 
 **Port Numbers:**
-- Destination par, transport layer decide karta hai ke message application layer ke KAUNSE unit ko dena hai
-- Yeh **port numbers** se hota hai — har application unit ka ek unique port number hota hai
-- Port number message ke address mein append hota hai journey shuru hone se pehle
-- Common (universally accepted) port numbers:
-  - **HTTP server = port 80**
-  - **SMTP mail server = port 25**
-- Users ko port numbers ki parwah nahi hoti — browsers automatically port 80 assume karte hain HTTP ke liye
+Transport layer decide karta hai destination par message kaunse application unit ko dena hai — port numbers se. Common accepted port numbers:
+- HTTP server = port 80
+- SMTP mail server = port 25
+Users ko manually specify nahi karna padta — browsers automatically assume karte hain.
+
+**Note:** Yeh port numbers I/O ports (hardware) se DIFFERENT hain.
 
 **Yaad rakho:**
-- Hop count = packet ki "life limit" (default 64)
-- Forwarding = routing table se direction decide
-- Routing = routing table ko update karna
-- Port 80 = HTTP, Port 25 = SMTP
-- Port numbers NOT related to I/O ports (hardware ports)`,
+- Forwarding = relay packets; Routing = update forwarding table
+- Hop count default = 64
+- Port 80 = HTTP; Port 25 = SMTP
+- Port numbers ≠ hardware I/O ports`,
     questions: [
       {
-        q: 'What is the purpose of the "hop count" value attached to each packet?',
-        options: ['A. To count the number of users who have viewed the packet', 'B. To limit the number of times a packet can be forwarded, preventing it from circling the Internet endlessly', 'C. To increase packet speed at each router', 'D. To assign a port number to the packet'],
-        answer: 'B. To limit the number of times a packet can be forwarded, preventing it from circling the Internet endlessly',
+        q: 'What is the purpose of the "hop count" value in each packet?',
+        options: ['A. Count how many users viewed the packet', 'B. Limit the number of times a packet can be forwarded, preventing endless loops', 'C. Assign a port number to the packet', 'D. Increase packet speed at each router'],
+        answer: 'B. Limit the number of times a packet can be forwarded, preventing endless loops',
         diff: 'medium',
       },
       {
         q: 'What happens to a packet\'s hop count each time the network layer forwards it?',
-        options: ['A. It doubles', 'B. It resets to 64', 'C. It is decremented by one', 'D. It stays the same'],
+        options: ['A. Doubles', 'B. Resets to 64', 'C. It is decremented by one', 'D. Stays the same'],
         answer: 'C. It is decremented by one',
         diff: 'easy',
       },
       {
-        q: 'An initial hop count of 64 is considered:',
-        options: ['A. Too small for modern Internet', 'B. More than sufficient to allow a packet to find its way through today\'s ISPs', 'C. The exact number of routers in the Internet', 'D. Only sufficient for LAN communication'],
-        answer: 'B. More than sufficient to allow a packet to find its way through today\'s ISPs',
+        q: 'The initial hop count value of 64 is considered:',
+        options: ['A. Too small for modern Internet', 'B. The exact number of routers in the Internet', 'C. More than sufficient to route through today\'s Internet', 'D. Only sufficient for LAN communication'],
+        answer: 'C. More than sufficient to route through today\'s Internet',
         diff: 'medium',
       },
       {
-        q: 'What is the difference between "forwarding" and "routing" in the context of the network layer?',
-        options: ['A. They are identical terms with no difference', 'B. Forwarding = relaying packets through the Internet; Routing = updating the forwarding table to reflect changing conditions', 'C. Forwarding = updating the table; Routing = sending packets', 'D. Forwarding is done by the transport layer; routing by the link layer'],
-        answer: 'B. Forwarding = relaying packets through the Internet; Routing = updating the forwarding table to reflect changing conditions',
+        q: '"Routing" in the network layer means:',
+        options: ['A. Physically sending packets across the wire', 'B. Dividing messages into small segments', 'C. Updating the forwarding table to reflect changing network conditions', 'D. Assigning port numbers to applications'],
+        answer: 'C. Updating the forwarding table to reflect changing network conditions',
         diff: 'hard',
       },
       {
-        q: 'Port numbers are used to determine:',
-        options: ['A. Which path a packet takes through the Internet', 'B. Which unit within the application layer should receive an incoming message at the destination', 'C. The hop count value', 'D. Which DNS server to contact'],
-        answer: 'B. Which unit within the application layer should receive an incoming message at the destination',
+        q: 'Port numbers are used to identify:',
+        options: ['A. Which path a packet takes through routers', 'B. The hop count of each packet', 'C. The DNS server to contact', 'D. Which unit within the application layer should receive an incoming message'],
+        answer: 'D. Which unit within the application layer should receive an incoming message',
         diff: 'medium',
       },
       {
-        q: 'The default port number for an HTTP web server is:',
-        options: ['A. 25', 'B. 64', 'C. 80', 'D. 443'],
-        answer: 'C. 80',
+        q: 'The default port number for HTTP web servers is:',
+        options: ['A. 80', 'B. 25', 'C. 64', 'D. 443'],
+        answer: 'A. 80',
         diff: 'medium',
       },
       {
-        q: 'The default port number for an SMTP mail server is:',
-        options: ['A. 80', 'B. 25', 'C. 64', 'D. 21'],
-        answer: 'B. 25',
+        q: 'The default port number for SMTP mail servers is:',
+        options: ['A. 80', 'B. 64', 'C. 443', 'D. 25'],
+        answer: 'D. 25',
         diff: 'medium',
       },
       {
-        q: 'Why do ordinary users rarely need to know or specify port numbers when browsing?',
-        options: ['A. Port numbers do not exist in practice', 'B. Common applications have universally accepted port numbers that software uses automatically', 'C. Routers assign port numbers at every hop', 'D. Port numbers are embedded in IP addresses'],
-        answer: 'B. Common applications have universally accepted port numbers that software uses automatically',
+        q: 'Why do users rarely need to manually specify port numbers when browsing?',
+        options: ['A. Port numbers do not exist in practice', 'B. Routers assign port numbers at every hop', 'C. Common applications have universally accepted port numbers that software uses automatically', 'D. Port numbers are embedded inside IP addresses'],
+        answer: 'C. Common applications have universally accepted port numbers that software uses automatically',
         diff: 'medium',
       },
       {
-        q: 'A router malfunctions and can no longer forward traffic in one direction. Which network layer task updates the forwarding tables of neighboring routers to reflect this change?',
-        options: ['A. Forwarding', 'B. Link-layer switching', 'C. Routing', 'D. Port assignment'],
+        q: 'When a router malfunctions, which network layer task updates neighboring routers\' forwarding tables?',
+        options: ['A. Forwarding', 'B. Port assignment', 'C. Routing', 'D. Link-layer switching'],
         answer: 'C. Routing',
         diff: 'hard',
       },
       {
-        q: 'This module clarifies that port numbers discussed here are NOT related to:',
-        options: ['A. SMTP servers', 'B. HTTP servers', 'C. The I/O ports discussed in hardware (Chapter 2)', 'D. Application layer units'],
-        answer: 'C. The I/O ports discussed in hardware (Chapter 2)',
+        q: 'This module clarifies that network-layer port numbers are NOT the same as:',
+        options: ['A. SMTP server port identifiers', 'B. HTTP server port identifiers', 'C. Application layer port identifiers', 'D. Hardware I/O ports discussed in Chapter 2'],
+        answer: 'D. Hardware I/O ports discussed in Chapter 2',
         diff: 'hard',
       },
     ],
@@ -25776,116 +26533,97 @@ Intermediate routers par sirf **Network Layer aur Link Layer** hoti hain — App
   80: {
     title: 'Networking and the Internet: TCP/IP Protocol Suite',
     summary: `**Yeh module kya cover karta hai:**
-- OSI model (7 layers) vs Internet's 4-layer model
-- TCP/IP protocol suite
-- TCP vs UDP (transport layer ke 2 options)
-- IP's role (forwarding + routing) aur hop count
+OSI model, TCP/IP suite, TCP vs UDP, IP aur hop count.
 
 **OSI Model:**
-- **OSI (Open System Interconnection)** — International Organization for Standardization (ISO) ka standard
-- 7 layers ka hierarchy (Internet ke 4 ki jagah)
-- Often quoted hai lekin Internet ka de facto standard 4-layer TCP/IP model ban gaya — OSI aaya hi tab jab 4-layer approach already established ho chuki thi
+ISO ka standard — 7 layers. Often quoted lekin Internet ka de facto standard 4-layer TCP/IP model ban gaya (OSI aaya tab jab 4-layer already established thi).
 
 **TCP/IP Protocol Suite:**
-- Internet communication ke liye protocols ka collection
-- Misleading naam — sirf TCP aur IP nahi hain, bahut saare protocols hain
-- **TCP (Transmission Control Protocol)** aur **IP (Internet Protocol)** sirf 2 protocols hain is bade collection mein
+Collection of protocol standards — sirf TCP aur IP nahi, bahut saare. Misleading naam.
+- TCP = Transmission Control Protocol (transport layer)
+- UDP = User Datagram Protocol (transport layer — alternative)
+- IP = Internet Protocol (network layer)
 
-**Transport Layer: TCP vs UDP**
-Dono transport layer ke versions hain:
+**TCP vs UDP:**
 | | TCP | UDP |
 |---|---|---|
-| Connection | Connection establish karta hai pehle (reliable) | Connectionless — sirf bhejta hai |
-| Reliability | Reliable — acknowledgments + retransmission | Unreliable — no guarantee |
-| Speed/Efficiency | Less efficient | More efficient |
-| Flow control | Haan | Nahi |
-| Congestion control | Haan | Nahi |
-| Use cases | Email (SMTP) | DNS lookups, VoIP |
+| Connection | Establishes connection first | Connectionless |
+| Reliability | Reliable (acknowledgments + retransmission) | Unreliable |
+| Efficiency | Less efficient | More efficient |
+| Flow/Congestion control | Yes | No |
+| Use case | Email (SMTP) | DNS, VoIP |
 
-**TCP ki details:**
-- Pehle destination ko message bhejta hai "message aane wala hai"
-- Destination acknowledge kare tab actual message bheja jata hai
-- Transport layers dono ends par mil kar kaam karte hain
+**IP:**
+Network layer standard. Tasks: Forwarding + Routing. Hop count attach karta hai (initial 64).
 
-**UDP ki details:**
-- Connectionless — message bheja aur bhool gaya
-- Destination bhi operational hai ya nahi — pata nahi
-- Isi liye "unreliable protocol" kehte hain
-
-**IP (Internet Protocol):**
-- Network layer standard hai
-- 2 tasks: **Forwarding** + **Routing**
-- **Hop count** value attach karta hai (initial = 64), har forward par 1 minus hota hai
-
-**Flow Control vs Congestion Control:**
-- **Flow control** = TCP transmission rate slow kar deta hai taake destination overwhelm na ho
-- **Congestion control** = TCP rate adjust karta hai taake network congestion reduce ho
+**Flow Control:** TCP transmission rate slow kar ke destination overwhelm hone se bachata hai.
+**Congestion Control:** TCP rate adjust karta hai network congestion reduce karne ke liye.
 
 **Yaad rakho:**
-- OSI = 7 layers, ISO ka, widely referenced lekin replaced
-- TCP = reliable, connection-oriented; UDP = unreliable, connectionless
-- UDP better hai DNS + VoIP ke liye; TCP better hai email ke liye
-- IP = network layer, handles forwarding + routing`,
+- OSI = 7 layers, ISO ka, less used
+- TCP = reliable, connection-oriented
+- UDP = unreliable, connectionless, better for DNS/VoIP
+- TCP for email because email not time-sensitive`,
     questions: [
       {
-        q: 'The OSI reference model was produced by which organization?',
+        q: 'The OSI reference model was developed by which organization?',
         options: ['A. ICANN', 'B. ISO (International Organization for Standardization)', 'C. Netscape', 'D. IEEE'],
         answer: 'B. ISO (International Organization for Standardization)',
         diff: 'medium',
       },
       {
-        q: 'Why did the OSI 7-layer model fail to replace the Internet\'s 4-layer approach as the actual standard?',
-        options: ['A. The OSI model was too simple', 'B. The 4-layer approach had already become the de facto Internet standard before OSI arrived', 'C. OSI was never published publicly', 'D. OSI only worked for wireless networks'],
-        answer: 'B. The 4-layer approach had already become the de facto Internet standard before OSI arrived',
+        q: 'Why did the OSI 7-layer model NOT replace the Internet\'s 4-layer approach?',
+        options: ['A. OSI was too simple to implement', 'B. The 4-layer approach was already the de facto Internet standard before OSI arrived', 'C. OSI only worked for wireless networks', 'D. OSI was never published'],
+        answer: 'B. The 4-layer approach was already the de facto Internet standard before OSI arrived',
         diff: 'hard',
       },
       {
         q: 'TCP is called a "reliable protocol" because:',
-        options: ['A. It sends faster than UDP', 'B. Transport layers at both origin and destination use acknowledgments and retransmissions to ensure all segments arrive', 'C. It never loses any data regardless of network conditions', 'D. It operates only on wired networks'],
-        answer: 'B. Transport layers at both origin and destination use acknowledgments and retransmissions to ensure all segments arrive',
+        options: ['A. It never loses data under any network condition', 'B. It only operates on wired networks', 'C. TCP transport layers at both ends use acknowledgments and retransmissions to ensure delivery', 'D. It sends faster than UDP'],
+        answer: 'C. TCP transport layers at both ends use acknowledgments and retransmissions to ensure delivery',
         diff: 'medium',
       },
       {
-        q: 'UDP is described as a "connectionless protocol" because:',
-        options: ['A. It cannot connect to any server', 'B. It just sends the message to the given address without first establishing a connection or verifying the destination is operational', 'C. It requires a physical cable to function', 'D. It only works with multicast'],
-        answer: 'B. It just sends the message to the given address without first establishing a connection or verifying the destination is operational',
+        q: 'UDP is "connectionless" because:',
+        options: ['A. UDP requires a physical cable', 'B. UDP only works with multicast', 'C. It just sends the message without establishing a prior connection or checking if the destination is operational', 'D. UDP cannot connect to any server'],
+        answer: 'C. It just sends the message without establishing a prior connection or checking if the destination is operational',
         diff: 'medium',
       },
       {
-        q: 'Which protocol is specifically mentioned as the protocol of choice for DNS lookups and VoIP?',
-        options: ['A. TCP', 'B. HTTP', 'C. UDP', 'D. SMTP'],
-        answer: 'C. UDP',
+        q: 'Which protocol is explicitly stated as the preferred choice for DNS lookups and VoIP?',
+        options: ['A. TCP', 'B. HTTP', 'C. SMTP', 'D. UDP'],
+        answer: 'D. UDP',
         diff: 'medium',
       },
       {
-        q: 'Email (SMTP) uses which transport protocol, and why?',
-        options: ['A. UDP, because email is time-sensitive', 'B. TCP, because email is less time-sensitive and benefits from TCP\'s reliability', 'C. HTTP, because email goes through a web browser', 'D. IP directly, bypassing transport layer'],
-        answer: 'B. TCP, because email is less time-sensitive and benefits from TCP\'s reliability',
+        q: 'Why does email (SMTP) use TCP instead of UDP?',
+        options: ['A. Email is highly time-sensitive so UDP is too slow', 'B. Email is less time-sensitive and benefits from TCP\'s reliability guarantee', 'C. UDP cannot handle text messages', 'D. TCP is faster than UDP for all tasks'],
+        answer: 'B. Email is less time-sensitive and benefits from TCP\'s reliability guarantee',
         diff: 'hard',
       },
       {
         q: '"Flow control" in TCP means:',
-        options: ['A. TCP stops all routing in the network', 'B. TCP can reduce its transmission rate to avoid overwhelming the destination', 'C. TCP counts the number of hops taken', 'D. TCP assigns port numbers'],
-        answer: 'B. TCP can reduce its transmission rate to avoid overwhelming the destination',
-        diff: 'medium',
-      },
-      {
-        q: '"Congestion control" in TCP means:',
-        options: ['A. TCP blocks all other protocols', 'B. TCP adjusts its transmission rate to alleviate congestion between sender and destination', 'C. TCP sends duplicate packets to ensure delivery', 'D. TCP replaces UDP during high traffic'],
-        answer: 'B. TCP adjusts its transmission rate to alleviate congestion between sender and destination',
+        options: ['A. TCP stops all routing in the network', 'B. TCP counts the number of hops taken by each packet', 'C. TCP can REDUCE its transmission rate to avoid overwhelming the destination', 'D. TCP assigns port numbers to each session'],
+        answer: 'C. TCP can REDUCE its transmission rate to avoid overwhelming the destination',
         diff: 'medium',
       },
       {
         q: 'IP (Internet Protocol) is the standard for which layer?',
-        options: ['A. Transport layer', 'B. Application layer', 'C. Network layer', 'D. Link layer'],
-        answer: 'C. Network layer',
+        options: ['A. Network layer', 'B. Application layer', 'C. Link layer', 'D. Transport layer'],
+        answer: 'A. Network layer',
         diff: 'easy',
       },
       {
-        q: 'The TCP/IP "protocol suite" name is described as "rather misleading" in this module because:',
-        options: ['A. TCP and IP are not real protocols', 'B. The name suggests only two protocols exist, but it actually refers to a large collection of protocol standards', 'C. TCP and IP work on different networks exclusively', 'D. The suite only works with IPv4, not IPv6'],
-        answer: 'B. The name suggests only two protocols exist, but it actually refers to a large collection of protocol standards',
-        diff: 'hard',
+        q: 'The TCP/IP name is described as "misleading" because:',
+        options: ['A. TCP and IP are not real protocols', 'B. TCP and IP work on different networks exclusively', 'C. The name suggests only two protocols but it is a large collection of standards', 'D. The suite only supports IPv4'],
+        answer: 'C. The name suggests only two protocols but it is a large collection of standards',
+        diff: 'medium',
+      },
+      {
+        q: '"Congestion control" in TCP means:',
+        options: ['A. TCP blocks all other protocols during high traffic', 'B. TCP adjusts its transmission rate to reduce congestion between sender and destination', 'C. TCP sends duplicate packets to ensure delivery', 'D. TCP replaces UDP during high network load'],
+        answer: 'B. TCP adjusts its transmission rate to reduce congestion between sender and destination',
+        diff: 'medium',
       },
     ],
   },
@@ -25893,118 +26631,89 @@ Dono transport layer ke versions hain:
   81: {
     title: 'Networking and the Internet: Security — Forms of Attacks',
     summary: `**Yeh module kya cover karta hai:**
-- Malware aur uski types
-- Virus, Worm, Trojan Horse, Spyware
-- Phishing
-- Denial of Service (DoS) attack aur botnet
-- Spam
+Malware types, virus, worm, Trojan horse, spyware, phishing, DoS attack, botnet, spam.
 
-**Malware:**
-Network connections se computer attack karne wali malicious software collectively **malware** kehlatati hai. 2 tarike:
-1. Computer par transfer ho kar execute hoti hai
-2. Doosre computer se remotely attack karta hai
+**Malware Types:**
 
-**Types of Malware:**
+**Virus:** Khud ko existing programs mein insert karta hai. Host program run ho → virus bhi run. Zyada tar: copies banata hai. Some: OS degrade, storage erase.
 
-**Virus:**
-- Apne aap ko existing programs mein insert karta hai
-- Jab "host" program execute ho, virus bhi execute hota hai
-- Zyada tar: apne aap ko aur programs mein copy karta hai
-- Kuch viruses: devastating — OS ko degrade karte hain, storage erase karte hain
+**Worm:** Autonomous — khud network se travel, copies forward karta hai. Characteristic: explosion of copies — legitimate apps ki performance degrade, network overload.
 
-**Worm:**
-- **Autonomous** program — khud network se transfer hota hai, doosre computers mein jagah banata hai, copies forward karta hai
-- Worm ki ek characteristic: **explosion of copies** — legitimate applications ki performance degrade ho jati hai, poora network overload ho sakta hai
+**Trojan Horse:** Desirable program ban kar aata hai (game, utility). Inside: harmful activities. Kabhi dormant (specific date par activate). Common method: email attachments.
 
-**Trojan Horse:**
-- Desirable program ki tarah disguise karke computer mein daakhil hota hai (game, utility)
-- Andar aane ke baad harmful activities perform karta hai
-- Kabhi kabhi dormant rehta hai (specific date ya event par activate)
-- Common method: **email attachments** — isliye unknown sources ke attachments kabhi nahi kholne chahiye
+**Spyware (= Sniffing software):** Computer ki activities secretly record karta hai, attacker ko report. Malicious use: passwords/credit cards ke liye keystrokes record.
 
-**Spyware (= Sniffing Software):**
-- Computer ki activities record karta hai, attacker ko report karta hai
-- Malicious use: passwords ya credit card numbers ke liye keystrokes record karna
-- **Phishing** alag hai — information directly maangna (fishing analogy: bait cast karo)
+**Phishing:** Information directly maangna (disguised as bank etc.) — fishing analogy: "bait cast karo."
 
-**Denial of Service (DoS) Attack:**
-- Target computer ko messages se overload karna
-- Attacker pehle unsuspecting computers par software plant karta hai → signal dene par saare milkar target ko messages se swamp karte hain
-- Yeh compromised computers = **botnet**
-- Isliye PC ko internet se tab bhi connected chod dena safe nahi — intruder 20 minutes mein exploit attempt karta hai
+**DoS (Denial of Service):** Target ko messages se overload karna. Attacker pehle software plant karta hai unsuspecting computers (= botnet) par — signal par saare milkar target swamp karte hain.
 
-**Spam:**
-- Unwanted junk email
-- DoS se different: volume system ko nahi, user ko overwhelm karta hai
-- Phishing aur Trojan horse spread karne ka medium bhi hai
+**Spam:** Junk email. System nahi, user ko overwhelm karta hai. Phishing aur Trojan spread ka medium.
 
 **Yaad rakho:**
-- Virus = programs mein insert hota hai (host needed)
-- Worm = autonomous, self-propagating (no host needed)
+- Virus = host program needed; Worm = autonomous (no host)
 - Trojan = disguised as useful software
-- Spyware = records activities (secret)
-- Phishing = information directly maangta hai (disguised as legit source)
-- DoS = messages se overload; Botnet = compromised PCs used for DoS
-- Spam = junk email, user ko overwhelm karta hai`,
+- Spyware = secret recording; Phishing = explicit asking
+- Botnet = compromised PCs used for DoS
+- PC connected to Internet = exploited within 20 minutes`,
     questions: [
       {
-        q: 'A virus differs from a worm primarily because a virus:',
-        options: ['A. Can spread autonomously through a network on its own', 'B. Must insert itself into an existing host program and execute when that program runs', 'C. Only attacks mobile phones', 'D. Always arrives via email'],
-        answer: 'B. Must insert itself into an existing host program and execute when that program runs',
+        q: 'A virus differs from a worm primarily because:',
+        options: ['A. Worms need a host program; viruses do not', 'B. Viruses only attack mobile phones', 'C. Viruses are always sent via email', 'D. A virus must insert itself into a host program and runs when that program executes'],
+        answer: 'D. A virus must insert itself into a host program and runs when that program executes',
         diff: 'medium',
       },
       {
-        q: 'A worm\'s characteristic "explosion of copies" causes:',
-        options: ['A. Improved network performance', 'B. Degraded performance of legitimate applications and potential overload of the entire network', 'C. Increased email delivery speed', 'D. Better DNS resolution'],
-        answer: 'B. Degraded performance of legitimate applications and potential overload of the entire network',
+        q: 'A worm is described as "autonomous" because it:',
+        options: ['A. Always arrives via email only', 'B. Transfers itself through a network and forwards copies to other computers without needing a host program', 'C. Requires user interaction to spread', 'D. Only infects operating system files'],
+        answer: 'B. Transfers itself through a network and forwards copies to other computers without needing a host program',
         diff: 'medium',
       },
       {
-        q: 'A Trojan horse program is dangerous because:',
-        options: ['A. It is openly malicious and clearly labeled as dangerous', 'B. It disguises itself as a desirable or useful program, performing harmful activities once inside', 'C. It only affects operating system files immediately', 'D. It can only arrive through physical media, not the internet'],
-        answer: 'B. It disguises itself as a desirable or useful program, performing harmful activities once inside',
+        q: 'A Trojan horse program is dangerous primarily because:',
+        options: ['A. It openly labels itself as malware', 'B. It spreads only through WiFi networks', 'C. It disguises itself as a desirable program and performs harmful activities once inside', 'D. It can only arrive through physical storage media'],
+        answer: 'C. It disguises itself as a desirable program and performs harmful activities once inside',
         diff: 'easy',
       },
       {
-        q: 'What is the key difference between spyware and phishing?',
-        options: ['A. Spyware steals money; phishing steals files', 'B. Spyware secretly records activities; phishing explicitly asks for information by pretending to be a legitimate entity', 'C. They are identical techniques', 'D. Phishing only works on mobile devices'],
-        answer: 'B. Spyware secretly records activities; phishing explicitly asks for information by pretending to be a legitimate entity',
+        q: 'The key difference between spyware and phishing is:',
+        options: ['A. Spyware deletes files; phishing encrypts them', 'B. They are identical techniques with different names', 'C. Phishing only works on mobile devices', 'D. Spyware secretly records activities; phishing explicitly asks for information pretending to be legitimate'],
+        answer: 'D. Spyware secretly records activities; phishing explicitly asks for information pretending to be legitimate',
         diff: 'hard',
       },
       {
-        q: 'What is a "botnet"?',
-        options: ['A. A type of firewall', 'B. A collection of compromised, unsuspecting computers used by an attacker to launch a DoS attack', 'C. A group of legitimate servers sharing load', 'D. A P2P file sharing network'],
-        answer: 'B. A collection of compromised, unsuspecting computers used by an attacker to launch a DoS attack',
+        q: 'A "botnet" in the context of DoS attacks refers to:',
+        options: ['A. A type of firewall system', 'B. Compromised, unsuspecting computers used by an attacker to flood a target with messages', 'C. A secure P2P file sharing network', 'D. A collection of legitimate load-balancing servers'],
+        answer: 'B. Compromised, unsuspecting computers used by an attacker to flood a target with messages',
         diff: 'medium',
       },
       {
-        q: 'A Denial of Service (DoS) attack works by:',
-        options: ['A. Stealing passwords silently', 'B. Overloading a target computer with a large volume of messages', 'C. Inserting a virus into the target\'s programs', 'D. Disguising malware as a useful application'],
+        q: 'A DoS (Denial of Service) attack works by:',
+        options: ['A. Inserting a virus into the target\'s programs', 'B. Overloading a target computer with a large volume of messages', 'C. Stealing passwords silently from the target', 'D. Disguising malware as a useful application'],
         answer: 'B. Overloading a target computer with a large volume of messages',
         diff: 'easy',
       },
       {
-        q: 'Why does this module warn users NOT to leave their PC connected to the Internet when not in use?',
-        options: ['A. It wastes electricity', 'B. An unprotected PC connected to the Internet can be exploited within approximately 20 minutes of connection', 'C. DNS lookups fail when no one is using the machine', 'D. The PC automatically installs updates that may be harmful'],
-        answer: 'B. An unprotected PC connected to the Internet can be exploited within approximately 20 minutes of connection',
-        diff: 'hard',
-      },
-      {
-        q: 'How does spam PRIMARILY differ from a DoS attack?',
-        options: ['A. Spam uses fewer messages', 'B. Spam\'s volume overwhelms the person receiving it, not the computer system itself', 'C. DoS only targets mobile phones', 'D. Spam is legal in all countries'],
-        answer: 'B. Spam\'s volume overwhelms the person receiving it, not the computer system itself',
+        q: 'This module warns that leaving a PC connected to the Internet unused is risky because:',
+        options: ['A. It wastes electricity automatically', 'B. DNS lookups fail when no one uses the machine', 'C. An unprotected PC can be exploited within approximately 20 minutes of being connected', 'D. The PC automatically downloads harmful updates'],
+        answer: 'C. An unprotected PC can be exploited within approximately 20 minutes of being connected',
         diff: 'medium',
       },
       {
-        q: 'Trojan horses most commonly arrive on computers through:',
-        options: ['A. Wired LAN cables', 'B. Email attachments from enticing or unknown sources', 'C. Router firmware updates', 'D. DNS cache poisoning'],
-        answer: 'B. Email attachments from enticing or unknown sources',
+        q: 'How does spam PRIMARILY differ from a DoS attack?',
+        options: ['A. Spam targets the person receiving it, not the computer system itself', 'B. Spam uses more messages than DoS', 'C. DoS only targets mobile phones, not PCs', 'D. Spam is always legal in all countries'],
+        answer: 'A. Spam targets the person receiving it, not the computer system itself',
+        diff: 'medium',
+      },
+      {
+        q: 'Trojan horses most commonly reach victim computers through:',
+        options: ['A. Wired LAN cables only', 'B. Router firmware updates', 'C. DNS cache poisoning', 'D. Email attachments from enticing or unknown sources'],
+        answer: 'D. Email attachments from enticing or unknown sources',
         diff: 'easy',
       },
       {
-        q: 'The term "phishing" is a play on the word "fishing" because:',
-        options: ['A. It targets fish-related websites', 'B. The attacker casts numerous "lines" (fake messages) hoping someone will "take the bait" and give up their information', 'C. It works only on ocean-based servers', 'D. The process requires physical equipment like fishing gear'],
-        answer: 'B. The attacker casts numerous "lines" (fake messages) hoping someone will "take the bait" and give up their information',
+        q: 'The word "phishing" is derived from "fishing" because:',
+        options: ['A. It targets servers located near oceans', 'B. It requires specialized fishing equipment', 'C. The attacker casts many "lines" hoping someone takes the bait and provides their information', 'D. It only works in coastal countries'],
+        answer: 'C. The attacker casts many "lines" hoping someone takes the bait and provides their information',
         diff: 'medium',
       },
     ],
@@ -26013,120 +26722,90 @@ Network connections se computer attack karne wali malicious software collectivel
   82: {
     title: 'Networking and the Internet: Protection and Cures',
     summary: `**Yeh module kya cover karta hai:**
-- Firewall aur spoofing
-- Spam filters
-- Proxy server
-- Auditing software
-- Antivirus software
+Firewall, spoofing, spam filters, proxy server, auditing software, antivirus.
 
 **Firewall:**
-Network traffic filter karne wala program — usually gateway par install hota hai:
-- Outgoing messages block kar sakta hai (specific destination addresses)
-- Incoming messages block kar sakta hai (known bad sources — DoS attack terminate karne ka tool)
-- Ek common role: agar incoming message ka origin address region ke ANDAR ka ho — block karo (kyunke yeh indicate karta hai ke koi outsider khud ko insider bata raha hai — **spoofing**)
-- Individual computers par bhi firewall lagta hai
+Network traffic filter — gateway par. Outgoing ya incoming messages block kar sakta hai. Common role: origin address region ke ANDAR ka ho → block karo (spoofing detect karna). Individual computers par bhi lagta hai.
 
-**Spoofing:**
-Khud ko koi aur dikhana = spoofing. Firewall isko detect karta hai origin address check kar ke.
+**Spoofing:** Khud ko kisi aur ki jagah dikhana.
 
-**Spam Filters:**
-- Specifically designed firewalls jo unwanted email block karti hain
-- Sophisticated techniques use karti hain desired vs spam emails distinguish karne ke liye
-- Kuch spam filters **training** se seekhte hain — user examples deta hai, filter apne aap decide karna seekhta hai (AI/probability theory ka use)
+**Spam Filters:** Specialized firewalls for email — AI/probability theory use karte hain.
 
 **Proxy Server:**
-- Client aur server ke darmiyan intermediary software
-- Bina proxy: client directly server se baat karta hai → server client ke baare mein bahut kuch seekh sakta hai (organization ki internal structure)
-- Proxy ke saath:
-  - Client → proxy server → actual server
-  - Actual server ko sirf proxy server ka existence pata hota hai (asli client ka pata nahi)
-  - 2 advantages:
-    1. Server ko asli client ki jankari nahi milti
-    2. Proxy saare incoming messages filter kar sakta hai (e.g., FTP proxy known viruses check karta hai)
+Client aur server ke darmiyan intermediary. Bina proxy: server client ke baare mein info gather kar sakta hai. Proxy ke saath: server sirf proxy ko jaanta hai (asli client hidden). 2 advantages: (1) client identity protected, (2) messages filter ho sakti hain (e.g., FTP proxy = virus check).
 
 **Auditing Software:**
-- Administrator ka primary tool
-- Firewall ki activities monitor karta hai
-- Message traffic patterns analyze karta hai (sudden increase = alert)
-- Irregularities detect karta hai
+Administrator ka primary tool — firewall activities monitor, traffic patterns analyze, irregularities detect.
 
 **Antivirus Software:**
-- Known viruses aur other infections detect aur remove karta hai
-- Virus-specific, spyware-specific products alag hote hain
-- **Important:** Regularly update karna zaroori hai (naye viruses aate rehte hain)
-- Update karne ke baad bhi 100% guarantee nahi — naya virus pehle kuch computers infect karta hai, tab vaccine banta hai
+Known viruses detect aur remove. Regularly update zaroori (naye viruses aate rehte hain). 100% guarantee nahi — naya virus pehle infect karta hai tab vaccine banta hai.
 
-**Wise user practices:**
-- Unknown sources ke email attachments mat kholo
-- Software reliability confirm karo pehle download karo
-- Pop-up ads respond mat karo
-- PC ko Internet se disconnect karo jab zaroorat na ho
+**Wise Practices:**
+Unknown attachments mat kholo. Software reliability pehle confirm karo. Pop-ups respond mat karo. PC disconnect karo jab zaroorat na ho.
 
 **Yaad rakho:**
-- Firewall = traffic filter, gateway par
-- Spoofing = khud ko kisi aur ki jagah dikhana
-- Spam filter = specialized firewall for emails
-- Proxy server = client ki identity chhupaata hai
+- Firewall = traffic filter; Spoofing = fake identity
+- Proxy server = client identity chhupaata hai + filters messages
 - Antivirus = must be regularly updated`,
     questions: [
       {
-        q: 'A firewall installed at an organization\'s gateway that blocks incoming messages with origin addresses INSIDE the region serves to prevent:',
-        options: ['A. DNS lookups from failing', 'B. Spoofing — where an outsider pretends to be an insider by faking an internal origin address', 'C. All legitimate traffic from entering', 'D. Email from being delivered'],
-        answer: 'B. Spoofing — where an outsider pretends to be an insider by faking an internal origin address',
+        q: 'A firewall at an organization\'s gateway blocks incoming messages with origin addresses INSIDE the region to prevent:',
+        options: ['A. All legitimate traffic from entering', 'B. DNS lookups from failing', 'C. Email delivery being interrupted', 'D. Spoofing — where an outsider pretends to be an insider'],
+        answer: 'D. Spoofing — where an outsider pretends to be an insider',
         diff: 'hard',
       },
       {
-        q: 'What makes spam filters different from general firewalls?',
-        options: ['A. Spam filters block all email', 'B. Spam filters are specialized firewalls designed specifically to block unwanted email using sophisticated distinction techniques', 'C. Spam filters only work on web traffic', 'D. Spam filters require no configuration'],
-        answer: 'B. Spam filters are specialized firewalls designed specifically to block unwanted email using sophisticated distinction techniques',
-        diff: 'medium',
-      },
-      {
-        q: 'The PRIMARY advantage of using a proxy server is:',
-        options: ['A. It speeds up all web connections', 'B. It shields the actual client from a server — the server never learns the real client\'s identity — and can filter all server-to-client messages', 'C. It eliminates the need for firewalls', 'D. It replaces the DNS lookup process'],
-        answer: 'B. It shields the actual client from a server — the server never learns the real client\'s identity — and can filter all server-to-client messages',
-        diff: 'medium',
-      },
-      {
-        q: 'Without a proxy server, what risk arises when many clients in an organization communicate directly with external servers?',
-        options: ['A. Clients become too fast', 'B. External servers can gather information about the organization\'s internal structure over time', 'C. DNS stops resolving names', 'D. The router\'s hop count reaches zero'],
-        answer: 'B. External servers can gather information about the organization\'s internal structure over time',
-        diff: 'hard',
-      },
-      {
-        q: 'Auditing software is described as the administrator\'s PRIMARY tool for:',
-        options: ['A. Installing antivirus updates automatically', 'B. Identifying problems before they grow out of control by monitoring traffic and detecting irregularities', 'C. Blocking all external web access', 'D. Generating encryption keys'],
-        answer: 'B. Identifying problems before they grow out of control by monitoring traffic and detecting irregularities',
-        diff: 'medium',
-      },
-      {
-        q: 'Why must antivirus software be REGULARLY updated by downloading new definitions from the vendor?',
-        options: ['A. Old antivirus software deletes itself automatically', 'B. New viruses constantly appear, and updated definitions are needed to detect and remove them', 'C. Antivirus software forgets its rules after 30 days', 'D. Updates improve the software\'s internet connection speed'],
-        answer: 'B. New viruses constantly appear, and updated definitions are needed to detect and remove them',
+        q: '"Spoofing" means:',
+        options: ['A. Masquerading as a party other than one\'s self', 'B. Secretly recording keystrokes', 'C. Overloading a server with messages', 'D. Sending junk email to users'],
+        answer: 'A. Masquerading as a party other than one\'s self',
         diff: 'easy',
       },
       {
-        q: 'Even regularly updated antivirus software cannot guarantee 100% safety because:',
-        options: ['A. Antivirus software is always buggy', 'B. A new virus must first infect some computers before it is discovered and a vaccine is produced — there is always a window of vulnerability', 'C. Firewalls block antivirus updates', 'D. Antivirus only works on Windows'],
-        answer: 'B. A new virus must first infect some computers before it is discovered and a vaccine is produced — there is always a window of vulnerability',
-        diff: 'hard',
-      },
-      {
-        q: 'The "masquerading as a party other than one\'s self" technique is called:',
-        options: ['A. Phishing', 'B. Spoofing', 'C. Spooling', 'D. Sniffing'],
-        answer: 'B. Spoofing',
-        diff: 'easy',
-      },
-      {
-        q: 'An FTP proxy server provides which specific filtering benefit?',
-        options: ['A. It blocks all file transfers', 'B. It can check all incoming files for known viruses before they reach the actual client', 'C. It speeds up FTP downloads by caching files', 'D. It prevents DNS from resolving FTP server addresses'],
-        answer: 'B. It can check all incoming files for known viruses before they reach the actual client',
+        q: 'A proxy server\'s PRIMARY advantage is:',
+        options: ['A. It speeds up all web connections globally', 'B. It eliminates the need for firewalls entirely', 'C. It replaces the DNS lookup process', 'D. The actual server never learns the real client\'s identity, and it can filter messages'],
+        answer: 'D. The actual server never learns the real client\'s identity, and it can filter messages',
         diff: 'medium',
       },
       {
-        q: 'Some spam filters use a training process in which the user identifies spam examples. This is an application of which fields?',
-        options: ['A. Hardware manufacturing and ROM design', 'B. Probability theory and artificial intelligence', 'C. DNS configuration and routing protocol design', 'D. Hop count management and port assignment'],
-        answer: 'B. Probability theory and artificial intelligence',
+        q: 'Without a proxy server, what risk arises when many clients communicate directly with external servers?',
+        options: ['A. Clients become too fast', 'B. External servers can accumulate information about the organization\'s internal structure', 'C. The router runs out of hop counts', 'D. DNS stops resolving domain names'],
+        answer: 'B. External servers can accumulate information about the organization\'s internal structure',
+        diff: 'hard',
+      },
+      {
+        q: 'Auditing software is called the administrator\'s PRIMARY tool because:',
+        options: ['A. It installs antivirus updates automatically', 'B. It blocks all external web access', 'C. It generates new encryption keys daily', 'D. It monitors traffic and detects irregularities before problems grow out of control'],
+        answer: 'D. It monitors traffic and detects irregularities before problems grow out of control',
+        diff: 'medium',
+      },
+      {
+        q: 'Antivirus software must be REGULARLY updated because:',
+        options: ['A. Old software deletes itself automatically', 'B. Updates improve internet connection speed', 'C. New viruses constantly appear and need updated definitions to be detected', 'D. Firewalls block outdated antivirus software'],
+        answer: 'C. New viruses constantly appear and need updated definitions to be detected',
+        diff: 'easy',
+      },
+      {
+        q: 'Even regularly updated antivirus cannot guarantee 100% safety because:',
+        options: ['A. Antivirus software is always buggy', 'B. Antivirus only works on Windows operating systems', 'C. Firewalls block antivirus updates at some sites', 'D. A new virus must first infect some machines before discovery and vaccine production'],
+        answer: 'D. A new virus must first infect some machines before discovery and vaccine production',
+        diff: 'medium',
+      },
+      {
+        q: 'Spam filters are different from general firewalls because:',
+        options: ['A. They block all email without filtering', 'B. They only work on web traffic, not email', 'C. They require no configuration at all', 'D. They are specialized to distinguish and block unwanted email using sophisticated techniques'],
+        answer: 'D. They are specialized to distinguish and block unwanted email using sophisticated techniques',
+        diff: 'medium',
+      },
+      {
+        q: 'An FTP proxy server provides which filtering benefit?',
+        options: ['A. It checks all incoming files for known viruses before reaching the client', 'B. It speeds up FTP downloads by caching all files', 'C. It blocks all file transfers regardless of content', 'D. It prevents DNS from resolving FTP server addresses'],
+        answer: 'A. It checks all incoming files for known viruses before reaching the client',
+        diff: 'medium',
+      },
+      {
+        q: 'Some spam filters "learn" by a training process. This applies concepts from:',
+        options: ['A. Hardware manufacturing and ROM design', 'B. DNS configuration and routing protocol design', 'C. Hop count management and port assignment', 'D. Probability theory and artificial intelligence'],
+        answer: 'D. Probability theory and artificial intelligence',
         diff: 'medium',
       },
     ],
@@ -26135,105 +26814,90 @@ Khud ko koi aur dikhana = spoofing. Firewall isko detect karta hai origin addres
   83: {
     title: 'Networking and the Internet: Encryption',
     summary: `**Yeh module kya cover karta hai:**
-- Passwords ki limitations
-- Encryption ki zaroorat
-- HTTPS aur SSL
-- Public-key encryption
-- Digital signatures aur certificate authorities
+Passwords ki limitations, encryption, HTTPS/SSL, public-key encryption, digital signatures, certificate authorities.
 
-**Problem with Passwords:**
-Network par messages unknown entities relay kar sakte hain — passwords vulnerable hain. Encryption ensure karta hai ke data intercept bhi ho jaye to confidential rahe.
+**Problem:** Network par unknown entities messages relay kar sakte hain — passwords vulnerable.
 
 **HTTPS aur SSL:**
-- **HTTPS** = secure version of HTTP — financial institutions use karti hain
-- Backbone: **SSL (Secure Sockets Layer)** — Netscape ne develop kiya
-- SSL = secure communication links between Web clients and servers
-- Browsers padlock icon dikhate hain SSL in use hone par
+HTTPS = HTTP ka secure version. Backbone = SSL (Secure Sockets Layer) — Netscape ne develop kiya. Browser padlock icon dikhata hai SSL in use par.
 
-**Public-Key Encryption:**
-Counterintuitive idea: encryption ke baare mein jaanna decryption ke liye kaafi nahi!
-- **2 keys** use hoti hain:
-  - **Public key** → encrypt karne ke liye (freely distribute ki jati hai)
-  - **Private key** → decrypt karne ke liye (sender ke paas secretly)
-- Example: Bob public key Alice aur Carol ko deta hai. Dono Bob ko encrypt karke message bhej sakte hain. Lekin Carol Alice ka message read nahi kar sakti — even if wo jaanti hai Alice ne kaise encrypt kiya — kyunke sirf Bob ke paas private key hai.
+**Public-Key Encryption (Counterintuitive idea):**
+Encryption ke baare mein jaanna = decryption ke liye KAAFI NAHI.
+- Public key → encrypt karne ke liye (freely distribute)
+- Private key → decrypt karne ke liye (secret rakho)
+
+Example: Bob dono ko (Alice + Carol) public key deta hai. Dono Bob ko encrypt karke bhejte hain. Carol Alice ka message NAHI read kar sakti — even if wo jaanti hai kaise encrypt hua — kyunke sirf Bob ke paas private key hai.
 
 **Certificate Authorities:**
-Public-key ka problem: public key real hai ya fake (impostor)? If bank impersonator apni key de, aapka message bank nahi, impostor ke paas jayega.
-Solution: **Certificate Authorities** — trusted Internet sites jo parties aur unki public keys ki accurate lists maintain karti hain.
-- **Certificate** = ek package jisme party ka naam + public key hoti hai
-- Organizations apni khud ki certificate authority bhi rakh sakti hain
+Trusted sites jo parties ki public keys verify karti hain. Certificate = party ka naam + public key. (Impostor ka risk: fake public key de, messages impostor ke paas jayenge.)
 
-**Digital Signatures (Authentication):**
-- Public-key systems mein roles reverse ho sakte hain
-- Private key se encrypt karo → sirf us party se aa sakta hai (verification)
-- **Digital signature** = private key se encrypt ki gayi bit pattern — sirf private key holder bana sakta hai
-- Receiver: sender ki public key se decrypt karta hai → message authentic sabit hota hai
+**Digital Signature (Authentication):**
+Roles reverse: private key se encrypt karo → proof ke taur par (sirf private key holder bana sakta hai). Receiver: sender ki public key se decrypt karta hai → authentic sabit.
 
 **Yaad rakho:**
-- HTTPS = HTTP + SSL (encryption)
-- SSL = Netscape ka, padlock icon = SSL in use
-- Public key = encrypt, Private key = decrypt
-- Certificate Authority = verifies public keys
-- Digital Signature = private key se banaya authentication proof`,
+- HTTPS = HTTP + SSL; SSL = Netscape ka
+- Public key = encrypt; Private key = decrypt
+- Certificate = naam + public key
+- Digital signature = private key se banaya`,
     questions: [
       {
-        q: 'SSL (Secure Sockets Layer) was originally developed by which company?',
+        q: 'SSL (Secure Sockets Layer) was developed by:',
         options: ['A. Microsoft', 'B. Netscape', 'C. Sun Microsystems', 'D. IBM'],
         answer: 'B. Netscape',
         diff: 'medium',
       },
       {
-        q: 'In public-key encryption, which key is used to ENCRYPT messages?',
-        options: ['A. Private key', 'B. Public key', 'C. Session key', 'D. Certificate key'],
-        answer: 'B. Public key',
+        q: 'In public-key encryption, which key is used to ENCRYPT a message?',
+        options: ['A. The private key', 'B. The public key', 'C. The certificate key', 'D. The session key'],
+        answer: 'B. The public key',
         diff: 'easy',
       },
       {
-        q: 'In public-key encryption, which key is required to DECRYPT messages?',
-        options: ['A. Public key', 'B. Certificate', 'C. Private key', 'D. SSL key'],
-        answer: 'C. Private key',
+        q: 'Which key is required to DECRYPT a message in public-key encryption?',
+        options: ['A. The private key', 'B. The SSL key', 'C. The public key', 'D. The certificate'],
+        answer: 'A. The private key',
         diff: 'easy',
       },
       {
-        q: 'In the Bob/Alice/Carol example: Carol intercepts Alice\'s encrypted message to Bob. Can Carol decrypt it even though she knows how Alice encrypted it?',
-        options: ['A. Yes, easily', 'B. No — only Bob holds the private key needed for decryption', 'C. Yes, if she uses the public key', 'D. Only if she has SSL'],
+        q: 'Carol intercepts Alice\'s encrypted message to Bob. Carol knows HOW Alice encrypted it. Can Carol read it?',
+        options: ['A. Yes, easily using the public key', 'B. No — only Bob holds the private key needed for decryption', 'C. Yes, if she has SSL installed', 'D. Yes, using a certificate authority'],
         answer: 'B. No — only Bob holds the private key needed for decryption',
         diff: 'hard',
       },
       {
-        q: 'Why is public-key encryption described as "counterintuitive"?',
-        options: ['A. It uses three keys instead of two', 'B. Knowing how messages are encrypted does NOT allow one to decrypt them — defying the intuitive expectation', 'C. It requires a physical padlock', 'D. Public keys cannot be shared'],
-        answer: 'B. Knowing how messages are encrypted does NOT allow one to decrypt them — defying the intuitive expectation',
+        q: 'Public-key encryption is described as "counterintuitive" because:',
+        options: ['A. It uses three keys instead of two', 'B. Public keys cannot be shared with anyone', 'C. It requires a physical padlock on the server', 'D. Knowing HOW messages are encrypted does not let you decrypt them'],
+        answer: 'D. Knowing HOW messages are encrypted does not let you decrypt them',
         diff: 'hard',
       },
       {
-        q: 'A "Certificate Authority" in the context of this module is:',
-        options: ['A. A government agency that assigns IP addresses', 'B. A trusted Internet site that maintains accurate lists of parties and their public keys', 'C. A hardware device that encrypts network traffic', 'D. The SSL layer within HTTPS'],
-        answer: 'B. A trusted Internet site that maintains accurate lists of parties and their public keys',
+        q: 'A "certificate" in the digital security context contains:',
+        options: ['A. The party\'s private key and session data', 'B. Only the party\'s IP address', 'C. A party\'s name and that party\'s public key', 'D. The URL of the firewall server'],
+        answer: 'C. A party\'s name and that party\'s public key',
         diff: 'medium',
       },
       {
-        q: 'A "certificate" (as in a digital certificate) contains:',
-        options: ['A. Only the party\'s IP address', 'B. A party\'s name and that party\'s public key', 'C. A party\'s private key and digital signature', 'D. The URL of the certificate authority only'],
-        answer: 'B. A party\'s name and that party\'s public key',
+        q: 'A "Certificate Authority" is:',
+        options: ['A. A hardware device that encrypts traffic', 'B. A government agency that assigns IP addresses', 'C. A trusted Internet site maintaining accurate lists of parties and their public keys', 'D. The SSL layer inside HTTPS'],
+        answer: 'C. A trusted Internet site maintaining accurate lists of parties and their public keys',
         diff: 'medium',
       },
       {
         q: 'A digital signature is created by:',
-        options: ['A. Encrypting with the public key', 'B. Encrypting the message with the sender\'s PRIVATE key', 'C. Applying SSL to the message headers', 'D. Using a certificate authority to sign each byte'],
-        answer: 'B. Encrypting the message with the sender\'s PRIVATE key',
+        options: ['A. Encrypting the message with the sender\'s PRIVATE key', 'B. Applying SSL to message headers', 'C. Encrypting with the receiver\'s public key', 'D. Using a certificate authority to sign each byte'],
+        answer: 'A. Encrypting the message with the sender\'s PRIVATE key',
         diff: 'medium',
       },
       {
         q: 'How does a receiver verify a digital signature?',
-        options: ['A. By using the receiver\'s own private key', 'B. By decrypting the signature with the sender\'s PUBLIC key — only the sender\'s private key could have produced that encryption', 'C. By asking the certificate authority each time', 'D. By comparing hop counts'],
-        answer: 'B. By decrypting the signature with the sender\'s PUBLIC key — only the sender\'s private key could have produced that encryption',
+        options: ['A. By using the receiver\'s own private key', 'B. By decrypting the signature using the SENDER\'s public key — only the sender\'s private key could have produced that signature', 'C. By asking the certificate authority each time', 'D. By comparing hop counts'],
+        answer: 'B. By decrypting the signature using the SENDER\'s public key — only the sender\'s private key could have produced that signature',
         diff: 'hard',
       },
       {
-        q: 'Most browsers indicate SSL is being used by displaying:',
-        options: ['A. A red warning triangle', 'B. A tiny padlock icon on the computer screen', 'C. A DNS confirmation message', 'D. The word "SSL" in the URL only'],
-        answer: 'B. A tiny padlock icon on the computer screen',
+        q: 'Most browsers indicate that SSL is active by displaying:',
+        options: ['A. A red warning triangle', 'B. The word "SSL" in the page title only', 'C. A tiny padlock icon on screen', 'D. A DNS confirmation message'],
+        answer: 'C. A tiny padlock icon on screen',
         diff: 'easy',
       },
     ],
@@ -26242,107 +26906,93 @@ Solution: **Certificate Authorities** — trusted Internet sites jo parties aur 
   84: {
     title: 'Networking and the Internet: Legal Approaches to Network Security',
     summary: `**Yeh module kya cover karta hai:**
-- Legal remedies for network security
-- 2 main issues with legal approaches
-- US laws: Computer Fraud and Abuse Act, ECPA
-- Pakistan: Cybercrime Law 2016, applicable security Acts
+Legal remedies, 2 main issues, US laws, Pakistan cybercrime law aur security acts.
 
-**Legal Approach ka Idea:**
-Network security strengthen karne ka ek tarika: **legal remedies** — define karo kya legal aur illegal hai, aur illegal actions par punishment ho.
+**Legal Approach:** Define karo kya legal/illegal hai, punishment do.
 
-**2 Main Issues (Limitations of Legal Approach):**
-1. **Making something illegal does not stop it** — laws exist hone ke bawajood crimes hote hain
-2. **International law problem** — ek country mein illegal, doosri mein legal ho sakta hai
+**2 Main Issues (Limitations):**
+1. Making something illegal does NOT stop it
+2. International law: ek country mein illegal, doosri mein legal
 
 **US Laws:**
-
-**Computer Fraud and Abuse Act:**
-- 1984 mein passed, kai baar revised
-- Covers: Worms & Viruses, Theft of Information, aur "many more related things of value"
-
-**ECPA (Electronic Communication Privacy Act):**
-- Employers/ISP ko employees ki communications dekhne ka right
-- ISP ke liye private information publicly available karna **illegal** hai
-- Employers employer-owned equipment use hone par information access kar sakte hain
+- Computer Fraud and Abuse Act: 1984 mein passed, kai baar revised. Covers: worms, viruses, theft of information.
+- ECPA (Electronic Communication Privacy Act): ISP ke liye private info publicly available karna illegal. Employers employer-owned equipment par communications dekh sakte hain.
 
 **Pakistan — Cybercrime Law 2016:**
-- National Assembly ne 2016 mein pass kiya
-- Punishment: **First offenders = 10 years, Repeat offenders = 20 years**
-- Covers: Hacking, Phishing, Malware, Hacking tools, Identity Theft/Fraud, Electronic Theft
+National Assembly ne 2016 mein pass kiya. Punishment: First offenders = 10 years, Repeat offenders = 20 years. Covers: Hacking, Phishing, Malware, Hacking tools, Identity Theft, Electronic Theft.
 
-**Pakistan — Applicable Security Acts (Names + Dates yaad rakhein):**
+**Pakistan Security Acts (dates yaad rakhein):**
 - Prevention of Electronic Crimes Ordinance, 2007
-- Electronic Transaction Ordinance, 2002, 2008
-- Pakistan Telecommunication (Re-organization) Act, 1996
+- Electronic Transaction Ordinance, 2002/2008
+- Pakistan Telecommunication Act, 1996
 - Wireless Telegraphy Act, 1933
 - Telegraph Act, 1885
 - Federal Investigation Agency Act, 1974
 - Payments and Electronic Fund Transfers Act, 2007
 
 **Yaad rakho:**
-- Computer Fraud & Abuse Act = 1984, US
-- Pakistan Cybercrime Law = 2016
-- First offense = 10 years, Repeat = 20 years
-- ECPA = Electronic Communication Privacy Act`,
+- Computer Fraud Act = 1984 (US)
+- Pakistan Cybercrime = 2016
+- First offense = 10 years; Repeat = 20 years`,
     questions: [
       {
         q: 'In what year was the US Computer Fraud and Abuse Act originally passed?',
-        options: ['A. 1974', 'B. 1984', 'C. 1996', 'D. 2007'],
+        options: ['A. 1974', 'B. 1984', 'C. 2007', 'D. 1996'],
         answer: 'B. 1984',
         diff: 'medium',
       },
       {
-        q: 'What are the TWO main limitations of using legal approaches to network security?',
-        options: ['A. Laws are expensive and slow to write', 'B. Making something illegal does not stop it, and actions illegal in one country may be legal in another', 'C. Judges do not understand technology, and courts are too slow', 'D. Legal approaches only work for email, not web traffic'],
-        answer: 'B. Making something illegal does not stop it, and actions illegal in one country may be legal in another',
+        q: 'Which TWO issues limit the effectiveness of legal approaches to network security?',
+        options: ['A. Judges do not understand technology, and courts are too slow', 'B. Making things illegal does not stop them, and cross-country jurisdiction problems exist', 'C. Laws are too expensive and take too long to write', 'D. Legal approaches only work for email, not web traffic'],
+        answer: 'B. Making things illegal does not stop them, and cross-country jurisdiction problems exist',
         diff: 'medium',
       },
       {
-        q: 'Pakistan\'s National Assembly passed a cybercrime law in which year?',
-        options: ['A. 2007', 'B. 2012', 'C. 2016', 'D. 2002'],
-        answer: 'C. 2016',
+        q: 'Pakistan\'s National Assembly passed a cybercrime law in:',
+        options: ['A. 2016', 'B. 2002', 'C. 2012', 'D. 2007'],
+        answer: 'A. 2016',
         diff: 'easy',
       },
       {
-        q: 'Under Pakistan\'s Cybercrime Law, what is the punishment for FIRST-TIME offenders?',
-        options: ['A. 5 years', 'B. 10 years', 'C. 15 years', 'D. 20 years'],
-        answer: 'B. 10 years',
+        q: 'Under Pakistan\'s 2016 Cybercrime Law, what is the punishment for FIRST-TIME offenders?',
+        options: ['A. 5 years', 'B. 20 years', 'C. 10 years', 'D. Life imprisonment'],
+        answer: 'C. 10 years',
         diff: 'medium',
       },
       {
-        q: 'Under Pakistan\'s Cybercrime Law, what is the punishment for REPEAT offenders?',
-        options: ['A. 10 years', 'B. 15 years', 'C. 20 years', 'D. Life imprisonment'],
-        answer: 'C. 20 years',
+        q: 'Under Pakistan\'s Cybercrime Law, REPEAT offenders face:',
+        options: ['A. 10 years', 'B. 15 years', 'C. Life imprisonment', 'D. 20 years'],
+        answer: 'D. 20 years',
         diff: 'medium',
       },
       {
-        q: 'The ECPA (Electronic Communication Privacy Act) makes it ILLEGAL for ISPs to:',
-        options: ['A. Provide Internet access to employers', 'B. Make private user information publicly available', 'C. Monitor their own network traffic', 'D. Block spam emails'],
-        answer: 'B. Make private user information publicly available',
+        q: 'The ECPA makes it ILLEGAL for ISPs to:',
+        options: ['A. Provide Internet access to businesses', 'B. Monitor their own network for attacks', 'C. Block spam emails from users', 'D. Make private user information publicly available'],
+        answer: 'D. Make private user information publicly available',
         diff: 'medium',
       },
       {
-        q: 'Which of the following is the OLDEST Pakistan security-related act listed in this module?',
+        q: 'The OLDEST Pakistan security-related act listed in this module is:',
         options: ['A. Telegraph Act, 1885', 'B. Wireless Telegraphy Act, 1933', 'C. Federal Investigation Agency Act, 1974', 'D. Pakistan Telecommunication Act, 1996'],
         answer: 'A. Telegraph Act, 1885',
         diff: 'hard',
       },
       {
-        q: 'Pakistan\'s Cybercrime Law of 2016 covers which of the following offenses?',
-        options: ['A. Only hacking and malware', 'B. Hacking, phishing, malware, hacking tools, identity theft, and electronic theft', 'C. Only identity theft and fraud', 'D. Only international cybercrime, not domestic'],
-        answer: 'B. Hacking, phishing, malware, hacking tools, identity theft, and electronic theft',
+        q: 'Pakistan\'s 2016 Cybercrime Law covers which of the following?',
+        options: ['A. Only hacking and malware installation', 'B. Only international cybercrime, not domestic', 'C. Only identity theft and fraud', 'D. Hacking, phishing, malware, hacking tools, identity theft, and electronic theft'],
+        answer: 'D. Hacking, phishing, malware, hacking tools, identity theft, and electronic theft',
         diff: 'medium',
       },
       {
-        q: 'According to the ECPA, under what condition CAN employers access employee communications?',
-        options: ['A. Never — all employee communications are private', 'B. When the employer\'s own equipment is being used', 'C. Only with a court order every time', 'D. Only with the employee\'s written consent'],
-        answer: 'B. When the employer\'s own equipment is being used',
+        q: 'Under ECPA, employers CAN access employee communications when:',
+        options: ['A. Never — all employee communications are fully private', 'B. Only with a written court order every single time', 'C. Only with the employee\'s written consent each time', 'D. The employer\'s own equipment is being used'],
+        answer: 'D. The employer\'s own equipment is being used',
         diff: 'medium',
       },
       {
-        q: 'Which of the following is NOT listed as a Pakistan security act in this module?',
-        options: ['A. Electronic Transaction Ordinance, 2002', 'B. Wireless Telegraphy Act, 1933', 'C. Computer Fraud and Abuse Act, 1984', 'D. Telegraph Act, 1885'],
-        answer: 'C. Computer Fraud and Abuse Act, 1984',
+        q: 'Which of the following is a US law, NOT a Pakistan security act?',
+        options: ['A. Telegraph Act 1885', 'B. Computer Fraud and Abuse Act 1984', 'C. Electronic Transaction Ordinance 2002', 'D. Wireless Telegraphy Act 1933'],
+        answer: 'B. Computer Fraud and Abuse Act 1984',
         diff: 'easy',
       },
     ],
@@ -26351,103 +27001,90 @@ Network security strengthen karne ka ek tarika: **legal remedies** — define ka
   85: {
     title: 'Algorithm: An Informal Review',
     summary: `**Yeh module kya cover karta hai:**
-- Algorithm ki basic definition
-- Real-life examples (chai banana, km to meters)
-- Machine cycle
-- Algorithm execution aur human mind
+Algorithm ki basic definition, real-life examples, machine cycle, human mind analogy.
 
-**Algorithm (Basic Definition):**
+**Algorithm:**
 Set of steps that define how a task is performed.
 
-**Real-Life Examples:**
+**Chai banana (8 steps):**
+1. Put water in kettle 2. Boil water 3. Put Tea in water 4. Add Milk 5. Stir 6. Add Sugar 7. Put tea in cup 8. Fetch cup
 
-**Chai banana (Cup of Tea):**
-1. Put water in kettle
-2. Boil water
-3. Put Tea in water
-4. Add Milk
-5. Stir
-6. Add Sugar
-7. Put tea in cup
-8. Fetch cup
-
-**KM to Meters Convert:**
-1. Take input of KM's
-2. Multiply input with 1000
-3. Display the result
+**KM to Meters (3 steps):**
+1. Take input of KMs 2. Multiply by 1000 3. Display the result
 
 **Machine Cycle:**
-As long as halt instruction has not been executed, continue:
-a. Fetch an instruction
-b. Decode the instruction
-c. Execute the instruction
+Jab tak halt instruction execute na ho, repeat:
+a. Fetch instruction
+b. Decode instruction
+c. Execute instruction
 
 **Algorithm Execution:**
-Many researchers believe that human mind ki EVERY activity — imagination, creativity, decision making — is actually the result of **algorithm execution**.
+Many researchers believe human mind ki EVERY activity (imagination, creativity, decision making) = algorithm execution.
 
 **Yaad rakho:**
-- Algorithm = ordered steps to perform a task
-- Machine cycle = Fetch → Decode → Execute (repeat until halt)
-- Human mind ki activities bhi algorithm execution maa seen ki ja sakti hain (researchers believe)`,
+- Algorithm = ordered steps
+- Machine cycle = Fetch → Decode → Execute
+- KM to Meters = multiply by 1000
+- Tea = 8 steps; KM conversion = 3 steps`,
     questions: [
       {
-        q: 'According to this module, an algorithm is best described as:',
-        options: ['A. A single instruction', 'B. A set of steps that define how a task is performed', 'C. A programming language', 'D. A type of network protocol'],
-        answer: 'B. A set of steps that define how a task is performed',
+        q: 'An algorithm is best described as:',
+        options: ['A. A set of steps that define how a task is performed', 'B. A single instruction only', 'C. A type of network protocol', 'D. A programming language itself'],
+        answer: 'A. A set of steps that define how a task is performed',
         diff: 'easy',
       },
       {
-        q: 'To convert KM to Meters, the algorithm multiplies the input by:',
-        options: ['A. 100', 'B. 1000', 'C. 10000', 'D. 10'],
-        answer: 'B. 1000',
+        q: 'In the KM-to-Meters algorithm, the input is multiplied by:',
+        options: ['A. 100', 'B. 10', 'C. 10000', 'D. 1000'],
+        answer: 'D. 1000',
         diff: 'easy',
       },
       {
-        q: 'The machine cycle consists of which three steps in order?',
-        options: ['A. Store, Load, Execute', 'B. Fetch, Decode, Execute', 'C. Input, Process, Output', 'D. Compile, Link, Run'],
-        answer: 'B. Fetch, Decode, Execute',
+        q: 'The machine cycle\'s three steps in correct order are:',
+        options: ['A. Fetch, Decode, Execute', 'B. Decode, Fetch, Execute', 'C. Execute, Fetch, Decode', 'D. Input, Process, Output'],
+        answer: 'A. Fetch, Decode, Execute',
         diff: 'easy',
       },
       {
-        q: 'The machine cycle continues until:',
-        options: ['A. A certain number of cycles is reached', 'B. The halt instruction is executed', 'C. The user presses a key', 'D. Memory becomes full'],
+        q: 'The machine cycle STOPS when:',
+        options: ['A. A certain number of cycles is reached', 'B. The halt instruction is executed', 'C. Memory becomes full', 'D. The user presses any key'],
         answer: 'B. The halt instruction is executed',
         diff: 'medium',
       },
       {
-        q: 'What do many researchers believe about human mental activities like creativity and decision making?',
-        options: ['A. They are completely random and unpredictable', 'B. They are the result of algorithm execution', 'C. They cannot be modeled mathematically', 'D. They only occur in non-computing environments'],
-        answer: 'B. They are the result of algorithm execution',
+        q: 'Researchers believe human mental activities like creativity are:',
+        options: ['A. Completely random and unpredictable', 'B. The result of algorithm execution', 'C. Impossible to model mathematically', 'D. Only explainable by psychology, not computing'],
+        answer: 'B. The result of algorithm execution',
         diff: 'medium',
       },
       {
-        q: 'In the "Making a Cup of Tea" algorithm, which step comes AFTER "Add Milk"?',
-        options: ['A. Boil water', 'B. Put Tea in water', 'C. Stir', 'D. Add Sugar'],
+        q: 'In the tea-making algorithm, which step comes IMMEDIATELY AFTER "Add Milk"?',
+        options: ['A. Boil water', 'B. Add Sugar', 'C. Stir', 'D. Put Tea in water'],
         answer: 'C. Stir',
         diff: 'medium',
       },
       {
         q: 'The KM-to-Meters algorithm has how many steps?',
-        options: ['A. Two', 'B. Three', 'C. Four', 'D. Eight'],
-        answer: 'B. Three',
+        options: ['A. Four', 'B. Eight', 'C. Two', 'D. Three'],
+        answer: 'D. Three',
         diff: 'easy',
       },
       {
-        q: 'In the machine cycle, what does "Decode" mean?',
-        options: ['A. Physically retrieve the instruction from memory', 'B. Interpret the fetched instruction to understand what operation to perform', 'C. Store the result back to memory', 'D. Halt the CPU'],
-        answer: 'B. Interpret the fetched instruction to understand what operation to perform',
+        q: 'In the machine cycle, "Decode" means:',
+        options: ['A. Interpret the fetched instruction to understand what operation to perform', 'B. Store the result back to memory', 'C. Physically retrieve the instruction from memory', 'D. Halt the CPU permanently'],
+        answer: 'A. Interpret the fetched instruction to understand what operation to perform',
         diff: 'medium',
       },
       {
-        q: 'The tea-making algorithm is used in this module to illustrate that algorithms:',
-        options: ['A. Only exist in computers', 'B. Are found in everyday real-life tasks, not just computing', 'C. Must always have exactly 8 steps', 'D. Cannot have steps that involve adding ingredients'],
-        answer: 'B. Are found in everyday real-life tasks, not just computing',
+        q: 'The tea-making example shows that algorithms:',
+        options: ['A. Must always have exactly 8 steps', 'B. Only apply to computer programs, not real life', 'C. Exist in everyday real-life tasks, not just computing', 'D. Cannot involve physical objects'],
+        answer: 'C. Exist in everyday real-life tasks, not just computing',
         diff: 'medium',
       },
       {
-        q: 'Which module topic is specifically used to show that algorithms apply to physical machines (computers) executing instructions?',
-        options: ['A. The tea-making example', 'B. The KM conversion', 'C. The machine cycle', 'D. The human mind analogy'],
-        answer: 'C. The machine cycle',
+        q: 'Which example specifically shows algorithms applying to how physical computer hardware executes?',
+        options: ['A. The tea-making example', 'B. The human mind analogy', 'C. The KM conversion', 'D. The machine cycle'],
+        answer: 'D. The machine cycle',
         diff: 'hard',
       },
     ],
@@ -26456,97 +27093,85 @@ Many researchers believe that human mind ki EVERY activity — imagination, crea
   86: {
     title: 'Algorithm: Formal Definition',
     summary: `**Yeh module kya cover karta hai:**
-- Algorithm ki formal definition
-- 4 properties: Ordered, Executable, Unambiguous, Terminating
+Algorithm ki formal definition aur 4 properties.
 
 **Formal Definition:**
-An algorithm is an **ordered set of unambiguous, executable steps** that defines a **terminating process**.
+An algorithm is an ordered set of unambiguous, executable steps that defines a terminating process.
 
 **4 Key Properties:**
 
-**1. Ordered:**
-- Steps ka ek well-established structure hota hai execution order ke lihaz se
-- "Ordered" necessarily "sequential" nahi hota — parallel processing mein steps saath bhi ho sakti hain
-- Flip-flops individually output dete hain phir saath meaning banate hain
+**1. Ordered:** Steps ka well-established execution structure. "Ordered" necessarily "sequential" nahi — parallel processing mein steps saath bhi ho sakti hain. Flip-flops example.
 
-**2. Executable:**
-- Har step actually perform ki ja sake
-- "Make a list of all positive integers" = NOT executable (infinite list)
-- Computer scientists "effective" ka term use karte hain = executable concept capture karna
+**2. Executable:** Har step actually perform ki ja sake. "Make a list of ALL positive integers" = NOT executable (infinite). Computer scientists use term "effective" for this.
 
-**3. Unambiguous:**
-- State of the process sufficient honi chahiye ke har step ka action uniquely aur completely determine ho sake
-- "Make a pretty cartoon!" = ambiguous (kaunsa cartoon? kaisa?)
-- Expert ke liye unambiguous step, layperson ke liye ambiguous ho sakta hai
+**3. Unambiguous:** State sufficient ho ke har step ka action uniquely determine ho. "Make a pretty cartoon!" = ambiguous.
 
-**4. Terminating:**
-- Algorithm ki execution end honi chahiye
-- Exception cases: hospital patient monitor karna, aircraft altitude maintain karna — yeh technically "terminating" nahi hain (chalta rehta hai)
+**4. Terminating:** Execution must end. Exceptions: hospital monitoring, aircraft altitude — non-terminating.
 
 **Yaad rakho:**
-- Formal definition: ordered + unambiguous + executable + terminating
-- "Effective" = computer science mein executable ka synonym
+- Formal: ordered + unambiguous + executable + terminating
+- "Effective" = computer science term for executable
 - Infinite task = not executable
-- Ambiguous = insufficient information to determine next step uniquely`,
+- "Ordered" ≠ always sequential`,
     questions: [
       {
-        q: 'According to the formal definition in this module, an algorithm is:',
-        options: ['A. Any set of instructions', 'B. An ordered set of unambiguous, executable steps that defines a terminating process', 'C. A programming language command', 'D. A network routing table'],
-        answer: 'B. An ordered set of unambiguous, executable steps that defines a terminating process',
-        diff: 'easy',
-      },
-      {
-        q: 'Why is "Make a list of all positive integers" NOT a valid executable algorithm step?',
-        options: ['A. It contains a verb', 'B. It would never terminate — listing all positive integers is an infinite task', 'C. It is ambiguous', 'D. It is not ordered'],
-        answer: 'B. It would never terminate — listing all positive integers is an infinite task',
+        q: 'The formal definition states an algorithm is "an ordered set of unambiguous, executable steps that defines a":',
+        options: ['A. Sorting process', 'B. Random sequence', 'C. Terminating process', 'D. Networking protocol'],
+        answer: 'C. Terminating process',
         diff: 'medium',
       },
       {
-        q: 'The instruction "Make a pretty cartoon!" violates which property of a formal algorithm?',
-        options: ['A. Termination', 'B. Order', 'C. Unambiguousness', 'D. Executability'],
-        answer: 'C. Unambiguousness',
+        q: '"Make a list of all positive integers" violates which property?',
+        options: ['A. Ordered', 'B. Unambiguous', 'C. Executable (it would never terminate — infinite task)', 'D. Structured'],
+        answer: 'C. Executable (it would never terminate — infinite task)',
         diff: 'medium',
       },
       {
-        q: 'Computer scientists use which term to capture the concept of "executable" in the context of algorithms?',
-        options: ['A. Ordered', 'B. Effective', 'C. Terminating', 'D. Semantic'],
-        answer: 'B. Effective',
+        q: 'The instruction "Make a pretty cartoon!" violates which property?',
+        options: ['A. Termination', 'B. Order', 'C. Executability', 'D. Unambiguousness'],
+        answer: 'D. Unambiguousness',
+        diff: 'medium',
+      },
+      {
+        q: 'Computer scientists use the term "effective" to capture which concept?',
+        options: ['A. Ordering of steps', 'B. Executable — a step that can actually be performed', 'C. Termination condition', 'D. Sequence numbering'],
+        answer: 'B. Executable — a step that can actually be performed',
         diff: 'hard',
       },
       {
-        q: '"Ordered" in the formal algorithm definition does NOT necessarily mean "sequential." Why?',
-        options: ['A. Because algorithms never have a defined order', 'B. Because in parallel processing, steps may execute simultaneously, yet still have a well-established structural order', 'C. Because only the last step matters', 'D. Because order is only relevant for sorting algorithms'],
-        answer: 'B. Because in parallel processing, steps may execute simultaneously, yet still have a well-established structural order',
+        q: '"Ordered" in the formal definition does NOT necessarily mean "sequential" because:',
+        options: ['A. Algorithms never have defined order', 'B. In parallel processing, steps may execute simultaneously yet still have a well-established structural order', 'C. Only the last step matters in any algorithm', 'D. Order only applies to sorting algorithms'],
+        answer: 'B. In parallel processing, steps may execute simultaneously yet still have a well-established structural order',
         diff: 'hard',
       },
       {
-        q: 'Monitoring a hospital patient\'s vital signs continuously is given as an example that challenges which property?',
-        options: ['A. Executability', 'B. Unambiguousness', 'C. Termination', 'D. Order'],
-        answer: 'C. Termination',
+        q: 'Monitoring a hospital patient\'s vital signs continuously challenges which property?',
+        options: ['A. Executability', 'B. Termination', 'C. Unambiguousness', 'D. Order'],
+        answer: 'B. Termination',
         diff: 'medium',
       },
       {
-        q: 'When is a step considered "unambiguous" according to this module?',
-        options: ['A. When it is very long and detailed', 'B. When the information in the process state is sufficient to uniquely and completely determine the action required', 'C. When it can only be understood by experts', 'D. When it has exactly one word'],
-        answer: 'B. When the information in the process state is sufficient to uniquely and completely determine the action required',
+        q: 'A step is "unambiguous" when:',
+        options: ['A. It is very long and detailed', 'B. Only experts can understand it', 'C. It has exactly one word', 'D. The process state is sufficient to uniquely determine the required action'],
+        answer: 'D. The process state is sufficient to uniquely determine the required action',
         diff: 'medium',
       },
       {
-        q: 'Which of these is an example of a NON-terminating process given in this module?',
+        q: 'Which example from this module illustrates a non-terminating process?',
         options: ['A. Converting KM to meters', 'B. Making a cup of tea', 'C. Maintaining an aircraft\'s altitude in flight', 'D. Sorting a list of numbers'],
         answer: 'C. Maintaining an aircraft\'s altitude in flight',
         diff: 'medium',
       },
       {
-        q: 'An algorithm step that a meteorologist finds unambiguous may still be ambiguous for a layperson. What does this illustrate?',
-        options: ['A. That algorithms are only for scientists', 'B. That ambiguity depends on context and the audience — the same instruction may have different clarity for different people', 'C. That algorithms cannot be shared between people', 'D. That executability and unambiguousness are identical'],
-        answer: 'B. That ambiguity depends on context and the audience — the same instruction may have different clarity for different people',
+        q: 'An expert finds a step unambiguous, but a layperson finds it ambiguous. This means:',
+        options: ['A. The algorithm itself is wrong', 'B. Algorithms cannot be shared between people', 'C. Unambiguousness depends on context and audience — same step can differ in clarity for different people', 'D. Executability and unambiguousness are identical'],
+        answer: 'C. Unambiguousness depends on context and audience — same step can differ in clarity for different people',
         diff: 'hard',
       },
       {
-        q: 'How many key properties does the formal algorithm definition include?',
-        options: ['A. Two', 'B. Three', 'C. Four', 'D. Five'],
-        answer: 'C. Four',
+        q: 'How many key properties does the formal algorithm definition contain?',
+        options: ['A. Two', 'B. Three', 'C. Five', 'D. Four'],
+        answer: 'A. Four',
         diff: 'easy',
       },
     ],
@@ -26555,106 +27180,92 @@ An algorithm is an **ordered set of unambiguous, executable steps** that defines
   87: {
     title: 'Algorithm: Abstract Nature of Algorithms',
     summary: `**Yeh module kya cover karta hai:**
-- Algorithm aur uski representation ka farq
-- Celsius to Fahrenheit example (different representations)
-- Program aur Process ka algorithm se relation
-- Algorithm → Program → Process ka chain
+Algorithm vs representation, multiple representations, program/algorithm/process ki chain.
 
-**Algorithm vs Representation:**
-Algorithm ABSTRACT hota hai — uski representation physical hoti hai. Jaise:
-- Story = abstract concept
-- Book = story ki representation
+**Algorithm is Abstract:**
+Algorithm = abstract concept (like a story). Representation = physical form (like a book). Ek hi algorithm kai ways mein represent ho sakta hai.
 
-Ek hi algorithm kai tareekon se represent ho sakta hai:
-- Algebraic formula: F = (9/5)C + 32
+**Celsius to Fahrenheit Example:**
+- Algebraic: F = (9/5)C + 32
 - English: "Multiply Celsius by 9/5 then add 32"
 - Electronic circuit
-Teeno mein underlying algorithm SAME hai, sirf representations different hain.
+Teeno mein underlying algorithm SAME hai, sirf representation different.
 
 **Ambiguity Problem:**
-Algorithm aur representation ke darmiyan farq tab masla create karta hai jab hum algorithms communicate karte hain. Example:
-- Expert ke liye: "Convert Celsius to Fahrenheit" = unambiguous
-- Layperson ke liye: yahi instruction ambiguous ho sakti hai
-- Problem algorithm mein nahi, representation ki insufficiency mein hai
+Algorithm aur representation ke darmiyan farq tab masla karta hai jab communicate karte hain. Problem algorithm mein nahi, representation ki detail level mein.
 
-**Program, Algorithm, Process — 3 Related but Distinct Concepts:**
-| Concept | Definition |
-|---|---|
-| Algorithm | Abstract — defines WHAT to do |
-| Program | Representation of an algorithm (for computer application) |
-| Process | Activity of executing a program (= executing the algorithm) |
+**Program, Algorithm, Process:**
+- Algorithm = abstract
+- Program = representation of an algorithm (for computer application)
+- Process = activity of executing an algorithm (executing a program)
 
-**Conclusion:**
-- Program = algorithm ki representation hai
-- Process = algorithm execute karne ki activity hai
-- Teeno distinct hain lekin related hain
+**Conclusion:** Program is a representation of an algorithm. Process is the activity of executing an algorithm.
 
 **Yaad rakho:**
 - Algorithm = abstract (story)
 - Program = representation (book)
-- Process = executing (someone reading the book aloud)
-- Ek algorithm ke multiple representations ho sakte hain
-- F = (9/5)C + 32 is module ka key example hai`,
+- Process = executing (playing music)
+- Same algorithm → multiple representations`,
     questions: [
       {
-        q: 'An algorithm is best described as:',
-        options: ['A. A computer program written in Python', 'B. An abstract concept distinct from any particular representation', 'C. Always written as an algebraic formula', 'D. A physical circuit board'],
-        answer: 'B. An abstract concept distinct from any particular representation',
+        q: 'An algorithm is best characterized as:',
+        options: ['A. Always written as an algebraic formula', 'B. An abstract concept distinct from any physical representation', 'C. A computer program written in Python', 'D. A physical circuit board'],
+        answer: 'B. An abstract concept distinct from any physical representation',
         diff: 'medium',
       },
       {
-        q: 'In the analogy used in this module, an algorithm corresponds to a "story" and its representation corresponds to:',
-        options: ['A. The author', 'B. A book', 'C. The reader', 'D. The printing press'],
-        answer: 'B. A book',
+        q: 'In this module\'s analogy, a "story" maps to algorithm and a "book" maps to:',
+        options: ['A. Process', 'B. Algorithm\'s output', 'C. The reader', 'D. The representation'],
+        answer: 'D. The representation',
         diff: 'medium',
       },
       {
-        q: 'The algorithm for converting Celsius to Fahrenheit (F = (9/5)C + 32) can be represented as which of the following?',
-        options: ['A. Only as an algebraic formula', 'B. Only in English words', 'C. As an algebraic formula, English instructions, OR an electronic circuit — all representing the same algorithm', 'D. Only as machine code'],
-        answer: 'C. As an algebraic formula, English instructions, OR an electronic circuit — all representing the same algorithm',
+        q: 'The Celsius-to-Fahrenheit algorithm can be represented as:',
+        options: ['A. Only as an algebraic formula F = (9/5)C + 32', 'B. Only in English words', 'C. As a formula, English instructions, OR an electronic circuit — all representing the same algorithm', 'D. Only as machine code on a specific CPU'],
+        answer: 'C. As a formula, English instructions, OR an electronic circuit — all representing the same algorithm',
         diff: 'medium',
       },
       {
         q: 'A "process" is defined in this module as:',
-        options: ['A. A static set of instructions stored in memory', 'B. The activity of executing a program (and equivalently, executing an algorithm)', 'C. A representation of an algorithm', 'D. A type of network protocol'],
-        answer: 'B. The activity of executing a program (and equivalently, executing an algorithm)',
+        options: ['A. A static set of instructions stored on disk', 'B. A formal representation of an algorithm', 'C. The abstract logic of an algorithm', 'D. The activity of executing a program (equivalently, executing an algorithm)'],
+        answer: 'D. The activity of executing a program (equivalently, executing an algorithm)',
         diff: 'easy',
       },
       {
-        q: 'A "program" in the computing context is defined as:',
+        q: 'A "program" in the computing context is:',
         options: ['A. The activity of executing an algorithm', 'B. A formal representation of an algorithm designed for computer application', 'C. The abstract algorithm itself', 'D. A type of network packet'],
         answer: 'B. A formal representation of an algorithm designed for computer application',
         diff: 'medium',
       },
       {
-        q: 'When a meteorologist says "Convert Celsius to Fahrenheit" and a layperson finds that ambiguous, the module argues the problem is:',
-        options: ['A. The underlying algorithm is wrong', 'B. Not with the algorithm itself but with the representation not being described in enough detail for that audience', 'C. That meteorologists use different algorithms than computers', 'D. That Fahrenheit is an invalid unit'],
-        answer: 'B. Not with the algorithm itself but with the representation not being described in enough detail for that audience',
+        q: 'When a meteorologist\'s instruction seems clear to them but ambiguous to a layperson, the problem is:',
+        options: ['A. The underlying algorithm is wrong', 'B. Meteorologists use different algorithms than computers', 'C. Fahrenheit is an invalid unit', 'D. The representation lacks enough detail for that particular audience'],
+        answer: 'D. The representation lacks enough detail for that particular audience',
         diff: 'hard',
       },
       {
-        q: 'If you translate a book from English to Urdu, what changes and what stays the same?',
-        options: ['A. Both the story and the representation change', 'B. The representation changes, but the story (algorithm) remains the same', 'C. The story changes, but the physical book stays the same', 'D. Neither changes'],
-        answer: 'B. The representation changes, but the story (algorithm) remains the same',
+        q: 'When a book is translated from English to Urdu, what stays the same?',
+        options: ['A. Both the story and the physical book', 'B. The physical form of the book', 'C. The story (algorithm) — only the representation changes', 'D. Nothing — everything changes'],
+        answer: 'C. The story (algorithm) — only the representation changes',
         diff: 'medium',
       },
       {
-        q: 'According to this module, "programs, algorithms, and processes are distinct, yet related entities." Which chain correctly summarizes their relationship?',
-        options: ['A. Process → Algorithm → Program', 'B. Algorithm (abstract) → Program (its representation) → Process (activity of executing it)', 'C. Program → Process → Algorithm', 'D. Algorithm → Process → Program'],
-        answer: 'B. Algorithm (abstract) → Program (its representation) → Process (activity of executing it)',
+        q: 'The correct chain relating algorithm, program, and process is:',
+        options: ['A. Process → Algorithm → Program', 'B. Algorithm (abstract) → Program (its representation) → Process (executing it)', 'C. Program → Process → Algorithm', 'D. Algorithm → Process → Program'],
+        answer: 'B. Algorithm (abstract) → Program (its representation) → Process (executing it)',
         diff: 'hard',
       },
       {
-        q: 'In this module, the term "algorithm" is sometimes used in a "less formal sense" to include programs that are non-terminating. What does this usage refer to?',
-        options: ['A. Programs that loop forever accidentally due to bugs', 'B. The fact that many programs are representations of processes that do not technically terminate (like continuous monitoring)', 'C. Programs written in assembly language only', 'D. Programs that run on routers exclusively'],
-        answer: 'B. The fact that many programs are representations of processes that do not technically terminate (like continuous monitoring)',
-        diff: 'hard',
-      },
-      {
-        q: 'What remains the SAME across all three representations of the Celsius-to-Fahrenheit algorithm (formula, English, circuit)?',
-        options: ['A. The physical form', 'B. The underlying algorithm — the abstract logic', 'C. The programming language used', 'D. The number of steps when written out'],
-        answer: 'B. The underlying algorithm — the abstract logic',
+        q: 'What remains the SAME across all three representations of the C-to-F algorithm (formula, English, circuit)?',
+        options: ['A. The physical form', 'B. The underlying abstract algorithm — the logic', 'C. The number of steps when written out', 'D. The programming language used'],
+        answer: 'B. The underlying abstract algorithm — the logic',
         diff: 'medium',
+      },
+      {
+        q: 'This module concludes that programs, algorithms, and processes are:',
+        options: ['A. Exactly the same thing with different names', 'B. Unrelated to each other', 'C. Only relevant for computer science majors', 'D. Distinct yet related — program represents algorithm; process executes it'],
+        answer: 'D. Distinct yet related — program represents algorithm; process executes it',
+        diff: 'hard',
       },
     ],
   },
@@ -26662,97 +27273,86 @@ Algorithm aur representation ke darmiyan farq tab masla create karta hai jab hum
   88: {
     title: 'Algorithm: Representation (Primitives)',
     summary: `**Yeh module kya cover karta hai:**
-- Algorithm represent karne ki zaroorat
-- Natural language ke problems (ambiguity, detail level)
-- Primitives ka concept
-- Syntax vs Semantics
-- Programming language ki definition
+Algorithm represent karne ki zaroorat, natural language ke problems, primitives, syntax vs semantics, programming language.
 
-**Algorithm Representation:**
-Ek algorithm represent karne ke liye koi "language" chahiye — natural language (English), pictures, ya formal notation. Problems:
-1. **Ambiguity** — "Visiting grandchildren can be nerve-racking" = do meanings (grandchildren aate hain ya aap unke paas jate ho?)
-2. **Detail level** — Origami bird banane ke instructions: expert (origami student) ke liye kaafi, lekin aam aadmi ke liye nahi
+**Natural Language Problems:**
+1. Ambiguity — "Visiting grandchildren can be nerve-racking" = do meanings
+2. Detail level — Origami bird: origami student ke liye kaafi, aam aadmi ke liye nahi
 
 **Solution — Primitives:**
-Computer science: ek **well-defined set of building blocks** use karo — **primitives** kehte hain.
-- Primitives ko precise definitions dena = ambiguity remove karna
-- Algorithms ko in primitives mein describe karna = uniform detail level
-- **Collection of primitives + rules for combining them = Programming Language**
-
-**Syntax vs Semantics:**
-Har primitive ki 2 cheezein hoti hain:
-- **Syntax** = symbolic representation (kaise likhte hain)
-- **Semantics** = meaning (kya karta hai)
-- Example: word "air" — syntax = 3 symbols, semantics = gaseous substance surrounding Earth
+Computer science: well-defined building blocks = primitives. Precise definitions = ambiguity remove. Algorithms in primitives = uniform detail.
 
 **Programming Language:**
-A collection of primitives + rules about how to combine them to represent complex ideas.
+Collection of primitives + rules for combining them = programming language.
+
+**Syntax vs Semantics:**
+- Syntax = symbolic representation (kaise likhte hain) — "air" ka syntax = 3 symbols
+- Semantics = meaning — "air" ka semantics = gaseous substance surrounding Earth
 
 **Yaad rakho:**
-- Primitive = building block of algorithm representation
-- Syntax = form/symbols; Semantics = meaning
+- Primitive = building block
+- Syntax = form; Semantics = meaning
 - Programming language = primitives + combination rules
-- Natural language ki problems: ambiguity + variable detail level
-- Primitives = uniformity aur clarity provide karte hain`,
+- Natural language problems: ambiguity + variable detail`,
     questions: [
       {
-        q: 'A "primitive" in computer science refers to:',
-        options: ['A. An old, outdated programming language', 'B. A well-defined building block from which algorithm representations are constructed', 'C. A type of network packet', 'D. A single machine instruction only'],
-        answer: 'B. A well-defined building block from which algorithm representations are constructed',
+        q: 'A "primitive" in computer science is:',
+        options: ['A. An old, outdated programming language', 'B. A well-defined building block for constructing algorithm representations', 'C. A network packet header', 'D. A machine instruction only'],
+        answer: 'B. A well-defined building block for constructing algorithm representations',
         diff: 'medium',
       },
       {
-        q: 'A programming language is defined in this module as:',
-        options: ['A. A natural language used to write algorithms informally', 'B. A collection of primitives along with rules for combining them to represent complex ideas', 'C. A set of machine-language instructions only', 'D. A syntax checker for pseudocode'],
-        answer: 'B. A collection of primitives along with rules for combining them to represent complex ideas',
+        q: 'A programming language is defined as:',
+        options: ['A. A natural language used informally to write algorithms', 'B. A collection of primitives with rules for combining them to represent complex ideas', 'C. Only machine-level binary instructions', 'D. A syntax checker for pseudocode only'],
+        answer: 'B. A collection of primitives with rules for combining them to represent complex ideas',
         diff: 'medium',
       },
       {
         q: '"Syntax" of a primitive refers to:',
-        options: ['A. The meaning of the primitive', 'B. Its symbolic representation — what it looks like when written', 'C. How fast it executes', 'D. The number of arguments it takes'],
+        options: ['A. Its execution speed', 'B. Its symbolic representation — what it looks like when written', 'C. How many arguments it takes', 'D. The meaning of the primitive'],
         answer: 'B. Its symbolic representation — what it looks like when written',
         diff: 'easy',
       },
       {
         q: '"Semantics" of a primitive refers to:',
-        options: ['A. Its symbolic form', 'B. The meaning of the primitive', 'C. How many symbols it contains', 'D. Its execution speed in milliseconds'],
-        answer: 'B. The meaning of the primitive',
+        options: ['A. The number of symbols it contains', 'B. Its symbolic form and notation', 'C. Its execution speed in milliseconds', 'D. The MEANING of the primitive'],
+        answer: 'D. The MEANING of the primitive',
         diff: 'easy',
       },
       {
-        q: 'The sentence "Visiting grandchildren can be nerve-racking" is used in this module to illustrate:',
-        options: ['A. A well-defined algorithm step', 'B. Ambiguity in natural language communication', 'C. A correct use of primitives', 'D. A terminating process'],
-        answer: 'B. Ambiguity in natural language communication',
+        q: 'The sentence "Visiting grandchildren can be nerve-racking" illustrates:',
+        options: ['A. A well-defined algorithm step', 'B. A correct use of primitives', 'C. A terminating process', 'D. Ambiguity in natural language'],
+        answer: 'D. Ambiguity in natural language',
         diff: 'medium',
       },
       {
-        q: 'Why could most readers NOT successfully fold an origami bird from the directions in Figure 78, but an origami student could?',
-        options: ['A. The algorithm for origami is wrong', 'B. The instructions lack sufficient detail for non-experts — illustrating that the level of detail required varies by audience', 'C. Origami cannot be described algorithmically', 'D. The figure is in a foreign language'],
-        answer: 'B. The instructions lack sufficient detail for non-experts — illustrating that the level of detail required varies by audience',
+        q: 'Most readers CANNOT fold an origami bird from Figure 78, but origami students can. This illustrates:',
+        options: ['A. The algorithm for origami is incorrect', 'B. The instructions need an appropriate level of detail — which varies by audience', 'C. Origami cannot be algorithmically described', 'D. The instructions are ambiguous due to missing images'],
+        answer: 'B. The instructions need an appropriate level of detail — which varies by audience',
         diff: 'medium',
       },
       {
-        q: 'Assigning precise definitions to primitives solves which specific problem with natural language algorithm representation?',
-        options: ['A. Execution speed', 'B. Ambiguity — knowing exactly what each primitive means removes multiple interpretations', 'C. File size of the algorithm', 'D. Network transmission errors'],
-        answer: 'B. Ambiguity — knowing exactly what each primitive means removes multiple interpretations',
+        q: 'Assigning precise definitions to primitives primarily solves which natural language problem?',
+        options: ['A. Execution speed', 'B. File size of the algorithm', 'C. Ambiguity — knowing exactly what each primitive means removes multiple interpretations', 'D. Network transmission errors'],
+        answer: 'C. Ambiguity — knowing exactly what each primitive means removes multiple interpretations',
         diff: 'medium',
       },
       {
-        q: 'For the word "air," the syntax consists of 3 symbols (a, i, r). What is its semantics?',
-        options: ['A. A liquid substance', 'B. The 3 letters themselves', 'C. A gaseous substance that surrounds the Earth', 'D. A programming keyword'],
-        answer: 'C. A gaseous substance that surrounds the Earth',
+        q: 'For the word "air": its syntax is 3 symbols. What is its semantics?',
+        options: ['A. A liquid substance', 'B. A liquid used for cooling circuits', 'C. The 3 letters a, i, r themselves', 'D. A gaseous substance surrounding the Earth'],
+        answer: 'D. A gaseous substance surrounding the Earth',
         diff: 'easy',
       },
       {
-        q: 'Which TWO problems with natural language representation of algorithms does this module identify?',
-        options: ['A. Too long and too expensive', 'B. Ambiguity and inconsistent level of detail required', 'C. Cannot be stored digitally and cannot be translated', 'D. Too mathematical and too abstract'],
-        answer: 'B. Ambiguity and inconsistent level of detail required',
+        q: 'The TWO specific problems with natural language algorithm representation identified in this module are:',
+        options: ['A. Too expensive and too long', 'B. Too mathematical and too abstract', 'C. Cannot be stored digitally and cannot be translated', 'D. Ambiguity and inconsistent level of detail required'],
+        answer: 'D. Ambiguity and inconsistent level of detail required',
         diff: 'hard',
       },
       {
-        q: 'Requiring algorithms to be described in terms of established primitives establishes:',
-        options: ['A. A random ordering of steps', 'B. A uniform level of detail for all representations', 'C. The maximum length of any algorithm', 'D. Only visual representations'],
-        answer: 'B. A uniform level of detail for all representations',
+        q: 'Requiring algorithms to be described using established primitives achieves:',
+        options: ['A. A random ordering of steps', 'B. A maximum algorithm length limit', 'C. A uniform level of detail across all representations', 'D. Only visual representations'],
+        answer: 'C. A uniform level of detail across all representations',
         diff: 'medium',
       },
     ],
@@ -26761,114 +27361,102 @@ A collection of primitives + rules about how to combine them to represent comple
   89: {
     title: 'Algorithm: Representation (Pseudocode — if/else)',
     summary: `**Yeh module kya cover karta hai:**
-- Pseudocode kya hai
-- Assignment statement (name = expression)
-- if/else structure
-- Pseudocode ki popular variants
+Pseudocode ki definition, popular variants, assignment statement, if/else structure.
 
 **Pseudocode:**
-Formal programming language ki jagah ek LESS FORMAL, intuitive notational system — algorithms develop karte waqt ideas express karne ke liye. Ek programming language ke rules ko loose karo, less formal constructs ke saath mix karo = pseudocode.
+Formal programming language ki jagah less formal, intuitive notation — algorithms develop karte waqt. Ek programming language ke rules loose karo + less formal constructs mix karo.
 
-**Popular Pseudocode Variants:**
-- Algol aur Pascal ke loose versions (decades tak textbooks mein popular)
-- Java aur C ke syntax se influenced pseudocode (recently more common)
-- Essential requirement: **consistent, concise notation for recurring semantic structures**
+**Popular Variants:**
+- Algol aur Pascal ke loose versions (decades tak textbooks mein)
+- Java aur C syntax se influenced (recently)
+- Essential: consistent, concise notation for recurring structures
 
 **Assignment Statement:**
-Computed value ko save karne ke liye:
-
+Computed value save karne ke liye:
   name = expression
 
-- 'name' = jis naam se result refer karein ge
-- 'expression' = calculation
-- Example: 'RemainingFunds = CheckingBalance + SavingsBalance'
-- Yeh Python assignment statement se directly related hai
+Example: RemainingFunds = CheckingBalance + SavingsBalance
+Yeh Python assignment statement se directly related hai.
 
 **if/else Structure:**
-Ek activity select karne ke liye condition ke basis par:
-
+Condition ke basis par ek activity select karna:
   if (condition):
       activity
   else:
       activity
 
-- if aur else keywords hain
-- Colon condition aur else ke baad lagta hai
-- Corresponding activity indented hoti hai
-- Multiple steps wali activity = saari similarly indented
+if aur else ke baad colon. Activity indented hoti hai. Multiple steps = saari indented.
 
-**Example:**
-
+Example:
   if (year is leap year): daily total = total / 366
-  else:
-      daily total = total / 365
+  else: daily total = total / 365
 
 **Yaad rakho:**
-- Pseudocode = informal notation for algorithm representation
+- Pseudocode = informal notation
 - name = expression → assignment
-- if (condition): / else: → selection structure
+- if/else → selection structure
 - Indentation substructures delineate karta hai
 - Algol, Pascal, Java, C se pseudocode styles aati hain`,
     questions: [
       {
         q: 'Pseudocode is best described as:',
-        options: ['A. A strict formal programming language', 'B. An informal, intuitive notational system for expressing algorithm ideas', 'C. Machine code written in English words', 'D. A type of markup language'],
-        answer: 'B. An informal, intuitive notational system for expressing algorithm ideas',
+        options: ['A. An informal, intuitive notational system for expressing algorithm ideas during development', 'B. A strict formal compiled programming language', 'C. Machine code written in English', 'D. A type of markup language like HTML'],
+        answer: 'A. An informal, intuitive notational system for expressing algorithm ideas during development',
         diff: 'easy',
       },
       {
-        q: 'In pseudocode, the assignment statement "RemainingFunds = CheckingBalance + SavingsBalance" means:',
-        options: ['A. CheckingBalance and SavingsBalance are equal', 'B. The sum of CheckingBalance and SavingsBalance is computed and saved under the name RemainingFunds', 'C. RemainingFunds is subtracted from CheckingBalance', 'D. All three values are set to zero'],
-        answer: 'B. The sum of CheckingBalance and SavingsBalance is computed and saved under the name RemainingFunds',
+        q: '"RemainingFunds = CheckingBalance + SavingsBalance" in pseudocode means:',
+        options: ['A. All three values are set to zero', 'B. RemainingFunds is subtracted from CheckingBalance', 'C. CheckingBalance and SavingsBalance are compared', 'D. The sum is computed and saved under the name RemainingFunds for future use'],
+        answer: 'D. The sum is computed and saved under the name RemainingFunds for future use',
         diff: 'medium',
       },
       {
-        q: 'In the if/else pseudocode structure, what follows immediately after the condition and the "else" keyword?',
-        options: ['A. A semicolon', 'B. A colon', 'C. A period', 'D. A curly brace'],
-        answer: 'B. A colon',
+        q: 'In the if/else pseudocode structure, what character immediately follows the condition and else keyword?',
+        options: ['A. A colon (:)', 'B. A semicolon (;)', 'C. A curly brace ({)', 'D. A period (.)'],
+        answer: 'A. A colon (:)',
         diff: 'medium',
       },
       {
-        q: 'How is the "activity" (the body of an if or else) indicated in the pseudocode format of this module?',
-        options: ['A. With curly braces { }', 'B. By indentation', 'C. With square brackets [ ]', 'D. By writing it in uppercase'],
+        q: 'How is the activity (body) of an if or else branch indicated in pseudocode?',
+        options: ['A. By curly braces { }', 'B. By indentation', 'C. By square brackets [ ]', 'D. By writing it in UPPERCASE'],
         answer: 'B. By indentation',
         diff: 'easy',
       },
       {
-        q: 'The pseudocode assignment statement format follows the equivalent structure from which programming language mentioned in this module?',
+        q: 'The pseudocode assignment statement format is directly equivalent to the assignment statement in which language?',
         options: ['A. Java', 'B. C', 'C. Algol', 'D. Python'],
         answer: 'D. Python',
         diff: 'hard',
       },
       {
-        q: 'The if/else structure in pseudocode is used to:',
-        options: ['A. Repeat an activity multiple times', 'B. Select one of two possible activities depending on whether a condition is true or false', 'C. Define a new variable', 'D. Terminate the algorithm'],
-        answer: 'B. Select one of two possible activities depending on whether a condition is true or false',
+        q: 'The if/else structure selects:',
+        options: ['A. One of two activities depending on a true/false condition', 'B. All activities simultaneously', 'C. An activity to repeat many times', 'D. A new variable to define'],
+        answer: 'A. One of two activities depending on a true/false condition',
         diff: 'easy',
       },
       {
-        q: 'One ESSENTIAL property required of any pseudocode, regardless of which programming language it borrows from, is:',
-        options: ['A. It must be in English only', 'B. A consistent, concise notation for representing recurring semantic structures', 'C. It must compile without errors', 'D. It must be exactly 10 lines or fewer'],
-        answer: 'B. A consistent, concise notation for representing recurring semantic structures',
+        q: 'One ESSENTIAL property of any pseudocode, regardless of its source language, is:',
+        options: ['A. It must be written in English only', 'B. It must compile without errors on a real compiler', 'C. It must be exactly 10 lines or fewer', 'D. A consistent, concise notation for representing recurring semantic structures'],
+        answer: 'D. A consistent, concise notation for representing recurring semantic structures',
         diff: 'hard',
       },
       {
-        q: 'The pseudocode statement "if (year is leap year): daily total = total / 366" implies that if the year is NOT a leap year, what happens?',
-        options: ['A. The algorithm terminates', 'B. The else branch executes: daily total = total / 365', 'C. Total is set to zero', 'D. The if condition is re-evaluated'],
-        answer: 'B. The else branch executes: daily total = total / 365',
+        q: 'If "year is NOT a leap year" in the leap-year if/else example, what executes?',
+        options: ['A. The algorithm terminates immediately', 'B. The if branch still executes anyway', 'C. The else branch: daily total = total / 365', 'D. Total is reset to zero'],
+        answer: 'C. The else branch: daily total = total / 365',
         diff: 'medium',
       },
       {
-        q: 'Why did pseudocode variants based on Algol and Pascal become popular in textbooks for decades?',
-        options: ['A. Algol and Pascal were the fastest programming languages', 'B. These languages were widely used in textbooks and academic papers for decades, making their syntax familiar to readers', 'C. They were the only languages with if/else structures', 'D. ICANN mandated their use'],
-        answer: 'B. These languages were widely used in textbooks and academic papers for decades, making their syntax familiar to readers',
+        q: 'Algol and Pascal became popular bases for pseudocode in textbooks because:',
+        options: ['A. They were the only languages with if/else structures', 'B. ICANN mandated their use in academic writing', 'C. These languages were widely used in textbooks and academic papers for decades, making their syntax familiar', 'D. They were the fastest languages available'],
+        answer: 'C. These languages were widely used in textbooks and academic papers for decades, making their syntax familiar',
         diff: 'medium',
       },
       {
-        q: 'If an "activity" in an if/else structure consists of MULTIPLE steps, how are they represented in pseudocode?',
-        options: ['A. They are all written on one line separated by commas', 'B. They are all similarly indented below the condition', 'C. Only the first step is included', 'D. They use numbered bullet points'],
-        answer: 'B. They are all similarly indented below the condition',
-        diff: 'medium',
+        q: 'If an activity in an if/else structure has multiple steps, how are they shown?',
+        options: ['A. Written on one line separated by commas', 'B. All indented equally below the condition', 'C. Only the first step is included', 'D. Using numbered bullet points'],
+        answer: 'D. Using numbered bullet points',
+        diff: 'hard',
       },
     ],
   },
@@ -26876,103 +27464,96 @@ Ek activity select karne ke liye condition ke basis par:
   90: {
     title: 'Algorithm: Representation (Pseudocode — while Structure)',
     summary: `**Yeh module kya cover karta hai:**
-- While structure (looping/repetition)
-- While ki pseudocode format
-- Real-world examples se while ka concept
+While structure (looping/repetition), pseudocode format, real-world examples.
 
 **While Structure:**
-Kisi statement ya sequence of statements ko repeatedly execute karna **jab tak koi condition true rahe**.
+Kisi statement ko repeatedly execute karna jab tak condition true rahe.
 
 **Informal Examples:**
 - "As long as there are tickets to sell, continue selling tickets."
 - "While there are tickets to sell, keep selling tickets."
 
 **Pseudocode Format:**
-\`\`\`
-while (condition):
-    Activity
-\`\`\`
+  while (condition):
+      Activity
 
 **Kaise kaam karta hai:**
 1. Condition check karo
-2. Agar TRUE hai → activity perform karo → wapas condition check karo
-3. Agar FALSE hai → while structure ke baad next instruction par jao
+2. TRUE → activity perform karo → wapas condition check
+3. FALSE → while ke baad next instruction par jao
 
 **Ticket Example:**
-\`\`\`
-while (tickets remain to be sold):
-    sell a ticket
-\`\`\`
-Jab tak tickets bachi hain → ek ticket becho → check karo → agar bachi hain → dubara → jab nahi bachi → stop.
+  while (tickets remain to be sold):
+      sell a ticket
 
-**if/else se farq:**
-- if/else = ek baar condition check, ek baar activity
-- while = baar baar condition check, baar baar activity (jab tak condition true)
+**if/else vs while:**
+- if/else = ek baar condition check, ek baar activity (selection)
+- while = baar baar condition check, baar baar activity (repetition)
 
 **Yaad rakho:**
 - while (condition): = loop structure
-- Activity tab tak repeats hoti hai jab tak condition true hai
-- False hone par while se bahar niklo
+- Colon (:) ke baad activity indented
+- False hone par loop exit
 - if = single selection; while = repeated execution`,
     questions: [
       {
-        q: 'The while structure is used when you need to:',
-        options: ['A. Execute a step exactly once', 'B. Repeatedly execute a statement or sequence of statements as long as a condition remains true', 'C. Select between two activities', 'D. Assign a value to a variable'],
-        answer: 'B. Repeatedly execute a statement or sequence of statements as long as a condition remains true',
+        q: 'The while structure is used for:',
+        options: ['A. Repeatedly executing statements as long as a condition stays true', 'B. Executing a step exactly once', 'C. Assigning a value to a variable', 'D. Selecting between two activities'],
+        answer: 'A. Repeatedly executing statements as long as a condition stays true',
         diff: 'easy',
       },
       {
-        q: 'In the while pseudocode format, when does the loop STOP?',
-        options: ['A. After executing the activity exactly once', 'B. When the condition is found to be false', 'C. When the computer runs out of memory', 'D. After 100 iterations automatically'],
-        answer: 'B. When the condition is found to be false',
+        q: 'A while loop STOPS when:',
+        options: ['A. After exactly 100 iterations', 'B. The condition becomes false', 'C. The computer runs out of memory', 'D. After executing the activity exactly once'],
+        answer: 'B. The condition becomes false',
         diff: 'easy',
       },
       {
-        q: 'The ticket-selling example "while (tickets remain to be sold): sell a ticket" demonstrates which concept?',
-        options: ['A. Assignment', 'B. Selection', 'C. Repetition (looping)', 'D. Termination by halt instruction'],
-        answer: 'C. Repetition (looping)',
-        diff: 'easy',
-      },
-      {
-        q: 'After a while loop finds its condition to be FALSE, execution continues:',
-        options: ['A. By re-running the loop from the beginning', 'B. At the next instruction following the while structure', 'C. By evaluating the else branch', 'D. The program immediately terminates'],
-        answer: 'B. At the next instruction following the while structure',
+        q: 'After a while loop exits (condition false), execution continues:',
+        options: ['A. At the next instruction following the while structure', 'B. By re-running the loop from the beginning again', 'C. By jumping to the else branch', 'D. The program terminates immediately'],
+        answer: 'A. At the next instruction following the while structure',
         diff: 'medium',
       },
       {
         q: 'In pseudocode, what character follows the condition in a while statement?',
-        options: ['A. A semicolon (;)', 'B. A colon (:)', 'C. A period (.)', 'D. An equal sign (=)'],
-        answer: 'B. A colon (:)',
+        options: ['A. A colon (:)', 'B. A semicolon', 'C. A period', 'D. An equal sign'],
+        answer: 'A. A colon (:)',
         diff: 'easy',
       },
       {
-        q: 'How does a while structure differ from an if/else structure?',
-        options: ['A. While uses a colon; if/else does not', 'B. While repeatedly checks the condition and repeats the activity until false; if/else checks once and selects one of two activities', 'C. While assigns values; if/else only loops', 'D. There is no difference between the two'],
-        answer: 'B. While repeatedly checks the condition and repeats the activity until false; if/else checks once and selects one of two activities',
+        q: 'The ticket-selling example (while tickets remain: sell a ticket) demonstrates:',
+        options: ['A. Repetition — looping until condition becomes false', 'B. Assignment', 'C. Selection between two activities', 'D. Termination by halt instruction'],
+        answer: 'A. Repetition — looping until condition becomes false',
+        diff: 'easy',
+      },
+      {
+        q: 'How does a while structure differ from if/else?',
+        options: ['A. while uses a colon; if/else does not', 'B. while assigns values; if/else only loops', 'C. while repeatedly checks condition and repeats activity; if/else checks once and picks one of two activities', 'D. There is no meaningful difference between them'],
+        answer: 'C. while repeatedly checks condition and repeats activity; if/else checks once and picks one of two activities',
         diff: 'medium',
       },
       {
-        q: 'Both "As long as there are tickets to sell, continue selling" and "While there are tickets to sell, keep selling" are reduced to the SAME pseudocode. This illustrates that:',
-        options: ['A. Pseudocode cannot express natural language', 'B. Pseudocode provides a single uniform way to express this common semantic structure regardless of how it is phrased informally', 'C. Only one of these statements is correct', 'D. Pseudocode requires exact English wording'],
-        answer: 'B. Pseudocode provides a single uniform way to express this common semantic structure regardless of how it is phrased informally',
+        q: 'Both informal phrasings ("As long as..." and "While...") reduce to the SAME pseudocode. This shows:',
+        options: ['A. Only one of those statements is logically correct', 'B. Pseudocode cannot express natural language at all', 'C. Pseudocode provides ONE uniform way to express a common semantic structure regardless of informal phrasing', 'D. Pseudocode requires exact English wording to be valid'],
+        answer: 'C. Pseudocode provides ONE uniform way to express a common semantic structure regardless of informal phrasing',
         diff: 'hard',
       },
       {
-        q: 'In the while structure, what happens if the condition is TRUE on the first check?',
-        options: ['A. The loop is skipped entirely', 'B. The activity is performed, and then the condition is checked again', 'C. The program terminates immediately', 'D. Execution jumps to the else branch'],
-        answer: 'B. The activity is performed, and then the condition is checked again',
+        q: 'When a while loop condition is TRUE on first check:',
+        options: ['A. The activity executes, then the condition is checked again', 'B. The loop is skipped entirely', 'C. The program terminates immediately', 'D. Execution jumps to the else branch'],
+        answer: 'A. The activity executes, then the condition is checked again',
         diff: 'medium',
       },
       {
-        q: 'Which THREE pseudocode structures are covered in modules 89 and 90?',
-        options: ['A. For, switch, do-while', 'B. Assignment (name = expression), if/else, while', 'C. Input, output, goto', 'D. Function, class, object'],
-        answer: 'B. Assignment (name = expression), if/else, while',
+        q: 'The three pseudocode structures covered in modules 89 and 90 together are:',
+        options: ['A. For, switch, do-while', 'B. Assignment (name=expression), if/else, while', 'C. Input, output, goto', 'D. Function, class, object'],
+        answer: 'B. Assignment (name=expression), if/else, while',
         diff: 'medium',
       },
       {
-        q: 'If zero tickets remain when the while loop is first reached, what happens?',
-        options: ['A. An error occurs', 'B. The condition is immediately false, so the activity is never executed and execution moves past the while structure', 'C. The loop runs once anyway', 'D. The algorithm restarts from the beginning'],
-        answer: 'B. The condition is immediately false, so the activity is never executed and execution moves past the while structure',
+        q: 'If ZERO tickets remain when the while loop is FIRST reached:',
+        options: ['A. The loop runs once anyway out of default', 'B. The condition is false immediately — activity never executes and execution moves past the while structure', 'C. An error occurs and the program stops', 'D. The algorithm restarts from the beginning'],
+        answer: 'D. The condition is false immediately — activity never executes and execution moves past the while structure',
         diff: 'hard',
       },
     ],
