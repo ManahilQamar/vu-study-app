@@ -7,6 +7,7 @@ import Quiz       from './components/Quiz';
 import Summary    from './pages/Summary';
 import PastPapers from './pages/PastPapers';
 import MathTyper  from './pages/MathTyper';
+import Practice   from './pages/practice';
 
 export default function App() {
   const [page, setPage] = useState('home');
@@ -35,6 +36,10 @@ export default function App() {
   if (page.startsWith('summary-')) {
     const [, subj, idx] = page.split('-');
     return <Summary subject={subj} lectureIndex={parseInt(idx)} {...sharedProps} />;
+  }
+  if (page.startsWith('practice-')) {
+    const [, subj, idx] = page.split('-');
+    return <Practice subject={subj} lectureIndex={parseInt(idx)} {...sharedProps} />;
   }
 
   return <Levels subject={page} {...sharedProps} />;

@@ -14811,4778 +14811,2924 @@ Stopping distance: x = v₀²/(2μg).
       diff: "easy"
     }
   ]
-}
-  },
+},
 
-  // ─────────────────────────────────────────
-  //  CS101
-  // ─────────────────────────────────────────
-  CS101: {
-    1: {
-      title: 'Introduction to Computer Science',
-      summary: `**Key Topics Covered:**
-- What is Computer Science
-- Hardware vs Software
-- Computer networks
-- Key CS areas: graphics, robotics, databases, security
-- Career opportunities
+// ─────────────────────────────────────────────────────────────────
+//  PHY101 — Lecture 23: Electrostatics II
+//  ADD this inside PHY101: { ... } after your last lecture, as:
+//  23: { title: ..., summary: ..., questions: [...] }
+// ─────────────────────────────────────────────────────────────────
 
-**Important Concepts:**
+    23: {
+      title: 'Electrostatics II — Continuous Charge & Gauss\u2019s Law',
+      summary: `**Yeh Lecture Kya Cover Karti Hai:**
+- Coulomb's Law aur Electric Field ka revision
+- Continuous charge distributions (line, surface, volume)
+- Ring of charge aur Disk of charge ka electric field
+- Infinite line of charge aur infinite sheet of charge
+- Gauss's Law aur uski applications
+- Spherical shell, parallel plates, conductors
+- Electric potential energy
 
-**Computer Science:**
-CS builds the scientific foundation for computing systems. It covers hardware, software, networks, algorithms, and more.
+---
 
-**Hardware vs Software:**
-- Hardware = physical components (keyboard, monitor, mouse, CPU)
-- Software = instructions that tell the computer what to do
-- Operating System = system software (NOT hardware)
-- MS Word, Photoshop, Games = application software
+**Asaan Zaban Mein Samjho:**
 
-**Computer Networks:**
-Used for sharing resources between computers. The most commonly shared resource today is the internet connection.
+**1. Coulomb's Law (Revision):**
+Do point charges ke beech force = k q₁q₂/r². Yeh force **vector** hai — direction bhi hai, magnitude bhi. Action-reaction jaisa: q₁ jo force q₂ par lagata hai, q₂ wahi force opposite direction mein q₁ par lagata hai.
 
-**Key CS Areas:**
-- Computer Graphics = generating images using computers
-- Robotics = programmable machines capable of automatic actions
-- Database = organized collection of data for fast retrieval
-- DBMS = Database Management System
-- Security = Confidentiality + Integrity + Availability
-- Algorithm = set of instructions to solve a problem
+In simple English: The force between two point charges depends on the product of their charges and inversely on the square of the distance between them.
 
-**Career Opportunities:**
-CS is used in hospitals, banks, telecom, Pak Army, freelancing, and almost all professional fields. Software Developer is ranked #1 job in the US by Forbes.
+**2. Electric Field:**
+Agar charge Q electric field E mein rakha jaye, to force F = QE lagta hai. Field hamesha exist karti hai chahe charge ho ya na ho — field source charge banata hai, force tab lagta hai jab koi test charge field mein aaye.
 
-**Key Facts to Remember:**
-- OS is software, not hardware
-- Algorithm = step-by-step instructions to solve a problem
-- Security = Confidentiality + Integrity + Availability
-- Software Developer = #1 job (Forbes)
+**3. Continuous Charge Distributions:**
+Real life mein charge **point** par nahi hota — kisi line, surface, ya volume mein **distributed** hota hai. Isliye hum chote-chote elements (dq) lekar unka field calculate karte hain, phir **integrate** (sum) kar dete hain pure distribution par.
 
-**Quick Revision Points:**
-- Hardware = physical | Software = instructions
-- Network = share resources (mainly internet)
-- Graphics = image generation
-- Robot = programmable, automatic machine
-- Database = organized data for fast retrieval
-- DBMS = Database Management System
-- Algorithm = problem-solving instructions`,
+- **Linear charge density (λ):** charge per unit length → dq = λ ds
+- **Surface charge density (σ):** charge per unit area → dq = σ dA
+- **Volume charge density (ρ):** charge per unit volume → dq = ρ dV
+
+Simple rule: jitni bhi shape ho, chote piece le lo, uska field nikal lo, sab ko add (integrate) kar do.
+
+**4. Ring of Charge:**
+Ring ke axis par koi point P ho, to ring ke har chote segment ka field perpendicular components cancel ho jate hain (symmetry ki wajah se), sirf **axial (z) component** bachta hai. Far away (z >> R) par yeh ring bilkul point charge jaisa behave karti hai: E ≈ kq/z².
+
+**5. Disk of Charge:**
+Disk ko bohot saare thin rings mein todo, har ring ka field nikalo, integrate kardo radius 0 se R tak.
+- Agar point disk ke **bohot kareeb** ho (z << R) → field = σ/(2ε₀) — yeh **infinite sheet** jaisa lagta hai.
+- Agar point disk se **bohot door** ho (z >> R) → disk bhi point charge jaisi lagti hai.
+
+**6. Infinite Line of Charge:**
+Field ek perpendicular distance r par: E = λ/(2πε₀r). Yahan field **distance ke inverse** mein kam hota hai (1/r), point charge ki tarah 1/r² nahi.
+
+**7. Electric Flux aur Gauss's Law:**
+Flux = kitni electric field lines kisi surface se guzar rahi hain. Φ = E·A·cosθ
+
+**Gauss's Law** kehta hai: kisi bhi closed surface se total flux = (enclosed charge) / ε₀
+
+In English: The total electric flux through any closed surface equals the charge enclosed divided by the permittivity of free space. This is one of Maxwell's four fundamental equations.
+
+**Gauss's Law ka faida:** Symmetric shapes (sphere, cylinder, infinite plane) ke liye field nikalna **bohot aasan** ho jata hai — integration ki zaroorat nahi, sirf algebra!
+
+**8. Important Results from Gauss's Law:**
+
+| Shape | Electric Field |
+|---|---|
+| Infinite sheet of charge | E = σ/(2ε₀) |
+| Infinite line/wire | E = λ/(2πε₀r) |
+| Spherical shell (inside) | E = 0 |
+| Spherical shell (outside) | E = kq/r² (jaise point charge) |
+| Parallel plates (between) | E = σ/ε₀ |
+
+**9. Conductors:**
+Conductor ke **andar** electric field **zero** hota hai — kyunki charges khud ko rearrange karte hain taake andar ka field cancel ho jaye. Agar koi cavity ho aur usme charge rakho, to conductor ki inner surface par opposite charge induce ho jata hai jo cavity ke andar field zero kar deta hai.
+
+**10. Discontinuity at Charged Surface:**
+Charged surface ke do taraf field different hota hai. Difference: E₁ − E₂ = σ/ε₀
+
+**11. Electric Potential Energy:**
+Gravity jaisa concept — jaise mass ko gravity field ke against move karne mein energy lagti hai, waise hi charge ko electric field ke against move karne mein potential energy badhti hai.
+
+U(r) = kq₁q₂/r — yeh distance ke **inverse** mein hai (gravitational PE jaisa, bas sign opposite).
+
+---
+
+**Yaad Rakhne Wali Important Baatein (Quick Revision):**
+- Coulomb's force = vector, action-reaction pair
+- F = QE (force on charge in a field)
+- dq = λds (line), σdA (surface), ρdV (volume)
+- Ring on axis: far away behaves like point charge
+- Disk near surface (z<<R): behaves like infinite sheet → E = σ/2ε₀
+- Infinite line: E = λ/2πε₀r (1/r, NOT 1/r²)
+- Gauss's Law: Φ = Q_enclosed/ε₀
+- Spherical shell: field ZERO inside, point-charge-like outside
+- Parallel plates: E = σ/ε₀ between them
+- Conductor interior: E = 0 always
+- Surface discontinuity: E₁ − E₂ = σ/ε₀
+- Electric PE: U = kq₁q₂/r (analogous to gravity)`,
       questions: [
         {
-          q: 'Computer Science is the discipline that mainly focuses on:',
-          options: ['A. Only hardware design', 'B. Building scientific foundation for computing systems', 'C. Only programming languages', 'D. Only internet usage'],
-          answer: 'B. Building scientific foundation for computing systems',
-          diff: 'easy',
-        },
-        {
-          q: 'Which of the following is NOT a component of computer hardware?',
-          options: ['A. Keyboard', 'B. Operating System', 'C. Monitor', 'D. Mouse'],
-          answer: 'B. Operating System',
-          diff: 'easy',
-        },
-        {
-          q: 'Computer hardware refers to:',
-          options: ['A. Instructions for computer', 'B. Physical components of a computer', 'C. Internet connection', 'D. Software programs'],
-          answer: 'B. Physical components of a computer',
-          diff: 'easy',
-        },
-        {
-          q: 'Computer software is best defined as:',
-          options: ['A. Physical parts of computer', 'B. Set of instructions that tells computer what to do', 'C. Internet hardware', 'D. Computer cables'],
-          answer: 'B. Set of instructions that tells computer what to do',
-          diff: 'easy',
-        },
-        {
-          q: 'Which one is an example of system software?',
-          options: ['A. MS Word', 'B. Photoshop', 'C. Operating System', 'D. Game'],
-          answer: 'C. Operating System',
+          q: 'Two point charges exert forces on each other according to Coulomb\u2019s Law. If charge q₁ exerts a force F on q₂, what does q₂ exert on q₁?',
+          options: [
+            'A. A force of the same magnitude but in the same direction as F',
+            'B. A force of equal magnitude but opposite direction to F',
+            'C. A force of half the magnitude in the opposite direction',
+            'D. No force at all, since q₂ is the receiving charge',
+          ],
+          answer: 'B. A force of equal magnitude but opposite direction to F',
           diff: 'medium',
         },
         {
-          q: 'Computer programming is the process of:',
-          options: ['A. Installing hardware', 'B. Designing and building executable programs', 'C. Browsing internet', 'D. Typing documents'],
-          answer: 'B. Designing and building executable programs',
-          diff: 'easy',
-        },
-        {
-          q: 'A computer network is used for:',
-          options: ['A. Playing games only', 'B. Sharing resources between computers', 'C. Designing hardware', 'D. Installing software'],
-          answer: 'B. Sharing resources between computers',
-          diff: 'easy',
-        },
-        {
-          q: 'Which resource is most commonly shared on a computer network today?',
-          options: ['A. Printer only', 'B. Internet connection', 'C. Mouse', 'D. CPU'],
-          answer: 'B. Internet connection',
-          diff: 'easy',
-        },
-        {
-          q: 'Computer graphics deals with:',
-          options: ['A. Writing programs', 'B. Generating images using computers', 'C. Networking computers', 'D. Data storage only'],
-          answer: 'B. Generating images using computers',
+          q: 'A charge is placed in a region where an electric field already exists due to other charges. Which statement correctly describes the relationship between the field and the force experienced?',
+          options: [
+            'A. The field only exists once the charge is placed there, and disappears if removed',
+            'B. The force is independent of the field strength and depends only on the charge\u2019s own field',
+            'C. The field exists independently of the placed charge, and the force on the charge is the product of its magnitude and the field strength',
+            'D. The field and the force are always numerically equal regardless of the charge magnitude',
+          ],
+          answer: 'C. The field exists independently of the placed charge, and the force on the charge is the product of its magnitude and the field strength',
           diff: 'medium',
         },
         {
-          q: 'A robot is defined as:',
-          options: ['A. A human-controlled machine only', 'B. A programmable machine capable of automatic actions', 'C. A computer software', 'D. A database system'],
-          answer: 'B. A programmable machine capable of automatic actions',
-          diff: 'easy',
-        },
-        {
-          q: 'Database is best described as:',
-          options: ['A. Random files in computer', 'B. Organized collection of data for fast retrieval', 'C. Internet browser', 'D. Programming tool'],
-          answer: 'B. Organized collection of data for fast retrieval',
-          diff: 'medium',
-        },
-        {
-          q: 'DBMS stands for:',
-          options: ['A. Data Backup Management System', 'B. Database Management System', 'C. Digital Binary Machine System', 'D. Data Basic Machine Software'],
-          answer: 'B. Database Management System',
-          diff: 'medium',
-        },
-        {
-          q: 'Computer security ensures:',
-          options: ['A. Speed only', 'B. Confidentiality, integrity, and availability', 'C. Only storage', 'D. Only internet access'],
-          answer: 'B. Confidentiality, integrity, and availability',
+          q: 'When calculating the electric field due to a continuous charge distribution, why is integration used instead of simple addition?',
+          options: [
+            'A. Because the total charge is always negative, requiring calculus to find magnitude',
+            'B. Because the distribution consists of infinitesimally small elements, and summing infinite small contributions requires an integral',
+            'C. Because integration only applies to surface charges and not to volume charges',
+            'D. Because Coulomb\u2019s Law cannot be applied to more than two charges simultaneously',
+          ],
+          answer: 'B. Because the distribution consists of infinitesimally small elements, and summing infinite small contributions requires an integral',
           diff: 'hard',
         },
         {
-          q: 'An algorithm is:',
-          options: ['A. Computer hardware', 'B. Set of instructions to solve a problem', 'C. Internet connection', 'D. Programming language'],
-          answer: 'B. Set of instructions to solve a problem',
-          diff: 'easy',
+          q: 'For a uniformly charged ring, why do the perpendicular (radial) components of the electric field cancel out at a point on the ring\u2019s axis?',
+          options: [
+            'A. Because the radius of the ring is always assumed to be zero in calculations',
+            'B. Because each segment\u2019s perpendicular contribution is cancelled by the contribution from the diametrically opposite segment, due to the ring\u2019s symmetry',
+            'C. Because the linear charge density is negative on one half of the ring',
+            'D. Because only the axial component of charge exists physically on a ring',
+          ],
+          answer: 'B. Because each segment\u2019s perpendicular contribution is cancelled by the contribution from the diametrically opposite segment, due to the ring\u2019s symmetry',
+          diff: 'hard',
         },
         {
-          q: 'Information processing refers to:',
-          options: ['A. Manual writing only', 'B. Manipulation of digital information by computers', 'C. Printing documents', 'D. Installing hardware'],
-          answer: 'B. Manipulation of digital information by computers',
+          q: 'A charged ring of radius R produces an electric field along its axis. As the observation point moves very far from the ring (z \u226b R), how does the ring\u2019s field behave?',
+          options: [
+            'A. It increases proportionally with z',
+            'B. It becomes independent of distance entirely',
+            'C. It approaches the field of a point charge located at the centre of the ring',
+            'D. It drops to exactly zero at all distances beyond R',
+          ],
+          answer: 'C. It approaches the field of a point charge located at the centre of the ring',
           diff: 'medium',
         },
         {
-          q: 'Which of the following is a domain where Computer Science is used?',
-          options: ['A. Only schools', 'B. Hospitals, banks, telecom, software industry', 'C. Only government offices', 'D. Only gaming'],
-          answer: 'B. Hospitals, banks, telecom, software industry',
-          diff: 'easy',
+          q: 'A uniformly charged disk is observed from a point very close to its surface, such that z is much smaller than the disk\u2019s radius R. What does the electric field resemble in this limit?',
+          options: [
+            'A. The field of a point charge located at the centre',
+            'B. The field of an infinite line of charge',
+            'C. The field of an infinite sheet of charge, given by σ/(2ε₀)',
+            'D. Zero field, since the disk is too close to produce a measurable field',
+          ],
+          answer: 'C. The field of an infinite sheet of charge, given by σ/(2ε₀)',
+          diff: 'hard',
         },
         {
-          q: 'Which field is ranked #1 job in US according to Forbes?',
-          options: ['A. Doctor', 'B. Software Developer', 'C. Teacher', 'D. Banker'],
-          answer: 'B. Software Developer',
+          q: 'For an infinite line of charge with linear density λ, the electric field at perpendicular distance r is E = λ/(2πε₀r). How does this field behave differently compared to a point charge\u2019s field?',
+          options: [
+            'A. It falls off as 1/r² just like a point charge',
+            'B. It falls off as 1/r, which is slower than the 1/r² dependence of a point charge',
+            'C. It increases with distance instead of decreasing',
+            'D. It is completely independent of distance r',
+          ],
+          answer: 'B. It falls off as 1/r, which is slower than the 1/r² dependence of a point charge',
           diff: 'medium',
         },
         {
-          q: 'Which of the following is NOT a CS application area?',
-          options: ['A. Freelancing', 'B. Pak Army systems', 'C. Cooking recipes', 'D. Hospitals systems'],
-          answer: 'C. Cooking recipes',
+          q: 'Electric flux through a surface is defined using E·A·cosθ. What does the angle θ physically represent in this formula?',
+          options: [
+            'A. The angle between the electric field vector and the area vector (normal to the surface)',
+            'B. The angle between the surface and the ground',
+            'C. The angle of the charge\u2019s motion relative to the field',
+            'D. The phase angle of an oscillating charge distribution',
+          ],
+          answer: 'A. The angle between the electric field vector and the area vector (normal to the surface)',
+          diff: 'medium',
+        },
+        {
+          q: 'Gauss\u2019s Law states that the net electric flux through a closed surface equals the enclosed charge divided by ε₀. Why is this law particularly useful for symmetric charge distributions?',
+          options: [
+            'A. Because symmetric distributions have zero net charge, making the law trivially true',
+            'B. Because for symmetric shapes, the field magnitude can be factored out of the flux integral, turning a calculus problem into simple algebra',
+            'C. Because Gauss\u2019s Law only applies when the charge distribution is symmetric',
+            'D. Because symmetry guarantees the electric field is always zero inside the surface',
+          ],
+          answer: 'B. Because for symmetric shapes, the field magnitude can be factored out of the flux integral, turning a calculus problem into simple algebra',
+          diff: 'hard',
+        },
+        {
+          q: 'Inside a uniformly charged spherical shell (at a radius less than the shell\u2019s radius), what does Gauss\u2019s Law tell us about the electric field?',
+          options: [
+            'A. The field equals kq/r², same as outside the shell',
+            'B. The field is zero, because no charge is enclosed by a Gaussian surface drawn inside the shell',
+            'C. The field is at its maximum value exactly at the centre',
+            'D. The field depends on the thickness of the shell material',
+          ],
+          answer: 'B. The field is zero, because no charge is enclosed by a Gaussian surface drawn inside the shell',
+          diff: 'medium',
+        },
+        {
+          q: 'Outside a uniformly charged spherical shell, the electric field behaves as though all the charge is concentrated at the centre. What is the underlying reason for this result?',
+          options: [
+            'A. The Gaussian surface outside encloses the total charge q, and by symmetry, the field can be calculated as if it originates from a single point',
+            'B. The shell\u2019s thickness causes the charge to physically collapse to the centre',
+            'C. Gauss\u2019s Law only applies to point charges, so the shell is treated as one by definition',
+            'D. The field outside is always weaker than the field of an equivalent point charge',
+          ],
+          answer: 'A. The Gaussian surface outside encloses the total charge q, and by symmetry, the field can be calculated as if it originates from a single point',
+          diff: 'hard',
+        },
+        {
+          q: 'Why is the electric field inside a conductor always zero in electrostatic equilibrium?',
+          options: [
+            'A. Because conductors cannot hold any charge on their surface',
+            'B. Because free charges within the conductor rearrange themselves until any internal field is exactly cancelled',
+            'C. Because the permittivity of a conductor is infinite, making E = q/ε₀ always zero',
+            'D. Because conductors are always electrically neutral overall',
+          ],
+          answer: 'B. Because free charges within the conductor rearrange themselves until any internal field is exactly cancelled',
+          diff: 'medium',
+        },
+        {
+          q: 'A charge is placed inside the cavity of a hollow conductor. What happens on the inner surface of the conductor, and why?',
+          options: [
+            'A. Nothing happens, since cavities are electrically isolated from the conductor material',
+            'B. The conductor becomes uniformly charged throughout its entire volume',
+            'C. An induced charge distribution appears on the inner surface, arranged so that the field inside the conducting material remains zero',
+            'D. The cavity charge is instantly neutralized and disappears',
+          ],
+          answer: 'C. An induced charge distribution appears on the inner surface, arranged so that the field inside the conducting material remains zero',
+          diff: 'hard',
+        },
+        {
+          q: 'At a surface carrying charge density σ, the electric field has a discontinuity given by E₁ − E₂ = σ/ε₀. What does this physically mean?',
+          options: [
+            'A. The field is identical on both sides of the surface',
+            'B. The field changes abruptly across the charged surface, with the jump in magnitude proportional to the surface charge density',
+            'C. The field becomes undefined exactly at the surface and has no meaningful value',
+            'D. The discontinuity only occurs for negative charge densities',
+          ],
+          answer: 'B. The field changes abruptly across the charged surface, with the jump in magnitude proportional to the surface charge density',
+          diff: 'hard',
+        },
+        {
+          q: 'Electric potential energy between two point charges is given by U(r) = kq₁q₂/r. How is this expression analogous to gravitational potential energy?',
+          options: [
+            'A. Both depend on the product of two quantities divided by distance, but gravitational PE is always negative while electric PE can be positive or negative depending on charge signs',
+            'B. They are identical in every way, including sign and dependence on mass versus charge',
+            'C. Electric PE depends on r², while gravitational PE depends on r',
+            'D. There is no meaningful analogy between the two; they are unrelated formulas',
+          ],
+          answer: 'A. Both depend on the product of two quantities divided by distance, but gravitational PE is always negative while electric PE can be positive or negative depending on charge signs',
+          diff: 'hard',
+        },
+        {
+          q: 'Corona discharge tends to occur more readily at sharp points or edges of a charged conductor. What is the physical reason for this?',
+          options: [
+            'A. Sharp points have lower surface charge density, reducing the field strength needed for ionization',
+            'B. Sharp points concentrate the electric field, making it locally strong enough to ionize the surrounding gas',
+            'C. Sharp edges are always grounded, which causes discharge automatically',
+            'D. Corona discharge only depends on the total charge, not the conductor\u2019s shape',
+          ],
+          answer: 'B. Sharp points concentrate the electric field, making it locally strong enough to ionize the surrounding gas',
+          diff: 'medium',
+        },
+        {
+          q: 'For two infinite parallel plates with equal and opposite surface charge densities, the field between the plates is found using a cylindrical Gaussian surface. Why does the flux through the side walls of this cylinder equal zero?',
+          options: [
+            'A. Because the cylinder has no side walls in this configuration',
+            'B. Because the electric field is parallel to the side walls and therefore has no component perpendicular to them',
+            'C. Because the side walls are always outside the region where the field exists',
+            'D. Because the charge density on the plates is zero between them',
+          ],
+          answer: 'B. Because the electric field is parallel to the side walls and therefore has no component perpendicular to them',
+          diff: 'hard',
+        },
+        {
+          q: 'When deriving the electric field of an infinite sheet of charge using Gauss\u2019s Law, a cylindrical Gaussian surface is chosen that straddles the sheet. Why does the flux contribution come only from the two end caps?',
+          options: [
+            'A. Because the curved side surface is always charged and cancels its own contribution',
+            'B. Because the electric field is perpendicular to the end caps but parallel (and thus contributes no flux) to the curved side surface',
+            'C. Because Gauss\u2019s Law forbids flux through curved surfaces',
+            'D. Because the sheet itself is curved, not flat',
+          ],
+          answer: 'B. Because the electric field is perpendicular to the end caps but parallel (and thus contributes no flux) to the curved side surface',
+          diff: 'hard',
+        },
+        {
+          q: 'If the linear charge density λ of an infinitely long wire is doubled while keeping the perpendicular distance r constant, what happens to the electric field?',
+          options: [
+            'A. It remains exactly the same, since field is independent of λ',
+            'B. It doubles, since E is directly proportional to λ',
+            'C. It quadruples, since E depends on λ²',
+            'D. It is halved, since E is inversely proportional to λ',
+          ],
+          answer: 'B. It doubles, since E is directly proportional to λ',
           diff: 'easy',
         },
         {
-          q: 'Computer Science helps in:',
-          options: ['A. Only gaming', 'B. Almost all professional fields', 'C. Only banking', 'D. Only education'],
-          answer: 'B. Almost all professional fields',
-          diff: 'easy',
-        },
-        {
-          q: 'Software includes:',
-          options: ['A. Only hardware parts', 'B. Operating system and applications', 'C. Only internet cables', 'D. Mouse and keyboard'],
-          answer: 'B. Operating system and applications',
-          diff: 'easy',
+          q: 'A student claims that the electric field due to a finite disk of charge always behaves exactly like an infinite sheet, regardless of the observer\u2019s distance from the disk. Why is this claim incorrect?',
+          options: [
+            'A. The infinite-sheet approximation only holds when the observation distance is much smaller than the disk\u2019s radius; at large distances the disk instead behaves like a point charge',
+            'B. A disk never produces a field resembling an infinite sheet under any condition',
+            'C. The claim is correct only if the disk has zero surface charge density',
+            'D. Disks only produce fields perpendicular to their axis, unlike infinite sheets',
+          ],
+          answer: 'A. The infinite-sheet approximation only holds when the observation distance is much smaller than the disk\u2019s radius; at large distances the disk instead behaves like a point charge',
+          diff: 'hard',
         },
       ],
     },
 
 
-//L 2 //
 
-   2: {
-  title: 'Breadth First Learning & Introduction to Computer Science Topics (CS101 Lecture 2)',
-  summary: `**Key Topics Covered:**
-- Breadth First Learning vs Depth First Learning in CS education
-- Overview of all major CS courses and their importance
-- Search engine usage techniques
-- History of computing
-- Data storage and data manipulation
+  },
+
+  // ─────────────────────────────────────────
+  //  CS101
+  // ─────────────────────────────────────────
+     CS101: {
+  1: {
+    title: 'Introduction to Computer Science',
+    summary: `**Key Topics Covered:**
+- Definition and scope of Computer Science
+- Major sub-domains: Hardware, Software, Programming, Networks, Graphics, Robots, Database, Security, Algorithms, Information Processing
+- Local and International job market in CS
+- Relevance of CS for non-CS students
+ 
+**Important Concepts:**
+ 
+**What is Computer Science?**
+CS is the discipline that builds a scientific foundation for Hardware, Software, Programming, Networks, Graphics, Robots, Database, Security, Algorithmic Solutions, and Information Processing.
+ 
+- **Hardware** = physical touchable parts (case, monitor, keyboard, HDD, motherboard).
+- **Software** = set of instructions + documentation telling computer what to do.
+- **Programming** = process of designing/building executable programs for a task.
+- **Networks** = set of computers connected to share resources (Internet is itself a network).
+- **Algorithm** = set of instructions to perform a specific task.
+- **Security** = controls providing confidentiality, integrity, availability of system components.
+ 
+**Job Market:**
+- In Pakistan, CS jobs rank highest both "By Function" and "By Industry" (per local job-market data).
+- Internationally, Forbes ranked Software Developer as the #1 job in the US. Top CS areas: AI/ML, Data Science, VR, IoT, Back-end/Front-end Dev, UI Design, Full-Stack, IT Manager, QA Expert.
+ 
+**Relevance for non-CS students:**
+This course follows **Breadth First Learning** so even non-CS students benefit, since CS basics apply across Business, Engineering, and Sciences.
+ 
+**Key Facts to Remember:**
+- Algorithm is a SET of instructions, not a single instruction.
+- Database extracted via DBMS in response to queries.
+- Security covers data, software, hardware, AND firmware.
+ 
+**Quick Revision Points:**
+- 9 core CS topics: Hardware, Software, Programming, Networks, Graphics, Robots, Database, Security, Algorithms, Info Processing.
+- Software Developer = ranked #1 job (Forbes, US).
+- CS job opportunities > all other fields in Pakistan (by function & industry).`,
+    questions: [
+      {
+        q: 'Which of the following is touchable and physical in nature, as defined in the course?',
+        options: ['A. Software', 'B. Hardware', 'C. Algorithm', 'D. Information Processing'],
+        answer: 'B. Hardware',
+        diff: 'easy',
+      },
+      {
+        q: 'A robot is best described as a machine that is:',
+        options: ['A. Only manually operated', 'B. Programmable and capable of carrying out complex actions automatically', 'C. Only used for graphics rendering', 'D. A type of database management system'],
+        answer: 'B. Programmable and capable of carrying out complex actions automatically',
+        diff: 'medium',
+      },
+      {
+        q: 'According to Forbes magazine (as cited in the lecture), which job was ranked Number 1 in the US?',
+        options: ['A. Data Scientist', 'B. UI Designer', 'C. Software Developer', 'D. IT Manager'],
+        answer: 'C. Software Developer',
+        diff: 'medium',
+      },
+      {
+        q: 'Which statement correctly distinguishes Software from Hardware?',
+        options: ['A. Software is physical; Hardware is a set of instructions', 'B. Software is a set of instructions/documentation; Hardware is physical', 'C. Both are identical in computing context', 'D. Hardware refers only to networks'],
+        answer: 'B. Software is a set of instructions/documentation; Hardware is physical',
+        diff: 'easy',
+      },
+      {
+        q: 'A Database Management System (DBMS) is primarily responsible for:',
+        options: ['A. Designing computer hardware', 'B. Extracting information from a database in response to queries', 'C. Generating computer graphics', 'D. Encrypting network traffic only'],
+        answer: 'B. Extracting information from a database in response to queries',
+        diff: 'medium',
+      },
+      {
+        q: 'Computer Security, as defined in the course, must provide confidentiality, integrity, and availability for which components?',
+        options: ['A. Only data', 'B. Only software and hardware', 'C. Data, software, hardware, and firmware', 'D. Only network connections'],
+        answer: 'C. Data, software, hardware, and firmware',
+        diff: 'hard',
+      },
+      {
+        q: 'Why is this course considered useful even for non-CS students?',
+        options: ['A. It replaces their core degree', 'B. It teaches only programming languages', 'C. It covers basic CS concepts applicable across Business, Engineering, and Sciences', 'D. It is mandatory only for CS majors'],
+        answer: 'C. It covers basic CS concepts applicable across Business, Engineering, and Sciences',
+        diff: 'easy',
+      },
+      {
+        q: 'Which of the following is NOT listed among the core disciplines that Computer Science builds a scientific foundation for?',
+        options: ['A. Networks', 'B. Robots', 'C. Agriculture', 'D. Algorithmic Solutions'],
+        answer: 'C. Agriculture',
+        diff: 'easy',
+      },
+      {
+        q: 'Information Processing, as described in the course, refers to:',
+        options: ['A. Only the storage of paper documents', 'B. The manipulation of digitized information by computers and digital electronic equipment (IT)', 'C. Strictly database design', 'D. Only network protocols'],
+        answer: 'B. The manipulation of digitized information by computers and digital electronic equipment (IT)',
+        diff: 'medium',
+      },
+      {
+        q: 'A computer network is best defined as:',
+        options: ['A. A single isolated computer', 'B. A set of computers connected to share resources such as Internet access or a printer', 'C. Only the Internet itself', 'D. A type of hardware component inside the CPU'],
+        answer: 'B. A set of computers connected to share resources such as Internet access or a printer',
+        diff: 'easy',
+      },
+    ],
+  },
+ 
+  2: {
+    title: 'Breadth First Learning',
+    summary: `**Key Topics Covered:**
+- Breadth First Learning vs Depth First Learning
+- Overview of all topics to be covered in the course (Search Engines through Web Development)
+ 
+**Important Concepts:**
+ 
+**Breadth First Learning:**
+This strategy gives a basic introduction to ALMOST ALL courses of Computer Science (abstract view), so students understand the bigger picture of the degree program before diving deep into any one subject.
+ 
+**Depth First Learning:**
+The contrasting strategy — one particular course is covered in full detail before moving to the next course.
+ 
+**Topics Previewed in This Course (each is a "taste" of a full CS course):**
+- Search Engine Usage Techniques
+- History of Computing
+- Data Storage & Data Manipulation
 - Operating Systems
 - Networking and the Internet
-- Algorithms (definition and importance)
-- Programming languages (C++ basics)
-- Software Engineering (SDLC phases)
-- Data Abstraction (arrays, stacks, queues, trees)
-- Database Systems (DBMS)
-- Artificial Intelligence (AI)
-- Impact of CS on society
-- Content filtering, spam, international laws
-- Word processing (Microsoft Word)
-- Presentations (Microsoft PowerPoint)
-- Spreadsheets (Microsoft Excel)
-- Database MS Access
-- Web page development (Dreamweaver)
-
----
-
-**Simple Understanding:**
-
-**Breadth First Learning:**
-👉 A learning strategy where you first get a basic introduction to ALL courses in a degree program.
-👉 Helps you understand the big picture before diving deep into any single subject.
-👉 Opposite of Depth First Learning (studying one course in complete detail before moving to the next).
-👉 CS101 follows Breadth First Learning.
-
-**Why this approach?**
-👉 You will learn what you will study throughout your CS degree.
-👉 Understand why each course is important.
-👉 Clarify the bigger picture of Computer Science.
-
----
-
-**Topics Covered in CS101:**
-
-**1. Search Engine Usage Techniques:**
-👉 How to effectively search the internet using popular search engines (Google, Bing, etc.).
-
-**2. History of Computing:**
-👉 How today's computers evolved from basic ideas.
-
-**3. Data Storage:**
-👉 How data entered into a computer is stored in hardware (memory, hard drives).
-
-**4. Data Manipulation:**
-👉 How arithmetic operations (+, -, ×, ÷) and advanced operations are performed by computers.
-
-**5. Operating System:**
-👉 The overall in-charge of the computer system (Windows, Linux, macOS).
-
-**6. Networking and the Internet:**
-👉 How different computers communicate over networks and the Internet.
-
-**7. Algorithms:**
-👉 A set of steps in sequence to perform a task – the foundation of CS.
-
-**8. Programming Languages:**
-👉 Tools to write algorithms as computer programs (C++ basics).
-
-**9. Software Engineering:**
-👉 Complete software development process: requirements → design → implementation → testing.
-
-**10. Data Abstraction:**
-👉 Hiding complexities to design large systems – includes arrays, stacks, queues, trees.
-
-**11. Database Systems:**
-👉 Organized storage and linking of data using DBMS (Database Management Systems).
-
-**12. Artificial Intelligence (AI):**
-👉 Building computer systems that can act intelligently (though computers are naturally "dumb").
-
-**13. CS Impact on Society:**
-👉 How computer science affects social setups, humans, and daily life.
-
-**14. Content Filtering, Spam, International Laws:**
-👉 Dealing with spam, filtering content, and laws related to data and privacy.
-
-**15. Word Processing:**
-👉 Using Microsoft Word to create editable documents.
-
-**16. Presentations Development:**
-👉 Using Microsoft PowerPoint to design and animate slides.
-
-**17. Spreadsheet:**
-👉 Using Microsoft Excel for calculations and data analysis.
-
-**18. Database MS Access:**
-👉 Implementing databases using Microsoft Access.
-
-**19. Web Page Development:**
-👉 Creating web pages easily using tools like Dreamweaver.
-
----
-
-**Important Vocabulary:**
-- Breadth First Learning = learning basics of many subjects first
-- Depth First Learning = studying one subject in detail before moving on
-- Search engine = tool to find information on the internet (Google, Bing)
-- Algorithm = step-by-step procedure to solve a problem
-- Operating System = software that manages computer hardware and resources
-- Database = organized collection of data
-- DBMS = Database Management System (e.g., MS Access, MySQL)
-- Artificial Intelligence = field of CS focused on intelligent behavior in machines
-- Software Engineering = disciplined approach to software development
-- Data Abstraction = hiding implementation details to manage complexity
-- Spreadsheet = software for tabular data and calculations (Excel)
-- Word processor = software for document creation (Word)
-- Presentation software = tool for slide-based presentations (PowerPoint)
-
----
-
+- Algorithms (defined as: "Set of steps in a sequence to perform a certain task")
+- Programming Languages (basics of C++)
+- Software Engineering (requirement → design → implementation → testing)
+- Data Abstraction (Arrays, Stack, Queue, Trees)
+- Database Systems (DBMS functionality, design)
+- Artificial Intelligence (machines acting intelligently)
+- CS Impact on Society, Content Filtering, Spam, International Laws
+- Word Processing (MS Word), Presentations (PowerPoint), Spreadsheet (Excel), Database MS Access, Web Page Development (Dreamweaver)
+ 
+**Key Facts to Remember:**
+- The 4 goals of Breadth First Learning: (1) Abstract view of all major CS courses, (2) Understanding what will be studied, (3) Why each course matters, (4) Clarifying the bigger picture.
+- Algorithm definition given here: "Set of Steps in a sequence to perform a certain task."
+ 
 **Quick Revision Points:**
-- CS101 uses Breadth First Learning – covers all major CS topics at a basic level.
-- You will understand the bigger picture of your CS degree.
-- Topics range from hardware (data storage) to software (OS, applications) to advanced fields (AI).
-- Algorithms are the heart of CS – step-by-step sequences.
-- Programming languages turn algorithms into executable code.
-- Software Engineering covers the entire development lifecycle.
-- Data abstraction (arrays, stacks, queues, trees) helps manage complexity.
-- Databases organize and link data; DBMS like MS Access implement them.
-- AI aims to make computers intelligent.
-- Practical tools: MS Word, PowerPoint, Excel, Access, Dreamweaver.`,
-
-  questions: [
-    {
-      q: 'What is Breadth First Learning?',
-      options: ['A. Studying one course in detail before the next', 'B. Getting a basic introduction to all courses first', 'C. Learning only programming languages', 'D. Avoiding theoretical courses'],
-      answer: 'B. Getting a basic introduction to all courses first',
-      diff: 'easy',
-    },
-    {
-      q: 'Which learning strategy does CS101 follow?',
-      options: ['A. Depth First Learning', 'B. Breadth First Learning', 'C. Problem-based Learning', 'D. Project-based Learning'],
-      answer: 'B. Breadth First Learning',
-      diff: 'easy',
-    },
-    {
-      q: 'What is an algorithm?',
-      options: ['A. A programming language', 'B. A set of steps in sequence to perform a task', 'C. A type of data storage', 'D. A network protocol'],
-      answer: 'B. A set of steps in sequence to perform a task',
-      diff: 'easy',
-    },
-    {
-      q: 'Which topic covers how computers perform arithmetic operations?',
-      options: ['A. Data Storage', 'B. Data Manipulation', 'C. Operating System', 'D. Networking'],
-      answer: 'B. Data Manipulation',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the role of an Operating System?',
-      options: ['A. To store data permanently', 'B. To manage computer hardware and resources', 'C. To create presentations', 'D. To search the internet'],
-      answer: 'B. To manage computer hardware and resources',
-      diff: 'easy',
-    },
-    {
-      q: 'Which course studies how different computers communicate?',
-      options: ['A. Operating System', 'B. Networking and the Internet', 'C. Data Abstraction', 'D. Artificial Intelligence'],
-      answer: 'B. Networking and the Internet',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the main goal of Artificial Intelligence (AI)?',
-      options: ['A. To store large amounts of data', 'B. To build computer systems that can act intelligently', 'C. To design web pages', 'D. To create spreadsheets'],
-      answer: 'B. To build computer systems that can act intelligently',
-      diff: 'easy',
-    },
-    {
-      q: 'Software Engineering covers the complete development process including:',
-      options: ['A. Only coding', 'B. Requirements, design, implementation, testing', 'C. Only testing', 'D. Only documentation'],
-      answer: 'B. Requirements, design, implementation, testing',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following is an example of Data Abstraction?',
-      options: ['A. Microsoft Word', 'B. Arrays, stacks, queues, trees', 'C. Google Search', 'D. Windows OS'],
-      answer: 'B. Arrays, stacks, queues, trees',
-      diff: 'medium',
-    },
-    {
-      q: 'What does DBMS stand for?',
-      options: ['A. Data Basic Management System', 'B. Database Management System', 'C. Digital Binary Memory Storage', 'D. Data Backup and Management Software'],
-      answer: 'B. Database Management System',
-      diff: 'easy',
-    },
-    {
-      q: 'Which tool is mentioned for word processing?',
-      options: ['A. Microsoft Excel', 'B. Microsoft Word', 'C. Microsoft PowerPoint', 'D. Microsoft Access'],
-      answer: 'B. Microsoft Word',
-      diff: 'easy',
-    },
-    {
-      q: 'Which software is used for creating presentations with animations?',
-      options: ['A. Microsoft Word', 'B. Microsoft Excel', 'C. Microsoft PowerPoint', 'D. Microsoft Access'],
-      answer: 'C. Microsoft PowerPoint',
-      diff: 'easy',
-    },
-    {
-      q: 'Which software is best suited for performing calculations on data?',
-      options: ['A. Microsoft Word', 'B. Microsoft Excel', 'C. Microsoft PowerPoint', 'D. Microsoft Outlook'],
-      answer: 'B. Microsoft Excel',
-      diff: 'easy',
-    },
-    {
-      q: 'Which tool is mentioned for implementing databases?',
-      options: ['A. Microsoft Word', 'B. Microsoft Excel', 'C. Microsoft Access', 'D. Microsoft PowerPoint'],
-      answer: 'C. Microsoft Access',
-      diff: 'easy',
-    },
-    {
-      q: 'Which software is mentioned for web page development?',
-      options: ['A. Dreamweaver', 'B. Photoshop', 'C. Visual Studio', 'D. Eclipse'],
-      answer: 'A. Dreamweaver',
-      diff: 'easy',
-    },
-    {
-      q: 'What will you learn in the "Search Engine Usage Techniques" topic?',
-      options: ['A. How to build a search engine', 'B. How to effectively search the internet', 'C. How to store data', 'D. How to manipulate data'],
-      answer: 'B. How to effectively search the internet',
-      diff: 'easy',
-    },
-    {
-      q: 'The topic "History of Computing" covers:',
-      options: ['A. Future computers', 'B. How today\'s computers evolved from basic ideas', 'C. Computer programming only', 'D. Computer networks'],
-      answer: 'B. How today\'s computers evolved from basic ideas',
-      diff: 'easy',
-    },
-    {
-      q: 'Which programming language is mentioned as a basic tool in this course?',
-      options: ['A. Java', 'B. Python', 'C. C++', 'D. JavaScript'],
-      answer: 'C. C++',
-      diff: 'easy',
-    },
-    {
-      q: 'What does "Content Filtering" deal with?',
-      options: ['A. Storing data', 'B. Filtering unwanted content and spam', 'C. Creating algorithms', 'D. Designing databases'],
-      answer: 'B. Filtering unwanted content and spam',
-      diff: 'easy',
-    },
-    {
-      q: 'International laws in CS are related to:',
-      options: ['A. Programming languages', 'B. Data and privacy', 'C. Hardware manufacturing', 'D. Network speed'],
-      answer: 'B. Data and privacy',
-      diff: 'medium',
-    },
-    {
-      q: 'The "Impact of CS on Society" topic studies:',
-      options: ['A. Only positive effects', 'B. Only negative effects', 'C. How computer science affects social setups and humans', 'D. Only economic impacts'],
-      answer: 'C. How computer science affects social setups and humans',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the opposite of Breadth First Learning?',
-      options: ['A. Horizontal Learning', 'B. Depth First Learning', 'C. Vertical Learning', 'D. Circular Learning'],
-      answer: 'B. Depth First Learning',
-      diff: 'easy',
-    },
-    {
-      q: 'Why is Breadth First Learning beneficial for CS students?',
-      options: ['A. It helps students know what they will learn in the whole degree program', 'B. It focuses only on programming', 'C. It avoids theoretical concepts', 'D. It is faster than depth first'],
-      answer: 'A. It helps students know what they will learn in the whole degree program',
-      diff: 'easy',
-    },
-    {
-      q: 'Which topic covers "how data is stored in hardware"?',
-      options: ['A. Data Manipulation', 'B. Data Storage', 'C. Operating System', 'D. Networking'],
-      answer: 'B. Data Storage',
-      diff: 'easy',
-    },
-    {
-      q: 'Microsoft Excel is an example of:',
-      options: ['A. Word Processor', 'B. Spreadsheet software', 'C. Presentation software', 'D. Database software'],
-      answer: 'B. Spreadsheet software',
-      diff: 'easy',
-    }
-  ]
-},
-
+- Breadth First = wide overview of MANY courses.
+- Depth First = detailed study of ONE course at a time.
+- This entire CS101 course itself follows the Breadth First Learning model.`,
+    questions: [
+      {
+        q: 'Breadth First Learning, as used in this course, primarily means:',
+        options: ['A. Studying one CS course in complete depth before starting another', 'B. Giving a basic abstract introduction to almost all CS courses first', 'C. Avoiding theoretical topics entirely', 'D. Learning only programming first'],
+        answer: 'B. Giving a basic abstract introduction to almost all CS courses first',
+        diff: 'easy',
+      },
+      {
+        q: 'In contrast to Breadth First Learning, Depth First Learning is characterized by:',
+        options: ['A. Covering many topics briefly at once', 'B. Covering one particular course in detail before moving to the next', 'C. Skipping foundational courses', 'D. Only applicable to non-CS students'],
+        answer: 'B. Covering one particular course in detail before moving to the next',
+        diff: 'easy',
+      },
+      {
+        q: 'Which of the following is explicitly given as the definition of an algorithm in this module?',
+        options: ['A. A programming language compiler', 'B. Set of steps in a sequence to perform a certain task', 'C. A type of database query', 'D. A network protocol'],
+        answer: 'B. Set of steps in a sequence to perform a certain task',
+        diff: 'medium',
+      },
+      {
+        q: 'Which of the following is one of the stated benefits of Breadth First Learning?',
+        options: ['A. It eliminates the need to study any course in depth later', 'B. It helps students understand the bigger picture before specializing', 'C. It only applies to graduate-level study', 'D. It replaces software engineering principles'],
+        answer: 'B. It helps students understand the bigger picture before specializing',
+        diff: 'medium',
+      },
+      {
+        q: 'Data Abstraction, as previewed in this module, deals with structures such as:',
+        options: ['A. Networking protocols only', 'B. Arrays, Stacks, Queues, and Trees', 'C. Only spreadsheet formulas', 'D. Search engine operators'],
+        answer: 'B. Arrays, Stacks, Queues, and Trees',
+        diff: 'medium',
+      },
+      {
+        q: 'Which application software pairing is correctly matched with its purpose as previewed in this module?',
+        options: ['A. MS Access — presentation slides', 'B. MS Excel — spreadsheet calculations', 'C. Dreamweaver — word processing', 'D. MS PowerPoint — database management'],
+        answer: 'B. MS Excel — spreadsheet calculations',
+        diff: 'easy',
+      },
+      {
+        q: 'According to this module, Data Abstraction is important in Computer Science mainly because it:',
+        options: ['A. Increases hardware cost', 'B. Hides design complexities and helps comprehend large/complex systems', 'C. Is only relevant to web development', 'D. Replaces the need for databases'],
+        answer: 'B. Hides design complexities and helps comprehend large/complex systems',
+        diff: 'hard',
+      },
+      {
+        q: 'Why does this course adopt Breadth First Learning rather than Depth First Learning?',
+        options: ['A. Because it is faster to grade', 'B. To first let students know what they will be learning across the whole CS degree program', 'C. Because Depth First Learning is outdated', 'D. Because only one topic exists in CS'],
+        answer: 'B. To first let students know what they will be learning across the whole CS degree program',
+        diff: 'medium',
+      },
+      {
+        q: 'Artificial Intelligence is previewed in this module primarily in the context of:',
+        options: ['A. Building computer systems that can act intelligently', 'B. Designing spreadsheets', 'C. Searching with Boolean operators', 'D. Compressing audio files'],
+        answer: 'A. Building computer systems that can act intelligently',
+        diff: 'easy',
+      },
+      {
+        q: 'Software Engineering, as introduced in this module, covers the process starting from which phase to which phase?',
+        options: ['A. Marketing to sales', 'B. Requirement gathering to designing, implementation, and testing', 'C. Hardware assembly to packaging', 'D. Search engine optimization to deployment'],
+        answer: 'B. Requirement gathering to designing, implementation, and testing',
+        diff: 'medium',
+      },
+    ],
+  },
+ 
   3: {
-  title: 'Search Engines: Google Basics and Query Formulation (CS101 Lecture 3)',
-  summary: `**Key Topics Covered:**
-- What is a search engine? (Google, Yahoo, MSN)
-- Google dominates the search engine market
-- How to access Google: https://www.google.com/
-- Query: set of words given to search engine for searching
-- How Google works: finds pages containing all terms in the query
-- Using microphone for voice search
-- Fun feature: "Flip a Coin" on Google
-- Query formulation: using correct terms for better results (e.g., "headache" not "head hurts", "rector" not "head of university")
-- Capitalization: Google is case-insensitive (no difference between uppercase and lowercase)
-
----
-
-**Simple Understanding:**
-
-**What is a Search Engine?**
-👉 A tool that indexes web pages and retrieves relevant pages based on your query.
-👉 Examples: Google, Yahoo, MSN.
-👉 Google has the largest market share for internet search.
-
-**How to Access Google:**
-👉 Type https://www.google.com/ in your web browser.
-
+    title: 'Search Engines',
+    summary: `**Key Topics Covered:**
+- What a search engine is and how Google dominates market share
+- Concept of a query
+- How Google processes queries
+- Capitalization rules and query formulation tips
+ 
+**Important Concepts:**
+ 
+**Search Engine:**
+Indexes web pages and retrieves relevant pages based on user queries. Google has the largest market share among Yahoo, MSN, etc.
+ 
 **Query:**
-👉 The set of words you type to search for information.
-👉 Example: "Virtual University" – Google finds pages containing those words.
-
+The set of words given to a search engine to find information (e.g., "Virtual University").
+ 
 **How Google Works:**
-👉 Finds all web pages that contain all the terms in your query.
-👉 More relevant terms = better results.
-
-**Voice Search:**
-👉 Click the microphone icon in the search box and speak your query.
-
-**Flip a Coin:**
-👉 Type "Flip a Coin" in Google – it will simulate a coin toss.
-
-**Query Formulation (Important):**
-👉 Use the correct medical/technical terms.
-   - "Head hurts" → use "headache" instead.
-👉 Use official titles.
-   - "Head of virtual university" → use "Rector of virtual university" instead.
-👉 Better queries give more relevant results.
-
+Google finds all pages containing ALL terms in the query (not partial matches by default).
+ 
+**Query Formulation (IMPORTANT for exam):**
+- Searching "Head Hurts" may NOT give relevant medical results — the correct medical term is "Headache." Google matches based on the term actually used on web pages, not necessarily intent.
+- Searching "Head of the virtual university" may incorrectly match pages about the "head office" of VU. The correct, precise term is "Rector of virtual university" (since VU's head is called Rector).
+- This shows: precise terminology > literal/casual phrasing.
+ 
 **Capitalization:**
-👉 Google is case-insensitive.
-👉 "COMPUTER SCIENCE" and "computer science" give the same results.
-
----
-
-**Important Vocabulary:**
-- Search engine = software that searches and indexes web pages
-- Query = words typed to search for information
-- Case-insensitive = does not distinguish between uppercase and lowercase letters
-- Index = organized collection of web page information
-- Voice search = searching by speaking instead of typing
-
----
-
+Google is **case-insensitive** — "COMPUTER SCIENCE" and "computer science" give identical results.
+ 
+**Key Facts to Remember:**
+- Google is the most widely used search engine (largest market share).
+- A query should use the SPECIFIC/CORRECT term relevant to the domain (e.g., "Headache" not "Head Hurts").
+- Case sensitivity does NOT affect Google search results.
+ 
 **Quick Revision Points:**
-- Google is the most widely used search engine.
-- Query formulation matters – use correct terms for better results.
-- Google is case-insensitive.
-- Use microphone for voice search.
-- "Flip a Coin" is a fun Google feature.
-- Searching "headache" gives better results than "head hurts".
-- Searching "rector" is better than "head of university" for VU's head.`,
-
-  questions: [
-    {
-      q: 'Which search engine has the largest market share?',
-      options: ['A. Yahoo', 'B. MSN', 'C. Google', 'D. Bing'],
-      answer: 'C. Google',
-      diff: 'easy',
-    },
-    {
-      q: 'What is a query in the context of search engines?',
-      options: ['A. The web browser used to search', 'B. The set of words given to the search engine', 'C. The result page shown by Google', 'D. The internet connection speed'],
-      answer: 'B. The set of words given to the search engine',
-      diff: 'easy',
-    },
-    {
-      q: 'How does Google find web pages for your query?',
-      options: ['A. It only finds pages with the exact phrase', 'B. It finds pages containing all the terms in the query', 'C. It finds only the most visited pages', 'D. It randomly selects pages'],
-      answer: 'B. It finds pages containing all the terms in the query',
-      diff: 'easy',
-    },
-    {
-      q: 'To access Google, you type in your browser:',
-      options: ['A. https://www.google.com/', 'B. https://www.yahoo.com/', 'C. https://www.bing.com/', 'D. https://www.duckduckgo.com/'],
-      answer: 'A. https://www.google.com/',
-      diff: 'easy',
-    },
-    {
-      q: 'Which feature in Google allows you to search by speaking?',
-      options: ['A. Keyboard', 'B. Microphone', 'C. Camera', 'D. Headphones'],
-      answer: 'B. Microphone',
-      diff: 'easy',
-    },
-    {
-      q: 'What happens when you type "Flip a Coin" into Google?',
-      options: ['A. It shows a list of coin shops', 'B. It simulates a coin toss', 'C. It gives error', 'D. It searches for coins'],
-      answer: 'B. It simulates a coin toss',
-      diff: 'easy',
-    },
-    {
-      q: 'Which query is more likely to give better medical results for head pain?',
-      options: ['A. Head hurts', 'B. Headache', 'C. My head is paining', 'D. Head injury'],
-      answer: 'B. Headache',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the official title of the head of Virtual University mentioned in the lecture?',
-      options: ['A. Head of University', 'B. Chancellor', 'C. Rector', 'D. Director'],
-      answer: 'C. Rector',
-      diff: 'easy',
-    },
-    {
-      q: 'Is Google case-sensitive?',
-      options: ['A. Yes, it distinguishes capital and small letters', 'B. No, it is case-insensitive', 'C. Only for the first letter', 'D. Only for numbers'],
-      answer: 'B. No, it is case-insensitive',
-      diff: 'easy',
-    },
-    {
-      q: 'Searching "COMPUTER SCIENCE" and "computer science" will produce:',
-      options: ['A. Different results', 'B. The same results', 'C. No results for uppercase', 'D. No results for lowercase'],
-      answer: 'B. The same results',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following is NOT a search engine?',
-      options: ['A. Google', 'B. Yahoo', 'C. MSN', 'D. Microsoft Word'],
-      answer: 'D. Microsoft Word',
-      diff: 'easy',
-    },
-    {
-      q: 'What should you type to find information about the head of Virtual University effectively?',
-      options: ['A. Head of virtual university', 'B. Virtual university head', 'C. Rector of virtual university', 'D. Who runs VU'],
-      answer: 'C. Rector of virtual university',
-      diff: 'easy',
-    },
-    {
-      q: 'The term "case-insensitive" means:',
-      options: ['A. The case of the computer matters', 'B. Uppercase and lowercase are treated the same', 'C. Only uppercase is allowed', 'D. Only lowercase is allowed'],
-      answer: 'B. Uppercase and lowercase are treated the same',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the purpose of a search engine?',
-      options: ['A. To create web pages', 'B. To index and retrieve relevant web pages based on queries', 'C. To design websites', 'D. To store offline files'],
-      answer: 'B. To index and retrieve relevant web pages based on queries',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following queries would Google treat differently?',
-      options: ['A. "Airport" vs "airport"', 'B. "Headache" vs "head hurts"', 'C. "Computer" vs "COMPUTER"', 'D. "Virtual" vs "VIRTUAL"'],
-      answer: 'B. "Headache" vs "head hurts"',
-      diff: 'medium',
-    },
-    {
-      q: 'The microphone option in Google search box allows:',
-      options: ['A. Recording audio files', 'B. Voice search', 'C. Playing music', 'D. Calling someone'],
-      answer: 'B. Voice search',
-      diff: 'easy',
-    }
-  ]
-},
-
-
-// L 4//
-
-4: {
-  title: 'Searching Tricks: Weather, Calculations, Currency & Unit Conversion on Google (CS101 Lecture 4)',
-  summary: `**Key Topics Covered:**
-- Weather searching: add location with "Weather" (e.g., "Weather Lahore")
+- Query = search input text.
+- Google matches ALL terms present in a query.
+- Precise terminology improves search relevance.
+- Case-insensitive searching.`,
+    questions: [
+      {
+        q: 'When a user types a query containing multiple words into Google, Google generally retrieves pages that:',
+        options: ['A. Contain only the first word of the query', 'B. Contain all the terms given in the query', 'C. Contain none of the terms', 'D. Are ranked solely by page color'],
+        answer: 'B. Contain all the terms given in the query',
+        diff: 'easy',
+      },
+      {
+        q: 'A user types "Head Hurts" hoping for medical results about headaches. According to the lecture, why might this fail?',
+        options: ['A. Google cannot process two-word queries', 'B. The phrase "Head Hurts" is not the precise medical terminology; "Headache" is correct', 'C. Google blocks all medical queries', 'D. Capitalization caused the failure'],
+        answer: 'B. The phrase "Head Hurts" is not the precise medical terminology; "Headache" is correct',
+        diff: 'medium',
+      },
+      {
+        q: 'Searching "Head of the virtual university" instead of "Rector of virtual university" may give incorrect results because:',
+        options: ['A. Google does not support the word "virtual"', 'B. Pages about the VU head office might match "head" + "virtual university" instead of the actual person', 'C. The query is too short', 'D. Google ignores university-related queries'],
+        answer: 'B. Pages about the VU head office might match "head" + "virtual university" instead of the actual person',
+        diff: 'hard',
+      },
+      {
+        q: 'According to the lecture, is Google\'s search case-sensitive?',
+        options: ['A. Yes, uppercase always gives different results', 'B. No, Google is case-insensitive', 'C. Only for queries longer than 3 words', 'D. Only when using quotation marks'],
+        answer: 'B. No, Google is case-insensitive',
+        diff: 'easy',
+      },
+      {
+        q: 'Which search engine is identified in the lecture as having the largest market share?',
+        options: ['A. Yahoo', 'B. MSN', 'C. Google', 'D. Bing'],
+        answer: 'C. Google',
+        diff: 'easy',
+      },
+      {
+        q: 'The term "Query" as used in search engines refers to:',
+        options: ['A. The webpage returned by the browser', 'B. The set of words given to a search engine for searching', 'C. A type of search engine algorithm', 'D. A browser extension'],
+        answer: 'B. The set of words given to a search engine for searching',
+        diff: 'easy',
+      },
+      {
+        q: 'What general principle does the "Headache" vs "Head Hurts" example primarily teach about effective searching?',
+        options: ['A. Always use the longest possible phrase', 'B. Use domain-precise/correct terminology rather than casual phrasing', 'C. Always include punctuation', 'D. Avoid using nouns in queries'],
+        answer: 'B. Use domain-precise/correct terminology rather than casual phrasing',
+        diff: 'medium',
+      },
+      {
+        q: 'If two users search "COMPUTER SCIENCE" and "computer science" respectively, the search results will be:',
+        options: ['A. Completely different', 'B. Identical, since Google ignores letter case', 'C. Different only on mobile devices', 'D. Blocked due to all-caps policy'],
+        answer: 'B. Identical, since Google ignores letter case',
+        diff: 'easy',
+      },
+      {
+        q: 'What is the role of a search engine as defined in the lecture?',
+        options: ['A. To create new webpages', 'B. To index web pages and retrieve relevant ones based on user queries', 'C. To host websites', 'D. To design web page layouts'],
+        answer: 'B. To index web pages and retrieve relevant ones based on user queries',
+        diff: 'easy',
+      },
+      {
+        q: 'Why does the lecture recommend NOT writing example queries in double quotation marks when typing them into Google directly?',
+        options: ['A. Because double quotes have no effect at all in Google', 'B. Because in Google, double quotes have a specific meaning (exact match) different from showing an example query', 'C. Because Google blocks quotation marks entirely', 'D. Because quotes only work on mobile'],
+        answer: 'B. Because in Google, double quotes have a specific meaning (exact match) different from showing an example query',
+        diff: 'hard',
+      },
+    ],
+  },
+ 
+  4: {
+    title: 'Searching Tricks',
+    summary: `**Key Topics Covered:**
+- Weather searching trick
 - Performing calculations directly on Google
-  - Multiplication: 12*391
-  - Subtraction: 12-5
-  - Trigonometric functions: Sin 90, Tan 80
-  - Complex arithmetic: 80/100*200
-  - Natural language: "Subtract 10 from 30"
-- Currency conversion: e.g., "100 Euros in Pakistani rupees"
-- Unit conversions: "Kph in Mph", "m in cm"
-- Searching famous places: "Baadshahi Mosque", "Minar e Pakistan"
-- Searching sports: "Pakistan Cricket team"
-
----
-
-**Simple Understanding:**
-
-**Weather Search:**
-👉 Type "Weather" followed by a city/location name.
-👉 Example: "Weather Lahore" – Google shows current weather for Lahore.
-
-**Calculations on Google:**
-👉 Google has a built-in calculator.
-👉 Just type any arithmetic expression.
-👉 Examples:
-   - 12*391 (multiplication)
-   - 12-5 (subtraction)
-   - Sin 90 (sine of 90 degrees)
-   - Tan 80 (tangent of 80 degrees)
-   - 80/100*200 (division and multiplication)
-   - "Subtract 10 from 30" (natural language)
-
+- Currency conversion trick
+ 
+**Important Concepts:**
+ 
+**Weather Searching:**
+Query format: "Weather <City>" e.g., "Weather Lahore" — Google shows a weather widget directly.
+ 
+**Performing Calculations:**
+Typing a math expression like \`12*391\` directly into Google triggers Google's built-in calculator, which interprets, computes, and displays the result — Google essentially routes the query to a calculator application automatically.
+- Other examples: \`12-5\`, \`Sin 90\`, \`Tan 80\`, \`80/100*200\`, \`Subtract 10 from 30\` — Google understands both symbolic and natural-language math expressions.
+ 
 **Currency Conversion:**
-👉 Type an amount, currency, and target currency.
-👉 Example: "100 Euros in Pakistani rupees" – Google shows the current exchange rate.
-
-**Unit Conversion:**
-👉 Convert between different measurement units.
-👉 Examples:
-   - "Kph in Mph" (kilometers per hour to miles per hour)
-   - "m in cm" (meters to centimeters)
-
-**Searching Famous Places and Sports:**
-👉 Type names directly: "Baadshahi Mosque", "Minar e Pakistan", "Pakistan Cricket team".
-
----
-
-**Important Vocabulary:**
-- Weather search = finding current weather by location
-- Built-in calculator = Google's ability to perform math calculations
-- Currency conversion = converting money from one currency to another
-- Unit conversion = changing from one measurement unit to another
-- Natural language query = typing math in everyday English
-
----
-
+You can type something like "100 Euros to PKR" style queries to get live currency conversion directly in results, without visiting a separate converter website.
+- Other unit conversions also work: "Kph in Mph", "m in cm".
+ 
+**Key Facts to Remember:**
+- Google can act as a calculator, unit converter, and currency converter — all WITHOUT needing a dedicated app/website.
+- These tricks save time by embedding the answer directly in the search results page (a "direct answer" / featured snippet style result).
+- Natural language math queries (e.g., "Subtract 10 from 30") also work, not just symbolic ones.
+ 
 **Quick Revision Points:**
-- "Weather Lahore" shows Lahore's weather.
-- Google can do math: 12*391, Sin 90, etc.
-- Use natural language: "Subtract 10 from 30".
-- Convert currency: "100 Euros in Pakistani rupees".
-- Convert units: "Kph in Mph", "m in cm".
-- Search landmarks directly: "Minar e Pakistan".`,
-
-  questions: [
-    {
-      q: 'Which query would show the weather in Lahore?',
-      options: ['A. Lahore temperature', 'B. Weather Lahore', 'C. Lahore climate', 'D. How is Lahore weather?'],
-      answer: 'B. Weather Lahore',
-      diff: 'easy',
-    },
-    {
-      q: 'To multiply 12 by 391 on Google, you would type:',
-      options: ['A. 12x391', 'B. 12*391', 'C. 12 × 391', 'D. multiply 12 and 391'],
-      answer: 'B. 12*391',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following is a trigonometric calculation you can do on Google?',
-      options: ['A. 12-5', 'B. Sin 90', 'C. 80/100*200', 'D. Subtract 10 from 30'],
-      answer: 'B. Sin 90',
-      diff: 'easy',
-    },
-    {
-      q: 'How would you ask Google to convert 100 Euros to Pakistani rupees?',
-      options: ['A. 100 Euros = PKR', 'B. 100 Euros in Pakistani rupees', 'C. Convert 100 Euro to PKR', 'D. All of the above'],
-      answer: 'D. All of the above',
-      diff: 'easy',
-    },
-    {
-      q: 'To convert kilometers per hour to miles per hour, you can type:',
-      options: ['A. km to miles', 'B. Kph in Mph', 'C. convert kph', 'D. kmph to mph'],
-      answer: 'B. Kph in Mph',
-      diff: 'medium',
-    },
-    {
-      q: 'Which query would convert meters to centimeters?',
-      options: ['A. m in cm', 'B. meter to cm', 'C. convert m to cm', 'D. All of the above'],
-      answer: 'A. m in cm',
-      diff: 'easy',
-    },
-    {
-      q: 'The query "Subtract 10 from 30" on Google would return:',
-      options: ['A. 20', 'B. 40', 'C. 10', 'D. 300'],
-      answer: 'A. 20',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following is a famous landmark in Lahore you can search on Google?',
-      options: ['A. Eiffel Tower', 'B. Baadshahi Mosque', 'C. Taj Mahal', 'D. Pyramids'],
-      answer: 'B. Baadshahi Mosque',
-      diff: 'easy',
-    },
-    {
-      q: 'What will Google show for the query "80/100*200"?',
-      options: ['A. 40', 'B. 80', 'C. 160', 'D. 200'],
-      answer: 'C. 160',
-      diff: 'medium',
-    },
-    {
-      q: 'To find information about the national cricket team, you can search:',
-      options: ['A. Pakistan Cricket team', 'B. Pakistan cricket', 'C. Pakistani cricket team', 'D. All of the above'],
-      answer: 'D. All of the above',
-      diff: 'easy',
-    },
-    {
-      q: 'The query "Tan 80" on Google will calculate the tangent of:',
-      options: ['A. 80 radians', 'B. 80 degrees', 'C. 80 gradians', 'D. 80%'],
-      answer: 'B. 80 degrees',
-      diff: 'medium',
-    },
-    {
-      q: 'Which of the following is NOT a search trick mentioned in the module?',
-      options: ['A. Weather search', 'B. Currency conversion', 'C. Image reverse search', 'D. Unit conversion'],
-      answer: 'C. Image reverse search',
-      diff: 'easy',
-    },
-   
-  ]
-},
-
-5: {
-  title: 'Search Operators (1): Social Media, Price, Hashtags, Exclusion, Exact Match, Wildcard (CS101 Lecture 5)',
-  summary: `**Key Topics Covered:**
-- @ operator: search on specific social media (e.g., "Fifa World cup @facebook", "@twitter")
-- pkr operator: search for price in Pakistani rupees (e.g., "Laptop pkr 50000")
-- # operator: search hashtags (e.g., "#education")
-- Minus sign (-): exclude words from query (e.g., "Jaguar -cars" to exclude car results)
-- Double quotes (" "): exact phrase search (e.g., "Tallest Building in Pakistan")
-- Asterisk (*): wildcard for unknown words (e.g., "* is thicker than water")
-
----
-
-**Simple Understanding:**
-
-**Search on Social Media (@):**
-👉 Add "@" followed by the social media name after your query.
-👉 Example: "Fifa World cup @facebook" – limits results to Facebook.
-👉 Example: "Fifa World Cup @Twitter" – limits results to Twitter.
-
-**Search for a Price (pkr):**
-👉 Type "pkr" before or after a number to search for items in that price range.
-👉 Example: "Laptop pkr 50000" – shows laptops around 50,000 PKR.
-
-**Searching Hashtags (#):**
-👉 Use "#" before a word to find pages using that hashtag.
-👉 Example: "#education" – shows results with #education hashtag.
-
+- "Weather <city>" → weather info.
+- Math expressions (symbols OR words) → calculator result.
+- Currency/unit phrases → conversion result.
+- All handled internally by Google without separate tools.`,
+    questions: [
+      {
+        q: 'Typing "Weather Lahore" into Google primarily demonstrates Google\'s ability to:',
+        options: ['A. Translate languages', 'B. Provide location-based information directly in search results', 'C. Convert currency', 'D. Perform mathematical operations'],
+        answer: 'B. Provide location-based information directly in search results',
+        diff: 'easy',
+      },
+      {
+        q: 'When a user types "12*391" into Google\'s search bar, what happens internally according to the lecture?',
+        options: ['A. Google ignores the query as invalid', 'B. Google translates the query, passes it to a calculator application, and shows the result', 'C. Google redirects to a separate calculator website', 'D. Google treats it as plain text and searches for matching webpages only'],
+        answer: 'B. Google translates the query, passes it to a calculator application, and shows the result',
+        diff: 'medium',
+      },
+      {
+        q: 'Which of the following queries demonstrates that Google\'s calculator can interpret NATURAL LANGUAGE math expressions, not just symbols?',
+        options: ['A. "12*391"', 'B. "Subtract 10 from 30"', 'C. "Weather Lahore"', 'D. "Sin 90"'],
+        answer: 'B. "Subtract 10 from 30"',
+        diff: 'medium',
+      },
+      {
+        q: 'Which trigonometric query is given as a valid example of Google\'s calculator functionality in this module?',
+        options: ['A. Cos 45', 'B. Sin 90', 'C. Log 10', 'D. Sqrt 25'],
+        answer: 'B. Sin 90',
+        diff: 'easy',
+      },
+      {
+        q: 'The currency conversion trick (e.g., converting 100 Euros to PKR) allows the user to:',
+        options: ['A. Only see historical exchange rates from 5 years ago', 'B. View the converted value directly within Google\'s search results', 'C. Automatically transfer money internationally', 'D. Only convert between Euro and Dollar'],
+        answer: 'B. View the converted value directly within Google\'s search results',
+        diff: 'easy',
+      },
+      {
+        q: 'Which of these is an example of a unit (non-currency) conversion trick mentioned in the module?',
+        options: ['A. "Kph in Mph"', 'B. "Weather Lahore"', 'C. "Laptop pkr 50000"', 'D. "site:youtube.com"'],
+        answer: 'A. "Kph in Mph"',
+        diff: 'easy',
+      },
+      {
+        q: 'What is the broader implication of Google handling calculations and conversions directly in search results?',
+        options: ['A. It eliminates the need for separate calculator or converter apps for simple tasks', 'B. It means Google no longer functions as a search engine', 'C. It only works with whole numbers', 'D. It requires a premium Google subscription'],
+        answer: 'A. It eliminates the need for separate calculator or converter apps for simple tasks',
+        diff: 'medium',
+      },
+      {
+        q: 'If a student wants to quickly know how much 200 cm equals in meters using Google directly, which approach matches the lecture\'s demonstrated technique?',
+        options: ['A. Open a separate unit-converter app only', 'B. Type a conversion-style query like "m in cm" directly into Google search', 'C. This cannot be done via Google search', 'D. Only currency, not units, can be converted'],
+        answer: 'B. Type a conversion-style query like "m in cm" directly into Google search',
+        diff: 'medium',
+      },
+      {
+        q: 'The query "80/100*200" exemplifies Google\'s ability to handle:',
+        options: ['A. Multi-step arithmetic expressions with operator precedence', 'B. Only single-digit additions', 'C. Only currency-related arithmetic', 'D. Weather-related calculations'],
+        answer: 'A. Multi-step arithmetic expressions with operator precedence',
+        diff: 'medium',
+      },
+      {
+        q: 'Why are these "searching tricks" significant from a computing perspective?',
+        options: ['A. They show Google is purely a static index of pages with no computation ability', 'B. They demonstrate Google integrating computational services (calculator, converter) within its search interface', 'C. They only work in Chrome browser', 'D. They require coding knowledge to use'],
+        answer: 'B. They demonstrate Google integrating computational services (calculator, converter) within its search interface',
+        diff: 'hard',
+      },
+    ],
+  },
+ 
+  5: {
+    title: 'Search Operators (1)',
+    summary: `**Key Topics Covered:**
+- Searching social media using @
+- Searching by price using pkr
+- Searching hashtags with #
+- Excluding words using -
+- Exact match using double quotes
+- Wildcard searching using *
+ 
+**Important Concepts:**
+ 
+**Social Media Search (@):**
+"Fifa World cup @facebook" → searches specifically within Facebook content.
+ 
+**Price Search (pkr):**
+"Laptop pkr 50000" → finds laptops around that price point.
+ 
+**Hashtag Search (#):**
+"#education" → finds pages related to that specific hashtag.
+ 
 **Exclude Words (-):**
-👉 Use minus sign before a word to exclude it from search results.
-👉 Example: "Jaguar -cars" – shows results about jaguar (animal), not car.
-👉 No space between minus and the word.
-
+A word can mean multiple things — e.g., "Jaguar" = animal OR car. To exclude car-related results: **"Jaguar -cars"**. The minus sign removes pages containing the excluded term.
+ 
 **Exact Match (" "):**
-👉 Put your phrase in double quotes to search for that exact phrase.
-👉 Example: "Tallest Building in Pakistan" – finds only pages containing exactly this phrase.
-👉 Without quotes, Google finds pages containing any of the words.
-
+Enclosing a phrase in double quotes forces EXACT phrase matching.
+- "Tallest Building in Pakistan" (in quotes) → only pages with that EXACT phrase.
+- Tallest Building in Pakistan (without quotes) → pages with ANY or ALL of those words, not necessarily as an exact phrase.
+ 
 **Wildcard (*):**
-👉 Use asterisk as a placeholder for any unknown word.
-👉 Example: "* is thicker than water" – finds phrases like "Blood is thicker than water", "Life is thicker than water", etc.
-👉 The star represents any single word.
-
----
-
-**Important Vocabulary:**
-- Search operator = special symbol or word that modifies a search query
-- Social media search = limiting results to a specific social platform using @
-- Hashtag = word preceded by # to categorize content
-- Exclude operator = minus sign (-) to remove unwanted terms
-- Exact phrase = words in double quotes, searched exactly as written
-- Wildcard = asterisk (*) standing for any unknown word
-
----
-
+Used when part of a phrase is unknown.
+- "* is thicker than water" → finds pages with ANY word followed by the exact phrase "is thicker than water" (e.g., "Blood is thicker than water").
+- Without the wildcard, results may include pages where there's literally no word before the phrase, or differently structured phrasing.
+ 
+**Key Facts to Remember:**
+- @ → social media specific search
+- pkr → price range search
+- # → hashtag search
+- - (minus) → exclude term
+- " " → exact phrase match
+- * → wildcard / unknown word placeholder
+ 
 **Quick Revision Points:**
-- Use @facebook or @twitter to search within specific social media.
-- "Laptop pkr 50000" finds laptops around that price.
-- "#education" finds posts with that hashtag.
-- "Jaguar -cars" removes car results.
-- "Exact phrase in quotes" finds only that exact wording.
-- "* is thicker than water" finds any word before the phrase.`,
-
-  questions: [
-    {
-      q: 'Which operator is used to search within a specific social media platform on Google?',
-      options: ['A. #', 'B. @', 'C. $', 'D. %'],
-      answer: 'B. @',
-      diff: 'easy',
-    },
-    {
-      q: 'To search for laptops priced around 50,000 PKR, you can type:',
-      options: ['A. Laptop PKR 50000', 'B. Laptop @50000', 'C. Laptop #50000', 'D. Laptop -50000'],
-      answer: 'A. Laptop PKR 50000',
-      diff: 'easy',
-    },
-    {
-      q: 'Which symbol is used to search for a hashtag?',
-      options: ['A. @', 'B. $', 'C. #', 'D. %'],
-      answer: 'C. #',
-      diff: 'easy',
-    },
-    {
-      q: 'How would you exclude pages about cars when searching for "Jaguar"?',
-      options: ['A. Jaguar +cars', 'B. Jaguar @cars', 'C. Jaguar -cars', 'D. Jaguar #cars'],
-      answer: 'C. Jaguar -cars',
-      diff: 'easy',
-    },
-    {
-      q: 'What does the query "Jaguar -cars" do?',
-      options: ['A. Shows only car results', 'B. Shows results about jaguar animal, excluding cars', 'C. Shows only social media results', 'D. Shows results for both animal and car'],
-      answer: 'B. Shows results about jaguar animal, excluding cars',
-      diff: 'easy',
-    },
-    {
-      q: 'Which operator is used to search for an exact phrase?',
-      options: ['A. Single quotes (\')', 'B. Double quotes (")', 'C. Asterisk (*)', 'D. Minus sign (-)'],
-      answer: 'B. Double quotes (")',
-      diff: 'easy',
-    },
-    {
-      q: 'Searching "Tallest Building in Pakistan" (with quotes) will:',
-      options: ['A. Find pages containing any of these words', 'B. Find pages containing the exact phrase', 'C. Exclude pages with "building"', 'D. Search only on social media'],
-      answer: 'B. Find pages containing the exact phrase',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the difference between searching with quotes and without quotes?',
-      options: ['A. Quotes give faster results', 'B. Quotes search exact phrase; without quotes searches pages containing any or all words', 'C. Quotes work only on Facebook', 'D. No difference'],
-      answer: 'B. Quotes search exact phrase; without quotes searches pages containing any or all words',
-      diff: 'medium',
-    },
-    {
-      q: 'Which symbol acts as a wildcard in Google search?',
-      options: ['A. ?', 'B. %', 'C. *', 'D. +'],
-      answer: 'C. *',
-      diff: 'easy',
-    },
-    {
-      q: 'The query "* is thicker than water" will find:',
-      options: ['A. Only "Blood is thicker than water"', 'B. Any phrase where a word comes before "is thicker than water"', 'C. Only pages with asterisk', 'D. Nothing'],
-      answer: 'B. Any phrase where a word comes before "is thicker than water"',
-      diff: 'medium',
-    },
-    {
-      q: 'To search for "#education" on Google, you would type:',
-      options: ['A. @education', 'B. education #', 'C. #education', 'D. education -hashtag'],
-      answer: 'C. #education',
-      diff: 'easy',
-    },
-    {
-      q: 'Which query would limit results to Facebook pages about "World Cup"?',
-      options: ['A. World Cup @facebook', 'B. World Cup #facebook', 'C. World Cup -facebook', 'D. "World Cup" facebook'],
-      answer: 'A. World Cup @facebook',
-      diff: 'easy',
-    },
-    {
-      q: 'What does the minus sign (-) do in a Google query?',
-      options: ['A. Adds similar words', 'B. Excludes the word after it', 'C. Searches for price', 'D. Searches only on social media'],
-      answer: 'B. Excludes the word after it',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following is NOT a search operator mentioned in this module?',
-      options: ['A. @', 'B. #', 'C. $', 'D. *'],
-      answer: 'C. $',
-      diff: 'easy',
-    },
-    {
-      q: 'If you want to find exact phrase "Virtual University of Pakistan", you should type:',
-      options: ['A. Virtual University of Pakistan', 'B. "Virtual University of Pakistan"', 'C. Virtual + University + of + Pakistan', 'D. @Virtual University of Pakistan'],
-      answer: 'B. "Virtual University of Pakistan"',
-      diff: 'easy',
-    },
-    {
-      q: 'The wildcard operator (*) represents:',
-      options: ['A. Any single word', 'B. Any number', 'C. Any social media', 'D. Any price'],
-      answer: 'A. Any single word',
-      diff: 'easy',
-    }
-  ]
-},
-
-//L 6 //
-
-6: {
-  title: 'Search Operators (2): Range, Boolean, Site, Related, Info, Cache, Filetype (CS101 Lecture 6)',
-  summary: `**Key Topics Covered:**
-- Range search (..): two dots between numbers (e.g., "laptop pkr25000..pkr35000")
-- Boolean operators: AND, OR
-  - "Computer and Science" – pages containing both words
-  - "Computer or Science" – pages containing either word
-- site: operator – search within a specific website (e.g., "virtual university site:youtube.com")
-- related: operator – find websites similar to a given site (e.g., "related:youtube.com")
-- info: operator – get information about a website (e.g., "info:youtube.com")
-- cache: operator – view cached version of a website (e.g., "cache:youtube.com")
-- filetype: / ext: operator – search for specific file types (e.g., "Virtual University filetype:pdf" or "ext:pdf")
-
----
-
-**Simple Understanding:**
-
+Memorize each symbol-operator pairing — VU loves testing "which operator does X" style MCQs.`,
+    questions: [
+      {
+        q: 'Which symbol is used to search for a query specifically on a particular social media platform?',
+        options: ['A. #', 'B. @', 'C. -', 'D. *'],
+        answer: 'B. @',
+        diff: 'easy',
+      },
+      {
+        q: 'To search for laptops priced around 50000 PKR, the correct query format is:',
+        options: ['A. "Laptop @50000"', 'B. "Laptop #50000"', 'C. "Laptop pkr 50000"', 'D. "Laptop *50000"'],
+        answer: 'C. "Laptop pkr 50000"',
+        diff: 'easy',
+      },
+      {
+        q: 'A user wants pages about the animal Jaguar but NOT about the car brand. The correct query is:',
+        options: ['A. "Jaguar +cars"', 'B. "Jaguar -cars"', 'C. "Jaguar @cars"', 'D. "Jaguar #cars"'],
+        answer: 'B. "Jaguar -cars"',
+        diff: 'medium',
+      },
+      {
+        q: 'Searching "Tallest Building in Pakistan" WITHOUT double quotes will most likely return:',
+        options: ['A. Only pages with that exact phrase verbatim', 'B. Pages containing any or all of those words, not necessarily as one exact phrase', 'C. No results at all', 'D. Only social media posts'],
+        answer: 'B. Pages containing any or all of those words, not necessarily as one exact phrase',
+        diff: 'medium',
+      },
+      {
+        q: 'What is the effect of enclosing a search phrase in double quotation marks?',
+        options: ['A. It excludes the phrase from results', 'B. It forces an exact phrase match', 'C. It searches only hashtags', 'D. It searches only by price'],
+        answer: 'B. It forces an exact phrase match',
+        diff: 'easy',
+      },
+      {
+        q: 'The wildcard query "* is thicker than water" is designed to find pages where:',
+        options: ['A. The phrase appears with NO preceding word at all', 'B. Any word appears before the exact phrase "is thicker than water"', 'C. Only the word "Blood" appears before the phrase', 'D. The phrase is reversed'],
+        answer: 'B. Any word appears before the exact phrase "is thicker than water"',
+        diff: 'hard',
+      },
+      {
+        q: 'Which symbol represents the wildcard operator used when the exact word at a position is unknown?',
+        options: ['A. #', 'B. @', 'C. -', 'D. *'],
+        answer: 'D. *',
+        diff: 'easy',
+      },
+      {
+        q: 'To find webpages discussing a specific trending hashtag like education, which query format should be used?',
+        options: ['A. "@education"', 'B. "#education"', 'C. "*education"', 'D. "-education"'],
+        answer: 'B. "#education"',
+        diff: 'easy',
+      },
+      {
+        q: 'Why might the word "Jaguar" alone (without any operator) give ambiguous search results?',
+        options: ['A. Because Google blocks ambiguous words', 'B. Because the term has more than one meaning (animal and car) and Google cannot infer intent without help', 'C. Because Jaguar is not a registered keyword', 'D. Because it requires capitalization'],
+        answer: 'B. Because the term has more than one meaning (animal and car) and Google cannot infer intent without help',
+        diff: 'medium',
+      },
+      {
+        q: 'If a user wants pages that mention price around a value, social-media-specific content, AND wants to exclude an unrelated meaning all at once, which set of operators would conceptually combine for that purpose?',
+        options: ['A. pkr, @, and -', 'B. #, *, and pkr only', 'C. Only the wildcard *', 'D. None of these can be combined'],
+        answer: 'A. pkr, @, and -',
+        diff: 'hard',
+      },
+    ],
+  },
+ 
+  6: {
+    title: 'Search Operators (2)',
+    summary: `**Key Topics Covered:**
+- Searching within a numeric range using two dots (..)
+- Boolean operators And / Or
+- Searching within a specific site (site:)
+- Searching related websites (related:)
+- Getting website info (info:)
+- Searching cached version (cache:)
+- Searching by filetype (filetype: / ext:)
+ 
+**Important Concepts:**
+ 
 **Range Search (..):**
-👉 Use two dots between numbers to search within a range.
-👉 Example: "laptop pkr25000..pkr35000" – finds laptops priced between 25,000 and 35,000 PKR.
-👉 Works for prices, years, sizes, etc.
-
-**Boolean Operators – AND:**
-👉 "Computer and Science" – finds pages containing both "computer" AND "science".
-👉 Both words must appear (not necessarily together).
-
-**Boolean Operators – OR:**
-👉 "Computer or Science" – finds pages containing either "computer" OR "science" (or both).
-
-**site: Operator:**
-👉 Search only within a specific website.
-👉 Example: "virtual university site:youtube.com" – finds pages about virtual university on YouTube.
-👉 No space after colon.
-
-**related: Operator:**
-👉 Find websites similar to a given site.
-👉 Example: "related:youtube.com" – shows other video-sharing sites similar to YouTube.
-
-**info: Operator:**
-👉 Get information about a website (cached page, similar pages, pages linking to it, etc.).
-👉 Example: "info:youtube.com".
-
-**cache: Operator:**
-👉 View Google's cached (saved) version of a webpage.
-👉 Useful if the website is down or slow.
-👉 Example: "cache:youtube.com".
-
-**filetype: / ext: Operators:**
-👉 Search for specific file types.
-👉 Example: "Virtual University filetype:pdf" – finds PDF files about Virtual University.
-👉 "ext:pdf" works the same.
-
----
-
-**Important Vocabulary:**
-- Range search = searching between two numeric values using ..
-- Boolean operator = AND, OR to combine search terms
-- site: = operator to limit search to one website
-- related: = operator to find similar websites
-- info: = operator to get metadata about a website
-- cache: = operator to view Google's saved copy of a webpage
-- filetype: / ext: = operator to search for a specific file extension
-
----
-
+"laptop pkr25000..pkr35000" → finds laptops priced WITHIN that range (two dots between values).
+ 
+**Boolean AND:**
+"Computer and Science" → pages containing BOTH words (not necessarily together/adjacent).
+ 
+**Boolean OR:**
+"Computer Or science" → pages containing EITHER term (also includes pages with both).
+ 
+**Site-Specific Search (site:):**
+"virtual university site:youtube.com" → searches ONLY within youtube.com for that query.
+ 
+**Related Websites (related:):**
+"related:youtube.com" → finds websites similar/related to YouTube.
+ 
+**Website Info (info:):**
+"info:youtube.com" → provides information ABOUT that website.
+ 
+**Cached Version (cache:):**
+"cache:youtube.com" → shows the last saved/cached snapshot of a site (useful if the live site is down).
+ 
+**Filetype Search (filetype: / ext:):**
+"Virtual University" filetype:pdf — OR — "Virtual University" ext:pdf → restricts results to a specific file type (e.g., PDF only).
+ 
+**Key Facts to Remember:**
+- AND = both terms present (not necessarily adjacent)
+- OR = either term present (broader result set than AND)
+- site: = restrict search to one website
+- related: = find similar websites
+- info: = website information
+- cache: = saved snapshot (useful when site is down)
+- filetype:/ext: = restrict by file format
+ 
 **Quick Revision Points:**
-- "laptop 25000..35000" finds laptops in that price range.
-- AND gives pages with both terms; OR gives pages with either term.
-- site:youtube.com limits search to YouTube.
-- related:youtube.com finds sites like YouTube.
-- info:youtube.com shows website information.
-- cache:youtube.com shows Google's cached version.
-- filetype:pdf finds PDF documents.`,
-
-  questions: [
-    {
-      q: 'Which operator is used to search within a range of numbers?',
-      options: ['A. -', 'B. ..', 'C. :', 'D. @'],
-      answer: 'B. ..',
-      diff: 'easy',
-    },
-    {
-      q: 'To find laptops priced between 25,000 and 35,000 PKR, you would type:',
-      options: ['A. laptop pkr25000-pkr35000', 'B. laptop pkr25000..pkr35000', 'C. laptop pkr25000 to pkr35000', 'D. laptop pkr25000:pkr35000'],
-      answer: 'B. laptop pkr25000..pkr35000',
-      diff: 'easy',
-    },
-    {
-      q: 'The Boolean operator "AND" in a Google query does what?',
-      options: ['A. Finds pages containing either of the words', 'B. Finds pages containing both words', 'C. Excludes pages with the word', 'D. Searches for exact phrase'],
-      answer: 'B. Finds pages containing both words',
-      diff: 'easy',
-    },
-    {
-      q: 'The query "Computer or Science" will find pages that contain:',
-      options: ['A. Only the word computer', 'B. Only the word science', 'C. Either computer or science (or both)', 'D. Neither computer nor science'],
-      answer: 'C. Either computer or science (or both)',
-      diff: 'easy',
-    },
-    {
-      q: 'Which operator is used to search within a specific website?',
-      options: ['A. site:', 'B. related:', 'C. info:', 'D. cache:'],
-      answer: 'A. site:',
-      diff: 'easy',
-    },
-    {
-      q: 'To search for "virtual university" only on YouTube, you would type:',
-      options: ['A. virtual university site:youtube.com', 'B. virtual university related:youtube.com', 'C. virtual university info:youtube.com', 'D. virtual university cache:youtube.com'],
-      answer: 'A. virtual university site:youtube.com',
-      diff: 'easy',
-    },
-    {
-      q: 'The "related:" operator finds:',
-      options: ['A. Pages linking to a website', 'B. Cached version of a website', 'C. Websites similar to a given site', 'D. Information about a website'],
-      answer: 'C. Websites similar to a given site',
-      diff: 'easy',
-    },
-    {
-      q: 'To find websites similar to YouTube, you would type:',
-      options: ['A. site:youtube.com', 'B. related:youtube.com', 'C. info:youtube.com', 'D. cache:youtube.com'],
-      answer: 'B. related:youtube.com',
-      diff: 'easy',
-    },
-    {
-      q: 'The "info:" operator shows:',
-      options: ['A. Similar websites', 'B. Cached pages', 'C. Information about a website', 'D. Files on a website'],
-      answer: 'C. Information about a website',
-      diff: 'easy',
-    },
-    {
-      q: 'Which operator is useful when a website is down and you want to see a saved copy?',
-      options: ['A. site:', 'B. related:', 'C. info:', 'D. cache:'],
-      answer: 'D. cache:',
-      diff: 'easy',
-    },
-    {
-      q: 'To view Google\'s cached version of YouTube, you would type:',
-      options: ['A. site:youtube.com', 'B. related:youtube.com', 'C. info:youtube.com', 'D. cache:youtube.com'],
-      answer: 'D. cache:youtube.com',
-      diff: 'easy',
-    },
-    {
-      q: 'Which operator is used to search for a specific file type?',
-      options: ['A. filetype:', 'B. site:', 'C. related:', 'D. cache:'],
-      answer: 'A. filetype:',
-      diff: 'easy',
-    },
-    {
-      q: 'To find PDF files about "Virtual University", you would type:',
-      options: ['A. Virtual University filetype:pdf', 'B. Virtual University ext:pdf', 'C. Both A and B', 'D. None of the above'],
-      answer: 'C. Both A and B',
-      diff: 'medium',
-    },
-    {
-      q: 'Which of the following is an alternative to "filetype:"?',
-      options: ['A. ext:', 'B. type:', 'C. format:', 'D. doc:'],
-      answer: 'A. ext:',
-      diff: 'medium',
-    },
-    {
-      q: 'The query "laptop pkr20000..pkr40000" will find laptops priced:',
-      options: ['A. Exactly 20000', 'B. Exactly 40000', 'C. Between 20000 and 40000', 'D. Below 20000'],
-      answer: 'C. Between 20000 and 40000',
-      diff: 'easy',
-    },
-    {
-      q: 'What does the query "computer and science" return?',
-      options: ['A. Pages with either computer or science', 'B. Pages with both computer and science', 'C. Pages with exactly the phrase "computer and science"', 'D. Pages excluding the word science'],
-      answer: 'B. Pages with both computer and science',
-      diff: 'easy',
-    },
-    {
-      q: 'Which operator would you use to get information about the website "vu.edu.pk"?',
-      options: ['A. site:vu.edu.pk', 'B. related:vu.edu.pk', 'C. info:vu.edu.pk', 'D. cache:vu.edu.pk'],
-      answer: 'C. info:vu.edu.pk',
-      diff: 'easy',
-    }
-  ]
-},
-
-// L 7 //
-
-7: {
-  title: 'Search Operators (3): Stocks, Map, Movie, Define, Image Search, Tilt (CS101 Lecture 7)',
-  summary: `**Key Topics Covered:**
-- stocks: operator – check stock market trends (e.g., "stocks:aapl" for Apple)
-- map: operator – view map of a location (e.g., "map:Lahore")
-- movie: operator – find information about a movie (e.g., "movie:steve jobs")
-- Compare food nutrients: https://www.myfooddata.com/
-- define: operator – get definition of a term (e.g., "define:Computer")
-- Image search: https://images.google.com/ – search by image or find similar images
-- Tilt – fun trick to rotate Google screen (elgoog.im/tilt)
-
----
-
-**Simple Understanding:**
-
-**stocks: Operator**
-👉 Type "stocks:" followed by a company's stock symbol.
-👉 Example: "stocks:aapl" – shows stock trend for Apple Inc.
-
-**map: Operator**
-👉 Type "map:" followed by a location name.
-👉 Example: "map:Lahore" – shows map of Lahore.
-
-**movie: Operator**
-👉 Type "movie:" followed by a movie title.
-👉 Example: "movie:steve jobs" – shows information about the Steve Jobs movie.
-
-**Compare Food Nutrients:**
-👉 Visit https://www.myfooddata.com/
-👉 Compare nutritional values of different foods.
-
-**define: Operator**
-👉 Type "define:" followed by a word.
-👉 Example: "define:Computer" – shows definition of "computer".
-
+Two dots (..) → range. AND/OR → Boolean logic. site:, related:, info:, cache:, filetype:/ext: → all site/file-targeting operators.`,
+    questions: [
+      {
+        q: 'To search for laptops priced between PKR 25000 and PKR 35000, which query format is correct?',
+        options: ['A. "laptop pkr25000-pkr35000"', 'B. "laptop pkr25000..pkr35000"', 'C. "laptop pkr25000*pkr35000"', 'D. "laptop pkr25000#pkr35000"'],
+        answer: 'B. "laptop pkr25000..pkr35000"',
+        diff: 'easy',
+      },
+      {
+        q: 'Searching "Computer Or science" will return:',
+        options: ['A. Only pages with both terms together as one phrase', 'B. Pages with either term, including pages that have both', 'C. Pages with neither term', 'D. Only pages from Wikipedia'],
+        answer: 'B. Pages with either term, including pages that have both',
+        diff: 'medium',
+      },
+      {
+        q: 'The Boolean "And" operator in a query like "Computer and Science" guarantees that returned pages will:',
+        options: ['A. Contain only the word "Computer"', 'B. Contain both words somewhere on the page, but not necessarily adjacent', 'C. Contain the exact phrase "Computer and Science"', 'D. Exclude all science-related content'],
+        answer: 'B. Contain both words somewhere on the page, but not necessarily adjacent',
+        diff: 'medium',
+      },
+      {
+        q: 'To find virtual university content specifically within youtube.com, which operator should be used?',
+        options: ['A. related:', 'B. info:', 'C. site:', 'D. cache:'],
+        answer: 'C. site:',
+        diff: 'easy',
+      },
+      {
+        q: 'If a website is temporarily down and a user wants to see its last saved version, which operator should be used?',
+        options: ['A. cache:', 'B. related:', 'C. filetype:', 'D. site:'],
+        answer: 'A. cache:',
+        diff: 'easy',
+      },
+      {
+        q: 'The query "related:youtube.com" is intended to:',
+        options: ['A. Show YouTube\'s cached version', 'B. Find other websites similar to YouTube', 'C. Restrict results to PDF files only', 'D. Display YouTube\'s server information'],
+        answer: 'B. Find other websites similar to YouTube',
+        diff: 'medium',
+      },
+      {
+        q: 'Which two operators are functionally equivalent for restricting search results to a specific file format like PDF?',
+        options: ['A. site: and cache:', 'B. filetype: and ext:', 'C. related: and info:', 'D. And / Or'],
+        answer: 'B. filetype: and ext:',
+        diff: 'medium',
+      },
+      {
+        q: 'What does the "info:" operator provide when used with a website domain?',
+        options: ['A. The price range of products on that site', 'B. Information about that particular website', 'C. A list of hashtags from that site', 'D. The exact cached snapshot only'],
+        answer: 'B. Information about that particular website',
+        diff: 'easy',
+      },
+      {
+        q: 'Which of these queries correctly demonstrates the price-RANGE search trick combined with the lecture\'s syntax?',
+        options: ['A. "laptop pkr25000 pkr35000"', 'B. "laptop pkr25000..pkr35000"', 'C. "laptop -pkr25000..pkr35000"', 'D. "laptop @pkr25000..pkr35000"'],
+        answer: 'B. "laptop pkr25000..pkr35000"',
+        diff: 'medium',
+      },
+      {
+        q: 'Conceptually, why would "Or" typically return MORE results than "And" for the same two search terms?',
+        options: ['A. "Or" requires both terms to appear together as a phrase', 'B. "And" requires both terms present, which is a stricter (smaller) condition than "Or" requiring just one of the terms', 'C. "Or" only searches social media', 'D. There is no difference between the two operators'],
+        answer: 'B. "And" requires both terms present, which is a stricter (smaller) condition than "Or" requiring just one of the terms',
+        diff: 'hard',
+      },
+    ],
+  },
+ 
+  7: {
+    title: 'Search Operators (3)',
+    summary: `**Key Topics Covered:**
+- Stocks operator
+- Map operator
+- Movie operator
+- Comparing food via myfooddata.com
+- Define operator
+- Image search
+- Tilt trick
+- Solving a complex query combining operators
+ 
+**Important Concepts:**
+ 
+**Stocks Operator:**
+"stocks:aapl" → shows stock market trend for that company (e.g., Apple/AAPL).
+ 
+**Map Operator:**
+"map:Lahore" → shows a map of that location directly.
+ 
+**Movie Operator:**
+"movie:steve jobs" → shows information about that movie.
+ 
+**Compare Food:**
+Done via external website https://www.myfooddata.com/ (NOT a Google search operator itself — comparing nutrient values of foods).
+ 
+**Define Operator:**
+"Define:Computer" → shows the dictionary definition of the term.
+ 
 **Image Search:**
-👉 Go to https://images.google.com/
-👉 Search by uploading an image – Google finds similar images.
-
-**Tilt (Fun Trick):**
-👉 Type "tilt" in Google search.
-👉 Click the link (like elgoog.im/tilt).
-👉 The Google screen rotates (360 degrees) – a playful effect.
-
----
-
-**Important Vocabulary:**
-- stocks operator = retrieves stock market trends for a company
-- stock symbol = unique letter code for a company (e.g., AAPL for Apple)
-- map operator = displays a map of a location
-- movie operator = shows information about a film
-- define operator = provides dictionary definition
-- Image search = search by image instead of text
-- Tilt = Google Easter egg that rotates the screen
-
----
-
+Via https://images.google.com/ — allows searching using an image as the query itself (reverse image search), returning visually similar images.
+ 
+**Tilt Trick:**
+Typing "Tilt" and clicking the appropriate link (e.g., elgoog.im/tilt) lets you perform fun visual tricks like rotating the Google screen 360°. Purely an Easter-egg/fun feature.
+ 
+**Complex Query Example (IMPORTANT):**
+"We want to see how many pages of a website are NOT secured" →
+**site:youtube.com –inurl:https**
+This combines the site: operator with the exclude (-) operator applied to inurl:https, finding pages on youtube.com that do NOT use HTTPS in their URL.
+ 
+**Key Facts to Remember:**
+- stocks: → company stock trend
+- map: → location map
+- movie: → movie info
+- Define: → dictionary definition
+- images.google.com → reverse/visual image search
+- Combining "site:" with "-inurl:https" finds insecure (non-HTTPS) pages on a site.
+ 
 **Quick Revision Points:**
-- "stocks:aapl" gives Apple's stock trend.
-- "map:Lahore" shows Lahore map.
-- "movie:steve jobs" shows movie info.
-- myfooddata.com compares food nutrients.
-- "define:Computer" gives definition.
-- images.google.com allows image-based search.
-- "tilt" rotates the Google screen for fun.`,
-
-  questions: [
-    {
-      q: 'Which operator is used to check stock market trends on Google?',
-      options: ['A. stocks:', 'B. market:', 'C. stock:', 'D. share:'],
-      answer: 'A. stocks:',
-      diff: 'easy',
-    },
-    {
-      q: 'To see the stock trend for Apple Inc., you would type:',
-      options: ['A. stocks:apple', 'B. stocks:aapl', 'C. stock:aapl', 'D. market:apple'],
-      answer: 'B. stocks:aapl',
-      diff: 'easy',
-    },
-    {
-      q: 'Which operator displays a map of a location?',
-      options: ['A. map:', 'B. location:', 'C. geo:', 'D. place:'],
-      answer: 'A. map:',
-      diff: 'easy',
-    },
-    {
-      q: 'To see the map of Lahore, you would type:',
-      options: ['A. map:Lahore', 'B. location:Lahore', 'C. geo:Lahore', 'D. place:Lahore'],
-      answer: 'A. map:Lahore',
-      diff: 'easy',
-    },
-    {
-      q: 'The "movie:" operator is used to:',
-      options: ['A. Watch movies online', 'B. Find information about a movie', 'C. Download movies', 'D. Book movie tickets'],
-      answer: 'B. Find information about a movie',
-      diff: 'easy',
-    },
-    {
-      q: 'To find information about the movie "Steve Jobs", you would type:',
-      options: ['A. film:steve jobs', 'B. cinema:steve jobs', 'C. movie:steve jobs', 'D. watch:steve jobs'],
-      answer: 'C. movie:steve jobs',
-      diff: 'easy',
-    },
-    {
-      q: 'Which website is mentioned for comparing food nutrients?',
-      options: ['A. myfooddata.com', 'B. foodcompare.com', 'C. nutritions.com', 'D. healthdata.com'],
-      answer: 'A. myfooddata.com',
-      diff: 'easy',
-    },
-    {
-      q: 'The "define:" operator gives:',
-      options: ['A. Synonyms of a word', 'B. Dictionary definition of a term', 'C. Translation of a word', 'D. Pronunciation only'],
-      answer: 'B. Dictionary definition of a term',
-      diff: 'easy',
-    },
-    {
-      q: 'To get the definition of "computer", you would type:',
-      options: ['A. define:computer', 'B. definition:computer', 'C. meaning:computer', 'D. dictionary:computer'],
-      answer: 'A. define:computer',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the URL for Google Image Search?',
-      options: ['A. images.google.com', 'B. image.google.com', 'C. google.com/images', 'D. pic.google.com'],
-      answer: 'A. images.google.com',
-      diff: 'easy',
-    },
-    {
-      q: 'What feature does "tilt" provide in Google?',
-      options: ['A. Shows a map', 'B. Rotates the Google screen', 'C. Defines words', 'D. Shows stock trends'],
-      answer: 'B. Rotates the Google screen',
-      diff: 'easy',
-    },
-    {
-      q: 'The "tilt" trick is an example of:',
-      options: ['A. Search operator', 'B. Google Easter egg / fun trick', 'C. File type search', 'D. Social media search'],
-      answer: 'B. Google Easter egg / fun trick',
-      diff: 'easy',
-    },
-    {
-      q: 'Which link is mentioned to perform the tilt trick?',
-      options: ['A. google.com/tilt', 'B. elgoog.im/tilt', 'C. tilt.google.com', 'D. google.com/fun'],
-      answer: 'B. elgoog.im/tilt',
-      diff: 'medium',
-    },
-    {
-      q: 'What is a stock symbol?',
-      options: ['A. A company’s logo', 'B. A unique letter code for a company on stock market', 'C. A type of search operator', 'D. A map location'],
-      answer: 'B. A unique letter code for a company on stock market',
-      diff: 'medium',
-    },
-    {
-      q: 'The myfooddata.com website allows you to:',
-      options: ['A. Order food online', 'B. Compare nutrient values of foods', 'C. Find restaurant reviews', 'D. Get food recipes'],
-      answer: 'B. Compare nutrient values of foods',
-      diff: 'easy',
-    }
-  ]
-},
-
-
-8: {
-  title: 'Advanced Search Operators: intitle, inurl, intext, AROUND, and Complex Queries (CS101 Lecture 8)',
-  summary: `**Key Topics Covered:**
-- intitle: – search for term in page title (e.g., intitle:"iPhone vs. android")
-- allintitle: – search for any of the words in page title (e.g., allintitle:iphone vs. android)
-- inurl: – search for term in URL (e.g., inurl:2018 "virtual university")
-- allinurl: – search for any of the terms in URL
-- intext: – search for exact phrase in page body (e.g., intext:"virtual university admissions 2018")
-- allintext: – search for any of the terms in page body
-- Proximity search (AROUND(N)) – find words within N words of each other (e.g., education AROUND(3) "virtual university")
-- Complex query example: site:youtube.com -inurl:https – finds non-secure (non-HTTPS) pages on YouTube
-
----
-
-**Simple Understanding:**
-
-**intitle: Operator**
-👉 Finds pages where the search term appears in the page title (the text in browser tab).
-👉 Example: intitle:"iPhone vs. android" – pages with that exact phrase in title.
-👉 Use quotes for exact phrase.
-
-**allintitle: Operator**
-👉 Finds pages where any of the words appear in the page title.
-👉 Example: allintitle:iphone vs. android – pages with "iphone" OR "android" in title.
-👉 No quotes needed; each word is separate.
-
-**inurl: Operator**
-👉 Finds pages where the search term appears in the URL (web address).
-👉 Example: inurl:2018 "virtual university" – pages with "2018" in URL AND phrase anywhere on page.
-
-**allinurl: Operator**
-👉 Finds pages where any of the terms appear in the URL.
-👉 Example: allinurl:virtual university admissions – pages with any of these words in URL.
-
-**intext: Operator**
-👉 Finds pages where the exact phrase appears in the body of the page.
-👉 Example: intext:"virtual university admissions 2018" – exact phrase in page content.
-
-**allintext: Operator**
-👉 Finds pages where any of the terms appear in the page body.
-👉 Example: allintext:virtual university admissions 2018 – pages containing any of these words.
-
-**Proximity Search – AROUND(N)**
-👉 Finds pages where two words/phrases appear within N words of each other.
-👉 Example: education AROUND(3) "virtual university" – "education" within 3 words of "virtual university".
-👉 Use uppercase AROUND.
-
+Memorize each colon-operator: stocks:, map:, movie:, Define:. Understand how operators COMBINE (site: + -inurl:) for advanced queries — VU loves this combined-query MCQ style.`,
+    questions: [
+      {
+        q: 'Which operator would you use to check the stock market trend of Apple Inc.?',
+        options: ['A. stocks:aapl', 'B. map:aapl', 'C. movie:aapl', 'D. Define:aapl'],
+        answer: 'A. stocks:aapl',
+        diff: 'easy',
+      },
+      {
+        q: 'The query "map:Lahore" is used to:',
+        options: ['A. Find the dictionary meaning of Lahore', 'B. Display a map of the location Lahore', 'C. Search stock trends related to Lahore', 'D. Find movies filmed in Lahore'],
+        answer: 'B. Display a map of the location Lahore',
+        diff: 'easy',
+      },
+      {
+        q: 'To find the dictionary meaning of the term "Computer" directly via Google, which query is correct?',
+        options: ['A. "Computer info:"', 'B. "Define:Computer"', 'C. "map:Computer"', 'D. "stocks:Computer"'],
+        answer: 'B. "Define:Computer"',
+        diff: 'easy',
+      },
+      {
+        q: 'Reverse image searching (searching using an image rather than text) is performed using which resource?',
+        options: ['A. https://images.google.com/', 'B. https://www.myfooddata.com/', 'C. stocks:images', 'D. Define:images'],
+        answer: 'A. https://images.google.com/',
+        diff: 'medium',
+      },
+      {
+        q: 'Comparing the nutrient values of two different foods, as mentioned in the lecture, is done via:',
+        options: ['A. A built-in Google search operator', 'B. The external website myfooddata.com', 'C. The "Tilt" search trick', 'D. The stocks: operator'],
+        answer: 'B. The external website myfooddata.com',
+        diff: 'medium',
+      },
+      {
+        q: 'The query "site:youtube.com –inurl:https" is designed to find:',
+        options: ['A. All secured pages on YouTube using HTTPS', 'B. Pages on YouTube that do NOT use HTTPS (i.e., not secured)', 'C. Pages unrelated to YouTube entirely', 'D. Cached versions of YouTube only'],
+        answer: 'B. Pages on YouTube that do NOT use HTTPS (i.e., not secured)',
+        diff: 'hard',
+      },
+      {
+        q: 'In the complex query "site:youtube.com –inurl:https", what role does the minus sign (-) play?',
+        options: ['A. It restricts results only to YouTube videos', 'B. It excludes pages whose URL contains "https"', 'C. It adds HTTPS to all results', 'D. It searches the cached version'],
+        answer: 'B. It excludes pages whose URL contains "https"',
+        diff: 'hard',
+      },
+      {
+        q: 'What kind of fun/visual trick is associated with typing "Tilt" into Google search?',
+        options: ['A. It performs currency conversion', 'B. It allows rotating/tilting the Google search screen for entertainment', 'C. It searches stock trends', 'D. It shows a map'],
+        answer: 'B. It allows rotating/tilting the Google search screen for entertainment',
+        diff: 'easy',
+      },
+      {
+        q: 'Using "movie:steve jobs" as a query is intended to:',
+        options: ['A. Show stock information about a company named Steve Jobs', 'B. Retrieve information about the movie titled Steve Jobs', 'C. Display a map related to Steve Jobs', 'D. Compare food values'],
+        answer: 'B. Retrieve information about the movie titled Steve Jobs',
+        diff: 'easy',
+      },
+      {
+        q: 'Which combination correctly matches an operator with its primary function?',
+        options: ['A. Define: — shows stock trends', 'B. stocks: — shows dictionary meanings', 'C. movie: — provides information about a film', 'D. map: — provides nutrient comparisons'],
+        answer: 'C. movie: — provides information about a film',
+        diff: 'medium',
+      },
+    ],
+  },
+ 
+  8: {
+    title: 'Advanced Search Operators',
+    summary: `**Key Topics Covered:**
+- intitle and allintitle
+- inurl and allinurl
+- intext and allintext
+- Proximity search (AROUND)
+- Solving a complex combined query
+ 
+**Important Concepts:**
+ 
+**intitle: vs allintitle:**
+- "intitle:'iPhone vs. android'" → finds pages where the EXACT PHRASE appears in the title.
+- "allintitle:iphone vs. android" → finds pages where ANY of the words (iPhone OR android) appear in the title (broader/looser match than intitle with quotes).
+ 
+**inurl: vs allinurl:**
+- "inurl:2018 'virtual university'" → finds pages where "2018" appears in the URL AND the phrase "virtual university" appears (anywhere).
+- "allinurl:" → finds pages where ANY of the mentioned terms appear within the URL.
+ 
+**intext: vs allintext:**
+- "intext:'virtual university admissions 2018'" → EXACT phrase must appear in the page body.
+- "allintext:virtual university admissions 2018" → ANY of these terms appearing in the body qualifies.
+ 
+**Proximity Search (AROUND):**
+"education AROUND(3) 'virtual university'" → finds pages where BOTH terms appear within 3 words of each other (a margin/proximity constraint).
+ 
 **Complex Query Example:**
-👉 site:youtube.com -inurl:https
-👉 This finds pages on YouTube that are NOT secure (do not have "https" in URL).
-👉 Because https indicates a secure connection.
-
----
-
-**Important Vocabulary:**
-- Title = the text shown on browser tab for a webpage
-- URL = web address (Uniform Resource Locator)
-- Body = the main content area of a webpage
-- Proximity search = finding words near each other
-- AROUND(N) = operator to specify maximum word distance
-- HTTPS = secure version of HTTP (encrypted connection)
-
----
-
+"How many pages of a website are not secured?" → site:youtube.com –inurl:https
+(Same as Module 7 — reinforced here as the "complex query" capstone example.)
+ 
+**Key Facts to Remember:**
+- intitle/inurl/intext (singular) + quotes = exact phrase constraint within that field.
+- allintitle/allinurl/allintext (plural "all") = looser, ANY-term constraint within that field.
+- AROUND(n) = proximity operator; n = word-distance margin.
+- Combining operators (site: + -inurl:) enables advanced diagnostic queries.
+ 
 **Quick Revision Points:**
-- intitle:"phrase" – exact phrase in title.
-- allintitle:word1 word2 – any word in title.
-- inurl:term – term in URL.
-- intext:"phrase" – exact phrase in body.
-- allintext:words – any word in body.
-- AROUND(3) – within 3 words.
-- site:youtube.com -inurl:https – non-secure YouTube pages.`,
-
-  questions: [
-    {
-      q: 'Which operator finds pages where the search term appears in the page title?',
-      options: ['A. intext:', 'B. inurl:', 'C. intitle:', 'D. allintext:'],
-      answer: 'C. intitle:',
-      diff: 'easy',
-    },
-    {
-      q: 'To find pages with the exact phrase "iPhone vs. android" in the title, you would type:',
-      options: ['A. intitle:iPhone vs. android', 'B. intitle:"iPhone vs. android"', 'C. allintitle:"iPhone vs. android"', 'D. intext:"iPhone vs. android"'],
-      answer: 'B. intitle:"iPhone vs. android"',
-      diff: 'easy',
-    },
-    {
-      q: 'What does "allintitle:iphone vs. android" do?',
-      options: ['A. Finds pages with the exact phrase "iphone vs. android" in title', 'B. Finds pages with either "iphone" OR "android" in title', 'C. Finds pages with both words in URL', 'D. Finds pages with the phrase in body'],
-      answer: 'B. Finds pages with either "iphone" OR "android" in title',
-      diff: 'medium',
-    },
-    {
-      q: 'The "inurl:" operator searches for terms in:',
-      options: ['A. Page title', 'B. Page body', 'C. Web address (URL)', 'D. Image alt text'],
-      answer: 'C. Web address (URL)',
-      diff: 'easy',
-    },
-    {
-      q: 'The query "inurl:2018 virtual university" will find pages that:',
-      options: ['A. Have "2018" in URL and "virtual university" anywhere', 'B. Have "2018" in title', 'C. Have both terms in URL', 'D. Have "2018" in body only'],
-      answer: 'A. Have "2018" in URL and "virtual university" anywhere',
-      diff: 'medium',
-    },
-    {
-      q: 'Which operator is used to search within the body of a webpage?',
-      options: ['A. intitle:', 'B. inurl:', 'C. intext:', 'D. allinurl:'],
-      answer: 'C. intext:',
-      diff: 'easy',
-    },
-    {
-      q: 'To find pages with the exact phrase "virtual university admissions 2018" in the page content, use:',
-      options: ['A. intext:virtual university admissions 2018', 'B. intext:"virtual university admissions 2018"', 'C. allintext:"virtual university admissions 2018"', 'D. intitle:"virtual university admissions 2018"'],
-      answer: 'B. intext:"virtual university admissions 2018"',
-      diff: 'easy',
-    },
-    {
-      q: 'The "allintext:" operator finds pages where:',
-      options: ['A. The exact phrase appears in body', 'B. Any of the words appear in body', 'C. Words appear in title', 'D. Words appear in URL'],
-      answer: 'B. Any of the words appear in body',
-      diff: 'medium',
-    },
-    {
-      q: 'What does the AROUND(3) operator do?',
-      options: ['A. Finds pages with exactly 3 words', 'B. Finds words within 3 words of each other', 'C. Finds pages with 3 letters', 'D. Finds pages with 3 dots'],
-      answer: 'B. Finds words within 3 words of each other',
-      diff: 'easy',
-    },
-    {
-      q: 'The query "education AROUND(3) virtual university" will find pages where:',
-      options: ['A. Education and virtual university are within 3 words of each other', 'B. Education appears exactly 3 times', 'C. Virtual university appears 3 times', 'D. There are 3 words between them exactly'],
-      answer: 'A. Education and virtual university are within 3 words of each other',
-      diff: 'medium',
-    },
-    {
-      q: 'What does the complex query "site:youtube.com -inurl:https" do?',
-      options: ['A. Finds secure pages on YouTube', 'B. Finds non-secure (non-HTTPS) pages on YouTube', 'C. Finds all YouTube pages', 'D. Finds pages with https in title'],
-      answer: 'B. Finds non-secure (non-HTTPS) pages on YouTube',
-      diff: 'hard',
-    },
-    {
-      q: 'The "inurl:" operator is case-sensitive?',
-      options: ['A. Yes, always', 'B. No, Google is generally case-insensitive', 'C. Only for uppercase', 'D. Only for special characters'],
-      answer: 'B. No, Google is generally case-insensitive',
-      diff: 'medium',
-    },
-    {
-      q: 'Which operator would you use to find pages where "COVID" appears in the URL?',
-      options: ['A. intitle:COVID', 'B. intext:COVID', 'C. inurl:COVID', 'D. allintext:COVID'],
-      answer: 'C. inurl:COVID',
-      diff: 'easy',
-    },
-    {
-      q: 'The "allinurl:" operator is similar to "allintitle:" but searches in:',
-      options: ['A. Page body', 'B. Page title', 'C. URL', 'D. Image names'],
-      answer: 'C. URL',
-      diff: 'easy',
-    },
-    {
-      q: 'Proximity search is useful when:',
-      options: ['A. You want pages with two words far apart', 'B. You want pages where two words are near each other', 'C. You want exact phrase match', 'D. You want to exclude words'],
-      answer: 'B. You want pages where two words are near each other',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following is NOT a search operator mentioned in this module?',
-      options: ['A. intitle:', 'B. inurl:', 'C. intext:', 'D. incache:'],
-      answer: 'D. incache:',
-      diff: 'easy',
-    },
-    {
-      q: 'What does "https" indicate in a URL?',
-      options: ['A. The page is secure (encrypted)', 'B. The page is fast', 'C. The page is from a government site', 'D. The page is cached'],
-      answer: 'A. The page is secure (encrypted)',
-      diff: 'easy',
-    },
-    {
-      q: 'The AROUND operator must be written in:',
-      options: ['A. Lowercase (around)', 'B. Uppercase (AROUND)', 'C. Any case', 'D. With quotes'],
-      answer: 'B. Uppercase (AROUND)',
-      diff: 'medium',
-    },
-    {
-      q: 'The query "allintext:virtual university lahore" will find pages that contain:',
-      options: ['A. The exact phrase "virtual university lahore" in body', 'B. Any of the words "virtual", "university", "lahore" in body', 'C. All words in title', 'D. The words in URL'],
-      answer: 'B. Any of the words "virtual", "university", "lahore" in body',
-      diff: 'medium',
-    }
-  ]
-},
-
-9: {
-  title: 'What We Should Not Search on Internet: Privacy, Security, and Safety (CS101 Lecture 9)',
-  summary: `**Key Topics Covered:**
-- Three main reasons to avoid certain searches:
-  1. Google Ads – ads based on search history and location
-  2. Security Agencies – sensitive searches may attract surveillance
-  3. Cybersecurity threats – viruses from free music/download sites
-- Avoid searching to prevent unwanted ads: email, medical issues, name, location, favorite things
-- Dangerous searches that may alert law enforcement: pressure cooker bomb story, attacks, suicide bomb, killers, poisons, murder, hacking, how to make virus, etc.
-- Avoid political and religious searches that may attract attention
-- Avoid free music searches – risk of viruses
-- Avoid unpleasant results: smokers lungs, skin conditions (may cause distress)
-
----
-
-**Simple Understanding:**
-
-**Why Should We Avoid Certain Searches?**
-
-**1. Google Ads:**
-👉 Google shows ads based on your search queries, history, and location.
-👉 Searching personal things (email, medical issues, your name, location, favorite things) leads to targeted ads.
-
-**2. Security Agencies:**
-👉 Law enforcement agencies monitor certain sensitive terms.
-👉 Repeated searches of dangerous terms may trigger alerts.
-👉 Example: "Pressure cooker bomb story" – someone searched it and security agencies visited their location.
-
-**3. Cybersecurity Threats:**
-👉 Searching "free music" often leads to virus-infected websites.
-👉 Hackers use these to harm your computer.
-
-**What NOT to Search (To Avoid Ads):**
-- Your email address
-- Medical issues and drugs
-- Your own name
-- Your location
-- Your favorite things
-
-**Dangerous Searches (Avoid):**
-- Pressure cooker bomb story
-- Attacks, suicide bomb
-- Killers, underworld
-- Terrifying insects
-- Killing animals
-- Poisons, murder
-- Medical symptoms
-- How to make computer virus
-- Hacking
-- About religion
-- About politics
-
-**Unpleasant Results (Avoid for Mental Wellbeing):**
-- Smokers lungs
-- Skin conditions
-
----
-
-**Important Vocabulary:**
-- Targeted ads = advertisements shown based on user's search history
-- Surveillance = monitoring of online activity by authorities
-- Cybersecurity threat = risk of virus, malware, or hacking
-- Sensitive search = query that may attract legal or security attention
-- Unpleasant results = graphic or disturbing images/content
-
----
-
+- "all" prefix = ANY/looser match. No "all" prefix + quotes = EXACT phrase match.
+- intitle → title field. inurl → URL field. intext → body field.
+- AROUND(n) → proximity within n words.`,
+    questions: [
+      {
+        q: 'The query intitle:"iPhone vs. android" (with quotes) will match pages where:',
+        options: ['A. Any of the words appear anywhere on the page', 'B. The exact phrase "iPhone vs. android" appears specifically in the title', 'C. The phrase appears only in the URL', 'D. The phrase appears only in image alt text'],
+        answer: 'B. The exact phrase "iPhone vs. android" appears specifically in the title',
+        diff: 'medium',
+      },
+      {
+        q: 'Compared to intitle:, what is the key difference in allintitle:iphone vs. android?',
+        options: ['A. allintitle requires the exact phrase only', 'B. allintitle matches pages where ANY of the listed words appear in the title, not necessarily as an exact phrase', 'C. allintitle searches only URLs', 'D. There is no difference'],
+        answer: 'B. allintitle matches pages where ANY of the listed words appear in the title, not necessarily as an exact phrase',
+        diff: 'hard',
+      },
+      {
+        q: 'The "inurl:" operator restricts search results to pages where the specified term appears in the:',
+        options: ['A. Page title only', 'B. URL of the webpage', 'C. Image filenames only', 'D. Meta description only'],
+        answer: 'B. URL of the webpage',
+        diff: 'easy',
+      },
+      {
+        q: 'Which operator searches for a term appearing anywhere within the BODY TEXT of a webpage?',
+        options: ['A. intitle:', 'B. inurl:', 'C. intext:', 'D. site:'],
+        answer: 'C. intext:',
+        diff: 'easy',
+      },
+      {
+        q: 'The proximity search operator "AROUND(3)" used in "education AROUND(3) \'virtual university\'" ensures that:',
+        options: ['A. The two terms appear on completely different pages', 'B. Both terms appear within a margin of 3 words of each other on the same page', 'C. The word "education" appears exactly 3 times', 'D. Only YouTube pages are searched'],
+        answer: 'B. Both terms appear within a margin of 3 words of each other on the same page',
+        diff: 'hard',
+      },
+      {
+        q: 'Which of the following correctly distinguishes allinurl: from inurl:?',
+        options: ['A. allinurl: requires an exact phrase match in the URL; inurl: allows partial matches', 'B. allinurl: returns pages where ANY of the mentioned terms appear in the URL, looser than a single inurl: term', 'C. They are functionally identical with no difference', 'D. allinurl: only works with image searches'],
+        answer: 'B. allinurl: returns pages where ANY of the mentioned terms appear in the URL, looser than a single inurl: term',
+        diff: 'hard',
+      },
+      {
+        q: 'To find webpages where the EXACT phrase "virtual university admissions 2018" appears in the visible body content, the correct operator is:',
+        options: ['A. allintext:virtual university admissions 2018', 'B. intext:"virtual university admissions 2018"', 'C. inurl:virtual university admissions 2018', 'D. intitle:virtual university admissions 2018'],
+        answer: 'B. intext:"virtual university admissions 2018"',
+        diff: 'medium',
+      },
+      {
+        q: 'In the complex diagnostic query site:youtube.com –inurl:https, what overall question is this query designed to answer?',
+        options: ['A. How many YouTube pages are about security topics', 'B. How many pages of the website are NOT secured (don\'t use HTTPS)', 'C. How many pages mention the word "https" in the title', 'D. How many images are hosted on YouTube'],
+        answer: 'B. How many pages of the website are NOT secured (don\'t use HTTPS)',
+        diff: 'medium',
+      },
+      {
+        q: 'A general pattern across intitle/inurl/intext is that adding the prefix "all" (allintitle, allinurl, allintext) generally:',
+        options: ['A. Makes the match stricter (exact phrase only)', 'B. Makes the match looser (any term match) compared to the singular form with quotes', 'C. Disables the operator entirely', 'D. Restricts results to one single webpage'],
+        answer: 'B. Makes the match looser (any term match) compared to the singular form with quotes',
+        diff: 'hard',
+      },
+      {
+        q: 'Which scenario is the BEST use case for the AROUND(n) proximity operator?',
+        options: ['A. When you want an exact phrase match only', 'B. When you want two related terms to appear close to each other but not necessarily as one fixed phrase', 'C. When you want to exclude a term entirely', 'D. When you want results restricted to a single file type'],
+        answer: 'B. When you want two related terms to appear close to each other but not necessarily as one fixed phrase',
+        diff: 'medium',
+      },
+    ],
+  },
+ 
+  9: {
+    title: 'What we should not search on the Internet',
+    summary: `**Key Topics Covered:**
+- Three main reasons to avoid certain searches
+- Categories: Avoiding Ads, Dangerous to Search, Cyber-security risks, Unpleasant Results
+ 
+**Important Concepts:**
+ 
+**Three Main Reasons:**
+1. **Google Ads** — based on search queries, history, geographic location; searching personal terms invites targeted ads.
+2. **Security Agencies** — law enforcement may monitor sensitive repeated searches and can investigate/locate the searcher (real example: "Pressure Cooker Bomb" story — police traced a searcher's location).
+3. **Malware/Virus risk** — certain searches (e.g., "free music") can lead to virus-infected sites.
+ 
+**Avoiding Ads (don't search):**
+Your email, medical issues/drugs, your name, your location, your favorite things.
+ 
+**Dangerous to Search (alerts law enforcement):**
+Pressure cooker bomb story, Attacks, Suicide bomb, Killers/Underworld, Terrifying insects, Killing animals, Poisons, Murder, Medical Symptoms, How to make computer Virus, Hacking, About Religion, About Politics.
+ 
+**Avoid Cyber-security attacks:**
+Free Music — hackers commonly embed viruses in "free music" download sites/links targeting curious searchers.
+ 
+**Unpleasant Results (psychologically depressing):**
+Smokers Lungs, Skin Condition — graphic/disturbing image results.
+ 
+**Key Facts to Remember:**
+- The "Pressure Cooker Bomb" story is the SPECIFIC named real-world example of law enforcement tracing a searcher.
+- "Free Music" specifically is flagged as a cyber-security risk category (virus-laden sites).
+- There are exactly THREE main reasons given for avoiding certain searches: Ads, Security Agencies, Malware/Virus.
+ 
 **Quick Revision Points:**
-- Don't search personal info (email, name, location) – leads to ads.
-- Don't search dangerous terms (bomb, murder, hacking) – may alert authorities.
-- Don't search "free music" – risk of viruses.
-- Avoid medical symptom searches – leads to ads and misinformation.
-- Avoid graphic searches (smokers lungs) – may cause distress.`,
-
-  questions: [
-    {
-      q: 'What is one reason to avoid certain searches on Google?',
-      options: ['A. Google shows ads based on your searches', 'B. Google deletes your history', 'C. Google charges money for searches', 'D. Google slows down your computer'],
-      answer: 'A. Google shows ads based on your searches',
-      diff: 'easy',
-    },
-    {
-      q: 'Searching "free music" is dangerous because:',
-      options: ['A. It is illegal everywhere', 'B. It may lead to virus-infected websites', 'C. Google bans you', 'D. It costs money'],
-      answer: 'B. It may lead to virus-infected websites',
-      diff: 'easy',
-    },
-    {
-      q: 'Which search term famously caused security agencies to visit the searcher\'s location?',
-      options: ['A. Free music', 'B. Pressure cooker bomb story', 'C. Smokers lungs', 'D. Your email'],
-      answer: 'B. Pressure cooker bomb story',
-      diff: 'medium',
-    },
-    {
-      q: 'Why should you avoid searching your own email address?',
-      options: ['A. It will be deleted', 'B. It leads to targeted ads', 'C. It crashes Google', 'D. It is illegal'],
-      answer: 'B. It leads to targeted ads',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following is a dangerous search that may alert law enforcement?',
-      options: ['A. Weather Lahore', 'B. How to make computer virus', 'C. Virtual University', 'D. Flip a coin'],
-      answer: 'B. How to make computer virus',
-      diff: 'easy',
-    },
-    {
-      q: 'Searching medical symptoms can lead to:',
-      options: ['A. Accurate diagnosis', 'B. Unnecessary ads and misinformation', 'C. Free treatment', 'D. Doctor appointment'],
-      answer: 'B. Unnecessary ads and misinformation',
-      diff: 'easy',
-    },
-    {
-      q: 'What type of results might you get from searching "smokers lungs"?',
-      options: ['A. Happy images', 'B. Unpleasant/graphic images', 'C. No results', 'D. Educational videos only'],
-      answer: 'B. Unpleasant/graphic images',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following should you avoid searching to prevent cybersecurity threats?',
-      options: ['A. Free music', 'B. University admissions', 'C. News updates', 'D. Weather forecast'],
-      answer: 'A. Free music',
-      diff: 'easy',
-    },
-    {
-      q: 'Why does Google show ads based on your searches?',
-      options: ['A. To annoy you', 'B. To personalize advertising and make money', 'C. To delete your data', 'D. To improve search speed'],
-      answer: 'B. To personalize advertising and make money',
-      diff: 'medium',
-    },
-    {
-      q: 'Searching your location can lead to:',
-      options: ['A. Better search results', 'B. Location-based targeted ads', 'C. No effect', 'D. Faster internet'],
-      answer: 'B. Location-based targeted ads',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following is NOT mentioned as something to avoid searching?',
-      options: ['A. Poisons', 'B. Murder', 'C. Healthy recipes', 'D. Hacking'],
-      answer: 'C. Healthy recipes',
-      diff: 'easy',
-    },
-    {
-      q: 'Law enforcement agencies may monitor searches related to:',
-      options: ['A. Educational topics', 'B. Terrorism and violence', 'C. Sports news', 'D. Weather forecasts'],
-      answer: 'B. Terrorism and violence',
-      diff: 'easy',
-    },
-    {
-      q: 'What is a "targeted ad"?',
-      options: ['A. An ad shown to everyone', 'B. An ad based on your search history and interests', 'C. An ad with a target shape', 'D. An ad that cannot be closed'],
-      answer: 'B. An ad based on your search history and interests',
-      diff: 'easy',
-    },
-    {
-      q: 'Searching "how to hack" may attract attention from:',
-      options: ['A. Google support', 'B. Security agencies', 'C. Advertisers', 'D. Virus makers'],
-      answer: 'B. Security agencies',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following searches is considered safe?',
-      options: ['A. Free music download', 'B. Virtual University courses', 'C. Pressure cooker bomb', 'D. How to make virus'],
-      answer: 'B. Virtual University courses',
-      diff: 'easy',
-    },
-    {
-      q: 'Searching "killing animals" is dangerous because:',
-      options: ['A. It shows animal pictures', 'B. It may alert authorities', 'C. It is a common search', 'D. It gives pet care tips'],
-      answer: 'B. It may alert authorities',
-      diff: 'easy',
-    }
-  ]
-},
-
-
-10: {
-  title: 'Roots of Computing: From Abacus to ENIAC and Beyond (CS101 Lecture 10)',
-  summary: `**Key Topics Covered:**
-- Abacus: early computing device (ancient China, Greece, Rome) – beads on rods
-- Technology of Gears: Blaise Pascal, Gottfried Leibniz, Charles Babbage
-  - Data represented through gear positioning
-  - Babbage envisioned printing results to avoid errors
-- Punch Cards: Herman Hollerith (1890 U.S. census) – led to IBM
-  - Punched cards used until 1970s
-- Electromechanical machines: George Stibitz (Bell Labs, 1940), Mark I (Harvard, 1944 by Howard Aiken & IBM) – used mechanical relays
-- Vacuum tubes: enabled totally electronic computers
-- ENIAC (Electronic Numerical Integrator and Calculator):
-  - Developed by John Mauchly and J. Presper Eckert (University of Pennsylvania)
-  - Specifications: 1800 sq ft, 20,000 vacuum tubes, 1500 relays, 10,000 capacitors, 70,000 registers, 200 kW electricity, 30 tons, cost $487,000 (~62.5 million PKR)
-- Rapid advancement:
-  - Transistor → Integrated Circuits → Size reduction
-  - Processing power doubling every 2 years (Moore's Law)
-  - Desktop computer by Steve Jobs & Steve Wozniak (1976)
-  - IBM PC (1981)
-  - Web, Smartphones
-
----
-
-**Simple Understanding:**
-
+Memorize the 3 reasons and which example belongs to which category — VU often tests "why should X not be searched."`,
+    questions: [
+      {
+        q: 'According to the lecture, how many main reasons are given for why certain things should not be searched on Google?',
+        options: ['A. Two', 'B. Three', 'C. Four', 'D. Five'],
+        answer: 'B. Three',
+        diff: 'easy',
+      },
+      {
+        q: 'Searching for personal terms such as your name, location, or medical issues repeatedly mainly leads to:',
+        options: ['A. Law enforcement investigation', 'B. Targeted advertisements based on search history/location', 'C. Virus infection', 'D. Account suspension'],
+        answer: 'B. Targeted advertisements based on search history/location',
+        diff: 'medium',
+      },
+      {
+        q: 'The "Pressure Cooker Bomb" story mentioned in the lecture is an example of:',
+        options: ['A. A virus spread via fake music sites', 'B. Law enforcement agencies tracing and reaching a person\'s location after a sensitive search', 'C. A successful Google Ads campaign', 'D. A wildcard search trick'],
+        answer: 'B. Law enforcement agencies tracing and reaching a person\'s location after a sensitive search',
+        diff: 'medium',
+      },
+      {
+        q: 'Which specific search term is flagged as a cyber-security risk due to hackers commonly embedding viruses in related sites?',
+        options: ['A. Weather Lahore', 'B. Free Music', 'C. Define:Computer', 'D. Tallest Building'],
+        answer: 'B. Free Music',
+        diff: 'medium',
+      },
+      {
+        q: 'Searching for topics like "Smokers Lungs" or "Skin Condition" falls under which category of risk?',
+        options: ['A. Avoiding Ads', 'B. Dangerous to Search (law enforcement)', 'C. Cyber-security attacks', 'D. Unpleasant/depressing results'],
+        answer: 'D. Unpleasant/depressing results',
+        diff: 'medium',
+      },
+      {
+        q: 'Which of the following is NOT listed under "Dangerous to Search" in the lecture?',
+        options: ['A. Suicide bomb', 'B. About Politics', 'C. Weather searching', 'D. How to make computer Virus'],
+        answer: 'C. Weather searching',
+        diff: 'easy',
+      },
+      {
+        q: 'Why does searching one\'s own email address repeatedly pose a privacy concern according to the lecture?',
+        options: ['A. It directly causes a virus infection', 'B. It can trigger ads based on that personal search history', 'C. It alerts security agencies automatically', 'D. It has no consequence at all'],
+        answer: 'B. It can trigger ads based on that personal search history',
+        diff: 'medium',
+      },
+      {
+        q: 'Topics like "Murder," "Poisons," and "Hacking" are grouped under which risk category?',
+        options: ['A. Avoiding Ads', 'B. Dangerous to Search', 'C. Unpleasant Results', 'D. Currency Conversion'],
+        answer: 'B. Dangerous to Search',
+        diff: 'easy',
+      },
+      {
+        q: 'What is the underlying reason searching "About Religion" or "About Politics" is grouped with terms like "Attacks" and "Suicide bomb"?',
+        options: ['A. Because these are all considered sensitive topics that could attract scrutiny from security/law enforcement monitoring', 'B. Because they trigger viruses', 'C. Because they are unrelated and grouped randomly', 'D. Because Google blocks these terms entirely'],
+        answer: 'A. Because these are all considered sensitive topics that could attract scrutiny from security/law enforcement monitoring',
+        diff: 'hard',
+      },
+      {
+        q: 'A user wants to avoid both unnecessary targeted ads and potential malware. Based on the lecture, which TWO search behaviors should they avoid?',
+        options: ['A. Searching their own location AND searching "Free Music"', 'B. Searching "Weather Lahore" AND "Define:Computer"', 'C. Searching stock prices AND maps', 'D. Searching currency conversion AND unit conversion'],
+        answer: 'A. Searching their own location AND searching "Free Music"',
+        diff: 'hard',
+      },
+    ],
+  },
+ 
+  10: {
+    title: 'Roots of Computing',
+    summary: `**Key Topics Covered:**
+- Abacus
+- Gear technology (Pascal, Leibniz, Babbage)
+- Punch Cards (Hollerith)
+- Mechanical to Electronic transition
+- ENIAC and its factsheet
+- Rapid advancement milestones
+ 
+**Important Concepts:**
+ 
 **Abacus:**
-👉 One of the earliest computing devices.
-👉 Originated in ancient China; used in Greek and Roman civilizations.
-👉 Simple machine: beads strung on rods in a rectangular frame.
-
-**Technology of Gears (Pascal, Leibniz, Babbage):**
-👉 Blaise Pascal (France, 1623-1662), Gottfried Leibniz (Germany, 1646-1716), Charles Babbage (England, 1792-1871).
-👉 Machines represented data through gear positions.
-👉 Babbage envisioned printing results to avoid transcription errors.
-
+Earliest computing device, roots in ancient China, used in early Greek/Roman civilizations. Simple beads on rods in a frame.
+ 
+**Gear Technology:**
+Inventors: Blaise Pascal (1623–1662, France), Gottfried Wilhelm Leibniz (1646–1716, Germany), Charles Babbage (1792–1871, England).
+- Pascal & Leibniz: output read via final gear positions.
+- Babbage: envisioned PRINTING results on paper to eliminate transcription errors.
+ 
 **Punch Cards:**
-👉 Herman Hollerith used punched cards for 1890 U.S. census.
-👉 This work led to the creation of IBM.
-👉 Punched cards were used until the 1970s.
-
-**From Mechanical to Electronic:**
-👉 19th-century technology couldn't build complex gear machines cost-effectively.
-👉 Early 1900s electronics advances overcame this.
-👉 George Stibitz (Bell Labs, 1940) and Mark I (Harvard, 1944) used electromechanical relays.
-👉 Vacuum tubes enabled fully electronic computers.
-
-**ENIAC (1946):**
-👉 First general-purpose electronic computer.
-👉 Developed by John Mauchly and J. Presper Eckert.
-👉 Massive: 1800 sq ft, 20,000 vacuum tubes, 1500 relays, 30 tons, $487,000.
-
-**Rapid Advancement:**
-👉 Transistor replaced vacuum tubes.
-👉 Integrated circuits (chips) further reduced size.
-👉 Processing power doubled every ~2 years (Moore's Law).
-👉 1976: Apple desktop by Steve Jobs & Steve Wozniak.
-👉 1981: IBM PC launched.
-👉 Then: World Wide Web, Smartphones.
-
----
-
-**Important Vocabulary:**
-- Abacus = ancient counting device with beads on rods
-- Gear = toothed wheel that transmits motion
-- Punch card = paper card with holes representing data
-- Electromechanical = combining electrical and mechanical parts
-- Vacuum tube = electronic component controlling electron flow
-- ENIAC = Electronic Numerical Integrator and Calculator
-- Transistor = solid-state amplifier/switch (replaced vacuum tubes)
-- Integrated circuit = many transistors on a single chip
-- Moore's Law = processing power doubles every ~2 years
-
----
-
+Herman Hollerith (1860–1929) applied punched-hole representation to speed up the 1890 U.S. census tabulation. This work led to the creation of **IBM**. Punch cards remained popular into the 1970s.
+ 
+**Mechanical → Electronic Transition:**
+- George Stibitz's electromechanical machine (1940, Bell Labs).
+- Mark I (1944, Harvard, Howard Aiken + IBM engineers) — used electromechanical relays (became obsolete almost immediately due to vacuum tube research).
+ 
+**ENIAC (Electronic Numerical Integrator and Calculator):**
+Developed by John Mauchly and J. Presper Eckert at Moore School of Electrical Engineering, University of Pennsylvania.
+ 
+**ENIAC Factsheet (IMPORTANT — frequently tested numbers):**
+- Occupied 1800 square feet
+- 20,000 vacuum tubes
+- 1500 relays
+- 10,000 capacitors
+- 70,000 registers (resistors)
+- 200 Kilowatt electricity
+- Weight: 30 tons
+- Cost: $487,000 (≈ PKR 62.5 million)
+ 
+**Rapid Advancement Milestones:**
+Transistor → Integrated Circuits → Size reduction → Processing power doubling every 2 years → Desktop computer (Steve Jobs & Stephen Wozniak, 1976) → IBM PC launch (1981) → Web → Smartphones.
+ 
+**Key Facts to Remember:**
+- Hollerith's punch card work directly led to IBM's creation.
+- Babbage's key innovation: PRINTED output (not just gear positions).
+- ENIAC numbers are a classic MCQ trap area — memorize exact figures.
+- Desktop computer credited to Steve Jobs & Stephen Wozniak (1976); IBM PC came later (1981).
+ 
 **Quick Revision Points:**
-- Abacus: earliest computing device (ancient China).
-- Pascal, Leibniz, Babbage used gears for calculation.
-- Babbage designed Analytical Engine (printed output).
-- Hollerith: punch cards for census → IBM.
-- Stibitz (1940) and Mark I (1944) used electromechanical relays.
-- Vacuum tubes led to ENIAC (1946).
-- ENIAC: 20,000 tubes, 30 tons, $487,000.
-- Transistor → IC → size reduction → faster processors.
-- Apple desktop (1976), IBM PC (1981), then Web & smartphones.`,
-
-  questions: [
-    {
-      q: 'Which was one of the earliest computing devices?',
-      options: ['A. ENIAC', 'B. Abacus', 'C. Mark I', 'D. IBM PC'],
-      answer: 'B. Abacus',
-      diff: 'easy',
-    },
-    {
-      q: 'The abacus likely originated in ancient:',
-      options: ['A. Egypt', 'B. Greece', 'C. China', 'D. India'],
-      answer: 'C. China',
-      diff: 'easy',
-    },
-    {
-      q: 'Who among the following experimented with gear technology for computing?',
-      options: ['A. Herman Hollerith', 'B. Blaise Pascal', 'C. Steve Jobs', 'D. John Mauchly'],
-      answer: 'B. Blaise Pascal',
-      diff: 'easy',
-    },
-    {
-      q: 'Which inventor envisioned machines that would print results to avoid transcription errors?',
-      options: ['A. Gottfried Leibniz', 'B. Charles Babbage', 'C. George Stibitz', 'D. Howard Aiken'],
-      answer: 'B. Charles Babbage',
-      diff: 'medium',
-    },
-    {
-      q: 'Who applied punch cards to speed up the 1890 U.S. census?',
-      options: ['A. Charles Babbage', 'B. Blaise Pascal', 'C. Herman Hollerith', 'D. John Mauchly'],
-      answer: 'C. Herman Hollerith',
-      diff: 'easy',
-    },
-    {
-      q: 'The work of Herman Hollerith led to the creation of which company?',
-      options: ['A. Microsoft', 'B. Apple', 'C. IBM', 'D. Intel'],
-      answer: 'C. IBM',
-      diff: 'easy',
-    },
-    {
-      q: 'Punched cards were commonly used until which decade?',
-      options: ['A. 1940s', 'B. 1950s', 'C. 1960s', 'D. 1970s'],
-      answer: 'D. 1970s',
-      diff: 'medium',
-    },
-    {
-      q: 'The Mark I computer was completed in 1944 at which university?',
-      options: ['A. University of Pennsylvania', 'B. Harvard University', 'C. Cambridge University', 'D. Bell Laboratories'],
-      answer: 'B. Harvard University',
-      diff: 'medium',
-    },
-    {
-      q: 'Who developed the electromechanical machine at Bell Laboratories in 1940?',
-      options: ['A. Howard Aiken', 'B. George Stibitz', 'C. John Mauchly', 'D. Steve Wozniak'],
-      answer: 'B. George Stibitz',
-      diff: 'hard',
-    },
-    {
-      q: 'ENIAC stands for:',
-      options: ['A. Electronic Numerical Integrator and Calculator', 'B. Electrical Numerical Input and Computer', 'C. Electronic Natural Intelligence Computer', 'D. Electrical Neutral Integrated Circuit'],
-      answer: 'A. Electronic Numerical Integrator and Calculator',
-      diff: 'easy',
-    },
-    {
-      q: 'ENIAC was developed at which institution?',
-      options: ['A. Harvard University', 'B. Bell Laboratories', 'C. University of Pennsylvania', 'D. IBM'],
-      answer: 'C. University of Pennsylvania',
-      diff: 'easy',
-    },
-    {
-      q: 'Approximately how many vacuum tubes did ENIAC contain?',
-      options: ['A. 2,000', 'B. 20,000', 'C. 200,000', 'D. 2 million'],
-      answer: 'B. 20,000',
-      diff: 'easy',
-    },
-    {
-      q: 'The weight of ENIAC was approximately:',
-      options: ['A. 3 tons', 'B. 10 tons', 'C. 30 tons', 'D. 100 tons'],
-      answer: 'C. 30 tons',
-      diff: 'easy',
-    },
-    {
-      q: 'The cost of ENIAC was approximately:',
-      options: ['A. $48,700', 'B. $487,000', 'C. $4,870,000', 'D. $48,700,000'],
-      answer: 'B. $487,000',
-      diff: 'easy',
-    },
-    {
-      q: 'Who invented the desktop computer in 1976?',
-      options: ['A. Bill Gates and Paul Allen', 'B. Steve Jobs and Steve Wozniak', 'C. IBM engineers', 'D. John Mauchly'],
-      answer: 'B. Steve Jobs and Steve Wozniak',
-      diff: 'easy',
-    },
-    {
-      q: 'In which year did IBM launch its personal computer (PC)?',
-      options: ['A. 1976', 'B. 1978', 'C. 1981', 'D. 1984'],
-      answer: 'C. 1981',
-      diff: 'easy',
-    },
-    {
-      q: 'Which technology replaced vacuum tubes and made computers smaller and faster?',
-      options: ['A. Gears', 'B. Relays', 'C. Transistors', 'D. Punch cards'],
-      answer: 'C. Transistors',
-      diff: 'easy',
-    },
-    {
-      q: "What does Moore's Law describe?",
-      options: ['A. Processing power doubles every 2 years', 'B. Computer size doubles every year', 'C. Vacuum tubes are replaced by transistors', 'D. Punch cards became obsolete'],
-      answer: 'A. Processing power doubles every 2 years',
-      diff: 'medium',
-    },
-    {
-      q: 'The integration of many transistors onto a single chip is called:',
-      options: ['A. Transistor array', 'B. Integrated circuit', 'C. Vacuum tube cluster', 'D. Gear mechanism'],
-      answer: 'B. Integrated circuit',
-      diff: 'easy',
-    },
-    {
-      q: 'Charles Babbage is often called the father of computers because:',
-      options: ['A. He built ENIAC', 'B. He designed the Analytical Engine', 'C. He invented the transistor', 'D. He created IBM'],
-      answer: 'B. He designed the Analytical Engine',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following came after ENIAC in the timeline of computing?',
-      options: ['A. Abacus', 'B. Punch cards', 'C. Transistor', 'D. Pascal\'s gear machine'],
-      answer: 'C. Transistor',
-      diff: 'easy',
-    }
-  ]
-},
-
-
-11: {
-  title: 'Bits: The Basic Unit of Storage in Computers (CS101 Lecture 11)',
-  summary: `**Key Topics Covered:**
-- Bit = Binary Digit (0 or 1) – basic unit of storage
-- Information is coded as patterns of 0s and 1s
-- One bit can hold only one value (0 or 1)
-- Bits can represent: numbers, text, audio, video, images
-- Electric charge represents 0 or 1 in a chip
-- Bit units: 1 Byte = 8 bits, 1 Kilobyte (KB) = 1024 bytes, 1 Megabyte (MB) = 1024 KB, etc.
-- Patterns using bits: 
-  - 1 bit → 2 patterns (0,1)
-  - 2 bits → 4 patterns (00,01,10,11)
-  - n bits → 2ⁿ patterns
-- ASCII codes: character representation (e.g., 'A' = 65 decimal)
-- Decimal to binary conversion using place values (powers of 2)
-
----
-
-**Simple Understanding:**
-
-**What is a Bit?**
-👉 Bit = Binary digit – the smallest unit of data in a computer.
-👉 Can only be 0 or 1 (two states: off/on, false/true).
-👉 Short for "Binary Digit".
-
+Abacus → Gears (Pascal/Leibniz/Babbage) → Punch Cards (Hollerith→IBM) → Relays (Stibitz/Mark I) → ENIAC (Mauchly/Eckert) → Transistor era → PC era.`,
+    questions: [
+      {
+        q: 'The Abacus is believed to have its historical roots in:',
+        options: ['A. Ancient Rome only', 'B. Ancient China, later used in Greek and Roman civilizations', 'C. Medieval England', 'D. Modern Japan'],
+        answer: 'B. Ancient China, later used in Greek and Roman civilizations',
+        diff: 'easy',
+      },
+      {
+        q: 'Which inventor is specifically credited with envisioning machines that PRINT computation results on paper to eliminate transcription errors?',
+        options: ['A. Blaise Pascal', 'B. Gottfried Wilhelm Leibniz', 'C. Charles Babbage', 'D. Herman Hollerith'],
+        answer: 'C. Charles Babbage',
+        diff: 'medium',
+      },
+      {
+        q: 'Herman Hollerith\'s application of punched-hole data representation in the 1890 U.S. census ultimately led to the creation of:',
+        options: ['A. Apple', 'B. IBM', 'C. Microsoft', 'D. Bell Laboratories'],
+        answer: 'B. IBM',
+        diff: 'medium',
+      },
+      {
+        q: 'According to the ENIAC factsheet, how many vacuum tubes did ENIAC contain?',
+        options: ['A. 1,500', 'B. 10,000', 'C. 20,000', 'D. 70,000'],
+        answer: 'C. 20,000',
+        diff: 'medium',
+      },
+      {
+        q: 'ENIAC was developed by which two individuals at the Moore School of Electrical Engineering?',
+        options: ['A. Howard Aiken and George Stibitz', 'B. John Mauchly and J. Presper Eckert', 'C. Blaise Pascal and Charles Babbage', 'D. Steve Jobs and Stephen Wozniak'],
+        answer: 'B. John Mauchly and J. Presper Eckert',
+        diff: 'medium',
+      },
+      {
+        q: 'Approximately how much space (square feet) did ENIAC occupy?',
+        options: ['A. 800 sq ft', 'B. 1200 sq ft', 'C. 1800 sq ft', 'D. 3000 sq ft'],
+        answer: 'C. 1800 sq ft',
+        diff: 'hard',
+      },
+      {
+        q: 'The Mark I, built in 1944 at Harvard, became nearly obsolete almost immediately upon completion because:',
+        options: ['A. It used punch cards which were outdated', 'B. Researchers were already applying vacuum tube technology to build fully electronic computers, surpassing its electromechanical relay design', 'C. It was too small to be useful', 'D. IBM stopped supporting it'],
+        answer: 'B. Researchers were already applying vacuum tube technology to build fully electronic computers, surpassing its electromechanical relay design',
+        diff: 'hard',
+      },
+      {
+        q: 'The desktop computer is credited to which two individuals, as mentioned in the "Rapid Advancement" milestones?',
+        options: ['A. John Mauchly and J. Presper Eckert', 'B. Steve Jobs and Stephen Wozniak (1976)', 'C. Howard Aiken and IBM engineers', 'D. Blaise Pascal and Leibniz'],
+        answer: 'B. Steve Jobs and Stephen Wozniak (1976)',
+        diff: 'easy',
+      },
+      {
+        q: 'In what year did IBM launch its PC, according to the rapid advancement timeline?',
+        options: ['A. 1976', 'B. 1981', 'C. 1990', 'D. 1944'],
+        answer: 'B. 1981',
+        diff: 'medium',
+      },
+      {
+        q: 'What was the primary reason 19th-century technology could NOT cost-effectively produce the complex gear-driven machines envisioned by Pascal, Leibniz, and Babbage?',
+        options: ['A. Lack of skilled mathematicians', 'B. The technological/manufacturing barriers of that era, later overcome by electronics advances in the early 1900s', 'C. Government restrictions on machine building', 'D. Absence of punch cards'],
+        answer: 'B. The technological/manufacturing barriers of that era, later overcome by electronics advances in the early 1900s',
+        diff: 'hard',
+      },
+    ],
+  },
+   11: {
+    title: 'Bits',
+    summary: `**Key Topics Covered:**
+- Basics of bits as the unit of storage
+- What bits can represent
+- Units of bits (Byte, KB, MB, GB, TB)
+- Patterns using bits (relationship: n bits → 2^n patterns)
+- ASCII representation example
+- Decimal-to-binary positional table
+ 
+**Important Concepts:**
+ 
+**Bit Basics:**
+- Information coded as a pattern of 0s and 1s.
+- "Bit" = short form of Binary Digit.
+- One bit holds only ONE value: 0 or 1.
+ 
 **What Bits Represent:**
-👉 Numbers (integers, decimals)
-👉 Text (letters, symbols via ASCII/Unicode)
-👉 Audio, video, images (encoded as bits)
-
-**Physical Representation:**
-👉 In a computer chip, electric charge represents 0 or 1.
-
-**Bit Units (Memory Sizes):**
+Numbers, text, audio, video, images — all encoded as bit patterns. In a chip, represented as electric charge (0/1).
+ 
+**Bit Units (MEMORIZE — common MCQ):**
 - 1 Byte = 8 bits
-- 1 Kilobyte (KB) = 1024 bytes
-- 1 Megabyte (MB) = 1024 KB
-- 1 Gigabyte (GB) = 1024 MB
-- 1 Terabyte (TB) = 1024 GB
-
-**Patterns Using Bits:**
-- 1 bit → 2 patterns (0, 1)
-- 2 bits → 4 patterns (00, 01, 10, 11)
+- 1 KB = 1024 Bytes
+- 1 MB = 1024 KB
+- 1 GB = 1024 MB
+- 1 TB = 1024 GB
+ 
+**Patterns Using Bits (CRITICAL FORMULA):**
+n bits → 2ⁿ distinct patterns.
+- 1 bit → 2 patterns
+- 2 bits → 4 patterns
 - 3 bits → 8 patterns
-- n bits → 2ⁿ patterns
-
-**ASCII Code:**
-- American Standard Code for Information Interchange
-- Each character gets a unique number (0-127)
-- Example: 'A' = 65 decimal
-- Bit pattern for 65: 01000001
-
-**Decimal to Binary (Simple Method):**
-- Use powers of 2: 128, 64, 32, 16, 8, 4, 2, 1
-- Place 1 in position for the value needed, else 0
-- Example: 2 decimal → 00000010 (second bit from right)
-- 8 decimal → 00001000
-- 65 decimal → 64 + 1 → 01000001
-
----
-
-**Important Vocabulary:**
-- Bit = Binary Digit (0 or 1)
-- Byte = 8 bits
-- Binary = base-2 number system (uses only 0 and 1)
-- ASCII = standard for representing text as numbers
-- Decimal = base-10 number system (0-9)
-
----
-
-**Quick Revision Points:**
-- Bit is the smallest storage unit.
-- 1 bit = 0 or 1.
-- n bits can represent 2ⁿ patterns.
-- 1 byte = 8 bits.
-- ASCII code for 'A' is 65 (binary 01000001).
-- Memory units: KB (1024 bytes), MB (1024 KB), GB (1024 MB), TB (1024 GB).
-- Convert decimal to binary by adding powers of 2.`,
-
-  questions: [
-    {
-      q: 'What does "bit" stand for?',
-      options: ['A. Binary Integer', 'B. Binary Digit', 'C. Basic Information Token', 'D. Byte Internal Transfer'],
-      answer: 'B. Binary Digit',
-      diff: 'easy',
-    },
-    {
-      q: 'How many values can one bit store?',
-      options: ['A. 1', 'B. 2', 'C. 4', 'D. 8'],
-      answer: 'B. 2',
-      diff: 'easy',
-    },
-    {
-      q: 'One byte consists of how many bits?',
-      options: ['A. 2', 'B. 4', 'C. 8', 'D. 16'],
-      answer: 'C. 8',
-      diff: 'easy',
-    },
-    {
-      q: 'How many different patterns can be represented with 2 bits?',
-      options: ['A. 2', 'B. 4', 'C. 8', 'D. 16'],
-      answer: 'B. 4',
-      diff: 'easy',
-    },
-    {
-      q: 'How many patterns can n bits represent?',
-      options: ['A. n²', 'B. 2ⁿ', 'C. n+2', 'D. 2n'],
-      answer: 'B. 2ⁿ',
-      diff: 'medium',
-    },
-    {
-      q: 'Which of the following is the correct binary representation of the decimal number 2?',
-      options: ['A. 00000001', 'B. 00000010', 'C. 00000100', 'D. 00001000'],
-      answer: 'B. 00000010',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the binary representation of the decimal number 8?',
-      options: ['A. 00000001', 'B. 00000010', 'C. 00000100', 'D. 00001000'],
-      answer: 'D. 00001000',
-      diff: 'easy',
-    },
-    {
-      q: 'The ASCII code for the character "A" is:',
-      options: ['A. 65', 'B. 97', 'C. 41', 'D. 32'],
-      answer: 'A. 65',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the binary pattern for decimal 65 (using 8 bits)?',
-      options: ['A. 01000001', 'B. 10000010', 'C. 00100001', 'D. 01100001'],
-      answer: 'A. 01000001',
-      diff: 'medium',
-    },
-    {
-      q: 'One Kilobyte (KB) is equal to how many bytes?',
-      options: ['A. 1000', 'B. 1024', 'C. 1048', 'D. 512'],
-      answer: 'B. 1024',
-      diff: 'easy',
-    },
-    {
-      q: 'One Megabyte (MB) is equal to how many kilobytes?',
-      options: ['A. 100', 'B. 1000', 'C. 1024', 'D. 2048'],
-      answer: 'C. 1024',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following is the largest storage unit?',
-      options: ['A. Megabyte', 'B. Gigabyte', 'C. Terabyte', 'D. Kilobyte'],
-      answer: 'C. Terabyte',
-      diff: 'easy',
-    },
-    {
-      q: 'What does ASCII stand for?',
-      options: ['A. American Standard Code for Information Interchange', 'B. Advanced System for Character Input', 'C. Automatic Symbol Coding for Internet', 'D. Alphanumeric Standard for Computer Integration'],
-      answer: 'A. American Standard Code for Information Interchange',
-      diff: 'easy',
-    },
-    {
-      q: 'How many bits are required to represent 8 different patterns?',
-      options: ['A. 2', 'B. 3', 'C. 4', 'D. 8'],
-      answer: 'B. 3',
-      diff: 'medium',
-    },
-    {
-      q: 'Which of the following binary numbers represents decimal 4?',
-      options: ['A. 00000001', 'B. 00000010', 'C. 00000100', 'D. 00001000'],
-      answer: 'C. 00000100',
-      diff: 'easy',
-    },
-    {
-      q: 'A group of 8 bits is called a:',
-      options: ['A. Nibble', 'B. Word', 'C. Byte', 'D. Kilobyte'],
-      answer: 'C. Byte',
-      diff: 'easy',
-    },
-    {
-      q: 'Which base system is used for binary numbers?',
-      options: ['A. Base 2', 'B. Base 8', 'C. Base 10', 'D. Base 16'],
-      answer: 'A. Base 2',
-      diff: 'easy',
-    },
-    {
-      q: 'If you have 4 bits, how many different patterns can you represent?',
-      options: ['A. 4', 'B. 8', 'C. 16', 'D. 32'],
-      answer: 'C. 16',
-      diff: 'easy',
-    },
-    {
-      q: 'The binary number 00000110 represents decimal:',
-      options: ['A. 4', 'B. 5', 'C. 6', 'D. 7'],
-      answer: 'C. 6',
-      diff: 'medium',
-    },
-    {
-      q: 'What is the decimal equivalent of binary 00001010?',
-      options: ['A. 8', 'B. 9', 'C. 10', 'D. 12'],
-      answer: 'C. 10',
-      diff: 'medium',
-    },
-    {
-      q: 'Which of the following correctly represents 1 GB in bytes?',
-      options: ['A. 1024 bytes', 'B. 1024 KB', 'C. 1024 MB', 'D. Both B and C'],
-      answer: 'D. Both B and C',
-      diff: 'medium',
-    }
-  ]
-},
-
-12: {
-  title: 'Boolean Operations: AND, OR, XOR, NOT (CS101 Lecture 12)',
-  summary: `**Key Topics Covered:**
-- Boolean operations: manipulate true/false values (1=true, 0=false)
-- Named after mathematician George Boole (1815–1864)
-- AND operation: output 1 only when both inputs are 1
-- OR operation: output 1 when at least one input is 1
-- XOR (Exclusive OR): output 1 when inputs are different
-- NOT operation: takes one input, inverts it (0→1, 1→0)
-- Truth tables for each operation
-- Example: applying Boolean operations to bit patterns
-
----
-
-**Simple Understanding:**
-
-**Boolean Operations Basics:**
-👉 Bit 0 = false, Bit 1 = true.
-👉 Operations that manipulate true/false values are called Boolean operations.
-👉 Named after George Boole (mathematician and logic pioneer).
-
-**AND Operation:**
-👉 Output = 1 only when BOTH inputs are 1.
-👉 Otherwise output = 0.
-👉 Truth table:
-   | A | B | A AND B |
-   | 0 | 0 |    0    |
-   | 0 | 1 |    0    |
-   | 1 | 0 |    0    |
-   | 1 | 1 |    1    |
-
-**OR Operation:**
-👉 Output = 1 when AT LEAST ONE input is 1.
-👉 Output = 0 only when both inputs are 0.
-👉 Truth table:
-   | A | B | A OR B |
-   | 0 | 0 |   0    |
-   | 0 | 1 |   1    |
-   | 1 | 0 |   1    |
-   | 1 | 1 |   1    |
-
-**XOR (Exclusive OR) Operation:**
-👉 Output = 1 when inputs are DIFFERENT.
-👉 Output = 0 when inputs are the same.
-👉 Truth table:
-   | A | B | A XOR B |
-   | 0 | 0 |    0    |
-   | 0 | 1 |    1    |
-   | 1 | 0 |    1    |
-   | 1 | 1 |    0    |
-
-**NOT Operation:**
-👉 Takes only ONE input.
-👉 Output = opposite of input (inverts).
-👉 Truth table:
-   | A | NOT A |
-   | 0 |   1   |
-   | 1 |   0   |
-
-**Example (Bit Patterns):**
-If A = 1010, B = 1100:
-- A AND B = 1000
-- A OR B = 1110
-- A XOR B = 0110
-- NOT A = 0101 (if 4 bits)
-
----
-
-**Important Vocabulary:**
-- Boolean operation = operation on true/false values
-- Truth table = table showing all input-output combinations
-- AND = operation that outputs 1 only if both inputs are 1
-- OR = operation that outputs 1 if at least one input is 1
-- XOR = exclusive OR; outputs 1 when inputs differ
-- NOT = operation that inverts a single input
-- George Boole = mathematician who pioneered Boolean logic
-
----
-
-**Quick Revision Points:**
-- AND: both must be 1 → output 1.
-- OR: at least one 1 → output 1.
-- XOR: inputs different → output 1.
-- NOT: flips 0→1, 1→0.
-- Boolean operations are fundamental to computer circuits.
-- Truth tables summarize Boolean operations.`,
-
-  questions: [
-    {
-      q: 'Boolean operations manipulate values of:',
-      options: ['A. Numbers', 'B. True/False (1/0)', 'C. Letters', 'D. Decimal digits'],
-      answer: 'B. True/False (1/0)',
-      diff: 'easy',
-    },
-    {
-      q: 'Who is the mathematician after whom Boolean operations are named?',
-      options: ['A. Gottfried Leibniz', 'B. George Boole', 'C. Charles Babbage', 'D. Blaise Pascal'],
-      answer: 'B. George Boole',
-      diff: 'easy',
-    },
-    {
-      q: 'The AND operation outputs 1 only when:',
-      options: ['A. At least one input is 1', 'B. Both inputs are 1', 'C. Both inputs are 0', 'D. Inputs are different'],
-      answer: 'B. Both inputs are 1',
-      diff: 'easy',
-    },
-    {
-      q: 'The OR operation outputs 0 only when:',
-      options: ['A. Both inputs are 0', 'B. Both inputs are 1', 'C. At least one input is 1', 'D. Inputs are different'],
-      answer: 'A. Both inputs are 0',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the output of 1 AND 0?',
-      options: ['A. 0', 'B. 1', 'C. 2', 'D. Depends'],
-      answer: 'A. 0',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the output of 1 OR 0?',
-      options: ['A. 0', 'B. 1', 'C. 2', 'D. Depends'],
-      answer: 'B. 1',
-      diff: 'easy',
-    },
-    {
-      q: 'The XOR operation outputs 1 when:',
-      options: ['A. Both inputs are 1', 'B. Both inputs are 0', 'C. Inputs are different', 'D. Inputs are the same'],
-      answer: 'C. Inputs are different',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the output of 1 XOR 1?',
-      options: ['A. 0', 'B. 1', 'C. 2', 'D. Error'],
-      answer: 'A. 0',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the output of 0 XOR 1?',
-      options: ['A. 0', 'B. 1', 'C. 2', 'D. Error'],
-      answer: 'B. 1',
-      diff: 'easy',
-    },
-    {
-      q: 'The NOT operation (on a single input) produces:',
-      options: ['A. Same as input', 'B. Opposite of input', 'C. Always 0', 'D. Always 1'],
-      answer: 'B. Opposite of input',
-      diff: 'easy',
-    },
-    {
-      q: 'What is NOT 0?',
-      options: ['A. 0', 'B. 1', 'C. 2', 'D. Undefined'],
-      answer: 'B. 1',
-      diff: 'easy',
-    },
-    {
-      q: 'What is NOT 1?',
-      options: ['A. 0', 'B. 1', 'C. 2', 'D. Undefined'],
-      answer: 'A. 0',
-      diff: 'easy',
-    },
-    {
-      q: 'Given A=1010 and B=1100, what is A AND B?',
-      options: ['A. 1010', 'B. 1100', 'C. 1000', 'D. 1110'],
-      answer: 'C. 1000',
-      diff: 'medium',
-    },
-    {
-      q: 'Given A=1010 and B=1100, what is A OR B?',
-      options: ['A. 1010', 'B. 1100', 'C. 1000', 'D. 1110'],
-      answer: 'D. 1110',
-      diff: 'medium',
-    },
-    {
-      q: 'Given A=1010 and B=1100, what is A XOR B?',
-      options: ['A. 0110', 'B. 1010', 'C. 1100', 'D. 1110'],
-      answer: 'A. 0110',
-      diff: 'medium',
-    },
-    {
-      q: 'Given A=1010 (4 bits), what is NOT A?',
-      options: ['A. 1010', 'B. 0101', 'C. 1101', 'D. 0010'],
-      answer: 'B. 0101',
-      diff: 'medium',
-    },
-    {
-      q: 'Which Boolean operation is also known as "exclusive or"?',
-      options: ['A. AND', 'B. OR', 'C. XOR', 'D. NOT'],
-      answer: 'C. XOR',
-      diff: 'easy',
-    },
-    {
-      q: 'A truth table shows:',
-      options: ['A. Memory sizes', 'B. All input-output combinations of a Boolean operation', 'C. Binary to decimal conversion', 'D. ASCII codes'],
-      answer: 'B. All input-output combinations of a Boolean operation',
-      diff: 'easy',
-    },
-    {
-      q: 'How many inputs does the NOT operation take?',
-      options: ['A. 1', 'B. 2', 'C. 3', 'D. Any number'],
-      answer: 'A. 1',
-      diff: 'easy',
-    },
-    {
-      q: 'How many rows are in a truth table for a Boolean operation with 2 inputs?',
-      options: ['A. 2', 'B. 4', 'C. 8', 'D. 16'],
-      answer: 'B. 4',
-      diff: 'easy',
-    },
-    {
-      q: 'If A=1 and B=1, then A XOR B equals:',
-      options: ['A. 0', 'B. 1', 'C. 2', 'D. -1'],
-      answer: 'A. 0',
-      diff: 'easy',
-    },
-    {
-      q: 'Which operation produces output 1 only when both inputs are 1?',
-      options: ['A. AND', 'B. OR', 'C. XOR', 'D. NOT'],
-      answer: 'A. AND',
-      diff: 'easy',
-    },
-    {
-      q: 'Which operation produces output 1 when at least one input is 1?',
-      options: ['A. AND', 'B. OR', 'C. XOR', 'D. NOT'],
-      answer: 'B. OR',
-      diff: 'easy',
-    }
-  ]
-},
-
-13: {
-  title: 'Hexadecimal Notation: Shorthand for Binary (CS101 Lecture 13)',
-  summary: `**Key Topics Covered:**
-- Why hexadecimal notation? Long bit strings (streams) are hard for humans to read and error-prone.
-- Hexadecimal (hex) simplifies representation by using one symbol for each group of 4 bits.
-- Bit patterns in computers tend to have lengths in multiples of 4.
-- Hexadecimal symbols: 0-9, A-F (A=10, B=11, C=12, D=13, E=14, F=15)
-- Conversion: group bits into 4-bit nibbles from right, then replace each nibble with its hex symbol.
-- Example: 1110 1000 0101 0101 0001 0111 = E 8 5 5 1 7 = E85517
-
----
-
-**Simple Understanding:**
-
-**What is Hexadecimal?**
-👉 A base-16 number system (0-9, A-F).
-👉 Each hexadecimal digit represents exactly 4 bits (a nibble).
-👉 Example: 0 = 0000, 1 = 0001, ..., 9 = 1001, A = 1010, B = 1011, C = 1100, D = 1101, E = 1110, F = 1111.
-
-**Why Use Hexadecimal?**
-👉 Long binary strings (e.g., 101101010011) are hard to read and write.
-👉 Humans make mistakes when copying long binary patterns.
-👉 Computers internally use binary, but for human convenience, we use hex.
-👉 Hexadecimal is a shorthand – it compresses 4 bits into 1 character.
-
-**How to Convert Binary to Hexadecimal:**
-1. Group the binary digits into sets of 4 bits, starting from the right.
-2. If the leftmost group has fewer than 4 bits, pad with leading zeros.
-3. Replace each 4-bit group with its hexadecimal symbol.
-
-**Example:**
-Binary: 111010000101010100010111
-Group: 1110 1000 0101 0101 0001 0111
-Hex:    E    8    5    5    1    7
-Result: E85517
-
----
-
-**Hexadecimal Table:**
-| Binary | Hex |
-|--------|-----|
-| 0000   | 0   |
-| 0001   | 1   |
-| 0010   | 2   |
-| 0011   | 3   |
-| 0100   | 4   |
-| 0101   | 5   |
-| 0110   | 6   |
-| 0111   | 7   |
-| 1000   | 8   |
-| 1001   | 9   |
-| 1010   | A   |
-| 1011   | B   |
-| 1100   | C   |
-| 1101   | D   |
-| 1110   | E   |
-| 1111   | F   |
-
----
-
-**Important Vocabulary:**
-- Hexadecimal = base-16 number system (0-9, A-F)
-- Nibble = group of 4 bits
-- Stream = long string of bits
-- Shorthand notation = shortened way of writing
-
----
-
-**Quick Revision Points:**
-- Hex is used because binary strings are hard for humans.
-- One hex digit = 4 bits.
-- Hex digits: 0-9, A(10), B(11), C(12), D(13), E(14), F(15).
-- To convert binary to hex: group from right into 4-bit nibbles, then replace each with hex symbol.
-- Example: 1110 = E, 1000 = 8, etc.`,
-
-  questions: [
-    {
-      q: 'Why do we use hexadecimal notation in computing?',
-      options: ['A. Computers understand hex directly', 'B. Binary strings are hard for humans to read and error-prone', 'C. Hex uses less storage than binary', 'D. Hex is faster for computers'],
-      answer: 'B. Binary strings are hard for humans to read and error-prone',
-      diff: 'easy',
-    },
-    {
-      q: 'One hexadecimal digit represents how many bits?',
-      options: ['A. 2', 'B. 4', 'C. 8', 'D. 16'],
-      answer: 'B. 4',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following is a valid hexadecimal digit?',
-      options: ['A. G', 'B. H', 'C. F', 'D. J'],
-      answer: 'C. F',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the hexadecimal symbol for binary 1110?',
-      options: ['A. D', 'B. E', 'C. F', 'D. 14'],
-      answer: 'B. E',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the hexadecimal symbol for binary 1010?',
-      options: ['A. A', 'B. B', 'C. C', 'D. D'],
-      answer: 'A. A',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the binary equivalent of hexadecimal F?',
-      options: ['A. 1111', 'B. 0000', 'C. 1010', 'D. 1100'],
-      answer: 'A. 1111',
-      diff: 'easy',
-    },
-    {
-      q: 'Convert binary 0001 to hexadecimal:',
-      options: ['A. 0', 'B. 1', 'C. 2', 'D. 3'],
-      answer: 'B. 1',
-      diff: 'easy',
-    },
-    {
-      q: 'Convert binary 1011 to hexadecimal:',
-      options: ['A. A', 'B. B', 'C. C', 'D. D'],
-      answer: 'B. B',
-      diff: 'easy',
-    },
-    {
-      q: 'The bit pattern 111010000101010100010111 in hexadecimal is:',
-      options: ['A. E85517', 'B. F85517', 'C. E75517', 'D. E85417'],
-      answer: 'A. E85517',
-      diff: 'hard',
-    },
-    {
-      q: 'A group of 4 bits is called a:',
-      options: ['A. Byte', 'B. Nibble', 'C. Word', 'D. Stream'],
-      answer: 'B. Nibble',
-      diff: 'easy',
-    },
-    {
-      q: 'Hexadecimal digit C represents the decimal value:',
-      options: ['A. 10', 'B. 11', 'C. 12', 'D. 13'],
-      answer: 'C. 12',
-      diff: 'easy',
-    },
-    {
-      q: 'Hexadecimal digit D represents the decimal value:',
-      options: ['A. 12', 'B. 13', 'C. 14', 'D. 15'],
-      answer: 'B. 13',
-      diff: 'easy',
-    },
-    {
-      q: 'Hexadecimal digit E represents the decimal value:',
-      options: ['A. 13', 'B. 14', 'C. 15', 'D. 16'],
-      answer: 'B. 14',
-      diff: 'easy',
-    },
-    {
-      q: 'Hexadecimal digit F represents the decimal value:',
-      options: ['A. 14', 'B. 15', 'C. 16', 'D. 17'],
-      answer: 'B. 15',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the hexadecimal representation of binary 11111111?',
-      options: ['A. FF', 'B. AA', 'C. 00', 'D. 11'],
-      answer: 'A. FF',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the binary representation of hexadecimal 3A?',
-      options: ['A. 00111010', 'B. 00111011', 'C. 00111100', 'D. 00110101'],
-      answer: 'A. 00111010',
-      diff: 'medium',
-    },
-    {
-      q: 'When converting binary to hex, you group bits starting from:',
-      options: ['A. Left', 'B. Right', 'C. Middle', 'D. Anywhere'],
-      answer: 'B. Right',
-      diff: 'medium',
-    },
-    {
-      q: 'A long string of bits is often called a:',
-      options: ['A. Byte', 'B. Nibble', 'C. Stream', 'D. File'],
-      answer: 'C. Stream',
-      diff: 'easy',
-    },
-    {
-      q: 'Hexadecimal is a base-____ number system:',
-      options: ['A. 2', 'B. 8', 'C. 10', 'D. 16'],
-      answer: 'D. 16',
-      diff: 'easy',
-    },
-    {
-      q: 'The hex digit A equals binary:',
-      options: ['A. 1000', 'B. 1010', 'C. 1100', 'D. 1110'],
-      answer: 'B. 1010',
-      diff: 'easy',
-    }
-  ]
-},
-
-14: {
-  title: 'Storing a Bit: Main Memory, RAM, DRAM, SDRAM (CS101 Lecture 14)',
-  summary: `**Key Topics Covered:**
-- Main memory: large collection of circuits (flip-flops) each storing one bit
-- Flip-flop: basic circuit that can hold a single bit (0 or 1)
-- Main memory organization: manageable unit cells of 8 bits (1 byte)
-- Household devices: few hundred cells; large computers: billions of cells
-- Byte size organization: most significant bits on left, least significant on right
-- Memory address: unique name for each cell to identify it
-- RAM (Random Access Memory): cells can be accessed in any order
-- DRAM (Dynamic RAM): stores bits as tiny electric charge; needs refreshing many times per second
-- SDRAM (Synchronous DRAM): uses additional techniques to decrease retrieval time
-
----
-
-**Simple Understanding:**
-
-**How is a Bit Stored?**
-👉 Computer uses circuits called flip-flops to store a single bit (0 or 1).
-👉 A large collection of such circuits forms the main memory.
-
-**Main Memory Organization:**
-👉 Memory is organized into cells – manageable units.
-👉 Typically, 8 bits (1 byte) per cell.
-👉 Small devices (microwave, TV) may have a few hundred cells.
-👉 Large computers may have billions of cells.
-
-**Byte Organization:**
-👉 Bits within a byte are ordered: most significant bit (MSB) on the left, least significant bit (LSB) on the right.
-👉 This is just a human convention – computer has no left or right.
-
-**Memory Address:**
-👉 Each cell has a unique "name" called its address.
-👉 Addresses allow the computer to find and access specific cells.
-
-**RAM (Random Access Memory):**
-👉 Memory that can be accessed in any order (random access).
-👉 Not sequential like a tape; you can jump to any address.
-
-**DRAM (Dynamic RAM):**
-👉 Stores bits as tiny electric charge in capacitors.
-👉 Charge leaks over time, so it must be refreshed many times per second.
-
-**SDRAM (Synchronous DRAM):**
-👉 A faster type of DRAM.
-👉 Uses synchronization techniques to reduce retrieval time.
-
----
-
-**Important Vocabulary:**
-- Flip-flop = circuit that stores one bit
-- Main memory = collection of storage cells in a computer
-- Cell = smallest addressable unit (usually 1 byte = 8 bits)
-- Memory address = unique identifier for a memory cell
-- RAM = Random Access Memory (any order access)
-- DRAM = Dynamic RAM (needs refreshing)
-- SDRAM = Synchronous DRAM (faster than DRAM)
-- MSB = Most Significant Bit
-- LSB = Least Significant Bit
-
----
-
-**Quick Revision Points:**
-- Flip-flops store individual bits.
-- Main memory is made of millions/billions of flip-flops.
-- Common cell size: 1 byte (8 bits).
-- Each cell has a unique address.
-- RAM allows random (non-sequential) access.
-- DRAM requires constant refreshing.
-- SDRAM is faster synchronous DRAM.`,
-
-  questions: [
-    {
-      q: 'What basic circuit is used to store a single bit in main memory?',
-      options: ['A. Transistor', 'B. Flip-flop', 'C. Capacitor', 'D. Resistor'],
-      answer: 'B. Flip-flop',
-      diff: 'easy',
-    },
-    {
-      q: 'A typical manageable unit (cell) in main memory consists of how many bits?',
-      options: ['A. 2', 'B. 4', 'C. 8', 'D. 16'],
-      answer: 'C. 8',
-      diff: 'easy',
-    },
-    {
-      q: 'Household devices typically have how many memory cells?',
-      options: ['A. Billions', 'B. Millions', 'C. Few hundred', 'D. Thousands'],
-      answer: 'C. Few hundred',
-      diff: 'easy',
-    },
-    {
-      q: 'Large computers may have how many memory cells?',
-      options: ['A. Few hundred', 'B. Thousands', 'C. Millions', 'D. Billions'],
-      answer: 'D. Billions',
-      diff: 'easy',
-    },
-    {
-      q: 'In byte organization, the most significant bit is usually placed on the:',
-      options: ['A. Left', 'B. Right', 'C. Top', 'D. Bottom'],
-      answer: 'A. Left',
-      diff: 'easy',
-    },
-    {
-      q: 'What is a memory address?',
-      options: ['A. The value stored in a cell', 'B. The unique name/location of a cell', 'C. The size of memory', 'D. The type of memory'],
-      answer: 'B. The unique name/location of a cell',
-      diff: 'easy',
-    },
-    {
-      q: 'What does RAM stand for?',
-      options: ['A. Readily Available Memory', 'B. Random Access Memory', 'C. Rapid Access Module', 'D. Read Access Memory'],
-      answer: 'B. Random Access Memory',
-      diff: 'easy',
-    },
-    {
-      q: 'Why is main memory called "random access"?',
-      options: ['A. It picks random addresses', 'B. Cells can be accessed in any order', 'C. It uses random numbers', 'D. It is unpredictable'],
-      answer: 'B. Cells can be accessed in any order',
-      diff: 'easy',
-    },
-    {
-      q: 'DRAM stores bits as:',
-      options: ['A. Magnetic fields', 'B. Electric charge', 'C. Light pulses', 'D. Mechanical switches'],
-      answer: 'B. Electric charge',
-      diff: 'easy',
-    },
-    {
-      q: 'Why does DRAM need to be refreshed constantly?',
-      options: ['A. It loses power', 'B. Electric charge leaks over time', 'C. It gets too hot', 'D. It is too slow'],
-      answer: 'B. Electric charge leaks over time',
-      diff: 'medium',
-    },
-    {
-      q: 'What does SDRAM stand for?',
-      options: ['A. Static DRAM', 'B. Synchronous DRAM', 'C. Serial DRAM', 'D. Single DRAM'],
-      answer: 'B. Synchronous DRAM',
-      diff: 'easy',
-    },
-    {
-      q: 'SDRAM is faster than traditional DRAM because it:',
-      options: ['A. Uses less electricity', 'B. Applies additional techniques to decrease retrieval time', 'C. Has larger cells', 'D. Never needs refreshing'],
-      answer: 'B. Applies additional techniques to decrease retrieval time',
-      diff: 'medium',
-    },
-    {
-      q: 'A flip-flop can store how many bits?',
-      options: ['A. 1', 'B. 2', 'C. 4', 'D. 8'],
-      answer: 'A. 1',
-      diff: 'easy',
-    },
-    {
-      q: 'The least significant bit (LSB) in a byte is usually placed on the:',
-      options: ['A. Left', 'B. Right', 'C. Top', 'D. Bottom'],
-      answer: 'B. Right',
-      diff: 'easy',
-    },
-    {
-      q: 'Memory addresses are used to:',
-      options: ['A. Store data', 'B. Identify individual cells', 'C. Calculate size', 'D. Speed up processing'],
-      answer: 'B. Identify individual cells',
-      diff: 'easy',
-    },
-    {
-      q: 'Which type of memory must be refreshed many times per second?',
-      options: ['A. SRAM', 'B. DRAM', 'C. ROM', 'D. Cache'],
-      answer: 'B. DRAM',
-      diff: 'easy',
-    },
-    {
-      q: 'The "D" in DRAM stands for:',
-      options: ['A. Digital', 'B. Dynamic', 'C. Direct', 'D. Dual'],
-      answer: 'B. Dynamic',
-      diff: 'easy',
-    },
-    {
-      q: 'The "S" in SDRAM stands for:',
-      options: ['A. Static', 'B. Synchronous', 'C. Serial', 'D. Single'],
-      answer: 'B. Synchronous',
-      diff: 'easy',
-    },
-    {
-      q: 'One byte equals how many bits?',
-      options: ['A. 4', 'B. 8', 'C. 16', 'D. 32'],
-      answer: 'B. 8',
-      diff: 'easy',
-    },
-    {
-      q: 'Main memory in a computer is made up of a large collection of:',
-      options: ['A. Transistors only', 'B. Flip-flops or similar circuits', 'C. Resistors', 'D. Capacitors only'],
-      answer: 'B. Flip-flops or similar circuits',
-      diff: 'easy',
-    }
-  ]
-},
-15: {
-  title: 'Magnetic Systems: Mass Storage, Disk Operation, Seek Time, Access Time (CS101 Lecture 15)',
-  summary: `**Key Topics Covered:**
-- Mass storage (secondary storage): less volatile, larger capacity, lower cost than main memory
-- Examples: magnetic disks, CDs, DVDs, magnetic tapes, flash drives, SSDs
-- How magnetic disks work: thin spinning disk with magnetic coating
-- Read/Write heads placed above/below the disk
-- Tracks: circles traversed by each head
-- Sectors: equal divisions of tracks (512 bytes to few KB each)
-- Outer tracks contain more data (longer circumference)
-- Zoned-bit recording: adjacent tracks form zones; all tracks in a zone have equal sectors (typical 10 zones)
-- Seek time: time to move heads from one track to another
-- Rotation delay (latency): average time for desired data to rotate under head
-- Access time = seek time + rotation delay
-- Transfer rate: rate at which data is read from or written to disk
-
----
-
-**Simple Understanding:**
-
-**Why Mass Storage?**
-👉 Main memory is volatile (loses data when power off) and limited in size.
-👉 Mass storage (secondary storage) solves these problems:
-   - Less volatile (retains data)
-   - Large storage capacity
-   - Low cost per byte
-   - Removable media for archiving
-
-**Magnetic Disk Basics:**
-👉 Thin, spinning disk coated with magnetic material.
-👉 Data stored as magnetic patterns.
-👉 Read/Write heads float just above/below the spinning disk.
-
-**Tracks and Sectors:**
-👉 Head moves along a circle – called a track.
-👉 Each track is divided into sectors (like pizza slices).
-👉 Typical sector size: 512 bytes to a few KB.
-👉 Outer tracks are longer, so they contain more sectors (more data).
-
-**Zoned-Bit Recording:**
-👉 Adjacent tracks are grouped into zones.
-👉 All tracks within a zone have the same number of sectors.
-👉 Typical disk: about 10 zones.
-
-**Performance Metrics:**
-- **Seek time:** time to move heads to the desired track.
-- **Rotation delay (latency):** average time for the disk to spin the desired data under the head (usually half a full rotation).
-- **Access time = Seek time + Rotation delay.**
-- **Transfer rate:** speed of data transfer once head is positioned.
-
----
-
-**Important Vocabulary:**
-- Mass storage = secondary storage (non-volatile, large capacity)
-- Volatility = loss of data when power is off
-- Magnetic disk = storage medium using magnetic coating
-- Track = circular path on a disk surface
-- Sector = subdivision of a track (smallest addressable unit)
-- Zoned-bit recording = grouping tracks into zones with equal sectors
-- Seek time = head movement time
-- Rotation delay = waiting for data to spin under head
-- Access time = seek time + rotation delay
-- Transfer rate = data speed
-
----
-
-**Quick Revision Points:**
-- Mass storage is non-volatile, large, cheap, often removable.
-- Magnetic disks use spinning platters with magnetic coating.
-- Tracks are concentric circles; sectors are track divisions.
-- Outer tracks hold more data than inner tracks.
-- Zoned-bit recording gives equal sectors per zone.
-- Seek time + rotation delay = access time.
-- Transfer rate measures data speed.`,
-
-  questions: [
-    {
-      q: 'What is an advantage of mass storage over main memory?',
-      options: ['A. Faster access', 'B. Less volatile and larger capacity', 'C. Smaller size', 'D. Cheaper per bit but volatile'],
-      answer: 'B. Less volatile and larger capacity',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following is an example of mass storage?',
-      options: ['A. RAM', 'B. Cache', 'C. Magnetic disk', 'D. Register'],
-      answer: 'C. Magnetic disk',
-      diff: 'easy',
-    },
-    {
-      q: 'A magnetic disk stores data using:',
-      options: ['A. Electric charge', 'B. Magnetic coating', 'C. Optical pits', 'D. Flip-flops'],
-      answer: 'B. Magnetic coating',
-      diff: 'easy',
-    },
-    {
-      q: 'What is a track on a magnetic disk?',
-      options: ['A. A sector', 'B. A circle traversed by a read/write head', 'C. The center of the disk', 'D. A zone'],
-      answer: 'B. A circle traversed by a read/write head',
-      diff: 'easy',
-    },
-    {
-      q: 'Tracks are divided into smaller units called:',
-      options: ['A. Clusters', 'B. Blocks', 'C. Sectors', 'D. Zones'],
-      answer: 'C. Sectors',
-      diff: 'easy',
-    },
-    {
-      q: 'Typical sector size is:',
-      options: ['A. 512 bytes to a few KB', 'B. 8 bytes', 'C. 1 MB', 'D. 1 GB'],
-      answer: 'A. 512 bytes to a few KB',
-      diff: 'easy',
-    },
-    {
-      q: 'Why do outer tracks contain more data than inner tracks?',
-      options: ['A. They are longer in circumference', 'B. They spin faster', 'C. They use stronger magnetism', 'D. They have more heads'],
-      answer: 'A. They are longer in circumference',
-      diff: 'medium',
-    },
-    {
-      q: 'What is zoned-bit recording?',
-      options: ['A. Recording data in zones without sectors', 'B. Grouping adjacent tracks into zones with equal sectors', 'C. Recording bits in zones of the head', 'D. A type of memory chip'],
-      answer: 'B. Grouping adjacent tracks into zones with equal sectors',
-      diff: 'medium',
-    },
-    {
-      q: 'Approximately how many zones does a typical disk have?',
-      options: ['A. 2', 'B. 5', 'C. 10', 'D. 20'],
-      answer: 'C. 10',
-      diff: 'medium',
-    },
-    {
-      q: 'Seek time is defined as:',
-      options: ['A. Time to rotate the disk', 'B. Time to move heads from one track to another', 'C. Time to transfer data', 'D. Time to power on'],
-      answer: 'B. Time to move heads from one track to another',
-      diff: 'easy',
-    },
-    {
-      q: 'Rotation delay (latency) is the time:',
-      options: ['A. To move heads', 'B. For desired data to rotate under the head', 'C. To format the disk', 'D. To power off'],
-      answer: 'B. For desired data to rotate under the head',
-      diff: 'easy',
-    },
-    {
-      q: 'Access time equals:',
-      options: ['A. Seek time + transfer time', 'B. Rotation delay + transfer time', 'C. Seek time + rotation delay', 'D. Seek time × rotation delay'],
-      answer: 'C. Seek time + rotation delay',
-      diff: 'easy',
-    },
-    {
-      q: 'Transfer rate measures:',
-      options: ['A. Speed of head movement', 'B. Speed of disk rotation', 'C. Rate of data transfer to/from disk', 'D. Time to find a track'],
-      answer: 'C. Rate of data transfer to/from disk',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following is NOT a mass storage device?',
-      options: ['A. Hard disk', 'B. SSD', 'C. RAM', 'D. Flash drive'],
-      answer: 'C. RAM',
-      diff: 'easy',
-    },
-    {
-      q: 'Read/Write heads on a magnetic disk are positioned:',
-      options: ['A. In contact with the disk', 'B. Above or below the disk (not touching)', 'C. Inside the disk platter', 'D. On the edge'],
-      answer: 'B. Above or below the disk (not touching)',
-      diff: 'easy',
-    },
-    {
-      q: 'Why are outer tracks able to store more data?',
-      options: ['A. They have more sectors per track', 'B. They have larger bits', 'C. They spin slower', 'D. They use more power'],
-      answer: 'A. They have more sectors per track',
-      diff: 'medium',
-    },
-    {
-      q: 'Average rotation delay is typically:',
-      options: ['A. Half the time for one full rotation', 'B. Equal to seek time', 'C. Zero', 'D. Full rotation time'],
-      answer: 'A. Half the time for one full rotation',
-      diff: 'medium',
-    }
-  ]
-},
-
-16: {
-  title: 'Optical Systems: CD, DVD, Blu-ray Discs (CS101 Lecture 16)',
-  summary: `**Key Topics Covered:**
-- Optical mass storage: CD, DVD, Blu-ray Disc (BD)
-- Compact Disc (CD): 12 cm diameter, reflective material, single-track spiral from inside to outside
-- Data stored as variations in reflective surface (pits and lands)
-- Laser reads irregularities on reflective surface
-- CD sectors: 2 KB data or 1/75 second audio
-- Initially for audio: CD-DA (Compact Disc Digital Audio)
-- Single track means sectors not individually accessible → slower random access than magnetic disks
-- Optical systems best for long continuous data streams (e.g., music, video)
-- DVD (Digital Versatile Disk): multiple semi-transparent layers, GB capacity (CD: 600-700 MB)
-- Blu-ray Disc (BD): uses blue-violet laser (finer precision), 5× capacity of DVD
-
----
-
-**Simple Understanding:**
-
-**What are Optical Systems?**
-👉 Mass storage using lasers and reflective surfaces.
-👉 Examples: CDs, DVDs, Blu-ray Discs.
-
-**Compact Disc (CD):**
-👉 12 cm diameter (standard).
-👉 Made of reflective material (aluminum).
-👉 Data stored as pits (bumps) and lands (flat areas) on a spiral track.
-👉 Spiral runs from inside to outside (single continuous track).
-👉 Laser beam detects irregularities as the disc spins.
-👉 Sector capacity: 2 KB data or 1/75 second of audio.
-👉 Originally for audio: CD-DA (Compact Disc Digital Audio).
-👉 Still used for computer data storage.
-
-**CD Performance:**
-👉 Single track means sectors are not individually addressable.
-👉 To find a specific sector, the laser must scan along the spiral.
-👉 Magnetic disks (with multiple concentric tracks) have faster random access.
-👉 Optical disks are best for long continuous streams (music, movies).
-
-**DVD (Digital Versatile Disk):**
-👉 Same physical size as CD (12 cm).
-👉 Multiple semi-transparent layers (2 or more).
-👉 Laser can focus on different layers.
-👉 Capacity: gigabytes (CD is 600-700 MB).
-
-**Blu-ray Disc (BD):**
-👉 Uses blue-violet laser (shorter wavelength than red laser used in CDs/DVDs).
-👉 Finer precision allows more data per area.
-👉 Capacity: about 5 times that of DVD.
-
----
-
-**Important Vocabulary:**
-- Optical system = storage using lasers and reflective surfaces
-- CD = Compact Disc
-- DVD = Digital Versatile Disk
-- BD = Blu-ray Disc
-- Pit = microscopic bump on disc surface
-- Land = flat area between pits
-- Spiral track = single continuous track from center to edge
-- Laser = focused light beam for reading data
-- Reflective surface = mirror-like layer on disc
-- Semi-transparent layer = partially see-through layer (used in DVDs)
-
----
-
-**Quick Revision Points:**
-- CDs use a single spiral track (not concentric circles like magnetic disks).
-- Data is read by a laser detecting pits and lands.
-- CD capacity: 600-700 MB; DVD: several GB; Blu-ray: 5× DVD.
-- Blu-ray uses blue-violet laser (shorter wavelength, finer focus).
-- Optical disks have slower random access than magnetic disks.
-- Optical disks are good for continuous data (audio, video).`,
-
-  questions: [
-    {
-      q: 'Which of the following is an optical storage system?',
-      options: ['A. Hard disk', 'B. Magnetic tape', 'C. Compact Disc (CD)', 'D. Flash drive'],
-      answer: 'C. Compact Disc (CD)',
-      diff: 'easy',
-    },
-    {
-      q: 'The standard diameter of a compact disc (CD) is:',
-      options: ['A. 8 cm', 'B. 10 cm', 'C. 12 cm', 'D. 15 cm'],
-      answer: 'C. 12 cm',
-      diff: 'easy',
-    },
-    {
-      q: 'On a CD, data is stored on a:',
-      options: ['A. Single-track spiral', 'B. Multiple concentric tracks', 'C. Series of holes', 'D. Magnetic coating'],
-      answer: 'A. Single-track spiral',
-      diff: 'easy',
-    },
-    {
-      q: 'What does a CD laser detect to read data?',
-      options: ['A. Magnetic fields', 'B. Electric charges', 'C. Pits and lands (irregularities)', 'D. Heat patterns'],
-      answer: 'C. Pits and lands (irregularities)',
-      diff: 'easy',
-    },
-    {
-      q: 'A typical CD sector can store how much computer data?',
-      options: ['A. 512 bytes', 'B. 1 KB', 'C. 2 KB', 'D. 4 KB'],
-      answer: 'C. 2 KB',
-      diff: 'medium',
-    },
-    {
-      q: 'The original audio format for CDs is called:',
-      options: ['A. CD-ROM', 'B. CD-R', 'C. CD-DA', 'D. CD-RW'],
-      answer: 'C. CD-DA',
-      diff: 'medium',
-    },
-    {
-      q: 'Why is data retrieval slower on optical disks than on magnetic disks?',
-      options: ['A. Optical disks spin slower', 'B. Optical disks use a single spiral track (sectors not individually addressable)', 'C. Lasers are slower than magnetic heads', 'D. Optical disks have less capacity'],
-      answer: 'B. Optical disks use a single spiral track (sectors not individually addressable)',
-      diff: 'medium',
-    },
-    {
-      q: 'Optical disks are best suited for:',
-      options: ['A. Random access to small files', 'B. Long continuous streams of data (audio/video)', 'C. Frequent writing and rewriting', 'D. Very large databases'],
-      answer: 'B. Long continuous streams of data (audio/video)',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the approximate storage capacity of a standard CD?',
-      options: ['A. 100-200 MB', 'B. 600-700 MB', 'C. 1-2 GB', 'D. 10-20 GB'],
-      answer: 'B. 600-700 MB',
-      diff: 'easy',
-    },
-    {
-      q: 'DVD stands for:',
-      options: ['A. Digital Video Disc', 'B. Digital Versatile Disk', 'C. Data Variable Disc', 'D. Double Volume Disc'],
-      answer: 'B. Digital Versatile Disk',
-      diff: 'easy',
-    },
-    {
-      q: 'DVDs achieve higher capacity than CDs by using:',
-      options: ['A. Larger diameter', 'B. Multiple semi-transparent layers', 'C. Faster spinning', 'D. Stronger laser'],
-      answer: 'B. Multiple semi-transparent layers',
-      diff: 'medium',
-    },
-    {
-      q: 'Blu-ray Discs use a laser with which color spectrum?',
-      options: ['A. Red', 'B. Blue-violet', 'C. Green', 'D. Infrared'],
-      answer: 'B. Blue-violet',
-      diff: 'easy',
-    },
-    {
-      q: 'Blu-ray Discs have approximately how many times the capacity of DVDs?',
-      options: ['A. 2×', 'B. 3×', 'C. 5×', 'D. 10×'],
-      answer: 'C. 5×',
-      diff: 'easy',
-    },
-    {
-      q: 'The spiral track on a CD runs from:',
-      options: ['A. Outside to inside', 'B. Inside to outside', 'C. Top to bottom', 'D. Bottom to top'],
-      answer: 'B. Inside to outside',
-      diff: 'medium',
-    },
-    {
-      q: 'Which optical format offers the highest storage capacity?',
-      options: ['A. CD', 'B. DVD', 'C. Blu-ray', 'D. All have same capacity'],
-      answer: 'C. Blu-ray',
-      diff: 'easy',
-    },
-    {
-      q: 'The reflective material on a CD is typically:',
-      options: ['A. Plastic', 'B. Glass', 'C. Aluminum', 'D. Copper'],
-      answer: 'C. Aluminum',
-      diff: 'medium',
-    },
-    {
-      q: 'What is the main advantage of using a blue-violet laser in Blu-ray?',
-      options: ['A. Lower cost', 'B. Finer precision, more data per area', 'C. Faster spin rate', 'D. Compatibility with CDs'],
-      answer: 'B. Finer precision, more data per area',
-      diff: 'medium',
-    }
-  ]
-},
-
-17: {
-  title: 'Flash Drives: Solid State Storage, SSDs, SD Cards (CS101 Lecture 17)',
-  summary: `**Key Topics Covered:**
-- Issues with magnetic and optical systems: physical motion (moving heads, aiming lasers) takes time vs. electronic circuitry
-- Flash drive technology: electronic signals trap electrons in silicon dioxide chambers
-- No moving parts → faster access
-- Chambers retain data for years without power
-- Repeated erasing gradually damages chambers (limited write cycles)
-- Not suitable as main memory (due to wear)
-- Suitable for cameras, smartphones, portable devices where writes are controlled
-- Less reliable than optical disks for long-term storage
-- SSD (Solid State Disk): larger flash device to replace magnetic disks; quiet, low access time, but more expensive
-- SD (Secure Digital Memory Cards): up to few GB; SDHC up to 32 GB; SDXC exceeds TB
-- Compact sizes: standard, mini, micro; used in car navigation, cameras
-
----
-
-**Simple Understanding:**
-
-**Problems with Magnetic & Optical Storage:**
-👉 They require physical motion: moving read/write heads (magnetic) or aiming laser beams (optical).
-👉 Physical motion is slow compared to electronic circuits.
-
-**Flash Drive Technology:**
-👉 Stores bits using electronic signals – no moving parts.
-👉 Electrons are trapped in tiny chambers of silicon dioxide.
-👉 Chambers hold data for years without power.
-👉 Repeated erasing slowly damages the chambers (limited lifespan).
-👉 Not suitable for main memory because of write limits.
-👉 Ideal for cameras, smartphones, portable devices (where writes are controlled).
-👉 Less reliable than optical disks for very long-term storage.
-
-**SSD (Solid State Disk):**
-👉 Larger flash memory device designed to replace magnetic hard disks.
-👉 Quiet operation (no spinning platters).
-👉 Very low access time.
-👉 More expensive than magnetic disks.
-
-**SD Cards (Secure Digital Memory Cards):**
-👉 Provide up to a few GB (standard), SDHC up to 32 GB, SDXC can exceed 1 TB.
-👉 Available in standard, mini, and micro sizes.
-👉 Compact physical size – used in car navigation, cameras, phones.
-
----
-
-**Important Vocabulary:**
-- Flash drive = storage using trapped electrons in silicon dioxide
-- Silicon dioxide = insulating material used in flash memory chips
-- SSD = Solid State Disk (large flash storage)
-- SD = Secure Digital memory card
-- SDHC = SD High Capacity (up to 32 GB)
-- SDXC = SD eXtended Capacity (over 32 GB, up to TB)
-- Write cycle = one program/erase operation
-- Wear = gradual damage from repeated writes
-
----
-
-**Quick Revision Points:**
-- Magnetic/optical systems have moving parts → slower.
-- Flash drives use electronic signals → faster, no moving parts.
-- Electrons trapped in silicon dioxide chambers store bits.
-- Data retention for years without power.
-- Limited write cycles – not ideal for main memory.
-- SSDs replace hard disks: fast, quiet, costly.
-- SD cards: small, used in portable devices.
-- SDHC: up to 32 GB; SDXC: over 32 GB to TB.`,
-
-  questions: [
-    {
-      q: 'What is a major disadvantage of magnetic and optical storage systems?',
-      options: ['A. They are too fast', 'B. They require physical motion (moving parts)', 'C. They are electronic', 'D. They have no moving parts'],
-      answer: 'B. They require physical motion (moving parts)',
-      diff: 'easy',
-    },
-    {
-      q: 'Flash drives store bits by:',
-      options: ['A. Spinning magnetic disks', 'B. Trapping electrons in silicon dioxide chambers', 'C. Burning pits on a reflective surface', 'D. Charging capacitors'],
-      answer: 'B. Trapping electrons in silicon dioxide chambers',
-      diff: 'easy',
-    },
-    {
-      q: 'How long can flash memory retain data without external power?',
-      options: ['A. Minutes', 'B. Hours', 'C. Days', 'D. Years'],
-      answer: 'D. Years',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the main limitation of flash memory regarding write cycles?',
-      options: ['A. It is too fast', 'B. Repeated erasing slowly damages the chambers', 'C. It loses data immediately', 'D. It cannot be erased'],
-      answer: 'B. Repeated erasing slowly damages the chambers',
-      diff: 'easy',
-    },
-    {
-      q: 'Why is flash memory not suitable as main memory (RAM)?',
-      options: ['A. It is too fast', 'B. It has limited write cycles and slower than DRAM', 'C. It is too large', 'D. It requires physical motion'],
-      answer: 'B. It has limited write cycles and slower than DRAM',
-      diff: 'medium',
-    },
-    {
-      q: 'Flash drives are ideal for:',
-      options: ['A. Main memory', 'B. Cameras, smartphones, portable devices', 'C. Long-term archival', 'D. All of the above'],
-      answer: 'B. Cameras, smartphones, portable devices',
-      diff: 'easy',
-    },
-    {
-      q: 'SSD stands for:',
-      options: ['A. Solid State Disk', 'B. Serial Storage Device', 'C. Secure System Drive', 'D. Single Sided Disk'],
-      answer: 'A. Solid State Disk',
-      diff: 'easy',
-    },
-    {
-      q: 'SSDs are designed to replace:',
-      options: ['A. Optical disks', 'B. Magnetic hard disks', 'C. RAM', 'D. Flash drives'],
-      answer: 'B. Magnetic hard disks',
-      diff: 'easy',
-    },
-    {
-      q: 'What is an advantage of SSDs over magnetic disks?',
-      options: ['A. Lower cost', 'B. Quiet operation and low access time', 'C. Higher power consumption', 'D. Larger physical size'],
-      answer: 'B. Quiet operation and low access time',
-      diff: 'easy',
-    },
-    {
-      q: 'What is a disadvantage of SSDs compared to magnetic disks?',
-      options: ['A. They are slower', 'B. They are more expensive per GB', 'C. They are noisier', 'D. They have moving parts'],
-      answer: 'B. They are more expensive per GB',
-      diff: 'easy',
-    },
-    {
-      q: 'SD card stands for:',
-      options: ['A. Solid Disk', 'B. Serial Data', 'C. Secure Digital', 'D. System Drive'],
-      answer: 'C. Secure Digital',
-      diff: 'easy',
-    },
-    {
-      q: 'SDHC cards can provide up to:',
-      options: ['A. 2 GB', 'B. 8 GB', 'C. 16 GB', 'D. 32 GB'],
-      answer: 'D. 32 GB',
-      diff: 'medium',
-    },
-    {
-      q: 'SDXC cards can exceed storage of:',
-      options: ['A. 32 GB', 'B. 64 GB', 'C. 128 GB', 'D. 1 TB'],
-      answer: 'D. 1 TB',
-      diff: 'medium',
-    },
-    {
-      q: 'Which of the following is NOT a size variant of SD cards?',
-      options: ['A. Standard', 'B. Mini', 'C. Micro', 'D. Nano'],
-      answer: 'D. Nano',
-      diff: 'easy',
-    },
-    {
-      q: 'SD cards are commonly used in:',
-      options: ['A. Desktop computers only', 'B. Car navigation, cameras, phones', 'C. Mainframe computers', 'D. Supercomputers'],
-      answer: 'B. Car navigation, cameras, phones',
-      diff: 'easy',
-    },
-    {
-      q: 'Compared to optical disks, flash drives are generally ________ for long-term storage?',
-      options: ['A. More reliable', 'B. Less reliable', 'C. Equally reliable', 'D. Not comparable'],
-      answer: 'B. Less reliable',
-      diff: 'medium',
-    },
-    {
-      q: 'The chambers in flash memory that trap electrons are made of:',
-      options: ['A. Copper', 'B. Silicon dioxide', 'C. Aluminum', 'D. Plastic'],
-      answer: 'B. Silicon dioxide',
-      diff: 'medium',
-    },
-    {
-      q: 'Which type of flash storage is designed to replace magnetic hard disks in computers?',
-      options: ['A. USB flash drive', 'B. SD card', 'C. SSD', 'D. Memory stick'],
-      answer: 'C. SSD',
-      diff: 'easy',
-    },
-    {
-      q: 'A major advantage of flash memory over magnetic disks is:',
-      options: ['A. No physical motion (electronic)', 'B. Lower cost per GB', 'C. Infinite write cycles', 'D. Larger capacity'],
-      answer: 'A. No physical motion (electronic)',
-      diff: 'easy',
-    }
-  ]
-},
-
-
-18: {
-  title: 'Representing Text: ASCII, Unicode, UTF-8 (CS101 Lecture 18)',
-  summary: `**Key Topics Covered:**
-- Text stored as codes: each character represented by a unique bit pattern
-- Typically 8 bits per character (1 byte)
-- Example: "Virtual University" (18 characters) = 144 bits / 18 bytes
-- 1940s-1950s: many coding systems; ANSI standard
-- ASCII (American Standard Code for Information Interchange):
-  - 7 bits for information + 1 most significant bit = 0
-  - 2⁷ = 128 possible characters
-  - Includes uppercase, lowercase, punctuation, digits 0-9, line feed, carriage return, tabs
-- ASCII example: "Hello" uses codes H=72, e=101, l=108, l=108, o=111
-- Limitations of ASCII: only 128 characters (no non-English symbols)
-- ISO extensions added support for Western European languages
-- Limitations of extensions: 256 still insufficient for many languages, and mixed-language documents are problematic
-- Unicode: international standard, 21-bit unique patterns, compatible with ASCII, supports thousands of characters (Chinese, Hebrew, Japanese, etc.)
-- UTF-8: uses 24-32 bits, up to 2²⁴ = 16,777,216 unique symbols
-- Text file: file consisting of long strings of ASCII or Unicode encoded characters
-
----
-
-**Simple Understanding:**
-
-**How Text is Stored:**
-👉 Each character (letter, digit, punctuation) is stored as a unique bit pattern.
-👉 Usually 1 byte (8 bits) per character in older systems.
-👉 Example: "Virtual University" has 18 letters → 18 bytes (144 bits).
-
-**ASCII (American Standard Code for Information Interchange):**
-👉 Developed by ANSI (American National Standards Institute).
-👉 Uses 7 bits for the code + 1 extra bit always 0.
-👉 Total: 2⁷ = 128 possible characters.
-👉 Includes: A-Z, a-z, 0-9, punctuation, enter (line feed), carriage return, tab.
-
+- 4 bits → 16 patterns
+- 8 bits (1 byte) → 256 patterns
+ 
 **ASCII Example:**
-👉 'H' = 72 (binary 01001000)
-👉 'e' = 101 (binary 01100101)
-👉 'l' = 108
-👉 'l' = 108
-👉 'o' = 111
-
-**Problems with ASCII:**
-👉 Only 128 characters – no room for accented letters (é, ñ, ü) or non-Latin scripts (Arabic, Urdu, Chinese).
-👉 ISO extensions increased to 256 characters, but still not enough for all languages.
-👉 Mixed-language documents impossible with one extension.
-
+Character 'A' = decimal 65 = binary **01000001**.
+ 
+**Decimal-to-Binary Positional Table:**
+Powers of 2 from right to left: 2⁰=1, 2¹=2, 2²=4, 2³=8, 2⁴=16, 2⁵=32, 2⁶=64, 2⁷=128.
+- Decimal 2 in binary = 00000010 (1 placed at the 2¹ position).
+- Decimal 8 in binary = 00001000.
+- Decimal 65 in binary = 01000001 (64 + 1 = 65).
+ 
+**Key Facts to Remember:**
+- "Virtual University" = 18 characters → 18×8 = 144 bits = 18 bytes (8 bits/char standard assumption).
+- Bit patterns always follow 2ⁿ rule.
+- ASCII 'A' = 65 = 01000001 is a CLASSIC exam example.
+ 
+**Quick Revision Points:**
+8 bits = 1 byte. 2ⁿ formula for patterns. 'A' = 65 = 01000001 in ASCII/binary.`,
+    questions: [
+      {
+        q: 'A single bit can represent how many distinct values?',
+        options: ['A. 1', 'B. 2', 'C. 4', 'D. 8'],
+        answer: 'B. 2',
+        diff: 'easy',
+      },
+      {
+        q: 'How many bits make up one Byte?',
+        options: ['A. 4', 'B. 8', 'C. 16', 'D. 1024'],
+        answer: 'B. 8',
+        diff: 'easy',
+      },
+      {
+        q: 'Using the formula for bit patterns, how many distinct patterns can 8 bits represent?',
+        options: ['A. 16', 'B. 64', 'C. 128', 'D. 256'],
+        answer: 'D. 256',
+        diff: 'medium',
+      },
+      {
+        q: 'How many distinct bit patterns are possible with exactly 3 bits?',
+        options: ['A. 4', 'B. 6', 'C. 8', 'D. 16'],
+        answer: 'C. 8',
+        diff: 'medium',
+      },
+      {
+        q: 'According to the lecture, the ASCII representation of the character "A" (decimal 65) in binary is:',
+        options: ['A. 01000000', 'B. 01000001', 'C. 01000010', 'D. 01000011'],
+        answer: 'B. 01000001',
+        diff: 'hard',
+      },
+      {
+        q: 'How many bytes are in 1 Kilobyte (KB), as defined in this module?',
+        options: ['A. 100', 'B. 512', 'C. 1000', 'D. 1024'],
+        answer: 'D. 1024',
+        diff: 'easy',
+      },
+      {
+        q: 'If the string "Virtual University" has 18 characters and each character uses 8 bits, the total storage required is:',
+        options: ['A. 18 bits', 'B. 144 bits (18 bytes)', 'C. 1024 bits', 'D. 256 bits'],
+        answer: 'B. 144 bits (18 bytes)',
+        diff: 'medium',
+      },
+      {
+        q: 'To represent the decimal number 2 in an 8-bit binary system, which bit position should contain a 1?',
+        options: ['A. The 2^0 (units) position', 'B. The 2^1 position', 'C. The 2^3 position', 'D. The 2^7 position'],
+        answer: 'B. The 2^1 position',
+        diff: 'medium',
+      },
+      {
+        q: 'In a chip, a bit is physically represented as:',
+        options: ['A. A magnetic spin only', 'B. An electric charge (0 or 1)', 'C. A sound wave', 'D. A printed punch hole'],
+        answer: 'B. An electric charge (0 or 1)',
+        diff: 'easy',
+      },
+      {
+        q: 'If a system uses 5 bits to encode values, how many unique patterns/values can it represent?',
+        options: ['A. 10', 'B. 25', 'C. 32', 'D. 64'],
+        answer: 'C. 32',
+        diff: 'hard',
+      },
+    ],
+  },
+ 
+  12: {
+    title: 'Boolean Operations',
+    summary: `**Key Topics Covered:**
+- Concept of true/false represented as 1/0
+- AND, OR, XOR, NOT operations
+- George Boole and the field of logic
+ 
+**Important Concepts:**
+ 
+**Bit-to-Truth Mapping:**
+Bit 0 = represents value **false**. Bit 1 = represents value **true**.
+Operations manipulating true/false values = **Boolean operations**, named after mathematician **George Boole (1815–1864)**, pioneer of the mathematical field of logic.
+ 
+**AND Operation:**
+Output = 1 ONLY when BOTH inputs are 1. Otherwise output = 0.
+(Truth table: 0,0→0 | 0,1→0 | 1,0→0 | 1,1→1)
+ 
+**OR Operation:**
+Output = 1 when ANY input is 1. Output = 0 only when BOTH inputs are 0.
+(Truth table: 0,0→0 | 0,1→1 | 1,0→1 | 1,1→1)
+ 
+**XOR (Exclusive OR) Operation:**
+Output = 1 when BOTH inputs are DIFFERENT. Output = 0 when BOTH inputs are SAME.
+(Truth table: 0,0→0 | 0,1→1 | 1,0→1 | 1,1→0)
+ 
+**NOT Operation:**
+Takes ONE input only. Produces 1 when input is 0; produces 0 when input is 1 (simple inversion/complement).
+ 
+**Key Facts to Remember:**
+- George Boole = pioneer of logic field; Boolean operations named after him.
+- AND = strictest (needs both 1s).
+- OR = most permissive (needs at least one 1).
+- XOR = needs DIFFERENCE, not similarity (opposite logic of AND in terms of strictness pattern).
+- NOT = the only UNARY (single-input) operation among these four.
+ 
+**Quick Revision Points:**
+AND→both 1. OR→at least one 1. XOR→inputs differ. NOT→inverts single input. Boole = logic pioneer (1815–1864).`,
+    questions: [
+      {
+        q: 'In Boolean operations, the bit value 0 conventionally represents:',
+        options: ['A. True', 'B. False', 'C. Undefined', 'D. Both true and false'],
+        answer: 'B. False',
+        diff: 'easy',
+      },
+      {
+        q: 'Boolean operations are named in honor of which mathematician, a pioneer in the field of logic?',
+        options: ['A. Charles Babbage', 'B. George Boole', 'C. Blaise Pascal', 'D. Herman Hollerith'],
+        answer: 'B. George Boole',
+        diff: 'easy',
+      },
+      {
+        q: 'The AND operation produces an output of 1 only when:',
+        options: ['A. At least one input is 1', 'B. Both inputs are different', 'C. Both inputs are 1', 'D. Both inputs are 0'],
+        answer: 'C. Both inputs are 1',
+        diff: 'easy',
+      },
+      {
+        q: 'For the OR operation, when do BOTH inputs result in an output of 0?',
+        options: ['A. When both inputs are 1', 'B. When both inputs are 0', 'C. When inputs differ', 'D. OR never outputs 0'],
+        answer: 'B. When both inputs are 0',
+        diff: 'medium',
+      },
+      {
+        q: 'The XOR (Exclusive OR) operation produces an output of 1 when:',
+        options: ['A. Both inputs are the same (both 0 or both 1)', 'B. Both inputs are different', 'C. Both inputs are 0', 'D. Neither input is defined'],
+        answer: 'B. Both inputs are different',
+        diff: 'medium',
+      },
+      {
+        q: 'What is the output of XOR when both inputs are 1?',
+        options: ['A. 1', 'B. 0', 'C. Undefined', 'D. Depends on AND result'],
+        answer: 'B. 0',
+        diff: 'medium',
+      },
+      {
+        q: 'Which Boolean operation is unique among AND, OR, XOR, and NOT because it takes only a SINGLE input?',
+        options: ['A. AND', 'B. OR', 'C. XOR', 'D. NOT'],
+        answer: 'D. NOT',
+        diff: 'easy',
+      },
+      {
+        q: 'If input A = 1 and the NOT operation is applied, what is the output?',
+        options: ['A. 1', 'B. 0', 'C. Undefined', 'D. 2'],
+        answer: 'B. 0',
+        diff: 'easy',
+      },
+      {
+        q: 'For inputs A=1 and B=0, what would be the result of applying AND followed conceptually by comparing it to OR on the same inputs?',
+        options: ['A. AND=1, OR=1', 'B. AND=0, OR=1', 'C. AND=1, OR=0', 'D. AND=0, OR=0'],
+        answer: 'B. AND=0, OR=1',
+        diff: 'hard',
+      },
+      {
+        q: 'Which statement correctly differentiates XOR from OR?',
+        options: ['A. XOR outputs 1 when both inputs are 1, same as OR', 'B. XOR outputs 0 when both inputs are 1, unlike OR which outputs 1 in that case', 'C. XOR and OR are identical operations', 'D. XOR takes only one input, OR takes two'],
+        answer: 'B. XOR outputs 0 when both inputs are 1, unlike OR which outputs 1 in that case',
+        diff: 'hard',
+      },
+    ],
+  },
+ 
+  13: {
+    title: 'Hexadecimal Notation',
+    summary: `**Key Topics Covered:**
+- Why hexadecimal notation is needed
+- Hexadecimal representation table
+- Worked example converting binary to hexadecimal
+ 
+**Important Concepts:**
+ 
+**Why Hexadecimal?**
+Long bit strings (called a **stream**) are tedious and error-prone for humans to read/transcribe. Hexadecimal is a SHORTHAND that exploits the fact that bit patterns in machines tend to have lengths in MULTIPLES OF FOUR. One hex symbol represents exactly 4 bits.
+ 
+**Key Relationship:**
+A string of 12 bits → represented by exactly 3 hexadecimal symbols (since 12 ÷ 4 = 3).
+ 
+**Hexadecimal Digits:**
+Uses digits 0–9 AND letters A–F to represent values 0 through 15 (since 4 bits = 16 possible patterns, 0 to 15).
+ 
+**Worked Example (from textbook, Q#5b):**
+Convert binary **111010000101010100010111** to hexadecimal:
+- Split into 4-bit groups: 1110 | 1000 | 0101 | 0101 | 0001 | 0111
+- Convert each: E | 8 | 5 | 5 | 1 | 7
+- Final Hexadecimal: **E85517**
+ 
+**Key Facts to Remember:**
+- 1 hex digit = exactly 4 bits.
+- Hex uses base 16 (digits 0-9, then A=10, B=11, C=12, D=13, E=14, F=15).
+- Always split bit strings into groups of 4 STARTING FROM THE RIGHT (or as given) before converting.
+- The worked example E85517 is a classic memorized answer pattern in VU quizzes.
+ 
+**Quick Revision Points:**
+Hex = base 16, groups of 4 bits per digit. 24-bit string → 6 hex digits. Letters A-F represent 10-15.`,
+    questions: [
+      {
+        q: 'Why is hexadecimal notation used to represent bit patterns in computing?',
+        options: ['A. Because computers cannot process binary directly', 'B. Because long bit strings (streams) are tedious and error-prone for humans, and hex provides a compact shorthand', 'C. Because hexadecimal uses fewer digits than decimal', 'D. Because hexadecimal is required by all programming languages'],
+        answer: 'B. Because long bit strings (streams) are tedious and error-prone for humans, and hex provides a compact shorthand',
+        diff: 'medium',
+      },
+      {
+        q: 'One hexadecimal symbol represents exactly how many bits?',
+        options: ['A. 2 bits', 'B. 4 bits', 'C. 8 bits', 'D. 16 bits'],
+        answer: 'B. 4 bits',
+        diff: 'easy',
+      },
+      {
+        q: 'A string of 12 bits would be represented by how many hexadecimal symbols?',
+        options: ['A. 2', 'B. 3', 'C. 4', 'D. 6'],
+        answer: 'B. 3',
+        diff: 'medium',
+      },
+      {
+        q: 'Hexadecimal notation uses which set of symbols to represent values 0 through 15?',
+        options: ['A. Only digits 0-9', 'B. Digits 0-9 and letters A-F', 'C. Only letters A-P', 'D. Digits 0-9 and letters A-Z'],
+        answer: 'B. Digits 0-9 and letters A-F',
+        diff: 'easy',
+      },
+      {
+        q: 'Converting the binary string 111010000101010100010111 to hexadecimal (per the worked example) gives:',
+        options: ['A. E85517', 'B. E58517', 'C. F85517', 'D. E85577'],
+        answer: 'A. E85517',
+        diff: 'hard',
+      },
+      {
+        q: 'In hexadecimal, what decimal value does the letter "E" represent?',
+        options: ['A. 11', 'B. 12', 'C. 13', 'D. 14'],
+        answer: 'D. 14',
+        diff: 'medium',
+      },
+      {
+        q: 'The 4-bit group "0101" converts to which hexadecimal digit?',
+        options: ['A. 4', 'B. 5', 'C. 6', 'D. A'],
+        answer: 'B. 5',
+        diff: 'medium',
+      },
+      {
+        q: 'What fundamental property of machine bit patterns makes hexadecimal notation particularly convenient?',
+        options: ['A. Bit patterns within a machine tend to have lengths in multiples of four', 'B. Bit patterns are always exactly 10 bits long', 'C. Machines only use decimal internally', 'D. Hexadecimal eliminates the need for binary entirely'],
+        answer: 'A. Bit patterns within a machine tend to have lengths in multiples of four',
+        diff: 'hard',
+      },
+      {
+        q: 'The 4-bit group "1110" converts to which hexadecimal symbol?',
+        options: ['A. D', 'B. E', 'C. F', 'D. 7'],
+        answer: 'B. E',
+        diff: 'medium',
+      },
+      {
+        q: 'A "stream," as defined in this module, refers to:',
+        options: ['A. A short 4-bit binary group', 'B. A long string of bits that is tedious for humans to transcribe', 'C. A hexadecimal-only data type', 'D. A type of search operator'],
+        answer: 'B. A long string of bits that is tedious for humans to transcribe',
+        diff: 'medium',
+      },
+    ],
+  },
+ 
+  14: {
+    title: 'Storing a Bit',
+    summary: `**Key Topics Covered:**
+- Main memory and flip-flops
+- Memory organization (cells, bytes)
+- Memory addressing
+- RAM, DRAM, SDRAM
+ 
+**Important Concepts:**
+ 
+**Main Memory:**
+A large collection of circuits (e.g., flip-flops), each storing a SINGLE bit. This entire bit reservoir = **main memory**.
+ 
+**Main Memory Organization:**
+- Manageable unit = **Cell = 8 bits** (i.e., one byte per cell).
+- Household devices: a few hundred cells.
+- Large computers: billions of cells.
+ 
+**Byte Size Organization:**
+By convention, **most significant bits** are represented on the LEFT, **least significant bits** on the RIGHT (note: Computer Science has no inherent "left/right" — this is purely a human convention for clarity).
+ 
+**Memory Address:**
+Each cell is assigned a unique "name" called its **address**, allowing individual access.
+ 
+**RAM (Random Access Memory):**
+Cells can be accessed independently/in any order — this ability to access in ANY order is why it's called "random access."
+ 
+**DRAM (Dynamic RAM):**
+Stores bits as TINY ELECTRIC CHARGE; must be **refreshed many times per second** (charge leaks over time).
+ 
+**SDRAM (Synchronous DRAM):**
+DRAM that applies ADDITIONAL TECHNIQUES to DECREASE the time needed to retrieve contents from memory cells (i.e., faster than plain DRAM via synchronization with the system clock).
+ 
+**Key Facts to Remember:**
+- 1 Cell = 8 bits (standard memory cell size).
+- RAM's defining feature = random/independent access to ANY cell.
+- DRAM needs continuous refreshing (volatile, charge-based).
+- SDRAM = DRAM + synchronization techniques = faster retrieval.
+ 
+**Quick Revision Points:**
+Flip-flop → 1 bit. Cell → 8 bits. Address → unique cell identifier. RAM → random access. DRAM → needs refresh. SDRAM → faster DRAM via sync techniques.`,
+    questions: [
+      {
+        q: 'A single flip-flop circuit in main memory is capable of storing:',
+        options: ['A. One byte', 'B. One bit', 'C. One word', 'D. One kilobyte'],
+        answer: 'B. One bit',
+        diff: 'easy',
+      },
+      {
+        q: 'According to the standard memory organization described in this module, one memory cell typically consists of:',
+        options: ['A. 1 bit', 'B. 4 bits', 'C. 8 bits', 'D. 16 bits'],
+        answer: 'C. 8 bits',
+        diff: 'easy',
+      },
+      {
+        q: 'The unique identifier assigned to each memory cell, allowing it to be located and accessed, is called its:',
+        options: ['A. Register', 'B. Address', 'C. Flip-flop', 'D. Bus'],
+        answer: 'B. Address',
+        diff: 'easy',
+      },
+      {
+        q: 'RAM is called "Random Access Memory" primarily because:',
+        options: ['A. Its contents are randomly generated', 'B. Cells can be accessed independently and in any order', 'C. It only works with random numbers', 'D. It cannot be addressed directly'],
+        answer: 'B. Cells can be accessed independently and in any order',
+        diff: 'medium',
+      },
+      {
+        q: 'DRAM (Dynamic RAM) stores bits using which mechanism, and what maintenance does it require?',
+        options: ['A. Magnetic spin; no maintenance needed', 'B. Tiny electric charge; requires refreshing many times per second', 'C. Punched holes; requires no power', 'D. Optical reflection; requires a laser refresh'],
+        answer: 'B. Tiny electric charge; requires refreshing many times per second',
+        diff: 'medium',
+      },
+      {
+        q: 'SDRAM (Synchronous DRAM) improves upon basic DRAM mainly by:',
+        options: ['A. Eliminating the need for electric charge entirely', 'B. Applying additional techniques to decrease the time needed to retrieve memory cell contents', 'C. Removing the need for memory addresses', 'D. Converting memory into a hexadecimal-only format'],
+        answer: 'B. Applying additional techniques to decrease the time needed to retrieve memory cell contents',
+        diff: 'medium',
+      },
+      {
+        q: 'In the byte organization convention described, which bits are represented on the LEFT side?',
+        options: ['A. Least significant bits', 'B. Most significant bits', 'C. Parity bits', 'D. Sign bits only'],
+        answer: 'B. Most significant bits',
+        diff: 'medium',
+      },
+      {
+        q: 'Approximately how many memory cells might a large computer contain, according to the lecture?',
+        options: ['A. A few dozen', 'B. A few hundred', 'C. Billions', 'D. Exactly one million'],
+        answer: 'C. Billions',
+        diff: 'easy',
+      },
+      {
+        q: 'Why must DRAM be refreshed many times per second?',
+        options: ['A. Because the electric charge representing each bit leaks/dissipates over time', 'B. Because it uses mechanical gears', 'C. Because it is read-only memory', 'D. Because hexadecimal conversion requires it'],
+        answer: 'A. Because the electric charge representing each bit leaks/dissipates over time',
+        diff: 'hard',
+      },
+      {
+        q: 'Which statement best summarizes the relationship between RAM, DRAM, and SDRAM?',
+        options: ['A. They are entirely unrelated memory technologies', 'B. RAM is the general access concept; DRAM is a charge-based implementation needing refresh; SDRAM is a faster, synchronized variant of DRAM', 'C. SDRAM came before DRAM historically', 'D. RAM only refers to read-only storage'],
+        answer: 'B. RAM is the general access concept; DRAM is a charge-based implementation needing refresh; SDRAM is a faster, synchronized variant of DRAM',
+        diff: 'hard',
+      },
+    ],
+  },
+ 
+  15: {
+    title: 'Magnetic Systems',
+    summary: `**Key Topics Covered:**
+- Mass storage / secondary storage systems
+- How magnetic disk storage works (tracks, sectors)
+- Zoned-bit recording
+- Seek time, rotation delay, access time, transfer rate
+ 
+**Important Concepts:**
+ 
+**Mass Storage (Secondary Storage):**
+Needed due to volatility & limited size of main memory. Includes magnetic disks, CDs, DVDs, tapes, flash drives, SSDs. Advantages: less volatility, large capacity, low cost, removable medium for archival.
+ 
+**How Disk Storage Works:**
+- Thin spinning disk with magnetic coating holds data.
+- Read/Write heads positioned above/below the disk.
+- Each head traces a circular path called a **track**.
+- Each track divided into equal **sectors** (512 bytes to a few KB each).
+- **Outer tracks contain MORE information** (since they're physically longer).
+ 
+**Zoned-Bit Recording:**
+- Adjacent tracks grouped into **Zones**.
+- A typical disk has **10 zones**.
+- ALL tracks WITHIN a zone have an EQUAL number of sectors (though different zones may differ).
+ 
+**Key Timing Definitions (CRITICAL — frequently tested):**
+- **Seek Time** = time required to move read/write head from ONE track to ANOTHER.
+- **Rotation Delay** = average time for the desired data to rotate around to the read/write head ONCE the head is positioned over the correct track.
+- **Access Time** = Seek Time + Rotation Delay (the SUM of both).
+- **Transfer Rate** = the rate at which data can be transferred to/from the disk.
+ 
+**Key Facts to Remember:**
+- Access Time = Seek Time + Rotation Delay (memorize this formula exactly).
+- 10 zones is the specific number cited for a typical disk.
+- Outer tracks hold MORE data than inner tracks (due to greater physical length even though same number of sectors).
+ 
+**Quick Revision Points:**
+Track → circular path. Sector → divided unit of a track. Zone → group of tracks w/ equal sectors. Access Time = Seek + Rotation Delay.`,
+    questions: [
+      {
+        q: 'Mass storage systems (such as magnetic disks) are needed primarily because:',
+        options: ['A. Main memory is too fast', 'B. Main memory is volatile and has limited size', 'C. CPUs cannot read from main memory', 'D. Mass storage is cheaper than registers'],
+        answer: 'B. Main memory is volatile and has limited size',
+        diff: 'easy',
+      },
+      {
+        q: 'In a magnetic disk storage system, the circular path traced by a read/write head is called a:',
+        options: ['A. Sector', 'B. Zone', 'C. Track', 'D. Cell'],
+        answer: 'C. Track',
+        diff: 'easy',
+      },
+      {
+        q: 'A typical disk in zoned-bit recording is organized into how many zones?',
+        options: ['A. 5', 'B. 8', 'C. 10', 'D. 20'],
+        answer: 'C. 10',
+        diff: 'medium',
+      },
+      {
+        q: 'Within a single zone in zoned-bit recording, all tracks have:',
+        options: ['A. Different numbers of sectors', 'B. An equal number of sectors', 'C. No sectors at all', 'D. Varying numbers of read/write heads'],
+        answer: 'B. An equal number of sectors',
+        diff: 'medium',
+      },
+      {
+        q: 'Seek Time is defined as:',
+        options: ['A. The time required for the desired data to rotate to the read/write head', 'B. The time required to move the read/write heads from one track to another', 'C. The total transfer rate of the disk', 'D. The time to refresh DRAM'],
+        answer: 'B. The time required to move the read/write heads from one track to another',
+        diff: 'medium',
+      },
+      {
+        q: 'Access Time is calculated as:',
+        options: ['A. Seek Time minus Rotation Delay', 'B. Seek Time multiplied by Rotation Delay', 'C. The sum of Seek Time and Rotation Delay', 'D. Transfer Rate divided by Seek Time'],
+        answer: 'C. The sum of Seek Time and Rotation Delay',
+        diff: 'hard',
+      },
+      {
+        q: 'Why do outer tracks on a magnetic disk typically contain MORE information than inner tracks?',
+        options: ['A. Because outer tracks spin faster', 'B. Because outer tracks are physically longer in circumference', 'C. Because inner tracks are reserved for the operating system', 'D. Because outer tracks use a different magnetic coating'],
+        answer: 'B. Because outer tracks are physically longer in circumference',
+        diff: 'hard',
+      },
+      {
+        q: 'Rotation Delay refers to:',
+        options: ['A. The time to move between tracks', 'B. The average time for desired data to rotate to the read/write head once positioned over the correct track', 'C. The total data transfer rate', 'D. The number of zones on a disk'],
+        answer: 'B. The average time for desired data to rotate to the read/write head once positioned over the correct track',
+        diff: 'medium',
+      },
+      {
+        q: 'A typical sector on a magnetic disk holds approximately how much data, according to the lecture?',
+        options: ['A. 1 bit to 8 bits', 'B. 512 bytes to a few KB', 'C. Exactly 1 MB', 'D. Exactly 1 GB'],
+        answer: 'B. 512 bytes to a few KB',
+        diff: 'medium',
+      },
+      {
+        q: 'Which term describes the RATE at which data can be moved to or from the disk?',
+        options: ['A. Seek Time', 'B. Rotation Delay', 'C. Access Time', 'D. Transfer Rate'],
+        answer: 'D. Transfer Rate',
+        diff: 'easy',
+      },
+    ],
+  },
+ 
+  16: {
+    title: 'Optical System',
+    summary: `**Key Topics Covered:**
+- Compact Disk (CD) characteristics
+- DVD characteristics
+- Blu-ray Disk (BD) characteristics
+ 
+**Important Concepts:**
+ 
+**Compact Disk (CD) Characteristics:**
+- 12 centimeter diameter
+- Made of reflective material
+- Data recorded via variations in reflective surface
+- Data stored on a **single-track spiral** from inside to outside (NOT multiple concentric tracks like magnetic disks)
+- Each track divided into sectors; sector capacity = **2KB of data ≈ 1/75 of a second of audio music**
+- Retrieval via a **Laser** detecting surface irregularities as the disk spins
+- Originally for audio recording (format: **CD-DA**, compact disk-digital audio); still used today for computer data
+- **Single track** design means NOT all sectors are independently/directly accessible like in magnetic systems → **magnetic disk retrieval is FASTER than optical for random access**
+- Optical systems are BEST SUITED for long continuous strings of data (sequential access)
+ 
+**DVD (Digital Versatile Disk):**
+- CD capacity: 600–700 MB; DVD has capacity in GBs
+- Achieves higher capacity via MULTIPLE SEMI-TRANSPARENT LAYERS, viewed by a precisely focused laser
+- Same physical shape as CD
+ 
+**Blu-ray Disk (BD):**
+- Uses a **blue-violet spectrum of light** (instead of red, as in CD/DVD)
+- This allows the laser beam to focus with VERY FINE precision
+- BDs provide **FIVE TIMES** the capacity of DVDs
+ 
+**Key Facts to Remember:**
+- CD = single spiral track (KEY distinguishing fact vs. magnetic disks' multiple concentric tracks).
+- Magnetic disk retrieval > Optical disk retrieval in SPEED (for random access) because magnetic sectors are independently addressable.
+- DVD gains capacity via multiple semi-transparent layers.
+- Blu-ray gains capacity via blue-violet laser (finer focus) — 5x DVD capacity.
+ 
+**Quick Revision Points:**
+CD → single spiral track, red laser, 600-700MB. DVD → multiple layers, GBs. BD → blue-violet laser, 5x DVD capacity.`,
+    questions: [
+      {
+        q: 'A standard Compact Disk (CD) has data stored along:',
+        options: ['A. Multiple concentric tracks like a magnetic disk', 'B. A single continuous spiral track from inside to outside', 'C. Randomly scattered sectors with no track structure', 'D. Parallel straight lines'],
+        answer: 'B. A single continuous spiral track from inside to outside',
+        diff: 'medium',
+      },
+      {
+        q: 'Data retrieval from a CD is achieved using:',
+        options: ['A. A magnetic read/write head', 'B. A laser detecting irregularities on the reflective surface', 'C. Mechanical punch needles', 'D. Electric charge sensors'],
+        answer: 'B. A laser detecting irregularities on the reflective surface',
+        diff: 'easy',
+      },
+      {
+        q: 'Why is magnetic disk retrieval generally FASTER than optical disk retrieval for random access?',
+        options: ['A. Magnetic disks use a laser, which is faster than reflective surfaces', 'B. Optical disks have a single track design, so sectors are not all individually/directly accessible like in magnetic systems', 'C. Optical disks lack any tracks at all', 'D. Magnetic disks have no sectors'],
+        answer: 'B. Optical disks have a single track design, so sectors are not all individually/directly accessible like in magnetic systems',
+        diff: 'hard',
+      },
+      {
+        q: 'A typical CD sector capacity of 2KB corresponds to approximately how much audio playback time?',
+        options: ['A. 1 full second', 'B. 1/75 of a second', 'C. 1 minute', 'D. 1/2 a second'],
+        answer: 'B. 1/75 of a second',
+        diff: 'hard',
+      },
+      {
+        q: 'The original audio format used for CDs, as mentioned in the lecture, is abbreviated as:',
+        options: ['A. MP3', 'B. CD-DA (compact disk-digital audio)', 'C. WAV', 'D. CD-ROM'],
+        answer: 'B. CD-DA (compact disk-digital audio)',
+        diff: 'medium',
+      },
+      {
+        q: 'DVDs achieve significantly higher storage capacity than CDs primarily through:',
+        options: ['A. Using a blue-violet laser', 'B. Multiple semi-transparent layers viewed by a precisely focused laser', 'C. A larger physical diameter than CDs', 'D. Magnetic coating instead of reflective material'],
+        answer: 'B. Multiple semi-transparent layers viewed by a precisely focused laser',
+        diff: 'medium',
+      },
+      {
+        q: 'Blu-ray Disks (BDs) achieve greater precision and capacity by using:',
+        options: ['A. A red laser similar to CDs', 'B. A blue-violet spectrum of light allowing finer focus', 'C. Magnetic recording technology', 'D. Multiple spiral tracks instead of one'],
+        answer: 'B. A blue-violet spectrum of light allowing finer focus',
+        diff: 'easy',
+      },
+      {
+        q: 'According to the lecture, Blu-ray Disks provide approximately how much more capacity than DVDs?',
+        options: ['A. Two times', 'B. Three times', 'C. Five times', 'D. Ten times'],
+        answer: 'C. Five times',
+        diff: 'medium',
+      },
+      {
+        q: 'A typical CD\'s storage capacity range is given in the lecture as:',
+        options: ['A. 100-200 MB', 'B. 600-700 MB', 'C. 1-2 GB', 'D. 4.7 GB'],
+        answer: 'B. 600-700 MB',
+        diff: 'medium',
+      },
+      {
+        q: 'Optical systems (like CDs) are stated to be BEST suited for which type of data access pattern?',
+        options: ['A. Random access of small independent records', 'B. Long continuous strings of data (sequential access)', 'C. Real-time database transactions', 'D. Frequent small overwrites'],
+        answer: 'B. Long continuous strings of data (sequential access)',
+        diff: 'hard',
+      },
+    ],
+  },
+ 
+  17: {
+    title: 'Flash Drives',
+    summary: `**Key Topics Covered:**
+- Issues in magnetic and optical systems
+- Flash drive technology
+- SSDs (Solid State Disks)
+- SDs (Secure Digital Memory Cards)
+ 
+**Important Concepts:**
+ 
+**Issues in Magnetic and Optical Systems:**
+- Require PHYSICAL MOTION (moving read/write heads, aiming laser beams).
+- This physical motion takes considerably MORE TIME compared to purely electronic circuitry (which has no moving parts).
+ 
+**Flash Drive Technology:**
+- Bits stored by sending **electronic signals directly** to the storage medium, trapping electrons in tiny chambers of **silicon dioxide**.
+- These chambers can store data for YEARS without external power (non-volatile).
+- **Repeated erasing slowly DAMAGES** the silicon dioxide chambers over time (limited write/erase cycles).
+- **NOT suitable as a replacement for main memory** (due to wear from repeated writes and speed limitations relative to RAM).
+- Best suited where alterations are CONTROLLED/LIMITED — e.g., cameras, smartphones, portable devices.
+- Considered LESS reliable than optical disks for VERY LONG-TERM storage.
+ 
+**SSDs (Solid State Disks):**
+- LARGER flash memory devices designed to REPLACE magnetic disks.
+- Advantages: quiet operation, low access time.
+- Disadvantage: MORE COSTLY than magnetic systems.
+ 
+**SDs (Secure Digital Memory Cards):**
+- Provide up to a few GBs of storage.
+- Available in standard, mini, and micro sizes.
+- **SDHC** (High Capacity) → up to 32 GB.
+- **SDXC** (Extended Capacity) → may EXCEED 1 TB.
+- Compact size → suitable for car navigation systems, cameras, etc.
+ 
+**Key Facts to Remember:**
+- Flash memory is NOT suitable to replace main memory (wear-out issue from repeated erasing).
+- SSD = larger flash storage replacing magnetic disks (quiet, fast, but costly).
+- SDHC → up to 32GB; SDXC → can exceed TB (memorize these exact category names/limits).
+ 
+**Quick Revision Points:**
+Flash = electronic signals + silicon dioxide chambers, non-volatile, wears out with repeated erasing. SSD = flash-based magnetic disk replacement. SD/SDHC/SDXC = removable card capacity tiers.`,
+    questions: [
+      {
+        q: 'A common drawback shared by BOTH magnetic and optical storage systems, as identified in this module, is:',
+        options: ['A. They require no power at all', 'B. They require physical motion (moving heads or aiming lasers), which takes more time than electronic circuitry', 'C. They cannot store any text data', 'D. They are immune to wear and damage'],
+        answer: 'B. They require physical motion (moving heads or aiming lasers), which takes more time than electronic circuitry',
+        diff: 'medium',
+      },
+      {
+        q: 'In flash drive technology, bits are stored by trapping electrons in tiny chambers made of:',
+        options: ['A. Magnetic iron oxide', 'B. Silicon dioxide', 'C. Reflective aluminum', 'D. Copper wire coils'],
+        answer: 'B. Silicon dioxide',
+        diff: 'medium',
+      },
+      {
+        q: 'Why is flash memory generally NOT suitable as a replacement for main memory (RAM)?',
+        options: ['A. It cannot hold any data at all', 'B. Repeated erasing slowly damages the silicon dioxide chambers over time', 'C. It requires constant external power to retain data', 'D. It is incompatible with all modern devices'],
+        answer: 'B. Repeated erasing slowly damages the silicon dioxide chambers over time',
+        diff: 'hard',
+      },
+      {
+        q: 'Flash drive technology is best suited for applications where:',
+        options: ['A. Data alterations are frequent and uncontrolled', 'B. Alterations can be controlled, such as in cameras, smartphones, and portable devices', 'C. Data must never be modified at all', 'D. Only audio data needs to be stored'],
+        answer: 'B. Alterations can be controlled, such as in cameras, smartphones, and portable devices',
+        diff: 'medium',
+      },
+      {
+        q: 'SSDs (Solid State Disks) are designed to take the place of which traditional storage type?',
+        options: ['A. Optical disks (CDs/DVDs)', 'B. Magnetic disks', 'C. Main memory (RAM)', 'D. Punch cards'],
+        answer: 'B. Magnetic disks',
+        diff: 'easy',
+      },
+      {
+        q: 'Which of the following is a stated DISADVANTAGE of SSDs compared to magnetic systems?',
+        options: ['A. SSDs are louder', 'B. SSDs have higher access time', 'C. SSDs are costlier than magnetic systems', 'D. SSDs cannot store any data'],
+        answer: 'C. SSDs are costlier than magnetic systems',
+        diff: 'medium',
+      },
+      {
+        q: 'An SDHC (Secure Digital High Capacity) card can provide storage up to:',
+        options: ['A. 2 GB', 'B. 32 GB', 'C. 128 GB', 'D. 1 TB'],
+        answer: 'B. 32 GB',
+        diff: 'medium',
+      },
+      {
+        q: 'An SDXC (Secure Digital Extended Capacity) card may provide storage that:',
+        options: ['A. Is limited strictly to 32 GB', 'B. May exceed 1 TB', 'C. Is always less than 2 GB', 'D. Cannot exceed 4 GB'],
+        answer: 'B. May exceed 1 TB',
+        diff: 'medium',
+      },
+      {
+        q: 'Why are flash-based memory chambers described as non-volatile?',
+        options: ['A. They lose data within seconds of power-off', 'B. They can store data for years without external power', 'C. They require constant refreshing like DRAM', 'D. They are erased automatically every hour'],
+        answer: 'B. They can store data for years without external power',
+        diff: 'medium',
+      },
+      {
+        q: 'Compared to optical disks for very long-term archival storage, flash memory is generally considered:',
+        options: ['A. More reliable', 'B. Equally reliable', 'C. Less reliable', 'D. The lecture makes no such comparison'],
+        answer: 'C. Less reliable',
+        diff: 'hard',
+      },
+    ],
+  },
+ 
+  18: {
+    title: 'Representing Text',
+    summary: `**Key Topics Covered:**
+- Text representation as code
+- ASCII codes and their structure
+- Limitations of ASCII and its extensions
+- Unicode
+- UTF-8
+ 
+**Important Concepts:**
+ 
+**Representation as Code:**
+- Each textual symbol = unique bit pattern.
+- Normally **8 bits per character**.
+- Example: "Virtual University" = 18 characters = 18×8 = **144 bits = 18 bytes**.
+- Many such codes designed in the 1940s-1950s, leading to: **ANSI** (American National Standards Institute) and **ASCII** (American Standard Code for Information Interchange).
+ 
+**ASCII Codes:**
+- Uses **7 bits** for actual information; the MOST SIGNIFICANT (8th) bit is always **zero**.
+- 2⁷ = **128 combinations**.
+- Covers: uppercase, lowercase, punctuation marks, digits 0-9, line feed, carriage return, tabs.
+ 
+**Limitations of ASCII:**
+- Only **128 characters** total — insufficient for international symbols.
+- ISO (International Organization for Standardization) created EXTENSIONS to support Western European language symbols.
+ 
+**Limitations of ASCII-Extensions:**
+- Even **256** characters (extended ASCII) are still insufficient for ALL world language symbols.
+- A document with MULTIPLE languages could not be read correctly because it would need to follow more than one inconsistent standard simultaneously.
+ 
 **Unicode:**
-👉 A single universal standard supported by all major hardware/software.
-👉 Uses 21-bit unique patterns (over 2 million possible characters).
-👉 Compatible with ASCII (same codes for first 128 characters).
-👉 Supports Chinese, Hebrew, Japanese, Arabic, Urdu, etc.
-
-**UTF-8 (Unicode Transformation Format – 8 bit):**
-👉 Variable-length encoding (24 to 32 bits).
-👉 Can represent up to 2²⁴ = 16,777,216 symbols (practically unlimited).
-👉 Most common encoding on the web.
-
-**Text File:**
-👉 A file containing long strings of text encoded in ASCII, Unicode, or UTF-8.
-
----
-
-**Important Vocabulary:**
-- ASCII = American Standard Code for Information Interchange
-- ANSI = American National Standards Institute
-- Bit pattern = sequence of bits representing a character
-- Unicode = universal character encoding standard
-- UTF-8 = 8-bit Unicode Transformation Format
-- ISO = International Organization for Standardization
-- Text file = file containing human-readable characters
-
----
-
+- INTERNATIONALIZATION effort by hardware/software manufacturers.
+- Uses unique patterns of **21 bits**.
+- Maintains COMPLIANCE with ASCII (i.e., ASCII values map directly within Unicode).
+- Supports THOUSANDS of character sets: Chinese, Hebrew, Japanese, etc.
+ 
+**UTF-8:**
+- Uses **24 to 32 bits**, providing large room for future expansion.
+- 2²⁴ = **16,777,216 unique symbols**.
+- A file made of characters encoded with ASCII or Unicode = called a **text file**.
+ 
+**Key Facts to Remember:**
+- ASCII = 7 bits info + 1 zero bit = 128 combinations.
+- Unicode = 21-bit unique patterns, ASCII-compliant.
+- UTF-8 = 24-32 bits → 16,777,216 symbols.
+- "Virtual University" = 18 chars = 144 bits is a CLASSIC computed example.
+ 
 **Quick Revision Points:**
-- Old systems: 1 byte per character (ASCII).
-- ASCII: 7 bits → 128 characters (English letters, digits, symbols).
-- ASCII could not represent other languages.
-- Unicode: 21 bits → over 2 million characters, universal.
-- UTF-8: 24-32 bits variable-length, common on the web.
-- Text files contain ASCII/Unicode/UTF-8 encoded text.`,
-
-  questions: [
-    {
-      q: 'How many bits are typically used to represent a character in ASCII?',
-      options: ['A. 4', 'B. 7', 'C. 8 (including parity)', 'D. 16'],
-      answer: 'C. 8 (including parity)',
-      diff: 'easy',
-    },
-    {
-      q: 'ASCII stands for:',
-      options: ['A. American Standard Code for Information Interchange', 'B. Advanced Symbolic Code for Information Transfer', 'C. American Symbolic Character Identification', 'D. Automatic Standard Code for Internet'],
-      answer: 'A. American Standard Code for Information Interchange',
-      diff: 'easy',
-    },
-    {
-      q: 'How many different characters can ASCII represent (with 7-bit code)?',
-      options: ['A. 64', 'B. 128', 'C. 256', 'D. 512'],
-      answer: 'B. 128',
-      diff: 'easy',
-    },
-    {
-      q: 'Which organization developed ASCII?',
-      options: ['A. ISO', 'B. ANSI', 'C. IEEE', 'D. W3C'],
-      answer: 'B. ANSI',
-      diff: 'medium',
-    },
-    {
-      q: 'ASCII includes all of the following EXCEPT:',
-      options: ['A. Uppercase letters', 'B. Lowercase letters', 'C. Arabic script', 'D. Digits 0-9'],
-      answer: 'C. Arabic script',
-      diff: 'easy',
-    },
-    {
-      q: 'The ASCII code for uppercase "H" is:',
-      options: ['A. 68', 'B. 70', 'C. 72', 'D. 74'],
-      answer: 'C. 72',
-      diff: 'medium',
-    },
-    {
-      q: 'What is the main limitation of ASCII?',
-      options: ['A. It uses too many bits', 'B. It can only represent 128 characters (English only)', 'C. It is too fast', 'D. It is not compatible with computers'],
-      answer: 'B. It can only represent 128 characters (English only)',
-      diff: 'easy',
-    },
-    {
-      q: 'ISO extended ASCII to how many characters?',
-      options: ['A. 128', 'B. 256', 'C. 512', 'D. 1024'],
-      answer: 'B. 256',
-      diff: 'medium',
-    },
-    {
-      q: 'What problem remained even with ISO extensions to ASCII?',
-      options: ['A. 256 characters still insufficient for all languages', 'B. Too many characters cause confusion', 'C. It was too slow', 'D. It was not compatible with English'],
-      answer: 'A. 256 characters still insufficient for all languages',
-      diff: 'easy',
-    },
-    {
-      q: 'Unicode uses how many bits per character pattern?',
-      options: ['A. 7', 'B. 8', 'C. 16', 'D. 21'],
-      answer: 'D. 21',
-      diff: 'medium',
-    },
-    {
-      q: 'Unicode is compatible with which earlier standard?',
-      options: ['A. EBCDIC', 'B. ASCII', 'C. Baudot', 'D. Morse'],
-      answer: 'B. ASCII',
-      diff: 'easy',
-    },
-    {
-      q: 'What is UTF-8?',
-      options: ['A. A 7-bit encoding', 'B. A 8-bit fixed encoding', 'C. A variable-length encoding (24-32 bits)', 'D. A 16-bit fixed encoding'],
-      answer: 'C. A variable-length encoding (24-32 bits)',
-      diff: 'medium',
-    },
-    {
-      q: 'How many unique symbols can UTF-8 potentially represent?',
-      options: ['A. 128', 'B. 256', 'C. 65,536', 'D. 16,777,216'],
-      answer: 'D. 16,777,216',
-      diff: 'hard',
-    },
-    {
-      q: 'The string "Hello" requires how many bytes in ASCII?',
-      options: ['A. 2', 'B. 4', 'C. 5', 'D. 10'],
-      answer: 'C. 5',
-      diff: 'easy',
-    },
-    {
-      q: 'A text file is a file that contains:',
-      options: ['A. Only binary data', 'B. Encoded text (ASCII, Unicode, UTF-8)', 'C. Images', 'D. Audio'],
-      answer: 'B. Encoded text (ASCII, Unicode, UTF-8)',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following can Unicode represent?',
-      options: ['A. English', 'B. Chinese', 'C. Hebrew', 'D. All of the above'],
-      answer: 'D. All of the above',
-      diff: 'easy',
-    },
-    {
-      q: 'The extra bit in 8-bit ASCII is always set to:',
-      options: ['A. 0', 'B. 1', 'C. Depends on the character', 'D. Used for error checking'],
-      answer: 'A. 0',
-      diff: 'medium',
-    },
-    {
-      q: 'Which encoding is most widely used on the World Wide Web today?',
-      options: ['A. ASCII', 'B. ISO-8859-1', 'C. UTF-8', 'D. EBCDIC'],
-      answer: 'C. UTF-8',
-      diff: 'easy',
-    },
-    {
-      q: 'The "Virtual University" string (18 characters) in ASCII requires how many bytes?',
-      options: ['A. 9', 'B. 12', 'C. 18', 'D. 24'],
-      answer: 'C. 18',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the main advantage of Unicode over ASCII?',
-      options: ['A. Faster processing', 'B. Supports virtually all writing systems worldwide', 'C. Uses less storage', 'D. Simpler design'],
-      answer: 'B. Supports virtually all writing systems worldwide',
-      diff: 'easy',
-    }
-  ]
-},
-
-19: {
-  title: 'Representing Numeric Values: Binary Notation, Bits, and Ranges (CS101 Lecture 19)',
-  summary: `**Key Topics Covered:**
-- Storing numbers as Unicode is inefficient: e.g., '12' requires 16 bits, but 16 bits can store 0-65,535
-- Binary notation: uses only digits 0 and 1 (base 2)
-- With n bits, you can represent 2ⁿ distinct numeric values
-- Examples:
-  - 3 bits → 2³ = 8 values (0 to 7)
-  - 4 bits → 2⁴ = 16 values (0 to 15)
-  - 16 bits → 2¹⁶ = 65,536 values (0 to 65,535)
-- Binary notation variations:
-  - Two's complement: for storing whole numbers (positive and negative integers)
-  - Floating point notation: for fractional numbers (decimals)
-
----
-
-**Simple Understanding:**
-
-**Problem with Storing Numbers as Text (Unicode):**
-👉 Storing "12" as Unicode uses 2 characters × 8-16 bits each = 16-32 bits.
-👉 But 16 bits can store any number from 0 to 65,535 directly.
-👉 Using text for numbers is inefficient.
-
+ASCII→128 (7 bits). Extended ASCII→256 (8 bits) but still insufficient. Unicode→21 bits, ASCII-compliant. UTF-8→24-32 bits, ~16.7 million symbols.`,
+    questions: [
+      {
+        q: 'Standard text representation typically uses how many bits per character?',
+        options: ['A. 4 bits', 'B. 7 bits', 'C. 8 bits', 'D. 16 bits'],
+        answer: 'C. 8 bits',
+        diff: 'easy',
+      },
+      {
+        q: 'For the string "Virtual University" (18 characters), the total storage required at 8 bits per character is:',
+        options: ['A. 18 bits', 'B. 36 bits', 'C. 144 bits', 'D. 256 bits'],
+        answer: 'C. 144 bits',
+        diff: 'medium',
+      },
+      {
+        q: 'ASCII codes use how many bits for actual information, with the remaining bit set to zero?',
+        options: ['A. 4 bits', 'B. 6 bits', 'C. 7 bits', 'D. 8 bits'],
+        answer: 'C. 7 bits',
+        diff: 'medium',
+      },
+      {
+        q: 'How many total character combinations can standard 7-bit ASCII represent?',
+        options: ['A. 64', 'B. 128', 'C. 256', 'D. 512'],
+        answer: 'B. 128',
+        diff: 'medium',
+      },
+      {
+        q: 'A major limitation of standard ASCII that led to the development of ISO extensions was:',
+        options: ['A. ASCII could not represent digits 0-9', 'B. ASCII only supported 128 characters, insufficient for Western language symbols', 'C. ASCII required 32 bits per character', 'D. ASCII was incompatible with all keyboards'],
+        answer: 'B. ASCII only supported 128 characters, insufficient for Western language symbols',
+        diff: 'medium',
+      },
+      {
+        q: 'Even with ASCII extensions providing 256 characters, what problem still remained according to the lecture?',
+        options: ['A. 256 characters were still insufficient to denote all language symbols, especially in multi-language documents', 'B. Extended ASCII could not represent punctuation', 'C. Extended ASCII removed support for digits', 'D. There was no remaining problem'],
+        answer: 'A. 256 characters were still insufficient to denote all language symbols, especially in multi-language documents',
+        diff: 'hard',
+      },
+      {
+        q: 'Unicode uses unique patterns of how many bits, and what key compatibility does it maintain?',
+        options: ['A. 16 bits; no compatibility with ASCII', 'B. 21 bits; maintains compliance with ASCII', 'C. 32 bits; replaces ASCII entirely', 'D. 8 bits; identical to extended ASCII'],
+        answer: 'B. 21 bits; maintains compliance with ASCII',
+        diff: 'hard',
+      },
+      {
+        q: 'UTF-8 encoding uses how many bits, and approximately how many unique symbols can it support?',
+        options: ['A. 7 to 8 bits; 256 symbols', 'B. 16 bits; 65,536 symbols', 'C. 24 to 32 bits; 16,777,216 symbols', 'D. 21 bits; 2 million symbols'],
+        answer: 'C. 24 to 32 bits; 16,777,216 symbols',
+        diff: 'hard',
+      },
+      {
+        q: 'A file consisting of characters encoded using ASCII or Unicode is generically referred to as a:',
+        options: ['A. Binary file', 'B. Text file', 'C. Executable file', 'D. Database file'],
+        answer: 'B. Text file',
+        diff: 'easy',
+      },
+      {
+        q: 'Which two organizations/standards are specifically named as emerging in the 1940s-1950s for text representation codes?',
+        options: ['A. IEEE and ISO', 'B. ANSI and ASCII', 'C. Unicode and UTF-8', 'D. IBM and Intel'],
+        answer: 'B. ANSI and ASCII',
+        diff: 'medium',
+      },
+    ],
+  },
+ 
+  19: {
+    title: 'Representing Numeric Values',
+    summary: `**Key Topics Covered:**
+- Why storing numbers as Unicode/text is inefficient
+- Binary notation basics
+- Binary notation variations (preview of upcoming topics)
+ 
+**Important Concepts:**
+ 
+**Issues in Storing Numeric Values as Unicode/Text:**
+- INEFFICIENT — e.g., storing the number 12 as TEXT characters ('1' and '2') would need 16 bits (2 characters × 8 bits), even though the actual numeric value 12 needs far fewer bits in pure binary.
+- Example: the number 99 could be stored within just **16 bits** of pure binary representation directly (much more numeric range available than just storing as two text characters).
+- With 16 bits, you can represent **65,536** distinct numeric values (2¹⁶).
+ 
 **Binary Notation:**
-👉 Numbers written using only digits 0 and 1.
-👉 Base-2 number system (computers use binary internally).
-
-**How Many Values with n Bits?**
-👉 1 bit → 2 values (0, 1)
-👉 2 bits → 4 values (00, 01, 10, 11)
-👉 3 bits → 8 values (0 to 7)
-👉 4 bits → 16 values (0 to 15)
-👉 n bits → 2ⁿ values (range 0 to 2ⁿ – 1)
-
-**Example:**
-- 16 bits → 2¹⁶ = 65,536 values (0 to 65,535)
-
-**Binary Notation Variations:**
-- **Two's complement:** method for storing negative whole numbers.
-- **Floating point:** method for storing numbers with decimal points (fractions).
-
----
-
-**Important Vocabulary:**
-- Binary notation = base-2 number system (digits 0 and 1)
-- n bits = can represent 2ⁿ distinct values
-- Two's complement = representation for signed integers
-- Floating point = representation for real numbers (fractions)
-- Unicode text storage = storing numbers as characters (inefficient)
-
----
-
+A way of representing numeric values using ONLY digits 0 and 1, rather than the full 0-9 digit set used in decimal.
+- With **3 bits**, you can represent a specific range of values (demonstrated via table in lecture, showing the 3-bit value patterns).
+- With **4 bits**, you can represent **16 values** (ranging from 0 to 15) — note: this matches 2⁴ = 16.
+ 
+**General Rule (CRITICAL FORMULA):**
+With **n bits**, you can represent **2ⁿ** numeric values.
+- 16 bits → 2¹⁶ = 65,536 numeric values.
+ 
+**Binary Notation Variations (preview for later modules):**
+1. **Two's complement** — for storing WHOLE numbers (including negatives).
+2. **Floating point notation** — for storing FRACTIONAL numbers.
+ 
+**Key Facts to Remember:**
+- Storing "12" as two ASCII text characters wastes space compared to direct binary numeric encoding.
+- 2ⁿ formula applies identically here as it did for "Bits" patterns (Module 11) — reinforces the same core concept.
+- Two's complement (negative whole numbers) and Floating point (fractions) are the TWO main variations to be studied next.
+ 
 **Quick Revision Points:**
-- Storing numbers as text wastes space.
-- Binary notation uses only 0 and 1.
-- With n bits, you can store 2ⁿ different numbers.
-- 3 bits → 8 values (0–7); 4 bits → 16 values (0–15).
-- 16 bits → 65,536 values (0–65,535).
-- Two's complement = for signed integers.
-- Floating point = for decimals.`,
-
-  questions: [
-    {
-      q: 'What is a disadvantage of storing numeric values as Unicode text?',
-      options: ['A. It uses too few bits', 'B. It is inefficient (wastes storage)', 'C. It cannot store negative numbers', 'D. It is not compatible with computers'],
-      answer: 'B. It is inefficient (wastes storage)',
-      diff: 'easy',
-    },
-    {
-      q: 'Binary notation uses only which digits?',
-      options: ['A. 0-1', 'B. 0-2', 'C. 0-9', 'D. 0-7'],
-      answer: 'A. 0-1',
-      diff: 'easy',
-    },
-    {
-      q: 'How many distinct values can be represented with n bits?',
-      options: ['A. n²', 'B. 2n', 'C. 2ⁿ', 'D. n+2'],
-      answer: 'C. 2ⁿ',
-      diff: 'easy',
-    },
-    {
-      q: 'How many values can 3 bits represent?',
-      options: ['A. 3', 'B. 6', 'C. 8', 'D. 9'],
-      answer: 'C. 8',
-      diff: 'easy',
-    },
-    {
-      q: 'The range of values for 3 bits (unsigned) is:',
-      options: ['A. 0 to 3', 'B. 0 to 7', 'C. 1 to 8', 'D. 0 to 15'],
-      answer: 'B. 0 to 7',
-      diff: 'easy',
-    },
-    {
-      q: 'How many values can 4 bits represent?',
-      options: ['A. 4', 'B. 8', 'C. 16', 'D. 32'],
-      answer: 'C. 16',
-      diff: 'easy',
-    },
-    {
-      q: 'The range of values for 4 bits (unsigned) is:',
-      options: ['A. 0 to 8', 'B. 0 to 15', 'C. 0 to 16', 'D. 1 to 16'],
-      answer: 'B. 0 to 15',
-      diff: 'easy',
-    },
-    {
-      q: 'How many values can 16 bits represent?',
-      options: ['A. 1,024', 'B. 4,096', 'C. 16,384', 'D. 65,536'],
-      answer: 'D. 65,536',
-      diff: 'easy',
-    },
-    {
-      q: 'The maximum unsigned integer value for 16 bits is:',
-      options: ['A. 32,767', 'B. 32,768', 'C. 65,535', 'D. 65,536'],
-      answer: 'C. 65,535',
-      diff: 'medium',
-    },
-    {
-      q: 'Binary notation is a base-____ system:',
-      options: ['A. 2', 'B. 8', 'C. 10', 'D. 16'],
-      answer: 'A. 2',
-      diff: 'easy',
-    },
-    {
-      q: 'Which representation is used for storing whole numbers (positive and negative) in binary?',
-      options: ['A. Floating point', 'B. Two\'s complement', 'C. ASCII', 'D. Unicode'],
-      answer: 'B. Two\'s complement',
-      diff: 'easy',
-    },
-    {
-      q: 'Which representation is used for storing fractional numbers (decimals) in binary?',
-      options: ['A. Two\'s complement', 'B. Floating point', 'C. ASCII', 'D. BCD'],
-      answer: 'B. Floating point',
-      diff: 'easy',
-    },
-    {
-      q: 'How many bits are needed to represent values from 0 to 255?',
-      options: ['A. 4', 'B. 6', 'C. 8', 'D. 10'],
-      answer: 'C. 8',
-      diff: 'medium',
-    },
-    {
-      q: 'If you have 5 bits, how many values can you represent?',
-      options: ['A. 10', 'B. 16', 'C. 32', 'D. 64'],
-      answer: 'C. 32',
-      diff: 'easy',
-    },
-    {
-      q: 'The binary number system is also called:',
-      options: ['A. Base-2', 'B. Base-8', 'C. Base-10', 'D. Base-16'],
-      answer: 'A. Base-2',
-      diff: 'easy',
-    },
-    {
-      q: 'Which is NOT a binary notation variation mentioned in the module?',
-      options: ['A. Two\'s complement', 'B. Floating point', 'C. Hexadecimal', 'D. Both A and B are mentioned, C is not'],
-      answer: 'C. Hexadecimal',
-      diff: 'easy',
-    },
-    {
-      q: 'Storing the number "99" as Unicode (2 characters) uses approximately how many bits?',
-      options: ['A. 7', 'B. 8', 'C. 16', 'D. 32'],
-      answer: 'C. 16',
-      diff: 'medium',
-    },
-    {
-      q: 'The same 16 bits could store a numeric value up to:',
-      options: ['A. 255', 'B. 1,023', 'C. 32,767', 'D. 65,535'],
-      answer: 'D. 65,535',
-      diff: 'medium',
-    }
-  ]
-},
-20: {
-  title: 'Representing Images: Pixels, Bitmaps, RGB, Chrominance, Scaling, Fonts (CS101 Lecture 20)',
-  summary: `**Key Topics Covered:**
-- Pixel (Picture Element): collection of dots forming an image
-- Bitmap: encoding of each pixel's appearance
-- Black and white images: 1 bit per pixel (0=black, 1=white) – used in facsimile
-- Grayscale images: 8 bits per pixel (256 shades of gray)
-- Color images (RGB): 3 bytes per pixel (1 byte each for Red, Green, Blue)
-- Brightness-Chrominance encoding: brightness component (luminance) + two color components (blue chrominance, red chrominance)
-- Image scaling: enlarging requires more pixels (digital zoom)
-- Geometric structures: use lines/curves and analytical geometry (display based on geometry, not pixel reproduction)
-- Scalable fonts: TrueType (Microsoft/Apple), PostScript (Adobe), used in CAD
-
----
-
-**Simple Understanding:**
-
+n bits → 2ⁿ values (16 bits → 65,536). Two's complement → whole numbers. Floating point → fractional numbers.`,
+    questions: [
+      {
+        q: 'Storing the number "12" as two separate ASCII text characters would require how many bits (at 8 bits/character)?',
+        options: ['A. 4 bits', 'B. 8 bits', 'C. 12 bits', 'D. 16 bits'],
+        answer: 'D. 16 bits',
+        diff: 'medium',
+      },
+      {
+        q: 'What is the core inefficiency problem identified with storing numeric values using Unicode/ASCII text encoding?',
+        options: ['A. It cannot represent negative numbers at all', 'B. It uses more bits than necessary compared to direct binary numeric encoding', 'C. It only works for single-digit numbers', 'D. It requires hexadecimal conversion first'],
+        answer: 'B. It uses more bits than necessary compared to direct binary numeric encoding',
+        diff: 'medium',
+      },
+      {
+        q: 'Using 16 bits in binary notation, how many distinct numeric values can be represented?',
+        options: ['A. 256', 'B. 1,024', 'C. 32,768', 'D. 65,536'],
+        answer: 'D. 65,536',
+        diff: 'hard',
+      },
+      {
+        q: 'Binary notation represents numeric values using which digits exclusively?',
+        options: ['A. 0 through 9', 'B. 0 and 1 only', 'C. 1 through 16', 'D. A through F'],
+        answer: 'B. 0 and 1 only',
+        diff: 'easy',
+      },
+      {
+        q: 'Using 4 bits in binary notation, how many distinct values can be represented (ranging from 0 to a maximum value)?',
+        options: ['A. 8 values (0 to 7)', 'B. 16 values (0 to 15)', 'C. 32 values (0 to 31)', 'D. 4 values (0 to 3)'],
+        answer: 'B. 16 values (0 to 15)',
+        diff: 'medium',
+      },
+      {
+        q: 'Which formula correctly relates the number of bits (n) to the number of representable numeric values?',
+        options: ['A. n × 2', 'B. 2 × n', 'C. 2 to the power of n (2^n)', 'D. n squared'],
+        answer: 'C. 2 to the power of n (2^n)',
+        diff: 'medium',
+      },
+      {
+        q: 'Which binary notation variation is specifically used for storing WHOLE numbers, including negative values?',
+        options: ['A. Floating point notation', 'B. Two\'s complement notation', 'C. ASCII notation', 'D. Hexadecimal notation'],
+        answer: 'B. Two\'s complement notation',
+        diff: 'medium',
+      },
+      {
+        q: 'Which binary notation variation is specifically used for storing FRACTIONAL (non-whole) numbers?',
+        options: ['A. Two\'s complement notation', 'B. Floating point notation', 'C. ASCII notation', 'D. Unicode notation'],
+        answer: 'B. Floating point notation',
+        diff: 'medium',
+      },
+      {
+        q: 'According to the lecture, the number 99 could be efficiently stored within how many bits using pure binary?',
+        options: ['A. 8 bits', 'B. 16 bits', 'C. 32 bits', 'D. 99 bits'],
+        answer: 'B. 16 bits',
+        diff: 'medium',
+      },
+      {
+        q: 'Why is direct binary numeric encoding generally preferred over text-character encoding for storing numbers in a computer system?',
+        options: ['A. It is required by all printers', 'B. It allows a much larger range of values to be represented with fewer bits, improving storage efficiency', 'C. It eliminates the need for any arithmetic operations', 'D. It is the only format browsers can read'],
+        answer: 'B. It allows a much larger range of values to be represented with fewer bits, improving storage efficiency',
+        diff: 'hard',
+      },
+    ],
+  },
+ 
+  20: {
+    title: 'Representing Images',
+    summary: `**Key Topics Covered:**
+- Pixel concept
+- Encoding methods: bitmap, shades, colorful images
+- Brightness/Chrominance components
+- Image scaling and geometric structures
+- Scalable fonts
+ 
+**Important Concepts:**
+ 
 **Pixel:**
-👉 Short for "Picture Element".
-👉 Images are made of tiny dots called pixels.
-👉 Each pixel's appearance is encoded into a bitmap.
-👉 Used by display devices, printers, etc.
-
-**Black & White Images:**
-👉 Simplest encoding: 1 bit per pixel.
-👉 Example: 0 = black, 1 = white.
-👉 Used in facsimile (fax machines).
-
-**Grayscale Images:**
-👉 Use 8 bits per pixel (instead of 1 bit).
-👉 Can represent 256 shades of gray (from pure black to pure white).
-
-**Color Images (RGB):**
-👉 Uses three bytes per pixel.
-👉 One byte for Red, one for Green, one for Blue.
-👉 Total colors: 256 × 256 × 256 ≈ 16.7 million colors.
-
-**Brightness-Chrominance Encoding:**
-👉 Used in some image/video formats.
-👉 Brightness component = luminance (sum of red+green+blue).
-👉 Two color components: blue chrominance and red chrominance (differences from luminance).
-
+"Picture Element" — a collection of dots whose appearance is encoded to form a **bitmap**. Display devices and printers operate on this pixel concept.
+ 
+**Encoding Method — Pixel to Bitmap:**
+In BLACK AND WHITE images, each pixel = **1 bit** (e.g., 0 for black, 1 for white). Commonly used in **Facsimile (fax)**.
+ 
+**Encoding Method — Handling Shades (Grayscale):**
+**8 bits** used (instead of just 1 bit) to store SHADES of grayness — allows for 256 distinct gray levels (2⁸).
+ 
+**Encoding Method — Colorful Images:**
+**RGB encoding** — one byte for Red, one byte for Green, one byte for Blue = **THREE BYTES total to represent ONE pixel**.
+ 
+**Brightness Chrominance (Alternative color model):**
+Uses ONE brightness component + TWO color components:
+- **Brightness component** = Pixel's **luminance** (sum of red, green, and blue).
+- **Blue Chrominance** and **Red Chrominance** = difference between luminance and the amount of blue or red respectively.
+ 
 **Image Scaling:**
-👉 Enlarging an image requires adding more pixels.
-👉 Digital zoom is a form of scaling.
-
-**Geometric Structures for Scaling:**
-👉 Instead of pixel reproduction, use mathematical description.
-👉 Collections of lines and curves (analytical geometry).
-👉 Better quality when scaling up.
-
+Scaling to a LARGER size needs MORE pixels (this is called **Digital Zoom**).
+ 
+**Geometric Structures for Image Scaling:**
+- Collection of LINES and CURVES using **Analytic Geometry**.
+- Technique focuses on HOW geometric structures should be displayed RATHER THAN pixel reproduction (avoids the pixelation/blur problem of zooming raster images).
+ 
 **Scalable Fonts:**
-👉 Fonts defined by geometric shapes (not pixels).
-👉 TrueType: developed by Microsoft and Apple.
-👉 PostScript: developed by Adobe.
-👉 Also used in Computer Aided Design (CAD).
-
----
-
-**Important Vocabulary:**
-- Pixel = Picture Element (smallest dot in an image)
-- Bitmap = mapping of pixel values to image
-- Grayscale = shades of gray (no color)
-- RGB = Red, Green, Blue color model
-- Luminance = brightness component (sum of R+G+B)
-- Chrominance = color component (difference from luminance)
-- Scaling = changing image size
-- Digital zoom = enlarging by adding pixels (lower quality)
-- Geometric structure = image defined by math (lines, curves)
-- Scalable font = font that resizes smoothly without pixelation
-
----
-
+- **TrueType** — by Microsoft and Apple.
+- **PostScript** — by Adobe.
+- Also popular in **Computer Aided Design (CAD)**.
+ 
+**Key Facts to Remember:**
+- B&W image → 1 bit/pixel. Grayscale → 8 bits/pixel. Color (RGB) → 3 bytes (24 bits)/pixel.
+- Brightness/Chrominance model = luminance + 2 chrominance (blue, red) components — NOT the same structure as RGB.
+- TrueType (Microsoft/Apple) vs PostScript (Adobe) — memorize the company pairing.
+ 
 **Quick Revision Points:**
-- 1 bit per pixel → black & white (fax).
-- 8 bits per pixel → 256 grayscale shades.
-- 24 bits per pixel (3 bytes) → true color (RGB).
-- Brightness-chrominance separates light from color.
-- Scaling up by pixels = digital zoom (lower quality).
-- Geometry-based scaling uses math (lines/curves) – better quality.
-- TrueType and PostScript are scalable font technologies.`,
-
-  questions: [
-    {
-      q: 'What does "pixel" stand for?',
-      options: ['A. Picture Element', 'B. Pixel Element', 'C. Picture Link', 'D. Pixie Element'],
-      answer: 'A. Picture Element',
-      diff: 'easy',
-    },
-    {
-      q: 'How many bits are used per pixel in a black and white image?',
-      options: ['A. 1', 'B. 2', 'C. 4', 'D. 8'],
-      answer: 'A. 1',
-      diff: 'easy',
-    },
-    {
-      q: 'In a black and white bitmap, 0 typically represents:',
-      options: ['A. White', 'B. Black', 'C. Gray', 'D. Red'],
-      answer: 'B. Black',
-      diff: 'easy',
-    },
-    {
-      q: 'How many shades of gray can be represented with 8 bits per pixel?',
-      options: ['A. 16', 'B. 64', 'C. 128', 'D. 256'],
-      answer: 'D. 256',
-      diff: 'easy',
-    },
-    {
-      q: 'The RGB color model uses how many bytes per pixel?',
-      options: ['A. 1', 'B. 2', 'C. 3', 'D. 4'],
-      answer: 'C. 3',
-      diff: 'easy',
-    },
-    {
-      q: 'In RGB, one byte is used for each of:',
-      options: ['A. Red, Yellow, Blue', 'B. Red, Green, Blue', 'C. Red, Green, Black', 'D. Red, Blue, Yellow'],
-      answer: 'B. Red, Green, Blue',
-      diff: 'easy',
-    },
-    {
-      q: 'Approximately how many colors can RGB represent (with 24 bits)?',
-      options: ['A. 65,536', 'B. 1.6 million', 'C. 16.7 million', 'D. 4.2 billion'],
-      answer: 'C. 16.7 million',
-      diff: 'medium',
-    },
-    {
-      q: 'The brightness component in brightness-chrominance encoding is called:',
-      options: ['A. Luminance', 'B. Chrominance', 'C. RGB', 'D. Grayscale'],
-      answer: 'A. Luminance',
-      diff: 'easy',
-    },
-    {
-      q: 'In brightness-chrominance, the two color components are:',
-      options: ['A. Red and Green', 'B. Blue and Red chrominance', 'C. Yellow and Cyan', 'D. Magenta and Cyan'],
-      answer: 'B. Blue and Red chrominance',
-      diff: 'medium',
-    },
-    {
-      q: 'What is "digital zoom"?',
-      options: ['A. Optical magnification', 'B. Enlarging an image by adding more pixels', 'C. Reducing image size', 'D. Rotating the image'],
-      answer: 'B. Enlarging an image by adding more pixels',
-      diff: 'easy',
-    },
-    {
-      q: 'Geometric structures for image scaling use:',
-      options: ['A. Pixels only', 'B. Lines and curves (analytical geometry)', 'C. Random dots', 'D. Grayscale values'],
-      answer: 'B. Lines and curves (analytical geometry)',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following is a scalable font technology?',
-      options: ['A. Bitmap', 'B. TrueType', 'C. JPEG', 'D. GIF'],
-      answer: 'B. TrueType',
-      diff: 'easy',
-    },
-    {
-      q: 'TrueType fonts were developed by:',
-      options: ['A. Microsoft only', 'B. Apple only', 'C. Microsoft and Apple', 'D. Adobe'],
-      answer: 'C. Microsoft and Apple',
-      diff: 'medium',
-    },
-    {
-      q: 'PostScript fonts were developed by:',
-      options: ['A. Microsoft', 'B. Apple', 'C. Adobe', 'D. Google'],
-      answer: 'C. Adobe',
-      diff: 'easy',
-    },
-    {
-      q: 'Scalable fonts are also popular in:',
-      options: ['A. Spreadsheets', 'B. Computer Aided Design (CAD)', 'C. Email clients', 'D. Web browsers only'],
-      answer: 'B. Computer Aided Design (CAD)',
-      diff: 'medium',
-    },
-   
-    {
-      q: '1-bit per pixel can represent how many distinct colors (or shades)?',
-      options: ['A. 1', 'B. 2', 'C. 8', 'D. 256'],
-      answer: 'B. 2',
-      diff: 'easy',
-    },
-    {
-      q: '8-bit grayscale provides how many intensity levels?',
-      options: ['A. 8', 'B. 64', 'C. 128', 'D. 256'],
-      answer: 'D. 256',
-      diff: 'easy',
-    },
-    {
-      q: 'Which encoding method separates brightness from color information?',
-      options: ['A. RGB', 'B. Brightness-chrominance', 'C. Grayscale', 'D. Monochrome'],
-      answer: 'B. Brightness-chrominance',
-      diff: 'easy',
-    },
-    {
-      q: 'TrueType and PostScript are examples of:',
-      options: ['A. Raster fonts', 'B. Scalable fonts', 'C. Bitmap fonts', 'D. Pixel fonts'],
-      answer: 'B. Scalable fonts',
-      diff: 'easy',
-    }
-  ]
-},
-
-
-21: {
-  title: 'Representing Sound: Sampling, Bit Rate, MIDI (CS101 Lecture 21)',
-  summary: `**Key Topics Covered:**
-- Sound amplitude: extent of air particle displacement → perceived as loudness
-- Encoding sound: sample amplitude at regular intervals and record numeric values
-- Telephone quality: 8,000 samples per second
-- Process: store amplitude values → transmit over network → receive and reproduce sound
-- Higher quality (CD audio): 44,100 samples per second
-- Each sample: 16 bits (32 bits for stereo)
-- Data rate: 32 bits × 44,100 samples/sec ≈ 1.4 million bits/sec
-- Alternative: MIDI (Musical Instrument Digital Interface)
-  - Used in synthesizers, electronic keyboards
-  - Encodes instructions for producing music, not the music itself
-  - Example: 2 seconds of MIDI can be stored in 3 bytes vs millions of bits for sampled audio
-  - Like storing "sheet music" instead of a recording of a performance
-  - MIDI playback can sound different on different synthesizers
-
----
-
-**Simple Understanding:**
-
-**What is Sound Amplitude?**
-👉 Measure of how far air particles move when sound passes through.
-👉 Greater amplitude = louder sound.
-
-**How to Encode Sound Digitally:**
-👉 Take regular samples of the sound's amplitude at fixed time intervals.
-👉 Record each amplitude as a number (value).
-👉 Telephone quality: 8,000 samples per second.
-
-**Sound Transmission Process:**
-1. Store amplitude values for each sample.
-2. Transmit these numbers over a network.
-3. At receiving end, use numbers to reconstruct and play sound.
-
-**Sampling Rate and Quality:**
-👉 Higher sampling rate = more accurate representation (but more data).
-👉 Telephone: 8,000 samples/sec (low quality).
-👉 Music CD: 44,100 samples/sec (high fidelity).
-👉 Each CD sample uses 16 bits (mono) or 32 bits (stereo).
-👉 CD data rate: 32 × 44,100 ≈ 1.4 million bits per second.
-
-**Alternative: MIDI (Musical Instrument Digital Interface):**
-👉 Used in electronic keyboards and synthesizers.
-👉 Does NOT store the sound itself – stores instructions/notes.
-👉 Example: 2 seconds of MIDI music can be as small as 3 bytes (vs millions of bits for sampled audio).
-👉 Like storing "sheet music" instead of a recording of a performance.
-👉 Disadvantage: playback sounds different on different synthesizers (depends on instrument sounds).
-
----
-
-**Important Vocabulary:**
-- Amplitude = measure of loudness (particle displacement)
-- Sample = measure amplitude at a specific time
-- Sampling rate = number of samples per second (Hz)
-- Telephone quality = 8,000 samples/sec
-- CD quality = 44,100 samples/sec
-- Bit rate = bits per second of audio
-- MIDI = Musical Instrument Digital Interface (instruction-based)
-- Synthesizer = electronic instrument that generates sound from instructions
-
----
-
+1 bit = B&W. 8 bits = grayscale. 3 bytes (RGB) = color. Luminance = sum of RGB. Geometric scaling avoids pixel-based zoom issues.`,
+    questions: [
+      {
+        q: 'In black-and-white image encoding, each pixel is typically represented using how many bits?',
+        options: ['A. 1 bit', 'B. 4 bits', 'C. 8 bits', 'D. 24 bits'],
+        answer: 'A. 1 bit',
+        diff: 'easy',
+      },
+      {
+        q: 'The black-and-white, 1-bit-per-pixel encoding method is often used in which application, as mentioned in the lecture?',
+        options: ['A. High-definition video streaming', 'B. Facsimile (fax) machines', 'C. 3D gaming', 'D. Audio compression'],
+        answer: 'B. Facsimile (fax) machines',
+        diff: 'medium',
+      },
+      {
+        q: 'To represent shades of gray in an image, how many bits per pixel are typically used?',
+        options: ['A. 1 bit', 'B. 4 bits', 'C. 8 bits', 'D. 16 bits'],
+        answer: 'C. 8 bits',
+        diff: 'medium',
+      },
+      {
+        q: 'In RGB encoding for colorful images, how many total bytes are used to represent a single pixel?',
+        options: ['A. One byte', 'B. Two bytes', 'C. Three bytes', 'D. Four bytes'],
+        answer: 'C. Three bytes',
+        diff: 'medium',
+      },
+      {
+        q: 'In the Brightness-Chrominance color model, the "brightness component" is defined as:',
+        options: ['A. Only the red channel value', 'B. The pixel\'s luminance, which is the sum of red, green, and blue', 'C. The difference between blue and green', 'D. A fixed constant value'],
+        answer: 'B. The pixel\'s luminance, which is the sum of red, green, and blue',
+        diff: 'hard',
+      },
+      {
+        q: 'Blue Chrominance and Red Chrominance in the Brightness-Chrominance model represent:',
+        options: ['A. The total pixel count in an image', 'B. The difference between luminance and the amount of blue or red, respectively', 'C. The exact RGB byte values directly', 'D. The image file size'],
+        answer: 'B. The difference between luminance and the amount of blue or red, respectively',
+        diff: 'hard',
+      },
+      {
+        q: 'Increasing an image to a larger size by adding more pixels is referred to as:',
+        options: ['A. Geometric scaling', 'B. Digital Zoom', 'C. Chrominance shift', 'D. Bitmap compression'],
+        answer: 'B. Digital Zoom',
+        diff: 'medium',
+      },
+      {
+        q: 'Geometric structures (lines and curves via analytic geometry) are used for image scaling primarily to:',
+        options: ['A. Increase the number of pixels needed for storage', 'B. Avoid pixel-reproduction issues by focusing on how shapes should be displayed rather than reproducing raw pixels', 'C. Convert images into pure text', 'D. Reduce image color depth to black and white'],
+        answer: 'B. Avoid pixel-reproduction issues by focusing on how shapes should be displayed rather than reproducing raw pixels',
+        diff: 'hard',
+      },
+      {
+        q: 'TrueType, a popular scalable font technology, was developed by which companies?',
+        options: ['A. Adobe and IBM', 'B. Microsoft and Apple', 'C. Google and Amazon', 'D. Intel and AMD'],
+        answer: 'B. Microsoft and Apple',
+        diff: 'medium',
+      },
+      {
+        q: 'PostScript, another scalable font technology mentioned in the lecture, was developed by:',
+        options: ['A. Microsoft', 'B. Apple', 'C. Adobe', 'D. IBM'],
+        answer: 'C. Adobe',
+        diff: 'medium',
+      },
+    ],
+  },
+ 
+  21: {
+    title: 'Representing Sound',
+    summary: `**Key Topics Covered:**
+- Sound amplitude
+- Sound sampling and encoding
+- Sound data communication process
+- Sample intervals and CD quality
+- MIDI as an alternative method
+ 
+**Important Concepts:**
+ 
+**Sound Amplitude:**
+The extent to which air particles are displaced; experienced as the **loudness** of sound.
+ 
+**How to Encode Sound:**
+- Sample the amplitude at REGULAR INTERVALS and record those values.
+- **8000 samples per second** used for LONG-DISTANCE TELEPHONE communication.
+ 
+**Sound Data Communication Process:**
+1. One end stores amplitude numeric values for each 1/8000th of a second.
+2. Data transmitted over the network.
+3. Received at the other end; sound is PRODUCED using these amplitude values.
+ 
+**Sample Intervals:**
+The required sampling rate depends on how ACCURATE/HIGH-DEFINITION the recording needs to be.
+- 8000 samples/sec → NOT enough for high-fidelity music.
+- **44,100 samples per second** → used in TODAY'S CDs (CD quality audio).
+- Data per sample = **16 bits** (or **32 bits for STEREO** — i.e., 16 bits × 2 channels).
+- Calculation: 32 × 44,100 ≈ **1 million bits/sec (1.4112 Mbps)** for CD-quality stereo audio.
+ 
+**Alternative Method — MIDI:**
+**Musical Instrument Digital Interface** — used in music synthesizers (e.g., electronic keyboards).
+- Encodes DIRECTIONS for producing music, rather than storing the actual music/sound itself.
+- Example: **2 seconds of sound** can be stored in just **3 bytes** via MIDI, versus **2 million bits** via direct amplitude sampling — a HUGE storage saving.
+- Analogy: encodes the "sheet music" that a performer reads, rather than recording the actual performance.
+- Consequence: MIDI recordings can sound **significantly different** when performed on different synthesizers (since it's instructions, not actual audio).
+ 
+**Key Facts to Remember:**
+- 8000 samples/sec = telephone quality. 44,100 samples/sec = CD quality (MEMORIZE both numbers exactly).
+- 16 bits/sample mono, 32 bits/sample stereo.
+- MIDI = instructions (like sheet music), NOT actual recorded sound — hence tiny file size but synthesizer-dependent playback.
+ 
 **Quick Revision Points:**
-- Amplitude = loudness.
-- Encoding sound = sample amplitude at regular intervals.
-- Higher sample rate = better quality, more data.
-- 8,000 samples/sec = telephone quality.
-- 44,100 samples/sec = CD quality.
-- 32 bits per stereo sample × 44,100 = ~1.4 Mbps.
-- MIDI stores instructions (like sheet music), not sound itself.
-- MIDI is very compact (bytes vs megabits).
-- MIDI playback varies by synthesizer.`,
-
-  questions: [
-    {
-      q: 'What does sound amplitude represent?',
-      options: ['A. Frequency of sound', 'B. Loudness of sound (extent of air particle displacement)', 'C. Duration of sound', 'D. Pitch of sound'],
-      answer: 'B. Loudness of sound (extent of air particle displacement)',
-      diff: 'easy',
-    },
-    {
-      q: 'How is sound encoded digitally?',
-      options: ['A. By recording continuous waveform', 'B. By sampling amplitude at regular intervals', 'C. By storing lyrics only', 'D. By converting to text'],
-      answer: 'B. By sampling amplitude at regular intervals',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the sampling rate for long-distance telephone communication?',
-      options: ['A. 800 samples/sec', 'B. 8,000 samples/sec', 'C. 44,100 samples/sec', 'D. 48,000 samples/sec'],
-      answer: 'B. 8,000 samples/sec',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the sampling rate for CD-quality audio?',
-      options: ['A. 8,000 samples/sec', 'B. 22,050 samples/sec', 'C. 44,100 samples/sec', 'D. 96,000 samples/sec'],
-      answer: 'C. 44,100 samples/sec',
-      diff: 'easy',
-    },
-    {
-      q: 'How many bits are typically used per sample for CD-quality audio (stereo)?',
-      options: ['A. 8 bits', 'B. 16 bits (mono), 32 bits (stereo)', 'C. 24 bits', 'D. 48 bits'],
-      answer: 'B. 16 bits (mono), 32 bits (stereo)',
-      diff: 'medium',
-    },
-    {
-      q: 'Approximately how many bits per second are required for CD-quality stereo audio?',
-      options: ['A. 352,800 bits/sec', 'B. 705,600 bits/sec', 'C. 1.4 million bits/sec', 'D. 2.8 million bits/sec'],
-      answer: 'C. 1.4 million bits/sec',
-      diff: 'hard',
-    },
-    {
-      q: 'What is the process of transmitting sound digitally?',
-      options: ['A. Store amplitude values → transmit → receive → produce sound', 'B. Convert to text → transmit → convert back', 'C. Compress to MIDI → transmit → expand', 'D. None of the above'],
-      answer: 'A. Store amplitude values → transmit → receive → produce sound',
-      diff: 'easy',
-    },
-    {
-      q: 'Higher sampling rates result in:',
-      options: ['A. Lower quality and less data', 'B. Higher quality and more data', 'C. No change in quality', 'D. Lower quality and more data'],
-      answer: 'B. Higher quality and more data',
-      diff: 'easy',
-    },
-    {
-      q: 'MIDI stands for:',
-      options: ['A. Musical Instrument Digital Interface', 'B. Music Input Device Interface', 'C. Musical Integrated Digital Instrument', 'D. Multimedia Instrument Digital Interface'],
-      answer: 'A. Musical Instrument Digital Interface',
-      diff: 'easy',
-    },
-    {
-      q: 'Unlike sampled audio, MIDI encodes:',
-      options: ['A. The actual sound waveform', 'B. Instructions for producing music (like sheet music)', 'C. Compressed audio', 'D. Text descriptions'],
-      answer: 'B. Instructions for producing music (like sheet music)',
-      diff: 'easy',
-    },
-    {
-      q: 'How much storage might 2 seconds of MIDI music require compared to sampled audio?',
-      options: ['A. Same as sampled audio', 'B. Slightly less', 'C. 3 bytes vs millions of bits', 'D. More than sampled audio'],
-      answer: 'C. 3 bytes vs millions of bits',
-      diff: 'medium',
-    },
-    {
-      q: 'A disadvantage of MIDI is that:',
-      options: ['A. It requires too much storage', 'B. Playback can sound different on different synthesizers', 'C. It cannot store any music', 'D. It is not digital'],
-      answer: 'B. Playback can sound different on different synthesizers',
-      diff: 'easy',
-    },
-    {
-      q: 'MIDI is commonly used in:',
-      options: ['A. Telephone systems', 'B. Music synthesizers and electronic keyboards', 'C. Voice recording', 'D. Radio broadcasting'],
-      answer: 'B. Music synthesizers and electronic keyboards',
-      diff: 'easy',
-    },
-    {
-      q: 'What analogy is used to describe MIDI?',
-      options: ['A. Storing a photograph', 'B. Storing sheet music read by a performer', 'C. Storing a video', 'D. Storing a text document'],
-      answer: 'B. Storing sheet music read by a performer',
-      diff: 'easy',
-    },
-    {
-      q: 'For high-fidelity music, the sampling rate is increased because:',
-      options: ['A. Higher frequencies need more samples', 'B. Lower frequencies need more samples', 'C. It saves storage space', 'D. It reduces cost'],
-      answer: 'A. Higher frequencies need more samples',
-      diff: 'medium',
-    },
-    {
-      q: 'Each sample in CD-quality audio represents:',
-      options: ['A. The frequency of sound at that instant', 'B. The amplitude of sound at that instant', 'C. The phase of sound', 'D. The duration of sound'],
-      answer: 'B. The amplitude of sound at that instant',
-      diff: 'medium',
-    }
-  ]
-},
-
-22: {
-  title: 'Binary Notation: Place Values, Powers of 2, and Conversion Algorithm (CS101 Lecture 22)',
-  summary: `**Key Topics Covered:**
-- Binary notation: each position's quantity is twice the quantity of the position to its right
-- Place values (powers of 2): ..., 16, 8, 4, 2, 1 (from left to right)
-- Decimal example: 375 = 3×100 + 7×10 + 5×1
-- Binary uses only digits 0 or 1 at each position
-- Example: 32 in binary = 00100000 (1 in the 32's place)
-- Example: 255 in binary = 11111111 (128+64+32+16+8+4+2+1 = 255)
-- Algorithm for converting positive decimal to binary:
-  1. Divide the number by 2
-  2. Record the remainder (0 or 1)
-  3. Replace the number with the quotient
-  4. Repeat until quotient becomes 0
-  5. Read remainders in reverse order (last remainder is most significant bit)
-- Example: Convert 13 to binary:
-  13 ÷ 2 = 6 remainder 1
-  6 ÷ 2 = 3 remainder 0
-  3 ÷ 2 = 1 remainder 1
-  1 ÷ 2 = 0 remainder 1
-  Read remainders backward: 1101 (binary for 13)
-
----
-
-**Simple Understanding:**
-
-**Binary Place Values:**
-👉 Each position represents a power of 2 (from right: 2⁰=1, 2¹=2, 2²=4, 2³=8, ...).
-👉 Binary uses only digits 0 or 1.
-👉 Example: 1011 binary = 1×8 + 0×4 + 1×2 + 1×1 = 8+0+2+1 = 11 decimal.
-
-**Converting Decimal to Binary (Algorithm):**
-👉 Step-by-step division by 2, collecting remainders.
-👉 The remainders (0 or 1) are the binary digits from least significant to most significant.
-👉 Read remainders backward to get the binary number.
-
-**Example Conversions:**
-- 32 decimal → binary: put 1 in 32's place: 00100000 or 100000 (depending on bit length)
-- 255 decimal → binary: all 8 bits 1: 11111111 (128+64+32+16+8+4+2+1 = 255)
-- 13 decimal → binary: 1101 (8+4+1 = 13)
-
----
-
-**Important Vocabulary:**
-- Binary notation = base-2 number system (digits 0 and 1)
-- Place value = value contributed by a digit based on its position
-- Power of 2 = 2ⁿ (e.g., 1, 2, 4, 8, 16, ...)
-- Least significant bit (LSB) = rightmost bit (value 2⁰=1)
-- Most significant bit (MSB) = leftmost bit (highest power)
-- Algorithm = set of steps to perform a task
-
----
-
+Amplitude = loudness. 8000 samples/sec → telephone. 44,100 samples/sec → CD. MIDI → encodes directions, not actual sound (huge compression, but synthesizer-dependent).`,
+    questions: [
+      {
+        q: 'Sound amplitude is experienced by listeners as the:',
+        options: ['A. Pitch of the sound', 'B. Loudness of the sound', 'C. Duration of the sound', 'D. Tempo of the sound'],
+        answer: 'B. Loudness of the sound',
+        diff: 'easy',
+      },
+      {
+        q: 'For long-distance telephone communication, sound is typically sampled at:',
+        options: ['A. 800 samples per second', 'B. 8,000 samples per second', 'C. 44,100 samples per second', 'D. 1 million samples per second'],
+        answer: 'B. 8,000 samples per second',
+        diff: 'medium',
+      },
+      {
+        q: 'Today\'s audio CDs typically use a sampling rate of:',
+        options: ['A. 8,000 samples per second', 'B. 16,000 samples per second', 'C. 44,100 samples per second', 'D. 96,000 samples per second'],
+        answer: 'C. 44,100 samples per second',
+        diff: 'medium',
+      },
+      {
+        q: 'For stereo audio recording, each sample of data is typically recorded using how many bits?',
+        options: ['A. 8 bits', 'B. 16 bits', 'C. 32 bits', 'D. 64 bits'],
+        answer: 'C. 32 bits',
+        diff: 'medium',
+      },
+      {
+        q: 'MIDI (Musical Instrument Digital Interface) primarily encodes:',
+        options: ['A. The actual recorded sound waveform', 'B. Directions/instructions for producing music, similar to sheet music', 'C. Only the volume level of a recording', 'D. A compressed version of an MP3 file'],
+        answer: 'B. Directions/instructions for producing music, similar to sheet music',
+        diff: 'medium',
+      },
+      {
+        q: 'According to the lecture, 2 seconds of sound stored via direct amplitude sampling vs. via MIDI requires approximately:',
+        options: ['A. 2 million bits (sampling) vs. 3 bytes (MIDI)', 'B. 3 bytes (sampling) vs. 2 million bits (MIDI)', 'C. Equal storage in both methods', 'D. 1 KB in both methods'],
+        answer: 'A. 2 million bits (sampling) vs. 3 bytes (MIDI)',
+        diff: 'hard',
+      },
+      {
+        q: 'Why might the same MIDI recording sound noticeably different when played on two different electronic keyboards/synthesizers?',
+        options: ['A. Because MIDI stores the actual audio waveform which degrades over time', 'B. Because MIDI encodes instructions/directions, and different synthesizers interpret and produce those instructions differently', 'C. Because MIDI files are always corrupted', 'D. Because MIDI only works with one brand of keyboard'],
+        answer: 'B. Because MIDI encodes instructions/directions, and different synthesizers interpret and produce those instructions differently',
+        diff: 'hard',
+      },
+      {
+        q: 'Why is the 8000 samples/sec rate insufficient for high-fidelity music recordings, according to the lecture?',
+        options: ['A. It exceeds the storage limit of any device', 'B. It does not provide enough accuracy/definition for music compared to telephone-quality speech', 'C. It is only usable for video, not audio', 'D. It requires MIDI to function'],
+        answer: 'B. It does not provide enough accuracy/definition for music compared to telephone-quality speech',
+        diff: 'medium',
+      },
+      {
+        q: 'The process of encoding sound fundamentally involves:',
+        options: ['A. Sampling the amplitude of sound at regular intervals and recording those values', 'B. Converting sound directly into RGB pixel values', 'C. Using only MIDI for all forms of audio encoding', 'D. Recording sound exclusively in hexadecimal notation'],
+        answer: 'A. Sampling the amplitude of sound at regular intervals and recording those values',
+        diff: 'easy',
+      },
+      {
+        q: 'Approximately what data rate (in bits/sec) results from CD-quality stereo audio sampling (44,100 samples/sec × 32 bits)?',
+        options: ['A. About 1 thousand bits/sec', 'B. About 1 million bits/sec', 'C. About 1 billion bits/sec', 'D. About 8,000 bits/sec'],
+        answer: 'B. About 1 million bits/sec',
+        diff: 'hard',
+      },
+    ],
+  },
+ 
+  22: {
+    title: 'Binary Notation',
+    summary: `**Key Topics Covered:**
+- Power method for binary representation
+- Decimal system vs binary system positional values
+- Algorithm for converting positive decimal to binary
+ 
+**Important Concepts:**
+ 
+**Power Method:**
+In ANY positional number system, the quantity associated with each position is a fixed multiple of the quantity to its right.
+- **Decimal System**: positions are powers of 10 (e.g., 375 = 3×100 + 7×10 + 5×1).
+- **Binary System**: positions are powers of 2 — but each position can ONLY hold 0 or 1 (unlike decimal's 0-9).
+ 
+**Binary Positional Table (powers of 2, right to left):**
+2⁷=128, 2⁶=64, 2⁵=32, 2⁴=16, 2³=8, 2²=4, 2¹=2, 2⁰=1.
+ 
+**Worked Examples:**
+- Decimal **32** in binary: put 1 at the 2⁵ position → **00100000**.
+- Decimal **255** in binary: put 1 in ALL 8 positions → **11111111** (since 128+64+32+16+8+4+2+1 = 255).
+ 
+**Algorithm for Finding Binary Representation of a Positive Decimal Number:**
+A formal step-by-step algorithm exists (illustrated in the lecture's Figure 24/25) — applying it to convert decimal **13** to binary works through repeated steps of finding the largest power of 2 that fits, subtracting, and continuing (this is the standard "successive subtraction of powers of 2" method).
+ 
+**Key Facts to Remember:**
+- The fundamental rule of positional notation: "Quantity associated with each position is TWICE the quantity associated with the position to its right" (for binary specifically; base 10 would be 10× to its right).
+- 255 = 11111111 (all eight bits set) is a CLASSIC memorized conversion.
+- 32 = 00100000 (only the 2⁵ bit set) is also a CLASSIC memorized conversion.
+ 
 **Quick Revision Points:**
-- Each binary position is twice the position to its right.
-- 8 bits can represent 0–255 (2⁸ = 256 values).
-- Decimal to binary: repeatedly divide by 2, record remainders, read backwards.
-- Binary 11111111 = 255.
-- Binary 1101 = 13.`,
-
-  questions: [
-    {
-      q: 'In binary notation, the quantity associated with each position is:',
-      options: ['A. The same as the position to its right', 'B. Twice the quantity of the position to its right', 'C. Half the quantity of the position to its right', 'D. Ten times the quantity to its right'],
-      answer: 'B. Twice the quantity of the position to its right',
-      diff: 'easy',
-    },
-    {
-      q: 'The binary number 1011 represents which decimal value?',
-      options: ['A. 9', 'B. 10', 'C. 11', 'D. 12'],
-      answer: 'C. 11',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the decimal equivalent of binary 1111?',
-      options: ['A. 8', 'B. 12', 'C. 15', 'D. 16'],
-      answer: 'C. 15',
-      diff: 'easy',
-    },
-    {
-      q: 'Binary 10000 represents decimal:',
-      options: ['A. 8', 'B. 16', 'C. 24', 'D. 32'],
-      answer: 'B. 16',
-      diff: 'easy',
-    },
-    {
-      q: 'How many bits are needed to represent decimal 255?',
-      options: ['A. 4', 'B. 6', 'C. 8', 'D. 10'],
-      answer: 'C. 8',
-      diff: 'easy',
-    },
-    {
-      q: 'Binary 11111111 equals decimal:',
-      options: ['A. 128', 'B. 192', 'C. 255', 'D. 256'],
-      answer: 'C. 255',
-      diff: 'easy',
-    },
-    {
-      q: 'The place value of the rightmost bit in binary is:',
-      options: ['A. 0', 'B. 1', 'C. 2', 'D. 4'],
-      answer: 'B. 1',
-      diff: 'easy',
-    },
-    {
-      q: 'The binary representation of decimal 13 is:',
-      options: ['A. 1010', 'B. 1100', 'C. 1101', 'D. 1110'],
-      answer: 'C. 1101',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the first step in the algorithm to convert a decimal number to binary?',
-      options: ['A. Multiply by 2', 'B. Subtract 1', 'C. Divide the number by 2', 'D. Add the bits'],
-      answer: 'C. Divide the number by 2',
-      diff: 'easy',
-    },
-    {
-      q: 'When converting decimal to binary, the remainders are collected in which order?',
-      options: ['A. Most significant first', 'B. Least significant first (from bottom to top)', 'C. Any order', 'D. Sorted descending'],
-      answer: 'B. Least significant first (from bottom to top)',
-      diff: 'medium',
-    },
-    {
-      q: 'After dividing repeatedly, the remainders are read:',
-      options: ['A. From first to last', 'B. From last to first (reverse order)', 'C. In any order', 'D. Sorted'],
-      answer: 'B. From last to first (reverse order)',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the binary representation of decimal 32?',
-      options: ['A. 100000', 'B. 10000', 'C. 11111', 'D. 1000000'],
-      answer: 'A. 100000',
-      diff: 'easy',
-    },
-    {
-      q: 'Convert decimal 25 to binary:',
-      options: ['A. 11001', 'B. 10011', 'C. 11100', 'D. 11010'],
-      answer: 'A. 11001',
-      diff: 'medium',
-    },
-    {
-      q: 'The decimal number 0 in binary is:',
-      options: ['A. 0', 'B. 1', 'C. 10', 'D. 00'],
-      answer: 'A. 0',
-      diff: 'easy',
-    },
-    {
-      q: 'How many distinct values can 4 bits represent?',
-      options: ['A. 8', 'B. 12', 'C. 16', 'D. 32'],
-      answer: 'C. 16',
-      diff: 'easy',
-    },
-    {
-      q: 'The binary number 1001 is equal to decimal:',
-      options: ['A. 8', 'B. 9', 'C. 10', 'D. 12'],
-      answer: 'B. 9',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following is a valid binary digit?',
-      options: ['A. 2', 'B. 3', 'C. 0', 'D. Both A and C'],
-      answer: 'C. 0',
-      diff: 'easy',
-    },
-    {
-      q: 'The algorithm for decimal to binary conversion terminates when:',
-      options: ['A. Remainder is 1', 'B. Quotient becomes 0', 'C. Quotient becomes 1', 'D. Remainder is 0'],
-      answer: 'B. Quotient becomes 0',
-      diff: 'medium',
-    },
-    {
-      q: 'Binary 101010 equals decimal:',
-      options: ['A. 42', 'B. 21', 'C. 84', 'D. 36'],
-      answer: 'A. 42',
-      diff: 'medium',
-    },
-    {
-      q: 'The place value of the 5th bit from the right (2⁴) is:',
-      options: ['A. 8', 'B. 16', 'C. 32', 'D. 64'],
-      answer: 'B. 16',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the decimal value of binary 11101?',
-      options: ['A. 28', 'B. 29', 'C. 30', 'D. 31'],
-      answer: 'B. 29',
-      diff: 'medium',
-    }
-  ]
-},
-
-
-23: {
-  title: 'Binary Addition: Rules, Carry, and Examples (CS101 Lecture 23)',
-  summary: `**Key Topics Covered:**
-- Binary addition rules (4 possibilities):
-  0 + 0 = 0 (carry 0)
-  0 + 1 = 1 (carry 0)
-  1 + 0 = 1 (carry 0)
-  1 + 1 = 0 (carry 1 to next column)
-- Addition is performed from right to left (least significant bit first)
-- When sum is 10 (binary), write 0 and carry 1
-- Multiple examples: single-bit, two-bit, multi-bit addition
-- Carry propagates to left as in decimal addition
-
----
-
-**Simple Understanding:**
-
+Binary = base 2 positional system. Each position right-to-left doubles: 1,2,4,8,16,32,64,128. 255 = all 1s in 8 bits. 32 = single 1 at 2⁵ position.`,
+    questions: [
+      {
+        q: 'In a binary positional number system, the value associated with each position relative to the position immediately to its right is:',
+        options: ['A. Ten times greater', 'B. Twice as great', 'C. Half as great', 'D. The same'],
+        answer: 'B. Twice as great',
+        diff: 'easy',
+      },
+      {
+        q: 'What is the binary representation of decimal 32, using an 8-bit system?',
+        options: ['A. 00010000', 'B. 00100000', 'C. 01000000', 'D. 00000100'],
+        answer: 'B. 00100000',
+        diff: 'medium',
+      },
+      {
+        q: 'What is the binary representation of decimal 255 using an 8-bit system?',
+        options: ['A. 11111110', 'B. 01111111', 'C. 11111111', 'D. 10000001'],
+        answer: 'C. 11111111',
+        diff: 'medium',
+      },
+      {
+        q: 'In an 8-bit binary positional table, what decimal value does the position 2^6 represent?',
+        options: ['A. 32', 'B. 64', 'C. 128', 'D. 16'],
+        answer: 'B. 64',
+        diff: 'medium',
+      },
+      {
+        q: 'In the decimal number 375, what value does the digit "3" contribute, based on the power method (positional notation)?',
+        options: ['A. 3', 'B. 30', 'C. 300', 'D. 3000'],
+        answer: 'C. 300',
+        diff: 'easy',
+      },
+      {
+        q: 'Each position in a binary number can hold which of the following values?',
+        options: ['A. Any digit from 0 to 9', 'B. Only 0 or 1', 'C. Only positive integers', 'D. Only even numbers'],
+        answer: 'B. Only 0 or 1',
+        diff: 'easy',
+      },
+      {
+        q: 'Summing 128+64+32+16+8+4+2+1 gives the decimal value that corresponds to which 8-bit binary pattern?',
+        options: ['A. 10000000', 'B. 11111111', 'C. 00000001', 'D. 01010101'],
+        answer: 'B. 11111111',
+        diff: 'medium',
+      },
+      {
+        q: 'Which fundamental principle distinguishes the decimal (base 10) system from the binary (base 2) system in positional notation?',
+        options: ['A. Decimal allows digits 0-9 per position; binary allows only 0-1 per position, with positional weights being powers of 10 vs. powers of 2 respectively', 'B. Both systems use identical positional weights', 'C. Binary uses letters while decimal uses numbers', 'D. There is no fundamental difference'],
+        answer: 'A. Decimal allows digits 0-9 per position; binary allows only 0-1 per position, with positional weights being powers of 10 vs. powers of 2 respectively',
+        diff: 'hard',
+      },
+      {
+        q: 'To represent the decimal value 16 in 8-bit binary, where should the single "1" bit be placed?',
+        options: ['A. At the 2^3 position', 'B. At the 2^4 position', 'C. At the 2^5 position', 'D. At the 2^0 position'],
+        answer: 'B. At the 2^4 position',
+        diff: 'medium',
+      },
+      {
+        q: 'The algorithm for converting a positive decimal number to binary fundamentally relies on:',
+        options: ['A. Random guessing of bit positions', 'B. Systematically determining which powers of 2 sum to the target decimal value', 'C. Converting to hexadecimal first, always', 'D. Using only ASCII tables'],
+        answer: 'B. Systematically determining which powers of 2 sum to the target decimal value',
+        diff: 'hard',
+      },
+    ],
+  },
+ 
+  23: {
+    title: 'Binary Addition',
+    summary: `**Key Topics Covered:**
+- Basic rules of binary addition
+- Carrying in binary addition
+- Worked examples
+ 
+**Important Concepts:**
+ 
 **Binary Addition Basics:**
-👉 Only digits 0 and 1.
-👉 Four possible cases when adding two bits.
-
-**Rules Table:**
-| A | B | Sum | Carry |
-|---|---|-----|-------|
-| 0 | 0 | 0   | 0     |
-| 0 | 1 | 1   | 0     |
-| 1 | 0 | 1   | 0     |
-| 1 | 1 | 0   | 1     |
-
-**How to Add Binary Numbers:**
-1. Start from the rightmost column (least significant bit).
-2. Add the two bits (plus any carry from previous column).
-3. If sum is 0 or 1, write it, carry 0.
-4. If sum is 2 (binary 10), write 0, carry 1.
-5. If sum is 3 (binary 11), write 1, carry 1 (when adding three bits: A+B+carry).
-
-**Example 1:** 1 + 1 = 0 with carry 1.
-**Example 2:** 101 + 011 = 1000.
-**Example 3:** 1101 + 1011 = 11000.
-
----
-
-**Important Vocabulary:**
-- Binary addition = adding numbers in base-2
-- Carry = extra 1 transferred to next higher column
-- Least significant bit (LSB) = rightmost bit (value 2⁰)
-- Most significant bit (MSB) = leftmost bit
-- Sum = result of addition in current column
-
----
-
+When adding two single bits, there are exactly FOUR possible combinations:
+1. 0 + 0 = **0**
+2. 1 + 0 = **1**
+3. 0 + 1 = **1**
+4. 1 + 1 = **10** (i.e., result is 0, with a CARRY of 1 — same concept as decimal carrying, e.g., 5+5=10 in decimal carries a 1)
+ 
+**Applying the Rules:**
+Binary addition is performed RIGHT TO LEFT, exactly like decimal addition. Whenever a column sums to "10" in binary (i.e., 1+1), you place a **0** in that column and CARRY a **1** to the next (left) column.
+ 
+**Key Facts to Remember:**
+- 1 + 1 = 10 in binary (NOT "2" — there's no digit "2" in binary; it's represented as 0 with carry 1).
+- The carry mechanic in binary addition is conceptually IDENTICAL to carrying in decimal addition — just happens far more frequently since binary only has two digits.
+- Addition proceeds column-by-column from the RIGHT (least significant bit) to LEFT (most significant bit).
+ 
 **Quick Revision Points:**
-- 1+1 = 0, carry 1.
-- Add from right to left.
-- A carry generated in a column is added to the next left column.
-- Binary 10 = decimal 2.
-- Practice: 111 + 001 = 1000.`,
-
-  questions: [
-    {
-      q: 'What is the result of 1 + 1 in binary?',
-      options: ['A. 0 with carry 0', 'B. 0 with carry 1', 'C. 1 with carry 0', 'D. 1 with carry 1'],
-      answer: 'B. 0 with carry 1',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the result of 0 + 1 in binary?',
-      options: ['A. 0 with carry 0', 'B. 1 with carry 0', 'C. 0 with carry 1', 'D. 1 with carry 1'],
-      answer: 'B. 1 with carry 0',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the result of 1 + 0 in binary?',
-      options: ['A. 0 with carry 0', 'B. 1 with carry 0', 'C. 0 with carry 1', 'D. 1 with carry 1'],
-      answer: 'B. 1 with carry 0',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the result of 0 + 0 in binary?',
-      options: ['A. 0 with carry 0', 'B. 1 with carry 0', 'C. 0 with carry 1', 'D. 1 with carry 1'],
-      answer: 'A. 0 with carry 0',
-      diff: 'easy',
-    },
-    {
-      q: 'When adding binary numbers, addition starts from:',
-      options: ['A. Leftmost bit', 'B. Rightmost bit (LSB)', 'C. Any bit', 'D. Middle bit'],
-      answer: 'B. Rightmost bit (LSB)',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the sum of binary 1 and 1 (single bit addition)?',
-      options: ['A. 0', 'B. 1', 'C. 2', 'D. 10'],
-      answer: 'A. 0',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the carry when adding 1 + 1?',
-      options: ['A. 0', 'B. 1', 'C. 2', 'D. No carry'],
-      answer: 'B. 1',
-      diff: 'easy',
-    },
-    {
-      q: 'Add binary 101 + 011. What is the result?',
-      options: ['A. 1000', 'B. 111', 'C. 110', 'D. 1010'],
-      answer: 'A. 1000',
-      diff: 'medium',
-    },
-    {
-      q: 'Add binary 110 + 110. What is the result?',
-      options: ['A. 1100', 'B. 1000', 'C. 1010', 'D. 1110'],
-      answer: 'A. 1100',
-      diff: 'medium',
-    },
-    {
-      q: 'Add binary 111 + 001. What is the result?',
-      options: ['A. 1000', 'B. 1001', 'C. 1010', 'D. 1100'],
-      answer: 'A. 1000',
-      diff: 'medium',
-    },
-    {
-      q: 'Add binary 1010 + 0101. What is the result?',
-      options: ['A. 1111', 'B. 1010', 'C. 1100', 'D. 1001'],
-      answer: 'A. 1111',
-      diff: 'easy',
-    },
-    {
-      q: 'Add binary 1101 + 1011. What is the result?',
-      options: ['A. 11000', 'B. 10000', 'C. 10100', 'D. 11100'],
-      answer: 'A. 11000',
-      diff: 'hard',
-    },
-    {
-      q: 'What is the binary sum of 1111 + 0001?',
-      options: ['A. 10000', 'B. 11110', 'C. 10001', 'D. 11111'],
-      answer: 'A. 10000',
-      diff: 'medium',
-    },
-    {
-      q: 'When adding three bits (A + B + carry-in), what is the result and carry for 1+1+1?',
-      options: ['A. Sum=1, Carry=1', 'B. Sum=0, Carry=1', 'C. Sum=1, Carry=0', 'D. Sum=0, Carry=0'],
-      answer: 'A. Sum=1, Carry=1',
-      diff: 'hard',
-    },
-    {
-      q: 'When adding three bits (A + B + carry-in), what is the result and carry for 1+1+0?',
-      options: ['A. Sum=1, Carry=1', 'B. Sum=0, Carry=1', 'C. Sum=1, Carry=0', 'D. Sum=0, Carry=0'],
-      answer: 'B. Sum=0, Carry=1',
-      diff: 'hard',
-    },
-    {
-      q: 'Binary addition of 10101 and 01010 gives:',
-      options: ['A. 11111', 'B. 10000', 'C. 11000', 'D. 10101'],
-      answer: 'A. 11111',
-      diff: 'medium',
-    },
-    {
-      q: 'What is 1100 + 1100 in binary?',
-      options: ['A. 11000', 'B. 10100', 'C. 10010', 'D. 11100'],
-      answer: 'A. 11000',
-      diff: 'medium',
-    },
-    {
-      q: 'What is the result of adding 1 (binary) to 111 (binary)?',
-      options: ['A. 1000', 'B. 1001', 'C. 1010', 'D. 1100'],
-      answer: 'A. 1000',
-      diff: 'easy',
-    },
-    {
-      q: 'The binary sum of 1010 and 0110 is:',
-      options: ['A. 10000', 'B. 1000', 'C. 10010', 'D. 10001'],
-      answer: 'A. 10000',
-      diff: 'hard',
-    },
-    {
-      q: 'Which of the following statements about binary addition is TRUE?',
-      options: ['A. 1+1 = 2 with carry 0', 'B. 1+1 = 0 with carry 1', 'C. 1+1 = 1 with carry 1', 'D. 1+1 = 0 with carry 0'],
-      answer: 'B. 1+1 = 0 with carry 1',
-      diff: 'easy',
-    }
-  ]
-},
-
-
-24: {
-  title: 'Fraction in Binary: Radix Point and Binary Fractions (CS101 Lecture 24)',
-  summary: `**Key Topics Covered:**
-- Radix point: binary equivalent of decimal point
-- Digits to the left of radix point represent the whole number part
-- Digits to the right represent the fractional part
-- Example: 101.101 binary = 1×4 + 0×2 + 1×1 + 1×½ + 0×¼ + 1×⅛ = 4 + 0 + 1 + 0.5 + 0 + 0.125 = 5.625 decimal
-- Addition of binary fractions: align radix points, then add normally (same as binary addition)
-- Example: 10.011 + 100.11 = 111.001
-
----
-
-**Simple Understanding:**
-
-**What is Radix Point?**
-👉 In decimal, we use a decimal point (.) to separate whole and fractional parts.
-👉 In binary, the same concept is called a radix point.
-
-**Place Values to the Right of Radix Point:**
-👉 First digit right of radix point = ½ (2⁻¹ = 0.5)
-👉 Second digit = ¼ (2⁻² = 0.25)
-👉 Third digit = ⅛ (2⁻³ = 0.125)
-👉 Fourth digit = 1/16 (2⁻⁴ = 0.0625)
-👉 And so on (each place is half the previous).
-
-**Example: Binary 101.101 to Decimal:**
-- Left of radix: 1×4 + 0×2 + 1×1 = 5
-- Right of radix: 1×0.5 + 0×0.25 + 1×0.125 = 0.5 + 0 + 0.125 = 0.625
-- Total: 5 + 0.625 = 5.625 decimal.
-
-**Adding Binary Fractions:**
-👉 Align the radix points vertically.
-👉 Add from rightmost column to left (same as binary addition rules).
-👉 Example: 10.011 + 100.11
-   10.011
- + 100.11
- = 111.001
-
----
-
-**Important Vocabulary:**
-- Radix point = binary point (separates integer and fractional parts)
-- Whole number part = digits left of radix point
-- Fractional part = digits right of radix point
-- 2⁻¹ = 1/2
-- 2⁻² = 1/4
-- 2⁻³ = 1/8
-- Align = line up radix points before adding
-
----
-
+0+0=0. 1+0=1. 0+1=1. 1+1=10 (write 0, carry 1). Always work right to left, just like decimal addition.`,
+    questions: [
+      {
+        q: 'In binary addition, what is the result of adding the single bits 1 + 1?',
+        options: ['A. 2', 'B. 11', 'C. 10 (write 0, carry 1)', 'D. 1'],
+        answer: 'C. 10 (write 0, carry 1)',
+        diff: 'easy',
+      },
+      {
+        q: 'How many distinct combinations exist when adding two single binary bits together?',
+        options: ['A. 2', 'B. 3', 'C. 4', 'D. 8'],
+        answer: 'C. 4',
+        diff: 'easy',
+      },
+      {
+        q: 'When performing binary addition, in which direction do you process the columns?',
+        options: ['A. Left to right', 'B. Right to left', 'C. Middle outward', 'D. Order does not matter'],
+        answer: 'B. Right to left',
+        diff: 'easy',
+      },
+      {
+        q: 'What is the result of adding the binary bits 0 + 1?',
+        options: ['A. 0', 'B. 1', 'C. 10', 'D. 11'],
+        answer: 'B. 1',
+        diff: 'easy',
+      },
+      {
+        q: 'Why does adding 1+1 in binary produce a carry, conceptually similar to decimal addition?',
+        options: ['A. Because binary has no carry mechanism at all', 'B. Because the sum (equivalent to "2") exceeds the maximum single-digit value (1) in the binary system, just as 10 exceeds 9 in decimal', 'C. Because binary only uses subtraction', 'D. Because carries only happen in hexadecimal'],
+        answer: 'B. Because the sum (equivalent to "2") exceeds the maximum single-digit value (1) in the binary system, just as 10 exceeds 9 in decimal', 
+        diff: 'hard',
+      },
+      {
+        q: 'When two binary bits sum to "10" during addition, what two actions are taken in that column?',
+        options: ['A. Write 1, carry 0', 'B. Write 0, carry 1', 'C. Write 1, carry 1', 'D. Write 0, carry 0'],
+        answer: 'B. Write 0, carry 1',
+        diff: 'medium',
+      },
+      {
+        q: 'Which of the following correctly lists ALL four binary single-bit addition results?',
+        options: ['A. 0+0=1, 1+0=0, 0+1=1, 1+1=10', 'B. 0+0=0, 1+0=1, 0+1=1, 1+1=10', 'C. 0+0=0, 1+0=1, 0+1=0, 1+1=11', 'D. 0+0=0, 1+0=10, 0+1=10, 1+1=11'],
+        answer: 'B. 0+0=0, 1+0=1, 0+1=1, 1+1=10',
+        diff: 'medium',
+      },
+      {
+        q: 'A carry generated in one column of binary addition must be added into:',
+        options: ['A. The same column again', 'B. The next column to the LEFT (more significant position)', 'C. The next column to the RIGHT (less significant position)', 'D. It is discarded entirely'],
+        answer: 'B. The next column to the LEFT (more significant position)',
+        diff: 'medium',
+      },
+      {
+        q: 'Binary addition rules are conceptually based on which broader arithmetic principle also seen in decimal addition?',
+        options: ['A. Multiplication tables', 'B. The carrying mechanism when a column sum exceeds the largest single digit available in that base', 'C. Logarithmic scaling', 'D. Hexadecimal lookup tables'],
+        answer: 'B. The carrying mechanism when a column sum exceeds the largest single digit available in that base',
+        diff: 'hard',
+      },
+      {
+        q: 'If three binary numbers were being added in a single column along with an incoming carry, which underlying mechanic from the basic 2-bit addition rules would still apply?',
+        options: ['A. The same carry-on-overflow principle, extended to handle larger sums in that column', 'B. No carry mechanism applies once more than 2 bits are summed', 'C. The result is always discarded', 'D. Binary addition becomes invalid with more than 2 operands'],
+        answer: 'A. The same carry-on-overflow principle, extended to handle larger sums in that column',
+        diff: 'hard',
+      },
+    ],
+  },
+ 
+  24: {
+    title: 'Fraction in Binary',
+    summary: `**Key Topics Covered:**
+- Radix point concept
+- Example of radix point usage
+- Addition involving binary fractions
+ 
+**Important Concepts:**
+ 
+**Radix Point:**
+The binary equivalent of the DECIMAL POINT.
+- Digits on the LEFT of the radix point = represent the WHOLE NUMBER part.
+- Digits on the RIGHT of the radix point = represent the FRACTIONAL part.
+ 
+**Reading Binary Fractions:**
+Just as decimal fractional positions represent 1/10, 1/100, 1/1000..., binary fractional positions (right of radix point) represent 1/2, 1/4, 1/8, 1/16... (i.e., 2⁻¹, 2⁻², 2⁻³...).
+ 
+**Addition in Fraction (Worked Example):**
+**10.011 + 100.11 = 111.001**
+- This is performed EXACTLY like standard binary addition, but the RADIX POINTS must be ALIGNED first before adding column by column.
+ 
+**Key Facts to Remember:**
+- Radix point = binary's version of the decimal point.
+- Left of radix point = whole number; Right of radix point = fraction.
+- The given worked example (10.011 + 100.11 = 111.001) is a MEMORIZABLE exact result often tested directly.
+- Alignment of radix points is the CRITICAL first step before adding binary fractions (same way you'd align decimal points before adding decimal fractions).
+ 
 **Quick Revision Points:**
-- Binary fractions use powers of 2 with negative exponents.
-- 2⁻¹ = 0.5, 2⁻² = 0.25, 2⁻³ = 0.125, etc.
-- To convert binary fraction to decimal: multiply each bit by its place value and sum.
-- To add binary fractions: align radix points, then add column by column with carry.
-- Example: 0.1 binary = 0.5 decimal; 0.01 = 0.25; 0.001 = 0.125.`,
-
-  questions: [
-    {
-      q: 'What is the binary point called?',
-      options: ['A. Decimal point', 'B. Radix point', 'C. Fraction point', 'D. Binary separator'],
-      answer: 'B. Radix point',
-      diff: 'easy',
-    },
-    {
-      q: 'In binary, the digit immediately to the right of the radix point represents:',
-      options: ['A. 2⁰ = 1', 'B. 2⁻¹ = ½ (0.5)', 'C. 2⁻² = ¼ (0.25)', 'D. 2⁻³ = ⅛ (0.125)'],
-      answer: 'B. 2⁻¹ = ½ (0.5)',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the decimal value of binary 0.1?',
-      options: ['A. 0.25', 'B. 0.5', 'C. 0.125', 'D. 0.75'],
-      answer: 'B. 0.5',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the decimal value of binary 0.01?',
-      options: ['A. 0.5', 'B. 0.125', 'C. 0.25', 'D. 0.375'],
-      answer: 'C. 0.25',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the decimal value of binary 0.001?',
-      options: ['A. 0.5', 'B. 0.25', 'C. 0.125', 'D. 0.0625'],
-      answer: 'C. 0.125',
-      diff: 'easy',
-    },
-    {
-      q: 'Convert binary 101.101 to decimal:',
-      options: ['A. 5.125', 'B. 5.25', 'C. 5.5', 'D. 5.625'],
-      answer: 'D. 5.625',
-      diff: 'medium',
-    },
-    {
-      q: 'Convert binary 11.11 to decimal:',
-      options: ['A. 3.5', 'B. 3.75', 'C. 3.25', 'D. 3.125'],
-      answer: 'B. 3.75',
-      diff: 'medium',
-    },
-    {
-      q: 'Convert binary 0.111 to decimal:',
-      options: ['A. 0.5', 'B. 0.625', 'C. 0.75', 'D. 0.875'],
-      answer: 'D. 0.875',
-      diff: 'medium',
-    },
-    {
-      q: 'What is 0.1 + 0.1 in binary?',
-      options: ['A. 0.1', 'B. 1.0', 'C. 0.01', 'D. 0.11'],
-      answer: 'B. 1.0',
-      diff: 'medium',
-    },
-    {
-      q: 'When adding binary fractions, the first step is:',
-      options: ['A. Convert to decimal', 'B. Align the radix points', 'C. Ignore the fractional part', 'D. Multiply by 2'],
-      answer: 'B. Align the radix points',
-      diff: 'easy',
-    },
-    {
-      q: 'Add binary 10.011 + 100.11. The result is:',
-      options: ['A. 110.101', 'B. 111.001', 'C. 111.101', 'D. 110.001'],
-      answer: 'B. 111.001',
-      diff: 'hard',
-    },
-    {
-      q: 'Add binary 1.1 + 0.1. The result is:',
-      options: ['A. 10.0', 'B. 1.0', 'C. 10.1', 'D. 1.10'],
-      answer: 'A. 10.0',
-      diff: 'easy',
-    },
-    {
-      q: 'The place value of the 4th bit to the right of the radix point is:',
-      options: ['A. 1/4', 'B. 1/8', 'C. 1/16', 'D. 1/32'],
-      answer: 'C. 1/16',
-      diff: 'easy',
-    },
-    {
-      q: 'What is 0.101 binary in decimal?',
-      options: ['A. 0.5', 'B. 0.625', 'C. 0.75', 'D. 0.875'],
-      answer: 'B. 0.625',
-      diff: 'medium',
-    },
-    {
-      q: 'What is 0.011 binary in decimal?',
-      options: ['A. 0.125', 'B. 0.25', 'C. 0.375', 'D. 0.5'],
-      answer: 'C. 0.375',
-      diff: 'medium',
-    },
-    {
-      q: 'Add binary 11.01 + 10.11. The result is:',
-      options: ['A. 110.00', 'B. 110.01', 'C. 101.10', 'D. 100.10'],
-      answer: 'A. 110.00',
-      diff: 'hard',
-    },
-    {
-      q: 'The value of 2⁻⁴ in decimal is:',
-      options: ['A. 0.125', 'B. 0.0625', 'C. 0.03125', 'D. 0.015625'],
-      answer: 'B. 0.0625',
-      diff: 'easy',
-    },
-    {
-      q: 'Binary 10.1 equals decimal:',
-      options: ['A. 2.5', 'B. 2.25', 'C. 2.125', 'D. 2.75'],
-      answer: 'A. 2.5',
-      diff: 'easy',
-    },
-    {
-      q: 'Binary 110.011 equals decimal:',
-      options: ['A. 6.375', 'B. 6.25', 'C. 6.5', 'D. 6.125'],
-      answer: 'A. 6.375',
-      diff: 'medium',
-    },
-    {
-      q: 'The radix point in binary is analogous to which point in decimal?',
-      options: ['A. Decimal point', 'B. Percent sign', 'C. Comma', 'D. Colon'],
-      answer: 'A. Decimal point',
-      diff: 'easy',
-    },
-    {
-      q: 'When adding binary fractions, a carry can propagate from the fractional part into the integer part?',
-      options: ['A. Yes', 'B. No', 'C. Only if the sum is 2', 'D. Only if the sum is 1'],
-      answer: 'A. Yes',
-      diff: 'medium',
-    }
-  ]
-},
-
-25: {
-  title: '2’s Complement Notation: Storing Integers in Binary (CS101 Lecture 25)',
-  summary: `**Key Topics Covered:**
-- Two’s complement: most popular system for representing integers in computers
-- Fixed number of bits (typically 32 bits) – smaller examples used for demonstration
-- Positive integers: from zero upward (0 = 000...0, max positive = 0 followed by all 1’s)
-- Negative integers: from all 1’s downward (minimum negative = 1 followed by all 0’s)
-- Leftmost bit = sign bit (0 for positive, 1 for negative)
-- Conversion trick (positive ↔ negative):
-  1. Start from rightmost bit
-  2. Copy bits until the first 1 is encountered
-  3. After that first 1, complement all remaining bits (0→1, 1→0)
-- Example: 7 in 4-bit two’s complement = 0111 → -7 = 1001
-- Addition works the same as regular binary addition (no special rules)
-- Overflow: when result exceeds the range that can be stored in given bits
-- 4-bit range: -8 to +7 (5+4=9 → overflow, result appears as -7)
-- Modern computers use 32 bits: range ≈ -2.1 billion to +2.1 billion
-- Historical overflow bug: September 19, 1989 – hospital system failed after 32,768 days (16-bit limit)
-
----
-
-**Simple Understanding:**
-
-**What is Two’s Complement?**
-👉 Standard way computers store negative and positive integers.
-👉 Uses a fixed number of bits (e.g., 4, 16, 32).
-👉 Leftmost bit indicates sign: 0 = positive, 1 = negative.
-
-**Range with 4 bits:**
-- Positive: 0000 (0) to 0111 (+7)
-- Negative: 1111 (-1) down to 1000 (-8)
-- Total values: 2⁴ = 16 numbers (from -8 to +7)
-
-**Conversion Trick (Positive to Negative):**
-Example: +7 = 0111
-1. Start from right: first 1 is at position 0 (rightmost)
-2. Copy that 1
-3. Complement all bits to its left: 0→1, 1→0
-Result: 1001 = -7
-
-**Addition:**
-👉 Just add binary numbers normally (ignore the sign bit; overflow handled automatically).
-👉 Example: 0111 (+7) + 0001 (+1) = 1000 (-8) – overflow occurred.
-
-**Overflow Problem:**
-👉 When result is outside the representable range.
-👉 4-bit: 5 (0101) + 4 (0100) = 9 → overflows to -7 (1001).
-👉 Modern 32-bit range: +2,147,483,647 to -2,147,483,648.
-👉 Famous bug: 16-bit system overflowed after 32,768 days (Jan 1, 1900 + 32,768 = Sep 19, 1989) causing hospital system failure.
-
----
-
-**Important Vocabulary:**
-- Two’s complement = signed integer representation
-- Sign bit = leftmost bit (0 positive, 1 negative)
-- Fixed number of bits = constant bit-length for all numbers
-- Overflow = result beyond representable range
-- 4-bit range = -8 to +7
-- 16-bit range = -32,768 to +32,767
-- 32-bit range = -2,147,483,648 to +2,147,483,647
-
----
-
+Radix point splits whole (left) from fraction (right). Always align radix points before adding. Memorize: 10.011 + 100.11 = 111.001.`,
+    questions: [
+      {
+        q: 'The radix point in binary notation is functionally equivalent to which concept in decimal notation?',
+        options: ['A. The decimal point', 'B. The exponent symbol', 'C. The carry bit', 'D. The sign bit'],
+        answer: 'A. The decimal point',
+        diff: 'easy',
+      },
+      {
+        q: 'Digits appearing to the LEFT of the radix point in a binary number represent:',
+        options: ['A. The fractional part', 'B. The whole number part', 'C. The sign of the number', 'D. The exponent'],
+        answer: 'B. The whole number part',
+        diff: 'easy',
+      },
+      {
+        q: 'Digits appearing to the RIGHT of the radix point in a binary number represent:',
+        options: ['A. The whole number part', 'B. The fractional part', 'C. An error code', 'D. The carry value'],
+        answer: 'B. The fractional part',
+        diff: 'easy',
+      },
+      {
+        q: 'According to the worked example in the lecture, what is the result of adding the binary fractions 10.011 and 100.11?',
+        options: ['A. 110.101', 'B. 111.001', 'C. 110.011', 'D. 111.101'],
+        answer: 'B. 111.001',
+        diff: 'hard',
+      },
+      {
+        q: 'Before adding two binary fractions, what critical alignment step must be performed first?',
+        options: ['A. Convert both numbers to hexadecimal', 'B. Align the radix points of both numbers', 'C. Remove all fractional digits', 'D. Reverse the bit order'],
+        answer: 'B. Align the radix points of both numbers',
+        diff: 'medium',
+      },
+      {
+        q: 'In a binary fraction, the first position immediately to the right of the radix point represents which value?',
+        options: ['A. 1/2 (2^-1)', 'B. 1/4 (2^-2)', 'C. 1/10', 'D. 2^1'],
+        answer: 'A. 1/2 (2^-1)',
+        diff: 'medium',
+      },
+      {
+        q: 'The process of adding binary fractions, once radix points are aligned, follows the same column-by-column method as:',
+        options: ['A. Hexadecimal multiplication', 'B. Standard binary addition (with the same carry rules)', 'C. ASCII text concatenation', 'D. Boolean XOR operations'],
+        answer: 'B. Standard binary addition (with the same carry rules)',
+        diff: 'medium',
+      },
+      {
+        q: 'In the binary number 10.011, how many bits represent the fractional part (to the right of the radix point)?',
+        options: ['A. 1', 'B. 2', 'C. 3', 'D. 5'],
+        answer: 'C. 3',
+        diff: 'medium',
+      },
+      {
+        q: 'Why is correct radix point alignment critical before performing binary fraction addition?',
+        options: ['A. Because misalignment would cause bits of different positional values (weights) to be incorrectly added together', 'B. Because radix points have no actual effect on calculation', 'C. Because alignment only matters for subtraction, not addition', 'D. Because computers automatically realign radix points'],
+        answer: 'A. Because misalignment would cause bits of different positional values (weights) to be incorrectly added together',
+        diff: 'hard',
+      },
+      {
+        q: 'In the binary number 100.11, how many bits represent the whole number part (to the left of the radix point)?',
+        options: ['A. 1', 'B. 2', 'C. 3', 'D. 5'],
+        answer: 'C. 3',
+        diff: 'medium',
+      },
+    ],
+  },
+ 
+  25: {
+    title: "2's Complement Notation to Store Numbers",
+    summary: `**Key Topics Covered:**
+- Integer representation in 2's complement
+- Conversion between positive and negative representations
+- Addition in 2's complement notation
+- The problem of overflow
+ 
+**Important Concepts:**
+ 
+**Why 2's Complement?**
+The MOST POPULAR system for representing INTEGERS (including negatives) within today's computers.
+ 
+**Integer Representation Rules:**
+- Uses a FIXED number of bits per value (normally **32 bits** in real systems; smaller examples used for demonstration).
+- For **POSITIVE** integers: start from zero, going UPWARD, until a single zero is reached followed by all 1's.
+- For **NEGATIVE** integers: start from all 1's, going DOWNWARD, until a single 1 is reached followed by all 0's.
+- The **LEFTMOST bit = SIGN BIT** (0 = positive, 1 = negative, by convention pattern).
+ 
+**Conversion Trick — Positive ↔ Negative (MEMORIZE THIS ALGORITHM):**
+1. Start from the RIGHTMOST bit.
+2. COPY bits unchanged until the FIRST 1 is encountered (copy that 1 too).
+3. AFTER that first 1, COMPLEMENT (flip) ALL remaining bits (0→1, 1→0).
+ 
+**Worked Example:**
+- Binary of **+7** in 2's complement (4-bit) = **0111**.
+- Applying the conversion rule to get **-7**: rightmost bits copied until first 1 (the rightmost bit IS 1, so copy it), then complement the rest → result = **1001**.
+ 
+**Addition in 2's Complement:**
+Works using the SAME addition method as regular binary addition — this is the key ADVANTAGE of 2's complement (no special subtraction circuitry needed; addition handles both positive and negative numbers uniformly).
+ 
+**Problem of Overflow:**
+- Using 4 bits: max positive = **7**, max negative = **-8**.
+- Example: 5+4 = 9, which CANNOT be stored correctly in 4 bits → result wraps around to appear as **-7** (an overflow/wraparound error).
+- Detected via the SIGN BIT behaving unexpectedly.
+- Modern computers use **32 bits**, giving max positive value = **2,147,483,647**.
+- If overflow STILL occurs even with more bits, solution = use EVEN MORE bits, or change UNITS (e.g., calculate in kilometers instead of meters).
+- Historical example: with OLDER 16-bit systems, max representable value was **32,768**. On **September 19, 1989**, a hospital system malfunctioned because 32,768 days had passed since January 1, 1900, causing the count to overflow into a NEGATIVE value.
+ 
+**Key Facts to Remember:**
+- Leftmost bit = sign bit (defining feature of 2's complement).
+- Conversion rule: copy until first 1 (inclusive), then complement the rest.
+- 4-bit range: -8 to +7 (asymmetric range — one more negative value than positive).
+- 32-bit max positive = 2,147,483,647 (a VERY commonly tested exact number).
+- The 1989 hospital malfunction (32,768-day overflow) is a real, specifically named historical example.
+ 
 **Quick Revision Points:**
-- Two’s complement stores both positive and negative integers.
-- Leftmost bit is sign (0 = positive, 1 = negative).
-- Positive numbers: same as ordinary binary.
-- Negative numbers: obtained by complementing after the first 1 from right.
-- Addition uses ordinary binary addition.
-- Overflow can produce wrong sign results.
-- 16-bit overflow caused the 1989 hospital system bug.`,
-
-  questions: [
-    {
-      q: 'What is the most popular system for representing integers in computers today?',
-      options: ['A. Sign-magnitude', 'B. One’s complement', 'C. Two’s complement', 'D. Binary coded decimal'],
-      answer: 'C. Two’s complement',
-      diff: 'easy',
-    },
-    {
-      q: 'In two’s complement, the leftmost bit represents:',
-      options: ['A. The value 128', 'B. The sign (0 positive, 1 negative)', 'C. The most significant value', 'D. The parity'],
-      answer: 'B. The sign (0 positive, 1 negative)',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the range of signed integers that can be stored in 4-bit two’s complement?',
-      options: ['A. -7 to +7', 'B. -8 to +7', 'C. -7 to +8', 'D. -8 to +8'],
-      answer: 'B. -8 to +7',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the 4-bit two’s complement representation of +7?',
-      options: ['A. 0111', 'B. 1000', 'C. 1111', 'D. 1001'],
-      answer: 'A. 0111',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the 4-bit two’s complement representation of -7?',
-      options: ['A. 0111', 'B. 1000', 'C. 1111', 'D. 1001'],
-      answer: 'D. 1001',
-      diff: 'medium',
-    },
-    {
-      q: 'Using the conversion trick, starting from +7 (0111), to get -7 you:',
-      options: ['A. Invert all bits', 'B. Add 1 to the inverted bits', 'C. Copy from right until first 1, then complement remaining', 'D. Subtract 1 and invert'],
-      answer: 'C. Copy from right until first 1, then complement remaining',
-      diff: 'medium',
-    },
-    {
-      q: 'What is the 4-bit two’s complement of -1?',
-      options: ['A. 0001', 'B. 1111', 'C. 1110', 'D. 1001'],
-      answer: 'B. 1111',
-      diff: 'medium',
-    },
-    {
-      q: 'What is the most negative number in 4-bit two’s complement?',
-      options: ['A. 1111 (-1)', 'B. 1000 (-8)', 'C. 1001 (-7)', 'D. 1010 (-6)'],
-      answer: 'B. 1000 (-8)',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the most positive number in 4-bit two’s complement?',
-      options: ['A. 0111 (+7)', 'B. 0110 (+6)', 'C. 1111 (+15)', 'D. 1000 (+8)'],
-      answer: 'A. 0111 (+7)',
-      diff: 'easy',
-    },
-    {
-      q: 'Add 5 (0101) + 4 (0100) in 4-bit two’s complement. The result (as a 4-bit number) is:',
-      options: ['A. 1001 (-7)', 'B. 0111 (+7)', 'C. 1100 (-4)', 'D. 1111 (-1)'],
-      answer: 'A. 1001 (-7)',
-      diff: 'hard',
-    },
-    {
-      q: 'The phenomenon where addition of two positive numbers gives a negative result is called:',
-      options: ['A. Underflow', 'B. Overflow', 'C. Carry-out', 'D. Sign reversal'],
-      answer: 'B. Overflow',
-      diff: 'easy',
-    },
-    {
-      q: 'In 16-bit two’s complement, the maximum positive integer is:',
-      options: ['A. 32,767', 'B. 32,768', 'C. 65,535', 'D. 65,536'],
-      answer: 'A. 32,767',
-      diff: 'medium',
-    },
-    {
-      q: 'In 16-bit two’s complement, the most negative integer is:',
-      options: ['A. -32,767', 'B. -32,768', 'C. -65,535', 'D. -65,536'],
-      answer: 'B. -32,768',
-      diff: 'medium',
-    },
-    {
-      q: 'The famous overflow bug on September 19, 1989 occurred because a system used:',
-      options: ['A. 8-bit two’s complement', 'B. 16-bit two’s complement', 'C. 32-bit two’s complement', 'D. 64-bit two’s complement'],
-      answer: 'B. 16-bit two’s complement',
-      diff: 'hard',
-    },
-    {
-      q: 'How many days after January 1, 1900 caused the 1989 hospital system malfunction?',
-      options: ['A. 16,384', 'B. 32,768', 'C. 65,536', 'D. 10,000'],
-      answer: 'B. 32,768',
-      diff: 'hard',
-    },
-    {
-      q: 'In 32-bit two’s complement, the maximum positive integer is approximately:',
-      options: ['A. 2 million', 'B. 2 billion', 'C. 4 billion', 'D. 2 trillion'],
-      answer: 'B. 2 billion',
-      diff: 'easy',
-    },
-    {
-      q: 'If you have the 4-bit pattern 1100, what decimal value does it represent in two’s complement?',
-      options: ['A. -4', 'B. -3', 'C. 12', 'D. -2'],
-      answer: 'A. -4',
-      diff: 'medium',
-    },
-    {
-      q: 'The two’s complement representation of -5 in 4 bits is:',
-      options: ['A. 1011', 'B. 1010', 'C. 1101', 'D. 1110'],
-      answer: 'A. 1011',
-      diff: 'hard',
-    },
-    {
-      q: 'When adding 0111 (+7) and 0001 (+1) in 4-bit two’s complement, the result is 1000 which represents:',
-      options: ['A. +8', 'B. -8', 'C. 0', 'D. Overflow flag not set'],
-      answer: 'B. -8',
-      diff: 'medium',
-    },
-    {
-      q: 'Which of the following statements about two’s complement addition is true?',
-      options: ['A. Requires special hardware', 'B. Works exactly like ordinary binary addition', 'C. Cannot handle negative numbers', 'D. Only works for positive numbers'],
-      answer: 'B. Works exactly like ordinary binary addition',
-      diff: 'easy',
-    },
-    {
-      q: 'The sign bit is 0 for positive numbers and 1 for negative numbers. In 4-bit, what is -0?',
-      options: ['A. 0000', 'B. 1000', 'C. 1111', 'D. There is no -0 in two’s complement'],
-      answer: 'D. There is no -0 in two’s complement',
-      diff: 'medium',
-    },
-    {
-      q: 'What is the decimal value of 1000 in 4-bit two’s complement?',
-      options: ['A. 8', 'B. -8', 'C. 0', 'D. -0'],
-      answer: 'B. -8',
-      diff: 'easy',
-    }
-  ]
-},
-
+2's complement = standard integer storage method. Sign bit = leftmost. Conversion = copy-till-first-1-then-flip-rest. Overflow = result exceeds representable range; 32-bit max = 2,147,483,647.`,
+    questions: [
+      {
+        q: 'In 2\'s complement notation, which bit position indicates the sign of the number?',
+        options: ['A. The rightmost bit', 'B. The leftmost bit', 'C. The middle bit', 'D. There is no dedicated sign bit'],
+        answer: 'B. The leftmost bit',
+        diff: 'easy',
+      },
+      {
+        q: 'To convert a positive 2\'s complement number to its negative equivalent, the correct rule is:',
+        options: ['A. Flip all bits including the rightmost zeros', 'B. Copy bits from the right until the first 1 is found (inclusive), then complement all remaining bits', 'C. Simply reverse the bit order', 'D. Add 1 to every bit'],
+        answer: 'B. Copy bits from the right until the first 1 is found (inclusive), then complement all remaining bits',
+        diff: 'hard',
+      },
+      {
+        q: 'Given that +7 in 4-bit 2\'s complement is 0111, what is the 2\'s complement representation of -7?',
+        options: ['A. 1000', 'B. 1001', 'C. 0111', 'D. 1111'],
+        answer: 'B. 1001',
+        diff: 'hard',
+      },
+      {
+        q: 'Using a 4-bit 2\'s complement system, what is the maximum positive integer that can be represented?',
+        options: ['A. 6', 'B. 7', 'C. 8', 'D. 15'],
+        answer: 'B. 7',
+        diff: 'medium',
+      },
+      {
+        q: 'Using a 4-bit 2\'s complement system, what is the maximum (most negative) value that can be represented?',
+        options: ['A. -7', 'B. -8', 'C. -15', 'D. -16'],
+        answer: 'B. -8',
+        diff: 'medium',
+      },
+      {
+        q: 'A key advantage of 2\'s complement notation is that:',
+        options: ['A. It requires separate circuitry for addition and subtraction', 'B. Addition of positive and negative numbers can be performed using the same standard binary addition method', 'C. It cannot represent negative numbers at all', 'D. It only works with floating point numbers'],
+        answer: 'B. Addition of positive and negative numbers can be performed using the same standard binary addition method',
+        diff: 'medium',
+      },
+      {
+        q: 'In a 4-bit 2\'s complement system, adding 5+4 (=9) results in overflow because:',
+        options: ['A. 9 exceeds the maximum representable positive value (7) in 4 bits', 'B. 4-bit systems cannot perform any addition', 'C. 5 and 4 cannot both be represented in 4 bits', 'D. Overflow never occurs in 2\'s complement'],
+        answer: 'A. 9 exceeds the maximum representable positive value (7) in 4 bits',
+        diff: 'hard',
+      },
+      {
+        q: 'Using standard 32-bit 2\'s complement representation, what is the maximum positive integer value, as cited in the lecture?',
+        options: ['A. 65,535', 'B. 2,147,483,647', 'C. 4,294,967,295', 'D. 1,073,741,823'],
+        answer: 'B. 2,147,483,647',
+        diff: 'hard',
+      },
+      {
+        q: 'The historical hospital system malfunction on September 19, 1989, occurred because:',
+        options: ['A. A 32-bit system overflowed after exactly one year', 'B. A 16-bit system overflowed because 32,768 days had passed since January 1, 1900, wrapping the count into a negative value', 'C. A virus attacked the hospital database', 'D. The system used decimal instead of binary'],
+        answer: 'B. A 16-bit system overflowed because 32,768 days had passed since January 1, 1900, wrapping the count into a negative value',
+        diff: 'hard',
+      },
+      {
+        q: 'If overflow continues to occur even after increasing the number of bits used, what alternative solution does the lecture suggest?',
+        options: ['A. Switch entirely to decimal notation', 'B. Change the units of measurement (e.g., calculate in kilometers instead of meters) to reduce the magnitude of numbers involved', 'C. Ignore the overflow error', 'D. Use only 1\'s complement instead'],
+        answer: 'B. Change the units of measurement (e.g., calculate in kilometers instead of meters) to reduce the magnitude of numbers involved',
+        diff: 'hard',
+      },
+    ],
+  },
+ 
 
 26: {
   title: 'Excess Notation: Alternative Integer Representation (CS101 Lecture 26)',
@@ -24720,8137 +22866,4117 @@ Result: 1001 = -7
 },
 
 51: {
-  title: 'Operating Systems: Process of Booting (Bootstrapping, Boot Loader, ROM) (CS101 Lecture 51)',
-  summary: `**Key Topics Covered:**
-- Booting (bootstrapping): procedure that starts the operating system when computer is turned on
-- Transfers OS from mass storage (permanent) to main memory (volatile, empty at power-on)
-- CPU program counter starts at a predetermined address (expects to find beginning of program)
-- Main memory is volatile (loses data when powered off)
-- Solution: small portion of memory at the startup address is nonvolatile – Read-Only Memory (ROM)
-- ROM: contents can be read but not altered (or altered only with special procedures)
-- Modern PCs use flash memory technology for ROM (can be updated via firmware updates)
-- Boot loader: program permanently stored in ROM, executed first when machine turns on
-- Boot loader copies OS from predetermined location (mass storage, network, flash) into volatile main memory
-- After copying, boot loader jumps to that memory area – OS takes over
-- Entire process = booting the computer
-- Why not store full OS in ROM? Not efficient (cost, size, updates); mass storage more practical
-- Firmware update: updating boot loader or OS stored in ROM
-
----
-
-**Simple Understanding:**
-
-**The Boot Problem:**
-👉 CPU starts executing at a fixed address when powered on.
-👉 But main memory is volatile (empty at power-on).
-👉 Need a program there, but memory is empty.
-
-**Solution – ROM:**
-👉 Small nonvolatile memory at that fixed address.
-👉 ROM (Read-Only Memory) retains data when power off.
-👉 Contains the boot loader program.
-
-**Boot Loader:**
-👉 Small program in ROM.
-👉 First thing CPU executes at power-on.
-👉 Copies operating system from mass storage (disk, SSD, network, flash) into main memory.
-👉 Then jumps to OS code.
-
-**Result:**
-👉 Operating system starts running.
-👉 Computer is booted.
-
-**Why Not Full OS in ROM?**
-👉 OS is large; ROM is expensive and limited.
-👉 OS updates frequently; ROM difficult to update.
-👉 Mass storage is more practical.
-→ Embedded systems (smartphones) sometimes store OS in flash.
-
-**Firmware Update:**
-👉 Updating software stored in ROM (boot loader or OS).
-
----
-
-**Important Vocabulary:**
-- Booting = starting the computer (bootstrapping)
-- Boot loader = program that loads the OS
-- ROM = Read-Only Memory (nonvolatile)
-- Volatile memory = loses data when power off (RAM)
-- Nonvolatile memory = retains data when power off (ROM, flash, disk)
-- Program counter (PC) = holds address of next instruction
-- Firmware = software stored in ROM
-- Firmware update = modifying ROM contents
-
----
-
-**Quick Revision Points:**
-- CPU starts at fixed address; memory initially empty.
-- ROM at that address holds boot loader.
-- Boot loader copies OS from disk to RAM.
-- Boot loader jumps to OS → computer ready.
-- ROM is nonvolatile; RAM is volatile.
-- Full OS not in ROM because of size and update issues.`,
-
-  questions: [
-    {
-      q: 'What is the process of starting a computer called?',
-      options: ['A. Loading', 'B. Booting (bootstrapping)', 'C. Executing', 'D. Formatting'],
-      answer: 'B. Booting (bootstrapping)',
-      diff: 'easy',
-    },
-    {
-      q: 'Why is a special procedure needed to start the operating system?',
-      options: ['A. CPU is too slow', 'B. Main memory is volatile (empty at power-on)', 'C. Mass storage is too small', 'D. The OS is too large'],
-      answer: 'B. Main memory is volatile (empty at power-on)',
-      diff: 'easy',
-    },
-    {
-      q: 'Where does the CPU expect to find the beginning of a program when turned on?',
-      options: ['A. In mass storage', 'B. At a predetermined address in memory', 'C. In a register', 'D. On the network'],
-      answer: 'B. At a predetermined address in memory',
-      diff: 'easy',
-    },
-    {
-      q: 'What type of memory is used at the startup address to hold the initial program?',
-      options: ['A. Volatile RAM', 'B. Nonvolatile ROM', 'C. Cache memory', 'D. Virtual memory'],
-      answer: 'B. Nonvolatile ROM',
-      diff: 'easy',
-    },
-    {
-      q: 'What does ROM stand for?',
-      options: ['A. Random Output Memory', 'B. Read-Only Memory', 'C. Run-On Memory', 'D. Rapid Operation Memory'],
-      answer: 'B. Read-Only Memory',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the program permanently stored in ROM called?',
-      options: ['A. Operating system', 'B. Boot loader', 'C. Device driver', 'D. File manager'],
-      answer: 'B. Boot loader',
-      diff: 'easy',
-    },
-    {
-      q: 'What is the first action of the boot loader?',
-      options: ['A. Turn off the computer', 'B. Transfer the operating system from mass storage to main memory', 'C. Run a virus scan', 'D. Display the desktop'],
-      answer: 'B. Transfer the operating system from mass storage to main memory',
-      diff: 'easy',
-    },
-    {
-      q: 'After the boot loader copies the OS into main memory, what does it do?',
-      options: ['A. Restart the computer', 'B. Execute a jump instruction to the OS area', 'C. Delete itself', 'D. Power off the CPU'],
-      answer: 'B. Execute a jump instruction to the OS area',
-      diff: 'medium',
-    },
-    {
-      q: 'Why is main memory referred to as volatile?',
-      options: ['A. It is fast', 'B. It loses its contents when power is turned off', 'C. It can be written many times', 'D. It is cheap'],
-      answer: 'B. It loses its contents when power is turned off',
-      diff: 'easy',
-    },
-    {
-      q: 'Why is ROM considered nonvolatile?',
-      options: ['A. It retains data when power is off', 'B. It is faster than RAM', 'C. It can be written easily', 'D. It is larger than RAM'],
-      answer: 'A. It retains data when power is off',
-      diff: 'easy',
-    },
-    {
-      q: 'In modern PCs, ROM is often implemented using which technology?',
-      options: ['A. Magnetic tape', 'B. Flash memory', 'C. Punch cards', 'D. Paper tape'],
-      answer: 'B. Flash memory',
-      diff: 'easy',
-    },
-    {
-      q: 'Why is the entire operating system not stored in ROM?',
-      options: ['A. ROM is too slow', 'B. ROM is volatile', 'C. ROM is expensive and not efficient for large OS; updates would be difficult', 'D. ROM cannot hold data'],
-      answer: 'C. ROM is expensive and not efficient for large OS; updates would be difficult',
-      diff: 'medium',
-    },
-    {
-      q: 'What is a firmware update?',
-      options: ['A. Updating the RAM', 'B. Updating software stored in ROM (boot loader or OS)', 'C. Replacing the CPU', 'D. Adding more memory'],
-      answer: 'B. Updating software stored in ROM (boot loader or OS)',
-      diff: 'easy',
-    },
-    {
-      q: 'In embedded systems like smartphones, the operating system is often stored in:',
-      options: ['A. Magnetic disk', 'B. Special flash (nonvolatile) memory', 'C. Punch cards', 'D. Paper tape'],
-      answer: 'B. Special flash (nonvolatile) memory',
-      diff: 'easy',
-    },
-    {
-      q: 'What happens to the contents of main memory when the computer is turned off?',
-      options: ['A. They are saved to disk', 'B. They are lost', 'C. They are transferred to ROM', 'D. They remain unchanged'],
-      answer: 'B. They are lost',
-      diff: 'easy',
-    },
-    {
-      q: 'The program counter (PC) initially contains:',
-      options: ['A. The address of the boot loader in ROM', 'B. Zero', 'C. The address of the OS', 'D. The address of the first user program'],
-      answer: 'A. The address of the boot loader in ROM',
-      diff: 'medium',
-    },
-    {
-      q: 'The process of booting a computer is also known as:',
-      options: ['A. Bootstrapping', 'B. Updating firmware', 'C. Formatting', 'D. Paging'],
-      answer: 'A. Bootstrapping',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following can be used as a source to load the OS during booting?',
-      options: ['A. Hard disk', 'B. Network', 'C. Flash memory', 'D. All of the above'],
-      answer: 'D. All of the above',
-      diff: 'easy',
-    },
-    {
-      q: 'In a typical desktop computer, the operating system is stored permanently in:',
-      options: ['A. ROM', 'B. RAM', 'C. Mass storage (disk/SSD)', 'D. CPU cache'],
-      answer: 'C. Mass storage (disk/SSD)',
-      diff: 'easy',
-    },
-    {
-      q: 'What does the boot loader do after loading the OS?',
-      options: ['A. It remains in control', 'B. It transfers control to the OS via a jump', 'C. It shuts down', 'D. It erases itself'],
-      answer: 'B. It transfers control to the OS via a jump',
-      diff: 'easy',
-    },
-    {
-      q: 'Why might a computer need to boot from a network?',
-      options: ['A. It has no local disk', 'B. For diskless workstations', 'C. For centralized OS management', 'D. All of the above'],
-      answer: 'D. All of the above',
-      diff: 'easy',
-    }
-  ]
-},
-
-
-
-52: {
-  title: 'Operating Systems: Process and its Administration (Program vs Process, Process State) (CS101 Lecture 52)',
-  summary: `**Key Topics Covered:**
-- OS coordinates execution of application software, utility software, and itself
-- Distinction between program and process (fundamental OS concept)
-- Program: static set of instructions (like a music sheet)
-- Process: dynamic activity of executing a program under OS control
-- Process state: current status of the activity
-  - Value of Program Counter (next instruction)
-  - Values in other CPU registers
-  - Values in associated memory cells
-- Process state is a snapshot of the machine at a particular time
-
----
-
-**Simple Understanding:**
-
-**Program vs Process:**
-- Program: static code stored on disk (passive).
-- Process: program in execution (active).
-
-**Analogy:**
-- Program = music sheet (notes written).
-- Process = musician playing the sheet (dynamic activity).
-
-**Process State:**
-The current status of a process includes:
-- Program Counter (which instruction to execute next).
-- CPU registers (temporary data).
-- Memory cells (variables, data).
-
-**Snapshot:**
-👉 A process state is like a photograph of the machine at an instant.
-
----
-
-**Important Vocabulary:**
-- Process = executing program (dynamic)
-- Program = stored instructions (static)
-- Process state = current status (PC, registers, memory)
-- Program Counter = address of next instruction
-- Snapshot = state at a specific time
-
----
-
-**Quick Revision Points:**
-- Program is static; process is dynamic.
-- A process is a program in execution.
-- Process state includes PC, registers, memory.
-- OS coordinates multiple processes.`,
-
-  questions: [
-    {
-      q: 'What is the distinction between a program and a process?',
-      options: ['A. Program is dynamic, process is static', 'B. Program is static, process is dynamic (activity of executing)', 'C. They are the same', 'D. Program runs on hardware, process runs on software'],
-      answer: 'B. Program is static, process is dynamic (activity of executing)',
-      diff: 'easy',
-    },
-    {
-      q: 'A program stored on disk is considered:',
-      options: ['A. A process', 'B. Static (inactive)', 'C. A process state', 'D. A snapshot'],
-      answer: 'B. Static (inactive)',
-      diff: 'easy',
-    },
-    {
-      q: 'The activity of executing a program under the control of the operating system is called a:',
-      options: ['A. Program', 'B. Process', 'C. Thread', 'D. Job'],
-      answer: 'B. Process',
-      diff: 'easy',
-    },
-    {
-      q: 'Which analogy is used to explain the difference between a program and a process?',
-      options: ['A. Car and driver', 'B. Music sheet and musician playing it', 'C. Recipe and cooked food', 'D. Blueprint and building'],
-      answer: 'B. Music sheet and musician playing it',
-      diff: 'easy',
-    },
-    {
-      q: 'What is included in the process state?',
-      options: ['A. Value of Program Counter', 'B. Values in CPU registers', 'C. Values in associated memory cells', 'D. All of the above'],
-      answer: 'D. All of the above',
-      diff: 'easy',
-    },
-    {
-      q: 'The process state is essentially a:',
-      options: ['A. Future prediction', 'B. Snapshot of the machine at a particular time', 'C. List of all programs', 'D. Compilation unit'],
-      answer: 'B. Snapshot of the machine at a particular time',
-      diff: 'easy',
-    },
-    {
-      q: 'Which component of the process state tells which instruction to execute next?',
-      options: ['A. CPU registers', 'B. Memory cells', 'C. Program Counter', 'D. Accumulator'],
-      answer: 'C. Program Counter',
-      diff: 'easy',
-    },
-    {
-      q: 'A program is ________ while a process is ________.',
-      options: ['A. dynamic, static', 'B. static, dynamic', 'C. active, passive', 'D. executed, stored'],
-      answer: 'B. static, dynamic',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following is part of a process state?',
-      options: ['A. The program code on disk', 'B. Values in CPU registers', 'C. The file name', 'D. The compiler version'],
-      answer: 'B. Values in CPU registers',
-      diff: 'easy',
-    },
-    {
-      q: 'The operating system coordinates the execution of:',
-      options: ['A. Application software only', 'B. Utility software only', 'C. OS itself', 'D. All of the above'],
-      answer: 'D. All of the above',
-      diff: 'easy',
-    },
-    {
-      q: 'A single program can be associated with how many processes at a time?',
-      options: ['A. Only one', 'B. Multiple (if run multiple times)', 'C. None', 'D. Exactly one per user'],
-      answer: 'B. Multiple (if run multiple times)',
-      diff: 'medium',
-    },
-    {
-      q: 'The music sheet analogy: the sheet music represents the ________, and the musician playing it represents the ________.',
-      options: ['A. process, program', 'B. program, process', 'C. state, process', 'D. code, data'],
-      answer: 'B. program, process',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following is static?',
-      options: ['A. Process', 'B. Program on disk', 'C. Process state', 'D. Running instance'],
-      answer: 'B. Program on disk',
-      diff: 'easy',
-    },
-    {
-      q: 'Which of the following is dynamic?',
-      options: ['A. Stored executable file', 'B. Process', 'C. Source code', 'D. Library'],
-      answer: 'B. Process',
-      diff: 'easy',
-    },
-    {
-      q: 'The values in associated memory cells are part of the:',
-      options: ['A. Program', 'B. Process state', 'C. Compiler', 'D. Loader'],
-      answer: 'B. Process state',
-      diff: 'easy',
-    },
-    {
-      q: 'When the OS switches from one process to another, it must save the ________ of the current process.',
-      options: ['A. Program code', 'B. Process state', 'C. Disk files', 'D. User interface'],
-      answer: 'B. Process state',
-      diff: 'medium',
-    },
-    {
-      q: 'The concept of process is fundamental to modern operating systems because it:',
-      options: ['A. Allows multiple programs to share the CPU', 'B. Distinguishes static code from dynamic execution', 'C. Enables multitasking', 'D. All of the above'],
-      answer: 'D. All of the above',
-      diff: 'easy',
-    },
-    {
-      q: 'What does the Program Counter (PC) store?',
-      options: ['A. The result of last calculation', 'B. The address of the next instruction to execute', 'C. The total number of instructions', 'D. The current process ID'],
-      answer: 'B. The address of the next instruction to execute',
-      diff: 'easy',
-    },
-    {
-      q: 'A snapshot of the machine at a particular time is called the:',
-      options: ['A. Program image', 'B. Process state', 'C. Core dump', 'D. Context switch'],
-      answer: 'B. Process state',
-      diff: 'easy',
-    },
-    {
-      q: 'The process state does NOT include:',
-      options: ['A. Program Counter', 'B. CPU registers', 'C. The entire program source code', 'D. Values in memory cells'],
-      answer: 'C. The entire program source code',
-      diff: 'medium',
-    }
-  ]
-},
-
-
-53: {
-  title: 'Operating Systems: Process and its Administration – Scheduler, Dispatcher, Process Table, Time Slices, Interrupts (CS101 Lecture 53)',
-  summary: `**Key Topics Covered:**
-- Scheduler and dispatcher (in kernel) coordinate process execution
-- Scheduler: maintains records of processes, adds new ones, removes completed ones
-- Process table: block in main memory with entry for each process
-  - Entry includes: memory area, priority, ready/waiting state
-  - Ready: process can continue; Waiting: delayed (I/O, keyboard, message)
-- Dispatcher: oversees execution via multiprogramming (time slices)
-- Time slice: short time segment (milliseconds/microseconds) for each process
-- Process switch (context switch): changing from one process to another
-- Timer circuit generates interrupt at end of time slice
-- Interrupt: signal that preempts current process, transfers control to dispatcher
-- Interrupt handler: program (part of dispatcher) that responds to interrupt
-- CPU reacts: completes current cycle, saves process state, executes handler
-- Dispatcher selects highest priority ready process, restarts timer, starts time slice
-- Key to multiprogramming: ability to save and restore process state (PC, registers, memory)
-- Modern CPUs have hardware support for saving/restoring state on interrupt
-
----
-
-**Simple Understanding:**
-
-**Scheduler:**
-👉 Keeps track of all processes (running programs).
-👉 Adds new processes to the pool, removes finished ones.
-👉 Maintains the process table (info about each process).
-
-**Process Table Entry:**
-- Memory area assigned to the process.
-- Priority (higher priority gets CPU first).
-- Status: ready (can run) or waiting (waiting for I/O, key press, etc.).
-
-**Dispatcher:**
-👉 Gives each process a time slice to run.
-👉 Uses multiprogramming to switch between processes quickly.
-
-**Time Slice:**
-👉 Short time (ms or µs) each process gets to run.
-👉 After time slice ends, timer generates an interrupt.
-
-**Interrupt:**
-👉 Signal that stops current process.
-👉 CPU saves the process's state (program counter, registers, memory).
-👉 CPU jumps to interrupt handler (part of dispatcher).
-👉 Dispatcher picks the next ready process (highest priority) and restarts timer.
-
-**Process Switch (Context Switch):**
-👉 Changing from one process to another.
-👉 Requires saving and restoring process state.
-
-**Why Need Interrupts?**
-👉 Ensures fair sharing of CPU.
-👉 Prevents any single process from hogging the CPU.
-
----
-
-**Important Vocabulary:**
-- Scheduler = manages process table, adds/removes processes
-- Dispatcher = allocates CPU time (time slices)
-- Process table = data structure with process info
-- Ready = process can run
-- Waiting = process blocked (I/O, etc.)
-- Time slice = maximum CPU time per process
-- Process switch = context switch
-- Interrupt = signal preempting current process
-- Interrupt handler = code that responds to interrupt
-- Save state = store PC, registers, memory for later resume
-
----
-
-**Quick Revision Points:**
-- Scheduler maintains process table (memory, priority, status).
-- Dispatcher uses time slices and interrupts.
-- Timer triggers interrupt at end of time slice.
-- CPU saves process state, runs interrupt handler.
-- Dispatcher selects next ready process (highest priority).
-- Context switch = changing processes.
-- Modern CPUs have hardware support for saving/restoring state.`,
-
-  questions: [
-    {
-      q: 'Which OS components coordinate process execution?',
-      options: ['A. File manager and device driver', 'B. Scheduler and dispatcher', 'C. Memory manager and boot loader', 'D. GUI and shell'],
-      answer: 'B. Scheduler and dispatcher',
-      diff: 'easy',
-    },
-    {
-      q: 'What does the scheduler maintain in main memory to track processes?',
-      options: ['A. Process queue', 'B. Process table', 'C. Memory map', 'D. File table'],
-      answer: 'B. Process table',
-      diff: 'easy',
-    },
-    {
-      q: 'Which information is typically stored in a process table entry?',
-      options: ['A. Assigned memory area', 'B. Priority', 'C. Ready/waiting status', 'D. All of the above'],
-      answer: 'D. All of the above',
-      diff: 'easy',
-    },
-    {
-      q: 'A process is "ready" if:',
-      options: ['A. It is waiting for I/O', 'B. It can continue execution', 'C. It is finished', 'D. It is being created'],
-      answer: 'B. It can continue execution',
-      diff: 'easy',
-    },
-    {
-      q: 'A process is "waiting" if:',
-      options: ['A. It is currently running', 'B. Its progress is delayed (I/O, key press, message)', 'C. It has the highest priority', 'D. It is newly created'],
-      answer: 'B. Its progress is delayed (I/O, key press, message)',
-      diff: 'easy',
-    },
-    {
-      q: 'What does the dispatcher do in a time-sharing/multitasking system?',
-      options: ['A. Saves files', 'B. Allocates time slices to processes', 'C. Manages memory', 'D. Handles device drivers'],
-      answer: 'B. Allocates time slices to processes',
-      diff: 'easy',
-    },
-    {
-      q: 'What is a time slice?',
-      options: ['A. The time to boot the computer', 'B. A short time segment (ms/µs) allocated to a process', 'C. The time to complete a process', 'D. The time between interrupts'],
-      answer: 'B. A short time segment (ms/µs) allocated to a process',
-      diff: 'easy',
-    },
-    {
-      q: 'What happens when a time slice ends?',
-      options: ['A. The computer shuts down', 'B. A timer circuit generates an interrupt signal', 'C. The process is deleted', 'D. The scheduler stops'],
-      answer: 'B. A timer circuit generates an interrupt signal',
-      diff: 'medium',
-    },
-    {
-      q: 'What is an interrupt?',
-      options: ['A. A signal that preempts the current process and transfers control to the dispatcher', 'B. A hardware failure', 'C. A user command', 'D. A memory error'],
-      answer: 'A. A signal that preempts the current process and transfers control to the dispatcher',
-      diff: 'easy',
-    },
-    {
-      q: 'What does the interrupt handler do?',
-      options: ['A. It terminates the process', 'B. It describes how the dispatcher should respond to the interrupt', 'C. It increases the time slice', 'D. It saves the file system'],
-      answer: 'B. It describes how the dispatcher should respond to the interrupt',
-      diff: 'medium',
-    },
-    {
-      q: 'When an interrupt occurs, the CPU first:',
-      options: ['A. Shuts down', 'B. Completes its current machine cycle, saves its position in the current process', 'C. Restarts the computer', 'D. Clears all registers'],
-      answer: 'B. Completes its current machine cycle, saves its position in the current process',
-      diff: 'medium',
-    },
-    {
-      q: 'The procedure of changing from one process to another is called:',
-      options: ['A. Process switch (context switch)', 'B. Priority inversion', 'C. Time sharing', 'D. Multiprogramming'],
-      answer: 'A. Process switch (context switch)',
-      diff: 'easy',
-    },
-    {
-      q: 'Why is the ability to save and restore process state critical for multiprogramming?',
-      options: ['A. To reduce memory usage', 'B. To allow processes to be stopped and later restarted', 'C. To increase CPU speed', 'D. To simplify device drivers'],
-      answer: 'B. To allow processes to be stopped and later restarted',
-      diff: 'easy',
-    },
-    {
-      q: 'What does the process state include?',
-      options: ['A. Program counter', 'B. CPU registers', 'C. Pertinent memory cells', 'D. All of the above'],
-      answer: 'D. All of the above',
-      diff: 'easy',
-    },
-    {
-      q: 'After an interrupt, how does the dispatcher select the next process?',
-      options: ['A. Randomly', 'B. The one with the highest priority among ready processes', 'C. The longest waiting process', 'D. The largest memory size'],
-      answer: 'B. The one with the highest priority among ready processes',
-      diff: 'easy',
-    },
-    {
-      q: 'The dispatcher restarts the timer circuit after:',
-      options: ['A. Selecting a process', 'B. Saving the process table', 'C. Loading the OS', 'D. Shutting down'],
-      answer: 'A. Selecting a process',
-      diff: 'medium',
-    },
-    {
-      q: 'Modern CPUs often include machine-language instructions to:',
-      options: ['A. Disable interrupts', 'B. Reload a previously saved process state', 'C. Increase clock speed', 'D. Delete processes'],
-      answer: 'B. Reload a previously saved process state',
-      diff: 'medium',
-    },
-    {
-      q: 'Multiprogramming divides time into short segments called:',
-      options: ['A. Process blocks', 'B. Time slices', 'C. Interrupt handlers', 'D. Context units'],
-      answer: 'B. Time slices',
-      diff: 'easy',
-    },
-    {
-      q: 'Who adds a new process to the pool of current processes?',
-      options: ['A. Dispatcher', 'B. Interrupt handler', 'C. Scheduler', 'D. Memory manager'],
-      answer: 'C. Scheduler',
-      diff: 'easy',
-    },
-    {
-      q: 'The interrupt handler is part of which OS component?',
-      options: ['A. Scheduler', 'B. Dispatcher', 'C. File manager', 'D. Device driver'],
-      answer: 'B. Dispatcher',
-      diff: 'medium',
-    },
-    {
-      q: 'What happens to the process state when an interrupt occurs?',
-      options: ['A. It is lost', 'B. It is saved so the process can be resumed later', 'C. It is transferred to another process', 'D. It is deleted'],
-      answer: 'B. It is saved so the process can be resumed later',
-      diff: 'easy',
-    },
-    {
-      q: 'The concept of preemptive multitasking relies on:',
-      options: ['A. Processes voluntarily yielding CPU', 'B. Timer interrupts to force process switches', 'C. No interrupts', 'D. Single process at a time'],
-      answer: 'B. Timer interrupts to force process switches',
-      diff: 'easy',
-    },
-    {
-      q: 'If a process is waiting for a key press, its status is:',
-      options: ['A. Ready', 'B. Waiting', 'C. Running', 'D. Terminated'],
-      answer: 'B. Waiting',
-      diff: 'easy',
-    }
-  ]
-},
-
-54: {
-  title: "Operating Systems: Handling Competition between Processes",
-  summary: `**Key Topics Covered:**
-- Resource allocation by operating system components
-- File manager, memory manager, scheduler, dispatcher roles
-- Competition for resources
-- Deadlock scenario (circular wait)
-
----
-
-**Simple Understanding:**
-
-**Resource Allocation in OS:**
-👉 Operating system allocates resources (peripheral devices, internal features) to processes.
-👉 Different managers handle different resources:
-
-| Manager | Allocates |
-|---------|-----------|
-| File manager | Access to files, mass storage space for new files |
-| Memory manager | Memory space |
-| Scheduler | Space in process table |
-| Dispatcher | Time slices (CPU time) |
-
----
-
-**Why Resource Allocation is Tricky:**
-👉 At first glance, it seems simple – just give resources to processes.
-👉 But there are subtle problems that can cause system malfunctions.
-👉 A computer only follows instructions; it does not think for itself.
-👉 To build a reliable OS, we must design algorithms that handle every possible situation.
-
----
-
-**Common Resource Allocation Issues:**
-
-1. **Two processes demand the same resource at the same time**
-   - Only one can get it; the other must wait.
-
-2. **Deadlock (Circular Wait)**
-   - Process A holds Resource 1 and waits for Resource 2.
-   - Process B holds Resource 2 and waits for Resource 1.
-   - Neither can proceed → system freezes.
-
-👉 **Figure 57** (mentioned but not shown) illustrates this deadlock situation.
-
----
-
-**Important Vocabulary:**
-- Resource = anything a process needs (memory, files, CPU time, devices)
-- File manager = allocates file access and storage space
-- Memory manager = allocates RAM to processes
-- Scheduler = allocates space in process table
-- Dispatcher = allocates CPU time slices
-- Deadlock = circular waiting where no process can proceed
-- Competition = multiple processes needing the same resource
-
----
-
-**Quick Revision Points:**
-- Resource allocation is a key OS task.
-- Different managers allocate different resources.
-- Competition can lead to deadlock.
-- Deadlock example: A holds R1 waits for R2; B holds R2 waits for R1.
-- Reliable OS needs algorithms to prevent/handle deadlocks.
-- Machine follows instructions – OS designer must anticipate all scenarios.`,
-  questions: [
-    {
-      q: "Which component allocates access to files and mass storage space?",
-      options: ["A. Memory manager", "B. File manager", "C. Scheduler", "D. Dispatcher"],
-      answer: "B. File manager",
-      diff: "easy"
-    },
-    {
-      q: "Which component allocates memory space to processes?",
-      options: ["A. File manager", "B. Memory manager", "C. Scheduler", "D. Dispatcher"],
-      answer: "B. Memory manager",
-      diff: "easy"
-    },
-    {
-      q: "Which component allocates space in the process table?",
-      options: ["A. File manager", "B. Memory manager", "C. Scheduler", "D. Dispatcher"],
-      answer: "C. Scheduler",
-      diff: "easy"
-    },
-    {
-      q: "Which component allocates time slices (CPU time) to processes?",
-      options: ["A. File manager", "B. Memory manager", "C. Scheduler", "D. Dispatcher"],
-      answer: "D. Dispatcher",
-      diff: "easy"
-    },
-    {
-      q: "A situation where Process A holds Resource 1 and waits for Resource 2, while Process B holds Resource 2 and waits for Resource 1 is called:",
-      options: ["A. Starvation", "B. Deadlock", "C. Race condition", "D. Thrashing"],
-      answer: "B. Deadlock",
-      diff: "easy"
-    },
-    {
-      q: "The problem of two processes demanding the same resource at the same time is an example of:",
-      options: ["A. Deadlock", "B. Competition for resources", "C. Thrashing", "D. Fragmentation"],
-      answer: "B. Competition for resources",
-      diff: "easy"
-    },
-    {
-      q: "In the deadlock example described, Process A holds _____ and waits for _____.",
-      options: ["A. Resource 1, Resource 1", "B. Resource 2, Resource 1", "C. Resource 1, Resource 2", "D. Resource 2, Resource 2"],
-      answer: "C. Resource 1, Resource 2",
-      diff: "medium"
-    },
-    {
-      q: "In the deadlock example, Process B holds _____ and waits for _____.",
-      options: ["A. Resource 1, Resource 1", "B. Resource 2, Resource 1", "C. Resource 1, Resource 2", "D. Resource 2, Resource 2"],
-      answer: "B. Resource 2, Resource 1",
-      diff: "medium"
-    },
-    {
-      q: "Why is resource allocation more complex than it first appears?",
-      options: ["A. Because resources are unlimited", "B. Because of subtle issues like deadlock", "C. Because processes never compete", "D. Because the OS thinks for itself"],
-      answer: "B. Because of subtle issues like deadlock",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is NOT a resource allocated by the OS?",
-      options: ["A. Memory space", "B. Process table space", "C. CPU time", "D. User passwords"],
-      answer: "D. User passwords",
-      diff: "easy"
-    },
-    {
-      q: "The operating system must cover every possible contingency because:",
-      options: ["A. The machine thinks for itself", "B. The machine merely follows instructions", "C. Resources are infinite", "D. Processes never compete"],
-      answer: "B. The machine merely follows instructions",
-      diff: "medium"
-    },
-    {
-      q: "Deadlock occurs when processes are in a state of:",
-      options: ["A. Circular waiting", "B. Sequential execution", "C. Parallel execution", "D. No waiting"],
-      answer: "A. Circular waiting",
-      diff: "easy"
-    },
-    {
-      q: "The allocation of mass storage space for the construction of new files is done by the:",
-      options: ["A. Memory manager", "B. File manager", "C. Scheduler", "D. Dispatcher"],
-      answer: "B. File manager",
-      diff: "medium"
-    },
-    {
-      q: "In a deadlock situation, the processes involved:",
-      options: ["A. Continue to run normally", "B. Terminate immediately", "C. Cannot proceed because each is waiting for the other", "D. Are given more resources"],
-      answer: "C. Cannot proceed because each is waiting for the other",
-      diff: "easy"
-    },
-    {
-      q: "The term 'resource' in OS context includes:",
-      options: ["A. Only CPU", "B. Only memory", "C. Peripheral devices and internal features", "D. Only files"],
-      answer: "C. Peripheral devices and internal features",
-      diff: "easy"
-    },
-    {
-      q: "To build a reliable operating system, we must:",
-      options: ["A. Ignore rare contingencies", "B. Design algorithms that cover every possible contingency", "C. Let the machine decide", "D. Use only one resource"],
-      answer: "B. Design algorithms that cover every possible contingency",
-      diff: "easy"
-    },
-    {
-      q: "The dispatcher allocates:",
-      options: ["A. Memory space", "B. Process table space", "C. Time slices", "D. File access"],
-      answer: "C. Time slices",
-      diff: "easy"
-    },
-    {
-      q: "The scheduler allocates:",
-      options: ["A. Memory space", "B. Space in the process table", "C. Time slices", "D. File access"],
-      answer: "B. Space in the process table",
-      diff: "easy"
-    },
-    {
-      q: "If Process A is using the printer and waiting for the scanner, while Process B is using the scanner and waiting for the printer, this is an example of:",
-      options: ["A. Deadlock", "B. Successful resource sharing", "C. Priority inversion", "D. Thrashing"],
-      answer: "A. Deadlock",
-      diff: "easy"
-    },
-    {
-      q: "The text suggests that solutions to resource competition problems will be discussed:",
-      options: ["A. In previous modules", "B. In next modules", "C. Never", "D. In this module only"],
-      answer: "B. In next modules",
-      diff: "easy"
-    }
-  ]
-},
-55: {
-  title: "Operating Systems: Semaphores",
-  summary: `**Key Topics Covered:**
-- Controlling access to shared resources (e.g., printer)
-- Flag-based access control and its problem
-- Interrupt disable/enable solution
-- Test-and-set instruction
-- Semaphore definition
-- Critical region and mutual exclusion
-
----
-
-**Simple Understanding:**
-
-**The Problem: Sharing a Printer**
-👉 Multiple processes may need to use a single printer.
-👉 Only one process can use the printer at a time; simultaneous access would produce worthless results.
-👉 OS must track whether printer is allocated.
-
-**Flag (Binary) Approach:**
-👉 Use a flag in memory: clear (0) = printer available, set (1) = printer allocated.
-👉 Process requests printer → OS checks flag.
-   - If clear: grant request, set flag.
-   - If set: make process wait.
-👉 When process finishes: either give to waiting process or clear flag.
-
----
-
-**The Problem with Simple Flags:**
-👉 Testing and setting the flag requires several machine instructions.
-👉 Possible interruption after testing (flag clear) but before setting.
-👉 Example scenario:
-   1. Process A tests flag → clear (printer available).
-   2. Process A interrupted before setting flag.
-   3. Process B runs, tests flag → still clear (because A didn't set it yet).
-   4. OS grants printer to Process B.
-   5. Process A resumes, sets flag, also gets printer.
-   6. **Two processes using same printer → conflict!**
-
----
-
-**Solution 1: Disable Interrupts**
-👉 Use **interrupt disable** instruction at start of flag-testing routine.
-👉 Use **interrupt enable** instruction at end.
-👉 No interrupts can occur during the critical testing+setting sequence.
-👉 Problem: Disabling interrupts for long periods affects system responsiveness.
-
----
-
-**Solution 2: Test-and-Set Instruction**
-👉 A single machine instruction that:
-   - Retrieves the value of a flag
-   - Notes the value received
-   - Sets the flag to 1
-👉 All within one instruction → CPU cannot be interrupted in between.
-👉 Guarantees atomic (uninterruptible) test-and-set.
-
----
-
-**Semaphore Definition:**
-👉 A properly implemented flag (using test-and-set or interrupt disable) is called a **semaphore**.
-👉 Named after railroad signals that control access to track sections.
-
----
-
-**Critical Region and Mutual Exclusion:**
-👉 **Critical region:** A sequence of instructions that should be executed by only one process at a time.
-👉 **Mutual exclusion:** The requirement that only one process executes a critical region at any moment.
-👉 Guard critical region with a semaphore:
-   - Enter: test-and-set semaphore (wait if set, else set and enter)
-   - Exit: clear semaphore
-
----
-
-**Important Vocabulary:**
-- Flag = bit in memory (set/clear, 1/0)
-- Interrupt disable/enable = CPU instructions to block/unblock interrupts
-- Test-and-set = atomic instruction that tests and sets a flag
-- Semaphore = synchronization tool (from railroad signals)
-- Critical region = code segment requiring mutual exclusion
-- Mutual exclusion = only one process at a time in critical region
-
----
-
-**Quick Revision Points:**
-- Simple flags fail because test and set can be interrupted.
-- Need atomic (uninterruptible) test-and-set.
-- Interrupt disable/enable works but may degrade performance.
-- Test-and-set instruction is hardware-supported solution.
-- Semaphore guards critical regions.
-- Mutual exclusion prevents race conditions.
-- Entry: test-and-set (wait if set); Exit: clear.`,
-  questions: [
-    {
-      q: "A simple flag approach for printer allocation fails because:",
-      options: ["A. Flags are too slow", "B. Testing and setting the flag can be interrupted", "C. Flags use too much memory", "D. Processes never request the printer"],
-      answer: "B. Testing and setting the flag can be interrupted",
-      diff: "easy"
-    },
-    {
-      q: "In a simple flag system, a clear flag (0) means:",
-      options: ["A. Printer is in use", "B. Printer is available", "C. Printer is broken", "D. Printer is waiting"],
-      answer: "B. Printer is available",
-      diff: "easy"
-    },
-    {
-      q: "In a simple flag system, a set flag (1) means:",
-      options: ["A. Printer is available", "B. Printer is currently allocated", "C. Printer is off", "D. No process is using printer"],
-      answer: "B. Printer is currently allocated",
-      diff: "easy"
-    },
-    {
-      q: "The problem described where two processes both get printer access occurs because:",
-      options: ["A. The printer is too fast", "B. The OS is buggy", "C. One process tested the flag clear, was interrupted, then another process also tested it clear before first set it", "D. The flag is in the wrong memory location"],
-      answer: "C. One process tested the flag clear, was interrupted, then another process also tested it clear before first set it",
-      diff: "medium"
-    },
-    {
-      q: "One solution to the flag problem is to use interrupt disable/enable instructions. This ensures:",
-      options: ["A. All interrupts are permanently disabled", "B. The test-and-set routine cannot be interrupted", "C. The printer works faster", "D. Only one process exists"],
-      answer: "B. The test-and-set routine cannot be interrupted",
-      diff: "medium"
-    },
-    {
-      q: "The test-and-set instruction is advantageous because:",
-      options: ["A. It uses less memory", "B. It is a single machine instruction that cannot be interrupted", "C. It runs faster than interrupts", "D. It works without a CPU"],
-      answer: "B. It is a single machine instruction that cannot be interrupted",
-      diff: "medium"
-    },
-    {
-      q: "A properly implemented flag used for synchronization is called a:",
-      options: ["A. Mutex", "B. Semaphore", "C. Monitor", "D. Pipe"],
-      answer: "B. Semaphore",
-      diff: "easy"
-    },
-    {
-      q: "The term 'semaphore' comes from:",
-      options: ["A. Computer memory", "B. Railroad signals", "C. Ship flags", "D. Traffic lights"],
-      answer: "B. Railroad signals",
-      diff: "easy"
-    },
-    {
-      q: "A sequence of instructions that should be executed by only one process at a time is called a:",
-      options: ["A. Critical region", "B. Semaphore region", "C. Mutual region", "D. Exclusive region"],
-      answer: "A. Critical region",
-      diff: "easy"
-    },
-    {
-      q: "The requirement that only one process at a time executes a critical region is called:",
-      options: ["A. Critical exclusion", "B. Mutual exclusion", "C. Semaphore exclusion", "D. Process exclusion"],
-      answer: "B. Mutual exclusion",
-      diff: "easy"
-    },
-    {
-      q: "To enter a critical region guarded by a semaphore, a process must:",
-      options: ["A. Find semaphore set, then set it", "B. Find semaphore clear, then set it", "C. Clear the semaphore", "D. Ignore the semaphore"],
-      answer: "B. Find semaphore clear, then set it",
-      diff: "medium"
-    },
-    {
-      q: "Upon exiting a critical region, the process must:",
-      options: ["A. Set the semaphore", "B. Clear the semaphore", "C. Disable interrupts", "D. Terminate"],
-      answer: "B. Clear the semaphore",
-      diff: "easy"
-    },
-    {
-      q: "If a semaphore is found in its set state, a process trying to enter the critical region should:",
-      options: ["A. Enter anyway", "B. Wait until the semaphore is cleared", "C. Set the semaphore again", "D. Terminate"],
-      answer: "B. Wait until the semaphore is cleared",
-      diff: "easy"
-    },
-    {
-      q: "Disabling interrupts for the entire flag-testing routine can cause:",
-      options: ["A. Increased system responsiveness", "B. Decreased system responsiveness (interrupts blocked too long)", "C. Printer damage", "D. Memory leaks"],
-      answer: "B. Decreased system responsiveness (interrupts blocked too long)",
-      diff: "medium"
-    },
-    {
-      q: "The test-and-set instruction retrieves the flag value, notes it, and then:",
-      options: ["A. Clears the flag", "B. Sets the flag", "C. Leaves it unchanged", "D. Toggles the flag"],
-      answer: "B. Sets the flag",
-      diff: "medium"
-    },
-    {
-      q: "The main advantage of test-and-set over interrupt disable/enable is:",
-      options: ["A. It is simpler to code", "B. It does not block all interrupts for potentially long periods", "C. It uses less power", "D. It works on all CPUs"],
-      answer: "B. It does not block all interrupts for potentially long periods",
-      diff: "hard"
-    },
-    {
-      q: "In the problematic scenario, Process A was interrupted after it had:",
-      options: ["A. Set the flag", "B. Found the flag clear but before setting it", "C. Finished using the printer", "D. Cleared the flag"],
-      answer: "B. Found the flag clear but before setting it",
-      diff: "medium"
-    },
-    {
-      q: "The CPU recognizes interrupts:",
-      options: ["A. In the middle of an instruction", "B. Between instructions", "C. Only when interrupts are enabled", "D. Both B and C"],
-      answer: "D. Both B and C",
-      diff: "hard"
-    },
-    {
-      q: "A semaphore that can only be 0 or 1 is specifically called a:",
-      options: ["A. Counting semaphore", "B. Binary semaphore", "C. Mutex semaphore", "D. Lock semaphore"],
-      answer: "B. Binary semaphore",
-      diff: "medium"
-    },
-    {
-      q: "The purpose of using a semaphore for printer access is to achieve:",
-      options: ["A. Faster printing", "B. Mutual exclusion", "C. Higher memory usage", "D. Multiple processes printing simultaneously"],
-      answer: "B. Mutual exclusion",
-      diff: "easy"
-    }
-  ]
-},
-
-56: {
-  title: "Operating Systems: Deadlock",
-  summary: `**Key Topics Covered:**
-- Definition of deadlock
-- Three conditions for deadlock (non-sharable resources, partial allocation, no forcible retrieval)
-- Deadlock detection and correction (killing processes)
-- Deadlock avoidance (request all resources at once, spooling)
-
----
-
-**Simple Understanding:**
-
-**What is Deadlock?**
-👉 Two or more processes blocked forever, each waiting for a resource held by another.
-👉 Example: Process A has printer, waits for CD player. Process B has CD player, waits for printer. Neither can proceed.
-
-👉 Another example: Process table full. Each process needs to create another process (fork) to complete. No space left → deadlock.
-
----
-
-**Three Conditions for Deadlock (ALL must be present):**
-1. **Non-sharable resources** – Resources cannot be used by multiple processes at once.
-2. **Partial allocation** – Processes request resources gradually (get some, then ask for more later).
-3. **No forcible retrieval** – Once a resource is allocated, it cannot be taken away forcibly.
-
-👉 **Key insight:** If any one condition is removed, deadlock cannot occur.
-
----
-
-**Deadlock Detection and Correction (Attack condition #3):**
-👉 Assume deadlock is rare.
-👉 Detect when it happens, then correct by forcibly retrieving resources.
-👉 Example: Full process table → kill (terminate) some processes to free space.
-👉 This breaks deadlock; remaining processes continue.
-
----
-
-**Deadlock Avoidance (Attack conditions #1 or #2):**
-
-**Attack condition #2 (partial allocation):**
-👉 Require each process to request ALL its resources at once (not gradually).
-
-**Attack condition #1 (non-sharable resources):**
-👉 Convert non-sharable resources into sharable ones.
-👉 **Spooling** (Simultaneous Peripheral Operation On-Line):
-   - OS pretends to give printer access to multiple processes.
-   - Actually stores print data to disk (mass storage).
-   - Later, when printer is free, OS transfers data from disk to printer.
-   - Creates illusion of multiple printers – resource appears sharable.
-
----
-
-**Important Vocabulary:**
-- Deadlock = circular waiting for resources
-- Non-sharable resource = cannot be used by multiple processes simultaneously
-- Partial allocation = request resources in stages
-- Forcible retrieval = taking a resource away without process cooperation
-- Forking = creating a new process (UNIX term)
-- Killing = forcibly terminating a process
-- Spooling = holding output data temporarily to share a non-sharable device
-
----
-
-**Quick Revision Points:**
-- Deadlock requires all three conditions.
-- Remove any one condition → deadlock impossible.
-- Detection + correction: let deadlock happen, then fix (e.g., kill processes).
-- Avoidance: request all resources at once OR use spooling.
-- Spooling makes printer appear sharable by storing data to disk.`,
-  questions: [
-    {
-      q: "Deadlock is a condition in which:",
-      options: ["A. One process runs faster than others", "B. Two or more processes are blocked, each waiting for a resource held by another", "C. The CPU overheats", "D. Memory is full"],
-      answer: "B. Two or more processes are blocked, each waiting for a resource held by another",
-      diff: "easy"
-    },
-    {
-      q: "How many conditions must be satisfied for deadlock to occur?",
-      options: ["A. 1", "B. 2", "C. 3", "D. 4"],
-      answer: "C. 3",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is NOT one of the three deadlock conditions?",
-      options: ["A. Competition for non-sharable resources", "B. Resources requested on a partial basis", "C. Resources can be forcibly retrieved", "D. Once allocated, resources cannot be forcibly retrieved"],
-      answer: "C. Resources can be forcibly retrieved",
-      diff: "medium"
-    },
-    {
-      q: "The condition 'resources are requested on a partial basis' means:",
-      options: ["A. Processes request all resources at once", "B. Processes request some resources, then later request more", "C. Resources are shared", "D. Resources are never released"],
-      answer: "B. Processes request some resources, then later request more",
-      diff: "easy"
-    },
-    {
-      q: "If any one of the three deadlock conditions is removed:",
-      options: ["A. Deadlock becomes more likely", "B. Deadlock cannot occur", "C. Deadlock occurs randomly", "D. Nothing changes"],
-      answer: "B. Deadlock cannot occur",
-      diff: "easy"
-    },
-    {
-      q: "A classic example of deadlock is:",
-      options: ["A. Process A has printer, waits for CD; Process B has CD, waits for printer", "B. Two processes sharing a printer", "C. One process using CPU and memory", "D. A single process waiting for user input"],
-      answer: "A. Process A has printer, waits for CD; Process B has CD, waits for printer",
-      diff: "easy"
-    },
-    {
-      q: "The UNIX term for creating a new process is called:",
-      options: ["A. Spawning", "B. Forking", "C. Cloning", "D. Duplicating"],
-      answer: "B. Forking",
-      diff: "easy"
-    },
-    {
-      q: "If the process table is full and each process needs to create another process to complete, this can lead to:",
-      options: ["A. Faster execution", "B. Deadlock", "C. More memory available", "D. Printer sharing"],
-      answer: "B. Deadlock",
-      diff: "easy"
-    },
-    {
-      q: "Deadlock detection and correction schemes attack which condition?",
-      options: ["A. First condition (non-sharable resources)", "B. Second condition (partial allocation)", "C. Third condition (no forcible retrieval)", "D. None of the above"],
-      answer: "C. Third condition (no forcible retrieval)",
-      diff: "medium"
-    },
-    {
-      q: "In deadlock detection and correction, when deadlock occurs, the OS:",
-      options: ["A. Ignores it", "B. Forcibly retrieves some resources (e.g., kills processes)", "C. Reboots the system", "D. Waits forever"],
-      answer: "B. Forcibly retrieves some resources (e.g., kills processes)",
-      diff: "easy"
-    },
-    {
-      q: "The technical term for terminating a process is:",
-      options: ["A. Stopping", "B. Killing", "C. Ending", "D. Halting"],
-      answer: "B. Killing",
-      diff: "easy"
-    },
-    {
-      q: "Deadlock avoidance schemes attack which conditions?",
-      options: ["A. First and second", "B. Second and third", "C. First and third", "D. Only third"],
-      answer: "A. First and second",
-      diff: "medium"
-    },
-    {
-      q: "One deadlock avoidance technique attacks the second condition by:",
-      options: ["A. Making resources sharable", "B. Requiring each process to request all its resources at once", "C. Forcibly retrieving resources", "D. Killing processes"],
-      answer: "B. Requiring each process to request all its resources at once",
-      diff: "medium"
-    },
-    {
-      q: "Spooling is a technique that attacks which deadlock condition?",
-      options: ["A. Third condition", "B. Second condition", "C. First condition (converts non-sharable to sharable)", "D. None"],
-      answer: "C. First condition (converts non-sharable to sharable)",
-      diff: "medium"
-    },
-    {
-      q: "In spooling, when a process requests a printer, the OS:",
-      options: ["A. Gives direct access to printer", "B. Denies the request", "C. Stores the output in mass storage instead of sending to printer", "D. Shuts down the printer"],
-      answer: "C. Stores the output in mass storage instead of sending to printer",
-      diff: "medium"
-    },
-    {
-      q: "Spooling creates the illusion of:",
-      options: ["A. Multiple CPUs", "B. More than one printer", "C. Faster printing", "D. Less memory usage"],
-      answer: "B. More than one printer",
-      diff: "easy"
-    },
-    {
-      q: "The term 'spooling' stands for:",
-      options: ["A. Simultaneous Peripheral Operation On-Line", "B. Single Printer Output Operation", "C. Spooled Print Output", "D. Serial Processing of Output"],
-      answer: "A. Simultaneous Peripheral Operation On-Line",
-      diff: "hard"
-    },
-    {
-      q: "If a deadlock occurs due to a full process table, one correction method is:",
-      options: ["A. Add more memory", "B. Kill some processes to free space", "C. Reboot the system", "D. Ignore it"],
-      answer: "B. Kill some processes to free space",
-      diff: "easy"
-    },
-    {
-      q: "Which approach considers deadlock so rare that no effort is made to avoid it?",
-      options: ["A. Deadlock avoidance", "B. Deadlock detection and correction", "C. Spooling", "D. Request all resources at once"],
-      answer: "B. Deadlock detection and correction",
-      diff: "easy"
-    },
-    {
-      q: "The three deadlock conditions were isolated to show that:",
-      options: ["A. Deadlock is unavoidable", "B. Removing any one condition prevents deadlock", "C. Deadlock is a myth", "D. Deadlock only occurs in printers"],
-      answer: "B. Removing any one condition prevents deadlock",
-      diff: "easy"
-    }
-  ]
-},
-
-57: {
-  title: "Operating Systems: Security Attacks from outside",
-  summary: `**Key Topics Covered:**
-- User accounts and login procedure
-- Super user / administrator privileges
-- Auditing software for detecting attacks
-- Sniffing software and login simulation attacks
-- User carelessness as security weakness
-- Security policies
-
----
-
-**Simple Understanding:**
-
-**User Accounts:**
-👉 Operating systems protect resources from unauthorized access.
-👉 Create **accounts** for authorized users – each account has:
-   - User's name
-   - Password
-   - Privileges (what the user is allowed to do)
-👉 **Login procedure:** User establishes initial contact with OS.
-
----
-
-**Super User (Administrator):**
-👉 Person who creates and manages accounts.
-👉 Gains highly privileged access by identifying as administrator (name + password).
-👉 Can:
-   - Alter OS settings
-   - Modify critical software
-   - Adjust privileges of other users
-   - Perform maintenance activities denied to normal users
-👉 From this "lofty perch," can also monitor activity to detect destructive behavior.
-
----
-
-**Auditing Software:**
-👉 Utilities that record and analyze activities in the computer system.
-👉 Helps detect:
-   - **Flood of failed login attempts** → someone trying to guess passwords (unauthorized access attempt)
-   - **Unusual account behavior** (e.g., word processor user suddenly accessing technical software) → possible account takeover
-
----
-
-**Sniffing Software:**
-👉 Malicious program that records activities and reports to an intruder.
-👉 Classic example: **fake login program**
-   - Simulates real OS login screen.
-   - Tricks authorized users into entering their name and password.
-   - User thinks they are talking to OS, but actually giving credentials to impostor.
-
----
-
-**User Carelessness – Major Security Obstacle:**
-👉 Users choose **easy-to-guess passwords** (names, dates).
-👉 Users **share passwords** with friends.
-👉 Users **fail to change passwords** regularly.
-👉 Users transfer storage devices between machines (risk of data exposure).
-👉 Users import **unapproved software** that may subvert security.
-
----
-
-**Solution:**
-👉 Institutions adopt and enforce **security policies** cataloging user requirements and responsibilities.
-
----
-
-**Important Vocabulary:**
-- Account = record with name, password, privileges
-- Login procedure = initial contact with OS
-- Super user / administrator = highly privileged user
-- Auditing software = records/analyzes system activity
-- Sniffing software = records activities for intruder
-- Fake login program = impersonates OS login to steal credentials
-- Security policy = rules for user behavior
-
----
-
-**Quick Revision Points:**
-- OS protects resources via user accounts.
-- Administrator has special privileges.
-- Auditing software detects abnormal activity.
-- Sniffing software (e.g., fake login) steals credentials.
-- User carelessness (weak passwords, sharing) is a major risk.
-- Security policies enforce good practices.`,
-  questions: [
-    {
-      q: "The record within the operating system containing user name, password, and privileges is called a(n):",
-      options: ["A. File", "B. Account", "C. Directory", "D. Process"],
-      answer: "B. Account",
-      diff: "easy"
-    },
-    {
-      q: "The sequence of transactions in which a user establishes initial contact with the OS is called the:",
-      options: ["A. Boot procedure", "B. Login procedure", "C. Installation procedure", "D. Shutdown procedure"],
-      answer: "B. Login procedure",
-      diff: "easy"
-    },
-    {
-      q: "The person who establishes user accounts and has highly privileged access is called the:",
-      options: ["A. Normal user", "B. Guest", "C. Super user or administrator", "D. Operator"],
-      answer: "C. Super user or administrator",
-      diff: "easy"
-    },
-    {
-      q: "The administrator can perform all of the following EXCEPT:",
-      options: ["A. Alter OS settings", "B. Modify critical software", "C. Adjust user privileges", "D. Access other users' private files without any record"],
-      answer: "D. Access other users' private files without any record",
-      diff: "medium"
-    },
-    {
-      q: "Software that records and analyzes activities in the computer system to detect destructive behavior is called:",
-      options: ["A. Sniffing software", "B. Auditing software", "C. Malware", "D. Antivirus software"],
-      answer: "B. Auditing software",
-      diff: "easy"
-    },
-    {
-      q: "A flood of login attempts using incorrect passwords may indicate:",
-      options: ["A. A busy system", "B. An unauthorized user trying to gain access", "C. A hardware failure", "D. Normal user behavior"],
-      answer: "B. An unauthorized user trying to gain access",
-      diff: "easy"
-    },
-    {
-      q: "If a user who normally uses only word processing suddenly starts accessing highly technical software, auditing software might detect this as:",
-      options: ["A. Normal behavior", "B. Possible account takeover by an unauthorized user", "C. A system crash", "D. A printer error"],
-      answer: "B. Possible account takeover by an unauthorized user",
-      diff: "medium"
-    },
-    {
-      q: "Software that records activities and later reports them to an intruder is called:",
-      options: ["A. Auditing software", "B. Sniffing software", "C. Encryption software", "D. Compression software"],
-      answer: "B. Sniffing software",
-      diff: "easy"
-    },
-    {
-      q: "An old example of sniffing software is a program that:",
-      options: ["A. Encrypts files", "B. Simulates the OS login procedure to steal passwords", "C. Backs up data", "D. Defragments the hard drive"],
-      answer: "B. Simulates the OS login procedure to steal passwords",
-      diff: "easy"
-    },
-    {
-      q: "One major obstacle to computer security is:",
-      options: ["A. Strong encryption", "B. Carelessness of users", "C. Fast processors", "D. Large memory"],
-      answer: "B. Carelessness of users",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is an example of user carelessness?",
-      options: ["A. Changing passwords regularly", "B. Choosing easy-to-guess passwords", "C. Using approved software only", "D. Keeping passwords secret"],
-      answer: "B. Choosing easy-to-guess passwords",
-      diff: "easy"
-    },
-    {
-      q: "Users often share passwords with friends, which is considered:",
-      options: ["A. Good practice", "B. A security risk", "C. Required by the OS", "D. Safe if the friend is trusted"],
-      answer: "B. A security risk",
-      diff: "easy"
-    },
-    {
-      q: "Importing unapproved software into a system can:",
-      options: ["A. Improve security", "B. Subvert the system's security", "C. Only affect performance", "D. Be harmless"],
-      answer: "B. Subvert the system's security",
-      diff: "medium"
-    },
-    {
-      q: "Most institutions with large computer installations respond to user carelessness by:",
-      options: ["A. Ignoring it", "B. Adopting and enforcing security policies", "C. Disconnecting from the network", "D. Giving everyone administrator rights"],
-      answer: "B. Adopting and enforcing security policies",
-      diff: "easy"
-    },
-    {
-      q: "The fake login program tricks users into:",
-      options: ["A. Installing updates", "B. Supplying their name and password to an impostor", "C. Restarting the computer", "D. Deleting files"],
-      answer: "B. Supplying their name and password to an impostor",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is NOT a typical administrator privilege?",
-      options: ["A. Altering OS settings", "B. Modifying critical software", "C. Browsing the web as a normal user", "D. Adjusting user privileges"],
-      answer: "C. Browsing the web as a normal user",
-      diff: "medium"
-    },
-    {
-      q: "Auditing software may expose unusual account behavior that indicates:",
-      options: ["A. The user is working overtime", "B. An unauthorized user may have gained access", "C. The printer is out of paper", "D. The system needs a reboot"],
-      answer: "B. An unauthorized user may have gained access",
-      diff: "easy"
-    },
-    {
-      q: "One reason users fail to maintain security is that they:",
-      options: ["A. Change passwords too often", "B. Fail to change passwords on a timely basis", "C. Use strong passwords", "D. Encrypt all data"],
-      answer: "B. Fail to change passwords on a timely basis",
-      diff: "easy"
-    },
-    {
-      q: "Transferring offline mass storage devices back and forth between machines can lead to:",
-      options: ["A. Faster performance", "B. Potential degradation and security risks", "C. Automatic encryption", "D. No effect"],
-      answer: "B. Potential degradation and security risks",
-      diff: "medium"
-    },
-    {
-      q: "The 'lofty perch' of the administrator refers to their ability to:",
-      options: ["A. Use the computer faster", "B. Monitor activity and perform maintenance denied to normal users", "C. Play games", "D. Access the internet"],
-      answer: "B. Monitor activity and perform maintenance denied to normal users",
-      diff: "easy"
-    }
-  ]
-},
-
-58: {
-  title: "Operating Systems: Security Attacks from inside",
-  summary: `**Key Topics Covered:**
-- Intruder gaining access to system (admin vs user account)
-- Memory protection via limit registers
-- Privileged mode vs non-privileged mode
-- Privileged instructions
-- CPU privilege level switching
-- Consequences of security flaws
-
----
-
-**Simple Understanding:**
-
-**After Gaining Access:**
-👉 Intruder (or malicious authorized user) explores system for information or to insert destructive software.
-👉 If intruder gets administrator access → full control (admin password closely guarded).
-👉 If only general user access → need to trick OS to exceed privileges.
-
-**Common Tricks:**
-👉 Trick memory manager to access memory outside allotted area.
-👉 Trick file manager to retrieve restricted files.
-
----
-
-**Hardware Protection – Memory Limits:**
-👉 CPUs for multiprogramming have special-purpose registers storing upper and lower memory limits for each process.
-👉 CPU compares each memory reference to these registers.
-👉 If reference outside limits → CPU transfers control back to OS via interrupt.
-
----
+    title: 'Operating Systems: Process of Booting',
+    summary: `**Key Topics Covered:**
+- Why an OS needs a "boot strapping" (booting) procedure
+- Role of the CPU's program counter at startup
+- Volatile vs nonvolatile memory
+- ROM, the boot loader, and the boot process
+- Why entire OS is not stored in ROM
+
+**Important Concepts:**
 
 **The Problem:**
-👉 Without further protection, a process could simply change the limit registers to access more memory.
+A CPU's program counter always starts at one predetermined address when turned on. Conceptually the OS should sit there — but main memory is **volatile** (loses data when powered off), so it's empty every time the machine starts.
 
----
+**The Solution — ROM:**
+A small part of main memory (where the CPU looks first) is built from **nonvolatile** memory called **Read-Only Memory (ROM)** — contents can be read but not normally altered. (Most modern "ROM" is actually flash memory, alterable under special conditions — technically not pure ROM.)
 
-**Privilege Levels (Modes):**
-CPUs have two privilege levels:
+**Boot Loader:**
+A small program permanently stored in ROM. It is the FIRST program executed when the machine powers on. It instructs the CPU to copy the real operating system from a storage location (mass storage, flash memory, or even a distant networked machine for some workstations) into volatile main memory.
 
-| Mode | Description |
-|------|-------------|
-| **Privileged mode** | Can execute ALL machine language instructions |
-| **Non-privileged mode** | Limited instruction set |
+**Booting (the full process):**
+1. Boot loader executes from ROM.
+2. Boot loader copies OS into main memory.
+3. Boot loader directs CPU to JUMP to that memory area.
+4. OS takes control of the machine.
+This entire sequence is called **booting the computer**.
 
-👉 **Privileged instructions** – only available in privileged mode.
-   Examples: changing memory limit registers, changing privilege mode.
-👉 Attempt to execute privileged instruction in non-privileged mode causes **interrupt**.
-👉 Interrupt converts CPU to privileged mode and transfers control to OS.
+**Why not store the WHOLE OS in ROM?**
+- Not efficient — would require huge nonvolatile memory blocks in general-purpose computers.
+- OS needs FREQUENT updates (security patches, new device drivers) — ROM updates ("firmware updates") are technologically limited, so mass storage is the practical choice.
+- Feasible only for embedded systems with small, rarely-changing OSes.
 
----
-
-**Boot and Process Execution:**
-👉 CPU starts in privileged mode (OS boots).
-👉 When OS gives a process a time slice, it switches CPU to **non-privileged mode**.
-👉 If process tries privileged instruction → interrupt → OS regains control.
-
----
-
-**Why Privilege Control is Critical:**
-👉 A single flaw can open disaster:
-   - Alter timer → extend time slice → dominate machine.
-   - Directly access peripherals → read files without file manager supervision.
-   - Access memory outside area → read/alter other processes' data.
-
----
-
-**Important Vocabulary:**
-- Intruder = unauthorized person inside system
-- Memory limit registers = hardware bounds for process memory
-- Privileged mode = full instruction access
-- Non-privileged mode = restricted instruction access
-- Privileged instructions = only in privileged mode (e.g., change limits, change mode)
-- Interrupt = triggered by attempted privilege violation
-
----
+**Key Facts to Remember:**
+- Boot loader = lives in ROM, executed first, copies OS into RAM.
+- ROM = nonvolatile, normally read-only (flash-based ROM can be altered = firmware update).
+- The jump instruction is what hands control from the boot loader to the OS.
+- Embedded systems (e.g., smartphones) CAN keep their whole OS in flash memory; desktops typically cannot, efficiently.
 
 **Quick Revision Points:**
-- Intruder with admin account = full control.
-- With user account, must trick OS.
-- Hardware limit registers prevent out-of-bounds memory access.
-- But process could change registers unless protected.
-- Privilege modes (privileged/non-privileged) solve this.
-- OS runs in privileged mode; user processes run in non-privileged mode.
-- Attempted privileged instruction → interrupt → OS takes over.
-- Security flaws can lead to system takeover.`,
-  questions: [
-    {
-      q: "If an intruder gains access to the administrator's account, they:",
-      options: ["A. Have limited privileges", "B. Have full control of the system", "C. Cannot do anything", "D. Only read files"],
-      answer: "B. Have full control of the system",
-      diff: "easy"
-    },
-    {
-      q: "The administrator's password is closely guarded because:",
-      options: ["A. It is hard to remember", "B. It gives full system control to anyone who knows it", "C. It changes every day", "D. It is stored in plain text"],
-      answer: "B. It gives full system control to anyone who knows it",
-      diff: "easy"
-    },
-    {
-      q: "If an intruder has only general user account access, they must:",
-      options: ["A. Give up", "B. Trick the OS into granting more privileges", "C. Reboot the system", "D. Format the hard drive"],
-      answer: "B. Trick the OS into granting more privileges",
-      diff: "easy"
-    },
-    {
-      q: "CPUs designed for multiprogramming systems contain special-purpose registers that store:",
-      options: ["A. Process ID", "B. Upper and lower limits of a process's memory area", "C. CPU temperature", "D. Disk space"],
-      answer: "B. Upper and lower limits of a process's memory area",
-      diff: "medium"
-    },
-    {
-      q: "If a process tries to access memory outside its allotted area, the CPU:",
-      options: ["A. Ignores the request", "B. Transfers control back to the OS via interrupt", "C. Crashes the system", "D. Automatically expands the memory"],
-      answer: "B. Transfers control back to the OS via interrupt",
-      diff: "medium"
-    },
-    {
-      q: "Without further protection, a process could change its own memory limit registers because:",
-      options: ["A. Registers are not protected", "B. The CPU allows any process to change them", "C. There is no hardware restriction preventing it", "D. All of the above"],
-      answer: "D. All of the above",
-      diff: "hard"
-    },
-    {
-      q: "To protect against unauthorized changes to limit registers, CPUs have:",
-      options: ["A. More registers", "B. Two privilege levels (privileged and non-privileged mode)", "C. Faster clock speeds", "D. Larger caches"],
-      answer: "B. Two privilege levels (privileged and non-privileged mode)",
-      diff: "medium"
-    },
-    {
-      q: "In privileged mode, the CPU can:",
-      options: ["A. Execute only a limited set of instructions", "B. Execute all instructions in its machine language", "C. Only execute arithmetic instructions", "D. Only access memory"],
-      answer: "B. Execute all instructions in its machine language",
-      diff: "easy"
-    },
-    {
-      q: "In non-privileged mode, the CPU:",
-      options: ["A. Can execute all instructions", "B. Has a limited set of acceptable instructions", "C. Cannot execute any instructions", "D. Runs twice as fast"],
-      answer: "B. Has a limited set of acceptable instructions",
-      diff: "easy"
-    },
-    {
-      q: "Instructions that are available only in privileged mode are called:",
-      options: ["A. Normal instructions", "B. Privileged instructions", "C. User instructions", "D. Fast instructions"],
-      answer: "B. Privileged instructions",
-      diff: "easy"
-    },
-    {
-      q: "Examples of privileged instructions include:",
-      options: ["A. Add two numbers", "B. Change memory limit registers and change privilege mode", "C. Branch instructions", "D. Load from memory"],
-      answer: "B. Change memory limit registers and change privilege mode",
-      diff: "medium"
-    },
-    {
-      q: "If a process in non-privileged mode attempts to execute a privileged instruction, the CPU:",
-      options: ["A. Executes it anyway", "B. Ignores it", "C. Causes an interrupt", "D. Shuts down"],
-      answer: "C. Causes an interrupt",
-      diff: "easy"
-    },
-    {
-      q: "When a privileged instruction violation occurs, the interrupt:",
-      options: ["A. Restarts the process", "B. Converts CPU to privileged mode and transfers control to OS", "C. Deletes the process", "D. Reboots the system"],
-      answer: "B. Converts CPU to privileged mode and transfers control to OS",
-      diff: "medium"
-    },
-    {
-      q: "When first turned on, the CPU is in:",
-      options: ["A. Non-privileged mode", "B. Privileged mode", "C. Sleep mode", "D. Low power mode"],
-      answer: "B. Privileged mode",
-      diff: "easy"
-    },
-    {
-      q: "When the OS allows a process to start a time slice, it switches the CPU to:",
-      options: ["A. Privileged mode", "B. Non-privileged mode", "C. Turbo mode", "D. Idle mode"],
-      answer: "B. Non-privileged mode",
-      diff: "easy"
-    },
-    {
-      q: "If a process is allowed to alter the timer that controls multiprogramming, it can:",
-      options: ["A. Speed up the system", "B. Extend its time slice and dominate the machine", "C. Improve security", "D. Reduce power consumption"],
-      answer: "B. Extend its time slice and dominate the machine",
-      diff: "medium"
-    },
-    {
-      q: "If a process is allowed to directly access peripheral devices, it can:",
-      options: ["A. Print faster", "B. Read files without file manager supervision", "C. Use the network", "D. Improve performance"],
-      answer: "B. Read files without file manager supervision",
-      diff: "medium"
-    },
-    {
-      q: "If a process can access memory outside its allotted area, it can:",
-      options: ["A. Only read its own data", "B. Read and alter data of other processes", "C. Only cause a crash", "D. Improve memory usage"],
-      answer: "B. Read and alter data of other processes",
-      diff: "easy"
-    },
-    {
-      q: "A single flaw in privilege level control can:",
-      options: ["A. Be easily fixed", "B. Open the door to disaster", "C. Have no effect", "D. Improve system performance"],
-      answer: "B. Open the door to disaster",
-      diff: "easy"
-    },
-    {
-      q: "Maintaining security is described as:",
-      options: ["A. Unimportant", "B. An important task of the administrator and a goal in OS design", "C. Only hardware responsibility", "D. Only user responsibility"],
-      answer: "B. An important task of the administrator and a goal in OS design",
-      diff: "easy"
-    }
-  ]
-},
+Power on → CPU jumps to fixed ROM address → boot loader runs → boot loader copies OS from storage into RAM → CPU jumps into OS code → OS takes over = "booting."`,
+    questions: [
+      {
+        q: 'Why can\'t the operating system simply sit in main memory permanently, ready to run the moment the CPU powers on?',
+        options: ['A. Because the CPU\'s program counter changes address every time it boots', 'B. Because main memory is volatile and loses its contents when the machine is powered off', 'C. Because ROM is too slow to be used as main memory', 'D. Because operating systems are too large to fit in RAM'],
+        answer: 'B. Because main memory is volatile and loses its contents when the machine is powered off',
+        diff: 'easy',
+      },
+      {
+        q: 'The small program that is permanently stored in ROM and is the very first thing executed when a computer powers on is called the:',
+        options: ['A. Dispatcher', 'B. Scheduler', 'C. Boot loader', 'D. Interrupt handler'],
+        answer: 'C. Boot loader',
+        diff: 'easy',
+      },
+      {
+        q: 'Strictly speaking, why is most "ROM" in modern PCs not technically pure read-only memory?',
+        options: ['A. It is actually a part of the hard disk', 'B. It is built using flash memory technology, which CAN be altered under special circumstances', 'C. It loses data when the power is off, like RAM', 'D. It only stores video data, not boot data'],
+        answer: 'B. It is built using flash memory technology, which CAN be altered under special circumstances',
+        diff: 'medium',
+      },
+      {
+        q: 'In a general-purpose desktop computer, after the boot loader copies the operating system into main memory, what happens next?',
+        options: ['A. The machine powers off automatically', 'B. The boot loader directs the CPU to execute a jump instruction to that memory area, handing control to the OS', 'C. The boot loader erases itself from ROM', 'D. The CPU returns to executing the boot loader in a loop'],
+        answer: 'B. The boot loader directs the CPU to execute a jump instruction to that memory area, handing control to the OS',
+        diff: 'medium',
+      },
+      {
+        q: 'Why don\'t desktop computers simply include enough ROM to store the ENTIRE operating system, eliminating the need to boot from mass storage?',
+        options: ['A. ROM cannot store programs, only data', 'B. It is inefficient at scale, and OSes require frequent updates which are hard to apply to ROM-based firmware', 'C. Desktop CPUs are physically incapable of reading ROM', 'D. It would void the manufacturer warranty'],
+        answer: 'B. It is inefficient at scale, and OSes require frequent updates which are hard to apply to ROM-based firmware',
+        diff: 'hard',
+      },
+      {
+        q: 'Which type of system is explicitly mentioned as being feasible to keep its ENTIRE operating system in nonvolatile (flash) memory, unlike general desktop computers?',
+        options: ['A. Mainframe servers', 'B. Embedded systems such as smartphones', 'C. Supercomputers', 'D. Distributed cluster systems'],
+        answer: 'B. Embedded systems such as smartphones',
+        diff: 'medium',
+      },
+      {
+        q: 'For small workstations at large companies or universities, the boot loader may copy the operating system into main memory from:',
+        options: ['A. A predetermined address in the CPU register only', 'B. A distant machine over a network', 'C. The printer\'s device driver', 'D. The dispatcher\'s interrupt handler'],
+        answer: 'B. A distant machine over a network',
+        diff: 'medium',
+      },
+      {
+        q: 'When a computer\'s firmware (boot loader stored in ROM/flash) is updated to patch security issues, this update process is generally limited by:',
+        options: ['A. The volatility of RAM', 'B. Technological limits of updating ROM-based storage, making mass storage the more common choice for OS storage overall', 'C. The CPU\'s program counter changing', 'D. The absence of an interrupt handler'],
+        answer: 'B. Technological limits of updating ROM-based storage, making mass storage the more common choice for OS storage overall',
+        diff: 'hard',
+      },
+      {
+        q: 'What is the CPU\'s program counter set to do, by design, every single time the CPU is powered on?',
+        options: ['A. Start at a random memory address', 'B. Start at one particular, predetermined address', 'C. Start wherever the last shutdown left off', 'D. Search all of memory for the OS'],
+        answer: 'B. Start at one particular, predetermined address',
+        diff: 'easy',
+      },
+      {
+        q: 'Which sequence correctly represents the overall booting process described in this module?',
+        options: ['A. OS runs → boot loader loads → CPU jumps to ROM', 'B. CPU jumps to fixed ROM address → boot loader executes → boot loader copies OS into RAM → CPU jumps into OS code', 'C. RAM loads boot loader → ROM copies OS → CPU shuts down', 'D. Dispatcher assigns time slice → scheduler updates process table → OS boots'],
+        answer: 'B. CPU jumps to fixed ROM address → boot loader executes → boot loader copies OS into RAM → CPU jumps into OS code',
+        diff: 'hard',
+      },
+    ],
+  },
 
+  52: {
+    title: 'Operating Systems: Process and its Administration (Program vs Process)',
+    summary: `**Key Topics Covered:**
+- How the OS coordinates execution of application/utility/OS software
+- The fundamental distinction between a "program" and a "process"
+- Process state and what it contains
 
-59: {
-  title: "Networking and the Internet: Network Classification",
-  summary: `**Key Topics Covered:**
-- Network classification by size: PAN, LAN, MAN, WAN
-- Network classification by openness: open vs closed (proprietary)
-- Network classification by topology: bus, star
-- Ethernet, TCP/IP protocol suite
-- Access point (AP) in wireless star networks
+**Important Concepts:**
 
----
+**Program vs Process (the core distinction):**
+- A **program** is a static set of instructions sitting in storage — it doesn't "do" anything by itself.
+- A **process** is the DYNAMIC activity of actually EXECUTING that program under the control of the operating system.
+- Analogy used: a piece of music sheet (static, like a program) vs an orchestra actually PLAYING that music (dynamic, like a process).
 
-**Simple Understanding:**
+**Process:**
+The activity of executing a program under OS control. Multiple processes can exist for the same program (e.g., two users running the same app = two separate processes).
 
-**Classification by Size:**
-👉 **PAN (Personal Area Network):** Short range (< few meters). Example: wireless headset to smartphone, wireless mouse to PC.
-👉 **LAN (Local Area Network):** Single building or building complex. Example: university campus, manufacturing plant.
-👉 **MAN (Metropolitan Area Network):** Intermediate size, spanning a local community.
-👉 **WAN (Wide Area Network):** Long distance – neighboring cities or opposite sides of world.
+**Process State:**
+Associated with every running process is its current status, called the **process state**, which is essentially a "snapshot" of the machine at a particular moment. It includes:
+- The value of the Program Counter
+- Values in other CPU registers
+- Values in associated memory cells
 
----
-
-**Classification by Openness:**
-👉 **Open network:** Designs in public domain, freely circulated. Example: Internet (TCP/IP protocol suite – no fees or licenses).
-👉 **Closed (Proprietary) network:** Owned by entity (individual or corporation). Example: Novell Inc. proprietary systems – requires license fees.
-
----
-
-**Classification by Topology (Pattern of Connections):**
-👉 **Bus topology:** All machines connected to a common communication line called a "bus" (Figure 59a).
-   - Popularized in 1990s via **Ethernet** standards.
-   - Ethernet remains one of the most popular networking systems today.
-
-👉 **Star topology:** One machine (central focal point) connects to all others (Figure 59b).
-   - Roots in 1970s with large central computer serving many terminals.
-   - Today popular in wireless networks: central machine called **access point (AP)** coordinates communication.
-
----
-
-**Important Vocabulary:**
-- PAN = Personal Area Network
-- LAN = Local Area Network
-- MAN = Metropolitan Area Network
-- WAN = Wide Area Network
-- Open network = public domain standards
-- Closed/proprietary network = owned, requires licenses
-- Topology = pattern of machine connections
-- Bus topology = common communication line
-- Star topology = central focal point (AP)
-- Ethernet = popular bus-based standard
-- TCP/IP = open protocol suite for Internet
-- Access point (AP) = central machine in wireless star
-
----
+**Key Facts to Remember:**
+- Program = static (the music sheet). Process = dynamic activity (the music being played).
+- Process state = snapshot of program counter + CPU registers + memory cell values at a given instant.
+- This Program vs Process distinction is one of THE foundational ideas of modern operating systems.
 
 **Quick Revision Points:**
-- PAN: very short range (meters)
-- LAN: single building/campus
-- MAN: community-sized
-- WAN: cities/worldwide
-- Internet is open (TCP/IP free to use)
-- Proprietary networks require fees/licenses
-- Bus: all devices share one line (Ethernet)
-- Star: central device connects all others
-- Wireless star uses access point (AP)`,
-  questions: [
-    {
-      q: "A network used for short-range communication, typically less than a few meters, is called a:",
-      options: ["A. LAN", "B. MAN", "C. WAN", "D. PAN"],
-      answer: "D. PAN",
-      diff: "easy"
-    },
-    {
-      q: "A LAN (Local Area Network) normally consists of computers in:",
-      options: ["A. Different countries", "B. A single building or building complex", "C. A local community", "D. A smartphone and headset"],
-      answer: "B. A single building or building complex",
-      diff: "easy"
-    },
-    {
-      q: "A network spanning a local community is called a:",
-      options: ["A. PAN", "B. LAN", "C. MAN", "D. WAN"],
-      answer: "C. MAN",
-      diff: "easy"
-    },
-    {
-      q: "A WAN (Wide Area Network) links machines over:",
-      options: ["A. A few meters", "B. A single building", "C. A local community", "D. Great distances (neighboring cities or opposite sides of world)"],
-      answer: "D. Great distances (neighboring cities or opposite sides of world)",
-      diff: "easy"
-    },
-    {
-      q: "A network whose internal operation is based on designs in the public domain is called a(n):",
-      options: ["A. Closed network", "B. Proprietary network", "C. Open network", "D. Private network"],
-      answer: "C. Open network",
-      diff: "easy"
-    },
-    {
-      q: "A network whose innovations are owned and controlled by a particular entity is called a:",
-      options: ["A. Open network", "B. Closed or proprietary network", "C. Public network", "D. Free network"],
-      answer: "B. Closed or proprietary network",
-      diff: "easy"
-    },
-    {
-      q: "The Internet is an example of:",
-      options: ["A. A proprietary network", "B. A closed network", "C. An open system", "D. A PAN"],
-      answer: "C. An open system",
-      diff: "easy"
-    },
-    {
-      q: "Communication throughout the Internet is governed by the open collection of standards known as:",
-      options: ["A. Ethernet", "B. TCP/IP protocol suite", "C. Novell NetWare", "D. Wi-Fi"],
-      answer: "B. TCP/IP protocol suite",
-      diff: "easy"
-    },
-    {
-      q: "Anyone is free to use TCP/IP standards:",
-      options: ["A. Only after paying a license fee", "B. Only after signing an agreement", "C. Without paying fees or signing license agreements", "D. Only for non-commercial use"],
-      answer: "C. Without paying fees or signing license agreements",
-      diff: "easy"
-    },
-    {
-      q: "A company like Novell Inc. that develops proprietary systems can draw income by:",
-      options: ["A. Giving away their products for free", "B. Selling or leasing their products", "C. Open sourcing all code", "D. Donating to charities"],
-      answer: "B. Selling or leasing their products",
-      diff: "easy"
-    },
-    {
-      q: "The pattern in which machines are connected in a network is called the network's:",
-      options: ["A. Protocol", "B. Topology", "C. Architecture", "D. Medium"],
-      answer: "B. Topology",
-      diff: "easy"
-    },
-    {
-      q: "In a bus topology, all machines are connected to:",
-      options: ["A. A central server", "B. A common communication line called a bus", "C. Each other in a ring", "D. A wireless access point"],
-      answer: "B. A common communication line called a bus",
-      diff: "easy"
-    },
-    {
-      q: "In a star topology, one machine serves as:",
-      options: ["A. A bus", "B. A central focal point to which all others are connected", "C. A terminal", "D. A repeater"],
-      answer: "B. A central focal point to which all others are connected",
-      diff: "easy"
-    },
-    {
-      q: "The bus topology was popularized in the 1990s under a set of standards known as:",
-      options: ["A. TCP/IP", "B. Novell", "C. Ethernet", "D. Wi-Fi"],
-      answer: "C. Ethernet",
-      diff: "easy"
-    },
-    {
-      q: "Ethernet networks remain one of the most popular networking systems today and are based on which topology?",
-      options: ["A. Star", "B. Ring", "C. Bus", "D. Mesh"],
-      answer: "C. Bus",
-      diff: "medium"
-    },
-    {
-      q: "The star topology evolved from the paradigm of:",
-      options: ["A. Peer-to-peer computing", "B. A large central computer serving many users", "C. Wireless communication", "D. The Internet"],
-      answer: "B. A large central computer serving many users",
-      diff: "medium"
-    },
-    {
-      q: "In wireless networks, the central machine in a star topology is called the:",
-      options: ["A. Router", "B. Switch", "C. Access point (AP)", "D. Hub"],
-      answer: "C. Access point (AP)",
-      diff: "easy"
-    },
-    {
-      q: "Which network type would most likely connect computers in a single university campus?",
-      options: ["A. PAN", "B. LAN", "C. MAN", "D. WAN"],
-      answer: "B. LAN",
-      diff: "easy"
-    },
-    {
-      q: "A wireless mouse connected to a PC is an example of a:",
-      options: ["A. LAN", "B. MAN", "C. PAN", "D. WAN"],
-      answer: "C. PAN",
-      diff: "easy"
-    },
-    {
-      q: "Proprietary networks restrict applications by:",
-      options: ["A. Open standards", "B. License fees and contract conditions", "C. Free access", "D. Public domain"],
-      answer: "B. License fees and contract conditions",
-      diff: "easy"
-    }
-  ]
-},
+Program (static, stored) → executed → becomes a Process (dynamic, running) → has a Process State (snapshot of PC + registers + memory) at any given moment.`,
+    questions: [
+      {
+        q: 'What is the fundamental distinction this module draws between a "program" and a "process"?',
+        options: ['A. A program is dynamic; a process is static', 'B. A program is the static set of instructions; a process is the dynamic activity of executing that program', 'C. They are exactly the same thing with different names', 'D. A process is stored on disk; a program only exists in memory'],
+        answer: 'B. A program is the static set of instructions; a process is the dynamic activity of executing that program',
+        diff: 'easy',
+      },
+      {
+        q: 'The analogy used in this module to explain program vs process compares a program to a music sheet. What does the ACT OF PLAYING that music correspond to?',
+        options: ['A. The process state', 'B. The process', 'C. The dispatcher', 'D. The boot loader'],
+        answer: 'B. The process',
+        diff: 'medium',
+      },
+      {
+        q: 'A "process state," as defined in this module, is best described as:',
+        options: ['A. A permanently fixed property of the program file on disk', 'B. A snapshot of the machine — program counter, CPU registers, and memory cell values — at a particular time', 'C. The list of all users who have ever run that program', 'D. The total disk space the program occupies'],
+        answer: 'B. A snapshot of the machine — program counter, CPU registers, and memory cell values — at a particular time',
+        diff: 'medium',
+      },
+      {
+        q: 'If two different users each launch the same word processor application at the same time, how would this scenario best be described using the program/process distinction?',
+        options: ['A. One program, one process', 'B. Two programs, two processes', 'C. One program, two separate processes', 'D. Two programs, one shared process'],
+        answer: 'C. One program, two separate processes',
+        diff: 'hard',
+      },
+      {
+        q: 'Which of the following is NOT listed as a component of a process state?',
+        options: ['A. Value of the program counter', 'B. Values in CPU registers', 'C. Values in associated memory cells', 'D. The user\'s login password'],
+        answer: 'D. The user\'s login password',
+        diff: 'medium',
+      },
+      {
+        q: 'Why is the program vs process distinction considered "fundamental" to modern operating systems?',
+        options: ['A. Because it only matters for embedded systems', 'B. Because the OS must coordinate the dynamic activity (processes) of potentially many programs being executed at once', 'C. Because programs cannot be stored on a hard disk otherwise', 'D. Because it eliminates the need for memory management'],
+        answer: 'B. Because the OS must coordinate the dynamic activity (processes) of potentially many programs being executed at once',
+        diff: 'hard',
+      },
+      {
+        q: 'A program file sitting unopened on your hard disk, with no one running it, would be classified as:',
+        options: ['A. A process', 'B. A program (static, not yet a process)', 'C. A process state', 'D. A boot loader'],
+        answer: 'B. A program (static, not yet a process)',
+        diff: 'easy',
+      },
+      {
+        q: 'The phrase "static vs dynamic activity" used in this module refers specifically to the distinction between:',
+        options: ['A. ROM and RAM', 'B. A program and a process', 'C. A scheduler and a dispatcher', 'D. A bridge and a router'],
+        answer: 'B. A program and a process',
+        diff: 'easy',
+      },
+      {
+        q: 'Which best illustrates why "process state" must be thought of as a snapshot AT A PARTICULAR TIME, rather than something fixed?',
+        options: ['A. Because the program counter, registers, and memory values constantly change as the process executes', 'B. Because process state never changes once created', 'C. Because only the dispatcher has a state', 'D. Because process state is identical for every process'],
+        answer: 'A. Because the program counter, registers, and memory values constantly change as the process executes',
+        diff: 'hard',
+      },
+      {
+        q: 'The operating system is responsible for coordinating the execution of which of the following?',
+        options: ['A. Only application software', 'B. Only the OS itself', 'C. Application software, utility software, and the OS itself', 'D. Only utility software'],
+        answer: 'C. Application software, utility software, and the OS itself',
+        diff: 'medium',
+      },
+    ],
+  },
 
+  53: {
+    title: 'Operating Systems: Process and its Administration (Scheduler & Dispatcher)',
+    summary: `**Key Topics Covered:**
+- The scheduler and the process table
+- "Ready" vs "Waiting" process states
+- The dispatcher, multiprogramming, and time slices
+- Process switch / context switch and interrupts
 
-60: {
-  title: "Networking and the Internet: Protocols",
-  summary: `**Key Topics Covered:**
-- Protocols: rules for network activities
-- CSMA/CD (Carrier Sense Multiple Access with Collision Detection) for Ethernet bus networks
-- CSMA/CA (Collision Avoidance) for wireless networks
-- Hidden terminal problem
-- Request/acknowledge mechanism in WiFi
+**Important Concepts:**
 
----
+**The Scheduler:**
+Maintains a record of all processes in the system in main memory, called the **process table**. It:
+- Adds new processes to the table when execution is requested.
+- Removes completed processes.
+- Records info per process: memory area assigned, priority, and whether the process is **ready** or **waiting**.
 
-**Simple Understanding:**
+**Ready vs Waiting:**
+- **Ready** = the process's progress CAN continue right now.
+- **Waiting** = progress is delayed until some external event occurs (e.g., a mass storage operation finishes, a key is pressed, a message arrives from another process).
 
-**What are Protocols?**
-👉 Rules that govern network activities.
-👉 Allow products from different vendors to be compatible.
-👉 Without protocols: chaos (all machines transmit at once, no coordination).
+**The Dispatcher:**
+Oversees the execution of scheduled processes. In time-sharing/multitasking systems, it uses **multiprogramming**: time is divided into short **time slices**, and the CPU's attention is switched among processes — each gets to run for one time slice. This switch is called a **process switch** (or **context switch**).
 
----
+**Time Slices & Interrupts:**
+- The dispatcher starts a TIMER CIRCUIT when awarding a time slice.
+- When the timer expires, it generates an **interrupt** signal.
+- The CPU finishes its current machine cycle, saves its position, and runs the **interrupt handler** (part of the dispatcher, stored at a predetermined memory location).
+- The interrupt effectively PREEMPTS the current process and returns control to the dispatcher.
+- The dispatcher then picks the highest-priority READY process (per the scheduler's records), restarts the timer, and starts that process's time slice.
 
-**CSMA/CD (Ethernet Bus Networks):**
-👉 Stands for: Carrier Sense, Multiple Access with Collision Detection.
-👉 How it works:
-   - Each message broadcast to all machines on bus.
-   - Machine keeps only messages addressed to itself.
-   - To transmit: wait until bus is silent, then start transmitting while monitoring.
-   - If two transmit at same time → both detect clash → pause for random time → retry.
-👉 Analogy: People in conversation – if two start talking, both stop and try again later.
+**Why saving/restoring state matters:**
+For multiprogramming to work, a process must be stoppable and later RESTARTABLE exactly where it left off — this requires saving its full process state (program counter, registers, memory values) at interruption and reloading it later. Modern CPUs have built-in support for this.
 
----
-
-**Why CSMA/CD doesn't work for wireless star networks:**
-👉 Machine may not detect collision because:
-   - Its own signal drowns out others.
-   - Hidden terminal problem: signals blocked by objects/distance, but both can reach AP.
-
----
-
-**Hidden Terminal Problem:**
-👉 Two machines can both communicate with central AP but cannot hear each other.
-👉 They might transmit simultaneously → collide at AP without knowing.
-
----
-
-**CSMA/CA (Collision Avoidance) for Wireless:**
-👉 Instead of detecting collisions, try to avoid them.
-👉 Basic difference from CSMA/CD:
-   - When channel is silent, machine does NOT start immediately.
-   - Waits a short period – only transmits if channel remained silent.
-   - If busy, waits random time before retry.
-   - After waiting, can claim silent channel without hesitation.
-👉 This avoids collisions between "newcomers" and waiting machines.
-
----
-
-**Solving Hidden Terminal Problem (WiFi):**
-👉 Machine sends short "request" message to AP.
-👉 Waits for AP to acknowledge.
-   - If AP busy (hidden terminal transmitting) → ignores request → machine waits.
-   - If AP acknowledges → machine knows it's safe to transmit.
-👉 All machines hear AP's acknowledgments → know if AP is busy.
-
----
-
-**Important Vocabulary:**
-- Protocol = set of rules for network communication
-- CSMA/CD = Collision Detection (Ethernet)
-- CSMA/CA = Collision Avoidance (wireless)
-- Hidden terminal = stations can't hear each other but both reach AP
-- Access Point (AP) = central wireless hub
-- Collision = two transmissions overlapping
-- Broadcast = send to all machines
-
----
+**Key Facts to Remember:**
+- Process table = scheduler's record-keeping structure (memory area, priority, ready/waiting).
+- Dispatcher = executes the multiprogramming (time-slicing) itself.
+- Interrupt handler = part of the dispatcher, triggered when a time slice's timer expires.
+- Process switch = context switch = changing from one running process to another.
+- CPUs for multiprogramming have special instructions for saving/reloading a process's state.
 
 **Quick Revision Points:**
-- Protocols ensure reliable network function.
-- Ethernet bus uses CSMA/CD (detect collisions, retry).
-- Wireless star uses CSMA/CA (avoid collisions, wait before transmit).
-- Hidden terminal problem: can't hear each other.
-- WiFi solution: request → ACK from AP → then transmit.`,
-  questions: [
-    {
-      q: "Rules that govern how activities are conducted on a network are called:",
-      options: ["A. Topologies", "B. Protocols", "C. Standards", "D. Algorithms"],
-      answer: "B. Protocols",
-      diff: "easy"
-    },
-    {
-      q: "The protocol used in Ethernet bus networks is:",
-      options: ["A. CSMA/CA", "B. TCP/IP", "C. CSMA/CD", "D. HTTP"],
-      answer: "C. CSMA/CD",
-      diff: "easy"
-    },
-    {
-      q: "CSMA/CD stands for:",
-      options: ["A. Carrier Sense, Multiple Access with Collision Detection", "B. Carrier Sense, Multiple Access with Collision Avoidance", "C. Carrier Signal Multiple Access with Collision Detection", "D. Clear Signal Multiple Access with Collision Detection"],
-      answer: "A. Carrier Sense, Multiple Access with Collision Detection",
-      diff: "medium"
-    },
-    {
-      q: "In CSMA/CD, if two machines transmit at the same time:",
-      options: ["A. Both continue transmitting", "B. Both detect the clash and pause for random time before retrying", "C. One wins automatically", "D. The network crashes"],
-      answer: "B. Both detect the clash and pause for random time before retrying",
-      diff: "easy"
-    },
-    {
-      q: "The CSMA/CD protocol is similar to:",
-      options: ["A. A single person talking", "B. A small group of people in conversation where two start talking, both stop", "C. A lecture hall", "D. A telephone call"],
-      answer: "B. A small group of people in conversation where two start talking, both stop",
-      diff: "easy"
-    },
-    {
-      q: "CSMA/CD is not compatible with wireless star networks because:",
-      options: ["A. Wireless is slower", "B. A machine may be unable to detect collisions", "C. Wireless uses different cables", "D. There is no bus"],
-      answer: "B. A machine may be unable to detect collisions",
-      diff: "medium"
-    },
-    {
-      q: "One reason a machine may not detect a collision in wireless is:",
-      options: ["A. The network is too fast", "B. Its own signal drowns out others", "C. No collisions occur in wireless", "D. The AP prevents collisions"],
-      answer: "B. Its own signal drowns out others",
-      diff: "medium"
-    },
-    {
-      q: "The condition where signals from different machines are blocked from each other even though they can both communicate with the central AP is called:",
-      options: ["A. Hidden terminal problem", "B. Collision detection", "C. Broadcast storm", "D. Packet loss"],
-      answer: "A. Hidden terminal problem",
-      diff: "easy"
-    },
-    {
-      q: "Wireless networks use a policy of trying to _____ collisions rather than detecting them.",
-      options: ["A. Detect", "B. Avoid", "C. Ignore", "D. Create"],
-      answer: "B. Avoid",
-      diff: "easy"
-    },
-    {
-      q: "The protocol used for collision avoidance in wireless networks is:",
-      options: ["A. CSMA/CD", "B. CSMA/CA", "C. TCP", "D. UDP"],
-      answer: "B. CSMA/CA",
-      diff: "easy"
-    },
-    {
-      q: "CSMA/CA stands for:",
-      options: ["A. Carrier Sense, Multiple Access with Collision Avoidance", "B. Carrier Sense, Multiple Access with Collision Detection", "C. Clear Signal Multiple Access with Collision Avoidance", "D. Carrier Sense Multiple Access with Collision Adjustment"],
-      answer: "A. Carrier Sense, Multiple Access with Collision Avoidance",
-      diff: "medium"
-    },
-    {
-      q: "In CSMA/CA, when a machine first needs to transmit and finds the channel silent, it:",
-      options: ["A. Transmits immediately", "B. Waits a short period, then transmits only if channel remained silent", "C. Sends a request to the AP first", "D. Assumes collision and waits randomly"],
-      answer: "B. Waits a short period, then transmits only if channel remained silent",
-      diff: "hard"
-    },
-    {
-      q: "In CSMA/CA, once a machine has waited and claims a silent channel, it:",
-      options: ["A. Still must wait again", "B. Can transmit without hesitation", "C. Must send a request", "D. Must detect collisions"],
-      answer: "B. Can transmit without hesitation",
-      diff: "medium"
-    },
-    {
-      q: "The hidden terminal problem is not solved by basic CSMA/CA because:",
-      options: ["A. CSMA/CA cannot distinguish between silent and busy channels", "B. The protocol requires each station to hear all others", "C. Wireless is too slow", "D. AP is not used"],
-      answer: "B. The protocol requires each station to hear all others",
-      diff: "hard"
-    },
-    {
-      q: "To solve the hidden terminal problem, some WiFi networks require each machine to:",
-      options: ["A. Transmit at full power", "B. Send a short request message to the AP and wait for acknowledgment", "C. Use CSMA/CD instead", "D. Connect via cable"],
-      answer: "B. Send a short request message to the AP and wait for acknowledgment",
-      diff: "medium"
-    },
-    {
-      q: "If the AP is busy due to a hidden terminal, it will:",
-      options: ["A. Acknowledge the request", "B. Ignore the request", "C. Forward the request", "D. Crash"],
-      answer: "B. Ignore the request",
-      diff: "easy"
-    },
-    {
-      q: "All machines in a WiFi network can hear:",
-      options: ["A. All other machines' transmissions directly", "B. Acknowledgments sent from the AP", "C. Only their own transmissions", "D. Nothing"],
-      answer: "B. Acknowledgments sent from the AP",
-      diff: "medium"
-    },
-    {
-      q: "The development of protocol standards is important because it:",
-      options: ["A. Makes networks slower", "B. Allows products from different vendors to be compatible", "C. Increases costs", "D. Limits innovation"],
-      answer: "B. Allows products from different vendors to be compatible",
-      diff: "easy"
-    },
-    {
-      q: "In a bus network based on Ethernet, each message is:",
-      options: ["A. Sent only to the destination", "B. Broadcast to all machines on the bus", "C. Encrypted", "D. Sent via the AP"],
-      answer: "B. Broadcast to all machines on the bus",
-      diff: "easy"
-    },
-    {
-      q: "A machine on an Ethernet bus keeps which messages?",
-      options: ["A. All messages", "B. Only those addressed to itself", "C. Only broadcast messages", "D. None"],
-      answer: "B. Only those addressed to itself",
-      diff: "easy"
-    }
-  ]
-},
+Scheduler = keeps the WHO (process table, ready/waiting). Dispatcher = does the SWITCHING (time slices, interrupts, context switches). Both are parts of the OS kernel.`,
+    questions: [
+      {
+        q: 'Which kernel component maintains the "process table" recording each process\'s memory area, priority, and ready/waiting status?',
+        options: ['A. The dispatcher', 'B. The scheduler', 'C. The boot loader', 'D. The file manager'],
+        answer: 'B. The scheduler',
+        diff: 'easy',
+      },
+      {
+        q: 'A process is described as "waiting" rather than "ready" when:',
+        options: ['A. It has the highest priority in the process table', 'B. Its progress is currently delayed until some external event occurs, such as a keypress or completion of a storage operation', 'C. It has just been given a fresh time slice', 'D. It has been permanently removed from the process table'],
+        answer: 'B. Its progress is currently delayed until some external event occurs, such as a keypress or completion of a storage operation',
+        diff: 'medium',
+      },
+      {
+        q: 'In a time-sharing/multitasking system, the dispatcher achieves multiprogramming by:',
+        options: ['A. Running only one process until it fully completes before starting another', 'B. Dividing time into short time slices and switching the CPU\'s attention among processes', 'C. Permanently assigning each process to its own separate CPU', 'D. Deleting all waiting processes from the process table'],
+        answer: 'B. Dividing time into short time slices and switching the CPU\'s attention among processes',
+        diff: 'easy',
+      },
+      {
+        q: 'What specifically triggers the interrupt signal that ends a process\'s time slice?',
+        options: ['A. The process requesting more memory', 'B. A timer circuit, initiated by the dispatcher, expiring', 'C. The scheduler deleting the process table entry', 'D. The boot loader restarting'],
+        answer: 'B. A timer circuit, initiated by the dispatcher, expiring',
+        diff: 'medium',
+      },
+      {
+        q: 'The interrupt handler that responds to a time-slice-ending interrupt signal is:',
+        options: ['A. A completely separate program unrelated to the dispatcher', 'B. Part of the dispatcher, stored at a predetermined location in main memory', 'C. Stored exclusively in ROM and never in RAM', 'D. Only invoked when a process completes successfully'],
+        answer: 'B. Part of the dispatcher, stored at a predetermined location in main memory',
+        diff: 'hard',
+      },
+      {
+        q: 'After an interrupt preempts the current process, what does the dispatcher do next?',
+        options: ['A. Immediately shuts down the computer', 'B. Selects the highest-priority ready process from the process table, restarts the timer, and lets it begin its time slice', 'C. Permanently terminates the interrupted process', 'D. Returns control to the boot loader'],
+        answer: 'B. Selects the highest-priority ready process from the process table, restarts the timer, and lets it begin its time slice',
+        diff: 'medium',
+      },
+      {
+        q: 'The term "process switch" (or "context switch") refers to:',
+        options: ['A. Converting a process into a program', 'B. The procedure of changing the CPU\'s attention from executing one process to another', 'C. Switching a computer from privileged to non-privileged mode only', 'D. A hardware switch used to power off the CPU'],
+        answer: 'B. The procedure of changing the CPU\'s attention from executing one process to another',
+        diff: 'easy',
+      },
+      {
+        q: 'Why is it essential for multiprogramming systems that a process\'s FULL state be saved when it is interrupted?',
+        options: ['A. So that the process table can be permanently deleted', 'B. So the process can later be restarted exactly where it left off, just as you must remember your place when interrupted while reading a book', 'C. Because otherwise the boot loader cannot run', 'D. Because the scheduler requires it to assign priority levels'],
+        answer: 'B. So the process can later be restarted exactly where it left off, just as you must remember your place when interrupted while reading a book',
+        diff: 'hard',
+      },
+      {
+        q: 'What design feature do CPUs built for multiprogramming systems typically include to simplify process switching?',
+        options: ['A. Multiple independent program counters that never change', 'B. Built-in machine-language instructions for saving and reloading a previously saved process state', 'C. The inability to receive interrupt signals', 'D. A permanent lock on the highest-priority process'],
+        answer: 'B. Built-in machine-language instructions for saving and reloading a previously saved process state',
+        diff: 'hard',
+      },
+      {
+        q: 'Which of the following correctly pairs a component with its primary administrative role?',
+        options: ['A. Scheduler — performs the actual time-slice switching between processes', 'B. Dispatcher — maintains the process table of all current processes', 'C. Scheduler — maintains the process table; Dispatcher — performs the time-slice switching (multiprogramming)', 'D. Boot loader — assigns process priorities'],
+        answer: 'C. Scheduler — maintains the process table; Dispatcher — performs the time-slice switching (multiprogramming)',
+        diff: 'medium',
+      },
+      {
+        q: 'When a user requests the execution of an application, which component is responsible for adding that execution to the pool of current processes?',
+        options: ['A. The dispatcher', 'B. The interrupt handler', 'C. The scheduler', 'D. The boot loader'],
+        answer: 'C. The scheduler',
+        diff: 'easy',
+      },
+    ],
+  },
 
-61: {
-  title: "Networking and the Internet: Methods of Process Communication",
-  summary: `**Key Topics Covered:**
-- Inter-process communication (IPC)
-- Client/server model (print server, file server)
-- Peer-to-peer (P2P) model
-- Swarm distribution
-- Distinction between P2P model and P2P network (terminology clarification)
+  54: {
+    title: 'Operating Systems: Handling Competition between Processes',
+    summary: `**Key Topics Covered:**
+- Which OS components allocate which resources
+- Why resource allocation is trickier than it looks
+- Two key resource allocation issues (including a deadlock preview)
 
----
+**Important Concepts:**
 
-**Simple Understanding:**
+**Resource Allocation (who allocates what):**
+- **File manager** → allocates access to files AND allocates mass storage space for new files.
+- **Memory manager** → allocates memory space.
+- **Scheduler** → allocates space in the process table.
+- **Dispatcher** → allocates time slices.
 
-**Inter-Process Communication (IPC):**
-👉 Processes on different computers (or same computer via multitasking) must coordinate.
-👉 Two main models: Client/Server and Peer-to-Peer (P2P).
+**Why it's not simple:**
+A machine doesn't "think" for itself — it only follows instructions. So a reliable OS must have algorithms that cover EVERY possible contingency, no matter how minor it seems. Resource allocation looks simple on the surface but has subtle pitfalls.
 
----
+**Resource Allocation Issues:**
+1. **Competition** — What if two processes demand the SAME resource at the same time?
+2. **Circular wait (deadlock preview)** — What if Process A holds Resource 1 and is waiting for Resource 2, while Process B holds Resource 2 and is waiting for Resource 1? Neither can proceed. (Full deadlock analysis comes in the next module.)
 
-**Client/Server Model:**
-👉 **Client:** Makes requests of other processes.
-👉 **Server:** Satisfies requests made by clients.
-👉 Server must execute continuously to be ready for clients.
-
-**Early Examples:**
-- **Print server:** One high-quality printer attached to network, other machines (clients) send print requests.
-- **File server:** One machine with mass storage (disk) containing all records; other machines request access to files.
-
----
-
-**Peer-to-Peer (P2P) Model:**
-👉 Processes provide service to AND receive service from each other.
-👉 Processes execute on temporary basis (not continuously running like servers).
-
-**Examples:**
-- Instant messaging (written conversation over Internet)
-- Competitive interactive games
-
-**File Distribution (Swarm):**
-👉 One peer receives a file from another, then provides it to other peers.
-👉 Collection of peers = **swarm**.
-👉 Distributes service task over many peers (more efficient than central server).
-
----
-
-**Legal Note:**
-👉 Lack of central server makes copyright enforcement difficult, but not impossible.
-👉 Individuals have faced significant liabilities for copyright infringement.
-
----
-
-**Terminology Clarification:**
-👉 "Peer-to-peer network" is misuse of terminology.
-👉 P2P is a **communication model** (property of process communication), not a property of the network.
-👉 A process can use P2P model for one communication and client/server for another over the same network.
-👉 Better to say: communicating by means of the peer-to-peer model.
-
----
-
-**Important Vocabulary:**
-- Inter-process communication (IPC) = communication between processes
-- Client = process that makes requests
-- Server = process that satisfies requests
-- Print server = server for printing
-- File server = server for file storage/access
-- Peer-to-peer (P2P) = processes serve each other
-- Swarm = collection of peers sharing files
-
----
+**Key Facts to Remember:**
+- Memorize the 4 allocator pairings: File manager↔files/storage, Memory manager↔memory, Scheduler↔process table space, Dispatcher↔time slices.
+- The circular-wait scenario described here (A holds R1 wants R2; B holds R2 wants R1) is the CLASSIC setup for deadlock, formally covered next module.
 
 **Quick Revision Points:**
-- Client/server: server provides service, clients request.
-- Server must run continuously; clients run temporarily.
-- P2P: processes are both clients and servers.
-- P2P is temporary, decentralized.
-- Swarm distributes files efficiently.
-- P2P model ≠ P2P network (terminology correction).`,
-  questions: [
-    {
-      q: "Communication between processes is called:",
-      options: ["A. Inter-process communication", "B. Intra-process communication", "C. Network communication", "D. System communication"],
-      answer: "A. Inter-process communication",
-      diff: "easy"
-    },
-    {
-      q: "In the client/server model, a process that makes requests of other processes is called a:",
-      options: ["A. Server", "B. Client", "C. Peer", "D. Host"],
-      answer: "B. Client",
-      diff: "easy"
-    },
-    {
-      q: "In the client/server model, a process that satisfies requests made by clients is called a:",
-      options: ["A. Client", "B. Peer", "C. Server", "D. Node"],
-      answer: "C. Server",
-      diff: "easy"
-    },
-    {
-      q: "An early application of the client/server model was a single high-quality printer attached to a network. The printer played the role of a:",
-      options: ["A. Client", "B. Print server", "C. File server", "D. Peer"],
-      answer: "B. Print server",
-      diff: "easy"
-    },
-    {
-      q: "In the print server example, the other machines on the network that sent print requests played the role of:",
-      options: ["A. Servers", "B. Clients", "C. Peers", "D. Swarms"],
-      answer: "B. Clients",
-      diff: "easy"
-    },
-    {
-      q: "A machine equipped with a high-capacity mass storage system containing an organization's records, providing access to other machines, is called a:",
-      options: ["A. Print server", "B. File server", "C. Client", "D. Peer"],
-      answer: "B. File server",
-      diff: "easy"
-    },
-    {
-      q: "In the client/server model, the server must:",
-      options: ["A. Execute only when requested", "B. Execute continuously to be prepared to serve clients", "C. Execute only at night", "D. Never execute"],
-      answer: "B. Execute continuously to be prepared to serve clients",
-      diff: "medium"
-    },
-    {
-      q: "The peer-to-peer (P2P) model involves processes that:",
-      options: ["A. Only provide service", "B. Only receive service", "C. Provide service to and receive service from each other", "D. Do not communicate"],
-      answer: "C. Provide service to and receive service from each other",
-      diff: "easy"
-    },
-    {
-      q: "In the peer-to-peer model, processes typically execute:",
-      options: ["A. Continuously", "B. On a temporary basis", "C. Only as servers", "D. Only as clients"],
-      answer: "B. On a temporary basis",
-      diff: "medium"
-    },
-    {
-      q: "Examples of peer-to-peer applications include:",
-      options: ["A. Print server", "B. File server", "C. Instant messaging and competitive interactive games", "D. Centralized database"],
-      answer: "C. Instant messaging and competitive interactive games",
-      diff: "easy"
-    },
-    {
-      q: "In P2P file distribution, a collection of participating peers is sometimes called a:",
-      options: ["A. Cluster", "B. Swarm", "C. Network", "D. Group"],
-      answer: "B. Swarm",
-      diff: "easy"
-    },
-    {
-      q: "The swarm approach to file distribution is in contrast to the client/server model because it:",
-      options: ["A. Uses a central distribution center", "B. Distributes the service task over many peers", "C. Requires a single server", "D. Is slower"],
-      answer: "B. Distributes the service task over many peers",
-      diff: "medium"
-    },
-    {
-      q: "One reason the P2P model is replacing the client/server model for file sharing is:",
-      options: ["A. It is more centralized", "B. It leads to a more efficient system due to lack of centralized base", "C. It is easier to control", "D. It requires less software"],
-      answer: "B. It leads to a more efficient system due to lack of centralized base",
-      diff: "medium"
-    },
-    {
-      q: "The lack of a central server in P2P file distribution makes copyright enforcement:",
-      options: ["A. Easier", "B. More difficult, but not impossible", "C. Impossible", "D. Automatic"],
-      answer: "B. More difficult, but not impossible",
-      diff: "easy"
-    },
-    {
-      q: "The term 'peer-to-peer network' is considered:",
-      options: ["A. Accurate technical terminology", "B. A misuse of terminology", "C. The only correct term", "D. A hardware standard"],
-      answer: "B. A misuse of terminology",
-      diff: "medium"
-    },
-    {
-      q: "Peer-to-peer refers to a property of:",
-      options: ["A. The network", "B. Process communication", "C. The physical cables", "D. The router"],
-      answer: "B. Process communication",
-      diff: "medium"
-    },
-    {
-      q: "A process might use the P2P model for one communication and the client/server model for another communication:",
-      options: ["A. Only on different networks", "B. Over the same network", "C. Never", "D. Only on the Internet"],
-      answer: "B. Over the same network",
-      diff: "hard"
-    },
-    {
-      q: "It would be more accurate to speak of:",
-      options: ["A. Peer-to-peer network", "B. Communicating by means of the peer-to-peer model", "C. Peer-to-peer hardware", "D. P2P cabling"],
-      answer: "B. Communicating by means of the peer-to-peer model",
-      diff: "easy"
-    },
-    {
-      q: "In a file distribution swarm, one peer receives a file from another and then:",
-      options: ["A. Deletes it", "B. Provides it to other peers", "C. Keeps it secret", "D. Sends it only to the server"],
-      answer: "B. Provides it to other peers",
-      diff: "easy"
-    },
-    {
-      q: "Which model requires a process to execute continuously to be ready to serve?",
-      options: ["A. Peer-to-peer model", "B. Client/server model (the server)", "C. Swarm model", "D. Both A and B"],
-      answer: "B. Client/server model (the server)",
-      diff: "easy"
-    }
-  ]
-},
+4 resource managers, 4 resource types. Resource allocation is deceptively complex — a reliable OS must be designed to handle every contingency, since machines can't improvise.`,
+    questions: [
+      {
+        q: 'Which OS component is responsible for allocating space in the process table?',
+        options: ['A. File manager', 'B. Memory manager', 'C. Scheduler', 'D. Dispatcher'],
+        answer: 'C. Scheduler',
+        diff: 'easy',
+      },
+      {
+        q: 'The dispatcher is responsible for allocating which resource?',
+        options: ['A. Memory space', 'B. Time slices', 'C. File access', 'D. Mass storage space'],
+        answer: 'B. Time slices',
+        diff: 'easy',
+      },
+      {
+        q: 'Why does the module emphasize that "a machine does not think for itself; it merely follows directions" in the context of resource allocation?',
+        options: ['A. To argue that machines should never allocate resources', 'B. To explain why reliable OS design requires algorithms covering every contingency, since the machine cannot improvise solutions', 'C. To suggest that resource allocation is irrelevant to OS design', 'D. To prove that all computers are identical'],
+        answer: 'B. To explain why reliable OS design requires algorithms covering every contingency, since the machine cannot improvise solutions',
+        diff: 'hard',
+      },
+      {
+        q: 'Which manager allocates BOTH access to files AND mass storage space for new files?',
+        options: ['A. Memory manager', 'B. File manager', 'C. Scheduler', 'D. Dispatcher'],
+        answer: 'B. File manager',
+        diff: 'medium',
+      },
+      {
+        q: 'Process A is using Resource 1 and waiting for Resource 2, while Process B is using Resource 2 and waiting for Resource 1. This scenario is a setup for which problem, discussed in detail in the following module?',
+        options: ['A. Booting failure', 'B. Deadlock', 'C. Context switching', 'D. DNS lookup failure'],
+        answer: 'B. Deadlock',
+        diff: 'medium',
+      },
+      {
+        q: 'According to this module, on the surface, resource allocation appears:',
+        options: ['A. Impossible to implement', 'B. Quite simple, but in reality it is not so straightforward', 'C. Identical in every operating system without exception', 'D. Unrelated to the OS kernel'],
+        answer: 'B. Quite simple, but in reality it is not so straightforward',
+        diff: 'easy',
+      },
+      {
+        q: 'Which manager is responsible for allocating memory space to processes?',
+        options: ['A. Scheduler', 'B. Dispatcher', 'C. Memory manager', 'D. File manager'],
+        answer: 'C. Memory manager',
+        diff: 'easy',
+      },
+      {
+        q: 'What is the first resource allocation issue explicitly raised in this module?',
+        options: ['A. What if a process never requests any resources?', 'B. What if two processes demand the same resource at one time?', 'C. What if the dispatcher runs out of time slices entirely?', 'D. What if ROM becomes corrupted?'],
+        answer: 'B. What if two processes demand the same resource at one time?',
+        diff: 'medium',
+      },
+      {
+        q: 'In the context of this module, who/what is ultimately responsible for designing a reliable resource-allocation system, since the machine itself cannot reason about contingencies?',
+        options: ['A. The end user', 'B. The system designer/programmer ("You")', 'C. The hardware manufacturer alone', 'D. No one — it is automatic'],
+        answer: 'B. The system designer/programmer ("You")',
+        diff: 'hard',
+      },
+      {
+        q: 'Why is it significant that resource allocation issues are introduced here using a concrete two-process, two-resource example (A/B and Resource 1/Resource 2)?',
+        options: ['A. It has no further significance in the course', 'B. It sets up the exact conceptual scenario that the next module formally defines and solves as deadlock', 'C. It is purely a networking example, unrelated to OS topics', 'D. It demonstrates how the scheduler allocates time slices'],
+        answer: 'B. It sets up the exact conceptual scenario that the next module formally defines and solves as deadlock',
+        diff: 'hard',
+      },
+    ],
+  },
 
+  55: {
+    title: 'Operating Systems: Semaphores',
+    summary: `**Key Topics Covered:**
+- The shared-printer problem
+- Why a simple flag is not enough
+- Interrupt disable/enable vs the test-and-set instruction
+- Semaphores, critical regions, and mutual exclusion
 
-61: {
-  title: "Networking and the Internet: Methods of Process Communication",
-  summary: `**Key Topics Covered:**
-- Inter-process communication (IPC)
-- Client/server model (print server, file server)
-- Peer-to-peer (P2P) model
-- Swarm distribution
-- Distinction between P2P model and P2P network (terminology clarification)
+**Important Concepts:**
 
----
+**The Problem (shared printer):**
+If a process wants to print, the OS must check whether the printer is already in use before granting access — otherwise two processes printing simultaneously would produce garbage output for both.
 
-**Simple Understanding:**
+**The Naive Flag Approach:**
+A **flag** = a bit in memory; states called **set** (1 = printer allocated) and **clear** (0 = printer available). OS checks the flag: if clear → grant + set it; if set → make the process wait.
 
-**Inter-Process Communication (IPC):**
-👉 Processes on different computers (or same computer via multitasking) must coordinate.
-👉 Two main models: Client/Server and Peer-to-Peer (P2P).
+**Why the simple flag FAILS:**
+Testing-and-setting a flag takes SEVERAL machine instructions (retrieve from memory → manipulate in CPU → store back). A process can be INTERRUPTED right after it sees the flag is clear but BEFORE it sets it. Then another process also sees "clear," also gets access — TWO processes end up using the printer.
 
----
+**Two Real Fixes:**
+1. **Interrupt disable / interrupt enable instructions** — block all interrupts during the flag-testing routine, so nothing can interrupt it.
+2. **Test-and-set instruction** — a SINGLE machine instruction that retrieves the flag's value, notes it, AND sets it — atomically, in one uninterruptible step.
 
-**Client/Server Model:**
-👉 **Client:** Makes requests of other processes.
-👉 **Server:** Satisfies requests made by clients.
-👉 Server must execute continuously to be ready for clients.
+**Semaphore:**
+A properly implemented flag (using one of the above techniques) is called a **semaphore** — named after railroad signals that control track access. Just as only one train uses a track section at a time, a semaphore ensures only one process uses a guarded resource at a time.
 
-**Early Examples:**
-- **Print server:** One high-quality printer attached to network, other machines (clients) send print requests.
-- **File server:** One machine with mass storage (disk) containing all records; other machines request access to files.
+**Critical Region & Mutual Exclusion:**
+- A **critical region** = a sequence of instructions that only ONE process should execute at a time.
+- **Mutual exclusion** = the requirement that only one process at a time executes a critical region.
+- To enter: a process must find the semaphore clear, then set it. To exit: it clears the semaphore. If found set, it must wait.
 
----
-
-**Peer-to-Peer (P2P) Model:**
-👉 Processes provide service to AND receive service from each other.
-👉 Processes execute on temporary basis (not continuously running like servers).
-
-**Examples:**
-- Instant messaging (written conversation over Internet)
-- Competitive interactive games
-
-**File Distribution (Swarm):**
-👉 One peer receives a file from another, then provides it to other peers.
-👉 Collection of peers = **swarm**.
-👉 Distributes service task over many peers (more efficient than central server).
-
----
-
-**Legal Note:**
-👉 Lack of central server makes copyright enforcement difficult, but not impossible.
-👉 Individuals have faced significant liabilities for copyright infringement.
-
----
-
-**Terminology Clarification:**
-👉 "Peer-to-peer network" is misuse of terminology.
-👉 P2P is a **communication model** (property of process communication), not a property of the network.
-👉 A process can use P2P model for one communication and client/server for another over the same network.
-👉 Better to say: communicating by means of the peer-to-peer model.
-
----
-
-**Important Vocabulary:**
-- Inter-process communication (IPC) = communication between processes
-- Client = process that makes requests
-- Server = process that satisfies requests
-- Print server = server for printing
-- File server = server for file storage/access
-- Peer-to-peer (P2P) = processes serve each other
-- Swarm = collection of peers sharing files
-
----
+**Key Facts to Remember:**
+- Plain flags fail because testing+setting isn't a single atomic step — interruption can cause a race condition.
+- Test-and-set instruction = atomic (single instruction) solution.
+- Semaphore = correctly (atomically) implemented flag.
+- Critical region = code section needing exclusive access; mutual exclusion = the guarantee only one process is in it at a time.
 
 **Quick Revision Points:**
-- Client/server: server provides service, clients request.
-- Server must run continuously; clients run temporarily.
-- P2P: processes are both clients and servers.
-- P2P is temporary, decentralized.
-- Swarm distributes files efficiently.
-- P2P model ≠ P2P network (termination correction).`,
-  questions: [
-    {
-      q: "Communication between processes is called:",
-      options: ["A. Inter-process communication", "B. Intra-process communication", "C. Network communication", "D. System communication"],
-      answer: "A. Inter-process communication",
-      diff: "easy"
-    },
-    {
-      q: "In the client/server model, a process that makes requests of other processes is called a:",
-      options: ["A. Server", "B. Client", "C. Peer", "D. Host"],
-      answer: "B. Client",
-      diff: "easy"
-    },
-    {
-      q: "In the client/server model, a process that satisfies requests made by clients is called a:",
-      options: ["A. Client", "B. Peer", "C. Server", "D. Node"],
-      answer: "C. Server",
-      diff: "easy"
-    },
-    {
-      q: "An early application of the client/server model was a single high-quality printer attached to a network. The printer played the role of a:",
-      options: ["A. Client", "B. Print server", "C. File server", "D. Peer"],
-      answer: "B. Print server",
-      diff: "easy"
-    },
-    {
-      q: "In the print server example, the other machines on the network that sent print requests played the role of:",
-      options: ["A. Servers", "B. Clients", "C. Peers", "D. Swarms"],
-      answer: "B. Clients",
-      diff: "easy"
-    },
-    {
-      q: "A machine equipped with a high-capacity mass storage system containing an organization's records, providing access to other machines, is called a:",
-      options: ["A. Print server", "B. File server", "C. Client", "D. Peer"],
-      answer: "B. File server",
-      diff: "easy"
-    },
-    {
-      q: "In the client/server model, the server must:",
-      options: ["A. Execute only when requested", "B. Execute continuously to be prepared to serve clients", "C. Execute only at night", "D. Never execute"],
-      answer: "B. Execute continuously to be prepared to serve clients",
-      diff: "medium"
-    },
-    {
-      q: "The peer-to-peer (P2P) model involves processes that:",
-      options: ["A. Only provide service", "B. Only receive service", "C. Provide service to and receive service from each other", "D. Do not communicate"],
-      answer: "C. Provide service to and receive service from each other",
-      diff: "easy"
-    },
-    {
-      q: "In the peer-to-peer model, processes typically execute:",
-      options: ["A. Continuously", "B. On a temporary basis", "C. Only as servers", "D. Only as clients"],
-      answer: "B. On a temporary basis",
-      diff: "medium"
-    },
-    {
-      q: "Examples of peer-to-peer applications include:",
-      options: ["A. Print server", "B. File server", "C. Instant messaging and competitive interactive games", "D. Centralized database"],
-      answer: "C. Instant messaging and competitive interactive games",
-      diff: "easy"
-    },
-    {
-      q: "In P2P file distribution, a collection of participating peers is sometimes called a:",
-      options: ["A. Cluster", "B. Swarm", "C. Network", "D. Group"],
-      answer: "B. Swarm",
-      diff: "easy"
-    },
-    {
-      q: "The swarm approach to file distribution is in contrast to the client/server model because it:",
-      options: ["A. Uses a central distribution center", "B. Distributes the service task over many peers", "C. Requires a single server", "D. Is slower"],
-      answer: "B. Distributes the service task over many peers",
-      diff: "medium"
-    },
-    {
-      q: "One reason the P2P model is replacing the client/server model for file sharing is:",
-      options: ["A. It is more centralized", "B. It leads to a more efficient system due to lack of centralized base", "C. It is easier to control", "D. It requires less software"],
-      answer: "B. It leads to a more efficient system due to lack of centralized base",
-      diff: "medium"
-    },
-    {
-      q: "The lack of a central server in P2P file distribution makes copyright enforcement:",
-      options: ["A. Easier", "B. More difficult, but not impossible", "C. Impossible", "D. Automatic"],
-      answer: "B. More difficult, but not impossible",
-      diff: "easy"
-    },
-    {
-      q: "The term 'peer-to-peer network' is considered:",
-      options: ["A. Accurate technical terminology", "B. A misuse of terminology", "C. The only correct term", "D. A hardware standard"],
-      answer: "B. A misuse of terminology",
-      diff: "medium"
-    },
-    {
-      q: "Peer-to-peer refers to a property of:",
-      options: ["A. The network", "B. Process communication", "C. The physical cables", "D. The router"],
-      answer: "B. Process communication",
-      diff: "medium"
-    },
-    {
-      q: "A process might use the P2P model for one communication and the client/server model for another communication:",
-      options: ["A. Only on different networks", "B. Over the same network", "C. Never", "D. Only on the Internet"],
-      answer: "B. Over the same network",
-      diff: "hard"
-    },
-    {
-      q: "It would be more accurate to speak of:",
-      options: ["A. Peer-to-peer network", "B. Communicating by means of the peer-to-peer model", "C. Peer-to-peer hardware", "D. P2P cabling"],
-      answer: "B. Communicating by means of the peer-to-peer model",
-      diff: "easy"
-    },
-    {
-      q: "In a file distribution swarm, one peer receives a file from another and then:",
-      options: ["A. Deletes it", "B. Provides it to other peers", "C. Keeps it secret", "D. Sends it only to the server"],
-      answer: "B. Provides it to other peers",
-      diff: "easy"
-    },
-    {
-      q: "Which model requires a process to execute continuously to be ready to serve?",
-      options: ["A. Peer-to-peer model", "B. Client/server model (the server)", "C. Swarm model", "D. Both A and B"],
-      answer: "B. Client/server model (the server)",
-      diff: "easy"
-    }
-  ]
-},
+Flag (naive, buggy) → Semaphore (correct, atomic via test-and-set or interrupt disable/enable) → guards a Critical Region → enforces Mutual Exclusion.`,
+    questions: [
+      {
+        q: 'In the shared-printer scenario, what does a "clear" flag value (0) indicate?',
+        options: ['A. The printer is currently allocated to a process', 'B. The printer is available', 'C. The printer has malfunctioned', 'D. The process has been terminated'],
+        answer: 'B. The printer is available',
+        diff: 'easy',
+      },
+      {
+        q: 'Why does the simple flag-checking approach fail to reliably prevent two processes from using the printer simultaneously?',
+        options: ['A. Because flags can only hold values greater than 1', 'B. Because testing and setting the flag takes multiple machine instructions, allowing an interruption to occur between the test and the set', 'C. Because the printer itself cannot store flag values', 'D. Because the scheduler ignores flags entirely'],
+        answer: 'B. Because testing and setting the flag takes multiple machine instructions, allowing an interruption to occur between the test and the set',
+        diff: 'hard',
+      },
+      {
+        q: 'Which machine-language instruction retrieves a flag\'s value, notes it, AND sets the flag — all within a SINGLE, uninterruptible instruction?',
+        options: ['A. Interrupt disable instruction', 'B. Test-and-set instruction', 'C. Jump instruction', 'D. Process switch instruction'],
+        answer: 'B. Test-and-set instruction',
+        diff: 'medium',
+      },
+      {
+        q: 'A "properly implemented flag" that solves the race-condition problem is given a special name in this module:',
+        options: ['A. Process table entry', 'B. Semaphore', 'C. Interrupt handler', 'D. Boot loader'],
+        answer: 'B. Semaphore',
+        diff: 'easy',
+      },
+      {
+        q: 'The term "semaphore" is borrowed from which real-world analogy, as explained in this module?',
+        options: ['A. Traffic light intersections', 'B. Railroad signals controlling access to sections of track', 'C. Airport runway lighting', 'D. Elevator call buttons'],
+        answer: 'B. Railroad signals controlling access to sections of track',
+        diff: 'medium',
+      },
+      {
+        q: 'A "critical region," as defined in this module, refers to:',
+        options: ['A. Any code that runs during the boot process', 'B. A sequence of instructions that should be executed by only one process at a time', 'C. The portion of ROM containing the boot loader', 'D. A region of the process table reserved for high-priority processes'],
+        answer: 'B. A sequence of instructions that should be executed by only one process at a time',
+        diff: 'medium',
+      },
+      {
+        q: '"Mutual exclusion" is the requirement that:',
+        options: ['A. All processes execute simultaneously without restriction', 'B. Only one process at a time be allowed to execute a critical region', 'C. Every process must use a different printer', 'D. No process can ever access a semaphore'],
+        answer: 'B. Only one process at a time be allowed to execute a critical region',
+        diff: 'easy',
+      },
+      {
+        q: 'What is the correct procedure for a process to enter and exit a critical region guarded by a semaphore?',
+        options: ['A. Set the semaphore, enter, then find it clear, then exit', 'B. Find the semaphore clear, set it, enter the region, then clear it upon exiting', 'C. Ignore the semaphore entirely and proceed', 'D. Clear the semaphore twice before entering'],
+        answer: 'B. Find the semaphore clear, set it, enter the region, then clear it upon exiting',
+        diff: 'medium',
+      },
+      {
+        q: 'Besides the test-and-set instruction, what is the OTHER approach mentioned for making the flag-testing routine uninterruptible?',
+        options: ['A. Doubling the time slice length', 'B. Using interrupt disable and interrupt enable instructions to block interrupts during the routine', 'C. Permanently disabling the printer\'s device driver', 'D. Increasing the process\'s priority in the process table'],
+        answer: 'B. Using interrupt disable and interrupt enable instructions to block interrupts during the routine',
+        diff: 'medium',
+      },
+      {
+        q: 'Why specifically is it described as "worthless" if two processes were given simultaneous access to a single printer?',
+        options: ['A. Because the printer would physically explode', 'B. Because the printed output from both processes would become garbled/intermixed and unusable', 'C. Because the OS would automatically delete both jobs', 'D. Because printers cannot accept more than one job ever'],
+        answer: 'B. Because the printed output from both processes would become garbled/intermixed and unusable',
+        diff: 'hard',
+      },
+      {
+        q: 'If a process attempts to enter a critical region and finds the semaphore already SET (not clear), what must it do?',
+        options: ['A. Force the semaphore to clear and proceed anyway', 'B. Wait until the semaphore has been cleared by the process currently inside the critical region', 'C. Immediately terminate', 'D. Switch to privileged mode'],
+        answer: 'B. Wait until the semaphore has been cleared by the process currently inside the critical region',
+        diff: 'medium',
+      },
+    ],
+  },
 
+  56: {
+    title: 'Operating Systems: Deadlock',
+    summary: `**Key Topics Covered:**
+- Definition of deadlock, with examples
+- The forking/process-table example
+- The 3 necessary conditions for deadlock
+- Deadlock detection & correction vs deadlock avoidance
+- Spooling as a deadlock-avoidance technique
 
-62: {
-  title: "Networking and the Internet: Distributed Systems",
-  summary: `**Key Topics Covered:**
-- Distributed systems definition and infrastructure
-- Cluster computing (high-availability, load-balancing)
-- Grid computing (Condor, BOINC, volunteer computing)
-- Cloud computing (Elastic Compute Cloud, Google Drive/Apps)
-- Privacy and security concerns
+**Important Concepts:**
 
----
+**Deadlock — Definition:**
+A condition in which two or more processes are blocked from progressing because each is waiting for a resource that is allocated to ANOTHER process in the group.
+- Classic example: Process 1 has the printer but waits for the CD player; Process 2 has the CD player but waits for the printer. Neither can proceed.
+- Another example: in systems allowing "forking" (UNIX term for creating new processes), if the process table is full and every process needs to create another process to finish, NO process can continue.
 
-**Simple Understanding:**
+**The 3 Necessary Conditions for Deadlock (ALL must hold):**
+1. Competition for **non-sharable** resources.
+2. Resources requested on a **partial basis** (a process gets some resources, then comes back later for more).
+3. Once allocated, a resource **cannot be forcibly retrieved** from a process.
 
-**What are Distributed Systems?**
-👉 Software systems consisting of units executing as processes on different computers.
-👉 Examples: global information retrieval, accounting/inventory systems, computer games, network infrastructure.
-👉 Early systems built from scratch; today common infrastructure (communication, security) can be reused.
+**Removing deadlock = attacking ANY ONE of these 3 conditions:**
 
----
+**A) Deadlock Detection & Correction (attacks condition 3):**
+Assumes deadlock is rare enough that prevention isn't worth the effort. Instead: DETECT it if it happens, then CORRECT it by forcibly retrieving resources — e.g., an administrator ("super user") can "kill" some processes to free up space (like a full process table), breaking the deadlock.
 
-**Types of Distributed Systems:**
+**B) Deadlock Avoidance (attacks conditions 1 or 2):**
+- Attacks condition 2: require each process to request ALL its needed resources AT ONCE (no partial/staggered requests).
+- Attacks condition 1: convert non-sharable resources into SHARABLE ones. Example: **spooling** — instead of connecting a process directly to the printer's device driver, the OS connects it to a device driver that stores print data in MASS STORAGE first. Each process thinks it has the printer (so no waiting/competition), and the OS later transfers the stored data to the actual printer when free. This makes the non-sharable printer effectively "sharable" by creating the illusion of multiple printers.
 
-**1. Cluster Computing:**
-👉 Many independent computers work closely together to provide computation/service comparable to a much larger machine.
-👉 Benefits:
-   - Lower cost than supercomputer
-   - Higher reliability, lower maintenance
-   - **High-availability:** at least one member can answer even if others fail
-   - **Load-balancing:** workload shifts automatically from busy to idle members
-
-**2. Grid Computing:**
-👉 More loosely coupled than clusters, but work together on large tasks.
-👉 Specialized software distributes data and algorithms.
-👉 Examples:
-   - University of Wisconsin's Condor
-   - Berkeley's BOINC (Open Infrastructure for Network Computing)
-👉 Often installed on PCs used for other purposes – volunteer computing power when idle.
-👉 Enabled millions of home PCs to work on complex math/science problems.
-
-**3. Cloud Computing:**
-👉 Latest trend – huge pools of shared computers on network allocated to clients as needed.
-👉 Analogy: electrical grids eliminated need for individual generators.
-👉 Internet allows entities to entrust data/computations to "the Cloud" (enormous resources already on network).
-👉 Examples:
-   - Amazon Elastic Compute Cloud (rent virtual computers by the hour)
-   - Google Drive, Google Apps (collaborate without knowing hardware location)
-👉 Provides reliability and scalability guarantees.
-
----
-
-**Concerns:**
-👉 Privacy and security – may not know who owns/operates computers we use.
-
----
-
-**Important Vocabulary:**
-- Distributed system = software units on different computers
-- Cluster computing = tightly coupled independent computers
-- High-availability = system remains operational despite failures
-- Load-balancing = distributing workload evenly
-- Grid computing = loosely coupled, volunteer computing
-- BOINC = Berkeley Open Infrastructure for Network Computing
-- Cloud computing = shared pool of resources on demand
-- Scalability = ability to handle growing workload
-
----
+**Key Facts to Remember:**
+- ALL THREE conditions must be true simultaneously for deadlock to occur — removing even one prevents it.
+- "Killing" processes = the correction technique under detection-and-correction schemes.
+- Spooling = the specific named technique for converting a non-sharable resource (printer) into a sharable one.
 
 **Quick Revision Points:**
-- Distributed systems: processes on different computers.
-- Cluster: tight coupling, high-availability, load-balancing.
-- Grid: loose coupling, volunteer computing (Condor, BOINC).
-- Cloud: on-demand resources, rent by hour (Amazon, Google).
-- Cloud raises privacy/security concerns.`,
-  questions: [
-    {
-      q: "A software system consisting of units that execute as processes on different computers is called a:",
-      options: ["A. Centralized system", "B. Distributed system", "C. Standalone system", "D. Batch system"],
-      answer: "B. Distributed system",
-      diff: "easy"
-    },
-    {
-      q: "Early distributed systems were developed:",
-      options: ["A. Using prefabricated components", "B. Independently from scratch", "C. Only by cloud providers", "D. Without any infrastructure"],
-      answer: "B. Independently from scratch",
-      diff: "easy"
-    },
-    {
-      q: "Today, research reveals that distributed systems share common infrastructure including:",
-      options: ["A. Only storage", "B. Communication and security systems", "C. Only processing", "D. Only networking"],
-      answer: "B. Communication and security systems",
-      diff: "easy"
-    },
-    {
-      q: "A distributed system in which many independent computers work closely together to provide computation comparable to a much larger machine is called:",
-      options: ["A. Grid computing", "B. Cloud computing", "C. Cluster computing", "D. Edge computing"],
-      answer: "C. Cluster computing",
-      diff: "easy"
-    },
-    {
-      q: "Cluster computing can provide lower cost than a supercomputer, plus:",
-      options: ["A. Lower reliability", "B. Higher reliability and lower maintenance costs", "C. Higher maintenance costs", "D. Lower availability"],
-      answer: "B. Higher reliability and lower maintenance costs",
-      diff: "easy"
-    },
-    {
-      q: "The property that at least one member of a cluster can answer a request even if others break down is called:",
-      options: ["A. Load-balancing", "B. High-availability", "C. Scalability", "D. Fault tolerance"],
-      answer: "B. High-availability",
-      diff: "medium"
-    },
-    {
-      q: "The ability to shift workload automatically from busy cluster members to idle ones is called:",
-      options: ["A. High-availability", "B. Load-balancing", "C. Grid computing", "D. Virtualization"],
-      answer: "B. Load-balancing",
-      diff: "easy"
-    },
-    {
-      q: "Grid computing refers to distributed systems that are:",
-      options: ["A. More tightly coupled than clusters", "B. More loosely coupled than clusters", "C. Exactly the same as clusters", "D. Only used for databases"],
-      answer: "B. More loosely coupled than clusters",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is an example of grid computing software?",
-      options: ["A. Amazon EC2", "B. University of Wisconsin's Condor", "C. Google Drive", "D. Windows OS"],
-      answer: "B. University of Wisconsin's Condor",
-      diff: "medium"
-    },
-    {
-      q: "BOINC stands for:",
-      options: ["A. Berkeley Open Infrastructure for Network Computing", "B. Basic Online Internet Computing", "C. Binary Object Internet Network Computing", "D. Berkeley Online Interactive Computing"],
-      answer: "A. Berkeley Open Infrastructure for Network Computing",
-      diff: "hard"
-    },
-    {
-      q: "Grid computing often uses computers that are normally used for other purposes, which is called:",
-      options: ["A. Dedicated computing", "B. Volunteer computing", "C. Paid computing", "D. Centralized computing"],
-      answer: "B. Volunteer computing",
-      diff: "easy"
-    },
-    {
-      q: "The latest trend in distributed systems, where huge pools of shared computers on the network can be allocated to clients as needed, is called:",
-      options: ["A. Cluster computing", "B. Grid computing", "C. Cloud computing", "D. Mainframe computing"],
-      answer: "C. Cloud computing",
-      diff: "easy"
-    },
-    {
-      q: "The analogy used for cloud computing is:",
-      options: ["A. Telephone networks", "B. Metropolitan electrical grids", "C. Water supply systems", "D. Road networks"],
-      answer: "B. Metropolitan electrical grids",
-      diff: "medium"
-    },
-    {
-      q: "Amazon's Elastic Compute Cloud allows clients to:",
-      options: ["A. Buy physical servers", "B. Rent virtual computers by the hour", "C. Lease network cables", "D. Purchase software licenses"],
-      answer: "B. Rent virtual computers by the hour",
-      diff: "easy"
-    },
-    {
-      q: "Google Drive and Google Apps allow users to collaborate without knowing:",
-      options: ["A. Their passwords", "B. How many computers work on the problem or where data is stored", "C. The cost", "D. The internet speed"],
-      answer: "B. How many computers work on the problem or where data is stored",
-      diff: "medium"
-    },
-    {
-      q: "Cloud computing services provide reasonable guarantees of:",
-      options: ["A. Only reliability", "B. Only scalability", "C. Reliability and scalability", "D. Only privacy"],
-      answer: "C. Reliability and scalability",
-      diff: "easy"
-    },
-    {
-      q: "A major concern raised by cloud computing is:",
-      options: ["A. High cost", "B. Privacy and security", "C. Slow speed", "D. Lack of internet"],
-      answer: "B. Privacy and security",
-      diff: "easy"
-    },
-    {
-      q: "The cloud refers to:",
-      options: ["A. Weather forecasting systems", "B. Enormous computing resources already available on the network", "C. A type of storage device", "D. A programming language"],
-      answer: "B. Enormous computing resources already available on the network",
-      diff: "easy"
-    },
-    {
-      q: "In cloud computing, we may no longer know:",
-      options: ["A. How to use the computer", "B. Who owns and operates the computers we use", "C. The operating system", "D. The price"],
-      answer: "B. Who owns and operates the computers we use",
-      diff: "easy"
-    },
-    {
-      q: "Which type of distributed system is most tightly coupled?",
-      options: ["A. Cloud computing", "B. Grid computing", "C. Cluster computing", "D. Peer-to-peer computing"],
-      answer: "C. Cluster computing",
-      diff: "medium"
-    }
-  ]
-},
-
-63: {
-  title: "Networking and the Internet: Distributed Systems",
-  summary: `**Key Topics Covered:**
-- Distributed systems definition and infrastructure
-- Cluster computing (high-availability, load-balancing)
-- Grid computing (Condor, BOINC, volunteer computing)
-- Cloud computing (Elastic Compute Cloud, Google Drive/Apps)
-- Privacy and security concerns
-
----
-
-**Simple Understanding:**
-
-**What are Distributed Systems?**
-👉 Software systems consisting of units executing as processes on different computers.
-👉 Examples: global information retrieval, accounting/inventory systems, computer games, network infrastructure.
-👉 Early systems built from scratch; today common infrastructure (communication, security) can be reused.
-
----
-
-**Types of Distributed Systems:**
-
-**1. Cluster Computing:**
-👉 Many independent computers work closely together to provide computation/service comparable to a much larger machine.
-👉 Benefits:
-   - Lower cost than supercomputer
-   - Higher reliability, lower maintenance
-   - **High-availability:** at least one member can answer even if others fail
-   - **Load-balancing:** workload shifts automatically from busy to idle members
-
-**2. Grid Computing:**
-👉 More loosely coupled than clusters, but work together on large tasks.
-👉 Specialized software distributes data and algorithms.
-👉 Examples:
-   - University of Wisconsin's Condor
-   - Berkeley's BOINC (Open Infrastructure for Network Computing)
-👉 Often installed on PCs used for other purposes – volunteer computing power when idle.
-👉 Enabled millions of home PCs to work on complex math/science problems.
-
-**3. Cloud Computing:**
-👉 Latest trend – huge pools of shared computers on network allocated to clients as needed.
-👉 Analogy: electrical grids eliminated need for individual generators.
-👉 Internet allows entities to entrust data/computations to "the Cloud" (enormous resources already on network).
-👉 Examples:
-   - Amazon Elastic Compute Cloud (rent virtual computers by the hour)
-   - Google Drive, Google Apps (collaborate without knowing hardware location)
-👉 Provides reliability and scalability guarantees.
-
----
-
-**Concerns:**
-👉 Privacy and security – may not know who owns/operates computers we use.
-
----
-
-**Important Vocabulary:**
-- Distributed system = software units on different computers
-- Cluster computing = tightly coupled independent computers
-- High-availability = system remains operational despite failures
-- Load-balancing = distributing workload evenly
-- Grid computing = loosely coupled, volunteer computing
-- BOINC = Berkeley Open Infrastructure for Network Computing
-- Cloud computing = shared pool of resources on demand
-- Scalability = ability to handle growing workload
-
----
-
-**Quick Revision Points:**
-- Distributed systems: processes on different computers.
-- Cluster: tight coupling, high-availability, load-balancing.
-- Grid: loose coupling, volunteer computing (Condor, BOINC).
-- Cloud: on-demand resources, rent by hour (Amazon, Google).
-- Cloud raises privacy/security concerns.`,
-  questions: [
-    {
-      q: "A software system consisting of units that execute as processes on different computers is called a:",
-      options: ["A. Centralized system", "B. Distributed system", "C. Standalone system", "D. Batch system"],
-      answer: "B. Distributed system",
-      diff: "easy"
-    },
-    {
-      q: "Early distributed systems were developed:",
-      options: ["A. Using prefabricated components", "B. Independently from scratch", "C. Only by cloud providers", "D. Without any infrastructure"],
-      answer: "B. Independently from scratch",
-      diff: "easy"
-    },
-    {
-      q: "Today, research reveals that distributed systems share common infrastructure including:",
-      options: ["A. Only storage", "B. Communication and security systems", "C. Only processing", "D. Only networking"],
-      answer: "B. Communication and security systems",
-      diff: "easy"
-    },
-    {
-      q: "A distributed system in which many independent computers work closely together to provide computation comparable to a much larger machine is called:",
-      options: ["A. Grid computing", "B. Cloud computing", "C. Cluster computing", "D. Edge computing"],
-      answer: "C. Cluster computing",
-      diff: "easy"
-    },
-    {
-      q: "Cluster computing can provide lower cost than a supercomputer, plus:",
-      options: ["A. Lower reliability", "B. Higher reliability and lower maintenance costs", "C. Higher maintenance costs", "D. Lower availability"],
-      answer: "B. Higher reliability and lower maintenance costs",
-      diff: "easy"
-    },
-    {
-      q: "The property that at least one member of a cluster can answer a request even if others break down is called:",
-      options: ["A. Load-balancing", "B. High-availability", "C. Scalability", "D. Fault tolerance"],
-      answer: "B. High-availability",
-      diff: "medium"
-    },
-    {
-      q: "The ability to shift workload automatically from busy cluster members to idle ones is called:",
-      options: ["A. High-availability", "B. Load-balancing", "C. Grid computing", "D. Virtualization"],
-      answer: "B. Load-balancing",
-      diff: "easy"
-    },
-    {
-      q: "Grid computing refers to distributed systems that are:",
-      options: ["A. More tightly coupled than clusters", "B. More loosely coupled than clusters", "C. Exactly the same as clusters", "D. Only used for databases"],
-      answer: "B. More loosely coupled than clusters",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is an example of grid computing software?",
-      options: ["A. Amazon EC2", "B. University of Wisconsin's Condor", "C. Google Drive", "D. Windows OS"],
-      answer: "B. University of Wisconsin's Condor",
-      diff: "medium"
-    },
-    {
-      q: "BOINC stands for:",
-      options: ["A. Berkeley Open Infrastructure for Network Computing", "B. Basic Online Internet Computing", "C. Binary Object Internet Network Computing", "D. Berkeley Online Interactive Computing"],
-      answer: "A. Berkeley Open Infrastructure for Network Computing",
-      diff: "hard"
-    },
-    {
-      q: "Grid computing often uses computers that are normally used for other purposes, which is called:",
-      options: ["A. Dedicated computing", "B. Volunteer computing", "C. Paid computing", "D. Centralized computing"],
-      answer: "B. Volunteer computing",
-      diff: "easy"
-    },
-    {
-      q: "The latest trend in distributed systems, where huge pools of shared computers on the network can be allocated to clients as needed, is called:",
-      options: ["A. Cluster computing", "B. Grid computing", "C. Cloud computing", "D. Mainframe computing"],
-      answer: "C. Cloud computing",
-      diff: "easy"
-    },
-    {
-      q: "The analogy used for cloud computing is:",
-      options: ["A. Telephone networks", "B. Metropolitan electrical grids", "C. Water supply systems", "D. Road networks"],
-      answer: "B. Metropolitan electrical grids",
-      diff: "medium"
-    },
-    {
-      q: "Amazon's Elastic Compute Cloud allows clients to:",
-      options: ["A. Buy physical servers", "B. Rent virtual computers by the hour", "C. Lease network cables", "D. Purchase software licenses"],
-      answer: "B. Rent virtual computers by the hour",
-      diff: "easy"
-    },
-    {
-      q: "Google Drive and Google Apps allow users to collaborate without knowing:",
-      options: ["A. Their passwords", "B. How many computers work on the problem or where data is stored", "C. The cost", "D. The internet speed"],
-      answer: "B. How many computers work on the problem or where data is stored",
-      diff: "medium"
-    },
-    {
-      q: "Cloud computing services provide reasonable guarantees of:",
-      options: ["A. Only reliability", "B. Only scalability", "C. Reliability and scalability", "D. Only privacy"],
-      answer: "C. Reliability and scalability",
-      diff: "easy"
-    },
-    {
-      q: "A major concern raised by cloud computing is:",
-      options: ["A. High cost", "B. Privacy and security", "C. Slow speed", "D. Lack of internet"],
-      answer: "B. Privacy and security",
-      diff: "easy"
-    },
-    {
-      q: "The cloud refers to:",
-      options: ["A. Weather forecasting systems", "B. Enormous computing resources already available on the network", "C. A type of storage device", "D. A programming language"],
-      answer: "B. Enormous computing resources already available on the network",
-      diff: "easy"
-    },
-    {
-      q: "In cloud computing, we may no longer know:",
-      options: ["A. How to use the computer", "B. Who owns and operates the computers we use", "C. The operating system", "D. The price"],
-      answer: "B. Who owns and operates the computers we use",
-      diff: "easy"
-    },
-    {
-      q: "Which type of distributed system is most tightly coupled?",
-      options: ["A. Cloud computing", "B. Grid computing", "C. Cluster computing", "D. Peer-to-peer computing"],
-      answer: "C. Cluster computing",
-      diff: "medium"
-    }
-  ]
-},
-
-64: {
-  title: "Networking and the Internet: Internet Architecture",
-  summary: `**Key Topics Covered:**
-- Internet as collection of connected networks
-- ISP (Internet Service Provider) hierarchy
-- Tier-1 ISPs (backbone, international WANs)
-- Tier-2 ISPs (regional)
-- Tier-3 / Access ISPs (intranets, provide access to homes/businesses)
-- End systems / hosts (laptops, phones, appliances)
-- WiFi and hotspots
-- Cellular networks and cells
-
----
-
-**Simple Understanding:**
-
-**Internet Structure:**
-👉 The Internet is a collection of connected networks operated by ISPs.
-👉 ISPs can be classified in a hierarchy based on their role.
-
----
-
-**Tier-1 ISPs (Top Level):**
-👉 Very high-speed, high-capacity, international WANs.
-👉 Form the backbone of the Internet.
-👉 Operated by large communications companies (e.g., former telephone companies).
-
-**Tier-2 ISPs:**
-👉 More regional in scope, less potent than tier-1.
-👉 Connect to tier-1 ISPs.
-👉 Also operated by communications companies.
-
-**Tier-3 / Access ISPs:**
-👉 Provide access to the core Internet for individuals and businesses.
-👉 Essentially independent internets (intranets) operated by single authority.
-👉 Examples: cable companies, telephone companies, universities, corporations.
-
----
-
-**End Systems (Hosts):**
-👉 Devices that individual users connect to access ISPs.
-👉 Examples: laptops, PCs, telephones, video cameras, automobiles, home appliances.
-👉 Any device that benefits from communication is a potential end system.
-
----
-
-**Connection Technologies:**
-
-**WiFi (Wireless Fidelity):**
-👉 Connect AP (Access Point) to an access ISP.
-👉 Provides Internet access to end systems within AP's broadcast range.
-👉 Area within range = **hot spot** (especially when publicly available or free).
-👉 Hot spots found in homes, hotels, offices, parks, even entire cities.
-
-**Cellular Networks:**
-👉 Similar technology used by cellular telephone industry.
-👉 Hot spots are called **cells**.
-👉 "Routers" generating cells coordinate to provide continuous service as end system moves from cell to cell.
-
----
-
-**Important Vocabulary:**
-- ISP = Internet Service Provider
-- Tier-1 ISP = backbone, international
-- Tier-2 ISP = regional
-- Access ISP (tier-3) = provides access to homes/businesses
-- End system / host = user device
-- WiFi = wireless technology
-- Access Point (AP) = WiFi hub
-- Hot spot = area with WiFi access
-- Cell = cellular network's coverage area
-
----
-
-**Quick Revision Points:**
-- Internet hierarchy: Tier-1 (backbone) → Tier-2 (regional) → Tier-3 (access) → end systems.
-- Access ISPs include cable, telephone companies, universities.
-- End systems: any communicating device.
-- WiFi: AP connected to access ISP creates hot spot.
-- Cellular: cells provide seamless handoff as device moves.`,
-  questions: [
-    {
-      q: "The Internet is a collection of:",
-      options: ["A. End systems only", "B. Connected networks", "C. Hot spots", "D. Cellular towers"],
-      answer: "B. Connected networks",
-      diff: "easy"
-    },
-    {
-      q: "Networks constructed and maintained by organizations called Internet Service Providers are referred to as:",
-      options: ["A. End systems", "B. ISPs", "C. Hosts", "D. Access points"],
-      answer: "B. ISPs",
-      diff: "easy"
-    },
-    {
-      q: "Which tier of ISPs consists of very high-speed, high-capacity, international WANs that form the backbone of the Internet?",
-      options: ["A. Tier-3", "B. Tier-2", "C. Tier-1", "D. Access ISP"],
-      answer: "C. Tier-1",
-      diff: "easy"
-    },
-    {
-      q: "Tier-1 ISPs are typically operated by:",
-      options: ["A. Small businesses", "B. Large communications companies", "C. Individual users", "D. Non-profit organizations"],
-      answer: "B. Large communications companies",
-      diff: "easy"
-    },
-    {
-      q: "Tier-2 ISPs tend to be more _____ in scope than tier-1 ISPs.",
-      options: ["A. International", "B. Global", "C. Regional", "D. Local"],
-      answer: "C. Regional",
-      diff: "easy"
-    },
-    {
-      q: "An independent internet operated by a single authority that supplies Internet access to homes and businesses is called a(n):",
-      options: ["A. Tier-1 ISP", "B. Tier-2 ISP", "C. Access ISP (tier-3)", "D. Backbone"],
-      answer: "C. Access ISP (tier-3)",
-      diff: "medium"
-    },
-    {
-      q: "Access ISPs are sometimes called:",
-      options: ["A. Backbone providers", "B. Intranets", "C. Tier-1 networks", "D. End systems"],
-      answer: "B. Intranets",
-      diff: "medium"
-    },
-    {
-      q: "Examples of access ISPs include:",
-      options: ["A. Cable and telephone companies", "B. Tier-1 backbone providers", "C. International WANs", "D. Satellite providers only"],
-      answer: "A. Cable and telephone companies",
-      diff: "easy"
-    },
-    {
-      q: "The devices that individual users connect to access ISPs are known as:",
-      options: ["A. Routers", "B. End systems or hosts", "C. Access points", "D. Cells"],
-      answer: "B. End systems or hosts",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following can be an end system?",
-      options: ["A. Laptop", "B. Smartphone", "C. Home appliance", "D. All of the above"],
-      answer: "D. All of the above",
-      diff: "easy"
-    },
-    {
-      q: "The fastest growing technology for end systems to connect to larger networks is:",
-      options: ["A. Ethernet cables", "B. Fiber optics", "C. Wireless connections (WiFi)", "D. Dial-up"],
-      answer: "C. Wireless connections (WiFi)",
-      diff: "easy"
-    },
-    {
-      q: "In WiFi, the device that connects to an access ISP and provides Internet access within broadcast range is called:",
-      options: ["A. End system", "B. Host", "C. Access Point (AP)", "D. Cell"],
-      answer: "C. Access Point (AP)",
-      diff: "easy"
-    },
-    {
-      q: "The area within an AP's range, especially when publicly available or free, is called a:",
-      options: ["A. Cell", "B. Hot spot", "C. Tier", "D. Backbone"],
-      answer: "B. Hot spot",
-      diff: "easy"
-    },
-    {
-      q: "Hot spots can be found in:",
-      options: ["A. Homes and offices", "B. Hotels and parks", "C. Entire cities", "D. All of the above"],
-      answer: "D. All of the above",
-      diff: "easy"
-    },
-    {
-      q: "In cellular telephone networks, hot spots are known as:",
-      options: ["A. Access points", "B. Cells", "C. Tiers", "D. End systems"],
-      answer: "B. Cells",
-      diff: "easy"
-    },
-    {
-      q: "In cellular networks, the 'routers' generating cells are coordinated to provide:",
-      options: ["A. Continuous service as an end system moves from one cell to another", "B. Only stationary service", "C. No handoff", "D. Wired connections"],
-      answer: "A. Continuous service as an end system moves from one cell to another",
-      diff: "medium"
-    },
-    {
-      q: "The hierarchy of ISPs from highest to lowest is:",
-      options: ["A. Tier-1 → Tier-2 → Tier-3 (access)", "B. Tier-3 → Tier-2 → Tier-1", "C. Access → Tier-1 → Tier-2", "D. Tier-2 → Tier-1 → Access"],
-      answer: "A. Tier-1 → Tier-2 → Tier-3 (access)",
-      diff: "easy"
-    },
-    {
-      q: "The core of the Internet is formed by:",
-      options: ["A. Access ISPs and end systems", "B. Tier-1 and tier-2 ISPs", "C. Hot spots only", "D. Cellular networks"],
-      answer: "B. Tier-1 and tier-2 ISPs",
-      diff: "medium"
-    },
-    {
-      q: "Access to the core Internet is usually provided by:",
-      options: ["A. Tier-1 ISPs", "B. Tier-2 ISPs", "C. Access (tier-3) ISPs", "D. End systems"],
-      answer: "C. Access (tier-3) ISPs",
-      diff: "medium"
-    },
-    {
-      q: "Which statement best describes the Internet?",
-      options: ["A. A single large network", "B. A hierarchical collection of connected networks operated by ISPs", "C. Only wireless networks", "D. Only wired networks"],
-      answer: "B. A hierarchical collection of connected networks operated by ISPs",
-      diff: "easy"
-    }
-  ]
-},
-
-
-65: {
-  title: "Networking and the Internet: Internet Addressing",
-  summary: `**Key Topics Covered:**
-- IP addresses (32-bit, moving to 128-bit)
-- Dotted decimal notation
-- ICANN and registrars
-- Domain names and top-level domains (TLDs)
-- Subdomains
-- Domain Name System (DNS)
-- Name servers and DNS lookup
-- Virtual domains (domains hosted by ISPs)
-
----
-
-**Simple Understanding:**
-
-**IP Addresses:**
-👉 Every computer on the Internet needs a unique address = IP address.
-👉 Originally: 32 bits (e.g., 192.207.177.133).
-👉 Currently converting to 128-bit addresses (more addresses available).
-👉 ICANN (nonprofit) awards blocks of IP addresses to ISPs.
-👉 ISPs allocate addresses within their blocks to machines.
-
----
-
-**Dotted Decimal Notation:**
-👉 IP addresses written as bytes separated by periods.
-👉 Each byte expressed as integer (0-255) in base 10.
-👉 Example: 192.207.177.133 represents 4 bytes.
-
----
-
-**Domain Names (Mnemonic Addressing):**
-👉 IP addresses are hard for humans; domain names are easier.
-👉 **Domain:** a "region" of Internet operated by a single authority (university, company, etc.)
-👉 Domain name must be unique, registered with ICANN via registrars.
-
----
-
-**Top-Level Domains (TLDs):**
-👉 Suffix after last dot indicates classification.
-👉 Examples:
-   - .edu → educational
-   - .com → commercial
-   - .gov → U.S. government
-   - .org → nonprofit
-   - .museum, .info, .net
-👉 Country-code TLDs: .au (Australia), .ca (Canada), etc.
-
----
-
-**Subdomains:**
-👉 Domain names extended to the left, separated by periods.
-👉 Example: eagle.mu.edu (eagle is host in mu.edu domain).
-👉 Multiple extensions: overthruster.propulsion.yoyodyne.com
-
----
-
-**Domain Name System (DNS):**
-👉 Humans use domain names, but Internet uses IP addresses.
-👉 Need conversion: domain name → IP address.
-👉 **Name servers:** servers that perform address translation.
-👉 Collection of name servers = **Domain Name System (DNS)**.
-👉 Process = **DNS lookup**.
-
----
-
-**Domain Hosting Options:**
-👉 Large organizations: maintain own name server and network.
-👉 Small organizations/individuals: contract with ISP.
-👉 ISP hosts the domain name in its name server (virtual domain).
-👉 Multiple registered domains can reside within one ISP.
-
----
-
-**Important Vocabulary:**
-- IP address = unique numerical identifier
-- ICANN = Internet Corporation for Assigned Names and Numbers
-- Dotted decimal = IP address format with periods
-- Domain = region of Internet under single authority
-- TLD = top-level domain (.com, .edu, etc.)
-- Subdomain = extension to the left of domain name
-- DNS = Domain Name System
-- Name server = server providing DNS lookup
-- Registrar = company that registers domain names
-
----
-
-**Quick Revision Points:**
-- IP addresses unique, 32-bit → moving to 128-bit.
-- Dotted decimal: e.g., 192.207.177.133.
-- ICANN awards IP blocks to ISPs.
-- Domain names: mnemonic, easier for humans.
-- TLDs: .com, .edu, .gov, .org, country codes.
-- DNS converts domain names to IP addresses.
-- Name servers perform DNS lookup.
-- Small domains can be hosted by ISP name server.`,
-  questions: [
-    {
-      q: "What does IP stand for in IP address?",
-      options: ["A. Internet Protocol", "B. Internal Program", "C. International Packet", "D. Interface Protocol"],
-      answer: "A. Internet Protocol",
-      diff: "easy"
-    },
-    {
-      q: "Originally, each IP address was a pattern of how many bits?",
-      options: ["A. 16 bits", "B. 32 bits", "C. 64 bits", "D. 128 bits"],
-      answer: "B. 32 bits",
-      diff: "easy"
-    },
-    {
-      q: "The Internet is currently converting to IP addresses of how many bits?",
-      options: ["A. 32 bits", "B. 64 bits", "C. 128 bits", "D. 256 bits"],
-      answer: "C. 128 bits",
-      diff: "easy"
-    },
-    {
-      q: "The organization that awards blocks of IP addresses to ISPs is called:",
-      options: ["A. ICANN", "B. IETF", "C. IEEE", "D. W3C"],
-      answer: "A. ICANN",
-      diff: "easy"
-    },
-    {
-      q: "ICANN stands for:",
-      options: ["A. Internet Corporation for Assigned Names and Numbers", "B. International Computer Association of Network Names", "C. Internet Control and Address Naming Network", "D. International Committee for Assigned Network Numbers"],
-      answer: "A. Internet Corporation for Assigned Names and Numbers",
-      diff: "medium"
-    },
-    {
-      q: "IP addresses are traditionally written in:",
-      options: ["A. Binary notation", "B. Hexadecimal notation", "C. Dotted decimal notation", "D. Octal notation"],
-      answer: "C. Dotted decimal notation",
-      diff: "easy"
-    },
-    {
-      q: "In dotted decimal notation, bytes are separated by:",
-      options: ["A. Commas", "B. Periods (dots)", "C. Colons", "D. Spaces"],
-      answer: "B. Periods (dots)",
-      diff: "easy"
-    },
-    {
-      q: "A 32-bit IP address expressed in dotted decimal might look like:",
-      options: ["A. 192.207.177.133", "B. 192-207-177-133", "C. 192:207:177:133", "D. 192 207 177 133"],
-      answer: "A. 192.207.177.133",
-      diff: "easy"
-    },
-    {
-      q: "A mnemonic name that identifies a machine on the Internet is called a:",
-      options: ["A. IP address", "B. Domain name", "C. Subnet mask", "D. Gateway address"],
-      answer: "B. Domain name",
-      diff: "easy"
-    },
-    {
-      q: "The suffix .edu is an example of a:",
-      options: ["A. Subdomain", "B. Top-level domain (TLD)", "C. Host name", "D. IP address class"],
-      answer: "B. Top-level domain (TLD)",
-      diff: "easy"
-    },
-    {
-      q: "The TLD .com is intended for:",
-      options: ["A. Educational institutions", "B. Commercial institutions", "C. Government institutions", "D. Nonprofit organizations"],
-      answer: "B. Commercial institutions",
-      diff: "easy"
-    },
-    {
-      q: "The TLD .gov is for:",
-      options: ["A. Commercial institutions", "B. Educational institutions", "C. U.S. government institutions", "D. Nonprofit organizations"],
-      answer: "C. U.S. government institutions",
-      diff: "easy"
-    },
-    {
-      q: "Country-code TLDs are two-letter suffixes such as:",
-      options: ["A. .com", "B. .edu", "C. .au for Australia", "D. .org"],
-      answer: "C. .au for Australia",
-      diff: "easy"
-    },
-    {
-      q: "In the domain name eagle.mu.edu, 'eagle' is a:",
-      options: ["A. TLD", "B. Subdomain", "C. Host name", "D. Domain name"],
-      answer: "C. Host name",
-      diff: "medium"
-    },
-    {
-      q: "The system that converts domain names to IP addresses is called:",
-      options: ["A. DHCP", "B. DNS (Domain Name System)", "C. HTTP", "D. FTP"],
-      answer: "B. DNS (Domain Name System)",
-      diff: "easy"
-    },
-    {
-      q: "Servers that provide address translation services are called:",
-      options: ["A. Web servers", "B. Mail servers", "C. Name servers", "D. File servers"],
-      answer: "C. Name servers",
-      diff: "easy"
-    },
-    {
-      q: "The process of using DNS to perform a translation is called a:",
-      options: ["A. DNS query", "B. DNS lookup", "C. DNS forward", "D. DNS resolve"],
-      answer: "B. DNS lookup",
-      diff: "medium"
-    },
-    {
-      q: "Companies that handle domain registration under ICANN are called:",
-      options: ["A. Registrars", "B. ISPs", "C. Hosts", "D. Name servers"],
-      answer: "A. Registrars",
-      diff: "easy"
-    },
-    {
-      q: "When a small organization contracts with an ISP to host a domain name, this is often called a:",
-      options: ["A. Physical domain", "B. Virtual domain", "C. Subdomain", "D. Top-level domain"],
-      answer: "B. Virtual domain",
-      diff: "hard"
-    },
-    {
-      q: "Multiple registered domains can reside within a single ISP's name server, each often occupying:",
-      options: ["A. An entire computer", "B. A small portion of a single computer", "C. A separate network", "D. A separate country"],
-      answer: "B. A small portion of a single computer",
-      diff: "medium"
-    }
-  ]
-},
-
-
-66: {
-  title: "Networking and the Internet: Internet Applications",
-  summary: `**Key Topics Covered:**
-- Traditional Internet applications (NNTP, FTP, Telnet, SSH)
-- HTTP and web-based applications
-- Electronic mail (email)
-- VoIP (Voice over Internet Protocol)
-- Internet multimedia streaming (Netflix, YouTube)
-
----
-
-**Simple Understanding:**
-
-**Traditional Internet Applications:**
-👉 Early Internet had separate, simple programs following specific protocols.
-👉 **NNTP (Network News Transfer Protocol):** newsreader applications.
-👉 **FTP (File Transfer Protocol):** listing and copying files across network.
-👉 **Telnet / SSH (Secure Shell):** accessing another computer remotely.
-👉 Today, many are handled by webpages via HTTP.
-
----
-
-**Electronic Mail (Email):**
-👉 One of the oldest and most enduring Internet uses.
-👉 Exchanging messages between end users over network.
-
-**Other messaging systems:**
-- Instant messaging (IM)
-- Browser-based online chatting
-- Twitter tweets
-- Facebook wall
-
----
-
-**VoIP (Voice over Internet Protocol):**
-👉 Uses Internet infrastructure for voice communication (like traditional telephone).
-👉 Simplest form: two processes transferring audio data via P2P model.
-👉 Challenges:
-   - Initiating/receiving calls
-   - Linking with traditional telephone systems
-   - Emergency services (911)
-👉 Governments may tax or ban VoIP (threat to traditional telephone companies).
-
----
-
-**Internet Multimedia Streaming:**
-👉 Transporting audio/video in real-time.
-👉 Examples: Netflix, YouTube.
-👉 Netflix streamed 4+ billion hours in first 3 months of 2013.
-👉 Combined, these two services consume >50% of Internet bandwidth (2014).
-
----
-
-**Important Vocabulary:**
-- NNTP = Network News Transfer Protocol
-- FTP = File Transfer Protocol
-- Telnet = remote access protocol
-- SSH = Secure Shell (secure remote access)
-- HTTP = Hyper Text Transfer Protocol (web)
-- Email = electronic mail
-- VoIP = Voice over Internet Protocol
-- Streaming = real-time audio/video transport
-
----
-
-**Quick Revision Points:**
-- Early apps: NNTP, FTP, Telnet, SSH (separate programs).
-- Now many via HTTP/web browsers.
-- Email is oldest enduring Internet application.
-- VoIP: Internet-based voice calls, faces regulatory challenges.
-- Streaming (Netflix, YouTube) dominates Internet bandwidth.`,
-  questions: [
-    {
-      q: "Which protocol was used by newsreader applications in the early Internet?",
-      options: ["A. FTP", "B. NNTP", "C. Telnet", "D. HTTP"],
-      answer: "B. NNTP",
-      diff: "easy"
-    },
-    {
-      q: "FTP stands for:",
-      options: ["A. File Transfer Protocol", "B. Fast Transfer Protocol", "C. File Transmission Program", "D. Folder Transfer Protocol"],
-      answer: "A. File Transfer Protocol",
-      diff: "easy"
-    },
-    {
-      q: "Which protocol is used for accessing another computer from a great distance?",
-      options: ["A. FTP", "B. HTTP", "C. Telnet (or later SSH)", "D. NNTP"],
-      answer: "C. Telnet (or later SSH)",
-      diff: "easy"
-    },
-    {
-      q: "SSH stands for:",
-      options: ["A. Secure Shell", "B. Simple Shell", "C. Safe Host", "D. System SHell"],
-      answer: "A. Secure Shell",
-      diff: "easy"
-    },
-    {
-      q: "Today, many traditional network applications are handled by webpages via which powerful protocol?",
-      options: ["A. FTP", "B. NNTP", "C. HTTP", "D. Telnet"],
-      answer: "C. HTTP",
-      diff: "easy"
-    },
-    {
-      q: "One of the oldest and most enduring uses of the Internet is:",
-      options: ["A. VoIP", "B. Streaming", "C. Electronic mail (email)", "D. Instant messaging"],
-      answer: "C. Electronic mail (email)",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is NOT mentioned as a messaging system?",
-      options: ["A. Instant messaging (IM)", "B. Twitter tweets", "C. Facebook wall", "D. FTP"],
-      answer: "D. FTP",
-      diff: "easy"
-    },
-    {
-      q: "VoIP stands for:",
-      options: ["A. Voice over Internet Protocol", "B. Video over Internet Protocol", "C. Virtual Private Internet Protocol", "D. Voice on IP"],
-      answer: "A. Voice over Internet Protocol",
-      diff: "easy"
-    },
-    {
-      q: "In its simplest form, VoIP uses which model for transferring audio data?",
-      options: ["A. Client/server model", "B. Peer-to-peer (P2P) model", "C. Master/slave model", "D. Centralized model"],
-      answer: "B. Peer-to-peer (P2P) model",
-      diff: "medium"
-    },
-    {
-      q: "Which of the following is a challenge for VoIP implementation?",
-      options: ["A. Initiating and receiving calls", "B. Linking with traditional telephone systems", "C. Emergency services like 911", "D. All of the above"],
-      answer: "D. All of the above",
-      diff: "easy"
-    },
-    {
-      q: "Why do some governments view VoIP as a threat?",
-      options: ["A. It uses too much bandwidth", "B. It competes with traditional telephone companies owned by the government", "C. It is insecure", "D. It cannot be monitored"],
-      answer: "B. It competes with traditional telephone companies owned by the government",
-      diff: "medium"
-    },
-    {
-      q: "In 2013, Netflix streamed how many hours of programming in the first three months?",
-      options: ["A. 1 billion hours", "B. 2 billion hours", "C. 3 billion hours", "D. More than 4 billion hours"],
-      answer: "D. More than 4 billion hours",
-      diff: "hard"
-    },
-    {
-      q: "Which two services were predicted to consume more than half of Internet bandwidth in 2014?",
-      options: ["A. Netflix and Hulu", "B. YouTube and Amazon Prime", "C. Netflix and YouTube", "D. Facebook and Twitter"],
-      answer: "C. Netflix and YouTube",
-      diff: "medium"
-    },
-    {
-      q: "Real-time transport of audio and video across the Internet is called:",
-      options: ["A. Downloading", "B. Streaming", "C. Buffering", "D. Compressing"],
-      answer: "B. Streaming",
-      diff: "easy"
-    },
-    {
-      q: "Which protocol is used for listing and copying files across a network?",
-      options: ["A. HTTP", "B. NNTP", "C. FTP", "D. Telnet"],
-      answer: "C. FTP",
-      diff: "easy"
-    },
-    {
-      q: "The secure replacement for Telnet is:",
-      options: ["A. FTP", "B. SSH", "C. HTTP", "D. NNTP"],
-      answer: "B. SSH",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is a traditional Internet application protocol?",
-      options: ["A. HTTP", "B. FTP", "C. Both A and B", "D. Neither A nor B"],
-      answer: "C. Both A and B",
-      diff: "easy"
-    },
-    {
-      q: "NNTP is used for:",
-      options: ["A. File transfer", "B. Newsreader applications", "C. Voice calls", "D. Streaming video"],
-      answer: "B. Newsreader applications",
-      diff: "easy"
-    },
-    {
-      q: "According to the text, governments that own telephone companies have either heavily taxed VoIP or:",
-      options: ["A. Promoted it", "B. Outlawed it completely", "C. Ignored it", "D. Bought it"],
-      answer: "B. Outlawed it completely",
-      diff: "easy"
-    },
-    {
-      q: "The protocol that powers the web and handles many applications via browsers is:",
-      options: ["A. FTP", "B. NNTP", "C. HTTP", "D. Telnet"],
-      answer: "C. HTTP",
-      diff: "easy"
-    }
-  ]
-},
-
-67: {
-  title: "Networking and the Internet: Internet Applications: Email",
-  summary: `**Key Topics Covered:**
-- Messaging applications (instant messaging, browser chat, Twitter, Facebook)
-- Electronic mail (email) – oldest enduring application
-- SMTP (Simple Mail Transfer Protocol)
-- Email flow scenario
-- MIME (Multipurpose Internet Mail Extensions)
-- POP3 (Post Office Protocol Version 3)
-- IMAP (Internet Mail Access Protocol)
-
----
-
-**Simple Understanding:**
-
-**Messaging Applications:**
-👉 Instant Messaging (IM)
-👉 Browser-based chatting
-👉 Twitter tweets
-👉 Facebook wall
-👉 **Electronic mail (email)** – one of the oldest and most enduring Internet uses.
-
----
-
-**Email Protocol: SMTP**
-👉 Simple Mail Transfer Protocol (SMTP) is the standard protocol for sending email.
-👉 Used to transfer email messages between mail servers.
-
----
-
-**Email Scenario (Figure 66):**
-👉 mafzal@cust.edu.pk wants to send email to hmaurer@iicm.tugraz.at.
-👉 Steps:
-   1. Sender's email client uses SMTP to send message to sender's mail server.
-   2. Sender's mail server uses SMTP to relay message to receiver's mail server.
-   3. Receiver's mail server stores message.
-   4. Receiver's email client retrieves message (using POP3 or IMAP).
-
----
-
-**Other Protocols:**
-
-**MIME (Multipurpose Internet Mail Extensions):**
-👉 SMTP handles only text (ASCII) messages.
-👉 MIME converts non-ASCII data (images, audio, attachments) into SMTP-compatible form.
-
-**POP3 (Post Office Protocol Version 3):**
-👉 Allows user to download email from server to local machine.
-👉 Messages are typically stored on local machine.
-
-**IMAP (Internet Mail Access Protocol):**
-👉 More advanced than POP3.
-👉 Messages remain stored on the mail server.
-👉 User can maintain folders and manage messages on server.
-👉 Accessible from multiple devices.
-
----
-
-**Important Vocabulary:**
-- SMTP = Simple Mail Transfer Protocol (sending email)
-- MIME = Multipurpose Internet Mail Extensions (handles attachments)
-- POP3 = Post Office Protocol v3 (download to local machine)
-- IMAP = Internet Mail Access Protocol (manage on server)
-- ASCII = text format (plain text)
-- Mail server = computer that handles email delivery/storage
-
----
-
-**Quick Revision Points:**
-- Email uses SMTP for sending.
-- MIME converts non-ASCII to SMTP-compatible.
-- POP3 downloads email to local machine.
-- IMAP stores email on server (access from anywhere).
-- Email flow: client → sender's server → receiver's server → receiver's client.`,
-  questions: [
-    {
-      q: "Which of the following is one of the oldest and most enduring uses of the Internet?",
-      options: ["A. Instant messaging", "B. Twitter", "C. Electronic mail (email)", "D. Facebook wall"],
-      answer: "C. Electronic mail (email)",
-      diff: "easy"
-    },
-    {
-      q: "The standard protocol used for sending email messages is:",
-      options: ["A. POP3", "B. IMAP", "C. SMTP", "D. MIME"],
-      answer: "C. SMTP",
-      diff: "easy"
-    },
-    {
-      q: "SMTP stands for:",
-      options: ["A. Simple Mail Transfer Protocol", "B. Standard Mail Transfer Protocol", "C. Simple Message Transfer Protocol", "D. Secure Mail Transfer Protocol"],
-      answer: "A. Simple Mail Transfer Protocol",
-      diff: "easy"
-    },
-    {
-      q: "SMTP handles messages in which format by default?",
-      options: ["A. Binary", "B. HTML", "C. ASCII text", "D. Unicode"],
-      answer: "C. ASCII text",
-      diff: "medium"
-    },
-    {
-      q: "Which protocol is used to convert non-ASCII data (like images or attachments) into SMTP-compatible form?",
-      options: ["A. POP3", "B. IMAP", "C. MIME", "D. SMTP"],
-      answer: "C. MIME",
-      diff: "easy"
-    },
-    {
-      q: "MIME stands for:",
-      options: ["A. Multipurpose Internet Mail Extensions", "B. Multimedia Internet Mail Exchange", "C. Message Internet Mail Encoder", "D. Multipurpose Interchange Mail Extensions"],
-      answer: "A. Multipurpose Internet Mail Extensions",
-      diff: "medium"
-    },
-    {
-      q: "Which protocol allows a user to download email from the server to the local machine and typically stores messages locally?",
-      options: ["A. SMTP", "B. MIME", "C. POP3", "D. IMAP"],
-      answer: "C. POP3",
-      diff: "easy"
-    },
-    {
-      q: "POP3 stands for:",
-      options: ["A. Post Office Protocol Version 3", "B. Point of Presence Protocol 3", "C. Post Office Program 3", "D. Protocol for Offline Post 3"],
-      answer: "A. Post Office Protocol Version 3",
-      diff: "medium"
-    },
-    {
-      q: "Which protocol stores email messages on the mail server and allows users to maintain folders and access from multiple devices?",
-      options: ["A. POP3", "B. IMAP", "C. SMTP", "D. MIME"],
-      answer: "B. IMAP",
-      diff: "easy"
-    },
-    {
-      q: "IMAP stands for:",
-      options: ["A. Internet Mail Access Protocol", "B. Interactive Mail Access Protocol", "C. Internet Message Access Protocol", "D. Integrated Mail Application Protocol"],
-      answer: "A. Internet Mail Access Protocol",
-      diff: "medium"
-    },
-    {
-      q: "In the email scenario, mafzal@cust.edu.pk wants to send email to hmaurer@iicm.tugraz.at. The message is first sent to which server using SMTP?",
-      options: ["A. Receiver's mail server", "B. Sender's mail server", "C. Receiver's client computer", "D. Sender's client computer"],
-      answer: "B. Sender's mail server",
-      diff: "easy"
-    },
-    {
-      q: "After the sender's mail server receives the email via SMTP, what does it do?",
-      options: ["A. Stores it locally forever", "B. Relays it to the receiver's mail server using SMTP", "C. Directly sends to receiver's computer", "D. Deletes it"],
-      answer: "B. Relays it to the receiver's mail server using SMTP",
-      diff: "medium"
-    },
-    {
-      q: "Which protocol would a user typically use to retrieve email from a server and delete it from the server (store locally)?",
-      options: ["A. SMTP", "B. IMAP", "C. POP3", "D. MIME"],
-      answer: "C. POP3",
-      diff: "easy"
-    },
-    {
-      q: "Which protocol is best suited for users who access their email from multiple devices (phone, laptop, tablet)?",
-      options: ["A. POP3", "B. IMAP", "C. SMTP", "D. MIME"],
-      answer: "B. IMAP",
-      diff: "easy"
-    },
-    {
-      q: "Twitter tweets and Facebook wall are examples of:",
-      options: ["A. Traditional email", "B. Messaging applications", "C. File transfer protocols", "D. Streaming services"],
-      answer: "B. Messaging applications",
-      diff: "easy"
-    },
-    {
-      q: "Which protocol is used only for sending email, not for receiving?",
-      options: ["A. POP3", "B. IMAP", "C. SMTP", "D. Both A and B"],
-      answer: "C. SMTP",
-      diff: "easy"
-    },
-    {
-      q: "Non-ASCII data includes which of the following?",
-      options: ["A. Plain text", "B. Images and attachments", "C. Simple English sentences", "D. ASCII characters only"],
-      answer: "B. Images and attachments",
-      diff: "easy"
-    },
-    {
-      q: "The email flow described in the text is illustrated in:",
-      options: ["A. Figure 65", "B. Figure 66", "C. Figure 67", "D. Figure 64"],
-      answer: "B. Figure 66",
-      diff: "easy"
-    },
-    {
-      q: "POP3 helps to store messages on which machine?",
-      options: ["A. Mail server", "B. Local machine", "C. Both A and B", "D. Neither"],
-      answer: "B. Local machine",
-      diff: "easy"
-    },
-    {
-      q: "IMAP helps to store messages on which machine?",
-      options: ["A. Mail server", "B. Local machine", "C. Both A and B", "D. Neither"],
-      answer: "A. Mail server",
-      diff: "easy"
-    }
-  ]
-},
-68: {
-  title: "Networking and the Internet: VoIP",
-  summary: `**Key Topics Covered:**
-- VoIP (Voice over Internet Protocol) definition
-- Simple P2P audio transfer
-- Challenges (call setup, linking to telephone systems, emergency services)
-- Government responses (taxation, outlawing)
-- Four forms of VoIP: soft phones (Skype), analog telephone adapters, embedded VoIP phones, wireless VoIP (4G)
-
----
-
-**Simple Understanding:**
-
-**What is VoIP?**
-👉 Voice over Internet Protocol – using Internet infrastructure for voice calls (like traditional telephone).
-👉 Simplest form: two processes on different machines transferring audio via P2P model.
-
-**Challenges:**
-- Initiating and receiving calls
-- Linking with traditional telephone systems
-- Emergency 911 communication
-- Governments (owning traditional phone companies) view VoIP as threat → tax heavily or outlaw completely.
-
----
-
-**Four Forms of VoIP:**
-
-**1. VoIP Soft Phones (e.g., Skype):**
-👉 P2P software on PCs with speaker and microphone.
-👉 Skype also provides links to traditional phone system.
-👉 **Drawback:** proprietary system – operational structure not publicly known.
-👉 Users must trust software without third-party verification.
-👉 Your PC resources may support other Skype communications without your awareness (controversial).
-
-**2. Analog Telephone Adapters:**
-👉 Devices that connect traditional telephone to access ISP phone service.
-👉 Often bundled with Internet service and/or digital TV.
-
-**3. Embedded VoIP Phones:**
-👉 Devices replacing traditional telephone with handset connected directly to TCP/IP network.
-👉 Common in large organizations replacing copper wire phone systems with VoIP over Ethernet (cost reduction, enhanced features).
-
-**4. Wireless VoIP (4G Smartphones):**
-👉 Earlier generations: wireless phones used company's protocols, gateways converted to TCP/IP.
-👉 **4G phone network:** IP-based network throughout.
-👉 4G telephone = broadband-connected host computer on global Internet.
-
----
-
-**Important Vocabulary:**
-- VoIP = Voice over Internet Protocol
-- P2P = Peer-to-peer
-- Soft phone = software-based VoIP on PC
-- Proprietary system = closed, not publicly known
-- Analog telephone adapter = connects traditional phone to VoIP
-- Embedded VoIP phone = dedicated VoIP handset
-- 4G = fourth generation cellular (IP-based)
-
----
-
-**Quick Revision Points:**
-- VoIP uses Internet for voice calls.
-- Simple P2P is easy; challenges include emergency services and linking to phone networks.
-- Governments may tax or ban VoIP.
-- Skype: popular soft phone but proprietary (trust required).
-- Analog adapters: use traditional phone with ISP service.
-- Embedded phones: replace internal copper systems.
-- 4G phones are native IP devices (no gateway conversion).`,
-  questions: [
-    {
-      q: "VoIP stands for:",
-      options: ["A. Voice over Internet Protocol", "B. Video over Internet Protocol", "C. Virtual Private Internet Protocol", "D. Voice on IP"],
-      answer: "A. Voice over Internet Protocol",
-      diff: "easy"
-    },
-    {
-      q: "In its simplest form, VoIP uses which model for transferring audio data?",
-      options: ["A. Client/server model", "B. Peer-to-peer (P2P) model", "C. Master/slave model", "D. Centralized model"],
-      answer: "B. Peer-to-peer (P2P) model",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is a challenge for VoIP implementation?",
-      options: ["A. Initiating and receiving calls", "B. Linking with traditional telephone systems", "C. Emergency 911 communication", "D. All of the above"],
-      answer: "D. All of the above",
-      diff: "easy"
-    },
-    {
-      q: "Why do some governments view VoIP as a threat?",
-      options: ["A. It uses too much bandwidth", "B. It competes with traditional telephone companies often owned by the government", "C. It is insecure", "D. It cannot be monitored"],
-      answer: "B. It competes with traditional telephone companies often owned by the government",
-      diff: "medium"
-    },
-    {
-      q: "An example of a VoIP soft phone system is:",
-      options: ["A. Analog telephone adapter", "B. Embedded VoIP phone", "C. Skype", "D. 4G smartphone"],
-      answer: "C. Skype",
-      diff: "easy"
-    },
-    {
-      q: "One drawback of Skype is that it is a:",
-      options: ["A. Free system", "B. Open source system", "C. Proprietary system", "D. Hardware-based system"],
-      answer: "C. Proprietary system",
-      diff: "easy"
-    },
-    {
-      q: "Because Skype is proprietary, users must:",
-      options: ["A. Pay high fees", "B. Trust its integrity without third-party verification", "C. Use special hardware", "D. Avoid using it"],
-      answer: "B. Trust its integrity without third-party verification",
-      diff: "medium"
-    },
-    {
-      q: "A feature of Skype that has generated resistance is that:",
-      options: ["A. It is too expensive", "B. It requires a microphone", "C. A user's PC resources may be used to support other Skype communications without awareness", "D. It does not work on Windows"],
-      answer: "C. A user's PC resources may be used to support other Skype communications without awareness",
-      diff: "medium"
-    },
-    {
-      q: "Which form of VoIP uses a device to connect a traditional telephone to an access ISP's phone service?",
-      options: ["A. VoIP soft phone", "B. Analog telephone adapter", "C. Embedded VoIP phone", "D. Wireless VoIP"],
-      answer: "B. Analog telephone adapter",
-      diff: "easy"
-    },
-    {
-      q: "Analog telephone adapters are often bundled with:",
-      options: ["A. Traditional Internet service and/or digital TV", "B. Only emergency services", "C. Only telephone lines", "D. Only cable TV"],
-      answer: "A. Traditional Internet service and/or digital TV",
-      diff: "easy"
-    },
-    {
-      q: "Which type of VoIP replaces traditional telephone with a handset connected directly to a TCP/IP network?",
-      options: ["A. VoIP soft phone", "B. Analog telephone adapter", "C. Embedded VoIP phone", "D. 4G smartphone"],
-      answer: "C. Embedded VoIP phone",
-      diff: "easy"
-    },
-    {
-      q: "Large organizations are replacing traditional internal copper wire telephone systems with VoIP over Ethernet to:",
-      options: ["A. Reduce costs and enhance features", "B. Increase costs", "C. Reduce reliability", "D. Simplify wiring only"],
-      answer: "A. Reduce costs and enhance features",
-      diff: "easy"
-    },
-    {
-      q: "Earlier generation wireless phones obtained Internet access via:",
-      options: ["A. Direct TCP/IP connection", "B. Gateways between the company's network and the Internet", "C. P2P only", "D. Embedded VoIP"],
-      answer: "B. Gateways between the company's network and the Internet",
-      diff: "medium"
-    },
-    {
-      q: "Which generation of phone network is IP-based throughout?",
-      options: ["A. 3G", "B. 4G", "C. 2G", "D. 1G"],
-      answer: "B. 4G",
-      diff: "easy"
-    },
-    {
-      q: "A 4G telephone is essentially:",
-      options: ["A. A traditional phone", "B. Just another broadband-connected host computer on the global Internet", "C. An analog adapter", "D. A proprietary system"],
-      answer: "B. Just another broadband-connected host computer on the global Internet",
-      diff: "medium"
-    },
-    {
-      q: "Which government action against VoIP is mentioned?",
-      options: ["A. Promoting it", "B. Taxing it heavily or outlawing it completely", "C. Subsidizing it", "D. Ignoring it"],
-      answer: "B. Taxing it heavily or outlawing it completely",
-      diff: "easy"
-    },
-    {
-      q: "The simplest form of VoIP presents:",
-      options: ["A. No significant problems", "B. Many technical problems", "C. Only security problems", "D. Only legal problems"],
-      answer: "A. No significant problems",
-      diff: "easy"
-    },
-    {
-      q: "Which VoIP form uses software on a PC with only a speaker and microphone?",
-      options: ["A. Embedded VoIP phone", "B. Analog telephone adapter", "C. VoIP soft phone", "D. Wireless VoIP"],
-      answer: "C. VoIP soft phone",
-      diff: "easy"
-    },
-    {
-      q: "Skype provides its clients with:",
-      options: ["A. Only P2P calls", "B. Links to the traditional telephone communication system", "C. Only emergency services", "D. Only video calls"],
-      answer: "B. Links to the traditional telephone communication system",
-      diff: "easy"
-    },
-    {
-      q: "The term 'soft phone' refers to:",
-      options: ["A. A physical handset", "B. Software-based VoIP on a PC", "C. An analog adapter", "D. A 4G smartphone"],
-      answer: "B. Software-based VoIP on a PC",
-      diff: "easy"
-    }
-  ]
-},
-
-69: {
-  title: "Networking and the Internet: Internet Multimedia Streaming",
-  summary: `**Key Topics Covered:**
-- Streaming definition (real-time audio/video)
-- N-unicast and its drawback (server burden)
-- P2P model for streaming distribution
-- Multicast (routers copy messages)
-- On-demand streaming (start, pause, rewind)
-- Content Delivery Networks (CDNs)
-- Anycast (connect to closest server)
-- Embedded devices (TVs, game consoles, smartphones)
-
----
-
-**Simple Understanding:**
-
-**What is Streaming?**
-👉 Transporting audio and video in real-time over the Internet.
-👉 Example: Netflix streamed 4+ billion hours (Q1 2013).
-👉 Netflix + YouTube > 50% of Internet bandwidth (2014).
-
----
-
-**N-unicast:**
-👉 Unicast = one sender → one receiver.
-👉 N-unicast = single server sending individual messages to each client.
-👉 **Drawback:** Heavy burden on server and its Internet neighbors (must forward many copies).
-
----
-
-**Alternatives to N-unicast:**
-
-**1. P2P Model:**
-👉 Similar to file sharing.
-👉 Once a peer receives data, it distributes to waiting peers.
-👉 Transfers distribution burden from source to peers.
-
-**2. Multicast:**
-👉 Server transmits single message to special "multicast address".
-👉 Internet routers recognize address, produce and forward copies to destinations.
-👉 Requires routers to have extra functionality (implemented in small networks, not yet global Internet).
-
----
-
-**On-Demand Streaming:**
-👉 User expects to start, pause, rewind at will.
-👉 Different from Internet radio (everyone hears same stream).
-👉 N-unicast and multicast are little help here.
-👉 Each on-demand stream = unicast from media server to user.
-
----
-
-**Content Delivery Networks (CDNs):**
-👉 To scale to millions of simultaneous users, replicate content to many servers.
-👉 Groups of servers strategically distributed around Internet.
-👉 Specialize in streaming copies to nearby end users.
-👉 CDN machines may reside inside access ISP networks for high-speed streaming.
-
-**Anycast:**
-👉 Networking technology that enables end user to automatically connect to closest server in a group.
-👉 Makes CDNs practical.
-
----
-
-**Embedded Devices:**
-👉 Streaming is not just for PCs.
-👉 TVs, DVD/Blu-ray players, smartphones, game consoles connect directly to TCP/IP network.
-
----
-
-**Important Vocabulary:**
-- Streaming = real-time audio/video transport
-- Unicast = one sender to one receiver
-- N-unicast = single server sending to many clients individually
-- Multicast = one message, routers copy to multiple destinations
-- On-demand = user controls playback (start, pause, rewind)
-- CDN = Content Delivery Network (distributed servers)
-- Anycast = automatic connection to closest server
-
----
-
-**Quick Revision Points:**
-- Streaming dominates Internet traffic.
-- N-unicast puts heavy load on server.
-- P2P and multicast reduce server burden.
-- Multicast requires router support (not global yet).
-- On-demand streaming needs unicast per user.
-- CDNs replicate content for scalability.
-- Anycast directs user to nearest CDN server.
-- Embedded devices (TVs, phones, consoles) stream too.`,
-  questions: [
-    {
-      q: "The real-time transport of audio and video across the Internet is called:",
-      options: ["A. Unicast", "B. Multicast", "C. Streaming", "D. Anycast"],
-      answer: "C. Streaming",
-      diff: "easy"
-    },
-    {
-      q: "In the first three months of 2013, Netflix streamed how many hours of programming?",
-      options: ["A. 1 billion hours", "B. 2 billion hours", "C. 3 billion hours", "D. More than 4 billion hours"],
-      answer: "D. More than 4 billion hours",
-      diff: "easy"
-    },
-    {
-      q: "Netflix and YouTube combined were predicted to consume more than half of Internet bandwidth in which year?",
-      options: ["A. 2012", "B. 2013", "C. 2014", "D. 2015"],
-      answer: "C. 2014",
-      diff: "easy"
-    },
-    {
-      q: "Unicast refers to:",
-      options: ["A. One sender sending to multiple receivers", "B. One sender sending to one receiver", "C. Multiple senders to one receiver", "D. Broadcast to all"],
-      answer: "B. One sender sending to one receiver",
-      diff: "easy"
-    },
-    {
-      q: "N-unicast refers to:",
-      options: ["A. Single server sending individual messages to each of many clients", "B. Multiple servers sending to one client", "C. One message to many via routers", "D. Peer-to-peer distribution"],
-      answer: "A. Single server sending individual messages to each of many clients",
-      diff: "medium"
-    },
-    {
-      q: "The major drawback of N-unicast is:",
-      options: ["A. Poor video quality", "B. Substantial burden on the server and its Internet neighbors", "C. Incompatibility with browsers", "D. High cost for users"],
-      answer: "B. Substantial burden on the server and its Internet neighbors",
-      diff: "easy"
-    },
-    {
-      q: "One alternative to N-unicast applies the P2P model so that:",
-      options: ["A. The server does all the work", "B. Once a peer receives data, it distributes to waiting peers", "C. Routers copy messages", "D. Only unicast is used"],
-      answer: "B. Once a peer receives data, it distributes to waiting peers",
-      diff: "easy"
-    },
-    {
-      q: "Multicast transfers the distribution problem to:",
-      options: ["A. The end users", "B. The content provider", "C. The Internet routers", "D. The access ISPs"],
-      answer: "C. The Internet routers",
-      diff: "easy"
-    },
-    {
-      q: "In multicast, a server transmits a message to multiple clients using:",
-      options: ["A. Multiple unicast streams", "B. A single address (routers copy and forward)", "C. P2P distribution", "D. CDN servers"],
-      answer: "B. A single address (routers copy and forward)",
-      diff: "medium"
-    },
-    {
-      q: "Multicast support has been implemented in small networks but:",
-      options: ["A. Is fully deployed globally", "B. Has yet to expand to the global Internet", "C. Is obsolete", "D. Only works for audio"],
-      answer: "B. Has yet to expand to the global Internet",
-      diff: "easy"
-    },
-    {
-      q: "On-demand streaming allows users to:",
-      options: ["A. Only listen to live radio", "B. Start, pause, or rewind content at their own pace", "C. Only watch scheduled programs", "D. Only download files completely"],
-      answer: "B. Start, pause, or rewind content at their own pace",
-      diff: "easy"
-    },
-    {
-      q: "For on-demand streaming, N-unicast and multicast are:",
-      options: ["A. Very helpful", "B. Of little help", "C. The only solutions", "D. Free"],
-      answer: "B. Of little help",
-      diff: "easy"
-    },
-    {
-      q: "Each on-demand stream is effectively:",
-      options: ["A. A multicast from media server to many", "B. A unicast from media server to an end user", "C. A broadcast", "D. A P2P distribution"],
-      answer: "B. A unicast from media server to an end user",
-      diff: "medium"
-    },
-    {
-      q: "To scale to millions of simultaneous users, large-scale streaming services use:",
-      options: ["A. A single powerful server", "B. Content Delivery Networks (CDNs)", "C. Only N-unicast", "D. Only multicast"],
-      answer: "B. Content Delivery Networks (CDNs)",
-      diff: "easy"
-    },
-    {
-      q: "CDN stands for:",
-      options: ["A. Content Delivery Network", "B. Central Data Network", "C. Client Distribution Network", "D. Code Division Network"],
-      answer: "A. Content Delivery Network",
-      diff: "easy"
-    },
-    {
-      q: "CDN machines may reside in an access ISP network to:",
-      options: ["A. Increase server load", "B. Stream content at high speed from a nearby server", "C. Reduce video quality", "D. Increase latency"],
-      answer: "B. Stream content at high speed from a nearby server",
-      diff: "easy"
-    },
-    {
-      q: "Anycast enables an end user to:",
-      options: ["A. Connect to the farthest server", "B. Connect to multiple servers simultaneously", "C. Automatically connect to the closest server in a defined group", "D. Avoid using CDNs"],
-      answer: "C. Automatically connect to the closest server in a defined group",
-      diff: "medium"
-    },
-    {
-      q: "Which technology helps to make CDNs practical?",
-      options: ["A. Unicast", "B. N-unicast", "C. Anycast", "D. Broadcast"],
-      answer: "C. Anycast",
-      diff: "medium"
-    },
-    {
-      q: "Which of the following devices can stream Internet multimedia?",
-      options: ["A. Televisions", "B. Smartphones", "C. Game consoles", "D. All of the above"],
-      answer: "D. All of the above",
-      diff: "easy"
-    },
-    {
-      q: "Multicast requires that Internet routers:",
-      options: ["A. Have less memory", "B. Recognize multicast addresses and forward copies", "C. Only forward unicast traffic", "D. Be replaced"],
-      answer: "B. Recognize multicast addresses and forward copies",
-      diff: "easy"
-    }
-  ]
-},
-
-70: {
-  title: "Networking and the Internet: World Wide Web",
-  summary: `**Key Topics Covered:**
-- Origins of the World Wide Web (Tim Berners-Lee)
-- Hypertext concept (linked documents)
-- First software released (December 1990)
-- Key components: hypertext document format, HTTP protocol, server process
-- Growth to support multimedia
-- Dominant application by mid-1990s
-
----
-
-**Simple Understanding:**
-
-**Origin of the Web:**
-👉 Tim Berners-Lee realized combining Internet technology with hypertext (linked documents).
-👉 First software for implementing the Web released in **December 1990**.
-
-**Early Prototype Features:**
-👉 Did not yet support multimedia data.
-👉 Included three key components:
-
-| Component | Purpose |
-|-----------|---------|
-| Hypertext document format | Embed hyperlinks to other documents |
-| Protocol (HTTP) | Transfer hypertext across network |
-| Server process | Supply hypertext pages upon request |
-
----
-
-**Growth:**
-👉 Quickly grew to support images, audio, and video.
-👉 By **mid-1990s**, became the dominant application powering Internet growth.
-
----
-
-**Important Vocabulary:**
-- World Wide Web (WWW) = system of interlinked hypertext documents
-- Tim Berners-Lee = inventor of the Web
-- Hypertext = text with links to other documents
-- Hyperlink = reference that navigates to another document
-- HTTP = Hypertext Transfer Protocol
-- Server process = program that serves web pages
-- Prototype = early working model
-
----
-
-**Quick Revision Points:**
-- Tim Berners-Lee invented the Web (1990).
-- Combined Internet + hypertext.
-- Three key components: hypertext format, HTTP, server.
-- Early version had no multimedia.
-- By mid-1990s, Web dominated Internet growth.`,
-  questions: [
-    {
-      q: "Who is credited with originating the World Wide Web?",
-      options: ["A. Bill Gates", "B. Steve Jobs", "C. Tim Berners-Lee", "D. Vint Cerf"],
-      answer: "C. Tim Berners-Lee",
-      diff: "easy"
-    },
-    {
-      q: "Tim Berners-Lee combined Internet technology with which concept?",
-      options: ["A. Multimedia", "B. Hypertext (linked documents)", "C. Cloud computing", "D. Artificial intelligence"],
-      answer: "B. Hypertext (linked documents)",
-      diff: "easy"
-    },
-    {
-      q: "The first software for implementing the Web was released in:",
-      options: ["A. December 1989", "B. December 1990", "C. January 1991", "D. December 1995"],
-      answer: "B. December 1990",
-      diff: "easy"
-    },
-    {
-      q: "The early Web prototype did NOT yet support:",
-      options: ["A. Hypertext", "B. Hyperlinks", "C. Multimedia data", "D. Server processes"],
-      answer: "C. Multimedia data",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following was a key component of the early Web?",
-      options: ["A. Cloud storage", "B. Hypertext document format", "C. Blockchain", "D. Quantum encryption"],
-      answer: "B. Hypertext document format",
-      diff: "easy"
-    },
-    {
-      q: "The protocol for transferring hypertext across the network is called:",
-      options: ["A. FTP", "B. SMTP", "C. HTTP", "D. TCP"],
-      answer: "C. HTTP",
-      diff: "easy"
-    },
-    {
-      q: "HTTP stands for:",
-      options: ["A. Hypertext Transfer Protocol", "B. High Transfer Text Protocol", "C. Hyper Transfer Text Protocol", "D. Hypertext Transmission Protocol"],
-      answer: "A. Hypertext Transfer Protocol",
-      diff: "easy"
-    },
-    {
-      q: "The server process in the early Web supplied:",
-      options: ["A. Email messages", "B. Hypertext pages upon request", "C. File transfers", "D. Streaming video"],
-      answer: "B. Hypertext pages upon request",
-      diff: "easy"
-    },
-    {
-      q: "The Web quickly grew to support all of the following EXCEPT:",
-      options: ["A. Images", "B. Audio", "C. Video", "D. Only text forever"],
-      answer: "D. Only text forever",
-      diff: "easy"
-    },
-    {
-      q: "By which period had the Web become the dominant application powering Internet growth?",
-      options: ["A. Early 1980s", "B. Late 1980s", "C. Mid-1990s", "D. Early 2000s"],
-      answer: "C. Mid-1990s",
-      diff: "easy"
-    },
-    {
-      q: "Hypertext is defined as:",
-      options: ["A. Text that is encrypted", "B. Text with links to other documents", "C. Text that contains images", "D. Text that is compressed"],
-      answer: "B. Text with links to other documents",
-      diff: "easy"
-    },
-    {
-      q: "A hyperlink allows a user to:",
-      options: ["A. Download files", "B. Navigate to another document", "C. Send email", "D. Encrypt data"],
-      answer: "B. Navigate to another document",
-      diff: "easy"
-    },
-    {
-      q: "The early Web prototype did NOT include:",
-      options: ["A. Hypertext format", "B. Transfer protocol", "C. Server process", "D. Multimedia support"],
-      answer: "D. Multimedia support",
-      diff: "easy"
-    },
-    {
-      q: "Tim Berners-Lee released his first Web software while working at:",
-      options: ["A. MIT", "B. CERN", "C. Stanford", "D. Microsoft"],
-      answer: "B. CERN",
-      diff: "hard"
-    },
-    {
-      q: "The Web's document format embeds which feature to link to other documents?",
-      options: ["A. Hyperlinks", "B. Macros", "C. Scripts", "D. Plugins"],
-      answer: "A. Hyperlinks",
-      diff: "easy"
-    },
-    {
-      q: "Which component of the Web is responsible for supplying pages upon request?",
-      options: ["A. Browser", "B. Server process", "C. Router", "D. Firewall"],
-      answer: "B. Server process",
-      diff: "easy"
-    },
-    {
-      q: "The early Web prototype was released in which month?",
-      options: ["A. January", "B. June", "C. September", "D. December"],
-      answer: "D. December",
-      diff: "easy"
-    },
-    {
-      q: "The combination of Internet technology with hypertext led to the creation of:",
-      options: ["A. Email", "B. FTP", "C. World Wide Web", "D. Telnet"],
-      answer: "C. World Wide Web",
-      diff: "easy"
-    },
-    {
-      q: "By the mid-1990s, the Web had become the _______ application on the Internet.",
-      options: ["A. smallest", "B. dominant", "C. least used", "D. experimental"],
-      answer: "B. dominant",
-      diff: "easy"
-    },
-    {
-      q: "The Web's protocol (HTTP) is used to transfer:",
-      options: ["A. Hypertext across the network", "B. Email messages", "C. Files via FTP", "D. Voice over IP"],
-      answer: "A. Hypertext across the network",
-      diff: "easy"
-    }
-  ]
-},
-71: {
-  title: "Networking and the Internet: Web Implementations",
-  summary: `**Key Topics Covered:**
-- Browsers (client-side: Firefox, Safari, Internet Explorer)
-- Webservers (server-side: provide access to documents)
-- HTTP (Hypertext Transfer Protocol)
-- URL (Uniform Resource Locator) structure
-- Home page and shortened URLs
-
----
-
-**Simple Understanding:**
-
-**Two Categories of Web Software:**
-👉 **Browser:** resides on user's computer, obtains and presents materials.
-   - Examples: Firefox, Safari, Internet Explorer.
-👉 **Webserver:** resides on computer with hypertext documents, provides access to documents upon request.
-
-**Protocol:**
-👉 Hypertext Transfer Protocol (HTTP) – transfers hypertext documents between browsers and webservers.
-
----
-
-**URL (Uniform Resource Locator):**
-👉 Unique address for each document on the Web.
-👉 Contains information for browser to contact server and request document.
-
-**URL Structure (Figure 67):**
-👉 Four segments:
-
-| Segment | Example |
-|----------|---------|
-| Protocol | http:// |
-| Mnemonic address (server machine) | eagle.mu.edu |
-| Directory path | /authors/Shakespeare/ |
-| Document name | Julius_Caesar.html |
-
-👉 Full example: http://eagle.mu.edu/authors/Shakespeare/Julius_Caesar.html
-
----
-
-**Shortened URLs:**
-👉 May not contain all segments (e.g., no directory path).
-👉 Sometimes only protocol + mnemonic address.
-👉 Webserver returns predetermined document = **home page** (describes available information).
-👉 Example: http://www.google.com → Google home page.
-
-**Browser Assumptions:**
-👉 Many browsers assume HTTP protocol if not specified.
-👉 Typing "www.google.com" works (assumes http://).
-
----
-
-**Important Vocabulary:**
-- Browser = client software to view web pages
-- Webserver = server software that serves web pages
-- HTTP = Hypertext Transfer Protocol
-- URL = Uniform Resource Locator (web address)
-- Home page = default page at a website
-- Protocol = rules for communication
-- Mnemonic address = domain name (e.g., eagle.mu.edu)
-
----
-
-**Quick Revision Points:**
-- Browsers (Firefox, Safari, IE) request pages.
-- Webservers serve pages upon request.
-- HTTP is the protocol between them.
-- URL has: protocol, server address, path, document name.
-- Short URL may lack path → returns home page.
-- Browsers often add http:// automatically.`,
-  questions: [
-    {
-      q: "Software that resides on the user's computer to obtain and present web materials is called a:",
-      options: ["A. Webserver", "B. Browser", "C. Protocol", "D. URL"],
-      answer: "B. Browser",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is an example of a web browser?",
-      options: ["A. Firefox", "B. Apache", "C. IIS", "D. Nginx"],
-      answer: "A. Firefox",
-      diff: "easy"
-    },
-    {
-      q: "The software that resides on a computer and provides access to hypertext documents is called a:",
-      options: ["A. Browser", "B. Webserver", "C. URL", "D. HTTP"],
-      answer: "B. Webserver",
-      diff: "easy"
-    },
-    {
-      q: "The protocol used to transfer hypertext documents between browsers and webservers is:",
-      options: ["A. FTP", "B. SMTP", "C. HTTP", "D. POP3"],
-      answer: "C. HTTP",
-      diff: "easy"
-    },
-    {
-      q: "HTTP stands for:",
-      options: ["A. Hypertext Transfer Protocol", "B. High Transfer Text Protocol", "C. Hyper Transfer Text Protocol", "D. Hypertext Transmission Protocol"],
-      answer: "A. Hypertext Transfer Protocol",
-      diff: "easy"
-    },
-    {
-      q: "A unique address given to each document on the Web is called a:",
-      options: ["A. IP address", "B. MAC address", "C. URL", "D. Domain name"],
-      answer: "C. URL",
-      diff: "easy"
-    },
-    {
-      q: "URL stands for:",
-      options: ["A. Uniform Resource Locator", "B. Universal Reference Link", "C. Uniform Retrieval Location", "D. Universal Resource Link"],
-      answer: "A. Uniform Resource Locator",
-      diff: "easy"
-    },
-    {
-      q: "In a typical URL, the first segment specifies:",
-      options: ["A. Directory path", "B. Document name", "C. Protocol", "D. Server address"],
-      answer: "C. Protocol",
-      diff: "easy"
-    },
-    {
-      q: "In the URL http://eagle.mu.edu/authors/Shakespeare/Julius_Caesar.html, what is the server address?",
-      options: ["A. http://", "B. eagle.mu.edu", "C. /authors/Shakespeare/", "D. Julius_Caesar.html"],
-      answer: "B. eagle.mu.edu",
-      diff: "easy"
-    },
-    {
-      q: "In the same URL, what is the document name?",
-      options: ["A. http://", "B. eagle.mu.edu", "C. /authors/Shakespeare/", "D. Julius_Caesar.html"],
-      answer: "D. Julius_Caesar.html",
-      diff: "easy"
-    },
-    {
-      q: "A shortened URL that lacks a directory path typically returns a predetermined document called a:",
-      options: ["A. Home page", "B. Error page", "C. Search page", "D. Login page"],
-      answer: "A. Home page",
-      diff: "easy"
-    },
-    {
-      q: "Typing 'www.google.com' into a browser works because browsers assume which protocol?",
-      options: ["A. FTP", "B. HTTP", "C. HTTPS", "D. SMTP"],
-      answer: "B. HTTP",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is NOT a web browser?",
-      options: ["A. Safari", "B. Internet Explorer", "C. Apache", "D. Firefox"],
-      answer: "C. Apache",
-      diff: "easy"
-    },
-    {
-      q: "The machine address part of a URL is typically a:",
-      options: ["A. IP address only", "B. Mnemonic address (domain name)", "C. MAC address", "D. Port number"],
-      answer: "B. Mnemonic address (domain name)",
-      diff: "medium"
-    },
-    {
-      q: "A URL that consists of only a protocol and mnemonic address returns:",
-      options: ["A. An error", "B. A directory listing", "C. The home page", "D. A blank page"],
-      answer: "C. The home page",
-      diff: "easy"
-    },
-    {
-      q: "The purpose of a browser is to:",
-      options: ["A. Store web pages", "B. Serve web pages", "C. Obtain and present web materials", "D. Encrypt web traffic"],
-      answer: "C. Obtain and present web materials",
-      diff: "easy"
-    },
-    {
-      q: "The purpose of a webserver is to:",
-      options: ["A. Display web pages to users", "B. Provide access to documents under its control", "C. Cache web content", "D. Block malicious sites"],
-      answer: "B. Provide access to documents under its control",
-      diff: "easy"
-    },
-    {
-      q: "In a URL, the directory path helps the server:",
-      options: ["A. Choose a protocol", "B. Find the document", "C. Determine the port", "D. Encrypt the request"],
-      answer: "B. Find the document",
-      diff: "easy"
-    },
-    {
-      q: "The home page of a website typically:",
-      options: ["A. Is the only page", "B. Describes the information available at that website", "C. Cannot contain hyperlinks", "D. Requires a password"],
-      answer: "B. Describes the information available at that website",
-      diff: "easy"
-    },
-    {
-      q: "Which segment of the URL is optional and may be omitted if the document is in the root directory?",
-      options: ["A. Protocol", "B. Server address", "C. Directory path", "D. Document name"],
-      answer: "C. Directory path",
-      diff: "medium"
-    }
-  ]
-},
-
-72: {
-  title: "Networking and the Internet: HTML",
-  summary: `**Key Topics Covered:**
-- Hypertext document vs plain text file
-- Tags (special symbols describing display, multimedia, links)
-- HTML (Hypertext Markup Language)
-- HTML tags as typesetting directions
-- Browser as typesetter
-
----
-
-**Simple Understanding:**
-
-**Hypertext Document:**
-👉 Similar to text file (encoded in ASCII/Unicode).
-👉 Contains special symbols called **tags**.
-
-**Tags:**
-👉 Describe:
-   - How document should appear on screen
-   - What multimedia resources (images, etc.) accompany document
-   - Which items are linked to other documents
-
-**HTML (Hypertext Markup Language):**
-👉 The system of tags used in hypertext documents.
-👉 Webpage author uses HTML to describe information needed by browser.
-
-**Analogy:**
-👉 Plain typed text + typesetting directions (red pen) → final printed page.
-👉 Plain text + HTML tags → browser reads tags → web page displayed.
-👉 Browser plays role of **typesetter**.
-
----
-
-**Important Vocabulary:**
-- Hypertext = text with links to other documents
-- Tag = special symbol that describes formatting/link
-- HTML = Hypertext Markup Language
-- ASCII/Unicode = character encoding systems
-- Typesetter = person/program that formats text
-- Browser = software that interprets HTML
-
----
-
-**Quick Revision Points:**
-- HTML tags are like red pen markings for typesetter.
-- Tags control appearance, multimedia, and hyperlinks.
-- Browser interprets HTML to display the page.
-- HTML is the language of the Web.`,
-  questions: [
-    {
-      q: "A traditional hypertext document is similar to a text file but also contains:",
-      options: ["A. Images only", "B. Special symbols called tags", "C. Only audio", "D. Binary data"],
-      answer: "B. Special symbols called tags",
-      diff: "easy"
-    },
-    {
-      q: "The system of tags used in hypertext documents is called:",
-      options: ["A. HTTP", "B. URL", "C. HTML", "D. FTP"],
-      answer: "C. HTML",
-      diff: "easy"
-    },
-    {
-      q: "HTML stands for:",
-      options: ["A. Hypertext Markup Language", "B. Hypertext Media Language", "C. High Transfer Markup Language", "D. Hyper Transfer Markup Language"],
-      answer: "A. Hypertext Markup Language",
-      diff: "easy"
-    },
-    {
-      q: "HTML tags describe all of the following EXCEPT:",
-      options: ["A. How the document should appear", "B. Which items are linked to other documents", "C. The user's password", "D. What multimedia resources accompany the document"],
-      answer: "C. The user's password",
-      diff: "easy"
-    },
-    {
-      q: "The analogy used in the text compares HTML tags to:",
-      options: ["A. A computer keyboard", "B. Typesetting directions written with a red pen", "C. A printer", "D. A scanner"],
-      answer: "B. Typesetting directions written with a red pen",
-      diff: "easy"
-    },
-    {
-      q: "In the typesetting analogy, what plays the role of the typesetter?",
-      options: ["A. The webserver", "B. The browser", "C. The HTML tag", "D. The URL"],
-      answer: "B. The browser",
-      diff: "easy"
-    },
-    {
-      q: "Plain text files encode characters using systems like:",
-      options: ["A. HTML only", "B. ASCII or Unicode", "C. JPEG", "D. MP3"],
-      answer: "B. ASCII or Unicode",
-      diff: "easy"
-    },
-    {
-      q: "HTML tags are used to describe how a document should appear on a:",
-      options: ["A. Printer only", "B. Display screen", "C. Audio speaker", "D. Hard drive"],
-      answer: "B. Display screen",
-      diff: "easy"
-    },
-    {
-      q: "Who uses HTML to describe a webpage?",
-      options: ["A. The browser", "B. The webserver", "C. The author of the webpage", "D. The router"],
-      answer: "C. The author of the webpage",
-      diff: "easy"
-    },
-    {
-      q: "Which component reads HTML tags to present the page?",
-      options: ["A. The webserver", "B. The browser", "C. The operating system", "D. The network card"],
-      answer: "B. The browser",
-      diff: "easy"
-    },
-    {
-      q: "The purpose of HTML tags is to provide information that a browser needs to:",
-      options: ["A. Store the file", "B. Present the page and find related documents", "C. Encrypt the data", "D. Compress the file"],
-      answer: "B. Present the page and find related documents",
-      diff: "medium"
-    },
-    {
-      q: "Hypertext documents are encoded character by character using:",
-      options: ["A. HTML only", "B. ASCII or Unicode plus embedded tags", "C. Binary only", "D. XML only"],
-      answer: "B. ASCII or Unicode plus embedded tags",
-      diff: "medium"
-    },
-    {
-      q: "The red pen in the analogy represents:",
-      options: ["A. The browser", "B. The webserver", "C. HTML tags", "D. The user"],
-      answer: "C. HTML tags",
-      diff: "easy"
-    },
-    {
-      q: "Multimedia resources that accompany an HTML document can include:",
-      options: ["A. Images", "B. Audio", "C. Video", "D. All of the above"],
-      answer: "D. All of the above",
-      diff: "easy"
-    },
-    {
-      q: "What does the 'ML' in HTML stand for?",
-      options: ["A. Markup Language", "B. Media Language", "C. Machine Language", "D. Meta Language"],
-      answer: "A. Markup Language",
-      diff: "easy"
-    },
-    {
-      q: "A browser interprets HTML tags to determine:",
-      options: ["A. The user's identity", "B. How to display text and images", "C. The speed of the network", "D. The operating system"],
-      answer: "B. How to display text and images",
-      diff: "easy"
-    },
-    {
-      q: "The distinction between a plain text file and a hypertext document is that hypertext contains:",
-      options: ["A. More characters", "B. Binary data", "C. Tags", "D. Encryption"],
-      answer: "C. Tags",
-      diff: "easy"
-    },
-    {
-      q: "Typesetting directions added to plain typed text tell the typesetter:",
-      options: ["A. How to print the material", "B. How to scan the material", "C. How to email the material", "D. How to delete the material"],
-      answer: "A. How to print the material",
-      diff: "easy"
-    },
-    {
-      q: "In the Web context, the 'typesetter' is the:",
-      options: ["A. Webserver", "B. HTML tag", "C. Browser", "D. Author"],
-      answer: "C. Browser",
-      diff: "easy"
-    },
-    {
-      q: "The text mentions that the early Web prototype did NOT yet support:",
-      options: ["A. Hypertext", "B. Links", "C. Multimedia data", "D. Servers"],
-      answer: "C. Multimedia data",
-      diff: "easy"
-    }
-  ]
-},
-73: {
-  title: "Networking and the Internet: HTML (Source and Structure)",
-  summary: `**Key Topics Covered:**
-- HTML source version of a webpage
-- Tags delineated by < and >
-- HTML document sections: head and body
-- Title tag (documentation, not displayed)
-- Body content (displayed on screen)
-- Heading tags (<h1>, etc.)
-- Paragraph tag (<p>)
-
----
-
-**Simple Understanding:**
-
-**HTML Source Document:**
-👉 The HTML-encoded version of a webpage is called the **source** version.
-👉 Tags are delineated by symbols `<` and `>`.
-
-**Two Main Sections:**
-
-| Section | Tags | Purpose |
-|---------|------|---------|
-| Head | &lt;head&gt; &lt;/head&gt; | Preliminary information (title, metadata) – not displayed on screen |
-| Body | &lt;body&gt; &lt;/body&gt; | Main content that appears on computer screen |
-
-**Analogy:**
-👉 Like an interoffice memo: head contains date/subject, body contains the meat.
-**Example (Figure 68):**
-👉 &lt;title&gt; inside head: "Documentation page" (for documentation, not displayed).
-👉 &lt;h1&gt; inside body: "My Web Page" (level-one heading, displayed prominently).
-👉 &lt;p&gt; inside body: "Click here for another page." (paragraph text).
-**Note:**
-👉 The example page is not fully functional – clicking "here" does nothing (no hyperlink yet).
-
----
-
-**Important Vocabulary:**
-- Source version = HTML code of a webpage
-- Tag = markup instruction inside < >
-- Head = section for document info (not displayed)
-- Body = section for visible content
-- Title = text in head (appears in browser tab, not page)
-- Heading (h1) = prominent text
-- Paragraph (p) = normal text block
-
----
-
-**Quick Revision Points:**
-- HTML source uses < > for tags.
-- Head vs body: head is metadata, body is display content.
-- Title tag is in head, shown in browser tab.
-- h1 is largest heading.
-- p is paragraph.
-- The simple page in Figure 68 has no working link.`,
-  questions: [
-    {
-      q: "The HTML-encoded version of a webpage is called the:",
-      options: ["A. Compiled version", "B. Source version", "C. Binary version", "D. Executable version"],
-      answer: "B. Source version",
-      diff: "easy"
-    },
-    {
-      q: "In HTML, tags are delineated by which symbols?",
-      options: ["A. [ and ]", "B. { and }", "C. ( and )", "D. < and >"],
-      answer: "D. < and >",
-      diff: "easy"
-    },
-    {
-      q: "The two main sections of an HTML document are the head and the:",
-      options: ["A. Footer", "B. Body", "C. Title", "D. Meta"],
-      answer: "B. Body",
-      diff: "easy"
-    },
-    {
-      q: "The head section of an HTML document is surrounded by which tags?",
-      options: ["A. <header> and </header>", "B. <head> and </head>", "C. <top> and </top>", "D. <title> and </title>"],
-      answer: "B. <head> and </head>",
-      diff: "easy"
-    },
-    {
-      q: "The body section of an HTML document is surrounded by which tags?",
-      options: ["A. <main> and </main>", "B. <content> and </content>", "C. <body> and </body>", "D. <display> and </display>"],
-      answer: "C. <body> and </body>",
-      diff: "easy"
-    },
-    {
-      q: "The head of a webpage typically contains:",
-      options: ["A. The main content to display", "B. Preliminary information like the title", "C. Images", "D. Hyperlinks"],
-      answer: "B. Preliminary information like the title",
-      diff: "easy"
-    },
-    {
-      q: "The body of a webpage contains:",
-      options: ["A. The document title", "B. Metadata", "C. The material to be presented on screen", "D. The author's name only"],
-      answer: "C. The material to be presented on screen",
-      diff: "easy"
-    },
-    {
-      q: "The analogy given for head and body is:",
-      options: ["A. A book cover and pages", "B. Head and body of an interoffice memo", "C. A tree trunk and branches", "D. A car engine and wheels"],
-      answer: "B. Head and body of an interoffice memo",
-      diff: "easy"
-    },
-    {
-      q: "The title tag (<title>) is located in which section of an HTML document?",
-      options: ["A. Body", "B. Head", "C. Footer", "D. Paragraph"],
-      answer: "B. Head",
-      diff: "easy"
-    },
-    {
-      q: "The text inside the title tag is:",
-      options: ["A. Displayed prominently on the screen", "B. For documentation purposes, not part of the displayed page", "C. Displayed as a heading", "D. Displayed as a paragraph"],
-      answer: "B. For documentation purposes, not part of the displayed page",
-      diff: "medium"
-    },
-    {
-      q: "A level-one heading in HTML is created using which tags?",
-      options: ["A. <heading> and </heading>", "B. <h0> and </h0>", "C. <h1> and </h1>", "D. <title> and </title>"],
-      answer: "C. <h1> and </h1>",
-      diff: "easy"
-    },
-    {
-      q: "A paragraph in HTML is created using which tags?",
-      options: ["A. <para> and </para>", "B. <p> and </p>", "C. <text> and </text>", "D. <line> and </line>"],
-      answer: "B. <p> and </p>",
-      diff: "easy"
-    },
-    {
-      q: "In the example webpage (Figure 68a), the text 'My Web Page' is inside which tags?",
-      options: ["A. <title>", "B. <p>", "C. <h1>", "D. <body>"],
-      answer: "C. <h1>",
-      diff: "easy"
-    },
-    {
-      q: "In the example webpage, the text 'Click here for another page.' is inside which tags?",
-      options: ["A. <h1>", "B. <title>", "C. <p>", "D. <heading>"],
-      answer: "C. <p>",
-      diff: "easy"
-    },
-    {
-      q: "The example webpage in Figure 68 is described as not fully functional because:",
-      options: ["A. The tags are incorrect", "B. Nothing happens when clicking 'here'", "C. It has no body", "D. It has no title"],
-      answer: "B. Nothing happens when clicking 'here'",
-      diff: "easy"
-    },
-    {
-      q: "What is missing from the example webpage to make 'here' clickable?",
-      options: ["A. A paragraph tag", "B. A heading tag", "C. A hyperlink (anchor) tag", "D. A title tag"],
-      answer: "C. A hyperlink (anchor) tag",
-      diff: "medium"
-    },
-    {
-      q: "The beginning of an HTML document is typically indicated by which tag?",
-      options: ["A. <html>", "B. <start>", "C. <document>", "D. <web>"],
-      answer: "A. <html>",
-      diff: "easy"
-    },
-    {
-      q: "The end of an HTML document is indicated by:",
-      options: ["A. <end>", "B. </html>", "C. <finish>", "D. </document>"],
-      answer: "B. </html>",
-      diff: "easy"
-    },
-    {
-      q: "A level-one heading (<h1>) is typically displayed:",
-      options: ["A. Smaller than normal text", "B. Prominently (largest heading)", "C. Invisible", "D. As a link"],
-      answer: "B. Prominently (largest heading)",
-      diff: "easy"
-    },
-    {
-      q: "Which tag is used to define the main content area that the browser displays?",
-      options: ["A. <head>", "B. <title>", "C. <body>", "D. <html>"],
-      answer: "C. <body>",
-      diff: "easy"
-    }
-  ]
-},
-
-74: {
-  title: "Networking and the Internet: More on HTML",
-  summary: `**Key Topics Covered:**
-- W3Schools as a resource for HTML learning
-- Comprehensive list of HTML tags and usage
-- Interactive "Try it Yourself" feature (code on left, output on right)
-- Example: <b> tag (bold text)
-
----
-
-**Simple Understanding:**
-
-**Learning HTML:**
-👉 W3Schools website provides detailed information about all HTML tags.
-👉 URL: https://www.w3schools.com/tags/default.asp
-
-**Navigating W3Schools:**
-👉 Left panel: list of all HTML tags.
-👉 Click on any tag (e.g., <b>) to see its description and usage.
-
-**Interactive Example:**
-👉 Click green button "Try it Yourself".
-👉 Screen splits into two:
-   - **Left side:** HTML code
-   - **Right side:** Output (how the code appears in browser)
-
----
-
-**Important Vocabulary:**
-- W3Schools = online web development tutorial website
-- Tag = HTML markup element
-- <b> tag = bold text
-- Try it Yourself = interactive code editor
-- Code vs Output = source vs rendered view
-
----
-
-**Quick Revision Points:**
-- W3Schools is a free resource for learning HTML.
-- All HTML tags are listed with examples.
-- "Try it Yourself" lets you edit and see output instantly.
-- <b> tag makes text bold.`,
-  questions: [
-    {
-      q: "Which website is recommended in the module for learning HTML tags?",
-      options: ["A. Codecademy", "B. W3Schools", "C. MDN Web Docs", "D. Stack Overflow"],
-      answer: "B. W3Schools",
-      diff: "easy"
-    },
-    {
-      q: "The URL provided for HTML tag reference is:",
-      options: ["A. https://www.html.com/tags", "B. https://www.w3schools.com/tags/default.asp", "C. https://www.tutorialspoint.com/html", "D. https://www.w3.org/html"],
-      answer: "B. https://www.w3schools.com/tags/default.asp",
-      diff: "easy"
-    },
-    {
-      q: "On the W3Schools HTML tag reference page, the list of tags appears on which panel?",
-      options: ["A. Right panel", "B. Top panel", "C. Left panel", "D. Bottom panel"],
-      answer: "C. Left panel",
-      diff: "easy"
-    },
-    {
-      q: "To see an interactive example of an HTML tag on W3Schools, you click the button labeled:",
-      options: ["A. Run", "B. Execute", "C. Try it Yourself", "D. Demo"],
-      answer: "C. Try it Yourself",
-      diff: "easy"
-    },
-    {
-      q: "When you click 'Try it Yourself' for the <b> tag, the page shows:",
-      options: ["A. Only code", "B. Only output", "C. Code on the left, output on the right", "D. Code on the right, output on the left"],
-      answer: "C. Code on the left, output on the right",
-      diff: "easy"
-    },
-    {
-      q: "The <b> tag is used to make text:",
-      options: ["A. Italic", "B. Bold", "C. Underlined", "D. Strikethrough"],
-      answer: "B. Bold",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is NOT a feature of the W3Schools 'Try it Yourself' tool?",
-      options: ["A. Edit code", "B. See live output", "C. Download the output as a file", "D. Run HTML code"],
-      answer: "C. Download the output as a file",
-      diff: "medium"
-    },
-    {
-      q: "W3Schools provides information about all HTML tags and how they can be used. This statement is:",
-      options: ["A. True", "B. False", "C. Partially true", "D. Not mentioned"],
-      answer: "A. True",
-      diff: "easy"
-    },
-    {
-      q: "The module suggests that if you are interested in developing HTML pages, you should consult:",
-      options: ["A. A textbook only", "B. W3Schools", "C. Microsoft Word", "D. Email"],
-      answer: "B. W3Schools",
-      diff: "easy"
-    },
-    {
-      q: "In Figure 71, the code and output are shown side by side. The code is on which side?",
-      options: ["A. Left", "B. Right", "C. Top", "D. Bottom"],
-      answer: "A. Left",
-      diff: "easy"
-    },
-    {
-      q: "The example tag used in the module to demonstrate 'Try it Yourself' is:",
-      options: ["A. <p>", "B. <h1>", "C. <b>", "D. <a>"],
-      answer: "C. <b>",
-      diff: "easy"
-    },
-    {
-      q: "The output in 'Try it Yourself' shows the result of HTML code as rendered by a:",
-      options: ["A. Compiler", "B. Browser", "C. Text editor", "D. Server"],
-      answer: "B. Browser",
-      diff: "easy"
-    },
-    {
-      q: "The W3Schools website is primarily a resource for learning:",
-      options: ["A. Operating systems", "B. Networking hardware", "C. Web development (HTML, CSS, etc.)", "D. Database management"],
-      answer: "C. Web development (HTML, CSS, etc.)",
-      diff: "easy"
-    },
-    {
-      q: "The module number for 'More on HTML' is:",
-      options: ["A. 72", "B. 73", "C. 74", "D. 75"],
-      answer: "C. 74",
-      diff: "easy"
-    },
-    {
-      q: "The 'Try it Yourself' feature allows users to:",
-      options: ["A. Only view code", "B. Only view output", "C. Edit, run, and see output instantly", "D. Download HTML files only"],
-      answer: "C. Edit, run, and see output instantly",
-      diff: "easy"
-    },
-    {
-      q: "On the left panel of W3Schools tag reference, you can find a list of:",
-      options: ["A. CSS properties", "B. JavaScript functions", "C. HTML tags", "D. Server settings"],
-      answer: "C. HTML tags",
-      diff: "easy"
-    },
-    {
-      q: "Clicking on a tag name on the left panel of W3Schools takes you to:",
-      options: ["A. A blank page", "B. A page describing that tag's usage", "C. A forum discussion", "D. A video tutorial"],
-      answer: "B. A page describing that tag's usage",
-      diff: "easy"
-    },
-    {
-      q: "The <b> tag is an example of a tag that affects text:",
-      options: ["A. Color", "B. Size", "C. Style (bold)", "D. Alignment"],
-      answer: "C. Style (bold)",
-      diff: "easy"
-    },
-    {
-      q: "W3Schools is a:",
-      options: ["A. Search engine", "B. Web development tutorial website", "C. Social media platform", "D. Email service"],
-      answer: "B. Web development tutorial website",
-      diff: "easy"
-    },
-    {
-      q: "The module encourages students to use W3Schools for:",
-      options: ["A. Creating email accounts", "B. Learning HTML tags and their usage", "C. Downloading software", "D. Buying web hosting"],
-      answer: "B. Learning HTML tags and their usage",
-      diff: "easy"
-    }
-  ]
-},
-75: {
-  title: "Networking and the Internet: XML",
-  summary: `**Key Topics Covered:**
-- HTML as notation for document appearance
-- Encoding non-textual material (e.g., sheet music) as text files
-- Custom tag system for music (staff, measure, notes, etc.)
-- XML (eXtensible Markup Language) – standardized style for designing markup languages
-- Relationship between XML, HTML, and XHTML
-
----
-
-**Simple Understanding:**
-
-**Encoding Non-Textual Material:**
-👉 HTML encodes text + appearance as text files.
-👉 Similarly, sheet music can be encoded as text using custom tags.
-👉 Example: Beethoven's Fifth Symphony first two bars encoded with tags like:
-   - &lt;staff clef="treble"&gt; to start a staff
-   - &lt;time&gt; 2/4 &lt;/time&gt; for time signature
-   - &lt;measure&gt; and &lt;/measure&gt; for measures
-   - &lt;notes&gt; egh G &lt;/notes&gt; for notes
-
-**XML (eXtensible Markup Language):**
-👉 A standardized style for designing notational systems to represent data as text files.
-👉 Based on SGML (Standard Generalized Markup Language), but simplified.
-
-**Markup Languages:**
-👉 Notational systems developed using XML standards.
-👉 Examples: MathML (mathematics), SMIL (multimedia presentations), MusicXML.
-👉 HTML is a markup language for webpages (but original HTML pre-dates XML).
-
-**XHTML:**
-👉 Version of HTML that strictly conforms to XML standards.
-
----
-
-**Important Vocabulary:**
-- XML = eXtensible Markup Language
-- Markup language = notational system using tags
-- Tag = delimiter (&lt; &gt;) with name
-- SGML = Standard Generalized Markup Language (predecessor)
-- XHTML = XML-compliant version of HTML
-- Attribute = extra info inside tag (e.g., clef="treble")
-- Encoding = converting data into text representation
-
----
-
-**Quick Revision Points:**
-- Any data can be encoded as text using custom tags.
-- XML provides rules for creating markup languages.
-- Tags use &lt; &gt; and closing with &lt;/ &gt;.
-- Attributes give additional information.
-- HTML is one example of a markup language.
-- Original HTML is not fully XML-compliant; XHTML is.`,
-  
-  questions: [
-    {
-      q: "HTML is essentially a notational system for encoding:",
-      options: [
-        "A. Images only",
-        "B. Text document with appearance",
-        "C. Audio files",
-        "D. Video streams"
-      ],
-      answer: "B. Text document with appearance",
-      diff: "easy"
-    },
-    {
-      q: "The example given for encoding non-textual material as text is:",
-      options: [
-        "A. Mathematical equations",
-        "B. Sheet music",
-        "C. Photographs",
-        "D. 3D models"
-      ],
-      answer: "B. Sheet music",
-      diff: "easy"
-    },
-    {
-  q: "In the sheet music encoding example, the tag for starting a staff with treble clef is:",
-  options: [
-    "A. <staff>",
-    'B. <clef="treble">',
-    'C. <staff clef="treble">',
-    "D. <staff clef=treble>"
-  ],
-  answer: 'C. <staff clef="treble">',
-  diff: "medium"
-},
-    {
-      q: "Which tag is used to indicate the end of a staff in the example?",
-      options: [
-        "A. </staff>",
-        "B. <end staff>",
-        "C. <staff/>",
-        "D. </staff ;>"
-      ],
-      answer: "A. </staff>",
-      diff: "easy"
-    },
-    {
-      q: "XML stands for:",
-      options: [
-        "A. eXtensible Markup Language",
-        "B. Extra Markup Language",
-        "C. Extended Machine Language",
-        "D. External Markup Language"
-      ],
-      answer: "A. eXtensible Markup Language",
-      diff: "easy"
-    }
-  ]
-},
-
-76: {
-  title: "Networking and the Internet: Client Side and Server Side",
-  summary: `**Key Topics Covered:**
-- Browser fetching and displaying webpages (client role)
-- URL, webserver, HTML interpretation
-- Client-side vs server-side activities
-- Examples: travel agent (customized webpage), search engine, webmail
-- Technologies: JavaScript, Java applets, Flash
-
----
-
-**Simple Understanding:**
-
-**Basic Webpage Retrieval:**
-👉 Browser (client) uses URL to contact webserver.
-👉 Server sends HTML text document.
-👉 Browser interprets HTML tags and displays page.
-👉 Clicking a hyperlink repeats the process.
-
----
-
-**Client-Side vs Server-Side Activities:**
-👉 **Client-side:** Performed by browser (e.g., user input, animation).
-👉 **Server-side:** Performed by webserver (e.g., building custom pages, accessing mail server).
-
-**Examples:**
-
-1. **Travel agent website:**
-   - Client-side: User selects destinations and travel dates.
-   - Server-side: Server builds customized webpage with relevant information.
-
-2. **Search engine:**
-   - Client-side: User enters search topic.
-   - Server-side: Server constructs webpage with search results.
-
-3. **Webmail:**
-   - Server-side: Webserver fetches mail from mail server, builds webpage.
-   - Client-side: Browser displays mail and allows user to compose messages.
-   - Server-side: Webserver forwards composed messages to mail server.
-
----
-
-**Technologies for Client/Server Activities:**
-
-| Technology | Type | Description |
-|------------|------|-------------|
-| JavaScript | Client-side | Programs embedded in HTML, executed by browser |
-| Java applets | Client-side | Program units transferred to browser, executed |
-| Flash | Client-side | Extensive multimedia presentations |
-
----
-
-**Important Vocabulary:**
-- Client-side = activity performed by browser
-- Server-side = activity performed by webserver
-- Customized webpage = dynamically built for specific user
-- Webmail = email accessed via browser
-- JavaScript = scripting language for client-side
-- Applet = small Java program run in browser
-- Flash = multimedia platform (client-side)
-
----
-
-**Quick Revision Points:**
-- Browser fetches and displays; server sends HTML.
-- Client-side: user input, animation, forms.
-- Server-side: custom page generation, database access.
-- Webmail: server acts as intermediary to mail server.
-- JavaScript, Java applets, Flash enable client-side interactivity.`,
-  questions: [
-    {
-      q: "In basic webpage retrieval, the browser plays the role of a:",
-      options: ["A. Server", "B. Client", "C. Router", "D. Database"],
-      answer: "B. Client",
-      diff: "easy"
-    },
-    {
-      q: "The server responds to a browser's request by sending:",
-      options: ["A. An image file", "B. A text document (HTML)", "C. A compiled program", "D. A video stream"],
-      answer: "B. A text document (HTML)",
-      diff: "easy"
-    },
-    {
-      q: "Activities performed by a browser are called:",
-      options: ["A. Server-side", "B. Client-side", "C. Network-side", "D. Host-side"],
-      answer: "B. Client-side",
-      diff: "easy"
-    },
-    {
-      q: "Activities performed by a webserver are called:",
-      options: ["A. Client-side", "B. Server-side", "C. User-side", "D. Database-side"],
-      answer: "B. Server-side",
-      diff: "easy"
-    },
-    {
-      q: "In the travel agent example, a customer specifying destinations and dates is a:",
-      options: ["A. Server-side activity", "B. Client-side activity", "C. Network activity", "D. Database activity"],
-      answer: "B. Client-side activity",
-      diff: "easy"
-    },
-    {
-      q: "In the travel agent example, the server constructing a customized webpage is a:",
-      options: ["A. Client-side activity", "B. Server-side activity", "C. Browser activity", "D. User activity"],
-      answer: "B. Server-side activity",
-      diff: "easy"
-    },
-    {
-      q: "When using a search engine, entering a topic of interest is a:",
-      options: ["A. Server-side activity", "B. Client-side activity", "C. Network activity", "D. Indexing activity"],
-      answer: "B. Client-side activity",
-      diff: "easy"
-    },
-    {
-      q: "The search engine constructing a webpage of results is a:",
-      options: ["A. Client-side activity", "B. Server-side activity", "C. Browser activity", "D. User activity"],
-      answer: "B. Server-side activity",
-      diff: "easy"
-    },
-    {
-      q: "In webmail, the webserver acts as an intermediary between the client and:",
-      options: ["A. The database", "B. The mail server", "C. The file server", "D. The print server"],
-      answer: "B. The mail server",
-      diff: "easy"
-    },
-    {
-      q: "In webmail, building webpages containing mail information is a:",
-      options: ["A. Client-side activity", "B. Server-side activity", "C. User activity", "D. Browser plugin activity"],
-      answer: "B. Server-side activity",
-      diff: "easy"
-    },
-    {
-      q: "Composing email messages in a browser is a:",
-      options: ["A. Server-side activity", "B. Client-side activity", "C. Mail server activity", "D. Network activity"],
-      answer: "B. Client-side activity",
-      diff: "easy"
-    },
-    {
-      q: "Which technology is an early and still popular means of controlling client-side activities?",
-      options: ["A. Java applets", "B. Flash", "C. JavaScript", "D. PHP"],
-      answer: "C. JavaScript",
-      diff: "easy"
-    },
-    {
-      q: "JavaScript was developed by:",
-      options: ["A. Sun Microsystems", "B. Microsoft", "C. Netscape Communications, Inc.", "D. Macromedia"],
-      answer: "C. Netscape Communications, Inc.",
-      diff: "medium"
-    },
-    {
-      q: "Program units called applets are written in which language?",
-      options: ["A. JavaScript", "B. Java", "C. C++", "D. Python"],
-      answer: "B. Java",
-      diff: "easy"
-    },
-    {
-      q: "Applets are transferred to the browser as requested within the:",
-      options: ["A. HTTP header", "B. URL", "C. HTML source document", "D. Server log"],
-      answer: "C. HTML source document",
-      diff: "medium"
-    },
-    {
-      q: "The technology Flash was developed by:",
-      options: ["A. Adobe", "B. Macromedia", "C. Sun Microsystems", "D. Netscape"],
-      answer: "B. Macromedia",
-      diff: "medium"
-    },
-    {
-      q: "Flash is used for implementing:",
-      options: ["A. Simple text formatting", "B. Extensive multimedia client-side presentations", "C. Server-side databases", "D. Email protocols"],
-      answer: "B. Extensive multimedia client-side presentations",
-      diff: "easy"
-    },
-    {
-      q: "The Java applet approach was developed by:",
-      options: ["A. Netscape", "B. Microsoft", "C. Sun Microsystems", "D. Macromedia"],
-      answer: "C. Sun Microsystems",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is NOT a client-side technology mentioned?",
-      options: ["A. JavaScript", "B. Java applets", "C. Flash", "D. PHP"],
-      answer: "D. PHP",
-      diff: "easy"
-    },
-    {
-      q: "In basic webpage retrieval, after receiving the HTML document, the browser:",
-      options: ["A. Sends it back to the server", "B. Interprets HTML tags and displays the page", "C. Compiles it into machine code", "D. Encrypts it"],
-      answer: "B. Interprets HTML tags and displays the page",
-      diff: "easy"
-    }
-  ]
-},
-
-
-77: {
-  title: "Networking and the Internet: Layered Approach to Internet Software (I)",
-  summary: `**Key Topics Covered:**
-- Message-passing infrastructure of the Internet
-- Analogy: sending a gift by shipping (user, shipping company, airline)
-- Three-level hierarchy in analogy
-- Four layers of Internet software: Application, Transport, Network, Link
-- Message flow: origin → down through layers → transmit → receive → up through layers
-
----
-
-**Simple Understanding:**
-
-**Main Task of Networking Software:**
-👉 Provide infrastructure to transfer messages between machines.
-
-**Package-Shipping Analogy (Figure 73):**
-👉 You wrap gift, write address, give to shipping company (e.g., USPS).
-👉 Shipping company puts package in container, delivers to airline.
-👉 Airline flies container to destination city (maybe with stops).
-👉 At destination, airline gives container to shipping company.
-👉 Shipping company removes package and delivers to friend.
-
-**Three-Level Hierarchy in Analogy:**
-1. **User level** (you and your friend)
-2. **Shipping company**
-3. **Airline**
-
-👉 Each level uses next lower level as an **abstract tool** (no need to know details).
-👉 Each level has representatives at origin and destination (reverse roles).
-
----
-
-**Internet Software Layers (4 layers):**
-
-| Layer | Role |
-|-------|------|
-| Application | Where message originates/delivered (e.g., browser, email) |
-| Transport | Prepares message for transmission |
-| Network | Routes message across networks |
-| Link | Actually transmits bits over physical medium |
-
-👉 Message flow: **Application → Transport → Network → Link** (at origin)
-👉 Then transmitted
-👉 At destination: **Link → Network → Transport → Application** (delivered)
-
----
-
-**Important Vocabulary:**
-- Application layer = topmost, user-facing protocols
-- Transport layer = end-to-end communication management
-- Network layer = routing and addressing (IP)
-- Link layer = physical transmission (Ethernet, WiFi)
-- Hierarchy = layered structure
-- Abstract tool = using lower layer without knowing details
-- Counterpart = matching layer at destination
-
----
-
-**Quick Revision Points:**
-- Internet software uses layered approach.
-- Analogy: user, shipping company, airline (3 levels).
-- Internet has 4 layers: Application, Transport, Network, Link.
-- Messages go down layers at origin, up layers at destination.
-- Each layer provides services to layer above.`,
-  questions: [
-    {
-      q: "A principal task of networking software is to:",
-      options: ["A. Provide web browsing", "B. Provide infrastructure for transferring messages", "C. Manage user accounts", "D. Encrypt all data"],
-      answer: "B. Provide infrastructure for transferring messages",
-      diff: "easy"
-    },
-    {
-      q: "The analogy used to explain layered Internet software is:",
-      options: ["A. Sending a letter", "B. Sending a gift in a package", "C. Making a phone call", "D. Driving a car"],
-      answer: "B. Sending a gift in a package",
-      diff: "easy"
-    },
-    {
-      q: "In the shipping analogy, how many levels are in the hierarchy?",
-      options: ["A. Two", "B. Three", "C. Four", "D. Five"],
-      answer: "B. Three",
-      diff: "easy"
-    },
-    {
-      q: "In the shipping analogy, the three levels are:",
-      options: ["A. User, shipping company, airline", "B. Sender, post office, truck", "C. Sender, receiver, carrier", "D. Application, transport, network"],
-      answer: "A. User, shipping company, airline",
-      diff: "easy"
-    },
-    {
-      q: "In the analogy, which level uses the next lower level as an abstract tool?",
-      options: ["A. Only the user", "B. Only the shipping company", "C. Each level", "D. Only the airline"],
-      answer: "C. Each level",
-      diff: "medium"
-    },
-    {
-      q: "Internet software has how many layers?",
-      options: ["A. Two", "B. Three", "C. Four", "D. Five"],
-      answer: "C. Four",
-      diff: "easy"
-    },
-    {
-      q: "The four layers of Internet software are called:",
-      options: ["A. Application, Transport, Network, Link", "B. User, Kernel, Driver, Hardware", "C. HTTP, TCP, IP, Ethernet", "D. Presentation, Session, Transport, Network"],
-      answer: "A. Application, Transport, Network, Link",
-      diff: "easy"
-    },
-    {
-      q: "A message typically originates in which layer?",
-      options: ["A. Link layer", "B. Network layer", "C. Transport layer", "D. Application layer"],
-      answer: "D. Application layer",
-      diff: "easy"
-    },
-    {
-      q: "After origination, the message is passed down through which sequence of layers?",
-      options: ["A. Link → Network → Transport → Application", "B. Application → Transport → Network → Link", "C. Transport → Application → Network → Link", "D. Network → Transport → Link → Application"],
-      answer: "B. Application → Transport → Network → Link",
-      diff: "medium"
-    },
-    {
-      q: "The actual transmission over physical medium occurs at which layer?",
-      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
-      answer: "D. Link layer",
-      diff: "easy"
-    },
-    {
-      q: "At the destination, the message is received by which layer first?",
-      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
-      answer: "D. Link layer",
-      diff: "medium"
-    },
-    {
-      q: "At the destination, after the link layer, the message passes up through:",
-      options: ["A. Application → Transport → Network", "B. Network → Transport → Application", "C. Transport → Network → Application", "D. Link → Application → Transport"],
-      answer: "B. Network → Transport → Application",
-      diff: "hard"
-    },
-    {
-      q: "In the shipping analogy, what does the user represent in the Internet software context?",
-      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
-      answer: "A. Application layer",
-      diff: "hard"
-    },
-    {
-      q: "In the analogy, the shipping company roughly corresponds to which layers?",
-      options: ["A. Application only", "B. Transport and Network", "C. Link only", "D. All layers"],
-      answer: "B. Transport and Network",
-      diff: "hard"
-    },
-    {
-      q: "In the analogy, the airline roughly corresponds to which layer?",
-      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
-      answer: "D. Link layer",
-      diff: "hard"
-    },
-    {
-      q: "Each level in the Internet software hierarchy has representatives at:",
-      options: ["A. Only the origin", "B. Only the destination", "C. Both origin and destination", "D. Neither"],
-      answer: "C. Both origin and destination",
-      diff: "easy"
-    },
-    {
-      q: "The representatives at the destination tend to do the _______ of their counterparts at the origin.",
-      options: ["A. Same actions", "B. Reverse", "C. Nothing", "D. Encryption"],
-      answer: "B. Reverse",
-      diff: "easy"
-    },
-    {
-      q: "The software at each layer uses the next lower layer as a(n):",
-      options: ["A. End user", "B. Abstract tool", "C. Data source", "D. Error handler"],
-      answer: "B. Abstract tool",
-      diff: "easy"
-    },
-    {
-      q: "According to the text, the Internet software hierarchy consists of collections of:",
-      options: ["A. People and businesses", "B. Software routines", "C. Hardware devices", "D. Protocols only"],
-      answer: "B. Software routines",
-      diff: "easy"
-    },
-    {
-      q: "The purpose of the layered approach is to:",
-      options: ["A. Increase complexity", "B. Provide abstraction and modularity", "C. Slow down communication", "D. Require more memory"],
-      answer: "B. Provide abstraction and modularity",
-      diff: "easy"
-    }
-  ]
-},
-
-
-78: {
-  title: "Networking and the Internet: Layered Approach to Internet Software (II)",
-  summary: `**Key Topics Covered:**
-- Tracing a message through the Internet layers
-- Application layer: uses transport layer, provides addresses (mnemonic to IP via DNS)
-- Transport layer: accepts messages, divides into small segments (packets), adds sequence numbers
-- Network layer: routes packets individually (different paths possible)
-- Link layer: physical transmission
-- Analogy: long message blocks routers like a train blocks a crossing
-
----
-
-**Simple Understanding:**
-
-**Application Layer:**
-👉 Uses transport layer to send/receive messages (like using a shipping company).
-👉 Provides address compatible with Internet infrastructure.
-👉 May use DNS (name servers) to translate mnemonic addresses to IP addresses.
-
-**Transport Layer:**
-👉 Accepts messages from application layer.
-👉 Formats messages for transmission.
-👉 Divides long messages into small segments (packets) – prevents blocking routers.
-👉 Adds **sequence numbers** to allow reassembly at destination.
-👉 Hands packets to network layer.
-
-**Why Segmentation?**
-👉 Long messages block other messages at routers (like cars waiting for a long train at crossing).
-👉 Small packets can interweave at routers.
-
-**Network Layer:**
-👉 Treats packets as individual, unrelated messages until they reach destination transport layer.
-👉 Packets from same message may take **different paths** through the Internet.
-
----
-
-**Important Vocabulary:**
-- DNS = Domain Name System (translates names to IPs)
-- IP address = Internet Protocol address
-- Segmentation = dividing long message into packets
-- Packet = small unit of data transmitted over network
-- Sequence number = label to reorder packets at destination
-- Router = device that forwards packets between networks
-- Interweave = packets from different sources mix
-
----
-
-**Quick Revision Points:**
-- Application layer provides addresses (with DNS help).
-- Transport layer segments long messages into packets + adds sequence numbers.
-- Segmentation prevents blocking at routers.
-- Packets may take different routes.
-- Sequence numbers enable correct reassembly.`,
-  questions: [
-    {
-      q: "The application layer uses which layer to send and receive messages?",
-      options: ["A. Network layer", "B. Transport layer", "C. Link layer", "D. Physical layer"],
-      answer: "B. Transport layer",
-      diff: "easy"
-    },
-    {
-      q: "The application layer provides an address compatible with the Internet infrastructure. To translate mnemonic addresses to IP addresses, it uses:",
-      options: ["A. Routers", "B. Name servers (DNS)", "C. Link layer", "D. Network layer"],
-      answer: "B. Name servers (DNS)",
-      diff: "easy"
-    },
-    {
-      q: "One important task of the transport layer is to:",
-      options: ["A. Route packets", "B. Divide long messages into small segments", "C. Transmit bits", "D. Display web pages"],
-      answer: "B. Divide long messages into small segments",
-      diff: "easy"
-    },
-    {
-      q: "The small segments produced by the transport layer are called:",
-      options: ["A. Frames", "B. Packets", "C. Datagrams", "D. Cells"],
-      answer: "B. Packets",
-      diff: "easy"
-    },
-    {
-      q: "Why is segmentation necessary?",
-      options: ["A. To increase speed", "B. To prevent a long message from obstructing other messages at routers", "C. To reduce address size", "D. To encrypt data"],
-      answer: "B. To prevent a long message from obstructing other messages at routers",
-      diff: "easy"
-    },
-    {
-      q: "The analogy used for a long message blocking routers is:",
-      options: ["A. Cars waiting for a long train at a crossing", "B. A traffic jam on a highway", "C. A plane waiting for landing clearance", "D. A ship in a canal"],
-      answer: "A. Cars waiting for a long train at a crossing",
-      diff: "easy"
-    },
-    {
-      q: "The transport layer adds _______ to the small segments so they can be reassembled at the destination.",
-      options: ["A. Timestamps", "B. Sequence numbers", "C. Checksums", "D. Encryption keys"],
-      answer: "B. Sequence numbers",
-      diff: "easy"
-    },
-    {
-      q: "After the transport layer creates packets, it hands them to which layer?",
-      options: ["A. Application layer", "B. Network layer", "C. Link layer", "D. Physical layer"],
-      answer: "B. Network layer",
-      diff: "easy"
-    },
-    {
-      q: "From the network layer onward, packets are treated as:",
-      options: ["A. Part of a single message", "B. Individual, unrelated messages", "C. Encrypted blocks", "D. Error-checked frames"],
-      answer: "B. Individual, unrelated messages",
-      diff: "medium"
-    },
-    {
-      q: "Is it possible for packets related to a common message to follow different paths through the Internet?",
-      options: ["A. Yes", "B. No", "C. Only if the network is busy", "D. Only if the message is very short"],
-      answer: "A. Yes",
-      diff: "easy"
-    },
-    {
-      q: "The layer responsible for routing packets (determining which path to forward) is the:",
-      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
-      answer: "C. Network layer",
-      diff: "easy"
-    },
-    {
-      q: "The analogy comparing the application layer to using a shipping company suggests that the application layer:",
-      options: ["A. Does not need to know all details of lower layers", "B. Must know every detail", "C. Replaces the transport layer", "D. Is the lowest layer"],
-      answer: "A. Does not need to know all details of lower layers",
-      diff: "medium"
-    },
-    {
-      q: "The figure mentioned in the module (Figure 75) is used to:",
-      options: ["A. Show a message traveling through the layers", "B. Display HTML tags", "C. Illustrate a network topology", "D. Show a URL structure"],
-      answer: "A. Show a message traveling through the layers",
-      diff: "easy"
-    },
-    {
-      q: "At the destination, which layer reassembles the packets using sequence numbers?",
-      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
-      answer: "B. Transport layer",
-      diff: "easy"
-    },
-    {
-      q: "The text states that small packets can _______ at routers where numerous messages cross paths.",
-      options: ["A. Collide", "B. Interweave", "C. Be lost", "D. Be delayed forever"],
-      answer: "B. Interweave",
-      diff: "medium"
-    },
-    {
-      q: "The mnemonic addresses used by humans are translated into IP addresses by:",
-      options: ["A. The browser", "B. Name servers (DNS)", "C. The network layer", "D. The link layer"],
-      answer: "B. Name servers (DNS)",
-      diff: "easy"
-    },
-    {
-      q: "Which layer's responsibility is to ensure messages are properly formatted for transmission?",
-      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
-      answer: "B. Transport layer",
-      diff: "easy"
-    },
-    {
-      q: "The transport layer's addition of sequence numbers is important for:",
-      options: ["A. Encryption", "B. Reassembly of packets in correct order", "C. Routing", "D. Physical transmission"],
-      answer: "B. Reassembly of packets in correct order",
-      diff: "easy"
-    },
-    {
-      q: "According to the text, long messages can obstruct the flow at:",
-      options: ["A. The application layer", "B. The transport layer", "C. Internet routers", "D. The user's computer"],
-      answer: "C. Internet routers",
-      diff: "easy"
-    },
-    {
-      q: "The final destination of a message after traveling up through the layers is the:",
-      options: ["A. Link layer", "B. Network layer", "C. Transport layer", "D. Application layer"],
-      answer: "D. Application layer",
-      diff: "easy"
-    }
-  ]
-},
-
-79: {
-  title: "Networking and the Internet: Layered Approach to Internet Software (III)",
-  summary: `**Key Topics Covered:**
-- Network layer job: deciding packet direction using forwarding table
-- Link layer: handles actual transmission (CSMA/CD for Ethernet, CSMA/CA for WiFi)
-- Packet hopping: each packet moves machine to machine
-- Only link and network layers on routers (minimal delay)
-- Transport layer: extracts segments, reassembles message using sequence numbers, hands to application layer
-- Port numbers: identify which application unit should receive the message
-- Common port numbers: HTTP (80), SMTP (25)
-
----
-
-**Simple Understanding:**
-
-**Network Layer Job:**
-👉 Decides which direction to send packet at each step.
-👉 Maintains router's forwarding table.
-👉 Determines direction to forward packets.
-
-**Link Layer Job:**
-👉 Responsible for receiving and transmitting packets.
-👉 Handles communication details of specific network:
-   - Ethernet → CSMA/CD
-   - WiFi → CSMA/CA
-
----
-
-**Packet Journey:**
-👉 At origin: network layer receives packet from transport layer → consults forwarding table → hands to link layer for transmission.
-👉 At each hop: link layer receives → hands to network layer → checks destination → returns to link layer → forwarded.
-👉 Only link and network layers involved at intermediate stops (routers).
-👉 Modern router forward time: millionths of a second.
-
----
-
-**At Final Destination:**
-👉 Network layer recognizes journey complete → hands to transport layer (not forwarded).
-👉 Transport layer extracts message segments → reconstructs original message using sequence numbers.
-👉 Then hands to appropriate application layer unit.
-
----
-
-**Port Numbers:**
-👉 Transport layer assigns unique port numbers to application units.
-👉 Port number appended to message address.
-👉 At destination, transport layer hands message to application at designated port.
-
-**Well-Known Ports:**
-👉 HTTP (web): port 80
-👉 SMTP (email): port 25
-👉 Users rarely need to know them; browsers assume default ports.
-
----
-
-**Summary of Layers:**
-
-| Layer | Role |
-|-------|------|
-| Application | Messages from application's point of view |
-| Transport | Segments/reassembles messages, uses port numbers |
-| Network | Directs segments through Internet (routing) |
-| Link | Actual transmission between machines |
-
-👉 Response time measured in milliseconds – transactions appear instantaneous.
-
----
-
-**Important Vocabulary:**
-- Forwarding table = router's map for packet direction
-- Hop = one step from one machine to next
-- Router = device that forwards packets between networks
-- Port number = identifier for application process (e.g., 80 for HTTP)
-- CSMA/CD = Ethernet's collision detection
-- CSMA/CA = WiFi's collision avoidance
-
----
-
-**Quick Revision Points:**
-- Network layer uses forwarding table; link layer handles transmission.
-- Routers only have link and network layers.
-- Each hop: link → network → link.
-- At destination: network → transport → application.
-- Port numbers distinguish applications.
-- HTTP uses port 80; SMTP uses port 25.
-- Internet response time in milliseconds.`,
-  questions: [
-    {
-      q: "The network layer's job is to decide:",
-      options: ["A. How to display the message", "B. In which direction a packet should be sent at each step", "C. How to compress the packet", "D. How to encrypt the packet"],
-      answer: "B. In which direction a packet should be sent at each step",
-      diff: "easy"
-    },
-    {
-      q: "The combination of which two layers constitutes the software on Internet routers?",
-      options: ["A. Application and transport", "B. Transport and network", "C. Network and link", "D. Link and physical"],
-      answer: "C. Network and link",
-      diff: "medium"
-    },
-    {
-      q: "Which layer is responsible for maintaining the router's forwarding table?",
-      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
-      answer: "C. Network layer",
-      diff: "easy"
-    },
-    {
-      q: "The link layer at a router is in charge of:",
-      options: ["A. Making routing decisions", "B. Receiving and transmitting packets", "C. Reassembling messages", "D. Assigning port numbers"],
-      answer: "B. Receiving and transmitting packets",
-      diff: "easy"
-    },
-    {
-      q: "For an Ethernet network, the link layer applies which protocol?",
-      options: ["A. CSMA/CA", "B. CSMA/CD", "C. TCP", "D. UDP"],
-      answer: "B. CSMA/CD",
-      diff: "easy"
-    },
-    {
-      q: "For a WiFi network, the link layer applies which protocol?",
-      options: ["A. CSMA/CD", "B. CSMA/CA", "C. HTTP", "D. SMTP"],
-      answer: "B. CSMA/CA",
-      diff: "easy"
-    },
-    {
-      q: "At each hop, after the link layer receives a packet, it hands it to the network layer which then:",
-      options: ["A. Destroys the packet", "B. Compares destination to forwarding table and returns to link layer", "C. Sends directly to application", "D. Encrypts the packet"],
-      answer: "B. Compares destination to forwarding table and returns to link layer",
-      diff: "medium"
-    },
-    {
-      q: "Which layers are present on routers (involved at intermediate stops)?",
-      options: ["A. Only application and transport", "B. Only transport and network", "C. Only network and link", "D. All four layers"],
-      answer: "C. Only network and link",
-      diff: "easy"
-    },
-    {
-      q: "The time required for a modern router to forward a packet is measured in:",
-      options: ["A. Nanoseconds", "B. Millionths of a second", "C. Seconds", "D. Milliseconds"],
-      answer: "B. Millionths of a second",
-      diff: "medium"
-    },
-    {
-      q: "At the final destination, which layer recognizes that the packet's journey is complete?",
-      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
-      answer: "C. Network layer",
-      diff: "easy"
-    },
-    {
-      q: "At the final destination, the network layer hands the packet to:",
-      options: ["A. Link layer (to forward again)", "B. Transport layer", "C. Application layer directly", "D. The router"],
-      answer: "B. Transport layer",
-      diff: "easy"
-    },
-    {
-      q: "The transport layer reconstructs the original message using:",
-      options: ["A. IP addresses", "B. Sequence numbers", "C. Port numbers", "D. MAC addresses"],
-      answer: "B. Sequence numbers",
-      diff: "easy"
-    },
-    {
-      q: "Once the message is assembled, the transport layer hands it to:",
-      options: ["A. The network layer", "B. The link layer", "C. The appropriate unit within the application layer", "D. Another router"],
-      answer: "C. The appropriate unit within the application layer",
-      diff: "easy"
-    },
-    {
-      q: "Which layer assigns unique port numbers to application units?",
-      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
-      answer: "B. Transport layer",
-      diff: "medium"
-    },
-    {
-      q: "The well-known port number for HTTP (web) is:",
-      options: ["A. 21", "B. 25", "C. 80", "D. 443"],
-      answer: "C. 80",
-      diff: "easy"
-    },
-    {
-      q: "The well-known port number for SMTP (email) is:",
-      options: ["A. 21", "B. 25", "C. 80", "D. 110"],
-      answer: "B. 25",
-      diff: "easy"
-    },
-    {
-      q: "When a browser is asked to retrieve a document with URL http://www.zoo.org/animals/frog.html, it assumes it should contact the HTTP server on port:",
-      options: ["A. 21", "B. 25", "C. 80", "D. 443"],
-      answer: "C. 80",
-      diff: "easy"
-    },
-    {
-      q: "Users rarely need to be concerned with port numbers because:",
-      options: ["A. Port numbers are not used", "B. Common applications have universally accepted port numbers", "C. The operating system hides them", "D. They are irrelevant"],
-      answer: "B. Common applications have universally accepted port numbers",
-      diff: "easy"
-    },
-    {
-      q: "The response time of the Internet is measured in:",
-      options: ["A. Nanoseconds", "B. Microseconds", "C. Milliseconds", "D. Seconds"],
-      answer: "C. Milliseconds",
-      diff: "easy"
-    },
-    {
-      q: "Which layer deals with messages from the application's point of view?",
-      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
-      answer: "A. Application layer",
-      diff: "easy"
-    }
-  ]
-},
-
-
-80: {
-  title: "Networking and the Internet: TCP/IP Protocol Suite",
-  summary: `**Key Topics Covered:**
-- OSI reference model (7 layers) vs Internet hierarchy (4 layers)
-- TCP/IP protocol suite (collection of protocols)
-- TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) as transport layer versions
-- TCP: connection-oriented (establishes connection, more reliable, less efficient)
-- UDP: connectionless (no connection, more efficient, less reliable)
-- Analogy: different shipping companies with same basic service but different characteristics
-
----
-
-**Simple Understanding:**
-
-**OSI Reference Model:**
-👉 7-layer hierarchy produced by International Organization for Standardization (ISO).
-👉 Carries authority of international organization.
-👉 Established after the Internet's 4-layer hierarchy was already the de facto standard.
-👉 Not the model used by Internet (4-layer model remains).
-
-**TCP/IP Protocol Suite:**
-👉 Collection of protocol standards used by Internet to implement 4-layer hierarchy.
-👉 Named after only two protocols (TCP and IP) – somewhat misleading.
-👉 TCP and UDP are both transport layer versions.
-
----
-
-**Transport Layer Options:**
-
-| Protocol | Full Name | Characteristics |
-|----------|-----------|-----------------|
-| TCP | Transmission Control Protocol | Connection-oriented, more reliable, less efficient |
-| UDP | User Datagram Protocol | Connectionless, more efficient, less reliable |
-
-**TCP (Connection-Oriented):**
-👉 Before sending message, TCP sends its own message to destination transport layer (telling it a message is about to be sent).
-👉 Waits for acknowledgment before sending application layer's message.
-👉 **Establishes a connection** first.
-
-**UDP (Connectionless):**
-👉 Does not establish connection prior to sending.
-👉 Simply sends the message.
-👉 More efficient but less reliable.
-
----
-
-**Analogy:**
-👉 Like choosing different shipping companies – same basic service, different characteristics.
-👉 Application layer chooses TCP or UDP based on required quality of service.
-
----
-
-**Important Vocabulary:**
-- OSI = Open System Interconnection (7-layer model)
-- ISO = International Organization for Standardization
-- De facto standard = standard that became common through practice, not official
-- TCP/IP = Transmission Control Protocol/Internet Protocol suite
-- TCP = connection-oriented transport protocol
-- UDP = connectionless transport protocol
-- Connection-oriented = establish connection before data transfer
-- Connectionless = send data without prior setup
-
----
-
-**Quick Revision Points:**
-- OSI has 7 layers; Internet has 4 layers.
-- Internet uses 4-layer hierarchy (de facto standard).
-- TCP/IP protocol suite implements the 4 layers.
-- TCP: reliable, connection-oriented, less efficient.
-- UDP: faster, connectionless, less reliable.
-- Application chooses TCP or UDP based on needs.`,
-  questions: [
-    {
-      q: "The OSI reference model has how many layers?",
-      options: ["A. 4", "B. 5", "C. 6", "D. 7"],
-      answer: "D. 7",
-      diff: "easy"
-    },
-    {
-      q: "The OSI reference model was produced by which organization?",
-      options: ["A. IEEE", "B. IETF", "C. International Organization for Standardization (ISO)", "D. ANSI"],
-      answer: "C. International Organization for Standardization (ISO)",
-      diff: "easy"
-    },
-    {
-      q: "The Internet's communication hierarchy uses how many layers?",
-      options: ["A. 4", "B. 5", "C. 6", "D. 7"],
-      answer: "A. 4",
-      diff: "easy"
-    },
-    {
-      q: "The OSI model was established after the Internet's 4-layer hierarchy had already become the:",
-      options: ["A. Official standard", "B. De facto standard", "C. Obsolete model", "D. Hardware standard"],
-      answer: "B. De facto standard",
-      diff: "medium"
-    },
-    {
-      q: "TCP/IP refers to:",
-      options: ["A. A single protocol", "B. A collection of protocol standards", "C. Only the transport layer", "D. Only the network layer"],
-      answer: "B. A collection of protocol standards",
-      diff: "easy"
-    },
-    {
-      q: "TCP stands for:",
-      options: ["A. Transmission Control Protocol", "B. Transfer Control Protocol", "C. Transport Communication Protocol", "D. Terminal Control Protocol"],
-      answer: "A. Transmission Control Protocol",
-      diff: "easy"
-    },
-    {
-      q: "UDP stands for:",
-      options: ["A. User Datagram Protocol", "B. Universal Data Protocol", "C. Uniform Delivery Protocol", "D. Unreliable Data Protocol"],
-      answer: "A. User Datagram Protocol",
-      diff: "easy"
-    },
-    {
-      q: "Which transport layer protocol establishes a connection before sending a message?",
-      options: ["A. UDP", "B. TCP", "C. IP", "D. HTTP"],
-      answer: "B. TCP",
-      diff: "easy"
-    },
-    {
-      q: "Which transport layer protocol is connectionless (does not establish a connection prior to sending)?",
-      options: ["A. TCP", "B. UDP", "C. IP", "D. SMTP"],
-      answer: "B. UDP",
-      diff: "easy"
-    },
-    {
-      q: "TCP is considered more _______ than UDP.",
-      options: ["A. Efficient", "B. Reliable", "C. Fast", "D. Simple"],
-      answer: "B. Reliable",
-      diff: "easy"
-    },
-    {
-      q: "UDP is considered more _______ than TCP.",
-      options: ["A. Reliable", "B. Complex", "C. Efficient", "D. Connection-oriented"],
-      answer: "C. Efficient",
-      diff: "easy"
-    },
-    {
-      q: "Before sending a message, TCP sends its own message to the destination and waits for:",
-      options: ["A. A reply message", "B. An acknowledgment", "C. A timeout", "D. A connection close"],
-      answer: "B. An acknowledgment",
-      diff: "medium"
-    },
-    {
-      q: "The choice between TCP and UDP is made by which layer?",
-      options: ["A. Application layer", "B. Transport layer", "C. Network layer", "D. Link layer"],
-      answer: "A. Application layer",
-      diff: "medium"
-    },
-    {
-      q: "The analogy for choosing TCP vs UDP is compared to:",
-      options: ["A. Choosing between different airlines", "B. Choosing between different shipping companies with same basic service", "C. Choosing between different cars", "D. Choosing between different computers"],
-      answer: "B. Choosing between different shipping companies with same basic service",
-      diff: "medium"
-    },
-    {
-      q: "The TCP/IP protocol suite is named after TCP and IP, which is described as:",
-      options: ["A. Accurate", "B. Complete", "C. Misleading (since there are many protocols)", "D. Irrelevant"],
-      answer: "C. Misleading (since there are many protocols)",
-      diff: "easy"
-    },
-    {
-      q: "Which protocol is more suitable for applications where speed is critical and occasional data loss is acceptable?",
-      options: ["A. TCP", "B. UDP", "C. IP", "D. HTTP"],
-      answer: "B. UDP",
-      diff: "medium"
-    },
-    {
-      q: "Which protocol is more suitable for applications requiring guaranteed delivery (e.g., file transfer, web browsing)?",
-      options: ["A. TCP", "B. UDP", "C. ICMP", "D. ARP"],
-      answer: "A. TCP",
-      diff: "easy"
-    },
-    {
-      q: "TCP is described as 'less efficient' because:",
-      options: ["A. It uses more bandwidth", "B. It has overhead for connection establishment and acknowledgments", "C. It is slower on all networks", "D. It cannot handle large data"],
-      answer: "B. It has overhead for connection establishment and acknowledgments",
-      diff: "medium"
-    },
-    {
-      q: "UDP is described as 'less reliable' because:",
-      options: ["A. It does not guarantee delivery", "B. It always loses packets", "C. It cannot be used for video", "D. It is slower than TCP"],
-      answer: "A. It does not guarantee delivery",
-      diff: "easy"
-    },
-    {
-      q: "The fact that the TCP/IP protocol suite provides multiple transport layer options allows applications to:",
-      options: ["A. Only use one transport protocol", "B. Choose based on required quality of service", "C. Ignore the transport layer", "D. Use both simultaneously"],
-      answer: "B. Choose based on required quality of service",
-      diff: "easy"
-    }
-  ]
-},
-
-81: {
-  title: "Networking and the Internet: Security (Forms of Attacks)",
-  summary: `**Key Topics Covered:**
-- Malware (malicious software) and network attacks
-- Virus: inserts into programs, executes with host
-- Worm: autonomous, replicates across network
-- Trojan horse: disguised as desirable program
-- Spyware: collects information (keylogging, sniffing)
-- Phishing: explicitly asking for information (email scams)
-- Denial of Service (DoS): overload computer with messages
-
----
-
-**Simple Understanding:**
-
-**Malware (Malicious Software):**
-👉 Software designed to attack computer systems via network.
-👉 Can be transferred to and executed on target, or attack remotely.
-
----
-
-**1. Virus:**
-👉 Inserts itself into existing programs (host programs).
-👉 When host runs, virus runs too.
-👉 Some just replicate to other programs; others cause damage (erase files, corrupt OS).
-
----
-
-**2. Worm:**
-👉 Autonomous program that transfers itself across network.
-👉 Copies itself to other computers.
-👉 Can cause explosion of copies, degrading performance and overloading networks.
-
----
-
-**3. Trojan Horse:**
-👉 Disguised as desirable program (game, utility).
-👉 Victim willingly imports it.
-👉 Performs harmful activities (immediately or dormant until triggered).
-👉 Often arrives as email attachment from unknown sources – NEVER open.
-
----
-
-**4. Spyware (Sniffing Software):**
-👉 Collects information about activities on infected computer.
-👉 Reports back to attacker.
-👉 Can record keystrokes (keylogging) to steal passwords, credit card numbers.
-👉 Some used for customer profiling (questionable ethics).
-
----
-
-**5. Phishing:**
-👉 Technique of obtaining information by explicitly asking for it (play on "fishing").
-👉 Perpetrator sends fake emails posing as legitimate institutions (banks, government).
-👉 Asks for information for "legitimate" purposes – actually for hostile use.
-
----
-
-**6. Denial of Service (DoS):**
-👉 Attack from remote computers.
-👉 Overloads target computer with messages.
-👉 Can cripple large commercial web servers.
-
----
-
-**Important Vocabulary:**
-- Malware = malicious software
-- Virus = self-replicating code that attaches to programs
-- Worm = autonomous, network-replicating program
-- Trojan horse = disguised malicious program
-- Spyware = information-collecting software
-- Phishing = fraudulent request for information
-- Denial of Service (DoS) = overloading attack
-- Keylogging = recording keystrokes
-
----
-
-**Quick Revision Points:**
-- Virus needs host program; worm is autonomous.
-- Trojan horse tricks user into installing.
-- Spyware secretly monitors activity.
-- Phishing asks for info directly (email scams).
-- DoS floods target with messages.`,
-  questions: [
-    {
-      q: "Malicious software is collectively called:",
-      options: ["A. Firmware", "B. Malware", "C. Freeware", "D. Shareware"],
-      answer: "B. Malware",
-      diff: "easy"
-    },
-    {
-      q: "A virus infects a computer by:",
-      options: ["A. Copying itself autonomously through the network", "B. Inserting itself into programs that already reside in the machine", "C. Disguising as a desirable program", "D. Overloading with messages"],
-      answer: "B. Inserting itself into programs that already reside in the machine",
-      diff: "easy"
-    },
-    {
-      q: "When the 'host' program is executed, the virus:",
-      options: ["A. Remains dormant", "B. Is also executed", "C. Deletes itself", "D. Spreads only to other computers"],
-      answer: "B. Is also executed",
-      diff: "easy"
-    },
-    {
-      q: "A worm is defined as:",
-      options: ["A. A program that inserts into existing programs", "B. An autonomous program that transfers itself through a network", "C. A disguised desirable program", "D. Software that collects information"],
-      answer: "B. An autonomous program that transfers itself through a network",
-      diff: "easy"
-    },
-    {
-      q: "A characteristic consequence of a worm is:",
-      options: ["A. It only affects one computer", "B. An explosion of replicated copies that can overload a network", "C. It asks for information directly", "D. It records keystrokes"],
-      answer: "B. An explosion of replicated copies that can overload a network",
-      diff: "easy"
-    },
-    {
-      q: "A Trojan horse enters a computer system disguised as:",
-      options: ["A. A system update", "B. A desirable program such as a game or utility", "C. An antivirus", "D. A network driver"],
-      answer: "B. A desirable program such as a game or utility",
-      diff: "easy"
-    },
-    {
-      q: "Trojan horses often arrive as:",
-      options: ["A. System files", "B. Attachments to enticing email messages", "C. Operating system updates", "D. Hardware drivers"],
-      answer: "B. Attachments to enticing email messages",
-      diff: "easy"
-    },
-    {
-      q: "Email attachments from unknown sources should:",
-      options: ["A. Be opened immediately", "B. Be saved and scanned", "C. Never be opened", "D. Be forwarded to friends"],
-      answer: "C. Never be opened",
-      diff: "easy"
-    },
-    {
-      q: "Spyware is also sometimes called:",
-      options: ["A. Trojan horse", "B. Worm", "C. Sniffing software", "D. Phishing software"],
-      answer: "C. Sniffing software",
-      diff: "easy"
-    },
-    {
-      q: "Spyware collects information about activities and:",
-      options: ["A. Deletes it", "B. Reports it back to the instigator", "C. Encrypts it", "D. Displays it on screen"],
-      answer: "B. Reports it back to the instigator",
-      diff: "easy"
-    },
-    {
-      q: "Recording symbol sequences typed at the keyboard (to steal passwords) is a function of:",
-      options: ["A. Worm", "B. Virus", "C. Trojan horse", "D. Spyware (keylogging)"],
-      answer: "D. Spyware (keylogging)",
-      diff: "easy"
-    },
-    {
-      q: "Phishing is a technique of obtaining information by:",
-      options: ["A. Secretly sniffing network traffic", "B. Explicitly asking for it", "C. Infecting programs", "D. Overloading servers"],
-      answer: "B. Explicitly asking for it",
-      diff: "easy"
-    },
-    {
-      q: "The term 'phishing' is a play on the word:",
-      options: ["A. Fishing", "B. Phishing", "C. Fission", "D. Phasing"],
-      answer: "A. Fishing",
-      diff: "easy"
-    },
-    {
-      q: "Phishing is often carried out via:",
-      options: ["A. Telephone calls", "B. Email", "C. Direct mail", "D. Social media only"],
-      answer: "B. Email",
-      diff: "easy"
-    },
-    {
-      q: "In a phishing attack, the perpetrator poses as:",
-      options: ["A. A friend", "B. A financial institution, government bureau, or law enforcement", "C. A software vendor", "D. An internet service provider"],
-      answer: "B. A financial institution, government bureau, or law enforcement",
-      diff: "easy"
-    },
-    {
-      q: "A Denial of Service (DoS) attack involves:",
-      options: ["A. Infecting a computer with a virus", "B. Overloading a computer with messages", "C. Disguising as a legitimate program", "D. Recording keystrokes"],
-      answer: "B. Overloading a computer with messages",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is NOT a type of malware mentioned?",
-      options: ["A. Virus", "B. Worm", "C. Firewall", "D. Trojan horse"],
-      answer: "C. Firewall",
-      diff: "easy"
-    },
-    {
-      q: "A Trojan horse may lie dormant until triggered by:",
-      options: ["A. A system reboot", "B. A specific event like a preselected date", "C. An antivirus scan", "D. A network disconnect"],
-      answer: "B. A specific event like a preselected date",
-      diff: "medium"
-    },
-    {
-      q: "Unlike a virus, a worm is characterized as:",
-      options: ["A. Needing a host program", "B. Autonomous (self-replicating across network)", "C. Only affecting files", "D. Always harmless"],
-      answer: "B. Autonomous (self-replicating across network)",
-      diff: "easy"
-    },
-    {
-      q: "DoS attacks have been launched against:",
-      options: ["A. Only home computers", "B. Large commercial web servers", "C. Only government networks", "D. Mobile phones"],
-      answer: "B. Large commercial web servers",
-      diff: "easy"
-    }
-  ]
-},
-
-
-82: {
-  title: "Networking and the Internet: Protection and Cures",
-  summary: `**Key Topics Covered:**
-- Firewalls (network gateway and individual computer)
-- Spoofing (masquerading as another party)
-- Spam filters (firewalls for email, training-based)
-- Proxy servers (intermediary between client and server)
-- Auditing software (detect traffic anomalies)
-
----
-
-**Simple Understanding:**
-
-**Firewall:**
-👉 Program that filters traffic passing through a network point.
-👉 Installed at gateway of intranet to filter incoming/outgoing messages.
-👉 Can block outgoing messages to certain addresses, or incoming from known trouble sources.
-👉 Helps stop Denial of Service (DoS) attacks by blocking attacking computers.
-
-**Spoofing:**
-👉 Masquerading as a party other than oneself.
-👉 Example: incoming message with origin address inside the region (pretending to be insider).
-👉 Firewalls block such messages.
-
----
-
-**Individual Computer Firewalls:**
-👉 Protect single machines.
-👉 Block incoming traffic to applications that are not in use (e.g., if not running web server, block HTTP).
-👉 Prevents intruders from exploiting "holes" left by non-existent servers (e.g., clandestine server for spyware).
-
----
-
-**Spam Filters:**
-👉 Firewalls designed to block unwanted email.
-👉 Use sophisticated techniques (probability theory, artificial intelligence).
-👉 Some learn via training: user identifies spam until filter can decide on its own.
-
----
-
-**Proxy Server:**
-👉 Software unit acting as intermediary between client and server.
-👉 Shields client from adverse actions of server.
-👉 Client connects to proxy, proxy connects to actual server – actual server never knows true client.
-👉 Hides internal network structure.
-👉 Can filter all messages (e.g., check files for viruses).
-
-**Advantages:**
-1. Actual server unaware of actual client's existence (no info about internal network).
-2. Proxy can filter messages (e.g., block infected files).
-
----
+3 conditions: (1) non-sharable competition, (2) partial requests, (3) non-forcible retrieval. Attack #3 → Detection & Correction. Attack #1 or #2 → Avoidance. Spooling = avoidance technique attacking condition #1.`,
+    questions: [
+      {
+        q: 'Deadlock is formally defined in this module as a condition in which:',
+        options: ['A. A single process runs forever without completing', 'B. Two or more processes are blocked from progressing because each is waiting for a resource allocated to another', 'C. The scheduler removes all processes from the process table', 'D. A semaphore is permanently set to clear'],
+        answer: 'B. Two or more processes are blocked from progressing because each is waiting for a resource allocated to another',
+        diff: 'easy',
+      },
+      {
+        q: 'Which of the following is NOT one of the three necessary conditions for deadlock listed in this module?',
+        options: ['A. Competition for non-sharable resources', 'B. Resources requested on a partial basis', 'C. Once allocated, a resource cannot be forcibly retrieved', 'D. The process must have the highest priority in the process table'],
+        answer: 'D. The process must have the highest priority in the process table',
+        diff: 'medium',
+      },
+      {
+        q: 'If even ONE of the three necessary conditions for deadlock is removed from a system, what is the result, according to this module?',
+        options: ['A. Deadlock becomes more likely', 'B. The deadlock problem is removed', 'C. Nothing changes — all three must be removed', 'D. The system automatically reboots'],
+        answer: 'B. The deadlock problem is removed',
+        diff: 'medium',
+      },
+      {
+        q: 'Deadlock detection and correction schemes specifically attack which of the three necessary conditions?',
+        options: ['A. Condition 1 (non-sharable resources)', 'B. Condition 2 (partial resource requests)', 'C. Condition 3 (resources cannot be forcibly retrieved)', 'D. None of the three; they prevent deadlock entirely instead'],
+        answer: 'C. Condition 3 (resources cannot be forcibly retrieved)',
+        diff: 'hard',
+      },
+      {
+        q: 'In a detection-and-correction approach to a full process table, how might an administrator break the deadlock?',
+        options: ['A. By rebooting the entire network', 'B. By forcibly "killing" some of the processes to free up space in the process table', 'C. By disabling the dispatcher permanently', 'D. By converting the process table into ROM'],
+        answer: 'B. By forcibly "killing" some of the processes to free up space in the process table',
+        diff: 'medium',
+      },
+      {
+        q: 'A deadlock avoidance scheme that requires each process to request ALL of its needed resources at one single time is attacking which condition?',
+        options: ['A. Condition 1 (non-sharable competition)', 'B. Condition 2 (partial/staggered resource requests)', 'C. Condition 3 (forcible retrieval)', 'D. None of the conditions'],
+        answer: 'B. Condition 2 (partial/staggered resource requests)',
+        diff: 'hard',
+      },
+      {
+        q: 'What is "spooling," as described in this module?',
+        options: ['A. A technique for permanently deleting deadlocked processes', 'B. A technique that converts a non-sharable resource (like a printer) into an effectively sharable one by storing output in mass storage first', 'C. A method for assigning unique IP addresses to network devices', 'D. A type of semaphore used only for memory allocation'],
+        answer: 'B. A technique that converts a non-sharable resource (like a printer) into an effectively sharable one by storing output in mass storage first',
+        diff: 'medium',
+      },
+      {
+        q: 'In spooling, instead of connecting a printing process directly to the printer\'s device driver, the OS connects it to a device driver that:',
+        options: ['A. Immediately deletes the print job', 'B. Stores the information to be printed in mass storage, to be sent to the actual printer later', 'C. Forces the process to wait indefinitely', 'D. Converts the print job into a semaphore'],
+        answer: 'B. Stores the information to be printed in mass storage, to be sent to the actual printer later',
+        diff: 'medium',
+      },
+      {
+        q: 'The "forking" example in this module (UNIX term for processes creating new processes) illustrates deadlock occurring when:',
+        options: ['A. The CPU runs out of registers', 'B. The process table has no space left, and every process needs to create an additional process to finish its task', 'C. ROM becomes corrupted during booting', 'D. Two processes use the same IP address'],
+        answer: 'B. The process table has no space left, and every process needs to create an additional process to finish its task',
+        diff: 'hard',
+      },
+      {
+        q: 'Spooling effectively creates which illusion for processes that want to print?',
+        options: ['A. That there is no printer at all', 'B. That there are MULTIPLE printers available, even though there is only one physical printer', 'C. That the printer is permanently broken', 'D. That printing requires administrator privileges'],
+        answer: 'B. That there are MULTIPLE printers available, even though there is only one physical printer',
+        diff: 'hard',
+      },
+      {
+        q: 'Why is it significant that deadlock requires ALL THREE conditions simultaneously, rather than just one?',
+        options: ['A. It means deadlock is actually impossible in real systems', 'B. It means a system designer only needs to break ONE condition (via avoidance or detection/correction) to eliminate deadlock, rather than solving all three at once', 'C. It means all three conditions must be fixed at the exact same moment', 'D. It has no practical significance for OS design'],
+        answer: 'B. It means a system designer only needs to break ONE condition (via avoidance or detection/correction) to eliminate deadlock, rather than solving all three at once',
+        diff: 'hard',
+      },
+    ],
+  },
+
+  57: {
+    title: 'Operating Systems: Security Attacks from Outside',
+    summary: `**Key Topics Covered:**
+- User accounts and the login procedure
+- The administrator / super user role
+- Auditing software
+- Sniffing software
+- User carelessness as a security weakness
+
+**Important Concepts:**
+
+**Accounts & Login:**
+On multi-user computers, each authorized user gets an **account** — a record containing username, password, and granted privileges. The OS uses this during the **login procedure** (the sequence by which a user establishes initial contact with the OS) to control system access.
+
+**Administrator / Super User:**
+The person who establishes accounts. Gains highly privileged access by identifying as administrator (name + password) during login. Can alter OS settings, modify critical software, adjust other users' privileges, and perform maintenance tasks denied to normal users.
 
 **Auditing Software:**
-👉 Network auditing software detects sudden increase in message traffic at various points.
-👉 Helps system administrator identify potential attacks.
+Records and analyzes system activity to detect destructive behavior (malicious OR accidental):
+- Can expose a flood of failed login attempts → signals a possible unauthorized access attempt.
+- Can flag activity inconsistent with a user's NORMAL past behavior (e.g., a user who only ever used word processing suddenly trying to run technical/privileged utilities) → may indicate account compromise.
 
----
+**Sniffing Software:**
+Software left running on a computer that records activities and reports them to a would-be intruder. Classic example: a program that FAKES the OS's login screen to trick users into typing their username/password — which actually goes to the impostor program, not the real OS.
 
-**Important Vocabulary:**
-- Firewall = traffic filtering program
-- Spoofing = pretending to be someone else
-- Spam filter = email firewall
-- Proxy server = intermediary
-- Auditing software = traffic monitoring tool
-- Gateway = entry point to network
-- Intranet = private internal network
+**The Biggest Weakness — User Carelessness:**
+Despite all the technical security measures, one of the MAIN obstacles to security is the carelessness of users themselves:
+- Choosing easy-to-guess passwords (names, dates).
+- Sharing passwords with friends.
+- Not changing passwords regularly.
+- Mishandling offline storage devices (moving them between machines, risking degradation/exposure).
+- Importing unapproved software that could subvert system security.
+Because of this, large institutions typically adopt and ENFORCE formal security policies covering user requirements and responsibilities.
 
----
-
-**Quick Revision Points:**
-- Firewalls block malicious traffic at gateways or on individual computers.
-- Spoofing is masquerading; firewalls can detect it by checking origin addresses.
-- Spam filters learn via training.
-- Proxy servers hide internal network structure and can filter content.
-- Auditing software detects abnormal traffic patterns.`,
-  questions: [
-    {
-      q: "A program that filters traffic passing through a point in the network is called a:",
-      options: ["A. Proxy server", "B. Firewall", "C. Spam filter", "D. Auditing software"],
-      answer: "B. Firewall",
-      diff: "easy"
-    },
-    {
-      q: "A firewall installed at an organization's intranet gateway can block:",
-      options: ["A. Only incoming messages", "B. Only outgoing messages", "C. Both incoming and outgoing messages based on rules", "D. Only encrypted messages"],
-      answer: "C. Both incoming and outgoing messages based on rules",
-      diff: "easy"
-    },
-    {
-      q: "Blocking incoming messages from origins known to be sources of trouble is a tool for terminating:",
-      options: ["A. Virus attacks", "B. Denial of Service (DoS) attacks", "C. Phishing attacks", "D. Trojan horses"],
-      answer: "B. Denial of Service (DoS) attacks",
-      diff: "easy"
-    },
-    {
-      q: "A firewall at a gateway that blocks incoming messages with origin addresses inside the region is preventing:",
-      options: ["A. Spam", "B. Spoofing", "C. Keylogging", "D. Worms"],
-      answer: "B. Spoofing",
-      diff: "easy"
-    },
-    {
-      q: "Spoofing refers to:",
-      options: ["A. Collecting keystrokes", "B. Masquerading as a party other than oneself", "C. Overloading a server", "D. Replicating autonomously"],
-      answer: "B. Masquerading as a party other than oneself",
-      diff: "easy"
-    },
-    {
-      q: "If a computer is not being used as a web server, a firewall should block incoming traffic to:",
-      options: ["A. All ports", "B. Port 80 (HTTP)", "C. Port 25 (SMTP)", "D. All of the above"],
-      answer: "B. Port 80 (HTTP)",
-      diff: "medium"
-    },
-    {
-      q: "A clandestine server on an infected computer could be used by malicious clients to:",
-      options: ["A. Install a firewall", "B. Retrieve information gathered by spyware", "C. Update the operating system", "D. Encrypt files"],
-      answer: "B. Retrieve information gathered by spyware",
-      diff: "medium"
-    },
-    {
-      q: "Firewalls designed specifically to block unwanted email are called:",
-      options: ["A. Proxy servers", "B. Spam filters", "C. Auditing software", "D. Antivirus"],
-      answer: "B. Spam filters",
-      diff: "easy"
-    },
-    {
-      q: "Many spam filters learn to distinguish between desirable email and spam through:",
-      options: ["A. Manual programming", "B. A training process where the user identifies spam", "C. Random guessing", "D. Hardware acceleration"],
-      answer: "B. A training process where the user identifies spam",
-      diff: "easy"
-    },
-    {
-      q: "Spam filters are examples of how fields like probability theory and artificial intelligence contribute to:",
-      options: ["A. Hardware design", "B. Developments in other fields", "C. Operating systems", "D. Database management"],
-      answer: "B. Developments in other fields",
-      diff: "easy"
-    },
-    {
-      q: "A software unit that acts as an intermediary between a client and a server is called a:",
-      options: ["A. Firewall", "B. Spam filter", "C. Proxy server", "D. Router"],
-      answer: "C. Proxy server",
-      diff: "easy"
-    },
-    {
-      q: "The goal of a proxy server is to:",
-      options: ["A. Speed up connections", "B. Shield the client from adverse actions of the server", "C. Store web pages", "D. Encrypt traffic"],
-      answer: "B. Shield the client from adverse actions of the server",
-      diff: "easy"
-    },
-    {
-      q: "Without a proxy server, a client communicates directly with a server, allowing the server to:",
-      options: ["A. Provide better service", "B. Learn about the client and internal network structure", "C. Never see the client", "D. Only see the proxy"],
-      answer: "B. Learn about the client and internal network structure",
-      diff: "medium"
-    },
-    {
-      q: "When a proxy server contacts the actual server on behalf of a client, the actual server:",
-      options: ["A. Knows the true client's identity", "B. Has no way of knowing the proxy is not the true client", "C. Blocks the connection", "D. Reports the client to authorities"],
-      answer: "B. Has no way of knowing the proxy is not the true client",
-      diff: "medium"
-    },
-    {
-      q: "One advantage of using a proxy server is that:",
-      options: ["A. It increases network speed", "B. The actual server cannot learn about the intranet's internal features", "C. It automatically encrypts all data", "D. It eliminates the need for firewalls"],
-      answer: "B. The actual server cannot learn about the intranet's internal features",
-      diff: "easy"
-    },
-    {
-      q: "Another advantage of a proxy server is that it can:",
-      options: ["A. Replace the operating system", "B. Filter messages (e.g., check incoming files for viruses)", "C. Disable all security", "D. Forward all traffic without inspection"],
-      answer: "B. Filter messages (e.g., check incoming files for viruses)",
-      diff: "easy"
-    },
-    {
-      q: "An FTP proxy server could check incoming files for known viruses and block infected files. This is an example of:",
-      options: ["A. Spoofing", "B. Filtering at the proxy", "C. A DoS attack", "D. Spam filtering"],
-      answer: "B. Filtering at the proxy",
-      diff: "easy"
-    },
-    {
-      q: "Which tool can a system administrator use to detect a sudden increase in message traffic at various network points?",
-      options: ["A. Firewall", "B. Proxy server", "C. Auditing software", "D. Spam filter"],
-      answer: "C. Auditing software",
-      diff: "easy"
-    },
-    {
-      q: "A firewall that blocks incoming messages with origin addresses inside the protected region is preventing which type of attack?",
-      options: ["A. Spoofing", "B. Phishing", "C. Worm propagation", "D. DoS"],
-      answer: "A. Spoofing",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is NOT a prevention/cure tool mentioned in the module?",
-      options: ["A. Firewall", "B. Proxy server", "C. Spam filter", "D. Antivirus software"],
-      answer: "D. Antivirus software",
-      diff: "easy"
-    }
-  ]
-},
-
-
-83: {
-  title: "Networking and the Internet: Encryption",
-  summary: `**Key Topics Covered:**
-- Encryption for protecting data in transit
-- HTTPS (secure HTTP) and SSL (Secure Sockets Layer)
-- Public-key encryption (public key and private key)
-- Certificate authorities (trusted key distributors)
-
----
-
-**Simple Understanding:**
-
-**Why Encryption?**
-👉 Passwords can be compromised; little value when data travels over networks.
-👉 Encryption keeps data confidential even if intercepted.
-👉 Many traditional applications have "secure versions" (e.g., HTTPS).
-
----
-
-**HTTPS and SSL:**
-👉 HTTPS = secure version of HTTP.
-👉 Used by financial institutions for secure Internet access.
-👉 Backbone: **Secure Sockets Layer (SSL)** (developed by Netscape).
-👉 Browser indicates SSL with tiny padlock icon (locked/unlocked).
-
----
-
-**Public-Key Encryption (Counterintuitive):**
-👉 Knowing how messages are encrypted does NOT allow decryption.
-👉 Uses two keys:
-
-| Key | Purpose |
-|-----|---------|
-| Public key | Encrypts messages (distributed widely) |
-| Private key | Decrypts messages (kept secret at destination) |
-
-**How it works:**
-👉 Bob creates key pair. Distributes public key to Alice and Carol.
-👉 Alice encrypts message with public key → sends to Bob.
-👉 Only Bob (with private key) can decrypt.
-👉 Carol (who also has public key) cannot decrypt Alice's message even if intercepted.
-
----
-
-**Problem: Key Association (Spoofing)**
-👉 Need to ensure public key actually belongs to intended party (e.g., bank, not impostor).
-👉 Impostor could give fake public key → you encrypt to impostor instead of real bank.
-👉 Solution: **Certificate Authorities (CAs)** – trusted Internet sites that maintain accurate lists of parties and their public keys.
-👉 CAs provide reliable public-key information.
-
----
-
-**Important Vocabulary:**
-- Encryption = encoding data to prevent unauthorized access
-- HTTPS = HTTP Secure
-- SSL = Secure Sockets Layer
-- Public-key encryption = two-key system (public/private)
-- Public key = encryption key (shared)
-- Private key = decryption key (secret)
-- Certificate authority = trusted source for public keys
-- Spoofing = impersonation
-
----
+**Key Facts to Remember:**
+- Administrator = super user; gained via name+password during login, just like normal users, but with elevated privileges.
+- Auditing software detects BOTH failed-login floods AND behavior anomalies.
+- Sniffing software's classic trick = a fake login screen.
+- User carelessness (weak/shared/static passwords, unapproved software) is repeatedly cited as a MAJOR real-world security gap.
 
 **Quick Revision Points:**
-- Encryption protects data in transit.
-- HTTPS uses SSL; padlock icon indicates security.
-- Public-key encryption: encrypt with public, decrypt with private.
-- Knowing public key does not allow decryption.
-- Certificate authorities prevent spoofing of public keys.`,
-  questions: [
-    {
-      q: "The secure version of HTTP is called:",
-      options: ["A. SHTTP", "B. HTTPS", "C. HTTP-S", "D. SSL"],
-      answer: "B. HTTPS",
-      diff: "easy"
-    },
-    {
-      q: "HTTPS stands for:",
-      options: ["A. Hypertext Transfer Protocol Secure", "B. Hypertext Transfer Secure Protocol", "C. High Transfer Protocol Secure", "D. Hypertext Transmission Protocol Secure"],
-      answer: "A. Hypertext Transfer Protocol Secure",
-      diff: "easy"
-    },
-    {
-      q: "The backbone of HTTPS is the protocol system known as:",
-      options: ["A. TLS", "B. SSL (Secure Sockets Layer)", "C. SSH", "D. IPsec"],
-      answer: "B. SSL (Secure Sockets Layer)",
-      diff: "easy"
-    },
-    {
-      q: "SSL was originally developed by:",
-      options: ["A. Microsoft", "B. Netscape", "C. Sun Microsystems", "D. IBM"],
-      answer: "B. Netscape",
-      diff: "medium"
-    },
-    {
-      q: "Most browsers indicate the use of SSL by displaying:",
-      options: ["A. A green address bar", "B. A tiny padlock icon", "C. A red warning", "D. A lock emoji"],
-      answer: "B. A tiny padlock icon",
-      diff: "easy"
-    },
-    {
-      q: "In public-key encryption, knowledge of how messages are encrypted:",
-      options: ["A. Automatically allows decryption", "B. Does NOT allow decryption", "C. Is required for decryption", "D. Is irrelevant"],
-      answer: "B. Does NOT allow decryption",
-      diff: "easy"
-    },
-    {
-      q: "A public-key encryption system uses how many keys?",
-      options: ["A. One", "B. Two", "C. Three", "D. Four"],
-      answer: "B. Two",
-      diff: "easy"
-    },
-    {
-      q: "The key used to encrypt messages in public-key encryption is called the:",
-      options: ["A. Private key", "B. Secret key", "C. Public key", "D. Shared key"],
-      answer: "C. Public key",
-      diff: "easy"
-    },
-    {
-      q: "The key required to decrypt messages in public-key encryption is called the:",
-      options: ["A. Public key", "B. Private key", "C. Session key", "D. Master key"],
-      answer: "B. Private key",
-      diff: "easy"
-    },
-    {
-      q: "In public-key encryption, the private key is:",
-      options: ["A. Distributed to everyone", "B. Held in confidence at the destination", "C. Shared with the sender", "D. Publicly available"],
-      answer: "B. Held in confidence at the destination",
-      diff: "easy"
-    },
-    {
-      q: "If Bob gives his public key to Alice and Carol, then Carol intercepts a message from Alice to Bob. Can Carol decrypt it?",
-      options: ["A. Yes, because she has the public key", "B. No, because she does not have the private key", "C. Yes, if she knows Alice", "D. No, because the message is corrupted"],
-      answer: "B. No, because she does not have the private key",
-      diff: "medium"
-    },
-    {
-      q: "One subtle problem with public-key systems is:",
-      options: ["A. They are too slow", "B. Ensuring the public key actually belongs to the intended party (preventing spoofing)", "C. They require too much memory", "D. They cannot encrypt large files"],
-      answer: "B. Ensuring the public key actually belongs to the intended party (preventing spoofing)",
-      diff: "easy"
-    },
-    {
-      q: "An imposter presenting itself as a bank and giving you its public key is an example of:",
-      options: ["A. Phishing", "B. Spoofing", "C. Denial of service", "D. Worm"],
-      answer: "B. Spoofing",
-      diff: "easy"
-    },
-    {
-      q: "Trusted Internet sites that maintain accurate lists of parties and their public keys are called:",
-      options: ["A. DNS servers", "B. Certificate authorities", "C. Proxy servers", "D. Firewalls"],
-      answer: "B. Certificate authorities",
-      diff: "easy"
-    },
-    {
-      q: "Certificate authorities act as servers to provide:",
-      options: ["A. Private keys to clients", "B. Reliable public-key information", "C. Encryption algorithms", "D. Firewall rules"],
-      answer: "B. Reliable public-key information",
-      diff: "easy"
-    },
-    {
-      q: "If an impostor gives you a fake public key pretending to be your bank, what is the risk?",
-      options: ["A. Your messages will be unreadable by anyone", "B. The impostor can decrypt your messages", "C. Your bank will receive the messages anyway", "D. The messages will be lost"],
-      answer: "B. The impostor can decrypt your messages",
-      diff: "easy"
-    },
-    {
-      q: "The padlock icon in a browser (locked position) typically indicates:",
-      options: ["A. The website is verified", "B. SSL/HTTPS is being used", "C. The computer is secure", "D. No encryption is used"],
-      answer: "B. SSL/HTTPS is being used",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is a secure version of a traditional Internet application?",
-      options: ["A. FTP", "B. HTTP", "C. HTTPS", "D. SMTP"],
-      answer: "C. HTTPS",
-      diff: "easy"
-    },
-    {
-      q: "In public-key encryption, the public key is typically:",
-      options: ["A. Kept secret", "B. Distributed to those who might send messages to a particular destination", "C. Used for decryption", "D. Never used"],
-      answer: "B. Distributed to those who might send messages to a particular destination",
-      diff: "easy"
-    },
-    {
-      q: "The property that knowing how messages are encrypted does not allow decryption is described as:",
-      options: ["A. Symmetric encryption", "B. Counterintuitive", "C. Obvious", "D. Weak encryption"],
-      answer: "B. Counterintuitive",
-      diff: "easy"
-    }
-  ]
-},
+Accounts (user record) → Login procedure (uses account info) → Administrator (super user, elevated privileges) → Auditing software (detects anomalies/failed logins) → Sniffing software (fake login trick) → User carelessness (the human weak link).`,
+    questions: [
+      {
+        q: 'What information does a user "account" essentially contain, as described in this module?',
+        options: ['A. Only the user\'s IP address', 'B. The user\'s name, password, and privileges to be granted', 'C. Only a list of files the user has opened', 'D. The user\'s process table entry'],
+        answer: 'B. The user\'s name, password, and privileges to be granted',
+        diff: 'easy',
+      },
+      {
+        q: 'How does an administrator (super user) typically gain highly privileged access to the operating system?',
+        options: ['A. By physically opening the computer case', 'B. By identifying as administrator, usually via name and password, during the login procedure', 'C. By bypassing the login procedure entirely', 'D. By being the very first user to ever use the machine'],
+        answer: 'B. By identifying as administrator, usually via name and password, during the login procedure',
+        diff: 'easy',
+      },
+      {
+        q: 'Auditing software may flag suspicious activity by noticing that a user who traditionally only uses word processing and spreadsheets has suddenly started accessing highly technical applications. This is an example of detecting:',
+        options: ['A. A flood of incorrect password attempts', 'B. Activity that does not conform to that user\'s past behavior, suggesting possible account compromise', 'C. A hardware failure in the printer', 'D. A deadlock condition'],
+        answer: 'B. Activity that does not conform to that user\'s past behavior, suggesting possible account compromise',
+        diff: 'medium',
+      },
+      {
+        q: 'What is "sniffing software," as described in this module?',
+        options: ['A. Software that physically scans hardware for viruses', 'B. Software left running on a computer that records activities and later reports them to a would-be intruder', 'C. A type of semaphore used to guard critical regions', 'D. Software exclusively used by administrators to audit logins'],
+        answer: 'B. Software left running on a computer that records activities and later reports them to a would-be intruder',
+        diff: 'medium',
+      },
+      {
+        q: 'The classic example of sniffing software given in this module involves a program that:',
+        options: ['A. Automatically updates the OS firmware', 'B. Simulates the OS\'s login procedure to trick users into supplying their name and password to an impostor', 'C. Forces a process switch every millisecond', 'D. Encrypts all files on the hard disk automatically'],
+        answer: 'B. Simulates the OS\'s login procedure to trick users into supplying their name and password to an impostor',
+        diff: 'medium',
+      },
+      {
+        q: 'According to this module, what is surprisingly one of the MAJOR obstacles to computer system security, despite all the technical safeguards?',
+        options: ['A. Outdated CPU hardware', 'B. The carelessness of the users themselves', 'C. Insufficient ROM capacity', 'D. The lack of a dispatcher'],
+        answer: 'B. The carelessness of the users themselves',
+        diff: 'medium',
+      },
+      {
+        q: 'Which of the following is explicitly listed as an example of user carelessness that undermines security?',
+        options: ['A. Using a strong, unique password', 'B. Sharing passwords with friends and not changing them on a timely basis', 'C. Logging out after each session', 'D. Reporting suspicious activity to the administrator'],
+        answer: 'B. Sharing passwords with friends and not changing them on a timely basis',
+        diff: 'easy',
+      },
+      {
+        q: 'Why might transferring offline mass storage devices back and forth between different machines pose a security/integrity risk, per this module?',
+        options: ['A. It has no risk whatsoever', 'B. It subjects the devices to potential degradation and increases exposure to unapproved/unsafe content', 'C. It automatically deletes the administrator account', 'D. It always triggers a deadlock'],
+        answer: 'B. It subjects the devices to potential degradation and increases exposure to unapproved/unsafe content',
+        diff: 'hard',
+      },
+      {
+        q: 'What action do most institutions with large computer installations adopt to address the problem of user carelessness, according to this module?',
+        options: ['A. They ban all user accounts', 'B. They adopt and enforce formal policies cataloging user requirements and responsibilities', 'C. They remove auditing software entirely', 'D. They give every user administrator privileges'],
+        answer: 'B. They adopt and enforce formal policies cataloging user requirements and responsibilities',
+        diff: 'medium',
+      },
+      {
+        q: 'A flood of failed login attempts using incorrect passwords, as detected by auditing software, most likely indicates:',
+        options: ['A. A successful login by the legitimate user', 'B. An unauthorized user may be trying to gain access to the computer', 'C. A scheduled firmware update', 'D. A deadlock between two processes'],
+        answer: 'B. An unauthorized user may be trying to gain access to the computer',
+        diff: 'easy',
+      },
+    ],
+  },
 
+  58: {
+    title: 'Operating Systems: Security Attacks from Inside',
+    summary: `**Key Topics Covered:**
+- What intruders try to do once inside a system
+- Memory-limit registers as a protection mechanism
+- Privileged vs non-privileged CPU modes
+- Privileged instructions and why they matter for security
 
-84: {
-  title: "Networking and the Internet: Legal Approaches to Network Security",
-  summary: `**Key Topics Covered:**
+**Important Concepts:**
+
+**After Gaining Access:**
+An intruder (or malicious authorized user) typically explores to find valuable info or places to insert destructive software. Easiest if they got the ADMINISTRATOR account (hence why admin passwords are closely guarded). If only a general user's account was compromised, the intruder must TRICK the OS into letting them exceed their normal privileges — e.g., tricking the memory manager into allowing access OUTSIDE a process's allotted memory, or tricking the file manager into retrieving normally-restricted files.
+
+**Memory-Limit Registers (the basic protection):**
+CPUs for multiprogramming systems contain special-purpose registers storing the UPPER and LOWER limits of a process's allotted memory area. The CPU compares every memory reference against these limits; if a reference falls outside, the CPU triggers an interrupt, handing control back to the OS.
+
+**The Subtle Flaw:**
+Without further protection, a process could simply ALTER the special-purpose registers themselves (e.g., increase the upper limit) to grant itself more memory without OS approval!
+
+**The Real Fix — Privileged vs Non-Privileged Mode:**
+CPUs operate in one of two modes:
+- **Privileged mode** → ALL machine-language instructions can be executed.
+- **Non-privileged mode** → only a LIMITED set of instructions can be executed.
+- Instructions ONLY available in privileged mode are called **privileged instructions** — e.g., instructions that CHANGE memory limit registers, or instructions that CHANGE the CPU's privilege mode itself.
+- Attempting a privileged instruction while in non-privileged mode causes an INTERRUPT, which switches the CPU back to privileged mode and hands control to an interrupt handler in the OS.
+
+**Mode Transitions:**
+- At power-on, the CPU starts in PRIVILEGED mode (so the OS, once booted, can execute everything).
+- Each time the OS gives a PROCESS a time slice, it switches the CPU to NON-PRIVILEGED mode (via a "change privilege mode" instruction) — so the process is automatically restricted, and the OS is notified if it tries anything privileged.
+
+**Why this matters — real risks if privilege control is flawed:**
+- Altering the timer → a process could extend its own time slice and dominate the machine.
+- Accessing peripherals directly → bypass the file manager's supervision entirely.
+- Accessing memory outside its area → read/alter OTHER processes' data.
+
+**Key Facts to Remember:**
+- Memory-limit registers alone are NOT enough — a process could just change them itself without privilege protection.
+- Privileged instructions = change memory limit registers + change CPU privilege mode (the two key examples given).
+- CPU starts in privileged mode at boot; switches to non-privileged for each process's time slice.
+- This whole mechanism is THE major tool OSes use to maintain security — but errors in its design/implementation remain a recurring real-world problem.
+
+**Quick Revision Points:**
+Memory-limit registers (basic check) → flaw: process can change its OWN registers → fix: Privileged vs Non-Privileged CPU modes → Privileged instructions (only in privileged mode) → violation attempt = interrupt → OS regains control.`,
+    questions: [
+      {
+        q: 'Why is gaining access to the ADMINISTRATOR\'s account considered especially dangerous compared to a general user\'s account, according to this module?',
+        options: ['A. Because administrator accounts have no password at all', 'B. Because it is a straightforward path for an intruder to explore the system, without needing to trick the OS into exceeding normal privileges', 'C. Because administrator accounts cannot be audited', 'D. Because administrator accounts are stored only in ROM'],
+        answer: 'B. Because it is a straightforward path for an intruder to explore the system, without needing to trick the OS into exceeding normal privileges',
+        diff: 'medium',
+      },
+      {
+        q: 'Special-purpose registers in a CPU that store the upper and lower limits of a process\'s allotted memory area exist to:',
+        options: ['A. Speed up the boot process', 'B. Let the CPU check every memory reference against those limits and interrupt if the reference falls outside the allowed area', 'C. Store the user\'s password', 'D. Allocate time slices to processes'],
+        answer: 'B. Let the CPU check every memory reference against those limits and interrupt if the reference falls outside the allowed area',
+        diff: 'medium',
+      },
+      {
+        q: 'What is the "subtle but significant problem" with relying ONLY on memory-limit registers for protection, as identified in this module?',
+        options: ['A. The registers consume too much power', 'B. A process could simply change the values in its own special-purpose memory-limit registers to grant itself more memory without OS approval', 'C. The registers cannot store negative numbers', 'D. The scheduler ignores memory-limit registers entirely'],
+        answer: 'B. A process could simply change the values in its own special-purpose memory-limit registers to grant itself more memory without OS approval',
+        diff: 'hard',
+      },
+      {
+        q: 'In privileged mode, the CPU is able to:',
+        options: ['A. Execute only a limited subset of instructions', 'B. Execute ALL instructions in its machine language', 'C. Execute no instructions at all', 'D. Only execute interrupt handlers'],
+        answer: 'B. Execute ALL instructions in its machine language',
+        diff: 'easy',
+      },
+      {
+        q: 'Which TWO examples of "privileged instructions" are explicitly given in this module?',
+        options: ['A. Print instructions and save instructions', 'B. Instructions that change memory limit registers, and instructions that change the CPU\'s current privilege mode', 'C. Boot loader instructions and DNS lookup instructions', 'D. Interrupt disable and semaphore-set instructions only'],
+        answer: 'B. Instructions that change memory limit registers, and instructions that change the CPU\'s current privilege mode',
+        diff: 'hard',
+      },
+      {
+        q: 'What happens if a process running in non-privileged mode attempts to execute a privileged instruction?',
+        options: ['A. The instruction silently fails with no effect', 'B. An interrupt occurs, converting the CPU to privileged mode and transferring control to an interrupt handler in the OS', 'C. The process is automatically granted administrator privileges', 'D. The computer immediately reboots'],
+        answer: 'B. An interrupt occurs, converting the CPU to privileged mode and transferring control to an interrupt handler in the OS',
+        diff: 'medium',
+      },
+      {
+        q: 'When the CPU is first turned on, what privilege mode does it start in, and why does this matter?',
+        options: ['A. Non-privileged mode, so the boot loader cannot run', 'B. Privileged mode, so that when the operating system starts at the end of the boot process, all instructions are executable', 'C. A third "neutral" mode reserved for the boot loader only', 'D. It alternates randomly between modes'],
+        answer: 'B. Privileged mode, so that when the operating system starts at the end of the boot process, all instructions are executable',
+        diff: 'medium',
+      },
+      {
+        q: 'Each time the OS gives a process a time slice, what does it do regarding CPU privilege mode, and why?',
+        options: ['A. It switches the CPU to privileged mode so the process can do anything', 'B. It switches the CPU to non-privileged mode via a "change privilege mode" instruction, so the OS is notified if the process attempts anything privileged', 'C. It leaves the privilege mode unchanged at all times', 'D. It deletes the process\'s memory-limit registers'],
+        answer: 'B. It switches the CPU to non-privileged mode via a "change privilege mode" instruction, so the OS is notified if the process attempts anything privileged',
+        diff: 'medium',
+      },
+      {
+        q: 'If a flaw allowed a process to alter the SYSTEM TIMER controlling multiprogramming, what could the process potentially do, per this module?',
+        options: ['A. Nothing of consequence', 'B. Extend its own time slice and dominate the machine', 'C. Immediately shut down the printer', 'D. Permanently disable ROM'],
+        answer: 'B. Extend its own time slice and dominate the machine',
+        diff: 'hard',
+      },
+      {
+        q: 'Why does this module emphasize that privileged instructions and privilege-level control remain "a complex component of an operating system\'s design" with ongoing errors found?',
+        options: ['A. Because privilege control was abandoned by modern OSes', 'B. Because a single flaw in privilege-level control can open the door to disaster from malicious or accidental programming errors', 'C. Because privileged instructions are no longer used in any CPU', 'D. Because only administrators are affected by such flaws, never regular users'],
+        answer: 'B. Because a single flaw in privilege-level control can open the door to disaster from malicious or accidental programming errors',
+        diff: 'hard',
+      },
+    ],
+  },
+
+  59: {
+    title: 'Networking and the Internet: Network Classification',
+    summary: `**Key Topics Covered:**
+- Classifying networks by RANGE: PAN, LAN, MAN, WAN
+- Classifying networks by OWNERSHIP: open vs closed (proprietary)
+- Classifying networks by TOPOLOGY: bus vs star
+
+**Important Concepts:**
+
+**By Range:**
+- **PAN (Personal Area Network)** — very short range (a few meters), e.g., wireless headset ↔ smartphone, wireless mouse ↔ PC.
+- **LAN (Local Area Network)** — a single building or building complex, e.g., a university campus or a manufacturing plant.
+- **MAN (Metropolitan Area Network)** — intermediate size, e.g., spanning a local community.
+- **WAN (Wide Area Network)** — greater distance, e.g., neighboring cities or opposite sides of the world.
+
+**By Ownership/Openness:**
+- **Open network** — internal operation based on PUBLIC DOMAIN designs, freely circulated. The **Internet** itself is an open system, governed by the open **TCP/IP protocol suite** — anyone can use it without fees or licenses.
+- **Closed (proprietary) network** — based on innovations OWNED/CONTROLLED by an entity (e.g., a company like Novell Inc., which profits by selling/leasing its proprietary system). Open designs tend to eventually outgrow proprietary ones, since their use isn't restricted by license fees.
+
+**By Topology:**
+- **Bus topology** — all machines connected to a single common communication line (the "bus"). Popularized in the 1990s under the **Ethernet** standard, still very popular today.
+- **Star topology** — one central machine to which all others connect. Roots trace back to the 1970s (large central computer + terminals model). Today, popular in WIRELESS networks, where the central machine is called the **access point (AP)**, coordinating all communication via radio broadcast.
+
+**Key Facts to Remember:**
+- PAN < LAN < MAN < WAN, in terms of physical range.
+- Internet = open system based on TCP/IP — free to use, no licensing fees.
+- Bus → Ethernet (1990s). Star → AP-based wireless networks (modern), rooted in 1970s terminal model.
+
+**Quick Revision Points:**
+3 classification angles: (1) Range — PAN/LAN/MAN/WAN, (2) Openness — open (Internet/TCP-IP) vs closed/proprietary, (3) Topology — bus (Ethernet) vs star (AP/wireless).`,
+    questions: [
+      {
+        q: 'A wireless mouse communicating with its PC over a very short range is an example of which type of network?',
+        options: ['A. LAN', 'B. MAN', 'C. PAN', 'D. WAN'],
+        answer: 'C. PAN',
+        diff: 'easy',
+      },
+      {
+        q: 'A network connecting all computers across a single university campus building complex would most accurately be classified as a:',
+        options: ['A. PAN', 'B. LAN', 'C. WAN', 'D. Closed network'],
+        answer: 'B. LAN',
+        diff: 'easy',
+      },
+      {
+        q: 'Which protocol suite governs communication throughout the Internet, and is freely usable without fees or license agreements?',
+        options: ['A. A proprietary protocol owned by Novell Inc.', 'B. The TCP/IP protocol suite', 'C. CSMA/CD exclusively', 'D. The DNS lookup protocol'],
+        answer: 'B. The TCP/IP protocol suite',
+        diff: 'medium',
+      },
+      {
+        q: 'According to this module, why do open network designs often ultimately prevail over proprietary approaches?',
+        options: ['A. Because open designs are always technically superior in raw speed', 'B. Because open designs are freely circulated and grow in popularity, while proprietary applications are restricted by license fees and contract conditions', 'C. Because proprietary networks are illegal in most countries', 'D. Because open networks require no hardware at all'],
+        answer: 'B. Because open designs are freely circulated and grow in popularity, while proprietary applications are restricted by license fees and contract conditions',
+        diff: 'hard',
+      },
+      {
+        q: 'In a BUS topology, how are machines connected?',
+        options: ['A. Each machine connects only to a central access point', 'B. All machines connect to a single, common communication line', 'C. Machines connect in a complete loop with no central point', 'D. Machines connect directly to ICANN'],
+        answer: 'B. All machines connect to a single, common communication line',
+        diff: 'easy',
+      },
+      {
+        q: 'The STAR topology, which has roots dating back to the 1970s large-central-computer model, is especially popular today in which context?',
+        options: ['A. Wired Ethernet bus networks', 'B. Wireless networks, where the central machine is called the access point (AP)', 'C. Tier-1 ISP backbone networks exclusively', 'D. ROM-based embedded systems'],
+        answer: 'B. Wireless networks, where the central machine is called the access point (AP)',
+        diff: 'medium',
+      },
+      {
+        q: 'The bus topology was popularized in the 1990s under which set of standards, which remains one of the most popular networking systems today?',
+        options: ['A. TCP/IP', 'B. Ethernet', 'C. CSMA/CA', 'D. DNS'],
+        answer: 'B. Ethernet',
+        diff: 'medium',
+      },
+      {
+        q: 'A company like Novell Inc. developing a system for which it maintains ownership rights and draws income from licensing is an example of a:',
+        options: ['A. Open network', 'B. Closed (proprietary) network', 'C. PAN', 'D. MAN'],
+        answer: 'B. Closed (proprietary) network',
+        diff: 'medium',
+      },
+      {
+        q: 'A network spanning an entire local community — larger than a single building but smaller than a country-spanning system — best fits which classification?',
+        options: ['A. PAN', 'B. LAN', 'C. MAN', 'D. WAN'],
+        answer: 'C. MAN',
+        diff: 'medium',
+      },
+      {
+        q: 'Which statement correctly distinguishes the three classification approaches covered in this module?',
+        options: ['A. They are mutually exclusive — a network can only be classified ONE way', 'B. A single network can simultaneously be described by range (e.g., LAN), openness (e.g., open/TCP-IP based), and topology (e.g., bus or star)', 'C. Topology classification only applies to WANs', 'D. Open vs closed classification only applies to PANs'],
+        answer: 'B. A single network can simultaneously be described by range (e.g., LAN), openness (e.g., open/TCP-IP based), and topology (e.g., bus or star)',
+        diff: 'hard',
+      },
+    ],
+  },
+
+  60: {
+    title: 'Networking and the Internet: Protocols',
+    summary: `**Key Topics Covered:**
+- Why protocols exist
+- CSMA/CD (used by wired/Ethernet bus networks)
+- The hidden terminal problem
+- CSMA/CA (used by wireless/star networks)
+
+**Important Concepts:**
+
+**Why Protocols?**
+Rules governing network activity. Without them, machines might all transmit at once or fail to assist each other. Protocol STANDARDS let different vendors build compatible products.
+
+**CSMA/CD — Carrier Sense, Multiple Access with Collision DETECTION:**
+Used in Ethernet bus networks. Rules:
+- Every message is broadcast to ALL machines on the bus; each keeps only messages addressed to itself.
+- To transmit: a machine waits until the bus is SILENT, then begins transmitting WHILE continuing to monitor the bus.
+- If another machine ALSO starts transmitting → both detect the CLASH, pause for a random period, then retry.
+- Compared to two people both starting to talk at once and then stopping — except machines just retry later without "negotiating" who goes first.
+
+**The Hidden Terminal Problem:**
+CSMA/CD does NOT work for wireless star networks (all machines talk through a central AP), because one machine may be UNABLE to detect that its transmission is colliding with another's — e.g., its own signal drowns out the other's, or distance/obstacles block the two machines from hearing each other, even though BOTH can hear the central AP.
+
+**CSMA/CA — Carrier Sense, Multiple Access with Collision AVOIDANCE:**
+Wireless networks instead try to AVOID collisions (since they can't reliably DETECT them). Standardized largely by IEEE. Key mechanism:
+- A machine finding the channel silent does NOT transmit immediately — it WAITS a short period first, and only transmits if the channel stays silent throughout that wait.
+- If the channel becomes busy during the wait, the machine waits a RANDOM period before retrying.
+- This gives priority to machines that have ALREADY been waiting — a "newcomer" cannot grab a silent channel ahead of an already-waiting machine.
+- This does NOT solve the hidden terminal problem by itself (since it still relies on stations hearing each other to judge silence).
+
+**Solving the Hidden Terminal Problem in WiFi:**
+Some WiFi networks require a machine to send a short "request" message to the AP and WAIT for an acknowledgment before transmitting the full message. If the AP is busy with a hidden terminal, it ignores the request (machine waits); otherwise it acknowledges, and the machine knows it's safe to transmit. ALL machines hear the AP's acknowledgments, giving them a good sense of whether the AP is currently busy — even if they can't hear each other directly.
+
+**Key Facts to Remember:**
+- CSMA/CD = wired/Ethernet, DETECTS collisions after they happen.
+- CSMA/CA = wireless, tries to AVOID collisions before they happen (since detection isn't reliable for hidden terminals).
+- Hidden terminal problem = two machines can't hear each other but can both hear the AP.
+- WiFi fix for hidden terminal = request/acknowledgment handshake with the AP.
+
+**Quick Revision Points:**
+CSMA/CD (bus/Ethernet, detect after collision) vs CSMA/CA (wireless, avoid before collision) — CA exists BECAUSE wireless suffers from the hidden terminal problem that CD cannot handle.`,
+    questions: [
+      {
+        q: 'What is the primary purpose of network protocols, as introduced in this module?',
+        options: ['A. To increase the physical range of a network', 'B. To establish rules by which network activities are conducted, enabling compatible products from different vendors', 'C. To eliminate the need for IP addresses', 'D. To replace the operating system\'s scheduler'],
+        answer: 'B. To establish rules by which network activities are conducted, enabling compatible products from different vendors',
+        diff: 'easy',
+      },
+      {
+        q: 'Under CSMA/CD, what does a machine do BEFORE it begins transmitting a message on the bus?',
+        options: ['A. It immediately starts transmitting regardless of bus activity', 'B. It waits until the bus is silent', 'C. It requests permission from a central access point', 'D. It switches the CPU into privileged mode'],
+        answer: 'B. It waits until the bus is silent',
+        diff: 'easy',
+      },
+      {
+        q: 'If two machines on an Ethernet bus begin transmitting at the same time and detect a clash under CSMA/CD, what happens next?',
+        options: ['A. Both machines are permanently disconnected from the network', 'B. Both machines pause for a brief, independently random period before trying to transmit again', 'C. The AP forcibly assigns priority to one machine', 'D. The bus topology automatically switches to a star topology'],
+        answer: 'B. Both machines pause for a brief, independently random period before trying to transmit again',
+        diff: 'medium',
+      },
+      {
+        q: 'Why is CSMA/CD NOT compatible with wireless star networks, according to this module?',
+        options: ['A. Because wireless networks do not use any protocols at all', 'B. Because a machine may be unable to detect that its transmissions are colliding with another\'s, due to the hidden terminal problem', 'C. Because CSMA/CD only works with IPv6 addresses', 'D. Because wireless networks never experience any collisions'],
+        answer: 'B. Because a machine may be unable to detect that its transmissions are colliding with another\'s, due to the hidden terminal problem',
+        diff: 'medium',
+      },
+      {
+        q: 'The "hidden terminal problem" occurs when:',
+        options: ['A. Two machines can both communicate with the central AP, but cannot hear each other directly (due to distance, obstacles, or signal drowning)', 'B. The AP itself is physically hidden from view', 'C. A machine\'s IP address is hidden from DNS', 'D. ROM contains hidden boot instructions'],
+        answer: 'A. Two machines can both communicate with the central AP, but cannot hear each other directly (due to distance, obstacles, or signal drowning)',
+        diff: 'medium',
+      },
+      {
+        q: 'What is the fundamental strategic difference between CSMA/CD and CSMA/CA?',
+        options: ['A. CSMA/CD avoids collisions before they happen; CSMA/CA detects them after they happen', 'B. CSMA/CD detects collisions after they happen; CSMA/CA tries to avoid collisions before they happen', 'C. They are functionally identical with different names', 'D. CSMA/CD is used only for email; CSMA/CA is used only for streaming'],
+        answer: 'B. CSMA/CD detects collisions after they happen; CSMA/CA tries to avoid collisions before they happen',
+        diff: 'hard',
+      },
+      {
+        q: 'Under CSMA/CA, even if a machine finds the communication channel silent, what does it do before transmitting?',
+        options: ['A. It transmits immediately with no delay', 'B. It waits a short period of time, transmitting only if the channel remains silent throughout that wait', 'C. It permanently disables the channel', 'D. It switches to CSMA/CD instead'],
+        answer: 'B. It waits a short period of time, transmitting only if the channel remains silent throughout that wait',
+        diff: 'medium',
+      },
+      {
+        q: 'Why does CSMA/CA give an advantage to machines that have ALREADY been waiting to transmit, over "newcomer" machines?',
+        options: ['A. To avoid collisions between newcomers and machines that have already been patiently waiting for an opportunity', 'B. Because newcomers are always given top priority instead', 'C. Because the AP cannot detect newcomer machines', 'D. There is no such advantage described in this module'],
+        answer: 'A. To avoid collisions between newcomers and machines that have already been patiently waiting for an opportunity',
+        diff: 'hard',
+      },
+      {
+        q: 'How do some WiFi networks specifically solve the hidden terminal problem, as described in this module?',
+        options: ['A. By requiring machines to send a short "request" message to the AP and wait for acknowledgment before transmitting the full message', 'B. By switching all communication to a wired bus topology', 'C. By disabling collision detection entirely', 'D. By assigning a fixed time slice to each machine, like the OS dispatcher'],
+        answer: 'A. By requiring machines to send a short "request" message to the AP and wait for acknowledgment before transmitting the full message',
+        diff: 'medium',
+      },
+      {
+        q: 'In the request/acknowledgment WiFi solution, why can all machines judge whether the AP is busy, even if they cannot hear each other\'s transmissions directly?',
+        options: ['A. Because all machines can hear the AP\'s acknowledgments, even though they may not hear each other\'s transmissions', 'B. Because the OS scheduler informs them directly', 'C. Because every machine has a built-in semaphore', 'D. Because the hidden terminal problem is entirely eliminated by Ethernet'],
+        answer: 'A. Because all machines can hear the AP\'s acknowledgments, even though they may not hear each other\'s transmissions',
+        diff: 'hard',
+      },
+    ],
+  },
+
+  61: {
+    title: 'Networking and the Internet: Combining Networks',
+    summary: `**Key Topics Covered:**
+- Repeaters, bridges, and switches (combining similar networks)
+- Internets, routers, and gateways (combining DIFFERENT/incompatible networks)
+- Internet-wide addressing and forwarding tables
+
+**Important Concepts:**
+
+**Combining SIMILAR networks (same protocol/type) — three devices, increasing sophistication:**
+- **Repeater** — simplest; just passes signals back and forth between two buses (often with amplification), WITHOUT considering message meaning.
+- **Bridge** — more complex; connects two buses but looks at each message's DESTINATION ADDRESS, forwarding only when the message is destined for the OTHER side. More efficient than a repeater — same-side machines can talk without affecting the other side.
+- **Switch** — essentially a bridge with MULTIPLE connections, linking several buses (like spokes on a wheel). Forwards messages only into the appropriate spoke, minimizing traffic everywhere else.
+Result: connecting via repeaters/bridges/switches produces ONE single larger network using the SAME protocol throughout.
+
+**Combining DIFFERENT/incompatible networks — "an internet":**
+When networks have INCOMPATIBLE characteristics (e.g., WiFi vs Ethernet), they must be joined into a **network of networks**, called (lowercase) "an internet" — each original network keeps its own individuality/protocols. (Note: this generic term is DIFFERENT from "the Internet," the specific worldwide internet, capital I.)
+
+**Routers:**
+Special-purpose computers that connect networks to form an internet WHILE preserving each network's unique internal characteristics — unlike repeaters/bridges/switches which merge networks into one uniform system.
+- Each device in an internet (machines + routers) gets a UNIQUE internet-wide address — in addition to its original "local" address within its own network.
+- Each router keeps a **forwarding table** recording which direction to send messages based on destination address.
+
+**Gateway:**
+The "point" where a network connects to an internet — often this IS simply the router. Sometimes "gateway" loosely includes more, e.g., in most home WiFi setups, "gateway" refers to BOTH the AP and the router (since they're usually packaged in one unit).
+
+**Key Facts to Remember:**
+- Repeater (no addressing) < Bridge (2-way addressing) < Switch (multi-way addressing) — these merge SAME-type networks.
+- Routers connect DIFFERENT-type networks while preserving each network's individuality — they don't merge protocols.
+- Every device in an internet has TWO addresses: local (within its own network) + internet-wide.
+- Gateway = often just the router, but in home setups often = AP + router combined.
+
+**Quick Revision Points:**
+Same-type networks → Repeater/Bridge/Switch (merge into ONE network). Different-type networks → Routers (form "an internet," each network keeps its identity). Forwarding table = router's roadmap. Gateway = the connection point (often router, sometimes AP+router).`,
+    questions: [
+      {
+        q: 'Which device is the SIMPLEST of the three (repeater, bridge, switch), passing signals between two buses without considering their meaning?',
+        options: ['A. Router', 'B. Repeater', 'C. Switch', 'D. Gateway'],
+        answer: 'B. Repeater',
+        diff: 'easy',
+      },
+      {
+        q: 'What distinguishes a bridge from a simple repeater?',
+        options: ['A. A bridge looks at each message\'s destination address and forwards it only when needed, making it more efficient', 'B. A bridge has no awareness of addresses, just like a repeater', 'C. A bridge can only connect wireless networks', 'D. A bridge assigns IP addresses to all connected machines'],
+        answer: 'A. A bridge looks at each message\'s destination address and forwards it only when needed, making it more efficient',
+        diff: 'medium',
+      },
+      {
+        q: 'A switch is best described as:',
+        options: ['A. A repeater with no addressing capability', 'B. A bridge with multiple connections, allowing it to connect several buses like spokes on a wheel', 'C. A device exclusive to wireless PAN networks', 'D. A type of semaphore used in OS resource allocation'],
+        answer: 'B. A bridge with multiple connections, allowing it to connect several buses like spokes on a wheel',
+        diff: 'medium',
+      },
+      {
+        q: 'When networks are connected via repeaters, bridges, or switches, what is the result?',
+        options: ['A. Each original network keeps its own separate protocol', 'B. A single, larger network operating with the same protocol throughout', 'C. An "internet" with multiple distinct sub-networks', 'D. The networks become permanently incompatible'],
+        answer: 'B. A single, larger network operating with the same protocol throughout',
+        diff: 'medium',
+      },
+      {
+        q: 'When networks with INCOMPATIBLE characteristics (e.g., WiFi and Ethernet) must be connected, what kind of system results, and what device handles the connection?',
+        options: ['A. A single uniform network, handled by a switch', 'B. "An internet" (network of networks) in which each original network keeps its individuality, handled by routers', 'C. A PAN, handled by a repeater', 'D. A semaphore-guarded critical region'],
+        answer: 'B. "An internet" (network of networks) in which each original network keeps its individuality, handled by routers',
+        diff: 'medium',
+      },
+      {
+        q: 'How does the generic term "an internet" (lowercase) differ from "the Internet" (capital I), as clarified in this module?',
+        options: ['A. They are exactly the same thing', 'B. "An internet" is a generic network-of-networks concept; "the Internet" refers to one particular, specific worldwide internet', 'C. "An internet" only refers to wireless networks', 'D. "The Internet" only existed before 1990'],
+        answer: 'B. "An internet" is a generic network-of-networks concept; "the Internet" refers to one particular, specific worldwide internet',
+        diff: 'hard',
+      },
+      {
+        q: 'Why are routers fundamentally different from repeaters, bridges, and switches in how they connect networks?',
+        options: ['A. Routers merge connected networks into one uniform protocol, just like switches', 'B. Routers provide links between networks WHILE allowing each network to maintain its own unique internal characteristics', 'C. Routers can only connect identical network types', 'D. Routers eliminate the need for IP addresses entirely'],
+        answer: 'B. Routers provide links between networks WHILE allowing each network to maintain its own unique internal characteristics',
+        diff: 'hard',
+      },
+      {
+        q: 'In an internet (network of networks), why does each machine typically have TWO addresses?',
+        options: ['A. One address for sending, one for receiving', 'B. A "local" address within its own original network, plus a separate internet-wide address', 'C. One IPv4 and one IPv6 address always', 'D. Addresses are never duplicated; this is a misconception'],
+        answer: 'B. A "local" address within its own original network, plus a separate internet-wide address',
+        diff: 'medium',
+      },
+      {
+        q: 'What is the purpose of a router\'s "forwarding table"?',
+        options: ['A. To record usernames and passwords for login', 'B. To contain the router\'s knowledge of which direction to send messages, based on their destination addresses', 'C. To store the operating system\'s process table', 'D. To list all available WiFi access points'],
+        answer: 'B. To contain the router\'s knowledge of which direction to send messages, based on their destination addresses',
+        diff: 'medium',
+      },
+      {
+        q: 'In most residential WiFi setups, the term "gateway" often refers collectively to which two devices, since they are typically packaged in a single unit?',
+        options: ['A. The bridge and the switch', 'B. The network\'s access point (AP) and the router connected to it', 'C. The repeater and the modem', 'D. The scheduler and the dispatcher'],
+        answer: 'B. The network\'s access point (AP) and the router connected to it',
+        diff: 'medium',
+      },
+    ],
+  },
+
+  62: {
+    title: 'Networking and the Internet: Methods of Process Communication',
+    summary: `**Key Topics Covered:**
+- Inter-process communication
+- The client/server model (with print server and file server examples)
+- The peer-to-peer (P2P) model
+- P2P for file distribution, and why "peer-to-peer network" is a misnomer
+
+**Important Concepts:**
+
+**Inter-process communication:**
+Processes — whether on different networked computers or time-sharing the SAME machine — often need to communicate to coordinate actions and complete tasks.
+
+**Client/Server Model:**
+Defines two roles:
+- **Client** — makes requests of other processes.
+- **Server** — satisfies requests made by clients.
+Early examples:
+- **Print server** — one high-quality networked printer serves as the server; other machines are clients sending print requests.
+- **File server** — one machine with high-capacity mass storage holds all of an organization's records (the server); other machines (clients) request access to files as needed — this reduced storage cost and avoided duplicate record copies.
+
+**Peer-to-Peer (P2P) Model:**
+Unlike client/server (ONE server serving MANY clients continuously), in P2P, processes provide service TO and receive service FROM EACH OTHER. P2P processes typically run on a TEMPORARY basis (unlike servers, which must run continuously to be ready at any time).
+Examples: instant messaging, competitive interactive online games.
+
+**P2P for File Distribution:**
+A popular use for distributing files like music/movies. One peer may receive a file from another, then redistribute it to OTHER peers — the group of participating peers is called a **swarm**. This contrasts with the older client/server approach (a central distribution server clients download from).
+- **Benefit:** distributes the service load over many peers instead of concentrating it at one server → more efficient, no single point of overload.
+- **Downside:** the LACK of a central server also makes legal enforcement of copyright harder in cases of questionable legality — though "difficult" historically has NOT meant "impossible" for rights holders pursuing infringement cases.
+
+**Important Terminology Clarification:**
+"Peer-to-peer network" is technically a MISUSE of terminology. P2P refers to HOW TWO PROCESSES COMMUNICATE (a communication MODEL) — NOT a property of the network/internet itself. A process might use P2P to talk to one process, then switch to client/server to talk to ANOTHER process, over the very same network. So it's more accurate to say "communicating BY MEANS OF the peer-to-peer model" rather than "communicating OVER a peer-to-peer network."
+
+**Key Facts to Remember:**
+- Client = requester. Server = fulfiller. Server must run continuously; P2P peers often run temporarily.
+- Print server / file server = classic early client/server examples.
+- Swarm = the group of peers participating in P2P file distribution.
+- "Peer-to-peer network" is a common but technically INCORRECT phrase — P2P is a model of communication, not a network type.
+
+**Quick Revision Points:**
+Client/Server = asymmetric (1 server, many clients, server always on). P2P = symmetric (peers serve & receive from each other, often temporary). P2P file-sharing = "swarm." Key exam trap: P2P is a COMMUNICATION MODEL, not a network category.`,
+    questions: [
+      {
+        q: 'In the client/server model, which role is defined as the one that "makes requests of other processes"?',
+        options: ['A. The server', 'B. The client', 'C. The router', 'D. The administrator'],
+        answer: 'B. The client',
+        diff: 'easy',
+      },
+      {
+        q: 'In the early print server example, what role does the high-quality networked printer play?',
+        options: ['A. The client', 'B. The server', 'C. The router', 'D. The gateway'],
+        answer: 'B. The server',
+        diff: 'easy',
+      },
+      {
+        q: 'What was a key motivation for using a file server (one machine holding all an organization\'s records, accessed by client machines)?',
+        options: ['A. To increase the number of duplicate record copies across machines', 'B. To reduce the cost of magnetic disk storage and remove the need for duplicate copies of records', 'C. To eliminate the need for any networking at all', 'D. To replace the operating system\'s scheduler'],
+        answer: 'B. To reduce the cost of magnetic disk storage and remove the need for duplicate copies of records',
+        diff: 'medium',
+      },
+      {
+        q: 'How does the peer-to-peer (P2P) model fundamentally differ from the client/server model in terms of process roles?',
+        options: ['A. In P2P, one process serves many clients continuously, exactly like client/server', 'B. In P2P, processes provide service to AND receive service from each other, rather than one process serving many', 'C. P2P has no concept of "service" at all', 'D. P2P requires a dedicated server that must run continuously'],
+        answer: 'B. In P2P, processes provide service to AND receive service from each other, rather than one process serving many',
+        diff: 'medium',
+      },
+      {
+        q: 'Compared to a server, which typically must run continuously to be ready at any time, P2P processes typically:',
+        options: ['A. Also must run continuously without exception', 'B. Execute on a temporary basis', 'C. Never execute at all', 'D. Run only during the boot process'],
+        answer: 'B. Execute on a temporary basis',
+        diff: 'medium',
+      },
+      {
+        q: 'In P2P file distribution (e.g., music or movies), the collection of peers participating in distributing a particular file is called a:',
+        options: ['A. Cluster', 'B. Swarm', 'C. Grid', 'D. Domain'],
+        answer: 'B. Swarm',
+        diff: 'medium',
+      },
+      {
+        q: 'What is one major REASON given for why the P2P model has been replacing the client/server model for file sharing?',
+        options: ['A. P2P requires more expensive central servers', 'B. P2P distributes the service task over many peers rather than concentrating it at one server, leading to greater efficiency', 'C. P2P is always illegal, making it more popular', 'D. P2P eliminates the need for IP addresses'],
+        answer: 'B. P2P distributes the service task over many peers rather than concentrating it at one server, leading to greater efficiency',
+        diff: 'medium',
+      },
+      {
+        q: 'What is one DOWNSIDE of P2P file distribution mentioned in relation to copyright enforcement?',
+        options: ['A. It makes copyright enforcement easier because everything passes through one server', 'B. The lack of a central server makes legal efforts to enforce copyright laws more difficult, though not impossible', 'C. P2P systems are immune to all legal action', 'D. Copyright does not apply to P2P-distributed files'],
+        answer: 'B. The lack of a central server makes legal efforts to enforce copyright laws more difficult, though not impossible',
+        diff: 'medium',
+      },
+      {
+        q: 'Why does this module argue that the common phrase "peer-to-peer network" is a misuse of terminology?',
+        options: ['A. Because peer-to-peer networks do not actually exist', 'B. Because peer-to-peer refers to a model by which two PROCESSES communicate, not a property of the network/internet itself', 'C. Because only client/server communication can occur over any network', 'D. Because "network" and "internet" are interchangeable terms'],
+        answer: 'B. Because peer-to-peer refers to a model by which two PROCESSES communicate, not a property of the network/internet itself',
+        diff: 'hard',
+      },
+      {
+        q: 'A process could use the P2P model to communicate with one process, and then use the client/server model to communicate with a different process — over the very same physical network. What does this best illustrate?',
+        options: ['A. That P2P and client/server are mutually exclusive and can never coexist on one network', 'B. That communication model (P2P vs client/server) is independent of the underlying physical network — it is more accurate to speak of communicating "by means of" a model rather than "over" a network type', 'C. That the network itself must be reconfigured each time a different model is used', 'D. That client/server is technically impossible on modern networks'],
+        answer: 'B. That communication model (P2P vs client/server) is independent of the underlying physical network — it is more accurate to speak of communicating "by means of" a model rather than "over" a network type',
+        diff: 'hard',
+      },
+    ],
+  },
+
+  63: {
+    title: 'Networking and the Internet: Distributed Systems',
+    summary: `**Key Topics Covered:**
+- What a distributed system is
+- Cluster computing
+- Grid computing (with named examples)
+- Cloud computing (with named examples and the electrical-grid analogy)
+
+**Important Concepts:**
+
+**Distributed System:**
+Software systems that consist of software units executing as PROCESSES ON DIFFERENT COMPUTERS. Examples: global information retrieval systems, company-wide accounting/inventory systems, computer games, and even the software controlling a network's own infrastructure. Modern efforts aim to provide a common prefabricated infrastructure (communication, security, etc.) so developers only need to build the application-specific part.
+
+**Cluster Computing:**
+Many INDEPENDENT computers work CLOSELY TOGETHER to provide computation/services comparable to ONE much larger machine.
+- Cost of many cheap machines + a high-speed connecting network can be LESS than one expensive supercomputer, with HIGHER reliability and LOWER maintenance costs.
+- Provides **high-availability** (likely at least one cluster member can answer a request even if others fail) and **load-balancing** (work shifted automatically from overloaded to underused members).
+
+**Grid Computing:**
+More LOOSELY COUPLED than clusters, but still working together on large tasks. Uses specialized software to distribute data/algorithms to participating machines.
+- Named examples: **University of Wisconsin's Condor system**, **Berkeley's BOINC (Open Infrastructure for Network Computing)**.
+- Often installed on machines used for OTHER purposes (e.g., home/work PCs) that VOLUNTEER spare computing power to the grid when otherwise idle — enabling millions of home PCs to tackle huge mathematical/scientific problems.
+
+**Cloud Computing:**
+The LATEST distributed-systems trend: huge pools of SHARED computers on a network, allocated to clients AS NEEDED.
+- Analogy: just as metropolitan electrical grids eliminated the need for individual businesses to maintain their own generators, the Internet lets entities "rent" computing/storage instead of owning hardware.
+- Examples: **Amazon's Elastic Compute Cloud (EC2)** — rent virtual computers by the hour without knowing where the hardware is. **Google Drive / Google Apps** — collaborate without knowing how many computers are involved or where data is stored.
+- Trade-off: reasonable reliability/scalability guarantees, BUT raises privacy/security concerns since users may not know WHO owns/operates the computers they're using.
+
+**Key Facts to Remember:**
+- Cluster = tightly coupled, acts like one big machine (high-availability + load-balancing).
+- Grid = loosely coupled, often VOLUNTEER-based (Condor, BOINC are the named examples).
+- Cloud = newest trend, ON-DEMAND shared pools (EC2, Google Drive/Apps are the named examples).
+- The electrical-grid analogy is specifically used for CLOUD computing, not cluster or grid computing.
+
+**Quick Revision Points:**
+Cluster (tight, like one big machine) → Grid (loose, volunteer-powered, Condor/BOINC) → Cloud (on-demand shared pools, EC2/Google Drive, electrical-grid analogy) — increasing looseness of coupling, increasing reliance on the broader Internet.`,
+    questions: [
+      {
+        q: 'A distributed system, as defined in this module, consists of software units that:',
+        options: ['A. All execute on a single computer using multiple CPU cores', 'B. Execute as processes on DIFFERENT computers', 'C. Execute only within ROM', 'D. Never communicate with each other'],
+        answer: 'B. Execute as processes on DIFFERENT computers',
+        diff: 'easy',
+      },
+      {
+        q: 'Cluster computing is best described as:',
+        options: ['A. Loosely coupled machines that occasionally volunteer spare time', 'B. Many independent computers working CLOSELY together to provide computation/services comparable to one much larger machine', 'C. A single supercomputer with no networking involved', 'D. A model exclusively used for email protocols'],
+        answer: 'B. Many independent computers working CLOSELY together to provide computation/services comparable to one much larger machine',
+        diff: 'medium',
+      },
+      {
+        q: 'Which TWO benefits does cluster computing specifically provide, according to this module?',
+        options: ['A. High-availability and load-balancing', 'B. Lower security and higher latency', 'C. Reduced IP address availability and slower DNS lookups', 'D. Mandatory proprietary licensing and vendor lock-in'],
+        answer: 'A. High-availability and load-balancing',
+        diff: 'medium',
+      },
+      {
+        q: 'Which TWO systems are explicitly named in this module as examples of grid computing infrastructure?',
+        options: ['A. Amazon EC2 and Google Drive', 'B. University of Wisconsin\'s Condor system and Berkeley\'s BOINC', 'C. Skype and Netflix', 'D. ICANN and DNS'],
+        answer: 'B. University of Wisconsin\'s Condor system and Berkeley\'s BOINC',
+        diff: 'hard',
+      },
+      {
+        q: 'Grid computing systems like Condor and BOINC are often installed on machines that:',
+        options: ['A. Are used exclusively and permanently for the grid, with no other purpose', 'B. Are otherwise used for other purposes (e.g., home/work PCs) and VOLUNTEER spare computing power when idle', 'C. Must always be administrator-only machines', 'D. Run only ROM-based embedded firmware'],
+        answer: 'B. Are otherwise used for other purposes (e.g., home/work PCs) and VOLUNTEER spare computing power when idle',
+        diff: 'medium',
+      },
+      {
+        q: 'Cloud computing is described in this module as:',
+        options: ['A. An outdated technology being phased out', 'B. The latest trend in distributed systems, in which huge pools of shared computers are allocated to clients as needed', 'C. A type of PAN used only for short-range communication', 'D. Identical to cluster computing with a different marketing name'],
+        answer: 'B. The latest trend in distributed systems, in which huge pools of shared computers are allocated to clients as needed',
+        diff: 'easy',
+      },
+      {
+        q: 'The "electrical grid" analogy in this module is used specifically to explain which type of distributed computing?',
+        options: ['A. Cluster computing', 'B. Grid computing', 'C. Cloud computing', 'D. Peer-to-peer computing'],
+        answer: 'C. Cloud computing',
+        diff: 'medium',
+      },
+      {
+        q: 'Which service is named as an example allowing clients to "rent virtual computers by the hour" without needing to know where the hardware is located?',
+        options: ['A. Google Drive', 'B. Amazon\'s Elastic Compute Cloud (EC2)', 'C. University of Wisconsin\'s Condor system', 'D. BOINC'],
+        answer: 'B. Amazon\'s Elastic Compute Cloud (EC2)',
+        diff: 'medium',
+      },
+      {
+        q: 'What concern does cloud computing specifically raise, despite its reliability and scalability advantages?',
+        options: ['A. It eliminates the need for the Internet entirely', 'B. Privacy and security concerns, since users may not know who owns and operates the computers they are using', 'C. It requires every user to maintain their own personal generator', 'D. It is fundamentally incompatible with TCP/IP'],
+        answer: 'B. Privacy and security concerns, since users may not know who owns and operates the computers they are using',
+        diff: 'medium',
+      },
+      {
+        q: 'Which statement best captures the difference in "coupling" between cluster, grid, and cloud computing as described in this module?',
+        options: ['A. All three are equally tightly coupled with no meaningful differences', 'B. Cluster computing involves closely coupled machines acting like one large machine, while grid computing is more loosely coupled, and cloud computing represents on-demand allocation of shared pooled resources', 'C. Grid computing is the tightest coupling of the three; cluster is the loosest', 'D. Cloud computing requires the LEAST reliance on networking of the three'],
+        answer: 'B. Cluster computing involves closely coupled machines acting like one large machine, while grid computing is more loosely coupled, and cloud computing represents on-demand allocation of shared pooled resources',
+        diff: 'hard',
+      },
+    ],
+  },
+
+  64: {
+    title: 'Networking and the Internet: Internet Architecture',
+    summary: `**Key Topics Covered:**
+- ISPs and the tier-1 / tier-2 / tier-3 (access) hierarchy
+- End systems / hosts
+- Hot spots and cellular "cells"
+
+**Important Concepts:**
+
+**ISPs (Internet Service Providers):**
+Organizations that construct/maintain the networks making up the Internet. The term "ISP" is also loosely used to refer to the NETWORK ITSELF (e.g., "connecting to an ISP" really means connecting to the ISP's network).
+
+**The Tiered Hierarchy:**
+- **Tier-1 ISPs** — relatively FEW, very high-speed/high-capacity, INTERNATIONAL WANs. Considered the Internet's BACKBONE. Typically operated by large communications companies (e.g., companies that originated as traditional telephone providers).
+- **Tier-2 ISPs** — connect to tier-1; MORE REGIONAL in scope, LESS POTENT in capability. (The tier-1/tier-2 distinction is often a matter of opinion.)
+- Together, tier-1 and tier-2 ISPs are essentially networks of ROUTERS forming the **CORE** of the Internet.
+- **Access ISPs (tier-3)** — the intermediary providing access to this core for INDIVIDUAL homes and businesses. Essentially an INDEPENDENT INTERNET (sometimes called an **intranet**) operated by one authority — e.g., cable/phone companies (charge for service) or universities/corporations (provide access to their own members).
+
+**End Systems / Hosts:**
+The devices users connect to access ISPs — laptops, PCs, but increasingly phones, video cameras, automobiles, home appliances — basically ANY device that benefits from communicating with others.
+
+**Connection Technologies:**
+- **WiFi** — among the FASTEST GROWING connection types. The AP connects to an access ISP, providing Internet access to end systems within range. The AP's (or group of APs') coverage area is called a **hot spot**, especially when publicly available/free. Found in homes, hotels, offices, parks, even entire cities.
+- **Cellular** — similar technology; coverage areas are called **cells** instead of hot spots; "routers" generating cells are coordinated to maintain CONTINUOUS service as a device moves between cells.
+
+**Key Facts to Remember:**
+- Tier-1 = backbone, international, few in number. Tier-2 = regional. Tier-3/Access ISP = individual home/business connection point (= an intranet).
+- Tier-1 + Tier-2 = the Internet's "core" (network of routers).
+- WiFi coverage area = hot spot. Cellular coverage area = cell.
+- "End system" / "host" = any device benefiting from network communication, not just PCs.
+
+**Quick Revision Points:**
+Tier-1 (backbone, international) → Tier-2 (regional) → Access/Tier-3 ISP (individual access, = intranet) → End systems/hosts (the actual devices) → connected via WiFi (hot spots) or cellular (cells).`,
+    questions: [
+      {
+        q: 'Which tier of ISPs is described as the "backbone" of the Internet, consisting of very high-speed, high-capacity, international WANs?',
+        options: ['A. Tier-3 / Access ISPs', 'B. Tier-2 ISPs', 'C. Tier-1 ISPs', 'D. Intranet ISPs'],
+        answer: 'C. Tier-1 ISPs',
+        diff: 'easy',
+      },
+      {
+        q: 'How does this module describe the relationship between tier-1 and tier-2 ISPs in terms of scope and capability?',
+        options: ['A. Tier-2 ISPs are more international and more powerful than tier-1', 'B. Tier-2 ISPs tend to be more regional in scope and less potent in capability, connecting to tier-1 ISPs', 'C. Tier-1 and tier-2 ISPs are functionally identical with no distinction', 'D. Tier-2 ISPs operate only within a single building'],
+        answer: 'B. Tier-2 ISPs tend to be more regional in scope and less potent in capability, connecting to tier-1 ISPs',
+        diff: 'medium',
+      },
+      {
+        q: 'Together, tier-1 and tier-2 ISPs — essentially networks of routers — are collectively thought of as the:',
+        options: ['A. End systems of the Internet', 'B. Core of the Internet', 'C. Hot spots of the Internet', 'D. Domain Name System'],
+        answer: 'B. Core of the Internet',
+        diff: 'medium',
+      },
+      {
+        q: 'An access (tier-3) ISP is essentially described as:',
+        options: ['A. The Internet\'s international backbone', 'B. An independent internet, sometimes called an intranet, operated by a single authority providing Internet access to homes/businesses', 'C. A device that only repeats signals without addressing', 'D. A type of cluster computing system'],
+        answer: 'B. An independent internet, sometimes called an intranet, operated by a single authority providing Internet access to homes/businesses',
+        diff: 'medium',
+      },
+      {
+        q: 'Which of the following is given as an example of an organization that might act as an access ISP for its own members?',
+        options: ['A. A tier-1 international backbone company exclusively', 'B. A university or corporation providing Internet access to individuals within their organization', 'C. ICANN, which assigns IP address blocks', 'D. A single home PC acting as a grid computing node'],
+        answer: 'B. A university or corporation providing Internet access to individuals within their organization',
+        diff: 'medium',
+      },
+      {
+        q: 'The term "end system" or "host," as used in this module, refers to:',
+        options: ['A. Only desktop PCs and laptops', 'B. Any device benefiting from communicating with other devices — including phones, cameras, automobiles, and home appliances, not just PCs', 'C. Only tier-1 ISP backbone equipment', 'D. Only devices running the Windows operating system'],
+        answer: 'B. Any device benefiting from communicating with other devices — including phones, cameras, automobiles, and home appliances, not just PCs',
+        diff: 'medium',
+      },
+      {
+        q: 'In WiFi-based Internet access, the area within the range of an access point (or group of APs) is called a:',
+        options: ['A. Cell', 'B. Hot spot', 'C. Subnet', 'D. Gateway zone'],
+        answer: 'B. Hot spot',
+        diff: 'easy',
+      },
+      {
+        q: 'In cellular telephone networking, what is the equivalent term to a WiFi "hot spot"?',
+        options: ['A. A domain', 'B. A cell', 'C. A swarm', 'D. A cluster'],
+        answer: 'B. A cell',
+        diff: 'easy',
+      },
+      {
+        q: 'How is continuous cellular service maintained as a phone (end system) physically moves from one coverage area to another?',
+        options: ['A. The call is always dropped and must be manually reconnected', 'B. The "routers" generating the cells are coordinated to provide continuous service as the end system moves between cells', 'C. Each cell operates completely independently with no coordination', 'D. The device must reboot each time it changes cells'],
+        answer: 'B. The "routers" generating the cells are coordinated to provide continuous service as the end system moves between cells',
+        diff: 'hard',
+      },
+      {
+        q: 'Why does this module note that the distinction between tier-1 and tier-2 ISPs is "often a matter of opinion"?',
+        options: ['A. Because there is a precise, universally agreed legal definition separating them', 'B. Because the scope/capability boundary between international backbone-level providers and more regional providers isn\'t always sharply defined', 'C. Because tier-2 ISPs do not actually exist', 'D. Because ICANN assigns tiers randomly'],
+        answer: 'B. Because the scope/capability boundary between international backbone-level providers and more regional providers isn\'t always sharply defined',
+        diff: 'hard',
+      },
+    ],
+  },
+
+  65: {
+    title: 'Networking and the Internet: Internet Addressing',
+    summary: `**Key Topics Covered:**
+- IP addresses and dotted decimal notation
+- ICANN and address allocation
+- Domains, TLDs, and subdomains
+- DNS (Domain Name System) and name servers
+
+**Important Concepts:**
+
+**IP Addresses:**
+Each computer on the Internet needs a UNIQUE identifying address — the **IP address**. Originally a 32-bit pattern; the Internet is transitioning to 128-bit addresses for a larger address space.
+- **ICANN** (Internet Corporation for Assigned Names and Numbers) — a nonprofit coordinating the Internet's operation — awards BLOCKS of consecutive IP addresses to ISPs, who then allocate individual addresses to machines in their region.
+
+**Dotted Decimal Notation:**
+IP addresses are written with bytes separated by periods, each byte shown as a base-10 integer. Example: 192.207.177.133 represents a 32-bit address, byte by byte.
+
+**Domains & Mnemonic Names:**
+Since raw bit-pattern/dotted-decimal addresses aren't human-friendly, the Internet uses mnemonic **domain names**.
+- A **domain** = a "region" of the Internet operated by a single authority (university, club, company, government).
+- Each domain is REGISTERED with ICANN (via companies called **registrars**), getting a UNIQUE mnemonic domain name.
+- **TLD (Top-Level Domain)** = the suffix indicating classification: .edu (educational), .com (commercial), .gov (US government), .org (nonprofit), .museum, .info (unrestricted), .net (originally for ISPs, now broader). Also **country-code TLDs** (two letters), e.g., .au (Australia), .ca (Canada).
+- **Subdomains** extend a name to the LEFT, separated by periods, to organize names within a domain — e.g., overthruster.propulsion.yoyodyne.com = host "overthruster" in subdomain "propulsion" within domain "yoyodyne" under TLD "com."
+- (Important distinction: the DOTS in mnemonic domain names are NOT related to the dots in dotted-decimal IP notation — they're separate systems!)
+
+**DNS (Domain Name System):**
+Messages are ALWAYS transferred over the Internet using IP addresses — so mnemonic names must be translated to IP addresses before sending. This is done by **name servers** (directories providing translation services). Collectively, these form the Internet-wide **DNS**. The translation process itself is called a **DNS lookup**.
+- Large organizations with resources may run their OWN name server for their domain.
+- Smaller entities (e.g., a local club) can instead CONTRACT with an access ISP to host their domain name within the ISP's existing name server — meaning many registered domains can share a single ISP's infrastructure.
+
+**Key Facts to Remember:**
+- IP addresses: 32-bit (traditional) → transitioning to 128-bit.
+- ICANN = allocates address blocks to ISPs AND coordinates domain registration via registrars.
+- TLD examples to memorize: edu, com, gov, org, museum, info, net + country codes (au, ca).
+- Subdomains extend names to the LEFT (opposite direction from TLD).
+- DNS lookup = the translation process from mnemonic name → IP address.
+- Dotted-decimal notation (IP) and dotted mnemonic domain names are UNRELATED systems that just happen to both use dots.
+
+**Quick Revision Points:**
+IP address (32-bit→128-bit, dotted decimal) ← allocated via ICANN to ISPs. Domain name (mnemonic) ← registered via registrars with ICANN, has a TLD suffix + optional subdomains. DNS = the system of name servers translating domain names → IP addresses (a "DNS lookup").`,
+    questions: [
+      {
+        q: 'Why is the Internet currently transitioning IP addresses from a 32-bit pattern to a 128-bit pattern?',
+        options: ['A. To make addresses easier for humans to memorize', 'B. To provide a much larger set of available addresses', 'C. To eliminate the need for ICANN entirely', 'D. To replace dotted decimal notation with binary notation'],
+        answer: 'B. To provide a much larger set of available addresses',
+        diff: 'medium',
+      },
+      {
+        q: 'Which organization is responsible for awarding blocks of consecutively numbered IP addresses to ISPs?',
+        options: ['A. DNS', 'B. ICANN (Internet Corporation for Assigned Names and Numbers)', 'C. A registrar exclusively', 'D. The dispatcher'],
+        answer: 'B. ICANN (Internet Corporation for Assigned Names and Numbers)',
+        diff: 'easy',
+      },
+      {
+        q: 'In dotted decimal notation, the IP address 192.207.177.133 represents:',
+        options: ['A. A 128-bit address written entirely in hexadecimal', 'B. A 32-bit address, with each of the four bytes expressed as a base-10 integer separated by periods', 'C. A domain name with four subdomains', 'D. A MAC address used only within a LAN'],
+        answer: 'B. A 32-bit address, with each of the four bytes expressed as a base-10 integer separated by periods',
+        diff: 'medium',
+      },
+      {
+        q: 'A "domain," as defined in this module, refers to:',
+        options: ['A. A single physical computer only', 'B. A "region" of the Internet operated by a single authority such as a university, club, company, or government agency', 'C. A type of IP address class', 'D. A synonym for an access point'],
+        answer: 'B. A "region" of the Internet operated by a single authority such as a university, club, company, or government agency',
+        diff: 'easy',
+      },
+      {
+        q: 'In the domain name overthruster.propulsion.yoyodyne.com, what does "propulsion" represent?',
+        options: ['A. The top-level domain (TLD)', 'B. A subdomain within the yoyodyne domain', 'C. The IP address of the host', 'D. The registrar that registered the domain'],
+        answer: 'B. A subdomain within the yoyodyne domain',
+        diff: 'hard',
+      },
+      {
+        q: 'Domain names are extended to form subdomains by adding identifiers in which direction, separated by periods?',
+        options: ['A. To the right of the domain name', 'B. To the left of the domain name', 'C. Subdomains cannot be added to existing domain names', 'D. Subdomains replace the TLD entirely'],
+        answer: 'B. To the left of the domain name',
+        diff: 'medium',
+      },
+      {
+        q: 'Which of the following is explicitly given as an example of a COUNTRY-CODE top-level domain (TLD)?',
+        options: ['A. .edu', 'B. .com', 'C. .ca (Canada)', 'D. .museum'],
+        answer: 'C. .ca (Canada)',
+        diff: 'medium',
+      },
+      {
+        q: 'Although messages are always transmitted over the Internet using IP addresses, humans typically use mnemonic domain names instead. What process converts a mnemonic name into its corresponding IP address?',
+        options: ['A. A process switch', 'B. A DNS lookup, performed with the aid of name servers', 'C. A boot strap procedure', 'D. CSMA/CD collision detection'],
+        answer: 'B. A DNS lookup, performed with the aid of name servers',
+        diff: 'medium',
+      },
+      {
+        q: 'A small local club without the resources to run its own name server can still establish an Internet domain presence by:',
+        options: ['A. Registering directly with a tier-1 ISP\'s backbone router', 'B. Contracting with an access ISP to have its domain name included in the ISP\'s existing name server', 'C. Skipping domain registration entirely and using only its IP address', 'D. Converting its domain name into a 128-bit IP address manually'],
+        answer: 'B. Contracting with an access ISP to have its domain name included in the ISP\'s existing name server',
+        diff: 'hard',
+      },
+      {
+        q: 'Why does this module specifically clarify that the dots in a mnemonic domain name (like yoyodyne.com) are NOT related to the dots in dotted-decimal IP notation (like 192.207.177.133)?',
+        options: ['A. Because both systems are actually identical and interchangeable', 'B. Because they are two entirely separate addressing systems that coincidentally both use a period as a separator, and confusing them is a common error', 'C. Because dotted decimal notation is being phased out entirely', 'D. Because domain names never contain more than one dot'],
+        answer: 'B. Because they are two entirely separate addressing systems that coincidentally both use a period as a separator, and confusing them is a common error',
+        diff: 'hard',
+      },
+    ],
+  },
+
+  66: {
+    title: 'Networking and the Internet: Internet Applications',
+    summary: `**Key Topics Covered:**
+- Early single-purpose network applications (NNTP, FTP, Telnet/SSH)
+- The shift toward HTTP/webpage-based applications
+- Electronic mail and messaging apps overview
+- VoIP overview
+- Internet multimedia streaming overview (with traffic statistics)
+
+**Important Concepts:**
+
+**Early Internet Applications (each its own protocol):**
+- **NNTP (Network News Transfer Protocol)** — used by newsreader applications.
+- **FTP (File Transfer Protocol)** — used for listing/copying files across a network.
+- **Telnet** (later **SSH — Secure Shell**) — used for accessing another computer from a great distance.
+
+**The Shift to HTTP:**
+As web servers/browsers became more sophisticated, more of these traditional separate applications came to be handled through WEBPAGES using the powerful **HTTP (Hyper Text Transfer Protocol)** — consolidating many functions into the browser.
+
+**Electronic Mail & Messaging:**
+A wide variety of systems exist for end-user messaging: instant messaging (IM), browser-based online chat, Twitter "tweets," Facebook "wall" posts. **Email** is specifically called out as ONE OF THE OLDEST AND MOST ENDURING uses of the Internet.
+
+**VoIP (brief overview — detailed in Module 68):**
+Voice over Internet Protocol — uses Internet infrastructure for voice calls, similar to traditional telephony. In simplest form, just two processes transferring audio via P2P. Complications: initiating/receiving calls, linking with traditional phone systems, emergency 911 services. Some governments (owning traditional phone companies) view VoIP as a THREAT — taxing it heavily or banning it outright.
+
+**Internet Multimedia Streaming (brief overview — detailed in Module 69):**
+An ENORMOUS portion of current Internet traffic is real-time audio/video transport ("streaming"). Cited statistic: **Netflix streamed over 4 BILLION hours of programming in just the first three months of 2013.** Combined, Netflix + YouTube were projected to consume MORE THAN HALF of all Internet bandwidth in 2014.
+
+**Key Facts to Remember:**
+- NNTP = newsreaders. FTP = file transfer. Telnet/SSH = remote computer access.
+- HTTP increasingly REPLACED/absorbed these older single-purpose protocols via the browser.
+- Email = explicitly called the oldest/most enduring Internet application in this module.
+- Netflix Q1 2013 streaming stat: 4+ billion hours. Netflix+YouTube 2014 projection: >50% of global Internet bandwidth.
+- Governments owning telephone infrastructure have sometimes taxed/banned VoIP as a competitive threat.
+
+**Quick Revision Points:**
+Old protocols (NNTP/FTP/Telnet-SSH, each separate) → modern consolidation via HTTP/webpages. Email = oldest enduring app. VoIP = voice over Internet (governments sometimes resist it). Streaming = massive bandwidth consumer (Netflix/YouTube stats are a classic MCQ trap).`,
+    questions: [
+      {
+        q: 'Which protocol was traditionally used by newsreader applications to contact servers?',
+        options: ['A. FTP', 'B. NNTP (Network News Transfer Protocol)', 'C. HTTP', 'D. SMTP'],
+        answer: 'B. NNTP (Network News Transfer Protocol)',
+        diff: 'medium',
+      },
+      {
+        q: 'Which protocol was traditionally used for listing and copying files across a network?',
+        options: ['A. Telnet', 'B. FTP (File Transfer Protocol)', 'C. SSH', 'D. NNTP'],
+        answer: 'B. FTP (File Transfer Protocol)',
+        diff: 'easy',
+      },
+      {
+        q: 'Which protocol(s) were traditionally used for accessing another computer from a great distance, with one being the more secure successor to the other?',
+        options: ['A. Telnet, later succeeded by SSH (Secure Shell)', 'B. FTP, later succeeded by HTTP', 'C. NNTP, later succeeded by IMAP', 'D. POP3, later succeeded by MIME'],
+        answer: 'A. Telnet, later succeeded by SSH (Secure Shell)',
+        diff: 'medium',
+      },
+      {
+        q: 'As webservers and browsers grew more sophisticated, what general shift occurred regarding traditional network applications like newsreaders, FTP, and Telnet?',
+        options: ['A. They were all permanently banned by ICANN', 'B. More and more of these functions came to be handled by webpages via HTTP', 'C. They were replaced entirely by VoIP', 'D. They became mandatory privileged instructions'],
+        answer: 'B. More and more of these functions came to be handled by webpages via HTTP',
+        diff: 'medium',
+      },
+      {
+        q: 'Which Internet application is specifically described in this module as "one of the oldest and most enduring uses of the Internet"?',
+        options: ['A. VoIP', 'B. Electronic mail (email)', 'C. Internet multimedia streaming', 'D. Cloud computing'],
+        answer: 'B. Electronic mail (email)',
+        diff: 'easy',
+      },
+      {
+        q: 'Approximately how many hours of programming did Netflix stream to end users in just the FIRST THREE MONTHS of 2013, per the statistic cited in this module?',
+        options: ['A. More than 4 million hours', 'B. More than 400 million hours', 'C. More than 4 billion hours', 'D. More than 40 billion hours'],
+        answer: 'C. More than 4 billion hours',
+        diff: 'hard',
+      },
+      {
+        q: 'Combined, Netflix and YouTube were projected to consume what portion of total Internet bandwidth in 2014, per this module?',
+        options: ['A. Less than 10%', 'B. About 25%', 'C. More than half', 'D. Exactly 100%'],
+        answer: 'C. More than half',
+        diff: 'medium',
+      },
+      {
+        q: 'Why have some governments viewed VoIP as a "threat," according to this module?',
+        options: ['A. Because VoIP requires no Internet connection at all', 'B. Because governments that own their country\'s traditional telephone companies see VoIP as competing with that revenue, leading them to tax or outlaw it', 'C. Because VoIP is incompatible with all modern smartphones', 'D. Because VoIP only functions using FTP'],
+        answer: 'B. Because governments that own their country\'s traditional telephone companies see VoIP as competing with that revenue, leading them to tax or outlaw it',
+        diff: 'medium',
+      },
+      {
+        q: 'In its simplest form, VoIP, as introduced in this module, consists of:',
+        options: ['A. A single client requesting service from one centralized phone server', 'B. Two processes on different machines transferring audio data via the P2P model', 'C. A cluster computing arrangement', 'D. A DNS lookup followed by a TLD registration'],
+        answer: 'B. Two processes on different machines transferring audio data via the P2P model',
+        diff: 'medium',
+      },
+      {
+        q: 'Which of the following correctly lists examples of modern end-user MESSAGING systems mentioned in this module, alongside email?',
+        options: ['A. Instant messaging (IM), browser-based chatting, Twitter tweets, and Facebook wall posts', 'B. FTP, NNTP, and SSH', 'C. ICANN, registrars, and TLDs', 'D. Cluster, grid, and cloud computing'],
+        answer: 'A. Instant messaging (IM), browser-based chatting, Twitter tweets, and Facebook wall posts',
+        diff: 'easy',
+      },
+    ],
+  },
+
+  67: {
+    title: 'Networking and the Internet: Internet Applications — Email',
+    summary: `**Key Topics Covered:**
+- Messaging applications overview (recap)
+- SMTP and the basic email-sending scenario
+- MIME, POP3, and IMAP — and how POP3 differs from IMAP
+
+**Important Concepts:**
+
+**Messaging Applications (recap):**
+Instant Messaging, browser-based chatting, Twitter-based tweets, Facebook wall — but ELECTRONIC MAIL (email) is one of the OLDEST.
+
+**Core Protocol — SMTP:**
+**Simple Mail Transfer Protocol (SMTP)** is the protocol used for sending email TEXT messages.
+- Example scenario given: a user "mafzal" at cust.edu.pk sends an email to "hmaurer" at iicm.tugraz.at — illustrating mail flowing between two different mail domains.
+
+**Supporting Protocols:**
+- **MIME (Multipurpose Internet Mail Extensions)** — converts NON-ASCII content (images, attachments, formatted text, etc.) into a form COMPATIBLE with SMTP, which was originally designed only for plain text.
+- **POP3 (Post Office Protocol Version 3)** — lets a user download and maintain mail messages, STORING them on their LOCAL machine.
+- **IMAP (Internet Mail Access Protocol)** — lets a user maintain mail messages while STORING them on the MAIL SERVER machine (not locally).
+
+**Key Difference — POP3 vs IMAP:**
+- POP3 → mail stored LOCALLY (downloaded to your device).
+- IMAP → mail stored on the SERVER (accessible from multiple devices, since it stays centrally hosted).
+
+**Key Facts to Remember:**
+- SMTP = sending protocol for TEXT messages specifically.
+- MIME = the "translator" that lets non-text content travel over SMTP.
+- POP3 = local storage model. IMAP = server-side storage model. (Classic exam-trap pairing — don't mix them up!)
+
+**Quick Revision Points:**
+SMTP (send text) + MIME (handle non-text via SMTP) + POP3 (download/store LOCALLY) + IMAP (keep mail on the SERVER) = the four email-related protocols to memorize together.`,
+    questions: [
+      {
+        q: 'Which protocol is specifically used for sending email TEXT messages?',
+        options: ['A. MIME', 'B. SMTP (Simple Mail Transfer Protocol)', 'C. POP3', 'D. IMAP'],
+        answer: 'B. SMTP (Simple Mail Transfer Protocol)',
+        diff: 'easy',
+      },
+      {
+        q: 'What is the primary purpose of MIME (Multipurpose Internet Mail Extensions)?',
+        options: ['A. To permanently delete old emails', 'B. To convert non-ASCII content into a form compatible with SMTP, which was originally designed for plain text only', 'C. To assign IP addresses to mail servers', 'D. To replace SMTP entirely'],
+        answer: 'B. To convert non-ASCII content into a form compatible with SMTP, which was originally designed for plain text only',
+        diff: 'medium',
+      },
+      {
+        q: 'What is the KEY difference between POP3 and IMAP, as described in this module?',
+        options: ['A. POP3 stores mail on the local machine; IMAP stores mail on the mail server machine', 'B. POP3 stores mail on the server; IMAP stores mail locally', 'C. They are functionally identical with no difference', 'D. POP3 is for sending mail; IMAP is for receiving mail'],
+        answer: 'A. POP3 stores mail on the local machine; IMAP stores mail on the mail server machine',
+        diff: 'medium',
+      },
+      {
+        q: 'A user who wants to access the SAME mailbox consistently from multiple different devices, with messages staying centrally available, would benefit most from:',
+        options: ['A. POP3, since it downloads everything locally', 'B. IMAP, since it keeps messages on the mail server', 'C. MIME, since it only handles non-text content', 'D. SMTP, since it only handles sending'],
+        answer: 'B. IMAP, since it keeps messages on the mail server',
+        diff: 'hard',
+      },
+      {
+        q: 'In the scenario example given in this module, a user named "mafzal" from cust.edu.pk sends an email to a user at which domain?',
+        options: ['A. yoyodyne.com', 'B. mu.edu', 'C. iicm.tugraz.at', 'D. youtube.com'],
+        answer: 'C. iicm.tugraz.at',
+        diff: 'medium',
+      },
+      {
+        q: 'Which of the following is NOT one of the messaging applications listed alongside email in this module?',
+        options: ['A. Instant Messaging', 'B. Browser based chatting', 'C. Twitter based tweets', 'D. VoIP soft phones'],
+        answer: 'D. VoIP soft phones',
+        diff: 'medium',
+      },
+      {
+        q: 'Without MIME, what limitation would SMTP face when trying to send an email with an image attachment?',
+        options: ['A. SMTP would automatically compress the image', 'B. SMTP, designed originally for plain text, would not be able to properly transmit the non-ASCII (binary/image) content without a conversion step', 'C. SMTP would convert the image into an IP address', 'D. There is no limitation; SMTP handles all content types natively'],
+        answer: 'B. SMTP, designed originally for plain text, would not be able to properly transmit the non-ASCII (binary/image) content without a conversion step',
+        diff: 'hard',
+      },
+      {
+        q: 'Which of the following is described in this module as "one of the oldest" messaging/communication systems on the Internet?',
+        options: ['A. Twitter tweets', 'B. Facebook wall posts', 'C. Electronic mail (Email)', 'D. Browser-based chatting'],
+        answer: 'C. Electronic mail (Email)',
+        diff: 'easy',
+      },
+      {
+        q: 'A user who frequently switches between a phone, a laptop, and a tablet, and wants their inbox state (read/unread, folders) to stay consistent across all of them, should generally prefer which protocol?',
+        options: ['A. POP3', 'B. IMAP', 'C. MIME alone, with no other protocol', 'D. SMTP alone, with no other protocol'],
+        answer: 'B. IMAP',
+        diff: 'hard',
+      },
+      {
+        q: 'Which protocol is responsible for moving an email message from the sender\'s mail program to the recipient\'s mail server in the first place (before the recipient downloads/accesses it)?',
+        options: ['A. POP3', 'B. IMAP', 'C. SMTP', 'D. MIME alone'],
+        answer: 'C. SMTP',
+        diff: 'medium',
+      },
+    ],
+  },
+
+  68: {
+    title: 'Networking and the Internet: VoIP',
+    summary: `**Key Topics Covered:**
+- VoIP definition and core challenges
+- The four competing forms of VoIP
+- Skype as a named example (and its specific drawback)
+- 4G as IP-based wireless VoIP
+
+**Important Concepts:**
+
+**VoIP (Voice over Internet Protocol):**
+Uses Internet infrastructure to provide voice communication similar to traditional telephone systems. In its SIMPLEST form: two processes on different machines transferring audio data via the P2P model — not inherently problematic by itself.
+
+**Challenges Beyond Simple Audio Transfer:**
+- Initiating and receiving calls.
+- Linking VoIP with TRADITIONAL telephone systems.
+- Providing services like emergency 911 communication.
+- Government resistance — countries that own their traditional phone companies often view VoIP as a competitive THREAT, leading to heavy taxation or outright bans.
+
+**The Four Competing Forms of VoIP:**
+1. **VoIP soft phones** — P2P SOFTWARE allowing two+ PCs to share a call using just a speaker and microphone (no extra special hardware). Named example: **Skype** — also links to the traditional telephone system.
+   - **Skype's specific drawback:** it's a PROPRIETARY system, so much of its internal operation is NOT publicly known/verifiable — users must TRUST Skype's integrity without third-party verification. Also, to RECEIVE calls, a user must leave their PC connected and available, meaning some of the PC's resources may get used to support OTHER Skype communications WITHOUT the owner's awareness — a feature that has drawn resistance.
+2. **Analog telephone adapters** — devices letting a user connect their TRADITIONAL telephone to phone service provided by an access ISP. Frequently bundled with regular Internet and/or digital TV service.
+3. **Embedded VoIP phones** — devices REPLACING a traditional telephone with an equivalent handset connected DIRECTLY to a TCP/IP network. Increasingly common in large organizations replacing old copper-wire internal phone systems (reduces cost, adds features).
+4. **Wireless VoIP in smartphones** — earlier-generation wireless phones used the phone company's OWN protocols, with Internet access only via gateways converting signals to TCP/IP. The CURRENT 4G network, however, is IP-based THROUGHOUT — meaning a 4G phone is essentially just another broadband-connected host computer on the global Internet.
+
+**Key Facts to Remember:**
+- 4 forms to memorize: soft phones (Skype), analog telephone adapters, embedded VoIP phones, wireless/4G VoIP.
+- Skype's TWO specific named issues: (1) proprietary/unverifiable internal workings, (2) PC resources may be used for OTHER users' calls without the owner's knowledge.
+- 4G specifically = IP-based throughout (unlike earlier generations needing a gateway conversion).
+
+**Quick Revision Points:**
+VoIP = voice over Internet. 4 forms: Soft phones (Skype) → Analog telephone adapters → Embedded VoIP phones → Wireless/4G VoIP. Skype's drawbacks = proprietary + resource-sharing without owner awareness. 4G = fully IP-based, unlike earlier wireless generations.`,
+    questions: [
+      {
+        q: 'In its simplest form, VoIP consists of:',
+        options: ['A. A single centralized server routing all voice calls', 'B. Two processes on different machines transferring audio data via the P2P model', 'C. A dedicated semaphore guarding the audio stream', 'D. An exclusively client/server-based video conferencing system'],
+        answer: 'B. Two processes on different machines transferring audio data via the P2P model',
+        diff: 'medium',
+      },
+      {
+        q: 'Which of the following is named as a specific drawback of Skype, as a VoIP soft phone system?',
+        options: ['A. It cannot connect to traditional telephone systems at all', 'B. It is a proprietary system, so users must trust its integrity without third-party verification, and PC resources may be used for other users\' calls without the owner\'s awareness', 'C. It requires a dedicated fiber-optic connection', 'D. It only works using the FTP protocol'],
+        answer: 'B. It is a proprietary system, so users must trust its integrity without third-party verification, and PC resources may be used for other users\' calls without the owner\'s awareness',
+        diff: 'hard',
+      },
+      {
+        q: 'VoIP soft phones, as a category, are characterized by:',
+        options: ['A. Requiring a dedicated handset with no PC involved', 'B. P2P software allowing two or more PCs to share a call using no more special hardware than a speaker and microphone', 'C. Being exclusively hardware-based with no software component', 'D. Operating only over 2G cellular networks'],
+        answer: 'B. P2P software allowing two or more PCs to share a call using no more special hardware than a speaker and microphone',
+        diff: 'medium',
+      },
+      {
+        q: 'Analog telephone adapters are devices that:',
+        options: ['A. Replace a traditional telephone entirely with a TCP/IP handset', 'B. Allow a user to connect their traditional telephone to phone service provided by an access ISP', 'C. Are exclusively used for embedded VoIP in corporations', 'D. Convert SMTP messages into voice calls'],
+        answer: 'B. Allow a user to connect their traditional telephone to phone service provided by an access ISP',
+        diff: 'medium',
+      },
+      {
+        q: 'Embedded VoIP phones are described as increasingly common in large organizations primarily because they:',
+        options: ['A. Require more copper wiring than traditional systems', 'B. Replace traditional internal copper wire telephone systems with VoIP over Ethernet, reducing costs and enhancing features', 'C. Cannot connect directly to a TCP/IP network', 'D. Are only compatible with Skype'],
+        answer: 'B. Replace traditional internal copper wire telephone systems with VoIP over Ethernet, reducing costs and enhancing features',
+        diff: 'medium',
+      },
+      {
+        q: 'What key architectural feature distinguishes the CURRENT generation (4G) of wireless smartphone VoIP from earlier wireless generations?',
+        options: ['A. 4G networks use exclusively analog signals', 'B. The 4G network is IP-based throughout, meaning a 4G phone is essentially just another broadband-connected host on the global Internet', 'C. 4G phones require a separate gateway to convert every signal, just like earlier generations', 'D. 4G eliminates the need for any Internet connection'],
+        answer: 'B. The 4G network is IP-based throughout, meaning a 4G phone is essentially just another broadband-connected host on the global Internet',
+        diff: 'hard',
+      },
+      {
+        q: 'In EARLIER generations of wireless phones (before 4G), how was Internet access typically obtained?',
+        options: ['A. Through gateways converting signals between the phone company\'s own protocols and the TCP/IP system', 'B. The phones were natively IP-based from the start, just like 4G', 'C. Through embedded VoIP phones exclusively', 'D. Through analog telephone adapters only'],
+        answer: 'A. Through gateways converting signals between the phone company\'s own protocols and the TCP/IP system',
+        diff: 'hard',
+      },
+      {
+        q: 'Why might a government that owns its country\'s traditional telephone company choose to heavily tax or ban VoIP services?',
+        options: ['A. Because VoIP services consume zero bandwidth and offer no economic value', 'B. Because VoIP is viewed as a competitive threat to the government-owned traditional telephone business', 'C. Because VoIP cannot legally transmit voice data', 'D. Because VoIP requires embedded firmware updates that the government cannot control'],
+        answer: 'B. Because VoIP is viewed as a competitive threat to the government-owned traditional telephone business',
+        diff: 'medium',
+      },
+      {
+        q: 'Which issue is explicitly listed as a challenge that VoIP must address BEYOND the simple transfer of audio data via P2P?',
+        options: ['A. Providing emergency 911 communication services', 'B. Encrypting all SMTP-based emails', 'C. Allocating space in the process table', 'D. Establishing the TCP/IP protocol suite from scratch'],
+        answer: 'A. Providing emergency 911 communication services',
+        diff: 'medium',
+      },
+      {
+        q: 'How many distinct competing forms of VoIP are identified in this module?',
+        options: ['A. Two', 'B. Three', 'C. Four', 'D. Five'],
+        answer: 'C. Four',
+        diff: 'easy',
+      },
+    ],
+  },
+
+  69: {
+    title: 'Networking and the Internet: Internet Multimedia Streaming',
+    summary: `**Key Topics Covered:**
+- What streaming is, and how big a share of Internet traffic it consumes
+- N-unicast and its drawback
+- P2P and multicast alternatives
+- On-demand streaming
+- Content Delivery Networks (CDNs) and anycast
+
+**Important Concepts:**
+
+**Streaming — Definition & Scale:**
+Transporting audio/video across the Internet in REAL-TIME. An ENORMOUS portion of current Internet traffic. (Netflix: 4+ billion hours streamed in Q1 2013 alone; Netflix + YouTube projected to consume over half of global Internet bandwidth in 2014.)
+
+**N-unicast (the naive approach):**
+- **Unicast** = ONE sender sending messages to ONE receiver.
+- **N-unicast** = a SINGLE sender involved in MULTIPLE unicasts (i.e., sending an individual copy to EACH client separately).
+- Drawback: places a substantial burden on the streaming server AND on the server's immediate Internet neighbors, since the server must send individual real-time messages to every single client, and the neighbors must forward ALL of them.
+
+**Alternatives to N-unicast:**
+1. **P2P-based distribution** — like file-sharing: once a peer receives data, it begins redistributing that data to OTHER peers still waiting, spreading the distribution burden away from the original source.
+2. **Multicast** — transfers the distribution problem to the Internet's ROUTERS. The server transmits ONE message to multiple clients via a SINGLE address; routers recognize this address's significance and PRODUCE/FORWARD copies to the right destinations. Requires routers' functionality to be expanded beyond their normal duties. Implemented in small networks, but has NOT yet expanded to the global Internet.
+
+**On-Demand Streaming:**
+Most modern streaming applications are "on-demand" — the user wants to view/listen at an ARBITRARY time of their choosing, and expects to START, PAUSE, or REWIND content at their own pace. This is DIFFERENT from a live "Internet radio station" scenario. N-unicast and multicast are of LITTLE help here, since each on-demand stream is effectively its OWN unicast from a media server that stores the content for that specific user.
+
+**Content Delivery Networks (CDNs) & Anycast:**
+For on-demand streaming to scale to MILLIONS of simultaneous personal streams, large-scale services use **CDNs** — groups of servers distributed STRATEGICALLY around the Internet, specializing in streaming COPIES of content to nearby end users in their network "neighborhood." CDN machines may even reside WITHIN an access ISP's own network, letting customers stream from a much CLOSER server than the central streaming service's main servers.
+- **Anycast** = a networking technology enabling an end user to AUTOMATICALLY connect to the CLOSEST server out of a defined group of servers — this is what makes CDNs PRACTICAL.
+
+**Reach of Streaming:**
+Now extends far beyond traditional PCs — embedded devices like TVs, DVD/Blu-ray players, smartphones, and game consoles connect directly to TCP/IP networks to select content from free and subscription services.
+
+**Key Facts to Remember:**
+- Unicast = 1-to-1. N-unicast = 1 sender, MANY separate unicasts (burdens server + its neighbors).
+- Multicast = single address, routers replicate/forward (router functionality expanded; not yet global).
+- On-demand streaming ≠ helped by N-unicast/multicast — each on-demand stream is its OWN unicast.
+- CDN = distributed server groups near end users; Anycast = the tech that connects users to the CLOSEST server, making CDNs practical.
+
+**Quick Revision Points:**
+N-unicast (1 sender, many individual unicasts, burdens server) → P2P redistribution OR Multicast (single address, router-replicated, not yet global) → On-demand streaming (needs its own unicast per user, pause/rewind) → CDN (distributed nearby servers) + Anycast (auto-connect to closest server, enables CDNs).`,
+    questions: [
+      {
+        q: 'What does the term "unicast" specifically mean, as defined in this module?',
+        options: ['A. One sender sending messages to one receiver', 'B. One sender sending messages to many receivers simultaneously', 'C. Many senders sending to one receiver', 'D. A type of router-only protocol'],
+        answer: 'A. One sender sending messages to one receiver',
+        diff: 'easy',
+      },
+      {
+        q: 'N-unicast refers to:',
+        options: ['A. A single sender involved with multiple individual unicasts', 'B. Multiple senders each sending to a single shared receiver', 'C. A protocol exclusive to multicast routers', 'D. A technique used only for email, not streaming'],
+        answer: 'A. A single sender involved with multiple individual unicasts',
+        diff: 'medium',
+      },
+      {
+        q: 'What is the main drawback of the N-unicast approach to streaming, as described in this module?',
+        options: ['A. It requires no server resources at all', 'B. It places a substantial burden on the server and the server\'s immediate Internet neighbors, since the server must individually send messages to each client', 'C. It only works for on-demand streaming, never live streaming', 'D. It eliminates the need for IP addresses'],
+        answer: 'B. It places a substantial burden on the server and the server\'s immediate Internet neighbors, since the server must individually send messages to each client',
+        diff: 'medium',
+      },
+      {
+        q: 'In multicast streaming, where is the "distribution problem" transferred to, compared to N-unicast?',
+        options: ['A. To the end user\'s own device', 'B. To the Internet routers, which recognize a special multicast address and forward copies to the right destinations', 'C. To the DNS name servers', 'D. To the access ISP\'s billing system'],
+        answer: 'B. To the Internet routers, which recognize a special multicast address and forward copies to the right destinations',
+        diff: 'medium',
+      },
+      {
+        q: 'According to this module, what is the current real-world status of multicast technology?',
+        options: ['A. It has fully replaced unicast across the entire global Internet', 'B. It has been implemented in small networks, but has not yet expanded to the global Internet', 'C. It was abandoned and is no longer used anywhere', 'D. It is identical to CSMA/CD'],
+        answer: 'B. It has been implemented in small networks, but has not yet expanded to the global Internet',
+        diff: 'hard',
+      },
+      {
+        q: 'Why are N-unicast and multicast technologies described as "of little help" for ON-DEMAND streaming?',
+        options: ['A. Because on-demand streaming does not use the Internet at all', 'B. Because each end user expects to start, pause, or rewind content at their own pace, so each on-demand stream is effectively its own unicast from a media server', 'C. Because on-demand streaming uses only POP3 and IMAP', 'D. Because routers cannot process on-demand requests'],
+        answer: 'B. Because each end user expects to start, pause, or rewind content at their own pace, so each on-demand stream is effectively its own unicast from a media server',
+        diff: 'hard',
+      },
+      {
+        q: 'A Content Delivery Network (CDN), as described in this module, consists of:',
+        options: ['A. A single centralized server handling all global streaming requests', 'B. Groups of servers distributed strategically around the Internet, specializing in streaming copies of content to nearby end users', 'C. A type of P2P swarm exclusive to file-sharing', 'D. A protocol for converting domain names into IP addresses'],
+        answer: 'B. Groups of servers distributed strategically around the Internet, specializing in streaming copies of content to nearby end users',
+        diff: 'medium',
+      },
+      {
+        q: 'What networking technology specifically enables an end user to automatically connect to the closest server out of a defined group, helping make CDNs practical?',
+        options: ['A. Multicast', 'B. Anycast', 'C. N-unicast', 'D. CSMA/CA'],
+        answer: 'B. Anycast',
+        diff: 'medium',
+      },
+      {
+        q: 'Why might CDN machines reside WITHIN an access ISP\'s own network, according to this module?',
+        options: ['A. To allow customers of that access ISP to stream content at high speed from a much closer server than the streaming service\'s central servers', 'B. To prevent any streaming from occurring at all', 'C. Because access ISPs are legally required to host all CDN servers', 'D. Because it eliminates the need for the streaming service to have any central servers'],
+        answer: 'A. To allow customers of that access ISP to stream content at high speed from a much closer server than the streaming service\'s central servers',
+        diff: 'hard',
+      },
+      {
+        q: 'Which of the following devices are explicitly mentioned as now connecting directly to TCP/IP networks to access streaming content, beyond traditional PCs?',
+        options: ['A. Only desktop computers', 'B. Televisions, DVD/Blu-ray players, smartphones, and game consoles', 'C. Only tier-1 ISP backbone routers', 'D. Only embedded VoIP phones'],
+        answer: 'B. Televisions, DVD/Blu-ray players, smartphones, and game consoles',
+        diff: 'easy',
+      },
+    ],
+  },
+
+  70: {
+    title: 'Networking and the Internet: World Wide Web',
+    summary: `**Key Topics Covered:**
+- The origin of the World Wide Web
+- Tim Berners-Lee and the concept of hypertext
+- The three key original components of the Web
+- Growth of the Web through the 1990s
+
+**Important Concepts:**
+
+**Origins:**
+The World Wide Web originated in the work of **Tim Berners-Lee**, who realized the POTENTIAL of combining INTERNET technology with the concept of LINKED DOCUMENTS, called **hypertext**.
+
+**The First Web Software:**
+Released in **December 1990**. This early prototype did NOT yet support multimedia data, but it already included the THREE key components we now recognize as the World Wide Web:
+1. A **hypertext document format** for embedding **hyperlinks** to other documents.
+2. A **protocol** for transferring hypertext across the network (this protocol is HTTP, formally introduced as a concept in the previous module).
+3. A **server process** that supplied hypertext pages upon request.
+
+**Growth:**
+From this humble beginning, the Web quickly grew to support images, audio, and video. By the MID-1990s, it had become the DOMINANT application powering the growth of the Internet.
+
+**Key Facts to Remember:**
+- Tim Berners-Lee = the originator/creator credited with the Web's origin.
+- "Hypertext" = the core concept: linked documents.
+- First Web software release date: December 1990.
+- The 3 original components: (1) hypertext document format + hyperlinks, (2) a transfer protocol, (3) a server process supplying pages on request.
+- The Web became the DOMINANT Internet application by the MID-1990s (a fairly rapid rise from a 1990 prototype with no multimedia support).
+
+**Quick Revision Points:**
+Tim Berners-Lee (1990) → combined Internet tech + hypertext (linked documents) → 3 original components: hypertext format/hyperlinks + transfer protocol + server process → grew to support multimedia → became THE dominant Internet application by mid-1990s.`,
+    questions: [
+      {
+        q: 'The World Wide Web is credited as originating in the work of which individual?',
+        options: ['A. John Mauchly', 'B. Tim Berners-Lee', 'C. Howard Aiken', 'D. Herman Hollerith'],
+        answer: 'B. Tim Berners-Lee',
+        diff: 'easy',
+      },
+      {
+        q: 'The core concept that Tim Berners-Lee combined with Internet technology to create the Web is known as:',
+        options: ['A. Multicast', 'B. Hypertext (linked documents)', 'C. Cloud computing', 'D. Cluster computing'],
+        answer: 'B. Hypertext (linked documents)',
+        diff: 'easy',
+      },
+      {
+        q: 'In what month and year was the first software for implementing the Web released?',
+        options: ['A. December 1990', 'B. January 1995', 'C. December 1985', 'D. June 1990'],
+        answer: 'A. December 1990',
+        diff: 'medium',
+      },
+      {
+        q: 'Did the EARLY prototype of the Web, as released in 1990, support multimedia data?',
+        options: ['A. Yes, it supported full video and audio from the very start', 'B. No, it did not yet support multimedia data', 'C. It supported only audio, not images or video', 'D. It supported only images, not audio or video'],
+        answer: 'B. No, it did not yet support multimedia data',
+        diff: 'medium',
+      },
+      {
+        q: 'Which of the following is NOT one of the three key original components of the World Wide Web identified in this module?',
+        options: ['A. A hypertext document format for embedding hyperlinks', 'B. A protocol for transferring hypertext across the network', 'C. A server process that supplied hypertext pages upon request', 'D. A built-in video compression codec'],
+        answer: 'D. A built-in video compression codec',
+        diff: 'medium',
+      },
+      {
+        q: 'By approximately what time period had the Web grown to become the dominant application powering Internet growth, according to this module?',
+        options: ['A. By the late 1980s', 'B. By the mid-1990s', 'C. Not until the 2010s', 'D. Immediately upon its December 1990 release'],
+        answer: 'B. By the mid-1990s',
+        diff: 'medium',
+      },
+      {
+        q: 'A "hyperlink," in the context of the Web\'s original hypertext document format, allows a document to:',
+        options: ['A. Automatically encrypt itself for security', 'B. Embed a reference/link to another document', 'C. Convert itself into an IP address', 'D. Be transmitted only through POP3'],
+        answer: 'B. Embed a reference/link to another document',
+        diff: 'easy',
+      },
+      {
+        q: 'Which component of the original Web design was responsible for SUPPLYING hypertext pages upon request from a client?',
+        options: ['A. The hypertext document format itself', 'B. The transfer protocol alone', 'C. The server process', 'D. The DNS lookup system'],
+        answer: 'C. The server process',
+        diff: 'medium',
+      },
+      {
+        q: 'Why is it significant that the Web\'s 1990 prototype already included a document format, a transfer protocol, AND a server process, even without multimedia support?',
+        options: ['A. Because these three elements together already formed the essential architecture that we still recognize as the World Wide Web today', 'B. Because none of these three elements are still used in the modern Web', 'C. Because multimedia was actually the most important of the four components', 'D. Because the prototype was a complete failure and had to be entirely redesigned'],
+        answer: 'A. Because these three elements together already formed the essential architecture that we still recognize as the World Wide Web today',
+        diff: 'hard',
+      },
+      {
+        q: 'How does the World Wide Web, as described in this module, relate to the broader concept of "the Internet" covered in earlier modules?',
+        options: ['A. The Web IS the Internet — they are exactly the same thing with no distinction', 'B. The Web is a specific application (built on hypertext, HTTP, and servers) that runs on top of the underlying Internet infrastructure, and became its dominant application by the mid-1990s', 'C. The Web predates the Internet and the Internet was built on top of it', 'D. The Web has no relationship to the Internet at all'],
+        answer: 'B. The Web is a specific application (built on hypertext, HTTP, and servers) that runs on top of the underlying Internet infrastructure, and became its dominant application by the mid-1990s',
+        diff: 'hard',
+      },
+    ],
+  },
+71: {
+    title: 'Networking and the Internet: Web Implementations (URL & Browsers)',
+    summary: `**Yeh module kya cover karta hai:**
+- Browser aur webserver ka kaam
+- HTTP protocol
+- URL ki structure (4 parts)
+- Home page concept
+
+**Browser vs Webserver:**
+- **Browser** — user ke computer par hota hai. User jo document maange, wo server se le kar screen par dikhata hai. Examples: Firefox, Safari, Internet Explorer.
+- **Webserver** — woh computer jis par hypertext documents store hotay hain. Client (browser) ki request par document provide karta hai.
+- Dono ke darmiyan communication **HTTP (Hypertext Transfer Protocol)** se hoti hai.
+
+**URL (Uniform Resource Locator):**
+Har web document ka ek unique address hota hai — URL. Isme **4 parts** hain:
+1. **Protocol** — e.g., http
+2. **Mnemonic address** — server machine ka naam, e.g., eagle.mu.edu
+3. **Directory path** — document kahan hai server ke file system mein
+4. **Document name** — actual file, e.g., Julius_Caesar.html
+
+Example: http://eagle.mu.edu/authors/Shakespeare/Julius_Caesar.html
+
+**Home Page:**
+Agar URL mein sirf protocol + machine address ho (koi directory/file nahi), to server ek default "home page" return karta hai. Jaise http://www.google.com → Google ki home page.
+
+**Browser trick:**
+Bahut se browsers HTTP automatically assume kar lete hain — aap sirf www.google.com type karo, browser khud http:// laga leta hai.
+
+**Yaad rakho:**
+- HTTP = Hypertext Transfer Protocol (browser aur server ke darmiyan)
+- URL mein 4 parts hote hain
+- Koi directory path na ho to home page milti hai`,
+    questions: [
+      {
+        q: 'A browser resides on which machine?',
+        options: ['A. The webserver', 'B. The user\'s computer', 'C. The ISP\'s router', 'D. The DNS name server'],
+        answer: 'B. The user\'s computer',
+        diff: 'easy',
+      },
+      {
+        q: 'In the URL http://eagle.mu.edu/authors/Shakespeare/Julius_Caesar.html, which part is the "directory path"?',
+        options: ['A. http', 'B. eagle.mu.edu', 'C. /authors/Shakespeare/', 'D. Julius_Caesar.html'],
+        answer: 'C. /authors/Shakespeare/',
+        diff: 'medium',
+      },
+      {
+        q: 'What protocol transfers hypertext documents between browsers and webservers?',
+        options: ['A. SMTP', 'B. FTP', 'C. HTTP', 'D. DNS'],
+        answer: 'C. HTTP',
+        diff: 'easy',
+      },
+      {
+        q: 'When a URL contains only a protocol and a mnemonic machine address with NO directory path or filename, what does the server typically return?',
+        options: ['A. An error message', 'B. A home page', 'C. The server\'s IP address only', 'D. A cached version of the last visited page'],
+        answer: 'B. A home page',
+        diff: 'medium',
+      },
+      {
+        q: 'How many segments make up a "typical" URL as described in this module?',
+        options: ['A. Two', 'B. Three', 'C. Four', 'D. Five'],
+        answer: 'C. Four',
+        diff: 'medium',
+      },
+      {
+        q: 'Which of the following is the webserver\'s primary task?',
+        options: ['A. Translate mnemonic addresses to IP addresses', 'B. Provide access to hypertext documents upon client request', 'C. Assign IP addresses to browsers', 'D. Block unauthorized network traffic'],
+        answer: 'B. Provide access to hypertext documents upon client request',
+        diff: 'easy',
+      },
+      {
+        q: 'A user types "www.google.com" without "http://" and their browser still loads the page. Why?',
+        options: ['A. DNS automatically adds the protocol', 'B. Many browsers assume HTTP if no protocol is specified', 'C. Google\'s server forces a redirect', 'D. HTTP is embedded inside the URL by the router'],
+        answer: 'B. Many browsers assume HTTP if no protocol is specified',
+        diff: 'medium',
+      },
+      {
+        q: 'In a URL, "Julius_Caesar.html" represents which segment?',
+        options: ['A. Protocol', 'B. Directory path', 'C. Document name', 'D. Mnemonic address'],
+        answer: 'C. Document name',
+        diff: 'easy',
+      },
+      {
+        q: 'What does URL stand for?',
+        options: ['A. Universal Resource Link', 'B. Uniform Resource Locator', 'C. Unified Routing Language', 'D. Universal Retrieval Location'],
+        answer: 'B. Uniform Resource Locator',
+        diff: 'easy',
+      },
+      {
+        q: 'Which part of the URL tells the browser WHICH SERVER to contact?',
+        options: ['A. Document name', 'B. Protocol', 'C. Mnemonic address of the host machine', 'D. Directory path'],
+        answer: 'C. Mnemonic address of the host machine',
+        diff: 'hard',
+      },
+    ],
+  },
+
+  72: {
+    title: 'Networking and the Internet: HTML (Introduction)',
+    summary: `**Yeh module kya cover karta hai:**
+- Hypertext document kya hota hai
+- Tags ka concept
+- HTML ki definition
+
+**Hypertext Document:**
+Ek normal text file ki tarah hota hai — text character by character ASCII ya Unicode mein encode hota hai. **Farq yeh hai** ke hypertext document mein special symbols hote hain jinhein **tags** kehte hain. Yeh tags batate hain:
+- Document screen par kaisa dikhna chahiye
+- Kaunse multimedia (images etc.) add honge
+- Kaunse items doosray documents se linked hain
+
+**HTML (Hypertext Markup Language):**
+Tags ka yeh poora system HTML kehlatata hai. Browser HTML tags read karta hai aur samajhta hai ke page kaise present karna hai — bilkul waise jaise ek typesetter red pen se directions lete hai aur text format karta hai.
+
+**Analogy:**
+- Plain typed text + red pen markings = typesetter ko directions
+- HTML text + HTML tags = browser ko directions
+
+**Yaad rakho:**
+- Tags delineated hote hain **< aur >** symbols se
+- HTML = Hypertext Markup Language
+- Browser = typesetter ka role play karta hai
+- Tags determine karte hain: appearance + multimedia + links`,
+    questions: [
+      {
+        q: 'What makes a hypertext document different from a plain text file?',
+        options: ['A. It uses binary encoding instead of ASCII', 'B. It contains special symbols called tags', 'C. It cannot contain images', 'D. It is stored in ROM only'],
+        answer: 'B. It contains special symbols called tags',
+        diff: 'easy',
+      },
+      {
+        q: 'What does HTML stand for?',
+        options: ['A. Hyper Text Management Language', 'B. Hypertext Markup Language', 'C. High Transfer Markup Logic', 'D. Hyper Transfer Media Language'],
+        answer: 'B. Hypertext Markup Language',
+        diff: 'easy',
+      },
+      {
+        q: 'In the analogy used in this module, a browser plays a role equivalent to:',
+        options: ['A. An author writing a story', 'B. A typesetter following red-pen formatting directions on a text', 'C. A printer printing blank pages', 'D. A router forwarding packets'],
+        answer: 'B. A typesetter following red-pen formatting directions on a text',
+        diff: 'medium',
+      },
+      {
+        q: 'HTML tags describe which THREE things about a document?',
+        options: ['A. Font size, file size, and server address', 'B. How it should appear, what multimedia to include, and which items link to other documents', 'C. The IP address, port number, and URL', 'D. File name, creation date, and author'],
+        answer: 'B. How it should appear, what multimedia to include, and which items link to other documents',
+        diff: 'medium',
+      },
+      {
+        q: 'HTML tags are delineated (marked) by which symbols?',
+        options: ['A. { and }', 'B. [ and ]', 'C. < and >', 'D. ( and )'],
+        answer: 'C. < and >',
+        diff: 'easy',
+      },
+      {
+        q: 'A hypertext document\'s text is encoded using which character systems?',
+        options: ['A. Binary only', 'B. ASCII or Unicode', 'C. Hexadecimal exclusively', 'D. Base64 compression'],
+        answer: 'B. ASCII or Unicode',
+        diff: 'medium',
+      },
+      {
+        q: 'According to this module, the process of an author describing a webpage\'s information in HTML is analogous to:',
+        options: ['A. A router updating its forwarding table', 'B. Adding typesetting directions to a plain typed text using a red pen', 'C. A DNS server performing a lookup', 'D. An OS scheduler updating the process table'],
+        answer: 'B. Adding typesetting directions to a plain typed text using a red pen',
+        diff: 'hard',
+      },
+      {
+        q: 'Which of the following does HTML NOT do directly?',
+        options: ['A. Describe how a page should appear on screen', 'B. Indicate which multimedia resources accompany the document', 'C. Physically transmit the document over the network', 'D. Specify links to other documents'],
+        answer: 'C. Physically transmit the document over the network',
+        diff: 'hard',
+      },
+      {
+        q: 'A hypertext document is considered "similar to a text file" because:',
+        options: ['A. It has no tags at all', 'B. Its underlying text is still encoded character by character', 'C. It cannot store images', 'D. It uses binary instead of text'],
+        answer: 'B. Its underlying text is still encoded character by character',
+        diff: 'medium',
+      },
+      {
+        q: 'Which statement is TRUE about tags in HTML?',
+        options: ['A. They replace the document content entirely', 'B. They tell the browser how to present the content and what is linked', 'C. They are only used for image placement', 'D. Tags are written in binary form'],
+        answer: 'B. They tell the browser how to present the content and what is linked',
+        diff: 'easy',
+      },
+    ],
+  },
+
+  73: {
+    title: 'Networking and the Internet: HTML Structure (head, body, anchor, img)',
+    summary: `**Yeh module kya cover karta hai:**
+- HTML document ki 2 main sections: head aur body
+- Heading tag (h1), paragraph tag (p)
+- Anchor tag aur hyperlinks banana
+- Image tag (img) se image dikhana
+
+**HTML Document Structure:**
+- **<html> ... </html>** — poora document
+- **<head> ... </head>** — preliminary info (jaise title) — screen par display NAHI hota
+- **<body> ... </body>** — woh content jo browser screen par dikhata hai
+
+**Important Tags:**
+- **<title>** — head ke andar, documentation ke liye sirf, screen par nahi
+- **<h1>** — level-one heading (prominently displayed)
+- **<p>** — paragraph text
+
+**Closing Tags:**
+Ending tag mein slash hota hai, e.g., </h1>, </p>
+
+**Hyperlink banana (Anchor Tag):**
+- **<a href="URL">text</a>** — anchor tag
+- href = hypertext reference (URL follow karta hai)
+- Browser mein "here" word highlight hota hai (colored) — click karo to linked page khulti hai
+- Isi tarah se webpages ek doosre se link hote hain
+
+**Image dikhana (img tag):**
+- **<img src="URL">** — image tag
+- src = source (image ka URL)
+- Browser yeh tag dekh kar image ko HTTP server se request karta hai
+- Image tag jahan hoga, image wahan display hogi (body start mein = top, body end mein = bottom)
+
+**Yaad rakho:**
+- Head = screen par nahi dikhta (just info)
+- Body = screen par dikhai deta hai
+- Anchor tag = hyperlinks (href attribute)
+- img tag = images (src attribute)
+- "Incomplete" page wo hota hai jisme link exist kare but anchor tag na ho`,
+    questions: [
+      {
+        q: 'Which section of an HTML document contains content that is NOT displayed on the computer screen?',
+        options: ['A. The body', 'B. The head', 'C. The h1 tag', 'D. The anchor tag'],
+        answer: 'B. The head',
+        diff: 'easy',
+      },
+      {
+        q: 'In HTML, which tag creates a hyperlink to another document?',
+        options: ['A. <img>', 'B. <p>', 'C. <a href="URL">', 'D. <h1>'],
+        answer: 'C. <a href="URL">',
+        diff: 'easy',
+      },
+      {
+        q: 'What does "href" stand for in an anchor tag?',
+        options: ['A. Hypertext resource file', 'B. Hypertext reference', 'C. HTML redirect function', 'D. Host request format'],
+        answer: 'B. Hypertext reference',
+        diff: 'medium',
+      },
+      {
+        q: 'A webpage contains the word "here" as a clickable link but nothing happens when clicked. According to this module, the most likely reason is:',
+        options: ['A. The server is down', 'B. The word "here" was never surrounded by anchor tags with an href parameter', 'C. HTTP is not installed on the browser', 'D. The img tag is missing'],
+        answer: 'B. The word "here" was never surrounded by anchor tags with an href parameter',
+        diff: 'hard',
+      },
+      {
+        q: 'In HTML, where would you place an <img> tag to display an image at the TOP of the webpage?',
+        options: ['A. Inside the <head> tag', 'B. After the </body> tag', 'C. Immediately after the <body> tag', 'D. Inside the <title> tag'],
+        answer: 'C. Immediately after the <body> tag',
+        diff: 'medium',
+      },
+      {
+        q: 'The "src" attribute inside an <img> tag represents:',
+        options: ['A. Script', 'B. Source — the URL where the image file is located', 'C. Style color', 'D. Server request command'],
+        answer: 'B. Source — the URL where the image file is located',
+        diff: 'medium',
+      },
+      {
+        q: 'Which HTML tag creates a "level-one heading" that is displayed prominently on screen?',
+        options: ['A. <p>', 'B. <title>', 'C. <h1>', 'D. <href>'],
+        answer: 'C. <h1>',
+        diff: 'easy',
+      },
+      {
+        q: 'How does a browser display a word that has been properly surrounded with anchor tags?',
+        options: ['A. In bold black text with no other change', 'B. Highlighted in a color, indicating it is a clickable link to another page', 'C. Hidden from the user entirely', 'D. Converted to an image automatically'],
+        answer: 'B. Highlighted in a color, indicating it is a clickable link to another page',
+        diff: 'medium',
+      },
+      {
+        q: 'An HTML document consists of how many main sections?',
+        options: ['A. One (body only)', 'B. Two (head and body)', 'C. Three (head, body, and footer)', 'D. Four (html, head, body, title)'],
+        answer: 'B. Two (head and body)',
+        diff: 'easy',
+      },
+      {
+        q: 'When a browser encounters an <img> tag, what does it do?',
+        options: ['A. It draws a blank box and moves on', 'B. It sends a message to the HTTP server at the specified source URL to retrieve and display the image', 'C. It converts the image into text', 'D. It stores the image in ROM'],
+        answer: 'B. It sends a message to the HTTP server at the specified source URL to retrieve and display the image',
+        diff: 'hard',
+      },
+    ],
+  },
+
+  74: {
+    title: 'Networking and the Internet: More on HTML (W3Schools)',
+    summary: `**Yeh module kya cover karta hai:**
+- HTML seekhne ke liye W3Schools resource
+- <b> tag ka example
+- "Try it Yourself" feature
+
+**W3Schools:**
+HTML aur web technologies sikhne ki ek free online resource hai: https://www.w3schools.com/tags/default.asp
+
+Wahan se aap:
+- HTML ke saare tags ki list dekh sakte ho (left panel mein)
+- Har tag ki definition aur usage dekh sakte ho
+- **"Try it Yourself"** button click kar ke live code run kar sakte ho — left side par code, right side par output
+
+**<b> Tag:**
+- Bold text banata hai without any extra importance
+- Example: "This is normal text - **and this is bold text**"
+- HTML mein: '<p>This is normal text - <b>and this is bold text</b>.</p>'
+
+**Key Point:**
+Is module ka main idea yeh hai ke students ko HTML ke aur tags explore karne chahiye — course ke andar saare tags cover karna possible nahi, lekin W3Schools se self-study ho sakti hai.
+
+**Yaad rakho:**
+- W3Schools = HTML reference website
+- <b> tag = bold text
+- "Try it Yourself" = live coding feature`,
+    questions: [
+      {
+        q: 'According to this module, where can students find detailed information about all HTML tags?',
+        options: ['A. ICANN website', 'B. W3Schools (www.w3schools.com)', 'C. SMTP server documentation', 'D. The operating system\'s help files'],
+        answer: 'B. W3Schools (www.w3schools.com)',
+        diff: 'easy',
+      },
+      {
+        q: 'What does the HTML <b> tag do?',
+        options: ['A. Creates a hyperlink', 'B. Specifies bold text without any extra importance', 'C. Inserts an image', 'D. Creates a paragraph'],
+        answer: 'B. Specifies bold text without any extra importance',
+        diff: 'easy',
+      },
+      {
+        q: 'On W3Schools, what does the "Try it Yourself" button allow a student to do?',
+        options: ['A. Register for a free HTML course certificate', 'B. Run HTML code live and see the output side by side with the code', 'C. Download the entire HTML standard', 'D. Chat with a web developer'],
+        answer: 'B. Run HTML code live and see the output side by side with the code',
+        diff: 'medium',
+      },
+      {
+        q: 'In the W3Schools interface, where is the HTML code shown when using "Try it Yourself"?',
+        options: ['A. Only on the right side', 'B. On the left side, with output on the right', 'C. In a pop-up window above', 'D. Only in a downloadable file'],
+        answer: 'B. On the left side, with output on the right',
+        diff: 'medium',
+      },
+      {
+        q: 'Which HTML tag listed on W3Schools is used as the example in this module?',
+        options: ['A. <p>', 'B. <a>', 'C. <b>', 'D. <img>'],
+        answer: 'C. <b>',
+        diff: 'easy',
+      },
+      {
+        q: 'Why does this module point students to W3Schools rather than teaching all HTML tags directly?',
+        options: ['A. Because HTML is not part of this course at all', 'B. Because there are too many HTML tags to cover entirely within the course, but they can be explored independently', 'C. Because W3Schools only works for advanced students', 'D. Because HTML tags change every week'],
+        answer: 'B. Because there are too many HTML tags to cover entirely within the course, but they can be explored independently',
+        diff: 'medium',
+      },
+      {
+        q: 'The URL given in this module for HTML tag reference is:',
+        options: ['A. https://www.html.org/tags', 'B. https://www.w3schools.com/tags/default.asp', 'C. https://www.myfooddata.com', 'D. https://images.google.com'],
+        answer: 'B. https://www.w3schools.com/tags/default.asp',
+        diff: 'hard',
+      },
+      {
+        q: 'According to the <b> tag definition shown on W3Schools, <b> specifies bold text:',
+        options: ['A. With extra semantic importance', 'B. Without any extra importance', 'C. For headings only', 'D. Only inside anchor tags'],
+        answer: 'B. Without any extra importance',
+        diff: 'medium',
+      },
+      {
+        q: 'Which panel on the W3Schools page shows a list of all HTML tags, as described in this module?',
+        options: ['A. Top panel', 'B. Left panel', 'C. Right panel', 'D. Footer'],
+        answer: 'B. Left panel',
+        diff: 'easy',
+      },
+      {
+        q: 'The main lesson of this module is that HTML knowledge can be extended by:',
+        options: ['A. Memorizing all tags from the textbook', 'B. Using online resources like W3Schools for self-exploration beyond what the course covers', 'C. Only using what the browser supports by default', 'D. Relying on the operating system to generate HTML'],
+        answer: 'B. Using online resources like W3Schools for self-exploration beyond what the course covers',
+        diff: 'medium',
+      },
+    ],
+  },
+
+  75: {
+    title: 'Networking and the Internet: XML',
+    summary: `**Yeh module kya cover karta hai:**
+- HTML ek notation system kyun hai
+- XML ki zaroorat aur definition
+- Semantic Web vs Syntactic Web
+
+**HTML as a Notation System:**
+HTML essentially ek notational system hai jisse text document — saath mein uski appearance — ek simple text file mein encode ho sakti hai. Isi tarah se non-textual cheezein bhi encode ho sakti hain — example: sheet music ko HTML-jaisi tag system se represent kar sakte hain.
+
+**XML (eXtensible Markup Language):**
+- XML ek **standardized style** hai markup language banane ke liye — har application ke liye alag alag markup language banana zaroori nahi
+- XML ek simplified derivative hai **SGML (Standard Generalized Markup Language)** ka
+- HTML itself XML standard par based ek markup language hai (although original HTML XML se pehle thi, isliye XHTML banaya gaya jo rigorously XML follow karta hai)
+- XML se mathematics, multimedia presentations, aur music ke liye markup languages bani hain
+
+**Semantic vs Syntactic Web:**
+- Current Web = **Syntactic Web** — sirf words match hote hain (appearance-based tags)
+- XML allows **Semantic tags** — e.g., '<ingredient>' tag — jo meaning batata hai
+- Semantic tags se search engines MUCH better kaam kar sakte hain
+- Example: Agar "spinach" ingredient ke roop mein tag ho, search engine woh recipes dhundh sakta hai jo spinach NAHI use karti — sirf word "spinach" text mein hona kaafi nahi
+- Is approach se ek **World Wide Semantic Web** ban sakta hai jahan meaning (semantics) matter kare, na sirf appearance
+
+**Yaad rakho:**
+- XML = eXtensible Markup Language
+- SGML = XML ka parent standard
+- HTML = XML par based (strictly: XHTML)
+- Current Web = Syntactic (word matching)
+- Future goal = Semantic Web (meaning-based)`,
+    questions: [
+      {
+        q: 'What does XML stand for?',
+        options: ['A. Extended Markup Logic', 'B. eXtensible Markup Language', 'C. External Media Language', 'D. Executable Markup Layer'],
+        answer: 'B. eXtensible Markup Language',
+        diff: 'easy',
+      },
+      {
+        q: 'XML is described in this module as a simplified derivative of which older standard?',
+        options: ['A. HTML', 'B. HTTP', 'C. SGML (Standard Generalized Markup Language)', 'D. SMTP'],
+        answer: 'C. SGML (Standard Generalized Markup Language)',
+        diff: 'hard',
+      },
+      {
+        q: 'The CURRENT World Wide Web is classified as a "Syntactic Web" rather than a "Semantic Web." What does this mean?',
+        options: ['A. It uses XML instead of HTML', 'B. It only matches words/text appearance rather than understanding meaning', 'C. It fully understands the content and context of all documents', 'D. It uses binary encoding for all pages'],
+        answer: 'B. It only matches words/text appearance rather than understanding meaning',
+        diff: 'medium',
+      },
+      {
+        q: 'In the recipe example, why would semantic tags like <ingredient> allow better search results than the current syntactic approach?',
+        options: ['A. They make pages load faster', 'B. A search engine could identify recipes that contain or do NOT contain specific ingredients as meaning — not just as text occurrences', 'C. They reduce file size', 'D. They replace HTTP entirely'],
+        answer: 'B. A search engine could identify recipes that contain or do NOT contain specific ingredients as meaning — not just as text occurrences',
+        diff: 'hard',
+      },
+      {
+        q: 'Why does this module mention XHTML?',
+        options: ['A. It is a video format standard', 'B. It is the version of HTML that rigorously adheres to XML, because the original HTML predated XML', 'C. It replaced HTTP', 'D. It is used exclusively for mobile browsers'],
+        answer: 'B. It is the version of HTML that rigorously adheres to XML, because the original HTML predated XML',
+        diff: 'hard',
+      },
+      {
+        q: 'XML provides a good example of how standards are designed to have wide-ranging applications. This means XML:',
+        options: ['A. Works only for music notation', 'B. Develops a standard FOR markup languages in general, not one markup language for each application', 'C. Replaces all existing markup languages immediately', 'D. Requires SGML to function'],
+        answer: 'B. Develops a standard FOR markup languages in general, not one markup language for each application',
+        diff: 'medium',
+      },
+      {
+        q: 'Markup languages developed following the XML standard possess uniformity that allows them to:',
+        options: ['A. Replace DNS', 'B. Be combined to obtain complex markup languages for documents mixing text, music, and math', 'C. Run only on Linux servers', 'D. Eliminate the need for hyperlinks'],
+        answer: 'B. Be combined to obtain complex markup languages for documents mixing text, music, and math',
+        diff: 'medium',
+      },
+      {
+        q: 'In the sheet music example, which XML-like symbols are used to delineate tags, just as in HTML?',
+        options: ['A. [ and ]', 'B. < and >', 'C. { and }', 'D. # and @'],
+        answer: 'B. < and >',
+        diff: 'easy',
+      },
+      {
+        q: 'The World Wide Semantic Web, as described in this module, differs from today\'s Syntactic Web by:',
+        options: ['A. Using faster servers', 'B. Marking documents according to their MEANING rather than just their appearance', 'C. Removing all images from web pages', 'D. Using binary instead of text for storage'],
+        answer: 'B. Marking documents according to their MEANING rather than just their appearance',
+        diff: 'medium',
+      },
+      {
+        q: 'HTML is related to XML in which way?',
+        options: ['A. HTML is completely unrelated to XML', 'B. HTML is a markup language based on the XML standard', 'C. XML was invented after XHTML and follows it', 'D. XML is a subset of HTML'],
+        answer: 'B. HTML is a markup language based on the XML standard',
+        diff: 'medium',
+      },
+    ],
+  },
+
+  76: {
+    title: 'Networking and the Internet: Client Side and Server Side',
+    summary: `**Yeh module kya cover karta hai:**
+- Client-side vs server-side activities
+- Examples: travel agent, search engine, web mail
+- Technologies: JavaScript, Java Applets, Flash (client-side); CGI, JSP, ASP, PHP (server-side)
+- Security/ethical concerns
+
+**Client-Side vs Server-Side:**
+Jab ek webpage sirf static text dikhaye — tab browser sirf HTML fetch aur display karta hai. Lekin animations, order forms, ya customized pages ke liye:
+- **Client-side activity** — browser (client) ke upar perform hoti hai
+- **Server-side activity** — webserver ke upar perform hoti hai
+
+**Examples:**
+- **Travel agent website** — customer destinations/dates select karta hai (client-side) → info server par jati hai → server customized page banata hai (server-side) → user ko wapas bhejta hai
+- **Search engine** — user query type karta hai (client-side) → server search result page banata hai (server-side)
+- **Web mail** — webserver mail server se info lata hai (server-side) aur browser mein pages banata hai; user message type karta hai (client-side) → webserver mail server ko bhejta hai (server-side)
+
+**Client-Side Technologies:**
+- **JavaScript** (Netscape ne banaya) — HTML source mein embedded programs, browser execute karta hai
+- **Java Applets** (Sun Microsystems) — separate program units browser ko transfer ho kar execute hoti hain
+- **Flash** (Macromedia) — extensive multimedia client-side presentations
+
+**Server-Side Technologies:**
+- **CGI (Common Gateway Interface)** — early standard, clients server par stored programs execute kara sakte hain
+- **Servlets** (Sun) — CGI ka variation
+- **JSP (JavaServer Pages)** — Sun, webpage templates server par
+- **ASP (Active Server Pages)** — Microsoft ka approach
+- **PHP** (originally "Personal Home Page," ab "PHP Hypertext Preprocessor") — open source, server-side functionality
+
+**Security/Ethical Concerns:**
+- Webserver programs clients ko transfer kare → client blindly execute kare = security risk (server malicious ho sakta hai)
+- Client programs server ko execute kara sake → server blindly execute kare = security breach
+- Dono sides ke liye ethical aur security questions arise hote hain
+
+**Yaad rakho:**
+- JavaScript = client-side, Netscape
+- PHP = open source, server-side
+- CGI = earliest server-side standard
+- JSP = Sun (Java-based), ASP = Microsoft`,
+    questions: [
+      {
+        q: 'When a user fills in a form on a travel agency website and submits it, constructing a customized response page is a:',
+        options: ['A. Client-side activity', 'B. Server-side activity', 'C. DNS lookup', 'D. P2P activity'],
+        answer: 'B. Server-side activity',
+        diff: 'easy',
+      },
+      {
+        q: 'JavaScript was developed by which company?',
+        options: ['A. Microsoft', 'B. Sun Microsystems', 'C. Netscape Communications', 'D. Macromedia'],
+        answer: 'C. Netscape Communications',
+        diff: 'medium',
+      },
+      {
+        q: 'Which technology is specifically described as an "open source" server-side system?',
+        options: ['A. JSP', 'B. ASP', 'C. CGI', 'D. PHP'],
+        answer: 'D. PHP',
+        diff: 'medium',
+      },
+      {
+        q: 'PHP originally stood for:',
+        options: ['A. PHP Hypertext Preprocessor', 'B. Personal Home Page', 'C. Public Hypertext Protocol', 'D. Python Hypertext Page'],
+        answer: 'B. Personal Home Page',
+        diff: 'hard',
+      },
+      {
+        q: 'Java Applets, developed by Sun Microsystems, work by:',
+        options: ['A. Running entirely on the server without any browser involvement', 'B. Being transferred to the browser and then executed there as requested in the HTML source', 'C. Replacing the browser entirely', 'D. Running inside the router'],
+        answer: 'B. Being transferred to the browser and then executed there as requested in the HTML source',
+        diff: 'medium',
+      },
+      {
+        q: 'CGI (Common Gateway Interface) was an early means of allowing clients to:',
+        options: ['A. Upload images directly into HTML', 'B. Request the execution of programs stored at a server', 'C. Browse pages without an internet connection', 'D. Access router forwarding tables'],
+        answer: 'B. Request the execution of programs stored at a server',
+        diff: 'medium',
+      },
+      {
+        q: 'What is the security risk if a client blindly executes any program sent by a webserver?',
+        options: ['A. None; this is completely safe', 'B. The client opens itself to malicious activities by the server', 'C. Only server-side data is at risk', 'D. The browser becomes slower'],
+        answer: 'B. The client opens itself to malicious activities by the server',
+        diff: 'medium',
+      },
+      {
+        q: 'Microsoft\'s approach to server-side webpage template construction is called:',
+        options: ['A. JSP', 'B. PHP', 'C. ASP (Active Server Pages)', 'D. CGI'],
+        answer: 'C. ASP (Active Server Pages)',
+        diff: 'medium',
+      },
+      {
+        q: 'A user typing a search query into Google is an example of which type of activity?',
+        options: ['A. Server-side', 'B. Client-side', 'C. DNS resolution', 'D. A router forwarding event'],
+        answer: 'B. Client-side',
+        diff: 'easy',
+      },
+      {
+        q: 'In web mail, when the webserver builds a page containing emails retrieved from a mail server and sends it to the user\'s browser, this is a:',
+        options: ['A. Client-side activity', 'B. Server-side activity', 'C. P2P activity', 'D. Link-layer activity'],
+        answer: 'B. Server-side activity',
+        diff: 'hard',
+      },
+    ],
+  },
+
+  77: {
+    title: 'Networking and the Internet: Layered Approach to Internet Software (I)',
+    summary: `**Yeh module kya cover karta hai:**
+- Package shipping analogy
+- Internet software ke 4 layers
+- Message ka journey (top se neeche)
+
+**Package Shipping Analogy:**
+Gift bhejne ki tarah sochein:
+1. Aap (user) — gift wrap karo, address likho
+2. Shipping company — container mein rakhti hai, airline ko deti hai
+3. Airline — container aircraft mein rakh kar destination tak bhejti hai
+Har level neeche wale ko "abstract tool" ki tarah use karta hai (aapko airline ki details nahi jaanni).
+
+**Internet Software ke 4 Layers:**
+Internet communication bhi isi 3-level hierarchy ki tarah hai — lekin **4 layers** hoti hain:
+1. **Application Layer** — message prepare karta hai, destination address provide karta hai
+2. **Transport Layer** — message ko packets mein todata hai (segmentation), sequence numbers add karta hai
+3. **Network Layer** — har packet ko intermediate address assign karta hai, forwarding table use karta hai
+4. **Link Layer** — actual physical transmission handle karta hai
+
+**Message Flow (Origin se Destination tak):**
+- Application layer → Transport layer → Network layer → Link layer → (physical network) → destination par ulta order
+
+**Intermediate Stops (Routers):**
+Intermediate routers par sirf **Network Layer aur Link Layer** hoti hain — Application aur Transport nahi. Yeh isliye ke router sirf packet forward karta hai, full message reassemble nahi karta.
+
+**Yaad rakho:**
+- 4 layers: Application, Transport, Network, Link (upar se neeche)
+- Transport layer = message ko packets mein todata hai
+- Network layer = direction decide karta hai (forwarding table)
+- Link layer = actual transmission
+- Routers par sirf Network + Link layer hoti hain`,
+    questions: [
+      {
+        q: 'How many software layers does the Internet use for communication, as described in this module?',
+        options: ['A. Two', 'B. Three', 'C. Four', 'D. Seven'],
+        answer: 'C. Four',
+        diff: 'easy',
+      },
+      {
+        q: 'In the package-shipping analogy, which layer corresponds to "you" wrapping and addressing the gift?',
+        options: ['A. Link layer', 'B. Network layer', 'C. Application layer', 'D. Transport layer'],
+        answer: 'C. Application layer',
+        diff: 'medium',
+      },
+      {
+        q: 'Which layer is responsible for dividing a long message into small segments (packets)?',
+        options: ['A. Application layer', 'B. Link layer', 'C. Network layer', 'D. Transport layer'],
+        answer: 'D. Transport layer',
+        diff: 'medium',
+      },
+      {
+        q: 'Why does the transport layer divide messages into small packets instead of sending them whole?',
+        options: ['A. To reduce the number of IP addresses used', 'B. Because a single long message would obstruct other messages at routers, while small packets can interweave', 'C. To avoid using DNS', 'D. Because the link layer cannot handle any data at all'],
+        answer: 'B. Because a single long message would obstruct other messages at routers, while small packets can interweave',
+        diff: 'hard',
+      },
+      {
+        q: 'Which layers are present at INTERMEDIATE ROUTERS (not at origin or destination)?',
+        options: ['A. Application and Transport only', 'B. All four layers', 'C. Network and Link layers only', 'D. Transport and Network only'],
+        answer: 'C. Network and Link layers only',
+        diff: 'hard',
+      },
+      {
+        q: 'The network layer\'s primary job at each step of a packet\'s journey is:',
+        options: ['A. To reassemble the final message', 'B. To divide the message into packets', 'C. To decide which direction to forward the packet using the forwarding table', 'D. To physically transmit bits on the wire'],
+        answer: 'C. To decide which direction to forward the packet using the forwarding table',
+        diff: 'medium',
+      },
+      {
+        q: 'Which layer handles the actual physical transmission of packets from one machine to the next?',
+        options: ['A. Application layer', 'B. Transport layer', 'C. Network layer', 'D. Link layer'],
+        answer: 'D. Link layer',
+        diff: 'easy',
+      },
+      {
+        q: 'A message "typically originates" in which layer?',
+        options: ['A. Link layer', 'B. Network layer', 'C. Application layer', 'D. Transport layer'],
+        answer: 'C. Application layer',
+        diff: 'easy',
+      },
+      {
+        q: 'The shipping-company analogy (module 77) maps to a THREE-level hierarchy. The Internet has FOUR layers. Which layer does NOT have a direct equivalent in the shipping analogy?',
+        options: ['A. Application layer', 'B. Transport layer', 'C. Link layer', 'D. The analogy is extended — each shipping role maps to a different layer depending on context'],
+        answer: 'D. The analogy is extended — each shipping role maps to a different layer depending on context',
+        diff: 'hard',
+      },
+      {
+        q: 'At the DESTINATION, what does the transport layer do with the received packets?',
+        options: ['A. Forward them to the next router', 'B. Collect and reassemble them into the original message using sequence numbers', 'C. Assign new IP addresses', 'D. Convert them back to HTTP format only'],
+        answer: 'B. Collect and reassemble them into the original message using sequence numbers',
+        diff: 'medium',
+      },
+    ],
+  },
+
+  78: {
+    title: 'Networking and the Internet: Layered Approach to Internet Software (II)',
+    summary: `**Yeh module kya cover karta hai:**
+- Application layer ka kaam detail mein
+- Transport layer — packets, sequence numbers
+- Network layer — forwarding, routing
+- Message ka complete journey trace karna
+
+**Application Layer:**
+- Message prepare karta hai aur destination address provide karta hai
+- DNS name servers use kar ke mnemonic address ko IP address mein convert karta hai (jaise shipping company ko compatible address chahiye)
+- Transport layer ko message hand over karta hai
+
+**Transport Layer (detail):**
+- Application layer se messages accept karta hai
+- Messages ko small segments mein divide karta hai (taake routers block na hon)
+- Har segment ko **sequence number** deta hai — taake destination par sahi order mein reassemble ho sake
+- In segments ko **packets** kehte hain (network layer ko hand over hotay hain)
+- Destination par: packets receive karta hai → sequence numbers se reassemble karta hai → application layer ko deta hai
+
+**Network Layer:**
+- Packets ko individual, unrelated messages ki tarah treat karta hai (transport layer se packets mile)
+- Har packet different path le sakta hai Internet se guzarte hue
+- Intermediate stops par: forwarding table se direction decide karta hai
+- Final destination par: realize karta hai ke packet pahunch gaya, transport layer ko deta hai
+
+**Link Layer:**
+- Actual communication details handle karta hai (specific network ke liye — Ethernet ya WiFi)
+- Ethernet network par: CSMA/CD apply karta hai
+- WiFi network par: CSMA/CA apply karta hai
+
+**Summary of all 4 layers:**
+| Layer | Kya karta hai |
+|---|---|
+| Application | Message banata hai, address deta hai |
+| Transport | Packets mein toadta hai, reassemble karta hai |
+| Network | Packets ko direction deta hai (forwarding) |
+| Link | Actual transmission (Ethernet/WiFi) |
+
+**Yaad rakho:**
+- Packets = transport layer ke segments jinhein network layer treat karta hai
+- Packet ka path alag ho sakta hai original message ke baaki packets se
+- Link layer hi actual wire/wireless transmission karta hai`,
+    questions: [
+      {
+        q: 'The application layer converts a mnemonic destination address into an IP address using:',
+        options: ['A. The forwarding table inside the router', 'B. DNS name servers within the Internet', 'C. The link layer\'s CSMA/CD protocol', 'D. The transport layer\'s sequence numbers'],
+        answer: 'B. DNS name servers within the Internet',
+        diff: 'medium',
+      },
+      {
+        q: 'Once the transport layer adds sequence numbers to segments and hands them to the network layer, how does the network layer treat each packet?',
+        options: ['A. As part of one related group that must travel together', 'B. As individual, unrelated messages until they reach the transport layer at the final destination', 'C. As a single merged super-packet', 'D. Only in the order the transport layer assigned'],
+        answer: 'B. As individual, unrelated messages until they reach the transport layer at the final destination',
+        diff: 'hard',
+      },
+      {
+        q: 'Is it possible for packets belonging to the SAME original message to travel different paths through the Internet?',
+        options: ['A. No, all packets must follow the same path', 'B. Yes, it is quite possible', 'C. Only if the sender requests it explicitly', 'D. Only for video streaming, not email'],
+        answer: 'B. Yes, it is quite possible',
+        diff: 'medium',
+      },
+      {
+        q: 'If the network an end machine is connected to is Ethernet, which protocol does the link layer apply?',
+        options: ['A. CSMA/CA', 'B. CSMA/CD', 'C. HTTP', 'D. SMTP'],
+        answer: 'B. CSMA/CD',
+        diff: 'medium',
+      },
+      {
+        q: 'At the final destination, which layer is the first to recognize that a packet has arrived at its intended end point?',
+        options: ['A. Application layer', 'B. Transport layer', 'C. Network layer', 'D. Link layer'],
+        answer: 'C. Network layer',
+        diff: 'hard',
+      },
+      {
+        q: 'Why does the transport layer add sequence numbers to packets?',
+        options: ['A. To assign IP addresses to each packet', 'B. So that packets can be correctly reassembled into the original message at the destination', 'C. To tell routers which path to take', 'D. To increase the packet\'s hop count'],
+        answer: 'B. So that packets can be correctly reassembled into the original message at the destination',
+        diff: 'medium',
+      },
+      {
+        q: 'The application layer\'s responsibility regarding addressing is analogous to:',
+        options: ['A. A router updating its forwarding table', 'B. Providing an address compatible with the Internet infrastructure (like writing an address compatible with a shipping company\'s requirements)', 'C. Adding a hop count to each packet', 'D. Applying CSMA/CA to avoid collisions'],
+        answer: 'B. Providing an address compatible with the Internet infrastructure (like writing an address compatible with a shipping company\'s requirements)',
+        diff: 'medium',
+      },
+      {
+        q: 'Which layer ultimately delivers the reassembled message to the correct "unit" within the application layer?',
+        options: ['A. Network layer', 'B. Link layer', 'C. Transport layer', 'D. The router\'s network layer'],
+        answer: 'C. Transport layer',
+        diff: 'medium',
+      },
+      {
+        q: 'The Internet\'s response time is measured in milliseconds despite all four layers being involved in every transmission. Why does the module highlight this as "somewhat amazing"?',
+        options: ['A. Because it proves routers are not needed', 'B. Because the complex multi-layer process with multiple stops happens so fast that many transactions appear instantaneous', 'C. Because milliseconds is actually very slow for modern computers', 'D. Because the link layer is the only layer that actually runs'],
+        answer: 'B. Because the complex multi-layer process with multiple stops happens so fast that many transactions appear instantaneous',
+        diff: 'hard',
+      },
+      {
+        q: 'A WiFi link layer applies which protocol instead of CSMA/CD?',
+        options: ['A. HTTP', 'B. SMTP', 'C. CSMA/CA', 'D. TCP'],
+        answer: 'C. CSMA/CA',
+        diff: 'easy',
+      },
+    ],
+  },
+
+  79: {
+    title: 'Networking and the Internet: Layered Approach to Internet Software (III) — Port Numbers',
+    summary: `**Yeh module kya cover karta hai:**
+- Network layer ki detail (forwarding vs routing)
+- Hop count
+- Port numbers
+
+**Network Layer — 2 Main Tasks:**
+1. **Forwarding** — packets ko Internet ke through relay karna
+2. **Routing** — forwarding table ko update karna (changing conditions reflect karna)
+   - Example: Router malfunction ho gaya → traffic us direction mein nahi bhejna
+   - Network congested ho gaya → blockage se door rasta lenaa
+
+**Hop Count (Time to Live):**
+- Har packet ke saath ek value attach hoti hai: **hop count** (ya "time to live")
+- Yeh ek limit hai — kitni baar is packet ko forward kiya ja sakta hai
+- Har baar network layer packet forward kare, hop count **1 se minus** hota hai
+- Jab hop count 0 ho jaye → packet automatically discard ho jata hai
+- **Kyun?** — Taake packets Internet mein endlessly circle karte na rahein
+- Initial hop count = **64** (sufficient hai aaj ke Internet ke liye bhi)
+
+**Port Numbers:**
+- Destination par, transport layer decide karta hai ke message application layer ke KAUNSE unit ko dena hai
+- Yeh **port numbers** se hota hai — har application unit ka ek unique port number hota hai
+- Port number message ke address mein append hota hai journey shuru hone se pehle
+- Common (universally accepted) port numbers:
+  - **HTTP server = port 80**
+  - **SMTP mail server = port 25**
+- Users ko port numbers ki parwah nahi hoti — browsers automatically port 80 assume karte hain HTTP ke liye
+
+**Yaad rakho:**
+- Hop count = packet ki "life limit" (default 64)
+- Forwarding = routing table se direction decide
+- Routing = routing table ko update karna
+- Port 80 = HTTP, Port 25 = SMTP
+- Port numbers NOT related to I/O ports (hardware ports)`,
+    questions: [
+      {
+        q: 'What is the purpose of the "hop count" value attached to each packet?',
+        options: ['A. To count the number of users who have viewed the packet', 'B. To limit the number of times a packet can be forwarded, preventing it from circling the Internet endlessly', 'C. To increase packet speed at each router', 'D. To assign a port number to the packet'],
+        answer: 'B. To limit the number of times a packet can be forwarded, preventing it from circling the Internet endlessly',
+        diff: 'medium',
+      },
+      {
+        q: 'What happens to a packet\'s hop count each time the network layer forwards it?',
+        options: ['A. It doubles', 'B. It resets to 64', 'C. It is decremented by one', 'D. It stays the same'],
+        answer: 'C. It is decremented by one',
+        diff: 'easy',
+      },
+      {
+        q: 'An initial hop count of 64 is considered:',
+        options: ['A. Too small for modern Internet', 'B. More than sufficient to allow a packet to find its way through today\'s ISPs', 'C. The exact number of routers in the Internet', 'D. Only sufficient for LAN communication'],
+        answer: 'B. More than sufficient to allow a packet to find its way through today\'s ISPs',
+        diff: 'medium',
+      },
+      {
+        q: 'What is the difference between "forwarding" and "routing" in the context of the network layer?',
+        options: ['A. They are identical terms with no difference', 'B. Forwarding = relaying packets through the Internet; Routing = updating the forwarding table to reflect changing conditions', 'C. Forwarding = updating the table; Routing = sending packets', 'D. Forwarding is done by the transport layer; routing by the link layer'],
+        answer: 'B. Forwarding = relaying packets through the Internet; Routing = updating the forwarding table to reflect changing conditions',
+        diff: 'hard',
+      },
+      {
+        q: 'Port numbers are used to determine:',
+        options: ['A. Which path a packet takes through the Internet', 'B. Which unit within the application layer should receive an incoming message at the destination', 'C. The hop count value', 'D. Which DNS server to contact'],
+        answer: 'B. Which unit within the application layer should receive an incoming message at the destination',
+        diff: 'medium',
+      },
+      {
+        q: 'The default port number for an HTTP web server is:',
+        options: ['A. 25', 'B. 64', 'C. 80', 'D. 443'],
+        answer: 'C. 80',
+        diff: 'medium',
+      },
+      {
+        q: 'The default port number for an SMTP mail server is:',
+        options: ['A. 80', 'B. 25', 'C. 64', 'D. 21'],
+        answer: 'B. 25',
+        diff: 'medium',
+      },
+      {
+        q: 'Why do ordinary users rarely need to know or specify port numbers when browsing?',
+        options: ['A. Port numbers do not exist in practice', 'B. Common applications have universally accepted port numbers that software uses automatically', 'C. Routers assign port numbers at every hop', 'D. Port numbers are embedded in IP addresses'],
+        answer: 'B. Common applications have universally accepted port numbers that software uses automatically',
+        diff: 'medium',
+      },
+      {
+        q: 'A router malfunctions and can no longer forward traffic in one direction. Which network layer task updates the forwarding tables of neighboring routers to reflect this change?',
+        options: ['A. Forwarding', 'B. Link-layer switching', 'C. Routing', 'D. Port assignment'],
+        answer: 'C. Routing',
+        diff: 'hard',
+      },
+      {
+        q: 'This module clarifies that port numbers discussed here are NOT related to:',
+        options: ['A. SMTP servers', 'B. HTTP servers', 'C. The I/O ports discussed in hardware (Chapter 2)', 'D. Application layer units'],
+        answer: 'C. The I/O ports discussed in hardware (Chapter 2)',
+        diff: 'hard',
+      },
+    ],
+  },
+
+  80: {
+    title: 'Networking and the Internet: TCP/IP Protocol Suite',
+    summary: `**Yeh module kya cover karta hai:**
+- OSI model (7 layers) vs Internet's 4-layer model
+- TCP/IP protocol suite
+- TCP vs UDP (transport layer ke 2 options)
+- IP's role (forwarding + routing) aur hop count
+
+**OSI Model:**
+- **OSI (Open System Interconnection)** — International Organization for Standardization (ISO) ka standard
+- 7 layers ka hierarchy (Internet ke 4 ki jagah)
+- Often quoted hai lekin Internet ka de facto standard 4-layer TCP/IP model ban gaya — OSI aaya hi tab jab 4-layer approach already established ho chuki thi
+
+**TCP/IP Protocol Suite:**
+- Internet communication ke liye protocols ka collection
+- Misleading naam — sirf TCP aur IP nahi hain, bahut saare protocols hain
+- **TCP (Transmission Control Protocol)** aur **IP (Internet Protocol)** sirf 2 protocols hain is bade collection mein
+
+**Transport Layer: TCP vs UDP**
+Dono transport layer ke versions hain:
+| | TCP | UDP |
+|---|---|---|
+| Connection | Connection establish karta hai pehle (reliable) | Connectionless — sirf bhejta hai |
+| Reliability | Reliable — acknowledgments + retransmission | Unreliable — no guarantee |
+| Speed/Efficiency | Less efficient | More efficient |
+| Flow control | Haan | Nahi |
+| Congestion control | Haan | Nahi |
+| Use cases | Email (SMTP) | DNS lookups, VoIP |
+
+**TCP ki details:**
+- Pehle destination ko message bhejta hai "message aane wala hai"
+- Destination acknowledge kare tab actual message bheja jata hai
+- Transport layers dono ends par mil kar kaam karte hain
+
+**UDP ki details:**
+- Connectionless — message bheja aur bhool gaya
+- Destination bhi operational hai ya nahi — pata nahi
+- Isi liye "unreliable protocol" kehte hain
+
+**IP (Internet Protocol):**
+- Network layer standard hai
+- 2 tasks: **Forwarding** + **Routing**
+- **Hop count** value attach karta hai (initial = 64), har forward par 1 minus hota hai
+
+**Flow Control vs Congestion Control:**
+- **Flow control** = TCP transmission rate slow kar deta hai taake destination overwhelm na ho
+- **Congestion control** = TCP rate adjust karta hai taake network congestion reduce ho
+
+**Yaad rakho:**
+- OSI = 7 layers, ISO ka, widely referenced lekin replaced
+- TCP = reliable, connection-oriented; UDP = unreliable, connectionless
+- UDP better hai DNS + VoIP ke liye; TCP better hai email ke liye
+- IP = network layer, handles forwarding + routing`,
+    questions: [
+      {
+        q: 'The OSI reference model was produced by which organization?',
+        options: ['A. ICANN', 'B. ISO (International Organization for Standardization)', 'C. Netscape', 'D. IEEE'],
+        answer: 'B. ISO (International Organization for Standardization)',
+        diff: 'medium',
+      },
+      {
+        q: 'Why did the OSI 7-layer model fail to replace the Internet\'s 4-layer approach as the actual standard?',
+        options: ['A. The OSI model was too simple', 'B. The 4-layer approach had already become the de facto Internet standard before OSI arrived', 'C. OSI was never published publicly', 'D. OSI only worked for wireless networks'],
+        answer: 'B. The 4-layer approach had already become the de facto Internet standard before OSI arrived',
+        diff: 'hard',
+      },
+      {
+        q: 'TCP is called a "reliable protocol" because:',
+        options: ['A. It sends faster than UDP', 'B. Transport layers at both origin and destination use acknowledgments and retransmissions to ensure all segments arrive', 'C. It never loses any data regardless of network conditions', 'D. It operates only on wired networks'],
+        answer: 'B. Transport layers at both origin and destination use acknowledgments and retransmissions to ensure all segments arrive',
+        diff: 'medium',
+      },
+      {
+        q: 'UDP is described as a "connectionless protocol" because:',
+        options: ['A. It cannot connect to any server', 'B. It just sends the message to the given address without first establishing a connection or verifying the destination is operational', 'C. It requires a physical cable to function', 'D. It only works with multicast'],
+        answer: 'B. It just sends the message to the given address without first establishing a connection or verifying the destination is operational',
+        diff: 'medium',
+      },
+      {
+        q: 'Which protocol is specifically mentioned as the protocol of choice for DNS lookups and VoIP?',
+        options: ['A. TCP', 'B. HTTP', 'C. UDP', 'D. SMTP'],
+        answer: 'C. UDP',
+        diff: 'medium',
+      },
+      {
+        q: 'Email (SMTP) uses which transport protocol, and why?',
+        options: ['A. UDP, because email is time-sensitive', 'B. TCP, because email is less time-sensitive and benefits from TCP\'s reliability', 'C. HTTP, because email goes through a web browser', 'D. IP directly, bypassing transport layer'],
+        answer: 'B. TCP, because email is less time-sensitive and benefits from TCP\'s reliability',
+        diff: 'hard',
+      },
+      {
+        q: '"Flow control" in TCP means:',
+        options: ['A. TCP stops all routing in the network', 'B. TCP can reduce its transmission rate to avoid overwhelming the destination', 'C. TCP counts the number of hops taken', 'D. TCP assigns port numbers'],
+        answer: 'B. TCP can reduce its transmission rate to avoid overwhelming the destination',
+        diff: 'medium',
+      },
+      {
+        q: '"Congestion control" in TCP means:',
+        options: ['A. TCP blocks all other protocols', 'B. TCP adjusts its transmission rate to alleviate congestion between sender and destination', 'C. TCP sends duplicate packets to ensure delivery', 'D. TCP replaces UDP during high traffic'],
+        answer: 'B. TCP adjusts its transmission rate to alleviate congestion between sender and destination',
+        diff: 'medium',
+      },
+      {
+        q: 'IP (Internet Protocol) is the standard for which layer?',
+        options: ['A. Transport layer', 'B. Application layer', 'C. Network layer', 'D. Link layer'],
+        answer: 'C. Network layer',
+        diff: 'easy',
+      },
+      {
+        q: 'The TCP/IP "protocol suite" name is described as "rather misleading" in this module because:',
+        options: ['A. TCP and IP are not real protocols', 'B. The name suggests only two protocols exist, but it actually refers to a large collection of protocol standards', 'C. TCP and IP work on different networks exclusively', 'D. The suite only works with IPv4, not IPv6'],
+        answer: 'B. The name suggests only two protocols exist, but it actually refers to a large collection of protocol standards',
+        diff: 'hard',
+      },
+    ],
+  },
+
+  81: {
+    title: 'Networking and the Internet: Security — Forms of Attacks',
+    summary: `**Yeh module kya cover karta hai:**
+- Malware aur uski types
+- Virus, Worm, Trojan Horse, Spyware
+- Phishing
+- Denial of Service (DoS) attack aur botnet
+- Spam
+
+**Malware:**
+Network connections se computer attack karne wali malicious software collectively **malware** kehlatati hai. 2 tarike:
+1. Computer par transfer ho kar execute hoti hai
+2. Doosre computer se remotely attack karta hai
+
+**Types of Malware:**
+
+**Virus:**
+- Apne aap ko existing programs mein insert karta hai
+- Jab "host" program execute ho, virus bhi execute hota hai
+- Zyada tar: apne aap ko aur programs mein copy karta hai
+- Kuch viruses: devastating — OS ko degrade karte hain, storage erase karte hain
+
+**Worm:**
+- **Autonomous** program — khud network se transfer hota hai, doosre computers mein jagah banata hai, copies forward karta hai
+- Worm ki ek characteristic: **explosion of copies** — legitimate applications ki performance degrade ho jati hai, poora network overload ho sakta hai
+
+**Trojan Horse:**
+- Desirable program ki tarah disguise karke computer mein daakhil hota hai (game, utility)
+- Andar aane ke baad harmful activities perform karta hai
+- Kabhi kabhi dormant rehta hai (specific date ya event par activate)
+- Common method: **email attachments** — isliye unknown sources ke attachments kabhi nahi kholne chahiye
+
+**Spyware (= Sniffing Software):**
+- Computer ki activities record karta hai, attacker ko report karta hai
+- Malicious use: passwords ya credit card numbers ke liye keystrokes record karna
+- **Phishing** alag hai — information directly maangna (fishing analogy: bait cast karo)
+
+**Denial of Service (DoS) Attack:**
+- Target computer ko messages se overload karna
+- Attacker pehle unsuspecting computers par software plant karta hai → signal dene par saare milkar target ko messages se swamp karte hain
+- Yeh compromised computers = **botnet**
+- Isliye PC ko internet se tab bhi connected chod dena safe nahi — intruder 20 minutes mein exploit attempt karta hai
+
+**Spam:**
+- Unwanted junk email
+- DoS se different: volume system ko nahi, user ko overwhelm karta hai
+- Phishing aur Trojan horse spread karne ka medium bhi hai
+
+**Yaad rakho:**
+- Virus = programs mein insert hota hai (host needed)
+- Worm = autonomous, self-propagating (no host needed)
+- Trojan = disguised as useful software
+- Spyware = records activities (secret)
+- Phishing = information directly maangta hai (disguised as legit source)
+- DoS = messages se overload; Botnet = compromised PCs used for DoS
+- Spam = junk email, user ko overwhelm karta hai`,
+    questions: [
+      {
+        q: 'A virus differs from a worm primarily because a virus:',
+        options: ['A. Can spread autonomously through a network on its own', 'B. Must insert itself into an existing host program and execute when that program runs', 'C. Only attacks mobile phones', 'D. Always arrives via email'],
+        answer: 'B. Must insert itself into an existing host program and execute when that program runs',
+        diff: 'medium',
+      },
+      {
+        q: 'A worm\'s characteristic "explosion of copies" causes:',
+        options: ['A. Improved network performance', 'B. Degraded performance of legitimate applications and potential overload of the entire network', 'C. Increased email delivery speed', 'D. Better DNS resolution'],
+        answer: 'B. Degraded performance of legitimate applications and potential overload of the entire network',
+        diff: 'medium',
+      },
+      {
+        q: 'A Trojan horse program is dangerous because:',
+        options: ['A. It is openly malicious and clearly labeled as dangerous', 'B. It disguises itself as a desirable or useful program, performing harmful activities once inside', 'C. It only affects operating system files immediately', 'D. It can only arrive through physical media, not the internet'],
+        answer: 'B. It disguises itself as a desirable or useful program, performing harmful activities once inside',
+        diff: 'easy',
+      },
+      {
+        q: 'What is the key difference between spyware and phishing?',
+        options: ['A. Spyware steals money; phishing steals files', 'B. Spyware secretly records activities; phishing explicitly asks for information by pretending to be a legitimate entity', 'C. They are identical techniques', 'D. Phishing only works on mobile devices'],
+        answer: 'B. Spyware secretly records activities; phishing explicitly asks for information by pretending to be a legitimate entity',
+        diff: 'hard',
+      },
+      {
+        q: 'What is a "botnet"?',
+        options: ['A. A type of firewall', 'B. A collection of compromised, unsuspecting computers used by an attacker to launch a DoS attack', 'C. A group of legitimate servers sharing load', 'D. A P2P file sharing network'],
+        answer: 'B. A collection of compromised, unsuspecting computers used by an attacker to launch a DoS attack',
+        diff: 'medium',
+      },
+      {
+        q: 'A Denial of Service (DoS) attack works by:',
+        options: ['A. Stealing passwords silently', 'B. Overloading a target computer with a large volume of messages', 'C. Inserting a virus into the target\'s programs', 'D. Disguising malware as a useful application'],
+        answer: 'B. Overloading a target computer with a large volume of messages',
+        diff: 'easy',
+      },
+      {
+        q: 'Why does this module warn users NOT to leave their PC connected to the Internet when not in use?',
+        options: ['A. It wastes electricity', 'B. An unprotected PC connected to the Internet can be exploited within approximately 20 minutes of connection', 'C. DNS lookups fail when no one is using the machine', 'D. The PC automatically installs updates that may be harmful'],
+        answer: 'B. An unprotected PC connected to the Internet can be exploited within approximately 20 minutes of connection',
+        diff: 'hard',
+      },
+      {
+        q: 'How does spam PRIMARILY differ from a DoS attack?',
+        options: ['A. Spam uses fewer messages', 'B. Spam\'s volume overwhelms the person receiving it, not the computer system itself', 'C. DoS only targets mobile phones', 'D. Spam is legal in all countries'],
+        answer: 'B. Spam\'s volume overwhelms the person receiving it, not the computer system itself',
+        diff: 'medium',
+      },
+      {
+        q: 'Trojan horses most commonly arrive on computers through:',
+        options: ['A. Wired LAN cables', 'B. Email attachments from enticing or unknown sources', 'C. Router firmware updates', 'D. DNS cache poisoning'],
+        answer: 'B. Email attachments from enticing or unknown sources',
+        diff: 'easy',
+      },
+      {
+        q: 'The term "phishing" is a play on the word "fishing" because:',
+        options: ['A. It targets fish-related websites', 'B. The attacker casts numerous "lines" (fake messages) hoping someone will "take the bait" and give up their information', 'C. It works only on ocean-based servers', 'D. The process requires physical equipment like fishing gear'],
+        answer: 'B. The attacker casts numerous "lines" (fake messages) hoping someone will "take the bait" and give up their information',
+        diff: 'medium',
+      },
+    ],
+  },
+
+  82: {
+    title: 'Networking and the Internet: Protection and Cures',
+    summary: `**Yeh module kya cover karta hai:**
+- Firewall aur spoofing
+- Spam filters
+- Proxy server
+- Auditing software
+- Antivirus software
+
+**Firewall:**
+Network traffic filter karne wala program — usually gateway par install hota hai:
+- Outgoing messages block kar sakta hai (specific destination addresses)
+- Incoming messages block kar sakta hai (known bad sources — DoS attack terminate karne ka tool)
+- Ek common role: agar incoming message ka origin address region ke ANDAR ka ho — block karo (kyunke yeh indicate karta hai ke koi outsider khud ko insider bata raha hai — **spoofing**)
+- Individual computers par bhi firewall lagta hai
+
+**Spoofing:**
+Khud ko koi aur dikhana = spoofing. Firewall isko detect karta hai origin address check kar ke.
+
+**Spam Filters:**
+- Specifically designed firewalls jo unwanted email block karti hain
+- Sophisticated techniques use karti hain desired vs spam emails distinguish karne ke liye
+- Kuch spam filters **training** se seekhte hain — user examples deta hai, filter apne aap decide karna seekhta hai (AI/probability theory ka use)
+
+**Proxy Server:**
+- Client aur server ke darmiyan intermediary software
+- Bina proxy: client directly server se baat karta hai → server client ke baare mein bahut kuch seekh sakta hai (organization ki internal structure)
+- Proxy ke saath:
+  - Client → proxy server → actual server
+  - Actual server ko sirf proxy server ka existence pata hota hai (asli client ka pata nahi)
+  - 2 advantages:
+    1. Server ko asli client ki jankari nahi milti
+    2. Proxy saare incoming messages filter kar sakta hai (e.g., FTP proxy known viruses check karta hai)
+
+**Auditing Software:**
+- Administrator ka primary tool
+- Firewall ki activities monitor karta hai
+- Message traffic patterns analyze karta hai (sudden increase = alert)
+- Irregularities detect karta hai
+
+**Antivirus Software:**
+- Known viruses aur other infections detect aur remove karta hai
+- Virus-specific, spyware-specific products alag hote hain
+- **Important:** Regularly update karna zaroori hai (naye viruses aate rehte hain)
+- Update karne ke baad bhi 100% guarantee nahi — naya virus pehle kuch computers infect karta hai, tab vaccine banta hai
+
+**Wise user practices:**
+- Unknown sources ke email attachments mat kholo
+- Software reliability confirm karo pehle download karo
+- Pop-up ads respond mat karo
+- PC ko Internet se disconnect karo jab zaroorat na ho
+
+**Yaad rakho:**
+- Firewall = traffic filter, gateway par
+- Spoofing = khud ko kisi aur ki jagah dikhana
+- Spam filter = specialized firewall for emails
+- Proxy server = client ki identity chhupaata hai
+- Antivirus = must be regularly updated`,
+    questions: [
+      {
+        q: 'A firewall installed at an organization\'s gateway that blocks incoming messages with origin addresses INSIDE the region serves to prevent:',
+        options: ['A. DNS lookups from failing', 'B. Spoofing — where an outsider pretends to be an insider by faking an internal origin address', 'C. All legitimate traffic from entering', 'D. Email from being delivered'],
+        answer: 'B. Spoofing — where an outsider pretends to be an insider by faking an internal origin address',
+        diff: 'hard',
+      },
+      {
+        q: 'What makes spam filters different from general firewalls?',
+        options: ['A. Spam filters block all email', 'B. Spam filters are specialized firewalls designed specifically to block unwanted email using sophisticated distinction techniques', 'C. Spam filters only work on web traffic', 'D. Spam filters require no configuration'],
+        answer: 'B. Spam filters are specialized firewalls designed specifically to block unwanted email using sophisticated distinction techniques',
+        diff: 'medium',
+      },
+      {
+        q: 'The PRIMARY advantage of using a proxy server is:',
+        options: ['A. It speeds up all web connections', 'B. It shields the actual client from a server — the server never learns the real client\'s identity — and can filter all server-to-client messages', 'C. It eliminates the need for firewalls', 'D. It replaces the DNS lookup process'],
+        answer: 'B. It shields the actual client from a server — the server never learns the real client\'s identity — and can filter all server-to-client messages',
+        diff: 'medium',
+      },
+      {
+        q: 'Without a proxy server, what risk arises when many clients in an organization communicate directly with external servers?',
+        options: ['A. Clients become too fast', 'B. External servers can gather information about the organization\'s internal structure over time', 'C. DNS stops resolving names', 'D. The router\'s hop count reaches zero'],
+        answer: 'B. External servers can gather information about the organization\'s internal structure over time',
+        diff: 'hard',
+      },
+      {
+        q: 'Auditing software is described as the administrator\'s PRIMARY tool for:',
+        options: ['A. Installing antivirus updates automatically', 'B. Identifying problems before they grow out of control by monitoring traffic and detecting irregularities', 'C. Blocking all external web access', 'D. Generating encryption keys'],
+        answer: 'B. Identifying problems before they grow out of control by monitoring traffic and detecting irregularities',
+        diff: 'medium',
+      },
+      {
+        q: 'Why must antivirus software be REGULARLY updated by downloading new definitions from the vendor?',
+        options: ['A. Old antivirus software deletes itself automatically', 'B. New viruses constantly appear, and updated definitions are needed to detect and remove them', 'C. Antivirus software forgets its rules after 30 days', 'D. Updates improve the software\'s internet connection speed'],
+        answer: 'B. New viruses constantly appear, and updated definitions are needed to detect and remove them',
+        diff: 'easy',
+      },
+      {
+        q: 'Even regularly updated antivirus software cannot guarantee 100% safety because:',
+        options: ['A. Antivirus software is always buggy', 'B. A new virus must first infect some computers before it is discovered and a vaccine is produced — there is always a window of vulnerability', 'C. Firewalls block antivirus updates', 'D. Antivirus only works on Windows'],
+        answer: 'B. A new virus must first infect some computers before it is discovered and a vaccine is produced — there is always a window of vulnerability',
+        diff: 'hard',
+      },
+      {
+        q: 'The "masquerading as a party other than one\'s self" technique is called:',
+        options: ['A. Phishing', 'B. Spoofing', 'C. Spooling', 'D. Sniffing'],
+        answer: 'B. Spoofing',
+        diff: 'easy',
+      },
+      {
+        q: 'An FTP proxy server provides which specific filtering benefit?',
+        options: ['A. It blocks all file transfers', 'B. It can check all incoming files for known viruses before they reach the actual client', 'C. It speeds up FTP downloads by caching files', 'D. It prevents DNS from resolving FTP server addresses'],
+        answer: 'B. It can check all incoming files for known viruses before they reach the actual client',
+        diff: 'medium',
+      },
+      {
+        q: 'Some spam filters use a training process in which the user identifies spam examples. This is an application of which fields?',
+        options: ['A. Hardware manufacturing and ROM design', 'B. Probability theory and artificial intelligence', 'C. DNS configuration and routing protocol design', 'D. Hop count management and port assignment'],
+        answer: 'B. Probability theory and artificial intelligence',
+        diff: 'medium',
+      },
+    ],
+  },
+
+  83: {
+    title: 'Networking and the Internet: Encryption',
+    summary: `**Yeh module kya cover karta hai:**
+- Passwords ki limitations
+- Encryption ki zaroorat
+- HTTPS aur SSL
+- Public-key encryption
+- Digital signatures aur certificate authorities
+
+**Problem with Passwords:**
+Network par messages unknown entities relay kar sakte hain — passwords vulnerable hain. Encryption ensure karta hai ke data intercept bhi ho jaye to confidential rahe.
+
+**HTTPS aur SSL:**
+- **HTTPS** = secure version of HTTP — financial institutions use karti hain
+- Backbone: **SSL (Secure Sockets Layer)** — Netscape ne develop kiya
+- SSL = secure communication links between Web clients and servers
+- Browsers padlock icon dikhate hain SSL in use hone par
+
+**Public-Key Encryption:**
+Counterintuitive idea: encryption ke baare mein jaanna decryption ke liye kaafi nahi!
+- **2 keys** use hoti hain:
+  - **Public key** → encrypt karne ke liye (freely distribute ki jati hai)
+  - **Private key** → decrypt karne ke liye (sender ke paas secretly)
+- Example: Bob public key Alice aur Carol ko deta hai. Dono Bob ko encrypt karke message bhej sakte hain. Lekin Carol Alice ka message read nahi kar sakti — even if wo jaanti hai Alice ne kaise encrypt kiya — kyunke sirf Bob ke paas private key hai.
+
+**Certificate Authorities:**
+Public-key ka problem: public key real hai ya fake (impostor)? If bank impersonator apni key de, aapka message bank nahi, impostor ke paas jayega.
+Solution: **Certificate Authorities** — trusted Internet sites jo parties aur unki public keys ki accurate lists maintain karti hain.
+- **Certificate** = ek package jisme party ka naam + public key hoti hai
+- Organizations apni khud ki certificate authority bhi rakh sakti hain
+
+**Digital Signatures (Authentication):**
+- Public-key systems mein roles reverse ho sakte hain
+- Private key se encrypt karo → sirf us party se aa sakta hai (verification)
+- **Digital signature** = private key se encrypt ki gayi bit pattern — sirf private key holder bana sakta hai
+- Receiver: sender ki public key se decrypt karta hai → message authentic sabit hota hai
+
+**Yaad rakho:**
+- HTTPS = HTTP + SSL (encryption)
+- SSL = Netscape ka, padlock icon = SSL in use
+- Public key = encrypt, Private key = decrypt
+- Certificate Authority = verifies public keys
+- Digital Signature = private key se banaya authentication proof`,
+    questions: [
+      {
+        q: 'SSL (Secure Sockets Layer) was originally developed by which company?',
+        options: ['A. Microsoft', 'B. Netscape', 'C. Sun Microsystems', 'D. IBM'],
+        answer: 'B. Netscape',
+        diff: 'medium',
+      },
+      {
+        q: 'In public-key encryption, which key is used to ENCRYPT messages?',
+        options: ['A. Private key', 'B. Public key', 'C. Session key', 'D. Certificate key'],
+        answer: 'B. Public key',
+        diff: 'easy',
+      },
+      {
+        q: 'In public-key encryption, which key is required to DECRYPT messages?',
+        options: ['A. Public key', 'B. Certificate', 'C. Private key', 'D. SSL key'],
+        answer: 'C. Private key',
+        diff: 'easy',
+      },
+      {
+        q: 'In the Bob/Alice/Carol example: Carol intercepts Alice\'s encrypted message to Bob. Can Carol decrypt it even though she knows how Alice encrypted it?',
+        options: ['A. Yes, easily', 'B. No — only Bob holds the private key needed for decryption', 'C. Yes, if she uses the public key', 'D. Only if she has SSL'],
+        answer: 'B. No — only Bob holds the private key needed for decryption',
+        diff: 'hard',
+      },
+      {
+        q: 'Why is public-key encryption described as "counterintuitive"?',
+        options: ['A. It uses three keys instead of two', 'B. Knowing how messages are encrypted does NOT allow one to decrypt them — defying the intuitive expectation', 'C. It requires a physical padlock', 'D. Public keys cannot be shared'],
+        answer: 'B. Knowing how messages are encrypted does NOT allow one to decrypt them — defying the intuitive expectation',
+        diff: 'hard',
+      },
+      {
+        q: 'A "Certificate Authority" in the context of this module is:',
+        options: ['A. A government agency that assigns IP addresses', 'B. A trusted Internet site that maintains accurate lists of parties and their public keys', 'C. A hardware device that encrypts network traffic', 'D. The SSL layer within HTTPS'],
+        answer: 'B. A trusted Internet site that maintains accurate lists of parties and their public keys',
+        diff: 'medium',
+      },
+      {
+        q: 'A "certificate" (as in a digital certificate) contains:',
+        options: ['A. Only the party\'s IP address', 'B. A party\'s name and that party\'s public key', 'C. A party\'s private key and digital signature', 'D. The URL of the certificate authority only'],
+        answer: 'B. A party\'s name and that party\'s public key',
+        diff: 'medium',
+      },
+      {
+        q: 'A digital signature is created by:',
+        options: ['A. Encrypting with the public key', 'B. Encrypting the message with the sender\'s PRIVATE key', 'C. Applying SSL to the message headers', 'D. Using a certificate authority to sign each byte'],
+        answer: 'B. Encrypting the message with the sender\'s PRIVATE key',
+        diff: 'medium',
+      },
+      {
+        q: 'How does a receiver verify a digital signature?',
+        options: ['A. By using the receiver\'s own private key', 'B. By decrypting the signature with the sender\'s PUBLIC key — only the sender\'s private key could have produced that encryption', 'C. By asking the certificate authority each time', 'D. By comparing hop counts'],
+        answer: 'B. By decrypting the signature with the sender\'s PUBLIC key — only the sender\'s private key could have produced that encryption',
+        diff: 'hard',
+      },
+      {
+        q: 'Most browsers indicate SSL is being used by displaying:',
+        options: ['A. A red warning triangle', 'B. A tiny padlock icon on the computer screen', 'C. A DNS confirmation message', 'D. The word "SSL" in the URL only'],
+        answer: 'B. A tiny padlock icon on the computer screen',
+        diff: 'easy',
+      },
+    ],
+  },
+
+  84: {
+    title: 'Networking and the Internet: Legal Approaches to Network Security',
+    summary: `**Yeh module kya cover karta hai:**
 - Legal remedies for network security
-- US Computer Fraud and Abuse Act (1984, revised)
-- US Electronic Communication Privacy Act (ECPA)
-- Pakistan CyberSecurity Law (2016)
-- Punishments for cybercrimes (hacking, phishing, malware, identity theft, etc.)
+- 2 main issues with legal approaches
+- US laws: Computer Fraud and Abuse Act, ECPA
+- Pakistan: Cybercrime Law 2016, applicable security Acts
 
----
+**Legal Approach ka Idea:**
+Network security strengthen karne ka ek tarika: **legal remedies** — define karo kya legal aur illegal hai, aur illegal actions par punishment ho.
 
-**Simple Understanding:**
+**2 Main Issues (Limitations of Legal Approach):**
+1. **Making something illegal does not stop it** — laws exist hone ke bawajood crimes hote hain
+2. **International law problem** — ek country mein illegal, doosri mein legal ho sakta hai
 
-**Legal Approaches:**
-👉 Making an action illegal is one way to enhance security.
-👉 But laws don't completely stop the action.
-👉 Problem: What's illegal in one country may be legal in another (international law challenge).
+**US Laws:**
 
----
+**Computer Fraud and Abuse Act:**
+- 1984 mein passed, kai baar revised
+- Covers: Worms & Viruses, Theft of Information, aur "many more related things of value"
 
-**US – Computer Fraud and Abuse Act (1984):**
-👉 Passed in 1984, revised many times.
-👉 Covers:
-   - Worms and viruses
-   - Theft of information
-   - Anything of value
+**ECPA (Electronic Communication Privacy Act):**
+- Employers/ISP ko employees ki communications dekhne ka right
+- ISP ke liye private information publicly available karna **illegal** hai
+- Employers employer-owned equipment use hone par information access kar sakte hain
 
----
+**Pakistan — Cybercrime Law 2016:**
+- National Assembly ne 2016 mein pass kiya
+- Punishment: **First offenders = 10 years, Repeat offenders = 20 years**
+- Covers: Hacking, Phishing, Malware, Hacking tools, Identity Theft/Fraud, Electronic Theft
 
-**US – Electronic Communication Privacy Act (ECPA):**
-👉 Addresses employers' and ISPs' rights to look into communications.
-👉 Illegal for ISP to make private information available.
-👉 Employers can access information (especially when employer's equipment is used).
+**Pakistan — Applicable Security Acts (Names + Dates yaad rakhein):**
+- Prevention of Electronic Crimes Ordinance, 2007
+- Electronic Transaction Ordinance, 2002, 2008
+- Pakistan Telecommunication (Re-organization) Act, 1996
+- Wireless Telegraphy Act, 1933
+- Telegraph Act, 1885
+- Federal Investigation Agency Act, 1974
+- Payments and Electronic Fund Transfers Act, 2007
 
----
+**Yaad rakho:**
+- Computer Fraud & Abuse Act = 1984, US
+- Pakistan Cybercrime Law = 2016
+- First offense = 10 years, Repeat = 20 years
+- ECPA = Electronic Communication Privacy Act`,
+    questions: [
+      {
+        q: 'In what year was the US Computer Fraud and Abuse Act originally passed?',
+        options: ['A. 1974', 'B. 1984', 'C. 1996', 'D. 2007'],
+        answer: 'B. 1984',
+        diff: 'medium',
+      },
+      {
+        q: 'What are the TWO main limitations of using legal approaches to network security?',
+        options: ['A. Laws are expensive and slow to write', 'B. Making something illegal does not stop it, and actions illegal in one country may be legal in another', 'C. Judges do not understand technology, and courts are too slow', 'D. Legal approaches only work for email, not web traffic'],
+        answer: 'B. Making something illegal does not stop it, and actions illegal in one country may be legal in another',
+        diff: 'medium',
+      },
+      {
+        q: 'Pakistan\'s National Assembly passed a cybercrime law in which year?',
+        options: ['A. 2007', 'B. 2012', 'C. 2016', 'D. 2002'],
+        answer: 'C. 2016',
+        diff: 'easy',
+      },
+      {
+        q: 'Under Pakistan\'s Cybercrime Law, what is the punishment for FIRST-TIME offenders?',
+        options: ['A. 5 years', 'B. 10 years', 'C. 15 years', 'D. 20 years'],
+        answer: 'B. 10 years',
+        diff: 'medium',
+      },
+      {
+        q: 'Under Pakistan\'s Cybercrime Law, what is the punishment for REPEAT offenders?',
+        options: ['A. 10 years', 'B. 15 years', 'C. 20 years', 'D. Life imprisonment'],
+        answer: 'C. 20 years',
+        diff: 'medium',
+      },
+      {
+        q: 'The ECPA (Electronic Communication Privacy Act) makes it ILLEGAL for ISPs to:',
+        options: ['A. Provide Internet access to employers', 'B. Make private user information publicly available', 'C. Monitor their own network traffic', 'D. Block spam emails'],
+        answer: 'B. Make private user information publicly available',
+        diff: 'medium',
+      },
+      {
+        q: 'Which of the following is the OLDEST Pakistan security-related act listed in this module?',
+        options: ['A. Telegraph Act, 1885', 'B. Wireless Telegraphy Act, 1933', 'C. Federal Investigation Agency Act, 1974', 'D. Pakistan Telecommunication Act, 1996'],
+        answer: 'A. Telegraph Act, 1885',
+        diff: 'hard',
+      },
+      {
+        q: 'Pakistan\'s Cybercrime Law of 2016 covers which of the following offenses?',
+        options: ['A. Only hacking and malware', 'B. Hacking, phishing, malware, hacking tools, identity theft, and electronic theft', 'C. Only identity theft and fraud', 'D. Only international cybercrime, not domestic'],
+        answer: 'B. Hacking, phishing, malware, hacking tools, identity theft, and electronic theft',
+        diff: 'medium',
+      },
+      {
+        q: 'According to the ECPA, under what condition CAN employers access employee communications?',
+        options: ['A. Never — all employee communications are private', 'B. When the employer\'s own equipment is being used', 'C. Only with a court order every time', 'D. Only with the employee\'s written consent'],
+        answer: 'B. When the employer\'s own equipment is being used',
+        diff: 'medium',
+      },
+      {
+        q: 'Which of the following is NOT listed as a Pakistan security act in this module?',
+        options: ['A. Electronic Transaction Ordinance, 2002', 'B. Wireless Telegraphy Act, 1933', 'C. Computer Fraud and Abuse Act, 1984', 'D. Telegraph Act, 1885'],
+        answer: 'C. Computer Fraud and Abuse Act, 1984',
+        diff: 'easy',
+      },
+    ],
+  },
 
-**Pakistan – CyberSecurity Law (2016):**
-👉 National Assembly passed new cybercrime law in 2016.
-👉 Punishment: 10 years for first offenders, 20 years for repeat offenders.
-👉 Covers:
-   - Hacking
-   - Phishing
-   - Malware
-   - Hacking tools
-   - Identity theft/fraud
-   - Electronic theft
+  85: {
+    title: 'Algorithm: An Informal Review',
+    summary: `**Yeh module kya cover karta hai:**
+- Algorithm ki basic definition
+- Real-life examples (chai banana, km to meters)
+- Machine cycle
+- Algorithm execution aur human mind
 
----
+**Algorithm (Basic Definition):**
+Set of steps that define how a task is performed.
 
-**Important Vocabulary:**
-- Computer Fraud and Abuse Act = US federal law against computer crimes
-- ECPA = Electronic Communication Privacy Act
-- Cybercrime = illegal activities using computers/networks
-- Hacking = unauthorized access to computer systems
-- Phishing = fraudulent requests for information
-- Malware = malicious software
-- Identity theft = stealing someone's personal information
-- Electronic theft = stealing digital property
+**Real-Life Examples:**
 
----
-
-**Quick Revision Points:**
-- Laws are a tool but not perfect (international differences).
-- US Computer Fraud and Abuse Act (1984) covers worms, viruses, theft.
-- ECPA governs ISP/employer access to communications.
-- Pakistan's 2016 cybercrime law: up to 20 years for repeat offenders.
-- Covered crimes: hacking, phishing, malware, hacking tools, identity theft, electronic theft.`,
-  questions: [
-    {
-      q: "Which US law addressing computer crimes was passed in 1984 and revised many times?",
-      options: ["A. Electronic Communication Privacy Act", "B. Computer Fraud and Abuse Act", "C. CyberSecurity Law", "D. Digital Millennium Copyright Act"],
-      answer: "B. Computer Fraud and Abuse Act",
-      diff: "easy"
-    },
-    {
-      q: "The US Computer Fraud and Abuse Act covers all of the following EXCEPT:",
-      options: ["A. Worms and viruses", "B. Theft of information", "C. Anything of value", "D. Privacy of communications between employers and employees"],
-      answer: "D. Privacy of communications between employers and employees",
-      diff: "medium"
-    },
-    {
-      q: "Which US law addresses the rights of employers and ISPs to look into communications?",
-      options: ["A. Computer Fraud and Abuse Act", "B. Electronic Communication Privacy Act (ECPA)", "C. Cybersecurity Information Sharing Act", "D. Patriot Act"],
-      answer: "B. Electronic Communication Privacy Act (ECPA)",
-      diff: "easy"
-    },
-    {
-      q: "Under ECPA, it is illegal for an ISP to:",
-      options: ["A. Monitor network traffic", "B. Make private information available", "C. Block spam", "D. Encrypt user data"],
-      answer: "B. Make private information available",
-      diff: "medium"
-    },
-    {
-      q: "According to the module, employers can access information especially when:",
-      options: ["A. The employee is on vacation", "B. The equipment of the employer is used", "C. The employee gives written consent", "D. A court order is obtained"],
-      answer: "B. The equipment of the employer is used",
-      diff: "easy"
-    },
-    {
-      q: "Pakistan's National Assembly passed a new cybercrime law in which year?",
-      options: ["A. 2010", "B. 2012", "C. 2014", "D. 2016"],
-      answer: "D. 2016",
-      diff: "easy"
-    },
-    {
-      q: "Under Pakistan's CyberSecurity Law, the punishment for first offenders is:",
-      options: ["A. 5 years", "B. 10 years", "C. 15 years", "D. 20 years"],
-      answer: "B. 10 years",
-      diff: "easy"
-    },
-    {
-      q: "Under Pakistan's CyberSecurity Law, the punishment for repeat offenders is:",
-      options: ["A. 10 years", "B. 15 years", "C. 20 years", "D. Life imprisonment"],
-      answer: "C. 20 years",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is covered under Pakistan's CyberSecurity Law?",
-      options: ["A. Hacking", "B. Phishing", "C. Malware", "D. All of the above"],
-      answer: "D. All of the above",
-      diff: "easy"
-    },
-    {
-      q: "Making an action illegal:",
-      options: ["A. Completely stops the action", "B. Does not necessarily stop the action", "C. Is the only solution", "D. Has no effect at all"],
-      answer: "B. Does not necessarily stop the action",
-      diff: "easy"
-    },
-    {
-      q: "One issue with international law regarding cybercrime is that:",
-      options: ["A. All countries have the same laws", "B. An action illegal in one country may be legal in another", "C. There are no international laws", "D. Only the US has cyber laws"],
-      answer: "B. An action illegal in one country may be legal in another",
-      diff: "easy"
-    },
-    {
-      q: "The US Computer Fraud and Abuse Act was passed in which year?",
-      options: ["A. 1984", "B. 1996", "C. 2001", "D. 2010"],
-      answer: "A. 1984",
-      diff: "easy"
-    },
-    {
-      q: "The module mentions that Pakistan's CyberSecurity Law covers hacking tools. This means:",
-      options: ["A. Only using tools is illegal", "B. Possessing or distributing hacking tools may be illegal", "C. Only selling tools is illegal", "D. Tools are not covered"],
-      answer: "B. Possessing or distributing hacking tools may be illegal",
-      diff: "medium"
-    },
-    {
-      q: "Identity theft/fraud is covered under:",
-      options: ["A. Only US law", "B. Only Pakistan law", "C. Both US and Pakistan laws", "D. Neither"],
-      answer: "C. Both US and Pakistan laws",
-      diff: "easy"
-    },
-    {
-      q: "The Electronic Communication Privacy Act (ECPA) primarily deals with:",
-      options: ["A. Computer viruses", "B. Privacy of electronic communications", "C. Encryption standards", "D. Firewall requirements"],
-      answer: "B. Privacy of electronic communications",
-      diff: "easy"
-    },
-    {
-      q: "According to the module, the US Computer Fraud and Abuse Act has been:",
-      options: ["A. Repealed", "B. Revised many times", "C. Never changed", "D. Only applied to government computers"],
-      answer: "B. Revised many times",
-      diff: "easy"
-    },
-    {
-      q: "Pakistan's cybercrime law covers electronic theft. This would include:",
-      options: ["A. Stealing physical computers", "B. Stealing digital property (e.g., data, software)", "C. Only stealing money", "D. Only stealing passwords"],
-      answer: "B. Stealing digital property (e.g., data, software)",
-      diff: "medium"
-    },
-    {
-      q: "The source URL provided in the module (thehill.com) is about:",
-      options: ["A. US cyber law details", "B. Judges struggling with cyber crime punishment", "C. Pakistan's law text", "D. International treaty"],
-      answer: "B. Judges struggling with cyber crime punishment",
-      diff: "hard"
-    },
-    {
-      q: "One limitation of legal approaches to network security mentioned is:",
-      options: ["A. Laws are too harsh", "B. International differences in what is legal", "C. Laws are always enforced", "D. No country has cyber laws"],
-      answer: "B. International differences in what is legal",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is NOT explicitly listed as covered by Pakistan's CyberSecurity Law in the module?",
-      options: ["A. Hacking", "B. Phishing", "C. Denial of Service", "D. Electronic theft"],
-      answer: "C. Denial of Service",
-      diff: "medium"
-    }
-  ]
-},
-
-85: {
-  title: "Algorithm: an Informal Review",
-  summary: `**Key Topics Covered:**
-- Definition of algorithm (set of steps for performing a task)
-- Simple algorithm examples: making tea, converting kilometers to meters
-- Machine cycle (fetch, decode, execute)
-- Algorithm execution and human cognition
-
----
-
-**Simple Understanding:**
-
-**What is an Algorithm?**
-👉 A set of steps that define how a task is performed.
-👉 Algorithms are everywhere – from making tea to computer operations.
-
----
-
-**Example 1: Making a Cup of Tea**
+**Chai banana (Cup of Tea):**
 1. Put water in kettle
 2. Boil water
-3. Put tea in water
-4. Add milk
+3. Put Tea in water
+4. Add Milk
 5. Stir
-6. Add sugar
+6. Add Sugar
 7. Put tea in cup
 8. Fetch cup
 
----
-
-**Example 2: Convert Kilometers to Meters**
-1. Take input of kilometers
-2. Multiply the input with 1000
+**KM to Meters Convert:**
+1. Take input of KM's
+2. Multiply input with 1000
 3. Display the result
 
----
+**Machine Cycle:**
+As long as halt instruction has not been executed, continue:
+a. Fetch an instruction
+b. Decode the instruction
+c. Execute the instruction
 
-**Machine Cycle (Computer's Algorithm):**
-👉 As long as the halt instruction has not been executed, continue:
-   a. **Fetch** an instruction
-   b. **Decode** the instruction
-   c. **Execute** the instruction
+**Algorithm Execution:**
+Many researchers believe that human mind ki EVERY activity — imagination, creativity, decision making — is actually the result of **algorithm execution**.
 
----
+**Yaad rakho:**
+- Algorithm = ordered steps to perform a task
+- Machine cycle = Fetch → Decode → Execute (repeat until halt)
+- Human mind ki activities bhi algorithm execution maa seen ki ja sakti hain (researchers believe)`,
+    questions: [
+      {
+        q: 'According to this module, an algorithm is best described as:',
+        options: ['A. A single instruction', 'B. A set of steps that define how a task is performed', 'C. A programming language', 'D. A type of network protocol'],
+        answer: 'B. A set of steps that define how a task is performed',
+        diff: 'easy',
+      },
+      {
+        q: 'To convert KM to Meters, the algorithm multiplies the input by:',
+        options: ['A. 100', 'B. 1000', 'C. 10000', 'D. 10'],
+        answer: 'B. 1000',
+        diff: 'easy',
+      },
+      {
+        q: 'The machine cycle consists of which three steps in order?',
+        options: ['A. Store, Load, Execute', 'B. Fetch, Decode, Execute', 'C. Input, Process, Output', 'D. Compile, Link, Run'],
+        answer: 'B. Fetch, Decode, Execute',
+        diff: 'easy',
+      },
+      {
+        q: 'The machine cycle continues until:',
+        options: ['A. A certain number of cycles is reached', 'B. The halt instruction is executed', 'C. The user presses a key', 'D. Memory becomes full'],
+        answer: 'B. The halt instruction is executed',
+        diff: 'medium',
+      },
+      {
+        q: 'What do many researchers believe about human mental activities like creativity and decision making?',
+        options: ['A. They are completely random and unpredictable', 'B. They are the result of algorithm execution', 'C. They cannot be modeled mathematically', 'D. They only occur in non-computing environments'],
+        answer: 'B. They are the result of algorithm execution',
+        diff: 'medium',
+      },
+      {
+        q: 'In the "Making a Cup of Tea" algorithm, which step comes AFTER "Add Milk"?',
+        options: ['A. Boil water', 'B. Put Tea in water', 'C. Stir', 'D. Add Sugar'],
+        answer: 'C. Stir',
+        diff: 'medium',
+      },
+      {
+        q: 'The KM-to-Meters algorithm has how many steps?',
+        options: ['A. Two', 'B. Three', 'C. Four', 'D. Eight'],
+        answer: 'B. Three',
+        diff: 'easy',
+      },
+      {
+        q: 'In the machine cycle, what does "Decode" mean?',
+        options: ['A. Physically retrieve the instruction from memory', 'B. Interpret the fetched instruction to understand what operation to perform', 'C. Store the result back to memory', 'D. Halt the CPU'],
+        answer: 'B. Interpret the fetched instruction to understand what operation to perform',
+        diff: 'medium',
+      },
+      {
+        q: 'The tea-making algorithm is used in this module to illustrate that algorithms:',
+        options: ['A. Only exist in computers', 'B. Are found in everyday real-life tasks, not just computing', 'C. Must always have exactly 8 steps', 'D. Cannot have steps that involve adding ingredients'],
+        answer: 'B. Are found in everyday real-life tasks, not just computing',
+        diff: 'medium',
+      },
+      {
+        q: 'Which module topic is specifically used to show that algorithms apply to physical machines (computers) executing instructions?',
+        options: ['A. The tea-making example', 'B. The KM conversion', 'C. The machine cycle', 'D. The human mind analogy'],
+        answer: 'C. The machine cycle',
+        diff: 'hard',
+      },
+    ],
+  },
 
-**Algorithm Execution and the Human Mind:**
-👉 Many researchers believe that every activity of the human mind (imagination, creativity, decision making) is the result of algorithm execution.
-
----
-
-**Important Vocabulary:**
-- Algorithm = step-by-step procedure
-- Machine cycle = fetch-decode-execute
-- Fetch = retrieve instruction from memory
-- Decode = interpret instruction
-- Execute = perform instruction
-
----
-
-**Quick Revision Points:**
-- An algorithm is a set of steps.
-- Examples: tea recipe, unit conversion.
-- Computer's machine cycle: fetch → decode → execute.
-- Some believe human thinking follows algorithms.`,
-  questions: [
-    {
-      q: "An algorithm is defined as:",
-      options: ["A. A computer program", "B. A set of steps that define how a task is performed", "C. A type of data structure", "D. A hardware component"],
-      answer: "B. A set of steps that define how a task is performed",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is an example of an algorithm?",
-      options: ["A. Making a cup of tea", "B. Converting kilometers to meters", "C. The machine cycle", "D. All of the above"],
-      answer: "D. All of the above",
-      diff: "easy"
-    },
-    {
-      q: "In the tea-making algorithm, what is the first step?",
-      options: ["A. Boil water", "B. Put tea in water", "C. Put water in kettle", "D. Fetch cup"],
-      answer: "C. Put water in kettle",
-      diff: "easy"
-    },
-    {
-      q: "In the kilometer to meter conversion algorithm, what operation is performed?",
-      options: ["A. Divide by 1000", "B. Multiply by 1000", "C. Add 1000", "D. Subtract 1000"],
-      answer: "B. Multiply by 1000",
-      diff: "easy"
-    },
-    {
-      q: "The three steps of the machine cycle are:",
-      options: ["A. Read, Write, Execute", "B. Fetch, Decode, Execute", "C. Input, Process, Output", "D. Start, Run, Stop"],
-      answer: "B. Fetch, Decode, Execute",
-      diff: "easy"
-    },
-    {
-      q: "The machine cycle continues as long as which instruction has not been executed?",
-      options: ["A. Fetch", "B. Decode", "C. Halt", "D. Jump"],
-      answer: "C. Halt",
-      diff: "easy"
-    },
-    {
-      q: "In the machine cycle, what happens during the 'decode' step?",
-      options: ["A. The instruction is retrieved from memory", "B. The instruction is interpreted", "C. The instruction is performed", "D. The result is stored"],
-      answer: "B. The instruction is interpreted",
-      diff: "medium"
-    },
-    {
-      q: "Many researchers believe that activities of the human mind such as imagination and creativity are:",
-      options: ["A. Not algorithmic", "B. The result of algorithm execution", "C. Random processes", "D. Beyond understanding"],
-      answer: "B. The result of algorithm execution",
-      diff: "easy"
-    },
-    {
-      q: "Which step in the tea-making algorithm comes after 'Add Milk'?",
-      options: ["A. Add Sugar", "B. Stir", "C. Put tea in cup", "D. Boil water"],
-      answer: "B. Stir",
-      diff: "easy"
-    },
-    {
-      q: "The algorithm for converting kilometers to meters includes which of these steps?",
-      options: ["A. Take input of kilometers", "B. Display the result", "C. Multiply by 1000", "D. All of the above"],
-      answer: "D. All of the above",
-      diff: "easy"
-    },
-    {
-      q: "In the machine cycle, the 'execute' step means:",
-      options: ["A. Fetch the next instruction", "B. Perform the decoded instruction", "C. Halt the processor", "D. Store the result"],
-      answer: "B. Perform the decoded instruction",
-      diff: "easy"
-    },
-    {
-      q: "The final step in the tea-making algorithm (as listed) is:",
-      options: ["A. Put tea in cup", "B. Add Sugar", "C. Fetch cup", "D. Stir"],
-      answer: "C. Fetch cup",
-      diff: "easy"
-    },
-    {
-      q: "An algorithm must be:",
-      options: ["A. Ambiguous", "B. Well-defined and step-by-step", "C. Random", "D. Unpredictable"],
-      answer: "B. Well-defined and step-by-step",
-      diff: "easy"
-    },
-    {
-      q: "The machine cycle is an example of:",
-      options: ["A. A hardware component", "B. An algorithm executed by the CPU", "C. A programming language", "D. A network protocol"],
-      answer: "B. An algorithm executed by the CPU",
-      diff: "easy"
-    },
-    {
-      q: "According to the module, which of the following human activities is suggested to result from algorithm execution?",
-      options: ["A. Decision making", "B. Imagination", "C. Creativity", "D. All of the above"],
-      answer: "D. All of the above",
-      diff: "easy"
-    },
-    {
-      q: "What is the purpose of the 'Fetch' step in the machine cycle?",
-      options: ["A. To execute the instruction", "B. To retrieve an instruction from memory", "C. To decode the instruction", "D. To halt the processor"],
-      answer: "B. To retrieve an instruction from memory",
-      diff: "easy"
-    },
-    {
-      q: "How many steps are listed in the tea-making algorithm?",
-      options: ["A. 5", "B. 6", "C. 7", "D. 8"],
-      answer: "D. 8",
-      diff: "easy"
-    },
-    {
-      q: "The conversion from kilometers to meters uses what conversion factor?",
-      options: ["A. 100", "B. 1000", "C. 10000", "D. 10"],
-      answer: "B. 1000",
-      diff: "easy"
-    },
-    {
-      q: "After boiling water in the tea algorithm, the next step is:",
-      options: ["A. Add Milk", "B. Put Tea in water", "C. Stir", "D. Add Sugar"],
-      answer: "B. Put Tea in water",
-      diff: "easy"
-    },
-    {
-      q: "The module suggests that algorithm execution may underlie:",
-      options: ["A. Only computer operations", "B. Only mathematical calculations", "C. Human mind activities including creativity", "D. Only simple tasks"],
-      answer: "C. Human mind activities including creativity",
-      diff: "easy"
-    }
-  ]
-},
-
-
-86: {
-  title: "Algorithm: Formal Definition of Algorithm",
-  summary: `**Key Topics Covered:**
-- Formal definition of algorithm
-- Ordered set vs sequence (parallel processing)
-- Executable (effective) steps
-- Unambiguous steps
-- Terminating process
-
----
-
-**Simple Understanding:**
+  86: {
+    title: 'Algorithm: Formal Definition',
+    summary: `**Yeh module kya cover karta hai:**
+- Algorithm ki formal definition
+- 4 properties: Ordered, Executable, Unambiguous, Terminating
 
 **Formal Definition:**
-👉 An algorithm is an ordered set of unambiguous, executable steps that defines a terminating process.
+An algorithm is an **ordered set of unambiguous, executable steps** that defines a **terminating process**.
 
-**Key Characteristics:**
+**4 Key Properties:**
 
-1. **Ordered Set (not necessarily a sequence):**
-   - Steps have a well-established structure in terms of execution order.
-   - Does NOT mean a simple linear sequence (e.g., parallel processing allowed).
-   - Example: Flip-flops producing output individually; together they have meaning.
+**1. Ordered:**
+- Steps ka ek well-established structure hota hai execution order ke lihaz se
+- "Ordered" necessarily "sequential" nahi hota — parallel processing mein steps saath bhi ho sakti hain
+- Flip-flops individually output dete hain phir saath meaning banate hain
 
-2. **Executable (Effective):**
-   - Each step must be possible to perform.
-   - Computer scientists use "effective" to mean executable.
+**2. Executable:**
+- Har step actually perform ki ja sake
+- "Make a list of all positive integers" = NOT executable (infinite list)
+- Computer scientists "effective" ka term use karte hain = executable concept capture karna
 
-3. **Unambiguous:**
-   - The information in the state of the process must be sufficient to determine uniquely and completely the actions required by each step.
-   - No confusion or multiple interpretations.
+**3. Unambiguous:**
+- State of the process sufficient honi chahiye ke har step ka action uniquely aur completely determine ho sake
+- "Make a pretty cartoon!" = ambiguous (kaunsa cartoon? kaisa?)
+- Expert ke liye unambiguous step, layperson ke liye ambiguous ho sakta hai
 
-4. **Terminating Process:**
-   - The execution of an algorithm must lead to an end (not infinite loop).
+**4. Terminating:**
+- Algorithm ki execution end honi chahiye
+- Exception cases: hospital patient monitor karna, aircraft altitude maintain karna — yeh technically "terminating" nahi hain (chalta rehta hai)
 
----
+**Yaad rakho:**
+- Formal definition: ordered + unambiguous + executable + terminating
+- "Effective" = computer science mein executable ka synonym
+- Infinite task = not executable
+- Ambiguous = insufficient information to determine next step uniquely`,
+    questions: [
+      {
+        q: 'According to the formal definition in this module, an algorithm is:',
+        options: ['A. Any set of instructions', 'B. An ordered set of unambiguous, executable steps that defines a terminating process', 'C. A programming language command', 'D. A network routing table'],
+        answer: 'B. An ordered set of unambiguous, executable steps that defines a terminating process',
+        diff: 'easy',
+      },
+      {
+        q: 'Why is "Make a list of all positive integers" NOT a valid executable algorithm step?',
+        options: ['A. It contains a verb', 'B. It would never terminate — listing all positive integers is an infinite task', 'C. It is ambiguous', 'D. It is not ordered'],
+        answer: 'B. It would never terminate — listing all positive integers is an infinite task',
+        diff: 'medium',
+      },
+      {
+        q: 'The instruction "Make a pretty cartoon!" violates which property of a formal algorithm?',
+        options: ['A. Termination', 'B. Order', 'C. Unambiguousness', 'D. Executability'],
+        answer: 'C. Unambiguousness',
+        diff: 'medium',
+      },
+      {
+        q: 'Computer scientists use which term to capture the concept of "executable" in the context of algorithms?',
+        options: ['A. Ordered', 'B. Effective', 'C. Terminating', 'D. Semantic'],
+        answer: 'B. Effective',
+        diff: 'hard',
+      },
+      {
+        q: '"Ordered" in the formal algorithm definition does NOT necessarily mean "sequential." Why?',
+        options: ['A. Because algorithms never have a defined order', 'B. Because in parallel processing, steps may execute simultaneously, yet still have a well-established structural order', 'C. Because only the last step matters', 'D. Because order is only relevant for sorting algorithms'],
+        answer: 'B. Because in parallel processing, steps may execute simultaneously, yet still have a well-established structural order',
+        diff: 'hard',
+      },
+      {
+        q: 'Monitoring a hospital patient\'s vital signs continuously is given as an example that challenges which property?',
+        options: ['A. Executability', 'B. Unambiguousness', 'C. Termination', 'D. Order'],
+        answer: 'C. Termination',
+        diff: 'medium',
+      },
+      {
+        q: 'When is a step considered "unambiguous" according to this module?',
+        options: ['A. When it is very long and detailed', 'B. When the information in the process state is sufficient to uniquely and completely determine the action required', 'C. When it can only be understood by experts', 'D. When it has exactly one word'],
+        answer: 'B. When the information in the process state is sufficient to uniquely and completely determine the action required',
+        diff: 'medium',
+      },
+      {
+        q: 'Which of these is an example of a NON-terminating process given in this module?',
+        options: ['A. Converting KM to meters', 'B. Making a cup of tea', 'C. Maintaining an aircraft\'s altitude in flight', 'D. Sorting a list of numbers'],
+        answer: 'C. Maintaining an aircraft\'s altitude in flight',
+        diff: 'medium',
+      },
+      {
+        q: 'An algorithm step that a meteorologist finds unambiguous may still be ambiguous for a layperson. What does this illustrate?',
+        options: ['A. That algorithms are only for scientists', 'B. That ambiguity depends on context and the audience — the same instruction may have different clarity for different people', 'C. That algorithms cannot be shared between people', 'D. That executability and unambiguousness are identical'],
+        answer: 'B. That ambiguity depends on context and the audience — the same instruction may have different clarity for different people',
+        diff: 'hard',
+      },
+      {
+        q: 'How many key properties does the formal algorithm definition include?',
+        options: ['A. Two', 'B. Three', 'C. Four', 'D. Five'],
+        answer: 'C. Four',
+        diff: 'easy',
+      },
+    ],
+  },
 
-**Important Vocabulary:**
-- Ordered set = steps with defined execution order
-- Sequence = linear order (one after another)
-- Parallel processing = steps that can execute simultaneously
-- Executable = possible to perform (effective)
-- Unambiguous = clear, no multiple interpretations
-- Terminating = ends after finite steps
-
----
-
-**Quick Revision Points:**
-- Algorithm = ordered, unambiguous, executable, terminating.
-- Order does not require strict sequence; parallel allowed.
-- Unambiguous means deterministic.
-- Must terminate (no infinite loops).`,
-  questions: [
-    {
-      q: "According to the formal definition, an algorithm is an ordered set of:",
-      options: ["A. Ambiguous, non-executable steps", "B. Unambiguous, executable steps that define a terminating process", "C. Random steps", "D. Sequential steps only"],
-      answer: "B. Unambiguous, executable steps that define a terminating process",
-      diff: "easy"
-    },
-    {
-      q: "The formal definition of algorithm includes which of the following?",
-      options: ["A. Ordered set", "B. Unambiguous steps", "C. Terminating process", "D. All of the above"],
-      answer: "D. All of the above",
-      diff: "easy"
-    },
-    {
-      q: "The term 'ordered set' in the context of algorithms means:",
-      options: ["A. Steps must be executed in a strict linear sequence", "B. Steps have a well-established structure in terms of execution order, but not necessarily a single sequence", "C. Order is irrelevant", "D. Only parallel execution is allowed"],
-      answer: "B. Steps have a well-established structure in terms of execution order, but not necessarily a single sequence",
-      diff: "medium"
-    },
-    {
-      q: "The module mentions flip-flops as an example to illustrate:",
-      options: ["A. Sequential execution", "B. That order does not mean a simple sequence (parallel processing)", "C. Unambiguous steps", "D. Termination"],
-      answer: "B. That order does not mean a simple sequence (parallel processing)",
-      diff: "medium"
-    },
-    {
-      q: "Computer scientists use the term 'effective' to mean:",
-      options: ["A. Efficient", "B. Executable", "C. Fast", "D. Optimal"],
-      answer: "B. Executable",
-      diff: "easy"
-    },
-    {
-      q: "An algorithm step is considered 'executable' if:",
-      options: ["A. It is written in a programming language", "B. It is possible to perform", "C. It is simple", "D. It uses loops"],
-      answer: "B. It is possible to perform",
-      diff: "easy"
-    },
-    {
-      q: "The requirement that steps be 'unambiguous' means:",
-      options: ["A. Steps can be interpreted in multiple ways", "B. The information in the state must uniquely and completely determine each step's actions", "C. Steps are written in plain English", "D. Steps are short"],
-      answer: "B. The information in the state must uniquely and completely determine each step's actions",
-      diff: "medium"
-    },
-    {
-      q: "A terminating process means that the algorithm:",
-      options: ["A. May run forever", "B. Must lead to an end", "C. Can be paused", "D. Never stops"],
-      answer: "B. Must lead to an end",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is NOT a characteristic of an algorithm according to the formal definition?",
-      options: ["A. Ordered set", "B. Unambiguous", "C. Non-terminating", "D. Executable"],
-      answer: "C. Non-terminating",
-      diff: "easy"
-    },
-    {
-      q: "The phrase 'ordered set' is used instead of 'sequence' to allow for:",
-      options: ["A. Only sequential execution", "B. Parallel processing", "C. Random order", "D. No order"],
-      answer: "B. Parallel processing",
-      diff: "easy"
-    },
-    {
-      q: "An algorithm that never stops violates which property?",
-      options: ["A. Executable", "B. Unambiguous", "C. Terminating", "D. Ordered"],
-      answer: "C. Terminating",
-      diff: "easy"
-    },
-    {
-      q: "If an algorithm step can be interpreted in two different ways, it fails the property of:",
-      options: ["A. Executability", "B. Unambiguousness", "C. Termination", "D. Order"],
-      answer: "B. Unambiguousness",
-      diff: "easy"
-    },
-    {
-      q: "The example of flip-flops producing output individually but together having meaning illustrates:",
-      options: ["A. Sequential execution", "B. That order does not imply a single sequence (parallel execution possible)", "C. Termination condition", "D. Unambiguous steps"],
-      answer: "B. That order does not imply a single sequence (parallel execution possible)",
-      diff: "medium"
-    },
-    {
-      q: "Which term is used by computer scientists as a synonym for 'executable'?",
-      options: ["A. Efficient", "B. Effective", "C. Elegant", "D. Exact"],
-      answer: "B. Effective",
-      diff: "easy"
-    },
-    {
-      q: "The formal definition requires that each step be 'unambiguous'. This ensures:",
-      options: ["A. The algorithm is fast", "B. The algorithm produces deterministic results", "C. The algorithm uses less memory", "D. The algorithm is easy to write"],
-      answer: "B. The algorithm produces deterministic results",
-      diff: "medium"
-    },
-    {
-      q: "An algorithm that has parallel branches but still ends after finite time satisfies which properties?",
-      options: ["A. Only terminating", "B. Ordered and terminating", "C. Only executable", "D. None"],
-      answer: "B. Ordered and terminating",
-      diff: "hard"
-    },
-    {
-      q: "The word 'ordered' in the definition emphasizes that:",
-      options: ["A. Steps are randomly arranged", "B. There is a structure to execution order", "C. Order does not matter", "D. Steps must be in ascending order"],
-      answer: "B. There is a structure to execution order",
-      diff: "easy"
-    },
-    {
-      q: "A recipe for baking a cake is an example of an algorithm if it:",
-      options: ["A. Has ambiguous steps", "B. Never ends", "C. Has ordered, unambiguous, executable steps and terminates", "D. Has no steps"],
-      answer: "C. Has ordered, unambiguous, executable steps and terminates",
-      diff: "easy"
-    },
-    {
-      q: "Which property ensures that an algorithm does not have infinite loops?",
-      options: ["A. Executable", "B. Unambiguous", "C. Terminating", "D. Ordered"],
-      answer: "C. Terminating",
-      diff: "easy"
-    },
-    {
-      q: "The formal definition of algorithm requires that the process be:",
-      options: ["A. Possibly infinite", "B. Terminating", "C. Non-deterministic", "D. Random"],
-      answer: "B. Terminating",
-      diff: "easy"
-    }
-  ]
-},
-
-87: {
-  title: "Abstract Nature of Algorithms",
-  summary: `**Key Topics Covered:**
-- Distinction between algorithm and its representation
-- Analogy: story vs book (abstract vs physical)
-- Same algorithm can have multiple representations (formula, instructions, circuit)
-- Level of detail in representation (meteorologist vs layperson)
-- Distinction between program, algorithm, and process
-
----
-
-**Simple Understanding:**
+  87: {
+    title: 'Algorithm: Abstract Nature of Algorithms',
+    summary: `**Yeh module kya cover karta hai:**
+- Algorithm aur uski representation ka farq
+- Celsius to Fahrenheit example (different representations)
+- Program aur Process ka algorithm se relation
+- Algorithm → Program → Process ka chain
 
 **Algorithm vs Representation:**
-👉 Algorithm is abstract/conceptual; representation is physical.
-👉 Analogy: Story vs Book – story remains same even if book translated or republished.
-👉 A single algorithm can be represented in many ways.
+Algorithm ABSTRACT hota hai — uski representation physical hoti hai. Jaise:
+- Story = abstract concept
+- Book = story ki representation
 
-**Example: Celsius to Fahrenheit conversion:**
-👉 Representation 1: Formula \( F = \frac{9}{5}C + 32 \)
-👉 Representation 2: "Multiply Celsius by 9/5, then add 32"
-👉 Representation 3: Electronic circuit (hardware)
-👉 Underlying algorithm is the same.
+Ek hi algorithm kai tareekon se represent ho sakta hai:
+- Algebraic formula: F = (9/5)C + 32
+- English: "Multiply Celsius by 9/5 then add 32"
+- Electronic circuit
+Teeno mein underlying algorithm SAME hai, sirf representations different hain.
 
----
+**Ambiguity Problem:**
+Algorithm aur representation ke darmiyan farq tab masla create karta hai jab hum algorithms communicate karte hain. Example:
+- Expert ke liye: "Convert Celsius to Fahrenheit" = unambiguous
+- Layperson ke liye: yahi instruction ambiguous ho sakti hai
+- Problem algorithm mein nahi, representation ki insufficiency mein hai
 
-**Level of Detail Problem:**
-👉 Meteorologists: "Convert Celsius to Fahrenheit" suffices (shared knowledge).
-👉 Layperson: Needs more detailed steps (otherwise ambiguous).
-👉 Problem is not the algorithm, but insufficient detail in representation.
-
----
-
-**Program vs Algorithm vs Process:**
+**Program, Algorithm, Process — 3 Related but Distinct Concepts:**
 | Concept | Definition |
-|---------|------------|
-| **Program** | Formal representation of an algorithm (for computer) |
-| **Algorithm** | Abstract step-by-step procedure |
-| **Process** | Activity of executing an algorithm/program |
+|---|---|
+| Algorithm | Abstract — defines WHAT to do |
+| Program | Representation of an algorithm (for computer application) |
+| Process | Activity of executing a program (= executing the algorithm) |
 
-👉 Program represents an algorithm.
-👉 Process executes an algorithm.
+**Conclusion:**
+- Program = algorithm ki representation hai
+- Process = algorithm execute karne ki activity hai
+- Teeno distinct hain lekin related hain
 
----
+**Yaad rakho:**
+- Algorithm = abstract (story)
+- Program = representation (book)
+- Process = executing (someone reading the book aloud)
+- Ek algorithm ke multiple representations ho sakte hain
+- F = (9/5)C + 32 is module ka key example hai`,
+    questions: [
+      {
+        q: 'An algorithm is best described as:',
+        options: ['A. A computer program written in Python', 'B. An abstract concept distinct from any particular representation', 'C. Always written as an algebraic formula', 'D. A physical circuit board'],
+        answer: 'B. An abstract concept distinct from any particular representation',
+        diff: 'medium',
+      },
+      {
+        q: 'In the analogy used in this module, an algorithm corresponds to a "story" and its representation corresponds to:',
+        options: ['A. The author', 'B. A book', 'C. The reader', 'D. The printing press'],
+        answer: 'B. A book',
+        diff: 'medium',
+      },
+      {
+        q: 'The algorithm for converting Celsius to Fahrenheit (F = (9/5)C + 32) can be represented as which of the following?',
+        options: ['A. Only as an algebraic formula', 'B. Only in English words', 'C. As an algebraic formula, English instructions, OR an electronic circuit — all representing the same algorithm', 'D. Only as machine code'],
+        answer: 'C. As an algebraic formula, English instructions, OR an electronic circuit — all representing the same algorithm',
+        diff: 'medium',
+      },
+      {
+        q: 'A "process" is defined in this module as:',
+        options: ['A. A static set of instructions stored in memory', 'B. The activity of executing a program (and equivalently, executing an algorithm)', 'C. A representation of an algorithm', 'D. A type of network protocol'],
+        answer: 'B. The activity of executing a program (and equivalently, executing an algorithm)',
+        diff: 'easy',
+      },
+      {
+        q: 'A "program" in the computing context is defined as:',
+        options: ['A. The activity of executing an algorithm', 'B. A formal representation of an algorithm designed for computer application', 'C. The abstract algorithm itself', 'D. A type of network packet'],
+        answer: 'B. A formal representation of an algorithm designed for computer application',
+        diff: 'medium',
+      },
+      {
+        q: 'When a meteorologist says "Convert Celsius to Fahrenheit" and a layperson finds that ambiguous, the module argues the problem is:',
+        options: ['A. The underlying algorithm is wrong', 'B. Not with the algorithm itself but with the representation not being described in enough detail for that audience', 'C. That meteorologists use different algorithms than computers', 'D. That Fahrenheit is an invalid unit'],
+        answer: 'B. Not with the algorithm itself but with the representation not being described in enough detail for that audience',
+        diff: 'hard',
+      },
+      {
+        q: 'If you translate a book from English to Urdu, what changes and what stays the same?',
+        options: ['A. Both the story and the representation change', 'B. The representation changes, but the story (algorithm) remains the same', 'C. The story changes, but the physical book stays the same', 'D. Neither changes'],
+        answer: 'B. The representation changes, but the story (algorithm) remains the same',
+        diff: 'medium',
+      },
+      {
+        q: 'According to this module, "programs, algorithms, and processes are distinct, yet related entities." Which chain correctly summarizes their relationship?',
+        options: ['A. Process → Algorithm → Program', 'B. Algorithm (abstract) → Program (its representation) → Process (activity of executing it)', 'C. Program → Process → Algorithm', 'D. Algorithm → Process → Program'],
+        answer: 'B. Algorithm (abstract) → Program (its representation) → Process (activity of executing it)',
+        diff: 'hard',
+      },
+      {
+        q: 'In this module, the term "algorithm" is sometimes used in a "less formal sense" to include programs that are non-terminating. What does this usage refer to?',
+        options: ['A. Programs that loop forever accidentally due to bugs', 'B. The fact that many programs are representations of processes that do not technically terminate (like continuous monitoring)', 'C. Programs written in assembly language only', 'D. Programs that run on routers exclusively'],
+        answer: 'B. The fact that many programs are representations of processes that do not technically terminate (like continuous monitoring)',
+        diff: 'hard',
+      },
+      {
+        q: 'What remains the SAME across all three representations of the Celsius-to-Fahrenheit algorithm (formula, English, circuit)?',
+        options: ['A. The physical form', 'B. The underlying algorithm — the abstract logic', 'C. The programming language used', 'D. The number of steps when written out'],
+        answer: 'B. The underlying algorithm — the abstract logic',
+        diff: 'medium',
+      },
+    ],
+  },
 
-**Important Vocabulary:**
-- Abstract = conceptual, not physical
-- Representation = physical form (text, diagram, circuit)
-- Level of detail = amount of specificity in representation
-- Program = computer-executable representation
-- Process = running instance of a program
+  88: {
+    title: 'Algorithm: Representation (Primitives)',
+    summary: `**Yeh module kya cover karta hai:**
+- Algorithm represent karne ki zaroorat
+- Natural language ke problems (ambiguity, detail level)
+- Primitives ka concept
+- Syntax vs Semantics
+- Programming language ki definition
 
----
+**Algorithm Representation:**
+Ek algorithm represent karne ke liye koi "language" chahiye — natural language (English), pictures, ya formal notation. Problems:
+1. **Ambiguity** — "Visiting grandchildren can be nerve-racking" = do meanings (grandchildren aate hain ya aap unke paas jate ho?)
+2. **Detail level** — Origami bird banane ke instructions: expert (origami student) ke liye kaafi, lekin aam aadmi ke liye nahi
 
-**Quick Revision Points:**
-- Algorithm is abstract; representation is physical.
-- Same algorithm: multiple representations (formula, English, circuit).
-- Insufficient detail ≠ ambiguous algorithm (just poor representation).
-- Program = algorithm representation.
-- Process = execution of algorithm.`,
-  questions: [
-    {
-      q: "The distinction between an algorithm and its representation is analogous to the distinction between:",
-      options: ["A. A car and its engine", "B. A story and a book", "C. A computer and its memory", "D. A recipe and cooking"],
-      answer: "B. A story and a book",
-      diff: "easy"
-    },
-    {
-      q: "If a book is translated into another language, what changes?",
-      options: ["A. The story itself", "B. Only the representation of the story", "C. Both story and representation", "D. Neither"],
-      answer: "B. Only the representation of the story",
-      diff: "easy"
-    },
-    {
-      q: "A single algorithm can be represented in:",
-      options: ["A. Only one way", "B. Many ways", "C. Only as a formula", "D. Only as computer code"],
-      answer: "B. Many ways",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is a representation of the Celsius-to-Fahrenheit conversion algorithm?",
-      options: ["A. F = (9/5)C + 32", "B. Multiply Celsius by 9/5 and add 32", "C. An electronic circuit", "D. All of the above"],
-      answer: "D. All of the above",
-      diff: "easy"
-    },
-    {
-      q: "The underlying algorithm for converting Celsius to Fahrenheit is:",
-      options: ["A. Different for each representation", "B. The same regardless of representation", "C. Only valid as a formula", "D. Only valid as English instructions"],
-      answer: "B. The same regardless of representation",
-      diff: "easy"
-    },
-    {
-      q: "Among meteorologists, the instruction 'Convert the Celsius reading to its Fahrenheit equivalent' is considered:",
-      options: ["A. Insufficient", "B. Sufficient (due to shared knowledge)", "C. Ambiguous", "D. Incorrect"],
-      answer: "B. Sufficient (due to shared knowledge)",
-      diff: "easy"
-    },
-    {
-      q: "A layperson might find the instruction 'Convert the Celsius reading to its Fahrenheit equivalent' ambiguous because:",
-      options: ["A. The algorithm itself is ambiguous", "B. The representation lacks sufficient detail", "C. Conversion is impossible", "D. There is no such conversion"],
-      answer: "B. The representation lacks sufficient detail",
-      diff: "medium"
-    },
-    {
-      q: "The problem with insufficient detail is with the:",
-      options: ["A. Underlying algorithm", "B. Representation of the algorithm", "C. Computer hardware", "D. User's intelligence"],
-      answer: "B. Representation of the algorithm",
-      diff: "medium"
-    },
-    {
-      q: "A program is defined as:",
-      options: ["A. An abstract algorithm", "B. A representation of an algorithm (often for computer application)", "C. The execution of an algorithm", "D. A hardware component"],
-      answer: "B. A representation of an algorithm (often for computer application)",
-      diff: "easy"
-    },
-    {
-      q: "A process is defined as:",
-      options: ["A. The representation of an algorithm", "B. The activity of executing a program (or algorithm)", "C. An abstract step-by-step procedure", "D. A computer file"],
-      answer: "B. The activity of executing a program (or algorithm)",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is abstract/conceptual?",
-      options: ["A. A program", "B. A process", "C. An algorithm", "D. A source code file"],
-      answer: "C. An algorithm",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is a physical representation?",
-      options: ["A. An algorithm", "B. A story idea", "C. A book", "D. A mathematical concept"],
-      answer: "C. A book",
-      diff: "easy"
-    },
-    {
-      q: "Within the computing community, the term 'program' usually refers to:",
-      options: ["A. An abstract idea", "B. A formal representation designed for computer application", "C. The execution of code", "D. The CPU"],
-      answer: "B. A formal representation designed for computer application",
-      diff: "easy"
-    },
-    {
-      q: "A process is the activity of executing a(n):",
-      options: ["A. Algorithm", "B. Program", "C. Either A or B (since program represents algorithm)", "D. None of the above"],
-      answer: "C. Either A or B (since program represents algorithm)",
-      diff: "medium"
-    },
-    {
-      q: "The relationship between program, algorithm, and process can be summarized as:",
-      options: ["A. All are the same", "B. Program represents algorithm; process executes algorithm", "C. Algorithm represents program; process is representation", "D. Process represents algorithm; program executes"],
-      answer: "B. Program represents algorithm; process executes algorithm",
-      diff: "hard"
-    },
-    {
-      q: "An algorithm can be represented in electronic circuit form. This means:",
-      options: ["A. Circuits cannot represent algorithms", "B. Hardware can also implement algorithms", "C. Algorithms are only software", "D. Circuits are not algorithms"],
-      answer: "B. Hardware can also implement algorithms",
-      diff: "easy"
-    },
-    {
-      q: "If a weather app uses the formula (C×9/5+32) to display Fahrenheit, the algorithm is:",
-      options: ["A. Different from the formula", "B. The same abstract process regardless of coding language", "C. Only valid in that app", "D. Not an algorithm"],
-      answer: "B. The same abstract process regardless of coding language",
-      diff: "easy"
-    },
-    {
-      q: "The phrase 'level of detail' in algorithm representation refers to:",
-      options: ["A. The number of steps", "B. How specific the instructions are", "C. The length of the algorithm", "D. The complexity of the output"],
-      answer: "B. How specific the instructions are",
-      diff: "easy"
-    },
-    {
-      q: "A program that never terminates (infinite loop) is still a representation of:",
-      options: ["A. A terminating algorithm", "B. A non-terminating 'algorithm' (less formal sense)", "C. No algorithm", "D. A process only"],
-      answer: "B. A non-terminating 'algorithm' (less formal sense)",
-      diff: "hard"
-    },
-    {
-      q: "Which entity is the activity of executing an algorithm?",
-      options: ["A. Program", "B. Algorithm", "C. Process", "D. Representation"],
-      answer: "C. Process",
-      diff: "easy"
-    }
-  ]
-},
-
-
-88: {
-  title: "Algorithm: Representation (Primitives)",
-  summary: `**Key Topics Covered:**
-- Representing algorithms using language (natural language, pictures)
-- Problems: ambiguous terminology, level of detail
-- Primitives (well-defined building blocks)
-- Programming language = primitives + combination rules
-- Syntax vs semantics
-- Machine language vs higher-level primitives
-
----
-
-**Simple Understanding:**
-
-**Representing Algorithms:**
-👉 Requires some form of language.
-👉 Natural language (English, Spanish, etc.) or pictures (e.g., origami folding diagrams – Figure 78).
-👉 Problem: Misunderstandings due to ambiguous terminology.
-   Example: "Visiting grandchildren can be nerve-racking" (two meanings).
-👉 Problem: Level of detail – origami student vs novice reader.
-
----
-
-**Primitives:**
-👉 Well-defined building blocks for algorithm representation.
-👉 Assigning precise definitions removes ambiguity.
-👉 Establishes uniform level of detail.
-
-**Programming Language:**
-👉 Collection of primitives + rules for combining them.
+**Solution — Primitives:**
+Computer science: ek **well-defined set of building blocks** use karo — **primitives** kehte hain.
+- Primitives ko precise definitions dena = ambiguity remove karna
+- Algorithms ko in primitives mein describe karna = uniform detail level
+- **Collection of primitives + rules for combining them = Programming Language**
 
 **Syntax vs Semantics:**
-| Term | Meaning |
-|------|---------|
-| Syntax | Symbolic representation (form) |
-| Semantics | Meaning of the primitive |
-👉 Example: "air" – syntax = three symbols (a,i,r); semantics = gaseous substance.
+Har primitive ki 2 cheezein hoti hain:
+- **Syntax** = symbolic representation (kaise likhte hain)
+- **Semantics** = meaning (kya karta hai)
+- Example: word "air" — syntax = 3 symbols, semantics = gaseous substance surrounding Earth
 
----
+**Programming Language:**
+A collection of primitives + rules about how to combine them to represent complex ideas.
 
-**Machine Language vs Higher-Level Primitives:**
-👉 Machine instructions are primitives (lowest level).
-👉 Expressing algorithms in machine language is tedious.
-👉 Higher-level primitives (abstract tools) built from lower-level machine instructions.
-👉 Result: high-level programming languages (more conceptual, less tedious).
-
----
-
-**Important Vocabulary:**
-- Primitive = basic building block
+**Yaad rakho:**
+- Primitive = building block of algorithm representation
+- Syntax = form/symbols; Semantics = meaning
 - Programming language = primitives + combination rules
-- Syntax = form/structure
-- Semantics = meaning
-- Machine language = CPU instruction set
-- High-level language = abstracted primitives (e.g., Python, Java)
+- Natural language ki problems: ambiguity + variable detail level
+- Primitives = uniformity aur clarity provide karte hain`,
+    questions: [
+      {
+        q: 'A "primitive" in computer science refers to:',
+        options: ['A. An old, outdated programming language', 'B. A well-defined building block from which algorithm representations are constructed', 'C. A type of network packet', 'D. A single machine instruction only'],
+        answer: 'B. A well-defined building block from which algorithm representations are constructed',
+        diff: 'medium',
+      },
+      {
+        q: 'A programming language is defined in this module as:',
+        options: ['A. A natural language used to write algorithms informally', 'B. A collection of primitives along with rules for combining them to represent complex ideas', 'C. A set of machine-language instructions only', 'D. A syntax checker for pseudocode'],
+        answer: 'B. A collection of primitives along with rules for combining them to represent complex ideas',
+        diff: 'medium',
+      },
+      {
+        q: '"Syntax" of a primitive refers to:',
+        options: ['A. The meaning of the primitive', 'B. Its symbolic representation — what it looks like when written', 'C. How fast it executes', 'D. The number of arguments it takes'],
+        answer: 'B. Its symbolic representation — what it looks like when written',
+        diff: 'easy',
+      },
+      {
+        q: '"Semantics" of a primitive refers to:',
+        options: ['A. Its symbolic form', 'B. The meaning of the primitive', 'C. How many symbols it contains', 'D. Its execution speed in milliseconds'],
+        answer: 'B. The meaning of the primitive',
+        diff: 'easy',
+      },
+      {
+        q: 'The sentence "Visiting grandchildren can be nerve-racking" is used in this module to illustrate:',
+        options: ['A. A well-defined algorithm step', 'B. Ambiguity in natural language communication', 'C. A correct use of primitives', 'D. A terminating process'],
+        answer: 'B. Ambiguity in natural language communication',
+        diff: 'medium',
+      },
+      {
+        q: 'Why could most readers NOT successfully fold an origami bird from the directions in Figure 78, but an origami student could?',
+        options: ['A. The algorithm for origami is wrong', 'B. The instructions lack sufficient detail for non-experts — illustrating that the level of detail required varies by audience', 'C. Origami cannot be described algorithmically', 'D. The figure is in a foreign language'],
+        answer: 'B. The instructions lack sufficient detail for non-experts — illustrating that the level of detail required varies by audience',
+        diff: 'medium',
+      },
+      {
+        q: 'Assigning precise definitions to primitives solves which specific problem with natural language algorithm representation?',
+        options: ['A. Execution speed', 'B. Ambiguity — knowing exactly what each primitive means removes multiple interpretations', 'C. File size of the algorithm', 'D. Network transmission errors'],
+        answer: 'B. Ambiguity — knowing exactly what each primitive means removes multiple interpretations',
+        diff: 'medium',
+      },
+      {
+        q: 'For the word "air," the syntax consists of 3 symbols (a, i, r). What is its semantics?',
+        options: ['A. A liquid substance', 'B. The 3 letters themselves', 'C. A gaseous substance that surrounds the Earth', 'D. A programming keyword'],
+        answer: 'C. A gaseous substance that surrounds the Earth',
+        diff: 'easy',
+      },
+      {
+        q: 'Which TWO problems with natural language representation of algorithms does this module identify?',
+        options: ['A. Too long and too expensive', 'B. Ambiguity and inconsistent level of detail required', 'C. Cannot be stored digitally and cannot be translated', 'D. Too mathematical and too abstract'],
+        answer: 'B. Ambiguity and inconsistent level of detail required',
+        diff: 'hard',
+      },
+      {
+        q: 'Requiring algorithms to be described in terms of established primitives establishes:',
+        options: ['A. A random ordering of steps', 'B. A uniform level of detail for all representations', 'C. The maximum length of any algorithm', 'D. Only visual representations'],
+        answer: 'B. A uniform level of detail for all representations',
+        diff: 'medium',
+      },
+    ],
+  },
 
----
-
-**Quick Revision Points:**
-- Natural language for algorithms is ambiguous.
-- Primitives provide precise, unambiguous building blocks.
-- Programming language = primitives + rules.
-- Syntax = form; semantics = meaning.
-- Higher-level primitives make programming less tedious.`,
-  questions: [
-    {
-      q: "Representation of algorithms requires some form of:",
-      options: ["A. Computer only", "B. Language", "C. Hardware", "D. Mathematics"],
-      answer: "B. Language",
-      diff: "easy"
-    },
-    {
-      q: "The sentence 'Visiting grandchildren can be nerve-racking' is ambiguous because:",
-      options: ["A. It is too long", "B. Terminology has more than one meaning", "C. It has no verbs", "D. It is a question"],
-      answer: "B. Terminology has more than one meaning",
-      diff: "easy"
-    },
-    {
-      q: "Figure 78 in the module describes an algorithm for:",
-      options: ["A. Baking a cake", "B. Folding a bird from a square piece of paper", "C. Converting temperatures", "D. Sorting numbers"],
-      answer: "B. Folding a bird from a square piece of paper",
-      diff: "easy"
-    },
-    {
-      q: "A well-defined building block from which algorithm representations are constructed is called a:",
-      options: ["A. Program", "B. Primitive", "C. Process", "D. Syntax"],
-      answer: "B. Primitive",
-      diff: "easy"
-    },
-    {
-      q: "Assigning precise definitions to primitives removes problems of:",
-      options: ["A. Performance", "B. Ambiguity and establishes uniform level of detail", "C. Memory usage", "D. Speed"],
-      answer: "B. Ambiguity and establishes uniform level of detail",
-      diff: "easy"
-    },
-    {
-      q: "A collection of primitives along with rules for combining them constitutes a:",
-      options: ["A. Processor", "B. Programming language", "C. Compiler", "D. Operating system"],
-      answer: "B. Programming language",
-      diff: "easy"
-    },
-    {
-      q: "The symbolic representation of a primitive is called its:",
-      options: ["A. Semantics", "B. Syntax", "C. Context", "D. Meaning"],
-      answer: "B. Syntax",
-      diff: "easy"
-    },
-    {
-      q: "The meaning of a primitive is called its:",
-      options: ["A. Syntax", "B. Semantics", "C. Form", "D. Structure"],
-      answer: "B. Semantics",
-      diff: "easy"
-    },
-    {
-      q: "In the example given, the syntax of 'air' consists of three symbols (a,i,r), while its semantics is:",
-      options: ["A. A programming language", "B. A gaseous substance that surrounds the world", "C. A type of bird", "D. A mathematical formula"],
-      answer: "B. A gaseous substance that surrounds the world",
-      diff: "easy"
-    },
-    {
-      q: "The lowest-level primitives for computer execution are:",
-      options: ["A. High-level language statements", "B. Individual machine instructions", "C. English sentences", "D. Flowcharts"],
-      answer: "B. Individual machine instructions",
-      diff: "easy"
-    },
-    {
-      q: "Expressing algorithms at the machine instruction level is:",
-      options: ["A. Easy and fast", "B. Tedious", "C. Impossible", "D. The only way"],
-      answer: "B. Tedious",
-      diff: "easy"
-    },
-    {
-      q: "Higher-level primitives are constructed from:",
-      options: ["A. Natural language", "B. Lower-level primitives (machine instructions)", "C. Pictures", "D. Sound"],
-      answer: "B. Lower-level primitives (machine instructions)",
-      diff: "medium"
-    },
-    {
-      q: "The result of using higher-level primitives is:",
-      options: ["A. Machine language programs", "B. Formal programming languages that are more conceptual", "C. Slower execution", "D. No programs"],
-      answer: "B. Formal programming languages that are more conceptual",
-      diff: "medium"
-    },
-    {
-      q: "Which of the following is an example of a primitive in origami (as per Figure 79 mentioned but not shown)?",
-      options: ["A. Paper size", "B. Specific fold types (e.g., mountain fold, valley fold)", "C. Scissors", "D. Ruler"],
-      answer: "B. Specific fold types (e.g., mountain fold, valley fold)",
-      diff: "medium"
-    },
-    {
-      q: "A student of origami would likely have little difficulty following Figure 78 because:",
-      options: ["A. They have better eyesight", "B. They understand the primitives and level of detail", "C. The figure is in color", "D. They ignore the instructions"],
-      answer: "B. They understand the primitives and level of detail",
-      diff: "easy"
-    },
-    {
-      q: "Communication problems with natural language for algorithm representation arise due to:",
-      options: ["A. Precise definitions", "B. Ambiguous terminology and level of detail", "C. Too many primitives", "D. Lack of grammar"],
-      answer: "B. Ambiguous terminology and level of detail",
-      diff: "easy"
-    },
-    {
-      q: "Computer science solves representation problems by establishing:",
-      options: ["A. Natural language", "B. A well-defined set of primitives", "C. Only machine code", "D. No rules"],
-      answer: "B. A well-defined set of primitives",
-      diff: "easy"
-    },
-    {
-      q: "The combination of primitives to represent complex ideas requires:",
-      options: ["A. No rules", "B. A collection of rules", "C. Random assembly", "D. Natural language only"],
-      answer: "B. A collection of rules",
-      diff: "easy"
-    },
-    {
-      q: "An algorithm expressed in terms of higher-level primitives is eventually:",
-      options: ["A. Executed directly by the CPU", "B. Translated into lower-level machine instructions", "C. Discarded", "D. Stored as a picture"],
-      answer: "B. Translated into lower-level machine instructions",
-      diff: "medium"
-    },
-    {
-      q: "Which of the following best describes the relationship between high-level languages and machine language?",
-      options: ["A. They are identical", "B. High-level languages are abstract tools built from machine language primitives", "C. Machine language is built from high-level languages", "D. They are unrelated"],
-      answer: "B. High-level languages are abstract tools built from machine language primitives",
-      diff: "hard"
-    }
-  ]
-},
-
-
-89:{
-  title: "Pseudocode and Algorithm Development",
-
-  summary: `**Key Topics Covered:**
-- Pseudocode as informal algorithm notation
-- Assignment statements
-- Conditional structures (if-else)
-- Syntax and semantic structures
-- Importance of indentation and consistency
-
----
-
-**Simple Understanding:**
+  89: {
+    title: 'Algorithm: Representation (Pseudocode — if/else)',
+    summary: `**Yeh module kya cover karta hai:**
+- Pseudocode kya hai
+- Assignment statement (name = expression)
+- if/else structure
+- Pseudocode ki popular variants
 
 **Pseudocode:**
-👉 Pseudocode is an informal way to express algorithms during development.
-👉 It is not a real programming language but resembles languages like Pascal, Java, and C.
+Formal programming language ki jagah ek LESS FORMAL, intuitive notational system — algorithms develop karte waqt ideas express karne ke liye. Ek programming language ke rules ko loose karo, less formal constructs ke saath mix karo = pseudocode.
 
-**Assignment Statements:**
-👉 Used to store a value in a variable.
-👉 Format:
-   name = expression
+**Popular Pseudocode Variants:**
+- Algol aur Pascal ke loose versions (decades tak textbooks mein popular)
+- Java aur C ke syntax se influenced pseudocode (recently more common)
+- Essential requirement: **consistent, concise notation for recurring semantic structures**
 
-👉 Example:
-   RemainingFunds = CheckingBalance + SavingsBalance
+**Assignment Statement:**
+Computed value ko save karne ke liye:
 
-**Conditional Structures (if-else):**
-👉 Used for decision making.
-👉 Structure:
+  name = expression
 
-if condition:
-    activity
-else:
-    alternative activity
+- 'name' = jis naam se result refer karein ge
+- 'expression' = calculation
+- Example: 'RemainingFunds = CheckingBalance + SavingsBalance'
+- Yeh Python assignment statement se directly related hai
 
-👉 Colons and indentation help define the structure clearly.
+**if/else Structure:**
+Ek activity select karne ke liye condition ke basis par:
 
----
+  if (condition):
+      activity
+  else:
+      activity
 
-**Important Vocabulary:**
-- Pseudocode = informal algorithm notation
-- Assignment = storing value to a name
-- Conditional = if-else selection
-- Syntax = structure/form
-- Semantic = meaning
-- Indentation = spaces/tabs to show block structure
+- if aur else keywords hain
+- Colon condition aur else ke baad lagta hai
+- Corresponding activity indented hoti hai
+- Multiple steps wali activity = saari similarly indented
 
----
+**Example:**
 
-**Quick Revision Points:**
-- Pseudocode is informal, for algorithm development.
-- Assignment: name = expression.
-- if-else: condition → colon → indented activity.
-- Uniform syntax for recurring structures.`,
+  if (year is leap year): daily total = total / 366
+  else:
+      daily total = total / 365
 
-  questions: [
-    {
-      q: "Pseudocode is defined as:",
-      options: [
-        "A. A formal programming language",
-        "B. A notational system for informal expression during algorithm development",
-        "C. Machine code",
-        "D. A type of flowchart"
-      ],
-      answer: "B. A notational system for informal expression during algorithm development",
-      diff: "easy"
-    },
+**Yaad rakho:**
+- Pseudocode = informal notation for algorithm representation
+- name = expression → assignment
+- if (condition): / else: → selection structure
+- Indentation substructures delineate karta hai
+- Algol, Pascal, Java, C se pseudocode styles aati hain`,
+    questions: [
+      {
+        q: 'Pseudocode is best described as:',
+        options: ['A. A strict formal programming language', 'B. An informal, intuitive notational system for expressing algorithm ideas', 'C. Machine code written in English words', 'D. A type of markup language'],
+        answer: 'B. An informal, intuitive notational system for expressing algorithm ideas',
+        diff: 'easy',
+      },
+      {
+        q: 'In pseudocode, the assignment statement "RemainingFunds = CheckingBalance + SavingsBalance" means:',
+        options: ['A. CheckingBalance and SavingsBalance are equal', 'B. The sum of CheckingBalance and SavingsBalance is computed and saved under the name RemainingFunds', 'C. RemainingFunds is subtracted from CheckingBalance', 'D. All three values are set to zero'],
+        answer: 'B. The sum of CheckingBalance and SavingsBalance is computed and saved under the name RemainingFunds',
+        diff: 'medium',
+      },
+      {
+        q: 'In the if/else pseudocode structure, what follows immediately after the condition and the "else" keyword?',
+        options: ['A. A semicolon', 'B. A colon', 'C. A period', 'D. A curly brace'],
+        answer: 'B. A colon',
+        diff: 'medium',
+      },
+      {
+        q: 'How is the "activity" (the body of an if or else) indicated in the pseudocode format of this module?',
+        options: ['A. With curly braces { }', 'B. By indentation', 'C. With square brackets [ ]', 'D. By writing it in uppercase'],
+        answer: 'B. By indentation',
+        diff: 'easy',
+      },
+      {
+        q: 'The pseudocode assignment statement format follows the equivalent structure from which programming language mentioned in this module?',
+        options: ['A. Java', 'B. C', 'C. Algol', 'D. Python'],
+        answer: 'D. Python',
+        diff: 'hard',
+      },
+      {
+        q: 'The if/else structure in pseudocode is used to:',
+        options: ['A. Repeat an activity multiple times', 'B. Select one of two possible activities depending on whether a condition is true or false', 'C. Define a new variable', 'D. Terminate the algorithm'],
+        answer: 'B. Select one of two possible activities depending on whether a condition is true or false',
+        diff: 'easy',
+      },
+      {
+        q: 'One ESSENTIAL property required of any pseudocode, regardless of which programming language it borrows from, is:',
+        options: ['A. It must be in English only', 'B. A consistent, concise notation for representing recurring semantic structures', 'C. It must compile without errors', 'D. It must be exactly 10 lines or fewer'],
+        answer: 'B. A consistent, concise notation for representing recurring semantic structures',
+        diff: 'hard',
+      },
+      {
+        q: 'The pseudocode statement "if (year is leap year): daily total = total / 366" implies that if the year is NOT a leap year, what happens?',
+        options: ['A. The algorithm terminates', 'B. The else branch executes: daily total = total / 365', 'C. Total is set to zero', 'D. The if condition is re-evaluated'],
+        answer: 'B. The else branch executes: daily total = total / 365',
+        diff: 'medium',
+      },
+      {
+        q: 'Why did pseudocode variants based on Algol and Pascal become popular in textbooks for decades?',
+        options: ['A. Algol and Pascal were the fastest programming languages', 'B. These languages were widely used in textbooks and academic papers for decades, making their syntax familiar to readers', 'C. They were the only languages with if/else structures', 'D. ICANN mandated their use'],
+        answer: 'B. These languages were widely used in textbooks and academic papers for decades, making their syntax familiar to readers',
+        diff: 'medium',
+      },
+      {
+        q: 'If an "activity" in an if/else structure consists of MULTIPLE steps, how are they represented in pseudocode?',
+        options: ['A. They are all written on one line separated by commas', 'B. They are all similarly indented below the condition', 'C. Only the first step is included', 'D. They use numbered bullet points'],
+        answer: 'B. They are all similarly indented below the condition',
+        diff: 'medium',
+      },
+    ],
+  },
 
-    {
-      q: "One way to obtain a pseudocode is to:",
-      options: [
-        "A. Write in English only",
-        "B. Loosen the rules of a formal programming language",
-        "C. Use only numbers",
-        "D. Avoid any structure"
-      ],
-      answer: "B. Loosen the rules of a formal programming language",
-      diff: "easy"
-    },
+  90: {
+    title: 'Algorithm: Representation (Pseudocode — while Structure)',
+    summary: `**Yeh module kya cover karta hai:**
+- While structure (looping/repetition)
+- While ki pseudocode format
+- Real-world examples se while ka concept
 
-    {
-      q: "Popular pseudocode variants have been based on languages such as:",
-      options: [
-        "A. Only Python",
-        "B. Algol, Pascal, Java, C",
-        "C. Only machine language",
-        "D. Only HTML"
-      ],
-      answer: "B. Algol, Pascal, Java, C",
-      diff: "easy"
-    },
+**While Structure:**
+Kisi statement ya sequence of statements ko repeatedly execute karna **jab tak koi condition true rahe**.
 
-    {
-      q: "An essential property of a pseudocode is:",
-      options: [
-        "A. It must be executable",
-        "B. It must have a consistent, concise notation for representing recurring semantic structures",
-        "C. It must be compiled",
-        "D. It must use only English words"
-      ],
-      answer: "B. It must have a consistent, concise notation for representing recurring semantic structures",
-      diff: "medium"
-    },
+**Informal Examples:**
+- "As long as there are tickets to sell, continue selling tickets."
+- "While there are tickets to sell, keep selling tickets."
 
-    {
-      q: "The assignment statement in pseudocode follows the format:",
-      options: [
-        "A. expression = name",
-        "B. name = expression",
-        "C. name : expression",
-        "D. name ← expression"
-      ],
-      answer: "B. name = expression",
-      diff: "easy"
-    },
-
-    {
-      q: "The pseudocode statement 'RemainingFunds = CheckingBalance + SavingsBalance' does what?",
-      options: [
-        "A. Compares two values",
-        "B. Assigns the sum to RemainingFunds",
-        "C. Prints the sum",
-        "D. Deletes the variables"
-      ],
-      answer: "B. Assigns the sum to RemainingFunds",
-      diff: "easy"
-    },
-
-    {
-      q: "The if-else structure in pseudocode uses which keywords?",
-      options: [
-        "A. then and else",
-        "B. if and else",
-        "C. when and otherwise",
-        "D. condition and alternative"
-      ],
-      answer: "B. if and else",
-      diff: "easy"
-    },
-
-    {
-      q: "In the pseudocode if-else structure, after the condition and after 'else' there is a:",
-      options: [
-        "A. Semicolon",
-        "B. Colon",
-        "C. Comma",
-        "D. Period"
-      ],
-      answer: "B. Colon",
-      diff: "easy"
-    },
-
-    {
-      q: "The activities in an if-else structure are indicated by:",
-      options: [
-        "A. Parentheses",
-        "B. Indentation",
-        "C. Brackets",
-        "D. Quotation marks"
-      ],
-      answer: "B. Indentation",
-      diff: "easy"
-    },
-
-    {
-      q: "Given the condition 'year is leap year', the pseudocode for dividing total by 366 or 365 would be:",
-      options: [
-        "A. if (year is leap year): daily total = total/366 else: daily total = total/365",
-        "B. if year is leap year then daily total = total/366 else daily total = total/365",
-        "C. Both A and B are acceptable as pseudocode",
-        "D. Neither is acceptable"
-      ],
-      answer: "A. if (year is leap year): daily total = total/366 else: daily total = total/365",
-      diff: "medium"
-    },
-
-    {
-      q: "Pseudocode is primarily used for:",
-      options: [
-        "A. Direct execution by computer",
-        "B. Communicating algorithm ideas to humans during development",
-        "C. Compiling into machine code",
-        "D. Hardware design"
-      ],
-      answer: "B. Communicating algorithm ideas to humans during development",
-      diff: "easy"
-    },
-
-    {
-      q: "Which of the following is a recurring semantic structure mentioned in the module?",
-      options: [
-        "A. Loops",
-        "B. Saving a computed value (assignment)",
-        "C. Recursion",
-        "D. Pointers"
-      ],
-      answer: "B. Saving a computed value (assignment)",
-      diff: "easy"
-    },
-
-    {
-      q: "Another recurring semantic structure mentioned is:",
-      options: [
-        "A. Iteration",
-        "B. Selection (if-else)",
-        "C. Function call",
-        "D. Array access"
-      ],
-      answer: "B. Selection (if-else)",
-      diff: "easy"
-    },
-
-    {
-      q: "The pseudocode assignment structure is similar to which language's assignment?",
-      options: [
-        "A. Python",
-        "B. HTML",
-        "C. CSS",
-        "D. SQL"
-      ],
-      answer: "A. Python",
-      diff: "easy"
-    },
-
-    {
-      q: "If an activity consists of multiple steps in pseudocode, they will be:",
-      options: [
-        "A. On the same line",
-        "B. Similarly indented",
-        "C. In separate files",
-        "D. Ignored"
-      ],
-      answer: "B. Similarly indented",
-      diff: "easy"
-    },
-
-    {
-      q: "The module states that pseudocode must have a consistent notation for representing recurring semantic structures. This is important because:",
-      options: [
-        "A. It makes the pseudocode executable",
-        "B. It reduces ambiguity and improves clarity",
-        "C. It compiles faster",
-        "D. It uses less memory"
-      ],
-      answer: "B. It reduces ambiguity and improves clarity",
-      diff: "medium"
-    },
-
-    {
-      q: "Which of the following is NOT a characteristic of pseudocode as described?",
-      options: [
-        "A. Informal",
-        "B. Used during algorithm development",
-        "C. Must be syntactically perfect for compilation",
-        "D. Can borrow from multiple programming languages"
-      ],
-      answer: "C. Must be syntactically perfect for compilation",
-      diff: "easy"
-    },
-
-    {
-      q: "The module mentions that pseudocode variants exist because:",
-      options: [
-        "A. There is only one programming language",
-        "B. There are many programming languages",
-        "C. Pseudocode is standardized",
-        "D. Pseudocode is never used"
-      ],
-      answer: "B. There are many programming languages",
-      diff: "easy"
-    },
-
-    {
-      q: "In the if-else pseudocode example, what is the purpose of the colon after condition and else?",
-      options: [
-        "A. To end the statement",
-        "B. To delineate the boundaries of substructures",
-        "C. To indicate a comment",
-        "D. To separate multiple conditions"
-      ],
-      answer: "B. To delineate the boundaries of substructures",
-      diff: "medium"
-    },
-
-    {
-      q: "According to the module, pseudocode reminiscent of Java and C has proliferated because:",
-      options: [
-        "A. Java and C are the fastest languages",
-        "B. Most programmers have at least a reading knowledge of these languages",
-        "C. They are the only languages available",
-        "D. They are easy to compile"
-      ],
-      answer: "B. Most programmers have at least a reading knowledge of these languages",
-      diff: "easy"
-    }
-  ]
-},
-
-
-90:{
-  title: "While Loop and Iteration",
-
-  summary: `**Key Topics Covered:**
-- While loop structure
-- Conditional repetition
-- Iteration process
-- Loop body and conditions
-- Infinite loops
-
----
-
-**Simple Understanding:**
-
-**While Loop:**
-👉 A while loop repeats an activity as long as a condition remains true.
-
-👉 General structure:
-
-while (Condition):
+**Pseudocode Format:**
+\`\`\`
+while (condition):
     Activity
+\`\`\`
 
-👉 Example:
+**Kaise kaam karta hai:**
+1. Condition check karo
+2. Agar TRUE hai → activity perform karo → wapas condition check karo
+3. Agar FALSE hai → while structure ke baad next instruction par jao
 
+**Ticket Example:**
+\`\`\`
 while (tickets remain to be sold):
-    Sell a ticket
+    sell a ticket
+\`\`\`
+Jab tak tickets bachi hain → ek ticket becho → check karo → agar bachi hain → dubara → jab nahi bachi → stop.
 
-**How It Works:**
-1. Check the condition.
-2. If condition is true → perform activity.
-3. Go back and check condition again.
-4. When condition becomes false → exit loop.
+**if/else se farq:**
+- if/else = ek baar condition check, ek baar activity
+- while = baar baar condition check, baar baar activity (jab tak condition true)
 
-**Important Concept:**
-👉 If the condition is false initially, the loop body will never execute.
-👉 If the condition never becomes false, an infinite loop occurs.
-
----
-
-**Important Vocabulary:**
-- While loop = conditional repetition structure
-- Iteration = repeated execution
-- Condition = Boolean expression (true/false)
-- Loop body = activity to repeat
-- Exit condition = when loop terminates
-
----
-
-**Quick Revision Points:**
-- While loop repeats while condition is true.
-- Check condition before each iteration.
-- When condition false, loop ends.
-- Pseudocode: while (Condition): Activity (indented).`,
-
-  questions: [
-    {
-      q: "The repeated execution of a statement as long as a condition remains true is called:",
-      options: [
-        "A. Selection",
-        "B. Iteration (while loop)",
-        "C. Assignment",
-        "D. Function call"
-      ],
-      answer: "B. Iteration (while loop)",
-      diff: "easy"
-    },
-
-    {
-      q: "In pseudocode, the while structure follows which pattern?",
-      options: [
-        "A. if (Condition): Activity",
-        "B. while (Condition): Activity",
-        "C. repeat (Condition): Activity",
-        "D. for (Condition): Activity"
-      ],
-      answer: "B. while (Condition): Activity",
-      diff: "easy"
-    },
-
-    {
-      q: "The informal statement 'As long as there are tickets to sell, continue selling tickets' is an example of:",
-      options: [
-        "A. Selection",
-        "B. Conditional assignment",
-        "C. Iteration (while loop)",
-        "D. Sequential execution"
-      ],
-      answer: "C. Iteration (while loop)",
-      diff: "easy"
-    },
-
-    {
-      q: "In a while loop, the condition is checked:",
-      options: [
-        "A. After the activity",
-        "B. Before each iteration",
-        "C. Only once at the beginning",
-        "D. Only at the end"
-      ],
-      answer: "B. Before each iteration",
-      diff: "easy"
-    },
-
-    {
-      q: "If the condition in a while loop is false initially, the activity will be executed:",
-      options: [
-        "A. Once",
-        "B. Zero times",
-        "C. Indefinitely",
-        "D. At least once"
-      ],
-      answer: "B. Zero times",
-      diff: "medium"
-    },
-
-    {
-      q: "When the condition in a while loop becomes false, the program will:",
-      options: [
-        "A. Exit the loop and continue with next instruction",
-        "B. Repeat the loop again",
-        "C. Terminate the program",
-        "D. Execute the activity one more time"
-      ],
-      answer: "A. Exit the loop and continue with next instruction",
-      diff: "easy"
-    },
-
-    {
-      q: "The while structure in pseudocode is a form of:",
-      options: [
-        "A. Sequence",
-        "B. Selection",
-        "C. Repetition (iteration)",
-        "D. Recursion"
-      ],
-      answer: "C. Repetition (iteration)",
-      diff: "easy"
-    },
-
-    {
-      q: "Which of the following correctly represents a while loop in pseudocode?",
-      options: [
-        "A. while (tickets remain): Sell a ticket",
-        "B. if (tickets remain): Sell a ticket",
-        "C. for (tickets remain): Sell a ticket",
-        "D. repeat (tickets remain): Sell a ticket"
-      ],
-      answer: "A. while (tickets remain): Sell a ticket",
-      diff: "easy"
-    },
-
-    {
-      q: "In the pseudocode while structure, what follows the condition?",
-      options: [
-        "A. A semicolon",
-        "B. A colon",
-        "C. A comma",
-        "D. A period"
-      ],
-      answer: "B. A colon",
-      diff: "easy"
-    },
-
-    {
-      q: "The activity in a while loop is typically indented to indicate:",
-      options: [
-        "A. It is a comment",
-        "B. It is part of the loop body",
-        "C. It is optional",
-        "D. It is a separate function"
-      ],
-      answer: "B. It is part of the loop body",
-      diff: "easy"
-    },
-
-    {
-      q: "An infinite loop occurs when:",
-      options: [
-        "A. The condition is initially false",
-        "B. The condition never becomes false",
-        "C. The loop body is empty",
-        "D. The loop runs exactly 10 times"
-      ],
-      answer: "B. The condition never becomes false",
-      diff: "easy"
-    },
-
-    {
-      q: "If 'tickets remain to be sold' is initially true and each iteration sells one ticket until no tickets remain, this is an example of:",
-      options: [
-        "A. An infinite loop",
-        "B. A finite while loop",
-        "C. A selection structure",
-        "D. A recursive function"
-      ],
-      answer: "B. A finite while loop",
-      diff: "easy"
-    },
-
-    {
-      q: "The while structure is also known as:",
-      options: [
-        "A. Conditional execution",
-        "B. Repetitive execution or looping",
-        "C. Sequential execution",
-        "D. Parallel execution"
-      ],
-      answer: "B. Repetitive execution or looping",
-      diff: "easy"
-    },
-
-    {
-      q: "In the while loop, after performing the activity, the next step is to:",
-      options: [
-        "A. Continue to the next instruction",
-        "B. Return to check the condition again",
-        "C. Terminate the program",
-        "D. Wait for user input"
-      ],
-      answer: "B. Return to check the condition again",
-      diff: "easy"
-    },
-
-    {
-      q: "The condition in a while loop must evaluate to:",
-      options: [
-        "A. A number",
-        "B. True or false (Boolean)",
-        "C. A string",
-        "D. An integer"
-      ],
-      answer: "B. True or false (Boolean)",
-      diff: "easy"
-    },
-
-    {
-      q: "Which of the following is NOT a typical use of a while loop?",
-      options: [
-        "A. Processing items until a condition is met",
-        "B. Repeating a fixed number of times without a counter",
-        "C. Performing an activity exactly once",
-        "D. Reading data until end-of-file"
-      ],
-      answer: "C. Performing an activity exactly once",
-      diff: "medium"
-    },
-
-    {
-      q: "The pseudocode while structure is similar to which construct in programming languages?",
-      options: [
-        "A. if-then-else",
-        "B. for loop",
-        "C. while loop",
-        "D. do-while loop"
-      ],
-      answer: "C. while loop",
-      diff: "easy"
-    },
-
-    {
-      q: "The statement 'While there are tickets to sell, keep selling tickets' is equivalent to:",
-      options: [
-        "A. Sell a ticket while tickets remain",
-        "B. if tickets remain then sell a ticket",
-        "C. Sell a ticket once",
-        "D. Never sell tickets"
-      ],
-      answer: "A. Sell a ticket while tickets remain",
-      diff: "easy"
-    },
-
-    {
-      q: "If the activity inside a while loop does not change the condition, the result is:",
-      options: [
-        "A. A loop that runs once",
-        "B. An infinite loop",
-        "C. A loop that never runs",
-        "D. A syntax error"
-      ],
-      answer: "B. An infinite loop",
-      diff: "easy"
-    },
-
-    {
-      q: "In the module example, the pseudocode 'while (tickets remain to be sold): Sell a ticket' will:",
-      options: [
-        "A. Sell tickets until none remain, then stop",
-        "B. Sell only one ticket",
-        "C. Sell tickets forever",
-        "D. Never sell tickets"
-      ],
-      answer: "A. Sell tickets until none remain, then stop",
-      diff: "easy"
-    }
-  ]
-},
+**Yaad rakho:**
+- while (condition): = loop structure
+- Activity tab tak repeats hoti hai jab tak condition true hai
+- False hone par while se bahar niklo
+- if = single selection; while = repeated execution`,
+    questions: [
+      {
+        q: 'The while structure is used when you need to:',
+        options: ['A. Execute a step exactly once', 'B. Repeatedly execute a statement or sequence of statements as long as a condition remains true', 'C. Select between two activities', 'D. Assign a value to a variable'],
+        answer: 'B. Repeatedly execute a statement or sequence of statements as long as a condition remains true',
+        diff: 'easy',
+      },
+      {
+        q: 'In the while pseudocode format, when does the loop STOP?',
+        options: ['A. After executing the activity exactly once', 'B. When the condition is found to be false', 'C. When the computer runs out of memory', 'D. After 100 iterations automatically'],
+        answer: 'B. When the condition is found to be false',
+        diff: 'easy',
+      },
+      {
+        q: 'The ticket-selling example "while (tickets remain to be sold): sell a ticket" demonstrates which concept?',
+        options: ['A. Assignment', 'B. Selection', 'C. Repetition (looping)', 'D. Termination by halt instruction'],
+        answer: 'C. Repetition (looping)',
+        diff: 'easy',
+      },
+      {
+        q: 'After a while loop finds its condition to be FALSE, execution continues:',
+        options: ['A. By re-running the loop from the beginning', 'B. At the next instruction following the while structure', 'C. By evaluating the else branch', 'D. The program immediately terminates'],
+        answer: 'B. At the next instruction following the while structure',
+        diff: 'medium',
+      },
+      {
+        q: 'In pseudocode, what character follows the condition in a while statement?',
+        options: ['A. A semicolon (;)', 'B. A colon (:)', 'C. A period (.)', 'D. An equal sign (=)'],
+        answer: 'B. A colon (:)',
+        diff: 'easy',
+      },
+      {
+        q: 'How does a while structure differ from an if/else structure?',
+        options: ['A. While uses a colon; if/else does not', 'B. While repeatedly checks the condition and repeats the activity until false; if/else checks once and selects one of two activities', 'C. While assigns values; if/else only loops', 'D. There is no difference between the two'],
+        answer: 'B. While repeatedly checks the condition and repeats the activity until false; if/else checks once and selects one of two activities',
+        diff: 'medium',
+      },
+      {
+        q: 'Both "As long as there are tickets to sell, continue selling" and "While there are tickets to sell, keep selling" are reduced to the SAME pseudocode. This illustrates that:',
+        options: ['A. Pseudocode cannot express natural language', 'B. Pseudocode provides a single uniform way to express this common semantic structure regardless of how it is phrased informally', 'C. Only one of these statements is correct', 'D. Pseudocode requires exact English wording'],
+        answer: 'B. Pseudocode provides a single uniform way to express this common semantic structure regardless of how it is phrased informally',
+        diff: 'hard',
+      },
+      {
+        q: 'In the while structure, what happens if the condition is TRUE on the first check?',
+        options: ['A. The loop is skipped entirely', 'B. The activity is performed, and then the condition is checked again', 'C. The program terminates immediately', 'D. Execution jumps to the else branch'],
+        answer: 'B. The activity is performed, and then the condition is checked again',
+        diff: 'medium',
+      },
+      {
+        q: 'Which THREE pseudocode structures are covered in modules 89 and 90?',
+        options: ['A. For, switch, do-while', 'B. Assignment (name = expression), if/else, while', 'C. Input, output, goto', 'D. Function, class, object'],
+        answer: 'B. Assignment (name = expression), if/else, while',
+        diff: 'medium',
+      },
+      {
+        q: 'If zero tickets remain when the while loop is first reached, what happens?',
+        options: ['A. An error occurs', 'B. The condition is immediately false, so the activity is never executed and execution moves past the while structure', 'C. The loop runs once anyway', 'D. The algorithm restarts from the beginning'],
+        answer: 'B. The condition is immediately false, so the activity is never executed and execution moves past the while structure',
+        diff: 'hard',
+      },
+    ],
+  },
 91: {
   title: "Algorithm: Discovery (The Art of Problem Solving)",
   summary: `**Key Topics Covered:**
@@ -41830,5 +35956,6 @@ Correct inference:
   },
   
 };
+
 
 export default mcqs;

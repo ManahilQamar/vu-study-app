@@ -1481,3 +1481,88 @@ html {
     transform: translateY(0);
   }
 }
+
+.lec-grid-v2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+ 
+.lec-card {
+  background: var(--card-bg);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: box-shadow 0.15s;
+}
+.lec-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,0.06); }
+ 
+.lec-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  position: relative;
+}
+ 
+.lec-card.lt-locked .lec-card-top { cursor: default; opacity: 0.55; }
+ 
+.lec-card-top .lec-dot {
+  width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+}
+.dot-done   { background: #16a34a; }
+.dot-active { background: #2563eb; }
+.dot-soon   { background: #f59e0b; }
+.dot-locked { background: #9ca3af; }
+ 
+.lec-card-top .lec-num {
+  width: 32px; height: 32px; border-radius: 9px;
+  background: var(--bg); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 700; color: var(--text-primary);
+  flex-shrink: 0;
+}
+ 
+.lec-card-top .lec-name {
+  flex: 1; font-size: 13.5px; font-weight: 600;
+  color: var(--text-primary); line-height: 1.4;
+  min-width: 0;
+}
+ 
+.lec-card-top .lec-badge {
+  font-size: 11px; font-weight: 700; padding: 3px 10px;
+  border-radius: 7px; flex-shrink: 0;
+}
+.badge-done   { background: #f0fdf4; color: #16a34a; }
+.badge-play   { background: #eff6ff; color: #2563eb; }
+.badge-soon   { background: #fffbeb; color: #b45309; }
+.badge-locked { background: #f3f4f6; color: #9ca3af; }
+ 
+.lec-card-actions {
+  display: flex; gap: 0;
+  border-top: 1px solid var(--border);
+}
+.lec-action-btn {
+  flex: 1; padding: 9px 6px;
+  font-size: 11.5px; font-weight: 600;
+  background: var(--bg); border: none;
+  border-right: 1px solid var(--border);
+  color: var(--text-secondary);
+  cursor: pointer; font-family: inherit;
+  transition: background 0.12s;
+}
+.lec-action-btn:last-child { border-right: none; }
+.lec-action-btn:hover { background: var(--border); }
+.lec-action-practice {
+  color: #7c3aed; font-weight: 700;
+}
+.lec-action-practice:hover {
+  background: #7c3aed; color: #fff;
+}
+ 
+@media (max-width: 640px) {
+  .lec-card-top { padding: 12px 14px; gap: 10px; }
+  .lec-card-top .lec-name { font-size: 12.5px; }
+  .lec-action-btn { font-size: 10.5px; padding: 8px 4px; }
+}
