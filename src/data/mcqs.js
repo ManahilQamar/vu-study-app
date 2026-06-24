@@ -16056,9 +16056,3864 @@ Electrons random motion karte hain, lekin electric field lagane par average spee
   },
 
 
+  27: {
+    title: 'The Magnetic Field',
+    summary: `**Yeh Lecture Kya Cover Karti Hai:**
+- Magnet ki discovery aur uski history
+- Magnets ke properties (North aur South poles)
+- Magnetic field kya hai aur kaise kaam karta hai
+- Moving charge par magnetic force ka effect
+- Right-hand rule (direction of force)
+- Tesla (magnetic field ki unit)
+- Lorentz Force (Electric + Magnetic force together)
+- Velocity selector ka concept
+- Magnetic field work nahi karta (zero work)
+- Charged particles ka circular motion in magnetic field
+- Mass spectrometer ka kaam
+- Earth's magnetic field aur uski protection
+- Current-carrying wire par magnetic force
+- Magnetic moment aur uski significance
+- Ampere's Law aur uski applications
+- Infinite straight wire ka magnetic field
+- Solenoid ka magnetic field
+- Thick wire ke andar aur bahar magnetic field
+
+---
+
+**Asaan Zaban Mein Samjho:**
+
+**1. Magnet Kya Hai?**
+Magnet ek aisi cheez hai jo iron (lohe) ko attract karti hai. Isko pehle Magnus naam ke aadmi ne discover kiya tha. Isliye iska naam "magnet" rakha gaya. Pehle magnets navigation (jahaz raasta dikhane) ke liye use hote the, ab yeh technology mein bohot jagah use hote hain.
+
+**2. Magnets Ke Applications:**
+- **Maglev Trains:** Magnetic force ki wajah se trains track ke upar tairti hain, friction kam hota hai.
+- **MRI (Magnetic Resonance Imaging):** Magnetic fields use hokar body ke andar ki tasweerein banayi jaati hain.
+
+**3. Magnetic Poles:**
+Har magnet ke do poles hote hain: **North** aur **South**.
+- Opposite poles (N-S) attract karte hain (paas aate hain)
+- Same poles (N-N ya S-S) repel karte hain (door jaate hain)
+
+**4. Magnetic Field:**
+Magnet ke around ek area hota hai jahan uski force mehsoos hoti hai, ise magnetic field kehte hain.
+- Iron filings (choora) magnet ke around patterns banate hain
+- Poles ke paas field strongest hoti hai (zyada filings)
+- Field lines North se South ki taraf jaati hain
+
+**5. Magnetism vs Electrostatics (Farq):**
+
+| Electrostatics | Magnetism |
+|----------------|-----------|
+| Positive aur negative charges alag ho sakte hain | North aur South poles kabhi alag nahi ho sakte |
+| Stationary charge par force lagti hai | Stationary charge par koi force nahi lagti |
+| Sirf moving charge par force lagti hai | |
+
+**6. Magnetic Force on Moving Charge:**
+Jab charge move karta hai magnetic field mein, to us par force lagti hai.
+Formula: **F = q (v × B)**
+- F = force
+- q = charge
+- v = velocity (speed with direction)
+- B = magnetic field
+
+**Important:** Force ki direction **hamesha** velocity aur magnetic field dono ke perpendicular hoti hai.
+
+**7. Right-Hand Rule (Direction of Force):**
+Force ki direction nikalne ke liye:
+1. **Forefinger (Index finger):** Velocity (v) ki direction mein rakho
+2. **Middle finger:** Magnetic field (B) ki direction mein rakho
+3. **Thumb:** Force (F) ki direction dikhayega
+
+⚠️ **Note:** Agar charge negative hai (jaise electron), to force opposite direction mein hogi.
+
+**8. Magnetic Field Units:**
+- **Tesla (T)** = SI unit
+- 1 Tesla = 1 Newton / (Coulomb × meter/second)
+- 1 Tesla = 10,000 Gauss
+
+**Examples of Magnetic Field Strengths:**
+- Earth's surface: 10⁻⁴ T (bahut weak)
+- Bar magnet: 10⁻² T
+- Powerful electromagnet: 1 T
+- Superconducting magnet: 5 T (bahut strong)
+
+**9. Lorentz Force:**
+Jab electric field (E) aur magnetic field (B) dono present hon, to total force:
+**F = qE + q(v × B)**
+
+- Electric field (qE): Electric force (charge stationary ho tab bhi lagti hai)
+- Magnetic field (q(v × B)): Magnetic force (sirf moving charge par)
+
+**10. Velocity Selector (Speed Filter):**
+Yeh ek device hai jo specific speed ki particles ko select karti hai.
+
+**Kaam kaise karta hai:**
+- Electric field (downward force) aur magnetic field (upward force) ko opposite directions mein lagaya jata hai
+- Jab dono forces equal ho jayein, particle straight chalta hai (deflect nahi hota)
+
+**Condition:** qE = qvB → **v = E/B**
+
+Sirf woh particles guzarti hain jinki speed v = E/B hai. Baqi deflect ho jaate hain.
+
+**11. Magnetic Field Ka Work:**
+Magnetic field **kabhi bhi work nahi karta**! Kyun?
+- Force hamesha velocity ke perpendicular hoti hai
+- Perpendicular force displacement nahi karti
+- Work = Force × Displacement (displacement zero hai)
+
+**12. Circular Motion in Magnetic Field:**
+Jab charge magnetic field mein enter karta hai (perpendicular), to woh circle mein ghoomta hai.
+
+**Radius of circle:** r = mv/(qB)
+- **m:** mass (zyada mass = bada radius)
+- **v:** speed (zyada speed = bada radius)
+- **q:** charge (zyada charge = chhota radius)
+- **B:** magnetic field (zyada field = chhota radius)
+
+**Angular frequency:** ω = qB/m (zyada field = tez ghoomega)
+
+**13. Mass Spectrometer:**
+Yeh device atoms ki mass measure karti hai.
+
+**Kaam:**
+1. Particles velocity selector se guzarti hain (same speed)
+2. Phir magnetic field mein enter hoti hain
+3. Heavier particles: bada radius (kam deflect)
+4. Lighter particles: chhota radius (zyada deflect)
+
+Radius measure karke mass nikal sakte hain. Ye Lithium, Sodium, Oxygen, Lead etc. ko separate kar sakta hai.
+
+**14. Earth's Magnetic Field (Protection):**
+Earth ka magnetic field humein Sun se aane wali harmful particles (solar wind) se bachata hai.
+- Sun se protons aur alpha particles aate hain
+- Earth ka magnetic field unhe deflect kar deta hai
+- Agar yeh protection na hoti to life possible nahi hoti
+
+**15. Force on Current-Carrying Wire:**
+Jab wire mein current flow ho aur woh magnetic field mein ho, to wire par force lagti hai.
+
+Formula: **F = IL × B**
+- I = current
+- L = length of wire
+- B = magnetic field
+
+**Direction:** Current aur magnetic field ke cross product se.
+
+**16. Magnetic Moment (μ):**
+Yeh current loop ki strength aur orientation batata hai.
+- μ = I × A (area of loop)
+- Direction: Loop ke plane ke perpendicular
+- Magnetic moment magnetic field ke saath align hona chahti hai (minimum energy)
+
+**Electron as a Magnet:**
+Electron spin ki wajah se ek chhota magnet hai. Yeh nature ka smallest magnetic moment hai.
+
+**17. Ampere's Law:**
+Yeh law batata hai ke magnetic field aur current ka kya relation hai.
+
+**Formula:** ∮ B·ds = μ₀ I_enc
+- B = magnetic field
+- ds = small length element
+- μ₀ = permeability of free space (4π × 10⁻⁷)
+- I_enc = enclosed current
+
+**18. Applications of Ampere's Law:**
+
+**(a) Infinite Straight Wire:**
+Wire se distance r par magnetic field:
+**B = μ₀ I / (2πr)**
+- Current zyada → field zyada
+- Distance zyada → field kam
+
+**(b) Solenoid (Coil):**
+Andar uniform magnetic field:
+**B = μ₀ n I**
+- n = turns per unit length (zyada turns = zyada field)
+- I = current
+
+**(c) Thick Wire:**
+Wire ke andar (r < R): **B = μ₀ I r / (2πR²)** (linearly increases)
+Wire ke bahar (r > R): **B = μ₀ I / (2πr)** (inversely decreases)
+
+**Graph:** Center par B = 0, surface par maximum, phir bahar kam hoti hai.
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+
+- Har magnet ke North aur South pole hote hain (alag nahi ho sakte)
+- Magnetic force sirf moving charge par lagti hai (stationary par nahi)
+- F = q(v × B) — force velocity aur field dono ke perpendicular
+- Right-hand rule: Forefinger (v), Middle finger (B), Thumb (F)
+- 1 Tesla = 10,000 Gauss
+- Lorentz Force: F = qE + q(v × B)
+- Magnetic field work nahi karti (W = 0)
+- Circular motion: r = mv/(qB)
+- Mass spectrometer atoms ki mass measure karta hai
+- Earth's magnetic field humein solar wind se bachata hai
+- Force on wire: F = IL × B
+- Ampere's Law: ∮B·ds = μ₀ I_enc
+- Infinite wire: B = μ₀ I / (2πr)
+- Solenoid: B = μ₀ n I
+- Thick wire ke andar B ∝ r, bahar B ∝ 1/r
+
+**Common Mistakes:**
+1. Magnetic force direction galat karna — right-hand rule use karo!
+2. Ye bhoolna ke magnetic field work nahi karti
+3. Stationary charge par magnetic force nahi lagti
+4. Electron (negative charge) ke liye force direction opposite hogi
+5. Ampere's law sirf symmetric cases mein easy hai
+6. Solenoid ke andar field uniform hai, bahar zero (approx)`,
+
+    questions: [
+      {
+        q: 'A stationary charge placed in a magnetic field experiences:',
+        options: [
+          'A. A force in the direction of the field',
+          'B. A force perpendicular to the field',
+          'C. No force',
+          'D. A force opposite to the field'
+        ],
+        answer: 'C. No force',
+        diff: 'easy'
+      },
+      {
+        q: 'The magnetic force on a moving charge is given by:',
+        options: [
+          'A. F = qE',
+          'B. F = qvB',
+          'C. F = q(v × B)',
+          'D. F = qB/v'
+        ],
+        answer: 'C. F = q(v × B)',
+        diff: 'easy'
+      },
+      {
+        q: 'The direction of the magnetic force on a positive charge is determined by:',
+        options: [
+          'A. Left-hand rule',
+          'B. Right-hand rule',
+          'C. Fleming\'s left-hand rule',
+          'D. Neither'
+        ],
+        answer: 'B. Right-hand rule',
+        diff: 'easy'
+      },
+      {
+        q: 'For an electron (negative charge) moving in a magnetic field, the magnetic force is:',
+        options: [
+          'A. In the same direction as given by right-hand rule',
+          'B. Opposite to the direction given by right-hand rule',
+          'C. Zero',
+          'D. Along the magnetic field'
+        ],
+        answer: 'B. Opposite to the direction given by right-hand rule',
+        diff: 'medium'
+      },
+      {
+        q: 'The SI unit of magnetic field is:',
+        options: [
+          'A. Gauss',
+          'B. Tesla',
+          'C. Weber',
+          'D. Henry'
+        ],
+        answer: 'B. Tesla',
+        diff: 'easy'
+      },
+      {
+        q: '1 Tesla is equal to:',
+        options: [
+          'A. 1 N/(C·m/s)',
+          'B. 1 N/(A·m)',
+          'C. Both A and B',
+          'D. 1 N/C'
+        ],
+        answer: 'C. Both A and B',
+        diff: 'medium'
+      },
+      {
+        q: 'The Earth\'s magnetic field at the surface is approximately:',
+        options: [
+          'A. 10⁻⁴ T',
+          'B. 10⁻² T',
+          'C. 1 T',
+          'D. 5 T'
+        ],
+        answer: 'A. 10⁻⁴ T',
+        diff: 'easy'
+      },
+      {
+        q: 'The Lorentz force is the sum of:',
+        options: [
+          'A. Electric force and gravitational force',
+          'B. Electric force and magnetic force',
+          'C. Magnetic force and gravitational force',
+          'D. Electric force and frictional force'
+        ],
+        answer: 'B. Electric force and magnetic force',
+        diff: 'easy'
+      },
+      {
+        q: 'A velocity selector allows particles to pass undeflected if their speed is:',
+        options: [
+          'A. v = B/E',
+          'B. v = E/B',
+          'C. v = EB',
+          'D. v = E²/B'
+        ],
+        answer: 'B. v = E/B',
+        diff: 'medium'
+      },
+      {
+        q: 'The magnetic force does no work on a moving charge because:',
+        options: [
+          'A. The force is always zero',
+          'B. The force is perpendicular to velocity',
+          'C. The force is parallel to velocity',
+          'D. The charge is always at rest'
+        ],
+        answer: 'B. The force is perpendicular to velocity',
+        diff: 'medium'
+      },
+      {
+        q: 'A charged particle moving perpendicular to a magnetic field follows a:',
+        options: [
+          'A. Straight line',
+          'B. Circular path',
+          'C. Helical path',
+          'D. Parabolic path'
+        ],
+        answer: 'B. Circular path',
+        diff: 'easy'
+      },
+      {
+        q: 'The radius of the circular path of a charged particle in a magnetic field is proportional to:',
+        options: [
+          'A. 1/B',
+          'B. B',
+          'C. B²',
+          'D. 1/B²'
+        ],
+        answer: 'A. 1/B',
+        diff: 'medium'
+      },
+      {
+        q: 'In a mass spectrometer, heavier ions will have:',
+        options: [
+          'A. Smaller radius of curvature',
+          'B. Larger radius of curvature',
+          'C. Same radius as lighter ions',
+          'D. No deflection'
+        ],
+        answer: 'B. Larger radius of curvature',
+        diff: 'medium'
+      },
+      {
+        q: 'The magnetic field protects the Earth from:',
+        options: [
+          'A. Ultraviolet rays',
+          'B. Solar wind (charged particles)',
+          'C. X-rays',
+          'D. Gamma rays'
+        ],
+        answer: 'B. Solar wind (charged particles)',
+        diff: 'easy'
+      },
+      {
+        q: 'The force on a current-carrying wire in a magnetic field is given by:',
+        options: [
+          'A. F = I L B',
+          'B. F = I L × B',
+          'C. F = I / (L × B)',
+          'D. F = L B / I'
+        ],
+        answer: 'B. F = I L × B',
+        diff: 'easy'
+      },
+      {
+        q: 'The magnetic moment of a current loop is defined as:',
+        options: [
+          'A. μ = I / A',
+          'B. μ = I A',
+          'C. μ = A / I',
+          'D. μ = I² A'
+        ],
+        answer: 'B. μ = I A',
+        diff: 'medium'
+      },
+      {
+        q: 'Ampere\'s law states that ∮B·ds is equal to:',
+        options: [
+          'A. μ₀ I_enc',
+          'B. ε₀ I_enc',
+          'C. I_enc / μ₀',
+          'D. μ₀ ε₀ I_enc'
+        ],
+        answer: 'A. μ₀ I_enc',
+        diff: 'medium'
+      },
+      {
+        q: 'The magnetic field at a distance r from a long straight wire carrying current I is:',
+        options: [
+          'A. μ₀ I / (2πr)',
+          'B. μ₀ I / (4πr)',
+          'C. μ₀ I r / (2π)',
+          'D. μ₀ I / (2r)'
+        ],
+        answer: 'A. μ₀ I / (2πr)',
+        diff: 'easy'
+      },
+      {
+        q: 'Inside a solenoid, the magnetic field is:',
+        options: [
+          'A. Zero',
+          'B. Uniform and parallel to the axis',
+          'C. Non-uniform',
+          'D. Radial outward'
+        ],
+        answer: 'B. Uniform and parallel to the axis',
+        diff: 'easy'
+      },
+      {
+        q: 'For a thick wire carrying current uniformly, the magnetic field inside the wire (r < R) is proportional to:',
+        options: [
+          'A. r',
+          'B. 1/r',
+          'C. r²',
+          'D. constant'
+        ],
+        answer: 'A. r',
+        diff: 'hard'
+      }
+    ], 
+  },
+
+ 28: {
+    title: 'Electromagnetic Induction',
+    summary: `**Yeh Lecture Kya Cover Karti Hai:**
+- Electricity aur magnetism ka inter-connection
+- Magnetic flux aur uski definition
+- Faraday's Law of Induction
+- Lenz's Law (direction of induced current)
+- Methods of changing magnetic flux
+- Induced EMF aur induced current
+- Motional EMF (moving rod in magnetic field)
+- Eddy currents aur unke applications
+- Energy conservation aur Lenz's Law
+- Practical applications (generators, transformers, metal detectors)
+
+---
+
+**Asaan Zaban Mein Samjho:**
+
+**1. Electromagnetism Kya Hai?**
+Jab current flow hota hai to magnetic field generate hoti hai. Aur jab magnetic field change hoti hai to current generate hota hai. Yeh doono cheezein aapas mein connected hain. Isi principle par generators, transformers, aur bohot si machines kaam karti hain.
+
+**2. Magnetic Lines of Force:**
+- Magnetic field lines North pole se start hoti hain aur South pole par khatam hoti hain
+- Yeh lines kabhi cross nahi karti (cross karti to compass needle do directions dikhati)
+- Magnetic field lines closed loops form karti hain
+- Electric field lines ki tarah, magnetic field lines ka koi source ya sink nahi hai
+
+**3. Magnetic Flux (Φ_B):**
+Magnetic flux = magnetic field × area (perpendicular component)
+Formula: Φ_B = B·A = BA cosθ
+- Unit: Weber (Wb) = Tesla × meter²
+- θ = angle between magnetic field and normal to surface
+- Max flux: θ = 0° (field perpendicular to surface)
+- Zero flux: θ = 90° (field parallel to surface)
+- Closed surface par net flux hamesha zero hota hai
+
+**4. Faraday's Law of Induction:**
+"Induced EMF = - rate of change of magnetic flux"
+Formula: ε = -dΦ_B/dt
+
+- Agar flux change ho to EMF induce hoti hai
+- Fast change = zyada EMF
+- Slow change = kam EMF
+- Negative sign = Lenz's Law (direction of current)
+
+**5. Lenz's Law:**
+"Induced current ka direction aisa hota hai ke woh us change ko oppose kare jis ki wajah se woh generate hua"
+
+- Agar magnet coil ke paas aa rahi hai → induced current magnet ko repel karega
+- Agar magnet coil se door ja rahi hai → induced current magnet ko attract karega
+- Yeh energy conservation ka principle hai
+
+**6. Flux Change Ke 3 Tareeqe:**
+1. **Magnet move kare:** Magnet coil mein se guzare to flux change
+2. **Area change kare:** Coil ka size change ho to flux change
+3. **Angle change kare:** Coil rotate ho to flux change
+
+**7. Motional EMF:**
+Jab conductor magnetic field mein move kare to EMF induce hoti hai.
+Formula: ε = B L v
+- B = magnetic field
+- L = length of conductor
+- v = velocity of conductor
+
+**8. Induced Current:**
+I = ε/R = (BLv)/R
+Force on moving rod: F = I L B = (B²L²v)/R
+Power dissipated: P = I²R = (B²L²v²)/R
+
+**9. Eddy Currents:**
+Jab conductor magnetic field mein move kare to usme circular currents generate hoti hain. Inhe eddy currents kehte hain.
+- Yeh energy loss ka sabab banti hain (heat generate)
+- Metal detectors, induction stoves mein use hoti hain
+- Motors mein energy loss karti hain
+
+**10. Applications of Electromagnetic Induction:**
+- **Generators:** Mechanical energy → Electrical energy
+- **Transformers:** Voltage step-up/step-down
+- **Metal detectors:** Eddy currents use karte hain
+- **Magnetic stripe cards:** Flux change se data read hota hai
+- **VHS tapes:** Magnetic tape par data stored aur read hota hai
+- **Wireless charging:** Magnetic induction se charging
+
+**11. Important Points:**
+- Magnetic flux ka change hi EMF induce karta hai (flux itself nahi)
+- Faster change → larger EMF
+- Lenz's Law energy conservation ensure karta hai
+- Eddy currents often unwanted (heat loss), but useful in some applications
+- Electric field aur magnetic field relative hain (Einstein's relativity)
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+
+- Φ_B = BA cosθ (Magnetic flux)
+- ε = -dΦ_B/dt (Faraday's Law)
+- ε = BLv (Motional EMF)
+- I = ε/R (Induced current)
+- Lenz's Law: Induced current opposes change
+- Magnetic flux unit: Weber (Wb)
+- 1 Wb = 1 T·m²
+- Net flux through closed surface = 0 (no magnetic monopoles)
+- Eddy currents = circular induced currents in conductors
+- Generators work on electromagnetic induction`,
+
+    questions: [
+      {
+        q: 'Magnetic flux through a surface is maximum when the magnetic field is:',
+        options: [
+          'A. Parallel to the surface',
+          'B. Perpendicular to the surface',
+          'C. At 45° to the surface',
+          'D. Zero'
+        ],
+        answer: 'B. Perpendicular to the surface',
+        diff: 'easy'
+      },
+      {
+        q: 'The SI unit of magnetic flux is:',
+        options: [
+          'A. Tesla',
+          'B. Weber',
+          'C. Henry',
+          'D. Gauss'
+        ],
+        answer: 'B. Weber',
+        diff: 'easy'
+      },
+      {
+        q: 'Faraday\'s law of induction states that the induced EMF is proportional to:',
+        options: [
+          'A. The magnetic flux',
+          'B. The rate of change of magnetic flux',
+          'C. The square of magnetic flux',
+          'D. The magnetic field strength'
+        ],
+        answer: 'B. The rate of change of magnetic flux',
+        diff: 'easy'
+      },
+      {
+        q: 'The negative sign in Faraday\'s law (ε = -dΦ/dt) is due to:',
+        options: [
+          'A. Conservation of charge',
+          'B. Lenz\'s law',
+          'C. Conservation of energy',
+          'D. Both B and C'
+        ],
+        answer: 'D. Both B and C',
+        diff: 'medium'
+      },
+      {
+        q: 'According to Lenz\'s law, the induced current flows in a direction that:',
+        options: [
+          'A. Enhances the change in flux',
+          'B. Opposes the change in flux',
+          'C. Is independent of flux change',
+          'D. Always flows clockwise'
+        ],
+        answer: 'B. Opposes the change in flux',
+        diff: 'medium'
+      },
+      {
+        q: 'When a magnet is moved towards a coil, the induced current in the coil will:',
+        options: [
+          'A. Attract the magnet',
+          'B. Repel the magnet',
+          'C. Have no effect on the magnet',
+          'D. Depend on the magnet\'s color'
+        ],
+        answer: 'B. Repel the magnet',
+        diff: 'medium'
+      },
+      {
+        q: 'A conductor of length L moves with velocity v perpendicular to a magnetic field B. The motional EMF is:',
+        options: [
+          'A. BLv',
+          'B. B/Lv',
+          'C. Bv/L',
+          'D. Lv/B'
+        ],
+        answer: 'A. BLv',
+        diff: 'easy'
+      },
+      {
+        q: 'Eddy currents are:',
+        options: [
+          'A. Currents that flow in straight lines',
+          'B. Circular currents induced in conductors',
+          'C. Currents that only flow in superconductors',
+          'D. Currents that never cause energy loss'
+        ],
+        answer: 'B. Circular currents induced in conductors',
+        diff: 'medium'
+      },
+      {
+        q: 'Which of the following is NOT a way to change magnetic flux?',
+        options: [
+          'A. Moving the magnet',
+          'B. Changing the area of the coil',
+          'C. Changing the resistance of the coil',
+          'D. Rotating the coil'
+        ],
+        answer: 'C. Changing the resistance of the coil',
+        diff: 'medium'
+      },
+      {
+        q: 'Magnetic field lines:',
+        options: [
+          'A. Start at north pole and end at south pole',
+          'B. Form closed loops',
+          'C. Can cross each other',
+          'D. Are straight lines'
+        ],
+        answer: 'B. Form closed loops',
+        diff: 'easy'
+      },
+      {
+        q: 'The net magnetic flux through any closed surface is:',
+        options: [
+          'A. Equal to the enclosed charge',
+          'B. Always zero',
+          'C. Proportional to the magnetic field',
+          'D. Equal to the area'
+        ],
+        answer: 'B. Always zero',
+        diff: 'medium'
+      },
+      {
+        q: 'A metal detector works on the principle of:',
+        options: [
+          'A. Electrostatic induction',
+          'B. Electromagnetic induction',
+          'C. Magnetic repulsion',
+          'D. Electric resistance'
+        ],
+        answer: 'B. Electromagnetic induction',
+        diff: 'easy'
+      },
+      {
+        q: 'When the flux through a coil changes from 0.1 Wb to 0.05 Wb in 0.1 s, the induced EMF is:',
+        options: [
+          'A. 0.5 V',
+          'B. 0.05 V',
+          'C. 5 V',
+          'D. 1 V'
+        ],
+        answer: 'A. 0.5 V',
+        diff: 'easy'
+      },
+      {
+        q: 'Lenz\'s law is a consequence of:',
+        options: [
+          'A. Conservation of charge',
+          'B. Conservation of energy',
+          'C. Conservation of momentum',
+          'D. Conservation of mass'
+        ],
+        answer: 'B. Conservation of energy',
+        diff: 'medium'
+      },
+      {
+        q: 'In a generator, mechanical energy is converted into:',
+        options: [
+          'A. Heat energy',
+          'B. Electrical energy',
+          'C. Chemical energy',
+          'D. Nuclear energy'
+        ],
+        answer: 'B. Electrical energy',
+        diff: 'easy'
+      },
+      {
+        q: 'Eddy currents are minimized in transformers by:',
+        options: [
+          'A. Using solid iron cores',
+          'B. Using laminated cores',
+          'C. Increasing the voltage',
+          'D. Decreasing the current'
+        ],
+        answer: 'B. Using laminated cores',
+        diff: 'hard'
+      },
+      {
+        q: 'The magnetic flux through a surface area A in a uniform magnetic field B at angle θ is:',
+        options: [
+          'A. BA sinθ',
+          'B. BA cosθ',
+          'C. BA tanθ',
+          'D. BA'
+        ],
+        answer: 'B. BA cosθ',
+        diff: 'easy'
+      },
+      {
+        q: 'If the magnetic flux through a coil is constant, the induced EMF is:',
+        options: [
+          'A. Maximum',
+          'B. Zero',
+          'C. Minimum but not zero',
+          'D. Equal to the flux'
+        ],
+        answer: 'B. Zero',
+        diff: 'easy'
+      },
+      {
+        q: 'The magnetic field lines never cross because:',
+        options: [
+          'A. They repel each other',
+          'B. They would give two directions at the crossing point',
+          'C. They are always parallel',
+          'D. They are imaginary lines'
+        ],
+        answer: 'B. They would give two directions at the crossing point',
+        diff: 'medium'
+      },
+      {
+        q: 'A superconducting ring in a changing magnetic field will have:',
+        options: [
+          'A. No induced current',
+          'B. Very large induced current',
+          'C. Small induced current',
+          'D. Current only when magnet moves fast'
+        ],
+        answer: 'B. Very large induced current',
+        diff: 'hard'
+      }
+    ], 
+  },
 
 
+29: {
+    title: 'Alternating Current (AC)',
+    summary: `**Yeh Lecture Kya Cover Karti Hai:**
+- AC ka production (generator ka principle)
+- Sinusoidal voltage aur current
+- Average value of AC (zero)
+- RMS (Root Mean Square) value
+- Transformers aur unki working
+- Self-inductance aur uska formula
+- Energy stored in magnetic field (inductor)
+- RL circuit aur time constant (τ = L/R)
+- LC oscillations (energy exchange between L and C)
+- AC circuits with R, L, C components
+- Phase relationships in AC circuits
+- Inductive and capacitive reactance
 
+---
+
+**Asaan Zaban Mein Samjho:**
+
+**1. AC Kya Hai?**
+Alternating Current woh current hai jo ek direction mein flow karta hai, phir apni direction change karta hai, aur yeh process continuously repeat hota hai. AC generator ke andar coil magnetic field mein ghoomti hai, jis wajah se sin wave generate hoti hai.
+
+**2. AC Generator (Dynamo):**
+Jab coil magnetic field mein rotate karti hai:
+- Sides jo field ko cut karti hain → EMF produce
+- Sides jo field ke parallel hain → zero EMF
+- EMF = ε₀ sin(ωt) (sinusoidal)
+- ε₀ = maximum EMF (peak value)
+
+**3. AC Waveform:**
+- Voltage: V(t) = V₀ sin(ωt)
+- Current: I(t) = I₀ sin(ωt)
+- Average value over full cycle = ZERO (kyunki positive aur negative equal time)
+- Power = V²/R (hamesha positive, kyunki square)
+
+**4. RMS (Root Mean Square) Value:**
+- Average of sin² = ½
+- V_rms = V₀/√2 = 0.707 V₀
+- I_rms = I₀/√2 = 0.707 I₀
+- AC meters RMS value measure karte hain
+
+**5. Transformer:**
+AC voltage ko step-up ya step-down karne ka device.
+
+| | Primary | Secondary |
+|---|---|---|
+| Turns | Nₚ | Nₛ |
+| Voltage | Vₚ | Vₛ |
+| Current | Iₚ | Iₛ |
+
+**Formulas:**
+- Vₛ/Vₚ = Nₛ/Nₚ (Voltage ratio = turns ratio)
+- Iₛ/Iₚ = Nₚ/Nₛ (Current ratio opposite)
+- Power: Vₚ Iₚ = Vₛ Iₛ (Ideal transformer)
+
+**Step-Up:** Nₛ > Nₚ → Vₛ > Vₚ (voltage increases)
+**Step-Down:** Nₛ < Nₚ → Vₛ < Vₚ (voltage decreases)
+
+**6. Why AC for Power Transmission?**
+Power loss in transmission lines: P_loss = I²R
+- Voltage increase → Current decrease (P = VI constant)
+- Low current → Less power loss
+- DC ke saath transformers kaam nahi karte
+- Isliye AC use hota hai (90% efficient)
+
+**7. Self-Inductance (L):**
+Har coil mein ek property hai ke current change hone par woh oppose karta hai.
+- Φ_B = L I (Magnetic flux proportional to current)
+- L = Self-inductance (Unit: Henry, H)
+- ε = -L (dI/dt) (Back EMF)
+- 1 H = 1 V·s/A
+
+**Inductance of Solenoid:**
+L = μ₀ n² A l
+- n = turns per unit length
+- A = cross-sectional area
+- l = length
+
+**8. Energy Stored in Inductor:**
+U_B = ½ L I²
+- Energy magnetic field mein store hoti hai
+- Energy density: u = B²/(2μ₀)
+
+**9. RL Circuit (Resistor + Inductor):**
+Jab battery connect karein:
+- Current exponentially increase karta hai
+- I(t) = (ε/R) (1 - e^{-t/τ})
+- τ = L/R (Time constant)
+- τ time par current 63% of maximum hota hai
+
+**10. LC Oscillations (Capacitor + Inductor):**
+- Energy oscillates between capacitor (electric) and inductor (magnetic)
+- Frequency: ω = 1/√(LC)
+- f = 1/(2π√LC)
+- No resistance → oscillations continue forever
+
+**11. AC with Different Components:**
+
+| Component | Phase | Reactance |
+|-----------|-------|-----------|
+| Resistor (R) | Voltage in phase with current | R |
+| Inductor (L) | Voltage leads current by 90° | X_L = ωL |
+| Capacitor (C) | Voltage lags current by 90° | X_C = 1/(ωC) |
+
+**12. Phase Relationships:**
+- Inductor: "ELI" - E leads I (voltage leads current)
+- Capacitor: "ICE" - I leads E (current leads voltage)
+- Resistor: Voltage and current in phase
+
+**13. Impedance (Z):**
+Total opposition in AC circuit: Z = √(R² + (X_L - X_C)²)
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+
+- AC generator: ε = ε₀ sin(ωt)
+- RMS: V_rms = V₀/√2, I_rms = I₀/√2
+- Transformer: Vₛ/Vₚ = Nₛ/Nₚ
+- AC transmission: Less loss (P = I²R)
+- Inductance: L = μ₀ n² A l
+- Energy in inductor: U = ½ L I²
+- RL time constant: τ = L/R
+- LC frequency: ω = 1/√(LC)
+- X_L = ωL (Inductive reactance)
+- X_C = 1/(ωC) (Capacitive reactance)
+- ELI: Voltage leads current in inductor
+- ICE: Current leads voltage in capacitor`,
+
+    questions: [
+      {
+        q: 'The average value of a sinusoidal AC voltage over a complete cycle is:',
+        options: [
+          'A. V₀',
+          'B. V₀/√2',
+          'C. Zero',
+          'D. V₀/2'
+        ],
+        answer: 'C. Zero',
+        diff: 'easy'
+      },
+      {
+        q: 'The RMS value of a sinusoidal voltage with peak value V₀ is:',
+        options: [
+          'A. V₀',
+          'B. V₀/√2',
+          'C. V₀/2',
+          'D. √2 V₀'
+        ],
+        answer: 'B. V₀/√2',
+        diff: 'easy'
+      },
+      {
+        q: 'A transformer works on the principle of:',
+        options: [
+          'A. Electrostatic induction',
+          'B. Electromagnetic induction',
+          'C. Electric resistance',
+          'D. Magnetic repulsion'
+        ],
+        answer: 'B. Electromagnetic induction',
+        diff: 'easy'
+      },
+      {
+        q: 'In a step-up transformer, the secondary voltage is:',
+        options: [
+          'A. Less than primary voltage',
+          'B. Greater than primary voltage',
+          'C. Equal to primary voltage',
+          'D. Zero'
+        ],
+        answer: 'B. Greater than primary voltage',
+        diff: 'easy'
+      },
+      {
+        q: 'Power loss in transmission lines is proportional to:',
+        options: [
+          'A. I',
+          'B. I²',
+          'C. V',
+          'D. V²'
+        ],
+        answer: 'B. I²',
+        diff: 'medium'
+      },
+      {
+        q: 'The unit of inductance is:',
+        options: [
+          'A. Farad',
+          'B. Henry',
+          'C. Tesla',
+          'D. Weber'
+        ],
+        answer: 'B. Henry',
+        diff: 'easy'
+      },
+      {
+        q: 'The time constant of an RL circuit is:',
+        options: [
+          'A. RC',
+          'B. L/R',
+          'C. R/L',
+          'D. 1/(RC)'
+        ],
+        answer: 'B. L/R',
+        diff: 'easy'
+      },
+      {
+        q: 'In an RL circuit, after one time constant, the current reaches approximately:',
+        options: [
+          'A. 37% of maximum',
+          'B. 50% of maximum',
+          'C. 63% of maximum',
+          'D. 100% of maximum'
+        ],
+        answer: 'C. 63% of maximum',
+        diff: 'medium'
+      },
+      {
+        q: 'The energy stored in an inductor carrying current I is:',
+        options: [
+          'A. ½ LI²',
+          'B. LI²',
+          'C. ½ L² I',
+          'D. L²I²'
+        ],
+        answer: 'A. ½ LI²',
+        diff: 'easy'
+      },
+      {
+        q: 'The frequency of oscillation in an LC circuit is:',
+        options: [
+          'A. √(LC)',
+          'B. 1/√(LC)',
+          'C. LC',
+          'D. 1/(LC)'
+        ],
+        answer: 'B. 1/√(LC)',
+        diff: 'medium'
+      },
+      {
+        q: 'In a purely inductive AC circuit, the current:',
+        options: [
+          'A. Leads the voltage by 90°',
+          'B. Lags the voltage by 90°',
+          'C. Is in phase with voltage',
+          'D. Is 180° out of phase with voltage'
+        ],
+        answer: 'B. Lags the voltage by 90°',
+        diff: 'medium'
+      },
+      {
+        q: 'In a purely capacitive AC circuit, the current:',
+        options: [
+          'A. Leads the voltage by 90°',
+          'B. Lags the voltage by 90°',
+          'C. Is in phase with voltage',
+          'D. Is 180° out of phase with voltage'
+        ],
+        answer: 'A. Leads the voltage by 90°',
+        diff: 'medium'
+      },
+      {
+        q: 'The inductive reactance X_L is given by:',
+        options: [
+          'A. ωL',
+          'B. 1/(ωL)',
+          'C. ω/L',
+          'D. L/ω'
+        ],
+        answer: 'A. ωL',
+        diff: 'easy'
+      },
+      {
+        q: 'The capacitive reactance X_C is given by:',
+        options: [
+          'A. ωC',
+          'B. 1/(ωC)',
+          'C. C/ω',
+          'D. ω/C'
+        ],
+        answer: 'B. 1/(ωC)',
+        diff: 'easy'
+      },
+      {
+        q: 'Why is AC preferred over DC for power transmission?',
+        options: [
+          'A. AC is safer than DC',
+          'B. Transformers can change AC voltage efficiently',
+          'C. AC produces less heat',
+          'D. AC travels faster than DC'
+        ],
+        answer: 'B. Transformers can change AC voltage efficiently',
+        diff: 'medium'
+      }
+    ],
+
+  },
+
+  30: {
+    title: 'Electromagnetic Waves',
+    summary: `**Yeh Lecture Kya Cover Karti Hai:**
+- Maxwell's equations ka introduction
+- Displacement current aur uski importance
+- Electromagnetic waves ka concept
+- Speed of light from Maxwell's equations
+- Electromagnetic spectrum (radio to gamma rays)
+- Properties of EM waves (transverse, E ⟂ B)
+- Production of EM waves (antennas)
+- Polarization of EM waves
+- AM and FM modulation
+- Energy and momentum in EM waves
+
+---
+
+**Asaan Zaban Mein Samjho:**
+
+**1. Maxwell's Great Achievement:**
+James Clerk Maxwell ne 1865 mein electric aur magnetic forces ko unify kiya. Usne 4 equations likhi jo electromagnetism ka complete description deti hain. Yeh equations batati hain ke:
+- Charges electric field produce karte hain
+- Currents magnetic field produce karte hain
+- Changing magnetic field electric field produce karti hai
+- Changing electric field magnetic field produce karti hai
+
+**2. The Four Maxwell's Equations:**
+
+| Law | Equation | Meaning |
+|-----|----------|---------|
+| Gauss's Law (Electric) | ∮E·dA = Q/ε₀ | Charges produce electric field |
+| Gauss's Law (Magnetic) | ∮B·dA = 0 | No magnetic monopoles |
+| Faraday's Law | ∮E·ds = -dΦ_B/dt | Changing B produces E |
+| Ampere-Maxwell Law | ∮B·ds = μ₀(I + ε₀ dΦ_E/dt) | Current OR changing E produces B |
+
+**3. Displacement Current (Maxwell's Addition):**
+Maxwell ne Ampere's law mein ek term add kiya: I_d = ε₀ dΦ_E/dt
+- Yeh "displacement current" changing electric field ki wajah se magnetic field generate karta hai
+- Isi wajah se EM waves possible hain (vacuum mein bhi)
+- Without this term, charge conservation violate hoti
+
+**4. Electromagnetic Waves:**
+- Transverse waves (E and B fields perpendicular to direction of travel)
+- Speed in vacuum: c = 1/√(μ₀ε₀) = 3×10⁸ m/s
+- E ⟂ B ⟂ direction of propagation
+- E₀ = c B₀ (amplitudes related)
+- No medium required (vacuum mein travel kar sakti hain)
+
+**5. Wave Properties:**
+- Wavelength (λ): distance between successive peaks
+- Frequency (f): cycles per second (Hz)
+- Speed: c = f λ
+- Amplitude (E₀ or B₀): maximum field strength
+- Intensity: I ∝ E₀² (power per unit area)
+
+**6. Electromagnetic Spectrum:**
+
+| Type | Wavelength | Frequency | Uses |
+|------|-----------|-----------|------|
+| Radio waves | > 1 m | < 10⁹ Hz | Broadcasting |
+| Microwaves | 1 mm - 1 m | 10⁹ - 10¹² Hz | Cooking, radar |
+| Infrared | 700 nm - 1 mm | 10¹² - 4×10¹⁴ Hz | Heat, remote controls |
+| Visible | 400 - 700 nm | 4×10¹⁴ - 7.5×10¹⁴ Hz | Sight |
+| UV | 10 - 400 nm | 7.5×10¹⁴ - 3×10¹⁶ Hz | Sunburns |
+| X-rays | 0.01 - 10 nm | 3×10¹⁶ - 3×10¹⁹ Hz | Medical imaging |
+| Gamma rays | < 0.01 nm | > 3×10¹⁹ Hz | Nuclear medicine |
+
+**7. Production of EM Waves:**
+- Accelerating charges emit EM waves
+- Antenna mein electrons oscillate → changing current → EM wave
+- Dipole antenna: strongest radiation perpendicular to antenna (sin²θ pattern)
+- Loop antenna: current loop creates magnetic field
+
+**8. Polarization:**
+- EM wave ka polarization = direction of electric field oscillation
+- Linearly polarized: E oscillates in one direction
+- Unpolarized: E oscillates in random directions (sunlight, bulbs)
+- Polarizers allow only one direction of E field to pass
+- Sunglasses use polarization to reduce glare
+
+**9. Modulation (AM vs FM):**
+
+| | AM (Amplitude Modulation) | FM (Frequency Modulation) |
+|---|---|---|
+| Method | Amplitude varies with signal | Frequency varies with signal |
+| Quality | Lower quality | Better quality |
+| Range | Longer range | Shorter range |
+| Example | Radio Pakistan (800 kHz) | FM radio (100 MHz) |
+
+**10. Wave Equation:**
+For a plane wave traveling in z-direction:
+- E_x = E₀ sin(kz - ωt)
+- B_y = B₀ sin(kz - ωt)
+- where k = 2π/λ (wave number), ω = 2πf (angular frequency)
+- E₀ = c B₀
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+
+- Maxwell added displacement current: I_d = ε₀ dΦ_E/dt
+- EM waves: c = 1/√(μ₀ε₀)
+- E₀ = cB₀
+- c = fλ
+- EM waves are transverse, E ⟂ B ⟂ propagation
+- No medium required for EM waves
+- Accelerating charges produce EM waves
+- Polarization = direction of E field
+- AM: amplitude changes; FM: frequency changes
+- Intensity ∝ E₀²`,
+
+    questions: [
+      {
+        q: 'Who unified electricity and magnetism into a single theory?',
+        options: [
+          'A. Isaac Newton',
+          'B. Albert Einstein',
+          'C. James Clerk Maxwell',
+          'D. Michael Faraday'
+        ],
+        answer: 'C. James Clerk Maxwell',
+        diff: 'easy'
+      },
+      {
+        q: 'Maxwell\'s addition to Ampere\'s law is called:',
+        options: [
+          'A. Conduction current',
+          'B. Displacement current',
+          'C. Induced current',
+          'D. Eddy current'
+        ],
+        answer: 'B. Displacement current',
+        diff: 'easy'
+      },
+      {
+        q: 'The displacement current is proportional to:',
+        options: [
+          'A. The rate of change of magnetic flux',
+          'B. The rate of change of electric flux',
+          'C. The electric current',
+          'D. The magnetic field'
+        ],
+        answer: 'B. The rate of change of electric flux',
+        diff: 'medium'
+      },
+      {
+        q: 'The speed of electromagnetic waves in vacuum is:',
+        options: [
+          'A. √(μ₀/ε₀)',
+          'B. 1/√(μ₀ε₀)',
+          'C. μ₀ε₀',
+          'D. 1/(μ₀ε₀)'
+        ],
+        answer: 'B. 1/√(μ₀ε₀)',
+        diff: 'medium'
+      },
+      {
+        q: 'In an electromagnetic wave, the electric field and magnetic field are:',
+        options: [
+          'A. Parallel to each other',
+          'B. Perpendicular to each other',
+          'C. At 45° to each other',
+          'D. In opposite directions'
+        ],
+        answer: 'B. Perpendicular to each other',
+        diff: 'easy'
+      },
+      {
+        q: 'The relationship between electric field amplitude E₀ and magnetic field amplitude B₀ in an EM wave is:',
+        options: [
+          'A. E₀ = B₀/c',
+          'B. E₀ = cB₀',
+          'C. E₀ = c²B₀',
+          'D. E₀ = B₀'
+        ],
+        answer: 'B. E₀ = cB₀',
+        diff: 'medium'
+      },
+      {
+        q: 'The wavelength of red light is approximately:',
+        options: [
+          'A. 700 nm',
+          'B. 400 nm',
+          'C. 100 nm',
+          'D. 1000 nm'
+        ],
+        answer: 'A. 700 nm',
+        diff: 'easy'
+      },
+      {
+        q: 'The frequency of red light (λ = 700 nm) is approximately:',
+        options: [
+          'A. 4.3×10¹⁴ Hz',
+          'B. 3×10⁸ Hz',
+          'C. 7×10¹⁴ Hz',
+          'D. 2×10¹⁴ Hz'
+        ],
+        answer: 'A. 4.3×10¹⁴ Hz',
+        diff: 'medium'
+      },
+      {
+        q: 'Electromagnetic waves are produced by:',
+        options: [
+          'A. Stationary charges',
+          'B. Accelerating charges',
+          'C. Charges at rest',
+          'D. Magnetic monopoles'
+        ],
+        answer: 'B. Accelerating charges',
+        diff: 'easy'
+      },
+      {
+        q: 'The polarization of an EM wave refers to the direction of the:',
+        options: [
+          'A. Magnetic field',
+          'B. Electric field',
+          'C. Propagation',
+          'D. Wave vector'
+        ],
+        answer: 'B. Electric field',
+        diff: 'medium'
+      },
+      {
+        q: 'AM radio operates by varying the:',
+        options: [
+          'A. Frequency of the carrier wave',
+          'B. Amplitude of the carrier wave',
+          'C. Phase of the carrier wave',
+          'D. Wavelength of the carrier wave'
+        ],
+        answer: 'B. Amplitude of the carrier wave',
+        diff: 'easy'
+      },
+      {
+        q: 'FM radio operates by varying the:',
+        options: [
+          'A. Frequency of the carrier wave',
+          'B. Amplitude of the carrier wave',
+          'C. Phase of the carrier wave',
+          'D. Wavelength of the carrier wave'
+        ],
+        answer: 'A. Frequency of the carrier wave',
+        diff: 'easy'
+      },
+      {
+        q: 'A dipole antenna radiates maximum power:',
+        options: [
+          'A. Along the antenna axis',
+          'B. Perpendicular to the antenna axis',
+          'C. At 45° to the antenna axis',
+          'D. Uniformly in all directions'
+        ],
+        answer: 'B. Perpendicular to the antenna axis',
+        diff: 'medium'
+      },
+      {
+        q: 'The power radiated by a dipole antenna is proportional to:',
+        options: [
+          'A. sinθ',
+          'B. sin²θ',
+          'C. cosθ',
+          'D. cos²θ'
+        ],
+        answer: 'B. sin²θ',
+        diff: 'hard'
+      },
+      {
+        q: 'The intensity of radiation from a dipole antenna falls off as:',
+        options: [
+          'A. 1/r',
+          'B. 1/r²',
+          'C. 1/r³',
+          'D. 1/r⁴'
+        ],
+        answer: 'B. 1/r²',
+        diff: 'medium'
+      },
+      {
+        q: 'Gauss\'s law for magnetism states that:',
+        options: [
+          'A. ∮B·dA = Q/ε₀',
+          'B. ∮B·dA = 0',
+          'C. ∮B·dA = μ₀I',
+          'D. ∮B·dA = -dΦ_E/dt'
+        ],
+        answer: 'B. ∮B·dA = 0',
+        diff: 'medium'
+      },
+      {
+        q: 'Electromagnetic waves can travel through:',
+        options: [
+          'A. Vacuum only',
+          'B. Medium only',
+          'C. Both vacuum and medium',
+          'D. Neither'
+        ],
+        answer: 'C. Both vacuum and medium',
+        diff: 'easy'
+      },
+      {
+        q: 'The product of frequency and wavelength of an EM wave is equal to:',
+        options: [
+          'A. The speed of light',
+          'B. The amplitude',
+          'C. The intensity',
+          'D. The energy'
+        ],
+        answer: 'A. The speed of light',
+        diff: 'easy'
+      },
+      {
+        q: 'Microwave ovens typically use waves with frequency around:',
+        options: [
+          'A. 10⁶ Hz',
+          'B. 10⁹ Hz',
+          'C. 10¹² Hz',
+          'D. 10¹⁵ Hz'
+        ],
+        answer: 'C. 10¹² Hz',
+        diff: 'medium'
+      },
+      {
+        q: 'The displacement current was introduced by Maxwell to:',
+        options: [
+          'A. Explain how charges move',
+          'B. Maintain conservation of charge',
+          'C. Increase the speed of light',
+          'D. Explain magnetic monopoles'
+        ],
+        answer: 'B. Maintain conservation of charge',
+        diff: 'hard'
+      }
+    ],
+
+  },
+
+
+   31: {
+    title: 'The Reality of Light',
+    summary: `**Yeh Lecture Kya Cover Karti Hai:**
+- Light ki nature aur speed of light ka measurement history
+- Galileo, Roemer, Fizeau aur Foucault ke experiments
+- Speed of light ki value (c = 3×10⁸ m/s)
+- Electromagnetic spectrum aur visible light
+- Reflection aur Refraction (Snell's Law)
+- Fermat's Principle (light takes least time path)
+- Total Internal Reflection aur Critical Angle
+- Optical fibers aur unka kaam
+- Huygens' Principle (wave nature of light)
+- Wave-particle duality of light
+- Radiation pressure
+
+---
+
+**Asaan Zaban Mein Samjho:**
+
+**1. Light Kya Hai?**
+Light ek electromagnetic wave hai jo accelerating charge produce karta hai. Jab charge move karta hai to current generate hota hai, aur current electromagnetic waves produce karta hai. Light ki nature ko samajhne mein hazaron saal lage.
+
+**2. Speed of Light ka Measurement:**
+
+| Scientist | Year | Method | Result |
+|-----------|------|--------|--------|
+| Galileo | 1667 | Lantern experiment | Failed (too fast) |
+| Roemer | 1675 | Jupiter's moons | c ≈ 2.3×10⁸ m/s |
+| Fizeau | 1849 | Rotating cogwheel | c ≈ 3×10⁸ m/s |
+| Foucault | 1860 | Rotating mirror | c ≈ 2.98×10⁸ m/s |
+
+**Roemer's Discovery:**
+- Jupiter's moon Io ke eclipses time mein farq aata hai jab Earth Jupiter se door ya paas hoti hai
+- 16.6 minutes ka delay → light ko Earth's orbit cross karne mein time lagta hai
+- Isi se speed of light ka andaza laga
+
+**Fizeau's Cogwheel Experiment:**
+- Light cogwheel ke teeth ke beech se guzarti hai, mirror se reflect hoti hai, wapis aati hai
+- Wheel rotate karte hain jab tak light wapis na aaye
+- Formula: c = 2Lω/θ (L = distance to mirror, ω = angular velocity, θ = angle between teeth)
+
+**3. Speed of Light:**
+- c = 3×10⁸ m/s ≈ 300,000 km/s
+- 1 second mein Earth ke 7-8 chakkar laga sakti hai
+- Light sound se bohot tez hai (isliye lightning pehle dikhti hai, thunder baad mein)
+
+**4. Electromagnetic Spectrum:**
+- Visible light: 400 nm (blue) to 700 nm (red)
+- White light contains all colours
+- Different colours = different wavelengths
+- Prism white light ko colours mein tod deta hai (dispersion)
+
+**5. Reflection:**
+- Angle of incidence = Angle of reflection (θ_i = θ_r)
+- Smooth surface → specular reflection (clear image)
+- Rough surface → diffuse reflection (scattered light)
+
+**6. Refraction (Snell's Law):**
+Jab light ek medium se doosre medium mein jaati hai to bend hoti hai.
+- n₁ sinθ₁ = n₂ sinθ₂
+- n = c/v (refractive index)
+- Higher n → slower speed → more bending
+
+| Material | Refractive Index |
+|----------|------------------|
+| Air | 1.0003 |
+| Water | 1.33 |
+| Glass | 1.5 |
+| Diamond | 2.42 |
+
+**7. Fermat's Principle:**
+"Light always takes the path that takes the least time"
+- Free space mein: straight line (shortest distance = shortest time)
+- Reflection: θ_i = θ_r (proved from Fermat)
+- Refraction: Snell's Law (proved from Fermat)
+
+**8. Total Internal Reflection:**
+Jab light denser medium se rarer medium mein jaati hai:
+- Angle of incidence > Critical angle → total internal reflection
+- Critical angle: θ_c = sin⁻¹(n₂/n₁)
+- Application: Optical fibers, diamond brilliance
+
+**9. Optical Fibers:**
+- Core (high n) surrounded by cladding (low n)
+- Light total internal reflection se core mein travel karti hai
+- Benefits: high capacity, low loss, millions of calls
+- Used in internet, telephone, medical imaging
+
+**10. Huygens' Principle:**
+- Har point on wavefront secondary wavelets ka source hai
+- These wavelets spread out and form new wavefront
+- Explains diffraction (light bending around corners)
+- Proves wave nature of light
+
+**11. Wave-Particle Duality:**
+- Light behaves as wave (interference, diffraction)
+- Light behaves as particle (photoelectric effect)
+- Both are true! (depends on experiment)
+
+**12. Radiation Pressure:**
+- Light carries momentum: p = E/c
+- Complete absorption: p = U/c
+- Complete reflection: p = 2U/c
+- Solar radiation pressure helps stars balance gravity
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+
+- c = 3×10⁸ m/s (speed of light)
+- Visible spectrum: 400-700 nm
+- Snell's Law: n₁ sinθ₁ = n₂ sinθ₂
+- Critical angle: θ_c = sin⁻¹(n₂/n₁)
+- Total internal reflection → optical fibers
+- Fermat's Principle: light takes least time path
+- Huygens' Principle: each point = source of wavelets
+- Light has wave-particle duality
+- Radiation pressure: p = U/c (absorption), p = 2U/c (reflection)`,
+
+    questions: [
+      {
+        q: 'Who first estimated the speed of light using Jupiter\'s moons?',
+        options: [
+          'A. Galileo',
+          'B. Roemer',
+          'C. Fizeau',
+          'D. Foucault'
+        ],
+        answer: 'B. Roemer',
+        diff: 'easy'
+      },
+      {
+        q: 'The speed of light in vacuum is approximately:',
+        options: [
+          'A. 3×10⁶ m/s',
+          'B. 3×10⁸ m/s',
+          'C. 3×10¹⁰ m/s',
+          'D. 3×10⁴ m/s'
+        ],
+        answer: 'B. 3×10⁸ m/s',
+        diff: 'easy'
+      },
+      {
+        q: 'The visible spectrum ranges from approximately:',
+        options: [
+          'A. 100 nm to 300 nm',
+          'B. 400 nm to 700 nm',
+          'C. 700 nm to 1000 nm',
+          'D. 1 nm to 100 nm'
+        ],
+        answer: 'B. 400 nm to 700 nm',
+        diff: 'easy'
+      },
+      {
+        q: 'According to Snell\'s law, n₁ sinθ₁ = n₂ sinθ₂. If light goes from air (n=1) to water (n=1.33), the light ray:',
+        options: [
+          'A. Bends away from the normal',
+          'B. Bends towards the normal',
+          'C. Does not bend',
+          'D. Is totally reflected'
+        ],
+        answer: 'B. Bends towards the normal',
+        diff: 'medium'
+      },
+      {
+        q: 'The critical angle for total internal reflection is given by:',
+        options: [
+          'A. θ_c = sin⁻¹(n₁/n₂)',
+          'B. θ_c = sin⁻¹(n₂/n₁)',
+          'C. θ_c = cos⁻¹(n₂/n₁)',
+          'D. θ_c = tan⁻¹(n₂/n₁)'
+        ],
+        answer: 'B. θ_c = sin⁻¹(n₂/n₁)',
+        diff: 'medium'
+      },
+      {
+        q: 'Total internal reflection occurs when light travels from:',
+        options: [
+          'A. Rarer to denser medium',
+          'B. Denser to rarer medium',
+          'C. Vacuum to any medium',
+          'D. Any medium to vacuum'
+        ],
+        answer: 'B. Denser to rarer medium',
+        diff: 'easy'
+      },
+      {
+        q: 'Optical fibers work on the principle of:',
+        options: [
+          'A. Refraction',
+          'B. Total internal reflection',
+          'C. Diffraction',
+          'D. Dispersion'
+        ],
+        answer: 'B. Total internal reflection',
+        diff: 'easy'
+      },
+      {
+        q: 'Fermat\'s principle states that light travels along the path that:',
+        options: [
+          'A. Has the shortest distance',
+          'B. Takes the least time',
+          'C. Has the highest speed',
+          'D. Is always a straight line'
+        ],
+        answer: 'B. Takes the least time',
+        diff: 'easy'
+      },
+      {
+        q: 'The refractive index of diamond is approximately:',
+        options: [
+          'A. 1.33',
+          'B. 1.5',
+          'C. 2.42',
+          'D. 1.0003'
+        ],
+        answer: 'C. 2.42',
+        diff: 'easy'
+      },
+      {
+        q: 'Huygens\' principle explains:',
+        options: [
+          'A. Reflection only',
+          'B. Refraction only',
+          'C. Wave propagation and diffraction',
+          'D. Particle nature of light'
+        ],
+        answer: 'C. Wave propagation and diffraction',
+        diff: 'medium'
+      },
+      {
+        q: 'White light consists of:',
+        options: [
+          'A. Only one colour',
+          'B. All colours of the visible spectrum',
+          'C. Red and blue only',
+          'D. Infrared and ultraviolet'
+        ],
+        answer: 'B. All colours of the visible spectrum',
+        diff: 'easy'
+      },
+      {
+        q: 'The momentum of a photon with energy U is:',
+        options: [
+          'A. p = Uc',
+          'B. p = U/c',
+          'C. p = c/U',
+          'D. p = U²/c'
+        ],
+        answer: 'B. p = U/c',
+        diff: 'medium'
+      },
+      {
+        q: 'When light is completely reflected, the momentum change is:',
+        options: [
+          'A. U/c',
+          'B. 2U/c',
+          'C. U/2c',
+          'D. 0'
+        ],
+        answer: 'B. 2U/c',
+        diff: 'hard'
+      },
+      {
+        q: 'Fizeau measured the speed of light using:',
+        options: [
+          'A. A rotating mirror',
+          'B. A rotating cogwheel',
+          'C. Jupiter\'s moons',
+          'D. A laser'
+        ],
+        answer: 'B. A rotating cogwheel',
+        diff: 'medium'
+      },
+      {
+        q: 'The refractive index of a material is defined as:',
+        options: [
+          'A. n = c/v',
+          'B. n = v/c',
+          'C. n = c²/v²',
+          'D. n = v²/c²'
+        ],
+        answer: 'A. n = c/v',
+        diff: 'easy'
+      }
+    ],
+
+  },
+
+  // ======================== LECTURE 32 ========================
+  32: {
+    title: 'Interaction of Light with Matter',
+    summary: `
+**📚 Lecture 32 - Interaction of Light with Matter**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Light aur Matter ke 4 Basic Interactions:**
+Light matter ke saath 4 tareeqon se interact karti hai:
+
+**(a) Emission (اخراج) - Light ka release:**
+Jab matter (atom/molecule) apni internal energy ko light ki form mein release karta hai. Example: Bulb ka filament garam ho kar light emit karta hai, ya gas discharge lamp mein electrons excited state se ground state mein aate hain to specific wavelengths par light emit karte hain.
+
+**(b) Absorption (جذب) - Light ka absorb hona:**
+Jab light kisi matter par girta hai to matter us light ki energy ko absorb kar leta hai. Electron lower energy state se higher energy state mein jump karta hai. Example: Green leaf red aur blue light absorb karti hai, isliye green dikhti hai. Chlorophyll red aur blue light absorb karta hai.
+
+**(c) Transmission (انتقال) - Light ka guzarna:**
+Light matter ke through guzar jaati hai bina absorb hue. Example: Glass, air, water. Transparent materials electrons ko excite nahi karte, isliye light guzar jaati hai.
+
+**(d) Reflection (انعکاس) - Light ka wapas aana:**
+Light matter ki surface se wapas bounce ho jaati hai. Example: Mirror, polished surfaces. Reflection law: angle of incidence = angle of reflection.
+
+**2. Blackbody Radiation (کالا جسم اشعاع):**
+- Blackbody wo ideal object hai jo har wavelength ki light ko complete absorb kare aur jab garam ho to poori spectrum mein light emit kare.
+- Iski spectrum sirf **temperature** par depend karti hai, material par nahi.
+- Real objects blackbody se thoda kam emit karte hain (emissivity < 1).
+
+**Wien's Law (وین کا قانون):**
+\`λ_max T = 2.9×10⁻³ m·K\`
+- Temperature jitni zyada, peak wavelength utni chhoti (blue/yellow)
+- Temperature kam to peak wavelength lambi (red/infrared)
+- Example: Blue stars ~10,000 K (λ_max ~290 nm), Red stars ~3,000 K (λ_max ~966 nm)
+- Sun: 5800 K → λ_max ≈ 500 nm (yellow-green)
+
+**Stefan-Boltzmann Law (اسٹیفن بولٹزمان قانون):**
+\`P = σ A T⁴\`
+- σ = 5.67×10⁻⁸ W/m²K⁴
+- Total radiated power per unit area proportional to T⁴.
+- Agar temperature doble ho to power 16× ho jaati hai.
+- Isi se stars ki luminosity aur surface temperature measure karte hain.
+
+**3. Atomic Spectra (ایٹمی طیف):**
+- **Emission Spectrum:** Jab gas ko excite karte hain (heat ya electric discharge) to wo specific wavelengths par light emit karti hai – bright lines. Hydrogen: 3 lines visible region mein (656 nm, 486 nm, 434 nm).
+- **Absorption Spectrum:** Jab white light gas mein se guzarti hai to gas specific wavelengths absorb kar leti hai – dark lines. Emission aur absorption lines exact same wavelengths par hoti hain.
+- Har element ki apni unique lines hoti hain (fingerprint). Isi se astronomers distant stars ki composition maloom karte hain.
+- Spectroscopy: elements ki identification, star composition, temperature measurement.
+
+**4. Fluorescence (فلوئورسنس) & Phosphorescence (فاسفورسنس):**
+- **Fluorescence:** High-frequency light (UV) absorb karte hain aur instantly low-frequency light (visible) emit karte hain. Source hatate hi emission band ho jaati hai. Time delay: nanoseconds to microseconds. Example: Fluorescent lights, highlighter pens.
+- **Phosphorescence:** Absorbed energy ko metastable states mein store kar lete hain, phir dheere-dheere release karte hain – isliye source hatane ke baad bhi glow jaari rehti hai (seconds to hours). Example: Glow-in-the-dark toys, watch dials.
+- Difference: Fluorescence immediate emission, phosphorescence delayed emission.
+
+**5. Polarization (قطبیت):**
+- Light transverse wave hai – electric field ka direction matter karta hai.
+- Unpolarized light mein electric field har direction mein oscillate karta hai (random orientations).
+- **Polarizer** (like Polaroid) sirf ek direction ki electric field ko pass karta hai, baaki ko absorb/reflect kar deta hai.
+- Isi principle par sunglasses (glare reduction), LCD screens, 3D movies kaam karte hain.
+
+**6. Applications:**
+- Spectroscopy (element identification, chemical analysis)
+- Star temperature measurement (Wien's law)
+- Blackbody radiation: cosmic microwave background (2.7 K)
+- Polarizers in optics, photography, display technology
+- Fluorescent materials: lighting, biomedical imaging
+- Phosphorescent materials: emergency signs, safety equipment
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Blackbody spectrum continuous, atomic spectra discrete (quantized energy levels)
+- Wien's law: \`λ_max T = 2.9×10⁻³ m·K\`
+- Stefan-Boltzmann: \`P = σ A T⁴\`
+- Emission and absorption lines are complementary (same wavelengths)
+- Fluorescence immediate, phosphorescence delayed
+- Polarization proves transverse nature of light
+- Light-matter interactions: 4 types (Emission, Absorption, Transmission, Reflection)
+`,
+    questions: [
+      {
+        q: 'As the temperature of a blackbody increases, the wavelength at which it radiates most strongly:',
+        options: [
+          'A. Increases (moves to infrared)',
+          'B. Decreases (moves to ultraviolet)',
+          'C. Remains constant regardless of temperature',
+          'D. First increases then decreases'
+        ],
+        answer: 'B. Decreases (moves to ultraviolet)',
+        diff: 'hard'
+      },
+      {
+        q: 'The total power radiated per unit area of a blackbody is proportional to:',
+        options: [
+          'A. T (linear)',
+          'B. T² (quadratic)',
+          'C. T⁴ (fourth power)',
+          'D. T³ (cubic)'
+        ],
+        answer: 'C. T⁴ (fourth power)',
+        diff: 'medium'
+      },
+      {
+        q: 'The emission spectrum of a gas consists of discrete bright lines because:',
+        options: [
+          'A. Gas molecules vibrate at specific frequencies',
+          'B. Electrons can only occupy quantized energy levels',
+          'C. The gas temperature is not uniform',
+          'D. Light is absorbed by the container walls'
+        ],
+        answer: 'B. Electrons can only occupy quantized energy levels',
+        diff: 'hard'
+      },
+      {
+        q: 'Fluorescence differs from phosphorescence primarily in that:',
+        options: [
+          'A. Fluorescence emits at higher frequencies than absorbed light',
+          'B. Fluorescence continues after the exciting source is removed',
+          'C. Phosphorescence continues after the source is removed (delayed emission)',
+          'D. Phosphorescence requires higher temperature'
+        ],
+        answer: 'C. Phosphorescence continues after the source is removed (delayed emission)',
+        diff: 'medium'
+      },
+      {
+        q: 'The absorption spectrum of an element is obtained by:',
+        options: [
+          'A. Heating the element to extremely high temperatures',
+          'B. Passing white light through a sample of the element\'s gas',
+          'C. Reflecting light from a solid sample of the element',
+          'D. Using a prism to split the emitted light'
+        ],
+        answer: 'B. Passing white light through a sample of the element\'s gas',
+        diff: 'medium'
+      },
+      {
+        q: 'Wien\'s law \`λ_max T = constant\` implies that a star appearing blue compared to a yellow star is:',
+        options: [
+          'A. Cooler in temperature',
+          'B. Hotter in temperature',
+          'C. The same temperature but different composition',
+          'D. Larger in size'
+        ],
+        answer: 'B. Hotter in temperature',
+        diff: 'hard'
+      },
+      {
+        q: 'A star appears blue because:',
+        options: [
+          'A. It is cool and emits mainly blue light',
+          'B. It is hot and its peak emission is in the blue region',
+          'C. It is at room temperature',
+          'D. It reflects blue light from other stars'
+        ],
+        answer: 'B. It is hot and its peak emission is in the blue region',
+        diff: 'easy'
+      },
+      {
+        q: 'The Stefan-Boltzmann constant σ has units that are equivalent to:',
+        options: [
+          'A. W·m²·K⁴',
+          'B. W·m⁻²·K⁻⁴',
+          'C. J·s⁻¹·m⁻²·K⁴',
+          'D. Both B and C'
+        ],
+        answer: 'D. Both B and C',
+        diff: 'hard'
+      },
+      {
+        q: 'Which of the following is NOT considered a fundamental way light interacts with matter?',
+        options: [
+          'A. Emission',
+          'B. Absorption',
+          'C. Refraction',
+          'D. Transmission'
+        ],
+        answer: 'C. Refraction',
+        diff: 'medium'
+      },
+      {
+        q: 'The unique spectral lines of elements are useful for:',
+        options: [
+          'A. Identifying elements present in distant stars',
+          'B. Measuring the temperature of the source',
+          'C. Both identifying elements and measuring temperature',
+          'D. Determining the distance of the source'
+        ],
+        answer: 'C. Both identifying elements and measuring temperature',
+        diff: 'medium'
+      },
+      {
+        q: 'In a fluorescent material, the emitted light typically has:',
+        options: [
+          'A. Higher frequency than the absorbed light',
+          'B. Lower frequency than the absorbed light',
+          'C. The same frequency as the absorbed light',
+          'D. No correlation with the absorbed light frequency'
+        ],
+        answer: 'B. Lower frequency than the absorbed light',
+        diff: 'hard'
+      },
+      {
+        q: 'A polarizer works by:',
+        options: [
+          'A. Reflecting all incident light',
+          'B. Allowing only the component of electric field in a specific direction to pass',
+          'C. Changing the frequency of the light to a single value',
+          'D. Absorbing all light and re-emitting it'
+        ],
+        answer: 'B. Allowing only the component of electric field in a specific direction to pass',
+        diff: 'medium'
+      },
+      {
+        q: 'Blackbody radiation is emitted by:',
+        options: [
+          'A. Only metals at high temperatures',
+          'B. Only gases when ionized',
+          'C. Any object that emits light due to its temperature',
+          'D. Only perfectly reflective surfaces'
+        ],
+        answer: 'C. Any object that emits light due to its temperature',
+        diff: 'medium'
+      },
+      {
+        q: 'The color of a star provides direct information about its:',
+        options: [
+          'A. Mass',
+          'B. Distance from Earth',
+          'C. Surface temperature',
+          'D. Chemical composition'
+        ],
+        answer: 'C. Surface temperature',
+        diff: 'easy'
+      },
+      {
+        q: 'Phosphorescent materials continue to glow after the light source is removed because:',
+        options: [
+          'A. They continuously generate their own energy',
+          'B. They store energy in metastable states that release it slowly',
+          'C. They reflect ambient light for a long time',
+          'D. They are slightly radioactive'
+        ],
+        answer: 'B. They store energy in metastable states that release it slowly',
+        diff: 'hard'
+      }
+    ]
+  },
+
+  // ======================== LECTURE 33 ========================
+  33: {
+    title: 'Interference and Diffraction',
+    summary: `
+**📚 Lecture 33 - Interference and Diffraction**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Interference (مداخلت) - Wave Superposition:**
+Jab do ya zyada waves ek jagah milti hain to unki amplitudes add (superpose) ho jaati hain. Yeh principle of superposition kehlata hai.
+
+**(a) Constructive Interference (تعمیری مداخلت):**
+- Waves in phase (same phase) — path difference = mλ (m = 0,1,2,...)
+- Amplitudes add: A_total = A₁ + A₂
+- Intensity: I_total = I₁ + I₂ + 2√(I₁I₂) → maximum
+- Result: Bright fringes (maximum intensity)
+
+**(b) Destructive Interference (تخریبی مداخلت):**
+- Waves out of phase (opposite phase) — path difference = (m+½)λ
+- Amplitudes subtract: A_total = A₁ - A₂
+- If equal amplitudes: I_total = 0 (complete darkness)
+- Result: Dark fringes (minimum intensity)
+
+**2. Young's Double Slit Experiment (ینگ کا ڈبل سلٹ تجربہ):**
+- Two slits separated by distance \`d\`, screen distance \`L\`.
+- Path difference between waves from two slits: \`Δ = d sinθ\`
+- **Bright fringes (constructive):** \`d sinθ = mλ\` (m = 0,±1,±2,...)
+  - m=0: central maximum (brightest)
+  - m=±1: first order maxima
+- **Dark fringes (destructive):** \`d sinθ = (m+½)λ\`
+- Fringe spacing (Δy) = \`λL/d\`
+  - Small d → wide fringes
+  - Large L → wide fringes
+  - Large λ → wide fringes (red light wider than blue)
+
+**3. Thin Film Interference (پتلی فلم مداخلت):**
+- Light reflect hoti hai film ki top aur bottom surfaces se.
+- Path difference = \`2nt\` (n = refractive index, t = thickness)
+- Extra phase change of π (half wavelength) when reflecting from denser medium (n₂ > n₁).
+- **Constructive:** \`2nt = (m+½)λ\` (with phase change)
+- **Destructive:** \`2nt = mλ\`
+- Isi se soap bubbles, oil slicks, aur butterfly wings ke rang dikhte hain.
+
+**4. Diffraction (انحراف) - Single Slit:**
+- Light ka bending around obstacles or through narrow slits.
+- Single slit width \`a\`: dark fringes at \`a sinθ = mλ\` (m = ±1,±2,...)
+- Central maximum is twice as wide as other maxima.
+- As slit width decreases, diffraction pattern spreads more (central maximum wider).
+
+**5. Diffraction Grating (ڈفریکشن گریٹنگ):**
+- Many slits (N) produce sharp principal maxima.
+- Condition: \`d sinθ = mλ\` (same as double slit, but sharper peaks)
+- More lines per mm → smaller d → wider separation between maxima.
+- Used in spectrometers to measure wavelength with high precision.
+
+**6. Rayleigh Criterion (ریلے معیار - Resolution):**
+- Two objects just resolved when central maximum of one falls on first minimum of the other.
+- For circular aperture: \`θ_min = 1.22 λ/D\` (D = aperture diameter)
+- Larger aperture (D) → smaller θ_min → better resolution.
+- Isi wajah se telescopes large diameter ke hote hain (better resolution).
+
+**7. Interference vs Diffraction:**
+- Interference: from multiple slits (two or more) — equally spaced fringes.
+- Diffraction: from single slit — central max wider, intensity decreases away.
+- Diffraction grating: combination of many slits — sharp lines due to interference of diffracted waves.
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Constructive: path diff = mλ
+- Destructive: (m+½)λ
+- Double slit: \`Δy = λL/d\`
+- Single slit: first minimum at \`sinθ = λ/a\`
+- Grating: sharper maxima than double slit
+- Resolution improves with larger aperture: \`θ_min = 1.22λ/D\`
+- Thin film colors depend on thickness and wavelength
+- Coherent sources required for observable interference
+`,
+    questions: [
+      {
+        q: 'In Young\'s double slit experiment, the fringe spacing (distance between adjacent bright fringes) is directly proportional to:',
+        options: [
+          'A. The slit separation d',
+          'B. The square of slit separation d²',
+          'C. The wavelength λ and screen distance L',
+          'D. The inverse of screen distance 1/L'
+        ],
+        answer: 'C. The wavelength λ and screen distance L',
+        diff: 'hard'
+      },
+      {
+        q: 'For constructive interference in a double slit, the path difference between the two waves must be:',
+        options: [
+          'A. An integer multiple of the wavelength (mλ)',
+          'B. A half-integer multiple of the wavelength ((m+½)λ)',
+          'C. Any value less than the wavelength',
+          'D. Always zero'
+        ],
+        answer: 'A. An integer multiple of the wavelength (mλ)',
+        diff: 'medium'
+      },
+      {
+        q: 'A diffraction grating with more lines per millimeter will produce spectral lines that are:',
+        options: [
+          'A. More widely spaced but less sharp',
+          'B. More closely spaced and sharper',
+          'C. More widely spaced and sharper',
+          'D. Unchanged in spacing but brighter'
+        ],
+        answer: 'B. More closely spaced and sharper',
+        diff: 'hard'
+      },
+      {
+        q: 'The first minimum in single-slit diffraction occurs at \`sinθ = λ/a\`. This implies that if the slit width \`a\` is decreased:',
+        options: [
+          'A. The central maximum becomes narrower',
+          'B. The central maximum becomes wider',
+          'C. The pattern becomes independent of slit width',
+          'D. The pattern disappears entirely'
+        ],
+        answer: 'B. The central maximum becomes wider',
+        diff: 'hard'
+      },
+      {
+        q: 'Thin film interference is responsible for the colors seen in:',
+        options: [
+          'A. Soap bubbles and oil slicks',
+          'B. Only diffraction gratings',
+          'C. Prisms and lenses',
+          'D. Mirrors and polished surfaces'
+        ],
+        answer: 'A. Soap bubbles and oil slicks',
+        diff: 'easy'
+      },
+      {
+        q: 'In the double-slit experiment, if the slit separation \`d\` is increased while keeping other parameters constant, the fringe spacing:',
+        options: [
+          'A. Increases (fringes move further apart)',
+          'B. Decreases (fringes move closer together)',
+          'C. Remains exactly the same',
+          'D. Becomes zero (no fringes)'
+        ],
+        answer: 'B. Decreases (fringes move closer together)',
+        diff: 'medium'
+      },
+      {
+        q: 'The central maximum in single-slit diffraction is:',
+        options: [
+          'A. The same width as all other maxima',
+          'B. Twice as wide as other maxima',
+          'C. Half as wide as other maxima',
+          'D. Infinitely wide'
+        ],
+        answer: 'B. Twice as wide as other maxima',
+        diff: 'medium'
+      },
+      {
+        q: 'A diffraction grating is primarily used to:',
+        options: [
+          'A. Create bright images of objects',
+          'B. Measure the wavelength of light with high precision',
+          'C. Polarize light',
+          'D. Reflect light without absorption'
+        ],
+        answer: 'B. Measure the wavelength of light with high precision',
+        diff: 'easy'
+      },
+      {
+        q: 'The Rayleigh criterion for resolution states that two objects are just resolved when:',
+        options: [
+          'A. They are completely separated with no overlap',
+          'B. The central maximum of one diffraction pattern falls on the first minimum of the other',
+          'C. The intensities of the two images are equal',
+          'D. The objects are separated by more than their diameter'
+        ],
+        answer: 'B. The central maximum of one diffraction pattern falls on the first minimum of the other',
+        diff: 'hard'
+      },
+      {
+        q: 'For destructive interference in a double slit, the path difference must be:',
+        options: [
+          'A. mλ (integer multiple)',
+          'B. (m+½)λ (half-integer multiple)',
+          'C. mλ/2 (integer multiple of half)',
+          'D. Always λ/2 only'
+        ],
+        answer: 'B. (m+½)λ (half-integer multiple)',
+        diff: 'medium'
+      },
+      {
+        q: 'Thin film interference requires that the film thickness be:',
+        options: [
+          'A. Much larger than the wavelength of light',
+          'B. Comparable to the wavelength of light (on the order of λ)',
+          'C. Exactly zero thickness',
+          'D. Independent of the wavelength'
+        ],
+        answer: 'B. Comparable to the wavelength of light (on the order of λ)',
+        diff: 'hard'
+      },
+      {
+        q: 'In the double-slit experiment, if the wavelength of light is increased, the fringe spacing:',
+        options: [
+          'A. Increases (fringes spread apart)',
+          'B. Decreases (fringes move closer)',
+          'C. Remains exactly the same',
+          'D. Becomes zero'
+        ],
+        answer: 'A. Increases (fringes spread apart)',
+        diff: 'medium'
+      },
+      {
+        q: 'Diffraction is more pronounced when:',
+        options: [
+          'A. The slit width is much larger than the wavelength',
+          'B. The slit width is comparable to or smaller than the wavelength',
+          'C. The wavelength is very small compared to the slit width',
+          'D. The slit width is exactly zero'
+        ],
+        answer: 'B. The slit width is comparable to or smaller than the wavelength',
+        diff: 'hard'
+      },
+      {
+        q: 'A grating with more lines per millimeter produces:',
+        options: [
+          'A. Brighter but wider spectral lines',
+          'B. Sharper and more intense spectral lines',
+          'C. Wider but dimmer spectral lines',
+          'D. No change in the spectral lines'
+        ],
+        answer: 'B. Sharper and more intense spectral lines',
+        diff: 'hard'
+      },
+      {
+        q: 'The condition for constructive interference in a thin film (with phase change at one surface) is:',
+        options: [
+          'A. 2nt = mλ',
+          'B. 2nt = (m+½)λ',
+          'C. nt = mλ',
+          'D. nt = (m+½)λ'
+        ],
+        answer: 'B. 2nt = (m+½)λ',
+        diff: 'hard'
+      }
+    ]
+  },
+
+  // ======================== LECTURE 34 ========================
+  34: {
+    title: 'The Particle Nature of Light',
+    summary: `
+**📚 Lecture 34 - The Particle Nature of Light**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Photoelectric Effect (فوٹو الیکٹرک اثر):**
+Jab light metal surface par girta hai to electrons eject ho jaate hain.
+
+**Observations (جو دیکھا گیا):**
+- Electrons tabhi eject hote hain jab frequency threshold (ν₀) se zyada ho.
+- Kinetic energy frequency par depend karti hai, intensity par nahi.
+- Electrons instantly emit hote hain – koi time delay nahi.
+- Agar ν < ν₀ to chahe kitni bhi high intensity ho, electrons nahi niklenge.
+
+**Classical Physics Failure:**
+Classical wave theory predicted:
+- Any frequency should eject electrons (if intensity high enough)
+- Higher intensity → higher kinetic energy
+- Time delay for electrons to gain enough energy
+Lekin observations opposite thin. Isliye wave theory fail.
+
+**Einstein's Explanation (1905):**
+- Light consists of photons (particles/energy packets).
+- Each photon energy: \`E = hν\` (h = Planck's constant = 6.63×10⁻³⁴ J·s)
+- Work function \`W = hν₀\` – minimum energy needed to eject electron.
+- Maximum kinetic energy: \`K_max = hν - W\`
+- Photoelectric effect confirms particle nature of light.
+
+**2. Photon Properties (فوٹون کی خصوصیات):**
+- Energy: \`E = hν = hc/λ\`
+- Momentum: \`p = E/c = h/λ\`
+- Rest mass = 0 (hamesha speed c se travel karta hai)
+- Photon has wave-particle duality.
+
+**3. Compton Effect (کامپٹن اثر - 1922):**
+- Photon electron se scatter (collide) hota hai.
+- Photon ki wavelength increase ho jaati hai (frequency decrease).
+- Change in wavelength: \`Δλ = (h/m_e c)(1 - cosθ)\`
+- \`λ_c = h/m_e c = 2.43×10⁻¹² m\` (Compton wavelength)
+- Yeh photon ke momentum ko confirm karta hai – particle nature prove hota hai.
+
+**4. Wave-Particle Duality (موج-ذرہ دوہرا پن):**
+- Light interference/diffraction mein wave jaisa behave karta hai.
+- Light photoelectric/Compton mein particle jaisa behave karta hai.
+- **De Broglie Hypothesis (1923):** Matter bhi waves ki tarah behave karta hai – \`λ = h/p\`
+- Electron diffraction experiments (Davisson-Germer, 1927) ne isko confirm kiya.
+
+**5. Lasers (LASER - Light Amplification by Stimulated Emission of Radiation):**
+- Coherent (same phase) light
+- Monochromatic (single wavelength/frequency)
+- Highly intense and directional
+- Uses population inversion (more atoms in excited state than ground)
+- Stimulated emission: photon triggers emission of another identical photon.
+
+**6. Fluorescence/Phosphorescence (Already covered in Lec 32):**
+- Electrons excited to higher states
+- Return emitting lower energy photons
+- Phosphorescence has longer delay (metastable states)
+
+**7. Summary of Photon Facts:**
+- \`E = hν\`
+- \`p = h/λ\`
+- \`c = λν\`
+- \`E = pc\` (for photon)
+- Photon is a quantum of light – energy is quantized.
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Photoelectric: \`K_max = hν - W\`
+- Threshold frequency \`ν₀ = W/h\`
+- Photon: \`E = hν\`, \`p = h/λ\`
+- Compton shift: \`Δλ = λ_c(1 - cosθ)\`
+- de Broglie wavelength: \`λ = h/p\`
+- Lasers: coherent, monochromatic, intense light
+- Wave-particle duality: light behaves as both wave and particle
+`,
+    questions: [
+      {
+        q: 'In the photoelectric effect, the maximum kinetic energy of emitted electrons depends on:',
+        options: [
+          'A. The intensity of incident light',
+          'B. The frequency of incident light',
+          'C. Both intensity and frequency equally',
+          'D. The material of the metal only'
+        ],
+        answer: 'B. The frequency of incident light',
+        diff: 'medium'
+      },
+      {
+        q: 'The work function of a metal is defined as:',
+        options: [
+          'A. The maximum kinetic energy of emitted electrons',
+          'B. The minimum energy required to eject an electron from the metal surface',
+          'C. The energy of the incident photons',
+          'D. The kinetic energy of the electrons after emission'
+        ],
+        answer: 'B. The minimum energy required to eject an electron from the metal surface',
+        diff: 'hard'
+      },
+      {
+        q: 'According to de Broglie, the wavelength associated with a moving particle is:',
+        options: [
+          'A. \`λ = h/p\`',
+          'B. \`λ = p/h\`',
+          'C. \`λ = hE\`',
+          'D. \`λ = E/h\`'
+        ],
+        answer: 'A. \`λ = h/p\`',
+        diff: 'easy'
+      },
+      {
+        q: 'In Compton scattering, the scattered photon compared to the incident photon has:',
+        options: [
+          'A. Higher energy and shorter wavelength',
+          'B. Lower energy and longer wavelength',
+          'C. The same energy and wavelength',
+          'D. Zero energy'
+        ],
+        answer: 'B. Lower energy and longer wavelength',
+        diff: 'medium'
+      },
+      {
+        q: 'A laser beam is characterized by being:',
+        options: [
+          'A. Incoherent and polychromatic',
+          'B. Coherent and monochromatic',
+          'C. Incoherent and monochromatic',
+          'D. Coherent and polychromatic'
+        ],
+        answer: 'B. Coherent and monochromatic',
+        diff: 'easy'
+      },
+      {
+        q: 'The photoelectric effect provides direct evidence that light has:',
+        options: [
+          'A. Wave nature only',
+          'B. Particle nature',
+          'C. Both wave and particle nature simultaneously',
+          'D. Neither wave nor particle nature'
+        ],
+        answer: 'B. Particle nature',
+        diff: 'medium'
+      },
+      {
+        q: 'The Compton effect provides direct evidence that photons have:',
+        options: [
+          'A. Only energy',
+          'B. Only momentum',
+          'C. Both energy and momentum',
+          'D. Neither energy nor momentum'
+        ],
+        answer: 'C. Both energy and momentum',
+        diff: 'hard'
+      },
+      {
+        q: 'If the frequency of incident light in a photoelectric experiment is doubled, the maximum kinetic energy of photoelectrons:',
+        options: [
+          'A. Exactly doubles',
+          'B. More than doubles (increases by more than twice)',
+          'C. Less than doubles (increases by less than twice)',
+          'D. Remains unchanged'
+        ],
+        answer: 'B. More than doubles (increases by more than twice)',
+        diff: 'hard'
+      },
+      {
+        q: 'The momentum of a photon of energy E is:',
+        options: [
+          'A. \`p = E/c\`',
+          'B. \`p = h/λ\`',
+          'C. Both A and B are correct',
+          'D. \`p = mc\` (mass times speed)'
+        ],
+        answer: 'C. Both A and B are correct',
+        diff: 'medium'
+      },
+      {
+        q: 'A laser produces light that is:',
+        options: [
+          'A. A single frequency (monochromatic)',
+          'B. A broad range of frequencies (polychromatic)',
+          'C. Only emitted in a specific direction',
+          'D. Incoherent (random phases)'
+        ],
+        answer: 'A. A single frequency (monochromatic)',
+        diff: 'easy'
+      },
+      {
+        q: 'For a metal with work function W, if light of frequency \`ν = 2ν₀\` (where \`ν₀ = W/h\`) is used, the maximum kinetic energy is:',
+        options: [
+          'A. \`hν₀\`',
+          'B. \`2hν₀\`',
+          'C. \`hν₀\` (since \`2hν₀ - W = 2hν₀ - hν₀ = hν₀\`)',
+          'D. Zero'
+        ],
+        answer: 'C. \`hν₀\`',
+        diff: 'hard'
+      },
+      {
+        q: 'Wave-particle duality means that:',
+        options: [
+          'A. Light is always a wave and never a particle',
+          'B. Light is always a particle and never a wave',
+          'C. Light exhibits both wave and particle properties depending on the experimental conditions',
+          'D. Light is neither a wave nor a particle'
+        ],
+        answer: 'C. Light exhibits both wave and particle properties depending on the experimental conditions',
+        diff: 'medium'
+      },
+      {
+        q: 'The de Broglie wavelength of an electron increases when:',
+        options: [
+          'A. Its speed increases',
+          'B. Its speed decreases',
+          'C. Its mass increases',
+          'D. Its charge increases'
+        ],
+        answer: 'B. Its speed decreases',
+        diff: 'medium'
+      },
+      {
+        q: 'Fluorescence occurs when a material:',
+        options: [
+          'A. Absorbs light and immediately re-emits it at a lower frequency',
+          'B. Absorbs light and re-emits it after a long delay (seconds to hours)',
+          'C. Reflects all incident light without absorption',
+          'D. Transmits light without any interaction'
+        ],
+        answer: 'A. Absorbs light and immediately re-emits it at a lower frequency',
+        diff: 'medium'
+      },
+      {
+        q: 'The energy of a photon is directly proportional to its:',
+        options: [
+          'A. Wavelength (λ)',
+          'B. Frequency (ν)',
+          'C. Speed (c)',
+          'D. Intensity'
+        ],
+        answer: 'B. Frequency (ν)',
+        diff: 'easy'
+      }
+    ]
+  },
+
+  // ======================== LECTURE 35 ========================
+  35: {
+    title: 'Geometrical Optics',
+    summary: `
+**📚 Lecture 35 - Geometrical Optics**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Reflection (انعکاس):**
+- Law of Reflection: \`θ_i = θ_r\` (angle of incidence = angle of reflection)
+- Plane mirror: virtual, upright, same size image, object distance = image distance.
+
+**2. Spherical Mirrors (کروی آئینے):**
+- **Concave mirror (مقعر آئینہ):** Focus real, \`f = R/2\` (R = radius of curvature)
+- **Convex mirror (محدب آئینہ):** Focus virtual, \`f = -R/2\`
+- Mirror equation: \`1/f = 1/d_o + 1/d_i\` (sign convention: real positive, virtual negative)
+- Magnification: \`m = -d_i/d_o = h_i/h_o\`
+  - Negative m: inverted image (real)
+  - Positive m: upright image (virtual)
+- Focal point: rays parallel to principal axis converge/diverge
+
+**3. Refraction (انعطاف) & Lenses (عدسے):**
+- Snell's law: \`n₁ sinθ₁ = n₂ sinθ₂\`
+- **Convex lens (محدب عدسہ):** Converging (focuses light), f positive
+- **Concave lens (مقعر عدسہ):** Diverging (spreads light), f negative
+- Lens equation: \`1/f = 1/d_o + 1/d_i\` (same form as mirror)
+
+**4. Lens Maker's Formula (عدسہ ساز کا فارمولا):**
+\`1/f = (n - 1)(1/R₁ - 1/R₂)\`
+- n = refractive index of lens material
+- R₁, R₂ = radii of curvature of lens surfaces
+- Sign convention: R positive if center of curvature on same side as outgoing light.
+
+**5. Magnification (تکبیر):**
+\`m = -d_i/d_o\` (for lenses)
+- Positive m: upright image (virtual)
+- Negative m: inverted image (real)
+- \`m > 1\`: magnified, \`m < 1\`: diminished
+
+**6. Aberrations (عوارض - Lens Defects):**
+- **Spherical aberration:** Peripheral rays focus at different points – use parabolic mirrors or stop down aperture.
+- **Chromatic aberration:** Different colors (wavelengths) have different refractive indices, so different focus points – use achromatic doublets.
+- Astigmatism, coma: other aberrations corrected by compound lenses.
+
+**7. Optical Instruments:**
+- **Microscope:** Magnifies small objects (compound: objective + eyepiece)
+- **Telescope:** Magnifies distant objects (refracting: lenses, reflecting: mirrors)
+- **Camera:** Lens forms real image on film/sensor.
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Mirror equation: \`1/f = 1/d_o + 1/d_i\`
+- Lens equation same form
+- Convex lens converges, concave diverges
+- \`f = R/2\` for spherical mirrors
+- Magnification: \`m = -d_i/d_o\`
+- Lens maker: \`1/f = (n - 1)(1/R₁ - 1/R₂)\`
+- Sign convention: real = positive, virtual = negative
+`,
+    questions: [
+      {
+        q: 'A concave mirror has a radius of curvature of 20 cm. Its focal length is:',
+        options: [
+          'A. 20 cm',
+          'B. 10 cm',
+          'C. 40 cm',
+          'D. 5 cm'
+        ],
+        answer: 'B. 10 cm',
+        diff: 'easy'
+      },
+      {
+        q: 'The magnification of a plane mirror is:',
+        options: [
+          'A. -1 (inverted, same size)',
+          'B. +1 (upright, same size)',
+          'C. 0 (no image)',
+          'D. Infinity'
+        ],
+        answer: 'B. +1 (upright, same size)',
+        diff: 'easy'
+      },
+      {
+        q: 'A convex lens of focal length 10 cm forms an image of an object placed 15 cm from it. The image is:',
+        options: [
+          'A. Virtual and upright',
+          'B. Real and inverted',
+          'C. Virtual and inverted',
+          'D. Real and upright'
+        ],
+        answer: 'B. Real and inverted',
+        diff: 'medium'
+      },
+      {
+        q: 'The lens maker\'s formula involves the refractive index of the lens material and:',
+        options: [
+          'A. The object distance only',
+          'B. The radii of curvature of the lens surfaces',
+          'C. The image distance only',
+          'D. The wavelength of light only'
+        ],
+        answer: 'B. The radii of curvature of the lens surfaces',
+        diff: 'medium'
+      },
+      {
+        q: 'Chromatic aberration in a lens is caused by:',
+        options: [
+          'A. The spherical shape of the lens surfaces',
+          'B. Different colors (wavelengths) having different refractive indices',
+          'C. Reflections from the lens surfaces',
+          'D. The thickness of the lens being non-uniform'
+        ],
+        answer: 'B. Different colors (wavelengths) having different refractive indices',
+        diff: 'hard'
+      },
+      {
+        q: 'The image formed by a convex mirror is always:',
+        options: [
+          'A. Real and inverted',
+          'B. Virtual and upright (diminished)',
+          'C. Real and upright',
+          'D. Virtual and inverted'
+        ],
+        answer: 'B. Virtual and upright (diminished)',
+        diff: 'medium'
+      },
+      {
+        q: 'For an object placed at infinity, a convex lens forms its image at:',
+        options: [
+          'A. Infinity',
+          'B. The focal point (at distance f from the lens)',
+          'C. The center of curvature',
+          'D. The same position as the object'
+        ],
+        answer: 'B. The focal point (at distance f from the lens)',
+        diff: 'easy'
+      },
+      {
+        q: 'Spherical aberration is caused by:',
+        options: [
+          'A. The dependence of refractive index on wavelength',
+          'B. The spherical surfaces of lenses or mirrors',
+          'C. The material of the lens being inhomogeneous',
+          'D. The thickness of the lens'
+        ],
+        answer: 'B. The spherical surfaces of lenses or mirrors',
+        diff: 'hard'
+      },
+      {
+        q: 'The power of a lens is measured in:',
+        options: [
+          'A. Meters (m)',
+          'B. Diopters (D = 1/m)',
+          'C. Centimeters (cm)',
+          'D. Watts (W)'
+        ],
+        answer: 'B. Diopters (D = 1/m)',
+        diff: 'easy'
+      },
+      {
+        q: 'A concave lens is also called a:',
+        options: [
+          'A. Converging lens',
+          'B. Diverging lens',
+          'C. Plane lens',
+          'D. Cylindrical lens'
+        ],
+        answer: 'B. Diverging lens',
+        diff: 'easy'
+      },
+      {
+        q: 'The mirror equation \`1/f = 1/d_o + 1/d_i\` is valid for:',
+        options: [
+          'A. Plane mirrors only',
+          'B. Spherical mirrors only',
+          'C. Both plane and spherical mirrors',
+          'D. Lenses only'
+        ],
+        answer: 'B. Spherical mirrors only',
+        diff: 'medium'
+      },
+      {
+        q: 'If an object is placed at the focal point of a convex lens (\`d_o = f\`), the image is formed at:',
+        options: [
+          'A. Infinity',
+          'B. The focal point',
+          'C. Twice the focal length (\`2f\`)',
+          'D. The object position'
+        ],
+        answer: 'A. Infinity',
+        diff: 'medium'
+      },
+      {
+        q: 'A convex lens has focal length f. The magnification is -2 (inverted, twice size) when:',
+        options: [
+          'A. \`d_o = f/2\`',
+          'B. \`d_o = 3f/2\`',
+          'C. \`d_o = 2f\`',
+          'D. \`d_o = f\`'
+        ],
+        answer: 'B. \`d_o = 3f/2\`',
+        diff: 'hard'
+      },
+      {
+        q: 'Total internal reflection can occur when light travels from:',
+        options: [
+          'A. Air to glass',
+          'B. Glass to air',
+          'C. Water to air',
+          'D. Both B and C'
+        ],
+        answer: 'D. Both B and C',
+        diff: 'medium'
+      },
+      {
+        q: 'The focal length of a convex lens depends on:',
+        options: [
+          'A. The refractive index of the material only',
+          'B. The radii of curvature of the surfaces only',
+          'C. Both the refractive index and the radii of curvature',
+          'D. The object distance only'
+        ],
+        answer: 'C. Both the refractive index and the radii of curvature',
+        diff: 'medium'
+      }
+    ]
+  },
+
+  // ======================== LECTURE 36 ========================
+  36: {
+    title: 'Heat - I',
+    summary: `
+**📚 Lecture 36 - Heat - I**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Heat vs Temperature (حرارت بمقابلہ درجہ حرارت):**
+- **Heat (حرارت):** Energy jo hot object se cold object ki taraf flow karti hai due to temperature difference.
+- **Temperature (درجہ حرارت):** Measure of average kinetic energy of molecules in a substance.
+- Heat is energy in transit; temperature is a property of the system.
+
+**2. Thermal Equilibrium (حرارتی توازن):**
+- Jab do objects ek doosre ke contact mein hon aur koi net heat flow na ho – to unka temperature equal hai.
+- Zeroeth Law of Thermodynamics: If A and B are in thermal equilibrium with C, then A and B are in thermal equilibrium with each other.
+
+**3. Temperature Scales (درجہ حرارت کے پیمانے):**
+- **Celsius (°C):** 0°C = freezing point of water, 100°C = boiling point of water.
+- **Fahrenheit (°F):** 32°F = freezing point, 212°F = boiling point.
+- **Kelvin (K):** SI scale, absolute zero = 0 K = -273.15°C.
+  - Conversion: \`K = °C + 273.15\`
+  - \`°F = (9/5)°C + 32\`
+  - \`°C = (5/9)(°F - 32)\`
+
+**4. Absolute Zero (مطلق صفر):**
+- Lowest possible temperature – molecules ki motion ruk jaati hai (theoretically).
+- Practically impossible to reach (Third Law of Thermodynamics).
+- At 0 K, entropy is minimum (perfect crystal).
+
+**5. Thermal Expansion (حرارتی پھیلاو):**
+- Most substances expand on heating (exceptions: water between 0-4°C).
+- **Linear expansion (لمبائی میں پھیلاو):** \`ΔL = α L₀ ΔT\`
+  - α = coefficient of linear expansion (material dependent)
+- **Volume expansion (حجم میں پھیلاو):** \`ΔV = β V₀ ΔT\`
+  - β = 3α (for isotropic solids)
+- **Area expansion:** \`ΔA = 2α A₀ ΔT\`
+- Bimetallic strip: different expansion rates → bending → thermostat.
+
+**6. Specific Heat (مخصوص حرارت):**
+- Heat required to raise temperature of 1 kg of substance by 1 K.
+- \`Q = mcΔT\`
+  - Q = heat added (Joules)
+  - m = mass (kg)
+  - c = specific heat (J/kg·K)
+  - ΔT = temperature change (K or °C)
+- Water: \`c = 4186 J/kg·K\` (very high – why coastal areas have moderate climate)
+- Metals: low specific heat (heat up and cool quickly)
+
+**7. Calorimetry (کیلوری میٹری - Heat Measurement):**
+- Principle: heat lost = heat gained (isolated system)
+- \`Q_loss + Q_gain = 0\`
+- Used to measure specific heat of unknown substances.
+- Example: Hot metal dropped into water – final temperature gives metal's specific heat.
+
+**8. Heat Transfer Mechanisms (حرارت کی منتقلی کے طریقے):**
+- **Conduction (انتقال):** Through direct contact – metals are good conductors (free electrons).
+  - \`Q = k A (ΔT/L) t\`
+  - k = thermal conductivity (W/m·K)
+- **Convection (حمل):** Through fluid movement – hot fluid rises, cold sinks.
+  - Natural convection (buoyancy driven)
+  - Forced convection (fan/pump driven)
+- **Radiation (اشعاع):** Through electromagnetic waves – no medium needed.
+  - \`P = σ ε A T⁴\` (Stefan-Boltzmann)
+  - Blackbody: ε = 1, perfect absorber/emitter
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Heat flows from hot to cold (Second Law)
+- \`K = °C + 273.15\`
+- Linear expansion: \`ΔL = α L₀ ΔT\`
+- Volume expansion: \`ΔV = β V₀ ΔT\`, \`β = 3α\`
+- Specific heat: \`Q = mcΔT\`
+- Water has highest specific heat (4186 J/kg·K)
+- Conduction: \`Q = kA(ΔT/L)t\`
+- Radiation: \`P = σ ε A T⁴\`
+`,
+    questions: [
+      {
+        q: 'Heat is defined as:',
+        options: [
+          'A. The total internal energy of all molecules in a system',
+          'B. Energy that flows from a system at higher temperature to one at lower temperature',
+          'C. The temperature of a body measured in degrees',
+          'D. The average kinetic energy of molecules in a system'
+        ],
+        answer: 'B. Energy that flows from a system at higher temperature to one at lower temperature',
+        diff: 'medium'
+      },
+      {
+        q: 'The SI unit of heat (energy) is:',
+        options: [
+          'A. Calorie (cal)',
+          'B. Joule (J)',
+          'C. Kelvin (K)',
+          'D. Watt (W)'
+        ],
+        answer: 'B. Joule (J)',
+        diff: 'easy'
+      },
+      {
+        q: 'Absolute zero temperature is approximately:',
+        options: [
+          'A. -273.15°C',
+          'B. 0°C',
+          'C. -100°C',
+          'D. 273.15°C'
+        ],
+        answer: 'A. -273.15°C',
+        diff: 'easy'
+      },
+      {
+        q: 'The temperature at which water freezes on the Kelvin scale is:',
+        options: [
+          'A. 0 K',
+          'B. 100 K',
+          'C. 273.15 K',
+          'D. 373.15 K'
+        ],
+        answer: 'C. 273.15 K',
+        diff: 'medium'
+      },
+      {
+        q: 'The coefficient of volume expansion β is related to the coefficient of linear expansion α by:',
+        options: [
+          'A. β = α (same value)',
+          'B. β = 2α (twice)',
+          'C. β = 3α (three times)',
+          'D. β = α/3 (one-third)'
+        ],
+        answer: 'C. β = 3α (three times)',
+        diff: 'medium'
+      },
+      {
+        q: 'The specific heat of water is approximately:',
+        options: [
+          'A. 4186 J/(kg·K)',
+          'B. 1000 J/(kg·K)',
+          'C. 500 J/(kg·K)',
+          'D. 2000 J/(kg·K)'
+        ],
+        answer: 'A. 4186 J/(kg·K)',
+        diff: 'easy'
+      },
+      {
+        q: 'Which of the following materials is the best conductor of heat?',
+        options: [
+          'A. Wood',
+          'B. Copper',
+          'C. Glass',
+          'D. Rubber'
+        ],
+        answer: 'B. Copper',
+        diff: 'easy'
+      },
+      {
+        q: 'Convection is the transfer of heat by:',
+        options: [
+          'A. Direct molecular contact (conduction)',
+          'B. The movement of fluids (liquids or gases)',
+          'C. Electromagnetic radiation',
+          'D. The exchange of photons'
+        ],
+        answer: 'B. The movement of fluids (liquids or gases)',
+        diff: 'easy'
+      },
+      {
+        q: 'Radiation is the transfer of heat by:',
+        options: [
+          'A. Direct molecular contact',
+          'B. The movement of fluids',
+          'C. Electromagnetic waves',
+          'D. Conduction through solids'
+        ],
+        answer: 'C. Electromagnetic waves',
+        diff: 'easy'
+      },
+      {
+        q: 'Two objects are in thermal equilibrium when:',
+        options: [
+          'A. They have equal masses',
+          'B. They have the same temperature',
+          'C. They have equal volumes',
+          'D. They are in physical contact'
+        ],
+        answer: 'B. They have the same temperature',
+        diff: 'medium'
+      },
+      {
+        q: 'Water has a very high specific heat primarily because:',
+        options: [
+          'A. It is a liquid at room temperature',
+          'B. It has strong hydrogen bonds that store energy',
+          'C. It is a dense substance',
+          'D. It is colorless and odorless'
+        ],
+        answer: 'B. It has strong hydrogen bonds that store energy',
+        diff: 'hard'
+      },
+      {
+        q: 'The formula for linear thermal expansion is:',
+        options: [
+          'A. \`ΔL = α L₀ ΔT\`',
+          'B. \`ΔL = L₀ ΔT / α\`',
+          'C. \`ΔL = α ΔT / L₀\`',
+          'D. \`ΔL = L₀ / (α ΔT)\`'
+        ],
+        answer: 'A. \`ΔL = α L₀ ΔT\`',
+        diff: 'easy'
+      },
+      {
+        q: 'Which temperature scale is preferred for scientific calculations?',
+        options: [
+          'A. Celsius (°C)',
+          'B. Fahrenheit (°F)',
+          'C. Kelvin (K)',
+          'D. Rankine (°R)'
+        ],
+        answer: 'C. Kelvin (K)',
+        diff: 'easy'
+      },
+      {
+        q: 'Heat capacity of a body is defined as:',
+        options: [
+          'A. \`Q/ΔT\` (heat added divided by temperature change)',
+          'B. \`mcΔT\` (mass × specific heat × temperature change)',
+          'C. \`Q/m\` (heat per unit mass)',
+          'D. \`ΔT/Q\` (temperature change per unit heat)'
+        ],
+        answer: 'A. \`Q/ΔT\`',
+        diff: 'hard'
+      },
+      {
+        q: 'When a solid is heated, it expands because:',
+        options: [
+          'A. The atoms themselves become larger',
+          'B. The atoms vibrate more vigorously and the average distance between them increases',
+          'C. The material changes its chemical composition',
+          'D. The atoms move closer together'
+        ],
+        answer: 'B. The atoms vibrate more vigorously and the average distance between them increases',
+        diff: 'medium'
+      }
+    ]
+  },
+
+  // ======================== LECTURE 37 ========================
+  37: {
+    title: 'Heat - II (Thermodynamics)',
+    summary: `
+**📚 Lecture 37 - Heat - II (Thermodynamics)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Thermodynamics (حرحرکیات):**
+Study of heat, work, and their interconversion. Macroscopic properties (pressure, volume, temperature) without microscopic details.
+
+**2. First Law of Thermodynamics (پہلا قانون):**
+\`ΔE = Q + W\`
+- ΔE = change in internal energy of system
+- Q = heat added to system (positive if added, negative if removed)
+- W = work done on system (positive if done on, negative if done by)
+- Conservation of energy applied to thermodynamic systems.
+
+**3. Ideal Gas (مثالی گیس):**
+- Equation of state: \`PV = N k_B T = n R T\`
+  - N = number of molecules, k_B = Boltzmann constant (1.38×10⁻²³ J/K)
+  - n = number of moles, R = 8.314 J/mol·K
+- Internal energy depends only on temperature: \`E = (3/2)N k_B T\` (monoatomic)
+- No intermolecular forces, molecules are point particles.
+
+**4. Work Done by Gas (گیس کا کام):**
+- Constant pressure: \`W = P ΔV\`
+- Reversible isothermal (constant T): \`W = nRT ln(V₂/V₁)\`
+- Vacuum expansion (free expansion): \`W = 0\` (no external pressure)
+
+**5. Specific Heats (مخصوص حرارتیں):**
+- \`C_v\` – heat capacity at constant volume
+  - \`Q_v = C_v ΔT\`, \`ΔE = C_v ΔT\`
+- \`C_p\` – heat capacity at constant pressure
+  - \`Q_p = C_p ΔT\`, \`C_p = C_v + R\` (per mole, ideal gas)
+- Ratio: \`γ = C_p/C_v\`
+  - Monoatomic: C_v = 3R/2, C_p = 5R/2, γ = 5/3
+  - Diatomic: C_v = 5R/2, C_p = 7R/2, γ = 7/5
+
+**6. Adiabatic Process (بے حرارت عمل):**
+- No heat exchange: \`Q = 0\`
+- \`PV^γ = constant\` (Poisson's law)
+- \`TV^{γ-1} = constant\`
+- Temperature changes even without heat exchange (due to work).
+
+**7. Second Law of Thermodynamics (دوسرا قانون):**
+- Heat cannot spontaneously flow from cold to hot.
+- No engine can be 100% efficient (some heat must be rejected to cold reservoir).
+- Clausius: heat cannot flow from cold to hot without external work.
+- Kelvin-Planck: impossible to convert all heat into work.
+
+**8. Heat Engine (حرارتی انجن):**
+- Operates between hot (T_H) and cold (T_C) reservoirs.
+- Efficiency: \`ε = 1 - T_C/T_H\` (Carnot engine, maximum possible)
+- Real engines have lower efficiency (friction, heat losses).
+- Carnot engine: reversible, maximum efficiency, ideal.
+
+**9. Entropy (انٹروپی):**
+- Measure of disorder/randomness.
+- Reversible process: \`ΔS = Q/T\`
+- Irreversible process: \`ΔS > 0\`
+- Second Law: total entropy of isolated system always increases.
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- \`PV = nRT\` (Ideal gas)
+- \`ΔE = Q + W\` (First Law)
+- \`C_p = C_v + R\` (per mole)
+- \`γ = C_p/C_v\`
+- Adiabatic: \`PV^γ = constant\`
+- Heat engine efficiency: \`ε = 1 - T_C/T_H\`
+- Entropy always increases for spontaneous processes
+- Carnot engine gives maximum efficiency
+`,
+    questions: [
+      {
+        q: 'The First Law of Thermodynamics is essentially a statement of:',
+        options: [
+          'A. Conservation of mass',
+          'B. Conservation of energy',
+          'C. Conservation of momentum',
+          'D. Conservation of charge'
+        ],
+        answer: 'B. Conservation of energy',
+        diff: 'easy'
+      },
+      {
+        q: 'The ideal gas equation can be expressed as:',
+        options: [
+          'A. \`PV = Nk_B T\`',
+          'B. \`PV = nRT\`',
+          'C. Both A and B',
+          'D. \`PV = constant\`'
+        ],
+        answer: 'C. Both A and B',
+        diff: 'easy'
+      },
+      {
+        q: 'In an adiabatic process, which quantity is zero?',
+        options: [
+          'A. Work done (W)',
+          'B. Heat exchange (Q)',
+          'C. Temperature change (ΔT)',
+          'D. Volume change (ΔV)'
+        ],
+        answer: 'B. Heat exchange (Q)',
+        diff: 'easy'
+      },
+      {
+        q: 'For an ideal gas, the internal energy depends only on:',
+        options: [
+          'A. Pressure (P)',
+          'B. Volume (V)',
+          'C. Temperature (T)',
+          'D. The number of molecules (N)'
+        ],
+        answer: 'C. Temperature (T)',
+        diff: 'medium'
+      },
+      {
+        q: 'The relation between \`C_p\` and \`C_v\` for an ideal gas is (per mole):',
+        options: [
+          'A. \`C_p = C_v\` (equal)',
+          'B. \`C_p = C_v + R\`',
+          'C. \`C_p = C_v - R\`',
+          'D. \`C_p = R/C_v\`'
+        ],
+        answer: 'B. \`C_p = C_v + R\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The efficiency of a Carnot heat engine operating between temperatures \`T_H\` and \`T_C\` is:',
+        options: [
+          'A. \`T_H/T_C\`',
+          'B. \`1 - T_C/T_H\`',
+          'C. \`T_C/T_H\`',
+          'D. \`1 - T_H/T_C\`'
+        ],
+        answer: 'B. \`1 - T_C/T_H\`',
+        diff: 'medium'
+      },
+      {
+        q: 'Entropy is a measure of:',
+        options: [
+          'A. The total energy of a system',
+          'B. The disorder or randomness of a system',
+          'C. The temperature of a system',
+          'D. The pressure of a system'
+        ],
+        answer: 'B. The disorder or randomness of a system',
+        diff: 'easy'
+      },
+      {
+        q: 'The Second Law of Thermodynamics implies that:',
+        options: [
+          'A. Energy is always conserved',
+          'B. Heat flows naturally from hot to cold objects',
+          'C. The entropy of an isolated system always increases',
+          'D. Both B and C'
+        ],
+        answer: 'D. Both B and C',
+        diff: 'medium'
+      },
+      {
+        q: 'For a reversible process, the change in entropy is given by:',
+        options: [
+          'A. \`ΔS = Q/T\`',
+          'B. \`ΔS = Q\` (without dividing by T)',
+          'C. \`ΔS = T/Q\`',
+          'D. \`ΔS = 0\` always'
+        ],
+        answer: 'A. \`ΔS = Q/T\`',
+        diff: 'hard'
+      },
+      {
+        q: 'The work done by a gas expanding at constant pressure is:',
+        options: [
+          'A. \`PΔV\`',
+          'B. \`ΔP V\`',
+          'C. \`VΔP\`',
+          'D. \`nRT ln(V₂/V₁)\`'
+        ],
+        answer: 'A. \`PΔV\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The adiabatic relation \`PV^γ = constant\` applies when:',
+        options: [
+          'A. The temperature is constant',
+          'B. The pressure is constant',
+          'C. No heat is exchanged with the surroundings',
+          'D. The volume is constant'
+        ],
+        answer: 'C. No heat is exchanged with the surroundings',
+        diff: 'medium'
+      },
+      {
+        q: 'For a monoatomic ideal gas, the ratio \`γ = C_p/C_v\` is:',
+        options: [
+          'A. 3/2',
+          'B. 5/3',
+          'C. 7/5',
+          'D. 1'
+        ],
+        answer: 'B. 5/3',
+        diff: 'hard'
+      },
+      {
+        q: 'A heat engine cannot be 100% efficient because:',
+        options: [
+          'A. Energy is lost due to friction',
+          'B. Some heat must be rejected to a cold reservoir (Second Law)',
+          'C. The engine cannot be perfectly insulated',
+          'D. The working substance is not ideal'
+        ],
+        answer: 'B. Some heat must be rejected to a cold reservoir (Second Law)',
+        diff: 'medium'
+      },
+      {
+        q: 'The change in entropy for a reversible isothermal process is:',
+        options: [
+          'A. Zero',
+          'B. \`Q/T\`',
+          'C. \`Q\`',
+          'D. \`T/Q\`'
+        ],
+        answer: 'B. \`Q/T\`',
+        diff: 'hard'
+      },
+      {
+        q: 'The Boltzmann constant \`k_B\` relates:',
+        options: [
+          'A. Pressure to volume (PV = k_B T)',
+          'B. Temperature to energy per molecule (K_avg = 3/2 k_B T)',
+          'C. Heat to work',
+          'D. Entropy to disorder'
+        ],
+        answer: 'B. Temperature to energy per molecule (K_avg = 3/2 k_B T)',
+        diff: 'medium'
+      }
+    ]
+  },
+
+  // ======================== LECTURE 38 ========================
+  38: {
+    title: 'Heat - III (Kinetic Theory & Phase Changes)',
+    summary: `
+**📚 Lecture 38 - Heat - III (Kinetic Theory & Phase Changes)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Kinetic Theory of Gases (گیسوں کی حرکی نظریہ):**
+- Gas molecules continuously random motion mein hain (Brownian motion).
+- Pressure arises from molecular collisions with walls.
+- Molecules are point particles (no volume), no intermolecular forces (ideal gas).
+- Collisions are perfectly elastic (no energy loss).
+
+**2. Pressure from Kinetic Theory:**
+\`P = (1/3) ρ v_rms² = (2/3)(N/V)(½ m v_rms²)\`
+- ρ = density
+- v_rms = root mean square speed
+
+**3. Average Kinetic Energy (اوسط حرکی توانائی):**
+- \`K_avg = (3/2) k_B T\`
+- Temperature is directly proportional to average translational KE.
+- At same T, all gases have same average KE per molecule (regardless of mass).
+- Heavier molecules move slower, lighter move faster (for same KE).
+
+**4. RMS Speed (جذر میانگین مربعی رفتار):**
+- \`v_rms = √(3k_B T/m) = √(3RT/M)\`
+  - M = molar mass (kg/mol)
+- Lighter molecules (small M) move faster at same T.
+
+**5. Maxwell-Boltzmann Distribution (میکسویل-بولٹزمان تقسیم):**
+- Distribution of molecular speeds in a gas.
+- **Most probable speed:** \`v_mp = √(2kT/m)\` (peak of distribution)
+- **Average speed:** \`v_avg = √(8kT/πm)\`
+- **RMS speed:** \`v_rms = √(3kT/m)\`
+- Order: \`v_mp < v_avg < v_rms\`
+
+**6. Phase Changes (حالت کی تبدیلی):**
+- **Melting (پگھلنا):** Solid → Liquid
+  - \`Q = m L_f\` (latent heat of fusion)
+  - Temperature remains constant during melting.
+- **Vaporization (بخارات بننا):** Liquid → Gas
+  - \`Q = m L_v\` (latent heat of vaporization)
+  - Temperature remains constant during boiling.
+- **Sublimation:** Solid → Gas (directly)
+- **Deposition:** Gas → Solid (directly)
+
+**7. Evaporation (بخار بننا - Surface phenomenon):**
+- Molecules with high kinetic energy escape from the surface.
+- Cools the liquid (high KE molecules leave, average KE decreases).
+- Evaporation happens at all temperatures (unlike boiling).
+
+**8. Heat Transfer (حرارت کی منتقلی):**
+- **Conduction (انتقال):** \`Q = k A (ΔT/L) t\`
+  - k = thermal conductivity (W/m·K)
+- **Convection (حمل):** fluid movement
+- **Radiation (اشعاع):** \`P = σ ε A T⁴\`
+  - ε = emissivity (0 to 1)
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- \`K_avg = (3/2) k_B T\`
+- \`v_rms = √(3kT/m)\`
+- Lighter molecules move faster at same T
+- \`v_mp < v_avg < v_rms\`
+- Latent heat: \`Q = mL\` (no temperature change)
+- Conduction: \`Q = kA(ΔT/L)t\`
+- Radiation: \`P = σ ε A T⁴\`
+`,
+    questions: [
+      {
+        q: 'According to kinetic theory, the pressure of a gas is caused by:',
+        options: [
+          'A. Attractive forces between molecules',
+          'B. Repulsive forces between molecules',
+          'C. Collisions of molecules with the walls of the container',
+          'D. The weight of the molecules'
+        ],
+        answer: 'C. Collisions of molecules with the walls of the container',
+        diff: 'medium'
+      },
+      {
+        q: 'The average kinetic energy of gas molecules is proportional to:',
+        options: [
+          'A. \`T²\` (square of absolute temperature)',
+          'B. \`T\` (absolute temperature)',
+          'C. \`√T\` (square root of temperature)',
+          'D. \`1/T\` (inverse of temperature)'
+        ],
+        answer: 'B. \`T\` (absolute temperature)',
+        diff: 'easy'
+      },
+      {
+        q: 'The RMS speed of gas molecules is proportional to:',
+        options: [
+          'A. \`√T\`',
+          'B. \`T\`',
+          'C. \`T²\`',
+          'D. \`1/√T\`'
+        ],
+        answer: 'A. \`√T\`',
+        diff: 'medium'
+      },
+      {
+        q: 'At the same temperature, lighter gas molecules have:',
+        options: [
+          'A. Lower average speed than heavier molecules',
+          'B. Higher average speed than heavier molecules',
+          'C. The same average speed as heavier molecules',
+          'D. Lower average kinetic energy'
+        ],
+        answer: 'B. Higher average speed than heavier molecules',
+        diff: 'medium'
+      },
+      {
+        q: 'The latent heat of fusion is the heat required to:',
+        options: [
+          'A. Melt a solid (change from solid to liquid)',
+          'B. Vaporize a liquid (change from liquid to gas)',
+          'C. Raise the temperature of a substance',
+          'D. Cool a gas to a liquid'
+        ],
+        answer: 'A. Melt a solid (change from solid to liquid)',
+        diff: 'easy'
+      },
+      {
+        q: 'During a phase change (melting or boiling), the temperature of the substance:',
+        options: [
+          'A. Increases steadily',
+          'B. Decreases steadily',
+          'C. Remains constant',
+          'D. First increases, then decreases'
+        ],
+        answer: 'C. Remains constant',
+        diff: 'easy'
+      },
+      {
+        q: 'Evaporation causes cooling because:',
+        options: [
+          'A. Heat is absorbed from the surroundings',
+          'B. The fastest (highest energy) molecules leave, reducing average kinetic energy',
+          'C. The liquid expands and cools',
+          'D. Both A and B'
+        ],
+        answer: 'D. Both A and B',
+        diff: 'hard'
+      },
+      {
+        q: 'The formula for heat conduction through a material is:',
+        options: [
+          'A. \`Q = kA(ΔT/L)t\`',
+          'B. \`Q = σAT⁴\`',
+          'C. \`Q = mcΔT\`',
+          'D. \`Q = mL\`'
+        ],
+        answer: 'A. \`Q = kA(ΔT/L)t\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The Stefan-Boltzmann law for thermal radiation is:',
+        options: [
+          'A. \`P = σAT⁴\`',
+          'B. \`P = σAT²\`',
+          'C. \`P = σAT\`',
+          'D. \`P = σAT³\`'
+        ],
+        answer: 'A. \`P = σAT⁴\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The most probable speed in the Maxwell-Boltzmann distribution is:',
+        options: [
+          'A. \`√(3kT/m)\` (RMS speed)',
+          'B. \`√(2kT/m)\` (most probable)',
+          'C. \`√(8kT/πm)\` (average speed)',
+          'D. \`kT/m\`'
+        ],
+        answer: 'B. \`√(2kT/m)\`',
+        diff: 'hard'
+      },
+      {
+        q: 'The RMS speed of oxygen molecules (molar mass 32 g/mol) compared to hydrogen (2 g/mol) at the same temperature is:',
+        options: [
+          'A. 4 times faster (hydrogen is 4× faster)',
+          'B. 1/4 times (oxygen is 4× slower)',
+          'C. 16 times faster',
+          'D. The same speed'
+        ],
+        answer: 'B. 1/4 times (oxygen is 4× slower)',
+        diff: 'hard'
+      },
+      {
+        q: 'Latent heat of vaporization is generally:',
+        options: [
+          'A. Less than the latent heat of fusion',
+          'B. Greater than the latent heat of fusion',
+          'C. Equal to the latent heat of fusion',
+          'D. Unrelated to the latent heat of fusion'
+        ],
+        answer: 'B. Greater than the latent heat of fusion',
+        diff: 'medium'
+      },
+      {
+        q: 'Convection requires:',
+        options: [
+          'A. A solid medium',
+          'B. A fluid medium (liquid or gas)',
+          'C. No medium (vacuum)',
+          'D. A vacuum'
+        ],
+        answer: 'B. A fluid medium (liquid or gas)',
+        diff: 'easy'
+      },
+      {
+        q: 'The rate of thermal radiation is proportional to:',
+        options: [
+          'A. Surface area only',
+          'B. Temperature to the fourth power only',
+          'C. Both surface area and temperature to the fourth power',
+          'D. Volume'
+        ],
+        answer: 'C. Both surface area and temperature to the fourth power',
+        diff: 'medium'
+      },
+      {
+        q: 'At absolute zero (0 K), molecular motion:',
+        options: [
+          'A. Stops completely (theoretically)',
+          'B. Continues with minimum energy (zero-point energy in quantum mechanics)',
+          'C. Increases to maximum',
+          'D. Becomes completely random'
+        ],
+        answer: 'A. Stops completely (theoretically)',
+        diff: 'medium'
+      }
+    ]
+  },
+
+  // ======================== LECTURE 39 ========================
+  39: {
+    title: 'Special Relativity - I',
+    summary: `
+**📚 Lecture 39 - Special Relativity - I**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Einstein's Postulates (آئن سٹائن کے اصول - 1905):**
+1. **Principle of Relativity:** Laws of physics are the same in all inertial frames (constant velocity). No preferred frame exists.
+2. **Constancy of Speed of Light:** Speed of light in vacuum is constant (c = 3×10⁸ m/s) for all observers, independent of the motion of the source or observer.
+
+**2. Galilean vs Lorentz Transformations:**
+- Galilean (Newtonian): \`x' = x - vt\`, \`t' = t\` (absolute time)
+- Lorentz (Relativistic): \`x' = γ(x - vt)\`, \`t' = γ(t - vx/c²)\`
+- γ = Lorentz factor: \`γ = 1/√(1 - v²/c²)\` (γ ≥ 1)
+
+**3. Time Dilation (وقت کی طوالت):**
+- Moving clocks run slow (as seen by a stationary observer).
+- \`Δt = γ Δt₀\` (Δτ = proper time in moving frame)
+- Example: v = 0.6c → γ = 1.25 → 1 hour in rocket = 1.25 hours on Earth.
+- Muon decay confirms time dilation (muons live longer at high speeds).
+
+**4. Length Contraction (لمبائی کا سکڑاؤ):**
+- Moving objects contract along the direction of motion.
+- \`L = L₀/γ\`
+- Only in direction of motion (perpendicular dimensions unchanged).
+- Example: v = 0.6c → γ = 1.25 → 1 m rod appears 0.8 m.
+
+**5. Relativistic Velocity Addition (رفتاروں کا اضافہ):**
+- \`u = (u' + v)/(1 + u'v/c²)\`
+- Ensures no speed exceeds c.
+- If \`u' = c\` (light), then \`u = c\` always.
+- At low speeds: \`u ≈ u' + v\` (Galilean limit)
+
+**6. Relativistic Momentum (نسبیتی رفتار):**
+- \`p = γ m v\` (γ m v)
+- Reduces to \`p = mv\` at low speeds.
+- Conservation of momentum holds in all frames.
+
+**7. Relativistic Energy (نسبیتی توانائی):**
+- Total energy: \`E = γ m c²\`
+- Rest energy: \`E₀ = m c²\` (mass-energy equivalence)
+- Kinetic energy: \`K = (γ - 1) m c²\`
+- At low speeds: \`K ≈ ½ m v²\`
+- \`E² = p² c² + m² c⁴\` (invariant relation)
+
+**8. Mass-Energy Equivalence:**
+- \`E = m c²\` – mass can be converted to energy and vice versa.
+- Basis of nuclear energy (fission, fusion).
+- Even a small mass corresponds to huge energy (c² is large).
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- \`γ = 1/√(1 - v²/c²)\`
+- Time dilation: \`Δt = γ Δt₀\`
+- Length contraction: \`L = L₀/γ\`
+- Velocity addition: \`u = (u' + v)/(1 + u'v/c²)\`
+- Relativistic momentum: \`p = γ m v\`
+- Relativistic energy: \`E = γ m c²\`
+- \`E = m c²\` (rest energy)
+- Nothing travels faster than c
+`,
+    questions: [
+      {
+        q: 'Einstein\'s first postulate of special relativity states that:',
+        options: [
+          'A. The speed of light is constant in all frames',
+          'B. The laws of physics are the same in all inertial reference frames',
+          'C. Energy and mass are equivalent (E = mc²)',
+          'D. Time is absolute for all observers'
+        ],
+        answer: 'B. The laws of physics are the same in all inertial reference frames',
+        diff: 'medium'
+      },
+      {
+        q: 'The speed of light in vacuum:',
+        options: [
+          'A. Is different in different inertial frames',
+          'B. Is constant (c) in all inertial frames',
+          'C. Depends on the motion of the source',
+          'D. Is infinite'
+        ],
+        answer: 'B. Is constant (c) in all inertial frames',
+        diff: 'easy'
+      },
+      {
+        q: 'The relativistic Lorentz factor γ is given by:',
+        options: [
+          'A. \`1/√(1 - v²/c²)\`',
+          'B. \`√(1 - v²/c²)\`',
+          'C. \`1/(1 - v²/c²)\`',
+          'D. \`1 - v²/c²\`'
+        ],
+        answer: 'A. \`1/√(1 - v²/c²)\`',
+        diff: 'easy'
+      },
+      {
+        q: 'According to time dilation, a clock moving relative to an observer:',
+        options: [
+          'A. Runs faster than a stationary clock',
+          'B. Runs slower than a stationary clock',
+          'C. Keeps exactly the same time',
+          'D. Stops completely'
+        ],
+        answer: 'B. Runs slower than a stationary clock',
+        diff: 'easy'
+      },
+      {
+        q: 'Length contraction occurs only:',
+        options: [
+          'A. In all directions (3D contraction)',
+          'B. In the direction of motion',
+          'C. Perpendicular to the direction of motion',
+          'D. In the opposite direction of motion'
+        ],
+        answer: 'B. In the direction of motion',
+        diff: 'medium'
+      },
+      {
+        q: 'The Lorentz transformations replace which set of transformations?',
+        options: [
+          'A. Maxwell equations',
+          'B. Galilean transformations',
+          'C. Newton\'s laws of motion',
+          'D. Kepler\'s laws'
+        ],
+        answer: 'B. Galilean transformations',
+        diff: 'medium'
+      },
+      {
+        q: 'The rest energy of a particle of mass m is:',
+        options: [
+          'A. \`mc²\`',
+          'B. \`γmc²\`',
+          'C. \`½mv²\`',
+          'D. \`p²/2m\`'
+        ],
+        answer: 'A. \`mc²\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The total energy of a particle of mass m moving with speed v is:',
+        options: [
+          'A. \`mc²\`',
+          'B. \`γmc²\`',
+          'C. \`½mv²\`',
+          'D. \`p²/2m\`'
+        ],
+        answer: 'B. \`γmc²\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The relativistic momentum of a particle is:',
+        options: [
+          'A. \`mv\`',
+          'B. \`γmv\`',
+          'C. \`mγ²v\`',
+          'D. \`mv/γ\`'
+        ],
+        answer: 'B. \`γmv\`',
+        diff: 'medium'
+      },
+      {
+        q: 'Einstein\'s equation \`E = mc²\` implies that:',
+        options: [
+          'A. Energy can be created from nothing',
+          'B. Mass and energy are equivalent (interconvertible)',
+          'C. Mass can be destroyed without energy release',
+          'D. Energy is always conserved but mass is not'
+        ],
+        answer: 'B. Mass and energy are equivalent (interconvertible)',
+        diff: 'medium'
+      },
+      {
+        q: 'For a particle moving at \`v = 0.6c\`, the Lorentz factor γ is approximately:',
+        options: [
+          'A. 1.25',
+          'B. 1.67',
+          'C. 2.0',
+          'D. 0.8'
+        ],
+        answer: 'A. 1.25',
+        diff: 'hard'
+      },
+      {
+        q: 'The relativistic velocity addition formula ensures that:',
+        options: [
+          'A. Speeds add linearly (like Galilean)',
+          'B. No speed exceeds the speed of light c',
+          'C. Speeds are always less than v',
+          'D. Speeds can become negative'
+        ],
+        answer: 'B. No speed exceeds the speed of light c',
+        diff: 'medium'
+      },
+      {
+        q: 'Time dilation has been experimentally confirmed by:',
+        options: [
+          'A. Muon decay experiments',
+          'B. Atomic clocks on airplanes (Hafele-Keating experiment)',
+          'C. Both A and B',
+          'D. Neither'
+        ],
+        answer: 'C. Both A and B',
+        diff: 'medium'
+      },
+      {
+        q: 'For a photon (massless particle), the relation \`E² = p²c² + m²c⁴\` becomes:',
+        options: [
+          'A. \`E = 0\`',
+          'B. \`E = pc\`',
+          'C. \`E = mc²\`',
+          'D. \`E = p²c²\`'
+        ],
+        answer: 'B. \`E = pc\`',
+        diff: 'hard'
+      },
+      {
+        q: 'Special relativity applies to:',
+        options: [
+          'A. Accelerating reference frames',
+          'B. Inertial (non-accelerating) reference frames',
+          'C. Frames with gravitational fields',
+          'D. All reference frames'
+        ],
+        answer: 'B. Inertial (non-accelerating) reference frames',
+        diff: 'easy'
+      }
+    ]
+  },
+
+  // ======================== LECTURE 40 ========================
+  40: {
+    title: 'Special Relativity - II',
+    summary: `
+**📚 Lecture 40 - Special Relativity - II**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Spacetime Interval (خلائی-زمانی فاصلہ):**
+- Invariant quantity: \`s² = (cΔt)² - (Δx)²\`
+- Same for all observers (Lorentz invariant).
+- **Timelike (\`s² > 0\`):** Events can be causally connected (one can influence the other). Time ordering absolute.
+- **Spacelike (\`s² < 0\`):** No causal connection (events cannot influence each other). Time ordering depends on observer.
+- **Lightlike (\`s² = 0\`):** Connected by light signal (photons).
+
+**2. Light Cone (روشنی مخروط):**
+- Visual representation of spacetime events.
+- Future light cone: events that can be reached from present (with speed ≤ c).
+- Past light cone: events that can reach present.
+- Spacelike region: outside the cone – no causality.
+
+**3. Relativistic Doppler Effect (نسبیتی ڈوپلر اثر):**
+- For source moving relative to observer:
+  - Approaching (blueshift): \`ν = ν₀ √((1+β)/(1-β))\`
+  - Receding (redshift): \`ν = ν₀ √((1-β)/(1-β))\`
+- β = v/c
+- Used to measure speeds of stars and galaxies.
+
+**4. Conservation Laws in Relativity:**
+- **Momentum conservation:** \`Σ p = constant\` (with \`p = γmv\`)
+- **Energy conservation:** \`Σ E = constant\` (with \`E = γmc²\`)
+- Both together form four-momentum conservation in spacetime.
+
+**5. Nuclear Reactions & \`E = mc²\`:**
+- **Fission (انشقاق):** Heavy nucleus splits into lighter fragments – mass defect → energy released.
+  - Example: Uranium-235 fission (nuclear power, atomic bombs)
+- **Fusion (اندماج):** Light nuclei combine to form heavier nucleus – mass defect → energy released.
+  - Example: Hydrogen → Helium (Sun, hydrogen bombs)
+- Mass defect: \`Δm = (initial mass - final mass)\`
+- Energy released: \`E = Δm c²\`
+
+**6. Binding Energy (پابند توانائی):**
+- Energy required to break a nucleus into its constituent protons and neutrons.
+- Binding energy per nucleon: peaks at Iron-56 (most stable nucleus).
+- Fission of heavy nuclei (U-235) releases energy because products have higher binding energy.
+- Fusion of light nuclei (H → He) releases energy because products have higher binding energy.
+
+**7. Applications:**
+- Nuclear power plants (fission)
+- Nuclear weapons (fission and fusion)
+- Medical imaging (PET scans, radioactive tracers)
+- Astrophysics (stellar nucleosynthesis, energy source of stars)
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Spacetime interval invariant: \`s² = (cΔt)² - (Δx)²\`
+- Light cone: timelike (causal), spacelike (non-causal), lightlike
+- Relativistic Doppler: \`ν = ν₀ √((1±β)/(1∓β))\`
+- Energy conservation includes rest energy (\`E = γmc²\`)
+- \`E = mc²\` is basis of nuclear energy
+- Fission: heavy nuclei split (U-235)
+- Fusion: light nuclei combine (H → He in Sun)
+- Binding energy per nucleon peaks at Iron-56
+`,
+    questions: [
+      {
+        q: 'The spacetime interval \`s² = (cΔt)² - (Δx)²\` is invariant under:',
+        options: [
+          'A. Galilean transformations',
+          'B. Lorentz transformations',
+          'C. Both Galilean and Lorentz transformations',
+          'D. Neither'
+        ],
+        answer: 'B. Lorentz transformations',
+        diff: 'hard'
+      },
+      {
+        q: 'An event with \`s² < 0\` (spacelike) means that:',
+        options: [
+          'A. The events can be causally connected (one can influence the other)',
+          'B. The events cannot be causally connected',
+          'C. The events occur at the same time',
+          'D. The events occur at the same place'
+        ],
+        answer: 'B. The events cannot be causally connected',
+        diff: 'hard'
+      },
+      {
+        q: 'The relativistic Doppler effect for a receding source (moving away) gives:',
+        options: [
+          'A. Higher frequency (blueshift)',
+          'B. Lower frequency (redshift)',
+          'C. No change in frequency',
+          'D. Infinite frequency'
+        ],
+        answer: 'B. Lower frequency (redshift)',
+        diff: 'medium'
+      },
+      {
+        q: 'Nuclear fission is the process of:',
+        options: [
+          'A. Combining light nuclei to form heavier nuclei',
+          'B. Splitting heavy nuclei into lighter nuclei',
+          'C. Converting matter directly into energy',
+          'D. Both B and C'
+        ],
+        answer: 'D. Both B and C',
+        diff: 'medium'
+      },
+      {
+        q: 'Nuclear fusion powers:',
+        options: [
+          'A. The Sun and other stars',
+          'B. Nuclear power plants on Earth (currently)',
+          'C. Both A and B',
+          'D. Neither'
+        ],
+        answer: 'A. The Sun and other stars',
+        diff: 'easy'
+      },
+      {
+        q: 'In nuclear reactions, the mass of the products is:',
+        options: [
+          'A. Greater than the mass of the reactants',
+          'B. Less than the mass of the reactants (mass defect)',
+          'C. Equal to the mass of the reactants',
+          'D. Unrelated to the reactants'
+        ],
+        answer: 'B. Less than the mass of the reactants (mass defect)',
+        diff: 'medium'
+      },
+      {
+        q: 'The energy released in nuclear reactions comes from:',
+        options: [
+          'A. Breaking chemical bonds between atoms',
+          'B. The mass defect (Δm) converted to energy via \`E = Δm c²\`',
+          'C. The kinetic energy of the atoms',
+          'D. Thermal energy from the surroundings'
+        ],
+        answer: 'B. The mass defect (Δm) converted to energy via \`E = Δm c²\`',
+        diff: 'hard'
+      },
+      {
+        q: 'A timelike interval (\`s² > 0\`) means that:',
+        options: [
+          'A. Events can be causally connected',
+          'B. Events cannot be causally connected',
+          'C. Events occur simultaneously',
+          'D. Events occur at the same position'
+        ],
+        answer: 'A. Events can be causally connected',
+        diff: 'hard'
+      },
+      {
+        q: 'The light cone separates:',
+        options: [
+          'A. Past from future',
+          'B. Causally connected events from non-causally connected events',
+          'C. Space from time',
+          'D. Energy from mass'
+        ],
+        answer: 'B. Causally connected events from non-causally connected events',
+        diff: 'hard'
+      },
+      {
+        q: 'In relativistic collisions, which quantities are conserved?',
+        options: [
+          'A. Kinetic energy only',
+          'B. Total energy only',
+          'C. Both total energy and total momentum',
+          'D. Neither energy nor momentum'
+        ],
+        answer: 'C. Both total energy and total momentum',
+        diff: 'medium'
+      },
+      {
+        q: 'The energy equivalent of 1 kg of mass is approximately:',
+        options: [
+          'A. 9×10¹⁶ J (using \`E = mc²\`)',
+          'B. 9×10⁸ J',
+          'C. 3×10⁸ J',
+          'D. 1 J'
+        ],
+        answer: 'A. 9×10¹⁶ J',
+        diff: 'hard'
+      },
+      {
+        q: 'Redshift in astronomy is caused by:',
+        options: [
+          'A. Stars moving towards Earth (blueshift)',
+          'B. Stars moving away from Earth (redshift)',
+          'C. Gravitational effects only',
+          'D. Both B and C'
+        ],
+        answer: 'B. Stars moving away from Earth (redshift)',
+        diff: 'medium'
+      },
+      {
+        q: 'The mass defect in a nucleus is:',
+        options: [
+          'A. The mass lost when the nucleus is formed from protons and neutrons',
+          'B. The mass gained when the nucleus is formed',
+          'C. The mass of neutrons only',
+          'D. The mass of protons only'
+        ],
+        answer: 'A. The mass lost when the nucleus is formed from protons and neutrons',
+        diff: 'hard'
+      },
+      {
+        q: 'Binding energy is the energy:',
+        options: [
+          'A. Released when a nucleus is formed',
+          'B. Required to break a nucleus into its constituent nucleons',
+          'C. Both A and B (same magnitude, opposite processes)',
+          'D. Neither'
+        ],
+        answer: 'C. Both A and B (same magnitude, opposite processes)',
+        diff: 'hard'
+      },
+      {
+        q: 'The most stable nucleus (highest binding energy per nucleon) is:',
+        options: [
+          'A. Hydrogen-1',
+          'B. Iron-56',
+          'C. Uranium-235',
+          'D. Helium-4'
+        ],
+        answer: 'B. Iron-56',
+        diff: 'hard'
+      }
+    ]
+  
+
+  },
 
   },
 
