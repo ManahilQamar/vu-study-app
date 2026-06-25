@@ -974,6 +974,334 @@ const practice = {
       }
     ]
   },
+
+41: {
+   problems: [
+      {
+        q: 'The work function of sodium is 2.3 eV. What is the maximum kinetic energy of photoelectrons when light of wavelength 400 nm is incident? (h = 6.63×10⁻³⁴ J·s, c = 3×10⁸ m/s, 1 eV = 1.6×10⁻¹⁹ J)',
+        hint: 'E_photon = hc/λ; K_max = E_photon - W.',
+        answer: 'E_photon = (6.63×10⁻³⁴ × 3×10⁸)/(400×10⁻⁹) = 4.97×10⁻¹⁹ J = 3.10 eV. K_max = 3.10 - 2.3 = 0.80 eV'
+      },
+      {
+        q: 'What is the de Broglie wavelength of a 0.05 kg ball moving at 10 m/s? (h = 6.63×10⁻³⁴ J·s)',
+        hint: 'λ = h/p = h/(mv).',
+        answer: 'λ = 6.63×10⁻³⁴ / (0.05 × 10) = 1.33×10⁻³³ m'
+      },
+      {
+        q: 'A photon has energy 2.5 eV. Calculate its wavelength in nanometers. (h = 6.63×10⁻³⁴ J·s, c = 3×10⁸ m/s, 1 eV = 1.6×10⁻¹⁹ J)',
+        hint: 'E = hc/λ → λ = hc/E.',
+        answer: 'E = 2.5 × 1.6×10⁻¹⁹ = 4.0×10⁻¹⁹ J. λ = (6.63×10⁻³⁴ × 3×10⁸)/(4.0×10⁻¹⁹) = 4.97×10⁻⁷ m = 497 nm'
+      },
+      {
+        q: 'The threshold frequency for a metal is 5×10¹⁴ Hz. What is the work function in eV? (h = 4.14×10⁻¹⁵ eV·s)',
+        hint: 'W = hν₀.',
+        answer: 'W = 4.14×10⁻¹⁵ × 5×10¹⁴ = 2.07 eV'
+      },
+      {
+        q: 'Light of wavelength 300 nm falls on a metal with work function 2.0 eV. Calculate the maximum speed of emitted photoelectrons. (m_e = 9.11×10⁻³¹ kg)',
+        hint: 'First find K_max = hc/λ - W, then v = √(2K/m).',
+        answer: 'E_photon = (6.63×10⁻³⁴ × 3×10⁸)/(300×10⁻⁹) = 6.63×10⁻¹⁹ J = 4.14 eV. K_max = 4.14 - 2.0 = 2.14 eV = 3.42×10⁻¹⁹ J. v = √(2×3.42×10⁻¹⁹/9.11×10⁻³¹) = 8.67×10⁵ m/s'
+      },
+      {
+        q: 'In Compton scattering, X-rays of wavelength 0.1 nm are scattered at 90°. What is the change in wavelength? (λ_c = 2.43×10⁻¹² m)',
+        hint: 'Δλ = λ_c (1 - cosθ).',
+        answer: 'Δλ = 2.43×10⁻¹² × (1 - cos90°) = 2.43×10⁻¹² × 1 = 2.43×10⁻¹² m'
+      },
+      {
+        q: 'Calculate the momentum of a photon with wavelength 500 nm. (h = 6.63×10⁻³⁴ J·s)',
+        hint: 'p = h/λ.',
+        answer: 'p = 6.63×10⁻³⁴ / 500×10⁻⁹ = 1.33×10⁻²⁷ kg·m/s'
+      },
+      {
+        q: 'An electron has de Broglie wavelength 0.1 nm. Calculate its speed. (m_e = 9.11×10⁻³¹ kg)',
+        hint: 'λ = h/(mv) → v = h/(mλ).',
+        answer: 'v = 6.63×10⁻³⁴ / (9.11×10⁻³¹ × 0.1×10⁻⁹) = 6.63×10⁻³⁴ / 9.11×10⁻⁴¹ = 7.28×10⁶ m/s'
+      },
+      {
+        q: 'In a double-slit experiment with electrons, the slit separation d = 2 μm and screen distance D = 1 m. If the de Broglie wavelength of electrons is 0.1 nm, calculate the fringe spacing Δy.',
+        hint: 'Δy = λD/d.',
+        answer: 'Δy = (0.1×10⁻⁹ × 1) / (2×10⁻⁶) = 5×10⁻⁵ m = 50 μm'
+      },
+      {
+        q: 'Using the uncertainty principle, if the position of an electron is known to within 0.01 nm, what is the minimum uncertainty in its momentum? (ℏ = 1.055×10⁻³⁴ J·s)',
+        hint: 'Δx Δp ≥ ℏ/2.',
+        answer: 'Δp ≥ ℏ/(2Δx) = 1.055×10⁻³⁴ / (2 × 0.01×10⁻⁹) = 1.055×10⁻³⁴ / 2×10⁻¹¹ = 5.27×10⁻²⁴ kg·m/s'
+      }
+    ]
+},
+
+
+42:{
+  problems: [
+      {
+        q: 'Calculate the energy of a photon with frequency 5×10¹⁴ Hz. (h = 6.63×10⁻³⁴ J·s)',
+        hint: 'E = hν.',
+        answer: 'E = 6.63×10⁻³⁴ × 5×10¹⁴ = 3.315×10⁻¹⁹ J'
+      },
+      {
+        q: 'A photon has wavelength 500 nm. Calculate its frequency. (c = 3×10⁸ m/s)',
+        hint: 'ν = c/λ.',
+        answer: 'ν = 3×10⁸ / 500×10⁻⁹ = 6×10¹⁴ Hz'
+      },
+      {
+        q: 'Calculate the energy of a photon with wavelength 400 nm. (h = 6.63×10⁻³⁴ J·s, c = 3×10⁸ m/s)',
+        hint: 'E = hc/λ.',
+        answer: 'E = (6.63×10⁻³⁴ × 3×10⁸) / 400×10⁻⁹ = 4.97×10⁻¹⁹ J = 3.10 eV'
+      },
+      {
+        q: 'What is the de Broglie wavelength of an electron moving at 2×10⁶ m/s? (m_e = 9.11×10⁻³¹ kg, h = 6.63×10⁻³⁴ J·s)',
+        hint: 'λ = h/(mv).',
+        answer: 'λ = 6.63×10⁻³⁴ / (9.11×10⁻³¹ × 2×10⁶) = 6.63×10⁻³⁴ / 1.822×10⁻²⁴ = 3.64×10⁻¹⁰ m = 0.364 nm'
+      },
+      {
+        q: 'A particle is confined to a box of width 1 nm. Calculate the minimum kinetic energy using the uncertainty principle. (ℏ = 1.055×10⁻³⁴ J·s, m_e = 9.11×10⁻³¹ kg)',
+        hint: 'Δx ≈ a = 1 nm. Δp ≥ ℏ/(2Δx). K = (Δp)²/(2m).',
+        answer: 'Δp = 1.055×10⁻³⁴ / (2 × 1×10⁻⁹) = 5.27×10⁻²⁶ kg·m/s. K = (5.27×10⁻²⁶)² / (2 × 9.11×10⁻³¹) = 2.78×10⁻⁵¹ / 1.82×10⁻³⁰ = 1.53×10⁻²¹ J = 0.0096 eV'
+      },
+      {
+        q: 'Calculate the zero-point energy of a harmonic oscillator with frequency 10¹⁵ Hz. (ℏ = 1.055×10⁻³⁴ J·s)',
+        hint: 'E₀ = ½ℏω, ω = 2πf.',
+        answer: 'ω = 2π × 10¹⁵ = 6.28×10¹⁵ rad/s. E₀ = 0.5 × 1.055×10⁻³⁴ × 6.28×10¹⁵ = 3.31×10⁻¹⁹ J = 2.07 eV'
+      },
+      {
+        q: 'The energy levels of a quantum harmonic oscillator are given by E_n = (n+½)ℏω. What is the energy difference between n=1 and n=0?',
+        hint: 'ΔE = E₁ - E₀ = ℏω.',
+        answer: 'E₁ = (1+½)ℏω = 3/2ℏω, E₀ = ½ℏω. ΔE = ℏω'
+      },
+      {
+        q: 'Calculate the energy of the n=2 state of hydrogen. (E₁ = -13.6 eV)',
+        hint: 'E_n = -13.6/n² eV.',
+        answer: 'E₂ = -13.6/4 = -3.4 eV'
+      },
+      {
+        q: 'What is the energy difference between n=3 and n=2 states of hydrogen? (E₁ = -13.6 eV)',
+        hint: 'ΔE = E_high - E_low = -13.6/n_high² - (-13.6/n_low²).',
+        answer: 'E₃ = -13.6/9 = -1.51 eV, E₂ = -13.6/4 = -3.4 eV. ΔE = -1.51 - (-3.4) = 1.89 eV'
+      },
+      {
+        q: 'Using the uncertainty principle, if the energy of a state has uncertainty ΔE = 1 eV, what is the minimum lifetime of the state? (ℏ = 6.58×10⁻¹⁶ eV·s)',
+        hint: 'ΔE·Δt ≥ ℏ/2 → Δt ≥ ℏ/(2ΔE).',
+        answer: 'Δt = 6.58×10⁻¹⁶ / (2 × 1) = 3.29×10⁻¹⁶ s'
+      }
+    ]
+},
+
+43: {
+   problems: [
+      {
+        q: 'Calculate the radius of the n=2 orbit in hydrogen. (a₀ = 0.529 Å)',
+        hint: 'r_n = a₀ × n².',
+        answer: 'r₂ = 0.529 × 4 = 2.116 Å'
+      },
+      {
+        q: 'What is the energy of the n=3 state of hydrogen? (E₁ = -13.6 eV)',
+        hint: 'E_n = -13.6/n² eV.',
+        answer: 'E₃ = -13.6/9 = -1.51 eV'
+      },
+      {
+        q: 'Calculate the energy difference between n=3 and n=2 states of hydrogen.',
+        hint: 'ΔE = E_high - E_low = -13.6/n_high² - (-13.6/n_low²).',
+        answer: 'E₃ = -1.51 eV, E₂ = -3.4 eV. ΔE = -1.51 - (-3.4) = 1.89 eV'
+      },
+      {
+        q: 'What is the wavelength of a photon emitted when an electron transitions from n=3 to n=2 in hydrogen? (R_H = 1.097×10⁷ m⁻¹)',
+        hint: '1/λ = R_H(1/n_f² - 1/n_i²).',
+        answer: '1/λ = 1.097×10⁷(1/4 - 1/9) = 1.097×10⁷(5/36) = 1.524×10⁶ m⁻¹. λ = 6.56×10⁻⁷ m = 656 nm (red)'
+      },
+      {
+        q: 'Calculate the wavelength of the Hα line (n=3 to n=2). (R_H = 1.097×10⁷ m⁻¹)',
+        hint: '1/λ = R_H(1/n_f² - 1/n_i²).',
+        answer: '1/λ = 1.097×10⁷(1/4 - 1/9) = 1.097×10⁷(5/36) = 1.524×10⁶ m⁻¹. λ = 6.56×10⁻⁷ m = 656 nm'
+      },
+      {
+        q: 'What is the ionization energy of hydrogen in Joules? (1 eV = 1.6×10⁻¹⁹ J)',
+        hint: 'Ionization energy = 13.6 eV.',
+        answer: 'E = 13.6 × 1.6×10⁻¹⁹ = 2.176×10⁻¹⁸ J'
+      },
+      {
+        q: 'Calculate the speed of an electron in the n=1 orbit of hydrogen. (ke² = 2.307×10⁻²⁸ J·m, ℏ = 1.055×10⁻³⁴ J·s)',
+        hint: 'ν_n = ke²/(nℏ).',
+        answer: 'ν₁ = 2.307×10⁻²⁸ / 1.055×10⁻³⁴ = 2.187×10⁶ m/s'
+      },
+      {
+        q: 'How much energy is required to excite a hydrogen atom from n=1 to n=2?',
+        hint: 'ΔE = E₂ - E₁ = -3.4 - (-13.6) = 10.2 eV.',
+        answer: '10.2 eV'
+      },
+      {
+        q: 'What is the maximum number of electrons that can occupy the n=3 shell?',
+        hint: 'Maximum electrons = 2n².',
+        answer: '2 × 3² = 18 electrons'
+      },
+      {
+        q: 'Calculate the energy of a photon with wavelength 486 nm (Balmer Hβ line). (h = 6.63×10⁻³⁴ J·s, c = 3×10⁸ m/s)',
+        hint: 'E = hc/λ.',
+        answer: 'E = (6.63×10⁻³⁴ × 3×10⁸) / 486×10⁻⁹ = 1.989×10⁻²⁵ / 4.86×10⁻⁷ = 4.09×10⁻¹⁹ J = 2.56 eV'
+      }
+    ]
+},
+
+
+44: {
+  problems: [
+      {
+        q: 'Calculate the radius of a nucleus with mass number A = 64. (r₀ = 1.2 fm)',
+        hint: 'r = r₀ A^(1/3).',
+        answer: 'r = 1.2 × 64^(1/3) = 1.2 × 4 = 4.8 fm'
+      },
+      {
+        q: 'What is the radius of a Uranium-238 nucleus? (r₀ = 1.2 fm, A = 238)',
+        hint: 'r = r₀ A^(1/3).',
+        answer: 'r = 1.2 × 238^(1/3) = 1.2 × 6.20 = 7.44 fm'
+      },
+      {
+        q: 'Calculate the mass defect of a helium-4 nucleus. (m_p = 1.007825 u, m_n = 1.008665 u, m_He = 4.002603 u)',
+        hint: 'Δm = 2m_p + 2m_n - m_He.',
+        answer: 'Δm = 2(1.007825) + 2(1.008665) - 4.002603 = 2.01565 + 2.01733 - 4.002603 = 0.030377 u'
+      },
+      {
+        q: 'What is the binding energy of helium-4? (1 u = 931.5 MeV)',
+        hint: 'BE = Δm × 931.5 MeV.',
+        answer: 'BE = 0.030377 × 931.5 = 28.30 MeV'
+      },
+      {
+        q: 'The binding energy per nucleon of helium-4 is: (A = 4)',
+        hint: 'BE/nucleon = BE/A.',
+        answer: 'BE/nucleon = 28.30/4 = 7.075 MeV/nucleon'
+      },
+      {
+        q: 'A radioactive sample initially has 1000 nuclei. After one half-life, how many nuclei remain?',
+        hint: 'After one half-life, half of the nuclei decay.',
+        answer: '1000/2 = 500 nuclei'
+      },
+      {
+        q: 'A sample has activity 200 Bq. After 3 half-lives, what is the activity?',
+        hint: 'After n half-lives: A = A₀/2ⁿ.',
+        answer: 'A = 200/2³ = 200/8 = 25 Bq'
+      },
+      {
+        q: 'The half-life of a radioactive isotope is 10 hours. What is its decay constant?',
+        hint: 'λ = 0.693/T₁/₂.',
+        answer: 'λ = 0.693/10 = 0.0693 h⁻¹'
+      },
+      {
+        q: 'What is the half-life of an isotope with decay constant λ = 0.1386 h⁻¹?',
+        hint: 'T₁/₂ = 0.693/λ.',
+        answer: 'T₁/₂ = 0.693/0.1386 = 5 hours'
+      },
+      {
+        q: 'A sample of 1000 radioactive nuclei decays to 125 nuclei. How many half-lives have passed?',
+        hint: 'N/N₀ = 125/1000 = 1/8 = (1/2)³. So 3 half-lives.',
+        answer: '3 half-lives'
+      },
+      {
+        q: 'Carbon-14 has half-life 5730 years. What fraction of Carbon-14 remains after 11,460 years?',
+        hint: '11,460 years = 2 × 5730 years = 2 half-lives.',
+        answer: 'Fraction = (1/2)² = 1/4 = 25%'
+      },
+      {
+        q: 'A sample of Radon-222 (half-life 3.8 days) initially has 20,000 atoms. How many Radon atoms remain after 7.6 days?',
+        hint: '7.6 days = 2 half-lives.',
+        answer: '20,000 × (1/2)² = 20,000 × 1/4 = 5,000 atoms'
+      },
+      {
+        q: 'Uranium-238 has half-life 4.5×10⁹ years. What is its decay constant?',
+        hint: 'λ = 0.693/T₁/₂.',
+        answer: 'λ = 0.693/(4.5×10⁹) = 1.54×10⁻¹⁰ years⁻¹'
+      },
+      {
+        q: 'A radioactive source has activity 10 Bq. How many decays occur in 1 minute?',
+        hint: 'Decays = Activity × time (in seconds).',
+        answer: '10 Bq = 10 decays/s. In 60 s: 10 × 60 = 600 decays'
+      },
+      {
+        q: 'Calculate the energy released in the fission of U-235 if the mass defect is 0.2 u. (1 u = 931.5 MeV)',
+        hint: 'E = Δm × 931.5 MeV.',
+        answer: 'E = 0.2 × 931.5 = 186.3 MeV'
+      }
+    ]
+
+},
+
+45: {
+   problems: [
+      {
+        q: 'The Sun\'s luminosity is 3.83×10²⁶ W. How much mass is converted to energy each second? (c = 3×10⁸ m/s)',
+        hint: 'Use E = mc² → m = E/c².',
+        answer: 'm = 3.83×10²⁶ / (3×10⁸)² = 3.83×10²⁶ / 9×10¹⁶ = 4.26×10⁹ kg/s ≈ 4.3 million tons/s'
+      },
+      {
+        q: 'Calculate the Sun\'s surface area. (R_sun = 7×10⁸ m)',
+        hint: 'A = 4πR².',
+        answer: 'A = 4π × (7×10⁸)² = 4π × 4.9×10¹⁷ = 6.16×10¹⁸ m²'
+      },
+      {
+        q: 'Using Stefan-Boltzmann law, calculate the Sun\'s power output. (T_sun = 5800 K, R_sun = 7×10⁸ m, σ = 5.67×10⁻⁸ W/m²K⁴)',
+        hint: 'P = σ A T⁴, A = 4πR².',
+        answer: 'A = 6.16×10¹⁸ m². P = 5.67×10⁻⁸ × 6.16×10¹⁸ × (5800)⁴ = 3.9×10²⁶ W'
+      },
+      {
+        q: 'The Sun converts 4×10⁹ kg of mass to energy each second. How much energy is released per second? (c = 3×10⁸ m/s)',
+        hint: 'E = mc².',
+        answer: 'E = 4×10⁹ × (3×10⁸)² = 4×10⁹ × 9×10¹⁶ = 3.6×10²⁶ J/s'
+      },
+      {
+        q: 'Calculate the surface temperature of Earth assuming it is a blackbody. (T_sun = 5800 K, R_sun = 7×10⁸ m, Earth\'s orbit radius = 1.5×10¹¹ m)',
+        hint: 'T_Earth = T_sun × √(R_sun/(2R_orbit)).',
+        answer: 'T_Earth = 5800 × √(7×10⁸ / (2 × 1.5×10¹¹)) = 5800 × √(7×10⁸ / 3×10¹¹) = 5800 × √(0.00233) = 5800 × 0.0483 = 280 K (≈ 7°C)'
+      },
+      {
+        q: 'If the Earth\'s temperature is 290 K, how much power per unit area does it radiate? (σ = 5.67×10⁻⁸ W/m²K⁴)',
+        hint: 'P/A = σT⁴.',
+        answer: 'P/A = 5.67×10⁻⁸ × (290)⁴ = 5.67×10⁻⁸ × 7.07×10⁹ = 400 W/m²'
+      },
+      {
+        q: 'The core temperature of the Sun is 15 million K. What is the average kinetic energy of particles in the core? (k_B = 1.38×10⁻²³ J/K)',
+        hint: 'K_avg = (3/2) k_B T.',
+        answer: 'K_avg = 1.5 × 1.38×10⁻²³ × 15×10⁶ = 3.105×10⁻¹⁶ J ≈ 1940 eV'
+      },
+      {
+        q: 'If the Sun\'s mass is 2×10³⁰ kg and radius 7×10⁸ m, calculate its average density.',
+        hint: 'ρ = M/V, V = 4/3 πR³.',
+        answer: 'V = 4/3 × π × (7×10⁸)³ = 1.44×10²⁷ m³. ρ = 2×10³⁰ / 1.44×10²⁷ = 1389 kg/m³ ≈ 1.4 g/cm³'
+      },
+      {
+        q: 'A helium-4 nucleus has mass 4.002603 u. Four protons have mass 4.031300 u. Calculate the mass defect. (1 u = 1.66×10⁻²⁷ kg)',
+        hint: 'Δm = 4m_p - m_He.',
+        answer: 'Δm = 4.031300 - 4.002603 = 0.028697 u = 0.028697 × 1.66×10⁻²⁷ = 4.76×10⁻²⁹ kg'
+      },
+      {
+        q: 'Calculate the energy released in the fusion of four protons into helium-4. (1 u = 931.5 MeV)',
+        hint: 'E = Δm × 931.5 MeV.',
+        answer: 'E = 0.028697 × 931.5 = 26.73 MeV ≈ 25 MeV (as given in lecture)'
+      },
+      {
+        q: 'If the Sun has 10 billion years of hydrogen fuel and has already burned for 4.6 billion years, how much time is left?',
+        hint: 'Remaining = Total - Already consumed.',
+        answer: '10 - 4.6 = 5.4 billion years'
+      },
+      {
+        q: 'CO₂ concentration in atmosphere is now 360 ppm, up from 227 ppm in 1750. Calculate the percentage increase.',
+        hint: 'Percentage increase = ((New - Old)/Old) × 100%.',
+        answer: '((360 - 227)/227) × 100 = (133/227) × 100 = 58.6% increase'
+      },
+      {
+        q: 'The Sun\'s surface temperature is 5800 K. At what wavelength does it emit most strongly? (b = 2.9×10⁻³ m·K)',
+        hint: 'λ_max = b/T.',
+        answer: 'λ_max = 2.9×10⁻³ / 5800 = 5.0×10⁻⁷ m = 500 nm (yellow-green)'
+      },
+      {
+        q: 'A blackbody sphere of radius 0.05 m at 300 K radiates how much power? (σ = 5.67×10⁻⁸ W/m²K⁴)',
+        hint: 'P = σ A T⁴, A = 4πR².',
+        answer: 'A = 4π(0.05)² = 0.0314 m². P = 5.67×10⁻⁸ × 0.0314 × (300)⁴ = 5.67×10⁻⁸ × 0.0314 × 8.1×10⁹ = 14.4 W'
+      }
+    ]
+}
+
+
+
+
+
 // Export for use in website
 // If using ES modules: export default lectureData;
 // If using CommonJS: module.exports = lectureData;

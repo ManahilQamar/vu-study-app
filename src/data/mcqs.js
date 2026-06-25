@@ -19915,6 +19915,1685 @@ Study of heat, work, and their interconversion. Macroscopic properties (pressure
 
   },
 
+
+  41: {
+    title: 'Matter as Waves (The Reality of Matter)',
+    summary: `
+**📚 Lecture 41 - Matter as Waves (مادہ بطور موج)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Wave-Particle Duality (موج-ذرہ دوہرا پن):**
+Physics mein sab se interesting concepts mein se ek yeh hai ke light aur matter dono wave aur particle ki tarah behave kar sakte hain. Yeh humari everyday experience ke khilaf hai - hum matter ko solid, particle-like samajhte hain, lekin quantum level par yeh wave ki tarah bhi behave karta hai.
+
+**2. Light Ka Dual Nature (روشنی کی دوہری نوعیت):**
+
+**(a) Photoelectric Effect (فوٹو الیکٹرک اثر):**
+- Jab light metal surface par girta hai to electrons eject ho jaate hain.
+- Einstein ne 1905 mein bataya ke light photons (energy packets) se bani hai.
+- Har photon ki energy: \`E = hν\` (h = Planck's constant = 6.63×10⁻³⁴ J·s)
+- Work function (W): electron ko metal se nikalne ke liye minimum energy.
+- Maximum kinetic energy: \`K_max = hν - W\`
+- Important: Agar ν < ν₀ (threshold frequency) to electron nahi niklega, chahe intensity kitni bhi high ho.
+- Is experiment ne particle nature of light prove kiya.
+
+**(b) Compton Scattering (کامپٹن بکھراؤ - 1922):**
+- X-ray photon electron se collide karta hai.
+- Photon apni kuch energy electron ko transfer kar deta hai.
+- Scattered photon ki wavelength increase ho jaati hai (energy decrease).
+- Formula: \`Δλ = (h/m_e c)(1 - cosθ)\`
+- \`λ_c = h/m_e c = 2.43×10⁻¹² m\` (Compton wavelength)
+- Yeh experiment photon ke momentum ko prove karta hai.
+- Classical physics isko explain nahi kar sakti (classically wavelength same rehti hai).
+
+**3. Relativity and Photons (نظریہ اضافیت اور فوٹون):**
+- Photon ka rest mass zero hota hai.
+- Energy-momentum relation: \`E = pc\` (for photon)
+- \`E = hν = hc/λ\`
+- \`p = h/λ = hk\` (k = wave number)
+
+**4. De Broglie Hypothesis (ڈی بروگلی مفروضہ - 1923):**
+- Louis de Broglie ne kaha: agar light wave-particle duality rakhti hai to matter (particles) bhi wave ki tarah behave kar sakti hai.
+- De Broglie wavelength: \`λ = h/p = h/(mv)\`
+- Macroscopic objects (cricket ball): wavelength bahut chhoti (10⁻³⁴ m) → wave nature negligible.
+- Microscopic particles (electrons): wavelength atomic scale (10⁻¹⁰ m) → wave nature observable.
+
+**5. Davisson-Germer Experiment (ڈیوسن-جرمر تجربہ - 1927):**
+- Electrons ko nickel crystal par reflect kiya.
+- Diffraction pattern observed → electrons wave ki tarah behave karte hain.
+- Bragg's law: \`a(cosθ_r - cosθ_i) = nλ\`
+- Intensity oscillations confirm electron waves.
+- Is experiment ne de Broglie hypothesis prove kiya.
+
+**6. Double-Slit Experiment with Particles (ڈبل سلٹ تجربہ):**
+- Electrons, helium atoms, etc. ko double slit se guzara.
+- Interference pattern observed (bright and dark fringes).
+- Fringe spacing: \`Δy = λD/d\`
+- Yeh har particle ke liye true hai (electrons, atoms, molecules).
+- Most surprising: Single particle bhi interference pattern banata hai (particle self-interference).
+- Agar slit ko observe karein (measure karein ke particle kis slit se gaya) to interference pattern disappear ho jata hai.
+- Iska matlab: observation system ko change kar deti hai.
+
+**7. Heisenberg Uncertainty Principle (ہائزنبرگ غیر یقینی اصول - 1927):**
+- \`Δx · Δp ≥ ℏ/2\` (ℏ = h/2π = 1.055×10⁻³⁴ J·s)
+- Position aur momentum ko simultaneously exact measure nahi kar sakte.
+- Yeh measurement error nahi hai - yeh nature ka fundamental principle hai.
+- Agar position exact karo (Δx small) to momentum uncertain ho jata hai (Δp large).
+- Agar momentum exact karo to position uncertain ho jati hai.
+
+**8. Energy-Time Uncertainty (توانائی-وقت غیر یقینی):**
+- \`ΔE · Δt ≥ ℏ/2\`
+- Energy ko short time ke liye "borrow" kar sakte hain.
+- Isi principle par virtual particles aur nuclear force (Yukawa's pion) ka concept based hai.
+
+**9. Heisenberg's Microscope (ہائزنبرگ کا خیالی مائکروسکوپ):**
+- Thought experiment jo uncertainty principle ko explain karta hai.
+- Particle ko observe karne ke liye photon use karte hain.
+- Photon particle ko hit karta hai aur uski momentum change kar deta hai.
+- Is liye observation hamesha system ko disturb karti hai.
+
+**10. Quantum Mechanics Ke Applications:**
+- Transistors (computers, smartphones)
+- Semiconductors
+- Lasers
+- Electron microscope
+- Quantum computing
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Photoelectric effect: \`K_max = hν - W\`
+- Compton scattering: \`Δλ = λ_c(1 - cosθ)\`
+- De Broglie wavelength: \`λ = h/p = h/(mv)\`
+- Davisson-Germer: electron diffraction proves matter waves
+- Double-slit: interference pattern for all particles
+- Uncertainty principle: \`Δx·Δp ≥ ℏ/2\`
+- Energy-time uncertainty: \`ΔE·Δt ≥ ℏ/2\`
+- Observation changes quantum system
+- Macroscopic objects: wave nature negligible
+- Microscopic objects: wave nature significant
+`,
+    questions: [
+      {
+        q: 'In the photoelectric effect, the maximum kinetic energy of emitted electrons depends on:',
+        options: [
+          'A. The intensity of incident light only',
+          'B. The frequency of incident light and the work function of the metal',
+          'C. The wavelength of light only',
+          'D. The intensity and wavelength of light'
+        ],
+        answer: 'B. The frequency of incident light and the work function of the metal',
+        diff: 'medium'
+      },
+      {
+        q: 'According to Einstein\'s photoelectric equation K_max = hν - W, if the frequency of incident light is doubled, the maximum kinetic energy:',
+        options: [
+          'A. Exactly doubles',
+          'B. More than doubles (increases by hν more than double)',
+          'C. Less than doubles (increases by less than double)',
+          'D. Remains unchanged'
+        ],
+        answer: 'B. More than doubles (increases by hν more than double)',
+        diff: 'hard'
+      },
+      {
+        q: 'Compton scattering provides evidence that photons have:',
+        options: [
+          'A. Only energy',
+          'B. Only momentum',
+          'C. Both energy and momentum (particle nature)',
+          'D. Neither energy nor momentum'
+        ],
+        answer: 'C. Both energy and momentum (particle nature)',
+        diff: 'medium'
+      },
+      {
+        q: 'The de Broglie wavelength of a particle is inversely proportional to its:',
+        options: [
+          'A. Mass only',
+          'B. Velocity only',
+          'C. Momentum (mass × velocity)',
+          'D. Kinetic energy'
+        ],
+        answer: 'C. Momentum (mass × velocity)',
+        diff: 'easy'
+      },
+      {
+        q: 'The Davisson-Germer experiment demonstrated that electrons:',
+        options: [
+          'A. Are purely particles with no wave nature',
+          'B. Exhibit diffraction patterns (wave nature)',
+          'C. Have no mass',
+          'D. Travel faster than light'
+        ],
+        answer: 'B. Exhibit diffraction patterns (wave nature)',
+        diff: 'medium'
+      },
+      {
+        q: 'In the double-slit experiment with particles, if one slit is closed, the interference pattern:',
+        options: [
+          'A. Becomes brighter',
+          'B. Disappears (no interference)',
+          'C. Remains the same',
+          'D. Shifts to a new position'
+        ],
+        answer: 'B. Disappears (no interference)',
+        diff: 'medium'
+      },
+      {
+        q: 'The Heisenberg uncertainty principle states that:',
+        options: [
+          'A. Position and velocity can be measured exactly simultaneously',
+          'B. Position and momentum cannot both be measured exactly simultaneously',
+          'C. Energy and momentum can be measured exactly',
+          'D. Time and position are always uncertain'
+        ],
+        answer: 'B. Position and momentum cannot both be measured exactly simultaneously',
+        diff: 'easy'
+      },
+      {
+        q: 'If the uncertainty in position of a particle is decreased (made more precise), the uncertainty in its momentum:',
+        options: [
+          'A. Also decreases',
+          'B. Increases',
+          'C. Remains constant',
+          'D. Becomes zero'
+        ],
+        answer: 'B. Increases',
+        diff: 'medium'
+      },
+      {
+        q: 'The formula Δx·Δp ≥ ℏ/2 implies that:',
+        options: [
+          'A. We can always measure both exactly',
+          'B. There is a fundamental limit to measurement precision',
+          'C. Quantum mechanics is incomplete',
+          'D. Classical mechanics is always correct'
+        ],
+        answer: 'B. There is a fundamental limit to measurement precision',
+        diff: 'hard'
+      },
+      {
+        q: 'The energy-time uncertainty principle ΔE·Δt ≥ ℏ/2 explains:',
+        options: [
+          'A. Why energy is always conserved',
+          'B. How virtual particles can exist for short times',
+          'C. Why time travel is possible',
+          'D. Why momentum is always conserved'
+        ],
+        answer: 'B. How virtual particles can exist for short times',
+        diff: 'hard'
+      },
+      {
+        q: 'For a macroscopic object like a cricket ball, the de Broglie wavelength is:',
+        options: [
+          'A. Very large (comparable to the size of the ball)',
+          'B. Very small (negligible)',
+          'C. The same as its size',
+          'D. Zero'
+        ],
+        answer: 'B. Very small (negligible)',
+        diff: 'easy'
+      },
+      {
+        q: 'For an electron, the de Broglie wavelength is comparable to:',
+        options: [
+          'A. The size of a cricket ball',
+          'B. The size of an atom (∼10⁻¹⁰ m)',
+          'C. The size of a proton',
+          'D. The size of the universe'
+        ],
+        answer: 'B. The size of an atom (∼10⁻¹⁰ m)',
+        diff: 'easy'
+      },
+      {
+        q: 'In the Compton scattering formula Δλ = (h/m_e c)(1 - cosθ), the quantity h/m_e c is called:',
+        options: [
+          'A. The de Broglie wavelength',
+          'B. The Compton wavelength (2.43×10⁻¹² m)',
+          'C. The Planck length',
+          'D. The Bohr radius'
+        ],
+        answer: 'B. The Compton wavelength (2.43×10⁻¹² m)',
+        diff: 'medium'
+      },
+      {
+        q: 'The act of measuring (observing) a quantum particle:',
+        options: [
+          'A. Has no effect on the particle',
+          'B. Changes the state of the particle (disturbs it)',
+          'C. Makes the particle disappear',
+          'D. Always gives the same result'
+        ],
+        answer: 'B. Changes the state of the particle (disturbs it)',
+        diff: 'medium'
+      },
+      {
+        q: 'The fringe spacing in a double-slit experiment with particles is given by Δy = λD/d. If the slit separation d is doubled, the fringe spacing:',
+        options: [
+          'A. Doubles',
+          'B. Halves',
+          'C. Remains the same',
+          'D. Quadruples'
+        ],
+        answer: 'B. Halves',
+        diff: 'hard'
+      }
+    ],
+  },
+
+42: {
+    title: 'Introduction to Quantum Mechanics',
+    summary: `
+**📚 Lecture 42 - Introduction to Quantum Mechanics (کوانٹم میکانکس کا تعارف)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Quantum Mechanics Kya Hai?**
+Quantum mechanics physics ki woh branch hai jo atoms aur unse chhoti particles (electrons, protons, neutrons) ke behavior ko study karti hai. Classical physics (Newton's laws, Maxwell's equations) large objects ke liye kaam karti hai lekin atomic scale par fail ho jaati hai. Quantum mechanics ne 20th century mein physics mein revolution laya.
+
+**2. Scale of the Universe (کائنات کا پیمانہ):**
+- Humans: ~1-2 meters
+- Earth: ~10⁷ meters
+- Galaxy: ~10²¹ meters
+- Cells: ~10⁻⁵ meters
+- DNA: ~10⁻⁶ meters
+- Atoms: ~10⁻¹⁰ meters
+- Nucleus: ~10⁻¹⁵ meters
+Atomic scale aur chhoti scale par classical physics kaam nahi karti.
+
+**3. Quantization (توانائی کی مقدار بندی):**
+Quantum mechanics ka sab se important concept yeh hai ke energy continuous nahi hai - yeh discrete packets (quanta) mein aati hai.
+
+**Analogy (سیڑھی کا مثال):**
+- Ladder par chadhna: aap 1.5 steps ya 2.3 steps par nahi ho sakte - sirf 1, 2, 3 steps par.
+- Similarly, atom mein electron sirf specific energy levels par ho sakta hai.
+- Jab electron energy absorb karta hai to woh specific quantum jump karta hai.
+- Jab electron lower level par aata hai to specific energy (photon) release karta hai.
+
+**4. Why Do We Need Quantum Mechanics? (کلاسیکل فزکس کی ناکامیاں):**
+
+**(a) Blackbody Radiation (کالا جسم اشعاع):**
+- Heated objects emit radiation.
+- Classical physics predicted infinite energy at high frequencies (Ultraviolet Catastrophe).
+- Max Planck ne 1900 mein bataya ke energy quantized hai: \`E = hν\`
+- Is se blackbody spectrum correctly explained.
+
+**(b) Photoelectric Effect (فوٹو الیکٹرک اثر):**
+- Light metal par girne se electrons eject ho sakte hain.
+- Classical physics: intensity se electrons eject hone chahiye.
+- Actual observation: sirf frequency threshold se upar electrons eject hote hain.
+- Einstein ne 1905 mein bataya ke light photons (energy packets) se bani hai.
+
+**(c) Atomic Spectra (ایٹمی طیف):**
+- Atoms sirf specific frequencies par light emit/absorb karte hain.
+- Classical physics continuous spectrum predict karti thi.
+- Quantum mechanics discrete energy levels explain karti hai.
+
+**5. Planck's Hypothesis (پلانک کا مفروضہ - 1900):**
+- Energy quantized hai: \`E = hν\`
+- h = Planck's constant = 6.626×10⁻³⁴ J·s
+- Is ne blackbody radiation problem solve kiya.
+- Planck ne isko "act of desperation" kaha tha (wo khud bhi is par full convinced nahi the).
+
+**6. Einstein and Photoelectric Effect (آئن سٹائن اور فوٹو الیکٹرک اثر - 1905):**
+- Light photons se bani hai.
+- Har photon ki energy: \`E = hν\`
+- Photoelectric effect: \`K_max = hν - W\`
+- Agar ν < ν₀ (threshold) to electron nahi niklega.
+- Einstein ko is par 1921 mein Nobel Prize mila.
+- Is ne particle nature of light prove kiya.
+
+**7. Photon Properties (فوٹون کی خصوصیات):**
+- Energy: \`E = hν = hc/λ\`
+- Momentum: \`p = h/λ = hk\`
+- Rest mass: zero
+- \`E = pc\` (for photon)
+
+**8. De Broglie Hypothesis (ڈی بروگلی مفروضہ - 1923):**
+- Matter (particles) bhi waves ki tarah behave kar sakti hai.
+- De Broglie wavelength: \`λ = h/p = h/(mv)\`
+- Is ne wave-particle duality ko matter tak extend kiya.
+- Davisson-Germer experiment (1927) ne isko confirm kiya.
+
+**9. Bohr's Atomic Model (بوہر کا ایٹمی ماڈل):**
+- Classical problem: accelerating electron radiates energy → atom collapse.
+- Bohr (1923): Electron wave ki tarah behave karta hai.
+- Allowed orbits: integer number of de Broglie waves fit in orbit.
+- \`nλ = 2πr\` (n = 1,2,3,...)
+- Angular momentum quantized: \`L = nℏ\`
+- Energy levels: \`E_n = -13.6/n² eV\`
+
+**10. Heisenberg Uncertainty Principle (ہائزنبرگ غیر یقینی اصول - 1927):**
+- \`Δx · Δp ≥ ℏ/2\`
+- Position aur momentum ko simultaneously exact measure nahi kar sakte.
+- Yeh measurement error nahi hai - yeh nature ka fundamental principle hai.
+
+**Particle in a Box (کناروں کے درمیان ذرہ):**
+- Particle box of width 'a' mein confined hai.
+- \`Δx ≈ a\` → \`Δp ≥ ℏ/(2a)\`
+- Minimum kinetic energy: \`K_min = ℏ²/(8ma²)\`
+- Particle kabhi stationary nahi ho sakti (zero-point energy).
+
+**Harmonic Oscillator (ہارمونک آسکیلیٹر):**
+- Mass-spring system.
+- Classical: minimum energy = 0 (particle at rest).
+- Quantum: minimum energy = \`½ℏω\` (zero-point energy).
+- Energy levels: \`E_n = (n+½)ℏω\` (n = 0,1,2,...)
+
+**11. Energy-Time Uncertainty Principle (توانائی-وقت غیر یقینی):**
+- \`ΔE · Δt ≥ ℏ/2\`
+- Energy ko short time ke liye "borrow" kar sakte hain.
+- Virtual particles exist due to this principle.
+
+**Quantum Tunneling (کوانٹم سرنگ اثر):**
+- Particle barrier ko "tunnel" kar sakta hai without enough energy.
+- Application: nuclear fusion in stars, radioactive decay.
+- Sun mein proton-proton fusion tunneling ke through hota hai.
+
+**12. Wave Function (موج فنکشن - Ψ):**
+- Schrödinger equation (1926): \`iℏ ∂Ψ/∂t = ĤΨ\`
+- \`|Ψ|²\` = probability density
+- Wave function contains all information about the system.
+- Probability interpretation: Max Born.
+
+**13. Two-State Systems (دو حالتی نظام):**
+- Electron spin: up (↑) or down (↓)
+- State: \`|Ψ⟩ = c₁|↑⟩ + c₂|↓⟩\`
+- Probabilities: \`P(↑) = |c₁|²\`, \`P(↓) = |c₂|²\`
+- \`|c₁|² + |c₂|² = 1\`
+
+**14. Quantum Amplitudes vs Probabilities:**
+- Classical: probabilities add: \`P = P₁ + P₂\`
+- Quantum: amplitudes add: \`A = a₁ + a₂\`
+- Probability: \`P = |a₁ + a₂|² = P₁ + P₂ + interference terms\`
+- Isi interference ki wajah se double-slit pattern banata hai.
+
+**15. Double-Slit Experiment (ڈبل سلٹ تجربہ):**
+- Electrons double slit se guzar kar interference pattern banate hain.
+- Single electron bhi interference pattern banata hai (self-interference).
+- Agar observe karein ke electron kis slit se gaya → pattern disappears.
+- Yeh wave-particle duality aur measurement effect ko demonstrate karta hai.
+
+**16. Electron Cloud (الیکٹران بادل):**
+- Atom mein electron fixed orbit mein nahi hai - probability cloud hai.
+- 1s state (ground state): spherical cloud, L=0.
+- Probability: 32% (inner), 44% (next), 18%, 6%, etc.
+- P states (l=1): dumbbell shape (3 orientations)
+- D states (l=2): cloverleaf shape (5 orientations)
+- Higher orbitals: more complex shapes.
+
+**17. Identical Particles (ایک جیسے ذرات):**
+- Quantum mechanics mein identical particles indistinguishable hain.
+- **Bosons:** \`Ψ(1,2) = +Ψ(2,1)\` (integer spin)
+- **Fermions:** \`Ψ(1,2) = -Ψ(2,1)\` (half-integer spin)
+- Fermions: Pauli exclusion principle (no two fermions same state).
+- Electrons are fermions (spin ½).
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Energy quantization: \`E = hν\` (Planck)
+- Photoelectric: \`K_max = hν - W\`
+- De Broglie: \`λ = h/p\`
+- Bohr: \`L = nℏ\`, \`E_n = -13.6/n² eV\`
+- Uncertainty: \`Δx·Δp ≥ ℏ/2\`
+- Energy-time: \`ΔE·Δt ≥ ℏ/2\`
+- Zero-point energy: \`E₀ = ½ℏω\`
+- Wave function Ψ: probability amplitude
+- \`|Ψ|²\`: probability density
+- Quantum tunneling: particles pass through barriers
+- Fermions: Pauli exclusion principle
+- Bosons: can occupy same state
+`,
+    questions: [
+      {
+        q: 'The quantization of energy was first proposed by Max Planck to explain:',
+        options: [
+          'A. The photoelectric effect',
+          'B. Blackbody radiation spectrum',
+          'C. Atomic spectra',
+          'D. Compton scattering'
+        ],
+        answer: 'B. Blackbody radiation spectrum',
+        diff: 'medium'
+      },
+      {
+        q: 'According to Planck\'s hypothesis, the energy of a quantum is proportional to:',
+        options: [
+          'A. Its wavelength',
+          'B. Its frequency',
+          'C. Its intensity',
+          'D. Its amplitude'
+        ],
+        answer: 'B. Its frequency',
+        diff: 'easy'
+      },
+      {
+        q: 'The photoelectric effect demonstrates that light:',
+        options: [
+          'A. Is purely a wave phenomenon',
+          'B. Consists of discrete particles called photons',
+          'C. Has no particle nature',
+          'D. Travels faster than the speed of light'
+        ],
+        answer: 'B. Consists of discrete particles called photons',
+        diff: 'medium'
+      },
+      {
+        q: 'Einstein\'s photoelectric equation is \`K_max = hν - W\`. The work function W represents:',
+        options: [
+          'A. The energy of the incident photon',
+          'B. The minimum energy required to eject an electron',
+          'C. The maximum kinetic energy of the electron',
+          'D. The frequency of incident light'
+        ],
+        answer: 'B. The minimum energy required to eject an electron',
+        diff: 'medium'
+      },
+      {
+        q: 'The de Broglie hypothesis states that:',
+        options: [
+          'A. Light has wave-particle duality',
+          'B. Matter particles also have wave-like properties',
+          'C. Energy is quantized',
+          'D. Momentum is always conserved'
+        ],
+        answer: 'B. Matter particles also have wave-like properties',
+        diff: 'easy'
+      },
+      {
+        q: 'In Bohr\'s model of the atom, the angular momentum of an electron is quantized as:',
+        options: [
+          'A. \`L = nℏ\`',
+          'B. \`L = n²ℏ\`',
+          'C. \`L = ℏ/n\`',
+          'D. \`L = nℏ/2\`'
+        ],
+        answer: 'A. \`L = nℏ\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The Heisenberg uncertainty principle states that:',
+        options: [
+          'A. Position and momentum can both be measured exactly',
+          'B. \`Δx·Δp ≥ ℏ/2\`',
+          'C. \`Δx·Δp = 0\`',
+          'D. Energy and momentum are always uncertain'
+        ],
+        answer: 'B. \`Δx·Δp ≥ ℏ/2\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The zero-point energy of a quantum harmonic oscillator is:',
+        options: [
+          'A. Zero',
+          'B. \`½ℏω\`',
+          'C. \`ℏω\`',
+          'D. \`2ℏω\`'
+        ],
+        answer: 'B. \`½ℏω\`',
+        diff: 'hard'
+      },
+      {
+        q: 'The energy-time uncertainty principle \`ΔE·Δt ≥ ℏ/2\` explains:',
+        options: [
+          'A. Why energy is always conserved',
+          'B. How quantum tunneling is possible (borrowing energy for short time)',
+          'C. Why time travel is possible',
+          'D. Why momentum is conserved'
+        ],
+        answer: 'B. How quantum tunneling is possible (borrowing energy for short time)',
+        diff: 'hard'
+      },
+      {
+        q: 'Quantum tunneling is the phenomenon where:',
+        options: [
+          'A. Particles reflect from barriers',
+          'B. Particles pass through potential barriers that they classically cannot surmount',
+          'C. Particles lose energy to the barrier',
+          'D. Particles are completely absorbed by the barrier'
+        ],
+        answer: 'B. Particles pass through potential barriers that they classically cannot surmount',
+        diff: 'medium'
+      },
+      {
+        q: 'The wave function Ψ in quantum mechanics gives:',
+        options: [
+          'A. The exact position of the particle',
+          'B. The probability amplitude for finding the particle',
+          'C. The exact momentum of the particle',
+          'D. The energy of the particle'
+        ],
+        answer: 'B. The probability amplitude for finding the particle',
+        diff: 'medium'
+      },
+      {
+        q: 'The quantity \`|Ψ|²\` represents:',
+        options: [
+          'A. The wave intensity',
+          'B. The probability density of finding the particle',
+          'C. The kinetic energy of the particle',
+          'D. The potential energy of the particle'
+        ],
+        answer: 'B. The probability density of finding the particle',
+        diff: 'easy'
+      },
+      {
+        q: 'In the double-slit experiment, if we try to measure which slit the electron passes through:',
+        options: [
+          'A. The interference pattern becomes brighter',
+          'B. The interference pattern disappears',
+          'C. The interference pattern remains unchanged',
+          'D. The electrons stop moving'
+        ],
+        answer: 'B. The interference pattern disappears',
+        diff: 'hard'
+      },
+      {
+        q: 'Fermions are particles that:',
+        options: [
+          'A. Have integer spin and obey Bose-Einstein statistics',
+          'B. Have half-integer spin and obey Pauli exclusion principle',
+          'C. Have zero spin',
+          'D. Can occupy the same quantum state'
+        ],
+        answer: 'B. Have half-integer spin and obey Pauli exclusion principle',
+        diff: 'hard'
+      },
+      {
+        q: 'The 1s state of hydrogen (ground state) has:',
+        options: [
+          'A. l = 1 (angular momentum)',
+          'B. l = 0 (no angular momentum, spherical cloud)',
+          'C. l = 2 (d orbital)',
+          'D. l = 3 (f orbital)'
+        ],
+        answer: 'B. l = 0 (no angular momentum, spherical cloud)',
+        diff: 'hard'
+      }
+    ],
+  },
+
+
+    43: {
+    title: 'Introduction to Atomic Physics',
+    summary: `
+**📚 Lecture 43 - Introduction to Atomic Physics (ایٹمی طبیعیات کا تعارف)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Atom Ka Historical Background (ایٹم کی تاریخی پس منظر):**
+
+**(a) Democritus (2500 years ago):**
+- Greek philosopher ne question kiya: agar apple ko half karte rahein to kya ek smallest unit bachegi?
+- Is smallest unit ko usne "Atomos" (indivisible) kaha.
+- Ikhwan al Safa ne atoms ke beech empty space ka concept diya.
+
+**(b) Lavoisier (1700s):**
+- Chemical reactions mein total mass same rehti hai.
+- Law of Conservation of Matter: burning se mass nahi badalti.
+
+**(c) John Dalton (1803):**
+- Har element same atoms se bana hai.
+- Different elements ke atoms different weights rakhte hain.
+- Compounds simple ratios mein combine hote hain (1:1, 1:2, 2:3, etc.)
+- H₂O: hydrogen aur oxygen combine ho kar water banate hain.
+
+**(d) Avogadro's Hypothesis:**
+- Equal volumes of gases (same T and P) contain equal number of molecules.
+- Avogadro's number: \`N₀ = 6.023×10²⁶\` molecules per kg-mole.
+- Is se atoms ka size aur mass determine kar sakte hain.
+
+**2. Atom Size Calculation (ایٹم کا سائز):**
+
+- Cube of 1 m side: \`(1/2r)³\` atoms fit kar sakte hain.
+- In 1 kg-atom: \`N₀ = 6×10²⁶\` atoms.
+- Each atom volume: \`A/ρ\` (A = atomic weight, ρ = density).
+- Formula: \`N₀ = (1/2r)³ × (A/ρ)\`
+- \`r = ½ (A/(ρN₀))^(1/3)\`
+- Result: \`r_Ag ≈ r_Be ≈ 10⁻¹⁰ m\` → Atoms mostly same size!
+
+**3. Thomson's Plum Pudding Model (تھامسن کا ماڈل - 1895):**
+- Atom: positively charged material (pudding) + negatively charged electrons scattered (plums).
+- Positive and negative charges equally distributed.
+- Yeh model later proved incorrect.
+
+**4. Rutherford's α Scattering Experiment (رتھرفورڈ کا تجربہ - 1911):**
+
+**Setup:**
+- Alpha particles (⁴He nuclei, +2 charge) → gold foil.
+- Detector around to observe scattering.
+
+**Observations:**
+- Most alpha particles went straight through (atom mostly empty).
+- Some deflected at small angles.
+- Very few (1 in 8000) bounced back (deflected > 90°).
+
+**Conclusions:**
+- Atom has a small, dense, positively charged nucleus.
+- Nucleus contains most of atom's mass.
+- Atom mostly empty space.
+- Plum pudding model was WRONG.
+
+**Analogy:** Agar nucleus = cricket ball, nearest electron = 8-10 km away!
+
+**5. Problem with Rutherford Model (رتھرفورڈ ماڈل کی ناکامی):**
+
+- Electron accelerates (changes direction) while orbiting.
+- Accelerating charge emits electromagnetic radiation (Maxwell).
+- Electron loses energy → spirals into nucleus → atom collapses.
+- Also, classical physics predicts continuous spectrum, but atoms show discrete lines.
+
+**6. Bohr's Theory (بوہر کا نظریہ - 1913):**
+
+**Bohr's Postulates:**
+1. Electrons allowed orbits mein rehte hain (quantized).
+2. Angular momentum quantized: \`L = nℏ\` (n = 1,2,3,...)
+3. Electrons jump between orbits by absorbing/emitting photons.
+4. Photon energy = difference between energy levels: \`hν = E_high - E_low\`
+
+**Standing Wave Condition:**
+- Electron wave ki tarah behave karta hai.
+- Integer number of wavelengths fit in orbit: \`nλ = 2πr\`
+- \`λ = h/p\` (de Broglie)
+- \`L = rmν = nℏ\` (angular momentum quantized)
+
+**7. Bohr Orbits (بوہر کے مدار):**
+
+**Forces on Electron:**
+- Electrostatic force (attraction towards nucleus): \`F_e = ke²/r²\`
+- Centrifugal force (outward): \`F_c = mν²/r\`
+- Equilibrium: \`mν²/r = ke²/r²\`
+
+**Radius of Orbit:**
+- \`r_n = (ℏ²/(mke²)) × n² = a₀ × n²\`
+- \`a₀ = 0.529 Å = 5.29×10⁻¹¹ m\` (Bohr radius)
+- n=1: r₁ = 0.529 Å (closest to nucleus)
+- n=2: r₂ = 2.116 Å (4× larger)
+- n=3: r₃ = 4.761 Å (9× larger)
+
+**Velocity:**
+- \`ν_n = ke²/(nℏ)\` → decreases with n (farther orbits = slower)
+
+**8. Energy of Bohr Orbits (توانائی کی سطحیں):**
+
+- Total energy: \`E = K + U = -ke²/(2r)\`
+- \`E_n = -13.6/n² eV\`
+- n=1: E₁ = -13.6 eV (ground state, most negative)
+- n=2: E₂ = -3.4 eV
+- n=3: E₃ = -1.51 eV
+- n=∞: E = 0 eV (ionized)
+
+**Ionization Energy:** 13.6 eV (remove electron from ground state)
+
+**9. Hydrogen Spectrum (ہائیڈروجن کا طیف):**
+
+- **Lyman Series:** Transitions to n=1 (UV region)
+- **Balmer Series:** Transitions to n=2 (Visible region)
+- **Paschen Series:** Transitions to n=3 (IR region)
+- **Brackett Series:** Transitions to n=4 (IR region)
+
+**Balmer Formula:** \`1/λ = R_H (1/2² - 1/n²)\`, n = 3,4,5,...
+- \`R_H = 1.097×10⁷ m⁻¹\` (Rydberg constant)
+
+**10. Quantum Numbers (کوانٹم اعداد):**
+
+| Quantum Number | Symbol | Values | Meaning |
+|----------------|--------|--------|---------|
+| Principal | n | 1,2,3,... | Energy level (shell) |
+| Angular Momentum | l | 0 to n-1 | Orbital shape (s,p,d,f) |
+| Magnetic | m_l | -l to +l | Orbital orientation |
+| Spin | m_s | ±½ | Electron spin |
+
+**Orbital Designations:**
+- l=0: s (spherical)
+- l=1: p (dumbbell, 3 orientations: px, py, pz)
+- l=2: d (cloverleaf, 5 orientations)
+- l=3: f (complex, 7 orientations)
+
+**11. Electron Cloud (الیکٹران بادل):**
+- 1s state: spherical cloud, highest probability at a₀.
+- Probability distribution: 32% (inner), 44% (next), 18%, 6%, etc.
+- P states: dumbbell shape, node at nucleus.
+- D states: cloverleaf shape, more complex.
+
+**12. Electron Spin and Pauli Exclusion Principle (پاؤلی اخراج اصول):**
+- Electrons are fermions (spin ½).
+- Pauli Exclusion: No two electrons can have the same set of quantum numbers.
+- Each orbital can hold maximum 2 electrons (opposite spins).
+
+**13. Electron Configuration (الیکٹران ترتیب):**
+- Fill lowest energy levels first (Aufbau principle).
+- n=1: 1s² (2 electrons)
+- n=2: 2s² (2) + 2p⁶ (6) = 8 electrons
+- n=3: 3s² + 3p⁶ + 3d¹⁰ = 18 electrons
+- Total: 2n² electrons per shell.
+
+**Examples:**
+- H: 1s¹ (1 electron)
+- He: 1s² (2 electrons)
+- Li: 1s²2s¹ (3 electrons)
+- O: 1s²2s²2p⁴ (8 electrons)
+- Na: 1s²2s²2p⁶3s¹ (11 electrons)
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Bohr radius: \`a₀ = 0.529 Å\`
+- Energy levels: \`E_n = -13.6/n² eV\`
+- Angular momentum: \`L = nℏ\`
+- Quantum numbers: n, l, m_l, m_s
+- Pauli exclusion: no two electrons same state
+- Lyman series: UV (n≥2 → n=1)
+- Balmer series: visible (n≥3 → n=2)
+- Paschen series: IR (n≥4 → n=3)
+- Ionization energy of H: 13.6 eV
+`,
+    questions: [
+      {
+        q: 'Who first proposed the concept of "atomos" (indivisible particles)?',
+        options: [
+          'A. John Dalton',
+          'B. Democritus',
+          'C. Lavoisier',
+          'D. Avogadro'
+        ],
+        answer: 'B. Democritus',
+        diff: 'easy'
+      },
+      {
+        q: 'The law of conservation of matter was established by:',
+        options: [
+          'A. Dalton',
+          'B. Lavoisier',
+          'C. Rutherford',
+          'D. Bohr'
+        ],
+        answer: 'B. Lavoisier',
+        diff: 'easy'
+      },
+      {
+        q: 'Rutherford\'s gold foil experiment demonstrated that:',
+        options: [
+          'A. Atoms are solid spheres with uniform density',
+          'B. Atoms have a small, dense, positively charged nucleus',
+          'C. Electrons are distributed uniformly throughout the atom',
+          'D. Atoms are indivisible'
+        ],
+        answer: 'B. Atoms have a small, dense, positively charged nucleus',
+        diff: 'medium'
+      },
+      {
+        q: 'The plum pudding model of the atom was proposed by:',
+        options: [
+          'A. Rutherford',
+          'B. Bohr',
+          'C. J.J. Thomson',
+          'D. Democritus'
+        ],
+        answer: 'C. J.J. Thomson',
+        diff: 'easy'
+      },
+      {
+        q: 'In Rutherford\'s experiment, most alpha particles passed straight through the gold foil because:',
+        options: [
+          'A. Alpha particles are very light',
+          'B. The atom is mostly empty space',
+          'C. Gold atoms are very small',
+          'D. Alpha particles have no charge'
+        ],
+        answer: 'B. The atom is mostly empty space',
+        diff: 'medium'
+      },
+      {
+        q: 'The Bohr radius (a₀) for hydrogen is approximately:',
+        options: [
+          'A. 0.529 Å',
+          'B. 5.29 Å',
+          'C. 52.9 Å',
+          'D. 0.0529 Å'
+        ],
+        answer: 'A. 0.529 Å',
+        diff: 'easy'
+      },
+      {
+        q: 'In Bohr\'s model, the angular momentum of an electron is quantized as:',
+        options: [
+          'A. L = nℏ',
+          'B. L = n²ℏ',
+          'C. L = ℏ/n',
+          'D. L = nℏ/2'
+        ],
+        answer: 'A. L = nℏ',
+        diff: 'medium'
+      },
+      {
+        q: 'The energy of the n=2 state of hydrogen is:',
+        options: [
+          'A. -13.6 eV',
+          'B. -3.4 eV',
+          'C. -1.51 eV',
+          'D. 0 eV'
+        ],
+        answer: 'B. -3.4 eV',
+        diff: 'medium'
+      },
+      {
+        q: 'The ionization energy of hydrogen from the ground state is:',
+        options: [
+          'A. 13.6 eV',
+          'B. 3.4 eV',
+          'C. 1.51 eV',
+          'D. 0 eV'
+        ],
+        answer: 'A. 13.6 eV',
+        diff: 'easy'
+      },
+      {
+        q: 'The Balmer series of hydrogen corresponds to transitions to:',
+        options: [
+          'A. n=1 (Lyman)',
+          'B. n=2 (Balmer)',
+          'C. n=3 (Paschen)',
+          'D. n=4 (Brackett)'
+        ],
+        answer: 'B. n=2 (Balmer)',
+        diff: 'medium'
+      },
+      {
+        q: 'The principal quantum number n determines:',
+        options: [
+          'A. The shape of the orbital',
+          'B. The energy level of the electron',
+          'C. The orientation of the orbital',
+          'D. The spin of the electron'
+        ],
+        answer: 'B. The energy level of the electron',
+        diff: 'easy'
+      },
+      {
+        q: 'The orbital angular momentum quantum number l can have values:',
+        options: [
+          'A. 0 to n-1',
+          'B. 0 to n',
+          'C. 1 to n',
+          'D. -n to +n'
+        ],
+        answer: 'A. 0 to n-1',
+        diff: 'medium'
+      },
+      {
+        q: 'The Pauli exclusion principle states that:',
+        options: [
+          'A. All electrons have the same energy',
+          'B. No two electrons can have the same set of quantum numbers',
+          'C. Electrons always repel each other',
+          'D. Electrons can occupy any state'
+        ],
+        answer: 'B. No two electrons can have the same set of quantum numbers',
+        diff: 'medium'
+      },
+      {
+        q: 'The maximum number of electrons that can occupy a shell with principal quantum number n is:',
+        options: [
+          'A. n²',
+          'B. 2n²',
+          'C. 2n',
+          'D. n³'
+        ],
+        answer: 'B. 2n²',
+        diff: 'hard'
+      },
+      {
+        q: 'The electron configuration 1s²2s²2p⁶ corresponds to:',
+        options: [
+          'A. Hydrogen (H)',
+          'B. Helium (He)',
+          'C. Neon (Ne)',
+          'D. Sodium (Na)'
+        ],
+        answer: 'C. Neon (Ne)',
+        diff: 'hard'
+      }
+    ],
+    },
+
+ 44: {
+    title: 'Introduction to Nuclear Physics',
+    summary: `
+**📚 Lecture 44 - Introduction to Nuclear Physics (نوکیلی طبیعیات کا تعارف)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Nuclear Physics Ka Introduction (نوکیلی طبیعیات کا تعارف):**
+
+Bohot se log nuclear physics ko sirf bombs (Hiroshima, Nagasaki) se associate karte hain. Lekin nuclear physics ke bohot se peaceful applications hain:
+- Nuclear power (electricity generation)
+- Medical imaging and cancer treatment
+- Carbon dating (archaeology)
+- Industrial applications
+
+**2. Discovery of Atomic Nucleus (ایٹمی مرکزہ کی دریافت - 1911):**
+
+**Rutherford's Gold Foil Experiment:**
+- Alpha particles (⁴He nuclei) → gold foil.
+- Most particles passed straight through (atom mostly empty).
+- Some deflected at small angles.
+- Very few bounced back (1 in 8000).
+
+**Conclusion:**
+- Atom has small, dense, positively charged nucleus.
+- Nucleus contains most of atom's mass.
+- Electrons orbit far away from nucleus.
+
+**Before Rutherford:** Plum pudding model (Thomson) - positive charge spread throughout atom with electrons scattered like plums.
+
+**3. Structure of Atom (ایٹم کی ساخت):**
+
+- **Nucleus (مرکزہ):** Protons (+ve) + Neutrons (neutral)
+- **Electrons (-ve):** Probability clouds around nucleus (quantum mechanics)
+- Nucleus is 100,000× smaller than atom!
+
+**Particle Masses:**
+- Proton: \`m_p = 1.672×10⁻²⁷ kg = 938 MeV/c²\`
+- Neutron: \`m_n = 1.675×10⁻²⁷ kg = 940 MeV/c²\`
+- Electron: \`m_e = 9.109×10⁻³¹ kg = 0.5 MeV/c²\`
+
+**Units in Nuclear Physics:**
+- Mass measured in \`MeV/c²\` (using E = mc²)
+- Distance measured in **fermi (fm)** = 10⁻¹⁵ m
+
+**4. Nuclear Notation (نوکیلی علامت):**
+
+- \`Z\` = Atomic number (number of protons)
+- \`N\` = Number of neutrons
+- \`A = Z + N\` = Mass number
+- Notation: \`^A_Z X\` (e.g., \`^{12}_6 C\`)
+
+**5. Isotopes (ہم جا):**
+
+Same Z (protons) but different N (neutrons).
+
+**Hydrogen Isotopes:**
+- Protium: \`^1_1H\` (1 proton, 0 neutrons)
+- Deuterium: \`^2_1H\` (1 proton, 1 neutron)
+- Tritium: \`^3_1H\` (1 proton, 2 neutrons) - radioactive
+
+**Carbon Isotopes:**
+- \`^{12}_6C\` (6p, 6n) - stable, most abundant
+- \`^{13}_6C\` (6p, 7n) - stable
+- \`^{14}_6C\` (6p, 8n) - radioactive (used in carbon dating)
+
+**6. Nuclear Size (مرکزے کا سائز):**
+
+- \`r = r₀ A^(1/3)\`, where \`r₀ = 1.2 fm\`
+- Volume: \`V = 4/3 π r³ = 4/3 π r₀³ A\`
+- **Nuclear density:** \`A/V = 3/(4πr₀³) ≈ 0.14\` nucleons/fm³
+- Density is constant for all nuclei! (very dense, ~2×10¹⁷ kg/m³)
+
+**7. Imaging the Nucleus (مرکزے کو دیکھنا):**
+
+- Light microscope se nucleus nahi dekh sakte (wavelength too large).
+- **Electron accelerators** use electrons with very short de Broglie wavelength.
+- Scattering patterns reveal nuclear structure.
+
+**8. Nuclear Force (نوکیلی قوت):**
+
+**Strong Nuclear Force:**
+- Binds protons and neutrons together.
+- Very strong but very short range (~1-2 fm).
+- Overcomes electrostatic repulsion between protons.
+
+**Properties:**
+- Attractive at medium distances (~1-2 fm)
+- Repulsive at very short distances (<0.5 fm) - prevents collapse
+- Same between proton-proton, neutron-neutron, proton-neutron
+
+**9. Yukawa Theory (یوکاوا کا نظریہ - 1935):**
+
+- Hideki Yukawa proposed that nuclear force is mediated by **pions (mesons)**.
+- Pion exchange between nucleons creates attractive force.
+- Using uncertainty principle: \`ΔE·Δt ≈ ℏ/2\`
+- Pion mass predicted: \`mc² ≈ 124 MeV\`
+- Later discovered: pion mass ≈ 138 MeV/c² (Yukawa got Nobel Prize!)
+
+**Range calculation:**
+- \`Δt ≈ ℏ/(2mc²)\`
+- \`Range ≈ c·Δt = ℏ/(2mc) ≈ 1.2 fm\`
+
+**10. Binding Energy (پابند توانائی):**
+
+- Energy required to break nucleus into individual nucleons.
+- \`BE = Δm·c²\` (mass defect × c²)
+
+**Mass Defect:**
+- \`Δm = Z·m_p + N·m_n - m_nucleus\`
+
+**Binding Energy per Nucleon:**
+- Peaks at Iron-56: ~8.6 MeV/nucleon (most stable)
+- Hydrogen: ~0 MeV/nucleon (least bound)
+- Uranium: ~7.6 MeV/nucleon
+
+**Fission (انشقاق):** Heavy nucleus splits → products have higher BE/nucleon → energy released
+**Fusion (اندماج):** Light nuclei combine → product has higher BE/nucleon → energy released
+
+**11. Radioactive Decay (تابکار تنزل):**
+
+**Decay Law:**
+- \`N(t) = N₀ e^{-λt}\`
+- λ = decay constant (probability of decay per unit time)
+- Activity: \`A = λN\` (decays per second)
+- Unit: Becquerel (Bq) = 1 decay/s
+
+**Half-Life (نصف حیات):**
+- Time for half of nuclei to decay.
+- \`T₁/₂ = 0.693/λ\`
+
+**12. Carbon Dating (کاربن ڈیٹنگ):**
+
+- Living organisms absorb \`^{14}C\` (radioactive) and \`^{12}C\` (stable).
+- After death: \`^{14}C\` decreases, \`^{12}C\` stays constant.
+- Half-life of \`^{14}C\` = 5730 years.
+- Measure \`^{14}C/^{12}C\` ratio → determine age.
+
+**Example:** Activity 0.121 Bq/g (normal = 0.23 Bq/g) → age ≈ 5300 years.
+
+**13. Types of Radioactive Decay (تابکاری کی اقسام):**
+
+**(a) Alpha Decay (α - الفا تنزل):**
+- Emits \`⁴He\` nucleus (2 protons + 2 neutrons)
+- \`^A_Z X → ^{A-4}_{Z-2} Y + ^4_2 He\`
+- Z decreases by 2, A decreases by 4
+- Low penetration (stopped by paper)
+
+**(b) Beta Decay (β - بیٹا تنزل):**
+- **β⁻ decay:** Neutron → proton + electron + anti-neutrino
+  - \`^A_Z X → ^A_{Z+1} Y + e⁻ + \bar{ν}\`
+- **β⁺ decay:** Proton → neutron + positron + neutrino
+  - \`^A_Z X → ^A_{Z-1} Y + e⁺ + ν\`
+- Involves **weak nuclear force**
+- Medium penetration (stopped by aluminium)
+
+**(c) Gamma Decay (γ - گاما تنزل):**
+- Emits high-energy photon (γ-ray)
+- Nucleus goes from excited state to ground state
+- No change in Z or A
+- High penetration (stopped by lead/concrete)
+
+**14. Nuclear Fission (نوکیلی انشقاق):**
+
+- Heavy nucleus (e.g., \`^{235}U\`) splits into lighter fragments.
+- Releases energy: \`E = Δm·c²\`
+- Example: \`^{235}U + n → ^{141}Ba + ^{92}Kr + 3n + energy\`
+- Used in nuclear reactors and atomic bombs.
+
+**15. Origin of Elements (عناصر کی پیدائش):**
+
+- Universe started with mostly hydrogen.
+- Stars fuse hydrogen → helium → heavier elements.
+- Supernovae explosions scatter elements into space.
+- Earth and everything on it (including us) are made of stardust!
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Rutherford: discovered nucleus (1911)
+- Nucleus: protons + neutrons
+- \`A = Z + N\`
+- Isotopes: same Z, different N
+- Nuclear size: \`r = r₀ A^(1/3)\`, \`r₀ = 1.2 fm\`
+- Strong nuclear force: short range (~1 fm), very strong
+- Yukawa: pions mediate nuclear force
+- Binding energy per nucleon: max at Iron-56
+- Decay law: \`N = N₀e^{-λt}\`
+- Half-life: \`T₁/₂ = 0.693/λ\`
+- Alpha: emits \`⁴He\`, Z-2, A-4
+- Beta: neutron → proton + electron
+- Gamma: high-energy photon
+- Carbon-14 half-life: 5730 years
+`,
+    questions: [
+      {
+        q: 'The atomic nucleus was discovered by Ernest Rutherford in which experiment?',
+        options: [
+          'A. Photoelectric effect experiment',
+          'B. Gold foil alpha scattering experiment',
+          'C. Double-slit experiment',
+          'D. Millikan oil drop experiment'
+        ],
+        answer: 'B. Gold foil alpha scattering experiment',
+        diff: 'easy'
+      },
+      {
+        q: 'The nucleus of an atom consists of:',
+        options: [
+          'A. Protons and electrons',
+          'B. Protons and neutrons',
+          'C. Neutrons and electrons',
+          'D. Only protons'
+        ],
+        answer: 'B. Protons and neutrons',
+        diff: 'easy'
+      },
+      {
+        q: 'Isotopes of an element have the same number of:',
+        options: [
+          'A. Protons but different number of neutrons',
+          'B. Neutrons but different number of protons',
+          'C. Nucleons (protons + neutrons)',
+          'D. Electrons but different protons'
+        ],
+        answer: 'A. Protons but different number of neutrons',
+        diff: 'medium'
+      },
+      {
+        q: 'The strong nuclear force is responsible for:',
+        options: [
+          'A. Holding electrons in orbit around the nucleus',
+          'B. Binding protons and neutrons together in the nucleus',
+          'C. Gravitational attraction between planets',
+          'D. Electromagnetic repulsion between charges'
+        ],
+        answer: 'B. Binding protons and neutrons together in the nucleus',
+        diff: 'medium'
+      },
+      {
+        q: 'The range of the strong nuclear force is approximately:',
+        options: [
+          'A. 10⁻¹⁰ m (atomic size)',
+          'B. 1-2 fm (10⁻¹⁵ m)',
+          'C. 10⁻⁶ m (micrometer)',
+          'D. Infinite range'
+        ],
+        answer: 'B. 1-2 fm (10⁻¹⁵ m)',
+        diff: 'hard'
+      },
+      {
+        q: 'Hideki Yukawa predicted that the nuclear force is mediated by:',
+        options: [
+          'A. Photons',
+          'B. Pions (mesons)',
+          'C. Electrons',
+          'D. Gluons'
+        ],
+        answer: 'B. Pions (mesons)',
+        diff: 'medium'
+      },
+      {
+        q: 'The binding energy of a nucleus is:',
+        options: [
+          'A. The energy required to break the nucleus into individual nucleons',
+          'B. The energy released when electrons are added to an atom',
+          'C. The kinetic energy of nucleons in the nucleus',
+          'D. The energy of gamma rays emitted'
+        ],
+        answer: 'A. The energy required to break the nucleus into individual nucleons',
+        diff: 'medium'
+      },
+      {
+        q: 'The most stable nucleus (highest binding energy per nucleon) is:',
+        options: [
+          'A. Hydrogen-1',
+          'B. Helium-4',
+          'C. Iron-56',
+          'D. Uranium-238'
+        ],
+        answer: 'C. Iron-56',
+        diff: 'hard'
+      },
+      {
+        q: 'Alpha decay reduces the atomic number Z by:',
+        options: [
+          'A. 1',
+          'B. 2',
+          'C. 4',
+          'D. 0'
+        ],
+        answer: 'B. 2',
+        diff: 'easy'
+      },
+      {
+        q: 'Beta decay involves the emission of:',
+        options: [
+          'A. Alpha particles (⁴He)',
+          'B. Electrons or positrons',
+          'C. Gamma rays (photons)',
+          'D. Neutrons'
+        ],
+        answer: 'B. Electrons or positrons',
+        diff: 'easy'
+      },
+      {
+        q: 'Gamma decay involves the emission of:',
+        options: [
+          'A. Alpha particles',
+          'B. Beta particles',
+          'C. High-energy photons (gamma rays)',
+          'D. Neutrons'
+        ],
+        answer: 'C. High-energy photons (gamma rays)',
+        diff: 'easy'
+      },
+      {
+        q: 'The half-life of Carbon-14 is approximately:',
+        options: [
+          'A. 5730 years',
+          'B. 1600 years',
+          'C. 4.5 billion years',
+          'D. 28.5 years'
+        ],
+        answer: 'A. 5730 years',
+        diff: 'easy'
+      },
+      {
+        q: 'The decay law \`N = N₀e^{-λt}\` describes:',
+        options: [
+          'A. Exponential growth of nuclei',
+          'B. Exponential decay of radioactive nuclei',
+          'C. Linear decrease of nuclei',
+          'D. Constant number of nuclei'
+        ],
+        answer: 'B. Exponential decay of radioactive nuclei',
+        diff: 'medium'
+      },
+      {
+        q: 'In beta decay, a neutron transforms into:',
+        options: [
+          'A. A proton plus an electron plus an anti-neutrino',
+          'B. A proton plus a positron',
+          'C. An electron only',
+          'D. A proton only'
+        ],
+        answer: 'A. A proton plus an electron plus an anti-neutrino',
+        diff: 'hard'
+      },
+      {
+        q: 'Nuclear fission is the process of:',
+        options: [
+          'A. Combining light nuclei to form heavier nuclei',
+          'B. Splitting a heavy nucleus into lighter nuclei',
+          'C. Emitting alpha particles',
+          'D. Absorbing neutrons without splitting'
+        ],
+        answer: 'B. Splitting a heavy nucleus into lighter nuclei',
+        diff: 'easy'
+      }
+    ],
+  },
+
+
+
+  45: {
+    title: 'Physics of the Sun',
+    summary: `
+**📚 Lecture 45 - Physics of the Sun (سورج کی طبیعیات)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Sun Ke Basic Facts (سورج کے بنیادی حقائق):**
+
+- **Mass (کمیت):** 2×10³⁰ kg (333,000× Earth)
+- **Diameter (قطر):** 1,392,000 km (109× Earth)
+- **Age (عمر):** 4.6 billion years
+- **Rotation (گردش):** 25 days (equator), 36 days (poles) - differential rotation (gas sphere)
+- **Core Temperature (مرکزہ درجہ حرارت):** 15 million K
+- **Surface Temperature (سطح درجہ حرارت):** 5770 K (Photosphere)
+- **Density (کثافت):** Core: 8× gold, Average: 1.5× water
+- **Composition (ترکیب):** 72% Hydrogen, 25% Helium, 3% heavier elements (Fe, C, etc.)
+- **Luminosity (تابناکی):** 3.83×10²⁶ W (4×10²⁴ kW)
+
+**2. Sun Ki Energy Ka Source (سورج کی توانائی کا ماخذ):**
+
+**Historical Theories (Rejected):**
+- Chemical reactions: only few million years
+- Gravitational contraction: only ~20 million years
+
+**Actual Source: Nuclear Fusion (نوکیلی اتحاد)**
+- Hydrogen → Helium fusion
+- \`E = mc²\` (mass converted to energy)
+- Each second: 4 million tons of mass → energy
+
+**3. Proton-Proton Chain (پروٹون-پروٹون سلسلہ):**
+
+**Step 1:**
+- Two protons collide → \`²H\` (deuterium) + \`e⁺\` (positron) + \`ν\` (neutrino)
+- Positron + electron → annihilation → gamma rays
+
+**Step 2:**
+- \`²H\` + \`¹H\` → \`³He\` (helium-3) + gamma ray
+
+**Step 3:**
+- Two \`³He\` nuclei collide → \`⁴He\` (helium-4) + 2 protons
+
+**Net Reaction:**
+- \`4¹H → ⁴He + 2e⁺ + 2ν + energy (25 MeV)\`
+- Energy released per reaction: 25 MeV
+
+**4. Why Fusion Requires High Temperature (اتنی زیادہ درجہ حرارت کی ضرورت):**
+
+- Protons positively charged → repel each other (Coulomb barrier).
+- To fuse, protons must come very close (~1 fm).
+- High temperature → high speed → overcome repulsion.
+- Core temperature: 15 million K (required > 8 million K).
+- Heavier nuclei fusion requires even higher T (100 million K for He).
+
+**5. Sun Ki Internal Structure (سورج کی اندرونی ساخت):**
+
+| Region | Radius | Temperature | Process |
+|--------|--------|-------------|---------|
+| **Core** | 0-25% | 15 million K | Nuclear fusion |
+| **Radiative Zone** | 25-70% | 5-10 million K | Energy by radiation (photons) |
+| **Convective Zone** | 70-100% | 1-2 million K | Energy by convection |
+| **Photosphere** | Surface | 5770 K | Visible surface |
+| **Corona** | Outer atmosphere | 1-3 million K | Very hot, visible during eclipses |
+
+**Photon Travel Time:** 170,000 years from core to surface (due to constant collisions)
+
+**6. Hydrostatic Equilibrium (ہائیڈروسٹیٹک توازن):**
+
+Two forces balance each other:
+
+**(a) Outward Pressure (بیرونی دباؤ):**
+- Thermal pressure from hot gas
+- Tries to expand the Sun
+
+**(b) Inward Gravity (اندرونی کشش ثقل):**
+- Gravitational attraction of all mass
+- Tries to collapse the Sun
+
+**Mathematical Condition:**
+\`dP/dr = -GM(r)ρ(r)/r²\`
+
+**Pressure at Center:** ~3×10⁹ atmospheres!
+
+**7. Solar Granulation (سورج کی دانے داری):**
+- Convection cells on surface
+- Each granule: ~1000 km diameter
+- Hot plasma rises (bright), cools and sinks (dark)
+- Lasts for several minutes
+
+**8. Helioseismology (ہیلیوسیزموالوجی - سورج کی لہریں):**
+
+- Study of waves/vibrations on Sun's surface.
+- Surface moves up and down (like earthquakes).
+- Doppler effect used to measure surface motion.
+- Reveals internal structure and dynamics.
+
+**9. Solar Neutrinos (سورج کے نیوٹرینو):**
+- Produced in fusion reactions.
+- Very weakly interacting → escape in seconds (not 170,000 years).
+- Provide direct information about core.
+- Neutrino detectors (e.g., Super-Kamiokande) measure them.
+
+**10. CNO Cycle (کاربن-نائٹروجن-آکسیجن سائیکل):**
+
+- Alternative fusion pathway in stars more massive than Sun.
+- Carbon, Nitrogen, Oxygen act as catalysts.
+- Net result same: 4H → He + energy.
+- Sun uses both proton-proton chain (98%) and CNO cycle (2%).
+
+**11. Blackbody Radiation and Sun's Spectrum:**
+
+- Sun behaves approximately as blackbody.
+- Temperature from spectrum: 5770 K.
+- Peak wavelength: \`λ_max = 2.9×10⁻³/T ≈ 500 nm\` (yellow-green)
+
+**Stefan-Boltzmann Law:**
+- \`P = σ A T⁴\`
+- Sun's power output: 3.83×10²⁶ W
+
+**12. Earth's Temperature (زمین کا درجہ حرارت):**
+
+**Energy Balance:**
+- Power absorbed from Sun = Power radiated by Earth
+- \`σ T_s⁴ × (R_s/R)² = 4σ T_E⁴\`
+- \`T_E = (R_s/(2R))^{1/2} × T_s\`
+
+**Calculation:**
+- \`R_s = 7×10⁸ m\`, \`R = 1.5×10¹¹ m\`, \`T_s = 5800 K\`
+- \`T_E ≈ 280 K\` (≈ 7°C)
+
+**Actual Average:** ~290 K (≈ 13°C) due to greenhouse effect
+
+**13. Greenhouse Effect (گرین ہاؤس اثر):**
+
+**Process:**
+1. Sun's radiation reaches Earth (visible/UV).
+2. Earth absorbs and re-emits as infrared.
+3. Greenhouse gases (CO₂, CH₄, H₂O) trap infrared.
+4. Heat trapped → temperature rises.
+
+**Greenhouse Gases:**
+- CO₂ (carbon dioxide): 360 ppm (up from 227 ppm in 1750)
+- CH₄ (methane)
+- H₂O (water vapor)
+
+**Quantum Mechanics Connection:**
+- Molecules have quantized vibrational levels.
+- CO₂ absorbs IR radiation at specific frequencies.
+- Traps outgoing radiation → warming.
+
+**14. Sun Ka Future (سورج کا مستقبل):**
+
+**Current Phase (Main Sequence):**
+- Fusing H → He in core.
+- Has been doing this for 4.6 billion years.
+- Can continue for another ~5 billion years.
+
+**Red Giant Phase (5 billion years from now):**
+- Hydrogen depleted in core.
+- Core contracts, heats up.
+- Outer layers expand → Sun becomes 100× larger.
+- Earth will be engulfed!
+
+**Helium Burning:**
+- Core temperature rises to 100 million K.
+- Helium → Carbon fusion.
+- Sun becomes even larger (Supergiant).
+
+**White Dwarf Phase:**
+- Outer layers shed (planetary nebula).
+- Core remains as white dwarf.
+- Extremely dense (1 teaspoon = several tons).
+- Slowly cools and fades.
+
+**For Massive Stars:**
+- End as supernova or black hole.
+
+**15. Why Can't We Replicate Fusion on Earth (زمین پر فیوژن کیوں نہیں کر سکتے):**
+
+- Need temperatures > 100 million K.
+- Need extreme pressure to confine plasma.
+- Currently technology not advanced enough.
+- ITER project trying to achieve controlled fusion.
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Sun: 72% H, 25% He
+- Core temperature: 15 million K
+- Surface temperature: 5770 K (Photosphere)
+- Energy source: Nuclear fusion (4H → He)
+- Mass converted per second: 4 million tons
+- Photon travel time: 170,000 years
+- Neutrino escape time: seconds
+- Hydrostatic equilibrium: pressure balances gravity
+- Future: Red Giant → White Dwarf
+- Greenhouse gases: CO₂, CH₄, H₂O
+- Earth's temperature: ~290 K (with greenhouse effect)
+`,
+    questions: [
+      {
+        q: 'The Sun\'s energy is produced by:',
+        options: [
+          'A. Chemical combustion of hydrogen',
+          'B. Nuclear fusion (hydrogen converting to helium)',
+          'C. Gravitational contraction',
+          'D. Nuclear fission of uranium'
+        ],
+        answer: 'B. Nuclear fusion (hydrogen converting to helium)',
+        diff: 'easy'
+      },
+      {
+        q: 'The core temperature of the Sun is approximately:',
+        options: [
+          'A. 5,800 K (surface temperature)',
+          'B. 1 million K',
+          'C. 15 million K',
+          'D. 100 million K'
+        ],
+        answer: 'C. 15 million K',
+        diff: 'easy'
+      },
+      {
+        q: 'The Sun\'s composition is approximately:',
+        options: [
+          'A. 72% Hydrogen, 25% Helium',
+          'B. 50% Hydrogen, 50% Helium',
+          'C. 25% Hydrogen, 72% Helium',
+          'D. 90% Iron, 10% Nickel'
+        ],
+        answer: 'A. 72% Hydrogen, 25% Helium',
+        diff: 'medium'
+      },
+      {
+        q: 'The proton-proton chain converts hydrogen into helium. The net reaction is:',
+        options: [
+          'A. 2H → He + energy',
+          'B. 4H → He + 2e⁺ + 2ν + energy',
+          'C. H + H → He + energy',
+          'D. 3H → He + energy'
+        ],
+        answer: 'B. 4H → He + 2e⁺ + 2ν + energy',
+        diff: 'hard'
+      },
+      {
+        q: 'In the proton-proton chain, the positron (e⁺) produced in Step 1:',
+        options: [
+          'A. Escapes from the Sun',
+          'B. Annihilates with an electron, producing gamma rays',
+          'C. Combines with a proton to form deuterium',
+          'D. Becomes a neutron'
+        ],
+        answer: 'B. Annihilates with an electron, producing gamma rays',
+        diff: 'hard'
+      },
+      {
+        q: 'The Sun\'s luminosity (power output) is approximately:',
+        options: [
+          'A. 3.83×10²⁶ W',
+          'B. 3.83×10²⁴ W',
+          'C. 3.83×10²⁸ W',
+          'D. 3.83×10³⁰ W'
+        ],
+        answer: 'A. 3.83×10²⁶ W',
+        diff: 'medium'
+      },
+      {
+        q: 'Each second, the Sun converts approximately how much mass into energy?',
+        options: [
+          'A. 4 million tons',
+          'B. 400 tons',
+          'C. 4 billion tons',
+          'D. 4 kg'
+        ],
+        answer: 'A. 4 million tons',
+        diff: 'medium'
+      },
+      {
+        q: 'The Sun is in hydrostatic equilibrium, which means:',
+        options: [
+          'A. The Sun is expanding rapidly',
+          'B. The Sun is contracting rapidly',
+          'C. Outward thermal pressure balances inward gravitational force',
+          'D. The Sun has no forces acting on it'
+        ],
+        answer: 'C. Outward thermal pressure balances inward gravitational force',
+        diff: 'medium'
+      },
+      {
+        q: 'A photon produced in the Sun\'s core takes approximately how long to reach the surface?',
+        options: [
+          'A. A few seconds',
+          'B. 8 minutes',
+          'C. 170,000 years',
+          'D. 4.6 billion years'
+        ],
+        answer: 'C. 170,000 years',
+        diff: 'hard'
+      },
+      {
+        q: 'Neutrinos produced in the Sun\'s core take approximately how long to escape?',
+        options: [
+          'A. 170,000 years',
+          'B. 8 minutes',
+          'C. A few seconds',
+          'D. 4.6 billion years'
+        ],
+        answer: 'C. A few seconds',
+        diff: 'hard'
+      },
+      {
+        q: 'The CNO cycle involves which elements as catalysts?',
+        options: [
+          'A. Hydrogen and Helium',
+          'B. Carbon, Nitrogen, and Oxygen',
+          'C. Iron and Nickel',
+          'D. Uranium and Plutonium'
+        ],
+        answer: 'B. Carbon, Nitrogen, and Oxygen',
+        diff: 'medium'
+      },
+      {
+        q: 'The equilibrium temperature of Earth (without greenhouse effect) is approximately:',
+        options: [
+          'A. 280 K (7°C)',
+          'B. 290 K (13°C)',
+          'C. 300 K (27°C)',
+          'D. 250 K (-23°C)'
+        ],
+        answer: 'A. 280 K (7°C)',
+        diff: 'hard'
+      },
+      {
+        q: 'The main greenhouse gases in Earth\'s atmosphere are:',
+        options: [
+          'A. Nitrogen and Oxygen',
+          'B. Carbon Dioxide and Methane',
+          'C. Argon and Neon',
+          'D. Hydrogen and Helium'
+        ],
+        answer: 'B. Carbon Dioxide and Methane',
+        diff: 'easy'
+      },
+      {
+        q: 'In about 5 billion years, the Sun will become a:',
+        options: [
+          'A. Black Hole',
+          'B. Red Giant (and later a White Dwarf)',
+          'C. Neutron Star',
+          'D. Supernova'
+        ],
+        answer: 'B. Red Giant (and later a White Dwarf)',
+        diff: 'medium'
+      },
+      {
+        q: 'Helioseismology is the study of:',
+        options: [
+          'A. Solar eclipses',
+          'B. Vibrations/waves on the Sun\'s surface',
+          'C. Solar flares',
+          'D. Sunspots'
+        ],
+        answer: 'B. Vibrations/waves on the Sun\'s surface',
+        diff: 'medium'
+      }
+    ],
+  }
+
+
+
   },
 
   // ─────────────────────────────────────────
