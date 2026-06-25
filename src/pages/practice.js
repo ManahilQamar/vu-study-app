@@ -4,7 +4,6 @@ import practice from '../data/practice';
 
 const API_BASE = 'https://vu-game-backend.vercel.app';
 
-// ─── Compact symbol toolbar (reused from Math Typer) ─────────────
 const QUICK_SYMBOLS = ['+','−','×','÷','=','≠','≤','≥','²','³','√','π','∞','→','∫','∑','Δ','θ','α','β'];
 
 async function checkAnswerAPI(question, correctAnswer, studentAnswer, subjectId) {
@@ -17,10 +16,42 @@ async function checkAnswerAPI(question, correctAnswer, studentAnswer, subjectId)
   return res.json();
 }
 
+function renderFeedback(text) {
+  const lines = text.split('\n');
+  return lines.map((line, i) => {
+    if (!line.trim()) return <div key={i} style={{ height: 6 }} />;
+
+    const parts = line.split(/(\*\*[^*]+\*\*)/g);
+    const rendered = parts.map((part, j) =>
+      part.startsWith('**') && part.endsWith('**')
+        ? <strong key={j}>{part.slice(2, -2)}</strong>
+        : part
+    );
+
+    const trimmed = line.trim();
+    const isStep   = /^(step\s*\d+|^\d+[.)])/i.test(trimmed);
+    const isBullet = trimmed.startsWith('-') || trimmed.startsWith('•');
+
+    return (
+      <div key={i} style={{
+        fontSize: 14,
+        lineHeight: 1.7,
+        marginBottom: 6,
+        fontWeight: isStep ? 700 : 400,
+        paddingLeft: isBullet ? 14 : 0,
+        position: 'relative',
+      }}>
+        {isBullet && <span style={{ position: 'absolute', left: 0 }}>•</span>}
+        {isBullet ? rendered.map(r => typeof r === 'string' ? r.replace(/^[-•]\s*/, '') : r) : rendered}
+      </div>
+    );
+  });
+}
+
 function ProblemCard({ problem, index, subjectId }) {
   const [answer,   setAnswer]   = useState('');
   const [checking, setChecking] = useState(false);
-  const [result,   setResult]   = useState(null); // { verdict, feedback }
+  const [result,   setResult]   = useState(null);
   const [error,    setError]    = useState('');
   const [showHint, setShowHint] = useState(false);
   const taRef = useRef(null);
@@ -49,14 +80,15 @@ function ProblemCard({ problem, index, subjectId }) {
     }
   };
 
+  // Explicit hex colors (not CSS vars) so contrast is always correct in light AND dark mode
   const verdictStyle = (verdict) => {
     if (/correct/i.test(verdict) && !/partially|incorrect/i.test(verdict)) {
-      return { bg: '#f0fdf4', border: '#86efac', color: '#16a34a', icon: '✓' };
+      return { bg: '#ecfdf3', border: '#34d399', text: '#065f46', icon: '✓', iconBg: '#10b981' };
     }
     if (/partially/i.test(verdict)) {
-      return { bg: '#fffbeb', border: '#fde68a', color: '#b45309', icon: '◐' };
+      return { bg: '#fffbeb', border: '#fbbf24', text: '#78350f', icon: '◐', iconBg: '#f59e0b' };
     }
-    return { bg: '#fef2f2', border: '#fca5a5', color: '#dc2626', icon: '✗' };
+    return { bg: '#fef2f2', border: '#f87171', text: '#7f1d1d', icon: '✗', iconBg: '#ef4444' };
   };
 
   return (
@@ -67,7 +99,6 @@ function ProblemCard({ problem, index, subjectId }) {
       overflow: 'hidden',
       marginBottom: 14,
     }}>
-      {/* Question header */}
       <div style={{ padding: '14px 16px', borderBottom: '1px solid var(--border)' }}>
         <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
           <div style={{
@@ -106,7 +137,6 @@ function ProblemCard({ problem, index, subjectId }) {
         )}
       </div>
 
-      {/* Quick symbol row */}
       <div style={{
         display: 'flex', flexWrap: 'wrap', gap: 4,
         padding: '8px 12px',
@@ -130,7 +160,6 @@ function ProblemCard({ problem, index, subjectId }) {
         ))}
       </div>
 
-      {/* Answer writing area */}
       <textarea
         ref={taRef}
         value={answer}
@@ -146,7 +175,6 @@ function ProblemCard({ problem, index, subjectId }) {
         }}
       />
 
-      {/* Check button */}
       <div style={{ padding: '10px 16px', borderTop: '1px solid var(--border)' }}>
         <button
           onClick={handleCheck}
@@ -178,30 +206,36 @@ function ProblemCard({ problem, index, subjectId }) {
           <div style={{ fontSize: 13, color: '#dc2626', marginTop: 8 }}>⚠ {error}</div>
         )}
 
-        {result && (
-          <div style={{
-            marginTop: 10,
-            background: verdictStyle(result.verdict).bg,
-            border: `1.5px solid ${verdictStyle(result.verdict).border}`,
-            borderRadius: 10, padding: '12px 14px',
-          }}>
+        {result && (() => {
+          const vs = verdictStyle(result.verdict);
+          return (
             <div style={{
-              display: 'flex', alignItems: 'center', gap: 8,
-              fontSize: 14, fontWeight: 700,
-              color: verdictStyle(result.verdict).color,
-              marginBottom: 6,
+              marginTop: 10,
+              background: vs.bg,
+              border: `1.5px solid ${vs.border}`,
+              borderRadius: 10,
+              padding: '14px 16px',
             }}>
-              <span style={{ fontSize: 16 }}>{verdictStyle(result.verdict).icon}</span>
-              {result.verdict}
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+                <span style={{
+                  width: 22, height: 22, borderRadius: '50%',
+                  background: vs.iconBg, color: '#fff',
+                  fontSize: 13, fontWeight: 700,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  flexShrink: 0,
+                }}>
+                  {vs.icon}
+                </span>
+                <span style={{ fontSize: 14.5, fontWeight: 700, color: vs.text }}>
+                  {result.verdict}
+                </span>
+              </div>
+              <div style={{ color: vs.text }}>
+                {renderFeedback(result.feedback)}
+              </div>
             </div>
-            <div style={{
-              fontSize: 13.5, color: 'var(--text-secondary)',
-              lineHeight: 1.7, whiteSpace: 'pre-wrap',
-            }}>
-              {result.feedback}
-            </div>
-          </div>
-        )}
+          );
+        })()}
       </div>
 
       <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
