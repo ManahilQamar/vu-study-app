@@ -4,4905 +4,7451 @@ const mcqs = {
   //  MTH101
   // ─────────────────────────────────────────
   MTH101: {
-    1: {
-      title: 'Coordinates, Graphs & Lines',
-      summary: `**Key Topics Covered:**
-- Number systems and their hierarchy
-- Irrational numbers and their history
-- Coordinate line and analytic geometry
-- Order properties and inequalities
-- Intervals and set notation
+1: {
+    title: 'Coordinates, Graphs and Lines',
+    summary: `
+**Lecture 1 - Coordinates, Graphs and Lines (Coordinates, Graphs aur Lines)**
 
-**Important Concepts:**
+**Roman Urdu Detailed Summary:**
 
-**Number Systems Hierarchy:**
-Natural numbers are the smallest set, followed by Integers (which include zero and negatives), then Rational numbers (fractions/ratios), and finally Real numbers (which include both rational and irrational).
+**1. Real Numbers (Haqeeqi Aadad):**
+Real numbers natural numbers, integers, rational numbers, aur irrational numbers par mushtamil hain.
 
-**Irrational Numbers:**
-Hippasus of Metapontum (5th century BC) proved that √2 cannot be expressed as a ratio of integers — using a right triangle with base and height = 1. Rational numbers always end or repeat in decimal form. Irrational numbers like π and √2 are infinite non-repeating decimals.
+**Natural Numbers (Qudrati Aadad):**
+1,2,3,4,5,... - yeh woh numbers hain jo counting ke liye use hote hain.
 
-**Coordinate Line:**
-Descartes developed analytic geometry in the 1600s. On a standard coordinate line, the positive direction is to the right. If b − a is positive, then b > a.
+**Integers (Adad-e-Sahih):**
+..., -3, -2, -1, 0, 1, 2, 3, ... - natural numbers, unke negative, aur zero.
 
-**Intervals:**
-- Closed [a, b] = includes both endpoints (a ≤ x ≤ b)
-- Open (a, b) = excludes both endpoints (a < x < b)
-- Half-open [a, b) = includes a, excludes b
-- (−∞, b] = infinite and closed
+**Rational Numbers (Nisbi Aadad):**
+Numbers jo do integers ke ratio ki form mein likhe ja sakte hain, e.g., 2/3, 7/5, -5/2.
 
-**Inequality Rules:**
-- Multiplying by a NEGATIVE number REVERSES the inequality
-- Multiplying by zero is NOT allowed
-- If a < b and c < d, then a + c < b + d
+**Irrational Numbers (Ghair Nisbi Aadad):**
+Numbers jo ratio ki form mein nahi likhe ja sakte, e.g., √2, π, cos 19°.
 
-**Key Facts to Remember:**
-- Zero belongs to Integers but NOT Natural numbers
-- Pythagoras believed all quantities were ratios of integers — Hippasus proved him wrong
-- A ∩ B = elements in BOTH A and B
-- A nonnegative number: a ≥ 0
-- a < b < c means a < b AND b < c
+**2. Sets (Sets):**
+A set is a collection of well-defined objects. Examples: {1,2,3,4}, {a,b,c}.
 
-**Quick Revision Points:**
-- Natural ⊂ Integer ⊂ Rational ⊂ Real
-- √2 is irrational (right triangle with sides 1, 1, √2)
-- Positive direction on number line = right
-- Multiply inequality by negative → direction reverses
-- [a,b] includes endpoints, (a,b) excludes endpoints
-- A ∩ B = intersection = common elements`,
-      questions: [
-        {
-          q: 'Which hierarchy from smallest to largest set is correct?',
-          options: ['A. Natural → Integer → Rational → Real', 'B. Integer → Natural → Rational → Real', 'C. Natural → Rational → Integer → Real', 'D. Rational → Integer → Natural → Real'],
-          answer: 'A. Natural → Integer → Rational → Real',
-          diff: 'medium',
-        },
-        {
-          q: 'The number zero (0) belongs to which set but NOT to natural numbers?',
-          options: ['A. Rational numbers', 'B. Irrational numbers', 'C. Integers', 'D. Complex numbers'],
-          answer: 'C. Integers',
-          diff: 'easy',
-        },
-        {
-          q: 'Who demonstrated the existence of irrational numbers in the 5th century BC?',
-          options: ['A. Pythagoras', 'B. Descartes', 'C. Hippasus of Metapontum', 'D. Euclid'],
-          answer: 'C. Hippasus of Metapontum',
-          diff: 'medium',
-        },
-        {
-          q: 'Pythagoras believed all physical quantities could be expressed as:',
-          options: ['A. Irrational numbers', 'B. Ratios of integers', 'C. Infinite decimals', 'D. Negative numbers'],
-          answer: 'B. Ratios of integers',
-          diff: 'medium',
-        },
-        {
-          q: 'Which number is proven irrational by a right triangle with base and height equal to 1?',
-          options: ['A. √3', 'B. π', 'C. √2', 'D. 1/3'],
-          answer: 'C. √2',
-          diff: 'easy',
-        },
-        {
-          q: 'A rational number in decimal form will always:',
-          options: ['A. Be a whole number', 'B. End or repeat in a pattern forever', 'C. Be an infinite non-repeating decimal', 'D. Be negative'],
-          answer: 'B. End or repeat in a pattern forever',
-          diff: 'medium',
-        },
-        {
-          q: 'Analytic geometry and the coordinate line were developed by:',
-          options: ['A. Pythagoras in ancient Greece', 'B. Hippasus in 5th century BC', 'C. Descartes in the 1600s', 'D. Newton in the 1700s'],
-          answer: 'C. Descartes in the 1600s',
-          diff: 'easy',
-        },
-        {
-          q: 'On a standard coordinate line, the positive direction is:',
-          options: ['A. Upward', 'B. Downward', 'C. To the left', 'D. To the right'],
-          answer: 'D. To the right',
-          diff: 'easy',
-        },
-        {
-          q: 'According to Order Properties, if b − a is positive, then:',
-          options: ['A. a > b', 'B. b > a', 'C. a = b', 'D. b < a'],
-          answer: 'B. b > a',
-          diff: 'medium',
-        },
-        {
-          q: 'The expression a < b < c means:',
-          options: ['A. a < b only', 'B. b < c only', 'C. a < b AND b < c', 'D. a < c only'],
-          answer: 'C. a < b AND b < c',
-          diff: 'easy',
-        },
-        {
-          q: 'When multiplying both sides of an inequality by a NEGATIVE number, the direction:',
-          options: ['A. Stays the same', 'B. Reverses', 'C. Both sides become equal', 'D. Becomes undefined'],
-          answer: 'B. Reverses',
-          diff: 'hard',
-        },
-        {
-          q: 'The closed interval [a, b] is defined as:',
-          options: ['A. {x : a < x < b}', 'B. {x : a ≤ x < b}', 'C. {x : a < x ≤ b}', 'D. {x : a ≤ x ≤ b}'],
-          answer: 'D. {x : a ≤ x ≤ b}',
-          diff: 'medium',
-        },
-        {
-          q: 'The open interval (a, b) is defined as:',
-          options: ['A. {x : a ≤ x ≤ b}', 'B. {x : a < x < b}', 'C. {x : a ≤ x < b}', 'D. {x : a < x ≤ b}'],
-          answer: 'B. {x : a < x < b}',
-          diff: 'easy',
-        },
-        {
-          q: 'The half-open interval [a, b) includes:',
-          options: ['A. Both endpoints', 'B. Neither endpoint', 'C. Only endpoint a (not b)', 'D. Only endpoint b (not a)'],
-          answer: 'C. Only endpoint a (not b)',
-          diff: 'medium',
-        },
-        {
-          q: 'The interval (−∞, b] is classified as:',
-          options: ['A. Finite and open', 'B. Infinite and open', 'C. Infinite and closed', 'D. Finite and closed'],
-          answer: 'C. Infinite and closed',
-          diff: 'hard',
-        },
-        {
-          q: 'What does A ∩ B represent in set notation?',
-          options: ['A. All elements in A or B', 'B. Elements in A but not B', 'C. Elements in both A and B', 'D. Elements in B but not A'],
-          answer: 'C. Elements in both A and B',
-          diff: 'medium',
-        },
-        {
-          q: 'When solving an inequality, multiplying both sides by zero is:',
-          options: ['A. Always allowed', 'B. Not allowed — it can change the solution set', 'C. Allowed for positive values only', 'D. Allowed only if x is unknown'],
-          answer: 'B. Not allowed — it can change the solution set',
-          diff: 'hard',
-        },
-        {
-          q: 'A nonnegative number is one that satisfies:',
-          options: ['A. a > 0', 'B. a < 0', 'C. a ≥ 0', 'D. a ≤ 0'],
-          answer: 'C. a ≥ 0',
-          diff: 'medium',
-        },
-        {
-          q: 'If a < b and c < d, by Theorem 1.1.1 property (d):',
-          options: ['A. a − c < b − d', 'B. a + c < b + d', 'C. ac < bd', 'D. a/c < b/d'],
-          answer: 'B. a + c < b + d',
-          diff: 'hard',
-        },
-      ],
-    },
+**Subset (Zeli Set):**
+A is a subset of B if every element of A is also in B. Written as A ⊆ B.
 
+**3. Intervals (Intervals):**
+Sets of real numbers between two endpoints.
 
-  // lecture 2
-  2: {
-    title: 'Absolute Values',
-    summary: `**Key Topics Covered:**
-- Definition of Absolute Value
-- Properties of Absolute Value
-- Relationship between Square Roots and Absolute Values
-- Geometric Interpretation of Absolute Value
-- Triangle Inequality
+**Closed Interval (Band Faasla):**
+[a,b] = {x : a ≤ x ≤ b} - includes endpoints.
 
-**Important Concepts:**
+**Open Interval (Khula Faasla):**
+(a,b) = {x : a < x < b} - excludes endpoints.
 
-**Absolute Value Definition:**
-The absolute value of a real number a, written as |a|, is:
-- |a| = a, if a ≥ 0 (non-negative)
-- |a| = −a, if a < 0 (negative)
-So |a| is ALWAYS non-negative for all values of a.
+**Half-open Interval (Aadha Khula Faasla):**
+(a,b] = {x : a < x ≤ b}, [a,b) = {x : a ≤ x < b}.
 
-**Key Note on +a and −a:**
-Do NOT assume +a is always positive and −a is always negative. If a itself is negative, then −a is positive and +a is negative. This is a common mistake students make.
+**Infinite Intervals (Laa-mutnahi Faaslay):**
+[a,∞), (a,∞), (-∞,b], (-∞,b), (-∞,∞).
 
-**Square Root and Absolute Value:**
-- √(a²) = |a| for ALL real numbers (NOT just a = a)
-- Writing √(a²) = a is a common ERROR when a is negative
-- Example: if a = −4, then √(a²) = √16 = 4 = |−4| ✅ (not −4)
+**4. Coordinate Line (Coordinate Line):**
+A line with a chosen origin, positive direction, and unit of measurement.
 
-**Properties of Absolute Value:**
-- |−a| = |a| (a number and its negative have the same absolute value)
-- |ab| = |a| × |b| (absolute value of product = product of absolute values)
-- |a/b| = |a|/|b| (absolute value of ratio = ratio of absolute values)
-- |aⁿ| = |a|ⁿ
+**5. Order Properties (Tarteeb ki Khasiyat):**
+For any two real numbers a and b, if b-a is positive, then b > a or a < b.
 
-**Distance Formula:**
-Distance d between points A(a) and B(b) on a coordinate line:
-d = |b − a|
-- |x − a| = distance between x and a
-- |x + a| = distance between x and −a
-- |x| = distance between x and origin
+**6. Inequalities (Inequalities):**
+Statements involving <, >, ≤, or ≥.
 
-**Solving Absolute Value Equations:**
-|x − 3| = 4 means: x − 3 = 4 OR x − 3 = −4 → x = 7 or x = −1
+**Theorem 1.1.1 Properties of Inequalities:**
+(a) If a<b and b<c, then a<c (Transitive property)
+(b) If a<b, then a+c < b+c (Addition property)
+(c) If a<b and c>0, then ac<bc; if c<0, then ac>bc (Multiplication property)
+(d) If a<b and c<d, then a+c < b+d (Addition of inequalities)
+(e) If a and b are both positive or both negative and a<b, then 1/a > 1/b (Reciprocal property)
 
-**Solving Absolute Value Inequalities:**
-- |x − a| < k → −k < x − a < k (between)
-- |x − a| ≥ k → x − a ≤ −k OR x − a ≥ k (outside)
+**7. Solving Inequalities (Inequalities ko Hal Karna):**
+The solution set of an inequality is the set of all values that satisfy it.
 
-**Triangle Inequality:**
-For any real numbers a and b: |a + b| ≤ |a| + |b|
-This is one of the most important inequalities in mathematics. It is related to the famous Heisenberg Uncertainty Principle in Quantum Physics.
+---
 
-**Key Facts to Remember:**
-- |a| ≥ 0 always — absolute value is NEVER negative
-- −|a| ≤ a ≤ |a| always holds
-- √(a²) = |a|, NOT a (common exam mistake)
-- Triangle inequality: |a + b| ≤ |a| + |b|
-- Distance between two points = |b − a|
-
-**Quick Revision Points:**
-- |a| = a if a ≥ 0, |a| = −a if a < 0
-- Zero is non-negative (neither positive nor negative)
-- |−a| = |a| always
-- |ab| = |a||b| always
-- √(a²) = |a| for all real a
-- |x − 3| = 4 → x = 7 or x = −1
-- |x − 3| < 4 → −1 < x < 7 → interval (−1, 7)
-- Triangle inequality: |a + b| ≤ |a| + |b|`,
+**Yaad Rakhne Wali Important Baatein:**
+- Real numbers = Rational + Irrational
+- Natural numbers ⊂ Integers ⊂ Rationals ⊂ Reals
+- Intervals: closed [a,b], open (a,b), half-open
+- Infinity is not a number; it represents unboundedness
+- When multiplying inequality by negative, reverse the sign
+`,
     questions: [
       {
-        q: 'The absolute value of a real number a is defined as:',
-        options: [
-          'A. Always equal to a',
-          'B. a if a ≥ 0, and −a if a < 0',
-          'C. Always positive',
-          'D. −a for all values of a',
-        ],
-        answer: 'B. a if a ≥ 0, and −a if a < 0',
-        diff: 'easy',
+        q: 'The set of all real numbers between 2 and 5 including both endpoints is written as:',
+        options: ['A. (2,5)', 'B. [2,5]', 'C. (2,5]', 'D. [2,5)'],
+        answer: 'B. [2,5]',
+        diff: 'easy'
       },
       {
-        q: 'The absolute value |a| is always:',
-        options: [
-          'A. Positive',
-          'B. Negative',
-          'C. Non-negative',
-          'D. Greater than 1',
-        ],
-        answer: 'C. Non-negative',
-        diff: 'easy',
+        q: 'Which of the following is an irrational number?',
+        options: ['A. 3/4', 'B. √2', 'C. -5', 'D. 0.333...'],
+        answer: 'B. √2',
+        diff: 'easy'
       },
       {
-        q: 'Zero is considered:',
-        options: [
-          'A. Positive',
-          'B. Negative',
-          'C. Both positive and negative',
-          'D. Non-negative (neither positive nor negative)',
-        ],
-        answer: 'D. Non-negative (neither positive nor negative)',
-        diff: 'easy',
+        q: 'If a < b and c < 0, then:',
+        options: ['A. ac < bc', 'B. ac > bc', 'C. ac = bc', 'D. Cannot be determined'],
+        answer: 'B. ac > bc',
+        diff: 'medium'
       },
       {
-        q: 'If a is a negative number, then −a is:',
-        options: [
-          'A. Negative',
-          'B. Positive',
-          'C. Zero',
-          'D. Cannot be determined',
-        ],
-        answer: 'B. Positive',
-        diff: 'medium',
+        q: 'The solution set of x + 3 > 7 is:',
+        options: ['A. x > 4', 'B. x < 4', 'C. x > 10', 'D. x < 10'],
+        answer: 'A. x > 4',
+        diff: 'easy'
       },
       {
-        q: 'Which of the following is a correct statement?',
-        options: [
-          'A. +a is always positive',
-          'B. −a is always negative',
-          'C. If a is negative, then −a is positive',
-          'D. |a| can be negative',
-        ],
-        answer: 'C. If a is negative, then −a is positive',
-        diff: 'medium',
+        q: 'The interval (-∞, 5) represents:',
+        options: ['A. All numbers less than 5', 'B. All numbers greater than 5', 'C. All numbers less than or equal to 5', 'D. All numbers between 0 and 5'],
+        answer: 'A. All numbers less than 5',
+        diff: 'easy'
       },
       {
-        q: 'What is |−4/7|?',
-        options: [
-          'A. −4/7',
-          'B. 4/7',
-          'C. 7/4',
-          'D. −7/4',
-        ],
-        answer: 'B. 4/7',
-        diff: 'easy',
+        q: 'The set of integers is a subset of:',
+        options: ['A. Natural numbers', 'B. Rational numbers', 'C. Irrational numbers', 'D. Only natural numbers'],
+        answer: 'B. Rational numbers',
+        diff: 'medium'
       },
       {
-        q: 'For any real number a, √(a²) equals:',
-        options: [
-          'A. a',
-          'B. −a',
-          'C. |a|',
-          'D. a²',
-        ],
-        answer: 'C. |a|',
-        diff: 'medium',
+        q: 'If a < b and b < c, then according to the transitive property:',
+        options: ['A. a > c', 'B. a < c', 'C. a = c', 'D. Cannot be determined'],
+        answer: 'B. a < c',
+        diff: 'easy'
       },
       {
-        q: 'If a = −4, what is √(a²)?',
-        options: [
-          'A. −4',
-          'B. 4',
-          'C. 16',
-          'D. −16',
-        ],
-        answer: 'B. 4',
-        diff: 'medium',
+        q: 'The symbol ∞ in interval notation represents:',
+        options: ['A. A very large number', 'B. Unboundedness (no limit)', 'C. The number 0', 'D. The number 1'],
+        answer: 'B. Unboundedness (no limit)',
+        diff: 'medium'
       },
       {
-        q: 'Which of the following is a COMMON ERROR in mathematics?',
-        options: [
-          'A. √(a²) = |a|',
-          'B. √(a²) = a (for all values of a)',
-          'C. |ab| = |a||b|',
-          'D. |−a| = |a|',
-        ],
-        answer: 'B. √(a²) = a (for all values of a)',
-        diff: 'medium',
+        q: 'The inequality 2x - 5 ≤ 3 has solution:',
+        options: ['A. x ≤ 4', 'B. x ≥ 4', 'C. x ≤ 1', 'D. x ≥ 1'],
+        answer: 'A. x ≤ 4',
+        diff: 'easy'
       },
       {
-        q: 'Which property states that |−a| = |a|?',
-        options: [
-          'A. A number and its negative have the same absolute value',
-          'B. Absolute value of a product',
-          'C. Triangle inequality',
-          'D. Distance formula',
-        ],
-        answer: 'A. A number and its negative have the same absolute value',
-        diff: 'easy',
-      },
-      {
-        q: '|ab| equals:',
-        options: [
-          'A. |a| + |b|',
-          'B. |a| − |b|',
-          'C. |a| × |b|',
-          'D. |a| / |b|',
-        ],
-        answer: 'C. |a| × |b|',
-        diff: 'easy',
-      },
-      {
-        q: '|(2)(−3)| equals:',
-        options: [
-          'A. −6',
-          'B. 6',
-          'C. 1',
-          'D. 5',
-        ],
-        answer: 'B. 6',
-        diff: 'easy',
-      },
-      {
-        q: 'The distance between points A(a) and B(b) on a coordinate line is:',
-        options: [
-          'A. a − b',
-          'B. b − a',
-          'C. |b − a|',
-          'D. |a + b|',
-        ],
-        answer: 'C. |b − a|',
-        diff: 'medium',
-      },
-      {
-        q: '|x − a| on a coordinate line represents:',
-        options: [
-          'A. The distance between x and origin',
-          'B. The distance between x and a',
-          'C. The distance between x and −a',
-          'D. The value of x',
-        ],
-        answer: 'B. The distance between x and a',
-        diff: 'medium',
-      },
-      {
-        q: '|x| on a coordinate line represents:',
-        options: [
-          'A. The distance between x and 1',
-          'B. The distance between x and −1',
-          'C. The distance between x and the origin',
-          'D. The value of −x',
-        ],
-        answer: 'C. The distance between x and the origin',
-        diff: 'easy',
-      },
-      {
-        q: 'Solve |x − 3| = 4. What are the values of x?',
-        options: [
-          'A. x = 7 only',
-          'B. x = −1 only',
-          'C. x = 7 or x = −1',
-          'D. x = 1 or x = −7',
-        ],
-        answer: 'C. x = 7 or x = −1',
-        diff: 'medium',
-      },
-      {
-        q: 'The inequality |x − 3| < 4 is equivalent to:',
-        options: [
-          'A. x − 3 < 4 only',
-          'B. −4 < x − 3 < 4',
-          'C. x − 3 > −4 only',
-          'D. x − 3 < −4 or x − 3 > 4',
-        ],
-        answer: 'B. −4 < x − 3 < 4',
-        diff: 'hard',
-      },
-      {
-        q: 'Solving |x − 3| < 4 gives the solution:',
-        options: [
-          'A. (−∞, −1) ∪ (7, +∞)',
-          'B. (−1, 7)',
-          'C. [−1, 7]',
-          'D. x > 7',
-        ],
-        answer: 'B. (−1, 7)',
-        diff: 'hard',
-      },
-      {
-        q: 'The Triangle Inequality states that for real numbers a and b:',
-        options: [
-          'A. |a + b| = |a| + |b|',
-          'B. |a + b| ≥ |a| + |b|',
-          'C. |a + b| ≤ |a| + |b|',
-          'D. |a + b| < |a| − |b|',
-        ],
-        answer: 'C. |a + b| ≤ |a| + |b|',
-        diff: 'medium',
-      },
-      {
-        q: 'The Triangle Inequality is related to which famous principle in physics?',
-        options: [
-          'A. Newton\'s Law of Motion',
-          'B. Heisenberg Uncertainty Principle in Quantum Physics',
-          'C. Einstein\'s Theory of Relativity',
-          'D. Archimedes\' Principle',
-        ],
-        answer: 'B. Heisenberg Uncertainty Principle in Quantum Physics',
-        diff: 'hard',
-      },
-      {
-        q: 'For any real number a, which inequality always holds?',
-        options: [
-          'A. a ≤ |a|',
-          'B. −|a| ≤ a ≤ |a|',
-          'C. a ≥ |a|',
-          'D. −a ≤ |a|',
-        ],
-        answer: 'B. −|a| ≤ a ≤ |a|',
-        diff: 'hard',
-      },
-      {
-        q: '|5/4| equals:',
-        options: [
-          'A. −5/4',
-          'B. 4/5',
-          'C. 5/4',
-          'D. −4/5',
-        ],
-        answer: 'C. 5/4',
-        diff: 'easy',
-      },
-      {
-        q: 'If |aⁿ| = |a|ⁿ, then |2³| equals:',
-        options: [
-          'A. 6',
-          'B. 9',
-          'C. 8',
-          'D. −8',
-        ],
-        answer: 'C. 8',
-        diff: 'medium',
-      },
-    ],
+        q: 'A set is a collection of:',
+        options: ['A. Only numbers', 'B. Well-defined objects', 'C. Random items', 'D. Only integers'],
+        answer: 'B. Well-defined objects',
+        diff: 'easy'
+      }
+    ]
   },
 
+  // ============================================================
+  // LECTURE 2 - Absolute Value
+  // ============================================================
+  2: {
+    title: 'Absolute Value',
+    summary: `
+**Lecture 2 - Absolute Value (Mutliq Qadr)**
 
-  // lecture 3
+**Roman Urdu Detailed Summary:**
+
+**1. Definition of Absolute Value (Mutliq Qadr ki Tareef):**
+
+|a| = a if a ≥ 0, and |a| = -a if a < 0.
+
+The absolute value of a number is its distance from zero on the number line.
+
+**Examples:**
+|5| = 5, |-4/7| = 4/7, |0| = 0
+
+**2. Properties of Absolute Value (Mutliq Qadr ki Khasiyat):**
+
+(a) |-a| = |a| (a number and its negative have same absolute value)
+(b) |ab| = |a|·|b| (absolute value of product = product of absolute values)
+(c) |a/b| = |a|/|b| (absolute value of quotient = quotient of absolute values)
+(d) |a^n| = |a|^n
+
+**3. Square Root and Absolute Value (Square Root aur Mutliq Qadr):**
+
+√(a²) = |a| (not a)
+
+**Example:** √((-4)²) = √16 = 4 ≠ -4
+
+**4. Geometric Interpretation (Hendasi Tashreeh):**
+
+|x - a| = distance between x and a on the number line.
+|x + a| = distance between x and -a.
+|x| = distance between x and origin.
+
+**5. Triangle Inequality (Triangle Inequality):**
+
+|a + b| ≤ |a| + |b|
+
+**6. Solving Equations with Absolute Value:**
+
+|x - 3| = 4 → x - 3 = 4 or x - 3 = -4 → x = 7 or x = -1
+
+**7. Solving Inequalities with Absolute Value:**
+
+|x - 3| < 4 → -4 < x - 3 < 4 → -1 < x < 7
+
+|x + 4| ≥ 2 → x + 4 ≤ -2 or x + 4 ≥ 2 → x ≤ -6 or x ≥ -2
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- |a| is always non-negative
+- √(a²) = |a|
+- |ab| = |a||b|
+- Triangle inequality: |a+b| ≤ |a|+|b|
+- |x-a| = distance between x and a
+- |x| = distance from origin
+- For |x-a| < k: a-k < x < a+k
+- For |x-a| > k: x < a-k or x > a+k
+`,
+    questions: [
+      {
+        q: 'The value of |-7| is:',
+        options: ['A. -7', 'B. 7', 'C. 0', 'D. 1/7'],
+        answer: 'B. 7',
+        diff: 'easy'
+      },
+      {
+        q: '√(x²) is equal to:',
+        options: ['A. x', 'B. |x|', 'C. -x', 'D. x²'],
+        answer: 'B. |x|',
+        diff: 'easy'
+      },
+      {
+        q: 'If |x| = 5, then x can be:',
+        options: ['A. Only 5', 'B. Only -5', 'C. Both 5 and -5', 'D. 0'],
+        answer: 'C. Both 5 and -5',
+        diff: 'easy'
+      },
+      {
+        q: 'The triangle inequality states that:',
+        options: ['A. |a+b| ≥ |a| + |b|', 'B. |a+b| ≤ |a| + |b|', 'C. |a+b| = |a| + |b|', 'D. |a-b| = |a| - |b|'],
+        answer: 'B. |a+b| ≤ |a| + |b|',
+        diff: 'medium'
+      },
+      {
+        q: '|x - 3| represents the distance between x and:',
+        options: ['A. 0', 'B. 3', 'C. -3', 'D. 1'],
+        answer: 'B. 3',
+        diff: 'easy'
+      },
+      {
+        q: 'The solution of |x - 2| = 3 is:',
+        options: ['A. x = 5 only', 'B. x = -1 only', 'C. x = 5 and x = -1', 'D. x = 2 and x = -2'],
+        answer: 'C. x = 5 and x = -1',
+        diff: 'medium'
+      },
+      {
+        q: 'The solution of |x| < 3 is:',
+        options: ['A. -3 < x < 3', 'B. x < -3 or x > 3', 'C. x < 3', 'D. x > -3'],
+        answer: 'A. -3 < x < 3',
+        diff: 'medium'
+      },
+      {
+        q: '|ab| is equal to:',
+        options: ['A. |a||b|', 'B. |a+b|', 'C. a|b|', 'D. |a|b'],
+        answer: 'A. |a||b|',
+        diff: 'easy'
+      },
+      {
+        q: 'The solution of |2x - 1| = 5 is:',
+        options: ['A. x = 3 only', 'B. x = -2 only', 'C. x = 3 and x = -2', 'D. x = 2 and x = -3'],
+        answer: 'C. x = 3 and x = -2',
+        diff: 'medium'
+      },
+      {
+        q: 'The solution of |x + 1| > 2 is:',
+        options: ['A. -3 < x < 1', 'B. x < -3 or x > 1', 'C. x < -1 or x > 1', 'D. -1 < x < 3'],
+        answer: 'B. x < -3 or x > 1',
+        diff: 'hard'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 3 - Coordinate Planes and Graphs
+  // ============================================================
   3: {
     title: 'Coordinate Planes and Graphs',
-    summary: `**Key Topics Covered:**
-- Coordinate plane (Cartesian plane)
-- Ordered pairs (x, y)
-- Plotting points
-- Quadrants
-- Graph of equations
-- Intercepts (x-intercept, y-intercept)
-- Symmetry (x-axis, y-axis, origin)
+    summary: `
+**Lecture 3 - Coordinate Planes and Graphs (Coordinate Planes aur Graphs)**
 
-**Important Concepts:**
+**Roman Urdu Detailed Summary:**
 
-**Coordinate Plane:**
-A coordinate plane is formed by two perpendicular lines (x-axis and y-axis) intersecting at 90°. It is also called the rectangular coordinate system.
+**1. Coordinate Plane (Coordinate Plane):**
 
-**Ordered Pair:**
-A point in the plane is represented as (x, y):
-- x = horizontal position
-- y = vertical position
+The coordinate plane is formed by two perpendicular number lines (axes):
+- x-axis (horizontal)
+- y-axis (vertical)
 
-Example: (4, 3)
+The intersection is called the origin (0,0).
 
-**Quadrants:**
-The plane is divided into 4 quadrants:
-- Quadrant I: (+, +)
-- Quadrant II: (−, +)
-- Quadrant III: (−, −)
-- Quadrant IV: (+, −)
+**2. Ordered Pairs (Tarteebi Joray):**
 
-**Graph of Equation:**
-Graph = set of all points that satisfy the equation.
-Example: y = x² gives a curve (parabola).
+Every point in the plane is represented by an ordered pair (x, y):
+- x-coordinate (abscissa) - horizontal position
+- y-coordinate (ordinate) - vertical position
 
-**Intercepts:**
-- x-intercept → where graph cuts x-axis → (a, 0)
-- y-intercept → where graph cuts y-axis → (0, b)
+**3. Quadrants (Ruba):**
 
-**Symmetry:**
-- About x-axis → (x, y) ↔ (x, −y)
-- About y-axis → (x, y) ↔ (−x, y)
-- About origin → (x, y) ↔ (−x, −y)
+The axes divide the plane into four quadrants:
+- Quadrant I: x > 0, y > 0
+- Quadrant II: x < 0, y > 0
+- Quadrant III: x < 0, y < 0
+- Quadrant IV: x > 0, y < 0
 
-**Key Facts to Remember:**
-- Plane = two perpendicular number lines
-- Graph = all solutions of equation
-- Intercepts help in sketching graph
-- Symmetry reduces calculation work
+**4. Graph of an Equation (Equation ka Graph):**
 
-**Quick Revision Points:**
-- (x, y) → location of point
-- x-axis horizontal, y-axis vertical
-- Quadrants numbered anti-clockwise
-- x-intercept → y = 0
-- y-intercept → x = 0
-- Symmetry helps draw graph faster`,
+The graph of an equation in x and y is the set of all points whose coordinates satisfy the equation.
 
-    questions: [
-      {
-        q: 'A coordinate plane is formed by:',
-        options: [
-          'A. Two parallel lines',
-          'B. Two perpendicular lines',
-          'C. Three axes',
-          'D. One number line',
-        ],
-        answer: 'B. Two perpendicular lines',
-        diff: 'easy',
-      },
-      {
-        q: 'An ordered pair (x, y) represents:',
-        options: [
-          'A. A line',
-          'B. A point in plane',
-          'C. A graph',
-          'D. A function',
-        ],
-        answer: 'B. A point in plane',
-        diff: 'easy',
-      },
-      {
-        q: 'In the pair (4, 3), the value 4 represents:',
-        options: [
-          'A. y-coordinate',
-          'B. x-coordinate',
-          'C. Origin',
-          'D. Axis',
-        ],
-        answer: 'B. x-coordinate',
-        diff: 'easy',
-      },
-      {
-        q: 'Which quadrant contains the point (−3, 5)?',
-        options: [
-          'A. Quadrant I',
-          'B. Quadrant II',
-          'C. Quadrant III',
-          'D. Quadrant IV',
-        ],
-        answer: 'B. Quadrant II',
-        diff: 'medium',
-      },
-      {
-        q: 'Quadrants are numbered:',
-        options: [
-          'A. Clockwise',
-          'B. Anti-clockwise',
-          'C. Randomly',
-          'D. Left to right',
-        ],
-        answer: 'B. Anti-clockwise',
-        diff: 'easy',
-      },
-      {
-        q: 'Graph of an equation represents:',
-        options: [
-          'A. Random points',
-          'B. All solutions of equation',
-          'C. Only one point',
-          'D. Only x values',
-        ],
-        answer: 'B. All solutions of equation',
-        diff: 'easy',
-      },
-      {
-        q: 'The x-intercept occurs when:',
-        options: [
-          'A. x = 0',
-          'B. y = 0',
-          'C. x = y',
-          'D. x = 1',
-        ],
-        answer: 'B. y = 0',
-        diff: 'medium',
-      },
-      {
-        q: 'The y-intercept occurs when:',
-        options: [
-          'A. y = 0',
-          'B. x = 0',
-          'C. x = y',
-          'D. y = 1',
-        ],
-        answer: 'B. x = 0',
-        diff: 'medium',
-      },
-      {
-        q: 'Point symmetric to (x, y) about x-axis is:',
-        options: [
-          'A. (−x, y)',
-          'B. (x, −y)',
-          'C. (−x, −y)',
-          'D. (y, x)',
-        ],
-        answer: 'B. (x, −y)',
-        diff: 'medium',
-      },
-      {
-        q: 'Point symmetric to (x, y) about y-axis is:',
-        options: [
-          'A. (−x, y)',
-          'B. (x, −y)',
-          'C. (−x, −y)',
-          'D. (y, x)',
-        ],
-        answer: 'A. (−x, y)',
-        diff: 'medium',
-      },
-      {
-        q: 'Point symmetric to (x, y) about origin is:',
-        options: [
-          'A. (x, y)',
-          'B. (−x, y)',
-          'C. (x, −y)',
-          'D. (−x, −y)',
-        ],
-        answer: 'D. (−x, −y)',
-        diff: 'medium',
-      },
-      {
-        q: 'Which of the following lies in Quadrant III?',
-        options: [
-          'A. (2, 3)',
-          'B. (−2, 3)',
-          'C. (−2, −3)',
-          'D. (2, −3)',
-        ],
-        answer: 'C. (−2, −3)',
-        diff: 'easy',
-      },
-      {
-        q: 'The origin is:',
-        options: [
-          'A. (1,1)',
-          'B. (0,1)',
-          'C. (1,0)',
-          'D. (0,0)',
-        ],
-        answer: 'D. (0,0)',
-        diff: 'easy',
-      },
-      {
-        q: 'The graph of y = x² is:',
-        options: [
-          'A. Straight line',
-          'B. Circle',
-          'C. Parabola',
-          'D. Triangle',
-        ],
-        answer: 'C. Parabola',
-        diff: 'medium',
-      },
-      {
-        q: 'Which axis is horizontal?',
-        options: [
-          'A. y-axis',
-          'B. z-axis',
-          'C. x-axis',
-          'D. none',
-        ],
-        answer: 'C. x-axis',
-        diff: 'easy',
-      },
-      {
-        q: 'Which axis is vertical?',
-        options: [
-          'A. x-axis',
-          'B. y-axis',
-          'C. z-axis',
-          'D. none',
-        ],
-        answer: 'B. y-axis',
-        diff: 'easy',
-      },
-      {
-        q: 'Symmetry helps in graphing because:',
-        options: [
-          'A. It increases calculation',
-          'B. It reduces work',
-          'C. It removes points',
-          'D. It changes graph',
-        ],
-        answer: 'B. It reduces work',
-        diff: 'medium',
-      },
-      {
-        q: 'If a graph is symmetric about y-axis, we only need:',
-        options: [
-          'A. Negative x values',
-          'B. Positive x values',
-          'C. Only y values',
-          'D. No values',
-        ],
-        answer: 'B. Positive x values',
-        diff: 'hard',
-      },
-      {
-        q: 'If (3,2) satisfies an equation, it means:',
-        options: [
-          'A. Equation is false',
-          'B. It is a solution',
-          'C. It is random',
-          'D. It is invalid',
-        ],
-        answer: 'B. It is a solution',
-        diff: 'easy',
-      },
-    ],
-  },
+**5. Intercepts (Intercepts):**
 
+- x-intercept: point where graph crosses x-axis (y=0)
+- y-intercept: point where graph crosses y-axis (x=0)
 
-  // lecture 4
-  4: {
-    title: 'Lines and Definition of Slope',
-    summary: `**Key Topics Covered:**
-- Definition of slope (rise/run)
-- Types of slope (positive, negative, zero, undefined)
-- Angle of inclination
-- Parallel and perpendicular lines
-- Equation of lines (point-slope, slope-intercept)
-- General form of line
+**6. Symmetry (Symmetry):**
 
-**Important Concepts:**
+- About x-axis: (x, -y) is on graph if (x, y) is
+- About y-axis: (-x, y) is on graph if (x, y) is
+- About origin: (-x, -y) is on graph if (x, y) is
 
-**Slope (m):**
-Slope measures steepness of a line:
-m = (y₂ − y₁) / (x₂ − x₁)
+**7. Using Symmetry for Graphing:**
 
-- Rise = change in y
-- Run = change in x
-
-**Types of Slope:**
-- Positive → line goes upward (↗)
-- Negative → line goes downward (↘)
-- Zero → horizontal line
-- Undefined → vertical line
-
-**Angle of Inclination:**
-m = tan(θ)
-
-- θ is angle with positive x-axis
-- 0 ≤ θ ≤ π
-
-**Parallel Lines:**
-m₁ = m₂
-
-**Perpendicular Lines:**
-m₁ × m₂ = −1  
-(slopes are negative reciprocals)
-
-**Equations of Lines:**
-
-1. Point-Slope Form:
-y − y₁ = m(x − x₁)
-
-2. Slope-Intercept Form:
-y = mx + b  
-(b = y-intercept)
-
-3. General Form:
-Ax + By + C = 0
-
-**Special Lines:**
-- Vertical line → x = a
-- Horizontal line → y = b
-
-**Key Facts to Remember:**
-- Vertical line slope = undefined
-- Horizontal line slope = 0
-- Parallel → same slope
-- Perpendicular → negative reciprocal
-- Straight line = first degree equation
-
-**Quick Revision Points:**
-- m = rise/run
-- y = mx + b most important form
-- x = a → vertical line
-- y = b → horizontal line
-- m₁m₂ = -1 → perpendicular lines`,
-
-    questions: [
-      {
-        q: 'Slope of a line is defined as:',
-        options: [
-          'A. run/rise',
-          'B. rise/run',
-          'C. x/y',
-          'D. y/x',
-        ],
-        answer: 'B. rise/run',
-        diff: 'easy',
-      },
-      {
-        q: 'Formula for slope between two points is:',
-        options: [
-          'A. (x₂ − x₁)/(y₂ − y₁)',
-          'B. (y₂ − y₁)/(x₂ − x₁)',
-          'C. x₁ + y₁',
-          'D. x₂ + y₂',
-        ],
-        answer: 'B. (y₂ − y₁)/(x₂ − x₁)',
-        diff: 'easy',
-      },
-      {
-        q: 'Slope of a vertical line is:',
-        options: [
-          'A. 0',
-          'B. 1',
-          'C. Undefined',
-          'D. Infinite',
-        ],
-        answer: 'C. Undefined',
-        diff: 'easy',
-      },
-      {
-        q: 'Slope of a horizontal line is:',
-        options: [
-          'A. 0',
-          'B. 1',
-          'C. Undefined',
-          'D. Infinite',
-        ],
-        answer: 'A. 0',
-        diff: 'easy',
-      },
-      {
-        q: 'A positive slope means:',
-        options: [
-          'A. Line goes down',
-          'B. Line goes up',
-          'C. Line is vertical',
-          'D. Line is flat',
-        ],
-        answer: 'B. Line goes up',
-        diff: 'easy',
-      },
-      {
-        q: 'Parallel lines have:',
-        options: [
-          'A. Same slope',
-          'B. Opposite slope',
-          'C. Zero slope',
-          'D. Undefined slope',
-        ],
-        answer: 'A. Same slope',
-        diff: 'medium',
-      },
-      {
-        q: 'Perpendicular lines satisfy:',
-        options: [
-          'A. m₁ = m₂',
-          'B. m₁ + m₂ = 0',
-          'C. m₁ × m₂ = −1',
-          'D. m₁/m₂ = 1',
-        ],
-        answer: 'C. m₁ × m₂ = −1',
-        diff: 'medium',
-      },
-      {
-        q: 'Negative reciprocal of 2 is:',
-        options: [
-          'A. 1/2',
-          'B. -1/2',
-          'C. -2',
-          'D. 2',
-        ],
-        answer: 'B. -1/2',
-        diff: 'medium',
-      },
-      {
-        q: 'Slope-intercept form of line is:',
-        options: [
-          'A. Ax + By + C = 0',
-          'B. y = mx + b',
-          'C. x = a',
-          'D. y = a',
-        ],
-        answer: 'B. y = mx + b',
-        diff: 'easy',
-      },
-      {
-        q: 'In y = mx + b, b represents:',
-        options: [
-          'A. slope',
-          'B. x-intercept',
-          'C. y-intercept',
-          'D. origin',
-        ],
-        answer: 'C. y-intercept',
-        diff: 'easy',
-      },
-      {
-        q: 'Equation of vertical line is:',
-        options: [
-          'A. y = b',
-          'B. x = a',
-          'C. y = mx + b',
-          'D. Ax + By = 0',
-        ],
-        answer: 'B. x = a',
-        diff: 'easy',
-      },
-      {
-        q: 'Equation of horizontal line is:',
-        options: [
-          'A. x = a',
-          'B. y = b',
-          'C. y = mx + b',
-          'D. Ax + By = 0',
-        ],
-        answer: 'B. y = b',
-        diff: 'easy',
-      },
-      {
-        q: 'Point-slope form is:',
-        options: [
-          'A. y = mx + b',
-          'B. Ax + By + C = 0',
-          'C. y − y₁ = m(x − x₁)',
-          'D. x = a',
-        ],
-        answer: 'C. y − y₁ = m(x − x₁)',
-        diff: 'medium',
-      },
-      {
-        q: 'General form of line is:',
-        options: [
-          'A. y = mx + b',
-          'B. x = a',
-          'C. Ax + By + C = 0',
-          'D. y = a',
-        ],
-        answer: 'C. Ax + By + C = 0',
-        diff: 'medium',
-      },
-      {
-        q: 'If slope m = 1, angle of inclination is:',
-        options: [
-          'A. π/2',
-          'B. π/4',
-          'C. π',
-          'D. 0',
-        ],
-        answer: 'B. π/4',
-        diff: 'hard',
-      },
-      {
-        q: 'If slope m = -1, angle of inclination is:',
-        options: [
-          'A. π/4',
-          'B. π/2',
-          'C. 3π/4',
-          'D. π',
-        ],
-        answer: 'C. 3π/4',
-        diff: 'hard',
-      },
-      {
-        q: 'Slope represents:',
-        options: [
-          'A. Area',
-          'B. Rate of change',
-          'C. Distance',
-          'D. Volume',
-        ],
-        answer: 'B. Rate of change',
-        diff: 'medium',
-      },
-      {
-        q: 'If two lines are perpendicular, their slopes are:',
-        options: [
-          'A. Equal',
-          'B. Opposite',
-          'C. Negative reciprocals',
-          'D. Zero',
-        ],
-        answer: 'C. Negative reciprocals',
-        diff: 'easy',
-      },
-      {
-        q: 'Line passing through (2,3) with slope m is given by:',
-        options: [
-          'A. y = mx + b',
-          'B. y − 3 = m(x − 2)',
-          'C. x = 2',
-          'D. y = 3',
-        ],
-        answer: 'B. y − 3 = m(x − 2)',
-        diff: 'medium',
-      },
-    ],
-  },
-
-
-  // lecture 5
-  5: {
-    title: 'Distance, Circles, and Quadratic Equations',
-    summary: `**Key Topics Covered:**
-- Distance between two points
-- Midpoint formula
-- Equation of circle (standard + general form)
-- Finding center and radius
-- Degenerate cases of circle
-- Quadratic equations and parabolas
-- Vertex and intercepts
-
-**Important Concepts:**
-
-**Distance Formula:**
-Distance between two points:
-d = √[(x₂ − x₁)² + (y₂ − y₁)²]
-
-- Based on Pythagoras theorem
-- Works for any two points in plane
-
-**Midpoint Formula:**
-Midpoint of two points:
-M = ((x₁ + x₂)/2 , (y₁ + y₂)/2)
-
-- Simply average of coordinates
-
-**Circle (Standard Form):**
-(x − x₀)² + (y − y₀)² = r²
-
-- (x₀, y₀) = center
-- r = radius
-
-**General Form of Circle:**
-x² + y² + Dx + Ey + F = 0
-
-- Convert to standard form using completing square
-
-**Degenerate Cases:**
-- r² > 0 → Circle
-- r² = 0 → Point
-- r² < 0 → No graph
-
-**Parabola (Quadratic Equation):**
-y = ax² + bx + c
-
-- Graph is a parabola
-
-**Shape of Parabola:**
-- a > 0 → opens upward
-- a < 0 → opens downward
-
-**Vertex Formula:**
-x = -b / 2a
-
-- Gives turning point of parabola
-
-**Intercepts:**
-- y-intercept → x = 0
-- x-intercept → y = 0
-
-**Key Facts to Remember:**
-- Distance uses square root formula
-- Midpoint = average
-- Circle needs center + radius
-- Quadratic → parabola
-- Vertex = max/min point
-
-**Quick Revision Points:**
-- d = distance formula
-- midpoint = average
-- (x-h)² + (y-k)² = r²
-- y = ax² + bx + c
-- vertex = -b/2a
-`,
-
-    questions: [
-      {
-        q: 'Distance between two points is based on:',
-        options: [
-          'A. Algebra',
-          'B. Pythagoras theorem',
-          'C. Geometry only',
-          'D. Trigonometry',
-        ],
-        answer: 'B. Pythagoras theorem',
-        diff: 'easy',
-      },
-      {
-        q: 'Distance formula is:',
-        options: [
-          'A. (x₂ + x₁)',
-          'B. √[(x₂ − x₁)² + (y₂ − y₁)²]',
-          'C. (y₂ − y₁)',
-          'D. x² + y²',
-        ],
-        answer: 'B. √[(x₂ − x₁)² + (y₂ − y₁)²]',
-        diff: 'easy',
-      },
-      {
-        q: 'Midpoint of two points is:',
-        options: [
-          'A. Difference',
-          'B. Product',
-          'C. Average',
-          'D. Square',
-        ],
-        answer: 'C. Average',
-        diff: 'easy',
-      },
-      {
-        q: 'Standard form of circle is:',
-        options: [
-          'A. y = mx + b',
-          'B. (x − h)² + (y − k)² = r²',
-          'C. x² + y²',
-          'D. ax² + bx + c',
-        ],
-        answer: 'B. (x − h)² + (y − k)² = r²',
-        diff: 'easy',
-      },
-      {
-        q: 'Center of circle is represented by:',
-        options: [
-          'A. (r, r)',
-          'B. (x, y)',
-          'C. (h, k)',
-          'D. (0,0)',
-        ],
-        answer: 'C. (h, k)',
-        diff: 'easy',
-      },
-      {
-        q: 'If r² = 0, graph is:',
-        options: [
-          'A. Circle',
-          'B. Line',
-          'C. Point',
-          'D. No graph',
-        ],
-        answer: 'C. Point',
-        diff: 'medium',
-      },
-      {
-        q: 'If r² < 0, graph is:',
-        options: [
-          'A. Circle',
-          'B. Point',
-          'C. No graph',
-          'D. Line',
-        ],
-        answer: 'C. No graph',
-        diff: 'medium',
-      },
-      {
-        q: 'General equation of circle is:',
-        options: [
-          'A. y = mx + b',
-          'B. ax² + bx + c',
-          'C. x² + y² + Dx + Ey + F = 0',
-          'D. x = a',
-        ],
-        answer: 'C. x² + y² + Dx + Ey + F = 0',
-        diff: 'medium',
-      },
-      {
-        q: 'Graph of quadratic equation is:',
-        options: [
-          'A. Line',
-          'B. Circle',
-          'C. Parabola',
-          'D. Triangle',
-        ],
-        answer: 'C. Parabola',
-        diff: 'easy',
-      },
-      {
-        q: 'If a > 0, parabola opens:',
-        options: [
-          'A. Downward',
-          'B. Upward',
-          'C. Left',
-          'D. Right',
-        ],
-        answer: 'B. Upward',
-        diff: 'easy',
-      },
-      {
-        q: 'Vertex formula is:',
-        options: [
-          'A. x = b/2a',
-          'B. x = -b/2a',
-          'C. x = a/b',
-          'D. x = b/a',
-        ],
-        answer: 'B. x = -b/2a',
-        diff: 'medium',
-      },
-      {
-        q: 'y-intercept is found by:',
-        options: [
-          'A. y = 0',
-          'B. x = 1',
-          'C. x = 0',
-          'D. y = 1',
-        ],
-        answer: 'C. x = 0',
-        diff: 'easy',
-      },
-      {
-        q: 'x-intercept is found by:',
-        options: [
-          'A. x = 0',
-          'B. y = 0',
-          'C. x = 1',
-          'D. y = 1',
-        ],
-        answer: 'B. y = 0',
-        diff: 'easy',
-      },
-      {
-        q: 'Unit circle equation is:',
-        options: [
-          'A. x² + y² = 1',
-          'B. x + y = 1',
-          'C. x² − y² = 1',
-          'D. y = x²',
-        ],
-        answer: 'A. x² + y² = 1',
-        diff: 'easy',
-      },
-      {
-        q: 'Vertex represents:',
-        options: [
-          'A. Starting point',
-          'B. Highest/lowest point',
-          'C. End point',
-          'D. Midpoint',
-        ],
-        answer: 'B. Highest/lowest point',
-        diff: 'medium',
-      },
-    ],
-  },
-
-
-  // lecture 6
-  6: {
-    title: 'Functions',
-    summary: `**Key Topics Covered:**
-- Definition of function
-- Function notation (f(x))
-- Domain of a function
-- Range of a function
-- Natural and Restricted domains
-- Piecewise functions
-- Reversing variables
-
-**Important Concepts:**
-
-**Function:**
-A function is a relation where each value of x gives exactly ONE value of y.
-
-y = f(x)
-
-Example:
-f(x) = x²
-
-- f(2) = 4
-- f(-2) = 4
-
-**Not a Function:**
-y = ±x  
-Because one x gives two y values.
-
----
-
-**Function Notation:**
-y = f(x)
-
-- x → Independent variable
-- y → Dependent variable
-- f(x) means "function of x"
-
-Example:
-f(x) = 2x² - 1  
-f(3) = 17
-
----
-
-**Domain:**
-Set of all allowed values of x
-
-Types:
-1. Natural Domain → from formula
-2. Restricted Domain → from real-life conditions
-
-Example:
-1 / (x - 1) → x ≠ 1
-
----
-
-**Range:**
-Set of all possible values of y
-
-Example:
-f(x) = x²  
-Range = y ≥ 0
-
----
-
-**Natural Domain:**
-All values where function is defined
-
-Example:
-1 / (x-1)(x-3)  
-x ≠ 1, 3
-
----
-
-**Restricted Domain:**
-Domain limited by conditions
-
-Example:
-Length → cannot be negative
-
----
-
-**Piecewise Function:**
-Different formula for different x values
-
-Example:
-f(x) = {
-  1.75         if 0 < x ≤ 1
-  1.75 + 0.5(x-1)  if x > 1
-}
-
----
-
-**Same Functions:**
-g(x) = x² and g(c) = c² → SAME
-
----
-
-**Reversing Variables:**
-Sometimes:
-x = f(y)
-
-Example:
-3x + 2y = 6  
-y = -3/2 x + 3  
-or  
-x = -2/3 y + 2
-
----
-
-**Key Facts to Remember:**
-- Function → one input, one output
-- Domain → allowed x values
-- Range → possible y values
-- Division by zero NOT allowed
-- Square root of negative NOT allowed (in real numbers)
-- f(x) is NOT multiplication
-
----
-
-**Quick Revision Points:**
-- y = f(x)
-- Domain → x values
-- Range → y values
-- Not function → multiple outputs
-- Check denominator ≠ 0
-- Piecewise → multiple rules`,
-
-    questions: [
-      {
-        q: 'A function is defined as:',
-        options: [
-          'A. One input gives many outputs',
-          'B. One input gives exactly one output',
-          'C. Many inputs give one output',
-          'D. No relation',
-        ],
-        answer: 'B. One input gives exactly one output',
-        diff: 'easy',
-      },
-      {
-        q: 'In f(x), x is:',
-        options: [
-          'A. Dependent variable',
-          'B. Constant',
-          'C. Independent variable',
-          'D. Output',
-        ],
-        answer: 'C. Independent variable',
-        diff: 'easy',
-      },
-      {
-        q: 'In f(x), f(x) represents:',
-        options: [
-          'A. Multiplication',
-          'B. Output value',
-          'C. Constant',
-          'D. Equation',
-        ],
-        answer: 'B. Output value',
-        diff: 'easy',
-      },
-      {
-        q: 'Which is a function?',
-        options: [
-          'A. y = ±x',
-          'B. y² = x',
-          'C. y = 2x + 1',
-          'D. x = y²',
-        ],
-        answer: 'C. y = 2x + 1',
-        diff: 'medium',
-      },
-      {
-        q: 'Domain of function is:',
-        options: [
-          'A. All y values',
-          'B. All x values',
-          'C. All constants',
-          'D. All equations',
-        ],
-        answer: 'B. All x values',
-        diff: 'easy',
-      },
-      {
-        q: 'Range of function is:',
-        options: [
-          'A. All x values',
-          'B. All y values',
-          'C. All constants',
-          'D. All domains',
-        ],
-        answer: 'B. All y values',
-        diff: 'easy',
-      },
-      {
-        q: 'Natural domain is:',
-        options: [
-          'A. Given by teacher',
-          'B. From formula itself',
-          'C. Always positive',
-          'D. Always integers',
-        ],
-        answer: 'B. From formula itself',
-        diff: 'medium',
-      },
-      {
-        q: 'Which value is NOT allowed in 1/(x-2)?',
-        options: [
-          'A. 0',
-          'B. 1',
-          'C. 2',
-          'D. 3',
-        ],
-        answer: 'C. 2',
-        diff: 'easy',
-      },
-      {
-        q: 'Range of f(x) = x² is:',
-        options: [
-          'A. All real numbers',
-          'B. y ≥ 0',
-          'C. y ≤ 0',
-          'D. y ≠ 0',
-        ],
-        answer: 'B. y ≥ 0',
-        diff: 'medium',
-      },
-      {
-        q: 'Piecewise function means:',
-        options: [
-          'A. One formula',
-          'B. Multiple formulas',
-          'C. No formula',
-          'D. Only graph',
-        ],
-        answer: 'B. Multiple formulas',
-        diff: 'easy',
-      },
-      {
-        q: 'Function f(x) = x² and g(c) = c² are:',
-        options: [
-          'A. Different',
-          'B. Same',
-          'C. Opposite',
-          'D. Undefined',
-        ],
-        answer: 'B. Same',
-        diff: 'medium',
-      },
-      {
-        q: 'Which is NOT a function?',
-        options: [
-          'A. y = x²',
-          'B. y = 2x + 1',
-          'C. y = ±√x',
-          'D. y = x³',
-        ],
-        answer: 'C. y = ±√x',
-        diff: 'medium',
-      },
-      {
-        q: 'Restricted domain comes from:',
-        options: [
-          'A. Formula only',
-          'B. Real-life conditions',
-          'C. Graph only',
-          'D. Numbers only',
-        ],
-        answer: 'B. Real-life conditions',
-        diff: 'medium',
-      },
-      {
-        q: 'If denominator becomes zero, function is:',
-        options: [
-          'A. Valid',
-          'B. Undefined',
-          'C. Infinite',
-          'D. Linear',
-        ],
-        answer: 'B. Undefined',
-        diff: 'easy',
-      },
-      {
-        q: 'f(3) for f(x)=x² is:',
-        options: [
-          'A. 6',
-          'B. 9',
-          'C. 3',
-          'D. 1',
-        ],
-        answer: 'B. 9',
-        diff: 'easy',
-      },
-      {
-        q: 'Square root of negative number gives:',
-        options: [
-          'A. Real number',
-          'B. Undefined (in real)',
-          'C. Integer',
-          'D. Zero',
-        ],
-        answer: 'B. Undefined (in real)',
-        diff: 'medium',
-      },
-      {
-        q: 'Range depends on:',
-        options: [
-          'A. Domain',
-          'B. Output values',
-          'C. Input values',
-          'D. Equation only',
-        ],
-        answer: 'B. Output values',
-        diff: 'medium',
-      },
-      {
-        q: 'If one input gives two outputs, it is:',
-        options: [
-          'A. Function',
-          'B. Not a function',
-          'C. Linear',
-          'D. Constant',
-        ],
-        answer: 'B. Not a function',
-        diff: 'easy',
-      },
-    ],
-  },
-
-
-  // lecture 7
-  7: {
-    title: 'Operations on Functions',
-    summary: `**Key Topics Covered:**
-- Arithmetic operations on functions
-- Sum, difference, product, quotient
-- Domain rules in operations
-- Composition of functions
-- Decomposition of functions
-- Types of functions
-
-**Important Concepts:**
-
-**Arithmetic Operations on Functions:**
-
-If f(x) and g(x) are functions:
-
-1. Sum:
-(f + g)(x) = f(x) + g(x)
-
-2. Difference:
-(f − g)(x) = f(x) − g(x)
-
-3. Product:
-(f . g)(x) = f(x) × g(x)
-
-4. Quotient:
-(f / g)(x) = f(x) / g(x),  where g(x) ≠ 0
-
----
-
-**Domain Rules:**
-- For +, −, × → Domain = common (intersection) domain
-- For ÷ → Domain = intersection BUT g(x) ≠ 0
-
----
+If a graph has symmetry, we only need to plot points in one region and then reflect.
 
 **Example:**
-f(x) = x², g(x) = x
-
-(f + g)(x) = x² + x
-
----
-
-**Composition of Functions:**
-
-(f ∘ g)(x) = f(g(x))
-
-Steps:
-1. First apply g(x)
-2. Then apply f()
-
-Example:
-f(x) = x³  
-g(x) = x + 4  
-
-(f ∘ g)(x) = f(x+4) = (x+4)³
+y = x² (symmetric about y-axis)
+y = 1/x (symmetric about origin)
 
 ---
 
-**Important Rule:**
-(f ∘ g)(x) ≠ (g ∘ f)(x)
+**Yaad Rakhne Wali Important Baatein:**
+- Coordinate plane: x-axis (horizontal), y-axis (vertical)
+- Origin: (0,0)
+- Quadrants: I (+ , +), II (-, +), III (-, -), IV (+, -)
+- x-intercept: set y=0
+- y-intercept: set x=0
+- Symmetry reduces graphing effort
+- Graph is visual representation of equation
+`,
+    questions: [
+      {
+        q: 'The point (3, -4) lies in quadrant:',
+        options: ['A. Quadrant I', 'B. Quadrant II', 'C. Quadrant III', 'D. Quadrant IV'],
+        answer: 'D. Quadrant IV',
+        diff: 'easy'
+      },
+      {
+        q: 'The x-coordinate of a point is also called the:',
+        options: ['A. Ordinate', 'B. Abscissa', 'C. Origin', 'D. Coordinate'],
+        answer: 'B. Abscissa',
+        diff: 'medium'
+      },
+      {
+        q: 'The y-intercept of the graph of y = 2x + 3 is:',
+        options: ['A. (0, 3)', 'B. (3, 0)', 'C. (0, -3)', 'D. (-3, 0)'],
+        answer: 'A. (0, 3)',
+        diff: 'easy'
+      },
+      {
+        q: 'A graph is symmetric about the y-axis if:',
+        options: ['A. (x, y) and (x, -y) are on the graph', 'B. (x, y) and (-x, y) are on the graph', 'C. (x, y) and (-x, -y) are on the graph', 'D. (x, y) and (y, x) are on the graph'],
+        answer: 'B. (x, y) and (-x, y) are on the graph',
+        diff: 'medium'
+      },
+      {
+        q: 'The x-intercept of the graph y = x² - 4 is:',
+        options: ['A. x = 2 and x = -2', 'B. x = 0 and x = 4', 'C. x = 4 only', 'D. x = -4 only'],
+        answer: 'A. x = 2 and x = -2',
+        diff: 'medium'
+      },
+      {
+        q: 'The point (-2, -5) lies in quadrant:',
+        options: ['A. Quadrant I', 'B. Quadrant II', 'C. Quadrant III', 'D. Quadrant IV'],
+        answer: 'C. Quadrant III',
+        diff: 'easy'
+      },
+      {
+        q: 'The graph of y = x² is symmetric about:',
+        options: ['A. x-axis', 'B. y-axis', 'C. Origin', 'D. Both axes'],
+        answer: 'B. y-axis',
+        diff: 'easy'
+      },
+      {
+        q: 'The y-coordinate of a point is also called the:',
+        options: ['A. Abscissa', 'B. Ordinate', 'C. Origin', 'D. Coordinate'],
+        answer: 'B. Ordinate',
+        diff: 'medium'
+      },
+      {
+        q: 'The point (0, -5) lies on the:',
+        options: ['A. x-axis', 'B. y-axis', 'C. Origin', 'D. Neither axis'],
+        answer: 'B. y-axis',
+        diff: 'easy'
+      },
+      {
+        q: 'A graph is symmetric about the origin if:',
+        options: ['A. (x, y) and (x, -y) are on the graph', 'B. (x, y) and (-x, y) are on the graph', 'C. (x, y) and (-x, -y) are on the graph', 'D. (x, y) and (y, x) are on the graph'],
+        answer: 'C. (x, y) and (-x, -y) are on the graph',
+        diff: 'medium'
+      }
+    ]
+  },
 
-Order matters!
+  // ============================================================
+  // LECTURE 4 - Lines
+  // ============================================================
+  4: {
+    title: 'Lines',
+    summary: `
+**Lecture 4 - Lines (Khatt)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Slope (Dhalan - Definition 1.4.1):**
+
+The slope m of a non-vertical line through points P₁(x₁,y₁) and P₂(x₂,y₂) is:
+m = (y₂ - y₁)/(x₂ - x₁) = rise/run
+
+**2. Slope of Vertical Line:**
+Undefined (division by zero)
+
+**3. Slope Interpretation:**
+- Positive slope: line rises to the right
+- Negative slope: line falls to the right
+- Zero slope: horizontal line
+
+**4. Angle of Inclination (Zawiya-e-Mail - Definition 1.4.2):**
+
+m = tan θ, where θ is the angle of inclination (0 ≤ θ < π)
+
+**5. Parallel Lines (Mutasazi Khatt - Theorem 1.4.4):**
+
+m₁ = m₂ (slopes are equal)
+
+**6. Perpendicular Lines (Amoodi Khatt - Theorem 1.4.4):**
+
+m₁·m₂ = -1 (slopes are negative reciprocals)
+
+**7. Equations of Lines (Khatt ki Masawaat):**
+
+**Vertical Line:** x = a
+**Horizontal Line:** y = b
+
+**Point-Slope Form (Nuqta-Dhalan Shakal):**
+y - y₁ = m(x - x₁)
+
+**Slope-Intercept Form (Dhalan-Taqata Shakal):**
+y = mx + b (b = y-intercept)
+
+**General Form (Aam Shakal):**
+Ax + By + C = 0
+
+**8. Applications:**
+- Linear equations model real-world relationships
+- Slope represents rate of change
+- Fahrenheit to Celsius conversion: F = (9/5)C + 32
 
 ---
 
-**Domain of Composition:**
-Domain = all x in domain of g such that g(x) lies in domain of f
+**Yaad Rakhne Wali Important Baatein:**
+- Slope: m = (y₂-y₁)/(x₂-x₁)
+- Vertical line: slope undefined
+- Parallel: m₁ = m₂
+- Perpendicular: m₁·m₂ = -1
+- Point-slope: y-y₁ = m(x-x₁)
+- Slope-intercept: y = mx + b
+- General: Ax + By + C = 0
+`,
+    questions: [
+      {
+        q: 'The slope of the line through (2, 3) and (4, 7) is:',
+        options: ['A. 1', 'B. 2', 'C. 3', 'D. 4'],
+        answer: 'B. 2',
+        diff: 'easy'
+      },
+      {
+        q: 'The slope of a vertical line is:',
+        options: ['A. 0', 'B. 1', 'C. Undefined', 'D. -1'],
+        answer: 'C. Undefined',
+        diff: 'easy'
+      },
+      {
+        q: 'Two lines are parallel if:',
+        options: ['A. m₁ = m₂', 'B. m₁·m₂ = -1', 'C. m₁ = -m₂', 'D. m₁ + m₂ = 0'],
+        answer: 'A. m₁ = m₂',
+        diff: 'easy'
+      },
+      {
+        q: 'The slope-intercept form of a line is:',
+        options: ['A. y - y₁ = m(x - x₁)', 'B. y = mx + b', 'C. Ax + By + C = 0', 'D. x = a'],
+        answer: 'B. y = mx + b',
+        diff: 'easy'
+      },
+      {
+        q: 'The point-slope form of a line is:',
+        options: ['A. y - y₁ = m(x - x₁)', 'B. y = mx + b', 'C. Ax + By + C = 0', 'D. x = a'],
+        answer: 'A. y - y₁ = m(x - x₁)',
+        diff: 'easy'
+      },
+      {
+        q: 'The equation of a horizontal line through (0, 5) is:',
+        options: ['A. x = 5', 'B. y = 5', 'C. y = 0', 'D. x = 0'],
+        answer: 'B. y = 5',
+        diff: 'easy'
+      },
+      {
+        q: 'If two lines are perpendicular, the product of their slopes is:',
+        options: ['A. 1', 'B. -1', 'C. 0', 'D. 2'],
+        answer: 'B. -1',
+        diff: 'easy'
+      },
+      {
+        q: 'The slope of the line 2x + 3y = 6 is:',
+        options: ['A. 2/3', 'B. -2/3', 'C. 3/2', 'D. -3/2'],
+        answer: 'B. -2/3',
+        diff: 'medium'
+      },
+      {
+        q: 'The equation of a vertical line through (-3, 4) is:',
+        options: ['A. x = -3', 'B. y = 4', 'C. x = 4', 'D. y = -3'],
+        answer: 'A. x = -3',
+        diff: 'easy'
+      },
+      {
+        q: 'The slope of a horizontal line is:',
+        options: ['A. 0', 'B. 1', 'C. Undefined', 'D. -1'],
+        answer: 'A. 0',
+        diff: 'easy'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 5 - Distance; Circles; Quadratic Equations
+  // ============================================================
+  5: {
+    title: 'Distance; Circles; Quadratic Equations',
+    summary: `
+**Lecture 5 - Distance; Circles; Quadratic Equations (Faasla; Dairay; Quadratic Equations)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Distance Formula (Faasla ka Formula - Theorem 1.5.1):**
+
+The distance d between (x₁,y₁) and (x₂,y₂) is:
+d = √[(x₂-x₁)² + (y₂-y₁)²]
+
+**2. Midpoint Formula (Markazi Nuqta ka Formula - Theorem 1.5.2):**
+
+Midpoint = ((x₁+x₂)/2, (y₁+y₂)/2)
+
+**3. Equation of a Circle (Daira ki Masawaat):**
+
+Center (h,k), radius r:
+(x-h)² + (y-k)² = r²
+
+**Standard Form:**
+x² + y² + Dx + Ey + F = 0
+
+**4. Quadratic Equations (Quadratic Equations):**
+
+y = ax² + bx + c (a ≠ 0)
+
+**Vertex (Vertex):**
+x-coordinate = -b/(2a)
+
+**Graph:**
+- If a > 0: opens upward (U-shaped)
+- If a < 0: opens downward (∩-shaped)
+
+**5. Parabola Features:**
+- Vertex: minimum point (a>0) or maximum point (a<0)
+- Axis of symmetry: x = -b/(2a)
+- y-intercept: (0, c)
+- x-intercepts: solve ax²+bx+c=0
+
+**6. Solving Quadratic Equations:**
+- Factoring
+- Quadratic formula: x = [-b ± √(b²-4ac)]/(2a)
+- Completing the square
 
 ---
 
-**Decomposition:**
-Breaking a function into smaller functions
+**Yaad Rakhne Wali Important Baatein:**
+- Distance: d = √[(x₂-x₁)² + (y₂-y₁)²]
+- Midpoint: ((x₁+x₂)/2, (y₁+y₂)/2)
+- Circle: (x-h)² + (y-k)² = r²
+- Quadratic: y = ax²+bx+c
+- Vertex x-coordinate: -b/(2a)
+- Quadratic formula: x = [-b ± √(b²-4ac)]/(2a)
+- a>0 opens up; a<0 opens down
+`,
+    questions: [
+      {
+        q: 'The distance between (2, 3) and (5, 7) is:',
+        options: ['A. 3', 'B. 4', 'C. 5', 'D. 6'],
+        answer: 'C. 5',
+        diff: 'easy'
+      },
+      {
+        q: 'The midpoint of (2, 3) and (6, 7) is:',
+        options: ['A. (3, 5)', 'B. (4, 5)', 'C. (5, 4)', 'D. (4, 6)'],
+        answer: 'B. (4, 5)',
+        diff: 'easy'
+      },
+      {
+        q: 'The equation of a circle with center (2, -3) and radius 4 is:',
+        options: ['A. (x-2)² + (y+3)² = 16', 'B. (x+2)² + (y-3)² = 16', 'C. (x-2)² + (y+3)² = 4', 'D. (x+2)² + (y+3)² = 16'],
+        answer: 'A. (x-2)² + (y+3)² = 16',
+        diff: 'medium'
+      },
+      {
+        q: 'The vertex of y = x² - 4x + 3 is at:',
+        options: ['A. (2, -1)', 'B. (-2, -1)', 'C. (2, 1)', 'D. (-2, 1)'],
+        answer: 'A. (2, -1)',
+        diff: 'medium'
+      },
+      {
+        q: 'If a > 0 in y = ax² + bx + c, the parabola:',
+        options: ['A. Opens upward', 'B. Opens downward', 'C. Is a line', 'D. Has no vertex'],
+        answer: 'A. Opens upward',
+        diff: 'easy'
+      },
+      {
+        q: 'The distance between (-1, 2) and (3, -1) is:',
+        options: ['A. 4', 'B. 5', 'C. 6', 'D. 7'],
+        answer: 'B. 5',
+        diff: 'medium'
+      },
+      {
+        q: 'The midpoint of (-3, 4) and (5, -2) is:',
+        options: ['A. (1, 1)', 'B. (2, 2)', 'C. (1, -1)', 'D. (-1, 1)'],
+        answer: 'A. (1, 1)',
+        diff: 'easy'
+      },
+      {
+        q: 'The equation x² + y² = 25 represents a circle with radius:',
+        options: ['A. 5', 'B. 25', 'C. 2.5', 'D. 10'],
+        answer: 'A. 5',
+        diff: 'easy'
+      },
+      {
+        q: 'The x-coordinate of the vertex of y = 2x² - 4x + 1 is:',
+        options: ['A. 1', 'B. -1', 'C. 2', 'D. -2'],
+        answer: 'A. 1',
+        diff: 'medium'
+      },
+      {
+        q: 'The quadratic formula is:',
+        options: ['A. x = [-b ± √(b²-4ac)]/(2a)', 'B. x = [b ± √(b²-4ac)]/(2a)', 'C. x = [-b ± √(b²+4ac)]/(2a)', 'D. x = [-b ± √(4ac-b²)]/(2a)'],
+        answer: 'A. x = [-b ± √(b²-4ac)]/(2a)',
+        diff: 'easy'
+      }
+    ]
+  },
 
-Example:
-h(x) = (x + 1)²  
+  // ============================================================
+  // LECTURE 6 - Functions
+  // ============================================================
+  6: {
+    title: 'Functions',
+    summary: `
+**Lecture 6 - Functions (Functions - Dala)**
 
-Let:
-f(x) = x + 1  
-g(x) = x²  
+**Roman Urdu Detailed Summary:**
 
-Then:
-h(x) = g(f(x))
+**1. Definition of a Function (Function ki Tareef):**
+
+A function is a rule that assigns to each element x in a set D (domain) exactly one element y in a set R (range).
+
+**2. Function Notation (Function ki Alamat):**
+
+y = f(x) reads "y equals f of x"
+- x = independent variable (input)
+- y = dependent variable (output)
+
+**3. Domain (Domain - Natural & Restricted):**
+
+**Natural Domain:** All real numbers for which the formula makes sense.
+
+**Restricted Domain:** Domain explicitly stated or due to physical constraints.
+
+**Examples:**
+- f(x) = 1/(x-1): domain = {x ≠ 1}
+- f(x) = √x: domain = [0, ∞)
+- g(x) = x²: domain = (-∞, ∞)
+
+**4. Range (Range):**
+
+The set of all possible output values (y-values).
+
+**5. Vertical Line Test (Vertical Line Test):**
+
+A graph is a function if and only if no vertical line intersects the graph more than once.
+
+**6. Piecewise Functions (Piecewise Functions):**
+
+Functions defined by different formulas on different parts of the domain.
+
+**Example:**
+f(x) = { x² if x < 0; x+1 if x ≥ 0 }
+
+**7. Domain and Range Examples:**
+
+f(x) = x² → Domain: (-∞, ∞), Range: [0, ∞)
+g(x) = √(x-1) → Domain: [1, ∞), Range: [0, ∞)
 
 ---
 
-**Function Powers:**
-f²(x) = f(x) × f(x)
+**Yaad Rakhne Wali Important Baatein:**
+- Function: each input gives exactly one output
+- Domain: set of all allowable x-values
+- Range: set of all possible y-values
+- Vertical line test: check if graph is a function
+- Piecewise: different formulas for different parts
+- Natural domain: where formula makes sense
+`,
+    questions: [
+      {
+        q: 'A function is a rule that assigns to each x in the domain:',
+        options: ['A. Exactly one y', 'B. Two or more y', 'C. No y', 'D. Any number of y'],
+        answer: 'A. Exactly one y',
+        diff: 'easy'
+      },
+      {
+        q: 'The domain of f(x) = 1/(x-2) is:',
+        options: ['A. All real numbers', 'B. All real numbers except 2', 'C. All real numbers except -2', 'D. Only x > 2'],
+        answer: 'B. All real numbers except 2',
+        diff: 'easy'
+      },
+      {
+        q: 'The domain of f(x) = √x is:',
+        options: ['A. (-∞, ∞)', 'B. [0, ∞)', 'C. (0, ∞)', 'D. (-∞, 0]'],
+        answer: 'B. [0, ∞)',
+        diff: 'easy'
+      },
+      {
+        q: 'The range of f(x) = x² is:',
+        options: ['A. (-∞, ∞)', 'B. [0, ∞)', 'C. (-∞, 0]', 'D. (0, ∞)'],
+        answer: 'B. [0, ∞)',
+        diff: 'easy'
+      },
+      {
+        q: 'The vertical line test is used to determine if a graph is:',
+        options: ['A. A function', 'B. A line', 'C. A circle', 'D. A parabola'],
+        answer: 'A. A function',
+        diff: 'easy'
+      },
+      {
+        q: 'f(3) for f(x) = 2x - 1 is:',
+        options: ['A. 5', 'B. 4', 'C. 6', 'D. 3'],
+        answer: 'A. 5',
+        diff: 'easy'
+      },
+      {
+        q: 'The natural domain of f(x) = 1/x is:',
+        options: ['A. All real numbers', 'B. All real numbers except 0', 'C. All positive numbers', 'D. All negative numbers'],
+        answer: 'B. All real numbers except 0',
+        diff: 'easy'
+      },
+      {
+        q: 'f(x) = x² + 1 has range:',
+        options: ['A. (-∞, ∞)', 'B. [1, ∞)', 'C. (-∞, 1]', 'D. (1, ∞)'],
+        answer: 'B. [1, ∞)',
+        diff: 'medium'
+      },
+      {
+        q: 'The independent variable in y = f(x) is:',
+        options: ['A. x', 'B. y', 'C. f', 'D. Both x and y'],
+        answer: 'A. x',
+        diff: 'easy'
+      },
+      {
+        q: 'A piecewise function uses:',
+        options: ['A. One formula for all x', 'B. Different formulas on different intervals', 'C. No formula', 'D. Only one x value'],
+        answer: 'B. Different formulas on different intervals',
+        diff: 'medium'
+      }
+    ]
+  },
 
-Example:
-(sin x)² = sin²(x)
+  // ============================================================
+  // LECTURE 7 - Operations on Functions
+  // ============================================================
+  7: {
+    title: 'Operations on Functions',
+    summary: `
+**Lecture 7 - Operations on Functions (Functions par Amal)**
 
----
+**Roman Urdu Detailed Summary:**
 
-**Types of Functions:**
+**1. Arithmetic Operations on Functions (Functions par Hisabi Amal):**
 
-1. Constant Function:
-f(x) = 2
+Given functions f and g:
 
-2. Monomial:
-f(x) = cxⁿ  (n ≥ 0)
+**(a) Sum (Jama):** (f+g)(x) = f(x) + g(x)
+**(b) Difference (Farq):** (f-g)(x) = f(x) - g(x)
+**(c) Product (Zarb):** (f·g)(x) = f(x)·g(x)
+**(d) Quotient (Taqseem):** (f/g)(x) = f(x)/g(x), g(x) ≠ 0
 
-Example:
-3x², 5x⁴
+**Domains:** Intersection of domains of f and g (for quotient, exclude where g(x)=0).
 
-3. Polynomial:
+**2. Composition of Functions (Functions ki Tarkeeb - f∘g):**
+
+(f∘g)(x) = f(g(x))
+
+**Domain:** All x in domain of g such that g(x) is in domain of f.
+
+**3. Decomposition (Tajziya):**
+
+Breaking a function into simpler functions.
+
+**Example:**
+h(x) = (x+1)² = f(g(x)) where f(x) = x² and g(x) = x+1
+
+**4. Classification of Functions:**
+
+**Constant Functions (Mustaqil Function):**
+f(x) = c (same value for all x)
+
+**Monomial (Monomial):**
+f(x) = cxⁿ, n = nonnegative integer
+
+**Polynomial (Polynomial):**
 f(x) = a₀ + a₁x + a₂x² + ... + aₙxⁿ
 
 ---
 
-**Key Facts to Remember:**
-- Operations work like numbers
-- Domain is VERY important
-- Division → denominator ≠ 0
-- Composition order matters
-- f(g(x)) → inner first, outer second
+**Yaad Rakhne Wali Important Baatein:**
+- Sum: (f+g)(x) = f(x)+g(x)
+- Difference: (f-g)(x) = f(x)-g(x)
+- Product: (f·g)(x) = f(x)·g(x)
+- Quotient: (f/g)(x) = f(x)/g(x)
+- Composition: (f∘g)(x) = f(g(x))
+- Domain of composition: g(x) must be in domain of f
+- f∘g ≠ g∘f generally
+- Polynomial: sum of monomials
+`,
+    questions: [
+      {
+        q: 'If f(x) = x² and g(x) = x+1, then (f+g)(x) =:',
+        options: ['A. x² + x + 1', 'B. x² - x - 1', 'C. x² + x', 'D. x² - x'],
+        answer: 'A. x² + x + 1',
+        diff: 'easy'
+      },
+      {
+        q: '(f∘g)(x) means:',
+        options: ['A. f(x)·g(x)', 'B. f(g(x))', 'C. g(f(x))', 'D. f(x)+g(x)'],
+        answer: 'B. f(g(x))',
+        diff: 'easy'
+      },
+      {
+        q: 'If f(x) = 2x and g(x) = x+3, then (f∘g)(x) =:',
+        options: ['A. 2x+3', 'B. 2x+6', 'C. 2x-6', 'D. 2x²+3'],
+        answer: 'B. 2x+6',
+        diff: 'medium'
+      },
+      {
+        q: 'The domain of (f/g)(x) excludes values where:',
+        options: ['A. g(x) = 0', 'B. f(x) = 0', 'C. x = 0', 'D. f(x) = g(x)'],
+        answer: 'A. g(x) = 0',
+        diff: 'easy'
+      },
+      {
+        q: 'If f(x) = x² and g(x) = x-1, then (f-g)(x) =:',
+        options: ['A. x² - x + 1', 'B. x² - x - 1', 'C. x² + x - 1', 'D. x² + x + 1'],
+        answer: 'A. x² - x + 1',
+        diff: 'easy'
+      },
+      {
+        q: 'f(x) = 5 is an example of:',
+        options: ['A. A constant function', 'B. A monomial', 'C. A polynomial', 'D. All of the above'],
+        answer: 'D. All of the above',
+        diff: 'medium'
+      },
+      {
+        q: 'If f(x) = 3x and g(x) = x², then (f·g)(x) =:',
+        options: ['A. 3x³', 'B. 3x²', 'C. 9x²', 'D. 3x+2'],
+        answer: 'A. 3x³',
+        diff: 'easy'
+      },
+      {
+        q: 'Generally, (f∘g)(x) is:',
+        options: ['A. Equal to (g∘f)(x)', 'B. Not equal to (g∘f)(x)', 'C. Always zero', 'D. Always one'],
+        answer: 'B. Not equal to (g∘f)(x)',
+        diff: 'medium'
+      },
+      {
+        q: 'If f(x) = x² and g(x) = x+1, then (g∘f)(x) =:',
+        options: ['A. x² + 1', 'B. (x+1)²', 'C. x² - 1', 'D. (x-1)²'],
+        answer: 'A. x² + 1',
+        diff: 'medium'
+      },
+      {
+        q: 'A polynomial is a sum of:',
+        options: ['A. Constants only', 'B. Monomials', 'C. Rational functions', 'D. Trig functions'],
+        answer: 'B. Monomials',
+        diff: 'medium'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 8 - Graphs of Functions
+  // ============================================================
+  8: {
+    title: 'Graphs of Functions',
+    summary: `
+**Lecture 8 - Graphs of Functions (Functions ke Graph)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Graph of a Function (Function ka Graph):**
+
+The graph of f is the set of all points (x, f(x)) in the xy-plane.
+
+**2. Graphing by Translations (Translations ke Zariye Graph):**
+
+For c > 0:
+- y = f(x) + c: shift UP by c units
+- y = f(x) - c: shift DOWN by c units
+- y = f(x + c): shift LEFT by c units
+- y = f(x - c): shift RIGHT by c units
+
+**3. Reflections (In'ikaas):**
+
+- y = f(-x): reflection about y-axis
+- y = -f(x): reflection about x-axis
+
+**4. Scaling (Scaling - Vertical Stretch/Compression):**
+
+For c > 0:
+- y = c·f(x): vertical stretch if c > 1, compression if 0 < c < 1
+
+**5. Graphing Piecewise Functions (Piecewise Functions ka Graph):**
+
+Graph each piece on its specified domain.
+
+**Example:**
+f(x) = { 1 if x ≤ 2; x+2 if x > 2 }
+
+**6. Vertical Line Test (Vertical Line Test):**
+
+A graph represents a function if and only if no vertical line intersects the graph more than once.
 
 ---
 
-**Quick Revision Points:**
-- (f+g)(x) = f(x)+g(x)
-- (f/g)(x) → g(x) ≠ 0
-- (f ∘ g)(x) = f(g(x))
-- Order matters in composition
-- Domain = intersection
-- Break complex functions into parts`,
-
+**Yaad Rakhne Wali Important Baatein:**
+- Graph of f: set of points (x, f(x))
+- Translation: f(x)±c (vertical), f(x±c) (horizontal)
+- Reflection: f(-x) about y-axis, -f(x) about x-axis
+- Vertical scaling: c·f(x)
+- Vertical line test: check if graph is function
+- Piecewise: graph each part separately
+`,
     questions: [
       {
-        q: 'Sum of two functions is:',
-        options: [
-          'A. f(x)g(x)',
-          'B. f(x)+g(x)',
-          'C. f(x)-g(x)',
-          'D. f(x)/g(x)',
-        ],
-        answer: 'B. f(x)+g(x)',
-        diff: 'easy',
+        q: 'The graph of y = f(x) + 3 is obtained by shifting the graph of f:',
+        options: ['A. Left 3 units', 'B. Right 3 units', 'C. Up 3 units', 'D. Down 3 units'],
+        answer: 'C. Up 3 units',
+        diff: 'easy'
       },
       {
-        q: 'Product of functions is:',
-        options: [
-          'A. f(x)+g(x)',
-          'B. f(x)-g(x)',
-          'C. f(x)×g(x)',
-          'D. f(x)/g(x)',
-        ],
-        answer: 'C. f(x)×g(x)',
-        diff: 'easy',
+        q: 'The graph of y = f(x - 2) is obtained by shifting the graph of f:',
+        options: ['A. Left 2 units', 'B. Right 2 units', 'C. Up 2 units', 'D. Down 2 units'],
+        answer: 'B. Right 2 units',
+        diff: 'easy'
       },
       {
-        q: 'Quotient of functions is:',
-        options: [
-          'A. f(x)/g(x)',
-          'B. f(x)+g(x)',
-          'C. f(x)-g(x)',
-          'D. f(x)×g(x)',
-        ],
-        answer: 'A. f(x)/g(x)',
-        diff: 'easy',
+        q: 'y = -f(x) is the reflection of f about:',
+        options: ['A. y-axis', 'B. x-axis', 'C. Origin', 'D. Line y=x'],
+        answer: 'B. x-axis',
+        diff: 'easy'
       },
       {
-        q: 'In f(x)/g(x), what must be true?',
-        options: [
-          'A. f(x)=0',
-          'B. g(x)=0',
-          'C. g(x)≠0',
-          'D. x=0',
-        ],
-        answer: 'C. g(x)≠0',
-        diff: 'easy',
+        q: 'The vertical line test is used to determine if a graph is:',
+        options: ['A. A function', 'B. A line', 'C. A circle', 'D. A parabola'],
+        answer: 'A. A function',
+        diff: 'easy'
       },
       {
-        q: 'Domain of (f+g)(x) is:',
-        options: [
-          'A. Union of domains',
-          'B. Intersection of domains',
-          'C. Only f domain',
-          'D. Only g domain',
-        ],
-        answer: 'B. Intersection of domains',
-        diff: 'medium',
+        q: 'If f(x) = x², the graph of y = 2f(x) is:',
+        options: ['A. Stretched vertically by 2', 'B. Compressed vertically by 2', 'C. Shifted up by 2', 'D. Shifted right by 2'],
+        answer: 'A. Stretched vertically by 2',
+        diff: 'medium'
       },
       {
-        q: 'Composition of functions is:',
-        options: [
-          'A. f(x)+g(x)',
-          'B. f(x)-g(x)',
-          'C. f(g(x))',
-          'D. f(x)g(x)',
-        ],
-        answer: 'C. f(g(x))',
-        diff: 'easy',
+        q: 'The graph of y = f(x+3) is obtained by shifting the graph of f:',
+        options: ['A. Left 3 units', 'B. Right 3 units', 'C. Up 3 units', 'D. Down 3 units'],
+        answer: 'A. Left 3 units',
+        diff: 'easy'
       },
       {
-        q: '(f ∘ g)(x) means:',
-        options: [
-          'A. g(f(x))',
-          'B. f(g(x))',
-          'C. f(x)+g(x)',
-          'D. f(x)/g(x)',
-        ],
-        answer: 'B. f(g(x))',
-        diff: 'easy',
+        q: 'A vertical line intersects the graph of a function:',
+        options: ['A. More than once', 'B. At most once', 'C. Always once', 'D. Never'],
+        answer: 'B. At most once',
+        diff: 'easy'
       },
       {
-        q: 'Order in composition:',
-        options: [
-          'A. Does not matter',
-          'B. Always same',
-          'C. Matters',
-          'D. Random',
-        ],
-        answer: 'C. Matters',
-        diff: 'easy',
+        q: 'The graph of y = |x-3| + 2 is obtained from y = |x| by:',
+        options: ['A. Shift right 3, up 2', 'B. Shift left 3, up 2', 'C. Shift right 3, down 2', 'D. Shift left 3, down 2'],
+        answer: 'A. Shift right 3, up 2',
+        diff: 'medium'
       },
       {
-        q: '(f ∘ g)(x) and (g ∘ f)(x) are:',
-        options: [
-          'A. Always equal',
-          'B. Always zero',
-          'C. Usually not equal',
-          'D. Same domain only',
-        ],
-        answer: 'C. Usually not equal',
-        diff: 'medium',
+        q: 'y = f(-x) is the reflection of f about:',
+        options: ['A. y-axis', 'B. x-axis', 'C. Origin', 'D. Line y=x'],
+        answer: 'A. y-axis',
+        diff: 'easy'
       },
       {
-        q: 'In composition, which is applied first?',
-        options: [
-          'A. f',
-          'B. g',
-          'C. Both',
-          'D. None',
-        ],
-        answer: 'B. g',
-        diff: 'easy',
-      },
-      {
-        q: 'Decomposition means:',
-        options: [
-          'A. Combining functions',
-          'B. Breaking into simpler functions',
-          'C. Deleting functions',
-          'D. Multiplying functions',
-        ],
-        answer: 'B. Breaking into simpler functions',
-        diff: 'medium',
-      },
-      {
-        q: 'f²(x) means:',
-        options: [
-          'A. f(x²)',
-          'B. f(x)+f(x)',
-          'C. f(x)×f(x)',
-          'D. 2f(x)',
-        ],
-        answer: 'C. f(x)×f(x)',
-        diff: 'medium',
-      },
-      {
-        q: 'Constant function example:',
-        options: [
-          'A. x²',
-          'B. 2',
-          'C. x+1',
-          'D. sin x',
-        ],
-        answer: 'B. 2',
-        diff: 'easy',
-      },
-      {
-        q: 'Monomial example:',
-        options: [
-          'A. 3x²',
-          'B. x+1',
-          'C. 1/x',
-          'D. √x',
-        ],
-        answer: 'A. 3x²',
-        diff: 'easy',
-      },
-      {
-        q: 'Polynomial example:',
-        options: [
-          'A. 1/x',
-          'B. x² + 3x + 1',
-          'C. √x',
-          'D. log x',
-        ],
-        answer: 'B. x² + 3x + 1',
-        diff: 'easy',
-      },
-      {
-        q: 'Domain of f.g(x) is:',
-        options: [
-          'A. Union',
-          'B. Intersection',
-          'C. Only f',
-          'D. Only g',
-        ],
-        answer: 'B. Intersection',
-        diff: 'medium',
-      },
-      {
-        q: 'In composition f(g(x)), g(x) must be:',
-        options: [
-          'A. Constant',
-          'B. In domain of f',
-          'C. Zero',
-          'D. Negative',
-        ],
-        answer: 'B. In domain of f',
-        diff: 'medium',
-      },
-      {
-        q: 'Which operation is NOT arithmetic?',
-        options: [
-          'A. Addition',
-          'B. Multiplication',
-          'C. Composition',
-          'D. Subtraction',
-        ],
-        answer: 'C. Composition',
-        diff: 'medium',
-      },
-    ],
+        q: 'The graph of y = |x| is:',
+        options: ['A. A straight line', 'B. A V-shaped graph', 'C. A parabola', 'D. A circle'],
+        answer: 'B. A V-shaped graph',
+        diff: 'easy'
+      }
+    ]
   },
 
-  // lecture 8
-  8: {
-    title: 'Graphs of Functions',
-    summary: `**Key Topics Covered:**
-- Definition of graph of a function
-- Graphing absolute value and piecewise functions
-- Translations (shifts) of graphs
-- Reflections about x-axis and y-axis
-- Vertical scaling (stretching and compressing)
-- Vertical Line Test
-- Horizontal Line Test
-
-**Important Concepts:**
-
-**Graph of a Function:**
-The graph of a function f in the xy-plane is the graph of the equation y = f(x).
-It is the set of ALL points (x, y) that satisfy y = f(x).
-
-**Absolute Value Function:**
-f(x) = |x| is a piecewise function:
-- y = x,  if x ≥ 0
-- y = −x, if x < 0
-Graph is V-shaped, with vertex at the origin.
-
-**Hole in a Graph:**
-If a value is excluded from the domain (e.g., x ≠ 2), there is a HOLE at that point on the graph.
-
-**Piecewise Functions:**
-Different formulas apply for different x ranges.
-Example:
-g(x) = { 1,      if x ≤ 2
-        { x + 2,  if x > 2
-
-**Translations (Shifts):**
-Given graph of y = f(x) and a positive constant c:
-- y = f(x) + c  →  shift UP by c units
-- y = f(x) − c  →  shift DOWN by c units
-- y = f(x + c)  →  shift LEFT by c units
-- y = f(x − c)  →  shift RIGHT by c units
-
-**Reflections:**
-- y = f(−x)  →  reflection about y-axis
-- y = −f(x)  →  reflection about x-axis
-
-**Vertical Scaling:**
-Multiplying f(x) by positive constant c:
-- 0 < c < 1  →  graph COMPRESSED vertically
-- c > 1      →  graph STRETCHED vertically
-
-**Vertical Line Test:**
-A graph is the graph of a function if and only if NO vertical line intersects the graph MORE THAN ONCE.
-
-**Horizontal Line Test:**
-Used when x is the dependent variable. If each horizontal line crosses the graph at most once, x can be expressed as a function of y.
-
-**Key Facts to Remember:**
-- Graph of f = graph of y = f(x)
-- Absolute value graph = V-shape
-- Hole = excluded domain value
-- Adding c to x shifts LEFT (not right!)
-- Vertical line test → checks if it is a function
-- Circle x² + y² = 25 is NOT a function (fails vertical line test)
-
-**Quick Revision Points:**
-- y = f(x) + c → UP
-- y = f(x − c) → RIGHT
-- y = f(x + c) → LEFT
-- y = −f(x) → x-axis reflection
-- y = f(−x) → y-axis reflection
-- Vertical stretch: c > 1 | Compress: 0 < c < 1
-- Vertical line test: one x → one y`,
-
-    questions: [
-      {
-        q: 'The graph of a function f is defined as:',
-        options: [
-          'A. Any curve in the xy-plane',
-          'B. The graph of the equation y = f(x)',
-          'C. Only straight lines',
-          'D. Points on the x-axis only',
-        ],
-        answer: 'B. The graph of the equation y = f(x)',
-        diff: 'easy',
-      },
-      {
-        q: 'The graph of f(x) = x + 2 is:',
-        options: [
-          'A. A parabola',
-          'B. A circle',
-          'C. A straight line with slope 1 and y-intercept 2',
-          'D. A V-shaped curve',
-        ],
-        answer: 'C. A straight line with slope 1 and y-intercept 2',
-        diff: 'easy',
-      },
-      {
-        q: 'The absolute value function f(x) = |x| is:',
-        options: [
-          'A. A straight line',
-          'B. A circle',
-          'C. A piecewise defined function',
-          'D. A parabola',
-        ],
-        answer: 'C. A piecewise defined function',
-        diff: 'easy',
-      },
-      {
-        q: 'For f(x) = |x|, which part applies when x < 0?',
-        options: [
-          'A. y = x',
-          'B. y = −x',
-          'C. y = 0',
-          'D. y = x²',
-        ],
-        answer: 'B. y = −x',
-        diff: 'medium',
-      },
-      {
-        q: 'A HOLE appears in a graph when:',
-        options: [
-          'A. The slope is zero',
-          'B. A value is excluded from the domain',
-          'C. The function is linear',
-          'D. The y-intercept is missing',
-        ],
-        answer: 'B. A value is excluded from the domain',
-        diff: 'medium',
-      },
-      {
-        q: 'If y = f(x) + c and c > 0, the graph shifts:',
-        options: [
-          'A. Down by c units',
-          'B. Left by c units',
-          'C. Right by c units',
-          'D. Up by c units',
-        ],
-        answer: 'D. Up by c units',
-        diff: 'easy',
-      },
-      {
-        q: 'If y = f(x) − c and c > 0, the graph shifts:',
-        options: [
-          'A. Up by c units',
-          'B. Down by c units',
-          'C. Left by c units',
-          'D. Right by c units',
-        ],
-        answer: 'B. Down by c units',
-        diff: 'easy',
-      },
-      {
-        q: 'If y = f(x + c) and c > 0, the graph shifts:',
-        options: [
-          'A. Up by c units',
-          'B. Down by c units',
-          'C. Left by c units',
-          'D. Right by c units',
-        ],
-        answer: 'C. Left by c units',
-        diff: 'medium',
-      },
-      {
-        q: 'If y = f(x − c) and c > 0, the graph shifts:',
-        options: [
-          'A. Left by c units',
-          'B. Right by c units',
-          'C. Up by c units',
-          'D. Down by c units',
-        ],
-        answer: 'B. Right by c units',
-        diff: 'medium',
-      },
-      {
-        q: 'To sketch y = |x − 3| + 2, you start with y = |x| and:',
-        options: [
-          'A. Shift left 3, then up 2',
-          'B. Shift right 3, then up 2',
-          'C. Shift up 3, then right 2',
-          'D. Shift down 3, then left 2',
-        ],
-        answer: 'B. Shift right 3, then up 2',
-        diff: 'hard',
-      },
-      {
-        q: 'The graph of y = f(−x) is a reflection of y = f(x) about:',
-        options: [
-          'A. The x-axis',
-          'B. The origin',
-          'C. The y-axis',
-          'D. The line y = x',
-        ],
-        answer: 'C. The y-axis',
-        diff: 'medium',
-      },
-      {
-        q: 'The graph of y = −f(x) is a reflection of y = f(x) about:',
-        options: [
-          'A. The y-axis',
-          'B. The x-axis',
-          'C. The origin',
-          'D. The line y = x',
-        ],
-        answer: 'B. The x-axis',
-        diff: 'medium',
-      },
-      {
-        q: 'If f(x) is multiplied by c where 0 < c < 1, the graph is:',
-        options: [
-          'A. Stretched vertically',
-          'B. Compressed vertically',
-          'C. Shifted upward',
-          'D. Reflected about x-axis',
-        ],
-        answer: 'B. Compressed vertically',
-        diff: 'medium',
-      },
-      {
-        q: 'If f(x) is multiplied by c where c > 1, the graph is:',
-        options: [
-          'A. Compressed vertically',
-          'B. Shifted downward',
-          'C. Stretched vertically',
-          'D. Reflected about y-axis',
-        ],
-        answer: 'C. Stretched vertically',
-        diff: 'medium',
-      },
-      {
-        q: 'The Vertical Line Test states that a graph is a function if:',
-        options: [
-          'A. Every horizontal line crosses it once',
-          'B. No vertical line intersects it more than once',
-          'C. Every vertical line crosses it at least once',
-          'D. No horizontal line touches it',
-        ],
-        answer: 'B. No vertical line intersects it more than once',
-        diff: 'easy',
-      },
-      {
-        q: 'The graph of x² + y² = 25 (a circle):',
-        options: [
-          'A. Passes the vertical line test',
-          'B. Is a function',
-          'C. Fails the vertical line test',
-          'D. Has only one y-value per x',
-        ],
-        answer: 'C. Fails the vertical line test',
-        diff: 'medium',
-      },
-      {
-        q: 'Which of the following graphs IS a function?',
-        options: [
-          'A. A full circle',
-          'B. A vertical line',
-          'C. A parabola opening upward',
-          'D. An ellipse',
-        ],
-        answer: 'C. A parabola opening upward',
-        diff: 'medium',
-      },
-      {
-        q: 'The Horizontal Line Test is used when:',
-        options: [
-          'A. y is the dependent variable',
-          'B. x is the dependent variable (x as function of y)',
-          'C. The graph is a parabola',
-          'D. The function is constant',
-        ],
-        answer: 'B. x is the dependent variable (x as function of y)',
-        diff: 'hard',
-      },
-      {
-        q: 'Completing the square for y = x² − 4x + 5 gives:',
-        options: [
-          'A. y = (x − 2)² + 2',
-          'B. y = (x − 2)² + 1',
-          'C. y = (x + 2)² + 1',
-          'D. y = (x − 4)² + 5',
-        ],
-        answer: 'B. y = (x − 2)² + 1',
-        diff: 'hard',
-      },
-      {
-        q: 'The graph of y = (x − 2)² + 1 is obtained from y = x² by:',
-        options: [
-          'A. Shifting left 2, then up 1',
-          'B. Shifting right 2, then up 1',
-          'C. Shifting up 2, then right 1',
-          'D. Shifting down 2, then left 1',
-        ],
-        answer: 'B. Shifting right 2, then up 1',
-        diff: 'medium',
-      },
-      {
-        q: 'A vertical line through x = a crosses a graph at (a, b) and (a, c) where b ≠ c. This means:',
-        options: [
-          'A. The graph is a function',
-          'B. The graph is not a function',
-          'C. The function has two domains',
-          'D. The graph is symmetric',
-        ],
-        answer: 'B. The graph is not a function',
-        diff: 'easy',
-      },
-      {
-        q: 'For y = 2sin(x) compared to y = sin(x), the graph is:',
-        options: [
-          'A. Shifted up by 2',
-          'B. Shifted right by 2',
-          'C. Stretched vertically by factor 2',
-          'D. Compressed horizontally',
-        ],
-        answer: 'C. Stretched vertically by factor 2',
-        diff: 'medium',
-      },
-      {
-        q: 'For y = ½ sin(x) compared to y = sin(x), the graph is:',
-        options: [
-          'A. Stretched vertically',
-          'B. Shifted down by ½',
-          'C. Compressed vertically',
-          'D. Reflected about x-axis',
-        ],
-        answer: 'C. Compressed vertically',
-        diff: 'medium',
-      },
-    ],
-  },
-  
-  // lecture 9 //
-
-
-  // ─────────────────────────────────────────
-//  MTH101
-// ─────────────────────────────────────────
+  // ============================================================
+  // LECTURE 9 - Limits (Intuitive Introduction)
+  // ============================================================
   9: {
-    title: 'Limits',
-    summary: `**Key Topics Covered:**
-- Introduction to Limits
-- Tangent lines using limits
-- Area problem and approximation
-- Right-hand & Left-hand limits
-- Existence of limits (DNE cases)
-- Limits at infinity
+    title: 'Limits (Intuitive Introduction)',
+    summary: `
+**Lecture 9 - Limits (Intuitive Introduction - Intiha ka Taaruf)**
 
-**Simple Understanding (Easy Urdu + English):**
+**Roman Urdu Detailed Summary:**
 
-**Limits kya hota hai?**
-Limit ka matlab hai kisi function ke behavior ko study karna jab x kisi value ke "bohat qareeb" jata hai (exact equal nahi hota).
+**1. The Tangent Problem (Tangent Line ka Masla):**
 
-**Calculus ke 2 main parts:**
-- Differential Calculus → Tangent lines (slopes)
-- Integral Calculus → Area under curve
+Find the slope of the tangent line to a curve at a point P. The tangent line is the limiting position of secant lines as Q approaches P.
 
-Dono ka base concept = LIMIT
+**2. The Area Problem (Raqba ka Masla):**
 
-**Tangent Line (Simple Idea):**
-- Pehle secant line (2 points P & Q)
-- Jab Q → P ke qareeb aata hai
-- Secant line → ek final position leti hai
-👉 Ye final line = Tangent line
+Find the area under a curve. Approximate by rectangles and take the limit as the number of rectangles increases.
 
-**Area Problem (Important):**
-- Irregular shapes ka exact area directly nahi milta
-- Rectangles use karke approx karte hain
-- Jitne zyada rectangles → utna accurate result
-👉 Final exact area = LIMIT
+**3. Definition of Limit (Intiha ki Tareef):**
 
-**Right & Left Hand Limit:**
-- Right hand limit: x → a⁺ (right side se approach)
-- Left hand limit: x → a⁻ (left side se approach)
-- Agar dono equal ho → LIMIT EXIST karti hai
+\`lim_{x→a} f(x) = L\` means f(x) gets arbitrarily close to L as x gets arbitrarily close to a (but not equal to a).
 
-**Important Example:**
-lim (sin x / x) as x → 0 = 1  
-(x ≠ 0 but close to 0)
+**4. One-Sided Limits (Yak-Tarfa Intiha):**
 
-**When Limit DOES NOT EXIST (DNE):**
-1. Oscillation (upar neeche jump karta rahe)
-2. Unbounded (∞ ya -∞ ki taraf chala jaye)
-3. Left & Right equal na ho
+- Right-hand limit: \`lim_{x→a^+} f(x)\` (x approaches a from the right)
+- Left-hand limit: \`lim_{x→a^-} f(x)\` (x approaches a from the left)
 
-**Infinity Concept:**
-+∞ ya -∞ number nahi hota, sirf behavior show karta hai
+**5. Existence of a Limit (Intiha ka Wujood):**
 
-**Limits at Infinity:**
-- x → ∞ means x bohat bara hota jata hai
-- Sirf ek side se approach hota hai
+The limit exists if and only if:
+\`lim_{x→a^+} f(x) = lim_{x→a^-} f(x) = L\`
 
-**Quick Revision Points:**
-- Limit = behavior near a point
-- Tangent = secant ka limiting position
-- Area = rectangles ka limit
-- LHL = RHL → limit exists
-- Oscillation / ∞ → DNE
-- ∞ is NOT a number
-- lim (sin x / x) = 1 (important)`,
-    
+**6. Limits at Infinity (Laa-mutnahi par Intiha):**
+
+\`lim_{x→∞} f(x) = L\` or \`lim_{x→-∞} f(x) = L\`
+
+**7. Infinite Limits (Laa-mutnahi Intiha):**
+
+\`lim_{x→a} f(x) = ∞\` or \`lim_{x→a} f(x) = -∞\`
+
+**8. When Limits Fail (Intiha Kab Fail Hoti Hai):**
+
+- Oscillations (e.g., sin(1/x))
+- Unbounded behavior (goes to ∞ or -∞)
+- Left and right limits don't match
+
+**9. Important Examples:**
+- \`lim_{x→0} sin(x)/x = 1\`
+- \`lim_{x→0} 1/x\` does not exist (DNE)
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Limit: f(x) approaches L as x approaches a
+- Right-hand: x→a⁺
+- Left-hand: x→a⁻
+- Limit exists if left = right
+- Infinity is not a number (DNE with special notation)
+- Limit at infinity: x gets very large
+- Tangent slope = limit of secant slopes
+- Area = limit of rectangle sums
+`,
     questions: [
       {
-        q: 'Calculus was mainly developed to solve which two problems?',
-        options: ['A. Graphing and equations', 'B. Area and tangent lines', 'C. Numbers and sets', 'D. Algebra and geometry'],
-        answer: 'B. Area and tangent lines',
-        diff: 'easy',
+        q: '\`lim_{x→a} f(x) = L\` means that f(x):',
+        options: ['A. Equals L at x=a', 'B. Gets arbitrarily close to L as x approaches a', 'C. Is always equal to L', 'D. Never equals L'],
+        answer: 'B. Gets arbitrarily close to L as x approaches a',
+        diff: 'easy'
       },
       {
-        q: 'Differential Calculus is mainly related to:',
-        options: ['A. Area under curve', 'B. Tangent lines', 'C. Probability', 'D. Matrices'],
-        answer: 'B. Tangent lines',
-        diff: 'easy',
-      },
-      {
-        q: 'Integral Calculus is mainly used to find:',
-        options: ['A. Slopes', 'B. Tangents', 'C. Area', 'D. Limits'],
-        answer: 'C. Area',
-        diff: 'easy',
-      },
-      {
-        q: 'A secant line is formed by:',
-        options: ['A. One point', 'B. Two points on curve', 'C. Infinite points', 'D. No points'],
-        answer: 'B. Two points on curve',
-        diff: 'medium',
-      },
-      {
-        q: 'A tangent line is obtained when:',
-        options: ['A. Two points are far apart', 'B. Secant rotates infinitely', 'C. Second point approaches the first point', 'D. Curve becomes straight'],
-        answer: 'C. Second point approaches the first point',
-        diff: 'medium',
-      },
-      {
-        q: 'Limit describes the behavior of a function when x:',
-        options: ['A. Equals a value', 'B. Is zero', 'C. Approaches a value', 'D. Is negative'],
-        answer: 'C. Approaches a value',
-        diff: 'easy',
-      },
-      {
-        q: 'Right-hand limit is represented as:',
-        options: ['A. x → a⁻', 'B. x → a⁺', 'C. x = a', 'D. x → ∞'],
-        answer: 'B. x → a⁺',
-        diff: 'medium',
-      },
-      {
-        q: 'Left-hand limit is represented as:',
-        options: ['A. x → a⁺', 'B. x = a', 'C. x → a⁻', 'D. x → ∞'],
-        answer: 'C. x → a⁻',
-        diff: 'medium',
+        q: 'The right-hand limit is denoted by:',
+        options: ['A. \`lim_{x→a^-} f(x)\`', 'B. \`lim_{x→a^+} f(x)\`', 'C. \`lim_{x→a} f(x)\`', 'D. \`lim_{x→∞} f(x)\`'],
+        answer: 'B. \`lim_{x→a^+} f(x)\`',
+        diff: 'easy'
       },
       {
         q: 'A limit exists if:',
-        options: ['A. Function is zero', 'B. LHL ≠ RHL', 'C. LHL = RHL', 'D. x = 0'],
-        answer: 'C. LHL = RHL',
-        diff: 'easy',
+        options: ['A. The left-hand limit exists', 'B. The right-hand limit exists', 'C. Both left and right limits exist and are equal', 'D. The function is defined at a'],
+        answer: 'C. Both left and right limits exist and are equal',
+        diff: 'medium'
       },
       {
-        q: 'The value of lim (sin x / x) as x → 0 is:',
-        options: ['A. 0', 'B. 1', 'C. ∞', 'D. -1'],
+        q: '\`lim_{x→0} sin(x)/x\` equals:',
+        options: ['A. 0', 'B. 1', 'C. ∞', 'D. Does not exist'],
         answer: 'B. 1',
-        diff: 'medium',
+        diff: 'easy'
       },
       {
-        q: 'Which of the following causes limit to NOT exist?',
-        options: ['A. Constant function', 'B. Smooth curve', 'C. Oscillation', 'D. Linear graph'],
-        answer: 'C. Oscillation',
-        diff: 'medium',
-      },
-      {
-        q: 'If a function increases without bound, the limit is:',
-        options: ['A. 0', 'B. 1', 'C. +∞', 'D. Undefined'],
-        answer: 'C. +∞',
-        diff: 'medium',
-      },
-      {
-        q: 'Infinity (∞) is:',
-        options: ['A. A real number', 'B. A rational number', 'C. Not a number', 'D. Integer'],
-        answer: 'C. Not a number',
-        diff: 'easy',
-      },
-      {
-        q: 'If left-hand and right-hand limits are different, then:',
-        options: ['A. Limit exists', 'B. Limit = 0', 'C. Limit does not exist', 'D. Limit = ∞'],
-        answer: 'C. Limit does not exist',
-        diff: 'easy',
-      },
-      {
-        q: 'Limits at infinity are taken:',
-        options: ['A. From both sides', 'B. Only from one side', 'C. From left only', 'D. From right only'],
-        answer: 'B. Only from one side',
-        diff: 'hard',
-      },
-      {
-        q: 'Area under a curve is found using:',
-        options: ['A. Circles', 'B. Triangles only', 'C. Rectangles approximation', 'D. Lines'],
-        answer: 'C. Rectangles approximation',
-        diff: 'medium',
-      },
-      {
-        q: 'Better approximation of area is achieved when:',
-        options: ['A. Fewer rectangles', 'B. Larger rectangles', 'C. More rectangles', 'D. No rectangles'],
-        answer: 'C. More rectangles',
-        diff: 'easy',
-      },
-      {
-        q: 'Oscillating functions usually:',
-        options: ['A. Have limits', 'B. Approach infinity', 'C. Do not have limits', 'D. Become zero'],
-        answer: 'C. Do not have limits',
-        diff: 'hard',
-      },
-    ],
-  },
-
-  10: {
-    title: 'Limits and Computational Techniques',
-    summary: `**Key Topics Covered:**
-- Algebraic techniques for limits
-- Limit laws (Theorem 2.5.1)
-- Limits of polynomials
-- Limits involving 1/x
-- Limits at infinity
-- Rational functions limits
-
-**Simple Understanding (Easy Urdu + English):**
-
-**Is lecture ka focus:**
-Pehle lecture mein graph se limits dekhi thi  
-👉 Ab hum algebra (math rules) use karke limits nikaalenge
-
-**Basic Idea:**
-Agar limit exist karti hai → LHL = RHL  
-Is lecture mein assume kiya gaya hai ke limit exist karti hai
-
----
-
-**IMPORTANT THEOREM (Limit Laws):**
-Agar limits exist karti hain:
-
-- Sum Rule:  
-  lim(f + g) = lim f + lim g  
-
-- Difference Rule:  
-  lim(f - g) = lim f - lim g  
-
-- Product Rule:  
-  lim(f × g) = lim f × lim g  
-
-- Quotient Rule:  
-  lim(f / g) = lim f / lim g  (jab denominator ≠ 0)
-
-👉 Simple yaad rakho:  
-**“Limit andar distribute ho jata hai”**
-
----
-
-**Power Rule:**
-lim [f(x)]ⁿ = [lim f(x)]ⁿ  
-
----
-
-**Constant Rule:**
-lim (k·f(x)) = k · lim f(x)
-
----
-
-**Limits of Polynomials:**
-👉 Direct value put kar do (substitution)
-
-Example:  
-lim (x² - 4x + 3) at x=5  
-= 25 - 20 + 3 = 8
-
----
-
-**Important Function: 1/x**
-- x → 0⁺ → +∞  
-- x → 0⁻ → -∞  
-- x → ±∞ → 0  
-
-👉 Bohat important MCQ concept
-
----
-
-**Limits at Infinity (Polynomials):**
-👉 Sirf highest power matter karti hai
-
-- Even power → +∞ both sides  
-- Odd power → sign depend karta hai
-
----
-
-**Rational Functions (fractions):**
-
-Case 1: Direct substitution possible → use karo  
-
-Case 2: 0/0 form → factor & cancel  
-
-Case 3: denominator → 0, numerator ≠ 0  
-👉 Result = ±∞ (sign check karo)
-
----
-
-**Limits at Infinity (Rational Functions):**
-👉 Degree compare karo:
-
-- Top degree < Bottom → 0  
-- Top = Bottom → coefficients ka ratio  
-- Top > Bottom → ±∞  
-
----
-
-**Quick Revision Points:**
-- Limit laws = distribute rules  
-- Polynomial → direct substitute  
-- 1/x near 0 → ±∞  
-- 0/0 → factor & cancel  
-- Degree rule (rational functions)  
-- Highest power dominates at infinity`,
-    
-    questions: [
-      {
-        q: 'This lecture mainly focuses on:',
-        options: ['A. Graphs of limits', 'B. Algebraic techniques of limits', 'C. Geometry', 'D. Trigonometry'],
-        answer: 'B. Algebraic techniques of limits',
-        diff: 'easy',
-      },
-      {
-        q: 'According to limit laws, lim(f + g) equals:',
-        options: ['A. lim f × lim g', 'B. lim f + lim g', 'C. lim f - lim g', 'D. None'],
-        answer: 'B. lim f + lim g',
-        diff: 'easy',
-      },
-      {
-        q: 'lim (k·f(x)) is equal to:',
-        options: ['A. k + lim f(x)', 'B. k × lim f(x)', 'C. lim f(x)/k', 'D. k²'],
-        answer: 'B. k × lim f(x)',
-        diff: 'easy',
-      },
-      {
-        q: 'For polynomials, limit is found by:',
-        options: ['A. Factoring', 'B. Graphing', 'C. Direct substitution', 'D. Differentiation'],
-        answer: 'C. Direct substitution',
-        diff: 'easy',
-      },
-      {
-        q: 'lim (x² - 4x + 3) at x = 5 equals:',
-        options: ['A. 0', 'B. 5', 'C. 8', 'D. 10'],
-        answer: 'C. 8',
-        diff: 'medium',
-      },
-      {
-        q: 'As x → 0⁺, 1/x approaches:',
-        options: ['A. 0', 'B. +∞', 'C. -∞', 'D. 1'],
-        answer: 'B. +∞',
-        diff: 'medium',
-      },
-      {
-        q: 'As x → 0⁻, 1/x approaches:',
-        options: ['A. +∞', 'B. 0', 'C. -∞', 'D. 1'],
-        answer: 'C. -∞',
-        diff: 'medium',
-      },
-      {
-        q: 'If lim f(x) exists, then:',
-        options: ['A. LHL ≠ RHL', 'B. LHL = RHL', 'C. f(x)=0', 'D. x=0'],
-        answer: 'B. LHL = RHL',
-        diff: 'easy',
-      },
-      {
-        q: 'If numerator and denominator both become 0, then:',
-        options: ['A. Limit = 0', 'B. Limit undefined always', 'C. Factor and simplify', 'D. Ignore'],
-        answer: 'C. Factor and simplify',
-        diff: 'medium',
-      },
-      {
-        q: 'If denominator → 0 but numerator ≠ 0, limit becomes:',
-        options: ['A. 0', 'B. 1', 'C. ±∞', 'D. Undefined'],
-        answer: 'C. ±∞',
-        diff: 'medium',
-      },
-      {
-        q: 'If degree of numerator < denominator (at infinity), limit is:',
-        options: ['A. ∞', 'B. 1', 'C. 0', 'D. Undefined'],
-        answer: 'C. 0',
-        diff: 'hard',
-      },
-      {
-        q: 'If degree of numerator = denominator, limit is:',
-        options: ['A. 0', 'B. Ratio of coefficients', 'C. ∞', 'D. Undefined'],
-        answer: 'B. Ratio of coefficients',
-        diff: 'hard',
-      },
-      {
-        q: 'If degree of numerator > denominator, limit is:',
-        options: ['A. 0', 'B. 1', 'C. ±∞', 'D. Constant'],
-        answer: 'C. ±∞',
-        diff: 'hard',
-      },
-      {
-        q: 'Highest power of x determines behavior at:',
-        options: ['A. x = 0', 'B. x = 1', 'C. Infinity', 'D. Negative values'],
-        answer: 'C. Infinity',
-        diff: 'medium',
-      },
-      {
-        q: 'lim [f(x)]ⁿ equals:',
-        options: ['A. lim f(x)', 'B. [lim f(x)]ⁿ', 'C. n·f(x)', 'D. None'],
-        answer: 'B. [lim f(x)]ⁿ',
-        diff: 'medium',
-      },
-      {
-        q: 'Which case gives 0/0 form?',
-        options: ['A. Only numerator zero', 'B. Only denominator zero', 'C. Both zero', 'D. None'],
-        answer: 'C. Both zero',
-        diff: 'easy',
-      },
-      {
-        q: 'At infinity, polynomial behavior depends on:',
-        options: ['A. Constant term', 'B. Lowest power', 'C. Highest power', 'D. Middle term'],
-        answer: 'C. Highest power',
-        diff: 'easy',
-      },
-      {
-        q: 'If x → ±∞, 1/x approaches:',
-        options: ['A. ∞', 'B. -∞', 'C. 1', 'D. 0'],
-        answer: 'D. 0',
-        diff: 'easy',
-      },
-    ],
-  },
-  
-  /// lecture 11 //
-  11: {
-    title: 'Limits: A Rigorous Approach',
-    summary: `**Key Topics Covered:**
-- Formal definition of limits
-- ε (epsilon) and δ (delta) concept
-- Left-hand & Right-hand limits
-- Proving limits using definition
-- When limit does not exist
-
----
-
-**Simple Understanding (Easy Urdu + English):**
-
-**Is lecture ka main idea:**
-Pehle hum limit ko "feel" kar rahe thay  
-👉 Ab hum usko **proper mathematical definition** se define karte hain
-
----
-
-**Basic Idea (Informal):**
-lim f(x) = L  
-👉 Jab x → a hota hai, to f(x) → L hota hai
-
----
-
-**Formal Definition (IMPORTANT):**
-
-👉 For every ε > 0  
-👉 There exists δ > 0  
-
-Such that:
-
-0 < |x - a| < δ  ⇒  |f(x) - L| < ε  
-
----
-
-**Simple Meaning (Easy Language):**
-- ε → batata hai f(x) L ke kitna close ho  
-- δ → batata hai x a ke kitna close ho  
-
-👉 Agar x ko a ke paas le aao  
-👉 to f(x) automatically L ke paas aa jata hai
-
----
-
-**Important Notes:**
-- x ≠ a (equal hona zaroori nahi)
-- f(a) defined ho ya na ho → farq nahi
-- Sirf "close hona" important hai
-
----
-
-**Intervals Idea:**
-- x ∈ (a - δ, a + δ)
-- f(x) ∈ (L - ε, L + ε)
-
----
-
-**Example Insight:**
-lim (3x - 5) at x=2 = 1  
-👉 Prove kar sakte hain using ε–δ
-
----
-
-**When Limit DOES NOT EXIST:**
-👉 Agar contradiction aa jaye  
-👉 ya left ≠ right  
-
-Example:
-f(x) = 1 (x>0), -1 (x<0)  
-
-👉 Left = -1  
-👉 Right = +1  
-👉 Limit DNE
-
----
-
-**Quick Revision Points:**
-- ε = output closeness  
-- δ = input closeness  
-- 0 < |x-a| < δ  
-- |f(x)-L| < ε  
-- Limit ≠ f(a)  
-- Different sides → DNE`,
-    
-    questions: [
-      {
-        q: 'This lecture introduces:',
-        options: ['A. Graphical limits', 'B. Formal definition of limits', 'C. Derivatives', 'D. Integration'],
-        answer: 'B. Formal definition of limits',
-        diff: 'easy',
-      },
-      {
-        q: 'In limit definition, ε represents:',
-        options: ['A. Input closeness', 'B. Output closeness', 'C. Infinity', 'D. Zero'],
-        answer: 'B. Output closeness',
-        diff: 'medium',
-      },
-      {
-        q: 'δ represents:',
-        options: ['A. Output closeness', 'B. Input closeness', 'C. Infinity', 'D. Function value'],
-        answer: 'B. Input closeness',
-        diff: 'medium',
-      },
-      {
-        q: 'The condition 0 < |x - a| < δ means:',
-        options: ['A. x = a', 'B. x near a but not equal', 'C. x far from a', 'D. x=0'],
-        answer: 'B. x near a but not equal',
-        diff: 'easy',
-      },
-      {
-        q: '|f(x) - L| < ε means:',
-        options: ['A. f(x)=L exactly', 'B. f(x) near L', 'C. f(x)=0', 'D. f(x) infinite'],
-        answer: 'B. f(x) near L',
-        diff: 'easy',
-      },
-      {
-        q: 'Limit depends on:',
-        options: ['A. f(a)', 'B. Value at point', 'C. Behavior near point', 'D. Zero'],
-        answer: 'C. Behavior near point',
-        diff: 'easy',
-      },
-      {
-        q: 'If f(a) is undefined, then:',
-        options: ['A. Limit does not exist', 'B. Limit still may exist', 'C. Always zero', 'D. Infinite'],
-        answer: 'B. Limit still may exist',
-        diff: 'medium',
-      },
-      {
-        q: 'In ε-δ definition, ε must be:',
-        options: ['A. Negative', 'B. Zero', 'C. Positive', 'D. Infinite'],
-        answer: 'C. Positive',
-        diff: 'easy',
-      },
-      {
-        q: 'δ must be:',
-        options: ['A. Negative', 'B. Positive', 'C. Zero', 'D. Infinite'],
-        answer: 'B. Positive',
-        diff: 'easy',
-      },
-      {
-        q: 'Limit exists if:',
-        options: ['A. LHL ≠ RHL', 'B. Only LHL exists', 'C. LHL = RHL', 'D. x=0'],
-        answer: 'C. LHL = RHL',
-        diff: 'easy',
-      },
-      {
-        q: 'If left-hand and right-hand limits are different:',
-        options: ['A. Limit exists', 'B. Limit = 0', 'C. Limit does not exist', 'D. Infinite'],
-        answer: 'C. Limit does not exist',
-        diff: 'easy',
-      },
-      {
-        q: 'The interval for x is:',
-        options: ['A. (L-ε, L+ε)', 'B. (a-δ, a+δ)', 'C. (0,1)', 'D. (-∞,∞)'],
-        answer: 'B. (a-δ, a+δ)',
-        diff: 'medium',
-      },
-      {
-        q: 'The interval for f(x) is:',
-        options: ['A. (a-δ, a+δ)', 'B. (L-ε, L+ε)', 'C. (0,1)', 'D. (-∞,∞)'],
-        answer: 'B. (L-ε, L+ε)',
-        diff: 'medium',
-      },
-      {
-        q: 'In formal definition, x = a is:',
-        options: ['A. Allowed', 'B. Required', 'C. Not required', 'D. Always zero'],
-        answer: 'C. Not required',
-        diff: 'medium',
-      },
-      {
-        q: 'The function f(x)=1 (x>0), -1 (x<0) has limit at 0:',
-        options: ['A. 0', 'B. 1', 'C. -1', 'D. Does not exist'],
+        q: '\`lim_{x→0} 1/x\` is:',
+        options: ['A. 0', 'B. 1', 'C. ∞', 'D. Does not exist'],
         answer: 'D. Does not exist',
-        diff: 'medium',
+        diff: 'medium'
       },
       {
-        q: 'Formal definition uses which inequality?',
-        options: ['A. x=a', 'B. |x-a|<δ', 'C. |f(x)-L|<ε', 'D. Both B and C'],
-        answer: 'D. Both B and C',
-        diff: 'hard',
+        q: 'The tangent line to a curve at a point is the limiting position of:',
+        options: ['A. Vertical lines', 'B. Secant lines', 'C. Horizontal lines', 'D. Parallel lines'],
+        answer: 'B. Secant lines',
+        diff: 'medium'
       },
       {
-        q: 'ε-δ definition ensures:',
-        options: ['A. Exact value', 'B. Approximation control', 'C. Infinite result', 'D. Graph only'],
-        answer: 'B. Approximation control',
-        diff: 'hard',
+        q: 'The area under a curve is approximated by:',
+        options: ['A. Triangles', 'B. Rectangles', 'C. Circles', 'D. Squares'],
+        answer: 'B. Rectangles',
+        diff: 'easy'
       },
       {
-        q: 'Main goal of ε-δ definition is to:',
-        options: ['A. Simplify limits', 'B. Define rigorously', 'C. Graph limits', 'D. Solve equations'],
-        answer: 'B. Define rigorously',
-        diff: 'easy',
+        q: '\`lim_{x→1^-} f(x)\` means x approaches 1:',
+        options: ['A. From the right', 'B. From the left', 'C. From both sides', 'D. From infinity'],
+        answer: 'B. From the left',
+        diff: 'easy'
       },
-    ],
+      {
+        q: 'If \`lim_{x→a^+} f(x) = 3\` and \`lim_{x→a^-} f(x) = 5\`, then \`lim_{x→a} f(x)\`:',
+        options: ['A. Is 3', 'B. Is 5', 'C. Is 4', 'D. Does not exist'],
+        answer: 'D. Does not exist',
+        diff: 'medium'
+      },
+      {
+        q: 'Oscillations near a point cause the limit to:',
+        options: ['A. Exist', 'B. Not exist', 'C. Be zero', 'D. Be one'],
+        answer: 'B. Not exist',
+        diff: 'hard'
+      }
+    ]
   },
-//leacture 12//
 
+  // ============================================================
+  // LECTURE 10 - Limits (Computational Techniques)
+  // ============================================================
+  10: {
+    title: 'Limits (Computational Techniques)',
+    summary: `
+**Lecture 10 - Limits (Computational Techniques - Intiha nikaalne ke Tareeqe)**
 
-// ─────────────────────────────────────────
-//  MTH101
-// ─────────────────────────────────────────
+**Roman Urdu Detailed Summary:**
+
+**1. Basic Limits (Bunyadi Intiha):**
+
+- \`lim_{x→a} c = c\` (limit of a constant is the constant)
+- \`lim_{x→a} x = a\`
+- \`lim_{x→a} x^n = a^n\` (n positive integer)
+
+**2. Limit Properties (Intiha ki Khasiyat - Theorem 2.5.1):**
+
+If \`lim f(x) = L₁\` and \`lim g(x) = L₂\`, then:
+
+(a) \`lim [f(x) + g(x)] = L₁ + L₂\`
+(b) \`lim [f(x) - g(x)] = L₁ - L₂\`
+(c) \`lim [f(x)·g(x)] = L₁·L₂\`
+(d) \`lim [f(x)/g(x)] = L₁/L₂\` (if L₂ ≠ 0)
+
+**3. Constant Multiple Rule (Mustaqil Zarbi ka Usool):**
+
+\`lim [c·f(x)] = c·lim f(x)\`
+
+**4. Limits of Polynomials (Polynomials ki Intiha):**
+
+\`lim_{x→a} P(x) = P(a)\` (for any polynomial)
+
+**5. Limits of Rational Functions (Rational Functions ki Intiha):**
+
+If denominator ≠ 0: substitute x=a.
+If denominator = 0 and numerator ≠ 0: limit is ∞ or -∞.
+If both = 0: factor and cancel common factors.
+
+**6. Limits at Infinity (Laa-mutnahi par Intiha):**
+
+For rational functions, divide numerator and denominator by the highest power of x.
+
+**Example:**
+\`lim_{x→∞} (3x²+2x)/(5x²-1) = 3/5\`
+
+**7. Limits of \`1/x^n\`:**
+- \`lim_{x→∞} 1/x^n = 0\`
+- \`lim_{x→-∞} 1/x^n = 0\`
+- \`lim_{x→0^+} 1/x^n = +∞\`
+- \`lim_{x→0^-} 1/x^n = -∞\` (if n is odd)
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Constant: \`lim c = c\`
+- Sum/Difference: add/subtract limits
+- Product: multiply limits
+- Quotient: divide limits (if denominator ≠ 0)
+- Polynomial: \`lim P(x) = P(a)\`
+- Rational: divide by highest power for infinity
+- If denominator → 0, numerator ≠ 0: limit is infinite
+- If 0/0: factor and cancel
+`,
+    questions: [
+      {
+        q: '\`lim_{x→2} (x² + 3x - 1)\` equals:',
+        options: ['A. 7', 'B. 8', 'C. 9', 'D. 10'],
+        answer: 'C. 9',
+        diff: 'easy'
+      },
+      {
+        q: '\`lim_{x→1} (x²-1)/(x-1)\` equals:',
+        options: ['A. 0', 'B. 1', 'C. 2', 'D. 3'],
+        answer: 'C. 2',
+        diff: 'medium'
+      },
+      {
+        q: '\`lim_{x→∞} (2x²+3x)/(5x²-1)\` equals:',
+        options: ['A. 0', 'B. 2/5', 'C. 3/5', 'D. 5/2'],
+        answer: 'B. 2/5',
+        diff: 'medium'
+      },
+      {
+        q: '\`lim_{x→0} 1/x²\` equals:',
+        options: ['A. 0', 'B. 1', 'C. +∞', 'D. -∞'],
+        answer: 'C. +∞',
+        diff: 'easy'
+      },
+      {
+        q: 'The limit of a constant function c as x→a is:',
+        options: ['A. a', 'B. c', 'C. 0', 'D. ∞'],
+        answer: 'B. c',
+        diff: 'easy'
+      },
+      {
+        q: '\`lim_{x→3} (x²-9)/(x-3)\` equals:',
+        options: ['A. 3', 'B. 6', 'C. 9', 'D. 0'],
+        answer: 'B. 6',
+        diff: 'medium'
+      },
+      {
+        q: '\`lim_{x→-∞} 1/x\` equals:',
+        options: ['A. 0', 'B. 1', 'C. -∞', 'D. +∞'],
+        answer: 'A. 0',
+        diff: 'easy'
+      },
+      {
+        q: 'For a polynomial P(x), \`lim_{x→a} P(x)\` is:',
+        options: ['A. P(a)', 'B. 0', 'C. 1', 'D. ∞'],
+        answer: 'A. P(a)',
+        diff: 'easy'
+      },
+      {
+        q: '\`lim_{x→∞} (3x³+2x)/(x³-1)\` equals:',
+        options: ['A. 0', 'B. 1', 'C. 3', 'D. ∞'],
+        answer: 'C. 3',
+        diff: 'medium'
+      },
+      {
+        q: 'If \`lim f(x) = 2\` and \`lim g(x) = 3\`, then \`lim [f(x)·g(x)]\` is:',
+        options: ['A. 5', 'B. 6', 'C. 1', 'D. 2/3'],
+        answer: 'B. 6',
+        diff: 'easy'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 11 - Limits (Rigorous Approach)
+  // ============================================================
+  11: {
+    title: 'Limits (Rigorous Approach)',
+    summary: `
+**Lecture 11 - Limits (Rigorous Approach - Intiha ki Sakht Tareef)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Formal Definition of Limit (Intiha ki Sakht Tareef):**
+
+\`lim_{x→a} f(x) = L\` means:
+For every ε > 0, there exists δ > 0 such that if 0 < |x-a| < δ, then |f(x)-L| < ε.
+
+**2. Epsilon-Delta Definition (Epsilon-Delta Tareef):**
+
+- ε (epsilon): how close f(x) must be to L
+- δ (delta): how close x must be to a
+
+**3. Right-Hand Limit (Right-Hand Limit):**
+
+For every ε > 0, there exists δ > 0 such that if 0 < x-a < δ, then |f(x)-L| < ε.
+
+**4. Left-Hand Limit (Left-Hand Limit):**
+
+For every ε > 0, there exists δ > 0 such that if 0 < a-x < δ, then |f(x)-L| < ε.
+
+**5. Proving Limits using ε-δ (Epsilon-Delta se Intiha Sabit Karna):**
+
+**Example:** Prove \`lim_{x→2} (3x-5) = 1\`
+- Given ε > 0
+- Need |(3x-5)-1| < ε
+- |3x-6| < ε → 3|x-2| < ε → |x-2| < ε/3
+- Choose δ = ε/3
+
+**6. Limits that Do Not Exist (Intiha jo Maujood Nahi):**
+
+Use ε-δ definition to show contradiction.
+
+**Example:** \`lim_{x→0} f(x)\` where f(x)=1 for x>0 and f(x)=-1 for x<0.
+
+**7. Important Points:**
+- δ depends on ε
+- δ is not unique
+- The definition only cares about values near a, not at a
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- ε-δ definition: for every ε, there exists δ
+- 0 < |x-a| < δ means x ≠ a
+- δ usually chosen as ε divided by something
+- Right-hand: 0 < x-a < δ
+- Left-hand: 0 < a-x < δ
+- The limit does not depend on f(a)
+- ε-δ proof is the rigorous foundation of calculus
+`,
+    questions: [
+      {
+        q: 'The ε-δ definition of a limit states that for every ε > 0, there exists δ > 0 such that:',
+        options: ['A. If |x-a| < δ then |f(x)-L| < ε', 'B. If 0 < |x-a| < δ then |f(x)-L| < ε', 'C. If |x-a| < δ then f(x) = L', 'D. If 0 < |x-a| < δ then f(x) = L'],
+        answer: 'B. If 0 < |x-a| < δ then |f(x)-L| < ε',
+        diff: 'hard'
+      },
+      {
+        q: 'In the ε-δ definition, ε represents:',
+        options: ['A. How close x must be to a', 'B. How close f(x) must be to L', 'C. The distance between a and L', 'D. The value of the limit'],
+        answer: 'B. How close f(x) must be to L',
+        diff: 'medium'
+      },
+      {
+        q: 'In the ε-δ definition, δ represents:',
+        options: ['A. How close x must be to a', 'B. How close f(x) must be to L', 'C. The distance between a and L', 'D. The value of the limit'],
+        answer: 'A. How close x must be to a',
+        diff: 'medium'
+      },
+      {
+        q: 'To prove \`lim_{x→a} f(x) = L\` using ε-δ, we need to find δ in terms of:',
+        options: ['A. ε only', 'B. a only', 'C. Both ε and a', 'D. Neither'],
+        answer: 'A. ε only',
+        diff: 'hard'
+      },
+      {
+        q: 'The value of f(a) in the definition of limit:',
+        options: ['A. Must equal L', 'B. Is irrelevant', 'C. Must be 0', 'D. Must be 1'],
+        answer: 'B. Is irrelevant',
+        diff: 'medium'
+      },
+      {
+        q: 'For the right-hand limit, the condition is:',
+        options: ['A. 0 < x-a < δ', 'B. 0 < a-x < δ', 'C. |x-a| < δ', 'D. x = a'],
+        answer: 'A. 0 < x-a < δ',
+        diff: 'medium'
+      },
+      {
+        q: 'For the left-hand limit, the condition is:',
+        options: ['A. 0 < x-a < δ', 'B. 0 < a-x < δ', 'C. |x-a| < δ', 'D. x = a'],
+        answer: 'B. 0 < a-x < δ',
+        diff: 'medium'
+      },
+      {
+        q: 'If the left and right hand limits are different, the limit:',
+        options: ['A. Exists and equals the left limit', 'B. Exists and equals the right limit', 'C. Does not exist', 'D. Equals their average'],
+        answer: 'C. Does not exist',
+        diff: 'easy'
+      },
+      {
+        q: 'The ε-δ definition is the formal definition of:',
+        options: ['A. Continuity', 'B. Differentiability', 'C. Limit', 'D. Integrability'],
+        answer: 'C. Limit',
+        diff: 'medium'
+      },
+      {
+        q: 'In the ε-δ definition, δ can depend on:',
+        options: ['A. ε and a', 'B. ε only', 'C. a only', 'D. Neither'],
+        answer: 'A. ε and a',
+        diff: 'hard'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 12 - Continuity
+  // ============================================================
   12: {
     title: 'Continuity',
-    summary: `**Key Topics Covered:**
-- Continuity & Discontinuity
-- Formal definition of continuity
-- Properties of continuous functions
-- Continuity of polynomials & rational functions
-- Composition of functions
-- Intermediate Value Theorem (IVT)
+    summary: `
+**Lecture 12 - Continuity (Istiqamat)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Definition of Continuity (Istiqamat ki Tareef - Definition 2.7.1):**
+
+A function f is continuous at c if:
+(1) f(c) is defined
+(2) \`lim_{x→c} f(x)\` exists
+(3) \`lim_{x→c} f(x) = f(c)\`
+
+**2. Continuity on an Interval (Faasle par Istiqamat):**
+
+f is continuous on (a,b) if it is continuous at every point in (a,b).
+
+**3. Continuous Function (Continuous Function):**
+
+A function continuous on \`(-∞, ∞)\` is called a continuous function.
+
+**4. Types of Discontinuity (Istiqamat ki Qismein):**
+
+- **Removable Discontinuity:** Limit exists but f(c) ≠ limit or f(c) undefined
+- **Jump Discontinuity:** Left and right limits exist but are not equal
+- **Infinite Discontinuity:** Limit is infinite
+
+**5. Properties of Continuous Functions (Istiqamat ki Khasiyat - Theorem 2.7.3):**
+
+If f and g are continuous at c, then:
+- f+g, f-g, f·g are continuous at c
+- f/g is continuous at c if g(c) ≠ 0
+
+**6. Polynomials and Rational Functions (Polynomials aur Rational Functions):**
+
+- All polynomials are continuous everywhere (Theorem 2.7.2)
+- Rational functions are continuous where denominator ≠ 0
+
+**7. Composition of Continuous Functions (Istiqamat ki Tarkeeb - Theorem 2.7.6):**
+
+If g is continuous at c and f is continuous at g(c), then f∘g is continuous at c.
+
+**8. Continuity from Left and Right (Left aur Right se Istiqamat - Definition 2.7.7):**
+
+- Left-continuous at c: \`lim_{x→c^-} f(x) = f(c)\`
+- Right-continuous at c: \`lim_{x→c^+} f(x) = f(c)\`
+
+**9. Continuity on a Closed Interval (Band Faasle par Istiqamat - Definition 2.7.8):**
+
+f is continuous on [a,b] if:
+- f is continuous on (a,b)
+- f is right-continuous at a
+- f is left-continuous at b
+
+**10. Intermediate Value Theorem (IVT - Theorem 2.7.9):**
+
+If f is continuous on [a,b] and C is any number between f(a) and f(b), then there exists c in [a,b] with f(c) = C.
 
 ---
 
-**Simple Understanding (Easy Urdu + English):**
-
-**Continuity kya hoti hai?**
-👉 Graph agar smooth ho (no breaks), to function continuous hota hai  
-
-👉 Pencil uthaye bina graph draw ho jaye → Continuous
-
----
-
-**Discontinuity (Break):**
-Function break ho jata hai jab:
-- f(c) defined na ho  
-- limit exist na kare  
-- limit ≠ f(c)
-
----
-
-**IMPORTANT Definition (Exam Point):**
-
-Function f continuous hai at x = c agar:
-
-1. f(c) defined ho  
-2. lim f(x) exist kare  
-3. lim f(x) = f(c)  
-
-👉 Teeno conditions zaroori hain
-
----
-
-**Shortcut (Most Important):**
-👉 Sirf check karo:
-
-lim f(x) = f(c)
-
-Agar ye true → function continuous
-
----
-
-**Types of Discontinuity:**
-- Hole (f(c) undefined)
-- Jump (left ≠ right)
-- Value mismatch (limit ≠ f(c))
-
----
-
-**Polynomials:**
-👉 Always continuous for ALL real numbers  
-
----
-
-**Rational Functions:**
-👉 Continuous everywhere EXCEPT  
-👉 jahan denominator = 0
-
----
-
-**Properties of Continuous Functions:**
-Agar f aur g continuous hain:
-
-- f + g → continuous  
-- f - g → continuous  
-- f × g → continuous  
-- f/g → continuous (if denominator ≠ 0)
-
----
-
-**Composition Rule:**
-👉 Agar g continuous hai aur f bhi continuous hai  
-👉 to f(g(x)) bhi continuous hoga  
-
----
-
-**Left & Right Continuity:**
-- Left continuity → left limit = f(c)
-- Right continuity → right limit = f(c)
-
----
-
-**Continuity on [a,b]:**
-- (a,b) pe continuous ho  
-- a pe right continuous ho  
-- b pe left continuous ho  
-
----
-
-**Intermediate Value Theorem (VERY IMPORTANT):**
-
-👉 Agar function continuous ho [a,b] pe  
-👉 aur C beech mein ho f(a) aur f(b) ke  
-
-👉 To koi x exist karega jahan:
-
-f(x) = C  
-
----
-
-**Special Case:**
-👉 Agar f(a) positive aur f(b) negative  
-👉 To beech mein root zaroor hoga  
-
----
-
-**Quick Revision Points:**
-- Continuous = no break  
-- lim f(x) = f(c)  
-- Polynomial → always continuous  
-- Rational → denominator ≠ 0  
-- IVT → value definitely exist karegi`,
-    
+**Yaad Rakhne Wali Important Baatein:**
+- Continuous: f(c) = lim f(x)
+- Polynomials: continuous everywhere
+- Rational: continuous where denominator ≠ 0
+- Composition of continuous is continuous
+- IVT: f takes all intermediate values
+- Removable discontinuity: hole in graph
+- Jump discontinuity: different left/right limits
+- Infinite discontinuity: vertical asymptote
+`,
     questions: [
       {
-        q: 'A function is continuous if:',
-        options: ['A. Graph has breaks', 'B. Graph is smooth', 'C. Undefined everywhere', 'D. Infinite'],
-        answer: 'B. Graph is smooth',
-        diff: 'easy',
+        q: 'A function is continuous at c if:',
+        options: ['A. f(c) is defined', 'B. \`lim_{x→c} f(x)\` exists', 'C. \`lim_{x→c} f(x) = f(c)\`', 'D. All of the above'],
+        answer: 'D. All of the above',
+        diff: 'easy'
       },
       {
-        q: 'Continuity requires:',
-        options: ['A. Only f(c)', 'B. Only limit', 'C. All 3 conditions', 'D. None'],
-        answer: 'C. All 3 conditions',
-        diff: 'medium',
+        q: 'All polynomials are continuous:',
+        options: ['A. Nowhere', 'B. Everywhere', 'C. Only at integers', 'D. Only at positive numbers'],
+        answer: 'B. Everywhere',
+        diff: 'easy'
       },
       {
-        q: 'If lim f(x) ≠ f(c), then:',
-        options: ['A. Continuous', 'B. Discontinuous', 'C. Infinite', 'D. Zero'],
-        answer: 'B. Discontinuous',
-        diff: 'easy',
+        q: 'A rational function is discontinuous where:',
+        options: ['A. Numerator = 0', 'B. Denominator = 0', 'C. Both numerator and denominator = 0', 'D. x = 0'],
+        answer: 'B. Denominator = 0',
+        diff: 'easy'
       },
       {
-        q: 'Polynomials are:',
-        options: ['A. Discontinuous', 'B. Continuous everywhere', 'C. Infinite', 'D. Undefined'],
-        answer: 'B. Continuous everywhere',
-        diff: 'easy',
+        q: 'The composition of continuous functions is:',
+        options: ['A. Always discontinuous', 'B. Always continuous', 'C. Sometimes continuous', 'D. Never continuous'],
+        answer: 'B. Always continuous',
+        diff: 'medium'
       },
       {
-        q: 'Rational functions are discontinuous when:',
-        options: ['A. x=0', 'B. Numerator=0', 'C. Denominator=0', 'D. Infinite'],
-        answer: 'C. Denominator=0',
-        diff: 'easy',
+        q: 'If f(a) and f(b) have opposite signs and f is continuous, then:',
+        options: ['A. f has a zero in (a,b)', 'B. f has no zero in (a,b)', 'C. f is constant', 'D. f is discontinuous'],
+        answer: 'A. f has a zero in (a,b)',
+        diff: 'medium'
       },
       {
-        q: 'If f and g are continuous, then f+g is:',
-        options: ['A. Discontinuous', 'B. Continuous', 'C. Infinite', 'D. Undefined'],
-        answer: 'B. Continuous',
-        diff: 'easy',
+        q: 'The Intermediate Value Theorem guarantees that f takes:',
+        options: ['A. Only the maximum value', 'B. Only the minimum value', 'C. All intermediate values', 'D. Only integer values'],
+        answer: 'C. All intermediate values',
+        diff: 'medium'
       },
       {
-        q: 'f/g is continuous if:',
-        options: ['A. g(c)=0', 'B. g(c)≠0', 'C. f(c)=0', 'D. Infinite'],
-        answer: 'B. g(c)≠0',
-        diff: 'medium',
+        q: 'A removable discontinuity occurs when:',
+        options: ['A. The limit does not exist', 'B. The limit exists but f(c) ≠ limit', 'C. The function is undefined everywhere', 'D. The function jumps'],
+        answer: 'B. The limit exists but f(c) ≠ limit',
+        diff: 'hard'
       },
       {
-        q: 'Continuity on [a,b] requires:',
-        options: ['A. Only inside', 'B. Only endpoints', 'C. Inside + endpoints conditions', 'D. None'],
-        answer: 'C. Inside + endpoints conditions',
-        diff: 'medium',
+        q: 'A jump discontinuity occurs when:',
+        options: ['A. The left and right limits exist but are not equal', 'B. The limit is infinite', 'C. The function is undefined', 'D. The function is constant'],
+        answer: 'A. The left and right limits exist but are not equal',
+        diff: 'hard'
       },
       {
-        q: 'Left continuity means:',
-        options: ['A. Right limit = f(c)', 'B. Left limit = f(c)', 'C. No limit', 'D. Infinite'],
-        answer: 'B. Left limit = f(c)',
-        diff: 'easy',
+        q: 'For f to be continuous on [a,b], f must be:',
+        options: ['A. Continuous on (a,b) only', 'B. Continuous on (a,b), right-continuous at a, left-continuous at b', 'C. Continuous only at endpoints', 'D. Discontinuous on (a,b)'],
+        answer: 'B. Continuous on (a,b), right-continuous at a, left-continuous at b',
+        diff: 'hard'
       },
       {
-        q: 'Right continuity means:',
-        options: ['A. Left limit = f(c)', 'B. Right limit = f(c)', 'C. No limit', 'D. Infinite'],
-        answer: 'B. Right limit = f(c)',
-        diff: 'easy',
-      },
-      {
-        q: 'Intermediate Value Theorem applies to:',
-        options: ['A. Discontinuous functions', 'B. Continuous functions', 'C. Infinite functions', 'D. Linear only'],
-        answer: 'B. Continuous functions',
-        diff: 'medium',
-      },
-      {
-        q: 'IVT guarantees:',
-        options: ['A. Exact solution', 'B. At least one value exists', 'C. Infinite solutions', 'D. No solution'],
-        answer: 'B. At least one value exists',
-        diff: 'medium',
-      },
-      {
-        q: 'If f(a) positive and f(b) negative, then:',
-        options: ['A. No root', 'B. Exactly 2 roots', 'C. At least one root', 'D. Infinite'],
-        answer: 'C. At least one root',
-        diff: 'easy',
-      },
-      {
-        q: 'A hole in graph means:',
-        options: ['A. Continuous', 'B. Discontinuity', 'C. Infinite', 'D. Zero'],
-        answer: 'B. Discontinuity',
-        diff: 'easy',
-      },
-      {
-        q: 'Composition f(g(x)) is continuous if:',
-        options: ['A. Only f continuous', 'B. Only g continuous', 'C. Both continuous', 'D. None'],
-        answer: 'C. Both continuous',
-        diff: 'medium',
-      },
-      {
-        q: 'Main condition for continuity:',
-        options: ['A. f(c)=0', 'B. lim f(x)=f(c)', 'C. x=0', 'D. Infinite'],
-        answer: 'B. lim f(x)=f(c)',
-        diff: 'easy',
-      },
-      {
-        q: 'If f(c) is undefined, then:',
-        options: ['A. Continuous', 'B. Discontinuous', 'C. Infinite', 'D. Zero'],
-        answer: 'B. Discontinuous',
-        diff: 'easy',
-      },
-      {
-        q: 'Graph without break shows:',
-        options: ['A. Discontinuity', 'B. Continuity', 'C. Infinity', 'D. Undefined'],
-        answer: 'B. Continuity',
-        diff: 'easy',
-      },
-    ],
+        q: 'The function f(x) = (x²-1)/(x-1) has a discontinuity at x=1 that is:',
+        options: ['A. Removable (limit exists)', 'B. Jump', 'C. Infinite', 'D. Continuous'],
+        answer: 'A. Removable (limit exists)',
+        diff: 'medium'
+      }
+    ]
   },
 
-
+  // ============================================================
+  // LECTURE 13 - Limits and Continuity of Trigonometric Functions
+  // ============================================================
   13: {
-  title: "Limits and continuity of Trigonometric functions",
-  summary: `**Key Topics Covered:**
-- Continuity of sine and cosine functions
-- Continuity of other trigonometric functions (tan, cot, sec, csc)
-- Squeeze Theorem (Sandwich Theorem)
-- Limit of sin(x)/x as x → 0 (equals 1)
-- Limit of (1 - cos(x))/x as x → 0 (equals 0)
-- Limits of sin(x) and cos(x) as x → ±∞ (do not exist)
+    title: 'Limits and Continuity of Trigonometric Functions',
+    summary: `
+**Lecture 13 - Limits and Continuity of Trigonometric Functions (Trigonometric Functions ki Intiha aur Istiqamat)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Continuity of Sin and Cos (Sin aur Cos ki Istiqamat):**
+
+- \`lim_{x→0} sin x = 0\` and \`lim_{x→0} cos x = 1\`
+- sin x and cos x are continuous everywhere
+
+**2. Continuity of Other Trig Functions (Aur Trig Functions ki Istiqamat):**
+
+- tan x = sin x / cos x: continuous where cos x ≠ 0
+- cot x = cos x / sin x: continuous where sin x ≠ 0
+- sec x = 1/cos x: continuous where cos x ≠ 0
+- csc x = 1/sin x: continuous where sin x ≠ 0
+
+**3. Squeeze Theorem (Squeeze Theorem):**
+
+If \`g(x) ≤ f(x) ≤ h(x)\` for all x near a (except possibly at a), and \`lim g(x) = lim h(x) = L\`, then \`lim f(x) = L\`.
+
+**4. Important Limits (Ahem Intiha):**
+
+\`lim_{x→0} sin x / x = 1\`
+\`lim_{x→0} (1 - cos x) / x = 0\`
+
+**5. Proof of \`lim_{x→0} sin x / x = 1\`:**
+Using the squeeze theorem with \`cos x < sin x/x < 1\` for 0 < x < π/2.
+
+**6. Limits at Infinity (Laa-mutnahi par Intiha):**
+
+- \`lim_{x→∞} sin x\` and \`lim_{x→∞} cos x\` do not exist (oscillate between -1 and 1)
+
+**7. Squeeze Theorem Example:**
+\`lim_{x→0} x² sin(1/x) = 0\` because \`-x² ≤ x² sin(1/x) ≤ x²\`
 
 ---
 
-**Simple Understanding:**
+**Yaad Rakhne Wali Important Baatein:**
+- \`lim_{x→0} sin x = 0\`, \`lim_{x→0} cos x = 1\`
+- sin and cos: continuous everywhere
+- tan: continuous except cos x = 0
+- Squeeze theorem: f between g and h
+- \`lim_{x→0} sin x/x = 1\`
+- \`lim_{x→0} (1-cos x)/x = 0\`
+- sin and cos have no limit at infinity
+- x² sin(1/x) → 0 by squeeze theorem
+`,
+    questions: [
+      {
+        q: '\`lim_{x→0} sin x/x\` is equal to:',
+        options: ['A. 0', 'B. 1', 'C. -1', 'D. ∞'],
+        answer: 'B. 1',
+        diff: 'easy'
+      },
+      {
+        q: '\`lim_{x→0} (1 - cos x)/x\` is equal to:',
+        options: ['A. 0', 'B. 1', 'C. -1', 'D. ∞'],
+        answer: 'A. 0',
+        diff: 'medium'
+      },
+      {
+        q: 'The function sin x is continuous:',
+        options: ['A. Only at x=0', 'B. Only for positive x', 'C. Everywhere', 'D. Nowhere'],
+        answer: 'C. Everywhere',
+        diff: 'easy'
+      },
+      {
+        q: 'The function tan x is discontinuous where:',
+        options: ['A. sin x = 0', 'B. cos x = 0', 'C. x = 0', 'D. tan x = 0'],
+        answer: 'B. cos x = 0',
+        diff: 'medium'
+      },
+      {
+        q: 'The Squeeze Theorem is used to find limits of functions that:',
+        options: ['A. Are easy to evaluate directly', 'B. Are bounded between two functions with the same limit', 'C. Are polynomials', 'D. Are rational functions'],
+        answer: 'B. Are bounded between two functions with the same limit',
+        diff: 'medium'
+      },
+      {
+        q: '\`lim_{x→∞} sin x\` is:',
+        options: ['A. 0', 'B. 1', 'C. Does not exist (oscillates)', 'D. ∞'],
+        answer: 'C. Does not exist (oscillates)',
+        diff: 'easy'
+      },
+      {
+        q: '\`lim_{x→0} x² sin(1/x)\` is:',
+        options: ['A. 0', 'B. 1', 'C. Does not exist', 'D. ∞'],
+        answer: 'A. 0',
+        diff: 'hard'
+      },
+      {
+        q: 'The proof of \`lim_{x→0} sin x/x = 1\` uses:',
+        options: ['A. The Squeeze Theorem', 'B. L\'Hopital\'s Rule', 'C. Direct substitution', 'D. The Mean Value Theorem'],
+        answer: 'A. The Squeeze Theorem',
+        diff: 'hard'
+      },
+      {
+        q: 'The function csc x is discontinuous where:',
+        options: ['A. cos x = 0', 'B. sin x = 0', 'C. x = 0', 'D. tan x = 0'],
+        answer: 'B. sin x = 0',
+        diff: 'medium'
+      },
+      {
+        q: '\`lim_{x→0} sin(3x)/x\` equals:',
+        options: ['A. 0', 'B. 1', 'C. 3', 'D. 1/3'],
+        answer: 'C. 3',
+        diff: 'medium'
+      }
+    ]
+  },
 
-**Continuity of Sine and Cosine:**
-👉 sin(0) = 0, cos(0) = 1
-👉 lim_{x→0} sin(x) = 0, lim_{x→0} cos(x) = 1
-👉 Therefore sin(x) and cos(x) are continuous everywhere.
+  // ============================================================
+  // LECTURE 14 - Tangent Lines and Rates of Change
+  // ============================================================
+  14: {
+    title: 'Tangent Lines and Rates of Change',
+    summary: `
+**Lecture 14 - Tangent Lines and Rates of Change (Tangent Lines aur Tabdeeli ki Sharah)**
 
-**Continuity of Other Trig Functions:**
-👉 tan(x) = sin(x)/cos(x) → continuous except where cos(x) = 0 (x = π/2, 3π/2, …)
-👉 cot(x) = cos(x)/sin(x) → continuous except where sin(x) = 0
-👉 sec(x) = 1/cos(x), csc(x) = 1/sin(x) → continuous on appropriate intervals.
+**Roman Urdu Detailed Summary:**
 
----
+**1. Slope of Secant Line (Secant Line ki Dhalan):**
 
-**Squeeze Theorem:**
-👉 If g(x) ≤ f(x) ≤ h(x) for all x near a (except possibly at a), and lim g(x) = lim h(x) = L, then lim f(x) = L.
-👉 Example: 0 ≤ x² sin(1/x) ≤ x² → as x→0, both bounds → 0, so limit = 0.
+For points P(x₀, f(x₀)) and Q(x₁, f(x₁)):
+\`m_sec = [f(x₁) - f(x₀)]/(x₁ - x₀)\`
 
----
+**2. Slope of Tangent Line (Tangent Line ki Dhalan):**
 
-**Important Limits:**
-👉 **lim_{x→0} sin(x)/x = 1**
-👉 **lim_{x→0} (1 - cos(x))/x = 0**
+\`m_tan = lim_{x₁→x₀} [f(x₁) - f(x₀)]/(x₁ - x₀)\`
 
-These are proved using geometry (areas of triangle, sector) and the Squeeze Theorem.
+**Alternative form:**
+\`m_tan = lim_{h→0} [f(x₀+h) - f(x₀)]/h\`
 
----
+**3. Average Velocity (Ausati Raftar):**
 
-**Limits at Infinity:**
-👉 As x → ±∞, sin(x) and cos(x) oscillate between -1 and 1.
-👉 Limits do not exist (DNE).
+\`v_avg = [f(t₁) - f(t₀)]/(t₁ - t₀)\` = slope of secant line on position-time graph.
 
----
+**4. Instantaneous Velocity (Fauri Raftar):**
 
-**Important Vocabulary:**
-- Continuity = function value equals limit at point
-- Squeeze Theorem = bounding a function to find its limit
-- Sector = region of a circle bounded by two radii and an arc
-- Radian measure = angle in radians (used for calculus)
-- Oscillation = periodic variation
+\`v_inst = lim_{t₁→t₀} [f(t₁) - f(t₀)]/(t₁ - t₀)\` = slope of tangent line.
 
----
+**5. Average Rate of Change (Ausati Tabdeeli ki Sharah - Definition 3.1.1):**
 
-**Quick Revision Points:**
-- sin and cos are continuous everywhere.
-- tan discontinuous where cos = 0.
-- Squeeze theorem: bound function between two with same limit.
-- lim_{x→0} sin x / x = 1.
-- lim_{x→0} (1 - cos x)/x = 0.
-- sin and cos have no limits at infinity.`,
-  questions: [
-    {
-      q: "lim_{x→0} sin(x) is equal to:",
-      options: ["A. 1", "B. 0", "C. Does not exist", "D. ∞"],
-      answer: "B. 0",
-      diff: "easy"
-    },
-    {
-      q: "lim_{x→0} cos(x) is equal to:",
-      options: ["A. 0", "B. 1", "C. Does not exist", "D. -1"],
-      answer: "B. 1",
-      diff: "easy"
-    },
-    {
-      q: "The function tan(x) is discontinuous at which points?",
-      options: ["A. x = nπ", "B. x = π/2 + nπ", "C. x = 2nπ", "D. x = (2n+1)π"],
-      answer: "B. x = π/2 + nπ",
-      diff: "medium"
-    },
-    {
-      q: "Which of the following is NOT continuous everywhere?",
-      options: ["A. sin(x)", "B. cos(x)", "C. tan(x)", "D. f(x)=x²"],
-      answer: "C. tan(x)",
-      diff: "easy"
-    },
-    {
-      q: "The Squeeze Theorem is also known as:",
-      options: ["A. The Pinching Theorem", "B. The Sandwich Theorem", "C. Both A and B", "D. The Limit Comparison Theorem"],
-      answer: "C. Both A and B",
-      diff: "easy"
-    },
-    {
-      q: "lim_{x→0} x² sin(1/x) equals:",
-      options: ["A. 1", "B. ∞", "C. 0", "D. Does not exist"],
-      answer: "C. 0",
-      diff: "medium"
-    },
-    {
-      q: "The limit lim_{x→0} sin(x)/x is:",
-      options: ["A. 0", "B. 1", "C. ∞", "D. Does not exist"],
-      answer: "B. 1",
-      diff: "easy"
-    },
-    {
-      q: "The limit lim_{x→0} (1 - cos(x))/x is:",
-      options: ["A. 1", "B. 0", "C. 1/2", "D. Does not exist"],
-      answer: "B. 0",
-      diff: "medium"
-    },
-    {
-      q: "Which of the following limits does NOT exist?",
-      options: ["A. lim_{x→0} sin(x)/x", "B. lim_{x→∞} sin(x)", "C. lim_{x→0} (1-cos x)/x", "D. lim_{x→π} sin(x)"],
-      answer: "B. lim_{x→∞} sin(x)",
-      diff: "easy"
-    },
-    {
-      q: "As x → ±∞, sin(x) oscillates between:",
-      options: ["A. 0 and 1", "B. -1 and 1", "C. -∞ and ∞", "D. 0 and ∞"],
-      answer: "B. -1 and 1",
-      diff: "easy"
-    },
-    {
-      q: "For the Squeeze Theorem to apply, we need:",
-      options: ["A. g(x) ≤ f(x) ≤ h(x) near a", "B. lim g(x) = lim h(x)", "C. Both A and B", "D. f(x) must be continuous"],
-      answer: "C. Both A and B",
-      diff: "medium"
-    },
-    {
-      q: "The area of a sector with radius r and angle θ (radians) is:",
-      options: ["A. rθ", "B. ½ r²θ", "C. r²θ", "D. ½ rθ"],
-      answer: "B. ½ r²θ",
-      diff: "medium"
-    },
-    {
-      q: "In the proof of lim_{x→0} sin x / x = 1, which geometric inequality is used?",
-      options: ["A. sin x < x < tan x for small x > 0", "B. sin x > x > tan x", "C. cos x < sin x/x < 1", "D. Both A and C"],
-      answer: "D. Both A and C",
-      diff: "hard"
-    },
-    {
-      q: "The function sec(x) = 1/cos(x) is discontinuous where:",
-      options: ["A. sin(x) = 0", "B. cos(x) = 0", "C. tan(x) = 0", "D. x = nπ"],
-      answer: "B. cos(x) = 0",
-      diff: "easy"
-    },
-    {
-      q: "lim_{x→0} (sin(2x))/(x) equals:",
-      options: ["A. 0", "B. 1", "C. 2", "D. Does not exist"],
-      answer: "C. 2",
-      diff: "medium"
-    },
-    {
-      q: "Which of the following functions is continuous at x = 0?",
-      options: ["A. f(x) = 1/x", "B. f(x) = tan(x)", "C. f(x) = sin(x)", "D. f(x) = cot(x)"],
-      answer: "C. f(x) = sin(x)",
-      diff: "easy"
-    },
-    {
-      q: "The Squeeze Theorem can be used to find limits when:",
-      options: ["A. The function oscillates", "B. Direct substitution gives 0/0", "C. Both A and B", "D. Only when function is polynomial"],
-      answer: "C. Both A and B",
-      diff: "medium"
-    },
-    {
-      q: "lim_{x→0} (1 - cos² x)/x² equals:",
-      options: ["A. 0", "B. 1", "C. ½", "D. 2"],
-      answer: "B. 1",
-      diff: "hard"
-    },
-    {
-      q: "The value of lim_{x→0} (tan x)/x is:",
-      options: ["A. 0", "B. 1", "C. ∞", "D. Does not exist"],
-      answer: "B. 1",
-      diff: "medium"
-    },
-    {
-      q: "Which of the following is a condition for continuity at c?",
-      options: ["A. f(c) is defined", "B. lim_{x→c} f(x) exists", "C. f(c) = lim_{x→c} f(x)", "D. All of the above"],
-      answer: "D. All of the above",
-      diff: "easy"
-    }
-  ]
-},
+Average rate of change of y with respect to x over [x₀, x₁] is:
+\`m_sec = [f(x₁) - f(x₀)]/(x₁ - x₀)\`
 
-14: {
-  title: "Tangent Lines and Rates of Change",
-  summary: `**Key Topics Covered:**
-- Secant line and tangent line
-- Slope of secant line (average rate of change)
-- Slope of tangent line (instantaneous rate of change)
-- Average velocity vs instantaneous velocity
-- Rate of change of one quantity with respect to another
+**6. Instantaneous Rate of Change (Fauri Tabdeeli ki Sharah - Definition 3.1.1):**
+
+Instantaneous rate of change at x₀ is:
+\`m_tan = lim_{x₁→x₀} [f(x₁) - f(x₀)]/(x₁ - x₀)\`
+
+**7. Geometric Interpretation:**
+- Secant line slope = average rate of change
+- Tangent line slope = instantaneous rate of change
+
+**8. Example:**
+f(x) = x² + 1 at x₀ = -4:
+- Average rate over [3,5]: 8
+- Instantaneous rate at -4: -8
+- General instantaneous rate: 2x₀
 
 ---
 
-**Simple Understanding:**
+**Yaad Rakhne Wali Important Baatein:**
+- Secant slope: average rate of change
+- Tangent slope: instantaneous rate of change
+- \`m_sec = Δy/Δx\`
+- \`m_tan = lim_{Δx→0} Δy/Δx\`
+- Average velocity = secant slope
+- Instantaneous velocity = tangent slope
+- Rate of change = slope
+`,
+    questions: [
+      {
+        q: 'The slope of the secant line between two points on a curve represents:',
+        options: ['A. Instantaneous rate of change', 'B. Average rate of change', 'C. The derivative', 'D. The tangent slope'],
+        answer: 'B. Average rate of change',
+        diff: 'medium'
+      },
+      {
+        q: 'The slope of the tangent line at a point on a curve represents:',
+        options: ['A. Average rate of change', 'B. Instantaneous rate of change', 'C. The secant slope', 'D. The average velocity'],
+        answer: 'B. Instantaneous rate of change',
+        diff: 'medium'
+      },
+      {
+        q: 'Instantaneous velocity is the slope of the tangent line on a:',
+        options: ['A. Position-time graph', 'B. Velocity-time graph', 'C. Acceleration-time graph', 'D. Force-time graph'],
+        answer: 'A. Position-time graph',
+        diff: 'easy'
+      },
+      {
+        q: 'The formula for the slope of the tangent line is:',
+        options: ['A. \`m_tan = (f(x₁)-f(x₀))/(x₁-x₀)\`', 'B. \`m_tan = lim_{h→0} (f(x₀+h)-f(x₀))/h\`', 'C. \`m_tan = f(x₁)-f(x₀)\`', 'D. \`m_tan = (x₁-x₀)/(f(x₁)-f(x₀))\`'],
+        answer: 'B. \`m_tan = lim_{h→0} (f(x₀+h)-f(x₀))/h\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The formula for the slope of the secant line is:',
+        options: ['A. \`m_sec = (f(x₁)-f(x₀))/(x₁-x₀)\`', 'B. \`m_sec = lim_{h→0} (f(x₀+h)-f(x₀))/h\`', 'C. \`m_sec = f(x₁)-f(x₀)\`', 'D. \`m_sec = (x₁-x₀)/(f(x₁)-f(x₀))\`'],
+        answer: 'A. \`m_sec = (f(x₁)-f(x₀))/(x₁-x₀)\`',
+        diff: 'easy'
+      },
+      {
+        q: 'Average rate of change of y with respect to x is the slope of:',
+        options: ['A. The tangent line', 'B. The secant line', 'C. The horizontal line', 'D. The vertical line'],
+        answer: 'B. The secant line',
+        diff: 'medium'
+      },
+      {
+        q: 'Instantaneous rate of change of y with respect to x is the slope of:',
+        options: ['A. The tangent line', 'B. The secant line', 'C. The horizontal line', 'D. The vertical line'],
+        answer: 'A. The tangent line',
+        diff: 'medium'
+      },
+      {
+        q: 'If \`f(x) = x²\`, the instantaneous rate of change at x=3 is:',
+        options: ['A. 3', 'B. 6', 'C. 9', 'D. 12'],
+        answer: 'B. 6',
+        diff: 'medium'
+      },
+      {
+        q: 'Average velocity is calculated as:',
+        options: ['A. Δposition/Δtime', 'B. Δvelocity/Δtime', 'C. Δtime/Δposition', 'D. position/time'],
+        answer: 'A. Δposition/Δtime',
+        diff: 'easy'
+      },
+      {
+        q: 'The tangent line to a curve at a point is the limiting position of:',
+        options: ['A. Vertical lines', 'B. Secant lines', 'C. Horizontal lines', 'D. Parallel lines'],
+        answer: 'B. Secant lines',
+        diff: 'easy'
+      }
+    ]
+  },
 
-**Secant Line:**
-👉 A line connecting two points on a curve.
-👉 Slope = (f(x₁) - f(x₀)) / (x₁ - x₀)
+  // ============================================================
+  // LECTURE 15 - The Derivative
+  // ============================================================
+  15: {
+    title: 'The Derivative',
+    summary: `
+**Lecture 15 - The Derivative (Derivative - Mushtaq)**
 
-**Tangent Line:**
-👉 The limiting position of the secant line as one point moves toward the other.
-👉 Slope = limit of secant slope as x₁ → x₀
+**Roman Urdu Detailed Summary:**
 
----
+**1. Definition of Derivative (Derivative ki Tareef - Definition 3.2.1/3.2.2):**
 
-**Average Rate of Change:**
-👉 Slope of secant line over interval [x₀, x₁].
-👉 Example: Average velocity = (distance traveled) / (time elapsed)
+\`f'(x) = lim_{h→0} [f(x+h) - f(x)]/h\`
 
-**Instantaneous Rate of Change:**
-👉 Slope of tangent line at a point.
-👉 Example: Instantaneous velocity – velocity at a specific instant (speedometer reading).
+The derivative of f at x is the slope of the tangent line to the graph of f at x.
 
----
+**2. Geometric Interpretation (Hendasi Tashreeh):**
 
-**Geometric Interpretation:**
-👉 Average rate → secant slope.
-👉 Instantaneous rate → tangent slope.
+f'(x) = slope of tangent line at point x
+f'(x) = instantaneous rate of change of y with respect to x
 
----
+**3. Notation (Alamat):**
 
-**Example:**
-👉 f(x) = x² + 1
-   - Average rate from x=3 to x=5: (26-10)/2 = 8
-   - Instantaneous rate at x=-4: limit = -8 (negative means decreasing)
+- \`f'(x)\` (Lagrange notation)
+- \`dy/dx\` (Leibniz notation)
+- \`d/dx [f(x)]\`
 
----
+**4. Differentiability (Differentiability):**
 
-**Important Vocabulary:**
-- Secant line = line through two points on curve
-- Tangent line = line touching curve at one point (limiting position)
-- Average rate = change over interval
-- Instantaneous rate = change at exact point
-- Velocity = rate of change of position
+f is differentiable at x if \`f'(x)\` exists.
 
----
+**5. Derivative as a Function (Derivative ek Function ke Tor par):**
 
-**Quick Revision Points:**
-- Secant slope = (Δy)/(Δx) = average rate.
-- Tangent slope = limit of secant slopes = instantaneous rate.
-- Average velocity = distance / time.
-- Instantaneous velocity = slope of tangent on position-time graph.
-- Rate of change applies to any two related quantities.`,
-  questions: [
-    {
-      q: "A line joining two points on a curve is called a:",
-      options: ["A. Tangent line", "B. Secant line", "C. Normal line", "D. Asymptote"],
-      answer: "B. Secant line",
-      diff: "easy"
-    },
-    {
-      q: "The slope of a secant line represents the:",
-      options: ["A. Instantaneous rate of change", "B. Average rate of change", "C. Derivative at a point", "D. Slope of tangent"],
-      answer: "B. Average rate of change",
-      diff: "easy"
-    },
-    {
-      q: "The slope of the tangent line at a point represents the:",
-      options: ["A. Average rate of change", "B. Instantaneous rate of change", "C. Secant slope", "D. None of the above"],
-      answer: "B. Instantaneous rate of change",
-      diff: "easy"
-    },
-    {
-      q: "The slope of the secant line through (x₀, f(x₀)) and (x₁, f(x₁)) is given by:",
-      options: ["A. (f(x₁) - f(x₀)) / (x₁ - x₀)", "B. (f(x₀) - f(x₁)) / (x₁ - x₀)", "C. (x₁ - x₀) / (f(x₁) - f(x₀))", "D. f'(x₀)"],
-      answer: "A. (f(x₁) - f(x₀)) / (x₁ - x₀)",
-      diff: "easy"
-    },
-    {
-      q: "The slope of the tangent line at x₀ is defined as:",
-      options: ["A. lim_{x₁→x₀} (f(x₁)-f(x₀))/(x₁-x₀)", "B. (f(x₀+h)-f(x₀))/h", "C. Both A and B", "D. None of the above"],
-      answer: "C. Both A and B",
-      diff: "medium"
-    },
-    {
-      q: "Average velocity is defined as:",
-      options: ["A. Change in velocity / change in time", "B. Distance traveled / time elapsed", "C. Instantaneous speed", "D. Slope of tangent on distance-time graph"],
-      answer: "B. Distance traveled / time elapsed",
-      diff: "easy"
-    },
-    {
-      q: "Instantaneous velocity is the:",
-      options: ["A. Slope of secant on distance-time graph", "B. Slope of tangent on distance-time graph", "C. Area under distance-time graph", "D. Average of all velocities"],
-      answer: "B. Slope of tangent on distance-time graph",
-      diff: "easy"
-    },
-    {
-      q: "If f(x) = x² + 1, the average rate of change over [3,5] is:",
-      options: ["A. 8", "B. 10", "C. 12", "D. 6"],
-      answer: "A. 8",
-      diff: "medium"
-    },
-    {
-      q: "For f(x) = x² + 1, the instantaneous rate of change at x = -4 is:",
-      options: ["A. 8", "B. -8", "C. 4", "D. -4"],
-      answer: "B. -8",
-      diff: "medium"
-    },
-    {
-      q: "A negative instantaneous rate of change means the function is:",
-      options: ["A. Increasing", "B. Decreasing", "C. Constant", "D. Undefined"],
-      answer: "B. Decreasing",
-      diff: "easy"
-    },
-    {
-      q: "The tangent line to a curve at a point:",
-      options: ["A. Crosses the curve at that point", "B. Touches the curve at that point", "C. Is always horizontal", "D. Has slope zero"],
-      answer: "B. Touches the curve at that point",
-      diff: "easy"
-    },
-    {
-      q: "As x₁ approaches x₀, the secant line approaches the:",
-      options: ["A. Normal line", "B. Tangent line", "C. Horizontal line", "D. Vertical line"],
-      answer: "B. Tangent line",
-      diff: "easy"
-    },
-    {
-      q: "Which of the following is an example of rate of change?",
-      options: ["A. Velocity (position/time)", "B. Growth rate of bacteria", "C. Cost per unit produced", "D. All of the above"],
-      answer: "D. All of the above",
-      diff: "easy"
-    },
-    {
-      q: "If y = f(x), then the average rate of change of y with respect to x over [x₀, x₁] is the slope of the:",
-      options: ["A. Tangent line at x₀", "B. Secant line through (x₀, f(x₀)) and (x₁, f(x₁))", "C. Normal line", "D. Horizontal line"],
-      answer: "B. Secant line through (x₀, f(x₀)) and (x₁, f(x₁))",
-      diff: "easy"
-    },
-    {
-      q: "The instantaneous rate of change at a point is also called the:",
-      options: ["A. Derivative", "B. Integral", "C. Antiderivative", "D. Limit"],
-      answer: "A. Derivative",
-      diff: "easy"
-    },
-    {
-      q: "If the position function is d = f(t), the instantaneous velocity at t₀ is:",
-      options: ["A. f(t₀)", "B. f'(t₀)", "C. ∫f(t)dt", "D. f(t₀)/t₀"],
-      answer: "B. f'(t₀)",
-      diff: "medium"
-    },
-    {
-      q: "For a linear function f(x) = mx + b, the instantaneous rate of change at any point is:",
-      options: ["A. m", "B. b", "C. x", "D. 0"],
-      answer: "A. m",
-      diff: "easy"
-    },
-    {
-      q: "The slope of the tangent line to f(x) = x² at x = 2 is:",
-      options: ["A. 2", "B. 4", "C. 1", "D. 0"],
-      answer: "B. 4",
-      diff: "medium"
-    },
-    {
-      q: "Which of the following is needed to compute average velocity?",
-      options: ["A. Only final position", "B. Only initial position", "C. Both initial and final positions and time", "D. Only time"],
-      answer: "C. Both initial and final positions and time",
-      diff: "easy"
-    },
-    {
-      q: "The concept of tangent line to a curve was developed to solve which problem?",
-      options: ["A. Finding area under curve", "B. Finding instantaneous velocity", "C. Finding average velocity", "D. Finding length of curve"],
-      answer: "B. Finding instantaneous velocity",
-      diff: "medium"
-    }
-  ]
-},
+The derivative \`f'(x)\` is itself a function of x.
 
+**6. When Derivatives Fail (Derivative Kab Fail Hoti Hai):**
 
-15: {
-  "title": "The Derivative",
-  "summary": "**Key Topics Covered:**\n- Definition of derivative as limit of difference quotient\n- Slope of tangent line\n- Instantaneous rate of change\n- Examples: f(x)=x², f(x)=√x, f(x)=|x|\n- Derivative notation (d/dx, dy/dx)\n- Differentiability vs continuity\n- Points of non-differentiability (corners, vertical tangents, discontinuities)\n\n---\n\n**Simple Understanding:**\n\n**Definition of Derivative:**\n👉 The derivative of f at x, denoted f'(x), is the limit:\n   `f'(x) = lim_{h→0} (f(x+h) - f(x)) / h`\n👉 It gives the slope of the tangent line to the graph of f at the point (x, f(x)).\n\n**Geometric Interpretation:**\n👉 Tangent line slope = f'(x)\n👉 Equation of tangent line at (x₀, y₀): `y - y₀ = f'(x₀)(x - x₀)`\n\n**Rate of Change Interpretation:**\n👉 If y = f(x), then f'(x) is the instantaneous rate of change of y with respect to x.\n\n---\n\n**Examples:**\n👉 f(x) = x² → f'(x) = 2x\n👉 f(x) = √x → f'(x) = 1/(2√x)  (for x > 0)\n👉 f(x) = |x| → f'(x) = 1 for x > 0, f'(x) = -1 for x < 0 (not differentiable at 0)\n\n---\n\n**Derivative Notation:**\n👉 f'(x) = d/dx [f(x)] = dy/dx (if y = f(x))\n👉 Differentiation = operation of finding derivative.\n\n---\n\n**Differentiability and Continuity:**\n👉 If f is differentiable at x₀, then f is continuous at x₀.\n👉 The converse is false (continuous does not imply differentiable).\n\n**Points of Non-Differentiability:**\n- Corners (sharp points) – e.g., |x| at x=0\n- Vertical tangents – slope infinite\n- Discontinuities\n\n---\n\n**Important Vocabulary:**\n- Derivative = limit of difference quotient\n- Tangent line = line that touches curve at one point\n- Difference quotient = (f(x+h)-f(x))/h\n- Differentiation = process of finding derivative\n- Differentiable = derivative exists\n- Continuous = function has no breaks, jumps\n\n---\n\n**Quick Revision Points:**\n- f'(x) = lim_{h→0} (f(x+h)-f(x))/h\n- Derivative = slope of tangent = instantaneous rate of change.\n- Power rule: d/dx (xⁿ) = n xⁿ⁻¹ (implied by examples)\n- |x| not differentiable at 0 (corner).\n- Differentiable ⇒ Continuous. Continuous ⇏ Differentiable.",
-  "questions": [
-    {
-      "q": "The derivative of f at x is defined as:",
-      "options": ["A. lim_{h→0} (f(x+h) - f(x))/h", "B. lim_{h→0} (f(x) - f(x+h))/h", "C. lim_{x→0} (f(x+h)-f(x))/h", "D. lim_{h→∞} (f(x+h)-f(x))/h"],
-      "answer": "A. lim_{h→0} (f(x+h) - f(x))/h",
-      "diff": "easy"
-    },
-    {
-      "q": "Geometrically, the derivative f'(a) represents:",
-      "options": ["A. The area under the curve at a", "B. The slope of the tangent line at x=a", "C. The y-intercept of the curve", "D. The average rate of change over [0,a]"],
-      "answer": "B. The slope of the tangent line at x=a",
-      "diff": "easy"
-    },
-    {
-      "q": "If f(x) = x², then f'(x) is:",
-      "options": ["A. 2x", "B. x", "C. 2", "D. 2x+1"],
-      "answer": "A. 2x",
-      "diff": "easy"
-    },
-    {
-      "q": "The slope of the tangent line to f(x) = x² at x = 3 is:",
-      "options": ["A. 3", "B. 6", "C. 9", "D. 2"],
-      "answer": "B. 6",
-      "diff": "easy"
-    },
-    {
-      "q": "The derivative of f(x) = √x (for x>0) is:",
-      "options": ["A. 1/(2√x)", "B. 2√x", "C. 1/√x", "D. 1/(2x)"],
-      "answer": "A. 1/(2√x)",
-      "diff": "medium"
-    },
-    {
-      "q": "For f(x) = |x|, which statement is true?",
-      "options": ["A. f'(0) = 0", "B. f is not differentiable at x=0", "C. f'(0) = 1", "D. f'(0) = -1"],
-      "answer": "B. f is not differentiable at x=0",
-      "diff": "easy"
-    },
-    {
-      "q": "If y = f(x), then the notation dy/dx means:",
-      "options": ["A. The derivative of y with respect to x", "B. The product of d and y divided by d and x", "C. The difference quotient", "D. The second derivative"],
-      "answer": "A. The derivative of y with respect to x",
-      "diff": "easy"
-    },
-    {
-      "q": "The process of finding the derivative is called:",
-      "options": ["A. Integration", "B. Differentiation", "C. Limiting", "D. Tangentizing"],
-      "answer": "B. Differentiation",
-      "diff": "easy"
-    },
-    {
-      "q": "Which of the following is true regarding differentiability and continuity?",
-      "options": ["A. Differentiability implies continuity", "B. Continuity implies differentiability", "C. They are equivalent", "D. Neither implies the other"],
-      "answer": "A. Differentiability implies continuity",
-      "diff": "easy"
-    },
-    {
-      "q": "A function is NOT differentiable at a point if the graph has:",
-      "options": ["A. A corner", "B. A vertical tangent", "C. A discontinuity", "D. All of the above"],
-      "answer": "D. All of the above",
-      "diff": "easy"
-    },
-    {
-      "q": "The derivative f'(x) gives the ______ rate of change of y with respect to x.",
-      "options": ["A. Average", "B. Instantaneous", "C. Total", "D. Percentage"],
-      "answer": "B. Instantaneous",
-      "diff": "easy"
-    },
-    {
-      "q": "For f(x) = 5 (constant function), f'(x) is:",
-      "options": ["A. 5", "B. 0", "C. 1", "D. Undefined"],
-      "answer": "B. 0",
-      "diff": "easy"
-    },
-    {
-      "q": "If the tangent line to f at x=2 is horizontal, then f'(2) equals:",
-      "options": ["A. 2", "B. 1", "C. 0", "D. Does not exist"],
-      "answer": "C. 0",
-      "diff": "medium"
-    },
-    {
-      "q": "The derivative of f(x) = x³ at x=1 is:",
-      "options": ["A. 1", "B. 3", "C. 2", "D. 0"],
-      "answer": "B. 3",
-      "diff": "medium"
-    },
-    {
-      "q": "Which of the following is the correct interpretation of the derivative in the context of motion?",
-      "options": ["A. Position at time t", "B. Average velocity", "C. Instantaneous velocity", "D. Acceleration"],
-      "answer": "C. Instantaneous velocity",
-      "diff": "easy"
-    },
-    {
-      "q": "The limit definition of derivative at a point x₀ can be written as:",
-      "options": ["A. lim_{h→0} (f(x₀+h)-f(x₀))/h", "B. lim_{x→x₀} (f(x)-f(x₀))/(x-x₀)", "C. Both A and B", "D. None of the above"],
-      "answer": "C. Both A and B",
-      "diff": "medium"
-    },
-    {
-      "q": "If f(x) = |x|, what is f'(x) for x < 0?",
-      "options": ["A. 1", "B. -1", "C. 0", "D. Undefined"],
-      "answer": "B. -1",
-      "diff": "medium"
-    },
-    {
-      "q": "Which of the following functions is differentiable at x=0?",
-      "options": ["A. f(x)=|x|", "B. f(x)=x²", "C. f(x)=1/x", "D. f(x)=√x"],
-      "answer": "B. f(x)=x²",
-      "diff": "easy"
-    },
-    {
-      "q": "If a function has a vertical tangent at x=c, then the derivative at x=c:",
-      "options": ["A. Is zero", "B. Is positive", "C. Is infinite (does not exist as a finite number)", "D. Is negative"],
-      "answer": "C. Is infinite (does not exist as a finite number)",
-      "diff": "hard"
-    },
-    {
-      "q": "The derivative of f(x) = mx + b is:",
-      "options": ["A. mx", "B. b", "C. m", "D. m + b"],
-      "answer": "C. m",
-      "diff": "easy"
-    }
-  ]
-},
-16: {
-  title: "MTH101: Practice Questions (Lectures 16-18) – Techniques of Differentiation, Derivatives of Trigonometric Functions, Chain Rule",
-  summary: `**Key Topics Covered:**
-- Quotient rule for differentiation
-- Product rule for differentiation
-- Derivatives of trigonometric functions (sin, cos, tan, cot, sec, csc)
-- Chain rule for composite functions
-- Practice problems with step-by-step solutions
+- At corners (left and right limits differ)
+- At discontinuities (function not continuous)
+- At vertical tangents (slope is infinite)
+
+**7. Differentiability Implies Continuity (Differentiability se Istiqamat):**
+
+If f is differentiable at x, then f is continuous at x.
+
+**8. Examples:**
+- f(x) = x² → f'(x) = 2x
+- f(x) = √x → f'(x) = 1/(2√x)
+
+**9. Derivative of a Straight Line:**
+f(x) = mx + b → f'(x) = m
 
 ---
 
-**Simple Understanding:**
+**Yaad Rakhne Wali Important Baatein:**
+- \`f'(x) = lim_{h→0} [f(x+h)-f(x)]/h\`
+- Derivative = slope of tangent line
+- Derivative = instantaneous rate of change
+- f differentiable → f continuous
+- Not differentiable at corners, discontinuities, vertical tangents
+- \`dy/dx\` notation
+- Derivative of line = slope of line
+`,
+    questions: [
+      {
+        q: 'The derivative of f at x is defined as:',
+        options: ['A. \`lim_{h→0} [f(x+h)-f(x)]/h\`', 'B. \`lim_{h→0} [f(x)-f(x+h)]/h\`', 'C. \`lim_{h→0} [f(x+h)-f(x)]/(x+h)\`', 'D. \`lim_{h→0} [f(x+h)+f(x)]/h\`'],
+        answer: 'A. \`lim_{h→0} [f(x+h)-f(x)]/h\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative of a function at a point represents the slope of:',
+        options: ['A. The secant line', 'B. The tangent line', 'C. The horizontal line', 'D. The vertical line'],
+        answer: 'B. The tangent line',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative notation \`dy/dx\` is called:',
+        options: ['A. Lagrange notation', 'B. Leibniz notation', 'C. Newton notation', 'D. Euler notation'],
+        answer: 'B. Leibniz notation',
+        diff: 'medium'
+      },
+      {
+        q: 'If f is differentiable at x, then f is:',
+        options: ['A. Continuous at x', 'B. Discontinuous at x', 'C. Not defined at x', 'D. Zero at x'],
+        answer: 'A. Continuous at x',
+        diff: 'medium'
+      },
+      {
+        q: 'The derivative of \`f(x) = x²\` is:',
+        options: ['A. 2x', 'B. x²', 'C. 2', 'D. x'],
+        answer: 'A. 2x',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative of \`f(x) = 3x + 5\` is:',
+        options: ['A. 3', 'B. 5', 'C. 3x', 'D. 0'],
+        answer: 'A. 3',
+        diff: 'easy'
+      },
+      {
+        q: 'A function is not differentiable at a point where:',
+        options: ['A. It is continuous', 'B. It has a corner', 'C. It is smooth', 'D. The slope is finite'],
+        answer: 'B. It has a corner',
+        diff: 'medium'
+      },
+      {
+        q: 'The derivative of \`f(x) = √x\` is:',
+        options: ['A. 1/(2√x)', 'B. 2√x', 'C. 1/√x', 'D. 1/(2x)'],
+        answer: 'A. 1/(2√x)',
+        diff: 'medium'
+      },
+      {
+        q: 'The instantaneous rate of change of y with respect to x is:',
+        options: ['A. \`dy/dx\`', 'B. \`Δy/Δx\`', 'C. \`f(x)\`', 'D. \`∫f(x)dx\`'],
+        answer: 'A. \`dy/dx\`',
+        diff: 'medium'
+      },
+      {
+        q: 'At a corner point, the derivative:',
+        options: ['A. Exists', 'B. Does not exist', 'C. Is zero', 'D. Is infinite'],
+        answer: 'B. Does not exist',
+        diff: 'medium'
+      }
+    ]
+  },
 
-**Quotient Rule:**
-👉 d/dx (f/g) = (g·f' – f·g') / g²
-👉 Used when function is a ratio.
+  // ============================================================
+  // LECTURE 16 - Techniques of Differentiation
+  // ============================================================
+  16: {
+    title: 'Techniques of Differentiation',
+    summary: `
+**Lecture 16 - Techniques of Differentiation (Differentiation ke Tareeqe)**
 
-**Product Rule:**
-👉 d/dx (f·g) = f·g' + g·f'
-👉 Used when function is product of two functions.
+**Roman Urdu Detailed Summary:**
 
-**Derivatives of Trigonometric Functions (in radians):**
-👉 d/dx sin x = cos x
-👉 d/dx cos x = -sin x
-👉 d/dx tan x = sec² x
-👉 d/dx cot x = -csc² x
-👉 d/dx sec x = sec x tan x
-👉 d/dx csc x = -csc x cot x
+**1. Derivative of Constant Function (Mustaqil Function ka Derivative - Theorem 3.3.1):**
 
-**Chain Rule:**
-👉 d/dx [f(g(x))] = f'(g(x)) · g'(x)
-👉 Used for composite functions (function inside a function).
+\`d/dx [c] = 0\`
 
----
+**2. Power Rule (Power Rule - Theorem 3.3.2):**
 
-**Example Problems:**
+\`d/dx [xⁿ] = n·xⁿ⁻¹\` (n positive integer)
 
-1. **Differentiate g(t) = (t+4)/(t-2):** Apply quotient rule → g'(t) = -6/(t-2)².
+**3. Constant Multiple Rule (Mustaqil Zarbi ka Usool - Theorem 3.3.3):**
 
-2. **Evaluate d/dx[ (√x+1)(1+√x) ] at x=9:** Use product rule → result 17/6.
+\`d/dx [c·f(x)] = c·f'(x)\`
 
-3. **Differentiate h(x) = (2x+1)(√x + x):** Product rule → h'(x) = (2x+1)(1/(2√x)+1) + √x·2.
+**4. Sum and Difference Rule (Jama aur Farq ka Usool - Theorem 3.3.4):**
 
-4. **Differentiate g(x) = (5x⁻³+3x⁻⁴):** Power rule → g'(x) = -15x⁻⁴ - 12x⁻⁵.
+\`d/dx [f(x) ± g(x)] = f'(x) ± g'(x)\`
 
-5. **Differentiate f(x) = (x³+1)/(4x²+1):** Quotient rule → f'(x) = (4x⁴+3x²+8x)/(4x²+1)².
+**5. Product Rule (Zarb ka Usool - Theorem 3.3.5):**
 
-6. **Find dy/dx for y = x³ cot x – 3/x³:** Derivative = 3x² cot x – x³ csc² x + 9/x⁴.
+\`d/dx [f(x)·g(x)] = f(x)·g'(x) + g(x)·f'(x)\`
 
-7. **Chain rule examples:**
-   - y = √(5x³ – 3x² + x) → dy/dx = (15x²–6x+1)/(2√(5x³–3x²+x))
-   - y = tan x + cos x → dy/dx = (sec²x – sin x)/(2√x)
-   - y = 3 sin²(5x) + 4 cos²(5x) → dy/dx = –10 sin(10x)
-   - y = sec(4x) → dy/dx = 4 sec(4x) tan(4x) / (2√sec(4x)) = 2 sec(4x) tan(4x) / √sec(4x)
-   - y = tan(t²/3) → dy/dt = (2t/3) sec²(t²/3)
+**6. Quotient Rule (Taqseem ka Usool - Theorem 3.3.6):**
 
----
+\`d/dx [f(x)/g(x)] = [g(x)·f'(x) - f(x)·g'(x)]/[g(x)]²\`
 
-**Important Vocabulary:**
-- Quotient rule = derivative of ratio
-- Product rule = derivative of product
-- Chain rule = derivative of composition
-- Trigonometric derivatives = standard formulas
-- Composite function = function inside another function
+**7. Reciprocal Rule (Mutlaq ka Usool - Theorem 3.3.7):**
 
----
+\`d/dx [1/g(x)] = -g'(x)/[g(x)]²\`
 
-**Quick Revision Points:**
-- Quotient: (f/g)' = (g f' – f g')/g².
-- Product: (f·g)' = f·g' + g·f'.
-- Chain: (f(g(x)))' = f'(g(x))·g'(x).
-- Memorize trig derivatives.
-- Practice chain rule with inner/outer functions.`,
-  questions: [
-    {
-      "q": "Differentiate g(t) = (t+4)/(t-2). What is g'(t)?",
-      "options": ["A. -6/(t-2)²", "B. 6/(t-2)²", "C. -8/(t-2)²", "D. 8/(t-2)²"],
-      "answer": "A. -6/(t-2)²",
-      "diff": "medium"
-    },
-    {
-      "q": "Evaluate d/dx[(√x+1)(1+√x)] at x=9:",
-      "options": ["A. 17/6", "B. 17/3", "C. 34/6", "D. 34/3"],
-      "answer": "A. 17/6",
-      "diff": "medium"
-    },
-    {
-      "q": "If h(x) = (2x+1)(√x + x), find h'(x):",
-      "options": ["A. (2x+1)(1/(2√x)+1) + 2√x", "B. (2x+1)(1/(2√x)+1) + 2x", "C. (2x+1)(1/(2√x)) + 2√x", "D. (2x+1)(1/(2√x)+1) + 2√x"],
-      "answer": "D. (2x+1)(1/(2√x)+1) + 2√x",
-      "diff": "medium"
-    },
-    {
-      "q": "Differentiate g(x) = 5x⁻³ + 3x⁻⁴:",
-      "options": ["A. -15x⁻⁴ - 12x⁻⁵", "B. 15x⁻⁴ + 12x⁻⁵", "C. -15x⁻⁴ + 12x⁻⁵", "D. 15x⁻⁴ - 12x⁻⁵"],
-      "answer": "A. -15x⁻⁴ - 12x⁻⁵",
-      "diff": "easy"
-    },
-    {
-      "q": "Find derivative of f(x) = (x³+1)/(4x²+1):",
-      "options": ["A. (4x⁴+3x²+8x)/(4x²+1)²", "B. (4x⁴-3x²+8x)/(4x²+1)²", "C. (4x⁴+3x²-8x)/(4x²+1)²", "D. (4x⁴+3x²+8x)/(4x²+1)"],
-      "answer": "A. (4x⁴+3x²+8x)/(4x²+1)²",
-      "diff": "hard"
-    },
-    {
-      "q": "If y = x³ cot x – 3/x³, find dy/dx:",
-      "options": ["A. 3x² cot x – x³ csc² x + 9/x⁴", "B. 3x² cot x + x³ csc² x + 9/x⁴", "C. 3x² tan x – x³ sec² x + 9/x⁴", "D. 3x² cot x – x³ csc² x – 9/x⁴"],
-      "answer": "A. 3x² cot x – x³ csc² x + 9/x⁴",
-      "diff": "medium"
-    },
-    {
-      "q": "Find dy/dx at x=π for y = x⁴ sin x:",
-      "options": ["A. π⁴", "B. -π⁴", "C. 0", "D. 4π³"],
-      "answer": "B. -π⁴",
-      "diff": "medium"
-    },
-    {
-      "q": "Derivative of f(t) = (2 – 8t + t²)/sin t is:",
-      "options": ["A. [(2t-8) sin t – (t²-8t+2) cos t]/sin² t", "B. [(2t-8) sin t + (t²-8t+2) cos t]/sin² t", "C. [(2t-8) cos t – (t²-8t+2) sin t]/sin² t", "D. None of the above"],
-      "answer": "A. [(2t-8) sin t – (t²-8t+2) cos t]/sin² t",
-      "diff": "hard"
-    },
-    {
-      "q": "If y = (5x²+3x+3) sin x, find dy/dx:",
-      "options": ["A. (5x²+3x+3) cos x + sin x (10x+3)", "B. (5x²+3x+3) cos x – sin x (10x+3)", "C. (5x²+3x+3) sin x + cos x (10x+3)", "D. (5x²+3x+3) sin x – cos x (10x+3)"],
-      "answer": "A. (5x²+3x+3) cos x + sin x (10x+3)",
-      "diff": "easy"
-    },
-    {
-      "q": "Differentiate y = √(5x³ – 3x² + x) using chain rule:",
-      "options": ["A. (15x² – 6x + 1)/(2√(5x³–3x²+x))", "B. (15x² – 6x + 1)/√(5x³–3x²+x)", "C. (15x² – 6x + 1)/(2(5x³–3x²+x))", "D. (15x² – 6x + 1)/(2√(5x³–3x²))"],
-      "answer": "A. (15x² – 6x + 1)/(2√(5x³–3x²+x))",
-      "diff": "medium"
-    },
-    {
-      "q": "Differentiate y = tan x + cos x:",
-      "options": ["A. (sec²x – sin x)/(2√x)", "B. (sec²x + sin x)/(2√x)", "C. (sec²x – cos x)/(2√x)", "D. (tan²x – sin x)/(2√x)"],
-      "answer": "A. (sec²x – sin x)/(2√x)",
-      "diff": "medium"
-    },
-    {
-      "q": "Find dy/dx for y = 3 sin²(5x) + 4 cos²(5x):",
-      "options": ["A. –10 sin(10x)", "B. 10 sin(10x)", "C. –20 sin(10x)", "D. 20 sin(10x)"],
-      "answer": "A. –10 sin(10x)",
-      "diff": "hard"
-    },
-    {
-      "q": "Derivative of y = sec(4x) using chain rule:",
-      "options": ["A. 2 sec(4x) tan(4x)/√sec(4x)", "B. 4 sec(4x) tan(4x)/√sec(4x)", "C. 2 sec(4x) tan(4x)", "D. 4 sec(4x) tan(4x)"],
-      "answer": "A. 2 sec(4x) tan(4x)/√sec(4x)",
-      "diff": "hard"
-    },
-    {
-      "q": "Find dy/dt for y = tan(t²/3):",
-      "options": ["A. (2t/3) sec²(t²/3)", "B. (t/3) sec²(t²/3)", "C. (2t/3) csc²(t²/3)", "D. (2t/3) sec²(t)"],
-      "answer": "A. (2t/3) sec²(t²/3)",
-      "diff": "medium"
-    },
-    {
-      "q": "What is the derivative of f(x) = cot x?",
-      "options": ["A. –csc² x", "B. sec² x", "C. –sec² x", "D. csc² x"],
-      "answer": "A. –csc² x",
-      "diff": "easy"
-    },
-    {
-      "q": "Derivative of f(x) = sec x is:",
-      "options": ["A. sec x tan x", "B. –csc x cot x", "C. sec² x", "D. –sec x tan x"],
-      "answer": "A. sec x tan x",
-      "diff": "easy"
-    },
-    {
-      "q": "Which rule is used to differentiate y = (x²+1)/(x³-1)?",
-      "options": ["A. Product rule", "B. Quotient rule", "C. Chain rule", "D. Power rule"],
-      "answer": "B. Quotient rule",
-      "diff": "easy"
-    },
-    {
-      "q": "If y = sin(3x²), find dy/dx:",
-      "options": ["A. 6x cos(3x²)", "B. 3x² cos(3x²)", "C. cos(3x²)", "D. 6x sin(3x²)"],
-      "answer": "A. 6x cos(3x²)",
-      "diff": "easy"
-    },
-    {
-      "q": "The chain rule states that d/dx [f(g(x))] =:",
-      "options": ["A. f'(x) · g'(x)", "B. f'(g(x)) · g'(x)", "C. f(g'(x)) · g(x)", "D. f'(g(x)) · g(x)"],
-      "answer": "B. f'(g(x)) · g'(x)",
-      "diff": "easy"
-    },
-    {
-      "q": "Find f'(t) if f(t) = 5t sin t:",
-      "options": ["A. 5t cos t + 5 sin t", "B. 5t cos t – 5 sin t", "C. 5 cos t + 5t sin t", "D. 5 cos t – 5t sin t"],
-      "answer": "A. 5t cos t + 5 sin t",
-      "diff": "easy"
-    }
-  ]
-},
+**8. Generalized Power Rule (Aam Power Rule - Theorem 3.3.8):**
 
+\`d/dx [xⁿ] = n·xⁿ⁻¹\` (n any integer)
 
-17: {
-  title: "Derivatives of Trigonometric Functions",
-  summary: `**Key Topics Covered:**
-- Derivative of sin(x) = cos(x)
-- Derivative of cos(x) = -sin(x)
-- Derivative of tan(x) = sec²(x) (using quotient rule)
-- Derivative of sec(x) = sec(x) tan(x)
-- Derivative of csc(x) = -csc(x) cot(x)
-- Derivative of cot(x) = -csc²(x)
-- Example: rate of change of shadow length with respect to angle of elevation
+**9. Examples:**
+- \`d/dx [x⁵] = 5x⁴\`
+- \`d/dx [3x⁸] = 24x⁷\`
+- \`d/dx [x⁴ + x³] = 4x³ + 3x²\`
 
 ---
 
-**Simple Understanding:**
+**Yaad Rakhne Wali Important Baatein:**
+- \`d/dx [c] = 0\`
+- \`d/dx [xⁿ] = nxⁿ⁻¹\`
+- \`d/dx [cf] = cf'\`
+- \`d/dx [f±g] = f'±g'\`
+- Product rule: \`(fg)' = fg' + gf'\`
+- Quotient rule: \`(f/g)' = (gf' - fg')/g²\`
+- Power rule works for all integers
+- Chain rule coming next
+`,
+    questions: [
+      {
+        q: 'The derivative of \`x⁵\` is:',
+        options: ['A. 5x⁴', 'B. 4x⁵', 'C. 5x⁵', 'D. x⁴'],
+        answer: 'A. 5x⁴',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative of a constant function is:',
+        options: ['A. 1', 'B. 0', 'C. The constant', 'D. Undefined'],
+        answer: 'B. 0',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative of \`3x⁸\` is:',
+        options: ['A. 24x⁷', 'B. 3x⁸', 'C. 24x⁸', 'D. 3x⁷'],
+        answer: 'A. 24x⁷',
+        diff: 'easy'
+      },
+      {
+        q: 'The Product Rule states that \`d/dx [f(x)g(x)] =\`:',
+        options: ['A. f\'(x)g\'(x)', 'B. f(x)g\'(x) + g(x)f\'(x)', 'C. f\'(x)g(x) - f(x)g\'(x)', 'D. f\'(x)/g\'(x)'],
+        answer: 'B. f(x)g\'(x) + g(x)f\'(x)',
+        diff: 'medium'
+      },
+      {
+        q: 'The Quotient Rule states that \`d/dx [f(x)/g(x)] =\`:',
+        options: ['A. [g(x)f\'(x) - f(x)g\'(x)]/[g(x)]²', 'B. [f(x)g\'(x) - g(x)f\'(x)]/[g(x)]²', 'C. f\'(x)/g\'(x)', 'D. [g(x)f\'(x) + f(x)g\'(x)]/[g(x)]²'],
+        answer: 'A. [g(x)f\'(x) - f(x)g\'(x)]/[g(x)]²',
+        diff: 'hard'
+      },
+      {
+        q: 'The derivative of \`x⁴ + x³\` is:',
+        options: ['A. 4x³ + 3x²', 'B. 3x² + 2x', 'C. 4x⁴ + 3x³', 'D. x³ + x²'],
+        answer: 'A. 4x³ + 3x²',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative of \`1/x\` is:',
+        options: ['A. -1/x²', 'B. 1/x²', 'C. -1/x', 'D. 1/x'],
+        answer: 'A. -1/x²',
+        diff: 'easy'
+      },
+      {
+        q: 'The Sum Rule states that \`d/dx [f(x)+g(x)] =\`:',
+        options: ['A. f\'(x) + g\'(x)', 'B. f\'(x) - g\'(x)', 'C. f(x) + g(x)', 'D. f\'(x)g\'(x)'],
+        answer: 'A. f\'(x) + g\'(x)',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative of \`5x²\` is:',
+        options: ['A. 10x', 'B. 5x', 'C. 10x²', 'D. 5x²'],
+        answer: 'A. 10x',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative of \`x³ + 2x² - 3x + 1\` is:',
+        options: ['A. 3x² + 4x - 3', 'B. 3x² + 4x + 3', 'C. 3x² - 4x - 3', 'D. 3x² + 2x - 3'],
+        answer: 'A. 3x² + 4x - 3',
+        diff: 'medium'
+      }
+    ]
+  },
 
-**Derivatives of Basic Trig Functions (in radians):**
-👉 d/dx [sin x] = cos x
-👉 d/dx [cos x] = -sin x
-👉 d/dx [tan x] = sec² x
-👉 d/dx [sec x] = sec x tan x
-👉 d/dx [csc x] = -csc x cot x
-👉 d/dx [cot x] = -csc² x
+  // ============================================================
+  // LECTURE 17 - Derivatives of Trigonometric Functions
+  // ============================================================
+  17: {
+    title: 'Derivatives of Trigonometric Functions',
+    summary: `
+**Lecture 17 - Derivatives of Trigonometric Functions (Trigonometric Functions ke Derivative)**
 
-**Finding Derivatives:**
-- Use definition of derivative (limit) for sin and cos.
-- Use quotient rule for tan = sin/cos, and for sec, csc, cot as reciprocals.
+**Roman Urdu Detailed Summary:**
 
-**Example – Shadow Length:**
-- Relationship: tan θ = 100/x → x = 100 cot θ
-- dx/dθ = -100 csc² θ (feet/radian)
-- At θ = 45° = π/4 rad: dx/dθ = -100 csc²(π/4) = -200 feet/radian
-- Convert to degrees: -200 × (π/180) = -(10π)/9 feet/degree
+**1. Derivatives of Sin and Cos (Sin aur Cos ke Derivative):**
 
----
+\`d/dx [sin x] = cos x\`
+\`d/dx [cos x] = -sin x\`
 
-**Important Vocabulary:**
-- Radian measure: required for derivative formulas
-- Quotient rule: (f/g)' = (g f' - f g')/g²
-- csc = cosecant = 1/sin
-- sec = secant = 1/cos
-- cot = cotangent = 1/tan = cos/sin
+**2. Derivatives of Other Trig Functions (Aur Trig Functions ke Derivative):**
 
----
+\`d/dx [tan x] = sec² x\`
+\`d/dx [cot x] = -csc² x\`
+\`d/dx [sec x] = sec x · tan x\`
+\`d/dx [csc x] = -csc x · cot x\`
 
-**Quick Revision Points:**
-- d/dx sin x = cos x
-- d/dx cos x = -sin x
-- d/dx tan x = sec² x
-- d/dx sec x = sec x tan x
-- d/dx csc x = -csc x cot x
-- d/dx cot x = -csc² x
-- These formulas assume x is in radians.`,
-  questions: [
-    {
-      q: "The derivative of sin(x) is:",
-      options: ["A. cos(x)", "B. -cos(x)", "C. sin(x)", "D. -sin(x)"],
-      answer: "A. cos(x)",
-      diff: "easy"
-    },
-    {
-      q: "The derivative of cos(x) is:",
-      options: ["A. sin(x)", "B. -sin(x)", "C. cos(x)", "D. -cos(x)"],
-      answer: "B. -sin(x)",
-      diff: "easy"
-    },
-    {
-      q: "Using the quotient rule, the derivative of tan(x) is:",
-      options: ["A. sec(x) tan(x)", "B. sec²(x)", "C. csc²(x)", "D. -csc²(x)"],
-      answer: "B. sec²(x)",
-      diff: "medium"
-    },
-    {
-      q: "d/dx [sec(x)] =",
-      options: ["A. sec(x) tan(x)", "B. csc(x) cot(x)", "C. -sec(x) tan(x)", "D. -csc(x) cot(x)"],
-      answer: "A. sec(x) tan(x)",
-      diff: "medium"
-    },
-    {
-      q: "d/dx [csc(x)] =",
-      options: ["A. csc(x) cot(x)", "B. -csc(x) cot(x)", "C. sec(x) tan(x)", "D. -sec(x) tan(x)"],
-      answer: "B. -csc(x) cot(x)",
-      diff: "medium"
-    },
-    {
-      q: "d/dx [cot(x)] =",
-      options: ["A. csc²(x)", "B. -csc²(x)", "C. sec²(x)", "D. -sec²(x)"],
-      answer: "B. -csc²(x)",
-      diff: "medium"
-    },
-    {
-      q: "The derivative formulas for trigonometric functions assume the angle is measured in:",
-      options: ["A. Degrees", "B. Radians", "C. Gradians", "D. Any unit"],
-      answer: "B. Radians",
-      diff: "easy"
-    },
-    {
-      q: "If f(x) = tan(x), then f'(π/4) =",
-      options: ["A. 1", "B. 2", "C. 0", "D. √2"],
-      answer: "B. 2 (since sec²(π/4)=2)",
-      diff: "hard"
-    },
-    {
-      q: "Which rule is most efficient for finding the derivative of tan(x) after knowing derivatives of sin and cos?",
-      options: ["A. Product rule", "B. Quotient rule", "C. Chain rule", "D. Power rule"],
-      answer: "B. Quotient rule",
-      diff: "easy"
-    },
-    {
-      q: "d/dx [sin(x)] evaluated at x = 0 is:",
-      options: ["A. 0", "B. 1", "C. -1", "D. Undefined"],
-      answer: "B. 1",
-      diff: "easy"
-    },
-    {
-      q: "If y = cos(x), then dy/dx at x = π/2 is:",
-      options: ["A. 0", "B. 1", "C. -1", "D. Undefined"],
-      answer: "C. -1",
-      diff: "medium"
-    },
-    {
-      q: "The derivative of sec(x) can be derived by writing it as 1/cos(x) and using the:",
-      options: ["A. Product rule", "B. Quotient rule (or reciprocal rule)", "C. Chain rule", "D. Power rule"],
-      answer: "B. Quotient rule (or reciprocal rule)",
-      diff: "easy"
-    },
-    {
-      q: "In the shadow length example, the relationship between shadow length x and angle θ is x = 100 cot θ. The derivative dx/dθ is:",
-      options: ["A. 100 csc² θ", "B. -100 csc² θ", "C. 100 sec² θ", "D. -100 sec² θ"],
-      answer: "B. -100 csc² θ",
-      diff: "medium"
-    },
-    {
-      q: "For the shadow problem at θ=45°, the value of dx/dθ in feet/radian is:",
-      options: ["A. -100", "B. -200", "C. 200", "D. 100"],
-      answer: "B. -200",
-      diff: "medium"
-    },
-    {
-      q: "To convert the derivative from feet/radian to feet/degree, multiply by:",
-      options: ["A. π/180", "B. 180/π", "C. 1/π", "D. π"],
-      answer: "A. π/180",
-      diff: "hard"
-    },
-    {
-      q: "Which of the following is the correct derivative of csc(x)?",
-      options: ["A. -csc(x) cot(x)", "B. csc(x) tan(x)", "C. -sec(x) tan(x)", "D. sec(x) cot(x)"],
-      answer: "A. -csc(x) cot(x)",
-      diff: "easy"
-    },
-    {
-      q: "d/dx [tan(x)] can also be written as:",
-      options: ["A. 1 + tan²(x)", "B. 1 - tan²(x)", "C. cot²(x)", "D. -cot²(x)"],
-      answer: "A. 1 + tan²(x)",
-      diff: "hard"
-    },
-    {
-      q: "If f(x)=sec(x), then f'(π/3) =",
-      options: ["A. 2", "B. 2√3", "C. √3", "D. 1"],
-      answer: "B. 2√3 (since sec(π/3)=2, tan(π/3)=√3 → product 2√3)",
-      diff: "hard"
-    },
-    {
-      q: "The derivative of cot(x) is negative of:",
-      options: ["A. sec²(x)", "B. csc²(x)", "C. tan²(x)", "D. sin²(x)"],
-      answer: "B. csc²(x)",
-      diff: "medium"
-    },
-    {
-      q: "All derivative formulas for trig functions are valid when x is measured in:",
-      options: ["A. Degrees", "B. Radians", "C. Both degrees and radians", "D. Neither"],
-      answer: "B. Radians",
-      diff: "easy"
-    }
-  ]
-},
-18: {
-  title: "The Chain Rule",
-  summary: `**Key Topics Covered:**
-- Derivative of composition of functions (Chain Rule)
-- Chain Rule formula: dy/dx = dy/du · du/dx
-- Generalized derivative formula: d/dx [f(u)] = f'(u) · du/dx
-- Alternative notation: d/dx [f(g(x))] = f'(g(x)) · g'(x)
-- Examples: trigonometric, polynomial, radical compositions
+**3. Using Quotient Rule for Tan (Tan ke liye Quotient Rule):**
+
+\`tan x = sin x / cos x\`
+\`d/dx [tan x] = [cos x·cos x - sin x·(-sin x)]/cos²x = (cos²x+sin²x)/cos²x = 1/cos²x = sec²x\`
+
+**4. Example - Shadow Problem (Saya ka Masla):**
+
+A building of height 100 ft, sun angle θ. Shadow length x = 100 cot θ.
+\`dx/dθ = -100 csc² θ\`
+At θ = 45°: \`dx/dθ = -200\` ft/radian
+
+**5. Important Note:**
+All trigonometric derivatives assume angles are in radians.
 
 ---
 
-**Simple Understanding:**
+**Yaad Rakhne Wali Important Baatein:**
+- \`d/dx[sin x] = cos x\`
+- \`d/dx[cos x] = -sin x\`
+- \`d/dx[tan x] = sec² x\`
+- \`d/dx[cot x] = -csc² x\`
+- \`d/dx[sec x] = sec x·tan x\`
+- \`d/dx[csc x] = -csc x·cot x\`
+- Angles must be in radians
+- Use quotient rule to derive tan, cot, sec, csc
+`,
+    questions: [
+      {
+        q: 'The derivative of \`sin x\` is:',
+        options: ['A. cos x', 'B. -cos x', 'C. sin x', 'D. -sin x'],
+        answer: 'A. cos x',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative of \`cos x\` is:',
+        options: ['A. sin x', 'B. -sin x', 'C. cos x', 'D. -cos x'],
+        answer: 'B. -sin x',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative of \`tan x\` is:',
+        options: ['A. sec² x', 'B. csc² x', 'C. -sec² x', 'D. -csc² x'],
+        answer: 'A. sec² x',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative of \`sec x\` is:',
+        options: ['A. sec x tan x', 'B. csc x cot x', 'C. -sec x tan x', 'D. -csc x cot x'],
+        answer: 'A. sec x tan x',
+        diff: 'medium'
+      },
+      {
+        q: 'The derivative of \`cot x\` is:',
+        options: ['A. -csc² x', 'B. csc² x', 'C. -sec² x', 'D. sec² x'],
+        answer: 'A. -csc² x',
+        diff: 'medium'
+      },
+      {
+        q: 'The derivative of \`csc x\` is:',
+        options: ['A. -csc x cot x', 'B. csc x cot x', 'C. -sec x tan x', 'D. sec x tan x'],
+        answer: 'A. -csc x cot x',
+        diff: 'medium'
+      },
+      {
+        q: 'The formula \`d/dx [sin x] = cos x\` assumes x is in:',
+        options: ['A. Degrees', 'B. Radians', 'C. Gradians', 'D. Any unit'],
+        answer: 'B. Radians',
+        diff: 'medium'
+      },
+      {
+        q: 'The derivative of \`sin(2x)\` with respect to x is:',
+        options: ['A. 2 cos(2x)', 'B. cos(2x)', 'C. -2 cos(2x)', 'D. 2 sin(2x)'],
+        answer: 'A. 2 cos(2x)',
+        diff: 'medium'
+      },
+      {
+        q: 'The derivative of \`cos(3x)\` with respect to x is:',
+        options: ['A. -3 sin(3x)', 'B. 3 sin(3x)', 'C. -sin(3x)', 'D. sin(3x)'],
+        answer: 'A. -3 sin(3x)',
+        diff: 'medium'
+      },
+      {
+        q: 'The derivative of \`tan(2x)\` is:',
+        options: ['A. 2 sec²(2x)', 'B. sec²(2x)', 'C. 2 csc²(2x)', 'D. csc²(2x)'],
+        answer: 'A. 2 sec²(2x)',
+        diff: 'hard'
+      }
+    ]
+  },
 
-**The Chain Rule:**
-👉 Used to differentiate composite functions (functions inside functions).
-👉 If y = f(g(x)), let u = g(x), then y = f(u).
-👉 Chain Rule: dy/dx = dy/du · du/dx
+  // ============================================================
+  // LECTURE 18 - The Chain Rule
+  // ============================================================
+  18: {
+    title: 'The Chain Rule',
+    summary: `
+**Lecture 18 - The Chain Rule (Chain Rule - Zanjeeri Usool)**
 
-**Alternative Form:**
-👉 d/dx [f(g(x))] = f'(g(x)) · g'(x)
-👉 Informal: "Derivative of outer × derivative of inner"
+**Roman Urdu Detailed Summary:**
 
----
+**1. Chain Rule (Chain Rule - Theorem 3.5.2):**
 
-**Generalized Derivative Formula:**
-👉 d/dx [f(u)] = f'(u) · du/dx
-👉 Works when u is itself a function of x.
+If y = f(u) and u = g(x), then:
+\`dy/dx = dy/du · du/dx\`
 
-**Examples:**
+Or: \`d/dx [f(g(x))] = f'(g(x)) · g'(x)\`
 
-1. **y = 4 cos(x³)**
-   - u = x³, y = 4 cos(u)
-   - dy/dx = -4 sin(u) · 3x² = -12x² sin(x³)
+**2. Generalized Derivative Formula (Aam Derivative Formula):**
 
-2. **y = (x² - 2x + 3)²³**
-   - u = x² - 2x + 3
-   - dy/dx = 23u²² · du/dx = 23(x²-2x+3)²² · (2x-2)
+\`d/dx [f(u)] = f'(u) · du/dx\`
 
-3. **sin(2x)**
-   - dy/dx = cos(2x) · 2 = 2 cos(2x)
+**3. Applying Chain Rule (Chain Rule Lagana):**
 
-4. **tan(x² + 1)**
-   - dy/dx = sec²(x²+1) · 2x
+**Step 1:** Identify the inner function u = g(x)
+**Step 2:** Differentiate outer function f with respect to u
+**Step 3:** Multiply by du/dx
 
-5. **√(x + sec³(x))**
-   - dy/dx = 1/(2√u) · (1 + 3 sec²(x) sec(x) tan(x))
+**4. Examples (Misaalen):**
 
----
+\`d/dx [(x²+1)²³]\`
+- Let u = x²+1
+- = 23u²² · 2x = 46x(x²+1)²²
 
-**Important Vocabulary:**
-- Chain Rule = derivative of composite function
-- Outer function = f
-- Inner function = g
-- Composite = f ∘ g
-- Generalized derivative = f'(u) · du/dx
+\`d/dx [sin(2x)]\`
+- Let u = 2x
+- = cos u · 2 = 2cos(2x)
 
----
+\`d/dx [tan(x²+1)]\`
+- Let u = x²+1
+- = sec² u · 2x = 2x sec²(x²+1)
 
-**Quick Revision Points:**
-- Chain Rule: dy/dx = (dy/du)·(du/dx)
-- d/dx [f(g(x))] = f'(g(x))·g'(x)
-- Identify outer and inner functions.
-- Multiply derivative of outer (with inner inside) by derivative of inner.
-- Works for all differentiable compositions.`,
-  questions: [
-    {
-      q: "The chain rule is used to find the derivative of:",
-      options: ["A. Products of functions", "B. Quotients of functions", "C. Composite functions", "D. Constant functions"],
-      answer: "C. Composite functions",
-      diff: "easy"
-    },
-    {
-      q: "If y = f(g(x)), and we let u = g(x), then the chain rule states:",
-      options: ["A. dy/dx = (dy/du) + (du/dx)", "B. dy/dx = (dy/du) · (du/dx)", "C. dy/dx = (du/dy) · (dx/du)", "D. dy/dx = (du/dx) / (dy/du)"],
-      answer: "B. dy/dx = (dy/du) · (du/dx)",
-      diff: "easy"
-    },
-    {
-      q: "Using the alternative notation, d/dx [f(g(x))] =",
-      options: ["A. f'(x)·g(x)", "B. f(g(x))·g'(x)", "C. f'(g(x))·g'(x)", "D. f'(g(x))·g(x)"],
-      answer: "C. f'(g(x))·g'(x)",
-      diff: "medium"
-    },
-    {
-      q: "Find dy/dx if y = 4 cos(x³):",
-      options: ["A. -12x² sin(x³)", "B. -4x² sin(x³)", "C. 12x² sin(x³)", "D. -4 sin(x³)"],
-      answer: "A. -12x² sin(x³)",
-      diff: "medium"
-    },
-    {
-      q: "Find d/dx [sin(2x)]:",
-      options: ["A. 2 cos(2x)", "B. cos(2x)", "C. -2 cos(2x)", "D. 2 sin(2x)"],
-      answer: "A. 2 cos(2x)",
-      diff: "easy"
-    },
-    {
-      q: "Find d/dx [tan(x² + 1)]:",
-      options: ["A. sec²(x²+1)·2x", "B. sec²(x²+1)", "C. 2x sec²(x²+1)", "D. Both A and C"],
-      answer: "D. Both A and C",
-      diff: "medium"
-    },
-    {
-      q: "If y = (x² - 2x + 3)²³, then dy/dx =",
-      options: ["A. 23(x²-2x+3)²²", "B. 23(x²-2x+3)²²·(2x-2)", "C. 23(x²-2x+3)²²·(2x+2)", "D. 23(x²-2x+3)²²·(x²-2x+3)"],
-      answer: "B. 23(x²-2x+3)²²·(2x-2)",
-      diff: "medium"
-    },
-    {
-      q: "The chain rule can be remembered informally as:",
-      options: ["A. Derivative of inner × derivative of outer", "B. Derivative of outer × derivative of inner", "C. Sum of derivatives", "D. Product of functions"],
-      answer: "B. Derivative of outer × derivative of inner",
-      diff: "easy"
-    },
-    {
-      q: "What is d/dx [cos(3x+1)]?",
-      options: ["A. -3 sin(3x+1)", "B. 3 sin(3x+1)", "C. -sin(3x+1)", "D. -3 cos(3x+1)"],
-      answer: "A. -3 sin(3x+1)",
-      diff: "easy"
-    },
-    {
-      q: "For y = √(x + sec³(x)), the inner function u is:",
-      options: ["A. x + sec³(x)", "B. √u", "C. sec³(x)", "D. sec(x)"],
-      answer: "A. x + sec³(x)",
-      diff: "medium"
-    },
-    {
-      q: "The chain rule is derived from the idea of:",
-      options: ["A. Canceling du in dy/du · du/dx", "B. Multiplying derivatives", "C. Adding derivatives", "D. Dividing derivatives"],
-      answer: "A. Canceling du in dy/du · du/dx",
-      diff: "easy"
-    },
-    {
-      q: "If y = (x³+2x)⁵, then dy/dx =",
-      options: ["A. 5(x³+2x)⁴", "B. 5(x³+2x)⁴·(3x²+2)", "C. 5(x³+2x)⁴·(3x²)", "D. 5(x³+2x)⁴·(2x)"],
-      answer: "B. 5(x³+2x)⁴·(3x²+2)",
-      diff: "medium"
-    },
-    {
-      q: "Which of the following is the generalized derivative formula?",
-      options: ["A. d/dx [f(u)] = f'(u) + du/dx", "B. d/dx [f(u)] = f'(u) · du/dx", "C. d/dx [f(u)] = f(u) · du/dx", "D. d/dx [f(u)] = du/dx / f'(u)"],
-      answer: "B. d/dx [f(u)] = f'(u) · du/dx",
-      diff: "easy"
-    },
-    {
-      q: "Find d/dx [√(3x²+5)]:",
-      options: ["A. (3x)/√(3x²+5)", "B. (6x)/(2√(3x²+5))", "C. (3x)/√(3x²+5)", "D. Both A and C"],
-      answer: "D. Both A and C",
-      diff: "hard"
-    },
-    {
-      q: "The chain rule is required when:",
-      options: ["A. The function is a constant", "B. The function is a product of two functions", "C. The function is a composition of functions", "D. The function is a sum of functions"],
-      answer: "C. The function is a composition of functions",
-      diff: "easy"
-    },
-    {
-      q: "If y = sin²(x), then dy/dx =",
-      options: ["A. 2 sin(x) cos(x)", "B. sin(2x)", "C. Both A and B", "D. cos²(x)"],
-      answer: "C. Both A and B",
-      diff: "hard"
-    },
-    {
-      q: "d/dx [sec(5x)] =",
-      options: ["A. 5 sec(5x) tan(5x)", "B. sec(5x) tan(5x)", "C. 5 sec(5x) tan(5x)", "D. sec(5x) tan(5x)·5"],
-      answer: "C. 5 sec(5x) tan(5x) (and D is same format)",
-      diff: "medium"
-    },
-    {
-      q: "The chain rule allows us to differentiate functions like e^(x²) because:",
-      options: ["A. We know derivative of e^u and u = x²", "B. It's a product", "C. It's a quotient", "D. It's a constant"],
-      answer: "A. We know derivative of e^u and u = x²",
-      diff: "easy"
-    },
-    {
-      q: "If y = f(g(x)) and we define u = g(x), then dy/dx = dy/du · du/dx. This is valid when:",
-      options: ["A. f and g are both constant", "B. f is differentiable at g(x) and g is differentiable at x", "C. Only f is differentiable", "D. Only g is differentiable"],
-      answer: "B. f is differentiable at g(x) and g is differentiable at x",
-      diff: "hard"
-    },
-    {
-      q: "The informal phrase 'derivative of outer times derivative of inner' applies when:",
-      options: ["A. The outer function is evaluated at x", "B. The outer function is evaluated at the inner function", "C. The inner function is constant", "D. Both are polynomials"],
-      answer: "B. The outer function is evaluated at the inner function",
-      diff: "easy"
-    }
-  ]
-},
+**5. "Derivative of Outer × Derivative of Inner":**
 
+\`d/dx [f(g(x))] = f'(g(x)) · g'(x)\`
 
-19: {
-  title: "Implicit Differentiation",
-  summary: `**Key Topics Covered:**
-- Implicit differentiation (when y is not isolated)
-- Differentiating both sides of an equation
-- Treating y as an unknown function of x
-- Using chain rule for terms involving y
-- Finding slope of tangent line at a point
-- Derivatives of rational powers of x (power rule extended)
+**6. Example:**
+\`d/dx [cos(3x+1)] = -sin(3x+1) · 3 = -3sin(3x+1)\`
 
 ---
 
-**Simple Understanding:**
+**Yaad Rakhne Wali Important Baatein:**
+- Chain rule: \`dy/dx = dy/du · du/dx\`
+- \`d/dx [f(g(x))] = f'(g(x))·g'(x)\`
+- Identify inner and outer functions
+- Multiply derivative of outer by derivative of inner
+- Chain rule is for composition of functions
+- General formula: \`d/dx[f(u)] = f'(u)·du/dx\`
+`,
+    questions: [
+      {
+        q: 'The Chain Rule states that \`dy/dx =\`:',
+        options: ['A. dy/du · du/dx', 'B. du/dy · dx/du', 'C. dy/dx · dx/du', 'D. du/dx · dx/dy'],
+        answer: 'A. dy/du · du/dx',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative of \`(x²+1)²³\` is:',
+        options: ['A. 46x(x²+1)²²', 'B. 23(x²+1)²²', 'C. 46(x²+1)²²', 'D. 23x(x²+1)²²'],
+        answer: 'A. 46x(x²+1)²²',
+        diff: 'medium'
+      },
+      {
+        q: 'The derivative of \`sin(2x)\` is:',
+        options: ['A. 2cos(2x)', 'B. cos(2x)', 'C. -2cos(2x)', 'D. -cos(2x)'],
+        answer: 'A. 2cos(2x)',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative of \`cos(3x)\` is:',
+        options: ['A. -3sin(3x)', 'B. 3sin(3x)', 'C. -sin(3x)', 'D. sin(3x)'],
+        answer: 'A. -3sin(3x)',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative of \`tan(x²+1)\` is:',
+        options: ['A. 2x sec²(x²+1)', 'B. sec²(x²+1)', 'C. 2x tan(x²+1)', 'D. tan(x²+1) sec²(x²+1)'],
+        answer: 'A. 2x sec²(x²+1)',
+        diff: 'medium'
+      },
+      {
+        q: 'In the chain rule, the inner function is:',
+        options: ['A. The first function applied', 'B. The last function applied', 'C. The outer function', 'D. The product of functions'],
+        answer: 'A. The first function applied',
+        diff: 'medium'
+      },
+      {
+        q: 'In the chain rule, the outer function is:',
+        options: ['A. The first function applied', 'B. The last function applied', 'C. The inner function', 'D. The quotient of functions'],
+        answer: 'B. The last function applied',
+        diff: 'medium'
+      },
+      {
+        q: 'The derivative of \`e^{x²}\` using chain rule is:',
+        options: ['A. 2x e^{x²}', 'B. e^{x²}', 'C. 2x e^{x}', 'D. x² e^{x²}'],
+        answer: 'A. 2x e^{x²}',
+        diff: 'medium'
+      },
+      {
+        q: 'The derivative of \`(2x+3)⁵\` is:',
+        options: ['A. 10(2x+3)⁴', 'B. 5(2x+3)⁴', 'C. 2(2x+3)⁴', 'D. 10(2x+3)⁵'],
+        answer: 'A. 10(2x+3)⁴',
+        diff: 'medium'
+      },
+      {
+        q: 'The derivative of \`sin(x²)\` is:',
+        options: ['A. 2x cos(x²)', 'B. cos(x²)', 'C. 2x sin(x²)', 'D. -2x cos(x²)'],
+        answer: 'A. 2x cos(x²)',
+        diff: 'medium'
+      }
+    ]
+  },
 
-**What is Implicit Differentiation?**
-👉 Used when we cannot (or don't want to) solve for y explicitly.
-👉 Differentiate both sides of the equation with respect to x.
-👉 Treat y as a function of x (apply chain rule whenever y appears).
+  // ============================================================
+  // LECTURE 19 - Implicit Differentiation
+  // ============================================================
+  19: {
+    title: 'Implicit Differentiation',
+    summary: `
+**Lecture 19 - Implicit Differentiation (Implicit Differentiation - Ghair Wazeh Tafreeq)**
 
----
+**Roman Urdu Detailed Summary:**
 
-**Example 1: xy = 1**
-👉 Explicit: y = 1/x → dy/dx = -1/x²
-👉 Implicit: differentiate both sides: x·dy/dx + y·1 = 0 → dy/dx = -y/x
-👉 Since y = 1/x, dy/dx = -(1/x)/x = -1/x² (same result)
+**1. Implicit Differentiation (Implicit Differentiation):**
 
----
+When y is not explicitly solved for x, we differentiate both sides with respect to x, treating y as a function of x.
 
-**Example 2: 5y² + sin y = x²**
-👉 Differentiate: 10y·dy/dx + cos y·dy/dx = 2x
-👉 dy/dx (10y + cos y) = 2x
-👉 dy/dx = 2x / (10y + cos y)
+**2. Method (Tareeqa):**
 
----
+1. Differentiate both sides with respect to x
+2. Treat y as a function of x (use chain rule when differentiating y terms)
+3. Collect terms with dy/dx
+4. Solve for dy/dx
 
-**Example 3: Tangent line slope at (4,0) for y⁴ + 7xy³ + x = 4**
-👉 Differentiate: 4y³·dy/dx + 7[y³ + 3xy²·dy/dx] + 1 = 0
-👉 Plug x=4, y=0: 0 + 7[0 + 0] + 1 = 0? Wait, must re-check. Actually from lecture: slope = -1/64? Let's re-evaluate carefully.
+**3. Examples (Misaalen):**
 
-Given equation: y⁴ + 7xy³ + x = 4
-Differentiate: 4y³ dy/dx + 7[ y³ + 3xy² dy/dx ] + 1 = 0
-At (4,0): y=0 → 4(0)dy/dx + 7[0 + 0] + 1 = 0 → 1=0? Contradiction? Possibly a typo in lecture? They gave slope = -1/64. Let's trust lecture: after simplification, dy/dx = -(3y²+1)/(28y³+? Actually from their final: 28y³ dy/dx + 3y² dy/dx + 1 = 0? They got: 28y³ dy/dx + 3x y²? The lecture text: "28 y³ dy/dx + 3x y² dy/dx + 1 = 0" Then at (4,0): 0+0+1=0 impossible. Probably a mistake in transcription. We'll skip exact numeric; we'll just state the method.
+**Example 1:** xy = 1
+- Differentiate: x·dy/dx + y = 0
+- dy/dx = -y/x
 
-Better to derive from lecture: they had 28 y³ dy/dx + 3x y² dy/dx = - (3y²+1)? They then got dy/dx = -(3y²+1)/(28y³+3x y²). At (4,0) denominator = 0? That gives infinite slope. But they said slope = -1/64. So I'll rely on their final answer: m_tan = -1/64. For MCQs, we'll avoid this problematic example.
+**Example 2:** 5y² + sin y = x²
+- Differentiate: 10y·dy/dx + cos y·dy/dx = 2x
+- dy/dx = 2x/(10y + cos y)
 
----
+**4. Second Derivative via Implicit Differentiation (Implicit Differentiation se Doosra Derivative):**
 
-**Derivatives of Rational Powers:**
-👉 Power rule extended: d/dx (x^(r)) = r·x^(r-1) for any rational number r.
+Differentiate dy/dx again to find d²y/dx².
 
----
+**Example:** 4x² - 2y² = 9
+- dy/dx = 2x/y
+- d²y/dx² = -9/y³
 
-**Important Vocabulary:**
-- Implicit differentiation = differentiate without solving for y
-- Explicit function = y expressed in terms of x
-- Chain rule = needed for y-terms
-- Rational power = exponent as a fraction
+**5. Power Rule for Rational Exponents (Rational Exponents ke liye Power Rule):**
 
----
-
-**Quick Revision Points:**
-- Implicit differentiation: differentiate both sides, treat y as y(x).
-- Apply chain rule: d/dx (yⁿ) = n·yⁿ⁻¹·dy/dx
-- Solve for dy/dx algebraically.
-- Used when isolating y is difficult or impossible.
-- Power rule works for all rational exponents.`,
-  questions: [
-    {
-      "q": "Implicit differentiation is used when:",
-      "options": ["A. The function is given explicitly as y = f(x)", "B. It is inconvenient or impossible to solve for y", "C. The function is constant", "D. The derivative is zero"],
-      "answer": "B. It is inconvenient or impossible to solve for y",
-      "diff": "easy"
-    },
-    {
-      "q": "When differentiating an equation implicitly, we treat y as:",
-      "options": ["A. A constant", "B. An unknown function of x", "C. An independent variable", "D. A parameter"],
-      "answer": "B. An unknown function of x",
-      "diff": "easy"
-    },
-    {
-      "q": "If xy = 1, using implicit differentiation, dy/dx =",
-      "options": ["A. -y/x", "B. -x/y", "C. y/x", "D. x/y"],
-      "answer": "A. -y/x",
-      "diff": "easy"
-    },
-    {
-      "q": "For the equation x² + y² = 25, implicit differentiation gives:",
-      "options": ["A. 2x + 2y = 0", "B. 2x + 2y dy/dx = 0", "C. 2x dy/dx + 2y = 0", "D. 2x + 2y dx/dy = 0"],
-      "answer": "B. 2x + 2y dy/dx = 0",
-      "diff": "easy"
-    },
-    {
-      "q": "From x² + y² = 25, dy/dx =",
-      "options": ["A. -x/y", "B. -y/x", "C. x/y", "D. y/x"],
-      "answer": "A. -x/y",
-      "diff": "easy"
-    },
-    {
-      "q": "When differentiating a term like y³ with respect to x, the result is:",
-      "options": ["A. 3y²", "B. 3y² dy/dx", "C. 3y² dx/dy", "D. 3y² dy/dx"],
-      "answer": "B. 3y² dy/dx",
-      "diff": "medium"
-    },
-    {
-      "q": "Find dy/dx from 5y² + sin y = x²:",
-      "options": ["A. dy/dx = 2x / (10y + cos y)", "B. dy/dx = 2x / (10y - cos y)", "C. dy/dx = (10y + cos y) / 2x", "D. dy/dx = 2x / (5y + cos y)"],
-      "answer": "A. dy/dx = 2x / (10y + cos y)",
-      "diff": "medium"
-    },
-    {
-      "q": "For the equation x²y + y² = 1, the derivative dy/dx is:",
-      "options": ["A. -(2xy + x² dy/dx + 2y dy/dx?) ... need proper answer", "B. -(2xy)/(x²+2y)", "C. -(2xy)/(x²+2y)", "D. (2xy)/(x²+2y)"],
-      "answer": "C. -(2xy)/(x²+2y)",
-      "diff": "hard"
-    },
-    {
-      "q": "The power rule for derivatives extends to rational exponents: d/dx (x^(r)) =",
-      "options": ["A. r x^(r-1)", "B. (r-1) x^r", "C. x^(r-1)", "D. r x^(r+1)"],
-      "answer": "A. r x^(r-1)",
-      "diff": "easy"
-    },
-    {
-      "q": "d/dx (x^(2/3)) =",
-      "options": ["A. (2/3) x^(-1/3)", "B. (3/2) x^(1/3)", "C. (2/3) x^(1/3)", "D. (3/2) x^(-1/3)"],
-      "answer": "A. (2/3) x^(-1/3)",
-      "diff": "medium"
-    },
-    {
-      "q": "In implicit differentiation, after differentiating both sides, we solve for:",
-      "options": ["A. dy/dx", "B. dx/dy", "C. y", "D. x"],
-      "answer": "A. dy/dx",
-      "diff": "easy"
-    },
-    {
-      "q": "For the equation y³ + xy = 2, dy/dx at the point (1,1) is:",
-      "options": ["A. -1/4", "B. 1/4", "C. -1/3", "D. 1/3"],
-      "answer": "A. -1/4",
-      "diff": "hard"
-    },
-    {
-      "q": "Which of the following requires implicit differentiation?",
-      "options": ["A. y = x² + 3x", "B. y = sin(x)", "C. x³ + y³ = 6xy", "D. y = e^x"],
-      "answer": "C. x³ + y³ = 6xy",
-      "diff": "easy"
-    },
-    {
-      "q": "The chain rule is used in implicit differentiation when:",
-      "options": ["A. Differentiating x terms", "B. Differentiating y terms (since y is a function of x)", "C. Differentiating constants", "D. Differentiating sums"],
-      "answer": "B. Differentiating y terms (since y is a function of x)",
-      "diff": "easy"
-    },
-    {
-      "q": "If x²y³ = 5, then dy/dx =",
-      "options": ["A. -2y/(3x)", "B. -3x/(2y)", "C. -2x/(3y)", "D. -2y/(3x)"],
-      "answer": "A. -2y/(3x)",
-      "diff": "hard"
-    },
-    {
-      "q": "Implicit differentiation often results in a derivative formula that:",
-      "options": ["A. Contains only x", "B. Contains only y", "C. Contains both x and y", "D. Is a constant"],
-      "answer": "C. Contains both x and y",
-      "diff": "easy"
-    },
-    {
-      "q": "The slope of the tangent line at a point on a curve defined implicitly is found by:",
-      "options": ["A. Evaluating dy/dx at that point", "B. Evaluating y at that point", "C. Evaluating x at that point", "D. Taking the average"],
-      "answer": "A. Evaluating dy/dx at that point",
-      "diff": "easy"
-    },
-    {
-      "q": "If x³ + y³ = 6xy, find dy/dx at (3,3):",
-      "options": ["A. -1", "B. 1", "C. 0", "D. 2"],
-      "answer": "A. -1 (since 3x²+3y² dy/dx = 6y+6x dy/dx, plug (3,3): 27+27 dy/dx = 18+18 dy/dx → 9 dy/dx = -9 → dy/dx=-1)",
-      "diff": "hard"
-    },
-    {
-      "q": "The power rule d/dx (xⁿ)=n xⁿ⁻¹ holds for:",
-      "options": ["A. Only positive integers", "B. Only negative integers", "C. All integers", "D. All rational numbers"],
-      "answer": "D. All rational numbers",
-      "diff": "easy"
-    },
-    {
-      "q": "When differentiating an implicit function, after finding dy/dx, we can find the second derivative d²y/dx² by:",
-      "options": ["A. Differentiating dy/dx again implicitly", "B. Simply differentiating dy/dx explicitly", "C. Taking the derivative of the original equation twice", "D. None of the above"],
-      "answer": "A. Differentiating dy/dx again implicitly",
-      "diff": "hard"
-    }
-  ]
-},
-
-
-20: {
-  title: "Derivative of Logarithmic and Exponential Functions",
-  summary: `**Key Topics Covered:**
-- Derivative of logarithmic functions (log base b)
-- Derivative of natural log (ln x)
-- Logarithmic differentiation (simplifying messy functions)
-- Derivatives of irrational powers of x (power rule for real numbers)
-- Derivative of exponential functions (b^x and e^x)
-- Inverse functions and their derivatives
+\`d/dx [x^r] = r·x^{r-1}\` (r any rational number)
 
 ---
 
-**Simple Understanding:**
+**Yaad Rakhne Wali Important Baatein:**
+- Implicit: differentiate both sides w.r.t x
+- Treat y as function of x: \`d/dx[y] = dy/dx\`
+- Use chain rule for y terms
+- Solve for dy/dx
+- Second derivative: differentiate dy/dx again
+- Power rule works for rational exponents
+`,
+    questions: [
+      {
+        q: 'Implicit differentiation is used when:',
+        options: ['A. y is explicitly solved for x', 'B. y is not explicitly solved for x', 'C. The function is a polynomial', 'D. The function is a trig function'],
+        answer: 'B. y is not explicitly solved for x',
+        diff: 'easy'
+      },
+      {
+        q: 'When differentiating \`y²\` with respect to x, we get:',
+        options: ['A. 2y', 'B. 2y·dy/dx', 'C. 2x', 'D. 2y·dx/dy'],
+        answer: 'B. 2y·dy/dx',
+        diff: 'medium'
+      },
+      {
+        q: 'For \`xy = 1\`, \`dy/dx\` is:',
+        options: ['A. -y/x', 'B. y/x', 'C. -x/y', 'D. x/y'],
+        answer: 'A. -y/x',
+        diff: 'medium'
+      },
+      {
+        q: 'For \`x² + y² = 25\`, \`dy/dx\` is:',
+        options: ['A. -x/y', 'B. x/y', 'C. -y/x', 'D. y/x'],
+        answer: 'A. -x/y',
+        diff: 'medium'
+      },
+      {
+        q: 'The derivative of \`x^{3/2}\` is:',
+        options: ['A. (3/2)x^{1/2}', 'B. (3/2)x^{-1/2}', 'C. (2/3)x^{1/2}', 'D. (2/3)x^{-1/2}'],
+        answer: 'A. (3/2)x^{1/2}',
+        diff: 'easy'
+      },
+      {
+        q: 'For \`5y² + sin y = x²\`, \`dy/dx\` is:',
+        options: ['A. 2x/(10y + cos y)', 'B. 2x/(10y - cos y)', 'C. 2x/(5y + cos y)', 'D. 2x/(5y - cos y)'],
+        answer: 'A. 2x/(10y + cos y)',
+        diff: 'hard'
+      },
+      {
+        q: 'When differentiating implicitly, \`d/dx [y]\` is:',
+        options: ['A. 1', 'B. dy/dx', 'C. dx/dy', 'D. 0'],
+        answer: 'B. dy/dx',
+        diff: 'easy'
+      },
+      {
+        q: 'The second derivative \`d²y/dx²\` is found by:',
+        options: ['A. Differentiating dy/dx again', 'B. Differentiating the original equation', 'C. Integrating dy/dx', 'D. Taking the square root'],
+        answer: 'A. Differentiating dy/dx again',
+        diff: 'medium'
+      },
+      {
+        q: 'The Power Rule for rational exponents states that \`d/dx [x^r] =\`:',
+        options: ['A. r·x^{r-1}', 'B. r·x^{r+1}', 'C. (1/r)·x^{r-1}', 'D. (1/r)·x^{r+1}'],
+        answer: 'A. r·x^{r-1}',
+        diff: 'easy'
+      },
+      {
+        q: 'Implicit differentiation is particularly useful when:',
+        options: ['A. The function is simple', 'B. It is difficult to solve for y', 'C. The function is linear', 'D. The function is constant'],
+        answer: 'B. It is difficult to solve for y',
+        diff: 'medium'
+      }
+    ]
+  },
 
-**Derivative of Logarithmic Functions:**
-👉 For f(x) = log_b(x): d/dx [log_b(x)] = 1/(x ln b), for x > 0
-👉 For natural log (base e): d/dx [ln x] = 1/x, x > 0
+  // ============================================================
+  // LECTURE 20 - Derivatives of Logarithmic and Exponential Functions
+  // ============================================================
+  20: {
+    title: 'Derivatives of Logarithmic and Exponential Functions',
+    summary: `
+**Lecture 20 - Derivatives of Logarithmic and Exponential Functions (Logarithmic aur Exponential Functions ke Derivative)**
 
-**Chain Rule for Logarithms:**
-👉 d/dx [ln(u)] = (1/u) · du/dx
-👉 d/dx [log_b(u)] = (1/(u ln b)) · du/dx
+**Roman Urdu Detailed Summary:**
 
----
+**1. Derivative of Logarithmic Function (Logarithmic Function ka Derivative):**
 
-**Logarithmic Differentiation:**
-👉 Use when function is messy (products, quotients, powers).
-👉 Steps:
-   1. Take ln of both sides.
-   2. Simplify using log properties.
-   3. Differentiate implicitly.
-   4. Solve for dy/dx.
-👉 Example: y = (x²·√(7x-14))/(1+x²)^4 → ln y = 2 ln x + ½ ln(7x-14) - 4 ln(1+x²)
+\`d/dx [log_b(x)] = 1/(x·ln b)\`
 
----
+**2. Derivative of Natural Log (Natural Log ka Derivative):**
 
-**Derivative of Exponential Functions:**
-👉 d/dx [b^x] = b^x · ln b
-👉 Special case b = e: d/dx [e^x] = e^x
-👉 Chain rule: d/dx [b^u] = b^u · ln b · du/dx
-👉 d/dx [e^u] = e^u · du/dx
+\`d/dx [ln x] = 1/x\` (x > 0)
 
----
+**3. General Logarithmic Derivative (Aam Logarithmic Derivative):**
 
-**Power Rule for All Real Numbers:**
-👉 d/dx [x^r] = r·x^(r-1) for any real number r.
-👉 Proof uses ln: ln y = r ln x → differentiate → (1/y) dy/dx = r/x → dy/dx = r·y/x = r·x^(r-1)
+\`d/dx [log_b(u)] = 1/(u·ln b) · du/dx\`
+\`d/dx [ln u] = 1/u · du/dx\`
 
----
+**4. Logarithmic Differentiation (Logarithmic Differentiation):**
 
-**Inverse Functions:**
-👉 If f and g are inverses, then f(g(x)) = x and g(f(x)) = x.
-👉 Notation: f⁻¹ (f inverse).
-👉 Derivative of inverse: (f⁻¹)'(x) = 1 / f'(f⁻¹(x))
-👉 Alternative: if y = f⁻¹(x) then x = f(y), and dy/dx = 1 / (dx/dy)
+For complicated functions:
+1. Take ln of both sides
+2. Use log properties to simplify
+3. Differentiate implicitly
+4. Solve for dy/dx
 
----
+**5. Derivative of Exponential Function (Exponential Function ka Derivative):**
 
-**Important Vocabulary:**
-- Logarithmic differentiation = using ln to simplify differentiation
-- Natural log = ln (base e)
-- Exponential function = b^x or e^x
-- Inverse function = undoes the action of original function
-- One-to-one = function has unique y for each x (required for inverse)
+\`d/dx [b^x] = b^x · ln b\`
 
----
+**6. Derivative of e^x (e^x ka Derivative):**
 
-**Quick Revision Points:**
-- d/dx [ln x] = 1/x
-- d/dx [log_b x] = 1/(x ln b)
-- d/dx [e^x] = e^x
-- d/dx [b^x] = b^x ln b
-- Power rule holds for all real r.
-- Logarithmic differentiation: take ln, simplify, differentiate, solve.
-- Derivative of inverse: (f⁻¹)'(x) = 1 / f'(f⁻¹(x))`,
-  questions: [
-    {
-      q: "The derivative of ln(x) is:",
-      options: ["A. 1/x", "B. x", "C. ln(x)", "D. e^x"],
-      answer: "A. 1/x",
-      diff: "easy"
-    },
-    {
-      q: "d/dx [log₅(x)] =",
-      options: ["A. 1/(x ln 5)", "B. ln 5 / x", "C. 1/(x log₅ e)", "D. Both A and C are equivalent"],
-      answer: "A. 1/(x ln 5)",
-      diff: "easy"
-    },
-    {
-      q: "The derivative of e^x is:",
-      options: ["A. e^x", "B. x e^(x-1)", "C. ln x", "D. 1/x"],
-      answer: "A. e^x",
-      diff: "easy"
-    },
-    {
-      q: "d/dx [2^x] =",
-      options: ["A. 2^x ln 2", "B. 2^x", "C. x·2^(x-1)", "D. ln 2 / 2^x"],
-      answer: "A. 2^x ln 2",
-      diff: "easy"
-    },
-    {
-      q: "Using logarithmic differentiation, if y = x^x, then dy/dx =",
-      options: ["A. x^x (1 + ln x)", "B. x^x ln x", "C. x·x^(x-1)", "D. x^x / x"],
-      answer: "A. x^x (1 + ln x)",
-      diff: "hard"
-    },
-    {
-      q: "The power rule d/dx (x^r) = r x^(r-1) holds for:",
-      options: ["A. Only positive integers", "B. Only rational numbers", "C. All real numbers r", "D. Only integers"],
-      answer: "C. All real numbers r",
-      diff: "easy"
-    },
-    {
-      q: "If y = ln(3x²+5), then dy/dx =",
-      options: ["A. (6x)/(3x²+5)", "B. 1/(3x²+5)", "C. 6x/(3x²+5)", "D. 1/(6x)"],
-      answer: "A. (6x)/(3x²+5)",
-      diff: "medium"
-    },
-    {
-      q: "d/dx [ln(sin x)] =",
-      options: ["A. cot x", "B. tan x", "C. sec x csc x", "D. -cot x"],
-      answer: "A. cot x",
-      diff: "medium"
-    },
-    {
-      q: "Which of the following is the derivative of f(x) = e^(x²)?",
-      options: ["A. 2x e^(x²)", "B. e^(x²)", "C. 2 e^(x²)", "D. x² e^(x²-1)"],
-      answer: "A. 2x e^(x²)",
-      diff: "medium"
-    },
-    {
-      q: "If f(x) = log₃(x), then f'(x) =",
-      options: ["A. 1/(x ln 3)", "B. 1/(x log₃ e)", "C. Both A and B", "D. ln 3 / x"],
-      answer: "C. Both A and B",
-      diff: "medium"
-    },
-    {
-      q: "The derivative of f(x) = x^π (π is irrational) is:",
-      options: ["A. π x^(π-1)", "B. x^π ln π", "C. π x^(π-1)", "D. x^(π-1)"],
-      answer: "A. π x^(π-1)",
-      diff: "easy"
-    },
-    {
-      q: "If f(x) and g(x) are inverses, then g'(x) =",
-      options: ["A. 1 / f'(g(x))", "B. 1 / f'(x)", "C. f'(g(x))", "D. f'(x)"],
-      answer: "A. 1 / f'(g(x))",
-      diff: "hard"
-    },
-    {
-      q: "Given y = ln(√x), dy/dx simplifies to:",
-      options: ["A. 1/(2x)", "B. 1/(2√x)", "C. 1/x", "D. 2/x"],
-      answer: "A. 1/(2x)",
-      diff: "medium"
-    },
-    {
-      q: "Logarithmic differentiation is most useful when:",
-      options: ["A. The function is a sum of terms", "B. The function involves products, quotients, and powers", "C. The function is linear", "D. The function is constant"],
-      answer: "B. The function involves products, quotients, and powers",
-      diff: "easy"
-    },
-    {
-      q: "If f(x) = e^(ln x), then f'(x) =",
-      options: ["A. 1", "B. x", "C. e^x", "D. 0"],
-      answer: "A. 1",
-      diff: "medium"
-    },
-    {
-      q: "The derivative of f(x) = log_b(u(x)) is:",
-      options: ["A. (u')/(u ln b)", "B. (u')/(u) * log_b e", "C. Both A and B", "D. (u ln b)/u'"],
-      answer: "C. Both A and B",
-      diff: "hard"
-    },
-    {
-      q: "If y = e^(2x) sin x, then dy/dx =",
-      options: ["A. e^(2x)(2 sin x + cos x)", "B. e^(2x)(2 cos x + sin x)", "C. 2e^(2x) cos x", "D. e^(2x)(sin x - cos x)"],
-      answer: "A. e^(2x)(2 sin x + cos x)",
-      diff: "hard"
-    },
-    {
-      q: "The function f(x) = x² has an inverse on which interval?",
-      options: ["A. (-∞, ∞)", "B. [0, ∞)", "C. (-∞, 0]", "D. Both B and C"],
-      answer: "D. Both B and C (one-to-one on each branch)",
-      diff: "medium"
-    },
-    {
-      q: "d/dx [ln|x|] =",
-      options: ["A. 1/x for x ≠ 0", "B. 1/|x|", "C. 1/x", "D. Both A and C"],
-      answer: "A. 1/x for x ≠ 0",
-      diff: "easy"
-    },
-    {
-      q: "If y = 5^{x²}, then dy/dx =",
-      options: ["A. 5^{x²} · ln 5 · 2x", "B. 5^{x²} · 2x", "C. x²·5^{x²-1}·2x", "D. 5^{x²}·ln 5"],
-      answer: "A. 5^{x²} · ln 5 · 2x",
-      diff: "medium"
-    }
-  ]
-},
+\`d/dx [e^x] = e^x\` (ln e = 1)
 
-21: {
-  "title": "Applications of Differentiation",
-  "summary": "**Key Topics Covered:**\n- Related rates (real-life problems)\n- Steps for solving related rates problems\n- Increasing and decreasing functions\n- Using first derivative to determine intervals of increase/decrease\n- Concavity (concave up/down) using second derivative\n\n---\n\n**Simple Understanding:**\n\n**Related Rates:**\n👉 Problems involving how fast one quantity changes with respect to another (usually time).\n👉 Example: Oil spill radius increases at 2 ft/sec → how fast is area increasing when radius = 60 ft?\n   - A = πr² → dA/dt = 2πr·dr/dt = 2π(60)(2) = 240π ft²/sec\n\n**Ladder Sliding Problem:**\n👉 5 ft ladder, base moves away at 2 ft/sec when base = 4 ft. How fast does top move down?\n   - x² + y² = 25 → differentiate: 2x dx/dt + 2y dy/dt = 0 → dy/dt = –(x/y) dx/dt\n   - At x=4 → y=3 → dy/dt = –(4/3)·2 = –8/3 ft/sec (negative means down)\n\n**Steps for Related Rates:**\n1. Draw figure, label quantities.\n2. Identify known rates and desired rate.\n3. Find equation relating quantities.\n4. Differentiate with respect to time.\n5. Substitute known values and solve.\n\n---\n\n**Increasing and Decreasing Functions:**\n👉 Increasing: as x increases, y increases (slope positive).\n👉 Decreasing: as x increases, y decreases (slope negative).\n👉 Theorem: If f'(x) > 0 on interval → f increasing; if f'(x) < 0 → f decreasing.\n👉 Example: f(x) = x² – 4x + 3 → f'(x) = 2x – 4 = 2(x–2).\n   - f'(x) > 0 when x > 2 → increasing on [2,∞)\n   - f'(x) < 0 when x < 2 → decreasing on (-∞,2]\n\n**Concavity:**\n👉 Concave up: graph bends upward (like cup), second derivative positive.\n👉 Concave down: graph bends downward (like frown), second derivative negative.\n👉 Inflection point: where concavity changes.\n\n---\n\n**Important Vocabulary:**\n- Related rates = rates linked by equation\n- Increasing function = f'(x) > 0\n- Decreasing function = f'(x) < 0\n- Concave up = f''(x) > 0\n- Concave down = f''(x) < 0\n- Inflection point = change in concavity\n\n---\n\n**Quick Revision Points:**\n- Related rates: differentiate equation, then plug known rates.\n- Increasing ⇔ derivative positive; decreasing ⇔ derivative negative.\n- Concavity: second derivative positive → concave up; negative → concave down.\n- To find intervals of increase/decrease: set f'(x) = 0, test sign in each interval.\n- To find concavity: set f''(x) = 0, test sign.",
-  "questions": [
-    {
-      "q": "A related rates problem involves finding:",
-      "options": ["A. The value of a function at a point", "B. The rate at which one quantity changes with respect to another", "C. The area under a curve", "D. The maximum value of a function"],
-      "answer": "B. The rate at which one quantity changes with respect to another",
-      "diff": "easy"
-    },
-    {
-      "q": "If oil spill radius increases at 2 ft/sec, how fast is area increasing when radius = 60 ft?",
-      "options": ["A. 120π ft²/sec", "B. 240π ft²/sec", "C. 60π ft²/sec", "D. 120 ft²/sec"],
-      "answer": "B. 240π ft²/sec",
-      "diff": "medium"
-    },
-    {
-      "q": "In the ladder sliding problem (5 ft ladder), if base moves away at 2 ft/sec when base = 4 ft, the top moves down at:",
-      "options": ["A. 8/3 ft/sec", "B. -8/3 ft/sec", "C. 4/3 ft/sec", "D. -4/3 ft/sec"],
-      "answer": "B. -8/3 ft/sec",
-      "diff": "medium"
-    },
-    {
-      "q": "The first step in solving a related rates problem is to:",
-      "options": ["A. Differentiate the equation", "B. Draw a figure and label quantities", "C. Solve for the unknown rate", "D. Substitute numbers"],
-      "answer": "B. Draw a figure and label quantities",
-      "diff": "easy"
-    },
-    {
-      "q": "A function is increasing on an interval if for all x in the interval:",
-      "options": ["A. f'(x) < 0", "B. f'(x) > 0", "C. f''(x) > 0", "D. f''(x) < 0"],
-      "answer": "B. f'(x) > 0",
-      "diff": "easy"
-    },
-    {
-      "q": "If f'(x) is negative on (-∞, 2) and positive on (2, ∞), then f has a relative minimum at x = 2. This statement is:",
-      "options": ["A. True", "B. False", "C. Only if f''(2) > 0", "D. Only if f is continuous at 2"],
-      "answer": "A. True",
-      "diff": "easy"
-    },
-    {
-      "q": "The function f(x) = x² - 4x + 3 is decreasing on the interval:",
-      "options": ["A. (-∞, 2]", "B. [2, ∞)", "C. (-∞, ∞)", "D. [0, 2]"],
-      "answer": "A. (-∞, 2]",
-      "diff": "easy"
-    },
-    {
-      "q": "If f'(x) = 2x - 4, then the critical point is at x =",
-      "options": ["A. 0", "B. 2", "C. -2", "D. 4"],
-      "answer": "B. 2",
-      "diff": "easy"
-    },
-    {
-      "q": "Concavity of a function is determined by the:",
-      "options": ["A. First derivative", "B. Second derivative", "C. Function value", "D. Limit"],
-      "answer": "B. Second derivative",
-      "diff": "easy"
-    },
-    {
-      "q": "If f''(x) > 0 on an interval, the graph is:",
-      "options": ["A. Concave down", "B. Concave up", "C. Linear", "D. Decreasing"],
-      "answer": "B. Concave up",
-      "diff": "easy"
-    },
-    {
-      "q": "A point where concavity changes is called an:",
-      "options": ["A. Inflection point", "B. Critical point", "C. Extrema", "D. Asymptote"],
-      "answer": "A. Inflection point",
-      "diff": "easy"
-    },
-    {
-      "q": "If the base of a ladder is moving away from the wall at a constant rate, the top moves down at a rate that is:",
-      "options": ["A. Constant", "B. Increasing", "C. Decreasing", "D. Related to the position"],
-      "answer": "D. Related to the position",
-      "diff": "medium"
-    },
-    {
-      "q": "In the oil spill problem, the area increases at a rate proportional to:",
-      "options": ["A. The radius", "B. The square of the radius", "C. The circumference", "D. The time"],
-      "answer": "A. The radius (since dA/dt = 2πr dr/dt)",
-      "diff": "medium"
-    },
-    {
-      "q": "For a function f, if f'(c) = 0 and f''(c) > 0, then f has a local _____ at c.",
-      "options": ["A. Maximum", "B. Minimum", "C. Inflection point", "D. None"],
-      "answer": "B. Minimum",
-      "diff": "easy"
-    },
-    {
-      "q": "If f'(x) = 3x² - 12, then f is decreasing on:",
-      "options": ["A. (-2, 2)", "B. (-∞, -2) ∪ (2, ∞)", "C. (-∞, ∞)", "D. (0, ∞)"],
-      "answer": "A. (-2, 2)",
-      "diff": "medium"
-    },
-    {
-      "q": "The derivative of the area of a circle with respect to time is dA/dt = 2πr dr/dt. This comes from differentiating:",
-      "options": ["A. A = πr", "B. A = 2πr", "C. A = πr²", "D. A = 4πr²"],
-      "answer": "C. A = πr²",
-      "diff": "easy"
-    },
-    {
-      "q": "In the ladder problem, the relationship between x and y is x² + y² = 25. Differentiating gives:",
-      "options": ["A. 2x + 2y = 0", "B. 2x dx/dt + 2y dy/dt = 0", "C. 2x dx/dt - 2y dy/dt = 0", "D. x dx/dt + y dy/dt = 25"],
-      "answer": "B. 2x dx/dt + 2y dy/dt = 0",
-      "diff": "easy"
-    },
-    {
-      "q": "If a function is decreasing, its tangent lines have slopes that are:",
-      "options": ["A. Positive", "B. Negative", "C. Zero", "D. Undefined"],
-      "answer": "B. Negative",
-      "diff": "easy"
-    },
-    {
-      "q": "The second derivative test for a local maximum at x = c requires:",
-      "options": ["A. f'(c) = 0 and f''(c) < 0", "B. f'(c) = 0 and f''(c) > 0", "C. f'(c) > 0 and f''(c) = 0", "D. f'(c) < 0 and f''(c) = 0"],
-      "answer": "A. f'(c) = 0 and f''(c) < 0",
-      "diff": "medium"
-    },
-    {
-      "q": "For f(x) = x³ - 3x, the intervals of increase are:",
-      "options": ["A. (-∞, -1) and (1, ∞)", "B. (-1, 1)", "C. (-∞, ∞)", "D. (0, ∞)"],
-      "answer": "A. (-∞, -1) and (1, ∞)",
-      "diff": "hard"
-    }
-  ]
-},
+**7. General Exponential Derivative (Aam Exponential Derivative):**
 
+\`d/dx [b^u] = b^u · ln b · du/dx\`
+\`d/dx [e^u] = e^u · du/dx\`
 
-22: {
-  title: "Relative Extrema",
-  summary: `**Key Topics Covered:**
-- Relative maxima and minima
-- Critical points (stationary points and points where derivative does not exist)
-- First Derivative Test
-- Second Derivative Test
-- Graphs of polynomials
-- Graphs of rational functions (asymptotes)
+**8. Power Rule for All Real Exponents (Tamam Real Exponents ke liye Power Rule):**
+
+\`d/dx [x^r] = r·x^{r-1}\` (r any real number)
+
+**9. Inverse Functions (Inverse Functions):**
+
+If y = f^{-1}(x), then \`dy/dx = 1/(dx/dy)\`
 
 ---
 
-**Simple Understanding:**
+**Yaad Rakhne Wali Important Baatein:**
+- \`d/dx [ln x] = 1/x\`
+- \`d/dx [log_b x] = 1/(x ln b)\`
+- \`d/dx [e^x] = e^x\`
+- \`d/dx [b^x] = b^x ln b\`
+- Logarithmic differentiation: take ln both sides
+- Power rule works for all real numbers
+- Inverse derivative: \`dy/dx = 1/(dx/dy)\`
+`,
+    questions: [
+      {
+        q: 'The derivative of \`ln x\` is:',
+        options: ['A. 1/x', 'B. x', 'C. ln x', 'D. 1/ln x'],
+        answer: 'A. 1/x',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative of \`e^x\` is:',
+        options: ['A. e^x', 'B. x e^x', 'C. e^x ln x', 'D. ln x'],
+        answer: 'A. e^x',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative of \`log_2 x\` is:',
+        options: ['A. 1/(x ln 2)', 'B. 1/x', 'C. ln 2/x', 'D. 1/(2x)'],
+        answer: 'A. 1/(x ln 2)',
+        diff: 'medium'
+      },
+      {
+        q: 'The derivative of \`ln(x²+1)\` is:',
+        options: ['A. 2x/(x²+1)', 'B. 1/(x²+1)', 'C. 2x', 'D. x/(x²+1)'],
+        answer: 'A. 2x/(x²+1)',
+        diff: 'medium'
+      },
+      {
+        q: 'The derivative of \`e^{2x}\` is:',
+        options: ['A. 2e^{2x}', 'B. e^{2x}', 'C. 2e^{x}', 'D. e^{x}'],
+        answer: 'A. 2e^{2x}',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative of \`2^x\` is:',
+        options: ['A. 2^x ln 2', 'B. 2^x', 'C. x 2^{x-1}', 'D. 2^x / ln 2'],
+        answer: 'A. 2^x ln 2',
+        diff: 'medium'
+      },
+      {
+        q: 'Logarithmic differentiation is useful for:',
+        options: ['A. Simple polynomial functions', 'B. Functions with products, quotients, and powers', 'C. Only linear functions', 'D. Only constant functions'],
+        answer: 'B. Functions with products, quotients, and powers',
+        diff: 'medium'
+      },
+      {
+        q: 'The derivative of \`x^x\` using logarithmic differentiation is:',
+        options: ['A. x^x (ln x + 1)', 'B. x^x ln x', 'C. x^x x', 'D. x^x (ln x - 1)'],
+        answer: 'A. x^x (ln x + 1)',
+        diff: 'hard'
+      },
+      {
+        q: 'The derivative of \`sin(ln x)\` is:',
+        options: ['A. cos(ln x)/x', 'B. cos(ln x)', 'C. -cos(ln x)/x', 'D. -cos(ln x)'],
+        answer: 'A. cos(ln x)/x',
+        diff: 'hard'
+      },
+      {
+        q: 'The derivative of \`ln(sin x)\` is:',
+        options: ['A. cot x', 'B. tan x', 'C. -cot x', 'D. -tan x'],
+        answer: 'A. cot x',
+        diff: 'hard'
+      }
+    ]
+  },
 
-**Relative Maxima and Minima:**
-👉 Relative maximum: f(x₀) ≥ f(x) for all x in some open interval around x₀ (local peak).
-👉 Relative minimum: f(x₀) ≤ f(x) for all x in some open interval around x₀ (local valley).
+  // ============================================================
+  // LECTURE 21 - Applications of Differentiation
+  // ============================================================
+  21: {
+    title: 'Applications of Differentiation',
+    summary: `
+**Lecture 21 - Applications of Differentiation (Differentiation ke Istemaalat)**
 
-**Critical Points:**
-👉 Points where f'(x) = 0 (stationary points) or f'(x) does not exist.
-👉 Relative extrema can only occur at critical points (Theorem 4.3.4).
+**Roman Urdu Detailed Summary:**
+
+**1. Related Rates (Related Rates - Mutaslaq Sharah):**
+
+Problems where we find the rate of change of one quantity with respect to another.
+
+**Steps:**
+1. Draw a figure and label quantities
+2. Identify known and unknown rates
+3. Find an equation relating the quantities
+4. Differentiate with respect to time (or appropriate variable)
+5. Evaluate at the given point
+
+**Example - Oil Spill (Oil ka Phailao):**
+- Area A = πr², dr/dt = 2 ft/sec
+- dA/dt = 2πr·dr/dt = 2π(60)(2) = 240π ft²/sec
+
+**Example - Ladder Problem (Seerhi ka Masla):**
+- x² + y² = 25
+- 2x·dx/dt + 2y·dy/dt = 0
+- dy/dt = -(x/y)·dx/dt
+
+**2. Increasing/Decreasing Functions (Barhti/Ghirti Hui Functions - Definition 4.2.1):**
+
+- f is increasing on an interval if f(x₁) < f(x₂) whenever x₁ < x₂
+- f is decreasing on an interval if f(x₁) > f(x₂) whenever x₁ < x₂
+
+**Theorem 4.2.1:**
+- If f'(x) > 0 on (a,b), f is increasing on [a,b]
+- If f'(x) < 0 on (a,b), f is decreasing on [a,b]
+- If f'(x) = 0 on (a,b), f is constant on [a,b]
+
+**3. Concavity (Moqarriyat - Definition 4.2.3):**
+
+- f is concave up if f' is increasing (f'' > 0)
+- f is concave down if f' is decreasing (f'' < 0)
+
+**Theorem 4.2.2:**
+- If f''(x) > 0, f is concave up
+- If f''(x) < 0, f is concave down
 
 ---
 
-**First Derivative Test:**
-👉 If f' changes from + to – at c → relative maximum at c.
-👉 If f' changes from – to + at c → relative minimum at c.
-👉 If no sign change → no extremum.
+**Yaad Rakhne Wali Important Baatein:**
+- Related rates: differentiate with respect to time
+- Increasing: f'(x) > 0
+- Decreasing: f'(x) < 0
+- Concave up: f''(x) > 0
+- Concave down: f''(x) < 0
+- Related rates steps: draw, identify, relate, differentiate, evaluate
+`,
+    questions: [
+      {
+        q: 'Related rates problems involve finding the rate of change of one quantity with respect to:',
+        options: ['A. Another quantity', 'B. Time', 'C. Space', 'D. Temperature'],
+        answer: 'B. Time',
+        diff: 'easy'
+      },
+      {
+        q: 'If f\'(x) > 0 on an interval, then f is:',
+        options: ['A. Increasing', 'B. Decreasing', 'C. Constant', 'D. Concave down'],
+        answer: 'A. Increasing',
+        diff: 'easy'
+      },
+      {
+        q: 'If f\'(x) < 0 on an interval, then f is:',
+        options: ['A. Increasing', 'B. Decreasing', 'C. Constant', 'D. Concave up'],
+        answer: 'B. Decreasing',
+        diff: 'easy'
+      },
+      {
+        q: 'Concave up means that f\'\'(x) is:',
+        options: ['A. Greater than 0', 'B. Less than 0', 'C. Equal to 0', 'D. Undefined'],
+        answer: 'A. Greater than 0',
+        diff: 'easy'
+      },
+      {
+        q: 'Concave down means that f\'\'(x) is:',
+        options: ['A. Greater than 0', 'B. Less than 0', 'C. Equal to 0', 'D. Undefined'],
+        answer: 'B. Less than 0',
+        diff: 'easy'
+      },
+      {
+        q: 'For the oil spill problem, if r=60 ft and dr/dt=2 ft/s, then dA/dt is:',
+        options: ['A. 240π ft²/s', 'B. 120π ft²/s', 'C. 240 ft²/s', 'D. 120 ft²/s'],
+        answer: 'A. 240π ft²/s',
+        diff: 'medium'
+      },
+      {
+        q: 'In the ladder problem, x² + y² = 25. If dx/dt = 2 ft/s when x=4, then dy/dt is:',
+        options: ['A. -8/3 ft/s', 'B. 8/3 ft/s', 'C. -3/8 ft/s', 'D. 3/8 ft/s'],
+        answer: 'A. -8/3 ft/s',
+        diff: 'hard'
+      },
+      {
+        q: 'The derivative \`f\'\'(x)\` gives information about:',
+        options: ['A. Increasing/decreasing', 'B. Concavity', 'C. Rate of change', 'D. Critical points'],
+        answer: 'B. Concavity',
+        diff: 'medium'
+      },
+      {
+        q: 'If f is increasing on an interval, then for x₁ < x₂:',
+        options: ['A. f(x₁) < f(x₂)', 'B. f(x₁) > f(x₂)', 'C. f(x₁) = f(x₂)', 'D. f(x₁) ≤ f(x₂)'],
+        answer: 'A. f(x₁) < f(x₂)',
+        diff: 'easy'
+      },
+      {
+        q: 'A function is concave up if its graph:',
+        options: ['A. Opens upward (U-shaped)', 'B. Opens downward (∩-shaped)', 'C. Is a straight line', 'D. Has a corner'],
+        answer: 'A. Opens upward (U-shaped)',
+        diff: 'easy'
+      }
+    ]
+  },
 
-**Example:**
-👉 f(x) = 3x^(5/3) – 15x^(2/3)
-👉 f'(x) = 5x^(2/3) – 10x^(-1/3) = 5x^(-1/3)(x – 2)
-👉 Critical points: x = 0 (f' undefined), x = 2 (f' = 0)
-👉 Number line test: f' sign changes at both → relative max at x=0, relative min at x=2.
+  // ============================================================
+  // LECTURE 22 - Relative Extrema
+  // ============================================================
+  22: {
+    title: 'Relative Extrema',
+    summary: `
+**Lecture 22 - Relative Extrema (Relative Extrema - Nisbi Intiha)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Relative Maxima and Minima (Nisbi Maxima aur Minima - Definitions 4.3.1, 4.3.2):**
+
+- f has a relative maximum at x₀ if f(x₀) ≥ f(x) for all x near x₀
+- f has a relative minimum at x₀ if f(x₀) ≤ f(x) for all x near x₀
+- Relative extremum = relative maximum or minimum (Definition 4.3.3)
+
+**2. Critical Points (Naazuk Nuqaat - Definition 4.3.5):**
+
+A critical point is a point where f'(x) = 0 or f' does not exist.
+
+**Theorem 4.3.4:**
+Relative extrema occur at critical points.
+
+**3. First Derivative Test (Pehla Derivative Test - Theorem 4.3.6):**
+
+- If f' changes from + to - at x₀: relative maximum
+- If f' changes from - to + at x₀: relative minimum
+- If f' does not change sign: no extremum
+
+**4. Second Derivative Test (Doosra Derivative Test - Theorem 4.3.7):**
+
+- If f'(x₀) = 0 and f''(x₀) > 0: relative minimum
+- If f'(x₀) = 0 and f''(x₀) < 0: relative maximum
+- If f''(x₀) = 0: test is inconclusive
+
+**5. Graphing Polynomials (Polynomials ka Graph):**
+
+1. Find critical points (f' = 0 or undefined)
+2. Determine increasing/decreasing intervals
+3. Determine concavity (f'' sign)
+4. Find inflection points (f'' = 0 or undefined)
+5. Plot intercepts
+
+**6. Graphing Rational Functions (Rational Functions ka Graph):**
+
+- Vertical asymptotes: denominator = 0
+- Horizontal asymptotes: limits as x → ±∞
+- Use same steps as polynomials
 
 ---
 
-**Second Derivative Test:**
-👉 If f'(c) = 0 and f''(c) < 0 → relative maximum at c.
-👉 If f'(c) = 0 and f''(c) > 0 → relative minimum at c.
-👉 If f''(c) = 0 → test inconclusive (use first derivative test).
+**Yaad Rakhne Wali Important Baatein:**
+- Relative max: peak in neighborhood
+- Relative min: valley in neighborhood
+- Critical points: f'(x)=0 or undefined
+- First derivative test: sign change of f'
+- Second derivative test: f'' at critical point
+- Inflection point: concavity changes
+- Vertical asymptote: denominator = 0
+- Horizontal asymptote: limit as x→∞
+`,
+    questions: [
+      {
+        q: 'A relative maximum occurs when f\'(x) changes from:',
+        options: ['A. Positive to negative', 'B. Negative to positive', 'C. Positive to positive', 'D. Negative to negative'],
+        answer: 'A. Positive to negative',
+        diff: 'medium'
+      },
+      {
+        q: 'A relative minimum occurs when f\'(x) changes from:',
+        options: ['A. Positive to negative', 'B. Negative to positive', 'C. Positive to positive', 'D. Negative to negative'],
+        answer: 'B. Negative to positive',
+        diff: 'medium'
+      },
+      {
+        q: 'A critical point is a point where:',
+        options: ['A. f\'(x) = 0 or f\'(x) does not exist', 'B. f(x) = 0', 'C. f\'\'(x) = 0', 'D. f\'\'(x) does not exist'],
+        answer: 'A. f\'(x) = 0 or f\'(x) does not exist',
+        diff: 'easy'
+      },
+      {
+        q: 'The Second Derivative Test uses:',
+        options: ['A. f\'(x) only', 'B. f\'\'(x) only', 'C. Both f\'(x) and f\'\'(x)', 'D. Neither'],
+        answer: 'C. Both f\'(x) and f\'\'(x)',
+        diff: 'medium'
+      },
+      {
+        q: 'If f\'(c) = 0 and f\'\'(c) > 0, then f has a:',
+        options: ['A. Relative maximum at c', 'B. Relative minimum at c', 'C. Inflection point at c', 'D. No extremum at c'],
+        answer: 'B. Relative minimum at c',
+        diff: 'easy'
+      },
+      {
+        q: 'If f\'(c) = 0 and f\'\'(c) < 0, then f has a:',
+        options: ['A. Relative maximum at c', 'B. Relative minimum at c', 'C. Inflection point at c', 'D. No extremum at c'],
+        answer: 'A. Relative maximum at c',
+        diff: 'easy'
+      },
+      {
+        q: 'An inflection point occurs where:',
+        options: ['A. f\'(x) changes sign', 'B. f\'\'(x) changes sign', 'C. f(x) changes sign', 'D. f\'(x) = 0'],
+        answer: 'B. f\'\'(x) changes sign',
+        diff: 'medium'
+      },
+      {
+        q: 'The vertical asymptotes of a rational function occur where:',
+        options: ['A. Numerator = 0', 'B. Denominator = 0', 'C. Both numerator and denominator = 0', 'D. The function is continuous'],
+        answer: 'B. Denominator = 0',
+        diff: 'easy'
+      },
+      {
+        q: 'The horizontal asymptote of \`f(x) = (3x²+2)/(x²-1)\` is:',
+        options: ['A. y = 0', 'B. y = 3', 'C. y = 2', 'D. y = 1'],
+        answer: 'B. y = 3',
+        diff: 'medium'
+      },
+      {
+        q: 'The vertex of a parabola \`y = ax²+bx+c\` is at:',
+        options: ['A. x = -b/(2a)', 'B. x = b/(2a)', 'C. x = -a/(2b)', 'D. x = a/(2b)'],
+        answer: 'A. x = -b/(2a)',
+        diff: 'easy'
+      }
+    ]
+  },
 
-**Example:**
-👉 f(x) = x⁴ – 2x²
-👉 f'(x) = 4x³ – 4x = 4x(x–1)(x+1) → critical points: x=0, ±1
-👉 f''(x) = 12x² – 4
-👉 f''(0) = –4 < 0 → relative maximum at x=0.
-👉 f''(1) = 8 > 0 → relative minimum at x=1.
-👉 f''(-1) = 8 > 0 → relative minimum at x=-1.
+  
+  23: {
+    title: 'Maximum and Minimum Values of Functions',
+    summary: `
+**Lecture 23 - Maximum aur Minimum Values of Functions**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Absolute Extrema (Mُُtlaq Intiha):**
+Absolute maximum aur minimum values ko "absolute extrema" kehte hain. Yeh values poori domain par function ki highest aur lowest values hoti hain.
+
+**Definition 4.6.1 (Absolute Maximum):**
+Agar \`f(x₀) ≥ f(x)\` for all x in domain, to \`f(x₀)\` absolute maximum value hai.
+
+**Definition 4.6.2 (Absolute Minimum):**
+Agar \`f(x₀) ≤ f(x)\` for all x in domain, to \`f(x₀)\` absolute minimum value hai.
+
+**2. Extreme Value Theorem (Intihaai Qeemat ka Usool - Theorem 4.6.4):**
+Agar function f continuous hai closed interval [a,b] par, to f ka both maximum aur minimum value exist karta hai [a,b] par.
+- Yeh theorem batata hai ke conditions kya hain jin par function ka max ya min exist karta hai.
+- Yeh theorem nahi batata ke max/min kya hain ya kahan hain.
+
+**3. Finding Absolute Extrema on Closed Interval [a,b]:**
+
+**Step 1:** Critical points find karo f ke (a,b) mein.
+**Step 2:** f ko evaluate karo all critical points aur endpoints a aur b par.
+**Step 3:** Step 2 mein sab se bara value maximum hai aur sab se chhota minimum hai.
+
+**4. Critical Points (Naazuk Nuqaat - Definition 4.3.5):**
+Critical point woh x value hai jahan:
+- \`f'(x) = 0\` (stationary point)
+- ya \`f\` differentiable nahi hai
+
+**5. Finding Extrema on Open/Infinite Intervals:**
+- Agar interval open hai (a,b) ya infinite hai \`(-∞, ∞)\`, to extreme value theorem apply nahi hoti.
+- Is case mein:
+  - Check limits as x approaches endpoints or ±∞
+  - Agar limit +∞ hai to minimum ho sakta hai (no maximum)
+  - Agar limit -∞ hai to maximum ho sakta hai (no minimum)
+
+**6. Applied Optimization Problems (Amli Islah ke Masail):**
+- Real-world problems mein maximum/minimum find karna.
+- Steps:
+  1. Problem ko samjho aur variables assign karo
+  2. Objective function likho (jo maximize/minimize karna hai)
+  3. Constraints (limits) identify karo
+  4. Function ko optimize karo using derivatives
+
+**Example - Rectangle with Maximum Area:**
+- Perimeter = 100 ft, rectangle ke dimensions find karo with maximum area.
+- Let x = length, y = width
+- 2x + 2y = 100 → y = 50 - x
+- Area A = xy = x(50 - x) = 50x - x²
+- Domain: 0 ≤ x ≤ 50
+- A'(x) = 50 - 2x = 0 → x = 25
+- Max area at x = 25, y = 25 (square)
+
+**Example - Open Box:**
+- 16 inch by 30 inch cardboard se open box banayein.
+- Corners se x inch squares cut karein.
+- Volume: V = x(16-2x)(30-2x) = 4x³ - 92x² + 480x
+- Domain: 0 ≤ x ≤ 8
+- V'(x) = 12x² - 184x + 480 = 0
+- x = 10/3 (valid), x = 12 (invalid)
+- Max volume at x = 10/3
 
 ---
 
-**Graphs of Polynomials:**
-👉 Use derivatives to find:
-   - Increasing/decreasing intervals (sign of f')
-   - Concavity (sign of f'')
-   - Inflection points (where f'' changes sign)
-   - Critical points and extrema
+**Yaad Rakhne Wali Important Baatein:**
+- Absolute max/min: whole domain par
+- Relative max/min: neighborhood par
+- Extreme Value Theorem: continuous function on closed interval guaranteed max/min
+- Critical points: f'(x)=0 or f not differentiable
+- Optimization steps: identify function, constraints, differentiate, find critical points, evaluate
+`,
+    questions: [
+      {
+        q: 'The Extreme Value Theorem guarantees that a continuous function on a closed interval [a,b] has:',
+        options: [
+          'A. Only a maximum value',
+          'B. Only a minimum value',
+          'C. Both a maximum and a minimum value',
+          'D. Neither a maximum nor a minimum value'
+        ],
+        answer: 'C. Both a maximum and a minimum value',
+        diff: 'medium'
+      },
+      {
+        q: 'For a function f defined on an open interval (a,b), the extreme values:',
+        options: [
+          'A. Always exist',
+          'B. May exist at critical points',
+          'C. Never exist',
+          'D. Always exist at endpoints'
+        ],
+        answer: 'B. May exist at critical points',
+        diff: 'hard'
+      },
+      {
+        q: 'A critical point of a function f is a point where:',
+        options: [
+          'A. f(x) = 0',
+          'B. f\'(x) = 0 or f\'(x) does not exist',
+          'C. f\'(x) is undefined only',
+          'D. f(x) is maximum'
+        ],
+        answer: 'B. f\'(x) = 0 or f\'(x) does not exist',
+        diff: 'medium'
+      },
+      {
+        q: 'For a continuous function on a closed interval, the maximum value occurs at:',
+        options: [
+          'A. A critical point only',
+          'B. An endpoint only',
+          'C. Either a critical point or an endpoint',
+          'D. The midpoint of the interval'
+        ],
+        answer: 'C. Either a critical point or an endpoint',
+        diff: 'easy'
+      },
+      {
+        q: 'A rectangle with perimeter 100 ft has maximum area when it is a:',
+        options: [
+          'A. Rectangle with sides 30 and 20',
+          'B. Square with side 25',
+          'C. Rectangle with sides 40 and 10',
+          'D. Circle'
+        ],
+        answer: 'B. Square with side 25',
+        diff: 'easy'
+      },
+      {
+        q: 'If \`lim_{x→∞} f(x) = ∞\` and f is continuous on \`(-∞, ∞)\`, then f:',
+        options: [
+          'A. Has both maximum and minimum',
+          'B. Has a minimum but no maximum',
+          'C. Has a maximum but no minimum',
+          'D. Has neither maximum nor minimum'
+        ],
+        answer: 'B. Has a minimum but no maximum',
+        diff: 'hard'
+      },
+      {
+        q: 'The function \`f(x) = x²\` on the interval [-1, 2] has:',
+        options: [
+          'A. Maximum at x = 0, minimum at x = -1',
+          'B. Maximum at x = 2, minimum at x = 0',
+          'C. Maximum at x = -1, minimum at x = 0',
+          'D. Maximum at x = 2, minimum at x = -1'
+        ],
+        answer: 'B. Maximum at x = 2, minimum at x = 0',
+        diff: 'medium'
+      },
+      {
+        q: 'For optimization problems on a closed interval, after finding critical points we must:',
+        options: [
+          'A. Only evaluate critical points',
+          'B. Only evaluate endpoints',
+          'C. Evaluate both critical points and endpoints',
+          'D. Evaluate the midpoint'
+        ],
+        answer: 'C. Evaluate both critical points and endpoints',
+        diff: 'easy'
+      },
+      {
+        q: 'The function \`f(x) = x³ - 3x\` on [-2, 2] has critical points at:',
+        options: [
+          'A. x = -1 and x = 1',
+          'B. x = -2 and x = 2',
+          'C. x = 0 only',
+          'D. x = -1, x = 0, and x = 1'
+        ],
+        answer: 'A. x = -1 and x = 1',
+        diff: 'medium'
+      },
+      {
+        q: 'An open box is made from a square piece of cardboard. If the side length of the cardboard is L, the volume is maximized when the cut-out square side is:',
+        options: [
+          'A. L/2',
+          'B. L/3',
+          'C. L/4',
+          'D. L/6'
+        ],
+        answer: 'D. L/6',
+        diff: 'hard'
+      }
+    ]
+  },
 
-**Graphs of Rational Functions:**
-👉 Vertical asymptotes where denominator = 0 (function undefined).
-👉 Horizontal asymptotes: compare degrees of numerator and denominator.
+  // ============================================================
+  // LECTURE 24 - Newton's Method, Rolle's Theorem, Mean Value Theorem
+  // ============================================================
+  24: {
+    title: "Newton's Method, Rolle's Theorem and Mean Value Theorem",
+    summary: `
+**Lecture 24 - Newton's Method, Rolle's Theorem aur Mean Value Theorem**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Newton's Method (Newton ka Tareeqa - Approximating Solutions):**
+
+Newton's method equations solve karne ke liye use hota hai jab algebraic solutions possible nahi hain.
+
+**Formula:**
+\`x_{n+1} = x_n - f(x_n)/f'(x_n)\`
+
+**Kaam kaise karta hai:**
+1. Solution ka initial guess \`x₁\` choose karo
+2. Point \`(x₁, f(x₁))\` par tangent line draw karo
+3. Tangent line x-axis ko jahan cut kare woh \`x₂\` hai
+4. Process repeat karo jab tak desired accuracy na mile
+
+**Example:** \`x = cos(x)\` ka solution approximate karo
+- \`f(x) = x - cos(x)\`
+- \`f'(x) = 1 + sin(x)\`
+- \`x₁ = 1\` (guess)
+- \`x₂ = 0.7503\`
+- \`x₃ = 0.7391\`
+- Solution ≈ 0.7391
+
+**Limitations of Newton's Method:**
+- Agar \`f'(x_n) = 0\` ho to division by zero
+- Approximations converge nahi kar sakti
+- Initial guess bahut important hai
+
+**2. Rolle's Theorem (Rool ka Usool - Theorem 4.9.1):**
+
+If f is:
+- Continuous on [a,b]
+- Differentiable on (a,b)
+- \`f(a) = f(b) = 0\`
+
+Then there exists at least one point \`c\` in (a,b) such that \`f'(c) = 0\`.
+
+**Geometric Meaning:**
+Agar curve x-axis ko do points par cross kare, to un points ke beech kisi point par tangent horizontal (slope = 0) ho ga.
+
+**Example:** \`f(x) = sin(x)\` on [0, 2π]
+- f(0) = 0, f(2π) = 0
+- So there exists c in (0, 2π) with \`f'(c) = cos(c) = 0\`
+- c = π/2, 3π/2
+
+**3. Mean Value Theorem (MVT - Ausat Qeemat ka Usool - Theorem 4.9.2):**
+
+If f is:
+- Continuous on [a,b]
+- Differentiable on (a,b)
+
+Then there exists at least one point \`c\` in (a,b) such that:
+\`f'(c) = [f(b) - f(a)]/(b - a)\`
+
+**Geometric Meaning:**
+Curve par kisi point par tangent line ki slope, secant line (joining endpoints) ki slope ke equal hoti hai.
+
+**Applications of MVT:**
+- Proving inequalities
+- Analyzing function behavior
+- Fundamental theorem of calculus ka proof
+
+**Example:** f(x) = x² on [1, 4]
+- \`f'(c) = (16-1)/(4-1) = 15/3 = 5\`
+- \`2c = 5 → c = 2.5\`
 
 ---
 
-**Important Vocabulary:**
-- Relative maximum = local peak
-- Relative minimum = local valley
-- Critical point = f'(c)=0 or f'(c) DNE
-- Stationary point = f'(c)=0
-- First Derivative Test = uses sign change of f'
-- Second Derivative Test = uses value of f''
-- Inflection point = change in concavity
-- Asymptote = line approached by graph
+**Yaad Rakhne Wali Important Baatein:**
+- Newton's method: \`x_{n+1} = x_n - f(x_n)/f'(x_n)\`
+- Rolle's Theorem: f(a)=f(b)=0 → f'(c)=0 somewhere
+- MVT: \`f'(c) = [f(b)-f(a)]/(b-a)\`
+- Newton's method may fail if f'(x_n)=0
+- Initial guess is crucial for Newton's method
+`,
+    questions: [
+      {
+        q: 'Newton\'s method is used to:',
+        options: [
+          'A. Find exact solutions to equations',
+          'B. Approximate solutions to equations',
+          'C. Find derivatives of functions',
+          'D. Find integrals of functions'
+        ],
+        answer: 'B. Approximate solutions to equations',
+        diff: 'easy'
+      },
+      {
+        q: 'The formula for Newton\'s method is:',
+        options: [
+          'A. \`x_{n+1} = x_n - f(x_n)/f\'(x_n)\`',
+          'B. \`x_{n+1} = x_n + f(x_n)/f\'(x_n)\`',
+          'C. \`x_{n+1} = x_n - f\'(x_n)/f(x_n)\`',
+          'D. \`x_{n+1} = f(x_n)/f\'(x_n)\`'
+        ],
+        answer: 'A. \`x_{n+1} = x_n - f(x_n)/f\'(x_n)\`',
+        diff: 'easy'
+      },
+      {
+        q: 'Newton\'s method fails when:',
+        options: [
+          'A. \`f(x_n) = 0\`',
+          'B. \`f\'(x_n) = 0\`',
+          'C. \`f(x_n)\` is positive',
+          'D. \`f\'(x_n)\` is positive'
+        ],
+        answer: 'B. \`f\'(x_n) = 0\`',
+        diff: 'medium'
+      },
+      {
+        q: 'Rolle\'s Theorem states that if f(a) = f(b) = 0 and f is continuous/differentiable, then:',
+        options: [
+          'A. f\'(c) = 0 for some c in (a,b)',
+          'B. f(c) = 0 for some c in (a,b)',
+          'C. f\'(x) = 0 for all x',
+          'D. f(x) = 0 for all x'
+        ],
+        answer: 'A. f\'(c) = 0 for some c in (a,b)',
+        diff: 'medium'
+      },
+      {
+        q: 'The Mean Value Theorem states that there exists c in (a,b) such that:',
+        options: [
+          'A. \`f\'(c) = [f(b) - f(a)]/(b - a)\`',
+          'B. \`f(c) = [f(b) + f(a)]/2\`',
+          'C. \`f\'(c) = f(b) - f(a)\`',
+          'D. \`f(c) = f(a) + f(b)\`'
+        ],
+        answer: 'A. \`f\'(c) = [f(b) - f(a)]/(b - a)\`',
+        diff: 'easy'
+      },
+      {
+        q: 'Rolle\'s Theorem is a special case of the Mean Value Theorem when:',
+        options: [
+          'A. f(a) = f(b)',
+          'B. f\'(x) = 0 for all x',
+          'C. a = b',
+          'D. f(x) = 0 for all x'
+        ],
+        answer: 'A. f(a) = f(b)',
+        diff: 'medium'
+      },
+      {
+        q: 'For \`f(x) = x²\` on [1, 3], the MVT gives c =:',
+        options: [
+          'A. 1',
+          'B. 2',
+          'C. 3',
+          'D. 1.5'
+        ],
+        answer: 'B. 2',
+        diff: 'medium'
+      },
+      {
+        q: 'Newton\'s method requires:',
+        options: [
+          'A. The function to be integrable',
+          'B. An initial guess for the solution',
+          'C. The function to be constant',
+          'D. The derivative to be zero'
+        ],
+        answer: 'B. An initial guess for the solution',
+        diff: 'easy'
+      },
+      {
+        q: 'The geometric meaning of the Mean Value Theorem is that:',
+        options: [
+          'A. The tangent at some point is parallel to the secant line',
+          'B. The tangent at some point is perpendicular to the secant line',
+          'C. The function is always increasing',
+          'D. The function is always decreasing'
+        ],
+        answer: 'A. The tangent at some point is parallel to the secant line',
+        diff: 'hard'
+      },
+      {
+        q: 'Rolle\'s Theorem requires f(a) = f(b) = 0. The number 0 can be replaced by:',
+        options: [
+          'A. Any constant c',
+          'B. Any positive number',
+          'C. Any negative number',
+          'D. No other number'
+        ],
+        answer: 'A. Any constant c',
+        diff: 'hard'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 25 - Integration
+  // ============================================================
+  25: {
+    title: 'Integration (Antiderivatives)',
+    summary: `
+**Lecture 25 - Integration (Integreshen - Zameema)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. The Area Problem (Raqba ka Masla):**
+- Continuous aur non-negative function \`f\` ke graph aur x-axis ke darmiyan area find karna.
+- Newton aur Leibniz ne idea diya: pehle area function \`A(x)\` ka derivative find karo.
+
+**Key Result:**
+\`A'(x) = f(x)\`
+- Area function ka derivative = function itself
+- Isliye area function anti-derivative (integral) hai f ka.
+
+**Example:** f(x) = x² over [0, 1]
+- \`A'(x) = x²\`
+- \`A(x) = x³/3\`
+- Area from 0 to 1: \`A(1) = 1/3\`
+
+**2. Antiderivatives (Zidd Mushtaqaat - Definition 5.2.1):**
+A function F is called antiderivative of f if \`F'(x) = f(x)\` for all x in interval.
+
+**Example:** f(x) = x²
+- Antiderivatives: \`x³/3 + C\` (C = any constant)
+- All antiderivatives differ by a constant (Theorem 5.2.2)
+
+**3. Indefinite Integral (Ghair Mueen Zameema):**
+\`∫ f(x) dx = F(x) + C\`
+- ∫ = integral sign
+- f(x) = integrand
+- C = constant of integration
+
+**4. Basic Integration Formulas:**
+
+| Differentiation Formula | Integration Formula |
+|-------------------------|---------------------|
+| \`d/dx[x] = 1\` | \`∫ 1 dx = x + C\` |
+| \`d/dx[xⁿ] = nxⁿ⁻¹\` | \`∫ xⁿ dx = xⁿ⁺¹/(n+1) + C\`, n≠-1 |
+| \`d/dx[sin x] = cos x\` | \`∫ cos x dx = sin x + C\` |
+| \`d/dx[-cos x] = sin x\` | \`∫ sin x dx = -cos x + C\` |
+| \`d/dx[tan x] = sec² x\` | \`∫ sec² x dx = tan x + C\` |
+| \`d/dx[-cot x] = csc² x\` | \`∫ csc² x dx = -cot x + C\` |
+| \`d/dx[sec x] = sec x tan x\` | \`∫ sec x tan x dx = sec x + C\` |
+| \`d/dx[-csc x] = csc x cot x\` | \`∫ csc x cot x dx = -csc x + C\` |
+
+**5. Properties of Indefinite Integral (Theorem 5.2.3):**
+
+**(a) Constant Multiple Rule:**
+\`∫ c·f(x) dx = c∫ f(x) dx\`
+
+**(b) Sum Rule:**
+\`∫ [f(x) + g(x)] dx = ∫ f(x) dx + ∫ g(x) dx\`
+
+**(c) Difference Rule:**
+\`∫ [f(x) - g(x)] dx = ∫ f(x) dx - ∫ g(x) dx\`
+
+**Generalized Form:**
+\`∫ [c₁f₁(x) + c₂f₂(x) + ... + cₙfₙ(x)] dx = c₁∫f₁(x)dx + c₂∫f₂(x)dx + ... + cₙ∫fₙ(x)dx\`
 
 ---
 
-**Quick Revision Points:**
-- Extrema occur at critical points.
-- First derivative test: sign change = extremum.
-- Second derivative test: f''(c) < 0 max, > 0 min.
-- Polynomial graphs: use f' and f''.
-- Rational functions: vertical asymptotes at zeros of denominator.`,
-  questions: [
-    {
-      q: "A relative maximum at x₀ means f(x₀) ≥ f(x) for all x in:",
-      options: ["A. The entire domain", "B. Some open interval containing x₀", "C. The entire real line", "D. Only at x₀"],
-      answer: "B. Some open interval containing x₀",
-      diff: "easy"
-    },
-    {
-      q: "Critical points are points where:",
-      options: ["A. f'(x) = 0 or f'(x) does not exist", "B. f(x) = 0", "C. f''(x) = 0", "D. f is discontinuous"],
-      answer: "A. f'(x) = 0 or f'(x) does not exist",
-      diff: "easy"
-    },
-    {
-      q: "A stationary point is a critical point where:",
-      options: ["A. f'(x) does not exist", "B. f'(x) = 0", "C. f''(x) = 0", "D. f(x) = 0"],
-      answer: "B. f'(x) = 0",
-      diff: "easy"
-    },
-    {
-      q: "According to the First Derivative Test, if f' changes from positive to negative at c, then f has a:",
-      options: ["A. Relative minimum at c", "B. Relative maximum at c", "C. Inflection point at c", "D. No extremum"],
-      answer: "B. Relative maximum at c",
-      diff: "easy"
-    },
-    {
-      q: "If f'(c) = 0 and f''(c) > 0, then f has a:",
-      options: ["A. Relative maximum", "B. Relative minimum", "C. Inflection point", "D. None of the above"],
-      answer: "B. Relative minimum",
-      diff: "easy"
-    },
-    {
-      q: "If f'(c) = 0 and f''(c) < 0, then f has a:",
-      options: ["A. Relative maximum", "B. Relative minimum", "C. Inflection point", "D. None"],
-      answer: "A. Relative maximum",
-      diff: "easy"
-    },
-    {
-      q: "The function f(x) = x³ has a critical point at x = 0. What does the second derivative test tell us?",
-      options: ["A. Relative maximum", "B. Relative minimum", "C. Inconclusive (f''(0)=0)", "D. No critical point"],
-      answer: "C. Inconclusive (f''(0)=0)",
-      diff: "medium"
-    },
-    {
-      q: "For f(x) = x⁴ – 2x², which of the following is a relative maximum?",
-      options: ["A. x = -1", "B. x = 0", "C. x = 1", "D. x = 2"],
-      answer: "B. x = 0",
-      diff: "medium"
-    },
-    {
-      q: "For f(x) = 3x^(5/3) – 15x^(2/3), the critical points are x = 0 and x = 2. What does the first derivative test show?",
-      options: ["A. Rel max at 0, rel min at 2", "B. Rel min at 0, rel max at 2", "C. Both relative maxima", "D. Neither extremum"],
-      answer: "A. Rel max at 0, rel min at 2",
-      diff: "hard"
-    },
-    {
-      q: "The horizontal asymptote of a rational function f(x) = (x²+2)/(x²-1) as x → ±∞ is:",
-      options: ["A. y = 0", "B. y = 1", "C. y = 2", "D. No asymptote"],
-      answer: "B. y = 1",
-      diff: "medium"
-    },
-    {
-      q: "Vertical asymptotes of a rational function occur where:",
-      options: ["A. The numerator is zero", "B. The denominator is zero", "C. The derivative is zero", "D. The function has a relative extremum"],
-      answer: "B. The denominator is zero",
-      diff: "easy"
-    },
-    {
-      q: "A function has an inflection point where:",
-      options: ["A. f' changes sign", "B. f'' changes sign", "C. f'' = 0 only", "D. f' = 0"],
-      answer: "B. f'' changes sign",
-      diff: "easy"
-    },
-    {
-      q: "If a function is concave up on an interval, its second derivative is:",
-      options: ["A. Positive", "B. Negative", "C. Zero", "D. Undefined"],
-      answer: "A. Positive",
-      diff: "easy"
-    },
-    {
-      q: "The function f(x) = x² has a relative minimum at x = 0. The second derivative test confirms because:",
-      options: ["A. f''(0) = 0", "B. f''(0) = 2 > 0", "C. f''(0) = -2 < 0", "D. f'(0) = 0"],
-      answer: "B. f''(0) = 2 > 0",
-      diff: "easy"
-    },
-    {
-      q: "The graph of a polynomial of degree 3 can have at most how many relative extrema?",
-      options: ["A. 0", "B. 1", "C. 2", "D. 3"],
-      answer: "C. 2",
-      diff: "medium"
-    },
-    {
-      q: "A critical point that is not a relative extremum occurs when:",
-      options: ["A. f' does not change sign", "B. f'' = 0", "C. f' is undefined", "D. f' = 0"],
-      answer: "A. f' does not change sign",
-      diff: "easy"
-    },
-    {
-      q: "For f(x) = x³ – 3x, the critical points are x = -1 and x = 1. The first derivative test shows:",
-      options: ["A. Max at -1, min at 1", "B. Min at -1, max at 1", "C. Both maxima", "D. Both minima"],
-      answer: "A. Max at -1, min at 1",
-      diff: "medium"
-    },
-    {
-      q: "For f(x) = x³ – 3x, f''(-1) =",
-      options: ["A. 6", "B. -6", "C. 0", "D. -3"],
-      answer: "B. -6",
-      diff: "medium"
-    },
-    {
-      q: "A function f has a relative minimum at x = c. Which of the following must be true?",
-      options: ["A. f'(c) = 0", "B. f'(c) does not exist", "C. f'(c) = 0 or f'(c) DNE", "D. f''(c) > 0"],
-      answer: "C. f'(c) = 0 or f'(c) DNE",
-      diff: "easy"
-    },
-    {
-      q: "The graph of f(x) = (x² - 1)/(x - 1) has a vertical asymptote at:",
-      options: ["A. x = 1", "B. x = -1", "C. x = 0", "D. No vertical asymptote"],
-      answer: "A. x = 1",
-      diff: "easy"
-    }
-  ]
-},
+**Yaad Rakhne Wali Important Baatein:**
+- Integration = anti-differentiation
+- \`∫ xⁿ dx = xⁿ⁺¹/(n+1) + C\`, n≠-1
+- \`∫ 1/x dx = ln|x| + C\`
+- \`∫ sin x dx = -cos x + C\`
+- \`∫ cos x dx = sin x + C\`
+- \`∫ sec² x dx = tan x + C\`
+- All antiderivatives differ by constant C
+- Constant can be moved outside integral
+`,
+    questions: [
+      {
+        q: 'Integration is also known as:',
+        options: [
+          'A. Differentiation',
+          'B. Antidifferentiation',
+          'C. Optimization',
+          'D. Approximation'
+        ],
+        answer: 'B. Antidifferentiation',
+        diff: 'easy'
+      },
+      {
+        q: 'The general antiderivative of f(x) = xⁿ (n ≠ -1) is:',
+        options: [
+          'A. \`xⁿ⁺¹/(n+1) + C\`',
+          'B. \`nxⁿ⁻¹ + C\`',
+          'C. \`xⁿ⁺¹ + C\`',
+          'D. \`ln|x| + C\`'
+        ],
+        answer: 'A. \`xⁿ⁺¹/(n+1) + C\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The integral of \`sin x\` is:',
+        options: [
+          'A. \`sin x + C\`',
+          'B. \`-cos x + C\`',
+          'C. \`cos x + C\`',
+          'D. \`-sin x + C\`'
+        ],
+        answer: 'B. \`-cos x + C\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The constant of integration C is added because:',
+        options: [
+          'A. All antiderivatives differ by a constant',
+          'B. The integral is always positive',
+          'C. The derivative of a constant is 1',
+          'D. The integral is always negative'
+        ],
+        answer: 'A. All antiderivatives differ by a constant',
+        diff: 'medium'
+      },
+      {
+        q: '∫ 3x² dx =:',
+        options: [
+          'A. \`x³ + C\`',
+          'B. \`3x³ + C\`',
+          'C. \`6x + C\`',
+          'D. \`x² + C\`'
+        ],
+        answer: 'A. \`x³ + C\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The property \`∫ cf(x) dx = c∫ f(x) dx\` allows us to:',
+        options: [
+          'A. Move a constant outside the integral',
+          'B. Move a constant inside the integral',
+          'C. Add two integrals',
+          'D. Subtract two integrals'
+        ],
+        answer: 'A. Move a constant outside the integral',
+        diff: 'easy'
+      },
+      {
+        q: 'If F is an antiderivative of f, then all antiderivatives of f are:',
+        options: [
+          'A. \`F(x)\` only',
+          'B. \`F(x) + C\` where C is any constant',
+          'C. \`F(x) × C\` where C is any constant',
+          'D. \`F(x)/C\` where C is any constant'
+        ],
+        answer: 'B. \`F(x) + C\` where C is any constant',
+        diff: 'medium'
+      },
+      {
+        q: 'The area function A(x) satisfies:',
+        options: [
+          'A. \`A(x) = f(x)\`',
+          'B. \`A\'(x) = f(x)\`',
+          'C. \`A\'\'(x) = f(x)\`',
+          'D. \`A(x) = f\'(x)\`'
+        ],
+        answer: 'B. \`A\'(x) = f(x)\`',
+        diff: 'hard'
+      },
+      {
+        q: '∫ (x² + 3x) dx =:',
+        options: [
+          'A. \`x³/3 + 3x²/2 + C\`',
+          'B. \`x³/3 + 3x² + C\`',
+          'C. \`x²/2 + 3x²/2 + C\`',
+          'D. \`x³/3 + 3x/2 + C\`'
+        ],
+        answer: 'A. \`x³/3 + 3x²/2 + C\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The derivative of \`x³/3 + C\` is:',
+        options: [
+          'A. \`x²\`',
+          'B. \`3x²\`',
+          'C. \`x³\`',
+          'D. \`x² + C\`'
+        ],
+        answer: 'A. \`x²\`',
+        diff: 'easy'
+      }
+    ]
+  },
 
+  // ============================================================
+  // LECTURE 26 - Integration by Substitution
+  // ============================================================
+  26: {
+    title: 'Integration by Substitution (u-Substitution)',
+    summary: `
+**Lecture 26 - Integration by Substitution (u-Substitution - Mubaddal Zameema)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Chain Rule ka Reverse (Zanjeeri Usool ka Ulta):**
+- Integration by substitution chain rule ka reverse process hai.
+- Composition of functions ko integrate karne ke liye use hota hai.
+
+**2. Method (Tareeqa Kaar):**
+
+**Step 1:** Choose \`u = g(x)\` (substitution)
+**Step 2:** Compute \`du/dx = g'(x)\` → \`du = g'(x) dx\`
+**Step 3:** Original integral ko u terms mein convert karo (no x should remain)
+**Step 4:** Evaluate the resulting integral
+**Step 5:** Replace u by \`g(x)\`
+
+**3. General Formula:**
+\`∫ f(g(x))·g'(x) dx = ∫ f(u) du\`
+
+**4. Examples (Misaalen):**
+
+**Example 1:**
+\`∫ (x² + 1)⁵⁰ · 2x dx\`
+- Let \`u = x² + 1\`
+- \`du = 2x dx\`
+- = \`∫ u⁵⁰ du = u⁵¹/51 + C = (x²+1)⁵¹/51 + C\`
+
+**Example 2:**
+\`∫ sin(x+9) dx\`
+- Let \`u = x+9\`
+- \`du = dx\`
+- = \`∫ sin u du = -cos u + C = -cos(x+9) + C\`
+
+**Example 3:**
+\`∫ cos(5x) dx\`
+- Let \`u = 5x\`
+- \`du = 5dx → dx = du/5\`
+- = \`(1/5)∫cos u du = (1/5)sin u + C = (1/5)sin(5x) + C\`
+
+**Example 4:**
+\`∫ sin²(x) cos(x) dx\`
+- Let \`u = sin x\`
+- \`du = cos x dx\`
+- = \`∫ u² du = u³/3 + C = sin³(x)/3 + C\`
+
+**Example 5:**
+\`∫ cos(√x)/√x dx\`
+- Let \`u = √x\`
+- \`du = 1/(2√x) dx → dx/√x = 2du\`
+- = \`∫ 2cos u du = 2sin u + C = 2sin(√x) + C\`
+
+**5. Important Note:**
+- u ki choice integral ko simplify kare
+- Practice se experience ata hai
+- Multiple substitutions possible ho sakti hain
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Choose u to simplify the integral
+- \`du = g'(x) dx\`
+- No x should remain after substitution
+- Don't forget to substitute back
+- u-substitution is reverse of chain rule
+`,
+    questions: [
+      {
+        q: 'Integration by substitution is based on:',
+        options: [
+          'A. The product rule',
+          'B. The chain rule',
+          'C. The quotient rule',
+          'D. The power rule'
+        ],
+        answer: 'B. The chain rule',
+        diff: 'medium'
+      },
+      {
+        q: 'In \`∫ (x²+1)⁵⁰·2x dx\`, the appropriate substitution is:',
+        options: [
+          'A. u = 2x',
+          'B. u = x²+1',
+          'C. u = (x²+1)⁵⁰',
+          'D. u = x²'
+        ],
+        answer: 'B. u = x²+1',
+        diff: 'easy'
+      },
+      {
+        q: 'After substituting u = 2x in \`∫ cos(2x) dx\`, the integral becomes:',
+        options: [
+          'A. \`1/2 ∫ cos u du\`',
+          'B. \`2 ∫ cos u du\`',
+          'C. \`∫ cos u du\`',
+          'D. \`∫ 2cos u du\`'
+        ],
+        answer: 'A. \`1/2 ∫ cos u du\`',
+        diff: 'medium'
+      },
+      {
+        q: 'For \`∫ sin³(x) cos(x) dx\`, the substitution u = sin x gives:',
+        options: [
+          'A. \`∫ u³ du\`',
+          'B. \`∫ cos u du\`',
+          'C. \`∫ u³ cos x du\`',
+          'D. \`∫ u² du\`'
+        ],
+        answer: 'A. \`∫ u³ du\`',
+        diff: 'medium'
+      },
+      {
+        q: 'In substitution method, after integrating with respect to u, the final step is to:',
+        options: [
+          'A. Add a constant C',
+          'B. Substitute back u = g(x)',
+          'C. Differentiate the result',
+          'D. Multiply by du/dx'
+        ],
+        answer: 'B. Substitute back u = g(x)',
+        diff: 'easy'
+      },
+      {
+        q: 'The derivative of u = x²+1 is:',
+        options: [
+          'A. du = 2x dx',
+          'B. du = x dx',
+          'C. du = 2x² dx',
+          'D. du = 2 dx'
+        ],
+        answer: 'A. du = 2x dx',
+        diff: 'easy'
+      },
+      {
+        q: '∫ e^(x) dx =:',
+        options: [
+          'A. e^x + C',
+          'B. e^x/x + C',
+          'C. x e^x + C',
+          'D. ln(e^x) + C'
+        ],
+        answer: 'A. e^x + C',
+        diff: 'easy'
+      },
+      {
+        q: 'The substitution u = 3x in \`∫ e^(3x) dx\` gives:',
+        options: [
+          'A. \`1/3∫ e^u du\`',
+          'B. \`3∫ e^u du\`',
+          'C. \`∫ e^u du\`',
+          'D. \`∫ 3e^u du\`'
+        ],
+        answer: 'A. \`1/3∫ e^u du\`',
+        diff: 'medium'
+      },
+      {
+        q: 'When using substitution, after the substitution step, the integral should be in terms of:',
+        options: [
+          'A. x only',
+          'B. u only (no x)',
+          'C. Both x and u',
+          'D. A new variable t'
+        ],
+        answer: 'B. u only (no x)',
+        diff: 'medium'
+      },
+      {
+        q: '∫ 1/(x) dx =:',
+        options: [
+          'A. ln|x| + C',
+          'B. 1/x² + C',
+          'C. -1/x² + C',
+          'D. x ln|x| + C'
+        ],
+        answer: 'A. ln|x| + C',
+        diff: 'easy'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 27 - Sigma Notation
+  // ============================================================
+  27: {
+    title: 'Sigma Notation (Summation Notation)',
+    summary: `
+**Lecture 27 - Sigma Notation (Sigma Notation - Majmooi Alamat)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. What is Sigma Notation? (Sigma Notation kya hai?)**
+- Sigma notation lengthy sums ko compact form mein likhne ke liye use hota hai.
+- Greek letter \`Σ\` (Sigma) summation ko represent karta hai.
+
+**Example:** \`1² + 2² + 3² + 4² + 5²\`
+- Σ notation: \`∑_{k=1}^5 k²\`
+- Read as: "summation of k² where k goes from 1 to 5"
+
+**2. Parts of Sigma Notation:**
+\`∑_{k=1}^n a_k\`
+- \`Σ\` = summation sign
+- \`k=1\` = lower limit (starting value)
+- \`n\` = upper limit (ending value)
+- \`k\` = index of summation
+- \`a_k\` = general term
+
+**3. Examples:**
+
+| Sum | Sigma Notation |
+|-----|----------------|
+| \`4³ + 5³ + 6³ + 7³ + 8³\` | \`∑_{k=4}^8 k³\` |
+| \`2+4+6+8+10\` | \`∑_{k=1}^5 2k\` |
+| \`1-3+5-7+9-11\` | \`∑_{k=0}^5 (-1)^k(2k+1)\` |
+
+**4. Properties of Sigma Notation:**
+
+**(a) Constant Multiple:**
+\`∑_{k=1}^n c·a_k = c·∑_{k=1}^n a_k\`
+
+**(b) Sum of Terms:**
+\`∑_{k=1}^n (a_k + b_k) = ∑ a_k + ∑ b_k\`
+
+**(c) Difference:**
+\`∑_{k=1}^n (a_k - b_k) = ∑ a_k - ∑ b_k\`
+
+**(d) Constant Term:**
+\`∑_{k=1}^n c = n·c\`
+
+**5. Sum Formulas (Majmooi Formulaey):**
+
+| Formula | Closed Form |
+|---------|-------------|
+| \`∑_{k=1}^n 1\` | \`n\` |
+| \`∑_{k=1}^n k\` | \`n(n+1)/2\` |
+| \`∑_{k=1}^n k²\` | \`n(n+1)(2n+1)/6\` |
+| \`∑_{k=1}^n k³\` | \`[n(n+1)/2]²\` |
+
+**6. Changing the Index (Ishariya Tabdeel Karna):**
+
+**Example:** Express \`∑_{k=3}^7 5^{k-2}\` with lower limit 0.
+- Let \`j = k-3\` → \`k = j+3\`
+- As k goes from 3 to 7, j goes from 0 to 4
+- \`∑_{k=3}^7 5^{k-2} = ∑_{j=0}^4 5^{j+1}\`
+
+**7. General Sum:**
+\`∑_{k=1}^n a_k = a₁ + a₂ + ... + a_n\`
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Sigma notation compresses long sums
+- Index letter can be changed (k, i, j, etc.)
+- Sum of first n integers: \`n(n+1)/2\`
+- Sum of first n squares: \`n(n+1)(2n+1)/6\`
+- Constant can be factored out
+- Upper and lower limits can be changed
+`,
+    questions: [
+      {
+        q: 'The sigma notation \`∑_{k=1}^5 k²\` represents:',
+        options: [
+          'A. 1² + 2² + 3² + 4² + 5²',
+          'B. 1 + 2 + 3 + 4 + 5',
+          'C. 1³ + 2³ + 3³ + 4³ + 5³',
+          'D. 1² × 2² × 3² × 4² × 5²'
+        ],
+        answer: 'A. 1² + 2² + 3² + 4² + 5²',
+        diff: 'easy'
+      },
+      {
+        q: 'The sum of first n positive integers is:',
+        options: [
+          'A. n(n+1)/2',
+          'B. n(n+1)(2n+1)/6',
+          'C. n²',
+          'D. n(n+1)'
+        ],
+        answer: 'A. n(n+1)/2',
+        diff: 'easy'
+      },
+      {
+        q: 'The sum of squares of first n positive integers is:',
+        options: [
+          'A. n(n+1)/2',
+          'B. n(n+1)(2n+1)/6',
+          'C. [n(n+1)/2]²',
+          'D. n²(n+1)²/4'
+        ],
+        answer: 'B. n(n+1)(2n+1)/6',
+        diff: 'medium'
+      },
+      {
+        q: '∑_{k=1}^n 5 =:',
+        options: [
+          'A. 5n',
+          'B. 5 + n',
+          'C. 5n²',
+          'D. n/5'
+        ],
+        answer: 'A. 5n',
+        diff: 'easy'
+      },
+      {
+        q: 'The index of summation in \`∑_{i=2}^6 i³\` is:',
+        options: [
+          'A. 2',
+          'B. 6',
+          'C. i',
+          'D. 3'
+        ],
+        answer: 'C. i',
+        diff: 'easy'
+      },
+      {
+        q: '∑_{k=1}^5 (2k) =:',
+        options: [
+          'A. 2 + 4 + 6 + 8 + 10',
+          'B. 1 + 2 + 3 + 4 + 5',
+          'C. 2 × 4 × 6 × 8 × 10',
+          'D. 2 + 4 + 8 + 16 + 32'
+        ],
+        answer: 'A. 2 + 4 + 6 + 8 + 10',
+        diff: 'easy'
+      },
+      {
+        q: 'If \`∑_{k=1}^n a_k = 20\` and \`∑_{k=1}^n b_k = 5\`, then \`∑_{k=1}^n (a_k + b_k) =\`:',
+        options: [
+          'A. 25',
+          'B. 15',
+          'C. 100',
+          'D. 4'
+        ],
+        answer: 'A. 25',
+        diff: 'medium'
+      },
+      {
+        q: 'The sum \`∑_{k=1}^n k³\` equals:',
+        options: [
+          'A. [n(n+1)/2]²',
+          'B. n(n+1)/2',
+          'C. n(n+1)(2n+1)/6',
+          'D. n²(n+1)²/2'
+        ],
+        answer: 'A. [n(n+1)/2]²',
+        diff: 'hard'
+      },
+      {
+        q: 'In sigma notation, the letter used for the index is called:',
+        options: [
+          'A. The variable',
+          'B. The index of summation',
+          'C. The constant',
+          'D. The coefficient'
+        ],
+        answer: 'B. The index of summation',
+        diff: 'easy'
+      },
+      {
+        q: '∑_{k=1}^4 (k² + 1) =:',
+        options: [
+          'A. (1+1) + (4+1) + (9+1) + (16+1)',
+          'B. 1 + 4 + 9 + 16',
+          'C. 1+1 + 2+1 + 3+1 + 4+1',
+          'D. 2² + 3² + 4² + 5²'
+        ],
+        answer: 'A. (1+1) + (4+1) + (9+1) + (16+1)',
+        diff: 'medium'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 28 - Area as Limit (Riemann Sums)
+  // ============================================================
+  28: {
+    title: 'Area as Limit (Riemann Sums)',
+    summary: `
+**Lecture 28 - Area as Limit (Raqba bator Had - Riemann Sums)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Area Problem (Raqba ka Masla):**
+- Continuous function \`y = f(x) ≥ 0\` ke graph aur x-axis ke darmiyan area find karna.
+- Area ko rectangles ki limits ke through define karte hain.
+
+**2. Partition (Taqseem):**
+- Interval [a,b] ko n equal subintervals mein divide karo.
+- Width: \`Δx = (b-a)/n\`
+- Points: \`a = x₀ < x₁ < ... < xₙ = b\`
+
+**3. Riemann Sum (Riemann ka Majmooa - Definition 5.6.1):**
+\`∑_{k=1}^n f(x_k*) · Δx_k\`
+- \`x_k*\` = arbitrary point in kth subinterval
+- \`f(x_k*)\` = height of rectangle
+- \`Δx_k\` = width of rectangle
+
+**4. Area Definition:**
+\`A = lim_{max Δx_k → 0} ∑_{k=1}^n f(x_k*) Δx_k\`
+
+**5. Definite Integral (Mueen Zameema):**
+\`∫_a^b f(x) dx = lim_{max Δx_k → 0} ∑ f(x_k*) Δx_k\`
+
+**6. Common Choices for x_k*:**
+
+| Choice | Formula |
+|--------|---------|
+| Left endpoint | \`x_k* = x_{k-1} = a + (k-1)Δx\` |
+| Right endpoint | \`x_k* = x_k = a + kΔx\` |
+| Midpoint | \`x_k* = (x_{k-1}+x_k)/2 = a + (k-½)Δx\` |
+
+**7. Regular Partition (Yaksaa Taqseem):**
+- All subintervals have equal width
+- \`Δx = (b-a)/n\`
+- \`x_k = a + kΔx\`
+
+**8. Example - Area under y = x on [1,2]:**
+
+**Right endpoints:**
+- \`Δx = 1/n\`
+- \`x_k* = 1 + k/n\`
+- \`∑ f(x_k*)Δx = ∑ (1 + k/n)(1/n) = 1 + (1/2)(1 + 1/n) → 3/2\`
+
+**Left endpoints:** same limit → 3/2
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Area = limit of Riemann sums
+- Definite integral = limit of Riemann sums
+- Any choice of x_k* gives same limit (for continuous functions)
+- Regular partition: Δx = (b-a)/n
+- Riemann sum approximates area
+- As n → ∞, approximation improves
+`,
+    questions: [
+      {
+        q: 'The area under a curve is defined as the limit of:',
+        options: [
+          'A. Tangent lines',
+          'B. Riemann sums (rectangles)',
+          'C. Derivatives',
+          'D. Infinite series'
+        ],
+        answer: 'B. Riemann sums (rectangles)',
+        diff: 'easy'
+      },
+      {
+        q: 'In a Riemann sum, the width of each rectangle is:',
+        options: [
+          'A. Δx = (b-a)/n',
+          'B. Δx = (b-a)/n for equal partitions',
+          'C. Always 1',
+          'D. Always 0'
+        ],
+        answer: 'B. Δx = (b-a)/n for equal partitions',
+        diff: 'medium'
+      },
+      {
+        q: 'The definite integral \`∫_a^b f(x) dx\` is defined as:',
+        options: [
+          'A. \`lim_{n→∞} ∑ f(x_k*) Δx\`',
+          'B. \`lim_{n→0} ∑ f(x_k*) Δx\`',
+          'C. \`lim_{max Δx→0} ∑ f(x_k*) Δx\`',
+          'D. \`lim_{Δx→∞} ∑ f(x_k*) Δx\`'
+        ],
+        answer: 'C. \`lim_{max Δx→0} ∑ f(x_k*) Δx\`',
+        diff: 'hard'
+      },
+      {
+        q: 'For a continuous function, the limit of Riemann sums:',
+        options: [
+          'A. Depends on the choice of x_k*',
+          'B. Is independent of the choice of x_k*',
+          'C. Depends only on the number of rectangles',
+          'D. Does not exist'
+        ],
+        answer: 'B. Is independent of the choice of x_k*',
+        diff: 'hard'
+      },
+      {
+        q: 'In a regular partition of [a,b] into n subintervals, Δx =:',
+        options: [
+          'A. a/b',
+          'B. (b-a)/n',
+          'C. b/n',
+          'D. n/(b-a)'
+        ],
+        answer: 'B. (b-a)/n',
+        diff: 'easy'
+      },
+      {
+        q: 'The Riemann sum approximates the area under a curve using:',
+        options: [
+          'A. Triangles',
+          'B. Rectangles',
+          'C. Circles',
+          'D. Trapezoids'
+        ],
+        answer: 'B. Rectangles',
+        diff: 'easy'
+      },
+      {
+        q: 'As the number of rectangles n increases, the approximation:',
+        options: [
+          'A. Gets worse',
+          'B. Gets better',
+          'C. Stays the same',
+          'D. Oscillates'
+        ],
+        answer: 'B. Gets better',
+        diff: 'easy'
+      },
+      {
+        q: 'The Riemann sum is named after:',
+        options: [
+          'A. Newton',
+          'B. Leibniz',
+          'C. Bernhard Riemann',
+          'D. Euler'
+        ],
+        answer: 'C. Bernhard Riemann',
+        diff: 'medium'
+      },
+      {
+        q: 'For f(x) = x on [1,2], the area using right endpoints as n→∞ is:',
+        options: [
+          'A. 1',
+          'B. 3/2',
+          'C. 2',
+          'D. 1/2'
+        ],
+        answer: 'B. 3/2',
+        diff: 'medium'
+      },
+      {
+        q: 'The expression \`∑_{k=1}^n f(x_k*) Δx_k\` is called a:',
+        options: [
+          'A. Taylor sum',
+          'B. Riemann sum',
+          'C. Fourier sum',
+          'D. Power sum'
+        ],
+        answer: 'B. Riemann sum',
+        diff: 'easy'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 29 - Definite Integral
+  // ============================================================
+  29: {
+    title: 'Definite Integral',
+    summary: `
+**Lecture 29 - Definite Integral (Mueen Zameema)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Definition of Definite Integral (Definition 5.6.1):**
+\`∫_a^b f(x) dx = lim_{max Δx_k → 0} ∑_{k=1}^n f(x_k*) Δx_k\`
+
+**2. Definite Integral for Nonnegative Functions:**
+- If \`f(x) ≥ 0\` on [a,b], then \`∫_a^b f(x) dx\` = area under curve
+
+**3. Definite Integral for Functions with Negative Values:**
+- Represents "net signed area" (area above minus area below)
+
+**4. Properties of Definite Integral (Theorem 5.6.5):**
+
+**(a) Constant Multiple:**
+\`∫_a^b c·f(x) dx = c·∫_a^b f(x) dx\`
+
+**(b) Sum:**
+\`∫_a^b [f(x)+g(x)] dx = ∫_a^b f(x) dx + ∫_a^b g(x) dx\`
+
+**(c) Difference:**
+\`∫_a^b [f(x)-g(x)] dx = ∫_a^b f(x) dx - ∫_a^b g(x) dx\`
+
+**5. Additivity of Interval (Theorem 5.6.6):**
+\`∫_a^b f(x) dx = ∫_a^c f(x) dx + ∫_c^b f(x) dx\`
+
+**6. Reversing Limits (Definition 5.6.4):**
+\`∫_b^a f(x) dx = -∫_a^b f(x) dx\`
+
+**7. Same Limits:**
+\`∫_a^a f(x) dx = 0\`
+
+**8. Inequalities (Theorem 5.6.7):**
+
+**(a) If \`f(x) ≥ 0\` on [a,b], then \`∫_a^b f(x) dx ≥ 0\`**
+
+**(b) If \`f(x) ≥ g(x)\` on [a,b], then \`∫_a^b f(x) dx ≥ ∫_a^b g(x) dx\`**
+
+**9. Bounded Functions (Definition 5.6.8):**
+- Function bounded if \`|f(x)| ≤ M\` for all x in [a,b]
+
+**10. Integrability (Theorem 5.6.9):**
+- Continuous functions are integrable
+- Bounded functions with finitely many discontinuities are integrable
+- Unbounded functions are NOT integrable
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Definite integral = limit of Riemann sums
+- \`∫_a^a f(x) dx = 0\`
+- \`∫_b^a f(x) dx = -∫_a^b f(x) dx\`
+- Interval additivity: \`∫_a^b = ∫_a^c + ∫_c^b\`
+- Constant multiple: factor out constants
+- Nonnegative integrand → nonnegative integral
+`,
+    questions: [
+      {
+        q: 'If f is integrable on [a,b], then \`∫_a^a f(x) dx =\`:',
+        options: [
+          'A. f(a)',
+          'B. 0',
+          'C. f(b)',
+          'D. 1'
+        ],
+        answer: 'B. 0',
+        diff: 'easy'
+      },
+      {
+        q: 'The property \`∫_b^a f(x) dx = -∫_a^b f(x) dx\` is called:',
+        options: [
+          'A. Reversing the limits',
+          'B. Additivity of interval',
+          'C. Constant multiple',
+          'D. Sum rule'
+        ],
+        answer: 'A. Reversing the limits',
+        diff: 'easy'
+      },
+      {
+        q: 'If \`∫_1^3 f(x) dx = 5\` and \`∫_3^5 f(x) dx = 2\`, then \`∫_1^5 f(x) dx =\`:',
+        options: [
+          'A. 3',
+          'B. 7',
+          'C. 10',
+          'D. 5'
+        ],
+        answer: 'B. 7',
+        diff: 'medium'
+      },
+      {
+        q: 'If \`f(x) ≥ 0\` on [a,b], then the definite integral represents:',
+        options: [
+          'A. The area under the curve',
+          'B. The slope of the curve',
+          'C. The derivative of the function',
+          'D. The tangent line'
+        ],
+        answer: 'A. The area under the curve',
+        diff: 'easy'
+      },
+      {
+        q: 'A function is integrable on [a,b] if it is:',
+        options: [
+          'A. Continuous on [a,b]',
+          'B. Bounded with finitely many discontinuities',
+          'C. Either A or B',
+          'D. Only if differentiable'
+        ],
+        answer: 'C. Either A or B',
+        diff: 'medium'
+      },
+      {
+        q: 'If \`∫_a^b f(x) dx = 0\` and \`f(x) ≥ 0\`, then:',
+        options: [
+          'A. f(x) = 0 for all x in [a,b]',
+          'B. f(x) > 0 for all x',
+          'C. f(x) < 0 for all x',
+          'D. f(x) is discontinuous'
+        ],
+        answer: 'A. f(x) = 0 for all x in [a,b]',
+        diff: 'hard'
+      },
+      {
+        q: 'The constant multiple property of definite integrals states:',
+        options: [
+          'A. \`∫ c f(x) dx = c ∫ f(x) dx\`',
+          'B. \`∫ (f+g) dx = ∫ f dx + ∫ g dx\`',
+          'C. \`∫ (f-g) dx = ∫ f dx - ∫ g dx\`',
+          'D. \`∫_a^b f(x) dx = 0\`'
+        ],
+        answer: 'A. \`∫ c f(x) dx = c ∫ f(x) dx\`',
+        diff: 'easy'
+      },
+      {
+        q: 'If \`f(x) ≥ g(x)\` on [a,b], then:',
+        options: [
+          'A. \`∫_a^b f(x) dx ≥ ∫_a^b g(x) dx\`',
+          'B. \`∫_a^b f(x) dx ≤ ∫_a^b g(x) dx\`',
+          'C. \`∫_a^b f(x) dx = ∫_a^b g(x) dx\`',
+          'D. No relation'
+        ],
+        answer: 'A. \`∫_a^b f(x) dx ≥ ∫_a^b g(x) dx\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The definite integral of a negative function over [a,b] is:',
+        options: [
+          'A. Positive',
+          'B. Negative',
+          'C. Zero',
+          'D. Undefined'
+        ],
+        answer: 'B. Negative',
+        diff: 'easy'
+      },
+      {
+        q: 'An unbounded function on [a,b] is:',
+        options: [
+          'A. Always integrable',
+          'B. Never integrable',
+          'C. Sometimes integrable',
+          'D. Always continuous'
+        ],
+        answer: 'B. Never integrable',
+        diff: 'hard'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 30 - First Fundamental Theorem of Calculus
+  // ============================================================
+  30: {
+    title: 'First Fundamental Theorem of Calculus',
+    summary: `
+**Lecture 30 - First Fundamental Theorem of Calculus (Calculus ka Pehla Bunyadi Usool)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. First Fundamental Theorem of Calculus (Theorem 5.7.1):**
+
+If f is continuous on [a,b] and F is any antiderivative of f on [a,b], then:
+\`∫_a^b f(x) dx = F(b) - F(a)\`
+
+**2. Bracket Notation (Bracket Notation):**
+\`[F(x)]_a^b = F(b) - F(a)\`
+
+So: \`∫_a^b f(x) dx = [F(x)]_a^b\`
+
+**3. Key Points:**
+- Any antiderivative works (constant C cancels out)
+- This theorem connects differentiation and integration
+- Makes evaluating definite integrals easy
+
+**4. Example:**
+\`∫_1^2 x dx = [x²/2]_1^2 = 4/2 - 1/2 = 2 - 0.5 = 1.5\`
+
+**5. Mean Value Theorem for Integrals (Theorem 5.7.2):**
+
+If f is continuous on [a,b], then there exists \`x*\` in [a,b] such that:
+\`∫_a^b f(x) dx = f(x*)·(b-a)\`
+
+**Geometric Meaning:**
+There exists a rectangle with height \`f(x*)\` whose area equals the area under the curve.
+
+**6. Average Value of a Function (Definition 5.7.3):**
+
+\`f_avg = 1/(b-a) · ∫_a^b f(x) dx\`
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- FTC: \`∫_a^b f(x) dx = F(b) - F(a)\`
+- Any antiderivative can be used
+- Constant C cancels out
+- MVT for integrals: \`∫_a^b f = f(c)(b-a)\`
+- Average value: \`f_avg = (1/(b-a))∫_a^b f\`
+- Definite integral = area = antiderivative difference
+`,
+    questions: [
+      {
+        q: 'The First Fundamental Theorem of Calculus states that:',
+        options: [
+          'A. \`∫_a^b f(x) dx = F(b) - F(a)\` where F is any antiderivative',
+          'B. \`∫_a^b f(x) dx = F(a) - F(b)\`',
+          'C. \`∫_a^b f(x) dx = f(b) - f(a)\`',
+          'D. \`∫_a^b f(x) dx = 0\`'
+        ],
+        answer: 'A. \`∫_a^b f(x) dx = F(b) - F(a)\` where F is any antiderivative',
+        diff: 'medium'
+      },
+      {
+        q: 'The bracket notation \`[F(x)]_a^b\` represents:',
+        options: [
+          'A. F(a) - F(b)',
+          'B. F(b) - F(a)',
+          'C. F(a) + F(b)',
+          'D. F(a) × F(b)'
+        ],
+        answer: 'B. F(b) - F(a)',
+        diff: 'easy'
+      },
+      {
+        q: 'When using FTC, the constant of integration C:',
+        options: [
+          'A. Must be included',
+          'B. Cancels out',
+          'C. Is always 0',
+          'D. Is always 1'
+        ],
+        answer: 'B. Cancels out',
+        diff: 'medium'
+      },
+      {
+        q: 'The Mean Value Theorem for Integrals states that there exists c such that:',
+        options: [
+          'A. \`∫_a^b f(x) dx = f(c)(b-a)\`',
+          'B. \`∫_a^b f(x) dx = f(c)\`',
+          'C. \`∫_a^b f(x) dx = (b-a)/f(c)\`',
+          'D. \`∫_a^b f(x) dx = f(c)/(b-a)\`'
+        ],
+        answer: 'A. \`∫_a^b f(x) dx = f(c)(b-a)\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The average value of f on [a,b] is:',
+        options: [
+          'A. \`1/(b-a) · ∫_a^b f(x) dx\`',
+          'B. \`∫_a^b f(x) dx\`',
+          'C. \`(b-a) · ∫_a^b f(x) dx\`',
+          'D. \`f(a) + f(b)\`'
+        ],
+        answer: 'A. \`1/(b-a) · ∫_a^b f(x) dx\`',
+        diff: 'easy'
+      },
+      {
+        q: 'Evaluate \`∫_0^1 x² dx\` using FTC:',
+        options: [
+          'A. 1/3',
+          'B. 1/2',
+          'C. 1',
+          'D. 0'
+        ],
+        answer: 'A. 1/3',
+        diff: 'easy'
+      },
+      {
+        q: 'The FTC shows that differentiation and integration are:',
+        options: [
+          'A. Inverse operations',
+          'B. Unrelated',
+          'C. The same operation',
+          'D. Always equal'
+        ],
+        answer: 'A. Inverse operations',
+        diff: 'easy'
+      },
+      {
+        q: 'For \`f(x) = 3x²\`, an antiderivative is:',
+        options: [
+          'A. \`x³\`',
+          'B. \`3x³\`',
+          'C. \`x²\`',
+          'D. \`6x\`'
+        ],
+        answer: 'A. \`x³\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The Mean Value Theorem for Integrals guarantees the existence of:',
+        options: [
+          'A. A rectangle with area equal to the area under the curve',
+          'B. A tangent line parallel to the secant line',
+          'C. A derivative equal to zero',
+          'D. A maximum value'
+        ],
+        answer: 'A. A rectangle with area equal to the area under the curve',
+        diff: 'hard'
+      },
+      {
+        q: 'If \`∫_0^2 f(x) dx = 6\`, the average value of f on [0,2] is:',
+        options: [
+          'A. 3',
+          'B. 6',
+          'C. 12',
+          'D. 2'
+        ],
+        answer: 'A. 3',
+        diff: 'medium'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 31 - Evaluating Definite Integrals by Substitution
+  // ============================================================
+  31: {
+    title: 'Evaluating Definite Integrals by Substitution',
+    summary: `
+**Lecture 31 - Evaluating Definite Integrals by Substitution (Mueen Zameema ko Mubaddal se Hal Karna)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Two Methods for Definite Integrals:**
+
+**Method 1:**
+1. Evaluate indefinite integral using substitution
+2. Use FTC to evaluate at limits
+
+**Method 2 (Direct):**
+1. Substitute \`u = g(x)\`
+2. Change limits: when \`x = a\`, \`u = g(a)\`; when \`x = b\`, \`u = g(b)\`
+3. Evaluate: \`∫_{g(a)}^{g(b)} f(u) du\`
+
+**2. Method 2 is often easier:**
+
+\`∫_a^b f(g(x))·g'(x) dx = ∫_{g(a)}^{g(b)} f(u) du\`
+
+**3. Example:**
+
+\`∫_0^2 x²(x³+1) dx\`
+- Let \`u = x³+1\`
+- \`du = 3x² dx → x² dx = du/3\`
+- When x=0: u=1; when x=2: u=9
+- \`= 1/3 ∫_1^9 u du = 1/3 [u²/2]_1^9 = 1/3 (81/2 - 1/2) = 1/3 (80/2) = 40/3\`
+
+**4. Example with Trig:**
+
+\`∫_0^{π/4} cos(π - x) dx\`
+- Let \`u = π - x\`
+- \`du = -dx\`
+- When x=0: u=π; when x=π/4: u=3π/4
+- \`= -∫_π^{3π/4} cos u du = ∫_{3π/4}^π cos u du = [sin u]_{3π/4}^π = 0 - √2/2 = -√2/2\`
+
+**5. Important Notes:**
+- Always change limits when using Method 2
+- Don't forget to substitute back if using Method 1
+- Method 2 avoids substituting back at the end
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Two methods: indirect (Method 1) and direct (Method 2)
+- Method 2: change limits \`u = g(a)\` and \`u = g(b)\`
+- Method 1: substitute back after integration
+- Both give same result
+- Choose based on complexity
+`,
+    questions: [
+      {
+        q: 'When using substitution for definite integrals, the limits of integration:',
+        options: [
+          'A. Stay the same',
+          'B. Must be changed to u-values',
+          'C. Are multiplied by du',
+          'D. Are divided by du'
+        ],
+        answer: 'B. Must be changed to u-values',
+        diff: 'medium'
+      },
+      {
+        q: 'For \`u = x² + 1\` in \`∫_0^1 2x(x²+1)³ dx\`, the new limits are:',
+        options: [
+          'A. u = 0 to u = 1',
+          'B. u = 1 to u = 2',
+          'C. u = 0 to u = 2',
+          'D. u = 2 to u = 4'
+        ],
+        answer: 'B. u = 1 to u = 2',
+        diff: 'medium'
+      },
+      {
+        q: 'When using Method 1 for definite integrals, after integrating you must:',
+        options: [
+          'A. Substitute back to x',
+          'B. Keep in u',
+          'C. Change limits',
+          'D. Add C only'
+        ],
+        answer: 'A. Substitute back to x',
+        diff: 'easy'
+      },
+      {
+        q: 'The substitution \`u = g(x)\` in a definite integral requires:',
+        options: [
+          'A. du = g\'(x) dx',
+          'B. New limits g(a) and g(b)',
+          'C. Both A and B',
+          'D. None of the above'
+        ],
+        answer: 'C. Both A and B',
+        diff: 'medium'
+      },
+      {
+        q: 'For \`∫_0^1 2x e^{x²} dx\`, the appropriate substitution is:',
+        options: [
+          'A. u = 2x',
+          'B. u = x²',
+          'C. u = e^x',
+          'D. u = 2x²'
+        ],
+        answer: 'B. u = x²',
+        diff: 'easy'
+      },
+      {
+        q: 'The advantage of Method 2 over Method 1 is:',
+        options: [
+          'A. No need to substitute back',
+          'B. It is always shorter',
+          'C. It uses more steps',
+          'D. It requires no integration'
+        ],
+        answer: 'A. No need to substitute back',
+        diff: 'easy'
+      },
+      {
+        q: 'Evaluate \`∫_0^1 x(x²+1)² dx\` with \`u = x²+1\`:',
+        options: [
+          'A. 1/2 ∫_1^2 u² du',
+          'B. ∫_1^2 u² du',
+          'C. 1/2 ∫_0^1 u² du',
+          'D. 2∫_1^2 u² du'
+        ],
+        answer: 'A. 1/2 ∫_1^2 u² du',
+        diff: 'medium'
+      },
+      {
+        q: 'When \`x = a\`, the u-limit is:',
+        options: [
+          'A. u = a',
+          'B. u = g(a)',
+          'C. u = f(a)',
+          'D. u = 0'
+        ],
+        answer: 'B. u = g(a)',
+        diff: 'easy'
+      },
+      {
+        q: 'The expression \`∫_a^b f(g(x))·g\'(x) dx\` becomes:',
+        options: [
+          'A. \`∫_{g(a)}^{g(b)} f(u) du\`',
+          'B. \`∫_a^b f(u) du\`',
+          'C. \`∫_{g(a)}^{g(b)} f(x) dx\`',
+          'D. \`∫_a^b f(g(u)) du\`'
+        ],
+        answer: 'A. \`∫_{g(a)}^{g(b)} f(u) du\`',
+        diff: 'hard'
+      },
+      {
+        q: 'In Method 1, after integrating, you:',
+        options: [
+          'A. Substitute u back to x',
+          'B. Change the limits',
+          'C. Multiply by du',
+          'D. Divide by dx'
+        ],
+        answer: 'A. Substitute u back to x',
+        diff: 'easy'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 32 - Second Fundamental Theorem of Calculus
+  // ============================================================
+  32: {
+    title: 'Second Fundamental Theorem of Calculus',
+    summary: `
+**Lecture 32 - Second Fundamental Theorem of Calculus (Calculus ka Doosra Bunyadi Usool)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Dummy Variable (Dummy Variable):**
+- The letter used for integration variable doesn't matter
+- \`∫_a^b f(x) dx = ∫_a^b f(t) dt = ∫_a^b f(u) du\`
+
+**2. Variable Upper Limit (Mutahawwil Baalai Had):**
+\`F(x) = ∫_a^x f(t) dt\` is a function of x
+
+**3. Second Fundamental Theorem of Calculus (Theorem 5.9.1):**
+
+If f is continuous, then:
+\`d/dx [∫_a^x f(t) dt] = f(x)\`
+
+**4. General Form:**
+\`d/dx [∫_a^{g(x)} f(t) dt] = f(g(x))·g'(x)\`
+
+**5. Key Points:**
+- Derivative of integral = integrand at upper limit
+- Every continuous function has an antiderivative
+- This theorem proves existence of antiderivatives
+
+**6. Example:**
+\`d/dx [∫_1^x t³ dt] = x³\`
+
+**7. Example with Chain Rule:**
+\`d/dx [∫_1^{x²} t³ dt] = (x²)³·2x = 2x⁷\`
+
+**8. Functions Defined by Integrals:**
+- Some functions are defined as integrals
+- Example: \`F(x) = ∫_1^x 1/t dt\`
+- This defines the natural logarithm function!
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- \`d/dx [∫_a^x f(t) dt] = f(x)\`
+- Variable of integration is dummy
+- Every continuous function has an antiderivative
+- General form: \`d/dx [∫_a^{g(x)} f(t) dt] = f(g(x))·g'(x)\`
+- Some functions are defined by integrals
+`,
+    questions: [
+      {
+        q: 'The Second Fundamental Theorem of Calculus states that:',
+        options: [
+          'A. \`d/dx [∫_a^x f(t) dt] = f(x)\`',
+          'B. \`∫_a^b f(x) dx = F(b)-F(a)\`',
+          'C. \`d/dx [f(x)] = ∫_a^x f(t) dt\`',
+          'D. \`∫_a^x f(t) dt = f(x)\`'
+        ],
+        answer: 'A. \`d/dx [∫_a^x f(t) dt] = f(x)\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The variable of integration in a definite integral is called a:',
+        options: [
+          'A. Real variable',
+          'B. Dummy variable',
+          'C. Complex variable',
+          'D. Dependent variable'
+        ],
+        answer: 'B. Dummy variable',
+        diff: 'easy'
+      },
+      {
+        q: 'If \`F(x) = ∫_1^x t² dt\`, then \`F\'(x)\` is:',
+        options: [
+          'A. x²',
+          'B. 2x',
+          'C. x³/3',
+          'D. 1'
+        ],
+        answer: 'A. x²',
+        diff: 'easy'
+      },
+      {
+        q: 'For \`F(x) = ∫_2^{x³} t² dt\`, \`F\'(x)\` is:',
+        options: [
+          'A. (x³)² = x⁶',
+          'B. 3x²',
+          'C. (x³)²·3x² = 3x⁸',
+          'D. 2x³'
+        ],
+        answer: 'C. (x³)²·3x² = 3x⁸',
+        diff: 'hard'
+      },
+      {
+        q: 'The Second FTC shows that every continuous function has:',
+        options: [
+          'A. A derivative',
+          'B. An antiderivative',
+          'C. A maximum',
+          'D. A minimum'
+        ],
+        answer: 'B. An antiderivative',
+        diff: 'medium'
+      },
+      {
+        q: 'The function \`F(x) = ∫_1^x 1/t dt\` defines:',
+        options: [
+          'A. e^x',
+          'B. ln x',
+          'C. sin x',
+          'D. cos x'
+        ],
+        answer: 'B. ln x',
+        diff: 'hard'
+      },
+      {
+        q: 'If \`F(x) = ∫_0^x sin t dt\`, then \`F(π/2)\` is:',
+        options: [
+          'A. 0',
+          'B. 1',
+          'C. -1',
+          'D. π/2'
+        ],
+        answer: 'B. 1',
+        diff: 'medium'
+      },
+      {
+        q: 'The general form of the Second FTC with upper limit \`g(x)\` is:',
+        options: [
+          'A. \`d/dx [∫_a^{g(x)} f(t) dt] = f(g(x))\`',
+          'B. \`d/dx [∫_a^{g(x)} f(t) dt] = f(g(x))·g\'(x)\`',
+          'C. \`d/dx [∫_a^{g(x)} f(t) dt] = f(x)·g\'(x)\`',
+          'D. \`d/dx [∫_a^{g(x)} f(t) dt] = g\'(x)\`'
+        ],
+        answer: 'B. \`d/dx [∫_a^{g(x)} f(t) dt] = f(g(x))·g\'(x)\`',
+        diff: 'hard'
+      },
+      {
+        q: 'The Second FTC proves that integration and differentiation are:',
+        options: [
+          'A. Inverse operations',
+          'B. Unrelated',
+          'C. Always equal',
+          'D. Never equal'
+        ],
+        answer: 'A. Inverse operations',
+        diff: 'easy'
+      },
+      {
+        q: 'If \`F(x) = ∫_0^x f(t) dt\`, then \`F\'(x) = f(x)\`. This is the:',
+        options: [
+          'A. First FTC',
+          'B. Second FTC',
+          'C. Mean Value Theorem',
+          'D. Rolle\'s Theorem'
+        ],
+        answer: 'B. Second FTC',
+        diff: 'medium'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 33 - Application of Definite Integral - Area Between Curves
+  // ============================================================
+  33: {
+    title: 'Application of Definite Integral - Area Between Curves',
+    summary: `
+**Lecture 33 - Application of Definite Integral: Area Between Curves (Do Manhaniyon ke Darmiyan Raqba)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Area Between Two Curves (Definition 6.1.1):**
+
+If f and g are continuous on [a,b] and \`f(x) ≥ g(x)\` for all x in [a,b], then the area between the curves is:
+\`A = ∫_a^b [f(x) - g(x)] dx\`
+
+**2. Geometric Interpretation:**
+- f(x) = upper curve
+- g(x) = lower curve
+- The integrand is the vertical distance between curves
+
+**3. Finding Limits of Integration:**
+- Find intersection points of the two curves
+- Solve \`f(x) = g(x)\`
+- These give the x-values for limits
+
+**4. Example 1 - Bounded by Curves and Vertical Lines:**
+
+Find area between \`y = x+6\` and \`y = x²\` on [0,2]:
+\`A = ∫_0^2 [(x+6) - x²] dx = [x²/2 + 6x - x³/3]_0^2 = 2 + 12 - 8/3 = 34/3\`
+
+**5. Example 2 - Enclosed Region:**
+
+Find area enclosed between \`y = x²\` and \`y = x+6\`:
+- Intersection: \`x² = x+6 → x² - x - 6 = 0 → (x-3)(x+2) = 0 → x = -2, 3\`
+- \`A = ∫_{-2}^3 [(x+6) - x²] dx = 125/6\`
+
+**6. Area with Respect to y (Definition 6.1.2):**
+
+If \`x = w(y)\` and \`x = v(y)\` with \`w(y) ≥ v(y)\` on [c,d]:
+\`A = ∫_c^d [w(y) - v(y)] dy\`
+
+**7. When to Integrate with Respect to y:**
+- When curves are simpler as functions of y
+- When region has multiple pieces in x-direction
+
+**8. Example with Respect to y:**
+
+Area between \`x = y²\` and \`x = y+2\`:
+- Intersection: \`y² = y+2 → y² - y - 2 = 0 → (y-2)(y+1) = 0 → y = -1, 2\`
+- \`A = ∫_{-1}^2 [(y+2) - y²] dy = 9/2\`
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Area between curves: \`∫ [f(x)-g(x)] dx\`
+- f(x) ≥ g(x): upper minus lower
+- Find limits from intersection points
+- Integrate with respect to y if simpler
+- Check which curve is above
+`,
+    questions: [
+      {
+        q: 'The area between two curves \`y = f(x)\` and \`y = g(x)\` on [a,b] with \`f(x) ≥ g(x)\` is:',
+        options: [
+          'A. \`∫_a^b [f(x) + g(x)] dx\`',
+          'B. \`∫_a^b [f(x) - g(x)] dx\`',
+          'C. \`∫_a^b [g(x) - f(x)] dx\`',
+          'D. \`∫_a^b f(x)g(x) dx\`'
+        ],
+        answer: 'B. \`∫_a^b [f(x) - g(x)] dx\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The limits of integration for area between two curves are found by:',
+        options: [
+          'A. Finding where f(x) = 0',
+          'B. Finding where f(x) = g(x)',
+          'C. Finding where g(x) = 0',
+          'D. Choosing arbitrary values'
+        ],
+        answer: 'B. Finding where f(x) = g(x)',
+        diff: 'medium'
+      },
+      {
+        q: 'For area between curves, the integrand represents:',
+        options: [
+          'A. The horizontal distance between curves',
+          'B. The vertical distance between curves',
+          'C. The slope of the curves',
+          'D. The sum of the curves'
+        ],
+        answer: 'B. The vertical distance between curves',
+        diff: 'medium'
+      },
+      {
+        q: 'The area between \`y = x\` and \`y = x²\` on [0,1] is:',
+        options: [
+          'A. 1/2',
+          'B. 1/3',
+          'C. 1/6',
+          'D. 1'
+        ],
+        answer: 'C. 1/6',
+        diff: 'hard'
+      },
+      {
+        q: 'When integrating with respect to y, the integrand is:',
+        options: [
+          'A. Right curve minus left curve',
+          'B. Left curve minus right curve',
+          'C. Top curve minus bottom curve',
+          'D. Bottom curve minus top curve'
+        ],
+        answer: 'A. Right curve minus left curve',
+        diff: 'medium'
+      },
+      {
+        q: 'If two curves intersect at x = a and x = b, the area between them is:',
+        options: [
+          'A. \`∫_a^b |f(x) - g(x)| dx\`',
+          'B. \`∫_a^b [f(x)+g(x)] dx\`',
+          'C. \`∫_a^b f(x)g(x) dx\`',
+          'D. \`∫_a^b [f(x)-g(x)]² dx\`'
+        ],
+        answer: 'A. \`∫_a^b |f(x) - g(x)| dx\`',
+        diff: 'hard'
+      },
+      {
+        q: 'The area between \`y = x²\` and \`y = x\` is:',
+        options: [
+          'A. 1/6',
+          'B. 1/3',
+          'C. 1/2',
+          'D. 1'
+        ],
+        answer: 'A. 1/6',
+        diff: 'easy'
+      },
+      {
+        q: 'For \`y = x²\` and \`y = x+6\`, the intersection points are:',
+        options: [
+          'A. x = -2 and x = 3',
+          'B. x = -3 and x = 2',
+          'C. x = 0 and x = 6',
+          'D. x = -6 and x = 1'
+        ],
+        answer: 'A. x = -2 and x = 3',
+        diff: 'medium'
+      },
+      {
+        q: 'When integrating with respect to y, the limits are found by:',
+        options: [
+          'A. Solving f(x) = g(x) for x',
+          'B. Solving f(x) = g(x) for y',
+          'C. Setting y = 0',
+          'D. Setting x = 0'
+        ],
+        answer: 'B. Solving f(x) = g(x) for y',
+        diff: 'hard'
+      },
+      {
+        q: 'The area between \`x = y²\` and \`x = y+2\` is:',
+        options: [
+          'A. 9/2',
+          'B. 5/2',
+          'C. 7/2',
+          'D. 3/2'
+        ],
+        answer: 'A. 9/2',
+        diff: 'hard'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 34 - Volume by Slicing; Disks and Washers
+  // ============================================================
+  34: {
+    title: 'Volume by Slicing; Disks and Washers',
+    summary: `
+**Lecture 34 - Volume by Slicing; Disks and Washers (Tukdon, Disks aur Washers ke Zariye Hajm)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Volume by Slicing (Tukdon ke Zariye Hajm):**
+
+For a solid with cross-sectional area \`A(x)\` perpendicular to x-axis:
+\`V = ∫_a^b A(x) dx\`
+
+**2. Volume of Solid of Revolution (Disk Method):**
+
+When region under \`y = f(x)\` is revolved about x-axis:
+\`V = ∫_a^b π[f(x)]² dx\`
+
+**Geometric Idea:** Each slice is a disk with radius \`f(x)\`
+
+**3. Example - Volume of Sphere:**
+
+Revolve \`y = √(r²-x²)\` about x-axis:
+\`V = ∫_{-r}^r π(r²-x²) dx = 4πr³/3\`
+
+**4. Volume by Washers (Washer Method):**
+
+When region between \`y = f(x)\` (outer) and \`y = g(x)\` (inner) is revolved:
+\`V = ∫_a^b π([f(x)]² - [g(x)]²) dx\`
+
+**5. Volume by Disks Perpendicular to y-axis:**
+
+When region is revolved about y-axis:
+\`V = ∫_c^d π[u(y)]² dy\`
+
+**6. Volume by Washers Perpendicular to y-axis:**
+
+\`V = ∫_c^d π([u(y)]² - [v(y)]²) dy\`
+
+**7. Summary of Methods:**
+
+| Method | Axis | Cross-Section | Formula |
+|--------|------|---------------|---------|
+| Disk | x-axis | Circle | \`π∫[f(x)]² dx\` |
+| Washer | x-axis | Ring | \`π∫([f]²-[g]²) dx\` |
+| Disk | y-axis | Circle | \`π∫[u(y)]² dy\` |
+| Washer | y-axis | Ring | \`π∫([u]²-[v]²) dy\` |
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Volume by slicing: \`V = ∫ A(x) dx\`
+- Disk method: \`π∫[f(x)]² dx\`
+- Washer method: \`π∫([f]²-[g]²) dx\`
+- For y-axis: integrate with respect to y
+- Identify outer and inner radii
+`,
+    questions: [
+      {
+        q: 'The volume of a solid by slicing is given by:',
+        options: [
+          'A. \`V = ∫_a^b A(x) dx\`',
+          'B. \`V = ∫_a^b 2πx f(x) dx\`',
+          'C. \`V = π∫_a^b [f(x)]² dx\`',
+          'D. \`V = ∫_a^b f(x) dx\`'
+        ],
+        answer: 'A. \`V = ∫_a^b A(x) dx\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The disk method for revolving about the x-axis gives:',
+        options: [
+          'A. \`V = π∫_a^b [f(x)]² dx\`',
+          'B. \`V = ∫_a^b [f(x)]² dx\`',
+          'C. \`V = 2π∫_a^b x f(x) dx\`',
+          'D. \`V = π∫_a^b f(x) dx\`'
+        ],
+        answer: 'A. \`V = π∫_a^b [f(x)]² dx\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The washer method is used when:',
+        options: [
+          'A. There is a hole in the solid',
+          'B. The solid has no hole',
+          'C. The axis is vertical',
+          'D. The function is negative'
+        ],
+        answer: 'A. There is a hole in the solid',
+        diff: 'medium'
+      },
+      {
+        q: 'The washer method formula for revolution about x-axis is:',
+        options: [
+          'A. \`V = π∫_a^b ([f(x)]² + [g(x)]²) dx\`',
+          'B. \`V = π∫_a^b ([f(x)]² - [g(x)]²) dx\`',
+          'C. \`V = ∫_a^b [f(x)-g(x)] dx\`',
+          'D. \`V = 2π∫_a^b x[f(x)-g(x)] dx\`'
+        ],
+        answer: 'B. \`V = π∫_a^b ([f(x)]² - [g(x)]²) dx\`',
+        diff: 'medium'
+      },
+      {
+        q: 'A sphere of radius r has volume:',
+        options: [
+          'A. \`4πr³/3\`',
+          'B. \`πr³\`',
+          'C. \`2πr³\`',
+          'D. \`πr²\`'
+        ],
+        answer: 'A. \`4πr³/3\`',
+        diff: 'easy'
+      },
+      {
+        q: 'When integrating with respect to y, the disk method formula is:',
+        options: [
+          'A. \`V = π∫_a^b [u(y)]² dy\`',
+          'B. \`V = ∫_a^b u(y) dy\`',
+          'C. \`V = π∫_a^b u(y) dy\`',
+          'D. \`V = 2π∫_a^b u(y) dy\`'
+        ],
+        answer: 'A. \`V = π∫_a^b [u(y)]² dy\`',
+        diff: 'hard'
+      },
+      {
+        q: 'The cross-section in the disk method is a:',
+        options: [
+          'A. Rectangle',
+          'B. Circle',
+          'C. Triangle',
+          'D. Square'
+        ],
+        answer: 'B. Circle',
+        diff: 'easy'
+      },
+      {
+        q: 'The cross-section in the washer method is a:',
+        options: [
+          'A. Disk with a hole (ring)',
+          'B. Full disk',
+          'C. Rectangle',
+          'D. Triangle'
+        ],
+        answer: 'A. Disk with a hole (ring)',
+        diff: 'easy'
+      },
+      {
+        q: 'For the disk method, the radius of the disk at x is:',
+        options: [
+          'A. f(x)',
+          'B. f\'(x)',
+          'C. ∫f(x) dx',
+          'D. f(a)'
+        ],
+        answer: 'A. f(x)',
+        diff: 'easy'
+      },
+      {
+        q: 'The volume generated by revolving \`y = x²\` on [0,1] about x-axis is:',
+        options: [
+          'A. π/5',
+          'B. π/3',
+          'C. 2π/5',
+          'D. π/2'
+        ],
+        answer: 'A. π/5',
+        diff: 'hard'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 35 - Volume by Cylindrical Shells
+  // ============================================================
+  35: {
+    title: 'Volume by Cylindrical Shells',
+    summary: `
+**Lecture 35 - Volume by Cylindrical Shells (Belanai Shells ke Zariye Hajm)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Cylindrical Shells (Belanai Shells):**
+
+A cylindrical shell is the solid between two concentric cylinders.
+
+**Volume of a Shell:**
+\`V = 2π · (average radius) · (height) · (thickness)\`
+
+**2. Shell Method Formula:**
+
+When region under \`y = f(x)\` on [a,b] is revolved about y-axis:
+\`V = 2π ∫_a^b x·f(x) dx\`
+
+**3. Geometric Interpretation:**
+- Each vertical strip generates a cylindrical shell
+- Radius = distance from axis (x)
+- Height = f(x)
+- Thickness = dx
+
+**4. Example 1:**
+
+Revolve \`y = x\` on [1,4] about y-axis:
+\`V = 2π∫_1^4 x·x dx = 2π∫_1^4 x² dx = 2π[x³/3]_1^4 = 2π(64/3 - 1/3) = 2π(63/3) = 42π\`
+
+**5. Example 2:**
+
+Area between \`y = x²\` and \`y = x\` on [0,1] revolved about y-axis:
+\`V = 2π∫_0^1 x(x - x²) dx = 2π∫_0^1 (x² - x³) dx = 2π(1/3 - 1/4) = 2π/12 = π/6\`
+
+**6. When to Use Shell Method:**
+- When revolving about y-axis
+- When region is simpler as function of x
+- When disk/washer method is complicated
+
+**7. Shell vs Disk Method:**
+
+| Aspect | Shell Method | Disk Method |
+|--------|--------------|-------------|
+| Axis | y-axis | x-axis |
+| Cross-section | Shell | Disk/Washer |
+| Integrand | \`2πx f(x)\` | \`π[f(x)]²\` |
+| Choice | When y-axis | When x-axis |
+
+**8. Surface Area Interpretation:**
+- Shell method integrates surface area of cylindrical shells
+- Surface area = \`2πx·f(x)\`
+- Volume = ∫ surface area
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Shell method: \`V = 2π∫_a^b x f(x) dx\`
+- Used for revolution about y-axis
+- Radius = x (distance from axis)
+- Height = f(x)
+- Good when region is easier in x
+- Alternative to disk/washer method
+`,
+    questions: [
+      {
+        q: 'The shell method for volume is given by:',
+        options: [
+          'A. \`V = 2π∫_a^b x f(x) dx\`',
+          'B. \`V = π∫_a^b [f(x)]² dx\`',
+          'C. \`V = ∫_a^b f(x) dx\`',
+          'D. \`V = 2π∫_a^b f(x) dx\`'
+        ],
+        answer: 'A. \`V = 2π∫_a^b x f(x) dx\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The shell method is used when revolving about the:',
+        options: [
+          'A. x-axis',
+          'B. y-axis',
+          'C. Any axis',
+          'D. Origin'
+        ],
+        answer: 'B. y-axis',
+        diff: 'easy'
+      },
+      {
+        q: 'In the shell method, the radius of the shell at x is:',
+        options: [
+          'A. x',
+          'B. f(x)',
+          'C. 2πx',
+          'D. f\'(x)'
+        ],
+        answer: 'A. x',
+        diff: 'easy'
+      },
+      {
+        q: 'In the shell method, the height of the shell is:',
+        options: [
+          'A. x',
+          'B. f(x)',
+          'C. 2πx',
+          'D. f\'(x)'
+        ],
+        answer: 'B. f(x)',
+        diff: 'easy'
+      },
+      {
+        q: 'The volume of a cylindrical shell is:',
+        options: [
+          'A. \`2πrh\`',
+          'B. \`2πr·h·Δr\`',
+          'C. \`πr²h\`',
+          'D. \`2πrh·Δr\`'
+        ],
+        answer: 'B. \`2πr·h·Δr\`',
+        diff: 'hard'
+      },
+      {
+        q: 'For revolving \`y = f(x)\` on [a,b] about y-axis, shell method gives:',
+        options: [
+          'A. \`2π∫_a^b x f(x) dx\`',
+          'B. \`π∫_a^b [f(x)]² dx\`',
+          'C. \`2π∫_a^b f(x) dx\`',
+          'D. \`π∫_a^b x f(x) dx\`'
+        ],
+        answer: 'A. \`2π∫_a^b x f(x) dx\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The shell method is particularly useful when:',
+        options: [
+          'A. Revolving about x-axis',
+          'B. Revolving about y-axis with functions easier in x',
+          'C. The region is below the x-axis',
+          'D. The function is constant'
+        ],
+        answer: 'B. Revolving about y-axis with functions easier in x',
+        diff: 'hard'
+      },
+      {
+        q: 'The surface area of a cylindrical shell of radius r and height h is:',
+        options: [
+          'A. \`2πrh\`',
+          'B. \`πr²h\`',
+          'C. \`2πr²h\`',
+          'D. \`πrh\`'
+        ],
+        answer: 'A. \`2πrh\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The volume by shells is the integral of:',
+        options: [
+          'A. The surface area of shells',
+          'B. The volume of disks',
+          'C. The area of washers',
+          'D. The height of shells'
+        ],
+        answer: 'A. The surface area of shells',
+        diff: 'hard'
+      },
+      {
+        q: 'The shell method and disk method give:',
+        options: [
+          'A. Different results',
+          'B. The same result for the same solid',
+          'C. Results that differ by a factor of π',
+          'D. Results that are unrelated'
+        ],
+        answer: 'B. The same result for the same solid',
+        diff: 'medium'
+      }
+    ]
+  },
+
+ 
+ 36: {
+    title: 'Length of a Plane Curve (Arc Length)',
+    summary: `
+**Lecture 36 - Length of a Plane Curve (Arc Length - Kisi Manhani ki Lambai)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Arc Length Problem (Qous ki Lambai ka Masla):**
+
+Suppose f is a smooth function on interval [a,b]. Find the length L of the curve \`y = f(x)\` over [a,b].
+
+**2. Derivation of Arc Length Formula:**
+
+Subdivide [a,b] into n subintervals of width \`Δx_k\`. The curve is approximated by a polygonal path. The length of the kth segment is:
+\`L_k = √(Δx_k² + Δy_k²)\`
+
+Using Mean Value Theorem:
+\`Δy_k = f'(x_k*)·Δx_k\`
+
+So:
+\`L_k = √(1 + [f'(x_k*)]²)·Δx_k\`
+
+Summing and taking limit:
+\`L = lim_{max Δx_k → 0} Σ √(1 + [f'(x_k*)]²)·Δx_k\`
+
+**3. Arc Length Formula:**
+
+\`L = ∫_a^b √(1 + [f'(x)]²) dx\`
+
+**4. Alternative Form:**
+
+\`L = ∫_a^b √(1 + (dy/dx)²) dx\`
+
+**5. Arc Length with Respect to y:**
+
+If curve is \`x = g(y)\` from y=c to y=d:
+\`L = ∫_c^d √(1 + (dx/dy)²) dy\`
+
+**6. Important Note:**
+- The function f must be smooth (continuous derivative)
+- The formula gives the exact length of the curve
+- For lines, this formula reduces to the distance formula
+
+**7. Example:**
+Find length of \`y = x²\` from x=0 to x=1:
+- \`f'(x) = 2x\`
+- \`L = ∫_0^1 √(1 + 4x²) dx\`
+
+**8. Geometric Interpretation:**
+Arc length is the sum of infinitely many small straight segments along the curve.
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Arc length formula: \`L = ∫√(1 + (dy/dx)²) dx\`
+- For x = g(y): \`L = ∫√(1 + (dx/dy)²) dy\`
+- Function must be smooth (differentiable with continuous derivative)
+- For straight line, formula gives distance between endpoints
+- No simple formula for all curves (integral often requires numerical methods)
+`,
+    questions: [
+      {
+        q: 'The arc length of a curve \`y = f(x)\` from x=a to x=b is given by:',
+        options: [
+          'A. \`L = ∫_a^b √(1 + [f\'(x)]²) dx\`',
+          'B. \`L = ∫_a^b √(1 - [f\'(x)]²) dx\`',
+          'C. \`L = ∫_a^b [1 + f\'(x)] dx\`',
+          'D. \`L = ∫_a^b f\'(x) dx\`'
+        ],
+        answer: 'A. \`L = ∫_a^b √(1 + [f\'(x)]²) dx\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The arc length formula is derived by approximating the curve with:',
+        options: [
+          'A. Rectangles',
+          'B. Triangles',
+          'C. Polygonal paths (line segments)',
+          'D. Circles'
+        ],
+        answer: 'C. Polygonal paths (line segments)',
+        diff: 'medium'
+      },
+      {
+        q: 'For the arc length formula to be valid, f must be:',
+        options: [
+          'A. Continuous only',
+          'B. Differentiable with continuous derivative (smooth)',
+          'C. Twice differentiable',
+          'D. Only defined on [a,b]'
+        ],
+        answer: 'B. Differentiable with continuous derivative (smooth)',
+        diff: 'medium'
+      },
+      {
+        q: 'The arc length of a straight line \`y = mx + b\` from x=a to x=b is:',
+        options: [
+          'A. \`∫_a^b √(1 + m²) dx\`',
+          'B. \`∫_a^b √(1 - m²) dx\`',
+          'C. \`∫_a^b (1 + m) dx\`',
+          'D. \`∫_a^b m dx\`'
+        ],
+        answer: 'A. \`∫_a^b √(1 + m²) dx\`',
+        diff: 'medium'
+      },
+      {
+        q: 'If a curve is given as \`x = g(y)\`, the arc length from y=c to y=d is:',
+        options: [
+          'A. \`L = ∫_c^d √(1 + [g\'(y)]²) dy\`',
+          'B. \`L = ∫_c^d √(1 - [g\'(y)]²) dy\`',
+          'C. \`L = ∫_a^b √(1 + [g\'(x)]²) dx\`',
+          'D. \`L = ∫_c^d g\'(y) dy\`'
+        ],
+        answer: 'A. \`L = ∫_c^d √(1 + [g\'(y)]²) dy\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The arc length of \`y = x\` from x=0 to x=1 is:',
+        options: [
+          'A. 1',
+          'B. √2',
+          'C. 2',
+          'D. 1/2'
+        ],
+        answer: 'B. √2',
+        diff: 'easy'
+      },
+      {
+        q: 'The integrand in the arc length formula \`√(1 + [f\'(x)]²)\` represents:',
+        options: [
+          'A. The slope at each point',
+          'B. The length of a small segment divided by Δx',
+          'C. The area under the curve',
+          'D. The derivative of the curve'
+        ],
+        answer: 'B. The length of a small segment divided by Δx',
+        diff: 'hard'
+      },
+      {
+        q: 'For a horizontal line \`y = c\`, the arc length from x=a to x=b is:',
+        options: [
+          'A. \`b - a\`',
+          'B. \`√(1 + (b-a)²)\`',
+          'C. \`0\`',
+          'D. \`c(b-a)\`'
+        ],
+        answer: 'A. \`b - a\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The arc length formula can be written in differential form as:',
+        options: [
+          'A. \`ds = √(1 + (dy/dx)²) dx\`',
+          'B. \`ds = (1 + dy/dx) dx\`',
+          'C. \`ds = √(1 - (dy/dx)²) dx\`',
+          'D. \`ds = dy/dx dx\`'
+        ],
+        answer: 'A. \`ds = √(1 + (dy/dx)²) dx\`',
+        diff: 'medium'
+      },
+      {
+        q: 'Which of the following is NOT required for the arc length formula?',
+        options: [
+          'A. f is continuous on [a,b]',
+          'B. f is differentiable on (a,b)',
+          'C. f\' is continuous on [a,b]',
+          'D. f is positive on [a,b]'
+        ],
+        answer: 'D. f is positive on [a,b]',
+        diff: 'hard'
+      },
+      {
+        q: 'The arc length of \`y = x^{3/2}\` from x=0 to x=4 is found using:',
+        options: [
+          'A. \`∫_0^4 √(1 + (3/2√x)²) dx\`',
+          'B. \`∫_0^4 √(1 + x³) dx\`',
+          'C. \`∫_0^4 √(1 + (3/2)x^{1/2}) dx\`',
+          'D. \`∫_0^4 (1 + (3/2)x^{1/2}) dx\`'
+        ],
+        answer: 'A. \`∫_0^4 √(1 + (3/2√x)²) dx\`',
+        diff: 'hard'
+      },
+      {
+        q: 'The arc length of a curve from x=a to x=b is independent of:',
+        options: [
+          'A. The function f',
+          'B. The interval [a,b]',
+          'C. The choice of coordinate system (rotations)',
+          'D. The derivative f\''
+        ],
+        answer: 'C. The choice of coordinate system (rotations)',
+        diff: 'hard'
+      },
+      {
+        q: 'If \`dy/dx = tan θ\`, then the arc length element ds is:',
+        options: [
+          'A. \`sec θ dx\`',
+          'B. \`cos θ dx\`',
+          'C. \`sin θ dx\`',
+          'D. \`tan θ dx\`'
+        ],
+        answer: 'A. \`sec θ dx\`',
+        diff: 'hard'
+      },
+      {
+        q: 'The arc length of a circle of radius r (one full circumference) is:',
+        options: [
+          'A. \`2πr\`',
+          'B. \`πr²\`',
+          'C. \`4πr\`',
+          'D. \`2r\`'
+        ],
+        answer: 'A. \`2πr\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The arc length formula \`L = ∫√(1 + (dy/dx)²) dx\` can be derived from:',
+        options: [
+          'A. The Mean Value Theorem',
+          'B. The Pythagorean Theorem',
+          'C. Both A and B',
+          'D. Newton\'s Law'
+        ],
+        answer: 'C. Both A and B',
+        diff: 'hard'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 37 - Area of a Surface of Revolution
+  // ============================================================
+  37: {
+    title: 'Area of a Surface of Revolution',
+    summary: `
+**Lecture 37 - Area of a Surface of Revolution (Inqilabi Satah ka Raqba)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Surface Area Problem (Satahi Raqba ka Masla):**
+
+Let f be a smooth, nonnegative function on [a,b]. Find the area S of the surface generated by revolving the curve \`y = f(x)\` about the x-axis.
+
+**2. Derivation of Surface Area Formula:**
+
+Subdivide the curve into small segments. Each segment, when revolved, generates a frustum of a cone. The surface area of a frustum is:
+\`S_k = 2π · (average radius) · (slant length)\`
+
+Average radius = \`[f(x_{k-1}) + f(x_k)]/2\`
+Slant length = \`√(Δx_k² + Δy_k²)\`
+
+Using MVT:
+\`S_k ≈ 2π f(x_k*) · √(1 + [f'(x_k*)]²) · Δx_k\`
+
+Taking the limit gives the surface area formula.
+
+**3. Surface Area Formula:**
+
+\`S = 2π ∫_a^b f(x) · √(1 + [f'(x)]²) dx\`
+
+**4. Alternative Form:**
+
+\`S = 2π ∫_a^b y · √(1 + (dy/dx)²) dx\`
+
+**5. Surface Area for Revolution about y-axis:**
+
+If curve is \`x = g(y)\` revolved about y-axis:
+\`S = 2π ∫_c^d g(y) · √(1 + [g'(y)]²) dy\`
+
+**6. Important Note:**
+- Surface area is measured in square units
+- The formula uses the arc length element \`ds\`
+- Can be written as: \`S = 2π ∫ radius · ds\`
+
+**7. Example - Surface Area of a Sphere:**
+
+Revolve \`y = √(r²-x²)\` about x-axis:
+\`S = 2π ∫_{-r}^r √(r²-x²) · r/√(r²-x²) dx = 2π ∫_{-r}^r r dx = 4πr²\`
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Surface area formula: \`S = 2π∫ f(x)√(1+[f']²) dx\`
+- For y-axis: \`S = 2π∫ g(y)√(1+[g']²) dy\`
+- Radius = distance from axis of revolution
+- The formula uses arc length element ds
+- For sphere: surface area = \`4πr²\`
+`,
+    questions: [
+      {
+        q: 'The surface area of a solid of revolution about the x-axis is given by:',
+        options: [
+          'A. \`S = 2π∫_a^b f(x)√(1+[f\'(x)]²) dx\`',
+          'B. \`S = π∫_a^b [f(x)]² dx\`',
+          'C. \`S = 2π∫_a^b x f(x) dx\`',
+          'D. \`S = ∫_a^b f(x) dx\`'
+        ],
+        answer: 'A. \`S = 2π∫_a^b f(x)√(1+[f\'(x)]²) dx\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The surface area formula involves the arc length element because:',
+        options: [
+          'A. Each small segment generates a frustum',
+          'B. The curve must be smooth',
+          'C. The area is 2D',
+          'D. The radius is constant'
+        ],
+        answer: 'A. Each small segment generates a frustum',
+        diff: 'hard'
+      },
+      {
+        q: 'For revolution about the y-axis, the radius in the surface area formula is:',
+        options: [
+          'A. x',
+          'B. y',
+          'C. f(x)',
+          'D. g\'(y)'
+        ],
+        answer: 'A. x',
+        diff: 'medium'
+      },
+      {
+        q: 'The surface area of a sphere of radius r is:',
+        options: [
+          'A. 4πr²',
+          'B. 4πr³/3',
+          'C. 2πr²',
+          'D. πr²'
+        ],
+        answer: 'A. 4πr²',
+        diff: 'easy'
+      },
+      {
+        q: 'In the surface area formula \`S = 2π∫ f(x) ds\`, \`ds\` represents:',
+        options: [
+          'A. The arc length element',
+          'B. The area element',
+          'C. The volume element',
+          'D. The radius element'
+        ],
+        answer: 'A. The arc length element',
+        diff: 'medium'
+      },
+      {
+        q: 'The surface area of a cylinder generated by revolving a horizontal line \`y = r\` from x=0 to x=h about x-axis is:',
+        options: [
+          'A. 2πrh',
+          'B. πr²h',
+          'C. 2πr²h',
+          'D. πrh'
+        ],
+        answer: 'A. 2πrh',
+        diff: 'easy'
+      },
+      {
+        q: 'When a curve is revolved about the x-axis, the radius of revolution at point x is:',
+        options: [
+          'A. f(x)',
+          'B. x',
+          'C. f\'(x)',
+          'D. √(1+[f\']²)'
+        ],
+        answer: 'A. f(x)',
+        diff: 'easy'
+      },
+      {
+        q: 'The surface area formula \`S = 2π∫_a^b f(x) ds\` is valid when:',
+        options: [
+          'A. f is positive on [a,b]',
+          'B. f is continuous on [a,b]',
+          'C. f is smooth on [a,b]',
+          'D. All of the above'
+        ],
+        answer: 'D. All of the above',
+        diff: 'hard'
+      },
+      {
+        q: 'The surface area generated by revolving \`y = x²\` from x=0 to x=1 about x-axis is found by evaluating:',
+        options: [
+          'A. \`2π∫_0^1 x²√(1+4x²) dx\`',
+          'B. \`2π∫_0^1 x√(1+4x²) dx\`',
+          'C. \`π∫_0^1 x⁴ dx\`',
+          'D. \`2π∫_0^1 x² dx\`'
+        ],
+        answer: 'A. \`2π∫_0^1 x²√(1+4x²) dx\`',
+        diff: 'hard'
+      },
+      {
+        q: 'The frustum of a cone has surface area:',
+        options: [
+          'A. \`2π(r₁+r₂)l/2\`',
+          'B. \`π(r₁+r₂)l\`',
+          'C. \`π(r₁+r₂)²l\`',
+          'D. \`2π(r₁+r₂)l\`'
+        ],
+        answer: 'A. \`2π(r₁+r₂)l/2\`',
+        diff: 'hard'
+      },
+      {
+        q: 'If the curve is given as \`x = g(y)\` and revolved about y-axis, the surface area is:',
+        options: [
+          'A. \`2π∫_c^d g(y)√(1+[g\'(y)]²) dy\`',
+          'B. \`2π∫_c^d y√(1+[g\'(y)]²) dy\`',
+          'C. \`π∫_c^d [g(y)]² dy\`',
+          'D. \`2π∫_c^d g(y) dy\`'
+        ],
+        answer: 'A. \`2π∫_c^d g(y)√(1+[g\'(y)]²) dy\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The surface area formula is an integral of:',
+        options: [
+          'A. 2π × radius × ds',
+          'B. π × radius² × ds',
+          'C. 2π × radius² × ds',
+          'D. π × radius × ds'
+        ],
+        answer: 'A. 2π × radius × ds',
+        diff: 'medium'
+      },
+      {
+        q: 'The surface area of a cone (excluding base) generated by revolving \`y = (r/h)x\` from x=0 to x=h about x-axis is:',
+        options: [
+          'A. πr√(r²+h²)',
+          'B. πr²h',
+          'C. 2πrh',
+          'D. πr²√(r²+h²)'
+        ],
+        answer: 'A. πr√(r²+h²)',
+        diff: 'hard'
+      },
+      {
+        q: 'The surface area formula for revolution about x-axis requires f to be:',
+        options: [
+          'A. Positive',
+          'B. Differentiable',
+          'C. Both positive and differentiable with continuous derivative',
+          'D. Only continuous'
+        ],
+        answer: 'C. Both positive and differentiable with continuous derivative',
+        diff: 'medium'
+      },
+      {
+        q: 'The surface area of a torus generated by revolving a circle about an external axis is:',
+        options: [
+          'A. \`4π²Rr\`',
+          'B. \`2π²Rr\`',
+          'C. \`4πRr\`',
+          'D. \`2πRr\`'
+        ],
+        answer: 'A. \`4π²Rr\`',
+        diff: 'hard'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 38 - Work and Definite Integral
+  // ============================================================
+  38: {
+    title: 'Work and Definite Integral',
+    summary: `
+**Lecture 38 - Work and Definite Integral (Kaam aur Mueen Zameema)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Work Done by a Constant Force (Mustaqil Quwwat se Kaam):**
+
+If an object moves a distance d along a line while a constant force F acts on it:
+\`W = F·d\`
+
+**2. Work Done by a Variable Force (Mutaghayyar Quwwat se Kaam):**
+
+When force varies with position \`F(x)\`, we use integration:
+\`W = ∫_a^b F(x) dx\`
+
+**3. Derivation:**
+
+Subdivide [a,b] into small subintervals. On each interval, force is approximately constant. Work on kth interval:
+\`ΔW_k ≈ F(x_k*)·Δx_k\`
+
+Summing and taking limit:
+\`W = lim Σ F(x_k*)·Δx_k = ∫_a^b F(x) dx\`
+
+**4. Units of Work:**
+- SI: Joule (J) = Newton·meter
+- English: foot-pound (ft·lb)
+
+**5. Work Done by a Spring (Spring ka Kaam):**
+
+According to Hooke's Law:
+\`F(x) = kx\` (k = spring constant)
+
+Work to stretch spring from x=0 to x=X:
+\`W = ∫_0^X kx dx = ½kX²\`
+
+**6. Pumping Water (Pani Pump Karna):**
+
+To find work required to pump water out of a tank:
+1. Divide water into thin layers
+2. Find weight of each layer
+3. Find distance each layer must be lifted
+4. Integrate
+
+**7. Fluid Pressure (Maya ka Dabao):**
+
+Pressure at depth h: \`P = ρgh\` (ρ = density, g = gravity)
+
+Force on submerged vertical surface:
+\`F = ∫ ρg·h(y)·w(y) dy\`
+
+Where h(y) = depth and w(y) = width at height y.
+
+**8. Pascal's Principle:**
+Pressure is transmitted equally in all directions in a fluid at rest.
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Work = Force × Distance (constant force)
+- Variable force: \`W = ∫ F(x) dx\`
+- Spring: \`W = ½kx²\`
+- Hooke's Law: \`F = kx\`
+- Fluid pressure: \`P = ρgh\`
+- Work is energy transferred by force
+`,
+    questions: [
+      {
+        q: 'The work done by a variable force \`F(x)\` from x=a to x=b is:',
+        options: [
+          'A. \`W = ∫_a^b F(x) dx\`',
+          'B. \`W = F(b) - F(a)\`',
+          'C. \`W = F(a) + F(b)\`',
+          'D. \`W = ∫_a^b x F(x) dx\`'
+        ],
+        answer: 'A. \`W = ∫_a^b F(x) dx\`',
+        diff: 'easy'
+      },
+      {
+        q: 'According to Hooke\'s Law, the force required to stretch a spring by distance x is:',
+        options: [
+          'A. \`F = kx\`',
+          'B. \`F = ½kx²\`',
+          'C. \`F = k/x\`',
+          'D. \`F = kx²\`'
+        ],
+        answer: 'A. \`F = kx\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The work done in stretching a spring from x=0 to x=X is:',
+        options: [
+          'A. \`½kX²\`',
+          'B. \`kX²\`',
+          'C. \`½kX\`',
+          'D. \`kX\`'
+        ],
+        answer: 'A. \`½kX²\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The SI unit of work is:',
+        options: [
+          'A. Newton (N)',
+          'B. Joule (J)',
+          'C. Pascal (Pa)',
+          'D. Watt (W)'
+        ],
+        answer: 'B. Joule (J)',
+        diff: 'easy'
+      },
+      {
+        q: 'Fluid pressure at depth h is given by:',
+        options: [
+          'A. \`P = ρgh\`',
+          'B. \`P = ρg/h\`',
+          'C. \`P = ρh/g\`',
+          'D. \`P = gh/ρ\`'
+        ],
+        answer: 'A. \`P = ρgh\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The work required to lift a 10 kg object 5 meters vertically is: (g = 9.8 m/s²)',
+        options: [
+          'A. 490 J',
+          'B. 50 J',
+          'C. 98 J',
+          'D. 500 J'
+        ],
+        answer: 'A. 490 J',
+        diff: 'easy'
+      },
+      {
+        q: 'In the work integral \`W = ∫ F(x) dx\`, the variable x represents:',
+        options: [
+          'A. Time',
+          'B. Position of the force application',
+          'C. Velocity',
+          'D. Acceleration'
+        ],
+        answer: 'B. Position of the force application',
+        diff: 'medium'
+      },
+      {
+        q: 'Pascal\'s principle states that pressure in a fluid at rest:',
+        options: [
+          'A. Is transmitted equally in all directions',
+          'B. Depends on the shape of the container',
+          'C. Is always zero at the surface',
+          'D. Increases with container size'
+        ],
+        answer: 'A. Is transmitted equally in all directions',
+        diff: 'medium'
+      },
+      {
+        q: 'The force on a submerged vertical surface is found by integrating:',
+        options: [
+          'A. Pressure × area',
+          'B. Density × volume',
+          'C. Mass × acceleration',
+          'D. Weight × height'
+        ],
+        answer: 'A. Pressure × area',
+        diff: 'hard'
+      },
+      {
+        q: 'The work done by a constant force of 50 N moving an object 10 m is:',
+        options: [
+          'A. 500 J',
+          'B. 5 J',
+          'C. 50 J',
+          'D. 5000 J'
+        ],
+        answer: 'A. 500 J',
+        diff: 'easy'
+      },
+      {
+        q: 'When pumping water from a tank, each layer of water must be lifted:',
+        options: [
+          'A. The same distance',
+          'B. A different distance depending on its depth',
+          'C. To the bottom of the tank',
+          'D. To the center of the tank'
+        ],
+        answer: 'B. A different distance depending on its depth',
+        diff: 'medium'
+      },
+      {
+        q: 'Hooke\'s Law applies to:',
+        options: [
+          'A. All forces',
+          'B. Ideal springs (within elastic limit)',
+          'C. Only gravitational forces',
+          'D. Only friction forces'
+        ],
+        answer: 'B. Ideal springs (within elastic limit)',
+        diff: 'easy'
+      },
+      {
+        q: 'The work done in stretching a spring from x₁ to x₂ is:',
+        options: [
+          'A. \`½k(x₂² - x₁²)\`',
+          'B. \`k(x₂ - x₁)\`',
+          'C. \`½k(x₂ - x₁)²\`',
+          'D. \`k(x₂² - x₁²)\`'
+        ],
+        answer: 'A. \`½k(x₂² - x₁²)\`',
+        diff: 'hard'
+      },
+      {
+        q: 'The dimensions of work are:',
+        options: [
+          'A. \`MLT⁻²\`',
+          'B. \`ML²T⁻²\`',
+          'C. \`ML²T⁻³\`',
+          'D. \`MLT⁻¹\`'
+        ],
+        answer: 'B. \`ML²T⁻²\`',
+        diff: 'hard'
+      },
+      {
+        q: 'To find the force on a submerged flat surface, we integrate:',
+        options: [
+          'A. Pressure over the area',
+          'B. Density over the area',
+          'C. Volume over the area',
+          'D. Mass over the area'
+        ],
+        answer: 'A. Pressure over the area',
+        diff: 'medium'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 39 - Improper Integral
+  // ============================================================
+  39: {
+    title: 'Improper Integral',
+    summary: `
+**Lecture 39 - Improper Integral (Ghair Munaasib Zameema)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Integrals over Infinite Intervals (Laa-mutnahi Faasla par Zameema):**
+
+When the interval of integration is infinite, we define:
+
+\`∫_a^∞ f(x) dx = lim_{b→∞} ∫_a^b f(x) dx\`
+
+\`∫_{-∞}^b f(x) dx = lim_{a→-∞} ∫_a^b f(x) dx\`
+
+\`∫_{-∞}^∞ f(x) dx = ∫_{-∞}^c f(x) dx + ∫_c^∞ f(x) dx\`
+
+**2. Convergence and Divergence (Ijtima wa Inhiraf):**
+
+- If the limit exists (is finite), the improper integral CONVERGES
+- If the limit does not exist or is infinite, it DIVERGES
+
+**3. Integrals with Discontinuous Integrands (Mutawaqif Integrand):**
+
+If f has a vertical asymptote at x = c in [a,b]:
+
+\`∫_a^b f(x) dx = lim_{t→c^-} ∫_a^t f(x) dx + lim_{t→c^+} ∫_t^b f(x) dx\`
+
+**4. Example - \`1/x²\` from 1 to ∞:**
+
+\`∫_1^∞ 1/x² dx = lim_{b→∞} [-1/x]_1^b = lim_{b→∞} (-1/b + 1) = 1\`
+
+**5. Example - \`1/x\` from 1 to ∞:**
+
+\`∫_1^∞ 1/x dx = lim_{b→∞} [ln x]_1^b = lim_{b→∞} ln b = ∞\` (Diverges)
+
+**6. Geometric Interpretation:**
+- Some infinite areas are finite (convergent)
+- Some infinite areas are infinite (divergent)
+- \`1/x²\` converges, \`1/x\` diverges
+
+**7. Type 1: Infinite Limits**
+- \`∫_a^∞ f(x) dx\`
+- \`∫_{-∞}^b f(x) dx\`
+- \`∫_{-∞}^∞ f(x) dx\`
+
+**8. Type 2: Infinite Integrand**
+- Vertical asymptote at endpoint
+- Vertical asymptote inside interval
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Improper integral: interval infinite OR integrand infinite
+- Converges if limit exists (finite)
+- Diverges if limit is infinite or DNE
+- \`∫_1^∞ 1/x² dx = 1\` (converges)
+- \`∫_1^∞ 1/x dx = ∞\` (diverges)
+- Split at discontinuities
+- Both parts must converge for total to converge
+`,
+    questions: [
+      {
+        q: 'An improper integral is an integral where either the interval is infinite or:',
+        options: [
+          'A. The integrand is zero',
+          'B. The integrand is infinite at some point',
+          'C. The integrand is constant',
+          'D. The limits are equal'
+        ],
+        answer: 'B. The integrand is infinite at some point',
+        diff: 'medium'
+      },
+      {
+        q: 'The improper integral \`∫_a^∞ f(x) dx\` is defined as:',
+        options: [
+          'A. \`lim_{b→∞} ∫_a^b f(x) dx\`',
+          'B. \`lim_{b→0} ∫_a^b f(x) dx\`',
+          'C. \`∫_a^b f(x) dx\`',
+          'D. \`lim_{a→0} ∫_a^∞ f(x) dx\`'
+        ],
+        answer: 'A. \`lim_{b→∞} ∫_a^b f(x) dx\`',
+        diff: 'easy'
+      },
+      {
+        q: 'If the limit in an improper integral exists and is finite, the integral:',
+        options: [
+          'A. Diverges',
+          'B. Converges',
+          'C. Is undefined',
+          'D. Is always zero'
+        ],
+        answer: 'B. Converges',
+        diff: 'easy'
+      },
+      {
+        q: 'The integral \`∫_1^∞ 1/x² dx\`:',
+        options: [
+          'A. Diverges to ∞',
+          'B. Converges to 1',
+          'C. Converges to 0',
+          'D. Diverges to -∞'
+        ],
+        answer: 'B. Converges to 1',
+        diff: 'medium'
+      },
+      {
+        q: 'The integral \`∫_1^∞ 1/x dx\`:',
+        options: [
+          'A. Converges to 1',
+          'B. Converges to 0',
+          'C. Diverges to ∞',
+          'D. Converges to ln 2'
+        ],
+        answer: 'C. Diverges to ∞',
+        diff: 'medium'
+      },
+      {
+        q: 'The p-integral \`∫_1^∞ 1/x^p dx\` converges if:',
+        options: [
+          'A. p ≤ 1',
+          'B. p > 1',
+          'C. p = 1',
+          'D. p < 0'
+        ],
+        answer: 'B. p > 1',
+        diff: 'hard'
+      },
+      {
+        q: 'The integral \`∫_{-∞}^0 e^x dx\`:',
+        options: [
+          'A. Diverges to ∞',
+          'B. Converges to 1',
+          'C. Converges to 0',
+          'D. Diverges to -∞'
+        ],
+        answer: 'B. Converges to 1',
+        diff: 'hard'
+      },
+      {
+        q: 'If \`f(x)\` has a vertical asymptote at x = c in [a,b], the improper integral is:',
+        options: [
+          'A. \`lim_{t→c^-} ∫_a^t f(x) dx + lim_{t→c^+} ∫_t^b f(x) dx\`',
+          'B. \`∫_a^c f(x) dx + ∫_c^b f(x) dx\`',
+          'C. \`lim_{t→c} ∫_a^b f(x) dx\`',
+          'D. \`∫_a^b f(x) dx\`'
+        ],
+        answer: 'A. \`lim_{t→c^-} ∫_a^t f(x) dx + lim_{t→c^+} ∫_t^b f(x) dx\`',
+        diff: 'hard'
+      },
+      {
+        q: 'The integral \`∫_0^1 1/√x dx\`:',
+        options: [
+          'A. Diverges',
+          'B. Converges to 2',
+          'C. Converges to 1',
+          'D. Converges to 1/2'
+        ],
+        answer: 'B. Converges to 2',
+        diff: 'hard'
+      },
+      {
+        q: 'An improper integral of Type 1 has:',
+        options: [
+          'A. Infinite limits of integration',
+          'B. An infinite integrand',
+          'C. Both A and B',
+          'D. Neither A nor B'
+        ],
+        answer: 'A. Infinite limits of integration',
+        diff: 'easy'
+      },
+      {
+        q: 'The integral \`∫_0^∞ e^{-x} dx\`:',
+        options: [
+          'A. Diverges',
+          'B. Converges to 1',
+          'C. Converges to 0',
+          'D. Converges to 2'
+        ],
+        answer: 'B. Converges to 1',
+        diff: 'medium'
+      },
+      {
+        q: 'For the integral \`∫_0^1 1/x^p dx\` to converge, we need:',
+        options: [
+          'A. p > 1',
+          'B. p < 1',
+          'C. p = 1',
+          'D. p ≤ 0'
+        ],
+        answer: 'B. p < 1',
+        diff: 'hard'
+      },
+      {
+        q: 'If an improper integral diverges, it means:',
+        options: [
+          'A. The area is infinite',
+          'B. The area is zero',
+          'C. The function is undefined',
+          'D. The limits do not exist'
+        ],
+        answer: 'A. The area is infinite',
+        diff: 'medium'
+      },
+      {
+        q: 'The integral \`∫_{-∞}^∞ 1/(1+x²) dx\`:',
+        options: [
+          'A. Diverges',
+          'B. Converges to π',
+          'C. Converges to π/2',
+          'D. Converges to 1'
+        ],
+        answer: 'B. Converges to π',
+        diff: 'hard'
+      },
+      {
+        q: 'The infinite interval \`[a, ∞)\` in an improper integral is handled by:',
+        options: [
+          'A. Taking the limit as the upper limit → ∞',
+          'B. Taking the limit as the lower limit → ∞',
+          'C. Substituting x = 1/t',
+          'D. Ignoring the infinite part'
+        ],
+        answer: 'A. Taking the limit as the upper limit → ∞',
+        diff: 'medium'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 40 - L'Hopital's Rule
+  // ============================================================
+  40: {
+    title: "L'Hopital's Rule and Indeterminate Forms",
+    summary: `
+**Lecture 40 - L'Hopital's Rule and Indeterminate Forms (L'Hopital ka Usool aur Ghair Mueen Shaklein)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Indeterminate Forms (Ghair Mueen Shaklein):**
+
+Limits that are not immediately obvious:
+- Type 0/0: \`lim f(x)/g(x)\` where both → 0
+- Type ∞/∞: \`lim f(x)/g(x)\` where both → ∞
+- Type 0·∞: \`lim f(x)·g(x)\` where one → 0, other → ∞
+- Type 00, ∞0, 1∞: \`lim [f(x)]^{g(x)}\`
+- Type ∞-∞: \`lim [f(x) - g(x)]\`
+
+**2. L'Hopital's Rule for 0/0:**
+
+If \`lim_{x→a} f(x) = 0\` and \`lim_{x→a} g(x) = 0\`, then:
+\`lim_{x→a} f(x)/g(x) = lim_{x→a} f'(x)/g'(x)\`
+(provided the limit of the ratio of derivatives exists)
+
+**3. L'Hopital's Rule for ∞/∞:**
+
+If \`lim_{x→a} f(x) = ±∞\` and \`lim_{x→a} g(x) = ±∞\`, then:
+\`lim_{x→a} f(x)/g(x) = lim_{x→a} f'(x)/g'(x)\`
+
+**4. Steps to Apply L'Hopital's Rule:**
+
+1. Check that the limit is of the form 0/0 or ∞/∞
+2. Differentiate numerator and denominator separately
+3. Take the limit of the new quotient
+4. If still indeterminate, repeat
+
+**5. Example:**
+\`lim_{x→0} sin x / x = lim_{x→0} cos x / 1 = 1\`
+
+**6. Converting Other Forms:**
+
+**0·∞:** Rewrite as 0/0 or ∞/∞:
+- \`f(x)·g(x) = f(x)/(1/g(x))\` or \`g(x)/(1/f(x))\`
+
+**∞-∞:** Combine into a single fraction
+
+**00, ∞0, 1∞:** Use natural logarithm:
+- Let \`y = [f(x)]^{g(x)}\`
+- Take \`ln y = g(x)·ln f(x)\`
+- Find \`lim ln y\`
+- Then \`lim y = e^{lim ln y}\`
+
+**7. Important Note:**
+- L'Hopital's Rule only applies to 0/0 or ∞/∞ forms
+- The derivatives of numerator and denominator are taken separately
+- The rule can be applied multiple times
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- L'Hopital's Rule: \`lim f/g = lim f'/g'\`
+- Only for 0/0 or ∞/∞ forms
+- Differentiate numerator and denominator separately
+- For 0·∞: rewrite as 0/0 or ∞/∞
+- For exponential forms: use ln
+- Can be applied repeatedly
+`,
+    questions: [
+      {
+        q: 'L\'Hopital\'s Rule applies to limits of the form:',
+        options: [
+          'A. 0/0 or ∞/∞',
+          'B. 1/0 or ∞/0',
+          'C. 0/∞ or ∞/0',
+          'D. Any form'
+        ],
+        answer: 'A. 0/0 or ∞/∞',
+        diff: 'medium'
+      },
+      {
+        q: 'According to L\'Hopital\'s Rule, \`lim_{x→a} f(x)/g(x) = lim_{x→a}\`:',
+        options: [
+          'A. f\'(x)/g(x)',
+          'B. f(x)/g\'(x)',
+          'C. f\'(x)/g\'(x)',
+          'D. g\'(x)/f\'(x)'
+        ],
+        answer: 'C. f\'(x)/g\'(x)',
+        diff: 'easy'
+      },
+      {
+        q: 'The limit \`lim_{x→0} sin x / x\` is of the form:',
+        options: [
+          'A. 0/0',
+          'B. ∞/∞',
+          'C. 1/0',
+          'D. 0/∞'
+        ],
+        answer: 'A. 0/0',
+        diff: 'easy'
+      },
+      {
+        q: 'The limit \`lim_{x→0} sin x / x\` equals:',
+        options: [
+          'A. 0',
+          'B. 1',
+          'C. ∞',
+          'D. -1'
+        ],
+        answer: 'B. 1',
+        diff: 'easy'
+      },
+      {
+        q: 'The form 0·∞ can be converted to 0/0 by:',
+        options: [
+          'A. \`f(x)·g(x) = f(x)/(1/g(x))\`',
+          'B. \`f(x)·g(x) = g(x)/(1/f(x))\`',
+          'C. Both A and B',
+          'D. Neither A nor B'
+        ],
+        answer: 'C. Both A and B',
+        diff: 'hard'
+      },
+      {
+        q: 'For exponential indeterminate forms (00, ∞0, 1∞), we use:',
+        options: [
+          'A. Direct substitution',
+          'B. Natural logarithm',
+          'C. Product rule',
+          'D. Chain rule'
+        ],
+        answer: 'B. Natural logarithm',
+        diff: 'medium'
+      },
+      {
+        q: 'The limit \`lim_{x→∞} x²/e^x\` is of the form:',
+        options: [
+          'A. 0/0',
+          'B. ∞/∞',
+          'C. 1/0',
+          'D. 0/∞'
+        ],
+        answer: 'B. ∞/∞',
+        diff: 'medium'
+      },
+      {
+        q: 'The limit \`lim_{x→∞} x²/e^x\` equals:',
+        options: [
+          'A. ∞',
+          'B. 0',
+          'C. 1',
+          'D. 2'
+        ],
+        answer: 'B. 0',
+        diff: 'hard'
+      },
+      {
+        q: 'L\'Hopital\'s Rule can be applied multiple times if:',
+        options: [
+          'A. The limit is still indeterminate',
+          'B. The limit is determinate',
+          'C. The derivatives are zero',
+          'D. The functions are polynomials'
+        ],
+        answer: 'A. The limit is still indeterminate',
+        diff: 'medium'
+      },
+      {
+        q: 'The limit \`lim_{x→0} (1 - cos x)/x²\` equals:',
+        options: [
+          'A. 0',
+          'B. 1/2',
+          'C. 1',
+          'D. 2'
+        ],
+        answer: 'B. 1/2',
+        diff: 'hard'
+      },
+      {
+        q: 'The form ∞-∞ is handled by:',
+        options: [
+          'A. Combining into a single fraction',
+          'B. Separating into two limits',
+          'C. Using the product rule',
+          'D. Using the chain rule'
+        ],
+        answer: 'A. Combining into a single fraction',
+        diff: 'medium'
+      },
+      {
+        q: 'The limit \`lim_{x→0} (e^x - 1)/x\` equals:',
+        options: [
+          'A. 0',
+          'B. 1',
+          'C. ∞',
+          'D. e'
+        ],
+        answer: 'B. 1',
+        diff: 'medium'
+      },
+      {
+        q: 'L\'Hopital\'s Rule was named after:',
+        options: [
+          'A. Johann Bernoulli',
+          'B. Guillaume de L\'Hopital',
+          'C. Isaac Newton',
+          'D. Gottfried Leibniz'
+        ],
+        answer: 'B. Guillaume de L\'Hopital',
+        diff: 'hard'
+      },
+      {
+        q: 'The limit \`lim_{x→∞} ln x / x\` equals:',
+        options: [
+          'A. 0',
+          'B. 1',
+          'C. ∞',
+          'D. e'
+        ],
+        answer: 'A. 0',
+        diff: 'medium'
+      },
+      {
+        q: 'The form 0·∞ in a limit means:',
+        options: [
+          'A. The limit is always 0',
+          'B. The limit is always ∞',
+          'C. The limit needs to be converted to 0/0 or ∞/∞',
+          'D. The limit does not exist'
+        ],
+        answer: 'C. The limit needs to be converted to 0/0 or ∞/∞',
+        diff: 'hard'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 41 - Sequences
+  // ============================================================
+  41: {
+    title: 'Sequences',
+    summary: `
+**Lecture 41 - Sequences (Tasalsul - Mutawatar Aadad)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Definition of a Sequence (Tasalsul ki Tareef):**
+
+A sequence is a function whose domain is the set of positive integers.
+\`{a_n}_{n=1}^∞ = a₁, a₂, a₃, ...\`
+
+**2. Terms of a Sequence (Tasalsul ki Shartein):**
+- a₁ = first term
+- a₂ = second term
+- a_n = nth term (general term)
+
+**3. Graphs of Sequences (Tasalsul ke Graph):**
+
+Sequences are graphed as discrete points (n, a_n) for n = 1, 2, 3, ...
+
+**4. Limit of a Sequence (Tasalsul ki Inteha):**
+
+\`lim_{n→∞} a_n = L\` if terms get arbitrarily close to L as n increases.
+
+**5. Convergence and Divergence (Ijtima aur Inhiraf):**
+
+- If \`lim_{n→∞} a_n = L\` (finite), the sequence CONVERGES
+- If the limit does not exist or is infinite, it DIVERGES
+
+**6. Examples:**
+- \`a_n = 1/n\`: converges to 0
+- \`a_n = n\`: diverges to ∞
+- \`a_n = (-1)^n\`: diverges (oscillates)
+
+**7. Monotone Sequences (Yak Rukhnay Wali Tasalsul):**
+
+- Increasing: \`a_{n+1} > a_n\` for all n
+- Decreasing: \`a_{n+1} < a_n\` for all n
+- Nondecreasing: \`a_{n+1} ≥ a_n\`
+- Nonincreasing: \`a_{n+1} ≤ a_n\`
+
+**8. Monotone Convergence Theorem:**
+
+A bounded monotone sequence always converges.
+
+**9. Recursive Sequences (Takraaray Wali Tasalsul):**
+
+Sequences defined by:
+- Initial terms
+- A formula relating each term to previous terms
+
+Example: \`a₁ = 1, a_{n+1} = a_n + 2\`
+
+**10. Limits of Sequences (Tasalsul ki Hudood):**
+
+Properties are the same as limits of functions:
+- Sum, difference, product, quotient rules
+- Squeeze theorem
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Sequence: \`{a_n}_{n=1}^∞\`
+- Converges if limit exists (finite)
+- Diverges if limit is ∞ or DNE
+- Monotone: increasing or decreasing
+- Bounded monotone sequences converge
+- Recursive: defined using previous terms
+- Squeeze theorem applies to sequences
+`,
+    questions: [
+      {
+        q: 'A sequence is a function whose domain is:',
+        options: [
+          'A. All real numbers',
+          'B. Positive integers',
+          'C. Negative integers',
+          'D. All integers'
+        ],
+        answer: 'B. Positive integers',
+        diff: 'easy'
+      },
+      {
+        q: 'The sequence \`a_n = 1/n\` converges to:',
+        options: [
+          'A. 0',
+          'B. 1',
+          'C. ∞',
+          'D. -∞'
+        ],
+        answer: 'A. 0',
+        diff: 'easy'
+      },
+      {
+        q: 'The sequence \`a_n = (-1)^n\` is:',
+        options: [
+          'A. Convergent to 1',
+          'B. Convergent to -1',
+          'C. Divergent (oscillates)',
+          'D. Convergent to 0'
+        ],
+        answer: 'C. Divergent (oscillates)',
+        diff: 'medium'
+      },
+      {
+        q: 'A sequence is called increasing if:',
+        options: [
+          'A. \`a_{n+1} > a_n\` for all n',
+          'B. \`a_{n+1} < a_n\` for all n',
+          'C. \`a_{n+1} = a_n\` for all n',
+          'D. \`a_{n+1} = a_n + 1\`'
+        ],
+        answer: 'A. \`a_{n+1} > a_n\` for all n',
+        diff: 'easy'
+      },
+      {
+        q: 'The Monotone Convergence Theorem states that:',
+        options: [
+          'A. Every convergent sequence is monotone',
+          'B. Every bounded monotone sequence converges',
+          'C. Every monotone sequence converges',
+          'D. Every bounded sequence converges'
+        ],
+        answer: 'B. Every bounded monotone sequence converges',
+        diff: 'hard'
+      },
+      {
+        q: 'A recursive sequence is defined by:',
+        options: [
+          'A. A formula for the nth term only',
+          'B. Initial terms and a formula relating later terms to earlier ones',
+          'C. A geometric progression',
+          'D. An arithmetic progression'
+        ],
+        answer: 'B. Initial terms and a formula relating later terms to earlier ones',
+        diff: 'medium'
+      },
+      {
+        q: 'The sequence \`a_n = n\` is:',
+        options: [
+          'A. Convergent to 0',
+          'B. Convergent to 1',
+          'C. Divergent to ∞',
+          'D. Divergent (oscillates)'
+        ],
+        answer: 'C. Divergent to ∞',
+        diff: 'easy'
+      },
+      {
+        q: 'The terms of a sequence are graphed as:',
+        options: [
+          'A. Continuous curves',
+          'B. Discrete points (n, a_n)',
+          'C. Lines through the origin',
+          'D. Parabolas'
+        ],
+        answer: 'B. Discrete points (n, a_n)',
+        diff: 'easy'
+      },
+      {
+        q: 'If \`lim_{n→∞} a_n = L\`, the sequence:',
+        options: [
+          'A. Diverges',
+          'B. Converges to L',
+          'C. Oscillates',
+          'D. Is unbounded'
+        ],
+        answer: 'B. Converges to L',
+        diff: 'easy'
+      },
+      {
+        q: 'The sequence \`a_n = 2^n\` is:',
+        options: [
+          'A. Convergent to 0',
+          'B. Convergent to 2',
+          'C. Divergent to ∞',
+          'D. Convergent to 1'
+        ],
+        answer: 'C. Divergent to ∞',
+        diff: 'easy'
+      },
+      {
+        q: 'A sequence that is both increasing and bounded above:',
+        options: [
+          'A. Diverges',
+          'B. Converges',
+          'C. Oscillates',
+          'D. Is unbounded'
+        ],
+        answer: 'B. Converges',
+        diff: 'hard'
+      },
+      {
+        q: 'The squeeze theorem can be applied to sequences if:',
+        options: [
+          'A. \`b_n ≤ a_n ≤ c_n\` for all n and \`lim b_n = lim c_n = L\`',
+          'B. \`a_n ≤ b_n ≤ c_n\` for all n',
+          'C. \`lim b_n = L\` and \`lim c_n = M\`',
+          'D. \`a_n\` is bounded'
+        ],
+        answer: 'A. \`b_n ≤ a_n ≤ c_n\` for all n and \`lim b_n = lim c_n = L\`',
+        diff: 'hard'
+      },
+      {
+        q: 'The sequence \`a_n = sin(πn)\` is:',
+        options: [
+          'A. Convergent to 0',
+          'B. Convergent to 1',
+          'C. Convergent to -1',
+          'D. Convergent to 0 (since sin(πn)=0 for all n)'
+        ],
+        answer: 'D. Convergent to 0 (since sin(πn)=0 for all n)',
+        diff: 'hard'
+      },
+      {
+        q: 'A sequence that is decreasing and bounded below:',
+        options: [
+          'A. Diverges to -∞',
+          'B. Converges',
+          'C. Oscillates',
+          'D. Is unbounded'
+        ],
+        answer: 'B. Converges',
+        diff: 'hard'
+      },
+      {
+        q: 'The general term of the sequence 1, 4, 9, 16, 25, ... is:',
+        options: [
+          'A. \`n\`',
+          'B. \`n²\`',
+          'C. \`2n\`',
+          'D. \`2n-1\`'
+        ],
+        answer: 'B. \`n²\`',
+        diff: 'easy'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 42 - Infinite Series
+  // ============================================================
+  42: {
+    title: 'Infinite Series',
+    summary: `
+**Lecture 42 - Infinite Series (Laa-mutnahi Silsila)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Definition of Infinite Series (Laa-mutnahi Silsila ki Tareef):**
+
+An infinite series is the sum of infinitely many terms:
+\`Σ_{k=1}^∞ u_k = u₁ + u₂ + u₃ + ...\`
+
+**2. Partial Sums (Juzwi Majmooa):**
+
+\`S_n = u₁ + u₂ + ... + u_n\`
+
+**3. Convergence of Series (Silsila ka Ijtima):**
+
+A series converges to S if the sequence of partial sums converges to S:
+\`lim_{n→∞} S_n = S\`
+
+If the sequence of partial sums diverges, the series diverges.
+
+**4. Geometric Series (Hindasi Silsila):**
+
+\`a + ar + ar² + ar³ + ... = Σ_{k=1}^∞ ar^{k-1}\`
+
+Converges if \`|r| < 1\`, and sum = \`a/(1-r)\`
+
+Diverges if \`|r| ≥ 1\`
+
+**5. Harmonic Series (Harmonic Silsila):**
+
+\`Σ_{k=1}^∞ 1/k = 1 + 1/2 + 1/3 + ...\`
+
+Diverges (even though terms go to 0)!
+
+**6. Necessary Condition for Convergence (Ijtima ki Zaroori Sharait):**
+
+If \`Σ u_k\` converges, then \`lim_{k→∞} u_k = 0\`
+
+**CAUTION:** If \`lim u_k ≠ 0\`, the series diverges.
+But if \`lim u_k = 0\`, the series may still diverge (harmonic series).
+
+**7. Algebraic Properties of Series (Silsila ki Aljabri Khasiyat):**
+
+- \`Σ c·u_k = c·Σ u_k\`
+- \`Σ (u_k + v_k) = Σ u_k + Σ v_k\`
+- \`Σ (u_k - v_k) = Σ u_k - Σ v_k\`
+
+**8. Geometric Series Examples:**
+- \`1/2 + 1/4 + 1/8 + ... = 1\`
+- \`1 - 1/2 + 1/4 - 1/8 + ... = 2/3\`
+
+**9. Important Note:**
+- The nth term going to 0 is necessary but not sufficient for convergence
+- Geometric series is the most important series for comparison
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Series: \`Σ u_k\`
+- Partial sums: \`S_n = u₁ + ... + u_n\`
+- Converges if \`lim S_n\` exists
+- Geometric series: \`Σ ar^{k-1} = a/(1-r)\` if \`|r| < 1\`
+- Harmonic series: \`Σ 1/k\` diverges
+- Necessary condition: \`lim u_k = 0\` (but not sufficient)
+- nth term test: if \`lim u_k ≠ 0\`, series diverges
+`,
+    questions: [
+      {
+        q: 'An infinite series is defined as:',
+        options: [
+          'A. The sum of finitely many terms',
+          'B. The sum of infinitely many terms',
+          'C. The product of infinitely many terms',
+          'D. The limit of a sequence'
+        ],
+        answer: 'B. The sum of infinitely many terms',
+        diff: 'easy'
+      },
+      {
+        q: 'The convergence of a series is determined by the convergence of:',
+        options: [
+          'A. Its terms',
+          'B. Its partial sums',
+          'C. Its first term',
+          'D. Its last term'
+        ],
+        answer: 'B. Its partial sums',
+        diff: 'medium'
+      },
+      {
+        q: 'A geometric series \`Σ ar^{k-1}\` converges if:',
+        options: [
+          'A. \`|r| > 1\`',
+          'B. \`|r| = 1\`',
+          'C. \`|r| < 1\`',
+          'D. \`r = 0\`'
+        ],
+        answer: 'C. \`|r| < 1\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The sum of the geometric series \`1 + 1/2 + 1/4 + 1/8 + ...\` is:',
+        options: [
+          'A. 1',
+          'B. 2',
+          'C. 1/2',
+          'D. 3'
+        ],
+        answer: 'B. 2',
+        diff: 'easy'
+      },
+      {
+        q: 'The harmonic series \`Σ 1/k\` is:',
+        options: [
+          'A. Convergent to 1',
+          'B. Convergent to 0',
+          'C. Divergent',
+          'D. Convergent to 2'
+        ],
+        answer: 'C. Divergent',
+        diff: 'medium'
+      },
+      {
+        q: 'If \`lim_{k→∞} u_k = 0\`, then the series \`Σ u_k\`:',
+        options: [
+          'A. Always converges',
+          'B. Always diverges',
+          'C. May converge or diverge',
+          'D. Is geometric'
+        ],
+        answer: 'C. May converge or diverge',
+        diff: 'hard'
+      },
+      {
+        q: 'If \`lim_{k→∞} u_k ≠ 0\`, then the series \`Σ u_k\`:',
+        options: [
+          'A. Converges',
+          'B. Diverges',
+          'C. May converge or diverge',
+          'D. Is geometric'
+        ],
+        answer: 'B. Diverges',
+        diff: 'medium'
+      },
+      {
+        q: 'The nth partial sum of a series is:',
+        options: [
+          'A. \`S_n = u_n\`',
+          'B. \`S_n = u₁ + u₂ + ... + u_n\`',
+          'C. \`S_n = u₁ + u₂ + ... + u_n + u_{n+1}\`',
+          'D. \`S_n = lim_{n→∞} u_n\`'
+        ],
+        answer: 'B. \`S_n = u₁ + u₂ + ... + u_n\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The geometric series with \`a = 1\` and \`r = 1/3\` converges to:',
+        options: [
+          'A. 3/2',
+          'B. 2',
+          'C. 3',
+          'D. 1'
+        ],
+        answer: 'A. 3/2',
+        diff: 'medium'
+      },
+      {
+        q: 'The series \`Σ 1/k²\` is:',
+        options: [
+          'A. Divergent',
+          'B. Convergent (p-series with p=2)',
+          'C. Harmonic',
+          'D. Geometric'
+        ],
+        answer: 'B. Convergent (p-series with p=2)',
+        diff: 'medium'
+      },
+      {
+        q: 'The necessary condition for convergence of a series is:',
+        options: [
+          'A. \`lim u_k = 0\`',
+          'B. \`lim u_k = 1\`',
+          'C. \`lim u_k = ∞\`',
+          'D. \`lim u_k\` does not exist'
+        ],
+        answer: 'A. \`lim u_k = 0\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The series \`Σ (-1)^k\` is:',
+        options: [
+          'A. Convergent',
+          'B. Divergent (terms don\'t go to 0)',
+          'C. Geometric',
+          'D. Harmonic'
+        ],
+        answer: 'B. Divergent (terms don\'t go to 0)',
+        diff: 'medium'
+      },
+      {
+        q: 'The sum of the geometric series \`Σ_{k=0}^∞ (1/2)^k\` is:',
+        options: [
+          'A. 1',
+          'B. 2',
+          'C. 1/2',
+          'D. 3'
+        ],
+        answer: 'B. 2',
+        diff: 'easy'
+      },
+      {
+        q: 'If \`Σ u_k\` and \`Σ v_k\` converge, then \`Σ (u_k + v_k)\`:',
+        options: [
+          'A. Diverges',
+          'B. Converges to \`Σ u_k + Σ v_k\`',
+          'C. May converge or diverge',
+          'D. Is zero'
+        ],
+        answer: 'B. Converges to \`Σ u_k + Σ v_k\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The series \`Σ 1/√k\` is:',
+        options: [
+          'A. Convergent',
+          'B. Divergent (p-series with p=1/2 < 1)',
+          'C. Geometric',
+          'D. Alternating'
+        ],
+        answer: 'B. Divergent (p-series with p=1/2 < 1)',
+        diff: 'hard'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 43 - Additional Convergence Tests
+  // ============================================================
+  43: {
+    title: 'Additional Convergence Tests',
+    summary: `
+**Lecture 43 - Additional Convergence Tests (Mazeed Ijtima ke Test)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Comparison Test (Muwazna Test - Theorem 11.5.1):**
+
+Let \`Σ a_k\` and \`Σ b_k\` be series with nonnegative terms and \`a_k ≤ b_k\` for all k.
+
+(a) If \`Σ b_k\` converges, then \`Σ a_k\` converges.
+(b) If \`Σ a_k\` diverges, then \`Σ b_k\` diverges.
+
+**2. Limit Comparison Test (Theorem 11.6.3):**
+
+If \`lim_{k→∞} a_k/b_k = L\` where \`L\` is finite and positive, then \`Σ a_k\` and \`Σ b_k\` both converge or both diverge.
+
+**3. Ratio Test (Theorem 11.5.2):**
+
+Let \`ρ = lim_{k→∞} |u_{k+1}/u_k|\`
+
+- If \`ρ < 1\`: converges absolutely
+- If \`ρ > 1\` or \`ρ = ∞\`: diverges
+- If \`ρ = 1\`: test is inconclusive
+
+**4. Root Test (Theorem 11.5.3):**
+
+Let \`ρ = lim_{k→∞} (|u_k|)^{1/k}\`
+
+- If \`ρ < 1\`: converges absolutely
+- If \`ρ > 1\` or \`ρ = ∞\`: diverges
+- If \`ρ = 1\`: test is inconclusive
+
+**5. Integral Test (Theorem 11.4.4):**
+
+If \`u_k = f(k)\` where f is positive, decreasing, and continuous on [1,∞), then:
+
+\`Σ_{k=1}^∞ u_k\` and \`∫_1^∞ f(x) dx\` both converge or both diverge.
+
+**6. p-Series (Theorem 11.4.5):**
+
+\`Σ 1/k^p\`
+- Converges if \`p > 1\`
+- Diverges if \`p ≤ 1\`
+
+**7. Comparison Test Tips (Muwazna Test ke Tips):**
+
+- To prove convergence: find a larger convergent series
+- To prove divergence: find a smaller divergent series
+- Delete constants or lower powers in denominator for comparison
+
+**8. Informal Principles for Guessing Convergence:**
+- Constant terms in denominator can be deleted
+- Only the highest power of k matters for large k
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Comparison Test: compare with known series
+- Limit Comparison: use limit of ratio
+- Ratio Test: \`ρ = lim |u_{k+1}/u_k|\`
+- Root Test: \`ρ = lim |u_k|^{1/k}\`
+- Integral Test: compare with improper integral
+- p-Series: converges if p > 1
+- Ratio/Root Test inconclusive if ρ = 1
+`,
+    questions: [
+      {
+        q: 'The Comparison Test requires that all terms be:',
+        options: [
+          'A. Positive',
+          'B. Negative',
+          'C. Zero',
+          'D. Alternating'
+        ],
+        answer: 'A. Positive',
+        diff: 'easy'
+      },
+      {
+        q: 'In the Comparison Test, if \`a_k ≤ b_k\` and \`Σ b_k\` converges, then:',
+        options: [
+          'A. \`Σ a_k\` diverges',
+          'B. \`Σ a_k\` converges',
+          'C. \`Σ a_k\` may converge or diverge',
+          'D. \`Σ a_k\` is geometric'
+        ],
+        answer: 'B. \`Σ a_k\` converges',
+        diff: 'medium'
+      },
+      {
+        q: 'The Limit Comparison Test is useful when:',
+        options: [
+          'A. The series terms are alternating',
+          'B. The comparison series is difficult to find',
+          'C. The limit of the ratio is a positive finite number',
+          'D. Both series are geometric'
+        ],
+        answer: 'C. The limit of the ratio is a positive finite number',
+        diff: 'hard'
+      },
+      {
+        q: 'In the Ratio Test, if \`ρ = lim |u_{k+1}/u_k| = 1\`, the test is:',
+        options: [
+          'A. Convergent',
+          'B. Divergent',
+          'C. Inconclusive',
+          'D. Absolutely convergent'
+        ],
+        answer: 'C. Inconclusive',
+        diff: 'medium'
+      },
+      {
+        q: 'The p-series \`Σ 1/k^p\` converges if:',
+        options: [
+          'A. p ≤ 1',
+          'B. p > 1',
+          'C. p = 1',
+          'D. p < 0'
+        ],
+        answer: 'B. p > 1',
+        diff: 'easy'
+      },
+      {
+        q: 'The Integral Test compares a series to:',
+        options: [
+          'A. A geometric series',
+          'B. An improper integral',
+          'C. A p-series',
+          'D. A harmonic series'
+        ],
+        answer: 'B. An improper integral',
+        diff: 'medium'
+      },
+      {
+        q: 'The Root Test uses the limit of:',
+        options: [
+          'A. \`|u_{k+1}/u_k|\`',
+          'B. \`|u_k|^{1/k}\`',
+          'C. \`|u_k|/k\`',
+          'D. \`k/|u_k|\`'
+        ],
+        answer: 'B. \`|u_k|^{1/k}\`',
+        diff: 'medium'
+      },
+      {
+        q: 'If \`ρ > 1\` in the Ratio Test, the series:',
+        options: [
+          'A. Converges absolutely',
+          'B. Converges conditionally',
+          'C. Diverges',
+          'D. Is inconclusive'
+        ],
+        answer: 'C. Diverges',
+        diff: 'easy'
+      },
+      {
+        q: 'The series \`Σ 1/(k²+1)\` can be compared to:',
+        options: [
+          'A. \`Σ 1/k²\` (convergent)',
+          'B. \`Σ 1/k\` (divergent)',
+          'C. \`Σ 1/k³\`',
+          'D. \`Σ 1\`'
+        ],
+        answer: 'A. \`Σ 1/k²\` (convergent)',
+        diff: 'hard'
+      },
+      {
+        q: 'The Integral Test requires that f(x) is:',
+        options: [
+          'A. Positive and increasing',
+          'B. Positive and decreasing',
+          'C. Negative and increasing',
+          'D. Any function'
+        ],
+        answer: 'B. Positive and decreasing',
+        diff: 'medium'
+      },
+      {
+        q: 'The series \`Σ 1/√k\` is:',
+        options: [
+          'A. Convergent (p-series with p=1/2)',
+          'B. Divergent (p-series with p=1/2 < 1)',
+          'C. Geometric',
+          'D. Alternating'
+        ],
+        answer: 'B. Divergent (p-series with p=1/2 < 1)',
+        diff: 'medium'
+      },
+      {
+        q: 'In the Limit Comparison Test, if \`lim a_k/b_k = 0\`, then:',
+        options: [
+          'A. Both series converge or both diverge',
+          'B. The test is inconclusive',
+          'C. If \`Σ b_k\` converges, \`Σ a_k\` converges',
+          'D. If \`Σ b_k\` diverges, \`Σ a_k\` converges'
+        ],
+        answer: 'C. If \`Σ b_k\` converges, \`Σ a_k\` converges',
+        diff: 'hard'
+      },
+      {
+        q: 'The Ratio Test is particularly useful for series with:',
+        options: [
+          'A. Factorials or exponentials',
+          'B. Polynomial terms only',
+          'C. Constant terms only',
+          'D. Trigonometric terms'
+        ],
+        answer: 'A. Factorials or exponentials',
+        diff: 'medium'
+      },
+      {
+        q: 'The comparison series \`Σ 1/k²\` is chosen because:',
+        options: [
+          'A. It is divergent',
+          'B. It is a convergent p-series (p=2)',
+          'C. It is geometric',
+          'D. It is harmonic'
+        ],
+        answer: 'B. It is a convergent p-series (p=2)',
+        diff: 'medium'
+      },
+      {
+        q: 'If the Ratio Test gives \`ρ = 1\`, then:',
+        options: [
+          'A. The series diverges',
+          'B. The series converges absolutely',
+          'C. Another test must be used',
+          'D. The series converges conditionally'
+        ],
+        answer: 'C. Another test must be used',
+        diff: 'easy'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 44 - Alternating Series and Conditional Convergence
+  // ============================================================
+  44: {
+    title: 'Alternating Series and Conditional Convergence',
+    summary: `
+**Lecture 44 - Alternating Series and Conditional Convergence (Mutabadil Silsila aur Mashroot Ijtima)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Alternating Series (Mutabadil Silsila):**
+
+A series where terms alternate in sign:
+\`Σ_{k=1}^∞ (-1)^{k+1} a_k = a₁ - a₂ + a₃ - a₄ + ...\`
+with \`a_k > 0\`.
+
+**2. Alternating Series Test (Theorem 11.7.1):**
+
+An alternating series converges if:
+(a) \`a₁ > a₂ > a₃ > ... > a_k > ...\` (decreasing)
+(b) \`lim_{k→∞} a_k = 0\`
+
+**3. Alternating Harmonic Series (Mutabadil Harmonic Silsila):**
+
+\`Σ_{k=1}^∞ (-1)^{k+1}/k = 1 - 1/2 + 1/3 - 1/4 + ...\`
+Converges (to ln 2) even though the harmonic series diverges!
+
+**4. Absolute Convergence (Mutlaq Ijtima - Definition 11.7.3):**
+
+\`Σ u_k\` converges absolutely if \`Σ |u_k|\` converges.
+
+**5. Conditional Convergence (Mashroot Ijtima):**
+
+\`Σ u_k\` converges conditionally if \`Σ u_k\` converges but \`Σ |u_k|\` diverges.
+
+**6. Theorem 11.7.4:**
+If a series converges absolutely, then it converges.
+
+**7. Estimation of Error (Ghalti ka Andaza - Theorem 11.7.2):**
+
+For an alternating series satisfying the test conditions:
+\`|S - S_n| < a_{n+1}\`
+
+**8. Ratio Test for Absolute Convergence (Theorem 11.7.5):**
+
+\`ρ = lim |u_{k+1}/u_k|\`
+- If \`ρ < 1\`: converges absolutely
+- If \`ρ > 1\`: diverges
+- If \`ρ = 1\`: inconclusive
+
+**9. Power Series in x (Qudrati Silsila):**
+
+\`Σ c_k x^k = c₀ + c₁x + c₂x² + ...\`
+
+**10. Interval and Radius of Convergence (Ijtima ka Faasla aur Radius):**
+
+- Interval of convergence: set of x values where series converges
+- Radius of convergence R: half the length of the interval
+- For \`Σ c_k (x-a)^k\`, center at x=a
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Alternating series: signs alternate
+- Alternating Series Test: decreasing terms → 0
+- Alternating Harmonic Series: converges to ln 2
+- Absolute convergence: \`Σ |u_k|\` converges
+- Conditional convergence: converges but not absolutely
+- Error bound: \`|S - S_n| < a_{n+1}\`
+- Power series: \`Σ c_k x^k\`
+- Radius of convergence: R
+`,
+    questions: [
+      {
+        q: 'An alternating series has terms that:',
+        options: [
+          'A. Are all positive',
+          'B. Are all negative',
+          'C. Alternate in sign',
+          'D. Are zero'
+        ],
+        answer: 'C. Alternate in sign',
+        diff: 'easy'
+      },
+      {
+        q: 'The Alternating Series Test requires that the terms:',
+        options: [
+          'A. Are increasing and converge to 0',
+          'B. Are decreasing and converge to 0',
+          'C. Are constant',
+          'D. Are positive and increasing'
+        ],
+        answer: 'B. Are decreasing and converge to 0',
+        diff: 'medium'
+      },
+      {
+        q: 'The alternating harmonic series \`Σ (-1)^{k+1}/k\` converges to:',
+        options: [
+          'A. 1',
+          'B. ln 2',
+          'C. 0',
+          'D. ∞'
+        ],
+        answer: 'B. ln 2',
+        diff: 'hard'
+      },
+      {
+        q: 'A series converges absolutely if:',
+        options: [
+          'A. \`Σ u_k\` converges',
+          'B. \`Σ |u_k|\` converges',
+          'C. \`Σ u_k\` diverges',
+          'D. \`Σ |u_k|\` diverges'
+        ],
+        answer: 'B. \`Σ |u_k|\` converges',
+        diff: 'medium'
+      },
+      {
+        q: 'A series that converges but does not converge absolutely is called:',
+        options: [
+          'A. Absolutely convergent',
+          'B. Conditionally convergent',
+          'C. Divergent',
+          'D. Geometric'
+        ],
+        answer: 'B. Conditionally convergent',
+        diff: 'medium'
+      },
+      {
+        q: 'For an alternating series, the error after n terms satisfies:',
+        options: [
+          'A. \`|S - S_n| < a_n\`',
+          'B. \`|S - S_n| < a_{n+1}\`',
+          'C. \`|S - S_n| < n\`',
+          'D. \`|S - S_n| = 0\`'
+        ],
+        answer: 'B. \`|S - S_n| < a_{n+1}\`',
+        diff: 'hard'
+      },
+      {
+        q: 'A power series in x has the form:',
+        options: [
+          'A. \`Σ c_k x^k\`',
+          'B. \`Σ c_k/k\`',
+          'C. \`Σ c_k x^{-k}\`',
+          'D. \`Σ c_k k\`'
+        ],
+        answer: 'A. \`Σ c_k x^k\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The radius of convergence R of a power series is:',
+        options: [
+          'A. The center of the interval',
+          'B. Half the length of the interval of convergence',
+          'C. The length of the interval of convergence',
+          'D. The first term'
+        ],
+        answer: 'B. Half the length of the interval of convergence',
+        diff: 'hard'
+      },
+      {
+        q: 'If \`Σ |u_k|\` diverges but \`Σ u_k\` converges, the series is:',
+        options: [
+          'A. Absolutely convergent',
+          'B. Conditionally convergent',
+          'C. Divergent',
+          'D. Geometric'
+        ],
+        answer: 'B. Conditionally convergent',
+        diff: 'medium'
+      },
+      {
+        q: 'The series \`Σ (-1)^{k+1}/k²\` is:',
+        options: [
+          'A. Conditionally convergent',
+          'B. Absolutely convergent (since \`Σ 1/k²\` converges)',
+          'C. Divergent',
+          'D. Geometric'
+        ],
+        answer: 'B. Absolutely convergent (since \`Σ 1/k²\` converges)',
+        diff: 'hard'
+      },
+      {
+        q: 'The Ratio Test for absolute convergence uses:',
+        options: [
+          'A. \`lim |u_{k+1}/u_k|\`',
+          'B. \`lim |u_k|^{1/k}\`',
+          'C. \`lim |u_k|/k\`',
+          'D. \`lim k/|u_k|\`'
+        ],
+        answer: 'A. \`lim |u_{k+1}/u_k|\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The interval of convergence of a power series is always:',
+        options: [
+          'A. An open interval centered at the origin',
+          'B. An interval centered at the center of the series',
+          'C. The whole real line',
+          'D. A single point'
+        ],
+        answer: 'B. An interval centered at the center of the series',
+        diff: 'hard'
+      },
+      {
+        q: 'The alternating series \`Σ (-1)^{k+1}/k\` converges by:',
+        options: [
+          'A. The Ratio Test',
+          'B. The Alternating Series Test',
+          'C. The Root Test',
+          'D. The Integral Test'
+        ],
+        answer: 'B. The Alternating Series Test',
+        diff: 'easy'
+      },
+      {
+        q: 'If a power series converges for all x, the radius of convergence is:',
+        options: [
+          'A. 0',
+          'B. 1',
+          'C. ∞',
+          'D. -∞'
+        ],
+        answer: 'C. ∞',
+        diff: 'medium'
+      },
+      {
+        q: 'The series \`Σ (-1)^{k+1}\` is:',
+        options: [
+          'A. Convergent',
+          'B. Divergent (terms don\'t go to 0)',
+          'C. Conditionally convergent',
+          'D. Absolutely convergent'
+        ],
+        answer: 'B. Divergent (terms don\'t go to 0)',
+        diff: 'easy'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 45 - Taylor and Maclaurin Series
+  // ============================================================
+  45: {
+    title: 'Taylor and Maclaurin Series',
+    summary: `
+**Lecture 45 - Taylor and Maclaurin Series (Taylor aur Maclaurin Silsile)**
+
+**Roman Urdu Detailed Summary:**
+
+**1. Taylor Polynomials (Taylor ke Polynomial):**
+
+A polynomial that approximates a function near a point a:
+\`P_n(x) = f(a) + f'(a)(x-a) + f''(a)(x-a)²/2! + ... + f^{(n)}(a)(x-a)^n/n!\`
+
+**2. Taylor Series (Taylor Silsila - Definition):**
+
+\`Σ_{k=0}^∞ f^{(k)}(a)(x-a)^k/k!\`
+
+**3. Maclaurin Series (Maclaurin Silsila - a = 0):**
+
+\`Σ_{k=0}^∞ f^{(k)}(0) x^k/k!\`
+
+**4. Common Maclaurin Series:**
+
+| Function | Series |
+|----------|--------|
+| \`e^x\` | \`Σ x^k/k! = 1 + x + x²/2! + x³/3! + ...\` |
+| \`sin x\` | \`Σ (-1)^k x^{2k+1}/(2k+1)! = x - x³/3! + x⁵/5! - ...\` |
+| \`cos x\` | \`Σ (-1)^k x^{2k}/(2k)! = 1 - x²/2! + x⁴/4! - ...\` |
+| \`ln(1+x)\` | \`Σ (-1)^{k+1} x^k/k = x - x²/2 + x³/3 - ...\` |
+| \`1/(1-x)\` | \`Σ x^k = 1 + x + x² + x³ + ...\` (|x|<1) |
+| \`(1+x)^r\` | \`Σ (r choose k) x^k\` (Binomial Series) |
+
+**5. Taylor Series of \`e^x\` at x=0:**
+
+\`e^x = 1 + x + x²/2! + x³/3! + x⁴/4! + ...\`
+
+**6. Taylor Series of \`sin x\` at x=0:**
+
+\`sin x = x - x³/3! + x⁵/5! - x⁷/7! + ...\`
+
+**7. Taylor Series of \`cos x\` at x=0:**
+
+\`cos x = 1 - x²/2! + x⁴/4! - x⁶/6! + ...\`
+
+**8. Radius of Convergence (Ijtima ka Radius):**
+
+- \`e^x\`, \`sin x\`, \`cos x\`: R = ∞ (converge for all x)
+- \`ln(1+x)\`: R = 1 (-1 < x ≤ 1)
+- \`1/(1-x)\`: R = 1 (-1 < x < 1)
+
+**9. Taylor Series vs Maclaurin Series:**
+- Taylor: centered at x = a
+- Maclaurin: centered at x = 0 (special case of Taylor)
+
+**10. Applications:**
+- Approximating functions
+- Solving differential equations
+- Numerical computation
+- Physics and engineering
+
+---
+
+**Yaad Rakhne Wali Important Baatein:**
+- Taylor Series: \`Σ f^{(k)}(a)(x-a)^k/k!\`
+- Maclaurin Series: \`Σ f^{(k)}(0)x^k/k!\`
+- \`e^x = Σ x^k/k!\` (converges for all x)
+- \`sin x = Σ (-1)^k x^{2k+1}/(2k+1)!\`
+- \`cos x = Σ (-1)^k x^{2k}/(2k)!\`
+- \`1/(1-x) = Σ x^k\` for \`|x| < 1\`
+- Taylor polynomials approximate functions near a
+- More terms = better approximation
+`,
+    questions: [
+      {
+        q: 'The Taylor series of a function f at x=a is:',
+        options: [
+          'A. \`Σ f^{(k)}(a)(x-a)^k/k!\`',
+          'B. \`Σ f^{(k)}(0)x^k/k!\`',
+          'C. \`Σ f^{(k)}(a)x^k/k!\`',
+          'D. \`Σ f^{(k)}(0)(x-a)^k/k!\`'
+        ],
+        answer: 'A. \`Σ f^{(k)}(a)(x-a)^k/k!\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The Maclaurin series is a Taylor series with:',
+        options: [
+          'A. a = 1',
+          'B. a = 0',
+          'C. a = -1',
+          'D. a = ∞'
+        ],
+        answer: 'B. a = 0',
+        diff: 'easy'
+      },
+      {
+        q: 'The Maclaurin series of \`e^x\` is:',
+        options: [
+          'A. \`Σ x^k/k!\`',
+          'B. \`Σ (-1)^k x^k/k!\`',
+          'C. \`Σ x^k\`',
+          'D. \`Σ k x^k\`'
+        ],
+        answer: 'A. \`Σ x^k/k!\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The Maclaurin series of \`sin x\` is:',
+        options: [
+          'A. \`x - x³/3! + x⁵/5! - ...\`',
+          'B. \`1 - x²/2! + x⁴/4! - ...\`',
+          'C. \`x + x²/2! + x³/3! + ...\`',
+          'D. \`x - x²/2 + x³/3 - ...\`'
+        ],
+        answer: 'A. \`x - x³/3! + x⁵/5! - ...\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The Maclaurin series of \`cos x\` is:',
+        options: [
+          'A. \`x - x³/3! + x⁵/5! - ...\`',
+          'B. \`1 - x²/2! + x⁴/4! - ...\`',
+          'C. \`1 + x + x²/2! + ...\`',
+          'D. \`x - x²/2 + x³/3 - ...\`'
+        ],
+        answer: 'B. \`1 - x²/2! + x⁴/4! - ...\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The radius of convergence of the Maclaurin series of \`e^x\` is:',
+        options: [
+          'A. 0',
+          'B. 1',
+          'C. ∞',
+          'D. 2'
+        ],
+        answer: 'C. ∞',
+        diff: 'medium'
+      },
+      {
+        q: 'The Maclaurin series of \`1/(1-x)\` is:',
+        options: [
+          'A. \`Σ x^k\`',
+          'B. \`Σ (-1)^k x^k\`',
+          'C. \`Σ x^k/k!\`',
+          'D. \`Σ k x^k\`'
+        ],
+        answer: 'A. \`Σ x^k\`',
+        diff: 'easy'
+      },
+      {
+        q: 'The binomial series is the Maclaurin series of:',
+        options: [
+          'A. \`(1+x)^r\`',
+          'B. \`e^x\`',
+          'C. \`sin x\`',
+          'D. \`cos x\`'
+        ],
+        answer: 'A. \`(1+x)^r\`',
+        diff: 'medium'
+      },
+      {
+        q: 'The Maclaurin series of \`ln(1+x)\` is:',
+        options: [
+          'A. \`x - x²/2 + x³/3 - ...\`',
+          'B. \`x + x²/2 + x³/3 + ...\`',
+          'C. \`x - x³/3! + x⁵/5! - ...\`',
+          'D. \`1 - x²/2! + x⁴/4! - ...\`'
+        ],
+        answer: 'A. \`x - x²/2 + x³/3 - ...\`',
+        diff: 'hard'
+      },
+      {
+        q: 'The coefficient of \`x³\` in the Maclaurin series of \`e^x\` is:',
+        options: [
+          'A. 1',
+          'B. 1/2',
+          'C. 1/6',
+          'D. 1/24'
+        ],
+        answer: 'C. 1/6',
+        diff: 'medium'
+      },
+      {
+        q: 'Taylor polynomials are used to:',
+        options: [
+          'A. Find exact values of functions',
+          'B. Approximate functions near a point',
+          'C. Find derivatives of functions',
+          'D. Find integrals of functions'
+        ],
+        answer: 'B. Approximate functions near a point',
+        diff: 'easy'
+      },
+      {
+        q: 'The coefficient of \`x²\` in the Maclaurin series of \`sin x\` is:',
+        options: [
+          'A. 1',
+          'B. 1/2',
+          'C. 0',
+          'D. -1/2'
+        ],
+        answer: 'C. 0',
+        diff: 'hard'
+      },
+      {
+        q: 'The radius of convergence of \`Σ x^k\` is:',
+        options: [
+          'A. 0',
+          'B. 1',
+          'C. ∞',
+          'D. 2'
+        ],
+        answer: 'B. 1',
+        diff: 'easy'
+      },
+      {
+        q: 'The Maclaurin series of a function f is the Taylor series with:',
+        options: [
+          'A. f(a) = 0',
+          'B. f(0) = a',
+          'C. a = 0',
+          'D. a = 1'
+        ],
+        answer: 'C. a = 0',
+        diff: 'easy'
+      },
+      {
+        q: 'The \`n\`-th term of the Maclaurin series of \`e^x\` is:',
+        options: [
+          'A. \`x^n/n\`',
+          'B. \`x^n/n!\`',
+          'C. \`(-1)^n x^n/n!\`',
+          'D. \`x^{2n}/(2n)!\`'
+        ],
+        answer: 'B. \`x^n/n!\`',
+        diff: 'medium'
+      }
+    ]
+  }
 
 },
 

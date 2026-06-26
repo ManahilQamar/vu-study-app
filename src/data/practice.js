@@ -1,55 +1,1551 @@
 
 const practice = {
   MTH101: {
-    1: {
-      problems: [
-        {
-          q: 'Solve the inequality: 2x − 5 < 7. Write the solution in interval notation.',
-          hint: 'Add 5 to both sides, then divide by 2.',
-          answer: '2x − 5 < 7 → 2x < 12 → x < 6. Solution: (−∞, 6)',
-        },
-        {
-          q: 'Determine whether the number √3 is rational or irrational, and explain why.',
-          hint: 'Think about whether √3 can be written as a ratio of two integers.',
-          answer: '√3 is irrational. It cannot be expressed as p/q for integers p, q. Its decimal expansion is infinite and non-repeating.',
-        },
-        {
-          q: 'Write the interval (−2, 5] in set-builder notation, and state whether it is open, closed, or half-open.',
-          hint: 'Check whether each endpoint is included or excluded.',
-          answer: '{x : −2 < x ≤ 5}. It is a half-open (half-closed) interval — open at −2, closed at 5.',
-        },
-        {
-          q: 'If a < b and c is a negative number, what is the relationship between ac and bc? Explain using the order properties.',
-          hint: 'Recall what happens to an inequality when both sides are multiplied by a negative number.',
-          answer: 'Since c is negative, multiplying a < b by c reverses the inequality: ac > bc.',
-        },
-      ],
-    },
-    2: {
-      problems: [
-        {
-          q: 'Solve for x: |2x + 3| = 9',
-          hint: 'Split into two cases: 2x+3 = 9 and 2x+3 = −9.',
-          answer: '2x+3=9 → x=3. 2x+3=−9 → x=−6. Solutions: x = 3 and x = −6',
-        },
-        {
-          q: 'Solve the inequality |x − 4| < 6 and write the answer in interval notation.',
-          hint: 'Use the rule −k < x−a < k.',
-          answer: '−6 < x−4 < 6 → −2 < x < 10. Interval: (−2, 10)',
-        },
-        {
-          q: 'Use the Triangle Inequality to explain whether |5 + (−3)| ≤ |5| + |−3| is true, showing both sides.',
-          hint: 'Calculate both sides separately and compare.',
-          answer: '|5+(−3)| = |2| = 2. |5|+|−3| = 5+3 = 8. Since 2 ≤ 8, the Triangle Inequality holds.',
-        },
-        {
-          q: 'Find the distance between points A(−7) and B(4) on a coordinate line.',
-          hint: 'Use the distance formula d = |b − a|.',
-          answer: 'd = |4 − (−7)| = |11| = 11',
-        },
-      ],
-    },
+   // ============================================================
+// MTH101 - LECTURES 1 TO 22: NUMERICAL PROBLEMS
+
+  1: {
+    problems: [
+      {
+        q: 'Solve the inequality: 3x + 7 > 2x - 9.',
+        hint: 'Isolate x on one side by subtracting 2x and subtracting 7.',
+        answer: '3x + 7 > 2x - 9 → x > -16. Solution: (-16, ∞)'
+      },
+      {
+        q: 'Solve the inequality: 7 ≤ 2 - 5x < 9.',
+        hint: 'Subtract 2 from all parts, then divide by -5 (reverse inequality signs).',
+        answer: '7 ≤ 2 - 5x < 9 → 5 ≤ -5x < 7 → -1 ≥ x > -7/5 → -7/5 < x ≤ -1. Solution: (-7/5, -1]'
+      },
+      {
+        q: 'Write the set {x : 2 < x ≤ 5} in interval notation and graph it on a number line.',
+        hint: 'Use parentheses for open endpoints and brackets for closed endpoints.',
+        answer: '(2, 5]'
+      },
+      {
+        q: 'Solve the inequality: -2x + 5 ≤ 11.',
+        hint: 'Subtract 5 from both sides, then divide by -2 (reverse inequality sign).',
+        answer: '-2x + 5 ≤ 11 → -2x ≤ 6 → x ≥ -3. Solution: [-3, ∞)'
+      },
+      {
+        q: 'Find the solution set of: 4 < 2x - 6 < 10.',
+        hint: 'Add 6 to all parts, then divide by 2.',
+        answer: '4 < 2x - 6 < 10 → 10 < 2x < 16 → 5 < x < 8. Solution: (5, 8)'
+      }
+    ]
   },
+
+  // ============================================================
+  // LECTURE 2 - Absolute Value
+  // ============================================================
+  2: {
+    problems: [
+      {
+        q: 'Solve: |x - 3| = 4.',
+        hint: 'Set x-3 = 4 and x-3 = -4.',
+        answer: 'x = 7 or x = -1'
+      },
+      {
+        q: 'Solve: |3x - 2| = |5x + 4|.',
+        hint: 'Either 3x-2 = 5x+4 or 3x-2 = -(5x+4).',
+        answer: '3x-2 = 5x+4 → -2x=6 → x=-3. 3x-2 = -5x-4 → 8x=-2 → x=-1/4. Solutions: x = -3, -1/4'
+      },
+      {
+        q: 'Solve: |x - 3| < 4.',
+        hint: '-4 < x-3 < 4. Add 3 throughout.',
+        answer: '-1 < x < 7. Solution: (-1, 7)'
+      },
+      {
+        q: 'Solve: |x + 4| ≥ 2.',
+        hint: 'x+4 ≤ -2 or x+4 ≥ 2.',
+        answer: 'x ≤ -6 or x ≥ -2. Solution: (-∞, -6] ∪ [-2, ∞)'
+      },
+      {
+        q: 'Solve: |2x + 1| = 7.',
+        hint: 'Set 2x+1 = 7 and 2x+1 = -7.',
+        answer: '2x+1=7 → x=3. 2x+1=-7 → x=-4. Solutions: x=3, -4'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 3 - Coordinate Planes and Graphs
+  // ============================================================
+  3: {
+    problems: [
+      {
+        q: 'Find the x and y intercepts of the graph: 3x + 2y = 6.',
+        hint: 'Set y=0 for x-intercept, set x=0 for y-intercept.',
+        answer: 'x-intercept: y=0 → 3x=6 → x=2. y-intercept: x=0 → 2y=6 → y=3.'
+      },
+      {
+        q: 'Test the graph of y = 1/x for symmetry about the x-axis, y-axis, and origin.',
+        hint: 'Replace x with -x, y with -y, and check if equation remains the same.',
+        answer: 'About x-axis: replace y with -y → -y=1/x → y=-1/x (not same). About y-axis: replace x with -x → y=-1/x (not same). About origin: replace x with -x, y with -y → -y = -1/x → y=1/x (same). Symmetric about origin.'
+      },
+      {
+        q: 'Sketch the graph of y = x². Find its intercepts and symmetry.',
+        hint: 'Find x-intercept (set y=0) and y-intercept (set x=0). Check symmetry.',
+        answer: 'x-intercept: x=0 (0,0). y-intercept: (0,0). Symmetric about y-axis (since (-x)²=x²).'
+      },
+      {
+        q: 'Find the x-intercept and y-intercept of y = x² - 4.',
+        hint: 'Set y=0 for x-intercepts, set x=0 for y-intercept.',
+        answer: 'y-intercept: (0,-4). x-intercepts: x²-4=0 → x=±2 → (2,0) and (-2,0).'
+      },
+      {
+        q: 'Test the graph of y = x² for symmetry.',
+        hint: 'Check if replacing x with -x gives the same equation.',
+        answer: 'y = (-x)² = x², so symmetric about y-axis.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 4 - Lines
+  // ============================================================
+  4: {
+    problems: [
+      {
+        q: 'Find the slope of the line through (6, 2) and (9, 8).',
+        hint: 'm = (y₂-y₁)/(x₂-x₁).',
+        answer: 'm = (8-2)/(9-6) = 6/3 = 2'
+      },
+      {
+        q: 'Find the slope of the line through (2, 9) and (4, 3).',
+        hint: 'm = (y₂-y₁)/(x₂-x₁).',
+        answer: 'm = (3-9)/(4-2) = -6/2 = -3'
+      },
+      {
+        q: 'Write the equation of the line through (2, 3) with slope -3/2 in point-slope form.',
+        hint: 'Use y - y₁ = m(x - x₁).',
+        answer: 'y - 3 = (-3/2)(x - 2)'
+      },
+      {
+        q: 'Find the slope and y-intercept of the line: 8x + 5y = 20.',
+        hint: 'Solve for y to get y = mx + b.',
+        answer: '5y = -8x + 20 → y = -8/5 x + 4. Slope = -8/5, y-intercept = 4.'
+      },
+      {
+        q: 'Find the equation of the line through (-2, -1) and (3, 4).',
+        hint: 'Find slope first, then use point-slope form.',
+        answer: 'm = (4-(-1))/(3-(-2)) = 5/5 = 1. y+1 = 1(x+2) → y = x + 1.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 5 - Distance; Circles; Quadratic Equations
+  // ============================================================
+  5: {
+    problems: [
+      {
+        q: 'Find the distance between (-2, 3) and (1, 7).',
+        hint: 'd = √[(x₂-x₁)² + (y₂-y₁)²].',
+        answer: 'd = √[(1-(-2))² + (7-3)²] = √[3²+4²] = √25 = 5'
+      },
+      {
+        q: 'Find the midpoint of the line segment joining (3, -4) and (7, 2).',
+        hint: 'Midpoint = ((x₁+x₂)/2, (y₁+y₂)/2).',
+        answer: '( (3+7)/2, (-4+2)/2 ) = (5, -1)'
+      },
+      {
+        q: 'Find the equation of the circle with center (-5, 3) and radius 4.',
+        hint: 'Use (x-h)² + (y-k)² = r².',
+        answer: '(x+5)² + (y-3)² = 16'
+      },
+      {
+        q: 'Find the center and radius of the circle: x² + y² - 8x + 2y + 8 = 0.',
+        hint: 'Complete the square for x and y terms.',
+        answer: '(x²-8x+16) + (y²+2y+1) = -8+16+1 → (x-4)² + (y+1)² = 9. Center: (4,-1), radius: 3.'
+      },
+      {
+        q: 'Find the vertex of the parabola: y = x² - 2x - 2.',
+        hint: 'x-coordinate = -b/(2a).',
+        answer: 'a=1, b=-2. x = -(-2)/(2) = 1. y = 1 - 2 - 2 = -3. Vertex: (1,-3).'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 6 - Functions
+  // ============================================================
+  6: {
+    problems: [
+      {
+        q: 'Find the domain of f(x) = 1/(x² - 4).',
+        hint: 'Denominator cannot be zero.',
+        answer: 'x² - 4 ≠ 0 → x ≠ ±2. Domain: (-∞, -2) ∪ (-2, 2) ∪ (2, ∞).'
+      },
+      {
+        q: 'Find the range of f(x) = x².',
+        hint: 'x² is always non-negative.',
+        answer: '[0, ∞)'
+      },
+      {
+        q: 'If f(x) = x² + 1, find f(3), f(-2), and f(a+1).',
+        hint: 'Substitute the given values into the function.',
+        answer: 'f(3) = 10, f(-2) = 5, f(a+1) = (a+1)² + 1 = a² + 2a + 2.'
+      },
+      {
+        q: 'Find the domain of f(x) = √(x-3).',
+        hint: 'The expression inside square root must be ≥ 0.',
+        answer: 'x-3 ≥ 0 → x ≥ 3. Domain: [3, ∞)'
+      },
+      {
+        q: 'If f(x) = 2x + 1 and g(x) = x², find (f∘g)(x) and (g∘f)(x).',
+        hint: '(f∘g)(x) = f(g(x)), (g∘f)(x) = g(f(x)).',
+        answer: '(f∘g)(x) = 2(x²) + 1 = 2x² + 1. (g∘f)(x) = (2x+1)² = 4x² + 4x + 1.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 7 - Operations on Functions
+  // ============================================================
+  7: {
+    problems: [
+      {
+        q: 'If f(x) = x² and g(x) = x+1, find (f+g)(x), (f-g)(x), (f·g)(x), and (f/g)(x).',
+        hint: 'Use definitions of function operations.',
+        answer: '(f+g)(x) = x²+x+1, (f-g)(x)=x²-x-1, (f·g)(x)=x³+x², (f/g)(x)=x²/(x+1), x≠-1.'
+      },
+      {
+        q: 'If f(x) = x³ and g(x) = x+4, find (f∘g)(x) and (g∘f)(x).',
+        hint: 'Substitute g(x) into f and vice versa.',
+        answer: '(f∘g)(x) = (x+4)³, (g∘f)(x) = x³ + 4.'
+      },
+      {
+        q: 'Decompose h(x) = (x²+1)¹⁰ into f(g(x)).',
+        hint: 'Choose an inside function and an outside function.',
+        answer: 'f(x) = x¹⁰, g(x) = x²+1. Then h(x) = f(g(x)).'
+      },
+      {
+        q: 'Find the domain of (f+g)(x) if f(x) = √x and g(x) = 1/x.',
+        hint: 'Domain is intersection of domains of f and g.',
+        answer: 'Domain of f: [0,∞). Domain of g: (-∞,0)∪(0,∞). Intersection: (0,∞).'
+      },
+      {
+        q: 'If f(x) = 1/x and g(x) = x², find (f/g)(x) and its domain.',
+        hint: '(f/g)(x) = f(x)/g(x). Domain excludes g(x)=0.',
+        answer: '(f/g)(x) = (1/x)/x² = 1/x³, x ≠ 0.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 8 - Graphs of Functions
+  // ============================================================
+  8: {
+    problems: [
+      {
+        q: 'Describe the transformations to graph y = |x-3| + 2 from y = |x|.',
+        hint: 'Consider shifts (translations).',
+        answer: 'Shift right by 3 units, then shift up by 2 units.'
+      },
+      {
+        q: 'Sketch the graph of f(x) = |x|. State its domain and range.',
+        hint: 'V-shaped graph with vertex at origin.',
+        answer: 'Domain: (-∞, ∞). Range: [0, ∞).'
+      },
+      {
+        q: 'Graph the piecewise function: f(x) = { 1 if x ≤ 2; x+2 if x > 2 }.',
+        hint: 'Graph y=1 for x≤2 and y=x+2 for x>2.',
+        answer: 'A horizontal line at y=1 up to x=2 (including point), then a line y=x+2 starting from x=2 (open circle at (2,4) because x>2).'
+      },
+      {
+        q: 'Describe the transformation: y = -f(x) from y = f(x).',
+        hint: 'Reflection about which axis?',
+        answer: 'Reflection about the x-axis.'
+      },
+      {
+        q: 'Sketch the graph of y = x² - 4x + 5 by completing the square.',
+        hint: 'Complete square: y = (x-2)² + 1. This is y=x² shifted right 2 and up 1.',
+        answer: 'Vertex at (2,1), opens upward.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 9 - Limits (Intuitive Introduction)
+  // ============================================================
+  9: {
+    problems: [
+      {
+        q: 'Evaluate lim_{x→0} sin x / x.',
+        hint: 'Standard limit.',
+        answer: '1'
+      },
+      {
+        q: 'Evaluate lim_{x→0} (1 - cos x)/x.',
+        hint: 'Standard limit.',
+        answer: '0'
+      },
+      {
+        q: 'Evaluate lim_{x→0} 1/x².',
+        hint: 'As x→0, denominator →0, positive.',
+        answer: '+∞'
+      },
+      {
+        q: 'Evaluate lim_{x→0} sin(1/x).',
+        hint: 'Oscillates between -1 and 1.',
+        answer: 'Does not exist (oscillates).'
+      },
+      {
+        q: 'Evaluate lim_{x→∞} 1/x.',
+        hint: 'As x gets very large, 1/x approaches 0.',
+        answer: '0'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 10 - Limits (Computational Techniques)
+  // ============================================================
+  10: {
+    problems: [
+      {
+        q: 'Evaluate lim_{x→2} (x² - 4)/(x - 2).',
+        hint: 'Factor numerator: (x-2)(x+2). Cancel (x-2).',
+        answer: 'lim_{x→2} (x+2) = 4'
+      },
+      {
+        q: 'Evaluate lim_{x→3} (x² - 9)/(x - 3).',
+        hint: 'Factor numerator as (x-3)(x+3).',
+        answer: 'lim_{x→3} (x+3) = 6'
+      },
+      {
+        q: 'Evaluate lim_{x→∞} (3x² + 2x)/(5x² - 1).',
+        hint: 'Divide numerator and denominator by x².',
+        answer: 'lim_{x→∞} (3 + 2/x)/(5 - 1/x²) = 3/5'
+      },
+      {
+        q: 'Evaluate lim_{x→0} (sin 3x)/x.',
+        hint: 'Rewrite as 3 * sin(3x)/(3x).',
+        answer: '3 * 1 = 3'
+      },
+      {
+        q: 'Evaluate lim_{x→0} (1 - cos x)/x².',
+        hint: 'Use identity 1-cos x = 2 sin²(x/2). Or known limit = 1/2.',
+        answer: '1/2'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 11 - Limits (Rigorous Approach)
+  // ============================================================
+  11: {
+    problems: [
+      {
+        q: 'Prove lim_{x→2} (3x - 5) = 1 using ε-δ definition.',
+        hint: 'Given ε>0, need to find δ such that |(3x-5)-1| < ε whenever 0<|x-2|<δ.',
+        answer: '|3x-6| < ε → 3|x-2| < ε → |x-2| < ε/3. Choose δ = ε/3.'
+      },
+      {
+        q: 'Prove lim_{x→1} (2x + 3) = 5 using ε-δ definition.',
+        hint: 'Given ε>0, find δ such that |(2x+3)-5| < ε.',
+        answer: '|2x-2| < ε → 2|x-1| < ε → |x-1| < ε/2. Choose δ = ε/2.'
+      },
+      {
+        q: 'Show that lim_{x→0} f(x) does not exist for f(x) = {1 if x>0, -1 if x<0}.',
+        hint: 'Show left and right limits differ.',
+        answer: 'Right limit = 1, Left limit = -1. Since they are not equal, limit does not exist.'
+      },
+      {
+        q: 'Prove lim_{x→3} (x²) = 9 using ε-δ definition.',
+        hint: '|x²-9| = |x-3||x+3|. Bound |x+3| near x=3.',
+        answer: 'Let δ ≤ 1, then |x-3|<1 → 2<x<4 → |x+3|<7. So |x²-9| < 7|x-3| < ε → |x-3| < ε/7. Choose δ = min(1, ε/7).'
+      },
+      {
+        q: 'Prove lim_{x→a} c = c using ε-δ definition.',
+        hint: '|c - c| = 0 < ε for any δ.',
+        answer: 'For any ε>0, choose any δ>0 (e.g., δ=1). Then if 0<|x-a|<δ, |c-c|=0<ε.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 12 - Continuity
+  // ============================================================
+  12: {
+    problems: [
+      {
+        q: 'Find the value of c that makes the function continuous at x=2: f(x) = { x²-4)/(x-2) if x≠2, c if x=2 }.',
+        hint: 'Compute the limit as x→2 and set c equal to it.',
+        answer: 'lim_{x→2} (x²-4)/(x-2) = lim_{x→2} (x+2) = 4. So c = 4.'
+      },
+      {
+        q: 'Show that f(x) = x² - 2x + 1 is continuous everywhere.',
+        hint: 'Polynomials are continuous everywhere.',
+        answer: 'Since f is a polynomial, it is continuous for all real numbers.'
+      },
+      {
+        q: 'Find the discontinuity of f(x) = (x²-9)/(x-3) and classify it.',
+        hint: 'Factor and cancel to see if limit exists.',
+        answer: 'f(x) = x+3 for x≠3. Limit as x→3 is 6, but f(3) undefined. Removable discontinuity at x=3.'
+      },
+      {
+        q: 'Show that the equation x³ - x - 1 = 0 has a root between 1 and 2 using IVT.',
+        hint: 'Let f(x)=x³-x-1. Evaluate f(1) and f(2).',
+        answer: 'f(1) = 1-1-1 = -1. f(2) = 8-2-1 = 5. Since f(1)<0 and f(2)>0, and f is continuous, by IVT there is a root in (1,2).'
+      },
+      {
+        q: 'Find the intervals of continuity for f(x) = (x²-4)/(x²-5x+6).',
+        hint: 'Factor denominator and find where it is zero.',
+        answer: 'Denominator: x²-5x+6 = (x-2)(x-3). Discontinuities at x=2 and x=3. Continuous on (-∞,2), (2,3), (3,∞).'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 13 - Limits and Continuity of Trigonometric Functions
+  // ============================================================
+  13: {
+    problems: [
+      {
+        q: 'Evaluate lim_{x→0} sin(5x)/x.',
+        hint: 'Rewrite as 5 * sin(5x)/(5x).',
+        answer: '5 * 1 = 5'
+      },
+      {
+        q: 'Evaluate lim_{x→0} tan x / x.',
+        hint: 'tan x = sin x / cos x.',
+        answer: 'lim_{x→0} (sin x / x) * (1/cos x) = 1 * 1 = 1'
+      },
+      {
+        q: 'Evaluate lim_{x→0} x² sin(1/x).',
+        hint: 'Use Squeeze theorem: -x² ≤ x² sin(1/x) ≤ x².',
+        answer: 'Since -x² and x² go to 0, the limit is 0.'
+      },
+      {
+        q: 'Evaluate lim_{x→0} (1 - cos(2x))/x².',
+        hint: 'Use 1-cosθ = 2 sin²(θ/2). Or known limit: lim_{θ→0} (1-cos θ)/θ² = 1/2.',
+        answer: 'Let θ=2x. (1-cos2x)/x² = (1-cos2x)/(2x)² * 4 = 4 * (1-cosθ)/θ² → 4*(1/2) = 2.'
+      },
+      {
+        q: 'Determine continuity of f(x) = sin x at x=π/2.',
+        hint: 'sin x is continuous everywhere.',
+        answer: 'Continuous at π/2.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 14 - Tangent Lines and Rates of Change
+  // ============================================================
+  14: {
+    problems: [
+      {
+        q: 'Find the average rate of change of f(x) = x² + 1 over [3, 5].',
+        hint: 'Average rate = [f(5)-f(3)]/(5-3).',
+        answer: '[26 - 10]/2 = 16/2 = 8'
+      },
+      {
+        q: 'Find the instantaneous rate of change of f(x) = x² + 1 at x = -4.',
+        hint: 'Instantaneous rate = lim_{h→0} [f(-4+h)-f(-4)]/h.',
+        answer: 'lim_{h→0} [(-4+h)²+1 - 17]/h = lim_{h→0} [16 -8h + h² +1 -17]/h = lim_{h→0} (-8h+h²)/h = lim_{h→0} (-8+h) = -8.'
+      },
+      {
+        q: 'Find the slope of the tangent line to f(x) = x² at x = 3.',
+        hint: 'Derivative at x=3: f\'(3) = 2*3 = 6.',
+        answer: '6'
+      },
+      {
+        q: 'Find the equation of the tangent line to f(x) = x² at x = 3.',
+        hint: 'Point (3,9), slope 6. Use point-slope form.',
+        answer: 'y - 9 = 6(x - 3) → y = 6x - 9.'
+      },
+      {
+        q: 'Find the average rate of change of f(x) = √x over [1, 4].',
+        hint: '[f(4)-f(1)]/(4-1) = (2-1)/3.',
+        answer: '1/3'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 15 - The Derivative
+  // ============================================================
+  15: {
+    problems: [
+      {
+        q: 'Find the derivative of f(x) = x² + 1 using the definition.',
+        hint: 'f\'(x) = lim_{h→0} [f(x+h)-f(x)]/h.',
+        answer: 'lim_{h→0} [((x+h)²+1)-(x²+1)]/h = lim_{h→0} (2xh+h²)/h = lim_{h→0} (2x+h) = 2x.'
+      },
+      {
+        q: 'Find the derivative of f(x) = √x using the definition.',
+        hint: 'Rationalize the numerator.',
+        answer: 'lim_{h→0} [√(x+h)-√x]/h = lim_{h→0} [ (x+h-x) / (h(√(x+h)+√x)) ] = lim_{h→0} 1/(√(x+h)+√x) = 1/(2√x).'
+      },
+      {
+        q: 'Find the derivative of f(x) = 3x + 2 using the definition.',
+        hint: 'f(x+h) = 3x+3h+2.',
+        answer: 'lim_{h→0} [3x+3h+2 - (3x+2)]/h = lim_{h→0} 3h/h = 3.'
+      },
+      {
+        q: 'Is f(x) = |x| differentiable at x=0?',
+        hint: 'Check left and right derivatives.',
+        answer: 'Right derivative = 1, Left derivative = -1. Not differentiable at 0 (corner).'
+      },
+      {
+        q: 'Find f\'(2) for f(x) = x² using the derivative definition.',
+        hint: 'f\'(2) = lim_{h→0} [(2+h)² - 4]/h.',
+        answer: 'lim_{h→0} (4+4h+h²-4)/h = lim_{h→0} (4+h) = 4.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 16 - Techniques of Differentiation
+  // ============================================================
+  16: {
+    problems: [
+      {
+        q: 'Differentiate f(x) = x⁵.',
+        hint: 'Power rule: d/dx[xⁿ] = nxⁿ⁻¹.',
+        answer: '5x⁴'
+      },
+      {
+        q: 'Differentiate f(x) = 3x⁸.',
+        hint: 'Constant multiple rule.',
+        answer: '24x⁷'
+      },
+      {
+        q: 'Differentiate f(x) = x⁴ + x³.',
+        hint: 'Sum rule.',
+        answer: '4x³ + 3x²'
+      },
+      {
+        q: 'Differentiate f(x) = (x²+1)(x³-1) using product rule.',
+        hint: 'f\' = (2x)(x³-1) + (x²+1)(3x²).',
+        answer: '2x⁴ - 2x + 3x⁴ + 3x² = 5x⁴ + 3x² - 2x.'
+      },
+      {
+        q: 'Differentiate f(x) = (3x)/(5x²) using quotient rule.',
+        hint: 'Simplify first: 3x/(5x²) = 3/(5x) = (3/5)x⁻¹. Derivative = -3/(5x²).',
+        answer: '-3/(5x²)'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 17 - Derivatives of Trigonometric Functions
+  // ============================================================
+  17: {
+    problems: [
+      {
+        q: 'Differentiate f(x) = sin x.',
+        hint: 'Derivative of sin x is cos x.',
+        answer: 'cos x'
+      },
+      {
+        q: 'Differentiate f(x) = cos x.',
+        hint: 'Derivative of cos x is -sin x.',
+        answer: '-sin x'
+      },
+      {
+        q: 'Differentiate f(x) = tan x.',
+        hint: 'Derivative of tan x is sec² x.',
+        answer: 'sec² x'
+      },
+      {
+        q: 'Differentiate f(x) = sec x.',
+        hint: 'Derivative of sec x is sec x tan x.',
+        answer: 'sec x tan x'
+      },
+      {
+        q: 'Differentiate f(x) = sin x + cos x.',
+        hint: 'Sum rule.',
+        answer: 'cos x - sin x'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 18 - The Chain Rule
+  // ============================================================
+  18: {
+    problems: [
+      {
+        q: 'Differentiate f(x) = (x²+1)²³ using chain rule.',
+        hint: 'Let u = x²+1. d/dx = 23u²² * (2x).',
+        answer: '46x(x²+1)²²'
+      },
+      {
+        q: 'Differentiate f(x) = sin(2x) using chain rule.',
+        hint: 'Let u = 2x. d/dx = cos(2x) * 2.',
+        answer: '2cos(2x)'
+      },
+      {
+        q: 'Differentiate f(x) = cos(3x+1).',
+        hint: 'Derivative of cos u is -sin u, times du/dx.',
+        answer: '-3 sin(3x+1)'
+      },
+      {
+        q: 'Differentiate f(x) = (2x+3)⁵.',
+        hint: 'Let u = 2x+3. Derivative = 5u⁴ * 2 = 10(2x+3)⁴.',
+        answer: '10(2x+3)⁴'
+      },
+      {
+        q: 'Differentiate f(x) = tan(x²+1).',
+        hint: 'Derivative of tan u is sec² u, times du/dx.',
+        answer: '2x sec²(x²+1)'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 19 - Implicit Differentiation
+  // ============================================================
+  19: {
+    problems: [
+      {
+        q: 'Find dy/dx for xy = 1 using implicit differentiation.',
+        hint: 'Differentiate both sides w.r.t x: x dy/dx + y = 0.',
+        answer: 'dy/dx = -y/x'
+      },
+      {
+        q: 'Find dy/dx for x² + y² = 25.',
+        hint: '2x + 2y dy/dx = 0.',
+        answer: 'dy/dx = -x/y'
+      },
+      {
+        q: 'Find dy/dx for 5y² + sin y = x².',
+        hint: '10y dy/dx + cos y dy/dx = 2x.',
+        answer: 'dy/dx = 2x/(10y + cos y)'
+      },
+      {
+        q: 'Find the slope of the tangent to x² + y² = 25 at (3, 4).',
+        hint: 'dy/dx = -x/y. Substitute x=3, y=4.',
+        answer: 'dy/dx = -3/4'
+      },
+      {
+        q: 'Find dy/dx for x³ + y³ = 6xy.',
+        hint: '3x² + 3y² dy/dx = 6y + 6x dy/dx.',
+        answer: 'dy/dx = (6y - 3x²)/(3y² - 6x) = (2y - x²)/(y² - 2x)'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 20 - Derivatives of Logarithmic and Exponential Functions
+  // ============================================================
+  20: {
+    problems: [
+      {
+        q: 'Differentiate f(x) = ln x.',
+        hint: 'Derivative of ln x is 1/x.',
+        answer: '1/x'
+      },
+      {
+        q: 'Differentiate f(x) = e^x.',
+        hint: 'Derivative of e^x is e^x.',
+        answer: 'e^x'
+      },
+      {
+        q: 'Differentiate f(x) = ln(x²+1).',
+        hint: '1/(x²+1) * 2x = 2x/(x²+1).',
+        answer: '2x/(x²+1)'
+      },
+      {
+        q: 'Differentiate f(x) = e^{2x}.',
+        hint: 'e^{2x} * 2 = 2e^{2x}.',
+        answer: '2e^{2x}'
+      },
+      {
+        q: 'Differentiate f(x) = log₂ x.',
+        hint: 'Derivative of log_b x is 1/(x ln b).',
+        answer: '1/(x ln 2)'
+      },
+      {
+        q: 'Differentiate f(x) = x^x using logarithmic differentiation.',
+        hint: 'ln y = x ln x. Differentiate: (1/y) dy/dx = ln x + 1. So dy/dx = x^x (ln x + 1).',
+        answer: 'x^x (ln x + 1)'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 21 - Applications of Differentiation
+  // ============================================================
+  21: {
+    problems: [
+      {
+        q: 'Oil spilled from a ruptured tanker spreads in a circular pattern. The radius increases at 2 ft/s. How fast is the area increasing when radius is 60 ft?',
+        hint: 'A = πr². dA/dt = 2πr dr/dt.',
+        answer: 'dA/dt = 2π(60)(2) = 240π ft²/s'
+      },
+      {
+        q: 'A 5 ft ladder leans against a wall. The base moves away at 2 ft/s. How fast is the top moving down when base is 4 ft from wall?',
+        hint: 'x²+y²=25. 2x dx/dt + 2y dy/dt = 0.',
+        answer: 'x=4 → y=3. dy/dt = -(x/y) dx/dt = -(4/3)(2) = -8/3 ft/s (moving down).'
+      },
+      {
+        q: 'Find the intervals where f(x) = x² - 4x + 3 is increasing and decreasing.',
+        hint: 'f\'(x) = 2x - 4. Set >0 for increasing, <0 for decreasing.',
+        answer: 'f\'(x)=2(x-2). Increasing on (2,∞), decreasing on (-∞,2).'
+      },
+      {
+        q: 'Determine the concavity of f(x) = x² - 4x + 3.',
+        hint: 'f\'\'(x) = 2 > 0. Concave up everywhere.',
+        answer: 'Concave up on (-∞,∞).'
+      },
+      {
+        q: 'Find the intervals where f(x) = x³ - 3x is increasing and decreasing.',
+        hint: 'f\'(x) = 3x² - 3 = 3(x-1)(x+1).',
+        answer: 'f\'(x)>0 when x<-1 or x>1 (increasing). f\'(x)<0 when -1<x<1 (decreasing).'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 22 - Relative Extrema
+  // ============================================================
+  22: {
+    problems: [
+      {
+        q: 'Find the critical points of f(x) = x³ - 3x.',
+        hint: 'f\'(x) = 3x² - 3 = 0 → x² = 1.',
+        answer: 'x = 1 and x = -1'
+      },
+      {
+        q: 'Use the first derivative test to find relative extrema of f(x) = x³ - 3x.',
+        hint: 'Test sign of f\' around critical points.',
+        answer: 'At x=-1: f\' changes + to - → relative maximum. At x=1: f\' changes - to + → relative minimum.'
+      },
+      {
+        q: 'Use the second derivative test for f(x) = x³ - 3x.',
+        hint: 'f\'\'(x) = 6x. f\'\'(-1) = -6 < 0 → max. f\'\'(1) = 6 > 0 → min.',
+        answer: 'Relative max at x=-1, relative min at x=1.'
+      },
+      {
+        q: 'Find the relative extrema of f(x) = x⁴ - 2x².',
+        hint: 'f\'(x) = 4x³ - 4x = 4x(x-1)(x+1). Critical points: x=0, ±1. Use second derivative test.',
+        answer: 'f\'\'(x)=12x²-4. f\'\'(0) = -4 < 0 → max. f\'\'(1)=8>0 → min. f\'\'(-1)=8>0 → min.'
+      },
+      {
+        q: 'Find the critical points of f(x) = 3x^{5/3} - 15x^{2/3}.',
+        hint: 'f\'(x)=5x^{2/3} - 10x^{-1/3} = 5x^{-1/3}(x-2). Critical points where f\'=0 or undefined.',
+        answer: 'f\'=0 → x=2. f\' undefined → x=0. Critical points: x=0, 2.'
+      }
+    ]
+  },
+
+  23: {
+    problems: [
+      {
+        q: 'Find the absolute maximum and minimum values of \`f(x) = x³ - 6x² + 9x + 2\` on the interval [0, 4].',
+        hint: 'Find critical points by setting f\'(x)=0, then evaluate at critical points and endpoints.',
+        answer: 'f\'(x) = 3x² - 12x + 9 = 3(x-1)(x-3) → x=1,3. f(0)=2, f(1)=6, f(3)=2, f(4)=6. Max = 6 at x=1 and x=4. Min = 2 at x=0 and x=3.'
+      },
+      {
+        q: 'Find the dimensions of a rectangle with perimeter 200 m that has maximum area.',
+        hint: 'Let sides be x and y. 2x + 2y = 200 → y = 100 - x. Area A = x(100-x). Maximize A.',
+        answer: 'A = 100x - x², A\' = 100 - 2x = 0 → x = 50. y = 50. Square with side 50 m, area = 2500 m².'
+      },
+      {
+        q: 'A farmer wants to fence a rectangular field with 500 m of fencing. One side of the field is along a river (no fence needed). Find the dimensions for maximum area.',
+        hint: 'Let width = x, length = y. Fencing: 2x + y = 500 → y = 500 - 2x. Area A = x(500-2x).',
+        answer: 'A = 500x - 2x², A\' = 500 - 4x = 0 → x = 125. y = 500 - 250 = 250. Dimensions: 125 m × 250 m.'
+      },
+      {
+        q: 'A box with an open top is to be made from a 12 inch by 12 inch square piece of cardboard by cutting equal squares from the corners. Find the dimensions for maximum volume.',
+        hint: 'Volume V = x(12-2x)², 0 ≤ x ≤ 6. Find critical points.',
+        answer: 'V = 4x³ - 48x² + 144x. V\' = 12x² - 96x + 144 = 12(x-2)(x-6). Critical: x=2, x=6. V(2) = 2(8)² = 128 in³. Max at x=2. Dimensions: 8×8×2 inches.'
+      },
+      {
+        q: 'Find the absolute maximum and minimum of \`f(x) = 2x³ - 15x² + 36x\` on [1, 5].',
+        hint: 'Find critical points, evaluate at critical points and endpoints.',
+        answer: 'f\'(x) = 6x² - 30x + 36 = 6(x-2)(x-3). Critical: x=2,3. f(1)=23, f(2)=28, f(3)=27, f(5)=55. Max = 55 at x=5. Min = 23 at x=1.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 24 - Newton's Method, Rolle's Theorem, MVT
+  // ============================================================
+  24: {
+    problems: [
+      {
+        q: 'Use Newton\'s method to approximate the solution of \`x² = 5\` (find √5). Start with \`x₁ = 2\`.',
+        hint: 'f(x) = x² - 5, f\'(x) = 2x. Apply formula \`x_{n+1} = x_n - (x_n² - 5)/(2x_n)\`.',
+        answer: 'x₂ = 2 - (4-5)/4 = 2.25. x₃ = 2.25 - (5.0625-5)/4.5 = 2.2361. x₄ ≈ 2.23607. So √5 ≈ 2.23607.'
+      },
+      {
+        q: 'Verify Rolle\'s Theorem for \`f(x) = x² - 4x\` on [0, 4]. Find the point c.',
+        hint: 'Check f(0) = f(4) = 0. Find f\'(x) and solve f\'(c) = 0.',
+        answer: 'f(0)=0, f(4)=0. f\'(x)=2x-4. f\'(c)=0 → 2c-4=0 → c=2. c is in (0,4).'
+      },
+      {
+        q: 'Verify MVT for \`f(x) = x³\` on [1, 2]. Find c.',
+        hint: 'f\'(c) = [f(2)-f(1)]/(2-1). f\'(x)=3x².',
+        answer: '[8-1]/1 = 7. 3c² = 7 → c² = 7/3 → c = √(7/3) ≈ 1.5275, in (1,2).'
+      },
+      {
+        q: 'Use Newton\'s method to approximate the solution of \`x = cos(x)\`. Start with \`x₁ = 0.5\`.',
+        hint: 'f(x) = x - cos(x), f\'(x) = 1 + sin(x).',
+        answer: 'x₂ = 0.5 - (0.5 - cos(0.5))/(1+sin(0.5)) = 0.5 - (0.5-0.8776)/1.4794 = 0.7552. x₃ = 0.7391. x₄ = 0.7391. Solution ≈ 0.7391.'
+      },
+      {
+        q: 'Find the point c guaranteed by MVT for \`f(x) = √x\` on [1, 4].',
+        hint: 'f\'(x) = 1/(2√x). f\'(c) = [f(4)-f(1)]/(4-1).',
+        answer: '[2-1]/3 = 1/3. 1/(2√c) = 1/3 → 2√c = 3 → √c = 1.5 → c = 2.25.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 25 - Integration (Antiderivatives)
+  // ============================================================
+  25: {
+    problems: [
+      {
+        q: 'Find \`∫ (4x³ - 2x + 5) dx\`.',
+        hint: 'Use power rule: ∫xⁿ dx = xⁿ⁺¹/(n+1).',
+        answer: '4∫x³dx - 2∫x dx + 5∫dx = 4(x⁴/4) - 2(x²/2) + 5x + C = x⁴ - x² + 5x + C'
+      },
+      {
+        q: 'Find \`∫ (sin x + cos x) dx\`.',
+        hint: 'Use ∫sin x dx = -cos x and ∫cos x dx = sin x.',
+        answer: '∫sin x dx + ∫cos x dx = -cos x + sin x + C'
+      },
+      {
+        q: 'Find \`∫ (3/x²) dx\`.',
+        hint: 'Rewrite as 3x⁻², use power rule.',
+        answer: '3∫x⁻²dx = 3(x⁻¹/-1) + C = -3/x + C'
+      },
+      {
+        q: 'Find the antiderivative of f(x) = 2x + 3 that passes through (1, 5).',
+        hint: 'First find general antiderivative, then use point to find C.',
+        answer: 'F(x) = x² + 3x + C. F(1) = 1 + 3 + C = 5 → C = 1. So F(x) = x² + 3x + 1.'
+      },
+      {
+        q: 'Find \`∫ (x³ - 4x² + 7) dx\`.',
+        hint: 'Apply power rule to each term.',
+        answer: 'x⁴/4 - 4x³/3 + 7x + C'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 26 - Integration by Substitution
+  // ============================================================
+  26: {
+    problems: [
+      {
+        q: 'Evaluate \`∫ (2x + 3)⁵ dx\` using substitution.',
+        hint: 'Let u = 2x + 3, du = 2dx.',
+        answer: 'u = 2x+3, dx = du/2. ∫ u⁵ · (du/2) = 1/2 · u⁶/6 + C = (2x+3)⁶/12 + C'
+      },
+      {
+        q: 'Evaluate \`∫ x(x² + 1)⁴ dx\`.',
+        hint: 'Let u = x² + 1, du = 2x dx → x dx = du/2.',
+        answer: '1/2 ∫ u⁴ du = 1/2 · u⁵/5 + C = (x²+1)⁵/10 + C'
+      },
+      {
+        q: 'Evaluate \`∫ e^(5x) dx\`.',
+        hint: 'Let u = 5x, du = 5dx.',
+        answer: 'u = 5x, dx = du/5. ∫ e^u · du/5 = 1/5 e^u + C = 1/5 e^(5x) + C'
+      },
+      {
+        q: 'Evaluate \`∫ sin(3x) dx\`.',
+        hint: 'Let u = 3x, du = 3dx.',
+        answer: 'u = 3x, dx = du/3. ∫ sin u · du/3 = -1/3 cos u + C = -1/3 cos(3x) + C'
+      },
+      {
+        q: 'Evaluate \`∫ (x²+1)³ · 2x dx\`.',
+        hint: 'Let u = x²+1, du = 2x dx.',
+        answer: '∫ u³ du = u⁴/4 + C = (x²+1)⁴/4 + C'
+      },
+      {
+        q: 'Evaluate \`∫ 1/(2x+1) dx\`.',
+        hint: 'Let u = 2x+1, du = 2dx.',
+        answer: 'u = 2x+1, dx = du/2. ∫ 1/u · du/2 = 1/2 ln|u| + C = 1/2 ln|2x+1| + C'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 27 - Sigma Notation
+  // ============================================================
+  27: {
+    problems: [
+      {
+        q: 'Write \`1² + 2² + 3² + 4² + 5²\` in sigma notation.',
+        hint: 'Identify the pattern: each term is k² where k goes from 1 to 5.',
+        answer: '∑_{k=1}^5 k²'
+      },
+      {
+        q: 'Evaluate \`∑_{k=1}^4 k³\`.',
+        hint: 'Use formula: ∑k³ = [n(n+1)/2]².',
+        answer: 'n=4: [4×5/2]² = 10² = 100. Check: 1+8+27+64 = 100.'
+      },
+      {
+        q: 'Evaluate \`∑_{k=1}^5 (2k + 1)\`.',
+        hint: 'Use ∑(2k+1) = 2∑k + ∑1.',
+        answer: '2(5×6/2) + 5 = 2(15) + 5 = 35. Terms: 3+5+7+9+11 = 35.'
+      },
+      {
+        q: 'Find the sum \`∑_{k=1}^{10} k²\`.',
+        hint: 'Use formula: ∑k² = n(n+1)(2n+1)/6.',
+        answer: '10×11×21/6 = 2310/6 = 385.'
+      },
+      {
+        q: 'Express \`∑_{k=3}^7 k²\` with lower limit 1.',
+        hint: 'Let j = k-2, so k = j+2. As k goes from 3 to 7, j goes from 1 to 5.',
+        answer: '∑_{j=1}^5 (j+2)²'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 28 - Area as Limit (Riemann Sums)
+  // ============================================================
+  28: {
+    problems: [
+      {
+        q: 'Use a Riemann sum with right endpoints to approximate the area under \`f(x) = x\` on [0, 2] with n=4.',
+        hint: 'Δx = 2/4 = 0.5. Right endpoints: 0.5, 1.0, 1.5, 2.0. Sum = Σ f(x_k)Δx.',
+        answer: 'Δx = 0.5. x_k* = 0.5, 1.0, 1.5, 2.0. Sum = (0.5+1.0+1.5+2.0)×0.5 = 5.0×0.5 = 2.5. Actual area = 2.'
+      },
+      {
+        q: 'Use a Riemann sum with left endpoints to approximate the area under \`f(x) = x²\` on [0, 2] with n=4.',
+        hint: 'Δx = 0.5. Left endpoints: 0, 0.5, 1.0, 1.5.',
+        answer: 'Sum = (0² + 0.5² + 1² + 1.5²)×0.5 = (0 + 0.25 + 1 + 2.25)×0.5 = 3.5×0.5 = 1.75. Actual area = 8/3 ≈ 2.67.'
+      },
+      {
+        q: 'Find the area under \`f(x) = x\` on [1, 3] using the definition (limit of Riemann sums).',
+        hint: 'Δx = 2/n. Right endpoints: x_k* = 1 + k(2/n).',
+        answer: 'Sum = Σ (1 + 2k/n)(2/n) = (2/n)Σ1 + (4/n²)Σk = (2/n)(n) + (4/n²)(n(n+1)/2) = 2 + 2(n+1)/n → 4. Area = 4 (trapezoid: height 2, bases 1 and 3 → 4).'
+      },
+      {
+        q: 'Calculate the Riemann sum for \`f(x) = x²\` on [0, 2] with n=4 using midpoints.',
+        hint: 'Δx = 0.5. Midpoints: 0.25, 0.75, 1.25, 1.75.',
+        answer: 'Sum = (0.25² + 0.75² + 1.25² + 1.75²)×0.5 = (0.0625 + 0.5625 + 1.5625 + 3.0625)×0.5 = 5.25×0.5 = 2.625.'
+      },
+      {
+        q: 'Show that the area under \`f(x) = x²\` on [0, 1] is 1/3 using Riemann sums.',
+        hint: 'Use right endpoints: x_k* = k/n, Δx = 1/n.',
+        answer: 'Σ (k/n)²(1/n) = (1/n³)Σk² = (1/n³)(n(n+1)(2n+1)/6) = (n+1)(2n+1)/(6n²) → 2/6 = 1/3.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 29 - Definite Integral
+  // ============================================================
+  29: {
+    problems: [
+      {
+        q: 'Given \`∫_1^3 f(x) dx = 4\` and \`∫_3^5 f(x) dx = 7\`, find \`∫_1^5 f(x) dx\` and \`∫_3^1 f(x) dx\`.',
+        hint: 'Use interval additivity and reversing limits.',
+        answer: '∫_1^5 = ∫_1^3 + ∫_3^5 = 4+7 = 11. ∫_3^1 = -∫_1^3 = -4.'
+      },
+      {
+        q: 'Evaluate \`∫_0^2 (3x² - 2) dx\` using the properties of definite integrals.',
+        hint: 'Split into 3∫x²dx - 2∫dx.',
+        answer: '3∫_0^2 x²dx - 2∫_0^2 dx = 3(8/3) - 2(2) = 8 - 4 = 4.'
+      },
+      {
+        q: 'If \`∫_0^2 f(x) dx = 5\` and \`∫_0^2 g(x) dx = 3\`, find \`∫_0^2 [2f(x) - 3g(x)] dx\`.',
+        hint: 'Use constant multiple and sum/difference properties.',
+        answer: '2∫_0^2 f(x) dx - 3∫_0^2 g(x) dx = 2(5) - 3(3) = 10 - 9 = 1.'
+      },
+      {
+        q: 'Show that \`∫_0^1 x dx = 1/2\` using the definition (not the formula).',
+        hint: 'Use Riemann sum with right endpoints: Δx = 1/n, x_k* = k/n.',
+        answer: 'Σ (k/n)(1/n) = (1/n²)Σk = (1/n²)(n(n+1)/2) = (n+1)/(2n) → 1/2.'
+      },
+      {
+        q: 'Evaluate \`∫_0^1 (x² + 2x) dx\` using the power rule for integrals.',
+        hint: '∫x²dx = x³/3, ∫2x dx = x².',
+        answer: '[x³/3 + x²]_0^1 = (1/3 + 1) - 0 = 4/3.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 30 - First Fundamental Theorem of Calculus
+  // ============================================================
+  30: {
+    problems: [
+      {
+        q: 'Evaluate \`∫_1^2 (2x + 3) dx\` using FTC.',
+        hint: 'Find antiderivative: F(x) = x² + 3x.',
+        answer: '[x²+3x]_1^2 = (4+6) - (1+3) = 10 - 4 = 6.'
+      },
+      {
+        q: 'Evaluate \`∫_0^π sin x dx\`.',
+        hint: 'Antiderivative of sin x is -cos x.',
+        answer: '[-cos x]_0^π = -cos π - (-cos 0) = -(-1) - (-1) = 1 + 1 = 2.'
+      },
+      {
+        q: 'Find the average value of \`f(x) = x²\` on [0, 2].',
+        hint: 'f_avg = 1/(b-a) ∫_a^b f(x) dx.',
+        answer: 'f_avg = 1/2 ∫_0^2 x² dx = 1/2 [x³/3]_0^2 = 1/2 (8/3) = 4/3.'
+      },
+      {
+        q: 'Find the point c guaranteed by MVT for integrals for \`f(x) = x²\` on [0, 2].',
+        hint: '∫_0^2 x² dx = 8/3. By MVT, 8/3 = c²·(2) → c² = 4/3 → c = 2/√3.',
+        answer: 'c = 2/√3 ≈ 1.155, which is in [0,2].'
+      },
+      {
+        q: 'Evaluate \`∫_1^3 (x³ - 2x) dx\`.',
+        hint: 'Antiderivative: x⁴/4 - x².',
+        answer: '[x⁴/4 - x²]_1^3 = (81/4 - 9) - (1/4 - 1) = (81/4 - 36/4) - (1/4 - 4/4) = 45/4 - (-3/4) = 48/4 = 12.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 31 - Evaluating Definite Integrals by Substitution
+  // ============================================================
+  31: {
+    problems: [
+      {
+        q: 'Evaluate \`∫_0^1 2x(x²+1)³ dx\` using substitution.',
+        hint: 'Let u = x²+1, du = 2x dx. New limits: u=1 to u=2.',
+        answer: '∫_1^2 u³ du = [u⁴/4]_1^2 = 16/4 - 1/4 = 15/4.'
+      },
+      {
+        q: 'Evaluate \`∫_0^{π/2} sin² x cos x dx\`.',
+        hint: 'Let u = sin x, du = cos x dx. Limits: u=0 to u=1.',
+        answer: '∫_0^1 u² du = [u³/3]_0^1 = 1/3.'
+      },
+      {
+        q: 'Evaluate \`∫_0^1 x/(x²+1) dx\`.',
+        hint: 'Let u = x²+1, du = 2x dx. x dx = du/2. Limits: u=1 to u=2.',
+        answer: '1/2 ∫_1^2 1/u du = 1/2 [ln|u|]_1^2 = 1/2 ln 2.'
+      },
+      {
+        q: 'Evaluate \`∫_0^2 x²√(x³+1) dx\`.',
+        hint: 'Let u = x³+1, du = 3x² dx. x² dx = du/3. Limits: u=1 to u=9.',
+        answer: '1/3 ∫_1^9 √u du = 1/3 [2u^{3/2}/3]_1^9 = 2/9(27 - 1) = 52/9.'
+      },
+      {
+        q: 'Evaluate \`∫_0^1 e^x √(1+e^x) dx\`.',
+        hint: 'Let u = 1+e^x, du = e^x dx. Limits: u=2 to u=1+e.',
+        answer: '∫_2^{1+e} u^{1/2} du = [2u^{3/2}/3]_2^{1+e} = 2/3[(1+e)^{3/2} - 2√2].'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 32 - Second Fundamental Theorem of Calculus
+  // ============================================================
+  32: {
+    problems: [
+      {
+        q: 'Find \`d/dx [∫_1^x (t² + 1) dt]\`.',
+        hint: 'Direct application of Second FTC: derivative = integrand at x.',
+        answer: 'x² + 1'
+      },
+      {
+        q: 'Find \`d/dx [∫_0^{x²} cos t dt]\`.',
+        hint: 'Use general form: f(g(x))·g\'(x) where f(t)=cos t, g(x)=x².',
+        answer: 'cos(x²)·2x'
+      },
+      {
+        q: 'Find \`F\'(x)\` if \`F(x) = ∫_1^x t³ dt\` and then evaluate \`F\'(2)\`.',
+        hint: 'F\'(x) = x³. Then substitute x=2.',
+        answer: 'F\'(x) = x³. F\'(2) = 8.'
+      },
+      {
+        q: 'Find \`d/dx [∫_0^{√x} e^{t²} dt]\`.',
+        hint: 'f(t) = e^{t²}, g(x) = √x, g\'(x) = 1/(2√x).',
+        answer: 'e^{(√x)²} · 1/(2√x) = e^x / (2√x)'
+      },
+      {
+        q: 'If \`F(x) = ∫_1^x (t² - 2t + 1) dt\`, find \`F\'(2)\`.',
+        hint: 'F\'(x) = x² - 2x + 1. Then substitute x=2.',
+        answer: 'F\'(2) = 4 - 4 + 1 = 1.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 33 - Area Between Curves
+  // ============================================================
+  33: {
+    problems: [
+      {
+        q: 'Find the area between \`y = x+1\` and \`y = x²\` on [0, 2].',
+        hint: 'f(x) = x+1 is above g(x) = x². Area = ∫_0^2 [(x+1)-x²] dx.',
+        answer: '∫_0^2 (x+1-x²) dx = [x²/2 + x - x³/3]_0^2 = (2+2-8/3) - 0 = 4 - 8/3 = 4/3.'
+      },
+      {
+        q: 'Find the area enclosed by \`y = x²\` and \`y = 2x - x²\`.',
+        hint: 'Intersection: x² = 2x - x² → 2x² - 2x = 0 → 2x(x-1)=0 → x=0,1.',
+        answer: 'A = ∫_0^1 [(2x-x²) - x²] dx = ∫_0^1 (2x-2x²) dx = [x² - 2x³/3]_0^1 = 1 - 2/3 = 1/3.'
+      },
+      {
+        q: 'Find the area between \`y = √x\` and \`y = x²\` from x=0 to x=1.',
+        hint: 'f(x) = √x is above g(x) = x² on [0,1].',
+        answer: 'A = ∫_0^1 (√x - x²) dx = [2x^{3/2}/3 - x³/3]_0^1 = 2/3 - 1/3 = 1/3.'
+      },
+      {
+        q: 'Find the area enclosed by \`x = y²\` and \`x = y+2\`.',
+        hint: 'Intersection: y² = y+2 → y²-y-2=0 → (y-2)(y+1)=0 → y=-1,2.',
+        answer: 'A = ∫_{-1}^2 [(y+2)-y²] dy = [y²/2 + 2y - y³/3]_{-1}^2 = (2+4-8/3) - (1/2-2+1/3) = 10/3 - (-7/6) = 20/6 + 7/6 = 27/6 = 9/2.'
+      },
+      {
+        q: 'Find the area between \`y = sin x\` and \`y = cos x\` from x=0 to x=π/4.',
+        hint: 'On [0, π/4], cos x ≥ sin x. A = ∫_0^{π/4} (cos x - sin x) dx.',
+        answer: '[sin x + cos x]_0^{π/4} = (√2/2 + √2/2) - (0 + 1) = √2 - 1.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 34 - Volume by Slicing; Disks and Washers
+  // ============================================================
+  34: {
+    problems: [
+      {
+        q: 'Find the volume of the solid generated by revolving \`y = x²\` from x=0 to x=1 about the x-axis.',
+        hint: 'Use disk method: V = π∫_0^1 (x²)² dx = π∫_0^1 x⁴ dx.',
+        answer: 'V = π [x⁵/5]_0^1 = π/5.'
+      },
+      {
+        q: 'Find the volume of the solid generated by revolving \`y = √x\` from x=0 to x=4 about the x-axis.',
+        hint: 'V = π∫_0^4 (√x)² dx = π∫_0^4 x dx.',
+        answer: 'V = π [x²/2]_0^4 = π(16/2) = 8π.'
+      },
+      {
+        q: 'Find the volume of the sphere of radius r by revolving \`y = √(r²-x²)\` about x-axis.',
+        hint: 'V = π∫_{-r}^r (r²-x²) dx.',
+        answer: 'V = π [r²x - x³/3]_{-r}^r = π[(r³ - r³/3) - (-r³ + r³/3)] = π[2r³/3 - (-2r³/3)] = 4πr³/3.'
+      },
+      {
+        q: 'Find the volume using washer method: region between \`y = x\` and \`y = x²\` on [0,1] revolved about x-axis.',
+        hint: 'Outer: y=x, Inner: y=x². V = π∫_0^1 (x² - x⁴) dx.',
+        answer: 'V = π [x³/3 - x⁵/5]_0^1 = π(1/3 - 1/5) = 2π/15.'
+      },
+      {
+        q: 'Find the volume generated by revolving \`y = sin x\` from x=0 to x=π about x-axis.',
+        hint: 'V = π∫_0^π sin²x dx.',
+        answer: 'V = π [x/2 - sin2x/4]_0^π = π(π/2) = π²/2.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 35 - Volume by Cylindrical Shells
+  // ============================================================
+  35: {
+    problems: [
+      {
+        q: 'Use the shell method to find the volume generated by revolving \`y = x²\` on [0,1] about the y-axis.',
+        hint: 'V = 2π∫_0^1 x·x² dx = 2π∫_0^1 x³ dx.',
+        answer: 'V = 2π [x⁴/4]_0^1 = 2π(1/4) = π/2.'
+      },
+      {
+        q: 'Find the volume generated by revolving the region between \`y = x\` and \`y = x²\` on [0,1] about the y-axis.',
+        hint: 'V = 2π∫_0^1 x(x - x²) dx = 2π∫_0^1 (x² - x³) dx.',
+        answer: 'V = 2π [x³/3 - x⁴/4]_0^1 = 2π(1/3 - 1/4) = 2π/12 = π/6.'
+      },
+      {
+        q: 'Use shells to find the volume of the solid formed by revolving \`y = √x\` on [0,4] about the y-axis.',
+        hint: 'V = 2π∫_0^4 x·√x dx = 2π∫_0^4 x^{3/2} dx.',
+        answer: 'V = 2π [2x^{5/2}/5]_0^4 = 2π(2·32/5) = 128π/5.'
+      },
+      {
+        q: 'Find the volume generated by revolving \`y = sin x\` on [0,π] about the y-axis.',
+        hint: 'V = 2π∫_0^π x sin x dx. Use integration by parts.',
+        answer: 'V = 2π[-x cos x + sin x]_0^π = 2π[(π) + 0] = 2π².'
+      },
+      {
+        q: 'Use shells to find the volume of the solid formed by revolving the region under \`y = 1/x\` on [1,2] about the y-axis.',
+        hint: 'V = 2π∫_1^2 x·(1/x) dx = 2π∫_1^2 1 dx.',
+        answer: 'V = 2π [x]_1^2 = 2π(2-1) = 2π.'
+      }
+    ]
+  },
+
+ 36: {
+    problems: [
+      {
+        q: 'Find the arc length of \`y = x\` from x=0 to x=3.',
+        hint: 'Use L = ∫√(1 + (dy/dx)²) dx. dy/dx = 1.',
+        answer: 'L = ∫_0^3 √(1+1²) dx = ∫_0^3 √2 dx = 3√2 ≈ 4.24'
+      },
+      {
+        q: 'Find the arc length of \`y = x^{3/2}\` from x=0 to x=4.',
+        hint: 'dy/dx = (3/2)x^{1/2}. L = ∫_0^4 √(1 + (9/4)x) dx.',
+        answer: 'L = ∫_0^4 √(1 + 9x/4) dx = (8/27)[(1+9x/4)^{3/2}]_0^4 = (8/27)[10^{3/2} - 1] ≈ 8.63'
+      },
+      {
+        q: 'Find the arc length of \`y = x²\` from x=0 to x=1.',
+        hint: 'dy/dx = 2x. L = ∫_0^1 √(1 + 4x²) dx.',
+        answer: 'L = [x/2√(1+4x²) + 1/4 ln(2x+√(1+4x²))]_0^1 = √5/2 + 1/4 ln(2+√5) ≈ 1.478'
+      },
+      {
+        q: 'Find the arc length of \`y = (2/3)(x²+1)^{3/2}\` from x=0 to x=1.',
+        hint: 'dy/dx = 2x√(x²+1). L = ∫_0^1 √(1 + 4x²(x²+1)) dx = ∫_0^1 (2x²+1) dx.',
+        answer: 'L = [2x³/3 + x]_0^1 = 2/3 + 1 = 5/3 ≈ 1.667'
+      },
+      {
+        q: 'Find the arc length of \`x = y²\` from y=0 to y=2.',
+        hint: 'dx/dy = 2y. L = ∫_0^2 √(1 + 4y²) dy.',
+        answer: 'L = [y/2√(1+4y²) + 1/4 ln(2y+√(1+4y²))]_0^2 = √17 + 1/4 ln(4+√17) ≈ 4.646'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 37 - Area of a Surface of Revolution
+  // ============================================================
+  37: {
+    problems: [
+      {
+        q: 'Find the surface area generated by revolving \`y = x\` from x=0 to x=2 about the x-axis.',
+        hint: 'S = 2π∫ f(x)√(1+[f\']²) dx. f(x)=x, f\'=1.',
+        answer: 'S = 2π∫_0^2 x√2 dx = 2π√2 [x²/2]_0^2 = 4π√2 ≈ 17.77'
+      },
+      {
+        q: 'Find the surface area generated by revolving \`y = √x\` from x=0 to x=4 about the x-axis.',
+        hint: 'f(x)=√x, f\'=1/(2√x). S = 2π∫_0^4 √x·√(1+1/(4x)) dx.',
+        answer: 'S = 2π∫_0^4 √(x+1/4) dx = 2π[(2/3)(x+1/4)^{3/2}]_0^4 = (4π/3)[(17/4)^{3/2} - (1/4)^{3/2}] ≈ 20.42'
+      },
+      {
+        q: 'Find the surface area generated by revolving \`y = sin x\` from x=0 to x=π about the x-axis.',
+        hint: 'S = 2π∫_0^π sin x √(1+cos²x) dx. Let u = cos x.',
+        answer: 'S = 2π∫_{-1}^1 √(1+u²) du = 2π[u/2√(1+u²) + 1/2 ln(u+√(1+u²))]_{-1}^1 = 2π[√2 + ln(1+√2)] ≈ 14.42'
+      },
+      {
+        q: 'Find the surface area of a sphere of radius r using the surface area formula.',
+        hint: 'Revolve y = √(r²-x²) about x-axis. S = 2π∫_{-r}^r √(r²-x²)·r/√(r²-x²) dx.',
+        answer: 'S = 2π∫_{-r}^r r dx = 2πr(2r) = 4πr²'
+      },
+      {
+        q: 'Find the surface area generated by revolving \`y = e^x\` from x=0 to x=1 about x-axis.',
+        hint: 'S = 2π∫_0^1 e^x√(1+e^{2x}) dx. This integral is not elementary.',
+        answer: 'S = 2π∫_0^1 e^x√(1+e^{2x}) dx = π[e^x√(1+e^{2x}) + ln(e^x+√(1+e^{2x}))]_0^1 ≈ 14.42 (numerical)'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 38 - Work and Definite Integral
+  // ============================================================
+  38: {
+    problems: [
+      {
+        q: 'A force of 20 N is applied to move an object 5 m. How much work is done?',
+        hint: 'W = F × d.',
+        answer: 'W = 20 × 5 = 100 J'
+      },
+      {
+        q: 'A spring has spring constant k = 50 N/m. How much work is done to stretch it from its natural length to 0.3 m?',
+        hint: 'W = ½kx².',
+        answer: 'W = ½(50)(0.3)² = 25 × 0.09 = 2.25 J'
+      },
+      {
+        q: 'A spring is stretched from 0.1 m to 0.4 m. If k = 100 N/m, find the work done.',
+        hint: 'W = ½k(x₂² - x₁²).',
+        answer: 'W = ½(100)(0.4² - 0.1²) = 50(0.16 - 0.01) = 50(0.15) = 7.5 J'
+      },
+      {
+        q: 'A force F(x) = 3x² N acts on an object from x=0 to x=2 m. Find the work done.',
+        hint: 'W = ∫_0^2 F(x) dx = ∫_0^2 3x² dx.',
+        answer: 'W = [x³]_0^2 = 8 J'
+      },
+      {
+        q: 'A cylindrical tank of radius 2 m and height 5 m is filled with water. How much work is required to pump all the water over the top? (ρ = 1000 kg/m³, g = 9.8 m/s²)',
+        hint: 'Divide water into layers. Work = ∫ ρg · (volume of layer) · (distance to top) dy.',
+        answer: 'W = ∫_0^5 1000×9.8×π(2)²×(5-y) dy = 39200π∫_0^5 (5-y) dy = 39200π[5y - y²/2]_0^5 = 39200π(25 - 12.5) = 39200π(12.5) = 490000π ≈ 1,539,380 J'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 39 - Improper Integral
+  // ============================================================
+  39: {
+    problems: [
+      {
+        q: 'Evaluate \`∫_1^∞ 1/x² dx\`.',
+        hint: 'Rewrite as \`lim_{b→∞} ∫_1^b x^{-2} dx\`.',
+        answer: '∫_1^b x^{-2} dx = [-1/x]_1^b = -1/b + 1. lim_{b→∞} = 1. Converges to 1.'
+      },
+      {
+        q: 'Evaluate \`∫_1^∞ 1/x dx\`.',
+        hint: 'Rewrite as \`lim_{b→∞} ∫_1^b 1/x dx\`.',
+        answer: '∫_1^b 1/x dx = [ln x]_1^b = ln b. lim_{b→∞} ln b = ∞. Diverges.'
+      },
+      {
+        q: 'Evaluate \`∫_0^1 1/√x dx\`.',
+        hint: 'This is an improper integral with vertical asymptote at x=0. Rewrite as \`lim_{a→0^+} ∫_a^1 x^{-1/2} dx\`.',
+        answer: '∫_a^1 x^{-1/2} dx = [2√x]_a^1 = 2 - 2√a. lim_{a→0^+} = 2. Converges to 2.'
+      },
+      {
+        q: 'Evaluate \`∫_0^∞ e^{-x} dx\`.',
+        hint: 'Rewrite as \`lim_{b→∞} ∫_0^b e^{-x} dx\`.',
+        answer: '∫_0^b e^{-x} dx = [-e^{-x}]_0^b = -e^{-b} + 1. lim_{b→∞} = 1. Converges to 1.'
+      },
+      {
+        q: 'Evaluate \`∫_{-∞}^0 e^{x} dx\`.',
+        hint: 'Rewrite as \`lim_{a→-∞} ∫_a^0 e^x dx\`.',
+        answer: '∫_a^0 e^x dx = [e^x]_a^0 = 1 - e^a. lim_{a→-∞} e^a = 0. Converges to 1.'
+      },
+      {
+        q: 'For what values of p does \`∫_1^∞ 1/x^p dx\` converge?',
+        hint: 'Evaluate the integral and check when the limit is finite.',
+        answer: 'If p > 1: ∫_1^b x^{-p} dx = [x^{1-p}/(1-p)]_1^b → converges. If p = 1: diverges (ln b). If p < 1: diverges. So converges for p > 1.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 40 - L'Hopital's Rule
+  // ============================================================
+  40: {
+    problems: [
+      {
+        q: 'Evaluate \`lim_{x→0} sin x / x\` using L\'Hopital\'s Rule.',
+        hint: 'This is 0/0 form. Differentiate numerator and denominator separately.',
+        answer: 'lim_{x→0} sin x / x = lim_{x→0} cos x / 1 = 1'
+      },
+      {
+        q: 'Evaluate \`lim_{x→0} (1 - cos x) / x²\`.',
+        hint: '0/0 form. Apply L\'Hopital\'s Rule twice.',
+        answer: 'First: lim sin x / 2x (still 0/0). Second: lim cos x / 2 = 1/2'
+      },
+      {
+        q: 'Evaluate \`lim_{x→∞} x² / e^x\`.',
+        hint: '∞/∞ form. Apply L\'Hopital\'s Rule.',
+        answer: 'lim 2x / e^x (still ∞/∞). Again: lim 2 / e^x = 0'
+      },
+      {
+        q: 'Evaluate \`lim_{x→∞} ln x / x\`.',
+        hint: '∞/∞ form. Apply L\'Hopital\'s Rule.',
+        answer: 'lim (1/x) / 1 = 0'
+      },
+      {
+        q: 'Evaluate \`lim_{x→0} (e^x - 1) / x\`.',
+        hint: '0/0 form. Apply L\'Hopital\'s Rule.',
+        answer: 'lim e^x / 1 = 1'
+      },
+      {
+        q: 'Evaluate \`lim_{x→0} x ln x\`.',
+        hint: 'This is 0·∞ form. Rewrite as \`lim ln x / (1/x)\` which is ∞/∞ form.',
+        answer: 'lim ln x / (1/x) = lim (1/x) / (-1/x²) = lim (-x) = 0'
+      },
+      {
+        q: 'Evaluate \`lim_{x→0^+} x^x\`.',
+        hint: 'This is 0^0 form. Let y = x^x, take ln y = x ln x.',
+        answer: 'lim_{x→0^+} x ln x = 0 (from previous problem). So lim y = e^0 = 1.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 41 - Sequences
+  // ============================================================
+  41: {
+    problems: [
+      {
+        q: 'Find the limit of the sequence \`a_n = (n+1)/n\`.',
+        hint: 'Divide numerator and denominator by n.',
+        answer: 'lim (n+1)/n = lim (1 + 1/n) = 1'
+      },
+      {
+        q: 'Find the limit of the sequence \`a_n = n²/(n²+1)\`.',
+        hint: 'Divide numerator and denominator by n².',
+        answer: 'lim n²/(n²+1) = lim 1/(1+1/n²) = 1'
+      },
+      {
+        q: 'Find the limit of the sequence \`a_n = (-1)^n/n\`.',
+        hint: 'The sequence oscillates but the magnitude goes to 0.',
+        answer: 'Since |a_n| = 1/n → 0, the sequence converges to 0.'
+      },
+      {
+        q: 'Determine whether the sequence \`a_n = n/(n+1)\` is increasing.',
+        hint: 'Check if a_{n+1} > a_n or a_{n+1} - a_n > 0.',
+        answer: 'a_{n+1} - a_n = (n+1)/(n+2) - n/(n+1) = ((n+1)² - n(n+2))/((n+2)(n+1)) = (n²+2n+1 - n²-2n)/((n+2)(n+1)) = 1/((n+2)(n+1)) > 0. So increasing.'
+      },
+      {
+        q: 'Find the limit of the sequence \`a_n = 3 + 2/n²\`.',
+        hint: 'As n → ∞, 2/n² → 0.',
+        answer: 'lim_{n→∞} (3 + 2/n²) = 3'
+      },
+      {
+        q: 'Write the first four terms of the sequence \`a_n = n² - n\`.',
+        hint: 'Substitute n = 1, 2, 3, 4.',
+        answer: 'a₁ = 0, a₂ = 2, a₃ = 6, a₄ = 12'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 42 - Infinite Series
+  // ============================================================
+  42: {
+    problems: [
+      {
+        q: 'Find the sum of the geometric series \`1 + 1/2 + 1/4 + 1/8 + ...\`.',
+        hint: 'a = 1, r = 1/2. Sum = a/(1-r).',
+        answer: 'S = 1/(1 - 1/2) = 2'
+      },
+      {
+        q: 'Find the sum of the geometric series \`Σ_{k=1}^∞ (1/3)^{k-1}\`.',
+        hint: 'a = 1, r = 1/3.',
+        answer: 'S = 1/(1 - 1/3) = 3/2'
+      },
+      {
+        q: 'Find the sum of the geometric series \`Σ_{k=1}^∞ 2(1/4)^{k-1}\`.',
+        hint: 'a = 2, r = 1/4.',
+        answer: 'S = 2/(1 - 1/4) = 2/(3/4) = 8/3'
+      },
+      {
+        q: 'Determine whether the series \`Σ_{k=1}^∞ 1/k\` converges or diverges.',
+        hint: 'This is the harmonic series.',
+        answer: 'Diverges.'
+      },
+      {
+        q: 'Determine whether the series \`Σ_{k=1}^∞ 1/k²\` converges or diverges.',
+        hint: 'This is a p-series with p = 2.',
+        answer: 'Converges (p > 1).'
+      },
+      {
+        q: 'Find the sum of the series \`Σ_{k=0}^∞ (1/2)^k\`.',
+        hint: 'a = 1, r = 1/2.',
+        answer: 'S = 1/(1 - 1/2) = 2'
+      },
+      {
+        q: 'Find the first four partial sums of \`Σ_{k=1}^∞ 1/2^k\`.',
+        hint: 'S_n = Σ_{k=1}^n 1/2^k.',
+        answer: 'S₁ = 1/2, S₂ = 3/4, S₃ = 7/8, S₄ = 15/16'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 43 - Additional Convergence Tests
+  // ============================================================
+  43: {
+    problems: [
+      {
+        q: 'Use the Comparison Test to determine if \`Σ 1/(k²+1)\` converges.',
+        hint: 'Compare with \`Σ 1/k²\` (convergent p-series).',
+        answer: '1/(k²+1) < 1/k². Since \`Σ 1/k²\` converges, \`Σ 1/(k²+1)\` converges.'
+      },
+      {
+        q: 'Use the Ratio Test to determine if \`Σ 1/k!\` converges.',
+        hint: 'ρ = lim |u_{k+1}/u_k| = lim 1/(k+1).',
+        answer: 'ρ = lim 1/(k+1) = 0 < 1. Converges absolutely.'
+      },
+      {
+        q: 'Use the Ratio Test to determine if \`Σ k/2^k\` converges.',
+        hint: 'ρ = lim |u_{k+1}/u_k| = lim (k+1)/2^{k+1} · 2^k/k = lim (k+1)/(2k).',
+        answer: 'ρ = lim (k+1)/(2k) = 1/2 < 1. Converges absolutely.'
+      },
+      {
+        q: 'Use the Root Test to determine if \`Σ (2/3)^k\` converges.',
+        hint: 'ρ = lim |u_k|^{1/k} = lim (2/3) = 2/3.',
+        answer: 'ρ = 2/3 < 1. Converges absolutely.'
+      },
+      {
+        q: 'Use the Limit Comparison Test to determine if \`Σ 1/(k²-1)\` converges.',
+        hint: 'Compare with \`Σ 1/k²\`. lim (1/(k²-1))/(1/k²) = lim k²/(k²-1) = 1.',
+        answer: 'Since the limit is finite and positive, and \`Σ 1/k²\` converges, \`Σ 1/(k²-1)\` converges.'
+      },
+      {
+        q: 'Determine if the p-series \`Σ 1/√k\` converges or diverges.',
+        hint: 'p = 1/2 in \`Σ 1/k^p\`.',
+        answer: 'p = 1/2 < 1, so diverges.'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 44 - Alternating Series and Conditional Convergence
+  // ============================================================
+  44: {
+    problems: [
+      {
+        q: 'Determine if the alternating series \`Σ (-1)^{k+1}/k\` converges.',
+        hint: 'Use the Alternating Series Test.',
+        answer: 'Terms 1/k are decreasing and go to 0. Converges conditionally (alternating harmonic series).'
+      },
+      {
+        q: 'Determine if the alternating series \`Σ (-1)^{k+1}/k²\` converges absolutely.',
+        hint: 'Check absolute convergence: \`Σ 1/k²\` converges.',
+        answer: 'Absolutely convergent (p-series with p=2).'
+      },
+      {
+        q: 'Determine if the alternating series \`Σ (-1)^{k+1} k/(k+1)\` converges.',
+        hint: 'Check if terms go to 0.',
+        answer: 'lim k/(k+1) = 1 ≠ 0. Diverges (nth term test).'
+      },
+      {
+        q: 'Find the error bound for approximating \`Σ (-1)^{k+1}/k\` by S₄.',
+        hint: '|S - S₄| < a₅ = 1/5.',
+        answer: 'Error < 1/5 = 0.2'
+      },
+      {
+        q: 'Find the radius of convergence of \`Σ x^k\`.',
+        hint: 'Geometric series converges when |x| < 1.',
+        answer: 'R = 1'
+      },
+      {
+        q: 'Find the radius of convergence of \`Σ x^k/k!\`.',
+        hint: 'Use Ratio Test: ρ = lim |x/(k+1)| = 0.',
+        answer: 'R = ∞ (converges for all x)'
+      },
+      {
+        q: 'Find the radius of convergence of \`Σ k x^k\`.',
+        hint: 'Use Ratio Test: ρ = lim |(k+1)x/k| = |x|.',
+        answer: 'R = 1 (converges for |x| < 1)'
+      }
+    ]
+  },
+
+  // ============================================================
+  // LECTURE 45 - Taylor and Maclaurin Series
+  // ============================================================
+  45: {
+    problems: [
+      {
+        q: 'Find the Maclaurin series of \`e^x\` up to the x³ term.',
+        hint: 'e^x = 1 + x + x²/2! + x³/3! + ...',
+        answer: 'e^x = 1 + x + x²/2 + x³/6 + ...'
+      },
+      {
+        q: 'Find the Maclaurin series of \`sin x\` up to the x⁵ term.',
+        hint: 'sin x = x - x³/3! + x⁵/5! - ...',
+        answer: 'sin x = x - x³/6 + x⁵/120 - ...'
+      },
+      {
+        q: 'Find the Maclaurin series of \`cos x\` up to the x⁴ term.',
+        hint: 'cos x = 1 - x²/2! + x⁴/4! - ...',
+        answer: 'cos x = 1 - x²/2 + x⁴/24 - ...'
+      },
+      {
+        q: 'Find the Taylor series of \`f(x) = e^x\` at a = 1 up to the x³ term.',
+        hint: 'Taylor series: Σ f^{(k)}(1)(x-1)^k/k!. f^{(k)}(x) = e^x, f^{(k)}(1) = e.',
+        answer: 'e^x = e[1 + (x-1) + (x-1)²/2 + (x-1)³/6 + ...]'
+      },
+      {
+        q: 'Find the Maclaurin series of \`1/(1-x)\` and its radius of convergence.',
+        hint: '1/(1-x) = Σ x^k for |x| < 1.',
+        answer: '1/(1-x) = 1 + x + x² + x³ + ... , R = 1'
+      },
+      {
+        q: 'Find the Maclaurin series of \`ln(1+x)\` up to the x³ term.',
+        hint: 'ln(1+x) = x - x²/2 + x³/3 - x⁴/4 + ...',
+        answer: 'ln(1+x) = x - x²/2 + x³/3 - ...'
+      },
+      {
+        q: 'Use the Maclaurin series of \`e^x\` to approximate \`e^{0.1}\` using three terms.',
+        hint: 'e^{0.1} ≈ 1 + 0.1 + (0.1)²/2.',
+        answer: 'e^{0.1} ≈ 1 + 0.1 + 0.005 = 1.105 (Actual ≈ 1.10517)'
+      }
+    ]
+  },
+},
+
  
   PHY101: {
     1: {
