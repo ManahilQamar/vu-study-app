@@ -1566,3 +1566,18 @@ html {
   .lec-card-top .lec-name { font-size: 12.5px; }
   .lec-action-btn { font-size: 10.5px; padding: 8px 4px; }
 }
+
+
+/* ══════════════════════════════════════════
+   HIDE CUSTOM BACK BUTTONS
+   Phone/browser back button is now used instead
+   (handled by hash-based routing in App.js)
+══════════════════════════════════════════ */
+.topbar-back {
+  display: none !important;
+}
+
+/* Re-balance topbar layout now that back button is gone */
+.topbar {
+  justify-content: space-between;
+}

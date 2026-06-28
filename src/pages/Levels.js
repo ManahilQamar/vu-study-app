@@ -10,17 +10,16 @@ export default function Levels({ subject, setPage, toggleDark, dark }) {
     return (
       <div className="shell fade-in">
         <header className="topbar">
-          <button className="topbar-back" onClick={() => setPage('home')}>← Back</button>
           <span className="topbar-info">Not Found</span>
+          <button className="dark-toggle" onClick={toggleDark}>{dark ? '☀️' : '🌙'}</button>
         </header>
         <main className="page">
           <div className="empty-card">
             <div className="empty-icon">⚠️</div>
             <div className="empty-title">Subject Not Found</div>
             <div className="empty-desc">
-              "{subject}" doesn't exist in the subject list. Go back to home and pick a subject again.
+              "{subject}" doesn't exist in the subject list. Use your phone/browser back button to go back.
             </div>
-            <button className="btn-ghost" onClick={() => setPage('home')}>← Go Home</button>
           </div>
         </main>
       </div>
@@ -48,9 +47,6 @@ export default function Levels({ subject, setPage, toggleDark, dark }) {
   return (
     <div className="shell fade-in">
       <header className="topbar">
-        <button className="topbar-back" onClick={() => setPage('home')}>
-          ← Back
-        </button>
         <span className="topbar-info">{sub.id} — {sub.fullName}</span>
         <button className="dark-toggle" onClick={toggleDark}>{dark ? '☀️' : '🌙'}</button>
       </header>
