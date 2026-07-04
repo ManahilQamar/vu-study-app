@@ -9,7 +9,6 @@ const semesters = [
       { id: 'MTH202', name: 'MTH202', fullName: 'Discrete Mathematics',              icon: '∑',  color: '#ea580c', bg: '#fff7ed', total: 45 },
       { id: 'PAK301', name: 'PAK301', fullName: 'Pakistan Studies',                  icon: '📜', color: '#0891b2', bg: '#ecfeff', total: 45 },
       { id: 'PHY101', name: 'PHY101', fullName: 'Physics',                           icon: '⚛',  color: '#dc2626', bg: '#fef2f2', total: 45 },
-      { id: 'PHY101', name: 'PHY101', fullName: 'Physics',                           icon: '⚛',  color: '#dc2626', bg: '#fef2f2', total: 45 },
 
     ],
   },

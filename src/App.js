@@ -8,11 +8,11 @@ import Summary    from './pages/Summary';
 import PastPapers from './pages/PastPapers';
 import MathTyper  from './pages/MathTyper';
 import Practice   from './pages/Practice';
+import MockExams  from './pages/MockExams';
+import ExamPaper  from './pages/ExamPaper';
 
-// Read the page name from the URL hash (e.g. #quiz-MTH101-0 -> 'quiz-MTH101-0')
 function getPageFromHash() {
-  const h = window.location.hash.replace(/^#/, '');
-  return h || 'home';
+  return window.location.hash.replace(/^#/, '') || 'home';
 }
 
 export default function App() {
@@ -25,15 +25,12 @@ export default function App() {
     localStorage.setItem('vu_theme', dark ? 'dark' : 'light');
   }, [dark]);
 
-  // Make sure the very first load has a hash entry, so the FIRST back press
-  // from "home" goes to the real previous site (Google etc.), not a blank state.
   useEffect(() => {
     if (!window.location.hash) {
       window.history.replaceState(null, '', '#home');
     }
   }, []);
 
-  // Listen for back/forward navigation (hash changes)
   useEffect(() => {
     const onHashChange = () => {
       isPopRef.current = true;
@@ -44,12 +41,9 @@ export default function App() {
     return () => window.removeEventListener('hashchange', onHashChange);
   }, []);
 
-  // Navigate forward: push a new hash entry (creates real browser history)
   const setPage = useCallback((next) => {
     if (window.location.hash.replace(/^#/, '') === next) return;
     window.location.hash = next;
-    // setPageState will be triggered by the hashchange listener above,
-    // but we also set it immediately for snappier UI feedback.
     setPageState(next);
     window.scrollTo(0, 0);
   }, []);
@@ -57,9 +51,10 @@ export default function App() {
   const toggleDark = () => setDark(d => !d);
   const sharedProps = { setPage, toggleDark, dark };
 
-  if (page === 'home')    return <Home {...sharedProps} />;
-  if (page === 'papers')  return <PastPapers {...sharedProps} />;
-  if (page === 'math')    return <MathTyper {...sharedProps} />;
+  if (page === 'home')   return <Home {...sharedProps} />;
+  if (page === 'papers') return <PastPapers {...sharedProps} />;
+  if (page === 'math')   return <MathTyper {...sharedProps} />;
+  if (page === 'exams')  return <MockExams {...sharedProps} />;
 
   if (page.startsWith('upload-')) {
     const [, subj, idx] = page.split('-');
@@ -76,6 +71,13 @@ export default function App() {
   if (page.startsWith('practice-')) {
     const [, subj, idx] = page.split('-');
     return <Practice subject={subj} lectureIndex={parseInt(idx)} {...sharedProps} />;
+  }
+  if (page.startsWith('exam-')) {
+    // exam-MTH101-mid  or  exam-PHY101-final
+    const parts = page.split('-');
+    const subj  = parts[1];
+    const type  = parts[2];
+    return <ExamPaper subject={subj} paperType={type} {...sharedProps} />;
   }
 
   return <Levels subject={page} {...sharedProps} />;
