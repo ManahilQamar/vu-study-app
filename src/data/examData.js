@@ -55,27 +55,106 @@ const examData = {
       totalMarks: 60,
       mcqMarks: 1,
       mcqs: [
-        { q: 'Calculus is primarily the study of:', options: ['A. Shapes and geometry', 'B. Continuous rates of change of quantities', 'C. Discrete mathematics', 'D. Complex number theory'], answer: 'B. Continuous rates of change of quantities' },
-        { q: 'The derivative of tⁿ is:', options: ['A. tⁿ⁺¹', 'B. n·tⁿ⁻¹', 'C. (n+1)·tⁿ', 'D. tⁿ⁻¹'], answer: 'B. n·tⁿ⁻¹' },
-        { q: 'The derivative of a constant is:', options: ['A. 1', 'B. The constant itself', 'C. 0', 'D. Undefined'], answer: 'C. 0' },
-        { q: 'Geometrically, the derivative at a point on x-t graph is the:', options: ['A. Area under curve', 'B. Slope of the tangent', 'C. Length of the curve', 'D. Intercept on x-axis'], answer: 'B. Slope of the tangent' },
-        { q: 'The velocity of an object is defined as:', options: ['A. d²x/dt²', 'B. dx/dt', 'C. x/t', 'D. Δx only'], answer: 'B. dx/dt' },
-        { q: 'The acceleration is defined as:', options: ['A. dx/dt', 'B. x/t²', 'C. d²x/dt²', 'D. Δv only'], answer: 'C. d²x/dt²' },
-        { q: 'If x(t) = c₀ + c₁t + c₂t², then dx/dt equals:', options: ['A. c₁ + c₂t', 'B. c₁ + 2c₂t', 'C. 2c₂', 'D. c₀ + c₁'], answer: 'B. c₁ + 2c₂t' },
-        { q: 'The symbol ∫ represents:', options: ['A. Differentiation', 'B. Summation', 'C. Integration', 'D. Limit'], answer: 'C. Integration' },
-        { q: '∫x² dx equals:', options: ['A. 2x', 'B. x³', 'C. x³/3 + C', 'D. 3x³'], answer: 'C. x³/3 + C' },
-        { q: 'The area under a curve from a to b is found by:', options: ['A. Differentiating the function', 'B. Evaluating the definite integral from a to b', 'C. Multiplying the function by (b − a)', 'D. Finding the slope at each point'], answer: 'B. Evaluating the definite integral from a to b' },
-        { q: 'If f(x) = x³ − 3x + 2, then f\'(x) is:', options: ['A. 3x² − 3', 'B. x² − 3', 'C. 3x³ − 3', 'D. 3x + 2'], answer: 'A. 3x² − 3' },
-        { q: 'Critical points occur where:', options: ['A. f(x) = 0', 'B. f\'(x) = 0 or f\'(x) is undefined', 'C. f\'\'(x) = 0 only', 'D. f(x) is maximum'], answer: 'B. f\'(x) = 0 or f\'(x) is undefined' },
-        { q: 'If f\'\'(c) < 0, then at x = c the function has a:', options: ['A. Relative minimum', 'B. Inflection point', 'C. Relative maximum', 'D. Zero crossing'], answer: 'C. Relative maximum' },
-        { q: 'The Fundamental Theorem of Calculus connects:', options: ['A. Algebra and trigonometry', 'B. Differentiation and integration', 'C. Sets and functions', 'D. Limits and sequences'], answer: 'B. Differentiation and integration' },
-        { q: '∫₀² x dx equals:', options: ['A. 1', 'B. 2', 'C. 4', 'D. 8'], answer: 'B. 2' },
-        { q: 'The chain rule states that if y = f(g(x)), then dy/dx equals:', options: ['A. f\'(x) · g\'(x)', 'B. f\'(g(x)) · g\'(x)', 'C. f(g\'(x))', 'D. f\'(x) + g\'(x)'], answer: 'B. f\'(g(x)) · g\'(x)' },
-        { q: 'The product rule for differentiation of f(x)·g(x) is:', options: ['A. f\'(x) · g\'(x)', 'B. f(x) · g\'(x) − f\'(x) · g(x)', 'C. f\'(x) · g(x) + f(x) · g\'(x)', 'D. f(x) + g(x)'], answer: 'C. f\'(x) · g(x) + f(x) · g\'(x)' },
-        { q: 'A function is increasing on an interval where:', options: ['A. f\'(x) < 0', 'B. f\'(x) = 0', 'C. f\'(x) > 0', 'D. f\'\'(x) > 0'], answer: 'C. f\'(x) > 0' },
-        { q: 'Limit of (1/x) as x → ∞ is:', options: ['A. ∞', 'B. 1', 'C. 0', 'D. −1'], answer: 'C. 0' },
-        { q: 'The quotient rule for d/dx [f(x)/g(x)] is:', options: ['A. [f\'g − fg\']/g²', 'B. [f\'g + fg\']/g²', 'C. f\'/g\'', 'D. [f′g − fg′]/g'], answer: 'A. [f\'g − fg\']/g²' },
-      ],
+        {
+        "q": "Question content is missing in the PDF for Q1.",
+        "options": [
+            "A. (not available)",
+            "B. (not available)",
+            "C. (not available)",
+            "D. (not available)"
+        ],
+        "answer": "A. (not available)"
+    },
+    {
+        "q": "Which of the following statements is true about ∫₀¹ (sinx + cosx) dx?",
+        "options": [
+            "A. ∫₀¹ (sinx+cosx)dx = [sinx]₁₀ + [cosx]₁₀",
+            "B. ∫₀¹ (sinx+cosx)dx = [sinx]₁₀ - [cosx]₁₀",
+            "C. ∫₀¹ (sinx+cosx)dx = [cosx]₁₀ + [sinx]₁₀",
+            "D. None"
+        ],
+        "answer": "C. ∫₀¹ (sinx+cosx)dx = [cosx]₁₀ + [sinx]₁₀"
+    },
+    {
+        "q": "If the function and limits of definite integral are the same and variable of integration are changed, i.e. ∫ₐᵇ f(x)dx = ∫ₐᵇ f(t)dt, then the answer would be:",
+        "options": [
+            "A. do not changed",
+            "B. changed"
+        ],
+        "answer": "A. do not changed"
+    },
+    {
+        "q": "In integration of f(x) = x(x² - 3)⁴, let u = x² - 3, then du =",
+        "options": [
+            "A. dx",
+            "B. x",
+            "C. 2x",
+            "D. 2x dx"
+        ],
+        "answer": "D. 2x dx"
+    },
+    {
+        "q": "Which of the following statements is true?",
+        "options": [
+            "A. ∫₀¹ (4sinx + 3sec²x) dx = 3∫₀¹ 4sinx dx + 4∫₀¹ 3sec²x dx",
+            "B. None",
+            "C. ∫₀¹ (2cosx - 5tan²x) dx = ∫₀¹ 5tan²x dx - ∫₀¹ 2cosx dx",
+            "D. ∫₀¹ 7cosx dx = 7[sinx]₁₀"
+        ],
+        "answer": "D. ∫₀¹ 7cosx dx = 7[sinx]₁₀"
+    },
+    {
+        "q": "Which of the following is the definite integral of f(x) = x² from x = 1 to x = 2?",
+        "options": [
+            "A. 8/3",
+            "B. 7/3",
+            "C. None of these.",
+            "D. 7"
+        ],
+        "answer": "B. 7/3"
+    },
+    {
+        "q": "The integral of a constant function is 0.",
+        "options": [
+            "A. False",
+            "B. True"
+        ],
+        "answer": "A. False"
+    },
+    {
+        "q": "The integral of f(x) = sin(x + 1) from x = 0 to x = 1 is:",
+        "options": [
+            "A. sin(1) - sin(2)",
+            "B. cos(2) - 1",
+            "C. cos(1) - cos(2)",
+            "D. cos(2) - cos(1)"
+        ],
+        "answer": "C. cos(1) - cos(2)"
+    },
+    {
+        "q": "The Volume of a cylindrical shell can be expressed as:",
+        "options": [
+            "A. V = (area of cross section) × (thickness)",
+            "B. V = (area of cross section) × (height)"
+        ],
+        "answer": "A. V = (area of cross section) × (thickness)"
+    },
+    {
+        "q": "Area lying between the parabola y² = 4ax and its latus rectum is:",
+        "options": [
+            "A. 4/3 a",
+            "B. 8/3 a",
+            "C. 8/3 a²",
+            "D. None of these"
+        ],
+        "answer": "C. 8/3 a²"
+    },
+
+
+
+
+
+],
       subjective: [
         { q: 'Find all relative extrema of f(x) = x³ − 6x² + 9x + 1 using the First and Second Derivative Tests. Show all steps.', marks: 8 },
         { q: 'Evaluate the definite integral ∫₁³ (2x² + 3x − 1) dx. Show all working.', marks: 7 },
@@ -228,6 +307,263 @@ const examData = {
     
 
 
+    {
+        "q": "A sub graph of a graph G that contains every vertex of G and is a tree is called",
+        "options": [
+            "A. Trivial tree",
+            "B. empty tree",
+            "C. Spanning tree"
+        ],
+        "answer": "C. Spanning tree"
+    },
+    {
+        "q": "A vertex of degree greater than 1 in a tree is called",
+        "options": [
+            "A. Branch vertex",
+            "B. Terminal vertex",
+            "C. Ancestor"
+        ],
+        "answer": "A. Branch vertex"
+    },
+    {
+        "q": "A circuit that consist of a single vertex is called",
+        "options": [
+            "A. Trivial",
+            "B. Tree",
+            "C. Empty"
+        ],
+        "answer": "A. Trivial"
+    },
+    {
+        "q": "If a graph is a tree then",
+        "options": [
+            "A. it has 2 spanning trees",
+            "B. it has only 1 spanning tree",
+            "C. it has 4 spanning trees",
+            "D. it has 5 spanning trees"
+        ],
+        "answer": "B. it has only 1 spanning tree"
+    },
+    {
+        "q": "If f(x) = 2x + 1, g(x) = x² - 1 then f ∘ g(x) =",
+        "options": [
+            "A. x² - 1",
+            "B. 2x² - 1",
+            "C. 2x³ - 1"
+        ],
+        "answer": "B. 2x² - 1"
+    },
+    {
+        "q": "Let f is defined recursively by f(0)=3, f(x+1)=2f(x)+3 then f(1) =",
+        "options": [
+            "A. 9",
+            "B. 10",
+            "C. 18",
+            "D. 21"
+        ],
+        "answer": "A. 9"
+    },
+    {
+        "q": "1+2+3+...+n = n(n+1)/2 for all integers n≥1 then P(k) is",
+        "options": [
+            "A. 1+2+3+...+k = k(k+1)/2",
+            "B. 1+2+3+...+n = n(n+1)/2",
+            "C. 1+2+3+...+(k+1) = (k+1)(k+2)/2",
+            "D. 1+2+3+...+(k-1) = k(k-1)/2"
+        ],
+        "answer": "A. 1+2+3+...+k = k(k+1)/2"
+    },
+    {
+        "q": "The word refers to a step-by-step method for performing some action.",
+        "options": [
+            "A. Series",
+            "B. Relation",
+            "C. Algorithm",
+            "D. Function"
+        ],
+        "answer": "C. Algorithm"
+    },
+    {
+        "q": "An arrangement of objects without the consideration of order is called",
+        "options": [
+            "A. Permutation",
+            "B. Combination",
+            "C. Selection",
+            "D. None of these"
+        ],
+        "answer": "B. Combination"
+    },
+    {
+        "q": "A procedure that yields a given set of possible outcomes is called",
+        "options": [
+            "A. Event",
+            "B. Outcome",
+            "C. Experiment"
+        ],
+        "answer": "C. Experiment"
+    },
+    {
+        "q": "Any two spanning trees for a graph",
+        "options": [
+            "A. Does not contain same number of edges",
+            "B. Have the same degree of corresponding edges",
+            "C. contain same number of edges",
+            "D. May or may not contain same number of edges"
+        ],
+        "answer": "C. contain same number of edges"
+    },
+    {
+        "q": "Rephrase the following statement in bi-conditional form: 'If you get up early in the morning, you will be healthy'",
+        "options": [
+            "A. You will be healthy if and only if you get up early in the morning",
+            "B. If you will be healthy then you will get up early in the morning",
+            "C. None of these"
+        ],
+        "answer": "A. You will be healthy if and only if you get up early in the morning"
+    },
+    {
+        "q": "The indirect proof of a statement p → q involves",
+        "options": [
+            "A. Considering q and then try to reach p",
+            "B. Considering p and ~q are true and try to reach contradiction",
+            "C. Considering p and then try to reach q",
+            "D. Considering ~p and then try to reach q"
+        ],
+        "answer": "B. Considering p and ~q are true and try to reach contradiction"
+    },
+    {
+        "q": "What is the contra positive of the given statement: 'If square root of every prime number is irrational then square root of 2 is irrational.'",
+        "options": [
+            "A. If square root of 2 is not irrational then square root of every prime number is not irrational.",
+            "B. If square root of 2 is irrational then square root of every prime number is not irrational.",
+            "C. If square root of 2 is not irrational then square root of every prime number is irrational.",
+            "D. If square root of every prime number is not irrational then square root of 2 is not irrational."
+        ],
+        "answer": "A. If square root of 2 is not irrational then square root of every prime number is not irrational."
+    },
+    {
+        "q": "Which of the following law is used to show: p ↔ q ≡ q ↔ p",
+        "options": [
+            "A. Implication Law",
+            "B. Commutative law",
+            "C. Exportation Law",
+            "D. None of these"
+        ],
+        "answer": "B. Commutative law"
+    },
+    {
+        "q": "If p = It is red, q = It is hot. Then 'It is not red but hot' is denoted by p ∧ ~q.",
+        "options": [
+            "A. True",
+            "B. False"
+        ],
+        "answer": "B. False"
+    },
+    {
+        "q": "A circuit with two input signals and one output signal is called",
+        "options": [
+            "A. NOT-gate (or inverter)",
+            "B. AND-gate",
+            "C. None of these"
+        ],
+        "answer": "B. AND-gate"
+    },
+    {
+        "q": "The direct proof of a statement p → q involves",
+        "options": [
+            "A. considering q and then try to reach p",
+            "B. considering p and then try to reach q",
+            "C. considering p and ~q and try to reach contradiction",
+            "D. None of these"
+        ],
+        "answer": "B. considering p and then try to reach q"
+    },
+    {
+        "q": "The contradiction proof of a statement p → q involves",
+        "options": [
+            "A. Considering p and then try to reach q",
+            "B. Considering ~q and then try to reach ~p",
+            "C. Considering p and ~q are true and try to reach contradiction",
+            "D. None of these"
+        ],
+        "answer": "C. Considering p and ~q are true and try to reach contradiction"
+    },
+    {
+        "q": "The list of the degrees of the vertices of a graph in non-increasing order is called",
+        "options": [
+            "A. Isomorphic Invariant",
+            "B. Degree Sequence",
+            "C. Order of Graph",
+            "D. Length of Circuit"
+        ],
+        "answer": "B. Degree Sequence"
+    },
+    {
+        "q": "A vertex of degree 1 in a tree is called",
+        "options": [
+            "A. Terminal vertex",
+            "B. Internal vertex"
+        ],
+        "answer": "A. Terminal vertex"
+    },
+    {
+        "q": "Complete graph is planar if",
+        "options": [
+            "A. n = 4",
+            "B. n > 4",
+            "C. n ≤ 4"
+        ],
+        "answer": "C. n ≤ 4"
+    },
+    {
+        "q": "The logical expression p ∨ q will be read as",
+        "options": [
+            "A. p or q",
+            "B. p and q",
+            "C. p × q",
+            "D. p - q"
+        ],
+        "answer": "A. p or q"
+    },
+    {
+        "q": "How many ways are there to select a first prize winner, a second prize winner and a third prize winner from 100 different people who have entered in a contest.",
+        "options": [
+            "A. P(97,3)",
+            "B. P(100,3)",
+            "C. P(100,97)",
+            "D. None of these"
+        ],
+        "answer": "B. P(100,3)"
+    },
+    {
+        "q": "The value of (n+1)!/(n-1)! is",
+        "options": [
+            "A. 0",
+            "B. n(n-1)",
+            "C. n² + n",
+            "D. can not be determined"
+        ],
+        "answer": "C. n² + n"
+    },
+    {
+        "q": "To find the number of unordered partitions, we have to count the ... partitions and then divide it by suitable number to erase the order in partitions.",
+        "options": [
+            "A. unordered",
+            "B. ordered",
+            "C. random",
+            "D. None of these"
+        ],
+        "answer": "B. ordered"
+    },
+    {
+        "q": "The same element can never appear ... in a set.",
+        "options": [
+            "A. twice",
+            "B. once",
+            "C. thrice"
+        ],
+        "answer": "A. twice"
+    },
 
 
 
@@ -558,17 +894,416 @@ const examData = {
       totalMarks: 40,
       mcqMarks: 1,
       mcqs: [
-        { q: 'A robot is defined as:', options: ['A. A human-controlled machine only', 'B. A programmable machine capable of automatic actions', 'C. A computer software', 'D. A database system'], answer: 'B. A programmable machine capable of automatic actions' },
-        { q: 'Information processing refers to:', options: ['A. Manual writing only', 'B. Manipulation of digital information by computers', 'C. Printing documents', 'D. Installing hardware'], answer: 'B. Manipulation of digital information by computers' },
-        { q: 'Computer Science helps in:', options: ['A. Only gaming', 'B. Almost all professional fields', 'C. Only banking', 'D. Only education'], answer: 'B. Almost all professional fields' },
-        { q: 'Software includes:', options: ['A. Only hardware parts', 'B. Operating system and applications', 'C. Only internet cables', 'D. Mouse and keyboard'], answer: 'B. Operating system and applications' },
-        { q: 'Which of the following is a domain where Computer Science is used?', options: ['A. Only schools', 'B. Hospitals, banks, telecom, software industry', 'C. Only government offices', 'D. Only gaming'], answer: 'B. Hospitals, banks, telecom, software industry' },
-        { q: 'Database is best described as:', options: ['A. Random files in computer', 'B. Organized collection of data for fast retrieval', 'C. Internet browser', 'D. Programming tool'], answer: 'B. Organized collection of data for fast retrieval' },
-        { q: 'Computer programming is the process of:', options: ['A. Installing hardware', 'B. Designing and building executable programs', 'C. Browsing internet', 'D. Typing documents'], answer: 'B. Designing and building executable programs' },
-        { q: 'Which resource is most commonly shared on a computer network today?', options: ['A. Printer only', 'B. Internet connection', 'C. Mouse', 'D. CPU'], answer: 'B. Internet connection' },
-        { q: 'Computer hardware refers to:', options: ['A. Instructions for computer', 'B. Physical components of a computer', 'C. Internet connection', 'D. Software programs'], answer: 'B. Physical components of a computer' },
-        { q: 'Which of the following is NOT a CS application area?', options: ['A. Freelancing', 'B. Pak Army systems', 'C. Cooking recipes', 'D. Hospitals systems'], answer: 'C. Cooking recipes' },
-      ],
+        {
+        "q": "Meaning of a statement in natural language depends on its:",
+        "options": [
+            "A. Grammar",
+            "B. Context",
+            "C. Formatting",
+            "D. Style"
+        ],
+        "answer": "B. Context"
+    },
+    {
+        "q": "Data mining is practiced on data collections, called data warehouses.",
+        "options": [
+            "A. vibrant",
+            "B. forceful",
+            "C. static",
+            "D. dynamic"
+        ],
+        "answer": "D. dynamic"
+    },
+    {
+        "q": "Ethics and legality are essential in many industries including:",
+        "options": [
+            "A. All of these",
+            "B. Doctors",
+            "C. Government officer",
+            "D. Teachers"
+        ],
+        "answer": "A. All of these"
+    },
+    {
+        "q": "In hash file, if a disproportionate number of keys happen to hash to the same bucket, it may cause",
+        "options": [
+            "A. faster search",
+            "B. even distribution",
+            "C. efficient retrieval",
+            "D. clustering"
+        ],
+        "answer": "D. clustering"
+    },
+    {
+        "q": "The Turing test result of program DOCTOR developed by Joseph Weizenbaum was:",
+        "options": [
+            "A. Failed",
+            "B. No result",
+            "C. Ambiguous",
+            "D. Passed"
+        ],
+        "answer": "D. Passed"
+    },
+    {
+        "q": "In hash file, the key used to identify an employee's record is the ______.",
+        "options": [
+            "A. employee's position",
+            "B. department",
+            "C. name",
+            "D. identification number"
+        ],
+        "answer": "D. identification number"
+    },
+    {
+        "q": "A track that leads to a simulation oriented methodology:",
+        "options": [
+            "A. Theoretical",
+            "B. Intelligent",
+            "C. Proper",
+            "D. Engineering"
+        ],
+        "answer": "D. Engineering"
+    },
+    {
+        "q": "Copyright can be applied on:",
+        "options": [
+            "A. All of these",
+            "B. Music",
+            "C. Dramatic works",
+            "D. Artistic work"
+        ],
+        "answer": "A. All of these"
+    },
+    {
+        "q": "Ethical issues are related to:",
+        "options": [
+            "A. Linguistics principles",
+            "B. Moral principles",
+            "C. AI principles",
+            "D. Behaviour principles"
+        ],
+        "answer": "B. Moral principles"
+    },
+    {
+        "q": "Usual way of protecting software is:",
+        "options": [
+            "A. Company monogram",
+            "B. Copyright",
+            "C. Patent",
+            "D. Rules"
+        ],
+        "answer": "B. Copyright"
+    },
+
+
+    {
+        "q": "In Encryption, a digital signature is actually a ____",
+        "options": [
+            "A. server",
+            "B. bit pattern",
+            "C. protocol",
+            "D. array of characters"
+        ],
+        "answer": "B. bit pattern"
+    },
+    {
+        "q": "The traditional ways of protecting information to control its access before Encryption was using ______",
+        "options": [
+            "A. Passwords",
+            "B. Image processing",
+            "C. Digital Signatures",
+            "D. Finger prints"
+        ],
+        "answer": "A. Passwords"
+    },
+    {
+        "q": "By using ______ we can have a secure version of the applications.",
+        "options": [
+            "A. 3G",
+            "B. Encryption techniques",
+            "C. XML",
+            "D. Spam filters"
+        ],
+        "answer": "B. Encryption techniques"
+    },
+    {
+        "q": "In Pakistan, the Federal Investigation Agency (FIA) act was passed in the year ______",
+        "options": [
+            "A. 1974",
+            "B. 1975",
+            "C. 1976",
+            "D. 1977"
+        ],
+        "answer": "A. 1974"
+    },
+    {
+        "q": "In Pakistan, the Prevention of Electronic Crimes Ordinance was passed in the year ______",
+        "options": [
+            "A. 2007",
+            "B. 2009",
+            "C. 2010",
+            "D. 2008"
+        ],
+        "answer": "A. 2007"
+    },
+    {
+        "q": "In context of legal approaches to network security, one of the main issue is ______",
+        "options": [
+            "A. lack of skilled persons in this area",
+            "B. lack of data",
+            "C. International law that makes Illegal in one country and legal in another country",
+            "D. slow technological development"
+        ],
+        "answer": "C. International law that makes Illegal in one country and legal in another country"
+    },
+
+
+  {
+    "q": "The correct syntax of while loop is:",
+    "options": [
+      "A. while()\n{\nif(condition)\n{\n//statements\n}",
+      "B. while(condition);\n{\n//statements\n}",
+      "C. while(condition)\n{\n//statements\n}",
+      "D. {\n//statements\n}while(condition)"
+    ],
+    "answer": "C. while(condition)\n{\n//statements\n}"
+  },
+  {
+    "q": "What will be the output of the following code?\nint marks = 72;\nif(marks >= 90)\n cout<<\"Eligible for scholarship\";\nelse\n cout<<\"Not eligible for scholarship\";",
+    "options": [
+      "A. Runtime error",
+      "B. Eligible for scholarship",
+      "C. Not eligible for scholarship",
+      "D. Might be eligible"
+    ],
+    "answer": "C. Not eligible for scholarship"
+  },
+  {
+    "q": "Which control structure is used to repeat a sequence of instructions?",
+    "options": [
+      "A. Condition",
+      "B. Statement",
+      "C. Loop",
+      "D. Pseudocode"
+    ],
+    "answer": "C. Loop"
+  },
+  {
+    "q": "What will be the output of the following pseudocode?\nint marks = 75;\nif (marks >= 33)\n Output (\"Pass\")\nelse\n Output (\"Fail\")",
+    "options": [
+      "A. 75",
+      "B. Fail",
+      "C. 33",
+      "D. Pass"
+    ],
+    "answer": "D. Pass"
+  },
+  {
+    "q": "Which operator is used for assignment in C++?",
+    "options": [
+      "A. +",
+      "B. ;",
+      "C. =",
+      "D. =="
+    ],
+    "answer": "C. ="
+  },
+  {
+    "q": "Pseudocode is an informal notational system.",
+    "options": [
+      "A. Program Instructions",
+      "B. Pseudocode",
+      "C. Method",
+      "D. Model"
+    ],
+    "answer": "B. Pseudocode"
+  },
+  {
+    "q": "A collection of primitives and rules to combine them is called:",
+    "options": [
+      "A. Programming Language",
+      "B. Programming Instructions",
+      "C. Programming Code",
+      "D. Programming Model"
+    ],
+    "answer": "A. Programming Language"
+  },
+  {
+    "q": "Semantics refers to the ____ of the primitive.",
+    "options": [
+      "A. Properties",
+      "B. Meaning",
+      "C. Symbolic Representation",
+      "D. Characteristics"
+    ],
+    "answer": "B. Meaning"
+  },
+  {
+    "q": "In formal programming language the algorithms can be expressed at a conceptually ____ level than in machine language.",
+    "options": [
+      "A. ground",
+      "B. lower",
+      "C. higher",
+      "D. medium"
+    ],
+    "answer": "C. higher"
+  },
+  {
+    "q": "An algorithm is a method for solving a problem in a ____ order.",
+    "options": [
+      "A. symmetric",
+      "B. systematic",
+      "C. static",
+      "D. semantic"
+    ],
+    "answer": "B. systematic"
+  },
+  {
+    "q": "The standard formula for converting Celsius to Fahrenheit is:",
+    "options": [
+      "A. F = 32C + (5/9)",
+      "B. F = (9/5)C + 32",
+      "C. F = 32C + (9/5)",
+      "D. F = (5/9)C + 32"
+    ],
+    "answer": "B. F = (9/5)C + 32"
+  },
+  {
+    "q": "A formal representation of an algorithm is a:",
+    "options": [
+      "A. Process Model",
+      "B. Process Design",
+      "C. Analysis",
+      "D. Program"
+    ],
+    "answer": "D. Program"
+  },
+  {
+    "q": "An algorithm must have a well-established structure in terms of the order of its ____.",
+    "options": [
+      "A. Execution",
+      "B. Termination",
+      "C. Return",
+      "D. Analysis"
+    ],
+    "answer": "A. Execution"
+  },
+  {
+    "q": "An algorithm must have well-defined boundaries and must execute and finish, therefore, its execution must lead to an ____.",
+    "options": [
+      "A. Statement",
+      "B. Condition",
+      "C. Start",
+      "D. End"
+    ],
+    "answer": "D. End"
+  },
+  {
+    "q": "Which of the following is NOT a characteristic of a good algorithm?",
+    "options": [
+      "A. Terminating Process",
+      "B. Unstructured",
+      "C. Executable",
+      "D. Unambiguous"
+    ],
+    "answer": "B. Unstructured"
+  },
+  {
+    "q": "Algorithm is simply a ____ that define how a task is ____.",
+    "options": [
+      "A. set of steps, performed",
+      "B. a single step, performed",
+      "C. set of steps, halted",
+      "D. a single step, halted"
+    ],
+    "answer": "A. set of steps, performed"
+  },
+  {
+    "q": "Researchers believe that imagination and creativity are forms of ____.",
+    "options": [
+      "A. machine cycle",
+      "B. human cognition only",
+      "C. algorithm execution",
+      "D. single giant step"
+    ],
+    "answer": "C. algorithm execution"
+  },
+  {
+    "q": "Which of the following is NOT part of the algorithm to convert KM to Meters?",
+    "options": [
+      "A. Add 1000 to the output",
+      "B. Take input of KM's",
+      "C. Multiply the input with 1000",
+      "D. Display the result"
+    ],
+    "answer": "A. Add 1000 to the output"
+  },
+  {
+    "q": "In Encryption, a digital signature is actually a ____",
+    "options": [
+      "A. server",
+      "B. bit pattern",
+      "C. protocol",
+      "D. array of characters"
+    ],
+    "answer": "B. bit pattern"
+  },
+  {
+    "q": "The traditional ways of protecting information to control its access before Encryption was using ______",
+    "options": [
+      "A. Passwords",
+      "B. Image processing",
+      "C. Digital Signatures",
+      "D. Finger prints"
+    ],
+    "answer": "A. Passwords"
+  },
+  {
+    "q": "By using ______ we can have a secure version of the applications.",
+    "options": [
+      "A. 3G",
+      "B. Encryption techniques",
+      "C. XML",
+      "D. Spam filters"
+    ],
+    "answer": "B. Encryption techniques"
+  },
+  {
+    "q": "In Pakistan, the Federal Investigation Agency (FIA) act was passed in the year ______",
+    "options": [
+      "A. 1974",
+      "B. 1975",
+      "C. 1976",
+      "D. 1977"
+    ],
+    "answer": "A. 1974"
+  },
+  {
+    "q": "In Pakistan, the Prevention of Electronic Crimes Ordinance was passed in the year ______",
+    "options": [
+      "A. 2007",
+      "B. 2009",
+      "C. 2010",
+      "D. 2008"
+    ],
+    "answer": "A. 2007"
+  },
+  {
+    "q": "In context of legal approaches to network security, one of the main issue is ______",
+    "options": [
+      "A. lack of skilled persons in this area",
+      "B. lack of data",
+      "C. International law that makes Illegal in one country and legal in another country",
+      "D. slow technological development"
+    ],
+    "answer": "C. International law that makes Illegal in one country and legal in another country"
+  },
+
+
+
+
+
+],
       subjective: [],
     },
   },
@@ -636,17 +1371,112 @@ const examData = {
       totalMarks: 40,
       mcqMarks: 1,
       mcqs: [
-        { q: 'Deen-e-Ilahi was introduced by:', options: ['A. Aurangzeb', 'B. Akbar', 'C. Shah Jahan', 'D. Babur'], answer: 'B. Akbar' },
-        { q: 'Mahmud of Ghazna attacked India:', options: ['A. 5 times', 'B. 10 times', 'C. 17 times', 'D. 25 times'], answer: 'C. 17 times' },
-        { q: 'Hindi-Urdu controversy started in:', options: ['A. 1857', 'B. 1867', 'C. 1885', 'D. 1906'], answer: 'B. 1867' },
-        { q: 'Islam and Hinduism are considered:', options: ['A. Same systems', 'B. Two social orders', 'C. Political ideologies', 'D. Economic systems'], answer: 'B. Two social orders' },
-        { q: 'Ideology of Pakistan developed through:', options: ['A. Sudden revolution', 'B. Evolutionary process', 'C. War only', 'D. Foreign influence'], answer: 'B. Evolutionary process' },
-        { q: 'Muslim nationalism emphasizes:', options: ['A. Social justice', 'B. Equality', 'C. Religious tolerance', 'D. All of these'], answer: 'D. All of these' },
-        { q: 'Ali Hujwiri and other Sufis:', options: ['A. Fought wars', 'B. Spread Islam through teachings', 'C. Built empires', 'D. Wrote laws'], answer: 'B. Spread Islam through teachings' },
-        { q: 'Ideology provides:', options: ['A. Entertainment', 'B. Direction and worldview', 'C. Only laws', 'D. Only culture'], answer: 'B. Direction and worldview' },
-        { q: 'Muhammad bin Qasim is known for:', options: ['A. Writing books', 'B. Conquering parts of India', 'C. Political leadership', 'D. Economic reforms'], answer: 'B. Conquering parts of India' },
-        { q: 'Muslims demanded separate electorates because:', options: ['A. Economic issues', 'B. Religious differences', 'C. Cultural similarity', 'D. Language issue only'], answer: 'B. Religious differences' },
-      ],
+           {
+        "q": "When was the Political Parties Act introduced in Pakistan?",
+        "options": [
+            "A. 1960",
+            "B. 1966",
+            "C. 1964",
+            "D. 1962"
+        ],
+        "answer": "D. 1962"
+    },
+    {
+        "q": "Who abrogated the Constitution of 1956 on 7th October, 1958?",
+        "options": [
+            "A. Malik Ghulam Muhammad",
+            "B. Yahya Khan",
+            "C. Iskander Mirza",
+            "D. Ayub Khan"
+        ],
+        "answer": "C. Iskander Mirza"
+    },
+    {
+        "q": "What principle was followed for the representation of provinces in the National Assembly under the 1956 Constitution?",
+        "options": [
+            "A. Parity-based representation",
+            "B. Area-based representation",
+            "C. Political Party-based representation",
+            "D. Population-based representation"
+        ],
+        "answer": "A. Parity-based representation"
+    },
+    {
+        "q": "Who dissolved the First Constituent Assembly of Pakistan?",
+        "options": [
+            "A. Liaquat Ali Khan",
+            "B. Iskandar Mirza",
+            "C. Ghulam Muhammad",
+            "D. Ayub Khan"
+        ],
+        "answer": "C. Ghulam Muhammad"
+    },
+    {
+        "q": "Which constitution of Pakistan had 234 articles and 6 schedules, outlining the framework for governance and power management?",
+        "options": [
+            "A. Constitution of 1962",
+            "B. Constitution of 1973",
+            "C. Interim constitution of 1947",
+            "D. Constitution of 1956"
+        ],
+        "answer": "D. Constitution of 1956"
+    },
+    {
+        "q": "When was the first BPC Report presented to the Constituent Assembly of Pakistan?",
+        "options": [
+            "A. 1953",
+            "B. 1950",
+            "C. 1952",
+            "D. 1951"
+        ],
+        "answer": "B. 1950"
+    },
+    {
+        "q": "According to 1962 constitution, Advisory Council for Islamic Ideology was",
+        "options": [
+            "A. A Recommendary body",
+            "B. An Executive body",
+            "C. A Supervisory body",
+            "D. A Legislative body"
+        ],
+        "answer": "A. A Recommendary body"
+    },
+    {
+        "q": "Under which Act, the First Constituent Assembly of Pakistan came into being?",
+        "options": [
+            "A. Indian Council Act, 1935",
+            "B. Indian Council Act, 1942",
+            "C. Indian Independence Act, 1947",
+            "D. Government of India Act, 1935"
+        ],
+        "answer": "C. Indian Independence Act, 1947"
+    },
+    {
+        "q": "When was the First BPC (Basic Principles Committee) Report presented to the Constituent Assembly of Pakistan?",
+        "options": [
+            "A. 1950",
+            "B. 1949",
+            "C. 1951",
+            "D. 1952"
+        ],
+        "answer": "A. 1950"
+    },
+    {
+        "q": "Who abrogated the Constitution of 1962 on March 25, 1969?",
+        "options": [
+            "A. Zulfiqar Ali Bhutto",
+            "B. Iskander Mirza",
+            "C. General Ayub Khan",
+            "D. General Yahya Khan"
+        ],
+        "answer": "D. General Yahya Khan"
+    },
+
+
+
+
+
+],
       subjective: [],
     },
   },
