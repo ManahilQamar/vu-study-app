@@ -12742,7 +12742,2062 @@ S = a/(1-r)
       "diff": "easy"
     }
   ]
-}
+},
+
+
+  23: {
+    title: "Mathematical Induction (MTH202 Lecture 23)",
+    summary: `**Key Topics Covered:**
+- Principle of Mathematical Induction
+- Basis Step and Inductive Step
+- Proving summation formulas
+- Proving divisibility properties
+- Proving inequalities
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Mathematical Induction kya hai?**
+👉 Ye ek proof technique hai jo statements ko prove karne ke liye use hoti hai jo sab positive integers ke liye true hoti hain.
+👉 Isko do steps mein divide kiya gaya hai:
+
+**1. Basis Step:** Statement n=1 ke liye true hai ya nahi check karo.
+**2. Inductive Step:** Agar statement n=k ke liye true hai, to n=k+1 ke liye bhi true hogi.
+
+**Summation Formulas:**
+1 + 2 + 3 + ... + n = n(n+1)/2
+1 + 3 + 5 + ... + (2n-1) = n²
+1² + 2² + 3² + ... + n² = n(n+1)(2n+1)/6
+1 + 2 + 2² + ... + 2ⁿ = 2ⁿ⁺¹ - 1
+
+**Important Rule:** Pehle n=1 check karo. Phir assume karo k ke liye true hai. Phir prove karo k+1 ke liye.
+
+---
+
+**Quick Revision Points:**
+- Basis step: n=1 check karo.
+- Inductive step: assume k, prove k+1.
+- Summation formulas yaad rakho.
+- Inequality proofs mein careful raho.`,
+    questions: [
+      {
+        q: "Mathematical induction mein pehla step kya hota hai?",
+        options: ["A. Inductive Step", "B. Basis Step", "C. Conclusion Step", "D. Assumption Step"],
+        answer: "B. Basis Step",
+        diff: "easy"
+      },
+      {
+        q: "1 + 2 + 3 + ... + n ka formula kya hai?",
+        options: ["A. n(n-1)/2", "B. n(n+1)/2", "C. n²/2", "D. (n+1)(n+2)/2"],
+        answer: "B. n(n+1)/2",
+        diff: "easy"
+      },
+      {
+        q: "Inductive step mein hum assume karte hain ke statement n = ____ ke liye true hai.",
+        options: ["A. n = 1", "B. n = k", "C. n = k+1", "D. n = n"],
+        answer: "B. n = k",
+        diff: "easy"
+      },
+      {
+        q: "1² + 2² + 3² + ... + n² ka formula kya hai?",
+        options: ["A. n(n+1)(2n+1)/6", "B. n(n+1)(n+2)/6", "C. n²(n+1)²/4", "D. n(n-1)(2n-1)/6"],
+        answer: "A. n(n+1)(2n+1)/6",
+        diff: "easy"
+      },
+      {
+        q: "1 + 3 + 5 + ... + (2n-1) ka sum kya hai?",
+        options: ["A. n²", "B. n(n+1)", "C. (2n-1)²", "D. n(2n-1)"],
+        answer: "A. n²",
+        diff: "easy"
+      },
+      {
+        q: "1 + 2 + 2² + ... + 2ⁿ ka formula kya hai?",
+        options: ["A. 2ⁿ - 1", "B. 2ⁿ⁺¹ - 1", "C. 2ⁿ⁺¹ + 1", "D. 2ⁿ - 2"],
+        answer: "B. 2ⁿ⁺¹ - 1",
+        diff: "easy"
+      },
+      {
+        q: "Mathematical induction mein agar statement n=1 ke liye true hai aur n=k se n=k+1 prove ho jaye to:",
+        options: ["A. Statement sab integers ke liye true hai", "B. Statement kuch integers ke liye true hai", "C. Statement kabhi true nahi ho sakti", "D. Statement sirf n=1 ke liye true hai"],
+        answer: "A. Statement sab integers ke liye true hai",
+        diff: "easy"
+      },
+      {
+        q: "Sum of first n odd numbers ka formula kya hai?",
+        options: ["A. n(n+1)", "B. n²", "C. 2n-1", "D. (2n-1)²"],
+        answer: "B. n²",
+        diff: "easy"
+      },
+      {
+        q: "Mathematical induction ka second step kya kehlata hai?",
+        options: ["A. Basis Step", "B. Inductive Step", "C. Conclusion Step", "D. Hypothesis Step"],
+        answer: "B. Inductive Step",
+        diff: "easy"
+      }
+    ]
+  },
+  24: {
+    title: "Mathematical Induction for Divisibility (MTH202 Lecture 24)",
+    summary: `**Key Topics Covered:**
+- Divisibility proofs using induction
+- Proving n³ - n divisible by 3
+- Proving 2²ⁿ - 1 divisible by 3
+- Proving n(n+1) divisible by 2
+- Proving xⁿ - yⁿ divisible by x - y
+- Inequality proofs: 2n+1 < 2ⁿ
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Divisibility kya hai?**
+👉 Agar kisi number n ko d se divide karke remainder 0 aata hai to d divides n (d|n).
+
+**Divisibility proof ka tarika:**
+1. n=1 ke liye check karo.
+2. Maan lo n=k ke liye divisible hai.
+3. n=k+1 ke liye divisible prove karo.
+
+**Examples:**
+n³ - n → n=1: 0 divisible. Assume k³-k=3m. Then (k+1)³-(k+1) = (k³-k)+3(k²+k) = 3(m+k²+k).
+
+2²ⁿ - 1 → n=1: 3 divisible. Assume 2²ᵏ-1=3m. Then 2²ᵏ⁺²-1 = 4(3m+1)-1 = 12m+3 = 3(4m+1).
+
+xⁿ - yⁿ → x-y se divisible.
+
+**Inequality:** 2n+1 < 2ⁿ for n≥3. Check n=3: 7<8. Assume 2k+1<2ᵏ, then 2(k+1)+1 < 2ᵏ+2 ≤ 2ᵏ⁺¹.
+
+---
+
+**Quick Revision Points:**
+- Divisibility = d|n if n = d·k.
+- Induction se divisibility prove karo.
+- Inequality mein careful raho.
+- n³ - n 3 se divisible.
+- 2²ⁿ - 1 3 se divisible.
+- xⁿ - yⁿ x-y se divisible.`,
+    questions: [
+      {
+        q: "n³ - n kis se divisible hai?",
+        options: ["A. 2", "B. 3", "C. 4", "D. 5"],
+        answer: "B. 3",
+        diff: "easy"
+      },
+      {
+        q: "2²ⁿ - 1 kis se divisible hai?",
+        options: ["A. 2", "B. 3", "C. 4", "D. 5"],
+        answer: "B. 3",
+        diff: "easy"
+      },
+      {
+        q: "n(n+1) humesha kis se divisible hai?",
+        options: ["A. 2", "B. 3", "C. 4", "D. 5"],
+        answer: "A. 2",
+        diff: "easy"
+      },
+      {
+        q: "xⁿ - yⁿ humesha kis se divisible hai?",
+        options: ["A. x+y", "B. x-y", "C. xy", "D. x/y"],
+        answer: "B. x-y",
+        diff: "easy"
+      },
+      {
+        q: "2n+1 < 2ⁿ kis n ke liye true hai?",
+        options: ["A. n ≥ 1", "B. n ≥ 2", "C. n ≥ 3", "D. n ≥ 4"],
+        answer: "C. n ≥ 3",
+        diff: "easy"
+      },
+      {
+        q: "n³ - n ko 3 se divisible prove karne ke liye inductive step mein hum kya karte hain?",
+        options: ["A. (k+1)³ - (k+1) = (k³-k) + 3k² + 3k", "B. (k+1)³ - (k+1) = k³ + 3k² + 2k", "C. (k+1)³ - (k+1) = k³ - k + 3k", "D. (k+1)³ - (k+1) = 3(k³-k)"],
+        answer: "A. (k+1)³ - (k+1) = (k³-k) + 3k² + 3k",
+        diff: "medium"
+      },
+      {
+        q: "2²ⁿ - 1 ko 3 se divisible prove karne ke liye inductive step: 2²ᵏ⁺² - 1 = ?",
+        options: ["A. 4(2²ᵏ - 1) + 3", "B. 4(2²ᵏ) - 1", "C. 4(3m+1) - 1 = 12m + 3", "D. 2(2²ᵏ) - 1"],
+        answer: "C. 4(3m+1) - 1 = 12m + 3",
+        diff: "hard"
+      },
+      {
+        q: "Which inequality is true for all n≥3?",
+        options: ["A. 2n+1 < 2ⁿ", "B. 2n+1 > 2ⁿ", "C. 2n+1 = 2ⁿ", "D. None"],
+        answer: "A. 2n+1 < 2ⁿ",
+        diff: "easy"
+      },
+      {
+        q: "xⁿ - yⁿ ko x-y se divisible prove karne ke liye inductive step: xᵏ⁺¹ - yᵏ⁺¹ = ?",
+        options: ["A. x(xᵏ-yᵏ) + yᵏ(x-y)", "B. x(xᵏ+yᵏ) - y(xᵏ-yᵏ)", "C. (x+y)(xᵏ-yᵏ)", "D. xᵏ(x-y) + yᵏ(x-y)"],
+        answer: "A. x(xᵏ-yᵏ) + yᵏ(x-y)",
+        diff: "hard"
+      }
+    ]
+  },
+  25: {
+    title: "Methods of Proof (MTH202 Lecture 25)",
+    summary: `**Key Topics Covered:**
+- Direct Proof
+- Proof by Counterexample
+- Definitions: even, odd, prime, composite, rational, divisible
+- Direct proof examples (sum of odds is even, product of even and odd is even)
+- Disproving statements using counterexamples
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Direct Proof kya hai?**
+👉 Agar p true hai to q true prove karo.
+👉 Example: Sum of two odd integers is even. Let m=2a+1, n=2b+1. Then m+n=2(a+b+1) even.
+
+**Proof by Counterexample:**
+👉 Agar koi statement sab ke liye true nahi hai to ek counterexample dekar disprove karo.
+👉 Example: "n² - n + 11 is prime" → n=11 ke liye 121 composite hai.
+
+**Important Definitions:**
+- Even: n = 2k
+- Odd: n = 2k+1
+- Prime: n>1, sirf 1 aur n se divide hota hai
+- Composite: n = r·s where r,s > 1
+- Rational: n = a/b where b≠0
+- Divisible: d|n if n = d·k
+
+---
+
+**Quick Revision Points:**
+- Direct proof: p se q prove karo.
+- Counterexample: ek example dekar disprove karo.
+- Definitions yaad rakho.`,
+    questions: [
+      {
+        q: "Sum of two odd integers hamesha kya hota hai?",
+        options: ["A. Odd", "B. Even", "C. Prime", "D. Composite"],
+        answer: "B. Even",
+        diff: "easy"
+      },
+      {
+        q: "Product of even and odd integer hamesha kya hota hai?",
+        options: ["A. Odd", "B. Even", "C. Prime", "D. Cannot determine"],
+        answer: "B. Even",
+        diff: "easy"
+      },
+      {
+        q: "Even integer ka square hamesha kya hota hai?",
+        options: ["A. Odd", "B. Even", "C. Prime", "D. Composite"],
+        answer: "B. Even",
+        diff: "easy"
+      },
+      {
+        q: "n² - n + 11 is prime for all n. Is statement ko kaise disprove kar sakte hain?",
+        options: ["A. n=1 se", "B. n=11 se", "C. n=0 se", "D. n=2 se"],
+        answer: "B. n=11 se",
+        diff: "easy"
+      },
+      {
+        q: "If a|b and a|c then:",
+        options: ["A. a|(b+c)", "B. a|(b-c)", "C. Both A and B", "D. Neither"],
+        answer: "C. Both A and B",
+        diff: "easy"
+      },
+      {
+        q: "Which number is not prime?",
+        options: ["A. 2", "B. 3", "C. 4", "D. 5"],
+        answer: "C. 4",
+        diff: "easy"
+      },
+      {
+        q: "Product of two irrational numbers:",
+        options: ["A. Always irrational", "B. Always rational", "C. Can be rational or irrational", "D. Always integer"],
+        answer: "C. Can be rational or irrational",
+        diff: "medium"
+      },
+      {
+        q: "Direct proof mein hum kya karte hain?",
+        options: ["A. p true maan kar q true prove karte hain", "B. q false maan kar p false prove karte hain", "C. p false maan kar q false prove karte hain", "D. q true maan kar p true prove karte hain"],
+        answer: "A. p true maan kar q true prove karte hain",
+        diff: "easy"
+      },
+      {
+        q: "Counterexample se kya prove hota hai?",
+        options: ["A. Statement true hai", "B. Statement false hai", "C. Statement partially true hai", "D. Statement proof nahi ho sakti"],
+        answer: "B. Statement false hai",
+        diff: "easy"
+      }
+    ]
+  },
+  26: {
+    title: "Proof by Contradiction (MTH202 Lecture 26)",
+    summary: `**Key Topics Covered:**
+- Proof by Contradiction (Reductio ad absurdum)
+- Proving √2 is irrational
+- Proving if n² is even then n is even
+- Proving no greatest integer
+- Proving sum of rational and irrational is irrational
+- Proving √2 + √3 is irrational
+- Proving set of primes is infinite
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Proof by Contradiction kya hai?**
+👉 Statement ko false maan kar contradiction (untruth) prove karo.
+👉 Agar p→q prove karna hai to p aur ¬q ko true maan kar contradiction reach karo.
+
+**Examples:**
+1. √2 irrational: Maan lo √2 = a/b (lowest terms). Then a²=2b² → a even → a=2k → b even → contradiction.
+2. n² even → n even: Maan lo n odd → n² odd → contradiction.
+3. No greatest integer: Maan lo N greatest → N+1 > N → contradiction.
+
+**Important Results:**
+- Sum of rational and irrational is irrational.
+- √2 + √3 is irrational.
+- Set of primes is infinite.`,
+    questions: [
+      {
+        q: "Proof by contradiction mein hum kya maan kar shuru karte hain?",
+        options: ["A. Statement true hai", "B. Statement false hai", "C. Statement partially true hai", "D. Statement unknown hai"],
+        answer: "B. Statement false hai",
+        diff: "easy"
+      },
+      {
+        q: "√2 irrational prove karne ke liye hum kya assume karte hain?",
+        options: ["A. √2 rational hai", "B. √2 integer hai", "C. √2 prime hai", "D. √2 even hai"],
+        answer: "A. √2 rational hai",
+        diff: "easy"
+      },
+      {
+        q: "√2 = a/b assume karne ke baad hum kya nikalte hain?",
+        options: ["A. a even, b even", "B. a odd, b odd", "C. a even, b odd", "D. a odd, b even"],
+        answer: "A. a even, b even",
+        diff: "medium"
+      },
+      {
+        q: "If n² is even, to n kya hai?",
+        options: ["A. Odd", "B. Even", "C. Prime", "D. Composite"],
+        answer: "B. Even",
+        diff: "easy"
+      },
+      {
+        q: "No greatest integer prove karne ke liye N greatest maan kar kya contradiction aata hai?",
+        options: ["A. N-1 > N", "B. N+1 > N", "C. N² > N", "D. 2N > N"],
+        answer: "B. N+1 > N",
+        diff: "easy"
+      },
+      {
+        q: "Sum of rational and irrational number:",
+        options: ["A. Always rational", "B. Always irrational", "C. Can be rational", "D. Always integer"],
+        answer: "B. Always irrational",
+        diff: "easy"
+      },
+      {
+        q: "√2 + √3 kis type ka number hai?",
+        options: ["A. Rational", "B. Irrational", "C. Integer", "D. Prime"],
+        answer: "B. Irrational",
+        diff: "easy"
+      },
+      {
+        q: "Set of prime numbers infinite hai. Isko prove karne ke liye hum kya assume karte hain?",
+        options: ["A. Primes finite hain", "B. Primes infinite hain", "C. Primes 5 se zyada hain", "D. Primes 10 se zyada hain"],
+        answer: "A. Primes finite hain",
+        diff: "easy"
+      },
+      {
+        q: "Contradiction proof mein agar p∧¬q se contradiction aata hai to:",
+        options: ["A. p→q true hai", "B. p→q false hai", "C. q→p true hai", "D. q→p false hai"],
+        answer: "A. p→q true hai",
+        diff: "hard"
+      }
+    ]
+  },
+  27: {
+    title: "Algorithm and Loop Invariants (MTH202 Lecture 27)",
+    summary: `**Key Topics Covered:**
+- Algorithm definition and structure
+- Pre-conditions and Post-conditions
+- Predicate definition
+- Loop Invariants
+- Loop Invariant Theorem (4 properties)
+- Division algorithm tracing
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Algorithm kya hai?**
+👉 Step-by-step method for performing some action.
+
+**Pre-condition:** Algorithm start karne se pehle kya true hona chahiye.
+**Post-condition:** Algorithm khatam hone ke baad kya true hona chahiye.
+
+**Loop Invariant:**
+👉 A predicate jo loop ke har iteration se pehle true hota hai.
+👉 Theorems: Basis Property, Inductive Property, Eventual Falsity of Guard, Correctness of Post-Condition.
+
+**Division Algorithm:**
+Input: a≥0, d>0
+Initialize r=a, q=0
+while (r ≥ d):
+   r = r - d
+   q = q + 1
+Post-condition: a = q·d + r, 0 ≤ r < d
+
+---
+
+**Quick Revision Points:**
+- Pre-condition = input conditions
+- Post-condition = output conditions
+- Predicate = statement with variables
+- Loop invariant = true before each iteration
+- Division algorithm quotient-remainder.`,
+    questions: [
+      {
+        q: "Algorithm kya hai?",
+        options: ["A. Random process", "B. Step-by-step method", "C. Mathematical formula", "D. Data structure"],
+        answer: "B. Step-by-step method",
+        diff: "easy"
+      },
+      {
+        q: "Pre-condition kya hoti hai?",
+        options: ["A. Algorithm ke baad true", "B. Algorithm se pehle true", "C. Loop ke andar true", "D. Algorithm ke bahar false"],
+        answer: "B. Algorithm se pehle true",
+        diff: "easy"
+      },
+      {
+        q: "Post-condition kya hoti hai?",
+        options: ["A. Algorithm ke baad true", "B. Algorithm se pehle true", "C. Loop ke andar true", "D. Algorithm ke bahar false"],
+        answer: "A. Algorithm ke baad true",
+        diff: "easy"
+      },
+      {
+        q: "Loop Invariant kya hai?",
+        options: ["A. Har iteration se pehle true", "B. Sirf pehli iteration se pehle true", "C. Sirf aakhri iteration ke baad true", "D. Kabhi true nahi hota"],
+        answer: "A. Har iteration se pehle true",
+        diff: "easy"
+      },
+      {
+        q: "Loop Invariant Theorem mein kitne properties hain?",
+        options: ["A. 2", "B. 3", "C. 4", "D. 5"],
+        answer: "C. 4",
+        diff: "easy"
+      },
+      {
+        q: "Predicate kya hai?",
+        options: ["A. Statement jo hamesha false ho", "B. Statement with variables jo values substitute karne par statement ban jaye", "C. Statement jo hamesha true ho", "D. Mathematical operation"],
+        answer: "B. Statement with variables jo values substitute karne par statement ban jaye",
+        diff: "medium"
+      },
+      {
+        q: "Division algorithm mein guard condition kya hai?",
+        options: ["A. r < d", "B. r ≥ d", "C. q = 0", "D. a = 0"],
+        answer: "B. r ≥ d",
+        diff: "easy"
+      },
+      {
+        q: "Division algorithm mein loop invariant kya hai?",
+        options: ["A. r = a - n·d and n = q", "B. r = a + n·d", "C. q = a·d + r", "D. r = a·q"],
+        answer: "A. r = a - n·d and n = q",
+        diff: "hard"
+      },
+      {
+        q: "54 ko 11 se divide karne par quotient aur remainder kya hain?",
+        options: ["A. q=4, r=10", "B. q=5, r=10", "C. q=4, r=9", "D. q=5, r=9"],
+        answer: "A. q=4, r=10",
+        diff: "easy"
+      }
+    ]
+  },
+  28: {
+    title: "Division Algorithm and Euclidean Algorithm (MTH202 Lecture 28)",
+    summary: `**Key Topics Covered:**
+- Division Algorithm (quotient-remainder theorem)
+- Correctness proof of division algorithm
+- Euclidean Algorithm (gcd)
+- Correctness proof of Euclidean algorithm
+- Lemma: gcd(a,b) = gcd(b,r)
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Division Algorithm:**
+Given a≥0, d>0, unique integers q and r such that a = q·d + r, 0 ≤ r < d.
+
+**Euclidean Algorithm:**
+gcd(A,B) find karne ke liye repeated division.
+Example: gcd(330,156)
+330 = 156·2 + 18
+156 = 18·8 + 12
+18 = 12·1 + 6
+12 = 6·2 + 0
+Last nonzero remainder = 6 → gcd = 6.
+
+**Lemma:** If a = q·b + r, then gcd(a,b) = gcd(b,r).
+
+---
+
+**Quick Revision Points:**
+- Division: a = q·d + r
+- Euclid: repeated division until remainder 0
+- gcd = last nonzero remainder
+- Lemma key to correctness.`,
+    questions: [
+      {
+        q: "Division algorithm mein a = q·d + r mein r ki range kya hai?",
+        options: ["A. 0 ≤ r ≤ d", "B. 0 ≤ r < d", "C. 0 < r ≤ d", "D. 0 < r < d"],
+        answer: "B. 0 ≤ r < d",
+        diff: "easy"
+      },
+      {
+        q: "Euclidean algorithm se gcd(330,156) kya hai?",
+        options: ["A. 12", "B. 18", "C. 6", "D. 3"],
+        answer: "C. 6",
+        diff: "easy"
+      },
+      {
+        q: "Lemma: agar a = q·b + r to:",
+        options: ["A. gcd(a,b) = gcd(b,r)", "B. gcd(a,b) = gcd(a,r)", "C. gcd(a,b) = q", "D. gcd(a,b) = r"],
+        answer: "A. gcd(a,b) = gcd(b,r)",
+        diff: "easy"
+      },
+      {
+        q: "Euclidean algorithm mein loop guard kya hai?",
+        options: ["A. b = 0", "B. b ≠ 0", "C. a = 0", "D. a ≠ 0"],
+        answer: "B. b ≠ 0",
+        diff: "easy"
+      },
+      {
+        q: "gcd(330,156) find karne ke liye 330 = 156·2 + 18 ke baad next step kya hai?",
+        options: ["A. 156 = 18·8 + 12", "B. 156 = 18·7 + 10", "C. 330 = 18·18 + 6", "D. 156 = 18·9 + 4"],
+        answer: "A. 156 = 18·8 + 12",
+        diff: "medium"
+      },
+      {
+        q: "Euclidean algorithm mein loop invariant kya hai?",
+        options: ["A. gcd(a,b) = gcd(A,B)", "B. gcd(a,b) = gcd(A+B)", "C. a = b·q", "D. b = a·q"],
+        answer: "A. gcd(a,b) = gcd(A,B)",
+        diff: "hard"
+      },
+      {
+        q: "gcd(48,18) kya hai?",
+        options: ["A. 6", "B. 4", "C. 2", "D. 8"],
+        answer: "A. 6",
+        diff: "easy"
+      }
+    ]
+  },
+  29: {
+    title: "Combinatorics (MTH202 Lecture 29)",
+    summary: `**Key Topics Covered:**
+- Sum Rule (addition principle)
+- Product Rule (multiplication principle)
+- Sum Rule in terms of sets
+- Product Rule in terms of sets
+- Counting bit strings
+- Counting license plates
+- Counting variable names
+- Nested loop iterations
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Sum Rule:**
+Agar event1 n1 ways mein ho sakta hai, event2 n2 ways mein (different) to total = n1 + n2.
+
+**Product Rule:**
+Agar event1 n1 ways mein ho sakta hai, event2 n2 ways mein to total = n1 × n2.
+
+**Examples:**
+- Bit strings length 8 with first bit 1: 1 × 2⁷ = 128
+- License plates 3 letters + 3 digits: 26×26×26×10×10×10 = 17,576,000
+- Variable names: 26 + 26×10 = 286
+- 3-digit numbers divisible by 5: 90 + 90 = 180
+
+---
+
+**Quick Revision Points:**
+- Sum Rule = "or" → add
+- Product Rule = "and" → multiply
+- Set union for sum rule (disjoint sets)
+- Cartesian product for product rule.`,
+    questions: [
+      {
+        q: "3 lists mein 23, 15, 19 projects hain. Kitne projects choose kar sakte hain?",
+        options: ["A. 57", "B. 58", "C. 56", "D. 60"],
+        answer: "A. 57",
+        diff: "easy"
+      },
+      {
+        q: "Bit string length 8 begin with 1: kitne hain?",
+        options: ["A. 128", "B. 256", "C. 64", "D. 512"],
+        answer: "A. 128",
+        diff: "easy"
+      },
+      {
+        q: "License plate 3 letters + 3 digits: kitne possible?",
+        options: ["A. 17,576,000", "B. 17,576,000", "C. 26×10×6", "D. 26³+10³"],
+        answer: "A. 17,576,000",
+        diff: "easy"
+      },
+      {
+        q: "Variable names: letter or letter+digit. Kitne possible?",
+        options: ["A. 286", "B. 260", "C. 26", "D. 276"],
+        answer: "A. 286",
+        diff: "easy"
+      },
+      {
+        q: "3-digit numbers divisible by 5: kitne?",
+        options: ["A. 180", "B. 170", "C. 190", "D. 160"],
+        answer: "A. 180",
+        diff: "easy"
+      },
+      {
+        q: "Sum rule kab use hoti hai?",
+        options: ["A. Jab events sequential ho", "B. Jab events disjoint ho", "C. Jab events overlap ho", "D. Jab events independent ho"],
+        answer: "B. Jab events disjoint ho",
+        diff: "easy"
+      },
+      {
+        q: "Product rule kab use hoti hai?",
+        options: ["A. Jab events disjoint ho", "B. Jab events sequential ho", "C. Jab events same ho", "D. Jab events impossible ho"],
+        answer: "B. Jab events sequential ho",
+        diff: "easy"
+      },
+      {
+        q: "Nested loop: i=1 to 4, j=1 to 3. Inner loop kitni baar iterate hogi?",
+        options: ["A. 12", "B. 7", "C. 5", "D. 10"],
+        answer: "A. 12",
+        diff: "easy"
+      }
+    ]
+  },
+  30: {
+    title: "Permutations (MTH202 Lecture 30)",
+    summary: `**Key Topics Covered:**
+- Factorial definition
+- k-sample (repetition allowed, order matters)
+- k-permutation (repetition not allowed, order matters)
+- Formula: P(n,k) = n!/(n-k)!
+- Examples and applications
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Factorial:**
+n! = n·(n-1)·...·1, 0! = 1
+
+**k-sample:**
+Repetition allowed, order matters → nᵏ ways.
+
+**k-permutation:**
+Repetition not allowed, order matters → P(n,k) = n!/(n-k)! = n·(n-1)·...·(n-k+1)
+
+**Examples:**
+- P(8,3) = 8×7×6 = 336
+- P(4,2) = 12 (WX, WY, WZ, XW, XY, XZ, YW, YX, YZ, ZW, ZX, ZY)
+- 5 letters from ALGORITHM: P(9,5) = 15,120
+- 7 persons in row: 7! = 5040
+
+---
+
+**Quick Revision Points:**
+- k-sample: repetition allowed → nᵏ
+- k-permutation: no repetition → P(n,k)
+- k ≤ n for permutations
+- Factorial: 0! = 1.`,
+    questions: [
+      {
+        q: "P(8,3) ka value kya hai?",
+        options: ["A. 336", "B. 56", "C. 672", "D. 168"],
+        answer: "A. 336",
+        diff: "easy"
+      },
+      {
+        q: "P(4,2) ka value kya hai?",
+        options: ["A. 12", "B. 6", "C. 24", "D. 8"],
+        answer: "A. 12",
+        diff: "easy"
+      },
+      {
+        q: "7 persons ko 7 chairs mein arrange karne ke kitne tareeqay hain?",
+        options: ["A. 5040", "B. 720", "C. 40320", "D. 50400"],
+        answer: "A. 5040",
+        diff: "easy"
+      },
+      {
+        q: "k-sample mein repetition:",
+        options: ["A. Allowed hai", "B. Allowed nahi hai", "C. Kabhi allowed nahi", "D. Depends"],
+        answer: "A. Allowed hai",
+        diff: "easy"
+      },
+      {
+        q: "k-permutation mein repetition:",
+        options: ["A. Allowed hai", "B. Allowed nahi hai", "C. Kabhi allowed hai", "D. Depends"],
+        answer: "B. Allowed nahi hai",
+        diff: "easy"
+      },
+      {
+        q: "k-sample mein kitne ways hain?",
+        options: ["A. nᵏ", "B. n!/(n-k)!", "C. C(n,k)", "D. kⁿ"],
+        answer: "A. nᵏ",
+        diff: "easy"
+      },
+      {
+        q: "k-permutation mein kitne ways hain?",
+        options: ["A. nᵏ", "B. n!/(n-k)!", "C. C(n,k)", "D. kⁿ"],
+        answer: "B. n!/(n-k)!",
+        diff: "easy"
+      },
+      {
+        q: "5 letters ALGORITHM se 5 letters select karne ke kitne ways hain?",
+        options: ["A. 15120", "B. 3024", "C. 7560", "D. 120"],
+        answer: "A. 15120",
+        diff: "medium"
+      },
+      {
+        q: "P(n,2) = 72, n kya hai?",
+        options: ["A. 8", "B. 9", "C. 10", "D. 12"],
+        answer: "B. 9",
+        diff: "medium"
+      }
+    ]
+  },
+  31: {
+    title: "Combinations (MTH202 Lecture 31)",
+    summary: `**Key Topics Covered:**
+- k-combination (no repetition, order doesn't matter)
+- Formula: C(n,k) = n!/(k!(n-k)!)
+- Relationship: P(n,k) = C(n,k)·k!
+- Important properties of combinations
+- Examples with committees, bit strings
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**k-combination:**
+Order doesn't matter, repetition not allowed → C(n,k) = n!/(k!(n-k)!)
+
+**Properties:**
+- C(n,0) = 1, C(n,n) = 1
+- C(n,1) = n, C(n,2) = n(n-1)/2
+- C(n,k) = C(n, n-k)
+- C(n,k) + C(n,k+1) = C(n+1, k+1)
+
+**Examples:**
+- C(9,6) = 84
+- 8 questions out of 10: C(10,8) = 45
+- 4 women, 3 men from 14: C(8,4)·C(6,3) = 1400
+- 16-bit strings with 9 ones: C(16,9) = 11440
+
+---
+
+**Quick Revision Points:**
+- C(n,k) = n!/(k!(n-k)!)
+- Order doesn't matter
+- k ≤ n (no repetition)
+- P(n,k) = C(n,k)·k!`,
+    questions: [
+      {
+        q: "C(9,6) ka value kya hai?",
+        options: ["A. 84", "B. 72", "C. 56", "D. 126"],
+        answer: "A. 84",
+        diff: "easy"
+      },
+      {
+        q: "10 mein se 8 questions choose karne ke kitne ways hain?",
+        options: ["A. 45", "B. 90", "C. 30", "D. 60"],
+        answer: "A. 45",
+        diff: "easy"
+      },
+      {
+        q: "C(14,7) ka value kya hai?",
+        options: ["A. 3432", "B. 3432", "C. 3003", "D. 1716"],
+        answer: "A. 3432",
+        diff: "medium"
+      },
+      {
+        q: "C(n,k) + C(n,k+1) kya barabar hai?",
+        options: ["A. C(n+1,k+1)", "B. C(n+1,k)", "C. C(n,k+2)", "D. C(n+1,k-1)"],
+        answer: "A. C(n+1,k+1)",
+        diff: "hard"
+      },
+      {
+        q: "C(n,k) = C(n, n-k) is property ko kya kehte hain?",
+        options: ["A. Symmetry", "B. Reflexivity", "C. Transitivity", "D. Asymmetry"],
+        answer: "A. Symmetry",
+        diff: "easy"
+      },
+      {
+        q: "8 women, 6 men mein se 7 choose karna hai jisme 4 women aur 3 men hon. Kitne ways?",
+        options: ["A. 1400", "B. 700", "C. 2800", "D. 2100"],
+        answer: "A. 1400",
+        diff: "medium"
+      },
+      {
+        q: "16-bit strings jisme exactly 9 ones hon. Kitne hain?",
+        options: ["A. 11440", "B. 12870", "C. 8008", "D. 4368"],
+        answer: "A. 11440",
+        diff: "medium"
+      },
+      {
+        q: "C(5,0) ka value kya hai?",
+        options: ["A. 0", "B. 1", "C. 5", "D. 10"],
+        answer: "B. 1",
+        diff: "easy"
+      },
+      {
+        q: "Combination mein order:",
+        options: ["A. Matters", "B. Doesn't matter", "C. Sometimes matters", "D. Always matters"],
+        answer: "B. Doesn't matter",
+        diff: "easy"
+      }
+    ]
+  },
+  32: {
+    title: "k-Combinations and Permutations with Repetition (MTH202 Lecture 32)",
+    summary: `**Key Topics Covered:**
+- k-selection (combinations with repetition)
+- Formula: C(n+k-1, k)
+- Ordered and unordered partitions
+- Permutations with repetitions (multinomial coefficients)
+- Generalized permutations
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**k-selection:**
+Order doesn't matter, repetition allowed → C(n+k-1, k)
+
+**Permutations with repetition:**
+n items with n₁ alike, n₂ alike, ... → n!/(n₁!·n₂!·...·nₖ!)
+
+**Ordered partition:** n!/(n₁!·n₂!·...·nₖ!)
+**Unordered partition:** ordered partition divided by permutations of equal cells.
+
+**Examples:**
+- 10 types, 30 batteries: C(30+10-1,30) = C(39,30)
+- BENZENE: 7!/(3!·2!) = 420
+- 12 students in 3 groups of 4: 12!/(4!4!4!) = 34650
+
+---
+
+**Quick Revision Points:**
+- k-selection: C(n+k-1, k)
+- Repetition allowed for selections
+- Multinomial coefficient: n!/(n₁!·...·nₖ!)
+- Ordered vs unordered partitions.`,
+    questions: [
+      {
+        q: "10 types, 30 batteries distribute karne ke kitne ways hain?",
+        options: ["A. 211915132", "B. 211915132", "C. 200000000", "D. 300000000"],
+        answer: "A. 211915132",
+        diff: "hard"
+      },
+      {
+        q: "BENZENE se kitne distinct permutations ban sakte hain?",
+        options: ["A. 420", "B. 210", "C. 840", "D. 1260"],
+        answer: "A. 420",
+        diff: "easy"
+      },
+      {
+        q: "12 students ko 3 groups of 4 mein divide karne ke kitne ways hain?",
+        options: ["A. 34650", "B. 34650", "C. 27720", "D. 4950"],
+        answer: "A. 34650",
+        diff: "medium"
+      },
+      {
+        q: "k-selection ki formula kya hai?",
+        options: ["A. C(n+k-1, k)", "B. C(n+k, k)", "C. C(n+k-1, n)", "D. C(n+k, n)"],
+        answer: "A. C(n+k-1, k)",
+        diff: "easy"
+      },
+      {
+        q: "4 red flags aur 2 blue flags se kitne signals ban sakte hain?",
+        options: ["A. 15", "B. 20", "C. 30", "D. 10"],
+        answer: "A. 15",
+        diff: "easy"
+      },
+      {
+        q: "k-selection mein repetition:",
+        options: ["A. Allowed hai", "B. Allowed nahi hai", "C. Kabhi allowed nahi", "D. Depends"],
+        answer: "A. Allowed hai",
+        diff: "easy"
+      },
+      {
+        q: "Multinomial coefficient kya hai?",
+        options: ["A. n!/(n₁!·n₂!·...·nₖ!)", "B. n!/(n-k)!", "C. n!/(k!(n-k)!)", "D. nᵏ"],
+        answer: "A. n!/(n₁!·n₂!·...·nₖ!)",
+        diff: "easy"
+      },
+      {
+        q: "9 toys ko 4 children mein divide karna hai: youngest ko 3, baqi ko 2. Kitne ways?",
+        options: ["A. 7560", "B. 2520", "C. 756", "D. 1260"],
+        answer: "A. 7560",
+        diff: "hard"
+      },
+      {
+        q: "Unordered partition mein order:",
+        options: ["A. Matters", "B. Doesn't matter", "C. Sometimes matters", "D. Always matters"],
+        answer: "B. Doesn't matter",
+        diff: "easy"
+      }
+    ]
+  },
+  33: {
+    title: "Tree Diagrams and Inclusion-Exclusion (MTH202 Lecture 33)",
+    summary: `**Key Topics Covered:**
+- Tree diagrams for counting
+- Inclusion-Exclusion Principle (2 sets)
+- Formula: n(A∪B) = n(A) + n(B) - n(A∩B)
+- Applications of inclusion-exclusion
+- Complement formula: n(A′) = n(U) - n(A)
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Tree Diagrams:**
+👉 Possibilities ko visualize karne ke liye tree use karo.
+👉 Har branch ek choice represent karti hai.
+
+**Inclusion-Exclusion Principle:**
+n(A∪B) = n(A) + n(B) - n(A∩B)
+
+**Examples:**
+- Among 200 people, 150 swim or jog, 85 swim, 60 both → jog = 150 - 85 + 60 = 125
+- n(A)=10, n(B)=15, n(A′)=12, n(A∩B)=8 → n(A∪B′) = 15
+
+---
+
+**Quick Revision Points:**
+- Tree diagram = branching possibilities
+- Inclusion-Exclusion = subtract intersection
+- Complement = n(U) - n(A)`,
+    questions: [
+      {
+        q: "Among 200, 150 swim or jog, 85 swim, 60 both. Kitne jog karte hain?",
+        options: ["A. 125", "B. 115", "C. 135", "D. 105"],
+        answer: "A. 125",
+        diff: "easy"
+      },
+      {
+        q: "n(A)=10, n(B)=15, n(A′)=12, n(A∩B)=8. n(A∪B′) kya hai?",
+        options: ["A. 15", "B. 10", "C. 20", "D. 25"],
+        answer: "A. 15",
+        diff: "hard"
+      },
+      {
+        q: "Inclusion-Exclusion formula kya hai?",
+        options: ["A. n(A∪B) = n(A) + n(B) - n(A∩B)", "B. n(A∪B) = n(A) + n(B) + n(A∩B)", "C. n(A∪B) = n(A) - n(B) + n(A∩B)", "D. n(A∪B) = n(A) + n(B)"],
+        answer: "A. n(A∪B) = n(A) + n(B) - n(A∩B)",
+        diff: "easy"
+      },
+      {
+        q: "n(A′) kya hai?",
+        options: ["A. n(U) - n(A)", "B. n(U) + n(A)", "C. n(A) - n(U)", "D. n(U) - n(A∩B)"],
+        answer: "A. n(U) - n(A)",
+        diff: "easy"
+      },
+      {
+        q: "50 people: 20 like Chinese, 32 fast food, 12 neither. Chinese but not fast food kitne?",
+        options: ["A. 6", "B. 8", "C. 10", "D. 12"],
+        answer: "A. 6",
+        diff: "medium"
+      },
+      {
+        q: "Tree diagram kis ke liye use hota hai?",
+        options: ["A. Possibilities visualize karne", "B. Probability compute karne", "C. Both A and B", "D. None"],
+        answer: "C. Both A and B",
+        diff: "easy"
+      },
+      {
+        q: "If n(U)=100, n(A)=50, n(B)=60, n((A∪B)′)=20, then n(A∩B) kya hai?",
+        options: ["A. 30", "B. 20", "C. 10", "D. 40"],
+        answer: "A. 30",
+        diff: "hard"
+      },
+      {
+        q: "Inclusion-Exclusion mein hum intersection ko:",
+        options: ["A. Add karte hain", "B. Subtract karte hain", "C. Multiply karte hain", "D. Divide karte hain"],
+        answer: "B. Subtract karte hain",
+        diff: "easy"
+      }
+    ]
+  },
+  34: {
+    title: "Inclusion-Exclusion and Pigeonhole Principle (MTH202 Lecture 34)",
+    summary: `**Key Topics Covered:**
+- Inclusion-Exclusion for 3 sets
+- Pigeonhole Principle
+- Generalized Pigeonhole Principle
+- Floor and Ceiling functions
+- Applications of pigeonhole principle
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Inclusion-Exclusion for 3 sets:**
+n(A∪B∪C) = n(A)+n(B)+n(C) - n(A∩B) - n(A∩C) - n(B∩C) + n(A∩B∩C)
+
+**Pigeonhole Principle:**
+k+1 pigeons in k holes → at least one hole has 2+ pigeons.
+
+**Generalized:**
+n·k + 1 pigeons in n holes → at least one hole has k+1 pigeons.
+
+**Floor ⌊x⌋:** greatest integer ≤ x
+**Ceiling ⌈x⌉:** smallest integer ≥ x
+
+**Examples:**
+- 367 people → 2 same birthday (366 days)
+- 7 integers → 2 same remainder when divided by 6
+- 26 students for 6 same grade with 5 grades
+
+---
+
+**Quick Revision Points:**
+- 3-set inclusion-exclusion: + triple intersection
+- Pigeonhole: more pigeons than holes
+- Generalized: n·k + 1 pigeons → k+1 in one hole
+- Floor = nearest lower integer
+- Ceiling = nearest upper integer`,
+    questions: [
+      {
+        q: "1000 mein se 3 ya 5 ke multiples kitne hain?",
+        options: ["A. 467", "B. 467", "C. 400", "D. 500"],
+        answer: "A. 467",
+        diff: "easy"
+      },
+      {
+        q: "1000 mein se 3 aur 5 dono ke multiples nahi kitne?",
+        options: ["A. 533", "B. 533", "C. 467", "D. 500"],
+        answer: "A. 533",
+        diff: "easy"
+      },
+      {
+        q: "367 people mein at least 2 same birthday. Yeh kis principle se hai?",
+        options: ["A. Inclusion-Exclusion", "B. Pigeonhole", "C. Sum Rule", "D. Product Rule"],
+        answer: "B. Pigeonhole",
+        diff: "easy"
+      },
+      {
+        q: "7 integers ko 6 se divide karo. Remainder same hone ke liye:",
+        options: ["A. Zaroori hai", "B. Zaroori nahi", "C. Kabhi nahi", "D. Depends"],
+        answer: "A. Zaroori hai",
+        diff: "easy"
+      },
+      {
+        q: "5 grades hain. 6 students same grade ke liye minimum kitne students chahiye?",
+        options: ["A. 26", "B. 25", "C. 30", "D. 31"],
+        answer: "A. 26",
+        diff: "easy"
+      },
+      {
+        q: "⌊25/4⌋ kya hai?",
+        options: ["A. 6", "B. 7", "C. 5", "D. 8"],
+        answer: "A. 6",
+        diff: "easy"
+      },
+      {
+        q: "⌈25/4⌉ kya hai?",
+        options: ["A. 6", "B. 7", "C. 5", "D. 8"],
+        answer: "B. 7",
+        diff: "easy"
+      },
+      {
+        q: "Pigeonhole principle mein agar N pigeons aur k holes hain to:",
+        options: ["A. One hole has at least ⌈N/k⌉ pigeons", "B. One hole has at most ⌊N/k⌋ pigeons", "C. All holes have exactly N/k pigeons", "D. None"],
+        answer: "A. One hole has at least ⌈N/k⌉ pigeons",
+        diff: "hard"
+      },
+      {
+        q: "100 people mein same month born hone ki minimum guarantee ke liye:",
+        options: ["A. 9", "B. 8", "C. 10", "D. 12"],
+        answer: "A. 9",
+        diff: "medium"
+      }
+    ]
+  },
+  35: {
+    title: "Probability (MTH202 Lecture 35)",
+    summary: `**Key Topics Covered:**
+- Experiment, Sample Space, Event definitions
+- Probability formula: P(E) = n(E)/n(S)
+- Complement of an event
+- Probability of drawing cards, dice, balls
+- Examples with cards, dice, lottery
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Definitions:**
+- Experiment = procedure with outcomes
+- Sample Space S = set of all outcomes
+- Event E = subset of S
+
+**Probability:**
+P(E) = n(E)/n(S), where all outcomes equally likely.
+
+**Complement:**
+P(E′) = 1 - P(E)
+
+**Examples:**
+- Die: P(>4) = 2/6 = 1/3
+- Two dice: P(sum 8 or 9) = 9/36 = 1/4
+- Cards: P(spade or ace) = 16/52 = 4/13
+- Two-digit multiple of 6: 15/90 = 1/6
+
+---
+
+**Quick Revision Points:**
+- Probability = favorable/total
+- Probability between 0 and 1
+- Complement = 1 - P(E)
+- Sample space for 2 dice = 36 outcomes`,
+    questions: [
+      {
+        q: "Die toss par number > 4 ki probability kya hai?",
+        options: ["A. 1/3", "B. 1/2", "C. 1/6", "D. 2/3"],
+        answer: "A. 1/3",
+        diff: "easy"
+      },
+      {
+        q: "Two dice toss par sum 8 or 9 ki probability kya hai?",
+        options: ["A. 1/4", "B. 1/3", "C. 1/6", "D. 1/2"],
+        answer: "A. 1/4",
+        diff: "easy"
+      },
+      {
+        q: "Card draw: spade ya ace ki probability kya hai?",
+        options: ["A. 4/13", "B. 1/4", "C. 1/13", "D. 3/13"],
+        answer: "A. 4/13",
+        diff: "easy"
+      },
+      {
+        q: "2-digit number randomly chosen, multiple of 6 ki probability?",
+        options: ["A. 1/6", "B. 1/5", "C. 1/4", "D. 1/3"],
+        answer: "A. 1/6",
+        diff: "easy"
+      },
+      {
+        q: "5-card hand mein 4 cards of one kind ki probability?",
+        options: ["A. ~0.00024", "B. ~0.00024", "C. ~0.001", "D. ~0.01"],
+        answer: "A. ~0.00024",
+        diff: "hard"
+      },
+      {
+        q: "P(E′) kya hai?",
+        options: ["A. P(E)", "B. 1 - P(E)", "C. 1 + P(E)", "D. P(E) - 1"],
+        answer: "B. 1 - P(E)",
+        diff: "easy"
+      },
+      {
+        q: "Two dice toss sample space mein kitne outcomes hain?",
+        options: ["A. 36", "B. 12", "C. 6", "D. 72"],
+        answer: "A. 36",
+        diff: "easy"
+      },
+      {
+        q: "Probability hamesha kis range mein hoti hai?",
+        options: ["A. 0 to 1", "B. -1 to 1", "C. 0 to 100", "D. 1 to 10"],
+        answer: "A. 0 to 1",
+        diff: "easy"
+      }
+    ]
+  },
+  36: {
+    title: "Laws of Probability (MTH202 Lecture 36)",
+    summary: `**Key Topics Covered:**
+- Addition Law for disjoint events: P(A∪B)=P(A)+P(B)
+- General Addition Law: P(A∪B)=P(A)+P(B)-P(A∩B)
+- Addition Law for 3 events
+- Probability of complements
+- Examples with balls, dice, cards
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Addition Law (Disjoint):**
+Agar A∩B=∅ to P(A∪B)=P(A)+P(B)
+
+**General Addition Law:**
+P(A∪B)=P(A)+P(B)-P(A∩B)
+
+**For 3 events:**
+P(A∪B∪C)=P(A)+P(B)+P(C)-P(A∩B)-P(A∩C)-P(B∩C)+P(A∩B∩C)
+
+**Examples:**
+- White or black ball: (6+5)/15 = 11/15
+- Dice sum 5 or 11: 4/36+2/36 = 1/6
+- Spade or ace: 13/52+4/52-1/52 = 4/13
+
+---
+
+**Quick Revision Points:**
+- Disjoint events: add probabilities
+- Overlapping events: add then subtract intersection
+- 3 events: add pair intersections, add triple intersection
+- Complement: 1 - P(event)`,
+    questions: [
+      {
+        q: "6 white, 5 black, 4 red balls. White ya black ball ki probability?",
+        options: ["A. 11/15", "B. 11/15", "C. 10/15", "D. 12/15"],
+        answer: "A. 11/15",
+        diff: "easy"
+      },
+      {
+        q: "Dice pair: sum 5 ya 11 ki probability?",
+        options: ["A. 1/6", "B. 1/3", "C. 1/4", "D. 1/12"],
+        answer: "A. 1/6",
+        diff: "easy"
+      },
+      {
+        q: "Card: spade ya ace ki probability?",
+        options: ["A. 4/13", "B. 4/13", "C. 1/4", "D. 1/13"],
+        answer: "A. 4/13",
+        diff: "easy"
+      },
+      {
+        q: "P(A)=0.65, P(B)=0.30, P(A∩B)=0.15. P(A∪B) kya hai?",
+        options: ["A. 0.80", "B. 0.80", "C. 0.95", "D. 0.50"],
+        answer: "A. 0.80",
+        diff: "medium"
+      },
+      {
+        q: "P(A)=0.65, P(B)=0.30, P(A∩B)=0.15. P(A∩B′) kya hai?",
+        options: ["A. 0.50", "B. 0.50", "C. 0.15", "D. 0.30"],
+        answer: "A. 0.50",
+        diff: "medium"
+      },
+      {
+        q: "3 newspapers A,B,C: 20%,16%,14% read; 8%,5%,4% pairs; 2% all three. None read?",
+        options: ["A. 65%", "B. 65%", "C. 35%", "D. 45%"],
+        answer: "A. 65%",
+        diff: "hard"
+      },
+      {
+        q: "Addition law for disjoint events mein:",
+        options: ["A. P(A∪B)=P(A)+P(B)-P(A∩B)", "B. P(A∪B)=P(A)+P(B)", "C. P(A∪B)=P(A)·P(B)", "D. P(A∪B)=P(A)/P(B)"],
+        answer: "B. P(A∪B)=P(A)+P(B)",
+        diff: "easy"
+      },
+      {
+        q: "General addition law mein:",
+        options: ["A. P(A∪B)=P(A)+P(B)", "B. P(A∪B)=P(A)+P(B)-P(A∩B)", "C. P(A∪B)=P(A)·P(B)", "D. P(A∪B)=P(A)/P(B)"],
+        answer: "B. P(A∪B)=P(A)+P(B)-P(A∩B)",
+        diff: "easy"
+      }
+    ]
+  },
+  37: {
+    title: "Conditional Probability (MTH202 Lecture 37)",
+    summary: `**Key Topics Covered:**
+- Conditional probability definition: P(A|B) = P(A∩B)/P(B)
+- Multiplication Theorem: P(A∩B) = P(B)·P(A|B)
+- Independent events: P(A∩B) = P(A)·P(B)
+- Examples with dice, cards, balls
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Conditional Probability:**
+P(A|B) = P(A∩B)/P(B)
+"B given A" ka probability.
+
+**Multiplication Theorem:**
+P(A∩B) = P(B)·P(A|B) = P(A)·P(B|A)
+
+**Independent Events:**
+A and B independent if P(A|B) = P(A) or P(A∩B) = P(A)·P(B)
+
+**Examples:**
+- 2 dice, sum 7, probability one die is 2 = (2/36)/(6/36) = 1/3
+- Two children, one boy, other also boy: P(A|C) = (1/4)/(3/4) = 1/3
+
+---
+
+**Quick Revision Points:**
+- P(A|B) = P(A∩B)/P(B)
+- Multiplication theorem: P(A∩B) = P(B)·P(A|B)
+- Independent: P(A∩B) = P(A)·P(B)
+- Conditional probability reduces sample space`,
+    questions: [
+      {
+        q: "P(A|B) ki formula kya hai?",
+        options: ["A. P(A∩B)/P(B)", "B. P(A∩B)/P(A)", "C. P(A)/P(B)", "D. P(B)/P(A)"],
+        answer: "A. P(A∩B)/P(B)",
+        diff: "easy"
+      },
+      {
+        q: "P(B|A) ki formula kya hai?",
+        options: ["A. P(A∩B)/P(B)", "B. P(A∩B)/P(A)", "C. P(A)/P(B)", "D. P(B)/P(A)"],
+        answer: "B. P(A∩B)/P(A)",
+        diff: "easy"
+      },
+      {
+        q: "2 dice, sum 7, probability one die is 2?",
+        options: ["A. 1/3", "B. 1/6", "C. 1/2", "D. 1/4"],
+        answer: "A. 1/3",
+        diff: "medium"
+      },
+      {
+        q: "Two children, one boy. Other also boy? (no other info)",
+        options: ["A. 1/3", "B. 1/2", "C. 1/4", "D. 2/3"],
+        answer: "A. 1/3",
+        diff: "medium"
+      },
+      {
+        q: "Two children, one boy (elder). Other also boy?",
+        options: ["A. 1/3", "B. 1/2", "C. 1/4", "D. 2/3"],
+        answer: "B. 1/2",
+        diff: "medium"
+      },
+      {
+        q: "Independent events mein P(A∩B) = ?",
+        options: ["A. P(A)+P(B)", "B. P(A)·P(B)", "C. P(A)-P(B)", "D. P(A)/P(B)"],
+        answer: "B. P(A)·P(B)",
+        diff: "easy"
+      },
+      {
+        q: "12 items, 4 defective. 3 drawn without replacement. All non-defective probability?",
+        options: ["A. 14/55", "B. 14/55", "C. 8/12", "D. 1/10"],
+        answer: "A. 14/55",
+        diff: "hard"
+      },
+      {
+        q: "If A and B are mutually exclusive, P(B|A) = ?",
+        options: ["A. 0", "B. 1", "C. P(B)", "D. P(A)"],
+        answer: "A. 0",
+        diff: "easy"
+      }
+    ]
+  },
+  38: {
+    title: "Random Variable and Expectation (MTH202 Lecture 38)",
+    summary: `**Key Topics Covered:**
+- Random Variable definition
+- Probability distribution
+- Expectation (mean): E(X) = Σ x·P(X=x)
+- Variance: Var(X) = E(X²) - (E(X))²
+- Standard deviation
+- Examples with dice, coins, defective items
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Random Variable:**
+Rule jo sample space ke har outcome ko number assign kare.
+
+**Probability Distribution:**
+Table showing each value of X and its probability.
+
+**Expectation (Mean):**
+E(X) = Σ x·P(X=x)
+
+**Variance:**
+Var(X) = E(X²) - (E(X))²
+
+**Examples:**
+- 3 coins: heads distribution, E(X) = 1.5
+- Coin weighted P(H)=3/4: E(X) = 2.25
+- 2 dice max: distribution, E(X) ≈ 4.47
+
+---
+
+**Quick Revision Points:**
+- Random variable = function from S to R
+- Distribution = table of probabilities
+- E(X) = expected value (mean)
+- Var(X) = spread from mean
+- σ = √Var`,
+    questions: [
+      {
+        q: "Random variable kya hai?",
+        options: ["A. Rule jo outcomes ko numbers assign kare", "B. Set of outcomes", "C. Probability function", "D. Sample space"],
+        answer: "A. Rule jo outcomes ko numbers assign kare",
+        diff: "easy"
+      },
+      {
+        q: "3 coins toss mein heads ki expectation kya hai?",
+        options: ["A. 1.5", "B. 1.5", "C. 2.0", "D. 1.0"],
+        answer: "A. 1.5",
+        diff: "easy"
+      },
+      {
+        q: "P(H)=3/4, 3 tosses. Heads ki expectation?",
+        options: ["A. 2.25", "B. 2.25", "C. 1.5", "D. 2.0"],
+        answer: "A. 2.25",
+        diff: "medium"
+      },
+      {
+        q: "2 dice, max X. Distribution P(X=4) kya hai?",
+        options: ["A. 7/36", "B. 7/36", "C. 5/36", "D. 9/36"],
+        answer: "A. 7/36",
+        diff: "medium"
+      },
+      {
+        q: "E(X) ko kya kehte hain?",
+        options: ["A. Expectation", "B. Mean", "C. Expected value", "D. All of the above"],
+        answer: "D. All of the above",
+        diff: "easy"
+      },
+      {
+        q: "Variance formula kya hai?",
+        options: ["A. E(X²) - (E(X))²", "B. E(X) - (E(X))²", "C. E(X²) + (E(X))²", "D. E(X²)/ (E(X))²"],
+        answer: "A. E(X²) - (E(X))²",
+        diff: "easy"
+      },
+      {
+        q: "12 items, 3 defective, sample 3. P(X=1) kya hai?",
+        options: ["A. 108/220", "B. 108/220", "C. 84/220", "D. 27/220"],
+        answer: "A. 108/220",
+        diff: "medium"
+      },
+      {
+        q: "Distribution mein sum of probabilities = ?",
+        options: ["A. 1", "B. 0", "C. 100", "D. ∞"],
+        answer: "A. 1",
+        diff: "easy"
+      }
+    ]
+  },
+  39: {
+    title: "Introduction to Graphs (MTH202 Lecture 39)",
+    summary: `**Key Topics Covered:**
+- Graph definition (vertices, edges)
+- Degree of a vertex
+- Handshaking Theorem
+- Complete graphs Kₙ
+- Bipartite and Complete Bipartite graphs
+- Regular graphs
+- Simple graphs
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Graph:**
+Vertices (points) + Edges (lines connecting vertices).
+
+**Degree:**
+Number of edges incident on a vertex. Loop counts twice.
+
+**Handshaking Theorem:**
+Sum of degrees = 2 × (number of edges)
+
+**Complete Graph Kₙ:**
+Har vertex doosre har vertex se connected. Edges = n(n-1)/2.
+
+**Bipartite Graph:**
+Vertices do sets mein divide; edges only between sets.
+
+---
+
+**Quick Revision Points:**
+- Degree = edges incident (loop = 2)
+- Sum of degrees = 2E
+- Kₙ: n(n-1)/2 edges
+- Bipartite: 2 sets, cross edges only`,
+    questions: [
+      {
+        q: "Handshaking Theorem kya kehta hai?",
+        options: ["A. Sum of degrees = 2E", "B. Sum of degrees = E", "C. Sum of degrees = 2V", "D. Sum of degrees = V"],
+        answer: "A. Sum of degrees = 2E",
+        diff: "easy"
+      },
+      {
+        q: "Degrees: 1,1,4,4,6. Edges kitne hain?",
+        options: ["A. 8", "B. 8", "C. 16", "D. 4"],
+        answer: "A. 8",
+        diff: "easy"
+      },
+      {
+        q: "15 log, har kisi ke exactly 3 dost?",
+        options: ["A. Possible hai", "B. Possible nahi", "C. Maybe", "D. Depends"],
+        answer: "B. Possible nahi",
+        diff: "easy"
+      },
+      {
+        q: "Kₙ mein degree of each vertex kya hai?",
+        options: ["A. n-1", "B. n", "C. n+1", "D. 2n"],
+        answer: "A. n-1",
+        diff: "easy"
+      },
+      {
+        q: "Kₙ mein total edges kitne hain?",
+        options: ["A. n(n-1)/2", "B. n(n+1)/2", "C. n²", "D. 2n"],
+        answer: "A. n(n-1)/2",
+        diff: "easy"
+      },
+      {
+        q: "Bipartite graph mein vertices:",
+        options: ["A. Two sets mein divide hain", "B. Three sets mein divide hain", "C. One set mein hain", "D. None"],
+        answer: "A. Two sets mein divide hain",
+        diff: "easy"
+      },
+      {
+        q: "Simple graph mein loops:",
+        options: ["A. Allowed hain", "B. Allowed nahi", "C. Sometimes", "D. Depends"],
+        answer: "B. Allowed nahi",
+        diff: "easy"
+      },
+      {
+        q: "Loop ki degree kitni counted hoti hai?",
+        options: ["A. 1", "B. 2", "C. 0", "D. 3"],
+        answer: "B. 2",
+        diff: "easy"
+      }
+    ]
+  },
+  40: {
+    title: "Paths and Circuits (MTH202 Lecture 40)",
+    summary: `**Key Topics Covered:**
+- Walk, Closed Walk, Path, Circuit, Simple Circuit
+- Euler Circuit and Euler Path
+- Hamiltonian Circuit
+- Conditions for Euler Circuit/Path
+- Konigsberg Bridges Problem
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Definitions:**
+- Walk: sequence of adjacent vertices and edges
+- Closed walk: starts and ends at same vertex
+- Path: no repeated edges
+- Circuit: closed walk, no repeated edges
+- Simple circuit: no repeated vertices (except first/last)
+
+**Euler Circuit:**
+Circuit that uses every edge exactly once.
+Condition: All vertices even degree, graph connected.
+
+**Euler Path:**
+Path that uses every edge exactly once.
+Condition: Exactly 2 vertices odd degree, graph connected.
+
+**Hamiltonian Circuit:**
+Circuit that visits every vertex exactly once.
+
+---
+
+**Quick Revision Points:**
+- Euler circuit: all degrees even
+- Euler path: exactly 2 odd degrees
+- Hamiltonian: visits all vertices exactly once
+- Konigsberg: no Euler circuit (odd degrees)`,
+    questions: [
+      {
+        q: "Euler circuit ke liye condition kya hai?",
+        options: ["A. All vertices even degree", "B. Exactly 2 odd degree", "C. All vertices odd degree", "D. No loops"],
+        answer: "A. All vertices even degree",
+        diff: "easy"
+      },
+      {
+        q: "Euler path ke liye condition kya hai?",
+        options: ["A. All vertices even degree", "B. Exactly 2 odd degree", "C. All vertices odd degree", "D. No loops"],
+        answer: "B. Exactly 2 odd degree",
+        diff: "easy"
+      },
+      {
+        q: "Hamiltonian circuit kya hai?",
+        options: ["A. Har vertex exactly once visit kare", "B. Har edge exactly once use kare", "C. Both A and B", "D. None"],
+        answer: "A. Har vertex exactly once visit kare",
+        diff: "easy"
+      },
+      {
+        q: "Konigsberg bridges problem mein Euler circuit:",
+        options: ["A. Possible hai", "B. Possible nahi", "C. Depends", "D. Maybe"],
+        answer: "B. Possible nahi",
+        diff: "easy"
+      },
+      {
+        q: "Circuit mein repeated edge:",
+        options: ["A. Allowed hai", "B. Allowed nahi", "C. Sometimes", "D. Depends"],
+        answer: "B. Allowed nahi",
+        diff: "easy"
+      },
+      {
+        q: "Path mein repeated edge:",
+        options: ["A. Allowed hai", "B. Allowed nahi", "C. Sometimes", "D. Depends"],
+        answer: "B. Allowed nahi",
+        diff: "easy"
+      },
+      {
+        q: "Walk mein repeated edges:",
+        options: ["A. Allowed hain", "B. Allowed nahi", "C. Sometimes", "D. Depends"],
+        answer: "A. Allowed hain",
+        diff: "easy"
+      },
+      {
+        q: "Simple circuit mein repeated vertices (except first/last):",
+        options: ["A. Allowed hain", "B. Allowed nahi", "C. Sometimes", "D. Depends"],
+        answer: "B. Allowed nahi",
+        diff: "easy"
+      }
+    ]
+  },
+  41: {
+    title: "Matrix Representation of Graphs (MTH202 Lecture 41)",
+    summary: `**Key Topics Covered:**
+- Adjacency Matrix for undirected graphs
+- Adjacency Matrix for directed graphs
+- Incidence Matrix
+- Matrix multiplication basics
+- Walks and powers of adjacency matrix
+- Transpose and symmetric matrices
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Adjacency Matrix:**
+a_ij = number of edges between vertex i and j.
+- Undirected: symmetric matrix
+- Directed: a_ij = number of arrows from i to j
+
+**Incidence Matrix:**
+Rows = vertices, Columns = edges
+m_ij = 1 if vertex i incident to edge j, else 0.
+
+**Powers of A:**
+Aⁿ mein (i,j) entry = number of walks of length n from i to j.
+
+---
+
+**Quick Revision Points:**
+- Adjacency matrix: edges between vertices
+- Undirected: symmetric (a_ij = a_ji)
+- Directed: not necessarily symmetric
+- Incidence: vertices × edges
+- A² = walks of length 2`,
+    questions: [
+      {
+        q: "Undirected graph ki adjacency matrix:",
+        options: ["A. Symmetric hoti hai", "B. Not symmetric", "C. Diagonal zero", "D. None"],
+        answer: "A. Symmetric hoti hai",
+        diff: "easy"
+      },
+      {
+        q: "Adjacency matrix mein diagonal entries kya represent karti hain?",
+        options: ["A. Loops", "B. Parallel edges", "C. Degree", "D. None"],
+        answer: "A. Loops",
+        diff: "easy"
+      },
+      {
+        q: "Incidence matrix mein rows kya represent karti hain?",
+        options: ["A. Vertices", "B. Edges", "C. Both", "D. None"],
+        answer: "A. Vertices",
+        diff: "easy"
+      },
+      {
+        q: "A² mein (i,j) entry kya represent karti hai?",
+        options: ["A. Walks of length 2", "B. Walks of length 1", "C. Edges", "D. Loops"],
+        answer: "A. Walks of length 2",
+        diff: "easy"
+      },
+      {
+        q: "Directed graph ki adjacency matrix:",
+        options: ["A. Symmetric hoti hai", "B. Not necessarily symmetric", "C. Diagonal zero", "D. None"],
+        answer: "B. Not necessarily symmetric",
+        diff: "easy"
+      },
+      {
+        q: "Transpose of adjacency matrix of undirected graph:",
+        options: ["A. Same matrix", "B. Different matrix", "C. Zero matrix", "D. Identity matrix"],
+        answer: "A. Same matrix",
+        diff: "easy"
+      },
+      {
+        q: "Incidence matrix mein columns kya represent karti hain?",
+        options: ["A. Vertices", "B. Edges", "C. Both", "D. None"],
+        answer: "B. Edges",
+        diff: "easy"
+      },
+      {
+        q: "Matrix multiplication ke liye condition kya hai?",
+        options: ["A. Columns of first = Rows of second", "B. Rows of first = Columns of second", "C. Both equal", "D. None"],
+        answer: "A. Columns of first = Rows of second",
+        diff: "medium"
+      }
+    ]
+  },
+  42: {
+    title: "Isomorphism of Graphs (MTH202 Lecture 42)",
+    summary: `**Key Topics Covered:**
+- Graph isomorphism definition
+- Isomorphic invariants (properties preserved)
+- Degree sequence
+- Checking isomorphism for simple graphs
+- Non-isomorphic graphs on 3 and 4 vertices
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Isomorphism:**
+Two graphs are isomorphic if there is a bijection between vertices that preserves edges.
+
+**Isomorphic Invariants:**
+- Number of vertices
+- Number of edges
+- Degree sequence
+- Circuit lengths
+- Connectedness
+
+**Degree Sequence:**
+Degrees of vertices in non-increasing order.
+
+---
+
+**Quick Revision Points:**
+- Isomorphic = same structure, different labels
+- Invariants = properties that must match
+- Degree sequence must match
+- Same vertices and edges not enough`,
+    questions: [
+      {
+        q: "Isomorphic graphs mein kya same hona chahiye?",
+        options: ["A. Degree sequence", "B. Number of edges", "C. Number of vertices", "D. All of the above"],
+        answer: "D. All of the above",
+        diff: "easy"
+      },
+      {
+        q: "Degree sequence kya hai?",
+        options: ["A. Degrees in non-increasing order", "B. Degrees in non-decreasing order", "C. Random order", "D. None"],
+        answer: "A. Degrees in non-increasing order",
+        diff: "easy"
+      },
+      {
+        q: "5 vertices, 7 edges vs 6 edges. Isomorphic?",
+        options: ["A. Haan", "B. Nahi", "C. Maybe", "D. Depends"],
+        answer: "B. Nahi",
+        diff: "easy"
+      },
+      {
+        q: "Same vertices, edges, degree but one connected, one not. Isomorphic?",
+        options: ["A. Haan", "B. Nahi", "C. Maybe", "D. Depends"],
+        answer: "B. Nahi",
+        diff: "easy"
+      },
+      {
+        q: "3 vertices par kitne non-isomorphic simple graphs hain?",
+        options: ["A. 4", "B. 4", "C. 3", "D. 5"],
+        answer: "A. 4",
+        diff: "medium"
+      },
+      {
+        q: "3 vertices par kitne non-isomorphic connected simple graphs hain?",
+        options: ["A. 2", "B. 2", "C. 3", "D. 4"],
+        answer: "A. 2",
+        diff: "medium"
+      },
+      {
+        q: "4 vertices par kitne non-isomorphic connected simple graphs hain?",
+        options: ["A. 6", "B. 6", "C. 4", "D. 8"],
+        answer: "A. 6",
+        diff: "hard"
+      },
+      {
+        q: "Isomorphism mein edge-endpoint function preserve hona:",
+        options: ["A. Zaroori hai", "B. Zaroori nahi", "C. Sometimes", "D. Depends"],
+        answer: "A. Zaroori hai",
+        diff: "easy"
+      }
+    ]
+  },
+  43: {
+    title: "Planar Graphs and Graph Coloring (MTH202 Lecture 43)",
+    summary: `**Key Topics Covered:**
+- Planar graphs definition
+- Euler's Formula: f = e - v + 2
+- K₃,₃ and K₅ are non-planar
+- Graph coloring
+- Chromatic number
+- Four Color Theorem
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Planar Graph:**
+Graph jo plane mein bina edges cross kiye draw ho sakta hai.
+
+**Euler's Formula:**
+For connected planar graph: f = e - v + 2
+f = faces, e = edges, v = vertices
+
+**Non-Planar Graphs:**
+- K₃,₃: complete bipartite with 3+3 vertices
+- K₅: complete graph with 5 vertices
+
+**Chromatic Number:**
+Minimum colors needed to color vertices so adjacent vertices have different colors.
+
+**Four Color Theorem:**
+Any planar graph can be colored with ≤ 4 colors.
+
+---
+
+**Quick Revision Points:**
+- Planar = can draw without crossings
+- Euler: f = e - v + 2
+- K₃,₃ and K₅ non-planar
+- Chromatic number = minimum colors
+- 4CT: planar graphs ≤ 4 colors`,
+    questions: [
+      {
+        q: "Planar graph kya hai?",
+        options: ["A. Bina crossings draw ho sakta hai", "B. Crossings ke sath draw ho sakta hai", "C. Complete graph", "D. Bipartite graph"],
+        answer: "A. Bina crossings draw ho sakta hai",
+        diff: "easy"
+      },
+      {
+        q: "Euler's formula kya hai?",
+        options: ["A. f = e - v + 2", "B. f = e + v - 2", "C. f = v - e + 2", "D. f = 2e - v"],
+        answer: "A. f = e - v + 2",
+        diff: "easy"
+      },
+      {
+        q: "30 edges, 20 faces. Vertices kitne hain?",
+        options: ["A. 12", "B. 12", "C. 10", "D. 8"],
+        answer: "A. 12",
+        diff: "easy"
+      },
+      {
+        q: "K₃,₃ planar hai?",
+        options: ["A. Haan", "B. Nahi", "C. Maybe", "D. Depends"],
+        answer: "B. Nahi",
+        diff: "easy"
+      },
+      {
+        q: "K₅ planar hai?",
+        options: ["A. Haan", "B. Nahi", "C. Maybe", "D. Depends"],
+        answer: "B. Nahi",
+        diff: "easy"
+      },
+      {
+        q: "Chromatic number kya hai?",
+        options: ["A. Minimum colors needed", "B. Maximum colors needed", "C. Total colors", "D. None"],
+        answer: "A. Minimum colors needed",
+        diff: "easy"
+      },
+      {
+        q: "Four Color Theorem kya kehta hai?",
+        options: ["A. Planar graphs ≤ 4 colors", "B. Planar graphs ≤ 5 colors", "C. Planar graphs ≤ 3 colors", "D. None"],
+        answer: "A. Planar graphs ≤ 4 colors",
+        diff: "easy"
+      },
+      {
+        q: "Graph coloring mein adjacent vertices:",
+        options: ["A. Same color ho sakte hain", "B. Different colors hone chahiye", "C. Same ho to chalega", "D. None"],
+        answer: "B. Different colors hone chahiye",
+        diff: "easy"
+      }
+    ]
+  },
+  44: {
+    title: "Trees (MTH202 Lecture 44)",
+    summary: `**Key Topics Covered:**
+- Tree definition (connected, acyclic)
+- Forest definition
+- Properties of trees (n vertices → n-1 edges)
+- Rooted trees
+- Binary trees
+- Full binary trees
+- Tree applications
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Tree:**
+Connected graph with no cycles.
+
+**Properties:**
+- n vertices → n-1 edges
+- Unique path between any two vertices
+- At least 2 leaves (degree 1)
+
+**Forest:**
+Collection of trees (no cycles, not necessarily connected).
+
+**Rooted Tree:**
+One vertex designated as root.
+- Level = distance from root
+- Height = max level
+- Children = vertices one level below
+- Parent = one level above
+
+**Binary Tree:**
+Each vertex has at most 2 children.
+
+**Full Binary Tree:**
+Each internal vertex has exactly 2 children.
+
+---
+
+**Quick Revision Points:**
+- Tree = connected + acyclic
+- n vertices → n-1 edges
+- Forest = acyclic (may be disconnected)
+- Binary tree: ≤ 2 children
+- Full binary tree: exactly 2 children per internal vertex`,
+    questions: [
+      {
+        q: "Tree ki definition kya hai?",
+        options: ["A. Connected and acyclic", "B. Connected with cycles", "C. Disconnected and acyclic", "D. Disconnected with cycles"],
+        answer: "A. Connected and acyclic",
+        diff: "easy"
+      },
+      {
+        q: "n vertices wali tree mein edges kitne hain?",
+        options: ["A. n-1", "B. n", "C. n+1", "D. 2n"],
+        answer: "A. n-1",
+        diff: "easy"
+      },
+      {
+        q: "Tree mein unique path hota hai:",
+        options: ["A. Kisi bhi 2 vertices ke beech", "B. Sirf leaves ke beech", "C. Sirf root se", "D. None"],
+        answer: "A. Kisi bhi 2 vertices ke beech",
+        diff: "easy"
+      },
+      {
+        q: "Forest kya hai?",
+        options: ["A. Acyclic graph", "B. Connected graph", "C. Tree with cycles", "D. None"],
+        answer: "A. Acyclic graph",
+        diff: "easy"
+      },
+      {
+        q: "Terminal vertex ki degree kya hoti hai?",
+        options: ["A. 1", "B. 0", "C. 2", "D. 3"],
+        answer: "A. 1",
+        diff: "easy"
+      },
+      {
+        q: "Full binary tree mein internal vertex ke kitne children hote hain?",
+        options: ["A. Exactly 2", "B. At most 2", "C. Exactly 1", "D. At least 2"],
+        answer: "A. Exactly 2",
+        diff: "easy"
+      },
+      {
+        q: "Binary tree mein internal vertex ke kitne children hote hain?",
+        options: ["A. Exactly 2", "B. At most 2", "C. Exactly 1", "D. At least 2"],
+        answer: "B. At most 2",
+        diff: "easy"
+      },
+      {
+        q: "Full binary tree with k internal vertices: total vertices = ?",
+        options: ["A. 2k+1", "B. 2k", "C. k+1", "D. 2k-1"],
+        answer: "A. 2k+1",
+        diff: "medium"
+      }
+    ]
+  },
+  45: {
+    title: "Spanning Trees (MTH202 Lecture 45)",
+    summary: `**Key Topics Covered:**
+- Spanning tree definition
+- Spanning tree properties
+- Kruskal's Algorithm
+- Prim's Algorithm
+- Minimal spanning tree
+- Weighted graphs
+
+---
+
+**Simple Understanding (Roman Urdu + English):**
+
+**Spanning Tree:**
+Subgraph that contains all vertices and is a tree (connected, acyclic).
+
+**Weighted Graph:**
+Each edge has a weight (cost).
+
+**Minimal Spanning Tree:**
+Spanning tree with minimum total weight.
+
+**Kruskal's Algorithm:**
+1. Sort edges by weight (smallest first)
+2. Add edge if no cycle forms
+3. Stop when n-1 edges added
+
+**Prim's Algorithm:**
+1. Start with any vertex
+2. Add cheapest edge connecting tree to new vertex
+3. Repeat until all vertices included
+
+---
+
+**Quick Revision Points:**
+- Spanning tree = all vertices + tree
+- Any connected graph has spanning tree
+- Kruskal: sort edges, add if no cycle
+- Prim: grow from a vertex, add cheapest connection
+- Both find minimal spanning tree`,
+    questions: [
+      {
+        q: "Spanning tree kya hai?",
+        options: ["A. Subgraph with all vertices, tree", "B. Subgraph with all edges", "C. Subgraph with all vertices, cycle", "D. None"],
+        answer: "A. Subgraph with all vertices, tree",
+        diff: "easy"
+      },
+      {
+        q: "Kruskal's algorithm mein pehle kya karte hain?",
+        options: ["A. Edges sort karo by weight", "B. Random edge choose karo", "C. Vertex choose karo", "D. None"],
+        answer: "A. Edges sort karo by weight",
+        diff: "easy"
+      },
+      {
+        q: "Prim's algorithm kahan se start hota hai?",
+        options: ["A. Kisi bhi vertex se", "B. Smallest edge se", "C. Largest edge se", "D. Random"],
+        answer: "A. Kisi bhi vertex se",
+        diff: "easy"
+      },
+      {
+        q: "Minimal spanning tree kya hai?",
+        options: ["A. Minimum total weight wali spanning tree", "B. Maximum total weight wali spanning tree", "C. Smallest edge wali", "D. None"],
+        answer: "A. Minimum total weight wali spanning tree",
+        diff: "easy"
+      },
+      {
+        q: "Kruskal algorithm mein edge add karte hain agar:",
+        options: ["A. No cycle forms", "B. Cycle forms", "C. Edge weight zero ho", "D. None"],
+        answer: "A. No cycle forms",
+        diff: "easy"
+      },
+      {
+        q: "Prim algorithm mein har step par kya karte hain?",
+        options: ["A. Cheapest edge add karte hain connecting tree to new vertex", "B. Cheapest edge anywhere add karte hain", "C. Random edge add karte hain", "D. None"],
+        answer: "A. Cheapest edge add karte hain connecting tree to new vertex",
+        diff: "easy"
+      },
+      {
+        q: "Kirchhoff's theorem kya batata hai?",
+        options: ["A. Number of spanning trees", "B. Number of edges", "C. Number of vertices", "D. Number of cycles"],
+        answer: "A. Number of spanning trees",
+        diff: "hard"
+      },
+      {
+        q: "Any connected graph mein spanning tree:",
+        options: ["A. Exist karta hai", "B. Exist nahi karta", "C. Kabhi exist nahi", "D. Depends"],
+        answer: "A. Exist karta hai",
+        diff: "easy"
+      }
+    ]
+  }
+
   },
   
   // ─────────────────────────────────────────

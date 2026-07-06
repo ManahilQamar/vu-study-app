@@ -1,5 +1,678 @@
 
 const practice = {
+
+  MTH202: {
+
+  23: {
+    problems: [
+      {
+        q: 'Use mathematical induction to prove that 1 + 2 + 3 + … + n = n(n+1)/2 for all integers n ≥ 1.',
+        hint: 'Basis step: verify for n=1. Inductive step: assume true for n=k, then prove for n=k+1 by adding (k+1) to both sides.',
+        answer: 'Basis: n=1, LHS=1, RHS=1*2/2=1. Inductive: assume 1+…+k = k(k+1)/2. Then 1+…+(k+1) = k(k+1)/2 + (k+1) = (k+1)(k+2)/2. Hence true.'
+      },
+      {
+        q: 'Prove by induction: 1 + 3 + 5 + … + (2n-1) = n² for all n ≥ 1.',
+        hint: 'Basis n=1: LHS=1, RHS=1. Assume true for k, then add (2k+1) to both sides.',
+        answer: 'Basis: n=1, 1=1². Assume 1+3+…+(2k-1)=k². Then add (2k+1): sum = k²+2k+1=(k+1)². True.'
+      },
+      {
+        q: 'Prove by induction: 1 + 2 + 2² + … + 2ⁿ = 2ⁿ⁺¹ – 1 for all n ≥ 0.',
+        hint: 'Basis n=0: 1=2¹-1. Assume true for k, then add 2ᵏ⁺¹ to both sides.',
+        answer: 'Basis: n=0, LHS=1, RHS=2-1=1. Assume 1+…+2ᵏ=2ᵏ⁺¹-1. Add 2ᵏ⁺¹: sum=2ᵏ⁺¹-1+2ᵏ⁺¹=2ᵏ⁺²-1. True.'
+      },
+      {
+        q: 'Prove by induction: 1² + 2² + 3² + … + n² = n(n+1)(2n+1)/6 for all n ≥ 1.',
+        hint: 'Basis n=1: 1=1*2*3/6=1. Assume true for k, then add (k+1)² and simplify.',
+        answer: 'Basis: n=1 gives 1. Assume true for k. Sum to k+1 = k(k+1)(2k+1)/6 + (k+1)² = (k+1)(k+2)(2k+3)/6. True.'
+      },
+      {
+        q: 'Prove by induction that the sum of the first n positive odd integers is n².',
+        hint: 'This is same as Q2, but you can rephrase. Basis n=1; assume for k; add (2k+1).',
+        answer: 'Already proved in Q2. Answer: 1+3+…+(2n-1)=n².'
+      }
+    ]
+  },
+  24: {
+    problems: [
+      {
+        q: 'Use induction to prove that n³ – n is divisible by 3 for all positive integers n.',
+        hint: 'Basis n=1: 0 divisible by 3. Assume k³-k = 3m. Show (k+1)³-(k+1) = (k³-k)+3k²+3k = 3(m+k²+k).',
+        answer: 'Basis: 1³-1=0. Assume k³-k=3m. Then (k+1)³-(k+1) = k³+3k²+3k+1 -k-1 = (k³-k)+3(k²+k) = 3(m+k²+k). Divisible by 3.'
+      },
+      {
+        q: 'Prove by induction that 2²ⁿ – 1 is divisible by 3 for all n ≥ 1.',
+        hint: 'Basis n=1: 4-1=3. Assume 2²ᵏ-1=3m. Then 2²⁽ᵏ⁺¹⁾-1 = 4·2²ᵏ -1 = 4(3m+1)-1 = 12m+3 = 3(4m+1).',
+        answer: 'Basis: 2²-1=3. Assume 2²ᵏ-1=3m. Then 2²ᵏ⁺²-1 = 4·2²ᵏ -1 = 4(3m+1)-1 = 12m+3 = 3(4m+1). Divisible by 3.'
+      },
+      {
+        q: 'Prove by induction that n(n+1) is divisible by 2 for all positive integers n.',
+        hint: 'Basis n=1: 1*2=2. Assume k(k+1)=2m, then (k+1)(k+2)=k(k+1)+2(k+1)=2(m+k+1).',
+        answer: 'Basis: 1·2=2. Assume k(k+1)=2m. Then (k+1)(k+2)=k(k+1)+2(k+1)=2(m+k+1). Divisible by 2.'
+      },
+      {
+        q: 'Prove by induction that xⁿ – yⁿ is divisible by x – y for all integers n ≥ 1.',
+        hint: 'Basis n=1: x-y. Assume xᵏ-yᵏ = (x-y)m. Then xᵏ⁺¹-yᵏ⁺¹ = x(xᵏ-yᵏ) + yᵏ(x-y) = (x-y)(xm + yᵏ).',
+        answer: 'Basis: x¹-y¹=x-y. Assume xᵏ-yᵏ=(x-y)m. Then xᵏ⁺¹-yᵏ⁺¹ = xᵏ⁺¹ - xyᵏ + xyᵏ - yᵏ⁺¹ = x(xᵏ-yᵏ)+yᵏ(x-y) = (x-y)(xm + yᵏ). Divisible.'
+      },
+      {
+        q: 'Prove by induction that 2n+1 < 2ⁿ for all integers n ≥ 3.',
+        hint: 'Basis n=3: 7<8. Assume 2k+1<2ᵏ. Then 2(k+1)+1 = 2k+3 < 2ᵏ+2 < 2ᵏ+2ᵏ = 2ᵏ⁺¹ for k≥3.',
+        answer: 'Basis: 2·3+1=7<8=2³. Assume 2k+1<2ᵏ. Then 2(k+1)+1=2k+3 < 2ᵏ+2 ≤ 2ᵏ+2ᵏ = 2ᵏ⁺¹ (since 2≤2ᵏ for k≥1). Hence true.'
+      }
+    ]
+  },
+  25: {
+    problems: [
+      {
+        q: 'Prove directly: the sum of two odd integers is even.',
+        hint: 'Let the odd integers be 2m+1 and 2n+1. Sum = 2(m+n+1).',
+        answer: 'Let a=2m+1, b=2n+1. Then a+b=2m+2n+2=2(m+n+1), which is even.'
+      },
+      {
+        q: 'Prove directly: the product of an even integer and an odd integer is even.',
+        hint: 'Let even = 2k, odd = 2l+1. Product = 2k(2l+1) = 2[k(2l+1)].',
+        answer: 'Let a=2k, b=2l+1. Then ab=2k(2l+1)=2(k(2l+1)), even.'
+      },
+      {
+        q: 'Prove directly: the square of an even integer is even.',
+        hint: 'Let n=2k, then n²=4k²=2(2k²).',
+        answer: 'If n is even, n=2k, so n²=4k²=2(2k²), even.'
+      },
+      {
+        q: 'Prove: if a|b and a|c then a|(b+c).',
+        hint: 'By definition, b=ar, c=as. Then b+c = a(r+s).',
+        answer: 'a|b ⇒ b=ar, a|c ⇒ c=as. Then b+c=a(r+s), so a divides b+c.'
+      },
+      {
+        q: 'Disprove by counterexample: For all integers n, n² – n + 11 is prime.',
+        hint: 'Find an n such that the expression is composite. Try n=11.',
+        answer: 'For n=11, n²-n+11 = 121-11+11 = 121 = 11×11, not prime. Counterexample disproves.'
+      }
+    ]
+  },
+  26: {
+    problems: [
+      {
+        q: 'Prove by contradiction that √2 is irrational.',
+        hint: 'Assume √2 = a/b in lowest terms. Then a²=2b². Show a even, then b even, contradicting lowest terms.',
+        answer: 'Assume √2=a/b (reduced). Then a²=2b² ⇒ a even ⇒ a=2k ⇒ 4k²=2b² ⇒ b²=2k² ⇒ b even. Contradiction to a,b coprime.'
+      },
+      {
+        q: 'Prove by contradiction: if n² is even, then n is even.',
+        hint: 'Assume n odd. Then n=2k+1 ⇒ n² odd, contradiction.',
+        answer: 'Suppose n odd. n=2k+1 ⇒ n²=4k²+4k+1=2(2k²+2k)+1 odd, contradicting n² even. So n even.'
+      },
+      {
+        q: 'Prove by contradiction: there is no greatest integer.',
+        hint: 'Assume N is greatest. Then N+1 is an integer greater than N, contradiction.',
+        answer: 'Suppose N is the greatest integer. Then N+1 is an integer and N+1>N, contradiction. So no greatest integer.'
+      },
+      {
+        q: 'Prove by contradiction: the sum of a rational and an irrational number is irrational.',
+        hint: 'Assume sum is rational. Then irrational = rational - rational = rational, contradiction.',
+        answer: 'Let r rational, s irrational. Suppose r+s is rational. Then s = (r+s)-r is rational (difference of rationals). Contradiction.'
+      },
+      {
+        q: 'Prove by contradiction that √2 + √3 is irrational.',
+        hint: 'Assume √2+√3 = rational. Square to get 5+2√6 = rational² ⇒ √6 rational, contradiction.',
+        answer: 'Suppose √2+√3 = r rational. Squaring: 5+2√6 = r² ⇒ √6 = (r²-5)/2 rational, but √6 is irrational. Contradiction.'
+      }
+    ]
+  },
+  27: {
+    problems: [
+      {
+        q: 'State the pre-condition and post-condition for the division algorithm (given integers a≥0, d>0).',
+        hint: 'Pre-condition: what is true before the algorithm runs? Post-condition: what is true after?',
+        answer: 'Pre-condition: a is a nonnegative integer and d is a positive integer, r=a, q=0. Post-condition: q and r are nonnegative integers such that a = q·d + r and 0 ≤ r < d.'
+      },
+      {
+        q: 'Define the loop invariant for the algorithm that computes product = m·x (where m≥0).',
+        hint: 'The loop repeatedly adds x and increments i. Invariant: i = n and product = n·x after n iterations.',
+        answer: 'Loop invariant I(n): i = n and product = n·x, where n is the number of iterations completed.'
+      },
+      {
+        q: 'List the four properties required by the Loop Invariant Theorem to prove correctness of a while loop.',
+        hint: 'They are: Basis Property, Inductive Property, Eventual Falsity of Guard, Correctness of Post-Condition.',
+        answer: '1. Basis Property: pre-condition implies I(0) true. 2. Inductive Property: if guard and I(k) true then I(k+1) true after iteration. 3. Eventual Falsity of Guard: after finite iterations guard false. 4. Correctness of Post-Condition: if guard false and I(N) true, then post-condition holds.'
+      },
+      {
+        q: 'Trace the division algorithm for input a=54, d=11. Show the values of r and q at each iteration.',
+        hint: 'Initialize r=54, q=0. While r≥d, subtract d and increment q.',
+        answer: 'Iteration 1: r=43, q=1; Iteration 2: r=32, q=2; Iteration 3: r=21, q=3; Iteration 4: r=10, q=4. Stop because r<11. Result: q=4, r=10; 54 = 11·4 + 10.'
+      },
+      {
+        q: 'What is a predicate? Give an example.',
+        hint: 'A predicate is a sentence containing variables that becomes a statement when values are substituted.',
+        answer: 'A predicate is a sentence that contains variables and becomes a proposition when specific values are assigned. Example: P(x): x is a student at the Virtual University. When x = \'Aslam\', it becomes a statement.'
+      }
+    ]
+  },
+  28: {
+    problems: [
+      {
+        q: 'Use the division algorithm to find the quotient and remainder when 54 is divided by 11.',
+        hint: 'Divide 54 by 11: 11×4=44, remainder 10.',
+        answer: '54 = 11·4 + 10, so quotient q=4, remainder r=10.'
+      },
+      {
+        q: 'Use the Euclidean algorithm to find gcd(330, 156).',
+        hint: 'Apply division repeatedly: 330 = 156·2 + 18; 156 = 18·8 + 12; 18 = 12·1 + 6; 12 = 6·2 + 0.',
+        answer: '330 = 156·2 + 18; 156 = 18·8 + 12; 18 = 12·1 + 6; 12 = 6·2 + 0. The last nonzero remainder is 6, so gcd(330,156)=6.'
+      },
+      {
+        q: 'State the lemma used in the proof of correctness of the Euclidean algorithm: if a = b·q + r, then gcd(a,b) = gcd(b,r).',
+        hint: 'This is the key property: any common divisor of a and b also divides r, and vice versa.',
+        answer: 'Lemma: For integers a,b with b>0, if a = q·b + r, then gcd(a,b) = gcd(b,r).'
+      },
+      {
+        q: 'In the division algorithm loop, what is the guard condition?',
+        hint: 'The loop continues while the remainder is at least the divisor.',
+        answer: 'The guard is: r ≥ d.'
+      },
+      {
+        q: 'Explain the loop invariant used to prove correctness of the division algorithm.',
+        hint: 'The invariant states the relationship between r, q, a, d after n subtractions.',
+        answer: 'Loop invariant I(n): r = a – n·d and n = q. It ensures that after n iterations, the current remainder is a minus n times d, and q equals n.'
+      }
+    ]
+  },
+  29: {
+    problems: [
+      {
+        q: 'A student can choose a computer project from one of three lists containing 23, 15, and 19 projects. How many possible projects are there to choose from?',
+        hint: 'Use the sum rule because the lists are disjoint.',
+        answer: '23 + 15 + 19 = 57 projects.'
+      },
+      {
+        q: 'How many bit strings of length 8 begin with a 1?',
+        hint: 'The first bit is fixed; the remaining 7 bits can be 0 or 1.',
+        answer: '1 × 2⁷ = 128 bit strings.'
+      },
+      {
+        q: 'An automobile license plate has three letters followed by three digits. How many different plates are possible?',
+        hint: 'Use product rule: 26 choices for each letter, 10 for each digit.',
+        answer: '26×26×26×10×10×10 = 17,576,000 plates.'
+      },
+      {
+        q: 'A variable name in a programming language must be either a letter or a letter followed by a digit. How many different variable names are possible?',
+        hint: 'Count length 1 names (letters) and length 2 names (letter+digit) and add.',
+        answer: 'Length 1: 26. Length 2: 26×10 = 260. Total = 26+260 = 286.'
+      },
+      {
+        q: 'How many three-digit integers are divisible by 5?',
+        hint: 'A number is divisible by 5 if it ends in 0 or 5. Count separately.',
+        answer: 'End in 0: 9×10×1 = 90. End in 5: 9×10×1 = 90. Total = 90+90 = 180.'
+      }
+    ]
+  },
+  30: {
+    problems: [
+      {
+        q: 'Compute P(8,3).',
+        hint: 'Use formula P(n,k) = n!/(n-k)!.',
+        answer: 'P(8,3) = 8!/(8-3)! = 8!/5! = 8×7×6 = 336.'
+      },
+      {
+        q: 'How many 2-permutations are there of {W, X, Y, Z}? List them.',
+        hint: 'P(4,2) = 4×3 = 12. They are all ordered pairs of distinct elements.',
+        answer: 'P(4,2) = 12. They are: WX, WY, WZ, XW, XY, XZ, YW, YX, YZ, ZW, ZX, ZY.'
+      },
+      {
+        q: 'Find n if P(n,2) = 72.',
+        hint: 'P(n,2) = n(n-1) = 72. Solve quadratic n²-n-72=0.',
+        answer: 'n(n-1)=72 ⇒ n²-n-72=0 ⇒ (n-9)(n+8)=0 ⇒ n=9 (positive).'
+      },
+      {
+        q: 'How many ways can 5 of the letters of the word ALGORITHM be selected and written in a row?',
+        hint: 'ALGORITHM has 9 distinct letters. We need 5-permutations.',
+        answer: 'P(9,5) = 9×8×7×6×5 = 15120.'
+      },
+      {
+        q: 'How many ways can a party of seven persons arrange themselves in a row of seven chairs?',
+        hint: 'All seven are distinct; number of permutations of 7 items.',
+        answer: 'P(7,7) = 7! = 5040.'
+      }
+    ]
+  },
+  31: {
+    problems: [
+      {
+        q: 'Compute C(9,6).',
+        hint: 'Use C(n,k) = n!/(k!(n-k)!).',
+        answer: 'C(9,6) = 9!/(6!3!) = (9×8×7)/(3×2×1) = 84.'
+      },
+      {
+        q: 'A student must answer 8 out of 10 questions. How many ways can they choose?',
+        hint: 'This is combinations of 8 from 10.',
+        answer: 'C(10,8) = C(10,2) = 45.'
+      },
+      {
+        q: 'A computer programming team has 14 members (8 women, 6 men). How many groups of 7 can be chosen that contain 4 women and 3 men?',
+        hint: 'Choose 4 women from 8 and 3 men from 6; use product rule.',
+        answer: 'C(8,4) × C(6,3) = 70 × 20 = 1400.'
+      },
+      {
+        q: 'How many 16-bit strings contain exactly 9 ones?',
+        hint: 'Choose which 9 positions out of 16 are ones.',
+        answer: 'C(16,9) = 11440.'
+      },
+      {
+        q: 'How many groups of 7 can be chosen from 14 that contain at least one man?',
+        hint: 'Total groups of 7 minus groups with no men (i.e., all 7 from 8 women).',
+        answer: 'C(14,7) – C(8,7) = 3432 – 8 = 3424.'
+      }
+    ]
+  },
+  32: {
+    problems: [
+      {
+        q: 'A camera shop stocks 10 different types of batteries. How many ways can a total inventory of 30 batteries be distributed among the 10 types?',
+        hint: 'This is a k-selection (combinations with repetition) with n=10, k=30.',
+        answer: 'C(30+10-1, 30) = C(39,30) = C(39,9) = 211915132.'
+      },
+      {
+        q: 'How many ways can 9 toys be divided among 4 children if the youngest gets 3 and each other gets 2?',
+        hint: 'This is an ordered partition: 9! / (3! 2! 2! 2!).',
+        answer: '9!/(3!2!2!2!) = 7560.'
+      },
+      {
+        q: 'How many distinct permutations can be formed from the letters of the word \'BENZENE\'?',
+        hint: 'Count letters: B,E,N,Z,E,N,E → 7 letters with 3 E\'s and 2 N\'s.',
+        answer: '7! / (3! 2!) = 5040/(6×2)=5040/12=420.'
+      },
+      {
+        q: 'How many ways can 12 students be divided into 3 groups of 4 students each if the groups are for different subjects (English, History, Mathematics)?',
+        hint: 'This is an ordered partition: 12!/(4!4!4!).',
+        answer: '12!/(4!4!4!) = 34650.'
+      },
+      {
+        q: 'How many different signals can be formed using 4 identical red flags and 2 identical blue flags in a vertical line?',
+        hint: 'Permutations of 6 items with 4 identical and 2 identical.',
+        answer: '6!/(4!2!) = 15.'
+      }
+    ]
+  },
+  33: {
+    problems: [
+      {
+        q: 'Use a tree diagram to list all permutations of {a, b, c}.',
+        hint: 'Start with each possible first element, then branch for second, then third.',
+        answer: 'abc, acb, bac, bca, cab, cba. (Total 6).'
+      },
+      {
+        q: 'Teams A and B play a tournament; the first to win two games wins. How many possible ways can the tournament occur?',
+        hint: 'Draw tree diagram; sequences like AA, ABA, ABB, etc.',
+        answer: '6 ways: AA, ABA, ABB, BAA, BAB, BB.'
+      },
+      {
+        q: 'How many bit strings of length 4 do not have two consecutive 1s?',
+        hint: 'Use tree diagram or count recursively. The valid strings are: 0000,0001,0010,0100,0101,1000,1001,1010.',
+        answer: '8 bit strings.'
+      },
+      {
+        q: 'Among 200 people, 150 either swim or jog or both. 85 swim and 60 swim and jog. How many jog?',
+        hint: 'Use inclusion-exclusion: n(S∪J)=n(S)+n(J)-n(S∩J).',
+        answer: '150 = 85 + n(J) - 60 ⇒ n(J) = 150 - 85 + 60 = 125.'
+      },
+      {
+        q: 'Let A and B be subsets of U with n(A)=10, n(B)=15, n(A′)=12, n(A∩B)=8. Find n(A∪B′).',
+        hint: 'First find n(U)=n(A)+n(A′)=22. Then n(B\A)=n(B)-n(A∩B)=7. Also A∪B′ = U \ (B\A), so n(A∪B′)=n(U)-n(B\A).',
+        answer: 'n(U)=10+12=22; n(B\A)=15-8=7; n(A∪B′)=22-7=15.'
+      }
+    ]
+  },
+  34: {
+    problems: [
+      {
+        q: 'How many integers from 1 through 1000 are multiples of 3 or multiples of 5?',
+        hint: 'Count multiples of 3, multiples of 5, subtract multiples of 15 (intersection).',
+        answer: '⌊1000/3⌋=333, ⌊1000/5⌋=200, ⌊1000/15⌋=66. Total = 333+200-66 = 467.'
+      },
+      {
+        q: 'How many integers from 1 through 1000 are neither multiples of 3 nor multiples of 5?',
+        hint: 'Total 1000 minus those divisible by 3 or 5 (from previous).',
+        answer: '1000 - 467 = 533.'
+      },
+      {
+        q: 'A survey of 100 students: 8 own a car, 20 own a motorcycle, 48 own a bicycle, 38 own none, no car and motorcycle. How many own a bicycle and either a car or a motorcycle?',
+        hint: 'Use inclusion-exclusion: total with at least one = 62. Let x = (bicycle and car) + (bicycle and motorcycle). Then 62 = 8+20+48 - 0 - x + 0 ⇒ x=14.',
+        answer: '14 students.'
+      },
+      {
+        q: 'Show by the pigeonhole principle that among any 367 people, at least two have the same birthday.',
+        hint: 'There are 366 possible birthdays (including Feb 29).',
+        answer: 'With 367 people and 366 possible birthdays, by pigeonhole principle at least two share a birthday.'
+      },
+      {
+        q: 'What is the minimum number of students required to be sure that at least six receive the same grade, if there are five possible grades?',
+        hint: 'Use generalized pigeonhole: need smallest N such that ⌈N/5⌉ = 6.',
+        answer: 'N = 5(6-1)+1 = 26.'
+      }
+    ]
+  },
+  35: {
+    problems: [
+      {
+        q: 'What is the probability of getting a number greater than 4 when a fair die is tossed?',
+        hint: 'Favorable outcomes: 5,6. Total outcomes: 6.',
+        answer: 'P = 2/6 = 1/3.'
+      },
+      {
+        q: 'What is the probability of getting a total of 8 or 9 when a pair of dice is tossed?',
+        hint: 'Total outcomes 36. Count outcomes for sum 8: (2,6),(3,5),(4,4),(5,3),(6,2) =5. Sum 9: (3,6),(4,5),(5,4),(6,3)=4. Total 9 favorable.',
+        answer: 'P = 9/36 = 1/4.'
+      },
+      {
+        q: 'A card is drawn from a well-shuffled deck. What is the probability that it is either a spade or an ace?',
+        hint: 'P(spade)=13/52, P(ace)=4/52, P(spade and ace)=1/52.',
+        answer: 'P = 13/52 + 4/52 - 1/52 = 16/52 = 4/13.'
+      },
+      {
+        q: 'What is the probability that a hand of five cards contains four cards of one kind?',
+        hint: 'Number of favorable hands: choose the kind (13 ways), choose all 4 of that kind (1 way), choose the fifth card from remaining 48 (48 ways). Total hands C(52,5).',
+        answer: 'P = (13 × C(4,4) × 48) / C(52,5) = (13×48)/2598960 ≈ 0.00024.'
+      },
+      {
+        q: 'What is the probability that a randomly chosen positive two-digit number is a multiple of 6?',
+        hint: 'Two-digit numbers from 10 to 99 (90 numbers). Multiples of 6 from 12 to 96: count = ⌊99/6⌋ - ⌊9/6⌋ = 16 - 1 = 15.',
+        answer: 'P = 15/90 = 1/6.'
+      }
+    ]
+  },
+  
+  36: {
+    problems: [
+      {
+        q: "A bag contains 6 white, 5 black and 4 red balls. Find the probability of getting a white or a black ball in a single draw.",
+        hint: "Use the sum rule for disjoint events. Total balls = 15. Probability = (6+5)/15.",
+        answer: "P(white or black) = (6+5)/15 = 11/15."
+      },
+      {
+        q: "A pair of dice is thrown. Find the probability of getting a total of 5 or 11.",
+        hint: "Total outcomes = 36. Count favorable outcomes for sum 5 and sum 11 separately.",
+        answer: "P(sum 5) = 4/36, P(sum 11) = 2/36. Since disjoint, P = 4/36+2/36 = 6/36 = 1/6."
+      },
+      {
+        q: "Let A and B be events in a sample space S with P(A)=0.65, P(B)=0.30, P(A∩B)=0.15. Find (a) P(A∩B′) (b) P(A∪B) (c) P(A′∩B′).",
+        hint: "Use P(A∩B′)=P(A)-P(A∩B), P(A∪B)=P(A)+P(B)-P(A∩B), and De Morgan's law.",
+        answer: "(a) 0.65-0.15=0.50; (b) 0.65+0.30-0.15=0.80; (c) P((A∪B)′)=1-0.80=0.20."
+      },
+      {
+        q: "A card is drawn from a well‑shuffled pack. What is the probability that it is either a spade or an ace?",
+        hint: "Use P(spade)=13/52, P(ace)=4/52, P(spade∩ace)=1/52.",
+        answer: "P = 13/52 + 4/52 - 1/52 = 16/52 = 4/13."
+      },
+      {
+        q: "An integer is chosen at random from the first 100 positive integers. What is the probability that it is divisible by 6 or by 8?",
+        hint: "Count multiples of 6, multiples of 8, and multiples of LCM(6,8)=24.",
+        answer: "⌊100/6⌋=16, ⌊100/8⌋=12, ⌊100/24⌋=4. P = (16+12-4)/100 = 24/100 = 6/25."
+      }
+    ]
+  },
+  37: {
+    problems: [
+      {
+        q: "Let A and B be events with P(A)=1/2, P(B)=1/3, P(A∩B)=1/4. Find (i) P(A|B) (ii) P(B|A) (iii) P(A∪B) (iv) P(A^c | B^c).",
+        hint: "Use conditional probability formula, addition rule, and De Morgan's law.",
+        answer: "(i) P(A|B)= (1/4)/(1/3)=3/4; (ii) P(B|A)= (1/4)/(1/2)=1/2; (iii) P(A∪B)=1/2+1/3-1/4=7/12; (iv) P(A^c|B^c)=P(A^c∩B^c)/P(B^c)= (1-7/12)/(2/3)= (5/12)/(2/3)=5/8."
+      },
+      {
+        q: "Find P(B|A) if (i) A is a subset of B (ii) A and B are mutually exclusive.",
+        hint: "If A⊆B then A∩B=A. If disjoint, A∩B=∅.",
+        answer: "(i) P(B|A)=P(A∩B)/P(A)=P(A)/P(A)=1. (ii) P(B|A)=0/P(A)=0."
+      },
+      {
+        q: "Let a pair of dice be tossed. If the sum is 7, find the probability that one of the dice is 2.",
+        hint: "Let E be event 'a 2 appears', F be event 'sum is 7'. Count favorable pairs.",
+        answer: "P(E|F) = P(E∩F)/P(F). E∩F = {(2,5),(5,2)}, so P(E∩F)=2/36, P(F)=6/36. Hence P = (2/36)/(6/36)=1/3."
+      },
+      {
+        q: "A man visits a family with two children. One child, a boy, comes in. Find the probability that the other child is also a boy if (i) the other is known to be elder (ii) nothing is known about the other.",
+        hint: "Sample space {bb,bg,gb,gg}. Define events A=both boys, B=younger is boy, C=one is boy.",
+        answer: "(i) P(A|B)=P(A∩B)/P(B)= (1/4)/(2/4)=1/2. (ii) P(A|C)= (1/4)/(3/4)=1/3."
+      },
+      {
+        q: "A lot contains 12 items of which 4 are defective. Three items are drawn one after another without replacement. What is the probability that all three are non‑defective?",
+        hint: "Use multiplication rule: P(first non-def) * P(second non-def | first) * P(third non-def | first two).",
+        answer: "(8/12)*(7/11)*(6/10) = 14/55."
+      }
+    ]
+  },
+  38: {
+    problems: [
+      {
+        q: "A box contains 12 items of which three are defective. A sample of three items is selected. If X denotes the number of defective items in the sample, find the distribution of X.",
+        hint: "X can be 0,1,2,3. Use combinations: P(X=k) = C(3,k)C(9,3-k)/C(12,3).",
+        answer: "P(X=0)=84/220, P(X=1)=108/220, P(X=2)=27/220, P(X=3)=1/220."
+      },
+      {
+        q: "What is the expectation of the number of heads when three fair coins are tossed?",
+        hint: "X ~ Binomial(3, 1/2). E(X)=np=3*(1/2).",
+        answer: "E(X) = 3*(1/2) = 1.5. Alternatively, distribution: 0(1/8)+1(3/8)+2(3/8)+3(1/8)=1.5."
+      },
+      {
+        q: "A player tosses two fair coins. He wins Rs.1 if one head appears, Rs.2 if two heads appear, loses Rs.5 if no heads appear. Determine the expected value of the game.",
+        hint: "Let X be the winnings. P(two heads)=1/4, P(one head)=1/2, P(no heads)=1/4.",
+        answer: "E(X) = 2*(1/4) + 1*(1/2) - 5*(1/4) = 0.5 + 0.5 - 1.25 = -0.25 (unfavourable)."
+      },
+      {
+        q: "A coin is weighted so that P(H)=3/4, P(T)=1/4. Tossed three times. Let X be the number of heads. (a) Find the distribution of X. (b) Find E(X).",
+        hint: "X ~ Binomial(3, 3/4). P(X=k)=C(3,k)(3/4)^k(1/4)^(3-k).",
+        answer: "(a) P(X=0)=1/64, P(X=1)=9/64, P(X=2)=27/64, P(X=3)=27/64. (b) E(X)=3*(3/4)=9/4=2.25."
+      },
+      {
+        q: "A pair of fair dice is thrown. Let X denote the maximum of the two numbers. (a) Find the distribution of X. (b) Find the mean, variance and standard deviation.",
+        hint: "X takes values 1 to 6. Count outcomes where max = k: (2k-1) pairs.",
+        answer: "(a) P(X=k)=(2k-1)/36 for k=1,...,6. (b) μ = Σ k(2k-1)/36 = 161/36 ≈4.47; E(X²)= Σ k²(2k-1)/36 = 791/36 ≈21.97; Var= E(X²)-μ² ≈ 21.97 - 19.98 ≈1.99; σ≈1.41."
+      }
+    ]
+  },
+  39: {
+    problems: [
+      {
+        q: "Draw all simple graphs with four vertices {u, v, w, x} and two edges, one of which is {u, v}.",
+        hint: "Fix one edge {u,v}. Choose the second edge from the remaining 5 possible pairs.",
+        answer: "There are 5 such graphs (the second edge can be {u,w}, {u,x}, {v,w}, {v,x}, or {w,x})."
+      },
+      {
+        q: "Suppose a graph has vertices of degrees 1, 1, 4, 4 and 6. How many edges does the graph have?",
+        hint: "Sum of degrees = 2*(number of edges).",
+        answer: "Total degree = 1+1+4+4+6 = 16. Number of edges = 16/2 = 8."
+      },
+      {
+        q: "In a group of 15 people, is it possible for each person to have exactly 3 friends?",
+        hint: "Model as a graph with 15 vertices each of degree 3. Sum of degrees = 45, odd, impossible.",
+        answer: "No, because the sum of degrees would be 15*3=45, which is odd, contradicting the handshaking theorem."
+      },
+      {
+        q: "For the complete graph Kₙ, find (i) the degree of each vertex (ii) the total degree (iii) the number of edges.",
+        hint: "Each vertex is connected to all other n-1 vertices.",
+        answer: "(i) deg(v)=n-1; (ii) total degree = n(n-1); (iii) edges = n(n-1)/2."
+      },
+      {
+        q: "Draw two 3‑regular graphs with six vertices.",
+        hint: "3‑regular means each vertex has degree 3. Examples: K₃,₃ and a triangular prism.",
+        answer: "Two such graphs are K₃,₃ (complete bipartite with parts of size 3) and the triangular prism (two triangles connected by matching edges)."
+      }
+    ]
+  },
+  40: {
+    problems: [
+      {
+        q: "Determine whether the following graph (with vertices v0..v9 and edges as given in the lecture) has an Euler circuit.",
+        hint: "Check degrees of all vertices. An Euler circuit exists iff all degrees are even and graph is connected.",
+        answer: "No, because deg(v1)=5 (odd)."
+      },
+      {
+        q: "Find a Hamiltonian circuit for the graph shown in the lecture (vertices a,b,c,d,e,f,g,h).",
+        hint: "A Hamiltonian circuit visits every vertex exactly once and returns to start.",
+        answer: "One Hamiltonian circuit is: a – b – d – e – f – c – g – h – a."
+      },
+      {
+        q: "Show that the following graph (with vertices a..g) does not have a Hamiltonian circuit.",
+        hint: "Use the necessary condition: any Hamiltonian circuit gives a subgraph where every vertex has degree 2. If a vertex has high degree, removing edges to make degree 2 may isolate others.",
+        answer: "Vertex c has degree 5. To have a Hamiltonian circuit, c must have degree 2, so 3 incident edges must be removed. But then some neighbours (like b, g, f, d) would have degree less than 2, impossible. Hence no Hamiltonian circuit."
+      },
+      {
+        q: "State the condition for a graph to have an Euler path (not necessarily circuit).",
+        hint: "An Euler path exists if the graph is connected and exactly two vertices have odd degree.",
+        answer: "A connected graph has an Euler path from vertex u to v iff u and v have odd degree and all other vertices have even degree."
+      },
+      {
+        q: "Define Euler circuit and Hamiltonian circuit.",
+        hint: "Euler circuit uses every edge exactly once; Hamiltonian circuit uses every vertex exactly once.",
+        answer: "An Euler circuit is a circuit that contains every edge of the graph exactly once (and every vertex at least once). A Hamiltonian circuit is a simple circuit that contains every vertex of the graph exactly once."
+      }
+    ]
+  },
+  41: {
+    problems: [
+      {
+        q: "Find a graph that has the following adjacency matrix: [[0,2,0],[2,1,0],[0,0,1]].",
+        hint: "The matrix gives the number of edges between vertices. Diagonal entries are loops.",
+        answer: "Vertices v1, v2, v3. There are 2 parallel edges between v1 and v2, a loop at v2, and a loop at v3. No edge between v1-v3 or v2-v3."
+      },
+      {
+        q: "Find the directed graph corresponding to the adjacency matrix [[1,0,1,2],[0,0,1,0],[0,2,1,1],[0,1,1,0]].",
+        hint: "Rows are tails, columns are heads. Entry a_ij = number of arrows from i to j.",
+        answer: "Draw vertices v1..v4. There are loops at v1 and v3; two arrows from v1 to v4; one from v1 to v3; one from v2 to v3; two from v3 to v2; one from v3 to v4; one from v4 to v2; one from v4 to v3; etc."
+      },
+      {
+        q: "Let A = [[1,1,2],[1,0,1],[2,1,0]] be the adjacency matrix of a graph G with vertices v1,v2,v3. Find (a) the number of walks of length 2 from v2 to v3 (b) the number of walks of length 3 from v1 to v3.",
+        hint: "Compute A² and A³. The (i,j) entry gives the number of walks of that length.",
+        answer: "A² = [[6,3,3],[3,2,2],[3,2,5]]. So from v2 to v3 (row2,col3) = 2. A³ = A²*A = [[15,9,15],[9,5,8],[15,8,8]]. From v1 to v3 (row1,col3) = 15."
+      },
+      {
+        q: "What is the incidence matrix of a simple graph? Give an example.",
+        hint: "Rows are vertices, columns are edges. Entry 1 if vertex incident to edge, else 0.",
+        answer: "For a graph with vertices v1..v4 and edges e1..e5, the incidence matrix has 1's for endpoints, 0 otherwise. (Example given in lecture.)"
+      },
+      {
+        q: "If A is the adjacency matrix of a graph, what does the (i,j) entry of A^n represent?",
+        hint: "It counts walks of length n.",
+        answer: "The (i,j) entry of A^n equals the number of walks of length n from vertex i to vertex j."
+      }
+    ]
+  },
+  42: {
+    problems: [
+      {
+        q: "Determine whether the graphs G and G’ (with 5 vertices each, G has 7 edges, G’ has 6 edges) are isomorphic.",
+        hint: "Isomorphic graphs must have the same number of edges.",
+        answer: "No, because G has 7 edges while G’ has only 6 edges."
+      },
+      {
+        q: "Determine whether the graphs G and G’ (5 vertices, G has a vertex of degree 5, G’ has no vertex of degree 5) are isomorphic.",
+        hint: "Isomorphic graphs must have the same degree sequence.",
+        answer: "No, because G has a vertex of degree 5, but G’ has no such vertex."
+      },
+      {
+        q: "Find all non‑isomorphic simple graphs with three vertices.",
+        hint: "List all possible edges among 3 vertices (max 3 edges). Count up to isomorphism.",
+        answer: "There are 4 non‑isomorphic graphs: (1) no edges, (2) one edge, (3) two edges (path of length 2), (4) three edges (triangle)."
+      },
+      {
+        q: "Find all non‑isomorphic simple connected graphs with three vertices.",
+        hint: "Connected graphs on 3 vertices must have at least 2 edges.",
+        answer: "There are 2: (1) path of length 2 (two edges), (2) triangle (three edges)."
+      },
+      {
+        q: "Find all non‑isomorphic simple connected graphs with four vertices.",
+        hint: "List all connected graphs on 4 vertices up to isomorphism.",
+        answer: "There are 6: (1) tree with 3 edges (4 possible trees, but only 2 non‑isomorphic: path and star? Actually there are 2 non‑isomorphic trees on 4 vertices: path P4 and star K1,3) plus graphs with 4,5,6 edges. The complete list: P4, star, cycle C4, triangle with a pendant edge, K4 minus an edge, and K4. So 6 graphs."
+      }
+    ]
+  },
+  43: {
+    problems: [
+      {
+        q: "Show that the graph Q3 (the 3‑cube) is planar by drawing it without edge crossings.",
+        hint: "Redraw the cube as two squares connected by matching edges.",
+        answer: "A plane drawing of Q3 exists; one way is to draw an outer square and an inner square with corresponding vertices connected, and no crossings."
+      },
+      {
+        q: "Show that K₃,₃ is not planar.",
+        hint: "Assume a planar drawing and derive a contradiction using Euler's formula or by arguing that any drawing forces a crossing.",
+        answer: "K₃,₃ has 6 vertices and 9 edges. In any planar embedding, faces must have length at least 4, so 4f ≤ 2e = 18 ⇒ f ≤ 4.5 ⇒ f ≤ 4. But Euler: f = e - v + 2 = 9 - 6 + 2 = 5, contradiction. Hence non‑planar."
+      },
+      {
+        q: "Show that K₅ is non‑planar.",
+        hint: "K₅ has 5 vertices, 10 edges. Use Euler's formula: f = e - v + 2 = 10 - 5 + 2 = 7. In a planar simple graph, each face has degree at least 3, so 3f ≤ 2e ⇒ 21 ≤ 20, contradiction.",
+        answer: "Assume planar. Euler gives f = 7. Each face must have at least 3 edges, so 3f ≤ 2e ⇒ 21 ≤ 20, impossible. Hence non‑planar."
+      },
+      {
+        q: "A connected planar simple graph has 30 edges. If a plane drawing has 20 faces, how many vertices does it have?",
+        hint: "Use Euler's formula: f = e - v + 2.",
+        answer: "20 = 30 - v + 2 ⇒ v = 30 - 20 + 2 = 12 vertices."
+      },
+      {
+        q: "What is the chromatic number of the graphs G and H shown in the lecture?",
+        hint: "Chromatic number is the least number of colors needed. G can be colored with 3, H needs 4.",
+        answer: "χ(G)=3, χ(H)=4."
+      }
+    ]
+  },
+  44: {
+    problems: [
+      {
+        q: "Explain why a tree with 12 vertices and 15 edges does not exist.",
+        hint: "A tree with n vertices has exactly n-1 edges.",
+        answer: "A tree with 12 vertices must have 11 edges, not 15."
+      },
+      {
+        q: "Find all non‑isomorphic trees with four vertices.",
+        hint: "Trees on 4 vertices have 3 edges. Possible degree sequences: (3,1,1,1) and (2,2,1,1).",
+        answer: "Two non‑isomorphic trees: the star K1,3 and the path P4."
+      },
+      {
+        q: "Consider the rooted tree with root v0 (shown in lecture). (a) What is the level of v8? (b) Height of the tree? (c) Children of v10? (d) Siblings of v1? (e) Descendants of v12?",
+        hint: "Level is distance from root. Height is max level. Children are one level below. Siblings share parent. Descendants are below.",
+        answer: "(a) level of v8 = 3. (b) height = 5. (c) children of v10: v14, v15, v16. (d) siblings of v1: v3, v4, v5. (e) descendants of v12: v17, v18, v19."
+      },
+      {
+        q: "Explain why a full binary tree with nine vertices and five internal vertices does not exist.",
+        hint: "A full binary tree with k internal vertices has 2k+1 total vertices.",
+        answer: "If k=5, total vertices = 2*5+1 = 11, not 9. Or if total=9, k=4, not 5."
+      },
+      {
+        q: "Draw a full binary tree with seven vertices.",
+        hint: "A full binary tree with 7 vertices has 3 internal vertices and 4 leaves.",
+        answer: "Root with two children; each child has two leaves (or one child with two leaves and the other with one? Actually full means every internal has exactly 2 children, so with 7 vertices, root has 2 children, each of those has 2 leaves, total 1+2+4=7. So draw a root with left and right, each with two leaves."
+      }
+    ]
+  },
+  45: {
+    problems: [
+      {
+        q: "Use Kruskal's algorithm to find a minimal spanning tree for the weighted graph given in the lecture (edges with weights: 1,2,3,4,5,6,7,8,9,10). Give the order of edges added.",
+        hint: "Sort edges by weight, add if no cycle is formed.",
+        answer: "Order: {a,b} (1), {e,f} (2), {e,d} (3), {c,d} (4), {g,f} (6), {b,c} (7). (Assuming the graph from lecture.)"
+      },
+      {
+        q: "Use Prim's algorithm starting at vertex a to find a minimal spanning tree for the same weighted graph. Give the order of edges added.",
+        hint: "Start with vertex a, repeatedly add the cheapest edge connecting the current tree to a new vertex.",
+        answer: "Order: {a,b} (1), {b,c} (7), {c,d} (4), {d,e} (3), {e,f} (2), {f,g} (6)."
+      },
+      {
+        q: "Find the number of spanning trees of the graph G using Kirchhoff's theorem (given adjacency matrix).",
+        hint: "Form the matrix M (degree on diagonal, -1 for edges), delete any row and column, compute determinant.",
+        answer: "For the graph in the lecture (a 4-vertex graph), the number of spanning trees is 8."
+      },
+      {
+        q: "For the weighted graph with edges (weights 1,2,3,6), find all spanning trees and identify the minimal one.",
+        hint: "List all spanning trees (there are 3) and sum their weights.",
+        answer: "Tree T1: edges {1,2,6} weight=9? Actually the weights given in lecture: graph with edges of weights 1,2,3,6. The three spanning trees are: (1,2,6) weight 9? Wait, the example had three trees with weights 14,11,15. Minimal is 11. So answer: T2 is minimal with weight 11."
+      },
+      {
+        q: "How many non‑isomorphic spanning trees does the simple graph (with 4 vertices forming a cycle plus a diagonal) have?",
+        hint: "Draw all spanning trees (they are all trees on 4 vertices) and identify isomorphic classes.",
+        answer: "There are 8 spanning trees total, but only 2 non‑isomorphic types: one path P4 (appears 4 times) and one star K1,3 (appears 4 times)."
+      }
+    ]
+  },
+
+  },
   MTH101: {
    // ============================================================
 // MTH101 - LECTURES 1 TO 22: NUMERICAL PROBLEMS
