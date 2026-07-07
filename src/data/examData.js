@@ -150,6 +150,103 @@ const examData = {
         "answer": "C. 8/3 a²"
     },
 
+    {
+        "q": "If the definite integral of f(x) = sec²x over the interval [0, a] is equal to '1' then what will be the value of the definite integral of f(x) = (sec²x) + 3 over the same interval?",
+        "options": [
+            "A. 4",
+            "B. -1-3a",
+            "C. 1-3a",
+            "D. 1+3a"
+        ],
+        "answer": "D. 1+3a"
+    },
+    {
+        "q": "If f(x) = x and g(x) = x + 1 are integrable functions over the interval [a, b] for a < b, which of the following expressions is true for f and g?",
+        "options": [
+            "A. ∫ₐᵇ f(x) dx = ∫ₐᵇ g(x) dx",
+            "B. ∫ₐᵇ f(x) dx ≠ ∫ₐᵇ g(x) dx",
+            "C. ∫ₐᵇ f(x) dx < ∫ₐᵇ g(x) dx",
+            "D. ∫ₐᵇ f(x) dx > ∫ₐᵇ g(x) dx"
+        ],
+        "answer": "C. ∫ₐᵇ f(x) dx < ∫ₐᵇ g(x) dx"
+    },
+    {
+        "q": "If the definite integral of f(x) = Sin x over the interval [-a, 0] is equal to -2 then what will be the value of the definite integral of f(x) = (Sin x) + 1 over the same interval?",
+        "options": [
+            "A. -2 + a",
+            "B. 2 - a",
+            "C. -2 - a",
+            "D. -1"
+        ],
+        "answer": "A. -2 + a"
+    },
+    {
+        "q": "If f(x) = x and g(x) = 2x are integrable functions over the interval [0, a] for a > 0, which of the following expressions is true for f and g?",
+        "options": [
+            "A. ∫₀ᵃ f(x) dx > ∫₀ᵃ g(x) dx",
+            "B. ∫₀ᵃ f(x) dx < ∫₀ᵃ g(x) dx",
+            "C. ∫₀ᵃ f(x) dx = ∫₀ᵃ g(x) dx",
+            "D. ∫₀ᵃ f(x) dx ≠ ∫₀ᵃ g(x) dx"
+        ],
+        "answer": "B. ∫₀ᵃ f(x) dx < ∫₀ᵃ g(x) dx"
+    },
+    {
+        "q": "The expressions (x² + x), (x² + x + 5), (x² + x - 3) have the same ....",
+        "options": [
+            "A. Derivative",
+            "B. Anti-derivative"
+        ],
+        "answer": "A. Derivative"
+    },
+    {
+        "q": "The area of the region bounded by the curves y = √x, y = 1, and x = 4 is:",
+        "options": [
+            "A. 0",
+            "B. 1/2",
+            "C. None of these",
+            "D. 5/3"
+        ],
+        "answer": "D. 5/3"
+    },
+    {
+        "q": "The value of ∫₋₁^∞ dx/x² is:",
+        "options": [
+            "A. 1",
+            "B. 3",
+            "C. 0",
+            "D. Diverges (Correct answer missing from options)"
+        ],
+        "answer": "D. Diverges (Correct answer missing from options)"
+    },
+    {
+        "q": "Question content is missing from the PDF for Q8.",
+        "options": [
+            "A. (not available)",
+            "B. (not available)",
+            "C. (not available)",
+            "D. (not available)"
+        ],
+        "answer": "A. (not available)"
+    },
+    {
+        "q": "Use cylindrical shells to find the volume of the solid generated when the region 'R' enclosed between y = 2x + 1 and y = -2x - 3 in the interval [1,3] is revolved about the y-axis is ______.",
+        "options": [
+            "A. V = ∫₁³ 2πx((2x+1)+(-2x-3)) dx",
+            "B. V = ∫₁³ 2πx((2x+1)-(-2x-3)) dx"
+        ],
+        "answer": "B. V = ∫₁³ 2πx((2x+1)-(-2x-3)) dx"
+    },
+    {
+        "q": "If f(x) = x and g(x) = x - 1 are integrable functions over the interval [a, b] for a < b, which of the following expressions is true for f and g?",
+        "options": [
+            "A. ∫ₐᵇ f(x) dx = ∫ₐᵇ g(x) dx",
+            "B. ∫ₐᵇ f(x) dx ≠ ∫ₐᵇ g(x) dx",
+            "C. ∫ₐᵇ f(x) dx < ∫ₐᵇ g(x) dx",
+            "D. ∫ₐᵇ f(x) dx > ∫ₐᵇ g(x) dx"
+        ],
+        "answer": "D. ∫ₐᵇ f(x) dx > ∫ₐᵇ g(x) dx"
+    }
+
 
 
 
@@ -827,6 +924,207 @@ const examData = {
         "answer": "C. Voltage across both resistors is the same"
     },
 
+    {
+        "q": "An erect object is in front of a convex mirror a distance greater than the focal length. The image is:",
+        "options": [
+            "A. Real, inverted, and smaller than the object",
+            "B. Real, inverted, and larger than the object",
+            "C. Virtual, erect, and smaller than the object",
+            "D. Virtual, inverted, and larger than the object"
+        ],
+        "answer": "C. Virtual, erect, and smaller than the object"
+    },
+    {
+        "q": "Total flux through a closed surface depends on:",
+        "options": [
+            "A. Shape of surface",
+            "B. Charge and - NC",
+            "C. Charge enclosed",
+            "D. Medium only"
+        ],
+        "answer": "C. Charge enclosed"
+    },
+    {
+        "q": "A charge Q is moving with a velocity (v) parallel to a magnetic field (B). Force on the charge due to magnetic field is:",
+        "options": [
+            "A. Constant",
+            "B. Minimum",
+            "C. Maximum",
+            "D. Zero"
+        ],
+        "answer": "D. Zero"
+    },
+    {
+        "q": "Which electromagnetic radiation transmits the highest photon energy?",
+        "options": [
+            "A. Ultraviolet radiations",
+            "B. Infrared rays",
+            "C. Microwaves",
+            "D. Gamma rays"
+        ],
+        "answer": "D. Gamma rays"
+    },
+    {
+        "q": "The resolving power of a telescope can be increased by:",
+        "options": [
+            "A. decreasing the lens diameters",
+            "B. increasing the lens diameters",
+            "C. increasing the objective focal length and decreasing the eyepiece focal length",
+            "D. inserting a correction lens between objective and eyepiece"
+        ],
+        "answer": "B. increasing the lens diameters"
+    },
+    {
+        "q": "The speed of light in free space is:",
+        "options": [
+            "A. Less than that in air",
+            "B. Unpredictable",
+            "C. Constant",
+            "D. Variable"
+        ],
+        "answer": "C. Constant"
+    },
+    {
+        "q": "In special relativity, the factor γ is defined as:",
+        "options": [
+            "A. 1 - (v/c)²",
+            "B. 1 / (1 + (v/c)²)",
+            "C. 1 / sqrt(1 - (v/c)²)",
+            "D. 1 - (v/c)²"
+        ],
+        "answer": "C. 1 / sqrt(1 - (v/c)²)"
+    },
+    {
+        "q": "Polarization of light is defined as:",
+        "options": [
+            "A. The process of light aligning with Earth's magnetic field.",
+            "B. The process of light vibrating in a specific direction.",
+            "C. The process of light passing through a polar bear.",
+            "D. The process of light changing its color."
+        ],
+        "answer": "B. The process of light vibrating in a specific direction."
+    },
+    {
+        "q": "Which of the following is the difference between sound and light waves:",
+        "options": [
+            "A. sound is not subject to diffraction",
+            "B. sound does not require energy for its origin",
+            "C. sound is a longitudinal wave rather than a transverse wave",
+            "D. sound is a torsional wave rather than a longitudinal wave"
+        ],
+        "answer": "C. sound is a longitudinal wave rather than a transverse wave"
+    },
+    {
+        "q": "In an electrical circuit with constant resistance, if the voltage source is doubled, what happens to the power delivered to the circuit?",
+        "options": [
+            "A. The power is quadrupled.",
+            "B. The power remains the same.",
+            "C. The power is halved.",
+            "D. The power is doubled."
+        ],
+        "answer": "A. The power is quadrupled."
+    },
+    {
+        "q": "The temperature of the ice throughout the melting process when it is continuously heated by a small gas flame is:",
+        "options": [
+            "A. Remains constant initially and then increases.",
+            "B. Increases until it turns into liquid water.",
+            "C. Remains constant.",
+            "D. Rises gradually."
+        ],
+        "answer": "C. Remains constant."
+    },
+    {
+        "q": "Radio waves and light waves are",
+        "options": [
+            "A. Electromagnetic and longitudinal both",
+            "B. Electromagnetic and transverse both",
+            "C. Transverse waves",
+            "D. Longitudinal waves"
+        ],
+        "answer": "B. Electromagnetic and transverse both"
+    },
+    {
+        "q": "If the area of the plates increase by 6 times, and the distance between plates is reduced to half, the capacitance will be",
+        "options": [
+            "A. increased by 12 times",
+            "B. decreased by 12 times",
+            "C. increased by 3 times",
+            "D. decreased by 3 times"
+        ],
+        "answer": "A. increased by 12 times"
+    },
+    {
+        "q": "A stationary charge placed in a magnetic field will experience:",
+        "options": [
+            "A. An electric force.",
+            "B. Both electric and magnetic forces.",
+            "C. A magnetic force.",
+            "D. No force."
+        ],
+        "answer": "D. No force."
+    },
+    {
+        "q": "If an electron of charge is accelerated through a potential difference V, it will acquire energy",
+        "options": [
+            "A. V/2",
+            "B. E/2",
+            "C. 2V",
+            "D. Ve"
+        ],
+        "answer": "D. Ve"
+    },
+    {
+        "q": "Which of the following statements is false about the properties of electromagnetic waves?",
+        "options": [
+            "A. Both electric and magnetic field vectors are parallel to each other and perpendicular to the direction of propagation of wave.",
+            "B. The energy of the electromagnetic wave is divided equally between electric and magnetic fields.",
+            "C. These waves do not require any material medium for propagation.",
+            "D. Both electric and magnetic field vectors attain their maximum and minimum at the same place and at the same time."
+        ],
+        "answer": "A. Both electric and magnetic field vectors are parallel to each other and perpendicular to the direction of propagation of wave."
+    },
+    {
+        "q": "How does the total current behave when it is divided between two resistors in an electrical circuit?",
+        "options": [
+            "A. Decreases",
+            "B. Remains constant",
+            "C. Becomes zero",
+            "D. Increases"
+        ],
+        "answer": "B. Remains constant"
+    },
+    {
+        "q": "The units of Stefan Boltzmann constant are",
+        "options": [
+            "A. W m⁻² K⁻⁴",
+            "B. W m⁻² K⁻⁴",
+            "C. W m⁻² K⁻⁴",
+            "D. W m⁻² K⁻⁴"
+        ],
+        "answer": "A. W m⁻² K⁻⁴"
+    },
+    {
+        "q": "Which of the following statement best describes heat capacity?",
+        "options": [
+            "A. Amount of heat required to rise the temperature by 1 oC.",
+            "B. Heat needed to melt a substance.",
+            "C. Resistance of a body to temperature change.",
+            "D. The ability of a body to retain heat."
+        ],
+        "answer": "A. Amount of heat required to rise the temperature by 1 oC."
+    },
+    {
+        "q": "How could the unit of potential difference, the volt, also be written?",
+        "options": [
+            "A. J/C",
+            "B. C/J",
+            "C. A/s",
+            "D. C/A"
+        ],
+        "answer": "A. J/C"
+    }
+
 
 
  ],
@@ -1299,6 +1597,207 @@ const examData = {
     "answer": "C. International law that makes Illegal in one country and legal in another country"
   },
 
+    {
+        "q": "Which of the following is correct in context of content filtering?",
+        "options": [
+            "A. It allows all content to pass through without restrictions.",
+            "B. It only filters content related to malware.",
+            "C. It is not part of Internet firewalls.",
+            "D. It matches strings of characters to allow content through."
+        ],
+        "answer": "D. It matches strings of characters to allow content through."
+    },
+    {
+        "q": "Which of the following significantly increases the chances of fraudulent activity?",
+        "options": [
+            "A. Gaming addiction",
+            "B. Terrorism",
+            "C. Identity theft",
+            "D. Cyber bullying"
+        ],
+        "answer": "C. Identity theft"
+    },
+    {
+        "q": "In MS Word, from the Paragraph group, what can you adjust regarding line?",
+        "options": [
+            "A. Line thickness.",
+            "B. Line colour.",
+            "C. Line numbering.",
+            "D. Line spacing within a paragraph."
+        ],
+        "answer": "D. Line spacing within a paragraph."
+    },
+    {
+        "q": "What does the Bullet Library allow you to do in Microsoft Word?",
+        "options": [
+            "A. Add bullets to a list.",
+            "B. Change the font style.",
+            "C. Adjust paragraph spacing.",
+            "D. Insert images."
+        ],
+        "answer": "A. Add bullets to a list."
+    },
+    {
+        "q": "In MS Word, we have to write an equation with 2 as a number and 3 as its power. Which option is suitable for this purpose?",
+        "options": [
+            "A. Superscript",
+            "B. Case",
+            "C. Font size",
+            "D. Subscript"
+        ],
+        "answer": "A. Superscript"
+    },
+    {
+        "q": "In MS Word, we can set line spacing from group",
+        "options": [
+            "A. Font",
+            "B. Clipboard",
+            "C. Insert",
+            "D. Paragraph"
+        ],
+        "answer": "D. Paragraph"
+    },
+    {
+        "q": "Most famous word processor is:",
+        "options": [
+            "A. Wordpad",
+            "B. MS-word",
+            "C. Notepad",
+            "D. MS-Excel"
+        ],
+        "answer": "B. MS-word"
+    },
+    {
+        "q": "In MS Word, shortcut key of paste is",
+        "options": [
+            "A. Alt+p",
+            "B. Ctrl+v",
+            "C. Ctrl+p",
+            "D. Alt+v"
+        ],
+        "answer": "B. Ctrl+v"
+    },
+    {
+        "q": "Ctrl+z is used for:",
+        "options": [
+            "A. Save",
+            "B. Undo",
+            "C. Load",
+            "D. Redo"
+        ],
+        "answer": "B. Undo"
+    },
+    {
+        "q": "In MS Word, we can apply bullets from home ribbon group called",
+        "options": [
+            "A. Styles",
+            "B. Clipboard",
+            "C. Font",
+            "D. Paragraph"
+        ],
+        "answer": "D. Paragraph"
+    },
+
+    {
+        "q": "In Microsoft word, which command can you use if you change your mind again and want to reapply a previously undone action?",
+        "options": [
+            "A. Undo",
+            "B. Quick Print",
+            "C. Redo",
+            "D. Save"
+        ],
+        "answer": "C. Redo"
+    },
+    {
+        "q": "In MS Word, Paste option is a part of home ribbon group called",
+        "options": [
+            "A. Insert",
+            "B. Clipboard",
+            "C. Font",
+            "D. Paragraph"
+        ],
+        "answer": "B. Clipboard"
+    },
+    {
+        "q": "Which of the following is often integrated with content filters in the context of the internet?",
+        "options": [
+            "A. Antivirus software",
+            "B. Email servers",
+            "C. Search engines",
+            "D. Internet firewalls"
+        ],
+        "answer": "D. Internet firewalls"
+    },
+    {
+        "q": "How is content filtering used to implement company policies?",
+        "options": [
+            "A. By filtering out websites unrelated to work.",
+            "B. By allowing unlimited access to all websites.",
+            "C. By blocking internet access for employees.",
+            "D. By promoting unrestricted usage of social media sites."
+        ],
+        "answer": "A. By filtering out websites unrelated to work."
+    },
+    {
+        "q": "In MS Word, where you can find options to add bullet lists, number lists, or outlines to a document?",
+        "options": [
+            "A. In the Header and Footer group",
+            "B. In the Font dialog window",
+            "C. In the Spell-check settings",
+            "D. Within the Paragraph group"
+        ],
+        "answer": "D. Within the Paragraph group"
+    },
+    {
+        "q": "In MS Word, the option of justify is in group",
+        "options": [
+            "A. Clipboard",
+            "B. Font",
+            "C. Insert",
+            "D. Paragraph"
+        ],
+        "answer": "D. Paragraph"
+    },
+    {
+        "q": "In MS Word, what are the types of commands included in the Font group?",
+        "options": [
+            "A. Alignment commands",
+            "B. Sorting commands",
+            "C. Printing commands",
+            "D. Formatting commands"
+        ],
+        "answer": "D. Formatting commands"
+    },
+    {
+        "q": "What is the significance of the Home ribbon in MS Word?",
+        "options": [
+            "A. It is one of the most important ribbons.",
+            "B. It contains decorative elements for documents.",
+            "C. It is one of the least used ribbons.",
+            "D. It only contains the clipboard group."
+        ],
+        "answer": "A. It is one of the most important ribbons."
+    },
+    {
+        "q": "In Microsoft Word, what is the goal behind placing commands within groups and tabs?",
+        "options": [
+            "A. To hide commands from users",
+            "B. To discourage software usage",
+            "C. To minimize the number of mouse clicks",
+            "D. To confuse users"
+        ],
+        "answer": "C. To minimize the number of mouse clicks"
+    },
+    {
+        "q": "How can you open the Paragraph dialog window in MS Word?",
+        "options": [
+            "A. By using the Dialog expander arrow.",
+            "B. By clicking the Format button.",
+            "C. By right-clicking in the document.",
+            "D. By pressing Ctrl+P."
+        ],
+        "answer": "A. By using the Dialog expander arrow."
+    }
 
 
 
@@ -1332,22 +1831,217 @@ const examData = {
       totalMarks: 40,
       mcqMarks: 1,
       mcqs: [
-        { q: 'What does "a priori" mean?', options: ['A. Based on experience', 'B. And so on', 'C. By itself', 'D. Based on reasoning before experience'], answer: 'D. Based on reasoning before experience' },
-        { q: 'What does "et al." mean?', options: ['A. For example', 'B. And others (used in academic citations)', 'C. And so on', 'D. By itself'], answer: 'B. And others (used in academic citations)' },
-        { q: 'What does "per se" mean?', options: ['A. For example', 'B. And others', 'C. By or in itself', 'D. Before experience'], answer: 'C. By or in itself' },
-        { q: '"I don\'t get how you found the answer." Here "get" means:', options: ['A. Receive', 'B. Go somewhere', 'C. Understand', 'D. Buy'], answer: 'C. Understand' },
-        { q: '"Prof. held forth for an hour." The phrase "held forth" means:', options: ['A. Kept quiet', 'B. Spoke at length', 'C. Walked forward', 'D. Listened carefully'], answer: 'B. Spoke at length' },
-        { q: 'Which spelling is British English?', options: ['A. Catalog', 'B. Theater', 'C. Catalogue', 'D. Color'], answer: 'C. Catalogue' },
-        { q: '"A week without water makes one weak" is a:', options: ['A. Metaphor', 'B. Simile', 'C. Play on words (pun)', 'D. Alliteration'], answer: 'C. Play on words (pun)' },
-        { q: '"The gardener played the hose on the flower beds." Here "play" means:', options: ['A. Perform music', 'B. Direct a stream of water', 'C. Act in a drama', 'D. Use a game strategy'], answer: 'B. Direct a stream of water' },
-        { q: 'The word "Cool" (meaning great/excellent) is labeled as:', options: ['A. Formal', 'B. Scientific', 'C. Slang or informal', 'D. Legal term'], answer: 'C. Slang or informal' },
-        { q: '"It was a clever play that won the game." Here "play" means:', options: ['A. A drama', 'B. Music performance', 'C. A move or strategy in a game', 'D. Water direction'], answer: 'C. A move or strategy in a game' },
-      ],
+        
+   
+  {
+    "q": "An outline, with its indention and numbering system helps you to the way each idea is related to the others.",
+    "options": [
+      "A. support",
+      "B. visualize",
+      "C. rectify",
+      "D. exploit"
+    ],
+    "answer": "B. visualize"
+  },
+  {
+    "q": "The abbreviation 'i.e.' means",
+    "options": [
+      "A. which is",
+      "B. there is",
+      "C. this is",
+      "D. that is"
+    ],
+    "answer": "D. that is"
+  },
+  {
+    "q": "Select the correct punctuated option which best describes the sentence. Because I am a teacher, I am a teacher.",
+    "options": [
+      "A. divine their",
+      "B. divine; so",
+      "C. divine, so",
+      "D. This sentence is correct"
+    ],
+    "answer": "VERIFY - Question/Options are corrupted. Original MCQ required."
+  },
+  {
+    "q": "Choose the best option. I am a teacher, so I am a teacher.",
+    "options": [
+      "A. (option missing)",
+      "B. fairly",
+      "C. considerably",
+      "D. wholly"
+    ],
+    "answer": "VERIFY - Question/Options are corrupted. Original MCQ required."
+  },
+  {
+    "q": "Outlining and Brainstorming are the best ways to map out and organize your essay.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer": "A. True"
+  },
+  {
+    "q": "In composition, a method of organization in which actions or events are presented as they occur in time is called",
+    "options": [
+      "A. comparison and contrast",
+      "B. order of importance",
+      "C. cause and effect",
+      "D. chronological order"
+    ],
+    "answer": "D. chronological order"
+  },
+  {
+    "q": "You arrived two days ago. You are going to leave next Sunday. By the time you leave, you nine days here.",
+    "options": [
+      "A. will have spent",
+      "B. spent",
+      "C. spend",
+      "D. have spent"
+    ],
+    "answer": "A. will have spent"
+  },
+  {
+    "q": "Choose the closest meaning of 'see into':",
+    "options": [
+      "A. to witness departure",
+      "B. to attend to",
+      "C. to find out the true nature of something",
+      "D. to detect"
+    ],
+    "answer": "C. to find out the true nature of something"
+  },
+  {
+    "q": "Which of the following methods of organization is used in the given sentence? Consequently, people suffered from parasites. The water was impure in the village.",
+    "options": [
+      "A. Chronological order",
+      "B. Cause and effect",
+      "C. Listing order",
+      "D. Comparison and contrast"
+    ],
+    "answer": "B. Cause and effect"
+  },
+  {
+    "q": "An outline is basically an organization of related ideas.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer": "A. True"
+  },
+
+    {
+        "q": "He is never late. He always comes time.",
+        "options": [
+            "A. in",
+            "B. on",
+            "C. at",
+            "D. of"
+        ],
+        "answer": "B. on"
+    },
+    {
+        "q": "means to organize/write events in the order of their occurrence in time.",
+        "options": [
+            "A. Cause and effect",
+            "B. All of the above",
+            "C. Chronological order",
+            "D. Compare and contrast"
+        ],
+        "answer": "C. Chronological order"
+    },
+    {
+        "q": "The abbreviation 'i.e.' means",
+        "options": [
+            "A. that is",
+            "B. this is",
+            "C. there is",
+            "D. which is"
+        ],
+        "answer": "A. that is"
+    },
+    {
+        "q": "Cheating is dishonesty; it hinders students from learning.",
+        "options": [
+            "A. in contrast",
+            "B. moreover",
+            "C. instead",
+            "D. although"
+        ],
+        "answer": "B. moreover"
+    },
+    {
+        "q": "An outline, with its indention and numbering system helps you to the way each idea is related to the others.",
+        "options": [
+            "A. visualize",
+            "B. support",
+            "C. exploit",
+            "D. rectify"
+        ],
+        "answer": "A. visualize"
+    },
+    {
+        "q": "The professor discussed the sleeping habits of elephants, she did not explain the topic in detail.",
+        "options": [
+            "A. Also",
+            "B. However",
+            "C. In contrast",
+            "D. Therefore"
+        ],
+        "answer": "B. However"
+    },
+    {
+        "q": "Where is he? I for him since three o'clock!",
+        "options": [
+            "A. was waiting",
+            "B. wrote",
+            "C. am waiting",
+            "D. have been waiting"
+        ],
+        "answer": "D. have been waiting"
+    },
+    {
+        "q": "use an outline to help make their writing clear.",
+        "options": [
+            "A. All poets",
+            "B. All editors",
+            "C. All essayists",
+            "D. All writers"
+        ],
+        "answer": "D. All writers"
+    },
+    {
+        "q": "An introduction has four purposes: introduction, background, plan and",
+        "options": [
+            "A. main theme",
+            "B. thesis statement",
+            "C. interest",
+            "D. attention"
+        ],
+        "answer": "B. thesis statement"
+    },
+    {
+        "q": "The abbreviation 'b/w' means",
+        "options": [
+            "A. between",
+            "B. Beethoven",
+            "C. by the way",
+            "D. by the worth"
+        ],
+        "answer": "A. between"
+    },
+
+
+
+
+
+
+        ],
       subjective: [],
     },
   },
 
-  PAK101: {
+  PAK301: {
     mid: {
       title: 'PAK101 — Mid Term Examination',
       totalMarks: 30,
@@ -1472,7 +2166,208 @@ const examData = {
         "answer": "D. General Yahya Khan"
     },
 
+    {
+        "q": "Kharif crops are sown in in Pakistan.",
+        "options": [
+            "A. January-February",
+            "B. September-October",
+            "C. July-August",
+            "D. May-June"
+        ],
+        "answer": "C. July-August"
+    },
+    {
+        "q": "Water Logging and Salinity is one of the problems of",
+        "options": [
+            "A. Irrigation",
+            "B. Mining",
+            "C. Agriculture",
+            "D. Industry"
+        ],
+        "answer": "C. Agriculture"
+    },
+    {
+        "q": "According to the 1973 Constitution, half of the senators are elected after every:",
+        "options": [
+            "A. 6 Years",
+            "B. 5 Years",
+            "C. 4 Years",
+            "D. 3 Years"
+        ],
+        "answer": "D. 3 Years"
+    },
+    {
+        "q": "Under which article, the Objectives Resolution became the permanent part of Constitution of 1973?",
+        "options": [
+            "A. 1-A of 8th Amendment",
+            "B. 2-A of 8th Amendment",
+            "C. 3-A of 8th Amendment",
+            "D. 4-A of 8th Amendment"
+        ],
+        "answer": "B. 2-A of 8th Amendment"
+    },
+    {
+        "q": "Who became the first civilian Chief Martial Law administrator?",
+        "options": [
+            "A. Dr. Moeen Qureshi",
+            "B. Zulfiqar Ali Bhutto",
+            "C. Benazir Bhutto",
+            "D. Nawaz Sharif"
+        ],
+        "answer": "B. Zulfiqar Ali Bhutto"
+    },
+    {
+        "q": "Mohallah Salat Committees were formed under the rule of",
+        "options": [
+            "A. General Pervez Musharraf",
+            "B. General Yahya Khan",
+            "C. General Ayub Khan",
+            "D. General Zia-ul-Haq"
+        ],
+        "answer": "D. General Zia-ul-Haq"
+    },
+    {
+        "q": "How much area is covered by forests in Pakistan?",
+        "options": [
+            "A. 7%",
+            "B. 5%",
+            "C. 8%",
+            "D. 6%"
+        ],
+        "answer": "B. 5%"
+    },
+    {
+        "q": "When Local Bodies elections were conducted during Zia-ul-Haq regime in Pakistan?",
+        "options": [
+            "A. 1977",
+            "B. 1979",
+            "C. 1978",
+            "D. 1976"
+        ],
+        "answer": "B. 1979"
+    },
+    {
+        "q": "Total area of Pakistan was in 1947.",
+        "options": [
+            "A. 769,000 km2",
+            "B. 698,000 km2",
+            "C. 850,000 km2",
+            "D. 796,095 km2"
+        ],
+        "answer": "D. 796,095 km2"
+    },
+    {
+        "q": "In the general elections of 1970, how many seats did the Pakistan Peoples Party win?",
+        "options": [
+            "A. 98",
+            "B. 89",
+            "C. 92",
+            "D. 81"
+        ],
+        "answer": "D. 81"
+    },
 
+
+    {
+        "q": "Total area of Pakistan was in 1947.",
+        "options": [
+            "A. 850,000 km2",
+            "B. 796,095 km2",
+            "C. 698,000 km2",
+            "D. 769,000 km2"
+        ],
+        "answer": "B. 796,095 km2"
+    },
+    {
+        "q": "According to the 1973 Constitution, the upper house of the Parliament is called :",
+        "options": [
+            "A. National Assembly",
+            "B. Cabinet",
+            "C. Provincial Assembly",
+            "D. Senate"
+        ],
+        "answer": "D. Senate"
+    },
+    {
+        "q": "Thal, Cholistan and Thar deserts are located in of Indus Plain.",
+        "options": [
+            "A. North East",
+            "B. North West",
+            "C. South West",
+            "D. South East"
+        ],
+        "answer": "D. South East"
+    },
+    {
+        "q": "After how many years did Pakistan get its first Constitution?",
+        "options": [
+            "A. 5 years",
+            "B. 11 years",
+            "C. 7 years",
+            "D. 9 years"
+        ],
+        "answer": "D. 9 years"
+    },
+    {
+        "q": "Durand Line between Pakistan and Afghanistan was drawn in",
+        "options": [
+            "A. November 1893",
+            "B. November 1894",
+            "C. November 1892",
+            "D. November 1895"
+        ],
+        "answer": "A. November 1893"
+    },
+    {
+        "q": "Which is the highest peak of Pakistan?",
+        "options": [
+            "A. K-2",
+            "B. Sia Kangri Peak",
+            "C. Broad Peak",
+            "D. Kilik Peak"
+        ],
+        "answer": "A. K-2"
+    },
+    {
+        "q": "Ghulam Muhammad was the:",
+        "options": [
+            "A. Fourth Governor General of Pakistan",
+            "B. Second Governor General of Pakistan",
+            "C. First Governor General of Pakistan",
+            "D. Third Governor General of Pakistan"
+        ],
+        "answer": "D. Third Governor General of Pakistan"
+    },
+    {
+        "q": "Under the 1973 Constitution of Pakistan, the Financial Bill is presented in the",
+        "options": [
+            "A. Senate",
+            "B. National Assembly",
+            "C. Cabinet",
+            "D. Legislative Council"
+        ],
+        "answer": "B. National Assembly"
+    },
+    {
+        "q": "How much area is covered by forests in Pakistan?",
+        "options": [
+            "A. 5%",
+            "B. 7%",
+            "C. 6%",
+            "D. 8%"
+        ],
+        "answer": "A. 5%"
+    },
+    {
+        "q": "Mohallah Salat Committees were formed under the rule of",
+        "options": [
+            "A. General Ayub Khan",
+            "B. General Zia-ul-Haq",
+            "C. General Yahya Khan",
+            "D. General Pervez Musharraf"
+        ],
+        "answer": "B. General Zia-ul-Haq"
+    }
 
 
 
