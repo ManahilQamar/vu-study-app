@@ -46668,8 +46668,1420 @@ Correct inference:
     }
   ]
 },
+21: {
+  title: "Flowcharting (ENG 101 Lesson 21)",
+  summary: `**Key Topics Covered / Aasan Lafzo Mai Samjhein:**
+
+- **Flowchart Kya Hai? (What is a Flowchart):**
+  Flowchart aik road map ya drawing ki tarah hota hai jo program ka logical path (rasta) dikhata hai. Yeh kisi specific programming language ka mohtaj nahi hota, balke har bade program ko likhne se pehle banaya jata hai.
+- **Faida Kya Hai? (Why Use Flowcharts):**
+  Agar program mai koi error (bug) aa jaye, toh use code ki maze (uljhan) mai dhoodne ke bajaye flowchart par dhoodna zyada aasan hota hai.
+- **Flowchart Banane Ke Do Tareeqay (Two Methods):**
+  1. *Freehand Version:* Haath se jaldi-jaldi rough jotted down kiya jata hai (not for permanent records).
+  2. *Template Method:* Aik plastic sheet (template) use kiye jati hai jisme saare symbols cut out hote hain taake neat aur readable flowchart ban sake.
+- **Flowchart Symbols Aur Unka Matlab:**
+  - *Oval/Terminal symbol:* Start aur Stop ke liye use hota hai.
+  - *Parallelogram:* Input aur Output (kuch lane ya lejane) ke liye use hota hai.
+  - *Rectangle:* Processing aur Action lene ke liye use hota hai.
+  - *Diamond:* Decision making (Yes/No questions) ke liye use hota hai.
+  - *Arrows:* Flow or direction (rasta) dikhane ke liye use hote hain.
+- **Program Documentation:**
+  Program ko samajhne ke liye uske sath flowchart aur detailed instructions ka record rakhna program documentation kehlata hai. Agar documentation na ho, toh hum program se ulta (backwards) chalkar bhi flowchart bana sakte hain.
+- **Logical Ability:**
+  Flowcharting se student programmer ki logical aur analytical sochne ki salahiyat (thinking process) ka pata chalta hai.
+
+---
+
+**Exercise Key Solved Data (For Quick Revision):**
+- **Main Idea:** Flowcharting is a basic step in programming.
+- **True/False Insights:** Template ke baghair bhi freehand flowchart ban sakta hai (False statement in exercise). Aik problem ke mukhtalif programmers alag-alag flowcharts bana sakte hain. Flowchart se code chalne ki 100% guarantee nahi hoti jab tak logic aur problem understanding theek na ho.
+- **Important Vocabulary Synonyms:** route = path | try = attempt | answer = solution / reply | put in = insert | show = reveal.
+- **Antonyms:** unlimited = restricted | undiscovered = detected | temporary = permanent | inaccessible = available | illogical = logical.`,
+  questions: [
+    {
+      "q": "Which statement expresses the main idea of Lesson 21 text?",
+      "options": ["A. Every programmer must know how to flowchart.", "B. Program documentation specifies what the program is supposed to do.", "C. Flowcharting is a basic step in programming.", "D. Templates make flowcharts permanent."],
+      "answer": "C. Flowcharting is a basic step in programming.",
+      "diff": "medium"
+    },
+    {
+      "q": "Why are errors more easily detected on a flowchart than in the program code?",
+      "options": ["A. Because flowcharts use different colors.", "B. Because it avoids the maze of words, characters, and numbers of the code.", "C. Because flowcharts are always made using plastic templates.", "D. Because flowcharts automatically fix the errors."],
+      "answer": "B. Because it avoids the maze of words, characters, and numbers of the code.",
+      "diff": "easy"
+    },
+    {
+      "q": "Is it possible to draw a flowchart without using a plastic template?",
+      "options": ["A. No, templates are mandatory.", "B. Yes, by making a freehand version.", "C. Only if the program is very short.", "D. Only if written in a specific language."],
+      "answer": "B. Yes, by making a freehand version.",
+      "diff": "easy"
+    },
+    {
+      "q": "Two programmers working separately on the same problem will always come up with identical flowcharts.",
+      "options": ["A. True, because the problem is the same.", "B. False, they may come up with altogether different flowcharts and programs.", "C. True, because flowcharts follow strict standard templates.", "D. False, because templates restrict variations."],
+      "answer": "B. False, they may come up with altogether different flowcharts and programs.",
+      "diff": "medium"
+    },
+    {
+      "q": "Which symbol indicates the beginning or the end of a program?",
+      "options": ["A. Rectangle", "B. Parallelogram", "C. Terminal symbol", "D. Diamond shaped symbol"],
+      "answer": "C. Terminal symbol",
+      "diff": "easy"
+    },
+    {
+      "q": "A parallelogram shape in flowcharting is used as an:",
+      "options": ["A. Processing symbol", "B. Input/Output symbol", "C. Decision symbol", "D. Terminal symbol"],
+      "answer": "B. Input/Output symbol",
+      "diff": "easy"
+    },
+    {
+      "q": "What does a rectangular symbol stand for in a flowchart?",
+      "options": ["A. Decision making", "B. Processing / action taken", "C. Input data entry", "D. Ending of a program"],
+      "answer": "B. Processing / action taken",
+      "diff": "easy"
+    },
+    {
+      "q": "The diamond-shaped symbol is used in a flowchart to indicate a:",
+      "options": ["A. Sequential process", "B. Input command", "C. Decision usually answered by Yes or No", "D. Document storage link"],
+      "answer": "C. Decision usually answered by Yes or No",
+      "diff": "easy"
+    },
+    {
+      "q": "What is used to show the flow or direction in which the different actions are performed?",
+      "options": ["A. Rectangles", "B. Templates", "C. Arrows", "D. Connectors"],
+      "answer": "C. Arrows",
+      "diff": "easy"
+    },
+    {
+      "q": "Keeping a copy of the flowchart along with detailed instructions after working out a program is known as:",
+      "options": ["A. Keypunching", "B. Program documentation", "C. Freehand processing", "D. Reclassifying code"],
+      "answer": "B. Program documentation",
+      "diff": "medium"
+    },
+    {
+      "q": "If the original flowchart is missing, is it possible to work backwards and create one from an application program?",
+      "options": ["A. No, it is impossible.", "B. Yes, it is always possible.", "C. Only if a template is available.", "D. Only if the program contains zero loops."],
+      "answer": "B. Yes, it is always possible.",
+      "diff": "medium"
+    },
+    {
+      "q": "Flowcharting is taught early to student programmers because it reveals their:",
+      "options": ["A. Typing speed and language knowledge", "B. Logical and analytical ability", "C. Ability to use templates cleanly", "D. Memory capacity"],
+      "answer": "B. Logical and analytical ability",
+      "diff": "easy"
+    },
+    {
+      "q": "What is the synonym of the word 'route' used in the text?",
+      "options": ["A. Map", "B. Path", "C. Maze", "D. Step"],
+      "answer": "B. Path",
+      "diff": "easy"
+    },
+    {
+      "q": "What is the antonym of the word 'temporary' according to the passage context?",
+      "options": ["A. Freehand", "B. Readable", "C. Permanent", "D. Plastic"],
+      "answer": "C. Permanent",
+      "diff": "easy"
+    },
+    {
+      "q": "Complete the sentence with the correct form: 'Flowcharting _________ a logical analysis of a problem...'",
+      "options": ["A. involve", "B. involves", "C. involvement", "D. involving"],
+      "answer": "B. involves",
+      "diff": "medium"
+    },
+    {
+      "q": "Complete the sentence: 'A piece of plastic with different shapes used for flowcharting is called a _________.'",
+      "options": ["A. document", "B. terminal", "C. template", "D. parallelogram"],
+      "answer": "C. template",
+      "diff": "easy"
+    },
+    {
+      "q": "Identify the type of clause: 'If computer technology continues growing at the rate it has...'",
+      "options": ["A. Prediction", "B. Condition", "C. Main Idea", "D. Process"],
+      "answer": "B. Condition",
+      "diff": "medium"
+    },
+    {
+      "q": "In the phrase 'the original one is missing', what does the word 'one' refer to?",
+      "options": ["A. Program", "B. Flowchart", "C. Template", "D. Symbol"],
+      "answer": "B. Flowchart",
+      "diff": "easy"
+    },
+    {
+      "q": "True or False: The method of flowcharting depends on the programming language being used.",
+      "options": ["A. True", "B. False (it is not restricted to any particular language)"],
+      "answer": "B. False (it is not restricted to any particular language)",
+      "diff": "easy"
+    },
+    {
+      "q": "Complete the grammar form: 'He submitted the _________ version of the program to be keypunched.'",
+      "options": ["A. correct", "B. corrected", "C. correcting", "D. correction"],
+      "answer": "B. corrected",
+      "diff": "medium"
+    }
+  ]
+},
+
+
+22: {
+  title: "Sentence Types and Structures (ENG 101 Lesson 22)",
+  summary: `**🚀 COMPREHENSIVE SHORT STUDY NOTES (Poora Concept Aik Jagah)**
+
+---
+
+### 🔥 SECTION 1: BASIC GRAMMAR COMBINATIONS (Mixed Forms)
+Yeh concepts aam taur par direct MCQ definitions ya identification ke liye aate hain:
+
+👉 **1. Participle (Verb + Adjective):** 
+Jab koi verb ka word kisi noun ki khubi ya haalat batane ke liye (adjective ban kar) aaye.
+*   *Pehchan:* Yeh noun se pehle lag kar uski condition batata hai.
+*   *Example:* The **retired** headmaster distributed the prizes. (Yahan "retired" aik verb hai jo headmaster ki halat bata raha hai).
+
+👉 **2. Gerund (Verb + Noun):** 
+Jab verb ki \`-ing\` wali form sentence mai action ke bajaye aik "naam" ya "activity" (noun) ka kaam kare.
+*   *Pehchan:* Yeh sentence mai subject ya object ki jagah aata hai.
+*   *Example:* She is thinking of **leaving** her job.
+
+👉 **3. Infinitive (To + Verb):** 
+Jab \`to\` ke sath verb ki first form lag kar noun ka kaam kare.
+*   *Example:* She wishes **to deposit** the money.
+
+👉 **4. Relative Adverb (Adverb + Conjunction):** 
+Yeh aik aisa adverb hota hai jo do clauses ya baaton ko aapas mai jorhta (connect) bhi hai.
+*   *Example:* I was relieved **when** the program ended.
+
+---
+
+### 🏛️ SECTION 2: SENTENCES BY MEANING / PURPOSE
+Sentence baat kehne ke maqsad ke mutabiq 5 tarah ke hote hain:
+
+1. **Statement / Assertion / Declaration:** Kisi aam baat ka elaan ya sabaat karna. (e.g., *He is a teacher.* / *It is cloudy.*)
+2. **Question:** Koi sawal poochna. (e.g., *What day is it?*)
+3. **Commands / Imperative:** Hukm ya ijazat dena. (e.g., *Go in.* / *Shut up.*)
+4. **Exclamations:** Shaded jazbaat ya afsos ka izhaar. (e.g., *If only it would stop raining!*)
+5. **Greetings:** Duaia ya aam khair-sangat wale alfaz jinka koi fix rules nahi hota. (e.g., *Good morning.* / *Hello.*)
+
+---
+
+### 🛠️ SECTION 3: SENTENCES BY STRUCTURE (Most Important Part)
+Sentence banta kaise hai? Iski 4 barhi types hain. Inko samajhne se pehle yaad rakhein:
+*   *Independent Clause:* Jo poori baat samajhaye aur akele khara ho sake.
+*   *Dependent Clause:* Jo \`Dependent Word\` se shuru ho aur akele poora matlab na de sake (ismai bhi subject aur verb hota hai).
+
+#### 🟢 1. The Simple Sentence
+Ismai sirf **AIK** Independent Clause hoti hai (yani aik hi mukammal thought).
+*   *🚨 Concept Clear karein:* Simple sentence chota bhi ho sakta hai aur bohot lamba bhi. Ismai aik se zyada subjects aur aik se zyada verbs ho sakte hain, jab tak wo sab mil kar aik hi complete thought banayein!
+*   *Example (1 Subject + 1 Verb):* Sparks fly upwards.
+*   *Example (Multiple Subjects & Verbs):* Shama, Salman and Minko **(3 Subjects)** go to the movies, eat at a restaurant and play cards **(3 Verbs)** every Saturday night. (Yeh abhi bhi simple sentence hai kyun ke koi dependent clause nahi hai).
+
+#### 🔵 2. The Compound Sentence
+Jab **DO ya do se zyada** mukammal thoughts (Independent Clauses) ko aapas mai jorha jaye.
+*   *Formula:* Independent Clause + **, (Comma)** + **Joining Word** + Independent Clause.
+*   *Co-ordinating / Joining Words Ka Matlab:*
+    *   \`and\` = In addition (izafa karna) -> *The driver failed to signal, and he went through a stop sign.*
+    *   \`but\` / \`yet\` = However (lekin / iske bawajood) -> *I was tired, but I still studied.*
+    *   \`so\` = As a result (is liye / nateejatan) -> *The meal was bad, so we sent it back.*
+    *   \`for\` = Because (kyun ke - yaad rakhein yahan 'for' ka matlab 'because' hai) -> *She works at home, for she wants to be with her kids.*
+    *   \`or\` = Alternative (ya phir / choice) -> *You can ride with us, or you can go with someone else.*
+    *   \`nor\` = Second negative statement (na hi yeh) -> *Saad does not eat meat, nor does he eat fish.*
+
+#### 🟡 3. The Complex Sentence
+Ismai **AIK Independent Statement** hoti hai aur **kam az kam AIK Dependent Statement** hoti hai jo akele stand nahi kar sakti.
+*   *Pehchan:* Dependent statement hamesha in **Dependent Words** se shuru hoti hai: *after, although, as, because, before, even if, even though, since, though, unless, until, when, whenever, whether, while, where, wherever.*
+*   *Punctuation Rule:* Agar dependent clause shuru mai aaye toh darmyan mai comma (,) lagega. Agar baad mai aaye toh comma nahi lagta.
+*   *Example:* **When the century began**, there were many coffee houses. (Underlined part dependent hai).
+*   *Example:* Ghazala will not sell her old gramophone **even if she is offered a large sum of money**.
+
+#### 🟠 4. The Compound-Complex Sentence
+Ismai kam az kam **DO Independent Clauses** (compound ki tarah) aur kam az kam **AIK Dependent Clause** (complex ki tarah) hoti hai.
+*   *Example:* **When Bobby saw a rainbow** [Dependent], he ran to get his camera [Independent 1], **and** the rainbow disappeared [Independent 2].
+
+---
+
+### 📝 SECTION 4: PRACTICE EXERCISE DIRECT SOLUTIONS
+*   *Garbage strike issue:* The city sanitary workers are on strike, **so** the streets are littered with garbage.
+*   *Computer issue:* The computer was on, **but** no one was working at it.
+*   *Rain & Picnic text combine:* Although it had rained for many days, the sun finally came out; the children wanted a picnic, but the ground was too wet.`,
+  questions: [
+    {
+      "q": "What is a participle according to the text?",
+      "options": ["A. A verb and a noun combined", "B. A verb and an adjective combined", "C. An adverb and a conjunction combined", "D. A noun and an adjective combined"],
+      "answer": "B. A verb and an adjective combined",
+      "diff": "easy"
+    },
+    {
+      "q": "In the sentence 'She is thinking of leaving her job', the word 'leaving' is an example of a:",
+      "options": ["A. Participle", "B. Gerund", "C. Infinitive", "D. Relative Adverb"],
+      "answer": "B. Gerund",
+      "diff": "medium"
+    },
+    {
+      "q": "Which of the following is an example of an Infinitive?",
+      "options": ["A. Retired headmaster", "B. Thinking", "C. To deposit", "D. When the program ended"],
+      "answer": "C. To deposit",
+      "diff": "easy"
+    },
+    {
+      "q": "A simple sentence can have which of the following?",
+      "options": ["A. Only one subject and one verb", "B. More than one verb but only one subject", "C. Several subjects and several verbs as long as it expresses one independent thought", "D. At least one dependent clause"],
+      "answer": "C. Several subjects and several verbs as long as it expresses one independent thought",
+      "diff": "medium"
+    },
+    {
+      "q": "In a compound sentence, clauses are typically joined together by a:",
+      "options": ["A. Dependent word", "B. Comma and a joining (co-ordinating) word", "C. Colon alone", "D. Relative adverb"],
+      "answer": "B. Comma and a joining (co-ordinating) word",
+      "diff": "easy"
+    },
+    {
+      "q": "Which joining word is used to show a second negative statement?",
+      "options": ["A. or", "B. nor", "C. but", "D. yet"],
+      "answer": "B. nor",
+      "diff": "easy"
+    },
+    {
+      "q": "What does the joining word 'for' mean when connecting independent thoughts in a compound sentence?",
+      "options": ["A. In addition", "B. However", "C. Because", "D. As a result"],
+      "answer": "C. Because",
+      "diff": "medium"
+    },
+    {
+      "q": "A complex sentence must include:",
+      "options": ["A. Two or more independent clauses only", "B. One independent statement and at least one dependent statement", "C. No verbs in the dependent clause", "D. A semicolon and a joining word"],
+      "answer": "B. One independent statement and at least one dependent statement",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following words is on the list of 'dependent words'?",
+      "options": ["A. but", "B. although", "C. nor", "D. so"],
+      "answer": "B. although",
+      "diff": "easy"
+    },
+    {
+      "q": "Combine correctly using a joining word: 'The computer was on. No one was working at it.'",
+      "options": ["A. The computer was on so no one was working at it.", "B. The computer was on, but no one was working at it.", "C. Although the computer was on no one worked.", "D. The computer was on nor no one was working at it."],
+      "answer": "B. The computer was on, but no one was working at it.",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following is a Simple Sentence?",
+      "options": ["A. The fire alarm sounded.", "B. When the fire alarm sounded she was in bed.", "C. The fire alarm sounded, and they evacuated the building.", "D. Because the alarm sounded, everyone left."],
+      "answer": "A. The fire alarm sounded.",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following is a Compound Sentence?",
+      "options": ["A. Terry seems unfriendly.", "B. The book was very expensive, so I didn't buy it.", "C. When Jack did a U-turn, his bike slipped.", "D. The raindrops slide slowly down the window."],
+      "answer": "B. The book was very expensive, so I didn't buy it.",
+      "diff": "easy"
+    },
+    {
+      "q": "Which of the following is a Complex Sentence?",
+      "options": ["A. Jack did a U-turn.", "B. When Jack did a U-turn, his bike slipped.", "C. Jack did a U-turn, and he fell off the bike.", "D. Jack did a U-turn but he did not fall."],
+      "answer": "B. When Jack did a U-turn, his bike slipped.",
+      "diff": "medium"
+    },
+    {
+      "q": "Which sentence is a Compound-Complex sentence?",
+      "options": ["A. The raindrops slide slowly down the window.", "B. The bell rang six times, but no one answered.", "C. Because I heard a scream outside, I called the police.", "D. When Bobby saw a rainbow he ran to get his camera and the rainbow disappeared."],
+      "answer": "D. When Bobby saw a rainbow he ran to get his camera and the rainbow disappeared.",
+      "diff": "hard"
+    },
+    {
+      "q": "What is the correct way to fix the punctuation here: 'As the mad man made demands on the phone police surrounded the building.'",
+      "options": ["A. Place a comma after 'phone'", "B. Place a semicolon after 'demands'", "C. Place a comma after 'man'", "D. No punctuation is needed"],
+      "answer": "A. Place a comma after 'phone'",
+      "diff": "medium"
+    },
+    {
+      "q": "In the compound sentence joining words, 'yet' carries the same meaning as:",
+      "options": ["A. and", "B. so", "C. but", "D. for"],
+      "answer": "C. but",
+      "diff": "easy"
+    },
+    {
+      "q": "Every dependent statement/clause must contain a:",
+      "options": ["A. Semicolon and joining word", "B. Subject and a verb", "C. Conjunction and a list", "D. Prepositional phrase only"],
+      "answer": "B. Subject and a verb",
+      "diff": "medium"
+    },
+    {
+      "q": "The sentence 'Go in' falls under which category of purpose?",
+      "options": ["A. Statement", "B. Question", "C. Issue commands", "D. Utter exclamations"],
+      "answer": "C. Issue commands",
+      "diff": "easy"
+    },
+    {
+      "q": "Complete the compound sentence: 'Saad does not eat meat, _________ does he eat fish.'",
+      "options": ["A. or", "B. nor", "C. but", "D. yet"],
+      "answer": "B. nor",
+      "diff": "medium"
+    },
+    {
+      "q": "A statement that cannot stand alone as a complete thought is called a/an:",
+      "options": ["A. Simple sentence", "B. Independent clause", "C. Dependent clause / statement", "D. Compound declaration"],
+      "answer": "C. Dependent clause / statement",
+      "diff": "easy"
+    }
+  ]
+},
+
+
+23: {
+  title: "Sentence Improvements and Coherence (ENG 101 Lesson 23)",
+  summary: `**🚀 COMPREHENSIVE SHORT STUDY NOTES (Poora Concept Aik Jagah)**
+
+---
+
+### 🔥 SECTION 1: SUBORDINATION & SENTENCE UNITY
+Kuch sentences mai main baat chup jati hai aur aam baat par zor parh jata hai. Unko sahi connective se behtar banaya jata hai. Sahi subordinating conjunctions use karna aur adhure sentences (lacking unity) ko poora karna zaroori hai.
+
+👉 **Key Rules & Corrections:**
+- \`just as\` ya \`when\` ko main event ke sath nahi lagate. Jo bada ya sudden event ho, usko main clause banayein.
+- \`because\` aur \`reason\` aik sath use karna ghalat hai (Redundancy). \`The reason... was that\` likhein.
+- Adhure statements jaise "She is so talented" ya "such a problem" ke aage details lagana lazmi hai taake baat mukammal ho (Sentence Unity).
+
+---
+
+### 🏛️ SECTION 2: PARALLELISM (Faulty Constructions)
+Parallelism ka matlab hai ke agar aik sentence mai ek se zyada cheezon ki list ho, toh un sab ka grammatical structure **AIK JAISA** hona chahiye. Agar aik \`-ing\` form hai toh baqi bhi \`-ing\` hon, agar aik \`to + verb\` hai toh baqi bhi \`to + verb\` hon.
+
+👉 **Key Rules & Corrections:**
+- *Ghalat:* Reading books and to write reviews. ❌
+- *Sahi:* **Reading** books and **writing** book reviews.  (Dono \`-ing\` nouns / Gerunds ban gaye).
+- *Correlatives Rule:* \`Both... and\`, \`not only... but also\`, \`either... or\` ke baad bilkul aik jaisay part of speech aane chahiye.
+- *Ghalat:* He not only likes tennis but also golf. ❌
+- *Sahi:* He likes **not only** tennis **but also** golf.  (Dono nouns se pehle correlatives aaye).
+
+---
+
+### 🛠️ SECTION 3: COHERENCE (Pronouns, Split Construction, Shifting)
+Sentence mai coherence (rabt) paida karne ke liye 4 barhi chizon ka khyal rakhna parta hai:
+
+1. **Pronoun Reference:** Pronoun (\`he, she, it, they\`) kis noun ke liye use ho raha hai, yeh bilkul clear hona chahiye (Ambiguity nahi honi chahiye).
+2. **Pronoun Agreement:** Kisi company ya club ko singular treat karein toh poore sentence mai singular (\`its\`) rakhein, (\`their\`) mat lagayein.
+3. **Split Infinitive:** \`to\` aur \`verb\` ke darmyan mai koi adverb ghusana ghalat hai. (e.g., *to viciously hit* ❌ -> *to hit viciously* ).
+4. **Shifting Point of View:** Sentence ke darmyan bina wajah tense (Past se Present), voice (Active se Passive), ya number (Singular se Plural) tabdeel mat karein.
+   - *Ghalat:* He ran to the station and the train was taken by him. ❌ (Active to Passive shift)
+   - *Sahi:* He **ran** to the station and **took** the train.  (Dono active).
+
+---
+
+### ⚡ SECTION 4: EMPHASIS (Zor Dena)
+Sentence mai jo sab se ahem baat hoti hai, usko aisi jagah rakha jata hai jahan parhne wale ka dhayan sab se pehle jaye:
+
+- **Position:** Sab se ahem baat sentence ke **shuru** mai ya **aakhiri** hisse mai honi chahiye. Faizay dar phrases jaise \`I think\`, \`we were told\` ko aakhir mai chorhne se emphasis kamzoor ho jata hai.
+- **Order of Climax:** Cheezon ki list ko hamesha chote se bade ki taraf (Climax order) mai likhein. (e.g., *Middle school, high school, and then college*).
+
+---
+
+### 📝 SECTION 5: PRACTICE EXERCISE DIRECT SOLUTIONS
+*   *Parallelism:* **Swimming** and **fishing** are my favourite sports.
+*   *Correlative Position:* I want **both** to exercise **and** to be amused.
+*   *Pronoun Fix:* Susan and her sister both saw the film, but **Susan** was disappointed.
+*   *Split Fix:* He took an oath **never to reveal** the secrets...
+*   *Climax Order:* He testified that he had passed **middle school, high school, and college** examinations.`,
+  questions: [
+    {
+      "q": "What is the error in the sentence: 'The main reason I left early was because I was bored.'?",
+      "options": ["A. Faulty Parallelism", "B. Split Infinitive", "C. Redundant construction (using 'reason' and 'because' together)", "D. Incorrect pronoun reference"],
+      "answer": "C. Redundant construction (using 'reason' and 'because' together)",
+      "diff": "medium"
+    },
+    {
+      "q": "Which of the following sentences shows correct parallel structure?",
+      "options": ["A. Seema's job is reading books and to write book reviews.", "B. Seema's job is reading books and writing book reviews.", "C. Seema's job is to read books and writing book reviews.", "D. Seema's job is read books and writing book reviews."],
+      "answer": "B. Seema's job is reading books and writing book reviews.",
+      "diff": "easy"
+    },
+    {
+      "q": "Correct the error: 'Swimming and to go fishing are my favourite sports.'",
+      "options": ["A. To swim and fishing are my favourite sports.", "B. Swimming and fishing are my favourite sports.", "C. Swimming and to fish are my favourite sports.", "D. To swimming and go fishing are my favourite sports."],
+      "answer": "B. Swimming and fishing are my favourite sports.",
+      "diff": "easy"
+    },
+    {
+      "q": "What is a 'Split Infinitive' error?",
+      "options": ["A. Shifting from past tense to present tense", "B. Placing an adverb between 'to' and the base verb", "C. Using a plural pronoun for a singular noun", "D. Ending a sentence with a preposition"],
+      "answer": "B. Placing an adverb between 'to' and the base verb",
+      "diff": "medium"
+    },
+    {
+      "q": "Identify the correct way to fix the split construction: 'to viciously hit'",
+      "options": ["A. viciously to hit", "B. to hit viciously", "C. to be viciously hitting", "D. hit viciously to"],
+      "answer": "B. to hit viciously",
+      "diff": "easy"
+    },
+    {
+      "q": "Why is this sentence ambiguous: 'Ahmed saw Basit yesterday and he said that he had the money.'?",
+      "options": ["A. It has a split construction.", "B. It is missing a joining word.", "C. The pronoun 'he' has an unclear reference (could be Ahmed or Basit).", "D. It shifts from active to passive voice."],
+      "answer": "C. The pronoun 'he' has an unclear reference (could be Ahmed or Basit).",
+      "diff": "medium"
+    },
+    {
+      "q": "If an antecedent is singular (e.g., 'The club'), how should it be treated throughout the sentence?",
+      "options": ["A. First as singular, then as plural", "B. Consistently as plural", "C. Consistently as singular (using 'its' instead of 'their')", "D. It does not matter"],
+      "answer": "C. Consistently as singular (using 'its' instead of 'their')",
+      "diff": "medium"
+    },
+    {
+      "q": "What error occurs when a sentence changes needlessly from active to passive voice?",
+      "options": ["A. Lack of parallelism", "B. Aimless shifting destroying coherence", "C. Redundancy", "D. Climax error"],
+      "answer": "B. Aimless shifting destroying coherence",
+      "diff": "medium"
+    },
+    {
+      "q": "Correct the shift in tense: 'The only words that we were able to distinguish are 'horse' and 'cart'.'",
+      "options": ["A. ...distinguish is 'horse' and 'cart'.", "B. ...distinguish were 'horse' and 'cart'.", "C. ...distinguished are 'horse' and 'cart'.", "D. No correction needed."],
+      "answer": "B. ...distinguish were 'horse' and 'cart'.",
+      "diff": "medium"
+    },
+    {
+      "q": "What is the correct 'Order of Climax' for arranging educational qualifications?",
+      "options": ["A. College, middle school, high school", "B. Middle school, high school, college", "C. High school, college, middle school", "D. College, high school, middle school"],
+      "answer": "B. Middle school, high school, college",
+      "diff": "easy"
+    },
+    {
+      "q": "How can you improve emphasis in the sentence: 'It is a worthy cause, I think.'?",
+      "options": ["A. I think it is a worthy cause.", "B. A worthy cause it is, I think.", "C. It is, I think, a worthy cause.", "D. It is a very worthy cause."],
+      "answer": "A. I think it is a worthy cause.",
+      "diff": "medium"
+    },
+    {
+      "q": "Choose the correct parallel construction using correlatives:",
+      "options": ["A. He both wants exercise and to be amused.", "B. He wants both exercise and amusement.", "C. He wants both to exercise and amused.", "D. Both he wants exercise and amusement."],
+      "answer": "B. He wants both exercise and amusement.",
+      "diff": "hard"
+    },
+    {
+      "q": "The sentence 'The young ladies wore bright coloured socks and were kind hearted' lacks what?",
+      "options": ["A. Correct pronouns", "B. Emphasis", "C. Sentence Unity (combining unrelated ideas)", "D. Parallelism"],
+      "answer": "C. Sentence Unity (combining unrelated ideas)",
+      "diff": "medium"
+    },
+    {
+      "q": "Which of the following sentences has a correct pronoun agreement?",
+      "options": ["A. The club has done their best to raise money.", "B. The club has done its best to raise money.", "C. The club have done its best to raise money.", "D. The club has done our best to raise money."],
+      "answer": "B. The club has done its best to raise money.",
+      "diff": "easy"
+    },
+    {
+      "q": "Fix the double preposition error: 'This is the book to which I was referring to.'",
+      "options": ["A. This is the book which I was referring to.", "B. This is the book to which I was referring.", "C. Both A and B are correct.", "D. This is the book to who I was referring."],
+      "answer": "C. Both A and B are correct.",
+      "diff": "hard"
+    },
+    {
+      "q": "To make a sentence more emphatic, where should less important expressions like 'we were told' or 'in all probability' generally be placed?",
+      "options": ["A. Right at the very end of the main point", "B. Tucked away in the middle or placed at the beginning", "C. Repeated multiple times", "D. Omitted completely from all sentences"],
+      "answer": "B. Tucked away in the middle or placed at the beginning",
+      "diff": "medium"
+    },
+    {
+      "q": "What is wrong with 'If one tries hard, they can accomplish much'?",
+      "options": ["A. Aimless shift from singular 'one' to plural 'they'", "B. Faulty parallel list", "C. Split construction", "D. Climax order error"],
+      "answer": "A. Aimless shift from singular 'one' to plural 'they'",
+      "diff": "medium"
+    },
+    {
+      "q": "Correct the parallelism in daily tasks: 'Getting the groceries, taking the children to school and to feed the dog...'",
+      "options": ["A. ...and food the dog", "B. ...and feeding the dog", "C. ...and for feeding the dog", "D. ...and to be feeding the dog"],
+      "answer": "B. ...and feeding the dog",
+      "diff": "easy"
+    },
+    {
+      "q": "What destroys coherence in a sentence according to the text?",
+      "options": ["A. Using commas properly", "B. Aimless shifting of points of view, tenses, or voice", "C. Placing main thoughts first", "D. Using standard conjunctions"],
+      "answer": "B. Aimless shifting of points of view, tenses, or voice",
+      "diff": "easy"
+    },
+    {
+      "q": "The phrase 'My castles in air came tumbling down into a bottomless heap' is an example of:",
+      "options": ["A. Correct parallel list", "B. Mixture of figures of speech", "C. Clear pronoun reference", "D. Order of climax"],
+      "answer": "B. Mixture of figures of speech",
+      "diff": "hard"
+    }
+  ]
+},
+
+
+24: {
+  title: "Sentence Fragments (ENG 101 Lesson 24)",
+  summary: `**🚀 COMPREHENSIVE SHORT STUDY NOTES (Poora Concept Aik Jagah)**
+
+---
+
+### 🔥 SECTION 1: SENTENCE FRAGMENT KYA HAI? (The Core Concept)
+Aik mukammal sentence banne ke liye 3 chizen zaroori hain: **Subject**, **Verb**, aur **Complete Thought (Poori Baat)**. Agar inme se aik bhi cheez missing ho, toh use **Sentence Fragment** (adhura jumla) kehte hain. Lesson 24 mai fragments ki 4 barhi types aur unko theek karne ka tareeqa samjhaya gaya hai.
+
+---
+
+### 🏛️ SECTION 2: THE 4 TYPES OF FRAGMENTS & THEIR FIXES
+
+👉 **1. Dependent Word Fragments:**
+Yeh wo adhure jumle hote hain jo subject aur verb hone ke bawajood poori baat nahi batate kyun ke yeh kisi \`Dependent Word\` (since, when, after, because, although, unless) se shuru hote hain.
+*   *Fragment:* Because there was a gas leak. ❌ (Kyun ke gas leak thi... agay kya hua?)
+*   *Fix:* Isko sath wali independent clause se jorhein: *The police cordoned off the area **because** there was a gas leak.* ✔️
+
+👉 **2. \`-ing\` or \`To\` Fragments (Participle / Infinitive Fragments):**
+Jab koi sentence bina kisi subject ke direct \`-ing\` wale verb ya \`to + verb\` se shuru ho jaye.
+*   *Fragment:* Rising high into the sky. The huge yellow kite could be seen for miles. ❌
+*   *Fix Method A (Jorhein):* **Rising high into the sky,** the huge yellow kite could be seen for miles. ✔️
+*   *Fix Method B (Subject lagayein):* **It rose** high into the sky. The huge yellow kite could be seen for miles. ✔️
+
+👉 **3. Added-Detail Fragments:**
+Yeh wo adhure jumle hote hain jo sirf mazeed tafseel (extra details) batate hain aur aam taur par in words se shuru hote hain: *like, especially, for example, such as, including, except*. Inme na apna subject hota hai na verb.
+*   *Fragment:* Oranges are full of nutrients. Especially vitamin C. ❌
+*   *Fix:* **Especially vitamin C** ko pehle jumle ka hissa banayein: *Oranges are full of nutrients, **especially vitamin C**.* ✔️
+
+👉 **4. Missing-Subject Fragments:**
+Ismai verb toh hota hai aur lagta hai ke baat bhi chal rahi hai, lekin darmyan mai \`and\`, \`but\`, \`then\`, ya \`yet\` ke baad subject gayab ho jata hai.
+*   *Fragment:* Maryam skipped her afternoon classes. And worked on a paper. ❌ (Yahan 'And' ke baad subject missing hai).
+*   *Fix Method A (Jorhein):* Maryam skipped her afternoon classes **and worked** on a paper. ✔️ (Comma ya full stop hata kar seedha jorhein).
+*   *Fix Method B (Subject lagayein):* Maryam skipped her afternoon classes. **And she worked** on a paper. ✔️
+
+---
+
+### 📝 SECTION 3: LESSON REVIEW FILL-IN-THE-BLANKS ANSWERS
+1. To be a sentence, a group of words must contain a subject and a **verb**, and it must express **a complete thought**.
+2. Words such as because, until, and while are known as **dependent** words.
+3. Fragments that begin with words such as like, especially, and for example are known as **added-detail** fragments.
+4. One way to correct an added-detail fragment is to create a new **sentence** by adding a subject and **verb** to the fragment.
+5. One way to correct a missing-subject fragment is to add a **subject** to the fragment.`,
+  questions: [
+    {
+      "q": "To be a complete sentence, a group of words must fulfill which requirements?",
+      "options": ["A. It must have a dependent word and a comma.", "B. It must contain a subject, a verb, and express a complete thought.", "C. It must start with an -ing word and contain a noun.", "D. It must use a transition word like 'especially'."],
+      "answer": "B. It must contain a subject, a verb, and express a complete thought.",
+      "diff": "easy"
+    },
+    {
+      "q": "Identify the dependent-word fragment from the options below:",
+      "options": ["A. Several small shops went out of business.", "B. The nurse pierced my arm four times.", "C. Because there was a gas leak.", "D. The child was running and jumping."],
+      "answer": "C. Because there was a gas leak.",
+      "diff": "easy"
+    },
+    {
+      "q": "What makes 'When I rang the doorbell' a sentence fragment?",
+      "options": ["A. It is missing a verb.", "B. It is missing a subject.", "C. It begins with a dependent word and does not express a complete thought.", "D. It is written in the past tense."],
+      "answer": "C. It begins with a dependent word and does not express a complete thought.",
+      "diff": "medium"
+    },
+    {
+      "q": "Identify the error in this construction: 'Rising high into the sky. The huge yellow kite could be seen for miles.'",
+      "options": ["A. Missing-Subject Fragment", "B. Added-Detail Fragment", "C. -ing Fragment", "D. Dependent Word Fragment"],
+      "answer": "C. -ing Fragment",
+      "diff": "medium"
+    },
+    {
+      "q": "Which of the following is a correctly fixed version of an -ing fragment?",
+      "options": ["A. Police officers stood all over the road, directing traffic around the accident.", "B. Police officers stood all over the road directing traffic around the accident.", "C. Both A and B are acceptable ways to merge and fix the fragment.", "D. Directing traffic around the accident police officers."],
+      "answer": "C. Both A and B are acceptable ways to merge and fix the fragment.",
+      "diff": "hard"
+    },
+    {
+      "q": "Fragments that begin with words like 'especially', 'including', and 'such as' are known as:",
+      "options": ["A. Missing-Subject Fragments", "B. Added-Detail Fragments", "C. Relative Adverb Fragments", "D. Infinitive Fragments"],
+      "answer": "B. Added-Detail Fragments",
+      "diff": "easy"
+    },
+    {
+      "q": "Correct the added-detail fragment: 'For a main dish, I often serve meat and vegetables. For example, fish and spinach.'",
+      "options": ["A. For a main dish, I often serve meat and vegetables for example fish and spinach.", "B. For a main dish, I often serve meat and vegetables, for example, fish and spinach.", "C. For a main dish, I often serve meat and vegetables; especially fish and spinach.", "D. For example, fish and spinach I serve for a main dish with meat and vegetables."],
+      "answer": "B. For a main dish, I often serve meat and vegetables, for example, fish and spinach.",
+      "diff": "medium"
+    },
+    {
+      "q": "What is missing in the second word-group here: 'The poor woman paid all her utility bills. But then had little money left over for food.'?",
+      "options": ["A. A proper verb", "B. An -ing participle", "C. A subject after the coordinator 'but'", "D. An added detail connector"],
+      "answer": "C. A subject after the coordinator 'but'",
+      "diff": "medium"
+    },
+    {
+      "q": "Which of the following is a correctly repaired Missing-Subject sentence?",
+      "options": ["A. The nurse held a smiling baby. Then posed for the photographers.", "B. The nurse held a smiling baby and then posed for the photographers.", "C. The nurse held a smiling baby, then she posed for the photographers.", "D. Both B and C are correct grammatical repairs."],
+      "answer": "D. Both B and C are correct grammatical repairs.",
+      "diff": "hard"
+    },
+    {
+      "q": "Words like 'because', 'unless', 'while', and 'until' are classified as:",
+      "options": ["A. Co-ordinating conjunctions", "B. Dependent words / Subordinating conjunctions", "C. Relative Adjectives", "D. Transition nouns"],
+      "answer": "B. Dependent words / Subordinating conjunctions",
+      "diff": "easy"
+    },
+    {
+      "q": "Correct the fragment in this text: 'We go to Murree Hills during the summer vacations. Whenever we can, of course.'",
+      "options": ["A. We go to Murree Hills during the summer vacations, whenever we can, of course.", "B. We go to Murree Hills during the summer vacations; whenever we can of course.", "C. Whenever we can, of course we go to Murree Hills during summer vacations.", "D. Both A and C are grammatically corrected versions."],
+      "answer": "D. Both A and C are grammatically corrected versions.",
+      "diff": "hard"
+    },
+    {
+      "q": "What type of fragment is found in: 'He hated learning foreign languages. Latin, French and German especially.'?",
+      "options": ["A. Dependent-Word Fragment", "B. Added-Detail Fragment", "C. Missing-Subject Fragment", "D. Infinitive Fragment"],
+      "answer": "B. Added-Detail Fragment",
+      "diff": "easy"
+    },
+    {
+      "q": "How can you correct an added-detail fragment by creating a completely separate new sentence?",
+      "options": ["A. By adding a comma at the start", "B. By adding a subject and a verb to that fragment", "C. By changing it into an -ing word", "D. By eliminating all details"],
+      "answer": "B. By adding a subject and a verb to that fragment",
+      "diff": "medium"
+    },
+    {
+      "q": "Identify the incorrect fragment in the text: 'The sleeping dog opened one eye to look at the postman. And then went back to sleep.'",
+      "options": ["A. 'The sleeping dog opened one eye'", "B. 'to look at the postman'", "C. 'And then went back to sleep.'", "D. There is no fragment in this text."],
+      "answer": "C. 'And then went back to sleep.'",
+      "diff": "medium"
+    },
+    {
+      "q": "In the sentence test: 'Each hair is attached to a tiny muscle. Which can pull the hair straight up.' What is the correct way to fix the 'which' fragment?",
+      "options": ["A. Each hair is attached to a tiny muscle, which can pull the hair straight up.", "B. Each hair is attached to a tiny muscle which can pull the hair straight up.", "C. Each hair is attached to a tiny muscle; which can pull the hair straight up.", "D. Both A and B are correct."],
+      "answer": "D. Both A and B are correct.",
+      "diff": "hard"
+    },
+    {
+      "q": "One way to correct a missing-subject fragment is to add a ________ to the fragment statement.",
+      "options": ["A. Verb", "B. Semicolon", "C. Subject / Pronoun", "D. Dependent Word"],
+      "answer": "C. Subject / Pronoun",
+      "diff": "easy"
+    },
+    {
+      "q": "Identify the fragment here: 'The old lady was trembling with excitement. As it was her first airplane ride.'",
+      "options": ["A. 'The old lady was trembling with excitement.'", "B. 'As it was her first airplane ride.'", "C. 'with excitement'", "D. No fragment present."],
+      "answer": "B. 'As it was her first airplane ride.'",
+      "diff": "easy"
+    },
+    {
+      "q": "What type of fragment is: 'To get off the diving board.'?",
+      "options": ["A. -ing fragment", "B. To / Infinitive fragment", "C. Missing-Subject fragment", "D. Added-Detail fragment"],
+      "answer": "B. To / Infinitive fragment",
+      "diff": "medium"
+    },
+    {
+      "q": "True or False: A dependent-word fragment contains a subject and a verb but still remains a fragment.",
+      "options": ["A. True (because it doesn't express a complete thought due to the dependent word)", "B. False (if it has a subject and verb, it is always a complete sentence)"],
+      "answer": "A. True (because it doesn't express a complete thought due to the dependent word)",
+      "diff": "medium"
+    },
+    {
+      "q": "Fix the fragment: 'When people are scared. The hair on their bodies really can stand on end.'",
+      "options": ["A. When people are scared; the hair on their bodies really can stand on end.", "B. When people are scared, the hair on their bodies really can stand on end.", "C. When people are scared the hair on their bodies really can stand on end.", "D. The hair on their bodies really can stand on end when people are scared."],
+      "answer": "B. When people are scared, the hair on their bodies really can stand on end.",
+      "diff": "medium"
+    }
+  ]
+},
+
+
+25: {
+  title: "Run-ons, Comma Splices, and Modifiers (ENG 101 Lesson 25)",
+  summary: `**🚀 COMPREHENSIVE SHORT STUDY NOTES (Poora Concept Aik Jagah)**
+
+---
+
+### 🔥 SECTION 1: RUN-ON SENTENCES (Fused & Comma Splices)
+Jab do mukammal thoughts (Independent Clauses) ko ghalat tarike se jora jaye, toh use **Run-on sentence** kehte hain. Iske do main types hain:
+1. **Fused Sentence:** Do complete thoughts ko bina kisi punctuation ya joining word ke aapas mai jor dena.
+   * *Ghalat:* The lake is calm today it looks like a blue mirror. ❌
+2. **Comma Splice:** Do complete thoughts ko sirf aik **comma (,)** laga kar jor dena (jo ke kaafi nahi hai).
+   * *Ghalat:* Fahd was talking on the phone, he was switching TV channels. ❌
+
+👉 **The 3 Fixes:**
+- **Method 1:** Dono ke darmyan **Full stop (.)** lagayein aur agla word capital karein.
+- **Method 2:** Comma ke sath aik **Joining Word (FANBOYS: and, but, so, etc.)** lagayein.
+- **Method 3:** Aik thought ke shuru mai **Dependent Word (because, since, although, when)** laga kar use subordinate kar dein.
+
+---
+
+### 🏛️ SECTION 2: MISPLACED MODIFIERS
+Modifier un words ko kehte hain jo kisi doosre word ki khususiyaat (description) bayan karein. Agar modifier us word se door likha ho jise wo describe kar raha hai, toh use **Misplaced Modifier** kehte hain. Is se sentence ka matlab ajeeb ho jata hai.
+
+👉 **Key Rules & Corrections:**
+- *Ghalat:* I am returning the jacket to the store **that is too small**. ❌ (Store chota nahi hai, jacket choti hai!)
+- *Sahi:* I am returning the **jacket that is too small** to the store. ✔️
+- *Single-Word Rule:* \`only\`, \`almost\`, aur \`nearly\` ko hamesha us word ke **theek pehle** lagayein jise wo describe kar rahe hon.
+
+---
+
+### 🛠️ SECTION 3: DANGLING MODIFIERS
+Jab sentence ke shuru mai koi action-description (\`-ing\` phrase) ho, lekin poore sentence mai wo asli banda (subject) hi missing ho jo wo kaam kar raha hai, toh use **Dangling Modifier** kehte hain.
+
+👉 **Key Rules & Corrections:**
+- *Ghalat:* Staring dreamily into space, **the instructor's voice startled me**. ❌ (Voice stare nahi kar rahi thi!)
+- *Sahi (Method A):* Staring dreamily into space, **I was startled** by the instructor's voice. ✔️ (Banda introduce kiya).
+- *Sahi (Method B):* **As I was staring** dreamily into space, the instructor's voice startled me. ✔️
+
+---
+
+### 📝 SECTION 4: LESSON REVIEW FILL-IN-THE-BLANKS ANSWERS
+1. A **fused sentence** is made up of two complete thoughts that are incorrectly joined together with nothing between them.
+2. A **comma splice** is made up of two complete thoughts that are incorrectly joined together with only a comma between them.
+3. One way to correct fused sentences and comma splices is to add a **period (full stop)** and a capital letter.
+4. Two complete thoughts can be joined together in a sentence by a comma and a **joining / coordinating** word such as and, but or so.
+5. Two complete thoughts can be joined together in one sentence by adding a **dependent / subordinating** word such as when or because.
+6. The fused sentence and the comma splice are also known as **run-on** sentences.`,
+  questions: [
+    {
+      "q": "What is a 'Fused Sentence'?",
+      "options": ["A. A sentence missing a subject and a verb.", "B. Two complete thoughts joined with only a comma.", "C. Two complete thoughts joined together with absolutely no punctuation or joining words.", "D. A sentence that contains too many adjectives."],
+      "answer": "C. Two complete thoughts joined together with absolutely no punctuation or joining words.",
+      "diff": "easy"
+    },
+    {
+      "q": "Identify the Comma Splice error from the options below:",
+      "options": ["A. Raheel likes to cook his wife taught him how.", "B. The bell rang the wrestlers returned to the ring.", "C. The room is locked, no one has a key.", "D. It rained during our trip to Murree so we played cards."],
+      "answer": "C. The room is locked, no one has a key.",
+      "diff": "easy"
+    },
+    {
+      "q": "Where should the comma be placed when using a joining word like 'and', 'but', or 'so' to connect two complete thoughts?",
+      "options": ["A. Immediately after the joining word", "B. Immediately before the joining word", "C. Both before and after the joining word", "D. No comma is needed at all"],
+      "answer": "B. Immediately before the joining word",
+      "diff": "medium"
+    },
+    {
+      "q": "Correct this fused sentence using subordination: 'Yousaf Youhanna has a pulled muscle he won't play any cricket this season.'",
+      "options": ["A. Yousaf Youhanna has a pulled muscle, so he won't play any cricket this season.", "B. Because Yousaf Youhanna has a pulled muscle, he won't play any cricket this season.", "C. Yousaf Youhanna has a pulled muscle; he won't play any cricket this season.", "D. Yousaf Youhanna has a pulled muscle because he won't play any cricket this season."],
+      "answer": "B. Because Yousaf Youhanna has a pulled muscle, he won't play any cricket this season.",
+      "diff": "medium"
+    },
+    {
+      "q": "What is the error in: 'I am returning the jacket to the store that is too small.'?",
+      "options": ["A. Dangling Modifier", "B. Comma Splice", "C. Misplaced Modifier", "D. Fused Sentence"],
+      "answer": "C. Misplaced Modifier",
+      "diff": "medium"
+    },
+    {
+      "q": "Choose the correctly revised sentence for: 'The couple looked at thirty sofas shopping on Saturday.'",
+      "options": ["A. Shopping on Saturday, the couple looked at thirty sofas.", "B. The couple looked at thirty sofas on Saturday shopping.", "C. The couple shopping looked at thirty sofas on Saturday.", "D. On Saturday sixty sofas were looked at by the shopping couple."],
+      "answer": "A. Shopping on Saturday, the couple looked at thirty sofas.",
+      "diff": "hard"
+    },
+    {
+      "q": "Where should single-word modifiers like 'only', 'almost', and 'nearly' be placed?",
+      "options": ["A. At the very end of the sentence", "B. Directly in front of the word they describe/modify", "C. Immediately after the main verb", "D. Right after a comma"],
+      "answer": "B. Directly in front of the word they describe/modify",
+      "diff": "medium"
+    },
+    {
+      "q": "Identify the dangling modifier in this passage: 'Staring out at the downpour, we were glad to be safe inside. Then we remembered our open car windows, groaning with dismay.'",
+      "options": ["A. 'Staring out at the downpour'", "B. 'we were glad to be safe'", "C. 'groaning with dismay' (wrongly describes the car windows instead of the people)", "D. There is no modifier error here."],
+      "answer": "C. 'groaning with dismay' (wrongly describes the car windows instead of the people)",
+      "diff": "hard"
+    },
+    {
+      "q": "Correct the dangling modifier: 'When pulling out of the driveway, the pillar blocks my view.'",
+      "options": ["A. When pulling out of the driveway, my view is blocked by the pillar.", "B. Whenever I pull out of the driveway, the pillar blocks my view.", "C. Pulling out of the driveway, the pillar is blocking my view.", "D. The pillar blocks my view when pulling out of the driveway."],
+      "answer": "B. Whenever I pull out of the driveway, the pillar blocks my view.",
+      "diff": "hard"
+    },
+    {
+      "q": "Fused sentences and comma splices are collectively known as what?",
+      "options": ["A. Fragment sentences", "B. Run-on sentences", "C. Complex sentences", "D. Compound-complex sentences"],
+      "answer": "B. Run-on sentences",
+      "diff": "easy"
+    },
+    {
+      "q": "Fix this sentence: 'Garlic may smell bad it tastes delicious.' using a comma and a joining word.",
+      "options": ["A. Garlic may smell bad, it tastes delicious.", "B. Garlic may smell bad, but it tastes delicious.", "C. Garlic may smell bad but, it tastes delicious.", "D. Garlic may smell bad. But it tastes delicious."],
+      "answer": "B. Garlic may smell bad, but it tastes delicious.",
+      "diff": "easy"
+    },
+    {
+      "q": "What does a modifier describe or clarify?",
+      "options": ["A. Only verbs", "B. Another word or group of words in the sentence", "C. The punctuation of a clause", "D. The conjunctions used"],
+      "answer": "B. Another word or group of words in the sentence",
+      "diff": "easy"
+    },
+    {
+      "q": "Correct the misplaced modifier: 'The sparrow built a nest at the back of our house of grass and twigs.'",
+      "options": ["A. Of grass and twigs, the sparrow built a nest at the back of our house.", "B. The sparrow built a nest of grass and twigs at the back of our house.", "C. The sparrow built a nest at the back of our house which was of grass and twigs.", "D. At the back of our house, the sparrow built a nest of grass and twigs."],
+      "answer": "B. The sparrow built a nest of grass and twigs at the back of our house.",
+      "diff": "medium"
+    },
+    {
+      "q": "What is the error in the sentence: 'Anjum Nisar almost sneezed twenty times last night.'?",
+      "options": ["A. Dangling phrase", "B. Misplaced single-word modifier 'almost'", "C. Fused construction", "D. Comma splice"],
+      "answer": "B. Misplaced single-word modifier 'almost'",
+      "diff": "medium"
+    },
+    {
+      "q": "Which option correctly fixes: 'Anjum Nisar almost sneezed twenty times last night.'?",
+      "options": ["A. Almost last night, Anjum Nisar sneezed twenty times.", "B. Anjum Nisar sneezed almost twenty times last night.", "C. Anjum Nisar sneezed twenty times last night almost.", "D. Anjum Nisar almost twenty times sneezed last night."],
+      "answer": "B. Anjum Nisar sneezed almost twenty times last night.",
+      "diff": "medium"
+    },
+    {
+      "q": "In the phrase 'The woman with gold-rimmed spectacles is my boss', what is the underlined/modified word being described?",
+      "options": ["A. spectacles", "B. boss", "C. woman", "D. gold-rimmed"],
+      "answer": "C. woman",
+      "diff": "easy"
+    },
+    {
+      "q": "Correct the error: 'The man returned the overdue book to the librarian with apologies.'",
+      "options": ["A. With apologies, the man returned the overdue book to the librarian.", "B. The man returned the overdue book with apologies to the librarian.", "C. The man with apologies returned the overdue book to the librarian.", "D. Both A and B make the meaning clear and are correct."],
+      "answer": "D. Both A and B make the meaning clear and are correct.",
+      "diff": "hard"
+    },
+    {
+      "q": "What happens when a modifier is 'dangling'?",
+      "options": ["A. The sentence has two commas separated by a conjunction.", "B. The opening word-group lacks a clear subject to logically link to in the main clause.", "C. The sentence is missing a final full stop.", "D. The modifier is placed right before the noun it describes."],
+      "answer": "B. The opening word-group lacks a clear subject to logically link to in the main clause.",
+      "diff": "medium"
+    },
+    {
+      "q": "Identify the error type here: 'The trunk is in the basement it has a handle missing.'",
+      "options": ["A. Comma Splice", "B. Fused Sentence", "C. Misplaced Modifier", "D. Dangling Modifier"],
+      "answer": "B. Fused Sentence",
+      "diff": "easy"
+    },
+    {
+      "q": "Correct the run-on sentence: 'Bicycles are the world's best method of transportation, they don't pollute.' using subordination.",
+      "options": ["A. Bicycles are the world's best method of transportation, and they don't pollute.", "B. Bicycles are the world's best method of transportation because they don't pollute.", "C. Bicycles are the world's best method of transportation. They don't pollute.", "D. Bicycles are the world's best method of transportation, so they don't pollute."],
+      "answer": "B. Bicycles are the world's best method of transportation because they don't pollute.",
+      "diff": "medium"
+    }
+  ]
+},
+
+
+26: {
+  title: "Subject-Verb Agreement (ENG 101 Lesson 26)",
+  summary: `**🚀 COMPREHENSIVE SHORT STUDY NOTES (Poora Concept Aik Jagah)**
+
+---
+
+### 🔥 SECTION 1: THE BASIC RULE (Subject-Verb Match)
+Subject-Verb Agreement ka aasan matlab hai ke agar **Subject Singular (aik)** hai toh **Verb bhi Singular** hoga. Agar **Subject Plural (zyada)** hai toh **Verb bhi Plural** hoga.
+👉 **Present Tense Key Difference:** 
+Present tense mai Singular verb ke aakhiri mai **"s" ya "es"** lagta hai (e.g., *He works*), jabke Plural verb bina "s" ke aata hai (e.g., *They work*).
+
+---
+
+### 🏛️ SECTION 2: THE 4 TRICKY SITUATIONS (Jahan Ghalati Hoti Hai)
+
+👉 **1. Words Between Subject and Verb (Prepositional Phrases):**
+Jumle mai subject aur verb ke darmyan kuch extra words (like *of, on, with, by*) aa jate hain jo hamein confuse karte hain. Verb hamesha asli subject ke mutabiq lagayein, prepositional phrase ke andar wale noun ke mutabiq nahi.
+*   *Ghalat:* One of my best friends **live** in Dubai. ❌ (Friends plural hai, lekin baat 'One' ki ho rahi hai).
+*   *Sahi:* **One** of my best friends **lives** in Dubai. ✔️
+
+👉 **2. Verb Coming Before the Subject (Inverted Sentences):**
+Jab sentence \`There\`, \`Here\`, ya kisi sawaal (\`Where\`, \`Why\`) se shuru ho, toh verb pehle aata hai aur subject baad mai. Piche dekhein ke subject kya hai!
+*   *Ghalat:* Where **is** the keys of the cupboard? ❌
+*   *Sahi:* Where **are** the **keys** of the cupboard? ✔️ (Keys plural hain).
+
+👉 **3. Indefinite Pronouns (Hamesha Singular):**
+Yeh words dekhne mai plural lag sakte hain lekin grammatically yeh **HAMESHA SINGULAR** hote hain aur inke sath singular verb ("s" wala) lagta hai: *Each, everyone, everybody, anyone, anybody, someone, somebody, elements with -thing / -one / -body, neither, either, one*.
+*   *Sahi:* **Each** of his students **feels** free to ask questions. ✔️
+*   *Sahi:* **Neither** of the phones **works**. ✔️
+*   *Exception:* \`Both\` aur \`Few\` hamesha plural hote hain. \`All\` aur \`Some\` ke baad wala noun agar singular hai toh singular, plural hai toh plural (e.g., *Some of the chicken is...* vs *Some of the guests are...*).
+
+👉 **4. Compound Subjects (Joined by 'And' / 'Or'):**
+- Agar do subjects **\`and\`** se jore hon, toh verb **Plural** lagta hai (e.g., *Khalid and his friends **are** to blame*).
+- Agar subjects **\`or\`, \`nor\`, \`either...or\`, \`neither...nor\`, \`not only...but also\`** se jore hon, toh verb **apne sab se kareeb wale subject** ke mutabiq lagta hai (Proximity Rule).
+  *   *Sahi:* Neither the head clerk nor his **assistant clerks have been** fired. ✔️ (Clerks plural hai, toh 'have' aaya).
+
+---
+
+### 📝 SECTION 3: LESSON REVIEW FILL-IN-THE-BLANKS ANSWERS
+1. A singular subject takes a **singular** verb.
+2. A plural subject takes a **plural** verb.
+3. The **singular** form of present tense verbs is sometimes formed by adding the letter 's' to the end of the verb.
+4. The subject of a sentence is often found in a prepositional phrase. (**False** - Subject kabhi prepositional phrase ke andar nahi hota).
+5. Compound subjects joined by 'and' require a plural verb. (**True**).
+6. The indefinite pronouns anyone and everybody take a **singular** verb.
+7. The pronouns both and few are always plural and require plural verbs. (**True**).`,
+  questions: [
+    {
+      "q": "Choose the correct verb form: 'The rag picker ________ huge bundles of rags.'",
+      "options": ["A. sort", "B. sorts", "C. sorting", "D. are sort"],
+      "answer": "B. sorts",
+      "diff": "easy"
+    },
+    {
+      "q": "Complete the sentence with correct agreement: 'The students ________ to music while studying.'",
+      "options": ["A. listens", "B. listen", "C. is listening", "D. has listened"],
+      "answer": "B. listen",
+      "diff": "easy"
+    },
+    {
+      "q": "What is the correct verb for this sentence: 'One of my best friends ________ now in Dubai.'",
+      "options": ["A. live", "B. lives", "C. are living", "D. were living"],
+      "answer": "B. lives",
+      "diff": "medium"
+    },
+    {
+      "q": "Why is 'The wafer in this ice cream taste like sawdust' grammatically incorrect?",
+      "options": ["A. Because 'ice cream' is plural.", "B. Because the true subject is 'wafer' (singular), so the verb must be 'tastes'.", "C. Because 'wafer' requires a plural auxiliary verb.", "D. It is completely correct."],
+      "answer": "B. Because the true subject is 'wafer' (singular), so the verb must be 'tastes'.",
+      "diff": "medium"
+    },
+    {
+      "q": "Correct the inverted sentence: 'Where ________ the keys of the cupboard?'",
+      "options": ["A. is", "B. are", "C. am", "D. was"],
+      "answer": "B. are",
+      "diff": "easy"
+    },
+    {
+      "q": "Choose the correct option: 'Underneath the big stone ________ many colonies of ants.'",
+      "options": ["A. live", "B. lives", "C. living", "D. is lived"],
+      "answer": "A. live",
+      "diff": "medium"
+    },
+    {
+      "q": "Pronouns like 'each, everyone, neither, somebody, nothing' are always:",
+      "options": ["A. Plural", "B. Singular", "C. Dependent on the context", "D. Combined with plural verbs"],
+      "answer": "B. Singular",
+      "diff": "easy"
+    },
+    {
+      "q": "Select the grammatically accurate statement:",
+      "options": ["A. Neither of the phones work.", "B. Neither of the phones works.", "C. Neither of the phones are working.", "D. Neither of the phones were working."],
+      "answer": "B. Neither of the phones works.",
+      "diff": "medium"
+    },
+    {
+      "q": "What verb does the indefinite pronoun 'Everything' take?",
+      "options": ["A. Plural verb", "B. Singular verb", "C. Infinitive verb", "D. No verb required"],
+      "answer": "B. Singular verb",
+      "diff": "easy"
+    },
+    {
+      "q": "When two or more subjects are joined by 'and', they usually require a:",
+      "options": ["A. Singular verb", "B. Plural verb", "C. Dependent clause", "D. Past participle"],
+      "answer": "B. Plural verb",
+      "diff": "easy"
+    },
+    {
+      "q": "Apply the rule for compound subjects connected by 'or/nor': 'Either Jameela or her daughter ________ at home.'",
+      "options": ["A. stay", "B. stays", "C. staying", "D. are staying"],
+      "answer": "B. stays",
+      "diff": "medium"
+    },
+    {
+      "q": "Correct the following: 'Neither the head clerk nor his assistant clerks ________ fired for corruption.'",
+      "options": ["A. has been", "B. have been", "C. is", "D. was"],
+      "answer": "B. have been",
+      "diff": "hard"
+    },
+    {
+      "q": "How do the indefinite pronouns 'both' and 'a few' behave?",
+      "options": ["A. They are always singular.", "B. They are always plural and require plural verbs.", "C. They change based on the prepositional phrase.", "D. They do not take any verb."],
+      "answer": "B. They are always plural and require plural verbs.",
+      "diff": "easy"
+    },
+    {
+      "q": "The pronouns 'all' and 'some' are singular or plural depending on:",
+      "options": ["A. The first word of the sentence", "B. The words/nouns that follow them", "C. The tense of the sentence", "D. They are always strictly plural"],
+      "answer": "B. The words/nouns that follow them",
+      "diff": "medium"
+    },
+    {
+      "q": "Choose the correct verb form: 'Some of the chicken ________ still on the table.'",
+      "options": ["A. is", "B. are", "C. were", "D. have been"],
+      "answer": "A. is",
+      "diff": "medium"
+    },
+    {
+      "q": "Identify the two error words in this passage: 'The rain forests of Brazil is home to many species of frogs. Nobody among the world’s scientists know exactly how many.'",
+      "options": ["A. forests, scientists", "B. is, know", "C. home, species", "D. frogs, many"],
+      "answer": "B. is, know",
+      "diff": "hard"
+    },
+    {
+      "q": "Identify the two error words in this passage: 'The paint on the house and garage are peeling. Also each of the buildings need repairs.'",
+      "options": ["A. paint, house", "B. garage, buildings", "C. are, need", "D. peeling, repairs"],
+      "answer": "C. are, need",
+      "diff": "hard"
+    },
+    {
+      "q": "Can the true subject of a sentence be found inside a prepositional phrase?",
+      "options": ["A. Yes, very frequently", "B. No, the subject is never part of a prepositional phrase", "C. Only if the sentence starts with 'There'", "D. Only when the verb comes first"],
+      "answer": "B. No, the subject is never part of a prepositional phrase",
+      "diff": "medium"
+    },
+    {
+      "q": "Fill in the blank: 'Not only Khalid but also his friends ________ to blame for the accident.'",
+      "options": ["A. is", "B. are", "C. was", "D. has been"],
+      "answer": "B. are",
+      "diff": "medium"
+    },
+    {
+      "q": "Choose the correct option: 'A few of the strawberries ________ funny.'",
+      "options": ["A. tastes", "B. taste", "C. is tasting", "D. was taste"],
+      "answer": "B. taste",
+      "diff": "easy"
+    }
+  ]
+},
+
+
+27: {
+  title: "Pronoun Agreement, Reference, and Point of View (ENG 101 Lesson 27)",
+  summary: `**🚀 COMPREHENSIVE SHORT STUDY NOTES (Poora Concept Aik Jagah)**
+
+---
+
+### 🔥 SECTION 1: PRONOUN-ANTECEDENT AGREEMENT
+Pronoun jis noun ki jagah istemal hota hai, use **Antecedent** kehte hain. Rule yeh hai ke pronoun aur uske antecedent ka number (Singular/Plural) bilkul match hona chahiye.
+
+👉 **The Indefinite Pronoun Rule (Hamesha Singular):**
+Yeh words dekhne mai plural lag sakte hain lekin grammatically yeh **HAMESHA SINGULAR** hote hain, isliye inke liye singular pronouns (*his, her, its, he, she*) use hote hain:
+> *Each, either, neither, one, anyone, anybody, anything, everyone, everybody, everything, someone, somebody, something, no one, nobody, nothing.*
+
+*   *Ghalat:* Each of my students passed **their** driving test. ❌
+*   *Sahi:* **Each** of my students passed **his or her** driving test. ✔️
+*   *Sahi:* **Everything** in the office has **its** (not *their*) own place. ✔️
+
+---
+
+### 🏛️ SECTION 2: CLEAR PRONOUN REFERENCE (Ambiguity Hatana)
+Jumle mai yeh bilkul saaf pata hona chahiye ke pronoun kis bande ya cheez ke liye lagaya gaya hai. Agar aik sentence mai do nouns hon aur aage \`he\` ya \`she\` laga diya jaye, toh confusion paida ho jati hai.
+
+👉 **Key Rules & Corrections:**
+*   *Ambiguous:* Rabia told Nafeesa that **she** had got an A. ❌ (She kaun? Rabia ya Nafeesa?)
+*   *Clear:* Rabia told Nafeesa, **"I got an A on my term paper."** ✔️
+*   *Vague 'They/You':* Students complain that **they** don't keep the library tidy. ❌ (They kaun? Students khud ya staff?)
+*   *Clear:* Students complain that **the maintenance staff** don't keep the library tidy. ✔️
+
+---
+
+### 🛠️ SECTION 3: SHIFT IN PERSON (Point of View Mistakes)
+Agar aap aik sentence **1st person (\`I, we\`)** ya **3rd person (\`they, students, labourers\`)** se shuru kar rahe hain, toh darmyan mai bina wajah **2nd person (\`you\`)** par shift mat karein.
+
+👉 **Key Rules & Corrections:**
+*   *Ghalat:* What **I** like best about holidays is that **you** don't have to set an alarm. ❌ (I se directly 'you' par shift ghalat hai).
+*   *Sahi:* What **I** like best about holidays is that **I** don't have to set an alarm. ✔️
+*   *Ghalat:* Whenever **students** are under stress, **we** go into depression. ❌ (3rd person Plural se 1st person Plural ka shift).
+*   *Sahi:* Whenever **students** are under stress, **they** often go into depression. ✔️
+
+---
+
+### 📝 SECTION 4: LESSON REVIEW FILL-IN-THE-BLANKS ANSWERS
+1. Words such as each, everyone, and something are **indefinite** pronouns.
+2. Words such as I, you, and they are **personal** pronouns.
+3. A **second** person pronoun is one that refers to the person being spoken to (\`you\`).
+4. A pronoun may be singular even if its antecedent is plural. (**False** - It must match).
+5. A writer should not needlessly change from the first person to the second person. (**True**).`,
+  questions: [
+    {
+      "q": "What is an 'antecedent' in grammar?",
+      "options": ["A. A word that describes a verb.", "B. The noun or pronoun to which a pronoun refers.", "C. A dependent word that begins a fragment.", "D. A punctuation mark used to join thoughts."],
+      "answer": "B. The noun or pronoun to which a pronoun refers.",
+      "diff": "easy"
+    },
+    {
+      "q": "Choose the correct pronoun for the sentence: 'Neither of the babies has had ________ polio shot yet.'",
+      "options": ["A. their", "B. his or her", "C. they're", "D. its'"],
+      "answer": "B. his or her",
+      "diff": "medium"
+    },
+    {
+      "q": "Fill in the blank with correct agreement: 'Many high schools now require ________ students to take a computer course.'",
+      "options": ["A. its", "B. their", "C. his", "D. it's"],
+      "answer": "B. their",
+      "diff": "easy"
+    },
+    {
+      "q": "Identify the correct construction for indefinite pronouns:",
+      "options": ["A. Everything in the office has their own place.", "B. Everything in the office has its own place.", "C. Everything in the office have its own place.", "D. Everything in the office has our own place."],
+      "answer": "B. Everything in the office has its own place.",
+      "diff": "medium"
+    },
+    {
+      "q": "Why is the sentence 'Rabia told Nafeesa that she had got an A' faulty?",
+      "options": ["A. It contains a split infinitive.", "B. The pronoun 'she' has an ambiguous reference.", "C. It uses a plural pronoun for a singular noun.", "D. It has a shift in person."],
+      "answer": "B. The pronoun 'she' has an ambiguous reference.",
+      "diff": "easy"
+    },
+    {
+      "q": "Correct the ambiguous reference: 'Mahnoor tore off the wrapping paper from the present and then threw it in the rubbish bin.'",
+      "options": ["A. ...and then threw them in the rubbish bin.", "B. ...and then threw the paper in the rubbish bin.", "C. ...and then threw it, the present, in the rubbish bin.", "D. No correction needed."],
+      "answer": "B. ...and then threw the paper in the rubbish bin.",
+      "diff": "medium"
+    },
+    {
+      "q": "Identify the error type in this sentence: 'What I like best about holidays is that you don't have to set an alarm.'",
+      "options": ["A. Pronoun agreement error", "B. Shift in person (Point of view shift)", "C. Fused sentence", "D. Misplaced modifier"],
+      "answer": "B. Shift in person (Point of view shift)",
+      "diff": "medium"
+    },
+    {
+      "q": "Correct the shift in person: 'Though we like most of our neighbors, there are a few you can't get along with.'",
+      "options": ["A. ...there are a few one can't get along with.", "B. ...there are a few we can't get along with.", "C. ...there are a few they can't get along with.", "D. No correction needed."],
+      "answer": "B. ...there are a few we can't get along with.",
+      "diff": "medium"
+    },
+    {
+      "q": "Pronouns like 'each, everyone, nobody, somebody' are strictly classified as:",
+      "options": ["A. Personal pronouns", "B. Indefinite pronouns", "C. Relative pronouns", "D. Possessive pronouns"],
+      "answer": "B. Indefinite pronouns",
+      "diff": "easy"
+    },
+    {
+      "q": "Select the sentence that has NO pronoun agreement or reference errors:",
+      "options": ["A. Each of the actresses believes they should be chosen.", "B. If anybody is interested, they should let the librarian know.", "C. No students in the class wanted to read their papers aloud.", "D. Someone in the lounge stole my glasses, and I want to find them."],
+      "answer": "C. No students in the class wanted to read their papers aloud.",
+      "diff": "hard"
+    },
+    {
+      "q": "Fix the point of view shift: 'If you plan to do well on this course, one should plan on attending every lesson.'",
+      "options": ["A. If you plan to do well on this course, we should plan on attending...", "B. If you plan to do well on this course, you should plan on attending...", "C. If one plans to do well on this course, they should plan on attending...", "D. Both B and C are incorrect."],
+      "answer": "B. If you plan to do well on this course, you should plan on attending...",
+      "diff": "medium"
+    },
+    {
+      "q": "In the sentence 'The book Yousaf lent me is missing its cover', what is the antecedent of 'its'?",
+      "options": ["A. Yousaf", "B. me", "C. book", "D. cover"],
+      "answer": "C. book",
+      "diff": "easy"
+    },
+    {
+      "q": "Correct the pronoun reference: 'An angry looking man stood outside the bank, shouting that they had stolen his money.'",
+      "options": ["A. ...shouting that the bank employees had stolen his money.", "B. ...shouting that you had stolen his money.", "C. ...shouting that it had stolen his money.", "D. No correction needed."],
+      "answer": "A. ...shouting that the bank employees had stolen his money.",
+      "diff": "hard"
+    },
+    {
+      "q": "Words like 'I, me, we, us, he, she, they' are classified as:",
+      "options": ["A. Indefinite pronouns", "B. Personal pronouns", "C. Demonstrative pronouns", "D. Relative conjunctions"],
+      "answer": "B. Personal pronouns",
+      "diff": "easy"
+    },
+    {
+      "q": "Correct the following: 'Neither of my uncles has ever smoked in ________ life.'",
+      "options": ["A. their", "B. his", "C. our", "D. they're"],
+      "answer": "B. his",
+      "diff": "medium"
+    },
+    {
+      "q": "What person does the pronoun 'you' represent?",
+      "options": ["A. First person", "B. Second person", "C. Third person", "D. Neutral person"],
+      "answer": "B. Second person",
+      "diff": "easy"
+    },
+    {
+      "q": "What is the problem with: 'The worst thing for me living with such a fussy man is you always have to wait for him.'?",
+      "options": ["A. Faulty Parallelism", "B. Shift from first person ('me') to second person ('you')", "C. Missing-Subject Fragment", "D. Plural agreement failure"],
+      "answer": "B. Shift from first person ('me') to second person ('you')",
+      "diff": "medium"
+    },
+    {
+      "q": "True or False: A singular pronoun must be used when referring back to a singular indefinite pronoun like 'nobody' or 'each'.",
+      "options": ["A. True", "B. False"],
+      "answer": "A. True",
+      "diff": "easy"
+    },
+    {
+      "q": "Correct the sentence: 'I won't go to the concert tonight because there's no way you could get a ticket.'",
+      "options": ["A. ...because there's no way one could get a ticket.", "B. ...because there's no way I could get a ticket.", "C. ...because there's no way they could get a ticket.", "D. No error found."],
+      "answer": "B. ...because there's no way I could get a ticket.",
+      "diff": "hard"
+    },
+    {
+      "q": "Fix the reference error: 'Both of Basit's parents are doctors, but it doesn't interest Basit.'",
+      "options": ["A. ...but they don't interest Basit.", "B. ...but medicine doesn't interest Basit.", "C. ...but being doctors doesn't interest him.", "D. No error found."],
+      "answer": "B. ...but medicine doesn't interest Basit.",
+      "diff": "hard"
+    }
+  ]
+},
+
+28: {
+  title: "Effective Language, Clichés, Wordiness, and Homophones (ENG 101 Lesson 28)",
+  summary: `**🚀 COMPREHENSIVE SHORT STUDY NOTES (Poora Concept Aik Jagah)**
+
+---
+
+### 🔥 SECTION 1: SLANG & CLICHÉS VS. EFFECTIVE LANGUAGE
+Academic aur formal writing mai slang (unprofessional language) aur clichés (overused, purani phrases) se parhez karna chahiye.
+
+👉 **Slang Corrections:**
+*   *Slang:* **trashed** (criticized heavily) / **cheesed off** (angry/annoyed) / **real drag** (boring/tedious) / **gas bag** (talkative/liar) / **gross** (vulgar/offensive).
+
+👉 **Clichés (Avoid Like the Plague):**
+*   *Cliché:* **bored to tears** $\rightarrow$ *Formal:* deeply bored / extremely uninterested.
+*   *Cliché:* **busy as a bee** $\rightarrow$ *Formal:* very busy / industrious.
+*   *Cliché:* **happy as a lark** $\rightarrow$ *Formal:* delighted / extremely happy.
+
+---
+
+### 🏛️ SECTION 2: WORDINESS (Fazool Alfaz Se Pak Writing)
+Kam se kam lafzon mai poori baat kehna aik achi writing ki nishani hai. Wordy expressions ko single words se replace karein:
+
+| Wordy Expression | Concise Single Word |
+| :--- | :--- |
+| **Due to the fact that** / **On account of** | Because |
+| **At this point in time** | Now |
+| **During the time that** | While |
+| **In order to** | To |
+| **In my own opinion, I think** | I think |
+| **Small in size** / **Green in color** | Small / Green |
+
+---
+
+### 🛠️ SECTION 3: CONFUSING HOMOPHONES (Frequently Misused Words)
+Aise alfaz jinki aawaz milti julti hai par meaning aur spelling alag hote hain:
+
+1.  **Its** (Possessive: uska) vs. **It's** (Contraction: It is).
+2.  **Their** (Unka) vs. **There** (Wahan/Maujood) vs. **They're** (They are).
+3.  **Your** (Aapka) vs. **You're** (You are).
+4.  **Passed** (Guzar gaya/Pass ho gaya) vs. **Past** (Maazi).
+5.  **Whose** (Kiska) vs. **Who's** (Who is).
+6.  **Weather** (Mausam) vs. **Whether** (Agar/Ya ya).
+7.  **All ready** (Sab tayyar hain) vs. **Already** (Pehle hi).
+8.  **Altogether** (Mukammal tour par) vs. **All together** (Aik sath).
+9.  **Accept** (Tasleem karna) vs. **Except** (Alawa/Siwaye).
+10. **Advice** (Noun: Naseehat) vs. **Advise** (Verb: Naseehat karna).
+11. **Affect** (Verb: Asar dalna) vs. **Effect** (Noun: Asar / Verb: tabdeeli lana).
+12. **Desert** (Sehra / Chorr dena) vs. **Dessert** (Meetha khana).
+13. **Coarse** (Khurdura/Badtameez) vs. **Course** (Sabaq/Raasta).
+14. **Quiet** (Khamosh) vs. **Quite** (Kaafi/Mukammal) vs. **Quit** (Chorr dena).
+15. **Wander** (Awaara ghoomna) vs. **Wonder** (Hairan hona/Sochna).
+
+---
+
+### 📝 SECTION 4: PRACTICE EXERCISES SOLVED
+*   **Practice 1 (Slang):** 1. criticized | 2. annoyed/angry | 3. tedious/boring.
+*   **Text Evaluation Sentences:**
+    1. My neighbor's conversation is too **vulgar** for me.
+    2. The audience was **extremely bored** by the lecture on Iqbal.
+    3. **Because** the buses are on strike, no one arrived on time.
+    4. The boys are **teasing you**... they wouldn't miss your party **for any reason**.
+    5. ...He is a **braggart/liar**. **While** I’ve known him...
+    6. She was **delighted**... due to a mistake in compiling the result.
+*   **Main Practice (1-10 Answers):**
+    1. You're, who's | 2. It's, break | 3. their | 4. plane, two | 5. already, quit, accept, advice | 6. dessert, effect, dose | 7. coarse, led | 8. peace, their, piece | 9. Correction: *You're* overweight... | 10. Who's, wondering, whether.`,
+  questions: [
+    {
+      "q": "Replace the slang word in this sentence: 'All the viewers trashed the new film.'",
+      "options": ["A. praised", "B. criticized heavily", "C. recommended", "D. missed"],
+      "answer": "B. criticized heavily",
+      "diff": "easy"
+    },
+    {
+      "q": "Identify the wordy expression and its concise replacement: 'Due to the fact that the printer ran out of toner...'",
+      "options": ["A. Due to the fact that -> On account of", "B. Due to the fact that -> Because", "C. Out of toner -> Empty", "D. Ran out of -> Dropped"],
+      "answer": "B. Due to the fact that -> Because",
+      "diff": "easy"
+    },
+    {
+      "q": "Choose the correct pair: '(You're, Your) the only person (who's, whose) never on time.'",
+      "options": ["A. Your, whose", "B. You're, who's", "C. Your, who's", "D. You're, whose"],
+      "answer": "B. You're, who's",
+      "diff": "medium"
+    },
+    {
+      "q": "Fill in the blanks: '(Its, It's) difficult to (break, brake) the habit of taking drugs.'",
+      "options": ["A. Its, break", "B. It's, brake", "C. It's, break", "D. Its, brake"],
+      "answer": "C. It's, break",
+      "diff": "medium"
+    },
+    {
+      "q": "Choose the correct words: 'The cheeky young man had (all ready, already) decided to (quit, quite) college.'",
+      "options": ["A. all ready, quite", "B. already, quit", "C. all ready, quit", "D. already, quite"],
+      "answer": "B. already, quit",
+      "diff": "medium"
+    },
+    {
+      "q": "What is the correct formal substitute for the cliché 'bored to tears'?",
+      "options": ["A. crying with laughter", "B. down in the dumps", "C. extremely uninterested / deeply bored", "D. busy as a bee"],
+      "answer": "C. extremely uninterested / deeply bored",
+      "diff": "easy"
+    },
+    {
+      "q": "Fill in the blank: 'The rich ________ (desert/dessert) had the ________ (affect/effect) of giving guests a stomach ache.'",
+      "options": ["A. desert, affect", "B. dessert, effect", "C. dessert, affect", "D. desert, effect"],
+      "answer": "B. dessert, effect",
+      "diff": "hard"
+    },
+    {
+      "q": "Choose the correct form: 'He refused to ________ (accept, except) his father's ________ (advise, advice).'",
+      "options": ["A. except, advise", "B. accept, advice", "C. accept, advise", "D. except, advice"],
+      "answer": "B. accept, advice",
+      "diff": "medium"
+    },
+    {
+      "q": "Fix the error in this sentence: 'Your overweight and you almost never exercise.'",
+      "options": ["A. Change 'Your' to 'You're'", "B. Change 'exercise' to 'exerzise'", "C. Change 'and' to 'but'", "D. No error found"],
+      "answer": "A. Change 'Your' to 'You're'",
+      "diff": "easy"
+    },
+    {
+      "q": "Complete the sentence correctly: '(Whose, Who's) application is this?'",
+      "options": ["A. Who's", "B. Whose", "C. Whoses", "D. Who is"],
+      "answer": "B. Whose",
+      "diff": "medium"
+    },
+    {
+      "q": "Choose the correct options: 'The young man raised his hand, (wandering, wondering) (weather, whether) the clerk approved.'",
+      "options": ["A. wandering, weather", "B. wondering, whether", "C. wandering, whether", "D. wondering, weather"],
+      "answer": "B. wondering, whether",
+      "diff": "medium"
+    },
+    {
+      "q": "Which expression means 'thoroughly' or 'wholly'?",
+      "options": ["A. All together", "B. Altogether", "C. Already", "D. All ready"],
+      "answer": "B. Altogether",
+      "diff": "hard"
+    },
+    {
+      "q": "Fill in the blank: 'We are angry ________ situations, but angry ________ people.'",
+      "options": ["A. with, about", "B. about, with", "C. at, with", "D. about, at"],
+      "answer": "B. about, with",
+      "diff": "hard"
+    },
+    {
+      "q": "The word 'liable' means:",
+      "options": ["A. probably or likely", "B. answerable for / suggesting an undesirable possibility", "C. suited or appropriate", "D. quick to learn"],
+      "answer": "B. answerable for / suggesting an undesirable possibility",
+      "diff": "hard"
+    },
+    {
+      "q": "Complete the sentence: 'The ladies' complaints about the ________ (coarse, course) language ________ (led, lead) to a warning.'",
+      "options": ["A. course, lead", "B. coarse, led", "C. course, led", "D. coarse, lead"],
+      "answer": "B. coarse, led",
+      "diff": "medium"
+    },
+    {
+      "q": "Select the sentence with NO homophone errors:",
+      "options": ["A. The weather won't spoil our holidays whether it rains or not.", "B. The weather won't spoil our holidays weather it rains or not.", "C. The whether won't spoil our holidays whether it rains or not.", "D. The whether won't spoil our holidays weather it rains or not."],
+      "answer": "A. The weather won't spoil our holidays whether it rains or not.",
+      "diff": "medium"
+    },
+    {
+      "q": "What is the single-word replacement for 'at an earlier point in time'?",
+      "options": ["A. Now", "B. Before", "C. Soon", "D. While"],
+      "answer": "B. Before",
+      "diff": "easy"
+    },
+    {
+      "q": "Choose the correct words: 'The two brothers have not had any (peace, piece) ever since (their, there) father left.'",
+      "options": ["A. piece, there", "B. peace, their", "C. piece, their", "D. peace, there"],
+      "answer": "B. peace, their",
+      "diff": "easy"
+    },
+    {
+      "q": "The expression 'small in size' should be shortened in concise writing to:",
+      "options": ["A. tiny in nature", "B. small", "C. short size", "D. minor scale"],
+      "answer": "B. small",
+      "diff": "easy"
+    },
+    {
+      "q": "Fill in the blanks: 'The host gave them each a double ________ (dose, does) of medicine.'",
+      "options": ["A. does", "B. dose", "C. doze", "D. douse"],
+      "answer": "B. dose",
+      "diff": "easy"
+    }
+  ]
+},
+
 
   },
+
+
+
+  
   
 };
 
