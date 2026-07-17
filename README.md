@@ -15,4 +15,4 @@ Tech Stack
 React · JavaScript · TailwindCSS · Groq API · KaTeX · Vercel
 
 Live Demo
-🔗 [vu-game.vercel.app](https://vu-game.vercel.app/)
+🔗 [vu-game.vercel.app](https://vu-study-app.vercel.app/)
