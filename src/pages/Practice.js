@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import subjects from '../data/subjects';
 import practice from '../data/practice';
 
-const API_BASE = 'https://vu-game-backend.vercel.app';
+const API_BASE = 'https://vu-study-app-backend.vercel.app';
 
 const QUICK_SYMBOLS = ['+','−','×','÷','=','≠','≤','≥','²','³','√','π','∞','→','∫','∑','Δ','θ','α','β'];
 

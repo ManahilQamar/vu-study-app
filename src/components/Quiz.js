@@ -6,7 +6,7 @@ import mcqs from '../data/mcqs';
 const PASS_PCT = 70;
 const LABELS   = ['A', 'B', 'C', 'D'];
 
-const API_BASE = 'https://vu-game-backend.vercel.app';
+const API_BASE = 'https://vu-study-app-backend.vercel.app';
 
 /* ─── helpers ─── */
 function getLectureData(subject, idx) {

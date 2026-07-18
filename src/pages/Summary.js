@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import subjects from '../data/subjects';
 import mcqs from '../data/mcqs';
 
-const API_BASE = 'https://vu-game-backend.vercel.app';
+const API_BASE = 'https://vu-study-app-backend.vercel.app';
 
 function getLectureData(subject, idx) {
   const lecNum = idx + 1;
