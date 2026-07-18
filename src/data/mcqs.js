@@ -37192,62 +37192,71 @@ Many researchers believe human mind ki EVERY activity (imagination, creativity, 
         answer: 'B. The result of algorithm execution',
         diff: 'medium',
       },
-      {
-        q: 'In the tea-making algorithm, which step comes IMMEDIATELY AFTER "Add Milk"?',
-        options: ['A. Boil water', 'B. Add Sugar', 'C. Stir', 'D. Put Tea in water'],
-        answer: 'C. Stir',
-        diff: 'medium',
-      },
-      {
-        q: 'The KM-to-Meters algorithm has how many steps?',
-        options: ['A. Four', 'B. Eight', 'C. Two', 'D. Three'],
-        answer: 'D. Three',
-        diff: 'easy',
-      },
-      {
-        q: 'In the machine cycle, "Decode" means:',
-        options: ['A. Interpret the fetched instruction to understand what operation to perform', 'B. Store the result back to memory', 'C. Physically retrieve the instruction from memory', 'D. Halt the CPU permanently'],
-        answer: 'A. Interpret the fetched instruction to understand what operation to perform',
-        diff: 'medium',
-      },
-      {
-        q: 'The tea-making example shows that algorithms:',
-        options: ['A. Must always have exactly 8 steps', 'B. Only apply to computer programs, not real life', 'C. Exist in everyday real-life tasks, not just computing', 'D. Cannot involve physical objects'],
-        answer: 'C. Exist in everyday real-life tasks, not just computing',
-        diff: 'medium',
-      },
-      {
-        q: 'Which example specifically shows algorithms applying to how physical computer hardware executes?',
-        options: ['A. The tea-making example', 'B. The human mind analogy', 'C. The KM conversion', 'D. The machine cycle'],
-        answer: 'D. The machine cycle',
-        diff: 'hard',
-      },
+     
+     
     ],
   },
 
   86: {
     title: 'Algorithm: Formal Definition',
     summary: `**Yeh module kya cover karta hai:**
-Algorithm ki formal definition aur 4 properties.
 
-**Formal Definition:**
-An algorithm is an ordered set of unambiguous, executable steps that defines a terminating process.
+Algorithm (Formal Definition)
 
-**4 Key Properties:**
+Definition:
+Algorithm = Step-by-step clear instructions jo computer execute kar sake aur end ho jaye.
 
-**1. Ordered:** Steps ka well-established execution structure. "Ordered" necessarily "sequential" nahi — parallel processing mein steps saath bhi ho sakti hain. Flip-flops example.
+1. Ordered
 
-**2. Executable:** Har step actually perform ki ja sake. "Make a list of ALL positive integers" = NOT executable (infinite). Computer scientists use term "effective" for this.
+Steps ka proper order hona chahiye.
 
-**3. Unambiguous:** State sufficient ho ke har step ka action uniquely determine ho. "Make a pretty cartoon!" = ambiguous.
+Example:
 
-**4. Terminating:** Execution must end. Exceptions: hospital monitoring, aircraft altitude — non-terminating.
+Pani garam karo.
+Chai banao.
+Serve karo.
 
-**Yaad rakho:**
-- Formal: ordered + unambiguous + executable + terminating
-- "Effective" = computer science term for executable
-- Infinite task = not executable
-- "Ordered" ≠ always sequential`,
+Note: Order ka matlab sirf sequence nahi. Kuch steps parallel bhi chal sakte hain.
+
+2. Executable (Effective)
+
+Har step computer perform kar sake.
+
+✅ 5 + 10
+
+❌ "Sab positive integers ki list banao." (Kabhi khatam nahi hogi.)
+
+3. Unambiguous
+
+Har instruction bilkul clear honi chahiye.
+
+❌ "Make a pretty cartoon."
+
+✅ "Red circle draw karo, radius 10px."
+
+4. Terminating Process
+
+Algorithm ka end hona chahiye.
+
+Example:
+Print 1 se 100 → Stop ✅
+
+Exception:
+
+Patient monitoring
+Aircraft control
+
+Ye continuously chalte rehte hain.
+
+Exam Trick
+
+OUET
+
+O = Ordered
+U = Unambiguous
+E = Executable
+T = Terminating
+    `,
     questions: [
       {
         q: 'The formal definition states an algorithm is "an ordered set of unambiguous, executable steps that defines a":',
@@ -37314,33 +37323,78 @@ An algorithm is an ordered set of unambiguous, executable steps that defines a t
 
   87: {
     title: 'Algorithm: Abstract Nature of Algorithms',
-    summary: `**Yeh module kya cover karta hai:**
-Algorithm vs representation, multiple representations, program/algorithm/process ki chain.
+    summary: `Abstract Nature of Algorithm
 
-**Algorithm is Abstract:**
-Algorithm = abstract concept (like a story). Representation = physical form (like a book). Ek hi algorithm kai ways mein represent ho sakta hai.
+Algorithm aur uski representation alag cheezen hain.
 
-**Celsius to Fahrenheit Example:**
-- Algebraic: F = (9/5)C + 32
-- English: "Multiply Celsius by 9/5 then add 32"
-- Electronic circuit
-Teeno mein underlying algorithm SAME hai, sirf representation different.
+Algorithm = Original idea ya logic (Abstract)
+Representation = Us algorithm ko likhne ya dikhane ka tareeqa.
+Example
 
-**Ambiguity Problem:**
-Algorithm aur representation ke darmiyan farq tab masla karta hai jab communicate karte hain. Problem algorithm mein nahi, representation ki detail level mein.
+Celsius ko Fahrenheit me convert karne ka algorithm ek hi hai.
 
-**Program, Algorithm, Process:**
-- Algorithm = abstract
-- Program = representation of an algorithm (for computer application)
-- Process = activity of executing an algorithm (executing a program)
+Usay alag tarikon se represent kiya ja sakta hai:
 
-**Conclusion:** Program is a representation of an algorithm. Process is the activity of executing an algorithm.
+Formula: F = (9/5)C + 32
+Step-by-step instructions
+Flowchart
+Electronic circuit
 
-**Yaad rakho:**
-- Algorithm = abstract (story)
-- Program = representation (book)
-- Process = executing (playing music)
-- Same algorithm → multiple representations`,
+👉 Algorithm same rehta hai, sirf representation change hoti hai.
+
+Story aur Book Example
+
+Is concept ko samajhne ke liye:
+
+Story = Algorithm
+Book = Representation
+
+Agar book ko kisi aur language me translate ya naye design me publish kiya jaye, to story change nahi hoti, sirf uski representation change hoti hai.
+
+Bilkul isi tarah algorithm bhi same rehta hai, chahe usay kisi bhi form me represent kiya jaye.
+
+Representation me Detail
+
+Algorithm ko samajhne ke liye har person ko alag level ki detail chahiye hoti hai.
+
+Example:
+
+Ek meteorologist ko sirf itna kehna kaafi hai:
+
+"Convert Celsius to Fahrenheit."
+
+Lekin ek normal student ko formula ya complete steps bhi chahiye honge.
+
+👉 Iska matlab algorithm me problem nahi hoti, sirf representation me detail kam ya zyada hoti hai.
+
+Algorithm, Program aur Process
+
+Ye teen terms aksar confuse hoti hain.
+
+Algorithm
+
+Problem solve karne ki logic ya step-by-step solution.
+
+Program
+
+Algorithm ko kisi programming language me likhna.
+
+Yani Program = Algorithm ki representation.
+
+Process
+
+Jab program computer par run (execute) hota hai to usay Process kehte hain.
+
+👉 Simple Formula:
+
+Algorithm (Logic) → Program (Code) → Process (Execution)
+
+Quick Revision
+Algorithm ek abstract idea hota hai.
+Ek algorithm ko kai different ways me represent kiya ja sakta hai.
+Representation change hone se algorithm change nahi hota.
+Program algorithm ki representation hota hai.
+Process program ko execute karne ka naam hai.`,
     questions: [
       {
         q: 'An algorithm is best characterized as:',
@@ -37348,12 +37402,7 @@ Algorithm aur representation ke darmiyan farq tab masla karta hai jab communicat
         answer: 'B. An abstract concept distinct from any physical representation',
         diff: 'medium',
       },
-      {
-        q: 'In this module\'s analogy, a "story" maps to algorithm and a "book" maps to:',
-        options: ['A. Process', 'B. Algorithm\'s output', 'C. The reader', 'D. The representation'],
-        answer: 'D. The representation',
-        diff: 'medium',
-      },
+     
       {
         q: 'The Celsius-to-Fahrenheit algorithm can be represented as:',
         options: ['A. Only as an algebraic formula F = (9/5)C + 32', 'B. Only in English words', 'C. As a formula, English instructions, OR an electronic circuit — all representing the same algorithm', 'D. Only as machine code on a specific CPU'],
@@ -37362,8 +37411,8 @@ Algorithm aur representation ke darmiyan farq tab masla karta hai jab communicat
       },
       {
         q: 'A "process" is defined in this module as:',
-        options: ['A. A static set of instructions stored on disk', 'B. A formal representation of an algorithm', 'C. The abstract logic of an algorithm', 'D. The activity of executing a program (equivalently, executing an algorithm)'],
-        answer: 'D. The activity of executing a program (equivalently, executing an algorithm)',
+        options: ['A. A static set of instructions stored on disk', 'B. A formal representation of an algorithm', 'C. The abstract logic of an algorithm', 'D. The activity of executing a program'],
+        answer: 'D. The activity of executing a program',
         diff: 'easy',
       },
       {
@@ -37386,8 +37435,8 @@ Algorithm aur representation ke darmiyan farq tab masla karta hai jab communicat
       },
       {
         q: 'The correct chain relating algorithm, program, and process is:',
-        options: ['A. Process → Algorithm → Program', 'B. Algorithm (abstract) → Program (its representation) → Process (executing it)', 'C. Program → Process → Algorithm', 'D. Algorithm → Process → Program'],
-        answer: 'B. Algorithm (abstract) → Program (its representation) → Process (executing it)',
+        options: ['A. Process → Algorithm → Program', 'B. Algorithm → Program → Process', 'C. Program → Process → Algorithm', 'D. Algorithm → Process → Program'],
+        answer: 'B. Algorithm → Program → Process',
         diff: 'hard',
       },
       {
@@ -37407,89 +37456,141 @@ Algorithm aur representation ke darmiyan farq tab masla karta hai jab communicat
 
   88: {
     title: 'Algorithm: Representation (Primitives)',
-    summary: `**Yeh module kya cover karta hai:**
-Algorithm represent karne ki zaroorat, natural language ke problems, primitives, syntax vs semantics, programming language.
+    summary: `Algorithm Representation
 
-**Natural Language Problems:**
-1. Ambiguity — "Visiting grandchildren can be nerve-racking" = do meanings
-2. Detail level — Origami bird: origami student ke liye kaafi, aam aadmi ke liye nahi
+Algorithm ko samjhane ya likhne ke liye kisi language ki zarurat hoti hai.
 
-**Solution — Primitives:**
-Computer science: well-defined building blocks = primitives. Precise definitions = ambiguity remove. Algorithms in primitives = uniform detail.
+Ye language ho sakti hai:
 
-**Programming Language:**
-Collection of primitives + rules for combining them = programming language.
+Natural language (English, Urdu, etc.)
+Pictures/Diagrams
+Flowcharts
+Programming Language
+Problem with Natural Language
 
-**Syntax vs Semantics:**
-- Syntax = symbolic representation (kaise likhte hain) — "air" ka syntax = 3 symbols
-- Semantics = meaning — "air" ka semantics = gaseous substance surrounding Earth
+Natural language kabhi kabhi confusing (ambiguous) hoti hai.
 
-**Yaad rakho:**
-- Primitive = building block
-- Syntax = form; Semantics = meaning
-- Programming language = primitives + combination rules
-- Natural language problems: ambiguity + variable detail`,
+Ek hi sentence ke 2 ya zyada meanings ho sakte hain.
+
+Example:
+
+"Visiting grandchildren can be nerve-racking."
+
+Iska matlab ho sakta hai:
+
+Grandchildren milne aaye to problem hoti hai.
+Ya unse milne jana mushkil hai.
+
+👉 Isi liye sirf natural language algorithm ko clearly explain nahi kar pati.
+
+Detail ka Problem
+
+Har insan ki knowledge same nahi hoti.
+
+Example:
+
+Origami (paper bird) ki simple instructions ek expert ko samajh aa jayengi, lekin beginner confuse ho sakta hai.
+
+👉 Yani problem algorithm me nahi, representation ki detail me hoti hai.
+
+Primitive
+
+Primitive ek basic building block hota hai jisse algorithm ya programming language banti hai.
+
+Har primitive ki clear definition hoti hai, isliye confusion kam hoti hai.
+
+👉 Primitive = Basic instruction ya basic operation.
+
+Programming Language
+
+Programming language primitives aur rules ka collection hoti hai.
+
+Primitives = Basic commands.
+Rules = In commands ko combine karne ka tareeqa.
+
+In dono ko mila kar complex programs banaye jate hain.
+
+Syntax aur Semantics ⭐
+
+Ye exam ka bohot important concept hai.
+
+Syntax
+
+Syntax ka matlab hai likhne ka format ya structure.
+
+Yani command kis tarah likhi jayegi.
+
+Semantics
+
+Semantics ka matlab hai us command ka actual meaning ya kaam.
+
+Example
+print("Hello")
+Syntax: print("Hello") likhne ka format.
+Semantics: Screen par Hello display hoga.
+Quick Revision
+Algorithm ko represent karne ke liye language use hoti hai.
+Natural language me ambiguity aur detail ki problems ho sakti hain.
+Primitive = Basic building block.
+Programming Language = Primitives + Rules
+Syntax = Structure (Kaise likhna hai)
+Semantics = Meaning (Kya kaam karega)`,
     questions: [
-      {
-        q: 'A "primitive" in computer science is:',
-        options: ['A. An old, outdated programming language', 'B. A well-defined building block for constructing algorithm representations', 'C. A network packet header', 'D. A machine instruction only'],
-        answer: 'B. A well-defined building block for constructing algorithm representations',
-        diff: 'medium',
-      },
-      {
-        q: 'A programming language is defined as:',
-        options: ['A. A natural language used informally to write algorithms', 'B. A collection of primitives with rules for combining them to represent complex ideas', 'C. Only machine-level binary instructions', 'D. A syntax checker for pseudocode only'],
-        answer: 'B. A collection of primitives with rules for combining them to represent complex ideas',
-        diff: 'medium',
-      },
-      {
-        q: '"Syntax" of a primitive refers to:',
-        options: ['A. Its execution speed', 'B. Its symbolic representation — what it looks like when written', 'C. How many arguments it takes', 'D. The meaning of the primitive'],
-        answer: 'B. Its symbolic representation — what it looks like when written',
-        diff: 'easy',
-      },
-      {
-        q: '"Semantics" of a primitive refers to:',
-        options: ['A. The number of symbols it contains', 'B. Its symbolic form and notation', 'C. Its execution speed in milliseconds', 'D. The MEANING of the primitive'],
-        answer: 'D. The MEANING of the primitive',
-        diff: 'easy',
-      },
-      {
-        q: 'The sentence "Visiting grandchildren can be nerve-racking" illustrates:',
-        options: ['A. A well-defined algorithm step', 'B. A correct use of primitives', 'C. A terminating process', 'D. Ambiguity in natural language'],
-        answer: 'D. Ambiguity in natural language',
-        diff: 'medium',
-      },
-      {
-        q: 'Most readers CANNOT fold an origami bird from Figure 78, but origami students can. This illustrates:',
-        options: ['A. The algorithm for origami is incorrect', 'B. The instructions need an appropriate level of detail — which varies by audience', 'C. Origami cannot be algorithmically described', 'D. The instructions are ambiguous due to missing images'],
-        answer: 'B. The instructions need an appropriate level of detail — which varies by audience',
-        diff: 'medium',
-      },
-      {
-        q: 'Assigning precise definitions to primitives primarily solves which natural language problem?',
-        options: ['A. Execution speed', 'B. File size of the algorithm', 'C. Ambiguity — knowing exactly what each primitive means removes multiple interpretations', 'D. Network transmission errors'],
-        answer: 'C. Ambiguity — knowing exactly what each primitive means removes multiple interpretations',
-        diff: 'medium',
-      },
-      {
-        q: 'For the word "air": its syntax is 3 symbols. What is its semantics?',
-        options: ['A. A liquid substance', 'B. A liquid used for cooling circuits', 'C. The 3 letters a, i, r themselves', 'D. A gaseous substance surrounding the Earth'],
-        answer: 'D. A gaseous substance surrounding the Earth',
-        diff: 'easy',
-      },
-      {
-        q: 'The TWO specific problems with natural language algorithm representation identified in this module are:',
-        options: ['A. Too expensive and too long', 'B. Too mathematical and too abstract', 'C. Cannot be stored digitally and cannot be translated', 'D. Ambiguity and inconsistent level of detail required'],
-        answer: 'D. Ambiguity and inconsistent level of detail required',
-        diff: 'hard',
-      },
-      {
-        q: 'Requiring algorithms to be described using established primitives achieves:',
-        options: ['A. A random ordering of steps', 'B. A maximum algorithm length limit', 'C. A uniform level of detail across all representations', 'D. Only visual representations'],
-        answer: 'C. A uniform level of detail across all representations',
-        diff: 'medium',
-      },
+   {
+  q: 'The main purpose of introducing primitives is to:',
+  options: [
+    'A. Improve execution speed',
+    'B. Remove ambiguity',
+    'C. Reduce memory usage',
+    'D. Simplify hardware'
+  ],
+  answer: 'B. Remove ambiguity',
+  diff: 'hard',
+},
+{
+  q: 'A programming language is a combination of:',
+  options: [
+    'A. Algorithms and hardware',
+    'B. Primitives and rules',
+    'C. Programs and processes',
+    'D. Syntax and compiler'
+  ],
+  answer: 'B. Primitives and rules',
+  diff: 'hard',
+},
+{
+  q: 'In algorithm representation, semantics refers to the:',
+  options: [
+    'A. Meaning of a primitive',
+    'B. Structure of a primitive',
+    'C. Size of a primitive',
+    'D. Speed of execution'
+  ],
+  answer: 'A. Meaning of a primitive',
+  diff: 'hard',
+},
+{
+  q: 'The origami example mainly shows that:',
+  options: [
+    'A. Pictures are always clear',
+    'B. Experts need fewer details',
+    'C. Algorithms cannot use images',
+    'D. Syntax changes meaning'
+  ],
+  answer: 'B. Experts need fewer details',
+  diff: 'hard',
+},
+{
+  q: 'Which statement about natural language is correct?',
+  options: [
+    'A. It is always unambiguous',
+    'B. It removes all confusion',
+    'C. It may have multiple meanings',
+    'D. It needs no explanation'
+  ],
+  answer: 'C. It may have multiple meanings',
+  diff: 'hard',
+},
     ],
   },
 
