@@ -40560,6 +40560,988 @@ Verification software reliability improve karti hai.`,
   ]
 },
 
+109: {
+  title: "Programming Languages: Early Generations-I",
+  summary: `Machine Language ⭐
+
+Machine Language computer ki original language hoti hai.
+
+Ye sirf Binary ya Numeric instructions ko samajhta hai.
+
+Example:
+
+4056
+
+Is tarah ke instructions insaan ke liye samajhna aur likhna mushkil hota hai.
+
+Isi wajah se debugging bhi difficult hoti hai.
+
+Debugging ⭐
+
+Debugging ka matlab hai:
+
+👉 Program me errors (bugs) ko dhoondna aur unhe theek karna.
+
+Early Improvement ⭐
+
+1940s me programmers ne Machine Language ko easy banane ke liye Mnemonic System introduce kiya.
+
+Numeric instructions ki jagah short English words use hone lage.
+
+Example:
+
+Machine Language
+
+4056
+
+Mnemonic Form
+
+MOV R5, R6
+
+MOV ka matlab:
+
+Move data from Register 5 to Register 6.
+
+Mnemonic Instructions ⭐
+
+Kuch common mnemonics:
+
+LD = Load
+
+ST = Store
+
+ADDI = Add
+
+HLT = Halt (Program Stop)
+
+Program Variables (Identifiers) ⭐
+
+Memory addresses ya numbers yaad rakhna mushkil hota hai.
+
+Isliye meaningful names use kiye jate hain.
+
+Example:
+
+6C → Price
+
+6D → ShippingCharge
+
+6E → TotalCost
+
+Ye names Variables ya Identifiers kehlate hain.
+
+Machine Language vs Mnemonic ⭐
+
+Machine Language
+
+Numeric instructions
+
+Computer directly execute karta hai.
+
+Difficult for humans.
+
+Mnemonic Language
+
+English-like abbreviations use karti hai.
+
+Human ke liye easy hoti hai.
+
+Machine directly execute nahi kar sakta.
+
+Isay Machine Language me convert karna padta hai.
+
+Important Points ⭐
+
+Machine Language = Numeric/Binary instructions.
+
+Mnemonic System = Easy readable instructions.
+
+Debugging = Errors find aur fix karna.
+
+Identifiers = Meaningful variable names.
+
+Mnemonic code human readability improve karta hai.
+
+Quick Revision
+
+Machine Language → Numeric.
+Mnemonic Language → MOV, LD, ST, ADDI, HLT.
+Debugging = Finding & fixing errors.
+Variables = Price, ShippingCharge, TotalCost.
+Mnemonic instructions are easier for humans than machine code.`,
+  questions: [
+    {
+      q: 'Why were mnemonic instruction systems introduced in the 1940s?',
+      options: [
+        'A. To increase processor speed',
+        'B. To simplify programming and reduce programming errors',
+        'C. To replace computer memory',
+        'D. To eliminate the need for machine language'
+      ],
+      answer: 'B. To simplify programming and reduce programming errors',
+      diff: 'hard',
+    },
+    {
+      q: 'Which of the following is an example of a mnemonic instruction?',
+      options: [
+        'A. 4056',
+        'B. 156C',
+        'C. MOV R5, R6',
+        'D. 5056'
+      ],
+      answer: 'C. MOV R5, R6',
+      diff: 'hard',
+    },
+    {
+      q: 'In the lecture, names such as Price, ShippingCharge, and TotalCost are referred to as:',
+      options: [
+        'A. Registers',
+        'B. Opcodes',
+        'C. Program variables (identifiers)',
+        'D. Machine instructions'
+      ],
+      answer: 'C. Program variables (identifiers)',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the primary advantage of mnemonic code over machine language?',
+      options: [
+        'A. It executes faster on the processor',
+        'B. It consumes less memory',
+        'C. It is easier for humans to read and understand',
+        'D. It eliminates the need for debugging'
+      ],
+      answer: 'C. It is easier for humans to read and understand',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement about machine language is TRUE?',
+      options: [
+        'A. It uses descriptive variable names only',
+        'B. It is directly understood and executed by the CPU',
+        'C. It is easier for humans to write than mnemonic language',
+        'D. It contains only English keywords'
+      ],
+      answer: 'B. It is directly understood and executed by the CPU',
+      diff: 'hard',
+    }
+  ]
+},
+
+
+
+110: {
+  title: "Programming Languages: Early Generations-II",
+  summary: `Assembly Language ⭐
+
+Machine Language ko easy banane ke liye Assembly Language introduce ki gayi.
+
+Isme numeric instructions ki jagah mnemonic instructions (MOV, LD, ST, HLT) use hoti hain.
+
+Example:
+
+Machine Language
+
+4056
+
+Assembly Language
+
+MOV R5, R6
+
+Assembler ⭐
+
+Assembly Language ko computer direct execute nahi kar sakta.
+
+Isay Machine Language me convert karne ke liye Assembler use hota hai.
+
+Assembler ka kaam:
+
+Assembly Language → Machine Language
+
+Generation of Programming Languages ⭐
+
+1st Generation Language (1GL)
+
+Machine Language
+
+Binary ya Numeric instructions.
+
+Computer directly execute karta hai.
+
+Human ke liye bohot difficult.
+
+2nd Generation Language (2GL)
+
+Assembly Language
+
+Mnemonic instructions use hoti hain.
+
+Assembler ki zarurat hoti hai.
+
+Machine dependent hoti hai.
+
+3rd Generation Language (3GL)
+
+High-Level Languages
+
+English-like syntax.
+
+Machine independent hoti hain.
+
+Compiler ya Interpreter ki zarurat hoti hai.
+
+Assembly Language ki Problems ⭐
+
+Assembly Language Machine Language se better thi, lekin phir bhi kuch problems thi.
+
+1. Machine Dependent
+
+Har computer ka instruction set aur registers different hote hain.
+
+Ek machine ka Assembly program doosri machine par directly nahi chal sakta.
+
+2. Low-Level Programming
+
+Programmer ko har chhoti instruction manually likhni padti thi.
+
+Yani programmer ko machine ki details sochni parti thi.
+
+Example:
+
+Ek house design karte waqt agar architect sirf bricks aur nails ke bare me soche to design mushkil ho jata hai.
+
+Isi tarah Assembly Language low-level thi.
+
+High-Level Languages ⭐
+
+Computer Scientists ne High-Level Languages banayi.
+
+Inka purpose tha:
+
+Programming easy banana.
+
+Machine details hide karna.
+
+Readable code provide karna.
+
+Machine independent software banana.
+
+High-Level Primitive ⭐
+
+High-Level Primitive ek bada logical task represent karta hai.
+
+Example:
+
+TotalCost = Price + ShippingCharge
+
+Programmer ko ye nahi sochna padta ke registers ya memory addresses kaise use hongi.
+
+Compiler baad me is statement ko Machine Language me convert kar deta hai.
+
+Compiler ⭐
+
+Compiler ka kaam:
+
+High-Level Program
+
+↓
+
+Machine Language Program
+
+Compiler pehle pura program translate karta hai.
+
+Phir translated program future me execute kiya jata hai.
+
+Interpreter ⭐
+
+Interpreter bhi High-Level Language ko execute karta hai.
+
+Difference ye hai:
+
+Compiler
+
+Pehle pura program translate karta hai.
+
+Phir execute hota hai.
+
+Interpreter
+
+Ek statement translate karta hai.
+
+Usi waqt execute bhi kar deta hai.
+
+Koi separate Machine Language file create nahi karta.
+
+Compiler vs Interpreter ⭐
+
+Compiler
+
+Entire program translate karta hai.
+
+Machine code generate karta hai.
+
+Program baad me run hota hai.
+
+Interpreter
+
+Line-by-line translate karta hai.
+
+Line-by-line execute karta hai.
+
+Machine code permanently store nahi karta.
+
+Machine Independent ⭐
+
+Machine Independent ka matlab:
+
+Ek hi High-Level program ko different computers par chalaya ja sakta hai.
+
+Sirf us machine ke Compiler ya Interpreter ki zarurat hoti hai.
+
+Examples of 3GL ⭐
+
+FORTRAN
+
+FORmula TRANslator
+
+Scientific aur Engineering applications ke liye develop hui.
+
+COBOL
+
+COmmon Business-Oriented Language
+
+Business applications ke liye U.S. Navy ne develop ki.
+
+Formal Language vs Natural Language ⭐
+
+Formal Language
+
+Programming Languages.
+
+Strict grammar aur syntax hoti hai.
+
+Har rule clearly defined hota hai.
+
+Example:
+
+C
+
+C++
+
+Java
+
+Python
+
+Natural Language
+
+English
+
+German
+
+Urdu
+
+Ye naturally evolve hui hain.
+
+Inki grammar flexible hoti hai aur ambiguity ho sakti hai.
+
+Grace Hopper ⭐
+
+Grace Hopper ko First Compiler ki developer mana jata hai.
+
+Unhone demonstrate kiya ke programming language ke keywords ko kisi bhi natural language me convert kiya ja sakta hai.
+
+Logon ne galat samjha ke computer German language samajhne laga hai.
+
+Actually computer sirf predefined programming keywords samajhta tha, natural language nahi.
+
+Important Points ⭐
+
+Machine Language = 1GL
+
+Assembly Language = 2GL
+
+High-Level Language = 3GL
+
+Assembler → Assembly → Machine Language
+
+Compiler → High-Level → Machine Language (Entire Program)
+
+Interpreter → High-Level → Execute Line by Line
+
+Assembly Language = Machine Dependent
+
+High-Level Language = Machine Independent
+
+FORTRAN → Scientific & Engineering
+
+COBOL → Business Applications
+
+Grace Hopper → First Compiler
+
+Formal Language = Strict grammar
+
+Natural Language = Human language
+
+Quick Revision
+
+1GL = Machine Language
+2GL = Assembly Language
+3GL = High-Level Language
+
+Assembler → Converts Assembly to Machine Language.
+
+Compiler → Translates whole program before execution.
+
+Interpreter → Translates and executes one statement at a time.
+
+Assembly Language = Machine Dependent.
+
+High-Level Languages = Machine Independent.
+
+FORTRAN = Scientific.
+
+COBOL = Business.
+
+Grace Hopper = First Compiler.
+
+Formal Languages have fixed grammar.
+Natural Languages evolve naturally and may be ambiguous.`,
+  questions: [
+    {
+      q: 'Why is Assembly Language considered machine dependent?',
+      options: [
+        'A. It can only be executed on one operating system',
+        'B. Its instructions depend on a particular machine’s instruction set and registers',
+        'C. It uses English keywords',
+        'D. It cannot be translated into machine language'
+      ],
+      answer: 'B. Its instructions depend on a particular machine’s instruction set and registers',
+      diff: 'hard',
+    },
+    {
+      q: 'Which translator converts Assembly Language into Machine Language?',
+      options: [
+        'A. Compiler',
+        'B. Interpreter',
+        'C. Assembler',
+        'D. Linker'
+      ],
+      answer: 'C. Assembler',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the fundamental difference between a Compiler and an Interpreter?',
+      options: [
+        'A. Compiler executes line by line, Interpreter translates the whole program',
+        'B. Compiler translates the complete program before execution, while Interpreter translates and executes one statement at a time',
+        'C. Both always produce identical machine code files',
+        'D. Interpreter only works with Assembly Language'
+      ],
+      answer: 'B. Compiler translates the complete program before execution, while Interpreter translates and executes one statement at a time',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement correctly matches a third-generation programming language with its original application?',
+      options: [
+        'A. COBOL — Scientific Computing',
+        'B. FORTRAN — Business Applications',
+        'C. FORTRAN — Scientific and Engineering Applications',
+        'D. Assembly Language — Artificial Intelligence'
+      ],
+      answer: 'C. FORTRAN — Scientific and Engineering Applications',
+      diff: 'hard',
+    },
+    {
+      q: 'Why are High-Level Languages considered machine independent?',
+      options: [
+        'A. They do not require translation',
+        'B. The same program can be translated for different computer architectures using an appropriate compiler or interpreter',
+        'C. They are written only in English',
+        'D. They directly execute on every processor without conversion'
+      ],
+      answer: 'B. The same program can be translated for different computer architectures using an appropriate compiler or interpreter',
+      diff: 'hard',
+    }
+  ]
+},
+
+111: {
+  title: "Programming Languages: Machine Independence",
+  summary: `Machine Independence ⭐
+
+Machine Independence ka matlab hai:
+
+👉 Aik hi program ko different computers par run karna bina dobara likhe.
+
+Third-Generation Languages ⭐
+
+Third-generation languages (jaise FORTRAN aur COBOL) ka sab se bara advantage tha:
+
+• Machine Independent
+• High-Level
+• Easy to understand
+• Portable
+
+Is liye theoretically aik hi program ko different computers par sirf us machine ke compiler se compile karke chalaya ja sakta tha.
+
+Reality ⭐
+
+Practical life me 100% machine independence possible nahi hoti.
+
+Kyun?
+
+Har computer ka hardware aur operating environment different hota hai.
+
+Example:
+
+• Input/Output (I/O) handling different ho sakti hai.
+• Compiler implementation different ho sakti hai.
+
+Isi wajah se same language ke different versions ya dialects exist karte hain.
+
+Dialect ⭐
+
+Dialect ka matlab hai:
+
+👉 Same programming language ka different version ya implementation.
+
+Example:
+
+Ek compiler C language ko thora different support karta hai aur doosra compiler kuch aur features provide karta hai.
+
+Dono C language hain, lekin unke dialects different ho sakte hain.
+
+Portability ⭐
+
+Portability ka matlab hai:
+
+👉 Program ko aik machine se doosri machine par easily move karna.
+
+Third-generation languages ki portability machine language aur assembly language se bohat better hoti hai.
+
+Standards ⭐
+
+Different compilers ko same rules follow karwane ke liye standards banaye gaye.
+
+Important organizations:
+
+• ANSI (American National Standards Institute)
+• ISO (International Organization for Standardization)
+
+Ye organizations programming languages ke official standards publish karti hain.
+
+Language Extensions ⭐
+
+Kai compiler companies apne extra features add karti hain.
+
+Inhe Language Extensions kehte hain.
+
+Example:
+
+Ek compiler koi extra keyword ya function support karta hai jo standard language ka part nahi hota.
+
+Agar programmer extension use kare to:
+
+❌ Program doosre compiler par run na kare.
+
+Ye portability ko reduce karta hai.
+
+Important Concept ⭐
+
+Third-generation languages perfect machine independent nahi thi.
+
+Lekin:
+
+✔ Machine language aur assembly language se bohat zyada portable thi.
+✔ Programs ko different machines par relatively asani se move kiya ja sakta tha.
+
+Future Goal ⭐
+
+Computer scientists ka next goal sirf machine independence nahi tha.
+
+Wo aisi languages banana chahte thay jo:
+
+• Human concepts ko directly samajh saken.
+• High-level instructions ko accept kar saken.
+• Sirf algorithm execute na karein balki algorithm discover karne me bhi madad karein.
+
+Isi wajah se programming languages continuously evolve hoti rahi aur new generations aati rahi.
+
+Quick Revision ⭐
+
+• Machine Independence = Same program on different machines.
+• Third-generation languages are mostly machine independent.
+• Reality me 100% portability possible nahi hoti.
+• Dialect = Same language ka different version.
+• Portability = Program ko easily dusri machine par move karna.
+• ANSI aur ISO language standards publish karte hain.
+• Language Extensions portability ko reduce kar sakti hain.
+• Future goal = Machines human-level concepts ko samajh saken aur software development ko aur intelligent banaya ja sake.`,
+  questions: [
+   {
+  q: 'Which statement best describes machine independence?',
+  options: [
+    'A. A program can run on different computers after using the appropriate compiler',
+    'B. A program executes without requiring any compiler',
+    'C. A program depends on the hardware registers of one machine',
+    'D. A program must be rewritten into machine language before execution'
+  ],
+  answer: 'A. A program can run on different computers after using the appropriate compiler',
+  diff: 'hard',
+},
+   {
+  q: 'Why do language extensions reduce portability?',
+  options: [
+    'A. They increase the number of program statements',
+    'B. They rely on features not supported by every compiler',
+    'C. They require more computer memory for execution',
+    'D. They replace the standard syntax of the language'
+  ],
+  answer: 'B. They rely on features not supported by every compiler',
+  diff: 'hard',
+},
+    {
+      q: 'In programming languages, a "dialect" refers to:',
+      options: [
+        'A. A programming bug',
+        'B. A different implementation or variation of the same language',
+        'C. A machine language instruction',
+        'D. A type of compiler error'
+      ],
+      answer: 'B. A different implementation or variation of the same language',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the main disadvantage of using compiler-specific language extensions?',
+      options: [
+        'A. They reduce program execution speed',
+        'B. They prevent debugging',
+        'C. They reduce portability across different compilers',
+        'D. They increase memory size only'
+      ],
+      answer: 'C. They reduce portability across different compilers',
+      diff: 'hard',
+    },
+    {
+      q: 'According to the lecture, the future vision of programming languages was to:',
+      options: [
+        'A. Eliminate algorithms completely',
+        'B. Force programmers to write more machine code',
+        'C. Enable computers to work with high-level human concepts and assist in algorithm discovery',
+        'D. Replace all compilers with assembly language'
+      ],
+      answer: 'C. Enable computers to work with high-level human concepts and assist in algorithm discovery',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+
+112: {
+  title: "Programming Languages: Imperative Paradigm",
+  summary: `Programming Paradigm ⭐
+
+Programming Paradigm ka matlab hai:
+
+👉 Program ya software banane ka approach (style ya method).
+
+Pehle programming languages ko sirf generations (1st, 2nd, 3rd...) me classify kiya jata tha.
+
+Lekin baad me pata chala ke languages sirf generations ki wajah se different nahi hoti, balki unka programming style bhi different hota hai.
+
+Isi style ko Programming Paradigm kehte hain.
+
+Programming Paradigms ⭐
+
+Lecture ke mutabiq 4 major paradigms hain:
+
+• Imperative
+• Object-Oriented (OOP)
+• Functional
+• Declarative
+
+Har paradigm problem solve karne ka apna approach use karta hai.
+
+Software Development Paradigm ⭐
+
+Lecture me important point:
+
+Programming Paradigm sirf coding ko affect nahi karta.
+
+Ye software design aur development process ko bhi affect karta hai.
+
+Is liye "Software Development Paradigm" term zyada accurate mani jati hai.
+
+Imperative Paradigm ⭐
+
+Imperative Paradigm ko Procedural Paradigm bhi kehte hain.
+
+Ye sab se traditional aur common programming approach hai.
+
+Python, Machine Language aur hamari Pseudocode isi paradigm par based hain.
+
+Imperative Paradigm ka Main Idea ⭐
+
+Imperative paradigm me programmer:
+
+✔ Problem ka algorithm banata hai.
+✔ Algorithm ko step-by-step commands ki form me likhta hai.
+✔ Computer un commands ko sequence me execute karta hai.
+
+Yani focus hota hai:
+
+👉 "How to solve the problem."
+
+Example
+
+Tea banana:
+
+Step 1 → Water boil karo.
+Step 2 → Tea leaves add karo.
+Step 3 → Sugar add karo.
+Step 4 → Milk add karo.
+Step 5 → Serve karo.
+
+Ye pure step-by-step instructions hain.
+
+Isi liye ye Imperative approach hai.
+
+Important Point ⭐
+
+Imperative paradigm me:
+
+• Sequence of commands likhi jati hai.
+• Data ko manipulate kiya jata hai.
+• Algorithm ko follow karke result produce hota hai.
+
+Quick Revision ⭐
+
+• Programming Paradigm = Programming ka style ya approach.
+• 4 major paradigms = Imperative, Object-Oriented, Functional, Declarative.
+• Imperative = Procedural Paradigm.
+• Python aur Pseudocode imperative paradigm follow karte hain.
+• Imperative paradigm me algorithm ko step-by-step commands ki form me likha jata hai.
+• Focus = "How to solve the problem."
+• Programming paradigm software development process ko bhi affect karta hai.`,
+  questions: [
+    {
+      q: 'A programming paradigm primarily refers to the:',
+      options: [
+        'A. Version of a programming language',
+        'B. Style or approach used to solve problems',
+        'C. Speed of program execution',
+        'D. Hardware architecture of a computer'
+      ],
+      answer: 'B. Style or approach used to solve problems',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement best describes the imperative paradigm?',
+      options: [
+        'A. It focuses on describing the desired result only',
+        'B. It expresses a solution as a sequence of commands',
+        'C. It eliminates the need for algorithms',
+        'D. It is based entirely on mathematical functions'
+      ],
+      answer: 'B. It expresses a solution as a sequence of commands',
+      diff: 'hard',
+    },
+    {
+      q: 'According to the lecture, the term "programming paradigm" is considered a misnomer because it:',
+      options: [
+        'A. Applies only to machine language',
+        'B. Describes software development as a whole, not just programming',
+        'C. Refers only to compiler design',
+        'D. Is limited to object-oriented languages'
+      ],
+      answer: 'B. Describes software development as a whole, not just programming',
+      diff: 'hard',
+    },
+    {
+      q: 'Which of the following belongs to the imperative paradigm according to the lecture?',
+      options: [
+        'A. Python',
+        'B. Prolog',
+        'C. SQL',
+        'D. Lisp'
+      ],
+      answer: 'A. Python',
+      diff: 'hard',
+    },
+    {
+      q: 'In the imperative paradigm, the programmer is mainly concerned with:',
+      options: [
+        'A. What result is required',
+        'B. Why the program should execute',
+        'C. How the problem should be solved',
+        'D. Where the program will be executed'
+      ],
+      answer: 'C. How the problem should be solved',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+113: {
+  title: "Programming Languages: Declarative Paradigm",
+  summary: `Declarative Paradigm ⭐
+
+Declarative Paradigm imperative paradigm ka opposite approach hai.
+
+Imperative me programmer batata hai:
+
+👉 Problem **kaise (How)** solve karni hai.
+
+Declarative me programmer sirf batata hai:
+
+👉 Problem **kya (What)** hai.
+
+Algorithm system khud use karta hai.
+
+Main Idea ⭐
+
+Declarative programming me programmer algorithm nahi likhta.
+
+Sirf problem ko accurately describe karta hai.
+
+Uske baad system ka built-in (pre-established) algorithm automatically solution nikalta hai.
+
+Pre-established Algorithm ⭐
+
+Declarative system ke andar pehle se ek general-purpose problem-solving algorithm hota hai.
+
+Ye algorithm har baar programmer nahi likhta.
+
+Programmer sirf input ya problem provide karta hai.
+
+Example ⭐
+
+Weather Forecast
+
+Weather expert sirf current weather data deta hai.
+
+• Temperature
+• Humidity
+• Wind Speed
+• Air Pressure
+
+Forecast banane ka algorithm weather expert nahi likhta.
+
+System ka built-in simulation algorithm automatically prediction generate karta hai.
+
+Isi ko Declarative approach kehte hain.
+
+Special-Purpose Languages ⭐
+
+Shuru me declarative languages mostly special-purpose thi.
+
+Ye specific fields ke liye banayi gayi thi.
+
+Examples:
+
+• Weather Forecasting
+• Economic Models
+• Political Simulations
+• Environmental Simulations
+
+Simulation ⭐
+
+Simulation ka matlab hai:
+
+👉 Kisi real system ko computer me model karna aur uske future behavior ka prediction karna.
+
+Formal Logic ⭐
+
+Baad me computer scientists ne discover kiya ke Mathematical Formal Logic ko use karke general-purpose declarative systems banaye ja sakte hain.
+
+Isi discovery ki wajah se:
+
+• Declarative Programming ko boost mila.
+• Logic Programming ka concept develop hua.
+
+Important Difference ⭐
+
+Imperative:
+
+✔ Programmer algorithm likhta hai.
+✔ Focus = How to solve.
+
+Declarative:
+
+✔ Programmer sirf problem describe karta hai.
+✔ Focus = What to solve.
+✔ Algorithm system khud apply karta hai.
+
+Quick Revision ⭐
+
+• Declarative = Describe the problem, not the algorithm.
+• Focus = "What" instead of "How".
+• System built-in algorithm use karta hai.
+• Early declarative languages special-purpose thi.
+• Simulation = Real-world system ka computer model.
+• Formal Logic ne declarative programming ko promote kiya.
+• Logic Programming declarative paradigm se related hai.`,
+  questions: [
+    {
+      q: 'The declarative paradigm primarily requires the programmer to:',
+      options: [
+        'A. Describe the problem instead of the algorithm',
+        'B. Write machine-level instructions',
+        'C. Design the compiler before coding',
+        'D. Specify processor-specific operations'
+      ],
+      answer: 'A. Describe the problem instead of the algorithm',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement best distinguishes declarative programming from imperative programming?',
+      options: [
+        'A. Declarative focuses on "what" to solve, while imperative focuses on "how" to solve',
+        'B. Declarative always executes faster than imperative',
+        'C. Imperative does not require algorithms',
+        'D. Declarative cannot be used for simulations'
+      ],
+      answer: 'A. Declarative focuses on "what" to solve, while imperative focuses on "how" to solve',
+      diff: 'hard',
+    },
+    {
+      q: 'Why were early declarative programming languages mostly special-purpose?',
+      options: [
+        'A. They depended on predefined algorithms designed for specific applications',
+        'B. They supported only one programming language',
+        'C. They could not process input data',
+        'D. They required machine language instructions'
+      ],
+      answer: 'A. They depended on predefined algorithms designed for specific applications',
+      diff: 'hard',
+    },
+    {
+      q: 'According to the lecture, what major development greatly advanced the declarative paradigm?',
+      options: [
+        'A. The invention of assembly language',
+        'B. The use of formal logic as a general-purpose problem-solving method',
+        'C. The introduction of machine code optimization',
+        'D. The development of object-oriented programming'
+      ],
+      answer: 'B. The use of formal logic as a general-purpose problem-solving method',
+      diff: 'hard',
+    },
+    {
+      q: 'In a weather forecasting system based on the declarative paradigm, the programmer mainly provides:',
+      options: [
+        'A. The complete forecasting algorithm',
+        'B. The machine instructions for prediction',
+        'C. A description of the current weather conditions',
+        'D. The source code of the simulation engine'
+      ],
+      answer: 'C. A description of the current weather conditions',
+      diff: 'hard',
+    },
+  ]
+},
+
   },
 
   // ─────────────────────────────────────────
