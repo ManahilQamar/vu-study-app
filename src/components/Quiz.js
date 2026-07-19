@@ -385,8 +385,9 @@ export default function Quiz({ subject, lectureIndex, setPage }) {
               💡 Explain
             </button>
           </div>
-          <div className="q-text">{q.q}</div>
-        </div>
+<div className="q-text" style={{ whiteSpace: 'pre-wrap' }}>
+  {q.q}
+</div>        </div>
 
         {/* Options */}
         <div className="opts">

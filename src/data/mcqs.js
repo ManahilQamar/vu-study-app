@@ -37540,11 +37540,11 @@ Semantics = Meaning (Kya kaam karega)`,
   q: 'The main purpose of introducing primitives is to:',
   options: [
     'A. Improve execution speed',
-    'B. Remove ambiguity',
-    'C. Reduce memory usage',
+    'B. Reduce memory usage',
+    'C. Remove ambiguity ',
     'D. Simplify hardware'
   ],
-  answer: 'B. Remove ambiguity',
+  answer: 'C. Remove ambiguity',
   diff: 'hard',
 },
 {
@@ -37596,104 +37596,129 @@ Semantics = Meaning (Kya kaam karega)`,
 
   89: {
     title: 'Algorithm: Representation (Pseudocode — if/else)',
-    summary: `**Yeh module kya cover karta hai:**
-Pseudocode ki definition, popular variants, assignment statement, if/else structure.
+    summary: `Module 89 – Algorithm Representation (Pseudocode)
+Pseudocode
 
-**Pseudocode:**
-Formal programming language ki jagah less formal, intuitive notation — algorithms develop karte waqt. Ek programming language ke rules loose karo + less formal constructs mix karo.
+Pseudocode ek informal way hai algorithm ko likhne ka.
 
-**Popular Variants:**
-- Algol aur Pascal ke loose versions (decades tak textbooks mein)
-- Java aur C syntax se influenced (recently)
-- Essential: consistent, concise notation for recurring structures
+Ye actual programming language nahi hoti, balke algorithm ko easily samjhane aur plan karne ke liye use hoti hai.
 
-**Assignment Statement:**
-Computed value save karne ke liye:
-  name = expression
+Pseudocode ki Purpose
 
-Example: RemainingFunds = CheckingBalance + SavingsBalance
-Yeh Python assignment statement se directly related hai.
+Pseudocode ka use programming start karne se pehle algorithm ko design karne ke liye hota hai.
 
-**if/else Structure:**
-Condition ke basis par ek activity select karna:
-  if (condition):
-      activity
-  else:
-      activity
+Isay humans asani se samajh sakte hain.
 
-if aur else ke baad colon. Activity indented hoti hai. Multiple steps = saari indented.
+Pseudocode ki Features
+Simple aur easy to read hoti hai.
+Kisi specific programming language se bind nahi hoti.
+Baad me asani se kisi bhi programming language me convert ki ja sakti hai.
+Consistent aur concise notation use karti hai.
+Assignment Statement
 
-Example:
-  if (year is leap year): daily total = total / 366
-  else: daily total = total / 365
+Kisi value ko future use ke liye save karne ko Assignment kehte hain.
 
-**Yaad rakho:**
-- Pseudocode = informal notation
-- name = expression → assignment
-- if/else → selection structure
-- Indentation substructures delineate karta hai
-- Algol, Pascal, Java, C se pseudocode styles aati hain`,
+Syntax
+
+name = expression
+
+Example
+
+RemainingFunds = CheckingBalance + SavingsBalance
+
+Yahan RemainingFunds me dono balances ka sum store ho raha hai.
+
+Selection (if-else)
+
+Jab decision lena ho to if-else use hota hai.
+
+Syntax
+
+if (condition):
+    activity
+else:
+    activity
+
+Agar condition true ho to if wala code chalega.
+
+Agar condition false ho to else wala code chalega.
+
+Example
+if (year is leap year):
+    dailyTotal = total / 366
+else:
+    dailyTotal = total / 365
+
+Agar leap year hai to 366 se divide hoga, warna 365 se.
+
+Indentation
+
+Pseudocode me indentation batati hai ke kaunsa statement if ya else ka part hai.
+
+Indentation code ko readable banati hai.
+
+Quick Revision
+Pseudocode = Algorithm likhne ka informal tareeqa.
+Ye actual programming language nahi hoti.
+Assignment (=) value store karne ke liye use hota hai.
+if-else decision making ke liye use hota hai.
+Indentation batati hai ke kaunsa code kis block ka hissa hai.`,
     questions: [
-      {
-        q: 'Pseudocode is best described as:',
-        options: ['A. An informal, intuitive notational system for expressing algorithm ideas during development', 'B. A strict formal compiled programming language', 'C. Machine code written in English', 'D. A type of markup language like HTML'],
-        answer: 'A. An informal, intuitive notational system for expressing algorithm ideas during development',
-        diff: 'easy',
-      },
-      {
-        q: '"RemainingFunds = CheckingBalance + SavingsBalance" in pseudocode means:',
-        options: ['A. All three values are set to zero', 'B. RemainingFunds is subtracted from CheckingBalance', 'C. CheckingBalance and SavingsBalance are compared', 'D. The sum is computed and saved under the name RemainingFunds for future use'],
-        answer: 'D. The sum is computed and saved under the name RemainingFunds for future use',
-        diff: 'medium',
-      },
-      {
-        q: 'In the if/else pseudocode structure, what character immediately follows the condition and else keyword?',
-        options: ['A. A colon (:)', 'B. A semicolon (;)', 'C. A curly brace ({)', 'D. A period (.)'],
-        answer: 'A. A colon (:)',
-        diff: 'medium',
-      },
-      {
-        q: 'How is the activity (body) of an if or else branch indicated in pseudocode?',
-        options: ['A. By curly braces { }', 'B. By indentation', 'C. By square brackets [ ]', 'D. By writing it in UPPERCASE'],
-        answer: 'B. By indentation',
-        diff: 'easy',
-      },
-      {
-        q: 'The pseudocode assignment statement format is directly equivalent to the assignment statement in which language?',
-        options: ['A. Java', 'B. C', 'C. Algol', 'D. Python'],
-        answer: 'D. Python',
-        diff: 'hard',
-      },
-      {
-        q: 'The if/else structure selects:',
-        options: ['A. One of two activities depending on a true/false condition', 'B. All activities simultaneously', 'C. An activity to repeat many times', 'D. A new variable to define'],
-        answer: 'A. One of two activities depending on a true/false condition',
-        diff: 'easy',
-      },
-      {
-        q: 'One ESSENTIAL property of any pseudocode, regardless of its source language, is:',
-        options: ['A. It must be written in English only', 'B. It must compile without errors on a real compiler', 'C. It must be exactly 10 lines or fewer', 'D. A consistent, concise notation for representing recurring semantic structures'],
-        answer: 'D. A consistent, concise notation for representing recurring semantic structures',
-        diff: 'hard',
-      },
-      {
-        q: 'If "year is NOT a leap year" in the leap-year if/else example, what executes?',
-        options: ['A. The algorithm terminates immediately', 'B. The if branch still executes anyway', 'C. The else branch: daily total = total / 365', 'D. Total is reset to zero'],
-        answer: 'C. The else branch: daily total = total / 365',
-        diff: 'medium',
-      },
-      {
-        q: 'Algol and Pascal became popular bases for pseudocode in textbooks because:',
-        options: ['A. They were the only languages with if/else structures', 'B. ICANN mandated their use in academic writing', 'C. These languages were widely used in textbooks and academic papers for decades, making their syntax familiar', 'D. They were the fastest languages available'],
-        answer: 'C. These languages were widely used in textbooks and academic papers for decades, making their syntax familiar',
-        diff: 'medium',
-      },
-      {
-        q: 'If an activity in an if/else structure has multiple steps, how are they shown?',
-        options: ['A. Written on one line separated by commas', 'B. All indented equally below the condition', 'C. Only the first step is included', 'D. Using numbered bullet points'],
-        answer: 'D. Using numbered bullet points',
-        diff: 'hard',
-      },
+     {
+  q: 'The primary purpose of pseudocode is to:',
+  options: [
+    'A. Execute algorithms directly',
+    'B. Replace programming languages',
+    'C. Design algorithms before coding',
+    'D. Improve processor speed'
+  ],
+  answer: 'C. Design algorithms before coding',
+  diff: 'hard',
+},
+{
+  q: 'In pseudocode, the statement "name = expression" is used to:',
+  options: [
+    'A. Store a computed value',
+    'B. Compare two values',
+    'C. Display output',
+    'D. Check a condition'
+  ],
+  answer: 'A. Store a computed value',
+  diff: 'hard',
+},
+{
+  q: 'Which semantic structure is represented by the "if-else" construct?',
+  options: [
+    'A. Repetition',
+    'B. Assignment',
+    'C. Selection',
+    'D. Declaration'
+  ],
+  answer: 'C. Selection',
+  diff: 'hard',
+},
+{
+  q: 'In pseudocode, indentation is mainly used to:',
+  options: [
+    'A. Increase execution speed',
+    'B. Show block structure',
+    'C. Declare variables',
+    'D. End a program'
+  ],
+  answer: 'B. Show block structure',
+  diff: 'hard',
+},
+{
+  q: 'Which statement about pseudocode is TRUE?',
+  options: [
+    'A. It is a formal programming language',
+    'B. It must follow Python syntax exactly',
+    'C. It is an informal notation for expressing algorithms',
+    'D. It can only be executed by a compiler'
+  ],
+  answer: 'C. It is an informal notation for expressing algorithms',
+  diff: 'hard',
+},
     ],
   },
 
@@ -37752,8 +37777,8 @@ Kisi statement ko repeatedly execute karna jab tak condition true rahe.
       },
       {
         q: 'In pseudocode, what character follows the condition in a while statement?',
-        options: ['A. A colon (:)', 'B. A semicolon', 'C. A period', 'D. An equal sign'],
-        answer: 'A. A colon (:)',
+        options: ['A. A colon', 'B. A semicolon', 'C. A period', 'D. An equal sign'],
+        answer: 'A. A colon',
         diff: 'easy',
       },
       {
@@ -37762,230 +37787,129 @@ Kisi statement ko repeatedly execute karna jab tak condition true rahe.
         answer: 'A. Repetition — looping until condition becomes false',
         diff: 'easy',
       },
-      {
-        q: 'How does a while structure differ from if/else?',
-        options: ['A. while uses a colon; if/else does not', 'B. while assigns values; if/else only loops', 'C. while repeatedly checks condition and repeats activity; if/else checks once and picks one of two activities', 'D. There is no meaningful difference between them'],
-        answer: 'C. while repeatedly checks condition and repeats activity; if/else checks once and picks one of two activities',
-        diff: 'medium',
-      },
-      {
-        q: 'Both informal phrasings ("As long as..." and "While...") reduce to the SAME pseudocode. This shows:',
-        options: ['A. Only one of those statements is logically correct', 'B. Pseudocode cannot express natural language at all', 'C. Pseudocode provides ONE uniform way to express a common semantic structure regardless of informal phrasing', 'D. Pseudocode requires exact English wording to be valid'],
-        answer: 'C. Pseudocode provides ONE uniform way to express a common semantic structure regardless of informal phrasing',
-        diff: 'hard',
-      },
+     
+    
       {
         q: 'When a while loop condition is TRUE on first check:',
         options: ['A. The activity executes, then the condition is checked again', 'B. The loop is skipped entirely', 'C. The program terminates immediately', 'D. Execution jumps to the else branch'],
         answer: 'A. The activity executes, then the condition is checked again',
         diff: 'medium',
       },
-      {
-        q: 'The three pseudocode structures covered in modules 89 and 90 together are:',
-        options: ['A. For, switch, do-while', 'B. Assignment (name=expression), if/else, while', 'C. Input, output, goto', 'D. Function, class, object'],
-        answer: 'B. Assignment (name=expression), if/else, while',
-        diff: 'medium',
-      },
-      {
-        q: 'If ZERO tickets remain when the while loop is FIRST reached:',
-        options: ['A. The loop runs once anyway out of default', 'B. The condition is false immediately — activity never executes and execution moves past the while structure', 'C. An error occurs and the program stops', 'D. The algorithm restarts from the beginning'],
-        answer: 'D. The condition is false immediately — activity never executes and execution moves past the while structure',
-        diff: 'hard',
-      },
+      
+     
     ],
   },
 91: {
   title: "Algorithm: Discovery (The Art of Problem Solving)",
-  summary: `**Key Topics Covered:**
-- Problem-solving techniques (pertinent to many fields)
-- Algorithm discovery as problem solving
-- Polya's four phases (1945)
-- Adapted phases for program development
-- Example: Determining ages of three children
-- Understanding evolves during problem solving
+  summary: `Function
 
----
+Function code ka ek reusable block hota hai jo kisi specific task ko perform karta hai.
 
-**Simple Understanding:**
+Ek baar function bana lo, phir usay jitni baar chahe call kar sakte ho.
 
-**Problem Solving and Algorithms:**
-👉 Close association between algorithm discovery and problem solving.
-👉 Goal: reduce problem solving to an algorithm? → **Impossible**.
-👉 Problem solving is an artistic skill, not a precise science.
+Function Structure
 
----
+Pseudocode me function def keyword se start hota hai.
 
-**Polya's Problem-Solving Phases (1945):**
-1. **Understand the problem**
-2. **Devise a plan** for solving the problem
-3. **Carry out the plan**
-4. **Evaluate** the solution (accuracy + potential for other problems)
+Syntax
 
----
+def FunctionName():
+    statements
+def → Function define karne ke liye.
+FunctionName → Function ka naam.
+Indented statements → Function ka kaam.
+Example
+def Greetings():
+    Print "Hello"
+    Print "Hello"
+    Print "Hello"
 
-**Adapted for Program Development:**
-1. Understand the problem
-2. Get an idea of how an algorithmic function might solve it
-3. Formulate algorithm and represent as program
-4. Evaluate program for accuracy and as tool for other problems
+Jab Greetings() call hoga to Hello 3 baar print hoga.
 
----
+Function Call
 
-**Example: Three Children's Ages**
-👉 Product of ages = 36
-👉 Sum clues insufficient (needed third clue)
-👉 Possible triples with product 36: (1,1,36),(1,2,18),(1,3,12),(1,4,9),(1,6,6),(2,2,9),(2,3,6),(3,3,4)
-👉 Sums: (1,6,6)=13, (2,2,9)=13 (both sum to 13) – other sums unique.
-👉 Since sum not enough, triple must be one of these two.
-👉 Third clue: "oldest child plays piano" → implies there is an **oldest** (not twins).
-👉 (1,6,6) has oldest? Actually 6 and 6 are twins, no unique oldest; (2,2,9) has oldest 9.
-👉 Thus ages: 2, 2, and 9.
+Function ko use karne ke liye uska naam + () likhte hain.
 
----
+Example
 
-**Key Insight:**
-👉 Understanding may not be complete until after implementing plan (Phase 3).
-👉 Irregularities in problem-solving process make systematic approaches difficult.
+Greetings()
 
----
+Is se Greetings function execute ho jayega.
 
-**Important Vocabulary:**
-- Problem solving = finding solutions to complex tasks
-- Algorithm discovery = creating step-by-step procedures
-- Phase = stage in a process
-- Triple = set of three numbers
-- Product = result of multiplication
-- Sum = result of addition
+Function in if-else
 
----
+Functions ko decision making ke andar bhi call kar sakte hain.
 
-**Quick Revision Points:**
-- Problem solving cannot be reduced to an algorithm (impossible).
-- Polya's phases: Understand, Plan, Execute, Evaluate.
-- For programming: understand, idea, formulate program, evaluate.
-- Example: ages of children – product 36, sum ambiguous, oldest child clue.
-- Solution: (2,2,9).`,
+if (approved):
+    ProcessLoan()
+else:
+    RejectApplication()
+
+Agar condition true ho to ProcessLoan() chalega.
+
+Agar false ho to RejectApplication() chalega.
+
+Quick Revision
+Function = Reusable block of code.
+def function banane ke liye use hota hai.
+Function ko FunctionName() likh kar call karte hain.
+Functions ko if-else ke andar bhi use kiya ja sakta hai.`,
   questions: [
-    {
-      q: "The process of algorithm discovery is closely associated with:",
-      options: ["A. Hardware design", "B. General problem solving", "C. Data entry", "D. Network administration"],
-      answer: "B. General problem solving",
-      diff: "easy"
-    },
-    {
-      q: "Reducing problem solving to an algorithm has been shown to be:",
-      options: ["A. Easy", "B. Impossible", "C. Done by Polya", "D. The goal of computer science"],
-      answer: "B. Impossible",
-      diff: "easy"
-    },
-    {
-      q: "The ability to solve problems is described as more of a(n):",
-      options: ["A. Precise science", "B. Mathematical formula", "C. Artistic skill", "D. Hardware component"],
-      answer: "C. Artistic skill",
-      diff: "easy"
-    },
-    {
-      q: "Who presented the loosely defined problem-solving phases in 1945?",
-      options: ["A. Alan Turing", "B. G. Polya", "C. Edsger Dijkstra", "D. Donald Knuth"],
-      answer: "B. G. Polya",
-      diff: "medium"
-    },
-    {
-      q: "Which is NOT one of Polya's four phases?",
-      options: ["A. Understand the problem", "B. Devise a plan", "C. Write the code", "D. Evaluate the solution"],
-      answer: "C. Write the code",
-      diff: "easy"
-    },
-    {
-      q: "In Polya's phases, the third step is:",
-      options: ["A. Understand the problem", "B. Devise a plan", "C. Carry out the plan", "D. Evaluate the solution"],
-      answer: "C. Carry out the plan",
-      diff: "easy"
-    },
-    {
-      q: "Translated to program development, Phase 3 is:",
-      options: ["A. Understand the problem", "B. Get an idea of how an algorithmic function might solve it", "C. Formulate the algorithm and represent it as a program", "D. Evaluate the program"],
-      answer: "C. Formulate the algorithm and represent it as a program",
-      diff: "medium"
-    },
-    {
-      q: "In the children's ages problem, the first clue is that the product of ages is:",
-      options: ["A. 13", "B. 36", "C. 12", "D. 18"],
-      answer: "B. 36",
-      diff: "easy"
-    },
-    {
-      q: "What is the product of the ages (2,2,9)?",
-      options: ["A. 13", "B. 36", "C. 18", "D. 24"],
-      answer: "B. 36",
-      diff: "easy"
-    },
-    {
-      q: "After the second clue (sum), A still needed another clue because:",
-      options: ["A. The sum was too large", "B. The sum appeared for more than one triple", "C. A forgot the sum", "D. The sum was negative"],
-      answer: "B. The sum appeared for more than one triple",
-      diff: "medium"
-    },
-    {
-      q: "Which two triples have the same sum?",
-      options: ["A. (1,6,6) and (2,2,9)", "B. (1,2,18) and (3,3,4)", "C. (1,3,12) and (2,3,6)", "D. (1,1,36) and (1,4,9)"],
-      answer: "A. (1,6,6) and (2,2,9)",
-      diff: "medium"
-    },
-    {
-      q: "The sum of both (1,6,6) and (2,2,9) is:",
-      options: ["A. 12", "B. 13", "C. 14", "D. 15"],
-      answer: "B. 13",
-      diff: "easy"
-    },
-    {
-      q: "The third clue 'the oldest child plays the piano' implies:",
-      options: ["A. Only one child is oldest (not twins)", "B. All children are same age", "C. The youngest plays piano", "D. There are no oldest"],
-      answer: "A. Only one child is oldest (not twins)",
-      diff: "easy"
-    },
-    {
-      q: "Why does (1,6,6) get ruled out by the third clue?",
-      options: ["A. Ages sum to wrong number", "B. There is no unique oldest (twins of 6)", "C. Product is not 36", "D. Oldest cannot play piano"],
-      answer: "B. There is no unique oldest (twins of 6)",
-      diff: "easy"
-    },
-    {
-      q: "The final ages of the three children are:",
-      options: ["A. 1,6,6", "B. 2,2,9", "C. 3,3,4", "D. 2,3,6"],
-      answer: "B. 2,2,9",
-      diff: "easy"
-    },
-    {
-      q: "In the problem-solving example, understanding of the problem was completed:",
-      options: ["A. Before Phase 1", "B. During Phase 1 only", "C. Not until attempting to implement the plan (Phase 3)", "D. Never"],
-      answer: "C. Not until attempting to implement the plan (Phase 3)",
-      diff: "medium"
-    },
-    {
-      q: "The children's ages problem demonstrates that:",
-      options: ["A. Problem solving is purely sequential", "B. Understanding may evolve during implementation", "C. Algorithms always work", "D. Mathematics is useless"],
-      answer: "B. Understanding may evolve during implementation",
-      diff: "easy"
-    },
-    {
-      q: "According to the module, developing systematic approaches to problem solving is difficult due to:",
-      options: ["A. Lack of computers", "B. Irregularities in the problem-solving process", "C. Insufficient math knowledge", "D. Too many algorithms"],
-      answer: "B. Irregularities in the problem-solving process",
-      diff: "easy"
-    },
-    {
-      q: "The fourth phase of Polya's model is:",
-      options: ["A. Understand the problem", "B. Devise a plan", "C. Carry out the plan", "D. Evaluate the solution for accuracy and potential"],
-      answer: "D. Evaluate the solution for accuracy and potential",
-      diff: "easy"
-    },
-    {
-      q: "The example problem is often used to illustrate:",
-      options: ["A. Simple arithmetic", "B. The need for creativity and iterative understanding in problem solving", "C. Programming syntax", "D. Hardware limitations"],
-      answer: "B. The need for creativity and iterative understanding in problem solving",
-      diff: "easy"
-    }
+   {
+  q: 'Which keyword is used to define a function in the pseudocode used in this course?',
+  options: [
+    'A. function',
+    'B. define',
+    'C. def',
+    'D. procedure'
+  ],
+  answer: 'C. def',
+  diff: 'hard',
+},
+{
+  q: 'What will be the output of the following pseudocode?\n\ndef Greetings():\n    Print "Hello"\n    Print "Hello"\n\nGreetings()',
+  options: [
+    'A. Hello',
+    'B. Hello Hello',
+    'C. Greetings',
+    'D. No output'
+  ],
+  answer: 'B. Hello Hello',
+  diff: 'hard',
+},
+{
+  q: 'Consider the pseudocode:\n\nif (score >= 50):\n    Pass()\nelse:\n    Fail()\n\nIf score is 40, which function will execute?',
+  options: [
+    'A. Pass()',
+    'B. Fail()',
+    'C. Both Pass() and Fail()',
+    'D. Neither function'
+  ],
+  answer: 'B. Fail()',
+  diff: 'hard',
+},
+{
+  q: 'Which statement correctly describes a function?',
+  options: [
+    'A. It can be used only once',
+    'B. It is a reusable block that performs a specific task',
+    'C. It is used only inside loops',
+    'D. It always returns a value'
+  ],
+  answer: 'B. It is a reusable block that performs a specific task',
+  diff: 'hard',
+},
+{
+  q: 'Identify the correct function definition:',
+  options: [
+    'A. Greetings() def:',
+    'B. function Greetings()',
+    'C. def Greetings():',
+    'D. Greetings:def()'
+  ],
+  answer: 'C. def Greetings():',
+  diff: 'hard',
+},
   ]
 },
 
@@ -37993,752 +37917,2645 @@ Kisi statement ko repeatedly execute karna jab tak condition true rahe.
 
 92: {
   title: "Algorithm: Discovery (The Art of Problem Solving)",
-  summary: `**Key Topics Covered:**
-- Problem-solving techniques (pertinent to many fields)
-- Algorithm discovery as problem solving
-- Polya's four phases (1945)
-- Adapted phases for program development
-- Example: Determining ages of three children
-- Understanding evolves during problem solving
+  summary: `Problem Solving
 
----
+Algorithm banana sirf science nahi, ek art bhi hai.
 
-**Simple Understanding:**
+Har problem ka ek fixed method nahi hota, isliye problem-solving skill practice se develop hoti hai.
 
-**Problem Solving and Algorithms:**
-👉 Close association between algorithm discovery and problem solving.
-👉 Goal: reduce problem solving to an algorithm? → **Impossible**.
-👉 Problem solving is an artistic skill, not a precise science.
+G. Polya's 4 Problem-Solving Phases ⭐
+Phase 1 – Understand the Problem
 
----
+Sabse pehle problem ko achi tarah samjho.
 
-**Polya's Problem-Solving Phases (1945):**
-1. **Understand the problem**
-2. **Devise a plan** for solving the problem
-3. **Carry out the plan**
-4. **Evaluate** the solution (accuracy + potential for other problems)
+Kya diya gaya hai?
+Kya find karna hai?
 
----
+Phase 2 – Devise a Plan
 
-**Adapted for Program Development:**
-1. Understand the problem
-2. Get an idea of how an algorithmic function might solve it
-3. Formulate algorithm and represent as program
-4. Evaluate program for accuracy and as tool for other problems
+Problem solve karne ka plan banao.
 
----
+Socho kis method ya algorithm se solution niklega.
 
-**Example: Three Children's Ages**
-👉 Product of ages = 36
-👉 Sum clues insufficient (needed third clue)
-👉 Possible triples with product 36: (1,1,36),(1,2,18),(1,3,12),(1,4,9),(1,6,6),(2,2,9),(2,3,6),(3,3,4)
-👉 Sums: (1,6,6)=13, (2,2,9)=13 (both sum to 13) – other sums unique.
-👉 Since sum not enough, triple must be one of these two.
-👉 Third clue: "oldest child plays piano" → implies there is an **oldest** (not twins).
-👉 (1,6,6) has twins of 6, no unique oldest; (2,2,9) has oldest 9.
-👉 Thus ages: 2, 2, and 9.
+Phase 3 – Carry Out the Plan
 
----
+Jo plan banaya tha usay implement karo.
 
-**Key Insight:**
-👉 Understanding may not be complete until after implementing plan (Phase 3).
-👉 Irregularities in problem-solving process make systematic approaches difficult.
+Yani algorithm ya program likho aur execute karo.
 
----
+Phase 4 – Evaluate the Solution
 
-**Important Vocabulary:**
-- Problem solving = finding solutions to complex tasks
-- Algorithm discovery = creating step-by-step procedures
-- Phase = stage in a process
-- Triple = set of three numbers
-- Product = result of multiplication
-- Sum = result of addition
+Check karo:
 
----
+Answer sahi hai?
+Kya ye method doosri similar problems me bhi use ho sakta hai?
 
-**Quick Revision Points:**
-- Problem solving cannot be reduced to an algorithm (impossible).
-- Polya's phases: Understand, Plan, Execute, Evaluate.
-- For programming: understand, idea, formulate program, evaluate.
-- Example: ages of children – product 36, sum ambiguous, oldest child clue.
-- Solution: (2,2,9).`,
+Program Development me 4 Phases:
+Problem Solving	
+Understand Problem	
+Make a Plan	
+Apply Plan	
+Evaluate Solution	
+
+Program Development me 4 Phases:
+Understand Problem
+Think of an Algorithm
+Write the Program
+Test & Evaluate Program
+
+
+Children Age Puzzle ⭐ (Important Concept)
+Clue 1
+
+Teen bachon ki ages ka product = 36
+
+Possible age combinations:
+
+1,1,36
+1,2,18
+1,3,12
+1,4,9
+1,6,6
+2,2,9
+2,3,6
+3,3,4
+Clue 2
+
+Unki ages ka sum bhi bataya gaya.
+
+Lekin sirf sum se answer nahi mila.
+
+Iska matlab same sum wali 2 possibilities hain.
+
+Wo hain:
+
+1,6,6 → Sum = 13
+
+2,2,9 → Sum = 13
+Clue 3
+
+"The oldest child plays the piano."
+
+Yahan important baat piano nahi hai.
+
+Important word hai:
+
+Oldest child
+
+Iska matlab sirf ek oldest child hona chahiye.
+
+1,6,6
+
+❌ Do bachay 6 saal ke hain.
+Isliye oldest unique nahi hai.
+
+2,2,9
+
+✅ Sirf ek oldest child hai (9 years).
+
+Final Answer
+2, 2, 9
+Important Lesson
+
+Kabhi kabhi problem ko solve karte waqt hi uski understanding aur clear hoti hai.
+
+Isliye phases hamesha strict order me follow nahi hote.
+
+Quick Revision
+Problem solving ek art hai.
+G. Polya ne 4 phases diye.
+Program development bhi inhi phases ko follow karta hai.
+Children puzzle ka answer 2, 2, 9 hai.
+Last clue me "plays the piano" important nahi, "oldest child" important hai.`,
   questions: [
     {
-      q: "The process of algorithm discovery is closely associated with:",
-      options: ["A. Hardware design", "B. General problem solving", "C. Data entry", "D. Network administration"],
-      answer: "B. General problem solving",
-      diff: "easy"
-    },
-    {
-      q: "Reducing problem solving to an algorithm has been shown to be:",
-      options: ["A. Easy", "B. Impossible", "C. Done by Polya", "D. The goal of computer science"],
-      answer: "B. Impossible",
-      diff: "easy"
-    },
-    {
-      q: "The ability to solve problems is described as more of a(n):",
-      options: ["A. Precise science", "B. Mathematical formula", "C. Artistic skill", "D. Hardware component"],
-      answer: "C. Artistic skill",
-      diff: "easy"
-    },
-    {
-      q: "Who presented the loosely defined problem-solving phases in 1945?",
-      options: ["A. Alan Turing", "B. G. Polya", "C. Edsger Dijkstra", "D. Donald Knuth"],
-      answer: "B. G. Polya",
-      diff: "medium"
-    },
-    {
-      q: "Which is NOT one of Polya's four phases?",
-      options: ["A. Understand the problem", "B. Devise a plan", "C. Write the code", "D. Evaluate the solution"],
-      answer: "C. Write the code",
-      diff: "easy"
-    },
-    {
-      q: "In Polya's phases, the third step is:",
-      options: ["A. Understand the problem", "B. Devise a plan", "C. Carry out the plan", "D. Evaluate the solution"],
-      answer: "C. Carry out the plan",
-      diff: "easy"
-    },
-    {
-      q: "Translated to program development, Phase 3 is:",
-      options: ["A. Understand the problem", "B. Get an idea of how an algorithmic function might solve it", "C. Formulate the algorithm and represent it as a program", "D. Evaluate the program"],
-      answer: "C. Formulate the algorithm and represent it as a program",
-      diff: "medium"
-    },
-    {
-      q: "In the children's ages problem, the first clue is that the product of ages is:",
-      options: ["A. 13", "B. 36", "C. 12", "D. 18"],
-      answer: "B. 36",
-      diff: "easy"
-    },
-    {
-      q: "What is the product of the ages (2,2,9)?",
-      options: ["A. 13", "B. 36", "C. 18", "D. 24"],
-      answer: "B. 36",
-      diff: "easy"
-    },
-    {
-      q: "After the second clue (sum), A still needed another clue because:",
-      options: ["A. The sum was too large", "B. The sum appeared for more than one triple", "C. A forgot the sum", "D. The sum was negative"],
-      answer: "B. The sum appeared for more than one triple",
-      diff: "medium"
-    },
-    {
-      q: "Which two triples have the same sum?",
-      options: ["A. (1,6,6) and (2,2,9)", "B. (1,2,18) and (3,3,4)", "C. (1,3,12) and (2,3,6)", "D. (1,1,36) and (1,4,9)"],
-      answer: "A. (1,6,6) and (2,2,9)",
-      diff: "medium"
-    },
-    {
-      q: "The sum of both (1,6,6) and (2,2,9) is:",
-      options: ["A. 12", "B. 13", "C. 14", "D. 15"],
-      answer: "B. 13",
-      diff: "easy"
-    },
-    {
-      q: "The third clue 'the oldest child plays the piano' implies:",
-      options: ["A. Only one child is oldest (not twins)", "B. All children are same age", "C. The youngest plays piano", "D. There are no oldest"],
-      answer: "A. Only one child is oldest (not twins)",
-      diff: "easy"
-    },
-    {
-      q: "Why does (1,6,6) get ruled out by the third clue?",
-      options: ["A. Ages sum to wrong number", "B. There is no unique oldest (twins of 6)", "C. Product is not 36", "D. Oldest cannot play piano"],
-      answer: "B. There is no unique oldest (twins of 6)",
-      diff: "easy"
-    },
-    {
-      q: "The final ages of the three children are:",
-      options: ["A. 1,6,6", "B. 2,2,9", "C. 3,3,4", "D. 2,3,6"],
-      answer: "B. 2,2,9",
-      diff: "easy"
-    },
-    {
-      q: "In the problem-solving example, understanding of the problem was completed:",
-      options: ["A. Before Phase 1", "B. During Phase 1 only", "C. Not until attempting to implement the plan (Phase 3)", "D. Never"],
-      answer: "C. Not until attempting to implement the plan (Phase 3)",
-      diff: "medium"
-    },
-    {
-      q: "The children's ages problem demonstrates that:",
-      options: ["A. Problem solving is purely sequential", "B. Understanding may evolve during implementation", "C. Algorithms always work", "D. Mathematics is useless"],
-      answer: "B. Understanding may evolve during implementation",
-      diff: "easy"
-    },
-    {
-      q: "According to the module, developing systematic approaches to problem solving is difficult due to:",
-      options: ["A. Lack of computers", "B. Irregularities in the problem-solving process", "C. Insufficient math knowledge", "D. Too many algorithms"],
-      answer: "B. Irregularities in the problem-solving process",
-      diff: "easy"
-    },
-    {
-      q: "The fourth phase of Polya's model is:",
-      options: ["A. Understand the problem", "B. Devise a plan", "C. Carry out the plan", "D. Evaluate the solution for accuracy and potential"],
-      answer: "D. Evaluate the solution for accuracy and potential",
-      diff: "easy"
-    },
-    {
-      q: "The example problem is often used to illustrate:",
-      options: ["A. Simple arithmetic", "B. The need for creativity and iterative understanding in problem solving", "C. Programming syntax", "D. Hardware limitations"],
-      answer: "B. The need for creativity and iterative understanding in problem solving",
-      diff: "easy"
-    }
+  q: 'According to G. Polya, which phase comes immediately after understanding the problem?',
+  options: [
+    'A. Evaluate the solution',
+    'B. Carry out the plan',
+    'C. Devise a plan',
+    'D. Write the program'
+  ],
+  answer: 'C. Devise a plan',
+  diff: 'hard',
+},
+{
+  q: 'In the children-age puzzle, why was the clue "the oldest child plays the piano" important?',
+  options: [
+    'A. It identified the musical child',
+    'B. It showed there was only one oldest child',
+    'C. It revealed the sum of the ages',
+    'D. It confirmed the product was 36'
+  ],
+  answer: 'B. It showed there was only one oldest child',
+  diff: 'hard',
+},
+{
+  q: 'Which age combination satisfies all the clues in the puzzle?',
+  options: [
+    'A. (1, 6, 6)',
+    'B. (2, 3, 6)',
+    'C. (3, 3, 4)',
+    'D. (2, 2, 9)'
+  ],
+  answer: 'D. (2, 2, 9)',
+  diff: 'hard',
+},
+{
+  q: 'According to the lecture, problem-solving is considered an artistic skill because:',
+  options: [
+    'A. Every problem has the same algorithm',
+    'B. It can be reduced to a single algorithm',
+    'C. No universal algorithm exists for solving every problem',
+    'D. It depends only on programming languages'
+  ],
+  answer: 'C. No universal algorithm exists for solving every problem',
+  diff: 'hard',
+},
+{
+  q: 'In program development, the phase "Formulate the algorithm and represent it as a program" corresponds to:',
+  options: [
+    'A. Carry out the plan',
+    'B. Understand the problem',
+    'C. Evaluate the solution',
+    'D. Devise a plan'
+  ],
+  answer: 'A. Carry out the plan',
+  diff: 'hard',
+},
   ]
 },
 
 93: {
   title: "Algorithm: Getting your Foot in the Door",
-  summary: `**Key Topics Covered:**
-- Problem-solving approach: "get your foot in the door"
-- Identifying a small, certain piece of information to start
-- Extending from initial insight to complete solution
-- Example: race predictions (A, B, C, D)
-- Logical deduction using constraints (only one true prediction, winner's prediction true)
+  summary: `Get Your Foot in the Door
 
----
+Ye ek problem-solving technique hai.
 
-**Simple Understanding:**
+Iska matlab:
 
-**Core Strategy: "Get Your Foot in the Door"**
-👉 Start by finding one small piece of information that you know for certain.
-👉 Use that as a starting point (foot in the door).
-👉 Then extend and build upon that knowledge to reach the full solution.
+👉 Sabse pehle problem ka koi chhota sa part solve karo jis par tum sure ho.
 
----
+Phir usi information ko use karke baaki problem solve karo.
 
-**Example Problem:**
-👉 Four people: A, B, C, D ran a race.
-👉 Predictions:
-   - A predicted: B would win.
-   - B predicted: D would be last.
-   - C predicted: A would be third.
-   - D predicted: A's prediction would be correct.
-👉 Only ONE prediction was true, and that true prediction was made by the winner.
+Core Idea
+Ek certain (100% sure) fact dhoondo.
+Us fact se logical deduction karo.
+Step-by-step complete solution tak pohncho.
+Race Example
 
----
+4 log race me hain:
 
-**Step-by-Step Solution:**
+A: B will win.
+B: D will be last.
+C: A will be third.
+D: A's prediction is correct.
 
-1. **A and D predictions are equivalent:**
-   - A says "B wins"
-   - D says "A's prediction is correct" → same as saying "B wins"
-   - Since only ONE prediction is true, both A and D cannot be true.
-   - Therefore A and D are both false.
+Condition:
 
-2. **Winner must have made true prediction:**
-   - A and D false → not winners.
-   - B's prediction false (only one true, and winner's true, so B's false).
-   - Only remaining winner: C.
+Sirf 1 prediction true hai.
+Aur winner ki prediction hi true hai.
+Step 1
 
-3. **C's prediction true:**
-   - C predicted "A would be third" → A is third.
+A aur D ki prediction same hai.
 
-4. **Order possibilities:**
-   - Winner C first, A third → positions: C ? A ?
-   - D cannot be last (B predicted D last → false, so D not last) → D must be second.
-   - B's prediction false means D is NOT last → last must be B.
-   - Thus order: C (1st), D (2nd), A (3rd), B (4th) → CDAB.
+A → B wins
+D → A is correct (matlab B wins)
 
-5. **Verify:**
-   - A: false (B didn't win)
-   - B: false (D was not last; last is B)
-   - C: true (A third)
-   - D: false (A's prediction false)
-   - Only one true (C's), and winner C's true. Correct.
+Dono equivalent hain.
 
----
+Agar A true hoga to D bhi true hoga.
 
-**Key Insight:**
-👉 Finding that A and D are both false (since equivalent and only one true) gave the "foot in the door."
-👉 From there, deduced winner, then order.
+Lekin question me sirf 1 prediction true ho sakti hai.
 
----
+👉 Isliye A aur D dono false hain.
 
-**Important Vocabulary:**
-- "Get your foot in the door" = find a small certain fact to start
-- Prediction = statement about future outcome
-- Equivalent = logically same meaning
-- Deduction = reasoning from known facts
-- Constraint = condition that limits possibilities
+Step 2
 
----
+Winner ki prediction true honi chahiye.
 
-**Quick Revision Points:**
-- Start with a certain fact (foot in door).
-- Use logical elimination.
-- Equivalent predictions can't both be true if only one true.
-- Winner's prediction must be true.
-- Extend step by step to full solution.`,
+A aur D false hain.
+
+Winner sirf B ya C ho sakta hai.
+
+Step 3
+
+Agar B winner hota to uski prediction true hoti:
+
+D last hai.
+
+Lekin baad me contradiction aati hai.
+
+Isliye B winner nahi ho sakta.
+
+👉 Winner = C
+
+Step 4
+
+C ki prediction:
+
+A third.
+
+Isliye A = 3rd
+
+Ab positions:
+
+1st = C
+3rd = A
+
+B ki prediction false hai.
+
+Usne kaha tha D last hoga.
+
+To D last nahi ho sakta.
+
+B hi last hoga.
+
+Final order:
+
+C → D → A → B
+Final Answer
+1st = C
+2nd = D
+3rd = A
+4th = B
+Important Terms
+
+Prediction → Kisi result ke bare me statement.
+
+Equivalent → Do statements ka same meaning.
+
+Deduction → Known facts se new result nikalna.
+
+Constraint → Wo condition jo possibilities ko limit kare.
+
+Quick Revision
+Get your foot in the door = Sabse pehle ek certain fact dhoondo.
+Usi fact se baaki problem solve karo.
+A aur D ki predictions equivalent thi.
+Winner ki prediction hi true thi.
+Final race order = C → D → A → B`,
   questions: [
-    {
-      q: "The phrase 'get your foot in the door' in problem solving means:",
-      options: ["A. Solve the entire problem at once", "B. Find a small piece of certain information to start", "C. Guess randomly", "D. Avoid solving the problem"],
-      answer: "B. Find a small piece of certain information to start",
-      diff: "easy"
-    },
-    {
-      q: "In the race problem, how many predictions were true in total?",
-      options: ["A. 0", "B. 1", "C. 2", "D. 3"],
-      answer: "B. 1",
-      diff: "easy"
-    },
-    {
-      q: "Who made the only true prediction?",
-      options: ["A. The winner", "B. The loser", "C. A random person", "D. The last place finisher"],
-      answer: "A. The winner",
-      diff: "easy"
-    },
-    {
-      q: "Predictions of A and D were equivalent because:",
-      options: ["A. They both said B would win", "B. They both said C would win", "C. D said A's prediction would be correct", "D. Both A and C are correct"],
-      answer: "C. D said A's prediction would be correct",
-      diff: "medium"
-    },
-    {
-      q: "Since only one prediction was true, what can we conclude about A and D?",
-      options: ["A. Both are true", "B. Both are false", "C. One is true, one is false", "D. Cannot determine"],
-      answer: "B. Both are false",
-      diff: "medium"
-    },
-    {
-      q: "If A's prediction was false, what does that mean?",
-      options: ["A. B did not win", "B. B won", "C. C won", "D. D won"],
-      answer: "A. B did not win",
-      diff: "easy"
-    },
-    {
-      q: "Who was the winner of the race?",
-      options: ["A. A", "B. B", "C. C", "D. D"],
-      answer: "C. C",
-      diff: "easy"
-    },
-    {
-      q: "What position did A finish?",
-      options: ["A. First", "B. Second", "C. Third", "D. Fourth"],
-      answer: "C. Third",
-      diff: "easy"
-    },
-    {
-      q: "C's prediction was that A would be third. Since C won, this prediction was:",
-      options: ["A. False", "B. True", "C. Irrelevant", "D. Not considered"],
-      answer: "B. True",
-      diff: "easy"
-    },
-    {
-      q: "B predicted that D would be last. Since B's prediction was false, D was:",
-      options: ["A. Last", "B. Not last", "C. First", "D. Second"],
-      answer: "B. Not last",
-      diff: "easy"
-    },
-    {
-      q: "Who finished last?",
-      options: ["A. A", "B. B", "C. C", "D. D"],
-      answer: "B. B",
-      diff: "medium"
-    },
-    {
-      q: "What was the final finishing order from first to last?",
-      options: ["A. CDAB", "B. CADB", "C. DABC", "D. CBAD"],
-      answer: "A. CDAB",
-      diff: "medium"
-    },
-    {
-      q: "Which of the following is a step in the 'foot in the door' strategy?",
-      options: ["A. Start with a guess", "B. Find a small certain fact", "C. Solve everything at once", "D. Ignore constraints"],
-      answer: "B. Find a small certain fact",
-      diff: "easy"
-    },
-    {
-      q: "In the race problem, why were A and D immediately known to be false?",
-      options: ["A. They both predicted the same thing", "B. Their predictions were contradictory", "C. Only one prediction could be true, and equivalent statements force both false", "D. The winner said so"],
-      answer: "C. Only one prediction could be true, and equivalent statements force both false",
-      diff: "hard"
-    },
-    {
-      q: "If C's prediction was true, what fact does that give us?",
-      options: ["A. A finished third", "B. B finished first", "C. D finished second", "D. C finished last"],
-      answer: "A. A finished third",
-      diff: "easy"
-    },
-    {
-      q: "What was the initial 'foot in the door' in the race problem?",
-      options: ["A. Knowing C won", "B. Knowing A and D are both false", "C. Knowing B's prediction false", "D. Knowing the order"],
-      answer: "B. Knowing A and D are both false",
-      diff: "medium"
-    },
-    {
-      q: "After determining that A and D are false, which person became the only possible winner?",
-      options: ["A. A", "B. B", "C. C", "D. D"],
-      answer: "C. C",
-      diff: "easy"
-    },
-    {
-      q: "If B had been the winner, would that be consistent with only one true prediction?",
-      options: ["A. Yes", "B. No, because A's prediction would then be true as well", "C. Yes, if D also true", "D. No, because C would also be true"],
-      answer: "B. No, because A's prediction would then be true as well",
-      diff: "hard"
-    },
-    {
-      q: "The phrase 'get your foot in the door' is an example of a:",
-      options: ["A. Programming language", "B. Problem-solving heuristic", "C. Hardware component", "D. Data structure"],
-      answer: "B. Problem-solving heuristic",
-      diff: "easy"
-    },
-    {
-      q: "According to the module, extending from the initial small fact leads to:",
-      options: ["A. More confusion", "B. The complete solution", "C. Dead end", "D. Random guess"],
-      answer: "B. The complete solution",
-      diff: "easy"
-    }
+  {
+  q: 'The strategy "Get Your Foot in the Door" means:',
+  options: [
+    'A. Solve the hardest part first',
+    'B. Start with a fact that is certainly true',
+    'C. Ignore given constraints',
+    'D. Guess the final answer'
+  ],
+  answer: 'B. Start with a fact that is certainly true',
+  diff: 'hard',
+},
+{
+  q: 'Why were A and D immediately eliminated in the race problem?',
+  options: [
+    'A. Both predicted different winners',
+    'B. Both finished last',
+    'C. Their predictions were logically equivalent',
+    'D. Neither made a prediction'
+  ],
+  answer: 'C. Their predictions were logically equivalent',
+  diff: 'hard',
+},
+{
+  q: 'According to the given conditions, whose prediction must be true?',
+  options: [
+    'A. The person who finished last',
+    'B. The oldest participant',
+    'C. The winner',
+    'D. Person A'
+  ],
+  answer: 'C. The winner',
+  diff: 'hard',
+},
+{
+  q: 'What is the correct finishing order of the race?',
+  options: [
+    'A. C, D, A, B',
+    'B. C, A, D, B',
+    'C. B, C, A, D',
+    'D. D, C, A, B'
+  ],
+  answer: 'A. C, D, A, B',
+  diff: 'hard',
+},
+{
+  q: 'In problem solving, "deduction" means:',
+  options: [
+    'A. Making a random guess',
+    'B. Using known facts to reach a conclusion',
+    'C. Ignoring unnecessary information',
+    'D. Repeating the same algorithm'
+  ],
+  answer: 'B. Using known facts to reach a conclusion',
+  diff: 'hard',
+},
   ]
 },
 
 94: {
   title: "Algorithm: Algorithm Discovery Strategies (I)",
-  summary: `**Key Topics Covered:**
-- General problem-solving approaches (Polya and others)
-- Working the problem backward
-- Looking for a related/easier/solved problem
-- Applying solution to current problem
-- Example: alphabetizing lists (special case vs general algorithm)
+  summary: `Algorithm Discovery Strategies
 
----
+Problem solve karne ke liye sirf "Get Your Foot in the Door" kaafi nahi hota.
 
-**Simple Understanding:**
+Uske liye kuch strategies (techniques) use ki jati hain.
 
-**Getting a Foot in the Door – Strategies:**
-👉 Several general approaches to start solving a problem.
+1. Work Backward ⭐
 
----
+Is technique me answer se shuru karte hain aur peeche ki taraf sochte hain.
 
-**Strategy 1: Work Backward**
-👉 Start with the desired output and try to back up to the given input.
-👉 Example: Origami bird folding – people unfold a completed bird to see how it's constructed.
+Yani:
 
----
+Output → Input
 
-**Strategy 2: Look for a Related Problem**
-👉 Find a problem that is easier to solve or has been solved before.
-👉 Apply its solution to the current problem.
+Example
 
-**In Program Development:**
-👉 Goal is not to solve a single instance, but to find a **general algorithm** for all instances.
-👉 Example: Alphabetizing names – need algorithm that sorts any list, not just one specific list.
+Paper bird bana hua hai.
 
-**Special Cases vs General Solution:**
-👉 Specific instructions (like swapping David and Alice) solve one list but are not general.
-👉 However, solving special cases can help discover general principles ("get foot in door").
-👉 Technique: **solve a collection of related problems** to find the general algorithm.
+Usay unfold karke dekhte hain ke kaise bana tha.
 
----
+👉 Is tarah original steps mil jate hain.
 
-**Important Vocabulary:**
-- Work backward = start from goal and reverse steps
-- Related problem = similar problem already solved
-- Special case = single instance of a problem
-- General algorithm = works for all instances
-- General-purpose = applicable to many situations
+2. Solve a Related Problem ⭐
 
----
+Agar current problem mushkil ho to:
 
-**Quick Revision Points:**
-- Work backward from output to input.
-- Find a related, easier problem.
-- Solving special cases can lead to general algorithm.
-- Program development = find general solution, not instance-specific.`,
+Koi similar ya easier problem solve karo.
+Phir uska idea current problem par apply karo.
+Example
+
+Agar tumhe sorting algorithm banana hai.
+
+Ye algorithm sirf ek list ke liye nahi, har list ke liye kaam karna chahiye.
+
+Wrong Approach ❌
+David, Alice, Carol, Bob
+
+1. David aur Alice swap karo.
+2. Carol ko beech me lao.
+3. Bob ko Carol se pehle lao.
+
+Ye sirf isi list ko sort karega.
+
+Ye algorithm nahi hai.
+
+Correct Approach ✅
+
+Aisa method banao jo:
+
+Kisi bhi names ki list ko sort kar sake.
+
+Yahi general-purpose algorithm hota hai.
+
+Special Case
+
+Kabhi kabhi pehle ek ya do examples solve karte hain.
+
+Phir un examples se general rule nikalte hain.
+
+Is technique ko solving related problems kehte hain.
+
+Quick Revision
+Work Backward = Output se Input ki taraf socho.
+Related Problem = Pehle similar/easy problem solve karo.
+General-purpose algorithm har input ke liye kaam karta hai.
+Sirf ek example ka solution algorithm nahi hota.`,
   questions: [
-    {
-      q: "One general problem-solving approach is to try:",
-      options: ["A. Working the problem forward only", "B. Working the problem backward", "C. Guessing randomly", "D. Ignoring the problem"],
-      answer: "B. Working the problem backward",
-      diff: "easy"
-    },
-    {
-      q: "Working backward means:",
-      options: ["A. Start with input and go to output", "B. Start with desired output and back up to input", "C. Reverse the order of steps arbitrarily", "D. Only consider the last step"],
-      answer: "B. Start with desired output and back up to input",
-      diff: "easy"
-    },
-    {
-      q: "The example of people unfolding a completed bird to see how it is constructed illustrates:",
-      options: ["A. Working forward", "B. Working backward", "C. Random trial", "D. Divide and conquer"],
-      answer: "B. Working backward",
-      diff: "easy"
-    },
-    {
-      q: "Another general problem-solving approach is to look for:",
-      options: ["A. A completely unrelated problem", "B. A related problem that is easier or already solved", "C. The hardest problem possible", "D. No problem at all"],
-      answer: "B. A related problem that is easier or already solved",
-      diff: "easy"
-    },
-    {
-      q: "In program development, the goal is typically:",
-      options: ["A. Solve a single instance of a problem", "B. Find a general algorithm for all instances", "C. Write code that works only once", "D. Avoid solving the problem"],
-      answer: "B. Find a general algorithm for all instances",
-      diff: "easy"
-    },
-    {
-      q: "The set of instructions that correctly sorts the list (David, Alice, Carol, Bob) is:",
-      options: ["A. A general-purpose sorting algorithm", "B. A solution for that specific list only", "C. Useless for any purpose", "D. The best sorting algorithm"],
-      answer: "B. A solution for that specific list only",
-      diff: "easy"
-    },
-    {
-      q: "Why are the specific sorting instructions NOT a general-purpose algorithm?",
-      options: ["A. They are too long", "B. They only work for that particular list", "C. They are written in English", "D. They use names"],
-      answer: "B. They only work for that particular list",
-      diff: "easy"
-    },
-    {
-      q: "What technique involves solving a collection of related problems to discover a general algorithm?",
-      options: ["A. Working backward", "B. Solving special cases", "C. Random guessing", "D. Copying from others"],
-      answer: "B. Solving special cases",
-      diff: "medium"
-    },
-    {
-      q: "The phrase 'get your foot in the door' in this context refers to:",
-      options: ["A. Solving the entire problem at once", "B. Using special cases to discover general principles", "C. Avoiding the problem", "D. Working only on hard problems"],
-      answer: "B. Using special cases to discover general principles",
-      diff: "medium"
-    },
-    {
-      q: "According to the module, program development is not about solving a particular instance but:",
-      options: ["A. Finding a general algorithm for all instances", "B. Solving each instance separately", "C. Only writing code for one case", "D. Avoiding algorithms"],
-      answer: "A. Finding a general algorithm for all instances",
-      diff: "easy"
-    },
-    {
-      q: "Which strategy is typical of people trying to discover the bird-folding algorithm?",
-      options: ["A. Working forward from paper", "B. Unfolding a completed bird (working backward)", "C. Random folding", "D. Using scissors"],
-      answer: "B. Unfolding a completed bird (working backward)",
-      diff: "easy"
-    },
-    {
-      q: "The technique of looking for a related problem is particularly valuable in:",
-      options: ["A. Hardware design", "B. Program development", "C. Network administration", "D. Database management"],
-      answer: "B. Program development",
-      diff: "easy"
-    },
-    {
-      q: "If we need an algorithm to sort any list of names, what should we develop?",
-      options: ["A. Instructions for one list", "B. A general-purpose sorting algorithm", "C. A specific list", "D. Random instructions"],
-      answer: "B. A general-purpose sorting algorithm",
-      diff: "easy"
-    },
-    {
-      q: "The example of alphabetizing names shows that solving a specific instance can help:",
-      options: ["A. Only for that instance", "B. Get a foot in the door to find general principles", "C. Never be useful", "D. Replace the need for algorithms"],
-      answer: "B. Get a foot in the door to find general principles",
-      diff: "medium"
-    },
-    {
-      q: "Which of the following is NOT a problem-solving strategy mentioned?",
-      options: ["A. Work backward", "B. Look for a related problem", "C. Solve a collection of related problems", "D. Always start from the hardest part"],
-      answer: "D. Always start from the hardest part",
-      diff: "easy"
-    },
-    {
-      q: "The approach of starting with the output and backing up to input is called:",
-      options: ["A. Forward chaining", "B. Backward chaining (working backward)", "C. Lateral thinking", "D. Random search"],
-      answer: "B. Backward chaining (working backward)",
-      diff: "easy"
-    },
-    {
-      q: "Polya and others proposed several general approaches for:",
-      options: ["A. Writing code", "B. Getting a foot in the door (problem solving)", "C. Designing hardware", "D. Testing software"],
-      answer: "B. Getting a foot in the door (problem solving)",
-      diff: "easy"
-    },
-    {
-      q: "When developing a program, solving a particular instance is:",
-      options: ["A. Totally worthless", "B. A possible first step to discover general principles", "C. The final goal", "D. Never done"],
-      answer: "B. A possible first step to discover general principles",
-      diff: "easy"
-    },
-    {
-      q: "The strategy of looking for a related problem that has been solved before allows us to:",
-      options: ["A. Reinvent the wheel", "B. Apply its solution to the current problem", "C. Ignore the current problem", "D. Create a new problem"],
-      answer: "B. Apply its solution to the current problem",
-      diff: "easy"
-    },
-    {
-      q: "What is the main takeaway from the alphabetizing example?",
-      options: ["A. Sorting is easy", "B. General algorithms require solving many instances, not just one", "C. Names are hard to sort", "D. Only use specific lists"],
-      answer: "B. General algorithms require solving many instances, not just one",
-      diff: "easy"
-    }
+   {
+  q: 'In the "Work Backward" strategy, the problem solver starts from:',
+  options: [
+    'A. The input',
+    'B. The algorithm',
+    'C. The output',
+    'D. The variables'
+  ],
+  answer: 'C. The output',
+  diff: 'hard',
+},
+{
+  q: 'The bird-folding example illustrates which problem-solving strategy?',
+  options: [
+    'A. Divide and Conquer',
+    'B. Work Backward',
+    'C. Brute Force',
+    'D. Trial and Error'
+  ],
+  answer: 'B. Work Backward',
+  diff: 'hard',
+},
+{
+  q: 'A general-purpose sorting algorithm should:',
+  options: [
+    'A. Sort only one specific list',
+    'B. Work for any valid list',
+    'C. Work only for alphabetical names',
+    'D. Be written separately for each input'
+  ],
+  answer: 'B. Work for any valid list',
+  diff: 'hard',
+},
+{
+  q: 'The given steps for sorting "David, Alice, Carol, Bob" are NOT considered a general algorithm because they:',
+  options: [
+    'A. Use too many steps',
+    'B. Apply only to that specific list',
+    'C. Are written in English',
+    'D. Cannot be represented in pseudocode'
+  ],
+  answer: 'B. Apply only to that specific list',
+  diff: 'hard',
+},
+{
+  q: 'According to the lecture, solving special cases is useful because it helps to:',
+  options: [
+    'A. Avoid writing algorithms',
+    'B. Discover general principles',
+    'C. Reduce program size',
+    'D. Eliminate input data'
+  ],
+  answer: 'B. Discover general principles',
+  diff: 'hard',
+},
   ]
 },
 
 95: {
   title: "Algorithm: Algorithm Discovery Strategies (II)",
-  summary: `**Key Topics Covered:**
-- Stepwise refinement (top-down methodology)
-- Breaking problems into smaller subproblems
-- Top-down methodology (general → specific)
-- Bottom-up methodology (specific → general)
-- Complementarity of top-down and bottom-up approaches
+  summary: `Stepwise Refinement ⭐
 
----
+Stepwise Refinement ka matlab hai:
 
-**Simple Understanding:**
+👉 Bade problem ko chhote-chhote subproblems me divide karna.
 
-**Stepwise Refinement (Top-Down):**
-👉 Do not try to conquer the entire task at once.
-👉 First view the problem as several subproblems.
-👉 Break original problem into easier steps.
-👉 Decompose steps into smaller steps → continue until each subproblem is easy to solve.
-👉 Progresses from **general to specific**.
+Phir har subproblem ko alag solve karna.
 
-**Top-Down Methodology:**
-👉 Start with the big picture, break down into details.
-👉 Stepwise refinement is a top-down approach.
+Isse complex problem asaan ho jati hai.
 
-**Bottom-Up Methodology:**
-👉 Start with specific details, build up to general solution.
-👉 Progresses from **specific to general**.
+Kaise Kaam Karta Hai?
+Pehle main problem ko divide karo.
+Phir har part ko aur chhote parts me divide karo.
+Ye process tab tak repeat karo jab tak problem bohot simple na ho jaye.
+Example
 
-**Complementary Approaches:**
-👉 In creative problem solving, top-down and bottom-up complement each other.
-👉 Decomposition in stepwise refinement is often guided by intuition working in bottom-up mode.
+Problem: Build a Website
 
----
+Isay directly solve nahi karte.
 
-**Important Vocabulary:**
-- Stepwise refinement = breaking problem into smaller steps iteratively
-- Top-down = general to specific
-- Bottom-up = specific to general
-- Decomposition = breaking into parts
-- Subproblem = smaller part of larger problem
+Pehle divide karte hain:
 
----
+Frontend
+Backend
+Database
 
-**Quick Revision Points:**
-- Stepwise refinement: don't do everything at once.
-- Break into subproblems → decompose further.
-- Top-down: general → specific.
-- Bottom-up: specific → general.
-- Both approaches work together in practice.`,
+Frontend ko aur divide karo:
+
+Navbar
+Hero Section
+Footer
+
+👉 Isi process ko Stepwise Refinement kehte hain.
+
+Top-Down Methodology ⭐
+
+Top-Down me:
+
+👉 General → Specific
+
+Pehle main problem.
+
+Phir subproblems.
+
+Phir aur chhote tasks.
+
+Example:
+
+Website
+   ↓
+Frontend
+   ↓
+Navbar
+   ↓
+Logo
+Bottom-Up Methodology ⭐
+
+Bottom-Up me:
+
+👉 Specific → General
+
+Pehle chhote components banao.
+
+Phir unhe mila kar bada system banao.
+
+Example:
+
+Logo + Menu
+      ↓
+Navbar
+      ↓
+Frontend
+      ↓
+Website
+Top-Down vs Bottom-Up
+Top-Down	Bottom-Up
+General → Specific	Specific → General
+Problem ko divide karta hai	Small parts ko combine karta hai
+Stepwise Refinement use karta hai	Components se system banata hai
+Important Point
+
+Lecture ke mutabiq:
+
+Top-Down aur Bottom-Up opposite hain, lekin real life me dono ek dusre ko complement karte hain.
+
+Yani practical programming me aksar dono techniques saath use hoti hain.
+
+Quick Revision
+Stepwise Refinement = Problem ko chhote parts me todna.
+Top-Down = General → Specific.
+Bottom-Up = Specific → General.
+Real projects me dono approaches use ho sakti hain.`,
+  questions: [
+   {
+  q: 'Stepwise refinement is primarily based on the idea of:',
+  options: [
+    'A. Solving the entire problem at once',
+    'B. Dividing a large problem into smaller subproblems',
+    'C. Writing code without planning',
+    'D. Executing programs repeatedly'
+  ],
+  answer: 'B. Dividing a large problem into smaller subproblems',
+  diff: 'hard',
+},
+{
+  q: 'Stepwise refinement follows which methodology?',
+  options: [
+    'A. Bottom-Up',
+    'B. Divide and Test',
+    'C. Top-Down',
+    'D. Trial and Error'
+  ],
+  answer: 'C. Top-Down',
+  diff: 'hard',
+},
+{
+  q: 'A Bottom-Up methodology progresses from:',
+  options: [
+    'A. General to specific',
+    'B. Output to input',
+    'C. Specific to general',
+    'D. Problem to algorithm'
+  ],
+  answer: 'C. Specific to general',
+  diff: 'hard',
+},
+{
+  q: 'Which statement is TRUE according to the lecture?',
+  options: [
+    'A. Top-Down and Bottom-Up cannot be used together',
+    'B. Bottom-Up always replaces Top-Down',
+    'C. Top-Down and Bottom-Up often complement each other',
+    'D. Stepwise refinement is a Bottom-Up technique'
+  ],
+  answer: 'C. Top-Down and Bottom-Up often complement each other',
+  diff: 'hard',
+},
+{
+  q: 'In stepwise refinement, the decomposition process continues until:',
+  options: [
+    'A. The program is compiled',
+    'B. The problem becomes a collection of easily solved subproblems',
+    'C. Only one subproblem remains',
+    'D. The algorithm reaches the output'
+  ],
+  answer: 'B. The problem becomes a collection of easily solved subproblems',
+  diff: 'hard',
+},
+  ]
+},
+
+
+96: {
+  title: "Algorithm: Iterative Structures (Sequential Search Algorithm)",
+  summary: `Sequential Search Algorithm ⭐
+
+Sequential Search ka matlab hai list ke elements ko ek-ek karke check karna jab tak target value mil na jaye ya list khatam na ho jaye.
+
+Ye algorithm tab use hota hai jab hume kisi value ko list me search karna ho.
+
+Sorted List
+
+Lecture me assume kiya gaya hai ke list sorted hai.
+
+Example:
+
+Alice
+Bob
+Carol
+David
+
+ya
+
+10
+20
+30
+40
+
+Sequential Search Kaise Kaam Karta Hai?
+
+1. List ke first element se search start karo.
+2. Har element ko TargetValue se compare karo.
+3. Agar TargetValue mil jaye → Search Success.
+4. Agar list khatam ho jaye → Search Failure.
+5. Agar sorted list me current value TargetValue se badi ho jaye → Search Failure, kyun ke target aage nahi ho sakta.
+
+Example
+
+List:
+
+10 20 30 40 50
+
+Target = 30
+
+Check:
+
+10 ❌
+20 ❌
+30 ✅
+
+Result = Search Success
+
+Example 2
+
+List:
+
+10 20 30 40 50
+
+Target = 25
+
+Check:
+
+10
+20
+30
+
+30 > 25
+
+Yahin search stop ho jayegi.
+
+Result = Search Failure.
+
+while Loop ⭐
+
+Sequential Search me while loop use hota hai.
+
+Loop tab tak chalta hai jab:
+
+- Target abhi tak nahi mila.
+- Aur list me entries baqi hain.
+
+Empty List
+
+Agar list empty ho to search start hi nahi hogi.
+
+Direct result:
+
+Search Failure.
+
+Quick Revision
+
+Sequential Search = Elements ko one by one check karna.
+Search first element se start hoti hai.
+Target mil jaye → Success.
+List khatam ya current value target se badi ho jaye → Failure.
+Empty list → Search Failure.
+Sequential Search me while loop use hota hai.`,
   questions: [
     {
-      q: "Stepwise refinement is essentially the technique of:",
-      options: ["A. Solving the entire problem at once", "B. Breaking a problem into smaller subproblems", "C. Ignoring details", "D. Working only from specific to general"],
-      answer: "B. Breaking a problem into smaller subproblems",
-      diff: "easy"
+      q: 'Sequential Search examines list elements in which order?',
+      options: [
+        'A. Random order',
+        'B. From first to last',
+        'C. From last to first',
+        'D. Middle to both sides'
+      ],
+      answer: 'B. From first to last',
+      diff: 'hard',
     },
     {
-      q: "Stepwise refinement proposes that one first view the problem in terms of:",
-      options: ["A. One large task", "B. Several subproblems", "C. Random steps", "D. The final output"],
-      answer: "B. Several subproblems",
-      diff: "easy"
+      q: 'In a sorted list, the search can stop early when:',
+      options: [
+        'A. Current value becomes greater than the target',
+        'B. Half of the list has been searched',
+        'C. The first comparison fails',
+        'D. Two values are equal'
+      ],
+      answer: 'A. Current value becomes greater than the target',
+      diff: 'hard',
     },
     {
-      q: "In stepwise refinement, the steps should be decomposed until:",
-      options: ["A. They become larger", "B. The problem becomes unsolvable", "C. The entire problem is reduced to easily solved subproblems", "D. No further decomposition is possible regardless of difficulty"],
-      answer: "C. The entire problem is reduced to easily solved subproblems",
-      diff: "medium"
+      q: 'What is the result if the list is empty before the search begins?',
+      options: [
+        'A. Search Success',
+        'B. Runtime Error',
+        'C. Search Failure',
+        'D. Infinite Loop'
+      ],
+      answer: 'C. Search Failure',
+      diff: 'hard',
     },
     {
-      q: "Stepwise refinement is considered a __________ methodology.",
-      options: ["A. Bottom-up", "B. Top-down", "C. Middle-out", "D. Random"],
-      answer: "B. Top-down",
-      diff: "easy"
+      q: 'Consider the sorted list: 5, 10, 15, 20, 25\nTarget = 12\nWhere will the algorithm stop?',
+      options: [
+        'A. At 10',
+        'B. At 12',
+        'C. At 15',
+        'D. At 25'
+      ],
+      answer: 'C. At 15',
+      diff: 'hard',
     },
     {
-      q: "A top-down methodology progresses from:",
-      options: ["A. General to specific", "B. Specific to general", "C. Simple to complex", "D. Complex to simple"],
-      answer: "A. General to specific",
-      diff: "easy"
+      q: 'Consider the sorted list: 2, 4, 6, 8, 10\nTarget = 6\nHow many comparisons are made before the search succeeds?',
+      options: [
+        'A. 1',
+        'B. 2',
+        'C. 3',
+        'D. 4'
+      ],
+      answer: 'C. 3',
+      diff: 'hard',
+    },
+  ]
+},
+97: {
+  title: "Algorithm: Iterative Structures (Loop Control)",
+  summary: `Loop Control ⭐
+
+Loop ek iterative structure hai jisme ek ya ek se zyada instructions ko repeatedly execute kiya jata hai.
+
+Jo instructions repeat hoti hain unhe Body of the Loop kehte hain.
+
+Loop tab tak chalta hai jab tak uski condition TRUE rahe.
+
+while Loop ⭐
+
+Pseudocode me repetition ke liye while loop use hota hai.
+
+Syntax:
+
+while (condition):
+    Body
+
+Execution Flow
+
+1. Condition check hoti hai.
+2. Agar TRUE ho to Body execute hoti hai.
+3. Phir condition dobara check hoti hai.
+4. Ye process tab tak repeat hota hai jab tak condition FALSE na ho jaye.
+
+Jab condition FALSE ho jati hai to loop terminate ho jata hai.
+
+Example
+
+while (pH > 4):
+    Add a drop of sulfuric acid
+
+Yahan acid tab tak add hota rahega jab tak pH > 4 hai.
+
+Loop vs Repeated Statements ⭐
+
+Agar kisi statement ko sirf 3 baar chalana ho to usay manually bhi likh sakte hain.
+
+Example:
+
+Add a drop of sulfuric acid.
+Add a drop of sulfuric acid.
+Add a drop of sulfuric acid.
+
+Lekin agar repeat hone ki exact quantity pehle se pata na ho to loop use karte hain.
+
+Isi wajah se loops zyada flexible hote hain.
+
+Body of the Loop
+
+Body of the loop wo instructions hoti hain jo har iteration me execute hoti hain.
+
+Example:
+
+while (condition):
+    Print "Hello"
+
+Yahan Print "Hello" body of the loop hai.
+
+Important Point ⭐
+
+Lecture ke mutabiq body ka kaam actual task perform karna hota hai.
+
+Lekin sabse zyada errors body me nahi, balki loop control me aate hain.
+
+Isliye loop control ko carefully design karna chahiye.
+
+Quick Revision
+
+Loop = Repetition of instructions.
+Body of Loop = Repeated instructions.
+while loop condition TRUE hone tak chalta hai.
+Condition FALSE hote hi loop stop ho jata hai.
+Loop repeated statements se zyada flexible hota hai.
+Loop control body se zyada error-prone hota hai.`,
+  questions: [
+    {
+      q: 'The repeated execution of a collection of instructions is called:',
+      options: [
+        'A. Selection',
+        'B. Loop',
+        'C. Assignment',
+        'D. Function'
+      ],
+      answer: 'B. Loop',
+      diff: 'hard',
     },
     {
-      q: "A bottom-up methodology progresses from:",
-      options: ["A. General to specific", "B. Specific to general", "C. Large to small", "D. Abstract to concrete"],
-      answer: "B. Specific to general",
-      diff: "easy"
+      q: 'In a while loop, the body is executed:',
+      options: [
+        'A. Before checking the condition',
+        'B. Only once',
+        'C. Only when the condition is true',
+        'D. After the condition becomes false'
+      ],
+      answer: 'C. Only when the condition is true',
+      diff: 'hard',
     },
     {
-      q: "In creative problem solving, top-down and bottom-up approaches:",
-      options: ["A. Cannot be used together", "B. Often complement each other", "C. Are identical", "D. Are always conflicting"],
-      answer: "B. Often complement each other",
-      diff: "easy"
+      q: 'Why is a loop more flexible than writing repeated statements manually?',
+      options: [
+        'A. It always executes exactly three times',
+        'B. It works even when the number of repetitions is unknown',
+        'C. It requires fewer variables',
+        'D. It removes the need for conditions'
+      ],
+      answer: 'B. It works even when the number of repetitions is unknown',
+      diff: 'hard',
     },
     {
-      q: "The decomposition of a problem in stepwise refinement is often guided by:",
-      options: ["A. Random choice", "B. The problem solver's intuition (which may work bottom-up)", "C. A fixed formula", "D. The computer's processor"],
-      answer: "B. The problem solver's intuition (which may work bottom-up)",
-      diff: "medium"
+      q: 'According to the lecture, which part of a loop is more likely to contain errors?',
+      options: [
+        'A. Body of the loop',
+        'B. Variable names',
+        'C. Loop control',
+        'D. Assignment statements'
+      ],
+      answer: 'C. Loop control',
+      diff: 'hard',
     },
     {
-      q: "Which methodology starts with the big picture and breaks down into details?",
-      options: ["A. Bottom-up", "B. Top-down", "C. Left-right", "D. Circular"],
-      answer: "B. Top-down",
-      diff: "easy"
+      q: 'Which statement best describes the body of a loop?',
+      options: [
+        'A. It controls the termination condition',
+        'B. It performs the actual repeated task',
+        'C. It initializes the loop',
+        'D. It declares variables'
+      ],
+      answer: 'B. It performs the actual repeated task',
+      diff: 'hard',
+    },
+  ]
+},
+
+98: {
+  title: "Algorithm: Iterative Structures (Components of Repetitive Control)",
+  summary: `Components of Repetitive Control ⭐
+
+Har loop ko sahi tarah chalane ke liye 3 basic components hote hain:
+
+1. Initialization
+2. Test
+3. Modification
+
+Ye teeno successful loop control ke liye zaroori hain.
+
+Initialization ⭐
+
+Initialization me loop ki starting condition set ki jati hai.
+
+Yani loop kahan se start hoga.
+
+Example:
+
+Current = First Entry
+
+Test ⭐
+
+Test ka kaam check karna hota hai ke loop continue kare ya stop.
+
+Is test me termination condition check hoti hai.
+
+Termination Condition ⭐
+
+Termination condition wo condition hai jis par loop khatam ho jata hai.
+
+while loop me jo condition likhi hoti hai, loop us waqt tak chalta hai jab tak wo condition TRUE ho.
+
+Jab condition FALSE ho jaye, loop terminate ho jata hai.
+
+Example
+
+while (pH > 4):
+    Add sulfuric acid
+
+Loop tab tak chalega jab tak pH > 4 hai.
+
+Termination condition:
+
+pH <= 4
+
+Modification ⭐
+
+Modification har iteration ke baad value ko update karta hai taake loop termination ki taraf move kare.
+
+Example:
+
+Current = Next Entry
+
+Ya
+
+i = i + 1
+
+Sequential Search Example
+
+Initialization:
+
+First entry ko TestEntry banao.
+
+Test:
+
+Check karo target mila hai ya entries baqi hain.
+
+Modification:
+
+Next entry par move karo.
+
+Is process ko repeat karte raho jab tak termination condition na aa jaye.
+
+Quick Revision
+
+Initialization = Starting point set karna.
+Test = Loop continue ya stop ka decision.
+Modification = Value update karna.
+Termination Condition = Loop stop hone ki condition.
+while loop condition TRUE hone tak chalti hai.`,
+  questions: [
+    {
+      q: 'Which component of a loop sets the starting condition?',
+      options: [
+        'A. Test',
+        'B. Modification',
+        'C. Initialization',
+        'D. Termination'
+      ],
+      answer: 'C. Initialization',
+      diff: 'hard',
     },
     {
-      q: "Which methodology starts with specific details and builds up to a general solution?",
-      options: ["A. Top-down", "B. Bottom-up", "C. Stepwise refinement", "D. Divide and conquer"],
-      answer: "B. Bottom-up",
-      diff: "easy"
+      q: 'The primary purpose of the test component in a loop is to:',
+      options: [
+        'A. Initialize variables',
+        'B. Detect the termination condition',
+        'C. Modify loop variables',
+        'D. Execute the loop body'
+      ],
+      answer: 'B. Detect the termination condition',
+      diff: 'hard',
     },
     {
-      q: "Stepwise refinement is also known as:",
-      options: ["A. Bottom-up design", "B. Top-down design", "C. Lateral thinking", "D. Random refinement"],
-      answer: "B. Top-down design",
-      diff: "easy"
+      q: 'For the statement while (pH > 4), the termination condition is:',
+      options: [
+        'A. pH > 4',
+        'B. pH == 4',
+        'C. pH < 4',
+        'D. pH <= 4'
+      ],
+      answer: 'D. pH <= 4',
+      diff: 'hard',
     },
     {
-      q: "The idea of stepwise refinement is to:",
-      options: ["A. Conquer the entire task at once", "B. Avoid dealing with subproblems", "C. Not try to conquer an entire task at once", "D. Only work on the hardest part"],
-      answer: "C. Not try to conquer an entire task at once",
-      diff: "easy"
+      q: 'Which loop-control component ensures that the termination condition is eventually reached?',
+      options: [
+        'A. Modification',
+        'B. Test',
+        'C. Initialization',
+        'D. Declaration'
+      ],
+      answer: 'A. Modification',
+      diff: 'hard',
     },
     {
-      q: "In stepwise refinement, each step is:",
-      options: ["A. Harder than the original", "B. Easier to solve than the original problem", "C. Unrelated to the original", "D. Always the same size"],
-      answer: "B. Easier to solve than the original problem",
-      diff: "easy"
+      q: 'Which sequence correctly represents the components of repetitive control?',
+      options: [
+        'A. Test → Initialization → Modification',
+        'B. Initialization → Test → Modification',
+        'C. Modification → Test → Initialization',
+        'D. Initialization → Modification → Test'
+      ],
+      answer: 'B. Initialization → Test → Modification',
+      diff: 'hard',
+    },
+  ]
+},
+
+99: {
+  title: "Algorithm: Iterative Structures: Loop Execution (Examples-1)",
+  summary: `Finding Maximum Number ⭐
+
+Is lecture me pseudocode ka use karke list me se sabse bara (maximum) number find kiya jata hai.
+
+Example List
+
+12, 18, 299, 38, 999, 89, 101, 500, 801, 45
+
+Algorithm
+
+1. Pehle first number ko Max maan lo.
+2. Current ko second number par set karo.
+3. Har Current value ko Max se compare karo.
+4. Agar Current > Max ho to Max ko update kar do.
+5. Current ko next element par move karo.
+6. Ye process list ke end tak repeat hota hai.
+
+Pseudocode
+
+def FindMax():
+    Max = first number
+    Current = second number
+
+    while (elements remain):
+        if (Current > Max):
+            Max = Current
+        Current = next element
+
+Working Example
+
+Start:
+
+Max = 12
+
+Current = 18
+
+18 > 12 ✅
+
+Max = 18
+
+Current = 299
+
+299 > 18 ✅
+
+Max = 299
+
+Current = 38
+
+38 > 299 ❌
+
+Max = 299
+
+Current = 999
+
+999 > 299 ✅
+
+Max = 999
+
+Baqi values (89, 101, 500, 801, 45) kisi bhi value ne 999 ko cross nahi kiya.
+
+Final Answer
+
+Max = 999
+
+Quick Revision
+
+First element ko Max banao.
+Har next value ko Max se compare karo.
+Agar Current bada ho to Max update karo.
+List ke end par Max hi largest number hota hai.`,
+  questions: [
+    {
+      q: 'At the beginning of the FindMax algorithm, Max is initialized to:',
+      options: [
+        'A. Zero',
+        'B. The last element',
+        'C. The first element',
+        'D. The second element'
+      ],
+      answer: 'C. The first element',
+      diff: 'hard',
     },
     {
-      q: "The process of breaking a problem into smaller parts is called:",
-      options: ["A. Composition", "B. Decomposition", "C. Aggregation", "D. Compilation"],
-      answer: "B. Decomposition",
-      diff: "easy"
+      q: 'What condition causes Max to be updated?',
+      options: [
+        'A. Current < Max',
+        'B. Current == Max',
+        'C. Current > Max',
+        'D. Current <= Max'
+      ],
+      answer: 'C. Current > Max',
+      diff: 'hard',
     },
     {
-      q: "According to the module, top-down and bottom-up approaches:",
-      options: ["A. Are mutually exclusive", "B. Contrast in theory but complement in practice", "C. Are the same thing", "D. Only top-down works"],
-      answer: "B. Contrast in theory but complement in practice",
-      diff: "medium"
+      q: 'For the list 12, 18, 299, 38, 999, 89, 101, 500, 801, 45, the final value of Max is:',
+      options: [
+        'A. 801',
+        'B. 500',
+        'C. 999',
+        'D. 299'
+      ],
+      answer: 'C. 999',
+      diff: 'hard',
     },
     {
-      q: "A problem solver might use top-down decomposition while their intuition works:",
-      options: ["A. Randomly", "B. Bottom-up", "C. Only horizontally", "D. Not at all"],
-      answer: "B. Bottom-up",
-      diff: "medium"
+      q: 'After comparing 299 and 38, what will be the value of Max?',
+      options: [
+        'A. 38',
+        'B. 299',
+        'C. 12',
+        'D. 999'
+      ],
+      answer: 'B. 299',
+      diff: 'hard',
     },
     {
-      q: "Which of the following is an example of top-down methodology?",
-      options: ["A. Starting with code details and building a program", "B. Starting with a high-level plan and refining steps", "C. Solving random subproblems", "D. Using only intuition"],
-      answer: "B. Starting with a high-level plan and refining steps",
-      diff: "easy"
+      q: 'The FindMax algorithm stops when:',
+      options: [
+        'A. Max becomes 999',
+        'B. The current value is smaller than Max',
+        'C. All list elements have been processed',
+        'D. The first comparison is completed'
+      ],
+      answer: 'C. All list elements have been processed',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+
+
+100: {
+  title: "Algorithm: Iterative Structures: Loop Execution (Examples-II)",
+  summary: `Finding Factorial ⭐
+
+Factorial ka matlab hota hai kisi positive integer ko us se chhote tamam positive integers ke sath multiply karna.
+
+Formula:
+
+n! = n × (n-1) × (n-2) × ... × 2 × 1
+
+Example:
+
+5! = 5 × 4 × 3 × 2 × 1 = 120
+
+Factorial Algorithm
+
+Factorial algorithm me do variables use hote hain:
+
+f = Result (Factorial store karta hai)
+i = Counter
+
+Initial Values
+
+f = 1
+i = 1
+
+Algorithm
+
+1. f ko 1 se initialize karo.
+2. i ko 1 se initialize karo.
+3. Jab tak i <= n ho:
+   - f = f × i
+   - i = i + 1
+4. Loop khatam hone ke baad f me factorial store hota hai.
+
+Pseudocode
+
+def FindFactorial():
+    f = 1
+    i = 1
+
+    while (i <= n):
+        f = f * i
+        i = i + 1
+
+Working Example (n = 5)
+
+Start:
+
+f = 1
+i = 1
+
+Iteration 1
+
+f = 1 × 1 = 1
+i = 2
+
+Iteration 2
+
+f = 1 × 2 = 2
+i = 3
+
+Iteration 3
+
+f = 2 × 3 = 6
+i = 4
+
+Iteration 4
+
+f = 6 × 4 = 24
+i = 5
+
+Iteration 5
+
+f = 24 × 5 = 120
+i = 6
+
+Ab condition:
+
+6 <= 5
+
+FALSE
+
+Loop terminate ho jata hai.
+
+Final Answer:
+
+Factorial = 120
+
+Important Points ⭐
+
+f result ko store karta hai.
+
+i counter variable hai.
+
+Har iteration me f update hota hai.
+
+Har iteration ke baad i ki value 1 increase hoti hai.
+
+Loop tab tak chalta hai jab tak i <= n ho.
+
+Agar i = i + 1 remove kar diya jaye to loop kabhi terminate nahi hoga.
+
+Agar condition i < n kar di jaye to last multiplication skip ho jayegi aur answer galat aayega.
+
+Quick Revision
+
+Factorial = 1 × 2 × 3 × ... × n
+f = Result variable.
+i = Counter variable.
+Condition = i <= n.
+Update = i = i + 1.
+Missing update → Infinite Loop.
+Changing <= to < → Wrong factorial.`,
+  questions: [
+    {
+      q: 'Consider the following pseudocode:\n\ndef FindFactorial():\n    f = 1\n    i = 1\n    while (i <= n):\n        f = f * i\n        i = i + 1\n\nIf n = 4, what will be the final value of f?',
+      options: [
+        'A. 16',
+        'B. 20',
+        'C. 24',
+        'D. 120'
+      ],
+      answer: 'C. 24',
+      diff: 'hard',
     },
     {
-      q: "Which of the following is an example of bottom-up methodology?",
-      options: ["A. Starting with a general idea and breaking down", "B. Starting with small components and combining them", "C. Only working on the final output", "D. Avoiding details"],
-      answer: "B. Starting with small components and combining them",
-      diff: "easy"
+      q: 'In the factorial algorithm, how many times will the while loop execute when n = 7?',
+      options: [
+        'A. 6',
+        'B. 7',
+        'C. 8',
+        'D. Depends on the value of f'
+      ],
+      answer: 'B. 7',
+      diff: 'hard',
     },
     {
-      q: "Stepwise refinement helps in algorithm discovery by:",
-      options: ["A. Making the problem harder", "B. Simplifying through decomposition", "C. Adding more steps", "D. Avoiding subproblems"],
-      answer: "B. Simplifying through decomposition",
-      diff: "easy"
+      q: 'Consider the following pseudocode:\n\ndef FindFactorial():\n    f = 1\n    i = 1\n    while (i <= n):\n        f = f * i\n        i = i + 1\n\nWhat will be the values of f and i immediately after the THIRD iteration when n = 5?',
+      options: [
+        'A. f = 3, i = 3',
+        'B. f = 6, i = 4',
+        'C. f = 6, i = 3',
+        'D. f = 24, i = 4'
+      ],
+      answer: 'B. f = 6, i = 4',
+      diff: 'hard',
     },
     {
-      q: "The phrase 'top-down methodology' suggests that we start from:",
-      options: ["A. The bottom (details)", "B. The top (general view)", "C. The middle", "D. Any random point"],
-      answer: "B. The top (general view)",
-      diff: "easy"
+      q: 'Suppose the statement "i = i + 1" is removed from the factorial algorithm. What will most likely happen?',
+      options: [
+        'A. The algorithm will calculate n²',
+        'B. The algorithm will always return 1',
+        'C. The loop will never terminate (for n ≥ 1)',
+        'D. The algorithm will return n'
+      ],
+      answer: 'C. The loop will never terminate (for n ≥ 1)',
+      diff: 'hard',
+    },
+    {
+      q: 'If the loop condition is changed from "while (i <= n)" to "while (i < n)", what will be the result for n = 5?',
+      options: [
+        'A. 24',
+        'B. 60',
+        'C. 120',
+        'D. 720'
+      ],
+      answer: 'A. 24',
+      diff: 'hard',
+    }
+  ]
+},
+
+
+
+101: {
+  title: "Algorithm: Iterative Structures (Pretest and Posttest Loops)",
+  summary: `Pretest and Posttest Loops ⭐
+
+Loop structures ko test ki position ke basis par do types me divide kiya jata hai:
+
+1. Pretest Loop
+2. Posttest Loop
+
+Pretest Loop (while Loop) ⭐
+
+Pretest loop me condition body execute hone se PEHLE check hoti hai.
+
+Agar condition FALSE ho to body ek bhi baar execute nahi hoti.
+
+Syntax
+
+while (condition):
+    Body
+
+Flow
+
+Condition Check
+      ↓
+TRUE → Execute Body → Check Again
+FALSE → Loop Ends
+
+Example
+
+i = 1
+
+while (i <= 3):
+    print(i)
+    i = i + 1
+
+Output
+
+1
+2
+3
+
+Agar shuru me hi condition FALSE ho to koi output nahi aayega.
+
+Posttest Loop (repeat Loop) ⭐
+
+Posttest loop me body pehle execute hoti hai.
+
+Condition baad me check hoti hai.
+
+Isliye body kam az kam EK BAAR zaroor execute hoti hai.
+
+Syntax
+
+repeat
+    Body
+until (condition)
+
+Flow
+
+Execute Body
+      ↓
+Check Condition
+      ↓
+FALSE → Repeat Again
+TRUE → Loop Ends
+
+Example
+
+i = 1
+
+repeat
+    print(i)
+    i = i + 1
+until (i > 3)
+
+Output
+
+1
+2
+3
+
+Difference ⭐
+
+Pretest (while)
+
+- Condition pehle check hoti hai.
+- Body 0 ya us se zyada baar execute ho sakti hai.
+
+Posttest (repeat)
+
+- Body pehle execute hoti hai.
+- Body kam az kam 1 baar execute hoti hai.
+
+Important Point ⭐
+
+Pretest loop ko While Loop bhi kehte hain.
+
+Posttest loop ko Repeat Loop bhi kehte hain.
+
+
+Which loop executes its body at least once?
+
+Answer:
+
+Posttest (Repeat) Loop.
+
+Quick Revision
+
+Pretest = Condition pehle check hoti hai.
+Posttest = Condition baad me check hoti hai.
+While = Pretest Loop.
+Repeat = Posttest Loop.
+Pretest → Body may execute zero times.
+Posttest → Body executes at least one time.`,
+  questions: [
+    {
+      q: 'Why is a while loop called a pretest loop?',
+      options: [
+        'A. Because the body executes before the condition',
+        'B. Because the condition is checked before executing the body',
+        'C. Because it always executes exactly once',
+        'D. Because it has no termination condition'
+      ],
+      answer: 'B. Because the condition is checked before executing the body',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement about a posttest (repeat) loop is TRUE?',
+      options: [
+        'A. The condition is checked before the body',
+        'B. The body may never execute',
+        'C. The body is executed before the condition is tested',
+        'D. It cannot contain a termination condition'
+      ],
+      answer: 'C. The body is executed before the condition is tested',
+      diff: 'hard',
+    },
+    {
+      q: 'If the initial condition of a while loop is FALSE, how many times will the loop body execute?',
+      options: [
+        'A. Exactly one time',
+        'B. At least one time',
+        'C. Zero times',
+        'D. Depends on the compiler'
+      ],
+      answer: 'C. Zero times',
+      diff: 'hard',
+    },
+    {
+      q: 'Which loop guarantees that its body will execute at least once?',
+      options: [
+        'A. while loop',
+        'B. for loop',
+        'C. repeat loop',
+        'D. None of the above'
+      ],
+      answer: 'C. repeat loop',
+      diff: 'hard',
+    },
+    {
+      q: 'Which of the following correctly matches the loop with its testing style?',
+      options: [
+        'A. while → Posttest, repeat → Pretest',
+        'B. while → Pretest, repeat → Posttest',
+        'C. while → Infinite, repeat → Finite',
+        'D. while → Conditional, repeat → Unconditional'
+      ],
+      answer: 'B. while → Pretest, repeat → Posttest',
+      diff: 'hard',
+    }
+  ]
+},
+
+
+102: {
+  title: "Algorithm: Insertion Sort Algorithm",
+  summary: `Insertion Sort ⭐
+
+Insertion Sort ek simple sorting algorithm hai jo list ko Alphabetical ya Ascending order me sort karta hai.
+
+Is algorithm me hum list ko "within itself" sort karte hain.
+
+Yani:
+
+👉 Koi new list create nahi hoti.
+👉 Sirf existing elements ki positions change hoti hain.
+
+Lecture Example
+
+Unsorted List
+
+Fred
+Alex
+Diana
+Byron
+Carol
+
+Sabse pehle:
+
+Fred
+
+Ye single element already sorted hai.
+
+Ab doosra element (Alex) compare hoga.
+
+Fred > Alex
+
+Isliye:
+
+Fred ko neeche shift kiya jata hai.
+
+Alex ko upar insert kiya jata hai.
+
+Result
+
+Alex
+Fred
+Diana
+Byron
+Carol
+
+Isi process ko Insertion kehte hain.
+
+Insertion Sort Ka Idea ⭐
+
+Har iteration me:
+
+Ek naya element uthaya jata hai.
+
+Uske liye sorted part me sahi position find ki jati hai.
+
+Baqi elements ko shift kiya jata hai.
+
+Phir element ko us position par insert kar diya jata hai.
+
+Important Points ⭐
+
+Sorting existing list ke andar hoti hai.
+
+Extra list ki zarurat nahi hoti.
+
+Har step ke baad sorted portion ek element increase hota hai.
+
+Pehla element hamesha sorted maana jata hai.
+
+Element ko insert karne se pehle zarurat ho to dusre elements shift kiye jate hain.
+
+Quick Revision
+
+Insertion Sort = Existing list ke andar sorting.
+
+First element = Already sorted.
+
+Next element = Correct position par insert hota hai.
+
+Elements ko delete nahi kiya jata, sirf shift kiya jata hai.
+
+Har iteration me sorted portion bada hota jata hai.`,
+  questions: [
+   
+    {
+      q: 'At the beginning of the Insertion Sort algorithm, which part of the list is considered already sorted?',
+      options: [
+        'A. The first two elements',
+        'B. The complete list',
+        'C. Only the first element',
+        'D. The last element'
+      ],
+      answer: 'C. Only the first element',
+      diff: 'hard',
+    },
+   
+    {
+      q: 'Why does Insertion Sort shift elements during execution?',
+      options: [
+        'A. To remove unnecessary values',
+        'B. To create space for inserting the current element into its correct position',
+        'C. To reduce the size of the list',
+        'D. To perform binary search'
+      ],
+      answer: 'B. To create space for inserting the current element into its correct position',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement best describes the sorted portion during Insertion Sort?',
+      options: [
+        'A. It becomes smaller after each iteration',
+        'B. It always contains exactly one element',
+        'C. It grows by one element after each successful insertion',
+        'D. It changes randomly during execution'
+      ],
+      answer: 'C. It grows by one element after each successful insertion',
+      diff: 'hard',
+    }
+  ]
+},
+
+
+
+
+103: {
+  title: "Algorithm: Insertion Sort Algorithm Example",
+  summary: `Insertion Sort Example ⭐
+
+Is lecture me Insertion Sort ko step-by-step example ke sath samjhaya gaya hai.
+
+Initial List
+
+Fred
+Alex
+Diana
+Byron
+Carol
+
+Step 1 ⭐
+
+Pehla element (Fred) already sorted maana jata hai.
+
+Ab Alex ko compare karte hain.
+
+Fred > Alex
+
+Isliye:
+
+Fred ko ek position neeche shift kiya jata hai.
+
+Alex ko upar insert kar diya jata hai.
+
+Result
+
+Alex
+Fred
+Diana
+Byron
+Carol
+
+Ab top 2 elements sorted hain.
+
+Step 2 ⭐
+
+Ab Diana ko compare karte hain.
+
+Diana < Fred
+
+Isliye Fred neeche shift hoga.
+
+Diana ko Alex aur Fred ke darmiyan insert kiya jayega.
+
+Result
+
+Alex
+Diana
+Fred
+Byron
+Carol
+
+Ab top 3 elements sorted hain.
+
+Step 3 ⭐
+
+Ab Byron ko compare karte hain.
+
+Byron < Fred
+
+Fred shift hoga.
+
+Byron < Diana
+
+Diana bhi shift hogi.
+
+Byron > Alex
+
+Byron ko Alex ke baad insert kar diya jayega.
+
+Result
+
+Alex
+Byron
+Diana
+Fred
+Carol
+
+Ab top 4 elements sorted hain.
+
+Step 4 ⭐
+
+Ab Carol ko compare karte hain.
+
+Carol < Fred
+
+Fred shift hoga.
+
+Carol < Diana
+
+Diana bhi shift hogi.
+
+Carol > Byron
+
+Carol ko Byron ke baad insert kar diya jayega.
+
+Final Sorted List
+
+Alex
+Byron
+Carol
+Diana
+Fred
+
+Important Points ⭐
+
+Pehla element hamesha sorted hota hai.
+
+Har iteration me sirf ek element ko uski correct position par insert kiya jata hai.
+
+Insert karne se pehle zarurat ke mutabiq elements shift kiye jate hain.
+
+Har iteration ke baad sorted portion ek element increase hota hai.
+
+Insertion Sort existing list ke andar hi sorting karta hai.
+
+Quick Revision
+
+First element = Already sorted.
+Next element = Compare karo.
+Bade elements ko shift karo.
+Current element ko correct position par insert karo.
+Har iteration me sorted part bada hota jata hai.
+Final result = Complete sorted list.`,
+ questions: [
+  {
+    q: 'Which operation is the key characteristic of the Insertion Sort algorithm?',
+    options: [
+      'A. Repeatedly selecting the largest element',
+      'B. Inserting each new element into its correct position within the sorted portion',
+      'C. Dividing the list into two equal halves',
+      'D. Swapping only adjacent elements'
+    ],
+    answer: 'B. Inserting each new element into its correct position within the sorted portion',
+    diff: 'hard',
+  },
+  {
+    q: 'After the kth iteration of Insertion Sort, which statement is always true?',
+    options: [
+      'A. The last k elements are sorted',
+      'B. The first k+1 elements are sorted',
+      'C. The entire list is sorted',
+      'D. Only the current element is sorted'
+    ],
+    answer: 'B. The first k+1 elements are sorted',
+    diff: 'hard',
+  },
+  {
+    q: 'While inserting a new element, Insertion Sort shifts existing elements only if they are:',
+    options: [
+      'A. Smaller than the current element',
+      'B. Equal to the current element',
+      'C. Greater than the current element',
+      'D. Located at even positions'
+    ],
+    answer: 'C. Greater than the current element',
+    diff: 'hard',
+  },
+  {
+    q: 'Which of the following best describes the growth of the sorted portion in Insertion Sort?',
+    options: [
+      'A. It increases by one element after each iteration',
+      'B. It doubles after every iteration',
+      'C. It remains fixed throughout execution',
+      'D. It decreases after each insertion'
+    ],
+    answer: 'A. It increases by one element after each iteration',
+    diff: 'hard',
+  },
+  {
+    q: 'What is the main purpose of shifting elements during Insertion Sort?',
+    options: [
+      'A. To reduce the size of the list',
+      'B. To make space for inserting the current element at its correct position',
+      'C. To delete duplicate elements',
+      'D. To improve searching speed'
+    ],
+    answer: 'B. To make space for inserting the current element at its correct position',
+    diff: 'hard',
+  }
+]
+},
+
+
+
+104: {
+  title: "Algorithm: Recursive Structure (The Binary Search Algorithm)",
+  summary: `Recursive Structure ⭐
+
+Recursion repetition ka ek different method hai.
+
+Loop me instructions baar baar repeat hoti hain.
+
+Recursion me function apne aap ko dobara call karta hai.
+
+Yani:
+
+Function → Function → Function
+
+Jab tak base condition na mil jaye.
+
+Binary Search ⭐
+
+Binary Search ek searching algorithm hai jo sirf Sorted List par kaam karta hai.
+
+Ye Sequential Search se zyada fast hoti hai.
+
+Idea
+
+Har step me poori list search nahi hoti.
+
+Sirf Middle element check kiya jata hai.
+
+Agar target middle ke equal ho:
+
+Search Successful.
+
+Agar target middle se chhota ho:
+
+Sirf Left Half me search karo.
+
+Agar target middle se bara ho:
+
+Sirf Right Half me search karo.
+
+Ye process repeat hota rehta hai.
+
+Example
+
+Sorted List
+
+Alex
+Bob
+David
+Harry
+John
+Larry
+Sam
+
+Target = John
+
+Step 1
+
+Middle = Harry
+
+John > Harry
+
+Right half me search.
+
+Step 2
+
+Sublist:
+
+John
+Larry
+Sam
+
+Middle = Larry
+
+John < Larry
+
+Left half me search.
+
+Step 3
+
+Sublist:
+
+John
+
+Middle = John
+
+Search Successful.
+
+Agar Target Na Mile ⭐
+
+Har step me list aur chhoti hoti jati hai.
+
+Aakhir me list empty ho jati hai.
+
+Empty List = Search Failure.
+
+Important Points ⭐
+
+Binary Search sirf Sorted List par kaam karta hai.
+
+Har iteration me search area half ho jata hai.
+
+Middle element sabse important hota hai.
+
+Target milte hi search stop ho jati hai.
+
+Empty list milne par search failure declare hoti hai.
+
+Recursion me function khud ko call karta hai.
+
+Quick Revision
+
+Recursion = Function calls itself.
+Binary Search = Recursive searching algorithm.
+Works only on Sorted Lists.
+Compare target with Middle element.
+Target < Middle → Left Half.
+Target > Middle → Right Half.
+Target = Middle → Success.
+Empty List → Failure.
+Har step me list half ho jati hai.`,
+  questions: [
+    {
+      q: 'Why is Binary Search generally faster than Sequential Search?',
+      options: [
+        'A. It checks every element twice',
+        'B. It removes half of the remaining search space after each comparison',
+        'C. It starts from the last element',
+        'D. It uses two loops simultaneously'
+      ],
+      answer: 'B. It removes half of the remaining search space after each comparison',
+      diff: 'hard',
+    },
+    {
+      q: 'Binary Search can be applied correctly only when the list is:',
+      options: [
+        'A. Randomly arranged',
+        'B. Sorted',
+        'C. Circular',
+        'D. Reversed only'
+      ],
+      answer: 'B. Sorted',
+      diff: 'hard',
+    },
+    {
+      q: 'During Binary Search, if the target value is greater than the middle element, the next search is performed in the:',
+      options: [
+        'A. Left half of the list',
+        'B. Entire list again',
+        'C. Right half of the list',
+        'D. Middle element only'
+      ],
+      answer: 'C. Right half of the list',
+      diff: 'hard',
+    },
+    {
+      q: 'In a recursive Binary Search algorithm, which condition represents the base case for an unsuccessful search?',
+      options: [
+        'A. The first element is checked',
+        'B. The middle element changes',
+        'C. The current search segment becomes empty',
+        'D. The target is larger than every element'
+      ],
+      answer: 'C. The current search segment becomes empty',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement best describes recursion?',
+      options: [
+        'A. A function repeatedly executes using only loops',
+        'B. A function calls another unrelated function',
+        'C. A function performs its task by calling itself until a base condition is reached',
+        'D. A function executes only once'
+      ],
+      answer: 'C. A function performs its task by calling itself until a base condition is reached',
+      diff: 'hard',
+    }
+  ]
+},
+105: {
+  title: "Algorithm: Recursive Control",
+  summary: `Recursive Control ⭐
+
+Recursion bhi loop ki tarah repetition perform karti hai.
+
+Lekin dono ka repetition ka tareeqa different hota hai.
+
+Loop
+
+Instructions baar baar repeat hoti hain.
+
+Recursion
+
+Function apne aap ko repeatedly call karta hai.
+
+Recursive Activation ⭐
+
+Jab recursive function khud ko call karta hai to function ki ek nayi copy create hoti hai.
+
+Is copy ko Activation kehte hain.
+
+Har activation apna task perform karti hai.
+
+Ek waqt me sirf ek activation active hoti hai.
+
+Baqi activations wait karti rehti hain jab tak current activation complete na ho jaye.
+
+Recursive Control ⭐
+
+Jaise loops me control zaroori hota hai, waise hi recursion me bhi proper control hona zaroori hai.
+
+Recursive control ke 3 main components hote hain:
+
+1. Initialization
+2. Modification
+3. Termination Test (Base Case)
+
+Initialization ⭐
+
+Problem ko initial values ke sath start kiya jata hai.
+
+Binary Search me:
+
+Initial Sorted List
+
+Target Value
+
+Ye dono initialization hain.
+
+Modification ⭐
+
+Har recursive call problem ko chhota banati hai.
+
+Binary Search me:
+
+Current list ko Left Half ya Right Half me divide kiya jata hai.
+
+Har call ke baad search area aur chhota ho jata hai.
+
+Termination Test (Base Case) ⭐
+
+Har recursive function me Base Case hona bohot zaroori hai.
+
+Base Case milte hi recursion stop ho jati hai.
+
+Binary Search me Base Cases:
+
+Target mil jaye.
+
+Ya search segment empty ho jaye.
+
+Agar Base Case na ho to function khud ko hamesha call karta rahega.
+
+Result:
+
+Infinite Recursion
+
+Program Crash ya Stack Overflow.
+
+Important Points ⭐
+
+Recursion bhi repetition ka method hai.
+
+Har recursive call ko Activation kehte hain.
+
+Ek waqt me sirf ek activation execute hoti hai.
+
+Initialization → Problem start karta hai.
+
+Modification → Problem ko chhota karta hai.
+
+Base Case → Recursion ko stop karta hai.
+
+Binary Search me har recursive call list ko half kar deti hai.
+
+Quick Revision
+
+Loop → Repetition using iteration.
+Recursion → Repetition using self-calls.
+Activation = Function ki ek recursive copy.
+Initialization = Initial problem.
+Modification = Smaller problem.
+Termination Test = Base Case.
+No Base Case → Infinite Recursion.
+Binary Search recursion tab tak chalti hai jab tak target mil na jaye ya list empty na ho.`,
+  questions: [
+    {
+      q: 'What is an activation in recursion?',
+      options: [
+        'A. A variable used inside a recursive function',
+        'B. A dynamically created copy of a recursive function during execution',
+        'C. A loop that replaces recursion',
+        'D. A condition that terminates a loop'
+      ],
+      answer: 'B. A dynamically created copy of a recursive function during execution',
+      diff: 'hard',
+    },
+    {
+      q: 'According to recursive control, which three components are essential for correct recursion?',
+      options: [
+        'A. Input, Output, Compiler',
+        'B. Modification, Termination Test, Initialization ' ,
+        'C. Initialization, Modification, Termination Test',
+        'D. Variables, Arrays, Loops'
+      ],
+      answer: 'C. Initialization, Modification, Termination Test',
+      diff: 'hard',
+    },
+    {
+      q: 'In a recursive Binary Search, the modification step consists of:',
+      options: [
+        'A. Searching the entire list again',
+        'B. Replacing the target value',
+        'C. Reducing the search to either the left or right half of the list',
+        'D. Sorting the list before each recursive call'
+      ],
+      answer: 'C. Reducing the search to either the left or right half of the list',
+      diff: 'hard',
+    },
+    {
+      q: 'Which situation would most likely result in infinite recursion?',
+      options: [
+        'A. The list is already sorted',
+        'B. The recursive function has no base case',
+        'C. The target value is found immediately',
+        'D. The search starts from the middle element'
+      ],
+      answer: 'B. The recursive function has no base case',
+      diff: 'hard',
+    },
+    {
+      q: 'At any given moment during recursive execution, which statement is TRUE?',
+      options: [
+        'A. All activations execute simultaneously',
+        'B. No activation remains in memory',
+        'C. Only one activation is actively executing while others wait',
+        'D. Every activation finishes before creating another activation'
+      ],
+      answer: 'C. Only one activation is actively executing while others wait',
+      diff: 'hard',
+    }
+  ]
+},
+
+106: {
+  title: "Algorithm: Algorithm Efficiency",
+  summary: `Algorithm Efficiency ⭐
+
+Algorithm Efficiency ka matlab hai:
+
+👉 Kitna Time aur Memory use hoti hai kisi algorithm ko problem solve karne ke liye.
+
+Fast algorithm hamesha better hota hai, especially jab data bohot zyada ho.
+
+Example ⭐
+
+University ke paas 30,000 student records hain.
+
+Har record ko Student ID se search karna hai.
+
+Is kaam ke liye 2 algorithms use ho sakti hain:
+
+1. Sequential Search
+2. Binary Search
+
+Sequential Search ⭐
+
+Sequential Search list ke first element se search start karti hai.
+
+Har record ko ek ek karke check karti hai.
+
+Average Case:
+
+30,000 records → Average 15,000 records check honge.
+
+Agar har record check karne me 10 ms lagen:
+
+15000 × 10 ms = 150 seconds (2.5 minutes)
+
+Ye bohot slow hai.
+
+Binary Search ⭐
+
+Binary Search hamesha middle element check karti hai.
+
+Agar target na mile to sirf Left Half ya Right Half me search karti hai.
+
+Har step me search area aadha ho jata hai.
+
+30,000 records ke liye:
+
+Maximum sirf 15 comparisons lagenge.
+
+15 × 10 ms = 0.15 second
+
+Ye almost instant result deta hai.
+
+Algorithm Analysis ⭐
+
+Algorithm Analysis ka matlab hai algorithm ki performance measure karna.
+
+Usually 2 cheezen measure ki jati hain:
+
+Time Complexity
+
+Space Complexity (Memory)
+
+Cases of Analysis ⭐
+
+Best Case
+
+Sabse kam time lagta hai.
+
+Worst Case
+
+Sabse zyada time lagta hai.
+
+Average Case
+
+Average expected performance.
+
+Lecture Example
+
+Sequential Search
+
+Average Case analyze ki gayi.
+
+Binary Search
+
+Worst Case analyze ki gayi.
+
+Efficiency Formulas ⭐
+
+Agar list me n elements hon:
+
+Sequential Search
+
+Average Comparisons = n / 2
+
+Binary Search
+
+Worst Comparisons = log₂(n)
+
+Important Points ⭐
+
+Sequential Search = Linear Search.
+
+Binary Search = Sorted List required.
+
+Binary Search bohot fast hoti hai.
+
+Large data me Binary Search zyada efficient hai.
+
+Algorithm Analysis algorithms ko compare karne ke liye use hoti hai.
+
+Quick Revision
+
+Algorithm Efficiency = Time + Memory usage.
+Sequential Search → Average = n/2 comparisons.
+Binary Search → Worst = log₂(n) comparisons.
+Binary Search works only on Sorted List.
+Algorithm Analysis uses Best, Worst and Average Case.`,
+  questions: [
+    {
+      q: 'For a list containing n elements, the average number of comparisons performed by Sequential Search is:',
+      options: [
+        'A. log₂(n)',
+        'B. n',
+        'C. n/2',
+        'D. √n'
+      ],
+      answer: 'C. n/2',
+      diff: 'hard',
+    },
+    {
+      q: 'According to algorithm analysis, the worst-case number of comparisons for Binary Search is:',
+      options: [
+        'A. n/2',
+        'B. log₂(n)',
+        'C. n',
+        'D. n²'
+      ],
+      answer: 'B. log₂(n)',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement best explains why Binary Search is more efficient than Sequential Search?',
+      options: [
+        'A. It checks every element twice',
+        'B. It reduces the search space by half after each comparison',
+        'C. It starts searching from the last element',
+        'D. It uses more memory'
+      ],
+      answer: 'B. It reduces the search space by half after each comparison',
+      diff: 'hard',
+    },
+    {
+      q: 'In the lecture example of 30,000 student records, Binary Search requires at most approximately:',
+      options: [
+        'A. 15 comparisons',
+        'B. 150 comparisons',
+        'C. 1500 comparisons',
+        'D. 15000 comparisons'
+      ],
+      answer: 'A. 15 comparisons',
+      diff: 'hard',
+    },
+    {
+      q: 'Algorithm Analysis is primarily used to:',
+      options: [
+        'A. Design new programming languages',
+        'B. Compare the efficiency of different algorithms',
+        'C. Increase computer hardware speed',
+        'D. Convert pseudocode into machine code'
+      ],
+      answer: 'B. Compare the efficiency of different algorithms',
+      diff: 'hard',
+    }
+  ]
+},
+
+
+107: {
+  title: "Algorithm: Software Verification",
+  summary: `Software Verification ⭐
+
+Algorithm ya Program likhne ke baad sirf ye sochna kaafi nahi ke ye sahi hai.
+
+Hame verify karna hota hai ke program har possible situation me correctly kaam karta hai.
+
+Software Verification ⭐
+
+Software Verification ka matlab hai:
+
+👉 Check karna ke program waqai correct hai ya sirf hume aisa lag raha hai.
+
+Believed Correct vs Actually Correct ⭐
+
+Believed Correct
+
+Program dekh kar lagta hai ke sahi hai.
+
+Lekin hidden cases me fail ho sakta hai.
+
+Actually Correct
+
+Program har valid input aur har situation me sahi result deta hai.
+
+Lecture Example ⭐
+
+7 links ki gold chain hai.
+
+Har raat 1 link rent dena hai.
+
+Question:
+
+Minimum kitne links cut karne honge?
+
+Pehla Solution
+
+2nd, 4th aur 6th links cut kiye.
+
+Total Cuts = 3
+
+Ye solution pehle correct laga.
+
+Lekin baad me better solution mila.
+
+Final Solution ⭐
+
+Sirf 3rd link cut kiya.
+
+Chain 3 parts me divide ho gayi:
+
+1 Link
+
+2 Links
+
+4 Links
+
+In tino pieces ko exchange karke 7 din ka rent diya ja sakta hai.
+
+Total Cuts = 1
+
+Yani pehla solution correct nahi tha.
+
+Lesson ⭐
+
+Jo solution pehle sahi lagta hai wo zaroori nahi ke optimal ya correct ho.
+
+Verification ka purpose hi ye hai ke algorithm ko logically prove kiya jaye.
+
+Importance of Software Verification ⭐
+
+Software bugs kabhi kabhi sirf rare situations me nazar aate hain.
+
+Agar verification na ki jaye to program critical time par fail ho sakta hai.
+
+Isi liye Software Verification Computer Science ka important research area hai.
+
+Important Points ⭐
+
+Believed Correct ≠ Actually Correct.
+
+Verification correctness prove karti hai.
+
+Verification hidden cases ko detect karti hai.
+
+Optimal solution aur correct solution dono verify karne hote hain.
+
+Quick Revision
+
+Software Verification = Program ki correctness verify karna.
+Believed Correct ≠ Correct Program.
+Lecture Example:
+3 Cuts ❌
+1 Cut ✅
+Verification hidden errors ko identify karti hai.
+Verification Computer Science ka active research field hai.`,
+  questions: [
+    {
+      q: 'The primary objective of Software Verification is to:',
+      options: [
+        'A. Increase program execution speed',
+        'B. Prove that a program is correct for all valid situations',
+        'C. Reduce program size',
+        'D. Convert pseudocode into source code'
+      ],
+      answer: 'B. Prove that a program is correct for all valid situations',
+      diff: 'hard',
+    },
+    {
+      q: 'According to the lecture, which statement is TRUE?',
+      options: [
+        'A. Every program believed to be correct is actually correct',
+        'B. Verification guarantees faster execution',
+        'C. A program may appear correct but still fail in unforeseen situations',
+        'D. Testing and verification are exactly the same process'
+      ],
+      answer: 'C. A program may appear correct but still fail in unforeseen situations',
+      diff: 'hard',
+    },
+    {
+      q: 'In the gold-chain problem, why was the first solution rejected?',
+      options: [
+        'A. It required too many chain links',
+        'B. A better solution with fewer cuts was discovered',
+        'C. The traveler paid the hotel in advance',
+        'D. The chain could not be separated'
+      ],
+      answer: 'B. A better solution with fewer cuts was discovered',
+      diff: 'hard',
+    },
+    {
+      q: 'The final optimal solution of the seven-link chain problem required cutting:',
+      options: [
+        'A. One link',
+        'B. Two links',
+        'C. Three links',
+        'D. Four links'
+      ],
+      answer: 'A. One link',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement best describes the difference between "believed correct" and "actually correct" software?',
+      options: [
+        'A. There is no difference between the two',
+        'B. Believed correct software has been compiled successfully',
+        'C. Actually correct software has been verified to work correctly under all valid conditions',
+        'D. Believed correct software always executes faster'
+      ],
+      answer: 'C. Actually correct software has been verified to work correctly under all valid conditions',
+      diff: 'hard',
+    }
+  ]
+},
+
+
+108: {
+  title: "Algorithm: Software Verification Examples",
+  summary: `Software Verification Examples ⭐
+
+Software Verification ka purpose ye ensure karna hai ke software sirf "lagta sahi hai" nahi, balke waqai har situation me correctly kaam kare.
+
+Believed Correct vs Correct ⭐
+
+Believed Correct
+
+Program ko test karne ke baad lagta hai ke sab theek hai.
+
+Correct Program
+
+Program har valid condition me sahi result deta hai aur unexpected situations me bhi fail nahi hota.
+
+Example 1: Therac-25 Software Failure ⭐
+
+1986 me Texas (USA) me Therac-25 naam ki radiation machine me software bug tha.
+
+Software failure ki wajah se patient ko normal dose ki bajaye bohot zyada X-ray radiation mil gayi.
+
+Patient ki kuch mah baad death ho gayi.
+
+Ye incident hardware ki wajah se nahi, software failure ki wajah se hua.
+
+Example 2: Welsh NHS IT Failure ⭐
+
+2018 me United Kingdom ke hospitals aur GP surgeries ka software technical problem ki wajah se fail ho gaya.
+
+Doctors patients ke records access nahi kar sake.
+
+Ye Cyber Attack nahi tha.
+
+Ye sirf software technical failure tha.
+
+Lesson ⭐
+
+Software ki chhoti si mistake bhi bohot serious consequences create kar sakti hai.
+
+Isi liye software ko release karne se pehle verify karna bohot zaroori hota hai.
+
+Important Points ⭐
+
+Software bug real-world damage kar sakta hai.
+
+Verification hidden software errors ko identify karti hai.
+
+Software failure aur Security attack dono different cheezen hain.
+
+Har tested software necessarily correct nahi hota.
+
+Quick Revision
+
+Software Verification = Correctness prove karna.
+Therac-25 = Software bug → Excess radiation → Patient death.
+Welsh NHS Failure = Technical software failure.
+Security issue ❌
+Software issue ✅
+Verification software reliability improve karti hai.`,
+  questions: [
+    {
+      q: 'The Therac-25 incident is primarily cited in the lecture as an example of:',
+      options: [
+        'A. Hardware malfunction',
+        'B. Network security breach',
+        'C. Software failure causing serious real-world consequences',
+        'D. Database corruption'
+      ],
+      answer: 'C. Software failure causing serious real-world consequences',
+      diff: 'hard',
+    },
+    {
+      q: 'According to the lecture, the Welsh NHS IT failure in 2018 was caused by:',
+      options: [
+        'A. A cyberattack on hospital servers',
+        'B. A technical software problem',
+        'C. A hardware power failure',
+        'D. An internet outage'
+      ],
+      answer: 'B. A technical software problem',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement best explains the purpose of Software Verification using the given examples?',
+      options: [
+        'A. To improve internet speed',
+        'B. To ensure software behaves correctly under all valid situations before deployment',
+        'C. To reduce hardware cost',
+        'D. To replace software testing completely'
+      ],
+      answer: 'B. To ensure software behaves correctly under all valid situations before deployment',
+      diff: 'hard',
+    },
+    {
+      q: 'What important distinction is emphasized before discussing the software failure examples?',
+      options: [
+        'A. Secure software and open-source software',
+        'B. Fast algorithms and slow algorithms',
+        'C. A program believed to be correct and a program that is actually correct',
+        'D. Binary Search and Sequential Search'
+      ],
+      answer: 'C. A program believed to be correct and a program that is actually correct',
+      diff: 'hard',
+    },
+    {
+      q: 'Which conclusion can be drawn from both examples presented in the lecture?',
+      options: [
+        'A. Software errors always involve hacking',
+        'B. Minor software defects can lead to major real-world problems',
+        'C. Hardware failures are more dangerous than software failures',
+        'D. Software verification is unnecessary after testing'
+      ],
+      answer: 'B. Minor software defects can lead to major real-world problems',
+      diff: 'hard',
     }
   ]
 },
