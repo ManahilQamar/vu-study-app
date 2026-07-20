@@ -45170,6 +45170,2750 @@ Exam Tips ⭐
 },
 
 
+131: {
+  title: "Software Engineering: Testing Phase",
+  summary: `Testing Phase ⭐
+
+Testing Phase ka purpose software me errors (bugs) ko detect karna aur software ko verify karna hota hai.
+
+Traditional approach me Testing sirf debugging aur final software ko check karne tak limited thi.
+
+Modern Software Engineering ⭐
+
+Aaj Software Engineering me Testing sirf end me nahi hoti.
+
+Har phase ke output ko verify aur validate kiya jata hai.
+
+Example:
+
+• Requirements ko confirm kiya jata hai.
+• Design ko validate kiya jata hai.
+• Implementation ko test kiya jata hai.
+
+Quality Assurance (QA) ⭐
+
+Testing Quality Assurance (QA) ka ek hissa hai.
+
+QA ka objective ye ensure karna hai ke software har phase me quality standards ko meet kare.
+
+Isliye quality sirf final product me nahi, poore development process me maintain ki jati hai.
+
+Important Point ⭐
+
+Bohat testing ke baad bhi large software systems me kuch bugs reh sakte hain.
+
+Isi wajah se software engineering me research abhi bhi continue hai taake software ko aur reliable banaya ja sake.
+
+Exam Tips ⭐
+
+• Testing ka purpose bugs detect aur software verify karna hai.
+• Modern software engineering me testing sirf final phase tak limited nahi hai.
+• Har SDLC phase me quality check ki jati hai.
+• Testing Quality Assurance (QA) ka ek part hai.
+• Extensive testing ke baad bhi software me hidden bugs reh sakte hain.
+• Software engineering ka goal software errors ko minimum karna hai.`,
+  questions: [
+    {
+      q: 'According to modern software engineering, testing should be performed:',
+      options: [
+        'A. Only after implementation is completed.',
+        'B. Throughout the software development process.',
+        'C. Only during the maintenance phase.',
+        'D. Only before writing the source code.'
+      ],
+      answer: 'B. Throughout the software development process.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why is the traditional view of testing considered too narrow?',
+      options: [
+        'A. Because it focuses mainly on debugging the final software product.',
+        'B. Because it ignores software documentation completely.',
+        'C. Because it requires programmers to write less code.',
+        'D. Because it replaces the need for software design.'
+      ],
+      answer: 'A. Because it focuses mainly on debugging the final software product.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement best describes the relationship between Testing and Quality Assurance (QA)?',
+      options: [
+        'A. Testing has completely replaced Quality Assurance.',
+        'B. Testing is one component of the overall Quality Assurance process.',
+        'C. Quality Assurance is performed only after testing is finished.',
+        'D. Testing and Quality Assurance are unrelated activities.'
+      ],
+      answer: 'B. Testing is one component of the overall Quality Assurance process.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which activity is most consistent with the modern software engineering approach?',
+      options: [
+        'A. Validate the design before implementation begins.',
+        'B. Skip requirement verification to save development time.',
+        'C. Perform testing only after the software is delivered.',
+        'D. Test the software only if users report a problem.'
+      ],
+      answer: 'A. Validate the design before implementation begins.',
+      diff: 'hard',
+    },
+    {
+      q: 'Even after extensive testing, large software systems may still contain errors because:',
+      options: [
+        'A. Every software bug can always be detected before release.',
+        'B. Some defects remain hidden despite thorough testing.',
+        'C. Testing automatically removes every programming mistake.',
+        'D. Quality Assurance guarantees completely error-free software.'
+      ],
+      answer: 'B. Some defects remain hidden despite thorough testing.',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+132: {
+  title: "Software Engineering: Software Engineering Methodologies (I)",
+  summary: `Software Engineering Methodologies ⭐
+
+Software Engineering Methodology batati hai ke software ko kis approach se develop kiya jaye.
+
+Different projects ke liye different methodologies use ki ja sakti hain.
+
+Waterfall Model ⭐
+
+Waterfall Model sab se purani software development methodology hai.
+
+Is model me har phase sequence me complete hota hai.
+
+Order:
+
+Requirements → Design → Implementation → Testing
+
+Ek phase complete hone ke baad hi next phase start hota hai.
+
+Waterfall me development sirf ek direction me move karta hai.
+
+Incremental Model ⭐
+
+Incremental Model me software ek hi baar complete nahi banaya jata.
+
+Pehle software ka basic version develop hota hai.
+
+Uske baad new features step-by-step add kiye jate hain.
+
+Har increment ko test bhi kiya jata hai.
+
+Iterative Model ⭐
+
+Iterative Model me software ko repeatedly improve aur refine kiya jata hai.
+
+Har iteration ke baad previous version better ban jata hai.
+
+Difference ⭐
+
+Incremental Model:
+
+👉 New features add karta hai.
+
+Iterative Model:
+
+👉 Existing version ko improve aur refine karta hai.
+
+RUP (Rational Unified Process) ⭐
+
+RUP ek software development methodology hai.
+
+Ye iterative approach follow karti hai.
+
+RUP software development ke liye guidelines aur best practices provide karti hai.
+
+IBM ne RUP ko popular banaya.
+
+Exam Tips ⭐
+
+• Waterfall Model sequential methodology hai.
+• Waterfall me phases overlap nahi karte.
+• Incremental Model me software step-by-step grow karta hai.
+• Iterative Model me software ko repeatedly improve kiya jata hai.
+• Incremental = Add Features.
+• Iterative = Improve Existing Version.
+• RUP iterative methodology par based hai.
+• RUP software development ke liye guidelines provide karti hai.`,
+  questions: [
+    {
+      q: 'Which statement best describes the Waterfall Model?',
+      options: [
+        'A. Development proceeds through fixed sequential phases.',
+        'B. Features are added after every customer review.',
+        'C. Every phase is repeated until the software is perfect.',
+        'D. Coding begins before requirements are completed.'
+      ],
+      answer: 'A. Development proceeds through fixed sequential phases.',
+      diff: 'hard',
+    },
+    {
+      q: 'A software team first releases a basic product and then gradually adds reporting, security and backup features. Which methodology best matches this approach?',
+      options: [
+        'A. Waterfall Model',
+        'B. Incremental Model',
+        'C. Testing Model',
+        'D. Maintenance Model'
+      ],
+      answer: 'B. Incremental Model',
+      diff: 'hard',
+    },
+    {
+      q: 'Which characteristic is most closely associated with the Iterative Model?',
+      options: [
+        'A. Completing each phase only once.',
+        'B. Continuously refining earlier versions of the software.',
+        'C. Delaying testing until the final release.',
+        'D. Avoiding changes after requirements analysis.'
+      ],
+      answer: 'B. Continuously refining earlier versions of the software.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which option correctly distinguishes the Incremental and Iterative models?',
+      options: [
+        'A. Incremental adds functionality, whereas Iterative focuses on refinement.',
+        'B. Incremental removes features, whereas Iterative adds hardware.',
+        'C. Incremental is used only for testing, whereas Iterative is used only for coding.',
+        'D. There is no practical difference between the two models.'
+      ],
+      answer: 'A. Incremental adds functionality, whereas Iterative focuses on refinement.',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the primary purpose of the Rational Unified Process (RUP)?',
+      options: [
+        'A. To provide an iterative software development framework with practical guidelines.',
+        'B. To replace all software programming languages.',
+        'C. To eliminate the need for software testing.',
+        'D. To convert the Waterfall Model into a hardware design process.'
+      ],
+      answer: 'A. To provide an iterative software development framework with practical guidelines.',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+133: {
+  title: "Software Engineering: Software Engineering Methodologies (II)",
+  summary: `Software Engineering Methodologies (II) ⭐
+
+Modern software development me prototypes aur Agile methodologies ka bohat important role hai.
+
+Prototype ⭐
+
+Prototype software ka incomplete ya sample version hota hai.
+
+Iska purpose final software banana nahi, balki idea ko verify aur users se feedback lena hota hai.
+
+Evolutionary Prototyping ⭐
+
+Evolutionary Prototyping me prototype ko gradually improve kiya jata hai.
+
+Aakhir me wahi prototype final software ban jata hai.
+
+Throwaway Prototyping ⭐
+
+Throwaway Prototyping me prototype sirf requirements samajhne ya idea demonstrate karne ke liye banaya jata hai.
+
+Requirements clear hone ke baad us prototype ko discard kar diya jata hai aur final software dobara develop kiya jata hai.
+
+Rapid Prototyping ⭐
+
+Rapid Prototyping me software ka simple prototype bohat jaldi prepare kiya jata hai.
+
+Iska purpose users se feedback lena aur requirements ko clarify karna hota hai.
+
+Open-Source Development ⭐
+
+Open-source development me source code publicly available hota hai.
+
+Developers source code download karke usme improvements ya bug fixes kar sakte hain.
+
+Ye improvements original project me bhi include ki ja sakti hain.
+
+Example:
+
+Linux Operating System
+
+Agile Methods ⭐
+
+Agile software development ek flexible methodology hai.
+
+Isme software small increments me develop hota hai.
+
+Requirements change hone par development process easily adapt kar leti hai.
+
+Extreme Programming (XP) ⭐
+
+XP ek Agile methodology hai.
+
+Isme:
+
+• Small team hoti hai.
+• Development short cycles me hota hai.
+• Requirements, Design, Coding aur Testing repeatedly perform hote hain.
+• Stakeholders har version ka feedback dete hain.
+
+Exam Tips ⭐
+
+• Prototype software ka sample version hota hai.
+• Evolutionary Prototype final software ka part ban jata hai.
+• Throwaway Prototype discard kar diya jata hai.
+• Rapid Prototype communication aur requirement clarification ke liye use hota hai.
+• Open-source software ka source code publicly available hota hai.
+• Linux open-source software ki famous example hai.
+• Agile methodology flexible hoti hai.
+• XP (Extreme Programming) Agile methodology ka example hai.
+• Agile changing requirements ko easily handle karti hai.
+• Waterfall rigid hai, jabke Agile flexible hai.`,
+  questions: [
+    {
+      q: 'Which statement correctly describes Evolutionary Prototyping?',
+      options: [
+        'A. The prototype is gradually improved until it becomes the final system.',
+        'B. The prototype is discarded before implementation starts.',
+        'C. The prototype is created only for software testing.',
+        'D. The prototype is used only to prepare project documentation.'
+      ],
+      answer: 'A. The prototype is gradually improved until it becomes the final system.',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the main purpose of Throwaway Prototyping?',
+      options: [
+        'A. To create a prototype that will evolve into the final product.',
+        'B. To understand requirements before building the actual system.',
+        'C. To reduce the need for software maintenance.',
+        'D. To replace the implementation phase completely.'
+      ],
+      answer: 'B. To understand requirements before building the actual system.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why is Rapid Prototyping commonly used during software development?',
+      options: [
+        'A. To improve communication and obtain early user feedback.',
+        'B. To complete the entire software project without coding.',
+        'C. To eliminate software testing from the SDLC.',
+        'D. To generate the final production version immediately.'
+      ],
+      answer: 'A. To improve communication and obtain early user feedback.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which characteristic best distinguishes Agile methods from the Waterfall model?',
+      options: [
+        'A. Agile welcomes changing requirements during development.',
+        'B. Agile requires all requirements to be finalized before coding.',
+        'C. Agile performs testing only after implementation ends.',
+        'D. Agile completely avoids communication with stakeholders.'
+      ],
+      answer: 'A. Agile welcomes changing requirements during development.',
+      diff: 'hard',
+    },
+    {
+      q: 'A software team releases small working versions every few days, gathers stakeholder feedback, and continuously improves the product. Which methodology does this scenario best represent?',
+      options: [
+        'A. Waterfall Model',
+        'B. Agile / Extreme Programming (XP)',
+        'C. Throwaway Prototyping',
+        'D. Sequential Development'
+      ],
+      answer: 'B. Agile / Extreme Programming (XP)',
+      diff: 'hard',
+    },
+  ]
+},
+
+134: {
+  title: "Software Engineering: Modularity and Software Design",
+  summary: `Modularity ⭐
+
+Modularity ka matlab hai software ko chhote aur manageable parts (modules) me divide karna.
+
+Har module software ka sirf ek specific task perform karta hai.
+
+Is se software ko samajhna, maintain karna aur modify karna easy ho jata hai.
+
+Why Modularity? ⭐
+
+Large software systems ko ek hi program ki form me manage karna bohat difficult hota hai.
+
+Isliye software ko multiple modules me divide kiya jata hai.
+
+Har module apni responsibility handle karta hai.
+
+Modules in Different Paradigms ⭐
+
+Different programming paradigms me modules ki form different hoti hai.
+
+Imperative Paradigm:
+
+Modules = Functions
+
+Object-Oriented Paradigm (OOP):
+
+Modules = Objects
+
+Imperative Design ⭐
+
+Imperative paradigm me design activities (functions) ke around hoti hai.
+
+Developer pehle sochta hai:
+
+👉 Software ko kaun kaun se tasks perform karne hain.
+
+Example:
+
+Tennis Game
+
+Possible Functions:
+
+• Serve()
+• ComputePath()
+• Return()
+• UpdateScore()
+• ControlGame()
+
+Har function ek specific task perform karta hai.
+
+Structure Chart ⭐
+
+Structure Chart software ke modules aur unke relationships ko show karta hai.
+
+Ye sirf batata hai:
+
+• Kaun se functions hain.
+• Kaunsa function kis function ko call karta hai.
+
+Ye function ki internal implementation show nahi karta.
+
+Exam Tips ⭐
+
+• Modularity software ko small modules me divide karti hai.
+• Modularity maintenance aur modification ko easy banati hai.
+• Imperative paradigm me modules functions hote hain.
+• OOP me modules objects hote hain.
+• Structure Chart modules aur function calls ko represent karta hai.
+• Structure Chart implementation details show nahi karta.
+• Imperative design tasks/functions par focus karti hai.`,
+  questions: [
+    {
+      q: 'What is the primary purpose of modularity in software engineering?',
+      options: [
+        'A. To divide a large system into manageable modules.',
+        'B. To combine all functions into a single program.',
+        'C. To remove the need for software testing.',
+        'D. To increase the size of the source code.'
+      ],
+      answer: 'A. To divide a large system into manageable modules.',
+      diff: 'hard',
+    },
+    {
+      q: 'According to the imperative paradigm, software modules are primarily represented as:',
+      options: [
+        'A. Objects',
+        'B. Classes',
+        'C. Functions',
+        'D. Databases'
+      ],
+      answer: 'C. Functions',
+      diff: 'hard',
+    },
+    {
+      q: 'What information does a Structure Chart mainly provide?',
+      options: [
+        'A. The internal code of every function.',
+        'B. The relationships and dependencies among modules.',
+        'C. The database design of the software.',
+        'D. The testing results of each module.'
+      ],
+      answer: 'B. The relationships and dependencies among modules.',
+      diff: 'hard',
+    },
+    {
+      q: 'In the tennis game example, which function is responsible for coordinating the overall game?',
+      options: [
+        'A. Serve()',
+        'B. Return()',
+        'C. UpdateScore()',
+        'D. ControlGame()'
+      ],
+      answer: 'D. ControlGame()',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement correctly compares Imperative and Object-Oriented design?',
+      options: [
+        'A. Imperative focuses on functions, while Object-Oriented focuses on objects.',
+        'B. Both paradigms always use functions as their basic modules.',
+        'C. Object-Oriented ignores modularity completely.',
+        'D. Imperative design begins by identifying objects and their relationships.'
+      ],
+      answer: 'A. Imperative focuses on functions, while Object-Oriented focuses on objects.',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+135: {
+  title: "Software Engineering: Coupling",
+  summary: `Coupling ⭐
+
+Coupling ka matlab hai do modules ke darmiyan connection ya dependency.
+
+Software Engineering me goal hota hai coupling ko minimum rakhna.
+
+Kam coupling ka matlab:
+
+• Modules zyada independent hote hain.
+• Maintenance easy hoti hai.
+• Ek module me change karne se dusre modules par kam effect padta hai.
+
+High Coupling ⭐
+
+Agar modules ek dusre par bohat zyada depend karte hon to usay High Coupling kehte hain.
+
+High Coupling software ko maintain aur modify karna difficult bana deti hai.
+
+Types of Coupling ⭐
+
+1. Control Coupling
+
+Control Coupling tab hoti hai jab ek module dusre module ko execution control transfer karta hai.
+
+Example:
+
+Ek function dusre function ko call karta hai.
+
+2. Data Coupling
+
+Data Coupling tab hoti hai jab do modules data share karte hain.
+
+Ye sharing parameters ya shared data ke through ho sakti hai.
+
+Object-Oriented Paradigm ⭐
+
+Object-Oriented Programming me data aur methods ek object ke andar hote hain.
+
+Isi wajah se objects ko kam data share karna padta hai.
+
+Result:
+
+Data Coupling naturally kam ho jati hai.
+
+Global Data ⭐
+
+Global Data tamam modules access kar sakte hain.
+
+Agar bohat zyada Global Data use ki jaye to modules ke dependencies increase ho jati hain.
+
+Isi liye Global Data ko carefully use karna chahiye.
+
+Exam Tips ⭐
+
+• Coupling = Modules ke darmiyan dependency.
+• Good software design me Low Coupling preferred hoti hai.
+• High Coupling maintenance ko difficult banati hai.
+• Control Coupling function calls ki wajah se hoti hai.
+• Data Coupling data sharing ki wajah se hoti hai.
+• OOP generally Data Coupling ko reduce karti hai.
+• Global Data coupling ko increase kar sakti hai.`,
+  questions: [
+    {
+      q: 'What is the primary objective regarding coupling in software design?',
+      options: [
+        'A. Minimize the dependency between modules.',
+        'B. Maximize the number of function calls.',
+        'C. Increase the amount of global data.',
+        'D. Keep all program logic in a single module.'
+      ],
+      answer: 'A. Minimize the dependency between modules.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which situation best represents Control Coupling?',
+      options: [
+        'A. One function transfers execution to another function.',
+        'B. Two modules access the same global variable.',
+        'C. Two objects store identical data values.',
+        'D. A module creates a local variable.'
+      ],
+      answer: 'A. One function transfers execution to another function.',
+      diff: 'hard',
+    },
+    {
+      q: 'Data Coupling occurs when:',
+      options: [
+        'A. Modules exchange or share data with each other.',
+        'B. A module calls another module without passing data.',
+        'C. Every variable is declared as local.',
+        'D. Objects are created during program execution.'
+      ],
+      answer: 'A. Modules exchange or share data with each other.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why does the Object-Oriented paradigm generally reduce Data Coupling?',
+      options: [
+        'A. Data and related methods are grouped inside the same object.',
+        'B. Objects cannot communicate with each other.',
+        'C. Object-oriented programs never use parameters.',
+        'D. All object data is automatically global.'
+      ],
+      answer: 'A. Data and related methods are grouped inside the same object.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why should Global Data be used with caution in modular software?',
+      options: [
+        'A. It can increase dependencies and make maintenance more difficult.',
+        'B. It can only be accessed by one module at a time.',
+        'C. It automatically reduces coupling between modules.',
+        'D. It prevents functions from sharing information.'
+      ],
+      answer: 'A. It can increase dependencies and make maintenance more difficult.',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+136: {
+  title: "Software Engineering: Cohesion",
+  summary: `Cohesion ⭐
+
+Cohesion ka matlab hai ek module ke andar ke tamam parts kitne closely related hain.
+
+Yani module ke andar sab components mil kar ek hi purpose ke liye kaam karte hain ya nahi.
+
+Software Engineering me goal hota hai:
+
+👉 High Cohesion + Low Coupling
+
+High Cohesion ⭐
+
+Agar module ke andar sirf ek hi specific responsibility ho to usay High Cohesion kehte hain.
+
+Is se:
+
+• Module samajhna easy hota hai.
+• Maintenance easy hoti hai.
+• Changes karna easy hota hai.
+• Bugs kam hote hain.
+
+Logical Cohesion ⭐
+
+Logical Cohesion relatively weak cohesion hai.
+
+Isme module ke andar activities similar category ki hoti hain, lekin sab ek hi exact task perform nahi kartin.
+
+Example:
+
+Ek Communication Module jo:
+
+• User se input leta hai.
+• Results display karta hai.
+• Error messages show karta hai.
+
+Ye sab communication related hain, lekin different tasks hain.
+
+Functional Cohesion ⭐
+
+Functional Cohesion sab se strong aur preferred cohesion hai.
+
+Isme module ke andar har part sirf ek hi specific function perform karta hai.
+
+Example:
+
+Ek CalculateSalary() function sirf salary calculate kare.
+
+Usme printing, file handling ya login ka code na ho.
+
+Object-Oriented Design ⭐
+
+Object-Oriented Programming me poora object aksar Logical Cohesion rakhta hai.
+
+Lekin object ke andar har method ko Functional Cohesion follow karni chahiye.
+
+Yani har method sirf ek hi task perform kare.
+
+Exam Tips ⭐
+
+• Cohesion = Module ke internal parts ki relatedness.
+• High Cohesion software design ka goal hai.
+• High Cohesion maintenance ko easy banati hai.
+• Logical Cohesion me related but different activities hoti hain.
+• Functional Cohesion me sirf ek specific task perform hota hai.
+• Functional Cohesion Logical Cohesion se stronger hoti hai.
+• OOP me object logically cohesive ho sakta hai, lekin methods functionally cohesive hone chahiye.`,
+  questions: [
+    {
+      q: 'What does cohesion measure in a software module?',
+      options: [
+        'A. The degree to which the internal parts of a module are related.',
+        'B. The number of modules connected to each other.',
+        'C. The amount of memory used by the module.',
+        'D. The speed at which the module executes.'
+      ],
+      answer: 'A. The degree to which the internal parts of a module are related.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which type of cohesion is generally considered the strongest and most desirable?',
+      options: [
+        'A. Functional Cohesion',
+        'B. Logical Cohesion',
+        'C. Control Coupling',
+        'D. Data Coupling'
+      ],
+      answer: 'A. Functional Cohesion',
+      diff: 'hard',
+    },
+    {
+      q: 'A module performs user input, displays reports, and prints error messages. According to software engineering concepts, this module most likely exhibits:',
+      options: [
+        'A. Logical Cohesion',
+        'B. Functional Cohesion',
+        'C. Data Coupling',
+        'D. Control Coupling'
+      ],
+      answer: 'A. Logical Cohesion',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement best distinguishes Functional Cohesion from Logical Cohesion?',
+      options: [
+        'A. Functional Cohesion focuses on one specific task, whereas Logical Cohesion groups related activities.',
+        'B. Functional Cohesion depends on global variables, whereas Logical Cohesion depends on local variables.',
+        'C. Functional Cohesion exists only in Object-Oriented Programming, whereas Logical Cohesion exists only in Imperative Programming.',
+        'D. Functional Cohesion increases coupling, whereas Logical Cohesion removes coupling.'
+      ],
+      answer: 'A. Functional Cohesion focuses on one specific task, whereas Logical Cohesion groups related activities.',
+      diff: 'hard',
+    },
+    {
+      q: 'According to object-oriented design principles, software designers should ensure that:',
+      options: [
+        'A. Each method performs a single well-defined task.',
+        'B. Every object contains unrelated methods.',
+        'C. All methods share the same global data.',
+        'D. Every object replaces the need for modularity.'
+      ],
+      answer: 'A. Each method performs a single well-defined task.',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+
+137: {
+  title: "Software Engineering: Information Hiding",
+  summary: `Information Hiding ⭐
+
+Information Hiding Software Engineering ka ek important principle hai.
+
+Iska matlab hai module ki internal details ko dusre modules se hide rakhna.
+
+Dusre modules ko sirf wahi information milni chahiye jo use karne ke liye zaroori ho.
+
+Information ⭐
+
+Yahan Information sirf data nahi hoti.
+
+Isme include hota hai:
+
+• Internal data
+• Data structures
+• Algorithms
+• Module ki internal implementation
+• Module ki logical structure
+
+Purpose ⭐
+
+Information Hiding ka purpose modules ko unnecessary dependency se bachana hai.
+
+Agar ek module ki internal details change ho jayein to baqi modules par uska effect nahi padna chahiye.
+
+Benefits ⭐
+
+• Modules independent rehte hain.
+• Maintenance easy hoti hai.
+• Bugs aur unexpected errors kam hote hain.
+• Internal data safe rehta hai.
+• Future modifications asaan hoti hain.
+
+Two Aspects ⭐
+
+1. Design Level
+
+Module ko is tarah design karo ke dusre modules ko uski internal details ki zarurat hi na pade.
+
+Iske liye:
+
+• High Cohesion
+• Low Coupling
+
+follow ki jati hai.
+
+2. Implementation Level
+
+Module ko is tarah implement karo ke uski internal details protected rahen.
+
+Iske liye:
+
+• Local Variables
+• Encapsulation
+• Well-defined Control Structures
+
+use kiye jate hain.
+
+Information Hiding & Abstraction ⭐
+
+Information Hiding abstraction ka important part hai.
+
+Ek module ko Black Box ki tarah treat kiya jata hai.
+
+User ko sirf input aur output ka pata hota hai.
+
+Internal implementation jan'na zaroori nahi hota.
+
+Exam Tips ⭐
+
+• Information Hiding = Internal details ko hide karna.
+• Goal = Unnecessary dependencies ko avoid karna.
+• High Cohesion aur Low Coupling Information Hiding ko support karte hain.
+• Local Variables aur Encapsulation implementation level par Information Hiding provide karte hain.
+• Information Hiding abstraction aur Black Box concept se closely related hai.`,
+  questions: [
+    {
+      q: 'What is the primary purpose of Information Hiding?',
+      options: [
+        'A. To prevent unnecessary access to a module’s internal details.',
+        'B. To allow every module to modify another module’s data.',
+        'C. To increase the use of global variables.',
+        'D. To eliminate modular programming.'
+      ],
+      answer: 'A. To prevent unnecessary access to a module’s internal details.',
+      diff: 'hard',
+    },
+    {
+      q: 'In the context of Information Hiding, the term "information" includes:',
+      options: [
+        'A. Internal data, algorithms, and implementation details.',
+        'B. Only variables declared inside a function.',
+        'C. Only comments written in the source code.',
+        'D. Only user input accepted by the program.'
+      ],
+      answer: 'A. Internal data, algorithms, and implementation details.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which combination best supports Information Hiding during software design?',
+      options: [
+        'A. High Cohesion and Low Coupling',
+        'B. High Coupling and Global Data',
+        'C. Low Cohesion and Shared Variables',
+        'D. Maximum Intermodule Dependency'
+      ],
+      answer: 'A. High Cohesion and Low Coupling',
+      diff: 'hard',
+    },
+    {
+      q: 'Which technique primarily supports Information Hiding during implementation?',
+      options: [
+        'A. Encapsulation and Local Variables',
+        'B. Global Variables and Shared Memory',
+        'C. Repeated Function Calls',
+        'D. Nested Loops and Recursion'
+      ],
+      answer: 'A. Encapsulation and Local Variables',
+      diff: 'hard',
+    },
+    {
+      q: 'Why is Information Hiding often associated with the Black Box concept?',
+      options: [
+        'A. Users interact with the module without knowing its internal implementation.',
+        'B. The module hides its input and output from every user.',
+        'C. The module can never be modified after development.',
+        'D. The module cannot communicate with other modules.'
+      ],
+      answer: 'A. Users interact with the module without knowing its internal implementation.',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+138: {
+  title: "Software Engineering: Components",
+  summary: `Components ⭐
+
+Component ek reusable software unit hota hai.
+
+Ek component ko ek baar develop karke multiple software projects me dobara use kiya ja sakta hai.
+
+Software Engineering ka goal hai software ko reusable building blocks se banana.
+
+Objects and Components ⭐
+
+Object-Oriented Programming me objects aur classes reusable hote hain.
+
+Lekin Component object se zyada general aur larger reusable unit hota hai.
+
+Ek Component ek ya ek se zyada objects par bhi based ho sakta hai.
+
+Prefabricated Components ⭐
+
+Modern programming languages programmers ko ready-made components provide karti hain.
+
+Examples:
+
+• C++ → Standard Template Library (STL)
+• Java → Java API
+• C# → .NET Framework Class Library
+
+Ye libraries development ko fast aur easy banati hain.
+
+Component-Based Software Engineering (CBSE) ⭐
+
+CBSE me software ko scratch se develop karne ke bajaye ready-made components ko combine karke banaya jata hai.
+
+Developer ka role sirf coding nahi hota.
+
+Wo suitable components select karta hai aur unhe connect karke application develop karta hai.
+
+Good Component ⭐
+
+Ek achha component:
+
+• Reusable hota hai.
+• Self-contained hota hai.
+• Well-defined interface provide karta hai.
+• Minimal customization ke sath different applications me use ho sakta hai.
+
+Components in Smartphones ⭐
+
+Smartphone applications me har feature aksar alag component hota hai.
+
+Example:
+
+• Login Screen
+• Profile Screen
+• Music Service
+• Internet Service
+
+Ye sab alag components ho sakte hain jo zarurat ke mutabiq start aur stop hote hain.
+
+Benefits ⭐
+
+• Reusability
+• Faster Development
+• Easy Maintenance
+• Less Coding
+• Better Integration between Applications
+
+Exam Tips ⭐
+
+• Component = Reusable software unit.
+• Component object se zyada general concept hai.
+• Ek component multiple objects par based ho sakta hai.
+• CBSE me software ready-made components se build hota hai.
+• Java API, STL aur .NET ready-made reusable libraries hain.
+• Smartphone applications component architecture ka common example hain.`,
+  questions: [
+    {
+      q: 'What is the primary characteristic of a software component?',
+      options: [
+        'A. It is a reusable self-contained software unit.',
+        'B. It can only be used in a single application.',
+        'C. It must always consist of exactly one object.',
+        'D. It cannot interact with other software modules.'
+      ],
+      answer: 'A. It is a reusable self-contained software unit.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement correctly distinguishes a component from an object?',
+      options: [
+        'A. A component is a more general reusable unit that may contain one or more objects.',
+        'B. Every component is smaller than an object.',
+        'C. Components exist only in procedural programming languages.',
+        'D. Objects cannot be reused, whereas components can.'
+      ],
+      answer: 'A. A component is a more general reusable unit that may contain one or more objects.',
+      diff: 'hard',
+    },
+    {
+      q: 'In Component-Based Software Engineering (CBSE), the developer primarily focuses on:',
+      options: [
+        'A. Selecting and assembling existing components.',
+        'B. Writing every software module completely from scratch.',
+        'C. Avoiding reusable software libraries.',
+        'D. Replacing object-oriented programming with machine language.'
+      ],
+      answer: 'A. Selecting and assembling existing components.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which of the following best represents a collection of prefabricated reusable components for Java?',
+      options: [
+        'A. Java API',
+        'B. HTML DOM',
+        'C. BIOS',
+        'D. SQL Engine'
+      ],
+      answer: 'A. Java API',
+      diff: 'hard',
+    },
+    {
+      q: 'Why is component architecture especially useful in smartphone applications?',
+      options: [
+        'A. Individual components can be started and stopped as needed, improving resource usage.',
+        'B. Smartphones execute only one component throughout the applications lifetime.',
+        'C. Every screen must always be implemented inside a single component.',
+        'D. Component architecture eliminates the need for communication between applications.'
+      ],
+      answer: 'A. Individual components can be started and stopped as needed, improving resource usage.',
+      diff: 'hard',
+    },
+  ]
+},
+
+139: {
+  title: "Software Engineering: Design Patterns",
+  summary: `Design Patterns ⭐
+
+Design Pattern ek pre-defined solution hota hai jo software design ke recurring (bar-bar aane wale) problems ko solve karne ke liye use hota hai.
+
+Yani agar ek problem different projects me repeatedly aaye to uske liye pehle se proven solution ko Design Pattern kehte hain.
+
+Purpose ⭐
+
+Design Patterns ka purpose hai:
+
+• Reusable solutions provide karna.
+• Software design ko simple banana.
+• Complex systems ko maintainable banana.
+• High-quality software develop karna.
+
+Adapter Pattern ⭐
+
+Kabhi kisi existing module me required functionality hoti hai, lekin uska interface current application se compatible nahi hota.
+
+Adapter Pattern ek wrapper create karta hai jo dono interfaces ke darmiyan translation karta hai.
+
+Result:
+
+Old module ko modify kiye bina use kiya ja sakta hai.
+
+Decorator Pattern ⭐
+
+Decorator Pattern kisi object ya module me new functionality add karta hai bina uska original code change kiye.
+
+Is se different combinations of features easily implement ki ja sakti hain aur software unnecessary complex nahi banta.
+
+Design Patterns & Software Engineering ⭐
+
+Design Patterns banate waqt Software Engineering ke principles follow kiye jate hain.
+
+Jaise:
+
+• Low Coupling
+• High Cohesion
+
+Ye patterns software ko reusable aur maintainable banate hain.
+
+Real World Usage ⭐
+
+Modern development frameworks aur libraries me bohat se Design Patterns already implemented hote hain.
+
+Examples:
+
+• Java Frameworks
+• .NET Framework
+
+Exam Tips ⭐
+
+• Design Pattern = Recurring problem ka reusable solution.
+• Design Patterns software design improve karte hain.
+• Adapter Pattern incompatible interfaces ko compatible banata hai.
+• Adapter original module ko wrap karta hai.
+• Decorator Pattern new functionality add karta hai bina original code modify kiye.
+• Design Patterns Low Coupling aur High Cohesion ko support karte hain.
+• Java aur .NET frameworks me Design Patterns extensively use hote hain.`,
+  questions: [
+    {
+      q: 'What is the primary purpose of a Design Pattern?',
+      options: [
+        'A. To provide a proven solution for recurring software design problems.',
+        'B. To replace programming languages during implementation.',
+        'C. To eliminate the software testing phase.',
+        'D. To generate executable code automatically.'
+      ],
+      answer: 'A. To provide a proven solution for recurring software design problems.',
+      diff: 'hard',
+    },
+    {
+      q: 'A software module has the required functionality but its interface is incompatible with the current application. Which design pattern is most appropriate?',
+      options: [
+        'A. Adapter Pattern',
+        'B. Decorator Pattern',
+        'C. Waterfall Model',
+        'D. Functional Cohesion'
+      ],
+      answer: 'A. Adapter Pattern',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement best describes the Decorator Pattern?',
+      options: [
+        'A. It adds new functionality without modifying the original component.',
+        'B. It converts one interface into another compatible interface.',
+        'C. It divides software into sequential development phases.',
+        'D. It minimizes the number of software modules.'
+      ],
+      answer: 'A. It adds new functionality without modifying the original component.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why are Design Patterns widely used in modern software development?',
+      options: [
+        'A. They encourage reusable, maintainable and high-quality software designs.',
+        'B. They remove the need for software requirements analysis.',
+        'C. They guarantee software without any bugs.',
+        'D. They eliminate the need for object-oriented programming.'
+      ],
+      answer: 'A. They encourage reusable, maintainable and high-quality software designs.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which software engineering principles are commonly reflected in well-designed Design Patterns?',
+      options: [
+        'A. Low Coupling and High Cohesion',
+        'B. High Coupling and Global Data',
+        'C. Logical Cohesion and High Coupling',
+        'D. Sequential Execution and Throwaway Coding'
+      ],
+      answer: 'A. Low Coupling and High Cohesion',
+      diff: 'hard',
+    },
+  ]
+},
+140: {
+  title: "Software Engineering: Design Patterns Examples",
+  summary: `Design Pattern Examples ⭐
+
+Is module me do important Design Patterns discuss kiye gaye hain:
+
+• Factory Design Pattern
+• Shopping Cart Design Pattern
+
+Factory Design Pattern ⭐
+
+Factory Design Pattern ek Creational Design Pattern hai.
+
+Iska purpose objects ko directly create karne ke bajaye ek Factory ke through create karna hota hai.
+
+Client ko object banane ki internal details ka pata nahi hota.
+
+Factory required object create karke return kar deti hai.
+
+Benefits ⭐
+
+• Loose Coupling
+• Reusability
+• Easy Maintenance
+• Easy Extension
+
+Example:
+
+Agar Car Factory Honda, BMW aur Toyota cars banati hai, to client sirf Factory ko car type batata hai.
+
+Factory khud required car object create kar deti hai.
+
+Agar future me Audi add ho jaye to sirf Factory update hogi, client code change nahi hoga.
+
+Shopping Cart Design Pattern ⭐
+
+Shopping Cart Pattern e-commerce applications me use hota hai.
+
+Ye tab useful hota hai jab:
+
+• User multiple products buy kar sakta ho.
+• Ek hi product ki multiple quantity buy kar sakta ho.
+• User shopping continue karne ke liye baad me wapas aa sakta ho.
+• User payment baad me karna chahta ho.
+
+Shopping Cart Pattern kab use nahi karna? ⭐
+
+Agar application me sirf ek hi product purchase karna possible ho ya user ek time me sirf ek item hi buy kar sakta ho to Shopping Cart Pattern ki zarurat nahi hoti.
+
+Exam Tips ⭐
+
+• Factory Pattern = Creational Design Pattern.
+• Factory Pattern Loose Coupling provide karta hai.
+• Factory object creation ko abstract karta hai.
+• Client directly object create nahi karta.
+• Shopping Cart Pattern e-commerce systems me use hota hai.
+• Shopping Cart multiple products aur delayed checkout ko support karta hai.
+• Single-product applications me Shopping Cart Pattern suitable nahi hota.`,
+  questions: [
+    {
+      q: 'Which statement best describes the Factory Design Pattern?',
+      options: [
+        'A. It creates required objects through a factory instead of direct object creation.',
+        'B. It stores multiple products until payment is completed.',
+        'C. It improves software performance by reducing memory usage only.',
+        'D. It divides software into sequential development phases.'
+      ],
+      answer: 'A. It creates required objects through a factory instead of direct object creation.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why is the Factory Design Pattern considered loosely coupled?',
+      options: [
+        'A. The client depends on the factory rather than concrete object implementations.',
+        'B. Every object directly creates all other objects.',
+        'C. All classes must share the same global variables.',
+        'D. The client must know the internal implementation of every object.'
+      ],
+      answer: 'A. The client depends on the factory rather than concrete object implementations.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which situation is the most appropriate for using the Shopping Cart Design Pattern?',
+      options: [
+        'A. An online store where users can buy multiple products and complete payment later.',
+        'B. A website that allows purchasing only one fixed product at a time.',
+        'C. A calculator application that performs arithmetic operations.',
+        'D. A login screen that authenticates a single user.'
+      ],
+      answer: 'A. An online store where users can buy multiple products and complete payment later.',
+      diff: 'hard',
+    },
+    {
+      q: 'In which scenario is the Shopping Cart Design Pattern generally NOT recommended?',
+      options: [
+        'A. A system where users can purchase only one product per transaction.',
+        'B. An e-commerce website selling hundreds of products.',
+        'C. A shopping application supporting saved carts.',
+        'D. An online marketplace with delayed checkout.'
+      ],
+      answer: 'A. A system where users can purchase only one product per transaction.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement correctly compares the two design patterns discussed in this module?',
+      options: [
+        'A. Factory Pattern manages object creation, whereas Shopping Cart Pattern manages purchasing multiple products.',
+        'B. Factory Pattern stores products, whereas Shopping Cart Pattern creates software objects.',
+        'C. Both patterns are used only for database management.',
+        'D. Both patterns eliminate the need for object-oriented programming.'
+      ],
+      answer: 'A. Factory Pattern manages object creation, whereas Shopping Cart Pattern manages purchasing multiple products.',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+
+141: {
+  title: "Software Engineering: Scope of Quality Assurance",
+  summary: `Scope of Quality Assurance (SQA) ⭐
+
+Pehle Software Quality ka focus sirf programming bugs ko remove karna tha.
+
+Aaj Software Quality Assurance (SQA) poore Software Development Life Cycle (SDLC) ko cover karti hai.
+
+Yani quality sirf coding me nahi, har development phase me ensure ki jati hai.
+
+Software Quality Assurance (SQA) ⭐
+
+SQA ka purpose software process aur product dono ki quality maintain karna hota hai.
+
+SQA teams ensure karti hain ke development company defined standards aur procedures follow kare.
+
+Standards ⭐
+
+Software industry me quality maintain karne ke liye international standards use kiye jate hain.
+
+Examples:
+
+• ISO 9000
+• ISO/IEC 15504
+• IEEE Standards
+
+Ye standards software development process ko improve karne me help karte hain.
+
+Role of SQA Group ⭐
+
+SQA Group ka kaam hai:
+
+• Development process monitor karna.
+• Standards enforce karna.
+• Documents approve karna.
+• Quality ko maintain karna.
+
+Example:
+
+Waterfall Model me SQA design start hone se pehle Requirements Specification approve karti hai.
+
+Record Keeping ⭐
+
+Software Engineering me accurate documentation bohat important hoti hai.
+
+Agar documents update na kiye jayein to future maintenance difficult ho jati hai.
+
+CASE Tools documentation ko update aur manage karna easy bana dete hain.
+
+Reviews ⭐
+
+Review ek meeting hoti hai jahan software ke kisi phase ko evaluate kiya jata hai.
+
+Types:
+
+• Requirements Review
+• Design Review
+• Implementation Review
+
+Purpose:
+
+• Errors jaldi identify karna.
+• Communication improve karna.
+• Misunderstandings avoid karna.
+
+IEEE 1028 ⭐
+
+IEEE 1028 Software Reviews ke liye standard provide karta hai.
+
+Exam Tips ⭐
+
+• Modern SQA poore SDLC ko cover karti hai.
+• SQA sirf debugging nahi hai.
+• SQA Groups quality standards enforce karti hain.
+• ISO 9000, ISO/IEC 15504 aur IEEE important standards hain.
+• Record Keeping future maintenance ke liye important hai.
+• Reviews communication aur error detection improve karti hain.
+• IEEE 1028 Software Reviews ka standard hai.`,
+  questions: [
+    {
+      q: 'According to modern Software Engineering, the primary scope of Software Quality Assurance (SQA) is to:',
+      options: [
+        'A. Ensure quality throughout the entire software development process.',
+        'B. Remove programming errors only after implementation.',
+        'C. Test the software only before product delivery.',
+        'D. Focus exclusively on debugging source code.'
+      ],
+      answer: 'A. Ensure quality throughout the entire software development process.',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the main responsibility of an SQA (Software Quality Assurance) group?',
+      options: [
+        'A. Monitor compliance with quality standards and development procedures.',
+        'B. Write all application source code for the development team.',
+        'C. Replace software testers during the testing phase.',
+        'D. Design database schemas for every software project.'
+      ],
+      answer: 'A. Monitor compliance with quality standards and development procedures.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why is accurate record keeping considered important in Software Engineering?',
+      options: [
+        'A. It keeps project documentation reliable for future development and maintenance.',
+        'B. It completely removes the need for software reviews.',
+        'C. It guarantees that software will never require maintenance.',
+        'D. It reduces the need for software requirements analysis.'
+      ],
+      answer: 'A. It keeps project documentation reliable for future development and maintenance.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement best describes the purpose of software reviews?',
+      options: [
+        'A. To identify misunderstandings and defects before they become major problems.',
+        'B. To replace software testing completely.',
+        'C. To perform final product installation.',
+        'D. To increase coupling between software modules.'
+      ],
+      answer: 'A. To identify misunderstandings and defects before they become major problems.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which standard specifically addresses Software Reviews according to the lecture?',
+      options: [
+        'A. IEEE 1028',
+        'B. ISO 9000',
+        'C. ISO/IEC 15504',
+        'D. IEEE 802.11'
+      ],
+      answer: 'A. IEEE 1028',
+      diff: 'hard',
+    },
+  ]
+},
+
+142: {
+  title: "Software Engineering: Software Testing",
+  summary: `Software Testing ⭐
+
+Software Testing ka purpose software me errors (bugs) ko detect karna hota hai.
+
+Sirf testing se kabhi bhi 100% guarantee nahi milti ke software bilkul error-free hai, kyun ke har possible input aur execution path test karna practically impossible hota hai.
+
+Testing Methodologies ⭐
+
+Software Engineers different testing techniques use karte hain taake kam test cases me zyada errors mil sakein.
+
+Pareto Principle (80/20 Rule) ⭐
+
+Pareto Principle ke mutabiq:
+
+• Zyada tar bugs sirf kuch modules me hote hain.
+• Is liye un modules ko zyada thoroughly test karna chahiye.
+
+Yani effort un areas par lagao jahan errors aane ke chances sab se zyada hon.
+
+Basis Path Testing ⭐
+
+Basis Path Testing ka goal hota hai:
+
+Program ki har statement kam az kam ek baar execute ho.
+
+Ye Graph Theory ki help se test cases design karta hai.
+
+Glass-Box Testing ⭐
+
+Glass-Box Testing me tester ko program ka internal code aur structure pata hota hai.
+
+Tester code dekh kar test cases banata hai.
+
+Examples:
+
+• Pareto Principle
+• Basis Path Testing
+
+Black-Box Testing ⭐
+
+Black-Box Testing me tester ko code dekhne ki zarurat nahi hoti.
+
+Sirf input aur output check kiye jate hain, bilkul end user ki tarah.
+
+Boundary Value Analysis ⭐
+
+Boundary Value Analysis me software ko input range ke edge values par test kiya jata hai.
+
+Example:
+
+Agar valid age 18–60 hai to:
+
+17, 18, 19, 59, 60, 61 test kiye jate hain.
+
+Boundary values par bugs milne ke chances zyada hote hain.
+
+Alpha Testing ⭐
+
+• Developer ki company ke andar hoti hai.
+• Final release se pehle developers ya internal testers perform karte hain.
+
+Beta Testing ⭐
+
+• Real users ko preliminary version diya jata hai.
+• Real-world feedback aur hidden bugs collect kiye jate hain.
+• Final release se pehle hoti hai.
+
+Exam Tips ⭐
+
+• Testing software ko bug-free prove nahi karti.
+• Pareto Principle = Few modules contain most bugs.
+• Basis Path Testing = Every statement executes at least once.
+• Glass-Box = Internal code is known.
+• Black-Box = Internal code is hidden.
+• Boundary Value Analysis tests edge values.
+• Alpha = Internal testing.
+• Beta = Testing by real users before final release.`,
+  questions: [
+    {
+      q: 'Why can software testing never guarantee that software is completely error-free?',
+      options: [
+        'A. Because testing every possible execution path is practically impossible.',
+        'B. Because programmers intentionally leave some errors in the code.',
+        'C. Because testing is performed only after software deployment.',
+        'D. Because software cannot be tested before implementation.'
+      ],
+      answer: 'A. Because testing every possible execution path is practically impossible.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which testing methodology is based on the idea that most software defects are concentrated in a small number of modules?',
+      options: [
+        'A. Pareto Principle',
+        'B. Boundary Value Analysis',
+        'C. Alpha Testing',
+        'D. Equivalence Partitioning'
+      ],
+      answer: 'A. Pareto Principle',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the primary objective of Basis Path Testing?',
+      options: [
+        'A. Ensure every program statement executes at least once during testing.',
+        'B. Execute every possible path through the program.',
+        'C. Test only the modules with the highest complexity.',
+        'D. Verify software only from the user’s perspective.'
+      ],
+      answer: 'A. Ensure every program statement executes at least once during testing.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement correctly distinguishes Glass-Box Testing from Black-Box Testing?',
+      options: [
+        'A. Glass-box testing uses knowledge of the internal program structure, while black-box testing evaluates external behavior without examining the code.',
+        'B. Glass-box testing is performed only after software release, while black-box testing is performed during coding.',
+        'C. Glass-box testing focuses on user satisfaction, while black-box testing focuses on source code readability.',
+        'D. Glass-box testing ignores program logic, while black-box testing verifies every execution path.'
+      ],
+      answer: 'A. Glass-box testing uses knowledge of the internal program structure, while black-box testing evaluates external behavior without examining the code.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why is Boundary Value Analysis considered an effective black-box testing technique?',
+      options: [
+        'A. Because defects are more likely to appear near the limits of valid input ranges.',
+        'B. Because it guarantees that every execution path is tested.',
+        'C. Because it focuses only on modules with the highest number of defects.',
+        'D. Because it requires complete knowledge of the program source code.'
+      ],
+      answer: 'A. Because defects are more likely to appear near the limits of valid input ranges.',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+143: {
+  title: "Software Engineering: Documentation",
+  summary: `Software Documentation ⭐
+
+Software banana hi kaafi nahi hota.
+
+Users ko software use karna aur developers ko future me maintain karna bhi aana chahiye.
+
+Isi liye Documentation Software Engineering ka important part hai.
+
+Software Documentation ke Types ⭐
+
+Software Documentation ko 3 categories me divide kiya jata hai:
+
+• User Documentation
+• System Documentation
+• Technical Documentation
+
+User Documentation ⭐
+
+Purpose:
+
+Software ko use karna sikhana.
+
+Ye end users ke liye hoti hai aur simple language me likhi jati hai.
+
+Examples:
+
+• User Manual
+• Help Menu
+• Online Help
+• Tutorials
+
+Good User Documentation software ko use karna easy banati hai aur product ki sales bhi improve karti hai.
+
+System Documentation ⭐
+
+Purpose:
+
+Software ki internal working ko explain karna taake future maintenance aur updates asaan ho.
+
+Isme include hota hai:
+
+• Source Code
+• Comments
+• Software Requirements Specification (SRS)
+• Design Documents
+• Coding Standards
+
+Ye documentation developers aur maintenance team ke liye hoti hai.
+
+Technical Documentation ⭐
+
+Purpose:
+
+Software ko install, configure, update aur troubleshoot karna.
+
+Ye mainly System Administrator ya Technical Support ke liye hoti hai.
+
+Examples:
+
+• Installation Guide
+• Configuration Guide
+• Update Instructions
+• Troubleshooting Guide
+
+Exam Tips ⭐
+
+• User Documentation → End User ke liye (How to use software).
+• System Documentation → Developers ke liye (Internal design & maintenance).
+• Technical Documentation → Installation, servicing aur troubleshooting ke liye.
+• Good documentation software ko maintain aur use karna easy bana deti hai.`,
+  questions: [
+    {
+      q: 'Which type of documentation primarily helps developers understand and maintain the internal structure of a software system?',
+      options: [
+        'A. User Documentation',
+        'B. Technical Documentation',
+        'C. System Documentation',
+        'D. Installation Documentation'
+      ],
+      answer: 'C. System Documentation',
+      diff: 'hard',
+    },
+    {
+      q: 'A software package includes an interactive Help menu that explains how to perform different tasks. This is an example of:',
+      options: [
+        'A. Technical Documentation',
+        'B. User Documentation',
+        'C. System Documentation',
+        'D. Design Documentation'
+      ],
+      answer: 'B. User Documentation',
+      diff: 'hard',
+    },
+    {
+      q: 'Why are coding standards, comments, and naming conventions considered important in system documentation?',
+      options: [
+        'A. They improve software readability and simplify future maintenance.',
+        'B. They reduce the need for software testing.',
+        'C. They replace the software requirements specification.',
+        'D. They eliminate the need for user manuals.'
+      ],
+      answer: 'A. They improve software readability and simplify future maintenance.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which documentation would most likely describe software installation, updates, and troubleshooting procedures?',
+      options: [
+        'A. User Documentation',
+        'B. Design Documentation',
+        'C. Technical Documentation',
+        'D. Source Code Documentation'
+      ],
+      answer: 'C. Technical Documentation',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the main purpose of User Documentation in modern software products?',
+      options: [
+        'A. To explain internal algorithms used by the software.',
+        'B. To assist users in learning and effectively using the software.',
+        'C. To record software maintenance history.',
+        'D. To describe hardware architecture requirements.'
+      ],
+      answer: 'B. To assist users in learning and effectively using the software.',
+      diff: 'hard',
+    },
+  ]
+},
+
+144: {
+  title: "Software Engineering: Human Machine Interface",
+  summary: `Human Machine Interface (HMI) ⭐
+
+Human Machine Interface (HMI) se murad software aur user ke darmiyan interaction ka tareeqa hai.
+
+HMI ka goal hai ke software use karna easy, natural aur error-free ho.
+
+Agar interface achha ho to user software ko asani se use kar sakta hai.
+
+Importance of HMI ⭐
+
+User software ki internal coding nahi dekhta.
+
+Wo sirf interface aur usability ko judge karta hai.
+
+Isi liye kisi software ki success ya failure me interface ka bohat bara role hota hai.
+
+Modern HMI Examples ⭐
+
+Aaj kal traditional devices ki jagah naye interfaces use ho rahe hain.
+
+Examples:
+
+• Touch Screen Gestures
+• Voice Commands
+• Virtual Keyboard
+• Auto-Complete
+
+Ye features smartphones ko use karna easy banate hain.
+
+Ergonomics ⭐
+
+Ergonomics ka focus insan ki physical abilities par hota hai.
+
+Yani interface aisa design kiya jaye jo physically comfortable aur easy ho.
+
+Example:
+
+Comfortable keyboard, mouse aur touch controls.
+
+Cognetics ⭐
+
+Cognetics ka focus insan ki mental abilities par hota hai.
+
+Yani interface aisa ho jo sochne aur samajhne me easy ho aur unnecessary confusion na create kare.
+
+Human Factors ⭐
+
+Interface design me kuch important human behaviors ko consider kiya jata hai.
+
+• Habits:
+User bar bar same action karta hai to habit ban jati hai, jis se kabhi kabhi galti bhi ho sakti hai.
+
+• Limited Attention:
+User har notification ya warning notice nahi karta.
+
+• Limited Memory:
+Human ek waqt me limited information yaad rakh sakta hai.
+
+Isi liye interface ko simple aur clear hona chahiye.
+
+GOMS Model ⭐
+
+GOMS ek interface evaluation model hai.
+
+GOMS ka matlab hai:
+
+• Goals
+• Operators
+• Methods
+• Selection Rules
+
+Ye model compare karta hai ke different interfaces me task complete karne me kitna time lagega.
+
+Exam Tips ⭐
+
+• HMI = Human aur Computer ke darmiyan interaction.
+• Good interface software ki success me important role play karta hai.
+• Ergonomics = Physical comfort.
+• Cognetics = Mental comfort.
+• Human habits aur limited attention interface design ko affect karte hain.
+• GOMS = Goals, Operators, Methods, Selection Rules.
+• GOMS interfaces ki efficiency compare karne ke liye use hota hai.`,
+  questions: [
+    {
+      q: 'What is the primary objective of Human-Machine Interface (HMI) design?',
+      options: [
+        'A. To make interaction between users and software simple, efficient, and less error-prone.',
+        'B. To increase the internal complexity of software algorithms.',
+        'C. To replace software testing with user feedback.',
+        'D. To maximize hardware utilization regardless of user experience.'
+      ],
+      answer: 'A. To make interaction between users and software simple, efficient, and less error-prone.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement correctly distinguishes Ergonomics from Cognetics?',
+      options: [
+        'A. Ergonomics focuses on physical interaction, while Cognetics focuses on mental interaction.',
+        'B. Ergonomics improves software performance, while Cognetics improves hardware speed.',
+        'C. Ergonomics is used only for mobile devices, while Cognetics is used only for desktop systems.',
+        'D. Ergonomics studies software architecture, while Cognetics studies networking.'
+      ],
+      answer: 'A. Ergonomics focuses on physical interaction, while Cognetics focuses on mental interaction.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why can confirmation dialogs (such as "Do you really want to delete this file?") still fail to prevent user mistakes?',
+      options: [
+        'A. Because users may develop habits and confirm actions automatically without careful thinking.',
+        'B. Because confirmation dialogs cannot be implemented in modern operating systems.',
+        'C. Because users are required to memorize confirmation messages before responding.',
+        'D. Because confirmation dialogs work only in command-line applications.'
+      ],
+      answer: 'A. Because users may develop habits and confirm actions automatically without careful thinking.',
+      diff: 'hard',
+    },
+    {
+      q: 'According to the lecture, why should interfaces avoid relying heavily on the user’s memory?',
+      options: [
+        'A. Because humans can effectively handle only a limited amount of information at one time.',
+        'B. Because users are unable to remember any previous screen information.',
+        'C. Because software interfaces cannot display related information together.',
+        'D. Because memory limitations affect only beginner computer users.'
+      ],
+      answer: 'A. Because humans can effectively handle only a limited amount of information at one time.',
+      diff: 'hard',
+    },
+    {
+      q: 'In the GOMS model, what is the main purpose of analyzing Goals, Operators, Methods, and Selection Rules?',
+      options: [
+        'A. To compare interface designs by estimating the effort and time required to perform user tasks.',
+        'B. To determine the programming language best suited for implementation.',
+        'C. To replace software quality assurance with automated testing.',
+        'D. To calculate hardware performance during software execution.'
+      ],
+      answer: 'A. To compare interface designs by estimating the effort and time required to perform user tasks.',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+145: {
+  title: "Software Engineering: Software Ownership and Liability",
+  summary: `Software Ownership and Liability ⭐
+
+Software banane me time, paisa aur mehnat lagti hai.
+
+Is liye developers ko apni software ki ownership aur legal protection milni chahiye.
+
+Ye protection Intellectual Property Law ke through di jati hai.
+
+Intellectual Property (IP) ⭐
+
+Intellectual Property ka matlab hai kisi ke creative work ya software par legal ownership.
+
+Software me IP ko protect karne ke liye mainly use hote hain:
+
+• Copyright
+• Software License
+• Patent
+
+Copyright ⭐
+
+Copyright software ke owner ko legally identify karta hai.
+
+Ye source code, documents aur software ki copying ya unauthorized use se protection deta hai.
+
+Lekin copyright software ka idea protect nahi karta, sirf uski original expression ko protect karta hai.
+
+Software License ⭐
+
+Software License ek legal agreement hota hai owner aur user ke darmiyan.
+
+Ye batata hai:
+
+• User software kis tarah use kar sakta hai.
+• Kya restrictions hain.
+• Ownership kis ke paas rahegi.
+
+License use karne ka right deta hai, ownership transfer nahi karta.
+
+Patent ⭐
+
+Patent invention ko legal protection deta hai.
+
+Agar software invention:
+
+• New ho,
+• Useful ho,
+• Aur obvious na ho,
+
+to patent mil sakta hai.
+
+Patent owner dusron ko invention copy ya sell karne se rok sakta hai.
+
+Patent ki validity generally 20 years hoti hai.
+
+Patent Drawback ⭐
+
+Patent lena:
+
+• Mehnga hota hai.
+• Time-consuming hota hai.
+• Patent approve hone tak software purana bhi ho sakta hai.
+
+Software Liability ⭐
+
+Agar software ki wajah se nuksan ho aur developer negligent prove ho jaye, to legal liability ho sakti hai.
+
+Isi liye companies software license me disclaimers likhti hain.
+
+Lekin negligence prove ho jaye to disclaimer hamesha protection nahi deta.
+
+Exam Tips ⭐
+
+• Intellectual Property software ownership ko protect karti hai.
+• Copyright original software ko protect karta hai.
+• License = Permission to use, ownership transfer nahi hoti.
+• Patent invention ko limited time ke liye protect karta hai.
+• Patent ki duration generally 20 years hoti hai.
+• Liability cases me negligence important factor hota hai.
+• Good Software Engineering practices legal risk ko kam karti hain.`,
+  questions: [
+    {
+      q: 'What is the primary purpose of Intellectual Property Law in software engineering?',
+      options: [
+        'A. To protect the ownership rights of software creators.',
+        'B. To improve software execution speed.',
+        'C. To replace software testing procedures.',
+        'D. To eliminate the need for software licenses.'
+      ],
+      answer: 'A. To protect the ownership rights of software creators.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement correctly describes a software license?',
+      options: [
+        'A. It grants permission to use software without transferring ownership rights.',
+        'B. It permanently transfers copyright ownership to every user.',
+        'C. It guarantees that software is completely free of defects.',
+        'D. It replaces the need for copyright protection.'
+      ],
+      answer: 'A. It grants permission to use software without transferring ownership rights.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why are patents generally considered stronger protection than copyrights for software innovations?',
+      options: [
+        'A. A patent can prevent others from making or selling the same invention for a limited time.',
+        'B. A patent automatically makes software open source.',
+        'C. A patent protects only software documentation.',
+        'D. A patent removes the need for software licenses.'
+      ],
+      answer: 'A. A patent can prevent others from making or selling the same invention for a limited time.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why may obtaining a software patent be less practical in some situations?',
+      options: [
+        'A. Because the patent process is expensive and time-consuming, allowing technology to become outdated before approval.',
+        'B. Because patents can only be issued for hardware products.',
+        'C. Because software patents never provide legal protection.',
+        'D. Because copyrights automatically replace patents.'
+      ],
+      answer: 'A. Because the patent process is expensive and time-consuming, allowing technology to become outdated before approval.',
+      diff: 'hard',
+    },
+    {
+      q: 'According to the lecture, what provides the strongest defense against software liability claims?',
+      options: [
+        'A. Following sound software engineering practices and maintaining proper development records.',
+        'B. Including a disclaimer regardless of software quality.',
+        'C. Keeping the software source code secret.',
+        'D. Releasing software without documentation.'
+      ],
+      answer: 'A. Following sound software engineering practices and maintaining proper development records.',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+146: {
+  title: "Data Abstraction: Arrays and Aggregates",
+  summary: `Arrays and Aggregates ⭐
+
+Array ek rectangular collection hota hai jisme tamam elements same data type ke hote hain.
+
+Array ke elements index ke through access kiye jate hain.
+
+One-Dimensional Array ⭐
+
+• Sirf ek row hoti hai.
+• Har element ka ek index hota hai.
+• Example:
+  - Alphabet letters ki frequency store karna.
+  - Daily temperatures store karna.
+
+Two-Dimensional Array ⭐
+
+• Rows aur columns par mushtamil hota hai.
+• Har element ko do indices identify karte hain.
+• Pehla index row ko represent karta hai.
+• Dusra index column ko represent karta hai.
+• Example:
+  - Students ke marks.
+  - Monthly sales report.
+
+Aggregate ⭐
+
+Aggregate different data types aur different sizes ke related data ko ek unit me organize karta hai.
+
+Aggregate ke andar individual items ko fields kaha jata hai.
+
+Example:
+
+Employee Record
+• Name (Character Array)
+• Age (Integer)
+• Skill Rating (Float)
+
+Aggregate ke fields ko numerical index se nahi, field names se access kiya jata hai.
+
+Array vs Aggregate ⭐
+
+Array
+• Same data type
+• Index-based access
+• Homogeneous data
+
+Aggregate
+• Different data types
+• Field name-based access
+• Related heterogeneous data
+
+Exam Tips ⭐
+
+• Array = Same type + Index.
+• One-dimensional array = Single row.
+• Two-dimensional array = Rows + Columns.
+• Aggregate = Different data types in one record.
+• Aggregate fields are accessed using field names.
+• Employee record is an aggregate, not an array.
+• Students' marks table is a two-dimensional array.`,
+  questions: [
+    {
+      q: 'A software developer needs to store the temperature recorded every hour for a single day. Which data abstraction is the most appropriate?',
+      options: [
+        'A. Aggregate type because each reading belongs to the same day.',
+        'B. One-dimensional array because all values are of the same type and are accessed by position.',
+        'C. Two-dimensional array because time changes throughout the day.',
+        'D. Aggregate type because field names can represent each hour.'
+      ],
+      answer: 'B. One-dimensional array because all values are of the same type and are accessed by position.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which characteristic best distinguishes an aggregate from an array?',
+      options: [
+        'A. An aggregate organizes related information even when its fields have different data types.',
+        'B. An aggregate stores a larger amount of data than an array.',
+        'C. Arrays cannot contain more than one data item.',
+        'D. Arrays and aggregates differ only in memory allocation, not in organization.'
+      ],
+      answer: 'A. An aggregate organizes related information even when its fields have different data types.',
+      diff: 'hard',
+    },
+    {
+      q: 'A two-dimensional array stores students\' marks where rows represent students and columns represent subjects. What does Marks[2][4] most likely represent?',
+      options: [
+        'A. Marks of the 4th student in the 2nd subject.',
+        'B. Marks of the 2nd student in the 4th subject.',
+        'C. Total marks of the 2nd student.',
+        'D. Average marks of the 4th subject.'
+      ],
+      answer: 'B. Marks of the 2nd student in the 4th subject.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which situation is LEAST suitable for using an array?',
+      options: [
+        'A. Storing the daily temperatures of a month.',
+        'B. Recording the ages of all employees in a company.',
+        'C. Storing an employee\'s Name, Age, Salary, and Joining Date together.',
+        'D. Keeping monthly rainfall measurements.'
+      ],
+      answer: 'C. Storing an employee\'s Name, Age, Salary, and Joining Date together.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why are fields in an aggregate usually accessed by field names instead of numerical indices?',
+      options: [
+        'A. Because the fields may represent different kinds of information with different meanings.',
+        'B. Because aggregate fields cannot be stored in memory sequentially.',
+        'C. Because numerical indices are slower than field names.',
+        'D. Because aggregate fields always contain text values.'
+      ],
+      answer: 'A. Because the fields may represent different kinds of information with different meanings.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement about one-dimensional and two-dimensional arrays is conceptually correct?',
+      options: [
+        'A. A one-dimensional array stores only numbers, while a two-dimensional array stores only text.',
+        'B. A two-dimensional array requires two indices because each element belongs to both a row and a column.',
+        'C. A one-dimensional array is simply an aggregate with one field.',
+        'D. A two-dimensional array can only be used in mathematical calculations.'
+      ],
+      answer: 'B. A two-dimensional array requires two indices because each element belongs to both a row and a column.',
+      diff: 'hard',
+    },
+    {
+      q: 'An employee record contains Employee ID, Name, Department, and Salary. Why is an aggregate more appropriate than an array?',
+      options: [
+        'A. Because arrays cannot store integer values.',
+        'B. Because the information represents different attributes of one entity rather than similar values.',
+        'C. Because aggregates require less memory in every case.',
+        'D. Because arrays can only contain 26 elements.'
+      ],
+      answer: 'B. Because the information represents different attributes of one entity rather than similar values.',
+      diff: 'hard',
+    },
+    {
+      q: 'A programmer replaces an aggregate with an array to store employee information. Which problem is most likely to occur?',
+      options: [
+        'A. It becomes difficult to represent different data types meaningfully within the same structure.',
+        'B. The array automatically becomes two-dimensional.',
+        'C. The program can no longer store numerical values.',
+        'D. Field names are converted into row numbers automatically.'
+      ],
+      answer: 'A. It becomes difficult to represent different data types meaningfully within the same structure.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which example demonstrates the correct use of a two-dimensional array?',
+      options: [
+        'A. Storing the names of all employees in a company.',
+        'B. Recording the attendance of multiple students over multiple days.',
+        'C. Storing the personal details of one customer.',
+        'D. Saving the age of every employee.'
+      ],
+      answer: 'B. Recording the attendance of multiple students over multiple days.',
+      diff: 'hard',
+    },
+    {
+      q: 'A programmer says, "I need fast indexed access because every stored item has the same data type and represents the same kind of information." Which data abstraction best satisfies this requirement?',
+      options: [
+        'A. Aggregate because field names improve readability.',
+        'B. Two-dimensional array because every problem requires rows and columns.',
+        'C. Array because homogeneous data can be efficiently accessed using indices.',
+        'D. Aggregate because different data types may be added later.'
+      ],
+      answer: 'C. Array because homogeneous data can be efficiently accessed using indices.',
+      diff: 'hard',
+    }
+  ]
+},
+
+
+148: {
+  title: "Data Abstraction: Trees",
+  summary: `Trees ⭐
+
+Tree ek hierarchical data structure hai jo organization chart ki tarah arrange hota hai.
+
+Tree me har node ka sirf ek parent hota hai (except root).
+
+Different branches neeche ja kar merge nahi karti.
+
+Node ⭐
+
+Tree ke har element ko node kaha jata hai.
+
+Root Node ⭐
+
+• Tree ka sab se upar wala node.
+• Iska koi parent nahi hota.
+• Poora tree isi se start hota hai.
+
+Terminal (Leaf) Node ⭐
+
+• Tree ke sab se neeche wale nodes.
+• Inke koi children nahi hote.
+
+Depth ⭐
+
+Depth se murad root se leaf tak longest path me jitni layers (levels) hon.
+
+Jitni zyada layers hongi utni tree ki depth zyada hogi.
+
+Parent and Child ⭐
+
+• Parent = Jis node ke neeche child ho.
+• Child = Jo node kisi parent ke directly neeche ho.
+
+Ancestors and Descendants ⭐
+
+• Ancestors = Kisi node ke upar wale tamam parents.
+• Descendants = Kisi node ke neeche wale tamam nodes.
+
+Siblings ⭐
+
+Jo nodes same parent share karte hain unhe siblings kehte hain.
+
+Binary Tree ⭐
+
+Binary Tree wo tree hota hai jisme har parent ke maximum do children hote hain.
+
+Ye children generally Left Child aur Right Child kehlate hain.
+
+Subtree ⭐
+
+Kisi bhi node ko root maan kar uske neeche ka poora structure subtree kehlata hai.
+
+Har child apni subtree ka root hota hai.
+
+Exam Tips ⭐
+
+• Tree = Hierarchical structure.
+• Root node ka koi parent nahi hota.
+• Leaf node ke koi children nahi hote.
+• Depth = Root se leaf tak longest path.
+• Siblings = Same parent wale nodes.
+• Parent ke maximum 2 children = Binary Tree.
+• Har child apni subtree ka root hota hai.
+• Tree me ek node ke do parents nahi ho sakte.`,
+  questions: [
+    {
+      q: 'Which property distinguishes a tree from a general hierarchical diagram?',
+      options: [
+        'A. Every node may have multiple parents.',
+        'B. Different branches are allowed to merge freely.',
+        'C. Each node, except the root, has only one parent.',
+        'D. Every node must have exactly two children.'
+      ],
+      answer: 'C. Each node, except the root, has only one parent.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement correctly describes the root node of a tree?',
+      options: [
+        'A. It is the only node that has no parent.',
+        'B. It is always a leaf node.',
+        'C. It must have exactly two children.',
+        'D. It always appears at the bottom of the tree.'
+      ],
+      answer: 'A. It is the only node that has no parent.',
+      diff: 'hard',
+    },
+    {
+      q: 'A node has no children but has one parent. This node is called a:',
+      options: [
+        'A. Root node.',
+        'B. Internal node.',
+        'C. Terminal (leaf) node.',
+        'D. Ancestor node.'
+      ],
+      answer: 'C. Terminal (leaf) node.',
+      diff: 'hard',
+    },
+    {
+      q: 'In a tree, two nodes are considered siblings when they:',
+      options: [
+        'A. Have the same child.',
+        'B. Have the same parent.',
+        'C. Exist at the same depth.',
+        'D. Have no descendants.'
+      ],
+      answer: 'B. Have the same parent.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement about the depth of a tree is correct?',
+      options: [
+        'A. It is the total number of nodes in the tree.',
+        'B. It is the number of children of the root.',
+        'C. It is determined by the longest path from the root to a leaf.',
+        'D. It is equal to the number of leaf nodes.'
+      ],
+      answer: 'C. It is determined by the longest path from the root to a leaf.',
+      diff: 'hard',
+    },
+    {
+      q: 'A binary tree is a tree in which:',
+      options: [
+        'A. Every node has exactly two children.',
+        'B. Every parent has at most two children.',
+        'C. The tree has only two levels.',
+        'D. The root has exactly two descendants.'
+      ],
+      answer: 'B. Every parent has at most two children.',
+      diff: 'hard',
+    },
+    {
+      q: 'If any node along with all of its descendants forms a separate tree, that structure is called a:',
+      options: [
+        'A. Branch node.',
+        'B. Forest.',
+        'C. Subtree.',
+        'D. Cluster.'
+      ],
+      answer: 'C. Subtree.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which relationship correctly describes ancestors of a node?',
+      options: [
+        'A. Nodes directly below it.',
+        'B. Nodes sharing the same parent.',
+        'C. Nodes lying above it toward the root.',
+        'D. Leaf nodes connected to it.'
+      ],
+      answer: 'C. Nodes lying above it toward the root.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why is an organization chart commonly represented as a tree?',
+      options: [
+        'A. Because an employee normally reports to only one immediate superior.',
+        'B. Because every employee manages exactly two others.',
+        'C. Because departments frequently merge at lower levels.',
+        'D. Because all employees exist at the same level.'
+      ],
+      answer: 'A. Because an employee normally reports to only one immediate superior.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which situation violates the basic property of a tree?',
+      options: [
+        'A. A node has no children.',
+        'B. A node has one parent and two children.',
+        'C. A node belongs to two different parents.',
+        'D. The tree contains only one node.'
+      ],
+      answer: 'C. A node belongs to two different parents.',
+      diff: 'hard',
+    }
+  ]
+},
+
+
+149: {
+  title: "Data Abstraction: Pointers",
+  summary: `Pointers ⭐
+
+Pointer ek special variable (storage area) hota hai jo kisi data ka actual value nahi, balki us data ka memory address store karta hai.
+
+Isi liye kaha jata hai ke pointer data ki location ko "point" karta hai.
+
+Pointer ka Purpose ⭐
+
+Jab data ko memory me baar baar move karna pade to uska address change ho jata hai.
+
+Har jagah address update karne ki bajaye sirf pointer update kiya jata hai.
+
+Baad me data ko pointer ke through easily access kiya ja sakta hai.
+
+Key Points ⭐
+
+• Pointer memory address store karta hai.
+• Pointer data ki value nahi, uski location rakhta hai.
+• Data move hone par sirf pointer update hota hai.
+• Pointer hamesha latest location ko point karta hai.
+
+Program Counter ⭐
+
+CPU me Program Counter bhi ek pointer hota hai.
+
+Iska kaam next instruction ka memory address store karna hota hai.
+
+Isi wajah se Program Counter ko Instruction Pointer bhi kaha jata hai.
+
+Pointers Example ⭐
+
+Suppose memory me novels alphabetically title ke hisab se stored hain.
+
+Agar kisi author ki sari books dekhni hon to unhe title list me dhoondhna mushkil hoga.
+
+Solution:
+
+Har novel ke record me ek pointer store kiya jata hai jo usi author ki next novel ka address rakhta hai.
+
+Is tarah same author ki books linked list ki tarah connect ho jati hain.
+
+Programming Languages ⭐
+
+Modern programming languages pointers ko primitive data type ki tarah support karti hain.
+
+Programmers pointers ki madad se complex data structures bana sakte hain jaise:
+
+• Linked Lists
+• Trees
+• Graphs
+• Dynamic Data Structures
+
+Exam Tips ⭐
+
+• Pointer memory address store karta hai, data nahi.
+• Pointer data ki current location ko point karta hai.
+• Data move hone par pointer update hota hai.
+• Program Counter = Instruction Pointer.
+• Pointer related data items ko link karne ke liye use hota hai.
+• Same author ki books ko pointers ke through connect kiya ja sakta hai.
+• Pointers dynamic data structures banane me bohat important hote hain.`,
+  questions: [
+    {
+      q: 'Which statement best explains the primary purpose of a pointer in a data structure?',
+      options: [
+        'A. To store the memory address of a data item so it can be accessed even if its location changes.',
+        'B. To permanently store the actual value of the data item.',
+        'C. To reduce the amount of physical memory available to a program.',
+        'D. To replace arrays and aggregate data types in every application.'
+      ],
+      answer: 'A. To store the memory address of a data item so it can be accessed even if its location changes.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why is updating a pointer often more efficient than updating every reference to a data item after it is moved?',
+      options: [
+        'A. Because only the stored memory address in the pointer needs to be changed.',
+        'B. Because the data item automatically returns to its original location.',
+        'C. Because pointers permanently prevent data from moving.',
+        'D. Because pointers eliminate the need for memory addresses.'
+      ],
+      answer: 'A. Because only the stored memory address in the pointer needs to be changed.',
+      diff: 'hard',
+    },
+    {
+      q: 'According to the lecture, why is the Program Counter considered a pointer?',
+      options: [
+        'A. Because it stores the memory address of the next instruction to be executed.',
+        'B. Because it stores the result of the last executed instruction.',
+        'C. Because it contains the source code of the running program.',
+        'D. Because it directly executes machine instructions.'
+      ],
+      answer: 'A. Because it stores the memory address of the next instruction to be executed.',
+      diff: 'hard',
+    },
+    {
+      q: 'In the novels example, what is the purpose of storing a pointer with each novel record?',
+      options: [
+        'A. To link books written by the same author even though the books are stored alphabetically by title.',
+        'B. To arrange all books according to publication date automatically.',
+        'C. To duplicate every novel in memory for faster searching.',
+        'D. To replace the alphabetical arrangement with numerical indexing.'
+      ],
+      answer: 'A. To link books written by the same author even though the books are stored alphabetically by title.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement about pointers in modern programming languages is correct?',
+      options: [
+        'A. They allow programmers to create linked and dynamic data structures by storing memory addresses.',
+        'B. They can only be used for integer variables.',
+        'C. They always store the complete contents of the object they reference.',
+        'D. They are used only by the CPU and cannot be manipulated by programmers.'
+      ],
+      answer: 'A. They allow programmers to create linked and dynamic data structures by storing memory addresses.',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+150: {
+  title: "Database Systems: The Significance of Database Systems",
+  summary: `Database Systems ⭐
+
+Database ek collection of data hota hai jo multidimensional hota hai.
+
+Iska matlab hai data ke darmiyan internal links hote hain, jis ki wajah se information ko different perspectives se access kiya ja sakta hai.
+
+Flat File vs Database ⭐
+
+Flat File (Traditional File System):
+
+• One-dimensional storage hota hai.
+• Data sirf ek hi perspective se organize hota hai.
+• Example: Sirf composers ki list unke naam ke hisab se.
+
+Database:
+
+• Multidimensional storage hota hai.
+• Data multiple ways se access kiya ja sakta hai.
+• Example:
+  - Kisi composer ki tamam compositions.
+  - Kisi music type ke tamam composers.
+  - Kisi composition ki variations.
+
+Problem with Traditional File Systems ⭐
+
+Pehle har department apni separate files maintain karta tha.
+
+Examples:
+
+• Payroll File
+• Personnel File
+• Inventory File
+
+Is se:
+
+• Same information multiple jagah duplicate hoti thi.
+• Related data alag alag systems me hota tha.
+• Data management difficult ho jati thi.
+
+Why Database Systems Were Introduced ⭐
+
+Database systems ka purpose tha organization ki sari related information ko integrate karna.
+
+Ek hi data ko multiple purposes ke liye use kiya ja sakta hai.
+
+Example:
+
+Sales Data se:
+
+• Restocking Orders ban sakte hain.
+• Market Trend Reports generate ho sakti hain.
+• Customers ko targeted advertisements bheji ja sakti hain.
+• Sales staff ke bonus calculate kiye ja sakte hain.
+
+Database + Data Mining ⭐
+
+Modern databases data mining techniques ke sath use hote hain.
+
+Ye management ko huge amount of data se useful information nikalne me help karte hain.
+
+Is se better business decisions liye ja sakte hain.
+
+Database on the Web ⭐
+
+Aaj kal bohot si websites databases par depend karti hain.
+
+Examples:
+
+• Google
+• Amazon
+• eBay
+
+Working:
+
+Client Request → Server → Database → Web Page → Client
+
+Server database se information retrieve karta hai aur usay web page ki form me user ko show karta hai.
+
+Important Concept ⭐
+
+Pehle database company ke records store karta tha.
+
+Aaj bohot cases me database hi company ka main product hota hai.
+
+Exam Tips ⭐
+
+• Database = Multidimensional collection of data.
+• Flat File = One-dimensional storage.
+• Database internal links ki wajah se multiple perspectives provide karta hai.
+• Traditional file systems me data duplication hoti thi.
+• Database systems integrated information provide karte hain.
+• Data Mining databases se useful information extract karti hai.
+• Google, Amazon aur eBay databases par depend karte hain.
+• Modern web applications ka core database hota hai.`,
+  questions: [
+    {
+      q: 'What is the key characteristic that distinguishes a database from a traditional flat file?',
+      options: [
+        'A. A database uses internal links that allow information to be accessed from multiple perspectives.',
+        'B. A database stores only numeric data.',
+        'C. A flat file always contains more data than a database.',
+        'D. A database cannot organize related information.'
+      ],
+      answer: 'A. A database uses internal links that allow information to be accessed from multiple perspectives.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why did database systems replace separate departmental file systems in many organizations?',
+      options: [
+        'A. Because they integrate related information and reduce unnecessary duplication of data.',
+        'B. Because they eliminate the need for employee records.',
+        'C. Because they can only be used by the payroll department.',
+        'D. Because they prevent organizations from generating reports.'
+      ],
+      answer: 'A. Because they integrate related information and reduce unnecessary duplication of data.',
+      diff: 'hard',
+    },
+    {
+      q: 'According to the lecture, how can the same sales data stored in a database be used?',
+      options: [
+        'A. For restocking, market analysis, targeted advertising, and calculating sales bonuses.',
+        'B. Only for generating employee salaries.',
+        'C. Only for creating customer invoices.',
+        'D. Only for inventory management.'
+      ],
+      answer: 'A. For restocking, market analysis, targeted advertising, and calculating sales bonuses.',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the primary role of data mining when combined with database technology?',
+      options: [
+        'A. To extract useful information from large amounts of data for better decision-making.',
+        'B. To permanently delete duplicate records from databases.',
+        'C. To convert databases into flat files.',
+        'D. To prevent users from accessing stored information.'
+      ],
+      answer: 'A. To extract useful information from large amounts of data for better decision-making.',
+      diff: 'hard',
+    },
+    {
+      q: 'How do modern websites such as Google, Amazon, and eBay typically use database systems?',
+      options: [
+        'A. They retrieve information from databases and present it to users through web interfaces.',
+        'B. They use databases only to store website images.',
+        'C. They replace databases with flat files for faster searching.',
+        'D. They use databases only for employee payroll processing.'
+      ],
+      answer: 'A. They retrieve information from databases and present it to users through web interfaces.',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+150: {
+  title: "Database Systems: The Significance of Database Systems",
+  summary: `Database Systems ⭐
+
+Database ek collection of data hota hai jo multidimensional hota hai.
+
+Iska matlab hai data ke darmiyan internal links hote hain, jis ki wajah se information ko different perspectives se access kiya ja sakta hai.
+
+Flat File vs Database ⭐
+
+Flat File (Traditional File System):
+
+• One-dimensional storage hota hai.
+• Data sirf ek hi perspective se organize hota hai.
+• Example: Sirf composers ki list unke naam ke hisab se.
+
+Database:
+
+• Multidimensional storage hota hai.
+• Data multiple ways se access kiya ja sakta hai.
+• Example:
+  - Kisi composer ki tamam compositions.
+  - Kisi music type ke tamam composers.
+  - Kisi composition ki variations.
+
+Problem with Traditional File Systems ⭐
+
+Pehle har department apni separate files maintain karta tha.
+
+Examples:
+
+• Payroll File
+• Personnel File
+• Inventory File
+
+Is se:
+
+• Same information multiple jagah duplicate hoti thi.
+• Related data alag alag systems me hota tha.
+• Data management difficult ho jati thi.
+
+Why Database Systems Were Introduced ⭐
+
+Database systems ka purpose tha organization ki sari related information ko integrate karna.
+
+Ek hi data ko multiple purposes ke liye use kiya ja sakta hai.
+
+Example:
+
+Sales Data se:
+
+• Restocking Orders ban sakte hain.
+• Market Trend Reports generate ho sakti hain.
+• Customers ko targeted advertisements bheji ja sakti hain.
+• Sales staff ke bonus calculate kiye ja sakte hain.
+
+Database + Data Mining ⭐
+
+Modern databases data mining techniques ke sath use hote hain.
+
+Ye management ko huge amount of data se useful information nikalne me help karte hain.
+
+Is se better business decisions liye ja sakte hain.
+
+Database on the Web ⭐
+
+Aaj kal bohot si websites databases par depend karti hain.
+
+Examples:
+
+• Google
+• Amazon
+• eBay
+
+Working:
+
+Client Request → Server → Database → Web Page → Client
+
+Server database se information retrieve karta hai aur usay web page ki form me user ko show karta hai.
+
+Important Concept ⭐
+
+Pehle database company ke records store karta tha.
+
+Aaj bohot cases me database hi company ka main product hota hai.
+
+Exam Tips ⭐
+
+• Database = Multidimensional collection of data.
+• Flat File = One-dimensional storage.
+• Database internal links ki wajah se multiple perspectives provide karta hai.
+• Traditional file systems me data duplication hoti thi.
+• Database systems integrated information provide karte hain.
+• Data Mining databases se useful information extract karti hai.
+• Google, Amazon aur eBay databases par depend karte hain.
+• Modern web applications ka core database hota hai.`,
+  questions: [
+    {
+      q: 'What is the key characteristic that distinguishes a database from a traditional flat file?',
+      options: [
+        'A. A database uses internal links that allow information to be accessed from multiple perspectives.',
+        'B. A database stores only numeric data.',
+        'C. A flat file always contains more data than a database.',
+        'D. A database cannot organize related information.'
+      ],
+      answer: 'A. A database uses internal links that allow information to be accessed from multiple perspectives.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why did database systems replace separate departmental file systems in many organizations?',
+      options: [
+        'A. Because they integrate related information and reduce unnecessary duplication of data.',
+        'B. Because they eliminate the need for employee records.',
+        'C. Because they can only be used by the payroll department.',
+        'D. Because they prevent organizations from generating reports.'
+      ],
+      answer: 'A. Because they integrate related information and reduce unnecessary duplication of data.',
+      diff: 'hard',
+    },
+    {
+      q: 'According to the lecture, how can the same sales data stored in a database be used?',
+      options: [
+        'A. For restocking, market analysis, targeted advertising, and calculating sales bonuses.',
+        'B. Only for generating employee salaries.',
+        'C. Only for creating customer invoices.',
+        'D. Only for inventory management.'
+      ],
+      answer: 'A. For restocking, market analysis, targeted advertising, and calculating sales bonuses.',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the primary role of data mining when combined with database technology?',
+      options: [
+        'A. To extract useful information from large amounts of data for better decision-making.',
+        'B. To permanently delete duplicate records from databases.',
+        'C. To convert databases into flat files.',
+        'D. To prevent users from accessing stored information.'
+      ],
+      answer: 'A. To extract useful information from large amounts of data for better decision-making.',
+      diff: 'hard',
+    },
+    {
+      q: 'How do modern websites such as Google, Amazon, and eBay typically use database systems?',
+      options: [
+        'A. They retrieve information from databases and present it to users through web interfaces.',
+        'B. They use databases only to store website images.',
+        'C. They replace databases with flat files for faster searching.',
+        'D. They use databases only for employee payroll processing.'
+      ],
+      answer: 'A. They retrieve information from databases and present it to users through web interfaces.',
+      diff: 'hard',
+    },
+  ]
+},
+
+
   },
 
   // ─────────────────────────────────────────
