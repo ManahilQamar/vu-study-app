@@ -1772,3 +1772,45 @@ html {
   .qa-label          { font-size: 11px; }
   .ssrow-full        { display: none; }
 }
+
+
+
+/* ══════════════════════════════════════════
+   LEVELS PAGE — TABS (Notes / Lectures)
+══════════════════════════════════════════ */
+.levels-tabs {
+  display: flex;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 4px;
+  gap: 0;
+}
+.levels-tab {
+  flex: 1;
+  padding: 12px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  border-bottom: 2.5px solid transparent;
+  margin-bottom: -2px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: color 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.levels-tab:hover { color: var(--text-primary); }
+.levels-tab-active { color: #2563eb; }
+.levels-tab-badge {
+  background: #2563eb;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 10px;
+  min-width: 18px;
+  text-align: center;
+}

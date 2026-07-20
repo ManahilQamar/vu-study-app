@@ -41517,17 +41517,7 @@ Quick Revision ⭐
       answer: 'A. They depended on predefined algorithms designed for specific applications',
       diff: 'hard',
     },
-    {
-      q: 'According to the lecture, what major development greatly advanced the declarative paradigm?',
-      options: [
-        'A. The invention of assembly language',
-        'B. The use of formal logic as a general-purpose problem-solving method',
-        'C. The introduction of machine code optimization',
-        'D. The development of object-oriented programming'
-      ],
-      answer: 'B. The use of formal logic as a general-purpose problem-solving method',
-      diff: 'hard',
-    },
+   
     {
       q: 'In a weather forecasting system based on the declarative paradigm, the programmer mainly provides:',
       options: [
@@ -41541,6 +41531,3644 @@ Quick Revision ⭐
     },
   ]
 },
+114: {
+  title: "Programming Languages: Functional Paradigm",
+  summary: `Functional Paradigm ⭐
+
+Functional Paradigm me program ko ek **Function** ki tarah dekha jata hai.
+
+👉 Input do → Function process kare → Output mil jaye.
+
+Yahan programmer step-by-step instructions nahi likhta.
+
+Balki chhote-chhote functions ko combine karke ek bada function banata hai.
+
+Main Idea ⭐
+
+Functional Programming me:
+
+• Program = Collection of Functions
+• Function input leta hai.
+• Function output return karta hai.
+• Ek function ka output doosre function ka input ban jata hai.
+
+Yani functions ek chain ki tarah connected hote hain.
+
+Simple Example ⭐
+
+Suppose:
+
+Old Balance = 5000
+Credits = 1000 + 500
+Debits = 1200
+
+Hum 2 functions use karte hain:
+
+Find_sum() → Numbers ka sum return karta hai.
+
+Find_diff() → Do values ka difference return karta hai.
+
+Functional Style:
+
+Find_diff(
+    Find_sum(5000,1000,500),
+    Find_sum(1200)
+)
+
+Step-by-Step:
+
+Find_sum(5000,1000,500)
+= 6500
+
+Find_sum(1200)
+= 1200
+
+Ab:
+
+Find_diff(6500,1200)
+
+= 5300
+
+Final Balance = 5300
+
+👉 Notice:
+
+Koi temporary variable use nahi hua.
+
+Har function ka output direct next function ko mil gaya.
+
+Imperative vs Functional ⭐
+
+Imperative Style:
+
+TotalCredits = Find_sum(Credits)
+TempBalance = OldBalance + TotalCredits
+TotalDebits = Find_sum(Debits)
+Balance = TempBalance - TotalDebits
+
+Yahan:
+
+✔ Multiple statements hain.
+✔ Temporary variables use hue.
+✔ Har result baad ke liye store hota hai.
+
+Functional Style:
+
+Balance =
+Find_diff(
+    Find_sum(OldBalance, Credits),
+    Find_sum(Debits)
+)
+
+Yahan:
+
+✔ Sirf function calls hain.
+✔ Output direct next function ko pass hota hai.
+✔ Temporary variables ki zarurat nahi.
+
+Factory Example ⭐
+
+Lecture ki example:
+
+Imperative Programming:
+
+Factory product banati hai.
+↓
+Warehouse me store karti hai.
+↓
+Baad me doosri factory use leti hai.
+
+Yani data pehle store hota hai.
+
+Functional Programming:
+
+Factory product banati hai.
+↓
+Seedha next factory ko bhej deti hai.
+
+Beech me storage nahi hoti.
+
+Isi liye Functional Programming ko efficient mana jata hai.
+
+LISP Example ⭐
+
+Lecture me LISP language ka example diya gaya hai:
+
+(Find_diff
+    (Find_sum Old_balance Credits)
+    (Find_sum Debits)
+)
+
+Iska matlab:
+
+Step 1:
+Old_balance + Credits ka sum nikalo.
+
+Step 2:
+Debits ka total nikalo.
+
+Step 3:
+Dono ka difference nikal do.
+
+Important Points ⭐
+
+• Functional Paradigm = Functions ko combine karke program banana.
+• Function output → Next function ka input.
+• Temporary variables kam use hote hain.
+• Nested Functions use hoti hain.
+• LISP Functional Programming ki famous language hai.
+• Focus = Input → Output relationship.
+
+Quick Revision ⭐
+
+• Functional = Program is a collection of functions.
+• Function input leta hai aur output return karta hai.
+• Output direct next function ko pass hota hai.
+• Nested function calls Functional Programming ki pehchan hain.
+• Imperative = Variables store karta hai.
+• Functional = Direct function chaining karta hai.
+• Famous Functional Language = LISP.`,
+  questions: [
+    {
+      q: 'The functional paradigm views a program primarily as:',
+      options: [
+        'A. A sequence of machine instructions',
+        'B. An entity that accepts inputs and produces outputs',
+        'C. A collection of variables stored in memory',
+        'D. A set of hardware operations'
+      ],
+      answer: 'B. An entity that accepts inputs and produces outputs',
+      diff: 'hard',
+    },
+    {
+      q: 'In the functional paradigm, the output of one function is usually:',
+      options: [
+        'A. Ignored after execution',
+        'B. Stored permanently in memory',
+        'C. Used as the input to another function',
+        'D. Converted into machine code immediately'
+      ],
+      answer: 'C. Used as the input to another function',
+      diff: 'hard',
+    },
+    {
+      q: 'Which feature best distinguishes functional programming from imperative programming?',
+      options: [
+        'A. Functional programming avoids building algorithms',
+        'B. Functional programming connects nested functions instead of relying on many temporary variables',
+        'C. Functional programming can only perform mathematical calculations',
+        'D. Functional programming does not produce outputs'
+      ],
+      answer: 'B. Functional programming connects nested functions instead of relying on many temporary variables',
+      diff: 'hard',
+    },
+    {
+      q: 'Which programming language is identified in the lecture as a prominent functional programming language?',
+      options: [
+        'A. COBOL',
+        'B. Python',
+        'C. LISP',
+        'D. FORTRAN'
+      ],
+      answer: 'C. LISP',
+      diff: 'hard',
+    },
+    {
+      q: 'Consider the expression:\n\nFind_diff( Find_sum(A, B), Find_sum(C) )\n\nWhich function is executed first?',
+      options: [
+        'A. Find_diff',
+        'B. Both functions execute together',
+        'C. Find_sum functions before Find_diff',
+        'D. Execution order cannot be determined'
+      ],
+      answer: 'C. Find_sum functions before Find_diff',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+115: {
+  title: "Programming Languages: Object-Oriented Paradigm (OOP)",
+
+  summary: `Object-Oriented Programming (OOP) ⭐
+
+Object-Oriented Programming (OOP) aaj ke zamane ka sab se popular software development paradigm hai.
+
+Is paradigm me software ko ek bade program ki jagah multiple Objects ka collection mana jata hai.
+
+Har Object:
+👉 Apna Data (Properties/Attributes) rakhta hai.
+👉 Apne Functions (Methods) rakhta hai.
+👉 Dusre Objects se interact karke problem solve karta hai.
+
+Is wajah se OOP me Data aur Functions ko ek hi unit me combine kiya jata hai.
+
+--------------------------------------------------
+
+Object Kya Hota Hai? ⭐
+
+Object ek real-world entity ya software entity hoti hai jo:
+
+• Data store karti hai.
+• Apne upar operations perform karti hai.
+• Dusre objects se communication kar sakti hai.
+
+Example:
+
+Car Object
+
+Properties:
+• Color
+• Speed
+• Brand
+
+Methods:
+• Start()
+• Stop()
+• Accelerate()
+
+Har car alag object hogi lekin sab ki properties similar ho sakti hain.
+
+--------------------------------------------------
+
+Method Kya Hota Hai? ⭐
+
+Method object ke andar likha hua function hota hai.
+
+Sirf us object ke related kaam perform karta hai.
+
+Example:
+
+BankAccount Object
+
+Methods:
+
+Deposit()
+Withdraw()
+CheckBalance()
+
+Ye methods sirf BankAccount object ke liye hain.
+
+--------------------------------------------------
+
+GUI Example ⭐
+
+Lecture me Graphical User Interface (GUI) ka example diya gaya hai.
+
+Screen par jo Icons hote hain wo Objects hote hain.
+
+Har icon ke apne methods hote hain.
+
+Jaise:
+
+Click()
+Drag()
+DoubleClick()
+
+Jab user mouse click karta hai to object apna method execute karta hai.
+
+Har icon ko pura algorithm dobara likhne ki zarurat nahi hoti.
+
+--------------------------------------------------
+
+Imperative vs Object-Oriented ⭐
+
+Imperative Programming
+
+Data aur algorithm alag hote hain.
+
+Programmer ko data manipulate karne ke liye algorithm khud likhna padta hai.
+
+Example:
+
+Names List
+
+Program khud likhega:
+
+Insert
+Delete
+Sort
+Search
+
+--------------------------------------------------
+
+Object-Oriented Programming
+
+Data aur methods ek hi object me hote hain.
+
+Agar List Object hai to uske andar hi methods honge:
+
+Insert()
+Delete()
+Sort()
+IsEmpty()
+
+Program sirf object ko request bhejta hai.
+
+Example:
+
+Instead of:
+
+Program sorts the list.
+
+OOP me:
+
+List.sort()
+
+Yani object khud apne aap ko sort karta hai.
+
+Is concept ko lecture me:
+
+"The program asks the list to sort itself."
+
+ke naam se explain kiya gaya hai.
+
+--------------------------------------------------
+
+Class Kya Hoti Hai? ⭐
+
+Class ek Blueprint ya Template hoti hai.
+
+Ye object ki properties aur methods define karti hai.
+
+Class khud object nahi hoti.
+
+Sirf design hoti hai.
+
+Example:
+
+Class:
+
+Student
+
+Properties:
+
+Name
+RollNo
+
+Methods:
+
+Study()
+AttendClass()
+
+--------------------------------------------------
+
+Object / Instance ⭐
+
+Jab Class se actual object create hota hai usay Instance ya Object kehte hain.
+
+Example:
+
+Class:
+
+Student
+
+Objects:
+
+Ali
+Ahmed
+Sara
+
+Ye teenon Student class ke instances hain.
+
+Sab ke methods same honge.
+
+Lekin data alag hoga.
+
+--------------------------------------------------
+
+Class vs Object
+
+Class
+• Blueprint
+• Template
+• Design
+• Ek baar banti hai
+
+Object
+• Actual entity
+• Runtime par banta hai
+• Memory occupy karta hai
+• Class ka instance hota hai
+
+--------------------------------------------------
+
+Real-Life Example ⭐
+
+Class = Mobile Phone Design
+
+Objects:
+
+Samsung Phone
+iPhone
+Infinix Phone
+
+Sab phones same blueprint se bane ho sakte hain.
+
+Lekin har phone ka data alag hoga.
+
+--------------------------------------------------
+
+Benefits of OOP ⭐
+
+✅ Code Reusability
+Ek class se bohot saare objects ban sakte hain.
+
+✅ Easy Maintenance
+Changes sirf class me karni padti hain.
+
+✅ Better Organization
+Data aur methods ek hi jagah rehte hain.
+
+✅ Real World Modeling
+Real life objects ko easily represent kiya ja sakta hai.
+
+✅ Less Duplicate Code
+
+--------------------------------------------------
+
+Important Terms ⭐
+
+Object = Actual entity
+
+Class = Blueprint / Template
+
+Method = Function inside Object
+
+Instance = Object created from Class
+
+Property = Data stored inside Object
+
+--------------------------------------------------
+
+Exam Tips ⭐
+
+Remember:
+
+Object = Data + Methods
+
+Method = Object ka function
+
+Class = Blueprint
+
+Object = Instance of Class
+
+OOP = Data aur methods ko combine karta hai.
+
+Imperative = Algorithm data par kaam karta hai.
+
+OOP = Object khud apne methods perform karta hai.
+
+--------------------------------------------------
+
+Quick Revision ⭐
+
+• OOP = Collection of Objects.
+• Object = Data + Methods.
+• Method = Function inside object.
+• Class = Blueprint of objects.
+• Object = Instance of class.
+• GUI icons are objects.
+• OOP me object khud apne methods execute karta hai.
+• Same class se multiple objects ban sakte hain.
+• OOP code reusable, organized aur maintainable hota hai.`,
+
+  questions: [
+    {
+      q: "In Object-Oriented Programming, which statement best describes an object?",
+      options: [
+        "A. A sequence of machine instructions",
+        "B. A collection of data together with methods that operate on that data",
+        "C. A compiler-generated variable",
+        "D. A temporary memory location"
+      ],
+      answer: "B. A collection of data together with methods that operate on that data",
+      diff: "hard",
+    },
+    {
+      q: "Which concept allows multiple objects to share the same structure while storing different data?",
+      options: [
+        "A. Loop",
+        "B. Algorithm",
+        "C. Class",
+        "D. Compiler"
+      ],
+      answer: "C. Class",
+      diff: "hard",
+    },
+    {
+      q: "An object created from a class is called:",
+      options: [
+        "A. Procedure",
+        "B. Identifier",
+        "C. Instance",
+        "D. Compiler"
+      ],
+      answer: "C. Instance",
+      diff: "hard",
+    },
+    {
+      q: "In the object-oriented paradigm, sorting a list is usually performed by:",
+      options: [
+        "A. Writing a new sorting algorithm every time",
+        "B. Asking the list object to execute its sorting method",
+        "C. Modifying machine instructions directly",
+        "D. Converting the list into assembly language"
+      ],
+      answer: "B. Asking the list object to execute its sorting method",
+      diff: "hard",
+    },
+    {
+      q: "Which option correctly matches the OOP terminology?",
+      options: [
+        "A. Object → Blueprint, Class → Instance",
+        "B. Class → Blueprint, Object → Instance",
+        "C. Method → Data, Property → Function",
+        "D. Instance → Compiler"
+      ],
+      answer: "B. Class → Blueprint, Object → Instance",
+      diff: "hard",
+    },
+    {
+      q: "A graphical user interface (GUI) icon in OOP is typically represented as:",
+      options: [
+        "A. A variable",
+        "B. A loop",
+        "C. An object",
+        "D. A compiler"
+      ],
+      answer: "C. An object",
+      diff: "hard",
+    },
+    {
+      q: "Which feature of OOP allows data and related functions to be combined into one unit?",
+      options: [
+        "A. Sequential execution",
+        "B. Encapsulation",
+        "C. Compilation",
+        "D. Recursion"
+      ],
+      answer: "B. Encapsulation",
+      diff: "hard",
+    },
+    {
+      q: "Consider the following pseudo-code:\n\nStudent s = new Student();\ns.study();\n\nWhat does study() represent?",
+      options: [
+        "A. Property",
+        "B. Identifier",
+        "C. Method",
+        "D. Class"
+      ],
+      answer: "C. Method",
+      diff: "hard",
+    },
+    {
+      q: "Which statement is TRUE regarding classes and objects?",
+      options: [
+        "A. One object can create many classes.",
+        "B. A class is an instance of an object.",
+        "C. Many objects can be created from one class.",
+        "D. Every object requires a unique class."
+      ],
+      answer: "C. Many objects can be created from one class.",
+      diff: "hard",
+    },
+    {
+      q: "Compared with the imperative paradigm, OOP primarily focuses on:",
+      options: [
+        "A. Writing long sequences of commands",
+        "B. Organizing software as interacting objects",
+        "C. Using only recursive algorithms",
+        "D. Eliminating functions completely"
+      ],
+      answer: "B. Organizing software as interacting objects",
+      diff: "hard",
+    },
+    {
+      q: "Which of the following is NOT generally considered an advantage of Object-Oriented Programming?",
+      options: [
+        "A. Code reusability",
+        "B. Better maintainability",
+        "C. Higher organization of code",
+        "D. Dependence on a single object for every application"
+      ],
+      answer: "D. Dependence on a single object for every application",
+      diff: "hard",
+    },
+    {
+      q: "Suppose a class Car defines methods Start() and Stop(). Three Car objects are created. Which statement is correct?",
+      options: [
+        "A. Each object has completely different methods.",
+        "B. Only one object can use Start().",
+        "C. All objects can use Start() and Stop(), but each stores its own data.",
+        "D. Methods belong to objects only after compilation."
+      ],
+      answer: "C. All objects can use Start() and Stop(), but each stores its own data.",
+      diff: "hard",
+    }
+  ]
+},
+
+
+116: {
+  title: "Programming Languages: Variables and Data Types",
+  summary: `Variables and Data Types ⭐
+
+Programming me data ko store karne ke liye memory use hoti hai.
+
+Har memory location ka ek address hota hai (jaise 0x123ABC), lekin programmer ke liye ye addresses yaad rakhna mushkil hota hai.
+
+Isliye High-Level Languages memory address ki jagah Variable Name use karti hain.
+
+Example:
+
+Age = 20
+
+Yahan "Age" ek variable hai jo memory me value 20 ko store kar raha hai.
+
+==================================================
+
+What is a Variable? ⭐
+
+Variable ek named memory location hoti hai.
+
+Isme value store hoti hai aur program ke execution ke dauran change bhi ho sakti hai.
+
+Example:
+
+Marks = 70
+Marks = 85
+
+Pehle Marks ki value 70 thi.
+
+Baad me usi variable ki value 85 ho gayi.
+
+Isi wajah se ise Variable kehte hain (value vary/change karti hai).
+
+==================================================
+
+What is a Data Type? ⭐
+
+Har variable ke andar kis type ka data store hoga, ye Data Type decide karta hai.
+
+Data Type do cheezein define karta hai:
+
+1. Data memory me kis format me store hoga.
+2. Us data par kaun kaun se operations perform kiye ja sakte hain.
+
+Simple words:
+
+Data Type batata hai:
+👉 Data kis type ka hai?
+👉 Aur uske sath kya kaam kar sakte hain?
+
+==================================================
+
+Common Primitive Data Types ⭐
+
+Primitive Data Types wo basic data types hain jo language khud provide karti hai.
+
+Sabse common:
+
+• Integer (int)
+• Float (real)
+• Character (char)
+• Boolean (bool)
+
+==================================================
+
+1. Integer (int) ⭐
+
+Whole numbers store karta hai.
+
+Examples:
+
+5
+100
+-20
+0
+
+C / C++ / Java
+
+int Age = 20;
+
+Operations:
+
++
+-
+*
+/
+%
+Comparisons
+
+Example:
+
+int A = 10;
+int B = 5;
+
+A + B = 15
+A - B = 5
+A > B = true
+
+==================================================
+
+2. Float (Real) ⭐
+
+Decimal numbers store karta hai.
+
+Examples:
+
+2.5
+10.75
+99.99
+
+Example:
+
+float Price = 199.99;
+
+Operations integer jaisi hi hoti hain.
+
+Lekin internally floating-point representation use hoti hai.
+
+Example:
+
+float A = 5.5;
+float B = 2.0;
+
+A + B = 7.5
+
+==================================================
+
+3. Character (char) ⭐
+
+Single character store karta hai.
+
+Examples:
+
+'A'
+'B'
+'9'
+'#'
+
+Example:
+
+char Grade = 'A';
+
+Character compare bhi kiye ja sakte hain.
+
+'A' < 'B'
+
+Result = true
+
+==================================================
+
+4. Boolean (bool) ⭐
+
+Sirf do values hoti hain:
+
+true
+false
+
+Example:
+
+bool IsPassed = true;
+
+Mostly Conditions me use hota hai.
+
+Example:
+
+if (IsPassed)
+{
+   Print Certificate
+}
+
+==================================================
+
+Variable Declaration ⭐
+
+Static Typed Languages me variable use karne se pehle declare karna padta hai.
+
+Example:
+
+int WeightLimit;
+
+Iska matlab:
+
+WeightLimit integer type ka variable hai.
+
+==================================================
+
+Multiple Variables Declaration ⭐
+
+Ek hi statement me multiple variables declare kiye ja sakte hain.
+
+Example:
+
+int Height, Width;
+
+==================================================
+
+Initialization ⭐
+
+Variable ko declare karte waqt uski initial value bhi assign kar sakte hain.
+
+Example:
+
+int WeightLimit = 100;
+
+Isme:
+
+Declaration ✔
+Initialization ✔
+
+Dono ek hi line me ho gaye.
+
+==================================================
+
+Static Typed vs Dynamic Typed Languages ⭐
+
+Static Typed Languages
+
+Examples:
+
+C
+C++
+Java
+C#
+
+Pehle type batani padti hai.
+
+Example:
+
+int Age = 20;
+
+Galat:
+
+Age = "Ali"
+
+Compiler Error
+
+--------------------------------------------------
+
+Dynamic Typed Languages
+
+Example:
+
+Python
+
+Python me type declare nahi karni padti.
+
+Example:
+
+age = 20
+
+Baad me
+
+age = "Ali"
+
+Ye valid hai.
+
+Python runtime par type check karta hai.
+
+==================================================
+
+Primitive Data Types ⭐
+
+Primitive Data Types language ke built-in data types hote hain.
+
+Examples:
+
+int
+float
+char
+bool
+
+Future me images, audio, video aur HTML jaise data types bhi common primitives ban sakte hain.
+
+==================================================
+
+Real-Life Example ⭐
+
+Suppose ek Student Management System bana rahe hain.
+
+Student Name → Character/String
+
+Student Marks → Integer
+
+Student CGPA → Float
+
+Student Passed → Boolean
+
+Code:
+
+char Grade = 'A';
+int Marks = 88;
+float CGPA = 3.67;
+bool Passed = true;
+
+Har variable ka data type alag hai kyunki har data ki nature alag hai.
+
+==================================================
+
+Complete Example ⭐
+
+C++ Example
+
+int Age = 21;
+float Salary = 55000.75;
+char Grade = 'A';
+bool IsStudent = true;
+
+Age        → Integer
+Salary     → Float
+Grade      → Character
+IsStudent  → Boolean
+
+==================================================
+
+Python Example
+
+age = 21
+salary = 55000.75
+grade = 'A'
+is_student = True
+
+Python me type likhne ki zarurat nahi hoti.
+
+==================================================
+
+Exam Trick ⭐
+
+Question:
+
+int Marks = 90;
+
+Is statement me kya ho raha hai?
+
+Correct Answer:
+
+Variable declaration + Initialization
+
+--------------------------------------------------
+
+Question:
+
+char Letter = 'A';
+
+'A' kis type ka data hai?
+
+Correct Answer:
+
+Character
+
+--------------------------------------------------
+
+Question:
+
+Which language is dynamically typed?
+
+Correct Answer:
+
+Python
+
+==================================================
+
+Quick Revision ⭐
+
+• Variable = Named memory location.
+• Variable ki value change ho sakti hai.
+• Data Type batata hai data kis type ka hai.
+• int → Whole numbers.
+• float → Decimal numbers.
+• char → Single character.
+• bool → true / false.
+• Primitive Data Types = Language ke built-in data types.
+• Static Languages (C/C++/Java) me pehle type declare karni padti hai.
+• Python Dynamic Typed language hai.
+• Declaration ≠ Initialization.
+• int x; → Sirf declaration.
+• int x = 10; → Declaration + Initialization.`,
+  questions: [
+    {
+      q: `What will be the output?
+
+int x = "2";
+int y = 2;
+
+print(x + y);`,
+      options: [
+        "A. 22",
+        "B. 4",
+        "C. 2",
+        "D. Error"
+      ],
+      answer: "A. 22",
+      diff: "hard",
+    },
+    {
+      q: "Which statement correctly distinguishes declaration from initialization?",
+      options: [
+        "A. int x; declares x, while int x = 10;",
+        "B. int x = 10; only declares x",
+        "C. int x; initializes x to 0 in every language",
+        "D. Declaration and initialization are always the same"
+      ],
+      answer: "A. int x; declares x, while int x = 10; declares and initializes x",
+      diff: "hard",
+    },
+    {
+      q: "Which data type is most appropriate for storing whether a user is logged in?",
+      options: [
+        "A. char",
+        "B. float",
+        "C. bool",
+        "D. int"
+      ],
+      answer: "C. bool",
+      diff: "hard",
+    },
+    {
+      q: "Which language is dynamically typed according to the lecture?",
+      options: [
+        "A. Java",
+        "B. C++",
+        "C. C#",
+        "D. Python"
+      ],
+      answer: "D. Python",
+      diff: "hard",
+    },
+    {
+      q: `Consider the code:
+
+int Height, Width;
+
+What does this statement do?`,
+      options: [
+        "A. Declares one integer variable",
+        "B. Declares two integer variables",
+        "C. Initializes both variables to zero",
+        "D. Declares two float variables"
+      ],
+      answer: "B. Declares two integer variables",
+      diff: "hard",
+    },
+    {
+      q: `Which statement will produce a type mismatch error in a statically typed language like Java?`,
+      options: [
+        "A. int age = 20;",
+        "B. float price = 19.5;",
+        "C. char grade = 'A';",
+        "D. int age = 'Ali';"
+      ],
+      answer: "D. int age = 'Ali';",
+      diff: "hard",
+    },
+    {
+      q: "Primitive data types are:",
+      options: [
+        "A. User-defined classes",
+        "B. Built-in data types provided by the language",
+        "C. Database tables",
+        "D. Machine instructions"
+      ],
+      answer: "B. Built-in data types provided by the language",
+      diff: "hard",
+    },
+    {
+      q: `What will be the output?
+
+int x = 5;
+int y = 2;
+
+print(x + y);`,
+      options: [
+        "A. 7",
+        "B. 10",
+        "C. 52",
+        "D. Error"
+      ],
+      answer: "A. 7",
+      diff: "hard",
+    },
+    {
+      q: `Which variable should use the float data type?`,
+      options: [
+        "A. Number of Students",
+        "B. Age",
+        "C. GPA",
+        "D. Roll Number"
+      ],
+      answer: "C. GPA",
+      diff: "hard",
+    },
+    {
+      q: `Which comparison is valid for character data?`,
+      options: [
+        "A. 'A' < 'B'",
+        "B. 'A' + true",
+        "C. 'A' / 'B'",
+        "D. 'A' % 'B'"
+      ],
+      answer: "A. 'A' < 'B'",
+      diff: "hard",
+    },
+    {
+      q: `Consider the Python code:
+
+value = 100
+value = "Hello"
+
+Why is this valid in Python?`,
+      options: [
+        "A. Python does not support variables",
+        "B. Python is machine dependent",
+        "C. Python is dynamically typed",
+        "D. Python automatically converts everything to integers"
+      ],
+      answer: "C. Python is dynamically typed",
+      diff: "hard",
+    }
+  ]
+},
+
+117: {
+  title: "Programming Languages: Data Structure",
+  summary: `Programming Languages: Data Structure ⭐
+
+Data Structure kya hota hai?
+
+Programming me sirf ye batana kaafi nahi hota ke data kis type ka hai (jaise int, float ya char).
+
+Ye bhi zaroori hota hai ke data kis tarah organize aur arrange hoga.
+
+Isi arrangement ko Data Structure kehte hain.
+
+Simple words me:
+
+• Data Type → Data kis type ka hai.
+• Data Structure → Data kis tarah organize hoga.
+
+Example ⭐
+
+Agar sirf ek student ke marks store karne hon:
+
+85
+
+Ye sirf ek integer value hai.
+
+Lekin agar 100 students ke marks store karne hon to unko list ki form me arrange kiya jata hai.
+
+Aur agar har student ke har subject ke marks store karne hon to data rows aur columns ki form me hota hai.
+
+Isi organization ko Data Structure kehte hain.
+
+Array ⭐
+
+Array sab se common Data Structure hai.
+
+Array ek collection hota hai jisme sirf SAME data type ke elements store kiye jate hain.
+
+Example:
+
+80
+75
+90
+88
+70
+
+Ye sab integer values hain, isliye inhe array me store kiya ja sakta hai.
+
+Array ki Types ⭐
+
+1. One-Dimensional Array
+
+Ye sirf ek simple list hoti hai.
+
+Example:
+
+80
+75
+90
+88
+
+2. Two-Dimensional Array
+
+Ye rows aur columns ki form me hota hai, bilkul Excel sheet ki tarah.
+
+Example:
+
+        Math   English   Physics
+
+Ali      80       70        90
+
+Sara     85       75        88
+
+Ahmed    78       82        91
+
+Lecture me isi tarah ka array use kiya gaya hai.
+
+C Language Example ⭐
+
+int Scores[2][9];
+
+Is declaration ka matlab:
+
+• Scores ek Integer Array hai.
+• Isme 2 Rows hain.
+• Har Row me 9 Columns hain.
+• Total Elements = 2 × 9 = 18
+
+FORTRAN me isi declaration ko is tarah likhte hain:
+
+INTEGER Scores(2,9)
+
+Dono declarations ka matlab bilkul same hai.
+
+Sirf syntax different hai.
+
+Array Index ⭐
+
+Array ke kisi specific element ko access karne ke liye Index use hota hai.
+
+Index ka matlab hota hai Position.
+
+C Language me Indexing ⭐
+
+C language me indexing hamesha 0 se start hoti hai.
+
+Example:
+
+       Col0 Col1 Col2
+
+Row0    10   20   30
+
+Row1    40   50   60
+
+First Element:
+
+Scores[0][0]
+
+Second Row, Third Column:
+
+Scores[1][2]
+
+Iska reason ye hai ke C me counting zero se shuru hoti hai.
+
+FORTRAN Indexing ⭐
+
+FORTRAN me indexing 1 se start hoti hai.
+
+Agar same table FORTRAN me ho to:
+
+Second Row, Third Column:
+
+Scores(2,3)
+
+Ye C aur FORTRAN ka sab se important difference hai aur exam me bohat poocha jata hai.
+
+Aggregate Type (Structure) ⭐
+
+Ab socho hume kisi Employee ki information store karni hai.
+
+Usme:
+
+• Name
+• Age
+• Skill Rating
+
+Ye teeno different data types hain.
+
+Name → Character
+
+Age → Integer
+
+Skill Rating → Float
+
+Agar hum Array use karein to problem hogi kyun ke Array sirf same data type store kar sakta hai.
+
+Isi problem ko solve karne ke liye Structure (Struct) use hota hai.
+
+Structure (Struct) ⭐
+
+Structure ek aisa Data Structure hai jo ek hi block me different data types store kar sakta hai.
+
+Lecture ka Example:
+
+struct
+{
+    char Name[25];
+    int Age;
+    float SkillRating;
+} Employee;
+
+Is declaration ka matlab hai:
+
+Employee naam ka ek Structure banaya gaya hai jisme 3 fields hain:
+
+• Name
+• Age
+• SkillRating
+
+Structure ko Access Karna ⭐
+
+Structure ke kisi bhi field ko access karne ke liye Dot (.) operator use hota hai.
+
+Example:
+
+Employee.Name
+
+Employee.Age
+
+Employee.SkillRating
+
+Array vs Structure ⭐
+
+Array
+
+• Same data type store karta hai.
+• Example: Marks, Numbers, Prices.
+
+Structure
+
+• Different data types store karta hai.
+• Example: Employee, Student, Product.
+
+Exam Tips ⭐
+
+• Data Structure = Data ko organize karne ka tareeqa.
+• Array = Same data type ki collection.
+• One-Dimensional Array = List.
+• Two-Dimensional Array = Rows aur Columns wali table.
+• C, C++, Java aur C# me indexing 0 se start hoti hai.
+• FORTRAN me indexing 1 se start hoti hai.
+• Structure (Struct) different data types ko ek hi block me store karta hai.
+• Structure ke fields Dot (.) operator se access kiye jate hain.
+• Array me sirf same data type store hota hai, jab ke Structure me different data types store kiye ja sakte hain.`,
+questions: [
+  {
+    q: 'Consider the following C declaration:\n\nint Scores[2][9];\n\nWhich statement is correct?',
+    options: [
+      'A. Scores contains 2 integers',
+      'B. Scores is a one-dimensional array',
+      'C. Scores is a two-dimensional array containing 18 integer elements',
+      'D. Scores is a structure with 2 fields'
+    ],
+    answer: 'C. Scores is a two-dimensional array containing 18 integer elements',
+    diff: 'hard',
+  },
+  {
+    q: 'Given the declaration:\n\nint Scores[2][9];\n\nWhich expression accesses the element in the second row and fourth column in C?',
+    options: [
+      'A. Scores[2][4]',
+      'B. Scores[1][3]',
+      'C. Scores(2,4)',
+      'D. Scores[3][1]'
+    ],
+    answer: 'B. Scores[1][3]',
+    diff: 'hard',
+  },
+  {
+    q: 'In FORTRAN, the declaration INTEGER Scores(2,9) is equivalent to which C declaration?',
+    options: [
+      'A. int Scores[9];',
+      'B. int Scores[2][9];',
+      'C. float Scores[2][9];',
+      'D. char Scores[2][9];'
+    ],
+    answer: 'B. int Scores[2][9];',
+    diff: 'hard',
+  },
+  {
+    q: 'Which reference correctly accesses the first element of Scores in C?',
+    options: [
+      'A. Scores[1][1]',
+      'B. Scores[0][0]',
+      'C. Scores(1,1)',
+      'D. Scores[0][1]'
+    ],
+    answer: 'B. Scores[0][0]',
+    diff: 'medium',
+  },
+  {
+    q: 'Consider the following declaration:\n\nstruct\n{\n    char Name[25];\n    int Age;\n    float SkillRating;\n} Employee;\n\nWhich statement correctly accesses the employee age?',
+    options: [
+      'A. Employee->Age',
+      'B. Employee.Age',
+      'C. Employee[Age]',
+      'D. Employee(Age)'
+    ],
+    answer: 'B. Employee.Age',
+    diff: 'medium',
+  },
+  {
+    q: 'Which statement best explains why an array cannot replace the Employee structure shown in the lecture?',
+    options: [
+      'A. Arrays can only store one element',
+      'B. Arrays cannot be declared in C',
+      'C. Arrays require all elements to have the same data type, while the Employee record contains different data types',
+      'D. Structures occupy less memory than arrays'
+    ],
+    answer: 'C. Arrays require all elements to have the same data type, while the Employee record contains different data types',
+    diff: 'hard',
+  },
+  {
+    q: 'How many integer elements are allocated by the declaration int Scores[2][9];?',
+    options: [
+      'A. 9',
+      'B. 11',
+      'C. 18',
+      'D. 81'
+    ],
+    answer: 'C. 18',
+    diff: 'medium',
+  },
+  {
+    q: 'Which programming languages mentioned in the lecture use zero-based array indexing?',
+    options: [
+      'A. FORTRAN only',
+      'B. C, C++, Java, and C#',
+      'C. Python only',
+      'D. Pascal and FORTRAN'
+    ],
+    answer: 'B. C, C++, Java, and C#',
+    diff: 'hard',
+  },
+  {
+    q: 'A programmer writes Scores[2][4] to access the second row and fourth column of the array declared as int Scores[2][9]; in C. Why is this incorrect?',
+    options: [
+      'A. C arrays use one-based indexing',
+      'B. Rows should be written after columns',
+      'C. The correct reference is Scores[1][3] because C uses zero-based indexing',
+      'D. Scores[2][4] refers to the first row'
+    ],
+    answer: 'C. The correct reference is Scores[1][3] because C uses zero-based indexing',
+    diff: 'hard',
+  },
+  {
+    q: 'Which of the following best describes an aggregate data type?',
+    options: [
+      'A. A collection of elements where every element has the same type',
+      'B. A block of data that may contain fields of different data types',
+      'C. A one-dimensional array only',
+      'D. A variable that stores a single value'
+    ],
+    answer: 'B. A block of data that may contain fields of different data types',
+    diff: 'hard',
+  },
+]
+},
+
+118: {
+  title: "Programming Languages: Assignment Statement",
+  summary: `Programming Languages: Assignment Statement ⭐
+
+Assignment Statement kya hota hai?
+
+Jab programmer variables aur constants declare kar leta hai, uske baad program ka actual kaam shuru hota hai.
+
+Yani ab algorithm ko step-by-step statements ki form me likha jata hai.
+
+In statements ko Imperative Statements kehte hain.
+
+Sab se basic aur sab se zyada use hone wali imperative statement ko Assignment Statement kehte hain.
+
+Assignment Statement ⭐
+
+Assignment Statement ka kaam kisi value ko kisi variable me store karna hota hai.
+
+Simple words me:
+
+👉 Assignment Statement ek variable ko nayi value assign karti hai.
+
+Ya phir:
+
+👉 Memory me variable ke andar value store karti hai.
+
+General Syntax ⭐
+
+Variable = Expression;
+
+Yahan:
+
+• Variable → Jisme result store hoga.
+• Assignment Operator (=) → Value assign karta hai.
+• Expression → Jiski calculation pehle hoti hai.
+
+Example ⭐
+
+Z = X + Y;
+
+Is statement ka matlab ye bilkul nahi hai ke Z aur X + Y equal hain.
+
+Programming me iska matlab hai:
+
+Step 1:
+Computer pehle X + Y calculate karega.
+
+Step 2:
+Jo answer milega wo Z ke andar store kar dega.
+
+Example:
+
+Agar
+
+X = 10
+
+Y = 20
+
+Statement:
+
+Z = X + Y;
+
+Execution:
+
+X + Y = 30
+
+Ab
+
+Z = 30
+
+Memory ka Concept ⭐
+
+Suppose:
+
+X = 5
+
+Y = 7
+
+Z = X + Y;
+
+Execution ke baad memory me values hongi:
+
+X → 5
+
+Y → 7
+
+Z → 12
+
+Important Point ⭐
+
+Assignment statement me Left Side par hamesha Variable hota hai.
+
+Right Side par Variable, Constant ya Expression ho sakta hai.
+
+Valid Examples:
+
+X = 10;
+
+Y = X;
+
+Z = X + Y;
+
+Total = Price * Quantity;
+
+Invalid Example:
+
+10 = X;
+
+Ye galat hai kyun ke Constant ke andar value store nahi ki ja sakti.
+
+Expression ⭐
+
+Expression wo hota hai jo evaluate hokar ek value produce kare.
+
+Examples:
+
+X + Y
+
+A * B
+
+Price * Quantity
+
+(A + B) / 2
+
+Programming Languages me Assignment ⭐
+
+C, C++, Java aur C#
+
+Assignment operator:
+
+=
+
+Example:
+
+Z = X + Y;
+
+Statement ke end me semicolon (;) lagana zaroori hota hai.
+
+Python ⭐
+
+Python me assignment operator bhi = hi hota hai.
+
+Example:
+
+z = x + y
+
+Python me semicolon lagana zaroori nahi hota.
+
+Ada Language ⭐
+
+Ada language me assignment operator alag hota hai.
+
+Example:
+
+Z := X + Y;
+
+Yahan := assignment operator hai.
+
+Comparison ⭐
+
+C / C++ / Java / C#
+
+Z = X + Y;
+
+Python
+
+z = x + y
+
+Ada
+
+Z := X + Y;
+
+Exam Tips ⭐
+
+• Assignment Statement kisi variable ko value assign karti hai.
+• Assignment statement execute hone se pehle Right Side ka expression evaluate hota hai.
+• Result hamesha Left Side wale variable me store hota hai.
+• Left Side par sirf Variable aa sakta hai.
+• Right Side par Variable, Constant ya Expression ho sakta hai.
+• C, C++, Java aur C# me assignment operator = hota hai.
+• Ada me assignment operator := hota hai.
+• Python me bhi = use hota hai lekin semicolon (;) required nahi hota.`,
+  questions: [
+    {
+      q: 'What is the primary purpose of an assignment statement?',
+      options: [
+        'A. To compare two values',
+        'B. To declare a variable',
+        'C. To assign a value to a variable',
+        'D. To terminate a program'
+      ],
+      answer: 'C. To assign a value to a variable',
+      diff: 'easy',
+    },
+    {
+      q: 'Consider the following code:\n\nint X = 10;\nint Y = 20;\nint Z;\nZ = X + Y;\n\nWhat will be the value of Z after execution?',
+      options: [
+        'A. 10',
+        'B. 20',
+        'C. 30',
+        'D. Undefined'
+      ],
+      answer: 'C. 30',
+      diff: 'easy',
+    },
+   
+    {
+      q: 'Which of the following is NOT a valid assignment statement in C?',
+      options: [
+        'A. X = 5;',
+        'B. Total = Price * Quantity;',
+        'C. 10 = X;',
+        'D. Y = X + 2;'
+      ],
+      answer: 'C. 10 = X;',
+      diff: 'hard',
+    },
+    {
+      q: 'Which side of an assignment statement must always contain a variable?',
+      options: [
+        'A. Right side',
+        'B. Left side',
+        'C. Both sides',
+        'D. Neither side'
+      ],
+      answer: 'B. Left side',
+      diff: 'medium',
+    },
+    {
+      q: 'Which programming language uses := as the assignment operator?',
+      options: [
+        'A. Python',
+        'B. Java',
+        'C. Ada',
+        'D. C++'
+      ],
+      answer: 'C. Ada',
+      diff: 'medium',
+    },
+   
+    {
+      q: 'What is the only syntactic difference between the following C and Python assignment statements?\n\nC: Z = X + Y;\nPython: z = x + y',
+      options: [
+        'A. Python uses :=',
+        'B. C requires a semicolon at the end',
+        'C. Python evaluates expressions differently',
+        'D. C uses different assignment semantics'
+      ],
+      answer: 'B. C requires a semicolon at the end',
+      diff: 'hard',
+    },
+    {
+      q: 'Which of the following is an expression?',
+      options: [
+        'A. X',
+        'B. =',
+        'C. X + Y',
+        'D. ;'
+      ],
+      answer: 'C. X + Y',
+      diff: 'medium',
+    },
+    {
+      q: 'Given:\n\nX = 4;\nY = 6;\nZ = X * Y + 2;\n\nWhat value will be stored in Z?',
+      options: [
+        'A. 24',
+        'B. 26',
+        'C. 12',
+        'D. 30'
+      ],
+      answer: 'B. 26',
+      diff: 'hard',
+    }
+  ]
+},
+
+
+119: {
+  title: "Programming Languages: Control Structures (if-statement)",
+  summary: `Programming Languages: Control Structures (if-statement) ⭐
+
+Control Structure kya hota hai?
+
+Program normally statements ko upar se neeche tak sequence me execute karta hai.
+
+Lekin kai baar hume decision lena hota hai ke kis condition me konsa statement execute hoga.
+
+Jo statements program ke execution flow ko change karti hain unhe Control Structures kehte hain.
+
+Simple words me:
+
+👉 Control Structure program ko decision lene aur execution ka flow control karne me help karta hai.
+
+if-statement ⭐
+
+if-statement sab se basic aur sab se zyada use hone wala Decision Control Structure hai.
+
+Iska use tab hota hai jab kisi condition ke true ya false hone par different statements execute karni hon.
+
+Simple words me:
+
+👉 Agar condition True ho to ek statement execute hogi.
+
+👉 Agar condition False ho to doosri statement execute hogi.
+
+General Syntax ⭐
+
+if (condition)
+    StatementA;
+else
+    StatementB;
+
+Is syntax me:
+
+• condition → Logical expression hoti hai jo True ya False result deti hai.
+• StatementA → Sirf tab execute hogi jab condition True ho.
+• StatementB → Sirf tab execute hogi jab condition False ho.
+
+Execution Process ⭐
+
+Step 1:
+
+Computer condition ko evaluate karta hai.
+
+Step 2:
+
+Agar condition True ho:
+
+StatementA execute hogi.
+
+Step 3:
+
+Agar condition False ho:
+
+StatementB execute hogi.
+
+Example ⭐
+
+if (marks >= 50)
+    You have passed the examination;
+else
+    You have failed the examination;
+
+Suppose:
+
+marks = 65
+
+Condition:
+
+65 >= 50
+
+Result:
+
+True
+
+Output:
+
+You have passed the examination.
+
+Example 2 ⭐
+
+Suppose:
+
+marks = 40
+
+Condition:
+
+40 >= 50
+
+Result:
+
+False
+
+Output:
+
+You have failed the examination.
+
+Comparison Operators ⭐
+
+if-statement me aksar comparison operators use hote hain.
+
+==  → Equal to
+
+!=  → Not Equal to
+
+>   → Greater Than
+
+<   → Less Than
+
+>=  → Greater Than or Equal To
+
+<=  → Less Than or Equal To
+
+Example:
+
+if (age >= 18)
+    Eligible
+
+else
+    Not Eligible
+
+Important Points ⭐
+
+• if-statement ek Decision Making Statement hai.
+• Condition hamesha True ya False result deti hai.
+• True hone par if wala block execute hota hai.
+• False hone par else wala block execute hota hai.
+• else optional hota hai, yani if statement without else bhi likhi ja sakti hai.
+• Program ek waqt me sirf ek block execute karta hai.
+
+Flow of if-else ⭐
+
+Condition Check
+
+↓
+
+True?
+   │
+Yes ─────► Execute if block
+
+No
+   │
+   ▼
+Execute else block
+
+Exam Tips ⭐
+
+• Control Structure program ke execution flow ko control karti hai.
+• if-statement Decision Making ke liye use hoti hai.
+• Condition ka result hamesha True ya False hota hai.
+• True → if block execute hota hai.
+• False → else block execute hota hai.
+• else optional hota hai.
+• Comparison operators (==, !=, >, <, >=, <=) if-statement me commonly use hote hain.`,
+  questions: [
+    {
+      q: 'What is the primary purpose of a control structure?',
+      options: [
+        'A. To declare variables',
+        'B. To change the execution sequence of a program',
+        'C. To store values in memory',
+        'D. To define data types'
+      ],
+      answer: 'B. To change the execution sequence of a program',
+      diff: 'medium',
+    },
+    {
+      q: 'Which programming construct is mainly used for decision making?',
+      options: [
+        'A. Assignment Statement',
+        'B. Array',
+        'C. if-statement',
+        'D. Structure'
+      ],
+      answer: 'C. if-statement',
+      diff: 'easy',
+    },
+    {
+      q: 'Consider the following code:\n\nint marks = 70;\n\nif (marks >= 50)\n    printf("Pass");\nelse\n    printf("Fail");\n\nWhat will be the output?',
+      options: [
+        'A. Pass',
+        'B. Fail',
+        'C. Pass Fail',
+        'D. No Output'
+      ],
+      answer: 'A. Pass',
+      diff: 'easy',
+    },
+    {
+      q: 'Consider the following code:\n\nint marks = 35;\n\nif (marks >= 50)\n    printf("Pass");\nelse\n    printf("Fail");\n\nWhat will be the output?',
+      options: [
+        'A. Pass',
+        'B. Fail',
+        'C. Pass Fail',
+        'D. Compile Error'
+      ],
+      answer: 'B. Fail',
+      diff: 'easy',
+    },
+    {
+      q: 'Which of the following operators checks whether two values are equal?',
+      options: [
+        'A. =',
+        'B. ==',
+        'C. >=',
+        'D. !='
+      ],
+      answer: 'B. ==',
+      diff: 'hard',
+    },
+    {
+      q: 'In an if-else statement, when is the else block executed?',
+      options: [
+        'A. When the condition is True',
+        'B. When the condition is False',
+        'C. Every time',
+        'D. Only when there are multiple conditions'
+      ],
+      answer: 'B. When the condition is False',
+      diff: 'medium',
+    },
+    {
+      q: 'Which statement about the else clause is correct?',
+      options: [
+        'A. It is mandatory in every if statement.',
+        'B. It executes before the if block.',
+        'C. It is optional and executes only when the condition is False.',
+        'D. It executes regardless of the condition.'
+      ],
+      answer: 'C. It is optional and executes only when the condition is False.',
+      diff: 'hard',
+    },
+    {
+      q: 'Consider the following code:\n\nint x = 10;\n\nif (x > 20)\n    printf("A");\nelse\n    printf("B");\n\nWhat will be displayed?',
+      options: [
+        'A. A',
+        'B. B',
+        'C. AB',
+        'D. Nothing'
+      ],
+      answer: 'B. B',
+      diff: 'medium',
+    },
+    {
+      q: 'Which comparison operator checks whether a value is greater than or equal to another value?',
+      options: [
+        'A. >',
+        'B. ==',
+        'C. >=',
+        'D. <='
+      ],
+      answer: 'C. >=',
+      diff: 'easy',
+    },
+    {
+      q: 'Which statement best describes the execution of an if-else statement?',
+      options: [
+        'A. Both if and else blocks execute.',
+        'B. Neither block executes.',
+        'C. Only one block executes depending on the condition.',
+        'D. The else block always executes first.'
+      ],
+      answer: 'C. Only one block executes depending on the condition.',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+120: {
+  title: "Programming Languages: Control Structures (if-statement examples)",
+  summary: `if-statement Example ⭐
+
+Is lecture me if-else statement ka ek practical example diya gaya hai.
+
+Suppose university ka rule hai:
+
+👉 Agar kisi student ki CGPA 3.0 ya us se zyada ho to usay scholarship di jaye.
+
+Ye decision if-else statement ki madad se liya jata hai.
+
+Example:
+
+float CGPA = 3.5;
+
+if (CGPA >= 3.0)
+    cout << "Give Scholarship";
+else
+    cout << "Sorry you do not qualify for the scholarship";
+
+Is program me computer sab se pehle condition check karta hai.
+
+Agar CGPA 3.0 ya us se zyada ho to scholarship ka message display hoga.
+
+Agar CGPA 3.0 se kam ho to sorry wala message display hoga.
+
+Examples ⭐
+
+CGPA = 3.5
+
+Output:
+
+Give Scholarship
+
+CGPA = 2.8
+
+Output:
+
+Sorry you do not qualify for the scholarship
+
+Important Points ⭐
+
+• if-else statement decision making ke liye use hoti hai.
+• Condition pehle check hoti hai.
+• True hone par if block execute hota hai.
+• False hone par else block execute hota hai.
+• >= ka matlab Greater Than or Equal To hota hai.`,
+  questions: [
+    {
+      q: 'Consider the following code:\n\nfloat CGPA = 3.0;\n\nif (CGPA >= 3.0)\n    cout << "Give Scholarship";\nelse\n    cout << "Sorry";\n\nWhat will be the output?',
+      options: [
+        'A. Sorry',
+        'B. Give Scholarship',
+        'C. Compile Error',
+        'D. No Output'
+      ],
+      answer: 'B. Give Scholarship',
+      diff: 'hard',
+    },
+    {
+      q: 'If CGPA = 2.99, which statement will be executed?',
+      options: [
+        'A. if block',
+        'B. else block',
+        'C. Both blocks',
+        'D. Neither block'
+      ],
+      answer: 'B. else block',
+      diff: 'hard',
+    },
+    {
+      q: 'Why does a student with CGPA = 3.0 receive the scholarship in the given program?',
+      options: [
+        'A. Because > means greater than or equal to',
+        'B. Because >= includes the value 3.0',
+        'C. Because == is used internally',
+        'D. Because float variables are always rounded up'
+      ],
+      answer: 'B. Because >= includes the value 3.0',
+      diff: 'hard',
+    },
+    {
+      q: 'Which comparison operator is responsible for allowing students with exactly 3.0 CGPA to qualify?',
+      options: [
+        'A. >',
+        'B. ==',
+        'C. >=',
+        'D. <='
+      ],
+      answer: 'C. >=',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement best describes the execution of the scholarship program?',
+      options: [
+        'A. Both messages are displayed.',
+        'B. Only one message is displayed depending on the condition.',
+        'C. The else block executes first.',
+        'D. The if block always executes.'
+      ],
+      answer: 'B. Only one message is displayed depending on the condition.',
+      diff: 'hard',
+    },
+  ]
+},
+
+121: {
+  title: "Programming Languages: Control Structures (Loops)",
+  summary: `Loops ⭐
+
+Loop bhi ek Control Structure hai.
+
+Loop ka use tab hota hai jab hume kisi statement ya block of code ko baar-baar repeat karna ho.
+
+Agar same statement ko multiple times execute karna ho to usay repeatedly likhne ki zarurat nahi hoti, hum Loop use karte hain.
+
+Example ⭐
+
+Agar hume counting 1 se 5 tak print karni ho to bina loop ke:
+
+cout << "1";
+cout << "2";
+cout << "3";
+cout << "4";
+cout << "5";
+
+Ye tareeqa sahi hai lekin bohat lamba hai.
+
+Isi kaam ko Loop ki madad se sirf kuch lines me kiya ja sakta hai.
+
+Example:
+
+int i = 1;
+
+while (i <= 5)
+{
+    cout << i;
+    i = i + 1;
+}
+
+Loop kaise kaam karta hai? ⭐
+
+Step 1:
+
+Variable i ki value 1 hoti hai.
+
+Step 2:
+
+Condition check hoti hai:
+
+i <= 5
+
+Agar condition True ho to loop execute hota hai.
+
+Step 3:
+
+Current value print hoti hai.
+
+Step 4:
+
+i ki value 1 se increase hoti hai.
+
+i = i + 1;
+
+Ye process tab tak repeat hota rehta hai jab tak condition True rahe.
+
+Termination ⭐
+
+Jab i ki value 6 ho jati hai to condition:
+
+6 <= 5
+
+False ho jati hai.
+
+Is wajah se loop terminate ho jata hai aur program next statement execute karta hai.
+
+Output ⭐
+
+1
+2
+3
+4
+5
+
+Important Points ⭐
+
+• Loop kisi statement ko repeatedly execute karta hai.
+• while loop har iteration se pehle condition check karta hai.
+• Jab tak condition True hoti hai loop chalta rehta hai.
+• Condition False hote hi loop terminate ho jata hai.
+• i = i + 1 variable ki value increment karta hai.`,
+  questions: [
+    {
+      q: 'Consider the following code:\n\nint i = 1;\nwhile (i <= 5)\n{\n    cout << i;\n    i = i + 1;\n}\n\nHow many times will the loop execute?',
+      options: [
+        'A. 4',
+        'B. 5',
+        'C. 6',
+        'D. Infinite'
+      ],
+      answer: 'B. 5',
+      diff: 'hard',
+    },
+    {
+      q: 'After the following loop finishes execution, what will be the final value of i?\n\nint i = 1;\nwhile (i <= 5)\n{\n    i = i + 1;\n}',
+      options: [
+        'A. 5',
+        'B. 6',
+        'C. 1',
+        'D. 7'
+      ],
+      answer: 'B. 6',
+      diff: 'hard',
+    },
+    {
+      q: 'What would happen if the statement i = i + 1; is removed from the loop while (i <= 5)?',
+      options: [
+        'A. The loop executes exactly 5 times',
+        'B. The loop never executes',
+        'C. The loop becomes infinite because the condition never becomes false',
+        'D. The program produces a compile-time error'
+      ],
+      answer: 'C. The loop becomes infinite because the condition never becomes false',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement causes the loop to eventually terminate?',
+      options: [
+        'A. cout << i;',
+        'B. while (i <= 5)',
+        'C. int i = 1;',
+        'D. i = i + 1;'
+      ],
+      answer: 'D. i = i + 1;',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement best describes the behavior of a while loop?',
+      options: [
+        'A. It executes the loop body once before checking the condition.',
+        'B. It checks the condition before every iteration.',
+        'C. It always executes exactly one time.',
+        'D. It ignores the loop condition after the first iteration.'
+      ],
+      answer: 'B. It checks the condition before every iteration.',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+122: {
+  title: "Programming Languages: Programming Concurrent Activities",
+  summary: `Programming Concurrent Activities ⭐
+
+Normally ek program me instructions ek ke baad ek execute hoti hain.
+
+Lekin kuch applications me ek hi waqt me multiple tasks perform karna zyada efficient hota hai.
+
+Isi concept ko Concurrent Processing ya Parallel Processing kehte hain.
+
+Example ⭐
+
+Suppose ek action game me bohat sari enemy spaceships hain.
+
+Agar har spaceship ko ek hi program control kare to program bohat complex ho jayega.
+
+Iska better solution ye hai ke ek spaceship ka program banaya jaye aur uski multiple copies ek sath execute ki jayein.
+
+Har copy apni spaceship ko independently control karegi.
+
+Is tarah screen par lagega ke sari spaceships ek hi waqt me move kar rahi hain.
+
+Parallel Processing vs Concurrent Processing ⭐
+
+True Parallel Processing tab hoti hai jab computer ke paas multiple CPU Cores hon aur har task alag core par execute ho.
+
+Agar sirf ek CPU ho to operating system CPU time ko different tasks me share karta hai.
+
+Is se user ko lagta hai ke sab tasks ek sath chal rahe hain.
+
+Is process ko Concurrent Processing kehte hain.
+
+Thread ⭐
+
+Java me concurrent task ko Thread kehte hain.
+
+Har thread apna kaam independently perform karta hai.
+
+Aik program me multiple threads ho sakte hain.
+
+Thread Creation ⭐
+
+Jab program ek naya thread start karta hai to is process ko Thread Spawning kehte hain.
+
+Difference ye hai:
+
+• Normal Function call me caller function wait karta hai jab tak function complete na ho.
+• Thread create karne ke baad main program wait nahi karta aur dono apna apna kaam sath sath continue karte hain.
+
+Thread Communication ⭐
+
+Kabhi kabhi multiple threads ko ek dusre ke sath information share karni padti hai.
+
+Example:
+
+Game me do spaceships ko apni location share karni ho.
+
+Ya ek thread ko dusre thread ka wait karna ho.
+
+Is process ko Thread Communication kehte hain.
+
+Shared Data Problem ⭐
+
+Agar do threads ek hi data ko ek hi time par modify karein to incorrect result aa sakta hai.
+
+Example:
+
+Shared Value = 10
+
+Thread A +3 kare.
+
+Thread B bhi +3 kare.
+
+Correct Answer:
+
+16
+
+Lekin agar dono ek hi time 10 read kar lein to final answer sirf 13 bhi aa sakta hai.
+
+Isi problem ko avoid karne ke liye synchronization use ki jati hai.
+
+Mutually Exclusive Access ⭐
+
+Jab shared data ko ek waqt me sirf ek thread access kar sakta ho to isay Mutually Exclusive Access kehte hain.
+
+Jab ek thread shared data use kar raha ho to doosre threads wait karte hain.
+
+Is se data safe rehta hai aur incorrect results nahi aate.
+
+Exam Tips ⭐
+
+• Concurrent Processing = Multiple tasks ko ek hi waqt me execute karna.
+• True Parallel Processing ke liye Multiple CPU Cores chahiye hote hain.
+• Java me concurrent task ko Thread kehte hain.
+• Naya Thread create karne ko Thread Spawning kehte hain.
+• Main thread naya thread create karne ke baad wait nahi karta.
+• Thread Communication threads ke darmiyan information exchange ke liye hoti hai.
+• Shared Data ko protect karne ke liye Mutually Exclusive Access use hota hai.
+• Mutual Exclusion me ek waqt me sirf ek thread shared data access kar sakta hai.`,
+  questions: [
+    {
+      q: 'Why is using multiple threads for controlling spaceships better than using one large program?',
+      options: [
+        'A. Because every thread has its own CPU',
+        'B. Because each thread can independently control one spaceship, making the program simpler and scalable',
+        'C. Because threads use no memory',
+        'D. Because only one spaceship can move at a time'
+      ],
+      answer: 'B. Because each thread can independently control one spaceship, making the program simpler and scalable',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement correctly distinguishes a normal function call from thread creation?',
+      options: [
+        'A. A function and a thread always execute simultaneously',
+        'B. The caller waits for a function to finish, but continues execution after creating a thread',
+        'C. A thread cannot receive parameters',
+        'D. A function always executes faster than a thread'
+      ],
+      answer: 'B. The caller waits for a function to finish, but continues execution after creating a thread',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the main purpose of mutually exclusive access?',
+      options: [
+        'A. To increase the number of CPU cores',
+        'B. To ensure only one thread accesses shared data at a time',
+        'C. To stop all threads permanently',
+        'D. To make threads execute sequentially'
+      ],
+      answer: 'B. To ensure only one thread accesses shared data at a time',
+      diff: 'hard',
+    },
+    {
+      q: 'Suppose two threads each add 3 to the same shared variable whose initial value is 10. Without proper synchronization, what incorrect result might occur?',
+      options: [
+        'A. 16',
+        'B. 6',
+        'C. 20',
+        'D. 13'
+      ],
+      answer: 'D. 13',
+      diff: 'hard',
+    },
+    {
+      q: 'According to Java terminology, a concurrent activity is called a:',
+      options: [
+        'A. Task',
+        'B. Process',
+        'C. Thread',
+        'D. Routine'
+      ],
+      answer: 'C. Thread',
+      diff: 'medium',
+    },
+    {
+  q: 'Why is mutually exclusive access required in concurrent programming?',
+  options: [
+    'A. It allows multiple threads to modify shared data at the same time for better performance.',
+    'B. It forces every thread to execute on a separate CPU core before accessing memory.',
+    'C. It ensures that only one thread accesses shared data at a time to prevent inconsistent results.',
+    'D. It permanently blocks all other threads whenever a new thread is created.'
+  ],
+  answer: 'C. It ensures that only one thread accesses shared data at a time to prevent inconsistent results.',
+  diff: 'hard',
+},
+  ]
+},
+
+
+123: {
+  title: "Programming Languages: Arithmetic Operators Examples",
+  summary: `Arithmetic Operators ⭐
+
+Arithmetic Operators mathematical calculations perform karne ke liye use hote hain.
+
+C language me basic arithmetic operators ye hain:
+
++  → Addition
+
+-  → Subtraction
+
+*  → Multiplication
+
+/  → Division
+
+%  → Modulus (Remainder)
+
+Important Point ⭐
+
++, - aur * bilkul Mathematics ki tarah kaam karte hain.
+
+Lekin Division (/) ka behavior operands ke data type par depend karta hai.
+
+Decimal Division ⭐
+
+Agar operands me se kam az kam ek operand decimal (float/double) ho to result decimal me aata hai.
+
+Example:
+
+5.0 / 2.0 = 2.5
+
+Integer Division ⭐
+
+Agar dono operands Integer hon to decimal part remove (truncate) kar diya jata hai.
+
+Example:
+
+5 / 2 = 2
+
+7 / 3 = 2
+
+9 / 4 = 2
+
+Modulus Operator (%) ⭐
+
+Modulus operator (%) remainder return karta hai.
+
+Example:
+
+5 % 2 = 1
+
+10 % 3 = 1
+
+12 % 5 = 2
+
+Exam Tips ⭐
+
+• / operator integer division me decimal part remove kar deta hai.
+• % operator sirf Integer operands ke sath use hota hai.
+• Modulus remainder return karta hai.
+• Agar ek operand decimal ho to division decimal result deti hai.`,
+  questions: [
+    {
+      q: 'What will be the output of the following code?\n\ncout << 9 / 4;',
+      options: [
+        'A. 2',
+        'B. 2.25',
+        'C. 3',
+        'D. 1'
+      ],
+      answer: 'A. 2',
+      diff: 'hard',
+    },
+    {
+      q: 'Consider the expression:\n\ncout << 9 % 4;\n\nWhat will be printed?',
+      options: [
+        'A. 2',
+        'B. 1',
+        'C. 4',
+        'D. 0'
+      ],
+      answer: 'B. 1',
+      diff: 'hard',
+    },
+    {
+      q: 'What will be the result of:\n\ncout << 8.0 / 4;',
+      options: [
+        'A. 2',
+        'B. 2.0',
+        'C. 0',
+        'D. Compile Error'
+      ],
+      answer: 'B. 2.0',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement about the division operator (/) is correct?',
+      options: [
+        'A. It always returns an integer value.',
+        'B. It returns a decimal value only when at least one operand is a decimal type.',
+        'C. It behaves exactly like the modulus operator for integers.',
+        'D. It removes the integer part when both operands are integers.'
+      ],
+      answer: 'B. It returns a decimal value only when at least one operand is a decimal type.',
+      diff: 'hard',
+    },
+    {
+      q: 'Consider the following code:\n\nint x = 17;\nint y = 5;\ncout << x / y << " " << x % y;\n\nWhat will be the output?',
+      options: [
+        'A. 3 2',
+        'B. 3.4 2',
+        'C. 2 3',
+        'D. 3 3'
+      ],
+      answer: 'A. 3 2',
+      diff: 'hard',
+    },
+  ]
+},
+
+124: {
+  title: "Programming Languages: Relational Operators Examples",
+  summary: `Relational Operators ⭐
+
+Relational Operators do values ko compare karne ke liye use hote hain.
+
+Comparison ka result hamesha True ya False hota hai.
+
+Common Relational Operators ⭐
+
+<   → Less Than
+
+<=  → Less Than or Equal To
+
+>   → Greater Than
+
+>=  → Greater Than or Equal To
+
+==  → Equal To
+
+!=  → Not Equal To
+
+Relational Operators ka use aksar if statement ke sath kiya jata hai.
+
+Agar condition True ho to if block execute hota hai.
+
+Agar condition False ho to if block execute nahi hota.
+
+Example ⭐
+
+int a = 10;
+int b = 20;
+
+if(a < b)
+
+Condition True hai isliye statement execute hogi.
+
+Example ⭐
+
+int num1 = 30;
+int num2 = 40;
+int num3 = 40;
+
+num1 != num2
+
+Result:
+
+True
+
+num2 == num3
+
+Result:
+
+True
+
+Important Point ⭐
+
+== equality check karta hai.
+
+= assignment operator hai.
+
+Ye dono different operators hain.
+
+Exam Tips ⭐
+
+• Relational operators comparison ke liye use hote hain.
+• Result hamesha True ya False hota hai.
+• == equality check karta hai.
+• != inequality check karta hai.
+• = assignment operator hai, comparison operator nahi.`,
+  questions: [
+    {
+      q: 'Consider the following code:\n\nint a = 10, b = 20;\n\nif(a > b)\n    cout << "A";\nif(a < b)\n    cout << "B";\n\nWhat will be printed?',
+      options: [
+        'A. A',
+        'B. B',
+        'C. AB',
+        'D. Nothing'
+      ],
+      answer: 'B. B',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the result of the expression:\n\n20 != 20',
+      options: [
+        'A. True',
+        'B. False',
+        'C. 20',
+        'D. Compile Error'
+      ],
+      answer: 'B. False',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement correctly describes the operator == ?',
+      options: [
+        'A. It assigns the right-side value to the left-side variable.',
+        'B. It compares two values and returns whether they are equal.',
+        'C. It checks whether two variables are not equal.',
+        'D. It compares only integer values.'
+      ],
+      answer: 'B. It compares two values and returns whether they are equal.',
+      diff: 'hard',
+    },
+    {
+      q: 'Consider the following code:\n\nint x = 15, y = 15;\n\nif(x >= y)\n    cout << "A";\nif(x != y)\n    cout << "B";\n\nWhat will be the output?',
+      options: [
+        'A. A',
+        'B. B',
+        'C. AB',
+        'D. Nothing'
+      ],
+      answer: 'A. A',
+      diff: 'hard',
+    },
+    {
+      q: 'A programmer accidentally writes:\n\nif(a = b)\n\ninstead of\n\nif(a == b)\n\nWhat is the main mistake?',
+      options: [
+        'A. The assignment operator (=) is used instead of the equality operator (==).',
+        'B. The equality operator cannot be used inside an if statement.',
+        'C. Relational operators work only with float variables.',
+        'D. The expression becomes a syntax error because = cannot appear in parentheses.'
+      ],
+      answer: 'A. The assignment operator (=) is used instead of the equality operator (==).',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+125: {
+  title: "Programming Languages: Logical Operators Examples",
+  summary: `Logical Operators ⭐
+
+Logical Operators tab use hote hain jab ek se zyada conditions ko combine karke check karna ho.
+
+Ye operators aksar if statement ke sath use hote hain.
+
+C/C++ me 3 basic Logical Operators hote hain:
+
+&&  → AND
+
+||  → OR
+
+!   → NOT
+
+AND Operator (&&) ⭐
+
+AND operator ka result True tab hota hai jab dono conditions True hon.
+
+Agar ek bhi condition False ho to result False hota hai.
+
+Example:
+
+if(age >= 18 && marks >= 50)
+
+Ye condition tabhi True hogi jab age bhi 18 ya us se zyada ho aur marks bhi 50 ya us se zyada hon.
+
+OR Operator (||) ⭐
+
+OR operator ka result True hota hai agar kam az kam ek condition True ho.
+
+Sirf tab False hota hai jab dono conditions False hon.
+
+Example:
+
+if(CGPA >= 3.5 || SportsQuota == true)
+
+Agar dono me se koi bhi condition True ho to if block execute hoga.
+
+NOT Operator (!) ⭐
+
+NOT operator condition ka result ulta kar deta hai.
+
+True ko False aur False ko True bana deta hai.
+
+Example:
+
+!(num1 >= 40)
+
+Agar (num1 >= 40) True ho to NOT ke baad False ban jayega.
+
+Agar (num1 >= 40) False ho to NOT ke baad True ban jayega.
+
+Lecture Example ⭐
+
+int num1 = 30;
+int num2 = 40;
+
+if(num1 >= 40 || num2 >= 40)
+
+Result:
+
+False || True
+
+Output:
+
+OR If Block Gets Executed
+
+if(num1 >= 20 && num2 >= 20)
+
+Result:
+
+True && True
+
+Output:
+
+AND If Block Gets Executed
+
+if(!(num1 >= 40))
+
+Result:
+
+!(False)
+
+Output:
+
+NOT If Block Gets Executed
+
+Exam Tips ⭐
+
+• && returns True only when both conditions are True.
+• || returns True when at least one condition is True.
+• ! reverses the result of a condition.
+• && and || are Binary Operators because they require two conditions.
+• ! is a Unary Operator because it works on only one condition.`,
+  questions: [
+    {
+      q: 'Consider the following code:\n\nint x = 10;\nint y = 20;\n\nif(x > 5 && y > 15)\n    cout << "A";\nelse\n    cout << "B";\n\nWhat will be the output?',
+      options: [
+        'A. A',
+        'B. B',
+        'C. AB',
+        'D. No Output'
+      ],
+      answer: 'A. A',
+      diff: 'hard',
+    },
+    {
+      q: 'Given:\n\nint a = 30;\nint b = 10;\n\nif(a < 20 || b > 5)\n    cout << "True";\nelse\n    cout << "False";\n\nWhat will be displayed?',
+      options: [
+        'A. False',
+        'B. True',
+        'C. Compile Error',
+        'D. Nothing'
+      ],
+      answer: 'B. True',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement correctly describes the NOT (!) operator?',
+      options: [
+        'A. It returns True only if both conditions are True.',
+        'B. It combines two conditions using OR logic.',
+        'C. It reverses the Boolean result of a single condition.',
+        'D. It compares two values for equality.'
+      ],
+      answer: 'C. It reverses the Boolean result of a single condition.',
+      diff: 'hard',
+    },
+    {
+      q: 'Consider the following code:\n\nint num = 25;\n\nif(!(num > 20))\n    cout << "A";\nelse\n    cout << "B";\n\nWhat will be the output?',
+      options: [
+        'A. A',
+        'B. B',
+        'C. AB',
+        'D. No Output'
+      ],
+      answer: 'B. B',
+      diff: 'hard',
+    },
+    {
+      q: 'Which of the following expressions evaluates to False?',
+      options: [
+        'A. (10 > 5) && (20 > 15)',
+        'B. (10 < 5) || (20 > 15)',
+        'C. !(15 == 15)',
+        'D. (8 >= 8) || (2 > 10)'
+      ],
+      answer: 'C. !(15 == 15)',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+126: {
+  title: "Software Engineering: Software Engineering Discipline",
+  summary: `Software Engineering Discipline ⭐
+
+Software Engineering ka matlab sirf coding karna nahi hota.
+
+Ye ek engineering discipline hai jiska purpose large aur complex software systems ko plan, design, develop, test aur maintain karna hota hai.
+
+Large Software Projects ⭐
+
+Jab koi bohat bara software project develop kiya jata hai to sirf programming kaafi nahi hoti.
+
+Developers ko bohat se questions ka answer dena hota hai, jaise:
+
+• Project ki total cost kitni hogi?
+• Kitna time lagega?
+• Team ko kaise divide kiya jaye?
+• Different modules ko compatible kaise banaya jaye?
+• Progress ko kaise measure kiya jaye?
+
+Yehi problems Software Engineering solve karti hai.
+
+Software Engineering vs Traditional Engineering ⭐
+
+Traditional engineering (jaise Mechanical ya Civil Engineering) me engineers ready-made (off-the-shelf) components use kar lete hain.
+
+Example:
+
+Car banate waqt company naya engine ya transmission har baar design nahi karti.
+
+Pehle se available components use kar leti hai.
+
+Lekin software me pehle zyada tar systems scratch se develop kiye jate the.
+
+Isi wajah se software projects difficult, expensive aur time-consuming hote the.
+
+Metrics ⭐
+
+Metrics wo quantitative measurements hoti hain jo software ki quality, size ya complexity ko measure karne ke liye use hoti hain.
+
+Software Engineering ki ek challenge ye hai ke software ki complexity aur quality ko accurately measure karna mushkil hota hai.
+
+Software Doesn't Wear Out ⭐
+
+Mechanical machines time ke sath wear out ho jati hain.
+
+Lekin software physically wear out nahi hota.
+
+Agar software me bugs na hon to wo same tarah kaam karta rehta hai.
+
+Isliye mechanical engineering wale quality measurements software par directly apply nahi kiye ja sakte.
+
+Researchers ⭐
+
+Software Engineering me do tarah ke researchers hote hain.
+
+Practitioners:
+
+Jo practical techniques develop karte hain jo immediately industry me use ki ja sakein.
+
+Theoreticians:
+
+Jo software engineering ke fundamental theories aur principles par research karte hain.
+
+CASE (Computer-Aided Software Engineering) ⭐
+
+CASE ka matlab hai software development ko computer tools ki madad se easy aur efficient banana.
+
+CASE Tools ⭐
+
+Different CASE tools different tasks me help karte hain.
+
+Examples:
+
+• Project Planning Tools
+• Project Management Tools
+• Documentation Tools
+• Prototyping Tools
+• GUI Design Tools
+• Programming Tools
+
+IDE (Integrated Development Environment) ⭐
+
+IDE ek software package hota hai jo multiple development tools ko ek hi application me combine karta hai.
+
+Usually IDE me:
+
+• Code Editor
+• Compiler
+• Debugger
+• Simulator
+
+ek hi place par available hote hain.
+
+Examples:
+
+Visual Studio
+
+Android Studio
+
+Code::Blocks
+
+Exam Tips ⭐
+
+• Software Engineering large software systems ko manage karne ki discipline hai.
+• Traditional engineering ready-made components use karti hai.
+• Software Engineering me reusable components pehle limited thay.
+• Metrics software ki properties measure karne ke liye use hoti hain.
+• Software physically wear out nahi hota.
+• Practitioners practical techniques develop karte hain.
+• Theoreticians software engineering ki theories develop karte hain.
+• CASE = Computer-Aided Software Engineering.
+• CASE Tools software development process ko improve karte hain.
+• IDE editor, compiler aur debugger ko ek package me combine karta hai.`,
+  questions: [
+    {
+      q: 'Why have large software projects traditionally been more difficult than many traditional engineering projects?',
+      options: [
+        'A. Software systems were often built from scratch because reusable generic components were limited.',
+        'B. Software engineers are required to work without programming languages.',
+        'C. Software projects cannot be divided into smaller modules.',
+        'D. Hardware components are more expensive than software components.'
+      ],
+      answer: 'A. Software systems were often built from scratch because reusable generic components were limited.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement best explains why the "mean time between failures" is not an ideal quality metric for software?',
+      options: [
+        'A. Software executes only once after installation.',
+        'B. Software does not physically wear out like mechanical devices.',
+        'C. Software failures can never be measured.',
+        'D. Software quality depends only on hardware performance.'
+      ],
+      answer: 'B. Software does not physically wear out like mechanical devices.',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the primary role of CASE tools in software engineering?',
+      options: [
+        'A. They replace software developers completely.',
+        'B. They automate hardware manufacturing.',
+        'C. They assist developers in planning, developing, testing and managing software projects.',
+        'D. They convert software into machine language without compilation.'
+      ],
+      answer: 'C. They assist developers in planning, developing, testing and managing software projects.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which option correctly distinguishes practitioners from theoreticians in software engineering?',
+      options: [
+        'A. Practitioners focus on practical solutions, while theoreticians work on fundamental principles.',
+        'B. Practitioners develop operating systems, while theoreticians develop databases.',
+        'C. Practitioners only write code, while theoreticians only teach programming.',
+        'D. Practitioners design hardware, while theoreticians design software.'
+      ],
+      answer: 'A. Practitioners focus on practical solutions, while theoreticians work on fundamental principles.',
+      diff: 'hard',
+    },
+    {
+      q: 'An Integrated Development Environment (IDE) is best described as:',
+      options: [
+        'A. A programming language used for software development.',
+        'B. A collection of integrated development tools such as an editor, compiler and debugger.',
+        'C. A project management methodology for software teams.',
+        'D. A software metric used to estimate project cost and complexity.'
+      ],
+      answer: 'B. A collection of integrated development tools such as an editor, compiler and debugger.',
+      diff: 'hard',
+    },
+  ]
+},
+127: {
+  title: "Software Engineering: Software Life Cycle",
+  summary: `Software Life Cycle ⭐
+
+Software Life Cycle software ki complete life ko describe karta hai.
+
+Yani software sirf develop karke khatam nahi ho jata.
+
+Uske baad bhi usay use, update aur maintain kiya jata hai.
+
+Isi continuous process ko Software Life Cycle kehte hain.
+
+Software Life Cycle ⭐
+
+Software pehle develop hota hai.
+
+Uske baad users usay use karte hain.
+
+Use ke dauran agar bugs milen ya requirements change ho jayein to software ko modify kiya jata hai.
+
+Ye maintenance process software ki life ke end tak chalti rehti hai.
+
+Maintenance Phase ⭐
+
+Software Engineering me sab se important phase Maintenance hota hai.
+
+Maintenance ka matlab software ko repair karna nahi, balki usay improve aur update karna hota hai.
+
+Maintenance ki Common Reasons ⭐
+
+Software ko maintenance phase me isliye bheja jata hai kyun ke:
+
+• Bugs ya errors discover ho jate hain.
+• User ki requirements change ho jati hain.
+• Previous updates ki wajah se naye problems aa jate hain.
+• Software me naye features add karne hote hain.
+
+Maintenance Challenges ⭐
+
+Maintenance aksar original developer nahi karta.
+
+Naya developer pehle software aur uski documentation ko samajhta hai.
+
+Uske baad hi changes karta hai.
+
+Agar program ko samjhe baghair modification ki jaye to naye bugs create ho sakte hain.
+
+Important Point ⭐
+
+Kabhi kabhi software itna complex ya poorly documented hota hai ke usay modify karne ke bajaye naya software banana zyada easy hota hai.
+
+Isi liye development ke waqt clean design aur achi documentation bohat important hoti hai.
+
+Exam Tips ⭐
+
+• Software Life Cycle software ki complete life ko describe karta hai.
+• Development ke baad software maintenance phase me enter karta hai.
+• Maintenance software ki life ke end tak continue kar sakti hai.
+• Maintenance ka purpose bugs fix karna, updates aur modifications karna hota hai.
+• Software maintenance aksar original developer ke ilawa koi aur bhi kar sakta hai.
+• Proper documentation future maintenance ko easy banati hai.
+• Poor documentation maintenance ko difficult bana deti hai.
+• Kabhi kabhi existing software modify karne ke bajaye naya software develop karna easier hota hai.`,
+  questions: [
+    {
+      q: 'Why does software typically enter the maintenance phase after development?',
+      options: [
+        'A. Because software automatically expires after deployment.',
+        'B. Because bugs, changing requirements, or previous modifications require further updates.',
+        'C. Because software must always be rewritten every year.',
+        'D. Because maintenance is performed before users start using the software.'
+      ],
+      answer: 'B. Because bugs, changing requirements, or previous modifications require further updates.',
+      diff: 'hard',
+    },
+    {
+      q: 'How does software maintenance differ from maintenance in traditional engineering products?',
+      options: [
+        'A. Software maintenance mainly involves correction and updates, while traditional products are usually repaired.',
+        'B. Both involve replacing damaged physical components.',
+        'C. Software maintenance is performed only once after development.',
+        'D. Traditional engineering products never require maintenance.'
+      ],
+      answer: 'A. Software maintenance mainly involves correction and updates, while traditional products are usually repaired.',
+      diff: 'hard',
+    },
+    {
+      q: 'Before modifying an existing software system, what is the most important task for the maintenance engineer?',
+      options: [
+        'A. Replace the entire source code.',
+        'B. Understand the program and its documentation.',
+        'C. Remove all previous updates.',
+        'D. Rewrite the software using another programming language.'
+      ],
+      answer: 'B. Understand the program and its documentation.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which situation may lead an organization to develop a new software system instead of modifying the existing one?',
+      options: [
+        'A. The software has good documentation and a modular design.',
+        'B. The existing software is difficult to understand and modify successfully.',
+        'C. The software has recently received minor updates.',
+        'D. The users request only a small bug fix.'
+      ],
+      answer: 'B. The existing software is difficult to understand and modify successfully.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement best explains the importance of proper software design and documentation?',
+      options: [
+        'A. They eliminate the need for software maintenance completely.',
+        'B. They make future maintenance and modifications easier and less error-prone.',
+        'C. They increase the execution speed of every program.',
+        'D. They reduce the amount of computer memory required by the software.'
+      ],
+      answer: 'B. They make future maintenance and modifications easier and less error-prone.',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+128: {
+  title: "Software Engineering: Requirement Analysis Phase",
+  summary: `Requirement Analysis Phase ⭐
+
+Requirement Analysis Software Development Life Cycle (SDLC) ka pehla aur sab se important phase hai.
+
+Is phase me ye decide kiya jata hai ke software kya karega aur users ko konsi services provide karega.
+
+Simple words me:
+
+👉 Pehle software ki requirements samjhi jati hain, uske baad hi usay design aur develop kiya jata hai.
+
+Traditional Software Development Phases ⭐
+
+Software development ke major phases hain:
+
+• Requirement Analysis
+• Design
+• Implementation
+• Testing
+
+Requirement Analysis me kya hota hai? ⭐
+
+Is phase me software engineer stakeholders se mil kar software ki requirements collect karta hai.
+
+Ye decide kiya jata hai:
+
+• Software kya features provide karega.
+• Users software ko kaise use karenge.
+• Security aur time constraints kya hongi.
+• Project technically aur financially possible hai ya nahi.
+
+Stakeholders ⭐
+
+Stakeholders wo log ya organizations hoti hain jin ka software project se interest hota hai.
+
+Examples:
+
+• Future Users
+• Company
+• Client
+• Legal Team
+• Financial Team
+
+Software Requirements Specification (SRS) ⭐
+
+Requirement Analysis ke end me ek document banaya jata hai jise Software Requirements Specification (SRS) kehte hain.
+
+SRS me software ki tamam agreed requirements likhi hoti hain.
+
+Ye document developer aur client ke darmiyan ek official agreement ki tarah kaam karta hai.
+
+Agar future me koi confusion ya dispute ho to SRS ko refer kiya jata hai.
+
+Changing Requirements ⭐
+
+Software Engineering ki sab se common problems me se ek changing requirements hain.
+
+Agar development start hone ke baad client requirements change karta rahe to:
+
+• Cost increase hoti hai.
+• Project delay hota hai.
+• Development difficult ho jati hai.
+
+Isi liye software engineers stakeholders ke sath regular communication rakhte hain.
+
+Exam Tips ⭐
+
+• Requirement Analysis SDLC ka pehla phase hai.
+• Is phase me software ki requirements collect aur analyze ki jati hain.
+• Stakeholders software project se related interested parties hoti hain.
+• Requirement Analysis ke end me SRS (Software Requirements Specification) document banta hai.
+• SRS developer aur client ke darmiyan written agreement hota hai.
+• Poor communication aur changing requirements software projects ke major problems hain.
+• Frequent communication stakeholders ke sath successful project ke liye bohat important hai.`,
+  questions: [
+    {
+      q: 'What is the primary objective of the Requirement Analysis phase?',
+      options: [
+        'A. To write the source code for the software.',
+        'B. To identify, analyze and document what the software must do before development begins.',
+        'C. To test whether the completed software is free from bugs.',
+        'D. To prepare the user manual after implementation.'
+      ],
+      answer: 'B. To identify, analyze and document what the software must do before development begins.',
+      diff: 'hard',
+    },
+    {
+      q: 'Which statement best describes the purpose of the Software Requirements Specification (SRS)?',
+      options: [
+        'A. It contains the complete source code of the software.',
+        'B. It serves as an agreed document describing the required features and services of the software.',
+        'C. It is used only for software testing.',
+        'D. It replaces the need for communication between the client and developer.'
+      ],
+      answer: 'B. It serves as an agreed document describing the required features and services of the software.',
+      diff: 'hard',
+    },
+    {
+      q: 'Who are considered stakeholders during the Requirement Analysis phase?',
+      options: [
+        'A. Only software developers working on the project.',
+        'B. Anyone who has an interest in the project, such as users, clients, legal and financial representatives.',
+        'C. Only the end users who will operate the software.',
+        'D. Only the project manager and the testing team.'
+      ],
+      answer: 'B. Anyone who has an interest in the project, such as users, clients, legal and financial representatives.',
+      diff: 'hard',
+    },
+    {
+      q: 'According to software engineering practices, what is one of the major reasons for project delays and cost overruns?',
+      options: [
+        'A. Using modern programming languages.',
+        'B. Poor communication and continuously changing requirements.',
+        'C. Writing detailed documentation before coding.',
+        'D. Performing testing after implementation.'
+      ],
+      answer: 'B. Poor communication and continuously changing requirements.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why is frequent communication with stakeholders considered essential during software development?',
+      options: [
+        'A. It helps developers avoid writing program code.',
+        'B. It reduces misunderstandings and manages requirement changes throughout the project.',
+        'C. It guarantees that software will never contain errors.',
+        'D. It eliminates the need for the Software Requirements Specification document.'
+      ],
+      answer: 'B. It reduces misunderstandings and manages requirement changes throughout the project.',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+129: {
+  title: "Software Engineering: Design Phase",
+  summary: `Design Phase ⭐
+
+Design Phase SDLC ka second phase hai.
+
+Requirement Analysis me ye decide hota hai ke software **kya** karega.
+
+Design Phase me ye plan banaya jata hai ke software **kaise** banega.
+
+Simple words me:
+
+• Requirement Analysis → What to build?
+• Design Phase → How to build it?
+
+Design Phase ⭐
+
+Is phase me software ki internal structure aur architecture design ki jati hai.
+
+Developer decide karta hai:
+
+• Software ko modules me kaise divide karna hai.
+• Components aapas me kaise communicate karenge.
+• Data ka flow kaisa hoga.
+• Overall system structure kya hogi.
+
+Output of Design Phase ⭐
+
+Design phase ke end me ek detailed design prepare hoti hai.
+
+Isi design ko follow karke programmers coding start karte hain.
+
+Building Example ⭐
+
+Agar building banani ho to pehle requirements decide hoti hain.
+
+Uske baad architect blueprints aur maps banata hai.
+
+Construction unhi blueprints ko follow karke hoti hai.
+
+Software me Design Phase bhi isi tarah ka blueprint prepare karti hai.
+
+Modeling and Diagrams ⭐
+
+Software design ko represent karne ke liye different diagrams aur modeling techniques use ki jati hain.
+
+Ye diagrams developers ko system ko samajhne aur implement karne me help karti hain.
+
+Exam Tips ⭐
+
+• Design Phase Requirement Analysis ke baad aati hai.
+• Requirement Analysis software ki requirements define karti hai.
+• Design Phase software ka solution aur structure create karti hai.
+• Design Phase me software ki internal architecture decide hoti hai.
+• Design ka output coding ke liye blueprint ka kaam karta hai.
+• Modeling aur diagrams design ko represent karne ke liye use hote hain.`,
+  questions: [
+    {
+      q: 'Which statement best distinguishes Requirement Analysis from the Design Phase?',
+      options: [
+        'A. Requirement Analysis defines what the system should do, while Design decides how it will be built.',
+        'B. Requirement Analysis focuses on coding, while Design focuses on testing.',
+        'C. Requirement Analysis creates the program, while Design installs the software.',
+        'D. Requirement Analysis and Design perform exactly the same activities.'
+      ],
+      answer: 'A. Requirement Analysis defines what the system should do, while Design decides how it will be built.',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the primary outcome of the Design Phase?',
+      options: [
+        'A. A completed software product.',
+        'B. A detailed structure that guides implementation.',
+        'C. A list of software bugs.',
+        'D. A software maintenance report.'
+      ],
+      answer: 'B. A detailed structure that guides implementation.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why are modeling techniques and diagrams used during the Design Phase?',
+      options: [
+        'A. To replace program testing.',
+        'B. To represent the software structure before coding begins.',
+        'C. To estimate the project budget only.',
+        'D. To collect user requirements from stakeholders.'
+      ],
+      answer: 'B. To represent the software structure before coding begins.',
+      diff: 'hard',
+    },
+    {
+      q: 'A software team has already finalized all user requirements. Their next task is to divide the system into modules and define their interaction. Which SDLC phase are they performing?',
+      options: [
+        'A. Requirement Analysis',
+        'B. Design',
+        'C. Testing',
+        'D. Maintenance'
+      ],
+      answer: 'B. Design',
+      diff: 'hard',
+    },
+    {
+      q: 'The blueprint of a building is commonly compared to which software engineering artifact?',
+      options: [
+        'A. Source code',
+        'B. Test report',
+        'C. Software design',
+        'D. User manual'
+      ],
+      answer: 'C. Software design',
+      diff: 'hard',
+    },
+  ]
+},
+
+129: {
+  title: "Software Engineering: Design Phase",
+  summary: `Design Phase ⭐
+
+Design Phase SDLC ka second phase hai.
+
+Requirement Analysis me ye decide hota hai ke software **kya** karega.
+
+Design Phase me ye plan banaya jata hai ke software **kaise** banega.
+
+Simple words me:
+
+• Requirement Analysis → What to build?
+• Design Phase → How to build it?
+
+Design Phase ⭐
+
+Is phase me software ki internal structure aur architecture design ki jati hai.
+
+Developer decide karta hai:
+
+• Software ko modules me kaise divide karna hai.
+• Components aapas me kaise communicate karenge.
+• Data ka flow kaisa hoga.
+• Overall system structure kya hogi.
+
+Output of Design Phase ⭐
+
+Design phase ke end me ek detailed design prepare hoti hai.
+
+Isi design ko follow karke programmers coding start karte hain.
+
+Building Example ⭐
+
+Agar building banani ho to pehle requirements decide hoti hain.
+
+Uske baad architect blueprints aur maps banata hai.
+
+Construction unhi blueprints ko follow karke hoti hai.
+
+Software me Design Phase bhi isi tarah ka blueprint prepare karti hai.
+
+Modeling and Diagrams ⭐
+
+Software design ko represent karne ke liye different diagrams aur modeling techniques use ki jati hain.
+
+Ye diagrams developers ko system ko samajhne aur implement karne me help karti hain.
+
+Exam Tips ⭐
+
+• Design Phase Requirement Analysis ke baad aati hai.
+• Requirement Analysis software ki requirements define karti hai.
+• Design Phase software ka solution aur structure create karti hai.
+• Design Phase me software ki internal architecture decide hoti hai.
+• Design ka output coding ke liye blueprint ka kaam karta hai.
+• Modeling aur diagrams design ko represent karne ke liye use hote hain.`,
+  questions: [
+    {
+      q: 'Which statement best distinguishes Requirement Analysis from the Design Phase?',
+      options: [
+        'A. Requirement Analysis defines what the system should do, while Design decides how it will be built.',
+        'B. Requirement Analysis focuses on coding, while Design focuses on testing.',
+        'C. Requirement Analysis creates the program, while Design installs the software.',
+        'D. Requirement Analysis and Design perform exactly the same activities.'
+      ],
+      answer: 'A. Requirement Analysis defines what the system should do, while Design decides how it will be built.',
+      diff: 'hard',
+    },
+    {
+      q: 'What is the primary outcome of the Design Phase?',
+      options: [
+        'A. A completed software product.',
+        'B. A detailed structure that guides implementation.',
+        'C. A list of software bugs.',
+        'D. A software maintenance report.'
+      ],
+      answer: 'B. A detailed structure that guides implementation.',
+      diff: 'hard',
+    },
+    {
+      q: 'Why are modeling techniques and diagrams used during the Design Phase?',
+      options: [
+        'A. To replace program testing.',
+        'B. To represent the software structure before coding begins.',
+        'C. To estimate the project budget only.',
+        'D. To collect user requirements from stakeholders.'
+      ],
+      answer: 'B. To represent the software structure before coding begins.',
+      diff: 'hard',
+    },
+    {
+      q: 'A software team has already finalized all user requirements. Their next task is to divide the system into modules and define their interaction. Which SDLC phase are they performing?',
+      options: [
+        'A. Requirement Analysis',
+        'B. Design',
+        'C. Testing',
+        'D. Maintenance'
+      ],
+      answer: 'B. Design',
+      diff: 'hard',
+    },
+    {
+      q: 'The blueprint of a building is commonly compared to which software engineering artifact?',
+      options: [
+        'A. Source code',
+        'B. Test report',
+        'C. Software design',
+        'D. User manual'
+      ],
+      answer: 'C. Software design',
+      diff: 'hard',
+    },
+  ]
+},
+
+
+130: {
+  title: "Software Engineering: Implementation Phase",
+  summary: `Implementation Phase ⭐
+
+Implementation SDLC ka wo phase hai jahan software ki actual development shuru hoti hai.
+
+Is phase me Design ko source code me convert kiya jata hai.
+
+Simple words me:
+
+👉 Design batata hai software kaise banega.
+
+👉 Implementation me us design ke mutabiq coding ki jati hai.
+
+Implementation Phase me kya hota hai? ⭐
+
+Is phase me:
+
+• Programs likhe jate hain.
+• Data files create ki jati hain.
+• Databases develop ki jati hain.
+
+Software Analyst vs Programmer ⭐
+
+Software Analyst:
+
+• Requirements aur Design par zyada focus karta hai.
+• Pore software project ko analyze aur plan karta hai.
+
+Programmer:
+
+• Design ko follow karke actual code likhta hai.
+• Software ki implementation karta hai.
+
+Important Point ⭐
+
+Real industry me Software Analyst aur Programmer ki responsibilities aksar overlap karti hain.
+
+Kai baar Software Analyst coding bhi karta hai.
+
+Aur Senior Programmer requirements aur design me bhi participate karta hai.
+
+Isi liye job titles hamesha exact responsibilities ko represent nahi karte.
+
+Exam Tips ⭐
+
+• Implementation SDLC ka coding phase hai.
+• Is phase me programs, data files aur databases develop kiye jate hain.
+• Software Analyst requirements aur design par focus karta hai.
+• Programmer implementation aur coding par focus karta hai.
+• Practical software development me analyst aur programmer ki responsibilities overlap kar sakti hain.`,
+  questions: [
+    {
+      q: 'Which activity is most closely associated with the Implementation Phase?',
+      options: [
+        'A. Collecting user requirements',
+        'B. Writing source code',
+        'C. Preparing test reports',
+        'D. Updating deployed software'
+      ],
+      answer: 'B. Writing source code',
+      diff: 'hard',
+    },
+    {
+      q: 'Which responsibility is primarily associated with a Software Analyst?',
+      options: [
+        'A. Writing every program module',
+        'B. Focusing on requirements and system design',
+        'C. Executing software test cases',
+        'D. Installing software on client computers'
+      ],
+      answer: 'B. Focusing on requirements and system design',
+      diff: 'hard',
+    },
+    {
+      q: 'Why does the lecture state that the terms "Software Analyst" and "Programmer" are sometimes confusing?',
+      options: [
+        'A. Because both titles are no longer used in the software industry.',
+        'B. Because their responsibilities often overlap in real software projects.',
+        'C. Because analysts are responsible only for testing software.',
+        'D. Because programmers cannot participate in software design.'
+      ],
+      answer: 'B. Because their responsibilities often overlap in real software projects.',
+      diff: 'hard',
+    },
+    {
+      q: 'A developer receives a completed software design and starts converting it into executable code. Which SDLC phase is being performed?',
+      options: [
+        'A. Requirement Analysis',
+        'B. Design',
+        'C. Implementation',
+        'D. Maintenance'
+      ],
+      answer: 'C. Implementation',
+      diff: 'hard',
+    },
+    {
+      q: 'Which of the following tasks is least likely to belong to the Implementation Phase?',
+      options: [
+        'A. Creating database structures',
+        'B. Developing program modules',
+        'C. Creating data files',
+        'D. Negotiating software requirements with stakeholders'
+      ],
+      answer: 'D. Negotiating software requirements with stakeholders',
+      diff: 'hard',
+    },
+  ]
+},
+
 
   },
 
