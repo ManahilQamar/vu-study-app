@@ -59,7 +59,7 @@ const notesData = {
       id: 1,
       title: 'ENG101 Complete Handwritten Notes',
       description: 'English Comprehension — Lectures 1-45',
-      path: '/notes/ENG101/ENG101_Notes.pdf',
+      path: '/notes/ENG101/ENG101-Notes.pdf',
     },
   ],
   PAK101: [
