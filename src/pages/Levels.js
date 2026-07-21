@@ -4,9 +4,34 @@ import mcqs from '../data/mcqs';
 import practice from '../data/practice';
 import notesData from '../data/notesData';
 
+// Note type styles
+const NOTE_TYPES = {
+  notes: {
+    icon: '📒',
+    label: 'Handwritten Notes',
+    color: '#16a34a',
+    bg: '#f0fdf4',
+    btnBg: '#16a34a',
+  },
+  numericals: {
+    icon: '🔢',
+    label: 'Solved Numericals',
+    color: '#7c3aed',
+    bg: '#f5f3ff',
+    btnBg: '#7c3aed',
+  },
+  summary: {
+    icon: '📋',
+    label: 'Summary Notes',
+    color: '#2563eb',
+    bg: '#eff6ff',
+    btnBg: '#2563eb',
+  },
+};
+
 export default function Levels({ subject, setPage, toggleDark, dark }) {
   const sub = subjects.find(s => s.id === subject);
-  const [activeTab, setActiveTab] = useState('lectures'); // 'notes' | 'lectures'
+  const [activeTab, setActiveTab] = useState('lectures');
 
   if (!sub) {
     return (
@@ -26,12 +51,9 @@ export default function Levels({ subject, setPage, toggleDark, dark }) {
     );
   }
 
-  const hasData = i => {
-    return mcqs[subject]?.[i + 1]?.questions?.length > 0
-      || !!localStorage.getItem('vu_ai_' + subject + '_' + i);
-  };
+  const hasData     = i => mcqs[subject]?.[i + 1]?.questions?.length > 0 || !!localStorage.getItem('vu_ai_' + subject + '_' + i);
   const hasPractice = i => (practice[subject]?.[i + 1]?.problems?.length || 0) > 0;
-  const isDone = i => hasData(i) && !!localStorage.getItem('vu_best_' + subject + '_' + i);
+  const isDone      = i => hasData(i) && !!localStorage.getItem('vu_best_' + subject + '_' + i);
 
   const doneCount = Array.from({ length: sub.total }, (_, i) => i).filter(isDone).length;
   const pct = Math.round((doneCount / sub.total) * 100);
@@ -51,7 +73,8 @@ export default function Levels({ subject, setPage, toggleDark, dark }) {
       </header>
 
       <main className="page">
-        {/* Subject banner */}
+
+        {/* Subject Banner */}
         <div className="subject-banner">
           <div className="banner-icon" style={{ background: sub.bg, color: sub.color }}>
             {sub.icon}
@@ -71,127 +94,145 @@ export default function Levels({ subject, setPage, toggleDark, dark }) {
         {/* ── Tabs ── */}
         <div className="levels-tabs">
           <button
-            className={`levels-tab ${activeTab === 'lectures' ? 'levels-tab-active' : ''}`}
-            style={ activeTab === 'lectures' ? { borderBottomColor: sub.color, color: sub.color } : {}}
-            onClick={() => setActiveTab('lectures')}
-          >
-            📚 Lectures
-          </button>
-          <button
             className={`levels-tab ${activeTab === 'notes' ? 'levels-tab-active' : ''}`}
-            style={ activeTab === 'notes' ? { borderBottomColor: sub.color, color: sub.color } : {}}
+            style={activeTab === 'notes' ? { borderBottomColor: sub.color, color: sub.color } : {}}
             onClick={() => setActiveTab('notes')}
           >
             📒 Notes
             {notes.length > 0 && (
-              <span className="levels-tab-badge">{notes.length}</span>
+              <span className="levels-tab-badge" style={{ background: sub.color }}>
+                {notes.length}
+              </span>
             )}
+          </button>
+          <button
+            className={`levels-tab ${activeTab === 'lectures' ? 'levels-tab-active' : ''}`}
+            style={activeTab === 'lectures' ? { borderBottomColor: sub.color, color: sub.color } : {}}
+            onClick={() => setActiveTab('lectures')}
+          >
+            📚 Lectures
           </button>
         </div>
 
-        {/* ── Notes Tab ── */}
+        {/* ══════════════════════════
+            NOTES TAB
+        ══════════════════════════ */}
         {activeTab === 'notes' && (
-          <div style={{ marginTop: 4 }}>
+          <div style={{ marginTop: 8 }}>
             {notes.length === 0 ? (
               <div className="empty-card">
                 <div className="empty-icon">📒</div>
                 <div className="empty-title">No Notes Yet</div>
                 <div className="empty-desc">
-                  {sub.id} ke handwritten notes jald add honge. Tab tak MCQs practice karo!
+                  {sub.id} ke notes jald add honge. Tab tak MCQs practice karo!
                 </div>
               </div>
             ) : (
               <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-                {notes.map(note => (
-                  <div key={note.id} style={{
-                    background: 'var(--card-bg)',
-                    border: '1.5px solid var(--border)',
-                    borderRadius: 16,
-                    overflow: 'hidden',
-                  }}>
-                    {/* Note header */}
-                    <div style={{
-                      display: 'flex', alignItems: 'center', gap: 14,
-                      padding: '16px',
-                      borderBottom: '1px solid var(--border)',
+                {notes.map(note => {
+                  const typeStyle = NOTE_TYPES[note.type] || NOTE_TYPES.notes;
+                  return (
+                    <div key={note.id} style={{
+                      background: 'var(--card-bg)',
+                      border: `1.5px solid var(--border)`,
+                      borderRadius: 16,
+                      overflow: 'hidden',
                     }}>
-                      {/* PDF icon */}
+                      {/* Note info */}
                       <div style={{
-                        width: 48, height: 48, borderRadius: 12, flexShrink: 0,
-                        background: '#fef2f2',
-                        display: 'flex', alignItems: 'center', justifyContent: 'center',
-                        fontSize: 24,
+                        display: 'flex', alignItems: 'center', gap: 14,
+                        padding: '16px',
+                        borderBottom: '1px solid var(--border)',
                       }}>
-                        📄
+                        <div style={{
+                          width: 50, height: 50, borderRadius: 12,
+                          background: typeStyle.bg, flexShrink: 0,
+                          display: 'flex', alignItems: 'center',
+                          justifyContent: 'center', fontSize: 26,
+                        }}>
+                          {typeStyle.icon}
+                        </div>
+                        <div style={{ flex: 1, minWidth: 0 }}>
+                          <div style={{
+                            display: 'inline-block',
+                            fontSize: 10, fontWeight: 700,
+                            color: typeStyle.color,
+                            background: typeStyle.bg,
+                            padding: '2px 8px', borderRadius: 6,
+                            marginBottom: 5, letterSpacing: '0.3px',
+                            textTransform: 'uppercase',
+                          }}>
+                            {typeStyle.label}
+                          </div>
+                          <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 2 }}>
+                            {note.title}
+                          </div>
+                          <div style={{ fontSize: 12.5, color: 'var(--text-muted)' }}>
+                            {note.description}
+                          </div>
+                        </div>
                       </div>
-                      <div style={{ flex: 1, minWidth: 0 }}>
-                        <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 3 }}>
-                          {note.title}
-                        </div>
-                        <div style={{ fontSize: 12.5, color: 'var(--text-muted)' }}>
-                          {note.description}
-                          {note.pages && ` · ${note.pages} pages`}
-                        </div>
+
+                      {/* View + Download buttons */}
+                      <div style={{ display: 'flex' }}>
+                        <a
+                          href={note.path}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            flex: 1, padding: '12px',
+                            display: 'flex', alignItems: 'center',
+                            justifyContent: 'center', gap: 6,
+                            fontSize: 13, fontWeight: 600,
+                            color: typeStyle.color,
+                            background: typeStyle.bg,
+                            borderRight: '1px solid var(--border)',
+                            textDecoration: 'none',
+                            transition: 'opacity 0.15s',
+                          }}
+                          onMouseEnter={e => e.currentTarget.style.opacity = '0.8'}
+                          onMouseLeave={e => e.currentTarget.style.opacity = '1'}
+                        >
+                          👁 View
+                        </a>
+                        <a
+                          href={note.path}
+                          download
+                          style={{
+                            flex: 1, padding: '12px',
+                            display: 'flex', alignItems: 'center',
+                            justifyContent: 'center', gap: 6,
+                            fontSize: 13, fontWeight: 600,
+                            color: '#fff',
+                            background: typeStyle.btnBg,
+                            textDecoration: 'none',
+                            transition: 'opacity 0.15s',
+                          }}
+                          onMouseEnter={e => e.currentTarget.style.opacity = '0.85'}
+                          onMouseLeave={e => e.currentTarget.style.opacity = '1'}
+                        >
+                          ⬇ Download
+                        </a>
                       </div>
                     </div>
+                  );
+                })}
 
-                    {/* Action buttons */}
-                    <div style={{ display: 'flex', gap: 0 }}>
-                      {/* View button */}
-                      <a
-                        href={note.path}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                          flex: 1, padding: '12px',
-                          display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6,
-                          fontSize: 13, fontWeight: 600,
-                          color: sub.color, background: sub.bg,
-                          borderRight: '1px solid var(--border)',
-                          textDecoration: 'none',
-                          transition: 'opacity 0.15s',
-                        }}
-                        onMouseEnter={e => e.currentTarget.style.opacity = '0.8'}
-                        onMouseLeave={e => e.currentTarget.style.opacity = '1'}
-                      >
-                        👁 View Notes
-                      </a>
-
-                      {/* Download button */}
-                      <a
-                        href={note.path}
-                        download
-                        style={{
-                          flex: 1, padding: '12px',
-                          display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6,
-                          fontSize: 13, fontWeight: 600,
-                          color: '#fff', background: sub.color,
-                          textDecoration: 'none',
-                          transition: 'opacity 0.15s',
-                        }}
-                        onMouseEnter={e => e.currentTarget.style.opacity = '0.85'}
-                        onMouseLeave={e => e.currentTarget.style.opacity = '1'}
-                      >
-                        ⬇ Download
-                      </a>
-                    </div>
-                  </div>
-                ))}
-
-                {/* Info box */}
                 <div style={{
                   background: '#eff6ff', border: '1px solid #bfdbfe',
                   borderRadius: 12, padding: '12px 14px',
                   fontSize: 13, color: '#1e40af', lineHeight: 1.6,
                 }}>
-                  💡 <strong>Tip:</strong> Notes download karo aur offline bhi parh sako. Exam se pehle in notes ko zaroor revise karo!
+                  💡 <strong>Tip:</strong> Notes download kar lo offline padhai ke liye. Exam se pehle zaroor revise karo!
                 </div>
               </div>
             )}
           </div>
         )}
 
-        {/* ── Lectures Tab ── */}
+        {/* ══════════════════════════
+            LECTURES TAB
+        ══════════════════════════ */}
         {activeTab === 'lectures' && (
           <>
             <p className="sec-label" style={{ marginTop: 16 }}>Lectures</p>

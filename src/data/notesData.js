@@ -30,6 +30,13 @@ const notesData = {
       description: 'Lectures 1-45 ke complete notes',
       path: '/notes/PHY101/PHY101_Notes.pdf',
     },
+    {
+      id: 2,
+      title: 'PHY101 Solved Numericals',
+      description: 'All important numericals with step-by-step solutions',
+      path: '/notes/PHY101/PHY101-Numericals.pdf',
+      type: 'numericals',
+    },
   ],
   MTH101: [
     {
