@@ -5682,7 +5682,6 @@ const examData = {
 { q: "If magnetic field is doubled then magnetic energy density becomes:", options: ["Six times","Three times","Two times","Four times"], answer: "Four times" },
 { q: "Under what condition is induced electromotive force (EMF) produced in a conductor?", options: ["When there is a strong magnetic field","When there is a strong electric field","When there is a constant magnetic field","When there is a time-varying magnetic field"], answer: "When there is a time-varying magnetic field" },
 { q: "What does effect the introduction of dielectric material have on the relative permittivity (ϵr) in a capacitor?", options: ["Remains constant","Becomes zero","Decreases","Increases"], answer: "Increases" },
-{ q: "If F is the force acting on the test charge qo, the electric field intensity E would be given by", options: ["E = F + qo","E = F - qo","E = F/qo","E = qo/F"], answer: "E = F/qo" },
 { q: "If the drift velocity vd of charge carriers in a conductor increases, what happens to the current density J?", options: ["J becomes negative.","J decreases.","J increases.","J remains unchanged."], answer: "J increases." },
 { q: "Greenhouse gases absorb _____ radiation.", options: ["infrared","ultraviolet","gamma","microwaves"], answer: "infrared" },
 { q: "A particle having 2e charge falls through a potential difference of 5 V. energy acquired by it is", options: ["0.4 eV","10 eV","20 eV","2.5 eV"], answer: "10 eV" },
