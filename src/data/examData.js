@@ -5790,8 +5790,6 @@ const examData = {
 { q: "An erect object is located between a concave mirror and its focal point. Its image is:", options: ["Real, inverted, and larger than the object","Real, erect, and larger than the object","Virtual, erect, and larger than the object","Virtual, inverted, and larger than the object"], answer: "Virtual, erect, and larger than the object" },
 { q: "How does a refrigerator differ from a heat engine in terms of its operation?", options: ["refrigerator is always 100% efficient.","refrigerator is a heat engine working in reverse.","refrigerator operates at a single temperature.","refrigerator only absorbs heat."], answer: "refrigerator is a heat engine working in reverse." },
 { q: "The \"strength\" of a lens is measured in _________.", options: ["Lense meter","Diopters","Meters","Provatans"], answer: "Diopters" },
-{ q: "In order that a single process is both isothermal and isobaric:", options: ["change of phase is essential","One must use a solid","One may use any real gas such as N2","One must use an ideal gas"], answer: "change of phase is essential" },
-{ q: "For an electron, the rest mass energy is:", options: ["0.711 MeV","0.511 MeV","0.411 MeV","0.611 MeV"], answer: "0.511 MeV" },
 { q: "No lens is perfect because___________________.", options: ["They are not cleaned with accuracy","They are not perfectly spherical","It is nearly impossible to polish them","They suffer from aberration"], answer: "They suffer from aberration" },
 { q: "Antiparticle of electron is:", options: ["Neutron","Photon","Proton","Positron"], answer: "Positron" },
 { q: "The points of constructive interference of the light are:", options: ["Always bright","May be bright or dark","Neither bright nor dark","Always dark"], answer: "Always bright" },
